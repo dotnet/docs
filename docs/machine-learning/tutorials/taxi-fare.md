@@ -77,7 +77,7 @@ Create classes for the input data and the predictions:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TaxiTrip.cs*. Then, select the **Add** button.
-1. Add the following `using` statements to the new file:
+1. Add the following `using` directives to the new file:
 
    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#1 "Add necessary usings")]
 
@@ -101,13 +101,13 @@ Add the following code right above the `Main` method to specify those paths:
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
 
-To make the preceding code compile, add the following `using` statements at the top of the *Program.cs* file:
+To make the preceding code compile, add the following `using` directives at the top of the *Program.cs* file:
 
 [!code-csharp[AddUsingsForPaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#17 "Using statements for path definitions")]
 
 ## Create a learning pipeline
 
-Add the following additional `using` statements to the top of the *Program.cs* file:
+Add the following additional `using` directives to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
@@ -214,7 +214,7 @@ Using `await` in the `Main` method means the `Main` method must have the `async`
 
 [!code-csharp[AsyncMain](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#8 "Make the Main method async and return a task.")]
 
-You also need to add the following `using` statement at the top of the file:
+You also need to add the following `using` directive at the top of the file:
 
 [!code-csharp[UsingTasks](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#9 "Add System.Threading.Tasks. to your usings.")]
 

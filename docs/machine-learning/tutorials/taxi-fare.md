@@ -91,13 +91,13 @@ The `TaxiTripFarePrediction` class is used to represent predicted results. It ha
 
 ## Define data and model paths
 
-Go back to the *Program.cs* file and create three global fields to hold the paths to the files with data sets and to save the model:
+Go back to the *Program.cs* file and add three fields to hold the paths to the files with data sets and the file to save the model:
 
-* `_datapath` has the path to the data set used to train the model.
-* `_testdatapath` has the path to the data set used to evaluate the model.
-* `_modelpath` has the path where the trained model is stored.
+* `_datapath` contains the path to the file with the data set used to train the model.
+* `_testdatapath` contains the path to the file with the data set used to evaluate the model.
+* `_modelpath` contains the path to the file where the trained model is stored.
 
-Add the following code to the line right above the `Main` method to specify those paths:
+Add the following code right above the `Main` method to specify those paths:
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
 

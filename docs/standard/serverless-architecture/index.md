@@ -10,7 +10,7 @@ ms.date: 5/24/2018
 
 # Serverless Apps. Architecture, Patterns, and Azure Implementation
 
-> DOWNLOAD available at: **TBD**
+> DOWNLOAD available at: [https://docs.microsoft.com/dotnet/opbuildpdf/standard/serverless-architecture/toc.pdf](https://docs.microsoft.com/dotnet/opbuildpdf/standard/serverless-architecture/toc.pdf)
 
 PUBLISHED BY
 
@@ -47,6 +47,10 @@ Contributor:
 > **[Cecil Phillip](https://twitter.com/cecilphillip)**, Cloud Developer Advocate II, APEX, Microsoft Corp.
 
 Editors:
+
+> **Bill Wagner**, Senior Content Developer, APEX, Microsoft Corp.
+
+> **Maira Wenzel**, Senior Content Developer, APEX, Microsoft Corp.
 
 Participants and reviewers:
 
@@ -128,9 +132,7 @@ The first part of this guide examines why serverless is a viable option by compa
 
 ## Send your feedback
 
-The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, send them to:
-
-[link tbd](mailto:) **Note: Should this link be to create an issue on GitHub?**
+The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
 [Next] (architecture-approaches.md)

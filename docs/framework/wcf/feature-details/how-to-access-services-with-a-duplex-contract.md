@@ -65,8 +65,7 @@ For a tutorial on creating a basic WCF service and client, see [Getting Started 
 6. Create an instance of the WCF client using the constructor that requires an <xref:System.ServiceModel.InstanceContext> object. The second parameter of the constructor is the name of an endpoint found in the configuration file.
 
     ```csharp
-    CalculatorDuplexClient wcfClient = 
-    new CalculatorDuplexClient(site, "default")
+    CalculatorDuplexClient wcfClient = new CalculatorDuplexClient(site, "default");
     ```
 
     ```vb

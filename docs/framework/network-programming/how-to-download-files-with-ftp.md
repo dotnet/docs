@@ -1,6 +1,10 @@
 ---
 title: "How to: Download files with FTP"
-ms.date: "03/30/2017"
+description: "This article shows a sample of how to download a file from an FTP server."
+ms.date: "06/25/2018"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 892548b8-954a-4f6a-9bca-2ae620c3700f
 ---
 # How to: Download files with FTP
@@ -13,7 +17,6 @@ This sample shows how to download a file from an FTP server.
 using System;
 using System.IO;
 using System.Net;
-using System.Text;
 
 namespace Examples.System.Net
 {
@@ -26,7 +29,7 @@ namespace Examples.System.Net
             request.Method = WebRequestMethods.Ftp.DownloadFile;
 
             // This example assumes the FTP site uses anonymous logon.
-            request.Credentials = new NetworkCredential ("anonymous","janeDoe@contoso.com");
+            request.Credentials = new NetworkCredential("anonymous","janeDoe@contoso.com");
 
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
@@ -43,8 +46,32 @@ namespace Examples.System.Net
 }
 ```
 
-## Compiling the code
+```vb
+Imports System
+Imports System.IO
+Imports System.Net
 
-This example requires:
+Namespace Examples.System.Net
+    Public Class WebRequestGetExample
+        Public Shared Sub Main()
+            ' Get the object used to communicate with the server.
+            Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/test.htm"), FtpWebRequest)
+            request.Method = WebRequestMethods.Ftp.DownloadFile
 
-- References to the **System.Net** namespace.
+            ' This example assumes the FTP site uses anonymous logon.
+            request.Credentials = New NetworkCredential("anonymous", "janeDoe@contoso.com")
+
+            Dim response As FtpWebResponse = CType(request.GetResponse(), FtpWebResponse)
+
+            Dim responseStream As Stream = response.GetResponseStream()
+            Dim reader As StreamReader = New StreamReader(responseStream)
+            Console.WriteLine(reader.ReadToEnd())
+
+            Console.WriteLine("Download Complete, status {0}", response.StatusDescription)
+
+            reader.Close()
+            response.Close()
+        End Sub
+    End Class
+End Namespace
+```

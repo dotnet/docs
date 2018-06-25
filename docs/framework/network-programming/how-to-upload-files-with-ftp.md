@@ -1,6 +1,10 @@
 ---
 title: "How to: Upload files with FTP"
-ms.date: "03/30/2017"
+description: "This article shows a sample of how to upload a file to an FTP server."
+ms.date: "06/25/2018"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: e40f17c5-dd12-4c62-9dbf-00ab491382dc
 ---
 # How to: Upload files with FTP
@@ -51,8 +55,39 @@ namespace Examples.System.Net
 }
 ```
 
-## Compiling the code
+```vb
+Imports System
+Imports System.IO
+Imports System.Net
+Imports System.Text
 
-This example requires:
+Namespace Examples.System.Net
+    Public Class WebRequestGetExample
+        Public Shared Sub Main()
+            ' Get the object used to communicate with the server.
+            Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/test.htm"), FtpWebRequest)
+            request.Method = WebRequestMethods.Ftp.UploadFile
 
-- References to the **System.Net** namespace.
+            ' This example assumes the FTP site uses anonymous logon.
+            request.Credentials = New NetworkCredential("anonymous", "janeDoe@contoso.com")
+
+            ' Copy the contents of the file to the request stream.
+            Dim fileContents As Byte()
+
+            Using sourceStream As StreamReader = New StreamReader("testfile.txt")
+                fileContents = Encoding.UTF8.GetBytes(sourceStream.ReadToEnd())
+            End Using
+
+            request.ContentLength = fileContents.Length
+
+            Using requestStream As Stream = request.GetRequestStream()
+                requestStream.Write(fileContents, 0, fileContents.Length)
+            End Using
+
+            Using response As FtpWebResponse = CType(request.GetResponse(), FtpWebResponse)
+                Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription)
+            End Using
+        End Sub
+    End Class
+End Namespace
+```

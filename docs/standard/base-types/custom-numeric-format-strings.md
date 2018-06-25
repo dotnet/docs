@@ -209,7 +209,7 @@ Format specifiers that appear in a custom numeric format string are always inter
 - [%](#SpecifierPct)
 - [‰](#SpecifierPerMille)
 - '
-- [\](#SpecifierEscape)
+- [\\](#SpecifierEscape)
 - [.](#SpecifierPt)
 - [,](#SpecifierTh)
 - [E or e](#SpecifierExponent), depending on its position in the format string.

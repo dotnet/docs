@@ -100,7 +100,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
 1. Define the platforms that your app will target.
 
-   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. 
+   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime Identifier catalog](../rid-catalog.md) for a list of runtime identifiers. 
 
    For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 

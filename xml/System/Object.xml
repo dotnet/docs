@@ -569,7 +569,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
 > [!WARNING]
 >  A hash code is intended for efficient insertion and lookup in collections that are based on a hash table. A hash code is not a permanent value. For this reason:  
 >   
->  -   Do not serialize hash code values or store them in databases.  
+> -   Do not serialize hash code values or store them in databases.  
 > -   Do not use the hash code as the key to retrieve an object from a keyed collection.  
 > -   Do not send hash codes across application domains or processes. In some cases, hash codes may be computed on a per-process or per-application domain basis.  
 > -   Do not use the hash code instead of a value returned by a cryptographic hashing function if you need a cryptographically strong hash. For cryptographic hashes, use a class derived from the <xref:System.Security.Cryptography.HashAlgorithm?displayProperty=nameWithType> or <xref:System.Security.Cryptography.KeyedHashAlgorithm?displayProperty=nameWithType> class.  

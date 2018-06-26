@@ -12,7 +12,7 @@ ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47
 
 `byte` denotes an integral type that stores values as indicated in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`byte`|0 to 255|Unsigned 8-bit integer|<xref:System.Byte?displayProperty=nameWithType>|  
   

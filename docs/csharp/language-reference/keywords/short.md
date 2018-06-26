@@ -12,7 +12,7 @@ ms.assetid: 04c10688-e51a-4a87-bfec-83f7fb42ff11
 
 `short` denotes an integral data type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`short`|-32,768 to 32,767|Signed 16-bit integer|<xref:System.Int16?displayProperty=nameWithType>|  
   

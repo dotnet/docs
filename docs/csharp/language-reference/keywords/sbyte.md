@@ -12,7 +12,7 @@ ms.assetid: 1a9c7b48-73d1-4d33-b485-c4faf0a816bc
 
 `sbyte` denotes an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`sbyte`|-128 to 127|Signed 8-bit integer|<xref:System.SByte?displayProperty=nameWithType>|  
   

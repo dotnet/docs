@@ -12,7 +12,7 @@ ms.assetid: 1a7dbaae-b7a0-4111-872a-c88a6d3981ac
 
 The `ushort` keyword indicates an integral data type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=nameWithType>|  
   

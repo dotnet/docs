@@ -38,14 +38,14 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 
 ```c
 // cmdll.c
-// Compile with: /LD
+// Compile with: -LD
 int __declspec(dllexport) SampleMethod(int i)
 {
   return i*10;
 }
 ```
 
-2. Open a Visual Studio x64 (or x32) Native Tools Command Prompt window from the Visual Studio installation directory and compile the `cmdll.c` file by typing **cl /LD cmdll.c** at the command prompt.
+2. Open a Visual Studio x64 (or x32) Native Tools Command Prompt window from the Visual Studio installation directory and compile the `cmdll.c` file by typing **cl -LD cmdll.c** at the command prompt.
 
 3. In the same directory, create the following C# file and name it `cm.cs`:
 
@@ -69,7 +69,7 @@ public class MainClass
 
 > **csc cm.cs** (for the x64 command prompt)
 > —or—
-> **csc /platform:x86 cm.cs** (for the x32 command prompt)
+> **csc -platform:x86 cm.cs** (for the x32 command prompt)
 
 This will create the executable file `cm.exe`.
 

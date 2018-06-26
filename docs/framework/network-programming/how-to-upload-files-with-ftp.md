@@ -1,7 +1,7 @@
 ---
 title: "How to: Upload files with FTP"
 description: "This article shows a sample of how to upload a file to an FTP server."
-ms.date: "06/25/2018"
+ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -48,7 +48,7 @@ namespace Examples.System.Net
 
             using (FtpWebResponse response = (FtpWebResponse)request.GetResponse())
             {
-                Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);
+                Console.WriteLine($"Upload File Complete, status {response.StatusDescription}");
             }
         }
     }
@@ -56,14 +56,13 @@ namespace Examples.System.Net
 ```
 
 ```vb
-Imports System
 Imports System.IO
 Imports System.Net
 Imports System.Text
 
 Namespace Examples.System.Net
-    Public Class WebRequestGetExample
-        Public Shared Sub Main()
+    Public Module WebRequestGetExample
+        Public Sub Main()
             ' Get the object used to communicate with the server.
             Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/test.htm"), FtpWebRequest)
             request.Method = WebRequestMethods.Ftp.UploadFile
@@ -85,9 +84,9 @@ Namespace Examples.System.Net
             End Using
 
             Using response As FtpWebResponse = CType(request.GetResponse(), FtpWebResponse)
-                Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription)
+                Console.WriteLine($"Upload File Complete, status {response.StatusDescription}")
             End Using
         End Sub
-    End Class
+    End Module
 End Namespace
 ```

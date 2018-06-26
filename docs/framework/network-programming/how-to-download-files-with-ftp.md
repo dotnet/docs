@@ -1,7 +1,7 @@
 ---
 title: "How to: Download files with FTP"
 description: "This article shows a sample of how to download a file from an FTP server."
-ms.date: "06/25/2018"
+ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -37,7 +37,7 @@ namespace Examples.System.Net
             StreamReader reader = new StreamReader(responseStream);
             Console.WriteLine(reader.ReadToEnd());
 
-            Console.WriteLine("Download Complete, status {0}", response.StatusDescription);
+            Console.WriteLine($"Download Complete, status {response.StatusDescription}");
 
             reader.Close();
             response.Close();
@@ -47,13 +47,12 @@ namespace Examples.System.Net
 ```
 
 ```vb
-Imports System
 Imports System.IO
 Imports System.Net
 
 Namespace Examples.System.Net
-    Public Class WebRequestGetExample
-        Public Shared Sub Main()
+    Public Module WebRequestGetExample
+        Public Sub Main()
             ' Get the object used to communicate with the server.
             Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/test.htm"), FtpWebRequest)
             request.Method = WebRequestMethods.Ftp.DownloadFile
@@ -67,11 +66,11 @@ Namespace Examples.System.Net
             Dim reader As StreamReader = New StreamReader(responseStream)
             Console.WriteLine(reader.ReadToEnd())
 
-            Console.WriteLine("Download Complete, status {0}", response.StatusDescription)
+            Console.WriteLine($"Download Complete, status {response.StatusDescription}")
 
             reader.Close()
             response.Close()
         End Sub
-    End Class
+    End Module
 End Namespace
 ```

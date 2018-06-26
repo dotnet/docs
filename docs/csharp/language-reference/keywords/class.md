@@ -1,5 +1,5 @@
 ---
-title: "class (C# Reference)"
+title: "class keyword (C# Reference)"
 ms.date: 07/18/2017
 f1_keywords: 
   - "class_CSharpKeyword"
@@ -15,12 +15,13 @@ Classes are declared using the keyword `class`, as shown in the following exampl
 ```csharp
 class TestClass
 {
-    // Methods, properties, fields, events, delegates 
+    // Methods, properties, fields, events, delegates
     // and nested classes go here.
 }
 ```
 
 ## Remarks
+
 Only single inheritance is allowed in C#. In other words, a class can inherit implementation from one base class only. However, a class can implement more than one interface. The following table shows examples of class inheritance and interface implementation:
 
 |Inheritance|Example|
@@ -67,11 +68,13 @@ A class can contain declarations of the following members:
 - [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
 
 ## Example
+
 The following example demonstrates declaring class fields, constructors, and methods. It also demonstrates object instantiation and printing instance data. In this example, two classes are declared. The first class, `Child`, contains two private fields (`name` and `age`), two public constructors and one public method. The second class, `StringTest`, is used to contain `Main`.
 
-[!code-csharp[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/class_1.cs)]
+[!code-csharp[csrefKeywordsTypes#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#5)]
 
 ## Comments
+
 Notice that in the previous example the private fields (`name` and `age`) can only be accessed through the public method of the `Child` class. For example, you cannot print the child's name, from the `Main` method, using a statement like this:
 
 ```csharp
@@ -84,11 +87,13 @@ Types declared inside a class without an access modifier default to `private`, s
 
 Finally, notice that for the object created using the default constructor (`child3`), the age field was initialized to zero by default.
 
-## C# Language Specification
+## C# language specification
+
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+## See also
+
+[C# Reference](../../../csharp/language-reference/index.md)  
+[C# Programming Guide](../../../csharp/programming-guide/index.md)  
+[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+[Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

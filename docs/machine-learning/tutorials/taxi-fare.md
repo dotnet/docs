@@ -77,7 +77,7 @@ Create classes for the input data and the predictions:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TaxiTrip.cs*. Then, select the **Add** button.
-1. Add the following `using` statements to the new file:
+1. Add the following `using` directives to the new file:
 
    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#1 "Add necessary usings")]
 
@@ -91,19 +91,23 @@ The `TaxiTripFarePrediction` class is used to represent predicted results. It ha
 
 ## Define data and model paths
 
-Go back to the *Program.cs* file and create three global constants to hold the paths to the files with data sets and to save the model:
+Go back to the *Program.cs* file and add three fields to hold the paths to the files with data sets and the file to save the model:
 
-* `_datapath` has the path to the data set used to train the model.
-* `_testdatapath` has the path to the data set used to evaluate the model.
-* `_modelpath` has the path where the trained model is stored.
+* `_datapath` contains the path to the file with the data set used to train the model.
+* `_testdatapath` contains the path to the file with the data set used to evaluate the model.
+* `_modelpath` contains the path to the file where the trained model is stored.
 
-Add the following code to the line right above the `Main` method to specify those paths:
+Add the following code right above the `Main` method to specify those paths:
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
 
+To make the preceding code compile, add the following `using` directives at the top of the *Program.cs* file:
+
+[!code-csharp[AddUsingsForPaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#17 "Using statements for path definitions")]
+
 ## Create a learning pipeline
 
-Add the following additional `using` statements to the top of the *Program.cs* file:
+Add the following additional `using` directives to the top of the *Program.cs* file:
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
@@ -130,7 +134,7 @@ var pipeline = new LearningPipeline();
 
 ## Load and transform data
 
-The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` constant. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
+The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` field. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
 
 ```csharp
 pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, separator: ','));
@@ -210,7 +214,7 @@ Using `await` in the `Main` method means the `Main` method must have the `async`
 
 [!code-csharp[AsyncMain](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#8 "Make the Main method async and return a task.")]
 
-You also need to add the following `using` statement at the top of the file:
+You also need to add the following `using` directive at the top of the file:
 
 [!code-csharp[UsingTasks](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#9 "Add System.Threading.Tasks. to your usings.")]
 

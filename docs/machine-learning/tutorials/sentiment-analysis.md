@@ -108,13 +108,13 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#1 "Add necessary usings")]
 
-You need to create three global variables to hold the path to the recently downloaded files:
+You need to create three global fields to hold the paths to the recently downloaded files:
 
 * `_dataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_modelPath` has the path where the trained model is saved.
 
-Add the following code to the line right above the `Main` method to specify the recently downloaded files:
+Add the following code to the line right above the `Main` method to specify those paths:
 
 [!code-csharp[Declare file variables](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#2 "Declare variables to store data files")]
 

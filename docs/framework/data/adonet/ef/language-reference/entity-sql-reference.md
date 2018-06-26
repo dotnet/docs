@@ -44,7 +44,7 @@ This section contains [!INCLUDE[esql](../../../../../../includes/esql-md.md)] re
 |[< (Less Than)](../../../../../../docs/framework/data/adonet/ef/language-reference/less-than-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than the right expression.|  
 |[<= (Less Than or Equal To)](../../../../../../docs/framework/data/adonet/ef/language-reference/less-than-or-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than or equal to the right expression.|  
 |[&#91;NOT&#93; BETWEEN](../../../../../../docs/framework/data/adonet/ef/language-reference/between-entity-sql.md)|Determines whether an expression results in a value in a specified range.|  
-|[!= (Not Equal To)](../../../../../../docs/framework/data/adonet/ef/language-reference/not-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression is not equal to the right expression.|  
+|[\!= (Not Equal To)](../../../../../../docs/framework/data/adonet/ef/language-reference/not-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression is not equal to the right expression.|  
 |[&#91;NOT&#93; LIKE](../../../../../../docs/framework/data/adonet/ef/language-reference/like-entity-sql.md)|Determines whether a specific character string matches a specified pattern.|  
   
 ## Logical and Case Expression Operators  
@@ -53,7 +53,7 @@ This section contains [!INCLUDE[esql](../../../../../../includes/esql-md.md)] re
 |Operator|Description|  
 |--------------|-----------------|  
 |[&& (Logical AND)](../../../../../../docs/framework/data/adonet/ef/language-reference/and-entity-sql.md)|Logical AND.|  
-|[! (Logical NOT)](../../../../../../docs/framework/data/adonet/ef/language-reference/not-entity-sql.md)|Logical NOT.|  
+|[\! (Logical NOT)](../../../../../../docs/framework/data/adonet/ef/language-reference/not-entity-sql.md)|Logical NOT.|  
 |[&#124;&#124; (Logical OR)](../../../../../../docs/framework/data/adonet/ef/language-reference/or-entity-sql.md)|Logical OR.|  
 |[CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md)|Evaluates a set of Boolean expressions to determine the result.|  
 |[THEN](../../../../../../docs/framework/data/adonet/ef/language-reference/then-entity-sql.md)|The result of a [WHEN](http://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|  

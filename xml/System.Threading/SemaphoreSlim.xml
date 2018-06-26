@@ -562,6 +562,7 @@ If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.SemaphoreSlim" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -841,6 +842,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />.</summary>
         <returns>A task that will complete when the semaphore has been entered.</returns>
         <remarks>To be added.</remarks>
+       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.SemaphoreSlim" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAsync">
@@ -1081,6 +1083,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
+       <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.SemaphoreSlim" /> has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

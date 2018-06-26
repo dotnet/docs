@@ -12,9 +12,9 @@ ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
 # float (C# Reference)
 The `float` keyword signifies a simple type that stores 32-bit floating-point values. The following table shows the precision and approximate range for the `float` type.  
   
-|Type|Approximate range|Precision|.NET Framework type|  
+|Type|Approximate range|Precision|.NET type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|-3.4 × 10<sup>38</sup>to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
+|`float`|-3.4 × 10<sup>38</sup> to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
   
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as [double](double.md). Therefore, to initialize a float variable, use the suffix `f` or `F`, as in the following example:  

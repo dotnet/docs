@@ -40,9 +40,9 @@
   
  For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
   
- Currently, the <xref:System.Globalization.JapaneseLunisolarCalendar> is not used by any of the cultures supported by the <xref:System.Globalization.CultureInfo> class. Therefore, this class can be used only to calculate dates in the Japanese lunisolar calendar.  
+ Currently, the <xref:System.Globalization.JapaneseLunisolarCalendar> is not used by any of the cultures supported by the <xref:System.Globalization.CultureInfo> class. Therefore, this class can be used only to calculate dates in the Japanese lunisolar calendar. It cannot be used as the default calendar for any culture supported by the <xref:System.Globalization.CultureInfo> class. 
   
- Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.Calendar>.  
+ Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property returns an array containing all the calendars supported by the culture. You can change the default calendar to any one of the optional calendars supported by a <xref:System.Globalization.CultureInfo> instance. To do this, set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property to the new <xref:System.Globalization.Calendar>.
   
  ]]></format>
     </remarks>
@@ -154,9 +154,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element and the smallest era number is returned in the last element.  
+ The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element, and the smallest era number is returned in the last element.  
   
- The <xref:System.Globalization.JapaneseLunisolarCalendar.Eras%2A> property returns the same values as the <xref:System.Globalization.JapaneseCalendar.Eras%2A> property.  
+ The <xref:System.Globalization.JapaneseLunisolarCalendar.Eras%2A?displayProperty=nameWithType> property returns the same values as the <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

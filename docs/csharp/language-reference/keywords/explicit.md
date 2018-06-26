@@ -22,7 +22,7 @@ The conversion operator converts from a source type to a target type. The source
 
 Omitting the cast results in compile-time error CS0266.
 
-For more information, see [Using Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md).
+For more information, see [Using Conversion Operators](../../programming-guide/statements-expressions-operators/using-conversion-operators.md).
 
 ## Example
 
@@ -42,10 +42,10 @@ The following example defines a struct, `Digit`, that represents a single decima
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[implicit](../../../csharp/language-reference/keywords/implicit.md)  
-[operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
-[How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
+[C# Reference](../index.md)  
+[C# Programming Guide](../../programming-guide/index.md)  
+[C# Keywords](index.md)  
+[implicit](implicit.md)  
+[operator (C# Reference)](operator.md)  
+[How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
 [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)  

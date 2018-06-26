@@ -10,7 +10,7 @@ ms.assetid: e981309a-e4bf-444c-8a2b-5c695e6114b1
 ---
 # equals (C# Reference)
 
-The `equals` contextual keyword is used in a `join` clause in a query expression to compare the elements of two sequences. For more information, see [join clause](../../../csharp/language-reference/keywords/join-clause.md).
+The `equals` contextual keyword is used in a `join` clause in a query expression to compare the elements of two sequences. For more information, see [join clause](join-clause.md).
 
 ## Example
 
@@ -20,4 +20,4 @@ The following example shows the use of the `equals` keyword in a `join` clause.
 
 ## See also
 
-[LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+[Language Integrated Query (LINQ)](../../linq/index.md)

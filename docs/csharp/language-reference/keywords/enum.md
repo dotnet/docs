@@ -26,15 +26,15 @@ Enumerators can use initializers to override the default values, as shown in the
 enum Day {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
 
-In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../../csharp/programming-guide/enumeration-types.md).
+In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../programming-guide/enumeration-types.md).
 
-Every enumeration type has an underlying type, which can be any integral type except [char](../../../csharp/language-reference/keywords/char.md). The default underlying type of enumeration elements is [int](../../../csharp/language-reference/keywords/int.md). To declare an enum of another integral type, such as [byte](../../../csharp/language-reference/keywords/byte.md), use a colon after the identifier followed by the type, as shown in the following example.
+Every enumeration type has an underlying type, which can be any integral type except [char](char.md). The default underlying type of enumeration elements is [int](int.md). To declare an enum of another integral type, such as [byte](byte.md), use a colon after the identifier followed by the type, as shown in the following example.
 
 ```csharp
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
 
-The approved types for an enum are [byte](../../../csharp/language-reference/keywords/byte.md), [sbyte](../../../csharp/language-reference/keywords/sbyte.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), or [ulong](../../../csharp/language-reference/keywords/ulong.md).
+The approved types for an enum are [byte](byte.md), [sbyte](sbyte.md), [short](short.md), [ushort](ushort.md), [int](int.md), [uint](uint.md), [long](long.md), or [ulong](ulong.md).
 
 A variable of type `Day` can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 
@@ -43,7 +43,7 @@ The default value of an `enum E` is the value produced by the expression `(E)0`.
 > [!NOTE]
 > An enumerator cannot contain white space in its name.
 
-The underlying type specifies how much storage is allocated for each enumerator. However, an explicit cast is necessary to convert from `enum` type to an integral type. For example, the following statement assigns the enumerator `Sun` to a variable of the type [int](../../../csharp/language-reference/keywords/int.md) by using a cast to convert from `enum` to `int`.
+The underlying type specifies how much storage is allocated for each enumerator. However, an explicit cast is necessary to convert from `enum` type to an integral type. For example, the following statement assigns the enumerator `Sun` to a variable of the type [int](int.md) by using a cast to convert from `enum` to `int`.
 
 ```csharp
 int x = (int)Day.Sun;
@@ -53,9 +53,9 @@ When you apply <xref:System.FlagsAttribute?displayProperty=nameWithType> to an e
 
 ## Robust programming
 
-Just as with any constant, all references to the individual values of an enum are converted to numeric literals at compile time. This can create potential versioning issues as described in [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md).
+Just as with any constant, all references to the individual values of an enum are converted to numeric literals at compile time. This can create potential versioning issues as described in [Constants](../../programming-guide/classes-and-structs/constants.md).
 
-Assigning additional values to new versions of enums, or changing the values of the enum members in a new version, can cause problems for dependent source code. Enum values often are used in [switch](../../../csharp/language-reference/keywords/switch.md) statements. If additional elements have been added to the `enum` type, the default section of the switch statement can be selected unexpectedly.
+Assigning additional values to new versions of enums, or changing the values of the enum members in a new version, can cause problems for dependent source code. Enum values often are used in [switch](switch.md) statements. If additional elements have been added to the `enum` type, the default section of the switch statement can be selected unexpectedly.
 
 If other developers use your code, you should provide guidelines about how their code should react if new elements are added to any `enum` types.
 
@@ -91,11 +91,11 @@ If you remove `Flags`, the example displays the following values:
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[Enumeration Types](../../../csharp/programming-guide/enumeration-types.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
-[Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-[Enum Naming Conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces#naming-enumerations)
+[C# Reference](../index.md)  
+[Enumeration Types](../../programming-guide/enumeration-types.md)  
+[C# Keywords](index.md)  
+[Integral Types Table](integral-types-table.md)  
+[Built-In Types Table](built-in-types-table.md)  
+[Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)  
+[Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)  
+[Enum Naming Conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

@@ -53,7 +53,7 @@ int __declspec(dllexport) SampleMethod(int i)
 // cm.cs
 using System;
 using System.Runtime.InteropServices;
-public class MainClass 
+public class MainClass
 {
     [DllImport("Cmdll.dll")]
       public static extern int SampleMethod(int x);
@@ -67,7 +67,7 @@ public class MainClass
 
 4. Open a Visual Studio x64 (or x32) Native Tools Command Prompt window from the Visual Studio installation directory and compile the `cm.cs` file by typing:
 
-> **csc cm.cs** (for the x64 command prompt) 
+> **csc cm.cs** (for the x64 command prompt)
 > —or—
 > **csc /platform:x86 cm.cs** (for the x32 command prompt)
 
@@ -86,7 +86,7 @@ SampleMethod() returns 50.
 ## See also
 
 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>  
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+[C# Reference](../index.md)  
+[C# Programming Guide](../../programming-guide/index.md)  
+[C# Keywords](index.md)  
+[Modifiers](modifiers.md)  

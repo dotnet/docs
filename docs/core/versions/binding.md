@@ -1,11 +1,14 @@
 ---
 title: .NET Core version binding
-description: Learn How the .NET core runtime finds and chooses versions during build and run for your program.
+description: Learn How .NET Core finds and chooses runtime versions for your program.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/21/2018
 ---
 # .NET Core version binding
+
+Rework notes:  Keep clear separation between SDK & runtime selection.
+
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
@@ -30,27 +33,29 @@ There are multiple actions where version binding takes place:
 - Select an [SDK](#select-an-sdk-version).
 - Select a [target framework](#build-time-version-binding) for the application.
 - Select a [minimum runtime version](#runtime-version-binding).
-- Selecting a runtime to run on.
 
 ## Select an SDK version
 
-Your first experience with .NET Core is typically with an SDK command, for example `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` command must use a chosen version of the SDK for these commands. .NET Core uses the latest SDK by default. If you've installed the .NET Core 99.9 SDK, the `dotnet` command uses .NET Core SDK 99.9 even when you're targeting .NET Core 2.0 development. Note that this is true for preview versions as well as released versions.
+Your first experience with .NET Core is typically with an SDK command, for example `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` command must use a chosen version of the SDK for these commands. .NET Core uses the latest SDK by default. You'll use the .NET Core 99.9 SDK when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. Note that this is true for preview versions as well as released versions.
 
-You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core versions. You can target multiple versions of .NET Core on different projects, using the same SDK tools for all projects.
+You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 When needed, you configure `dotnet` to use a different version of the SDK. You specify that version in a [global.json file](../tools/global-json.md). The "use latest" policy means you only use `global.json` to specify a .NET Core version earlier than the latest installed version.
 
-`global.json` can be used at different scopes:
+`global.json` can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first `global.json` it finds. You control which projects a given `global.json` applies to by its place in the file system:
 
-- Per project, placed beside the project file.
-- For a set of projects, placed at a common [grand-]parent for all of the projects. This location can be as high in the directory structure as the root of a drive.
+Search for a global.json file, iteratively navigating the path upward from the current working directory. If a global.json is found:
+
+- Use the SDK it specifies if that version is found.
+- If the SDK specified in the global.json is not found, roll forward to the latest SDK.
+- If no global.json file is found, use the latest SDK
 
 The following example shows the `global.json` syntax:
 
 ``` json
 {
   "sdk": {
-    "version": "1.0.0"
+    "version": "2.0.0"
   }
 }
 ```
@@ -75,11 +80,9 @@ You may build your project against multiple frameworks. Setting multiple target 
 <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
 ```
 
-A given SDK supports a fixed set of frameworks, typically capped to the target framework of the runtimes it includes. For example, the .NET Core 2.0 SDK includes the .NET Core 2.0 runtime, which is an implementation of the `netcoreapp2.0` target framework. The .NET Core 2.0 SDK will support `netcoreapp1.0`, `netcoreapp1.1`, and `netcoreapp2.0` but not `netcoreapp2.1` (or higher). You install the .NET Core 2.1 SDK to build for `netcoreapp2.1`.
+A given SDK supports a fixed set of frameworks,  capped to the target framework of the runtime it ships with. For example, the .NET Core 2.0 SDK includes the .NET Core 2.0 runtime, which is an implementation of the `netcoreapp2.0` target framework. The .NET Core 2.0 SDK will support `netcoreapp1.0`, `netcoreapp1.1`, and `netcoreapp2.0` but not `netcoreapp2.1` (or higher). You install the .NET Core 2.1 SDK to build for `netcoreapp2.1`
 
 .NET Standard target frameworks are also capped in the same way. The .NET Core 2.0 SDK is capped to `netstandard2.0`.
-
-A given SDK defines a fixed minimum runtime patch version for each target framework that it supports. The minimum runtime patch version is maintained at the `.0` version (for example, `2.0.0`) for the lifetime of a major/minor runtime version family.
 
 You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
 
@@ -130,7 +133,7 @@ All NuGet dependencies are resolved as part of the publish operation and reside 
 Developers should remember the following rules:
 
 - Runtimes are searched for in the following order (the first found is loaded):
-  - Highest patch version (check that the minimum runtime path version is satisfied, otherwise error)
+  - Highest patch version (check that the minimum runtime patch version is satisfied, otherwise error)
   - Highest minor version
 - If an acceptable runtime is not found, the application does not run and an error message explains why.
 
@@ -143,22 +146,10 @@ The publishing process will select the latest patch version of the given runtime
 - The application doesn't specify a hosting environment.
 - The developer generates a target framework for the application.
 
-The target framework (including the latest instealled security patches) are packaged with the application.
+The target framework (including the latest installed security patches) are packaged with the application.
 
 It is an error if the minimum version specified for an application is not satisfied. `dotnet publish` binds to latest runtime patch version (within a given major.minor version family). `dotnet publish` does not support the roll-forward semantics of `dotnet run`.
 
 ## Publish an application with a specific .NET Core version
 
-`dotnet publish` accepts a version to use for publishing for both self-contained and framework-dependent apps. This is primarily for CI/CD scenarios or other times when you must publish an application, but can't update source code.
-
-You publish with the latest runtime patch version for the given target framework specifying `--latest`. This argument has the same default runtime binding behavior for publishing self-contained applications. See the following example:
-
-``` console
-dotnet publish -c release -o app --latest
-```
-
-You publish with a specific runtime patch version for the given target framework specifying `--version=[version]`. It is an error if this version is missing. It's an error if the given version doesn't support the target framework (as a lower bound). You may specify higher versions (even major versions), provided they exist on the machine. You can see this usage in the following example:
-
-``` console
-dotnet publish -c release -o app --version=3.1.0
-```
+`dotnet publish` accepts a version to use for publishing for both self-contained and runtime-dependent apps. This is primarily for CI/CD scenarios or other times when you must publish an application, but can't update source code.

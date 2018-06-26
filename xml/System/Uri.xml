@@ -3723,23 +3723,31 @@ If you used an escaped string to construct this instance (for example, "http://[
   
  The following example shows the absolute path and segments for two URIs. The second example illustrates that the fragment and query are not part of the absolute path and therefore are not segments.  
   
- Absolute URI  
+ Absolute URI:  
  http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm  
   
- Absolute path  
+ Absolute path:  
  /Chapters/Chapter1/Sections/Section1.htm  
   
- Segments  
- /Chapters/Chapter1/Sections/Section1.htm  
+ Segments:  
+ - /
+ - Chapters/
+ - Chapter1/
+ - Sections/
+ - Section1.htm  
   
- Absolute URI  
+ Absolute URI:  
  http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm#page1?answer=NO  
   
- Absolute path  
+ Absolute path:  
  /Chapters/Chapter1/Sections/Section1.htm  
   
- Segments  
- /Chapters/Chapter1/Sections/Section1.htm  
+ Segments:  
+ - /
+ - Chapters/
+ - Chapter1/
+ - Sections/
+ - Section1.htm  
   
  Note that because the absolute path starts with a '/', the first segment contains it and nothing else.  
   

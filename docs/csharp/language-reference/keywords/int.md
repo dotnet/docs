@@ -12,9 +12,9 @@ ms.assetid: 212447b4-5d2a-41aa-88ab-84fe710bdb52
 
 `int` denotes an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|Default Value|  
-|----------|-----------|----------|-------------------------|-------------------|  
-|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|0|  
+|Type|Range|Size|.NET type|  
+|----------|-----------|----------|-------------------------|  
+|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|  
   
 ## Literals  
  

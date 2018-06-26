@@ -12,7 +12,7 @@ ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
 
 The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.
 
-|Type|Approximate Range|Precision|.NET Framework type|
+|Type|Approximate Range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
 |`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|
 

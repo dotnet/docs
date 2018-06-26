@@ -33,7 +33,7 @@ One potential concern with serverless implementations is startup time. To conser
 
 * Some providers allow users to pay for service levels that guarantee infrastructure is "always on"
 * Implement a keep-alive mechanism (ping the endpoint to keep it "awake")
-* Use orchestration like Kubernetes with a containerized function approach [SAS: Can you elaborate on how this helps with Startup time?]
+* Use orchestration like Kubernetes with a containerized function approach (the host is already running so spinning up new instances is extremely fast)
 
 ## Database updates and migrations
 
@@ -61,7 +61,7 @@ An often overlooked aspect of DevOps is monitoring applications once deployed. I
 
 ## Inter-service dependencies
 
-A serverless architecture may include functions that rely on other functions. In fact, it is not uncommon in a serverless architecture to have multiple services call each other as part of an interaction or distributed transaction. To avoid strong coupling, it is recommended that services don't reference each other directly. When the endpoint for a service needs to change, direct references could result in major refactoring. A suggested solution is to provide a service discovery mechanism, such as a registry, that provides the appropriate end point for a request type. [SAS: Also mention using tools like message queues as a way to communicate between services without direct dependencies?]
+A serverless architecture may include functions that rely on other functions. In fact, it is not uncommon in a serverless architecture to have multiple services call each other as part of an interaction or distributed transaction. To avoid strong coupling, it is recommended that services don't reference each other directly. When the endpoint for a service needs to change, direct references could result in major refactoring. A suggested solution is to provide a service discovery mechanism, such as a registry, that provides the appropriate end point for a request type. Another solution is to leverage messaging services like queues or topics for communication between services.
 
 ## Managing failure and providing resiliency
 

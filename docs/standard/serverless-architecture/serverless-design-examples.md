@@ -27,14 +27,17 @@ Serverless can accommodate the CQRS pattern by providing the segregated endpoint
 
 ## Event-based processing
 
-In message-based systems, events are often collected in queues or publisher/subscriber topics to be acted upon. These events can trigger serverless functions to execute a piece of business logic. An example of event-based processing is event-sourced systems. An "event" is raised to mark a task as complete. A serverless function triggered by the event updates the appropriate database document. A second serverless function may use the event to update the read model for the system. [Azure Event Grid](/azure/event-grid/overview) provides a way to integrate events with functions as subscribers. [SAS: Probably need to go into more detail on event sourcing or make "event-sourced systems" a hyperlink, perhaps to https://martinfowler.com/eaaDev/EventSourcing.html.]
+In message-based systems, events are often collected in queues or publisher/subscriber topics to be acted upon. These events can trigger serverless functions to execute a piece of business logic. An example of event-based processing is event-sourced systems. An "event" is raised to mark a task as complete. A serverless function triggered by the event updates the appropriate database document. A second serverless function may use the event to update the read model for the system. [Azure Event Grid](/azure/event-grid/overview) provides a way to integrate events with functions as subscribers.
+
+> Events are informational messages. You can also read more about the [Event Sourcing pattern](/azure/architecture/patterns/event-sourcing).
 
 ## File triggers and transformations
 
 Extract, Transform, and Load (ETL) is a common business function. Serverless is a great solution for ETL because it allows code to be triggered as part of a pipeline. Individual code components can address various aspects. One serverless function may download the file, another applies the transformation and another loads the data. The code can be tested and deployed independently, making it easier to maintain and scale where needed.
 
 ![Serverless file triggers and transformations](./media/serverless-file-triggers.png)
-[SAS: What leads to abnormal behavior in this diagram? You should consider labeling the stream analytics icon since I wasn't familiar with it and I'm guessing many readers also won't be by seeing it alone.]
+
+In the diagram, "cool storage" provides data that is parsed in [Azure Stream Analytics](/azure/stream-analytics). Any issues encountered in the data stream triggers an Azure Function to address the anomaly.
 
 ## Asynchronous background processing and messaging
 
@@ -73,6 +76,7 @@ An API gateway provides a single point of entry for clients and then intelligent
 * [Challenges and solutions for distributed data management](../microservices-architecture/architect-microservice-container-applications/distributed-data-management.md)
 * [Designing microservices: identifying microservice boundaries](/azure/architecture/microservices/microservice-boundaries)
 * [Event Hubs](/azure/event-hubs/event-hubs-what-is-event-hubs)
+* [Event Sourcing pattern](/azure/architecture/patterns/event-sourcing)
 * [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern.md)
 * [IoT Hub](/azure/iot-hub)
 * [Service Bus](/service-bus)

@@ -7,7 +7,7 @@ ms.assetid: fcc1c1a5-0e42-4226-a128-81492a9bf719
 ---
 # false literal (C# Reference)
 
-Represents the boolean value false.  
+Represents the boolean value false.
 
 ## Example
 
@@ -15,11 +15,11 @@ Represents the boolean value false.
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[true](../../../csharp/language-reference/keywords/true.md)  
+[C# Reference](../index.md)  
+[C# Programming Guide](../../programming-guide/index.md)  
+[C# Keywords](index.md)  
+[true](true.md)  

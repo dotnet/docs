@@ -60,9 +60,9 @@ In the following example, an [int](int.md), a [short](short.md), and a `float` a
 ## See also
 
 <xref:System.Single>  
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+[C# Reference](../index.md)  
+[C# Programming Guide](../../programming-guide/index.md)  
+[Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)  
 [C# Keywords](index.md)  
 [Integral Types Table](integral-types-table.md)  
 [Built-In Types Table](built-in-types-table.md)  

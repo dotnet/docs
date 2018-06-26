@@ -1,6 +1,6 @@
 ---
-title: .NET Core 2 and later version binding
-description: Learn How the .NET runtime finds and chooses versions during build and run for your program.
+title: .NET Core version binding
+description: Learn How the .NET core runtime finds and chooses versions during build and run for your program.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/21/2018
@@ -16,13 +16,12 @@ ms.date: 06/21/2018
 - Select a runtime to run an application (for example, with `dotnet run`).
 - Select a runtime to publish an application (with `dotnet publish`).
 
-The installation structure is machine global and in the path by default. This rule enables a developer to access all .NET Core versions from any command prompt. The structure enables updating all apps to use a new .NET Core patch version by installing it in this central structure/location. You may also use private .NET Core installations without use of the path.
+The installation structure is machine global and in the path by default. The structure enables updating all apps to use a new .NET Core patch version by installing it in this central structure/location. You may also use private .NET Core installations without use of the path.
 
 .NET Core applies a set of policies that determines which versions of the .NET Core runtime and SDK are used. The different scenarios and policies are defined in this document.
 
 These policies perform the following roles:
 
-- Provide an implicit "version manager" experience.
 - Enable easy and efficient deployment of .NET Core, including security and reliability updates.
 - Enable developers to use the latest tools and commands independent of target runtime.
 
@@ -88,14 +87,14 @@ You can override the minimum runtime patch version (to higher or lower versions)
 <RuntimeFrameworkVersion>2.0.4</RuntimeFrameworkVersion>
 ```
 
-When you target multiple frameworks, you must specify the minimum runtime patch version to the specific .NET Core target framework, as shown in the following example:
+ The `RuntimeFrameworkVersion` element will override the default version policy if that element is present in the project file. When you target multiple frameworks, you must specify the minimum runtime patch version to the specific target framework, as shown in the following example for .NET Core:
 
 ``` xml
 <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
 <RuntimeFrameworkVersion Condition="'$(TargetFramework)' == 'netcoreapp2.0'">2.0.4</RuntimeFrameworkVersion>
 ```
 
-A given SDK supports a fixed set of target frameworks. Typically, the target frameworks are the SDK framework version and a set of earlier versions.
+A given SDK supports a fixed set of target frameworks. Typically, the target frameworks are the SDK framework version and all earlier versions.
 
 ## Runtime version binding
 
@@ -126,9 +125,7 @@ Minor version roll-forward has one side-effect that may affect end users. Consid
 - 2.0.5 is later installed. 2.0.5 will be used for subsequent application launches, not 2.2.2.
 - It's possible that 2.0.5 and 2.2.2 might behave differently, particularly for scenarios like serializing binary data.
 
-NuGet dependencies are treated differently. An application might be built for .NET Core 2.0 but run on .NET Core 2.1 due to this algorithm. There may be later versions of an application's NuGet dependencies that target .NET Core 2.1. These later versions aren't considered or installed. All NuGet dependencies are resolved as part of the publish operation and reside as assemblies (.dlls) in a flat directory structure. These assemblies should run on .NET Core 2.1 due to its compatibility promise for existing applications and binaries.
-
-Occasionally, ASP.NET packages are deployed via a web host rather than with a published application. In those cases, the web host should correctly configure their environments based on published guidance such that all supported ASP.NET applications run correctly.
+All NuGet dependencies are resolved as part of the publish operation and reside as assemblies (.dlls) in a flat directory structure. These assemblies should run on .NET Core 2.1 due to its compatibility promise for existing applications and binaries.
 
 Developers should remember the following rules:
 
@@ -139,14 +136,14 @@ Developers should remember the following rules:
 
 ## Publish a self-contained application
 
-You can publish an application as a [**self-contained distribution**](../deploying/#self-contained-deployments-scd). This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime binding occurs at publishing time, not run-time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployments-scd). This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime binding occurs at publishing time, not run-time.
 
 The publishing process will select the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family, independent of the existence of earlier patch versions or minimum runtime patch version values. The publishing process differs from `dotnet build` runtime selection for two reasons:
 
 - The application doesn't specify a hosting environment.
-- The developer generates a final configuration for the application (that can't be practically modified). The best runtime choice is the latest installed runtime patch version. It's the same version used for development and it has the latest (per the machine) security and reliability fixes.
+- The developer generates a target framework for the application.
 
-The `runtimeframeworkversion` element will override the default version policy if that element is present in the project file.
+The target framework (including the latest instealled security patches) are packaged with the application.
 
 It is an error if the minimum version specified for an application is not satisfied. `dotnet publish` binds to latest runtime patch version (within a given major.minor version family). `dotnet publish` does not support the roll-forward semantics of `dotnet run`.
 

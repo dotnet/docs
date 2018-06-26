@@ -33,7 +33,6 @@ The use of a single version number makes it easier for users to know what versio
 
 One can think of these policies performing the following roles:
 
-* Provide an implicit "version manager" experience.
 * Enable easy and efficient deployment of .NET Core, including security and reliability updates.
 * Enable developers to use the latest tools and commands independent of target runtime.
 

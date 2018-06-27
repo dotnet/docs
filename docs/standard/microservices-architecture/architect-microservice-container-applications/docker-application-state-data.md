@@ -1,4 +1,4 @@
----
+﻿---
 title: State and data in Docker applications
 description: .NET Microservices Architecture for Containerized .NET Applications | State and data in Docker applications
 author: CESARDELATORRE
@@ -53,5 +53,5 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 
 
 >[!div class="step-by-step"]
-[Previous] (containerize-monolithic-applications.md)
-[Next] (service-oriented-architecture.md)
+[Previous](containerize-monolithic-applications.md)
+[Next](service-oriented-architecture.md)

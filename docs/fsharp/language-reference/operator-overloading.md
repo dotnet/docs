@@ -15,7 +15,7 @@ This topic describes how to overload arithmetic operators in a class or record t
 static member (operator-symbols) (parameter-list) =
     method-body
 // Overloading an operator at the global level
-let [inline] (operator-symbols) parameter-list = function-body
+let [inline](operator-symbols) parameter-list = function-body
 ```
 
 ## Remarks

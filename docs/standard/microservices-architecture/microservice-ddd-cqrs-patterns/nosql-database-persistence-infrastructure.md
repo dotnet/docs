@@ -1,4 +1,4 @@
----
+﻿---
 title: Using NoSQL databases as a persistence infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | Using NoSQL databases as a persistence infrastructure
 author: CESARDELATORRE
@@ -328,5 +328,5 @@ If the `ESHOP_AZURE_COSMOSDB` global variable is empty, meaning that it is comme
 
 
 >[!div class="step-by-step"]
-[Previous] (infrastructure-persistence-layer-implemenation-entity-framework-core.md)
-[Next] (microservice-application-layer-web-api-design.md)
+[Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+[Next](microservice-application-layer-web-api-design.md)

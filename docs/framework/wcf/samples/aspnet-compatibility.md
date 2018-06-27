@@ -1,4 +1,4 @@
----
+﻿---
 title: "ASP.NET Compatibility"
 ms.date: "03/30/2017"
 ms.assetid: c8b51f1e-c096-4c42-ad99-0519887bbbc5
@@ -16,8 +16,8 @@ This sample demonstrates how to enable [!INCLUDE[vstecasp](../../../../includes/
 >   
 >  1.  Open **Control Panel**.  Open the **Administrative Tools** applet under the **System and Security** heading. Open the **Internet Information Services (IIS) Manager** applet.  
 > 2.  Expand the treeview in the **Connections** pane. Select the **Application Pools** node.  
-> 3.  To set the default application pool to use [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] (which may cause incompatibility problems with existing sites), right-click the **DefaultAppPool** list item and select **Basic Settings…**. Set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later).  
-> 4.  To create a new application pool that uses [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] (to preserve compatibility for other applications), right-click the **Application Pools** node and select **Add Application Pool…**. Name the new application pool, and set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later). After running the setup steps below, right-click the **ServiceModelSamples** application and select **Manage Application**, **Advanced Settings…**. Set the **Application Pool** to the new application pool.  
+> 3.  To set the default application pool to use [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)](which may cause incompatibility problems with existing sites), right-click the **DefaultAppPool** list item and select **Basic Settings…**. Set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later).  
+> 4.  To create a new application pool that uses [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)](to preserve compatibility for other applications), right-click the **Application Pools** node and select **Add Application Pool…**. Name the new application pool, and set the **.Net Framework Version** pull-down to **.Net Framework v4.0.30128** (or later). After running the setup steps below, right-click the **ServiceModelSamples** application and select **Manage Application**, **Advanced Settings…**. Set the **Application Pool** to the new application pool.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

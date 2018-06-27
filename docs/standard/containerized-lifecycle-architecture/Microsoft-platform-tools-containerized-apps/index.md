@@ -1,4 +1,4 @@
----
+﻿---
 title: Introduction to the Microsoft platform and tools for containerized apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
@@ -53,5 +53,5 @@ With VSTS, developers can create container-focused DevOps for a fast, iterative 
 Thus, Microsoft offers a complete foundation for an end-to-end containerized Docker application life cycle. However, it is *a collection of products and technologies that allow you to optionally select and integrate with existing tools and processes*. The flexibility in a broad approach along with the strength in the depth of capabilities place Microsoft in a strong position for containerized Docker application development.
 
 >[!div class="step-by-step"]
-[Previous] (../Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
-[Next] (../design-develop-containerized-apps/index.md)
+[Previous](../Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
+[Next](../design-develop-containerized-apps/index.md)

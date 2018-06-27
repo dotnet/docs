@@ -1,4 +1,4 @@
----
+﻿---
 title: Defining your multi-container application with docker-compose.yml
 description: .NET Microservices Architecture for Containerized .NET Applications | Defining your multi-container application with docker-compose.yml
 author: CESARDELATORRE
@@ -548,5 +548,5 @@ The overall takeway here is that you are able to build your application the same
 
 
 >[!div class="step-by-step"]
-[Previous] (data-driven-crud-microservice.md)
-[Next] (database-server-container.md)
+[Previous](data-driven-crud-microservice.md)
+[Next](database-server-container.md)

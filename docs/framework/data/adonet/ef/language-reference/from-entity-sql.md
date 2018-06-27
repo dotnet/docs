@@ -131,7 +131,7 @@ from (C as c join D as d) cross apply c.Names as e
 from (C as c join D as d) cross apply c.Names as e  
 ```  
   
- In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (unlike [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.  
+ In [!INCLUDE[esql](../../../../../../includes/esql-md.md)](unlike [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.  
   
 ## Pulling Up Keys from Nested Queries  
  Certain types of queries that require pulling up keys from a nested query are not supported. For example, the following query is valid:  

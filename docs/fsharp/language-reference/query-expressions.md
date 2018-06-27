@@ -1125,29 +1125,29 @@ GO
 USE MyDatabase;
 GO
 
-CREATE TABLE [dbo].[Course] (
+CREATE TABLE [dbo].[Course](
 [CourseID]   INT           NOT NULL,
 [CourseName] NVARCHAR (50) NOT NULL,
 PRIMARY KEY CLUSTERED ([CourseID] ASC)
 );
 
-CREATE TABLE [dbo].[Student] (
+CREATE TABLE [dbo].[Student](
 [StudentID] INT           NOT NULL,
 [Name]      NVARCHAR (50) NOT NULL,
 [Age]       INT           NULL,
 PRIMARY KEY CLUSTERED ([StudentID] ASC)
 );
 
-CREATE TABLE [dbo].[CourseSelection] (
+CREATE TABLE [dbo].[CourseSelection](
 [ID]        INT NOT NULL,
 [StudentID] INT NOT NULL,
 [CourseID]  INT NOT NULL,
 PRIMARY KEY CLUSTERED ([ID] ASC),
-CONSTRAINT [FK_CourseSelection_ToTable] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Student] ([StudentID]) ON DELETE NO ACTION ON UPDATE NO ACTION,
-CONSTRAINT [FK_CourseSelection_Course_1] FOREIGN KEY ([CourseID]) REFERENCES [dbo].[Course] ([CourseID]) ON DELETE NO ACTION ON UPDATE NO ACTION
+CONSTRAINT [FK_CourseSelection_ToTable] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Student]([StudentID]) ON DELETE NO ACTION ON UPDATE NO ACTION,
+CONSTRAINT [FK_CourseSelection_Course_1] FOREIGN KEY ([CourseID]) REFERENCES [dbo].[Course]([CourseID]) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
-CREATE TABLE [dbo].[LastStudent] (
+CREATE TABLE [dbo].[LastStudent](
 [StudentID] INT           NOT NULL,
 [Name]      NVARCHAR (50) NOT NULL,
 [Age]       INT           NULL,

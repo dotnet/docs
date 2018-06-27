@@ -1,4 +1,4 @@
----
+﻿---
 title: Designing the microservice application layer and Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing the microservice application layer and Web API
 author: CESARDELATORRE
@@ -42,5 +42,5 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 
 
 >[!div class="step-by-step"]
-[Previous] (nosql-database-persistence-infrastructure.md)
-[Next] (microservice-application-layer-implementation-web-api.md)
+[Previous](nosql-database-persistence-infrastructure.md)
+[Next](microservice-application-layer-implementation-web-api.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Run composed and microservices-based applications in production environments
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
@@ -29,5 +29,5 @@ The capabilities provided by orchestrators and schedulers are very complex to de
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (manage-production-docker-environments.md)
+[Previous](index.md)
+[Next](manage-production-docker-environments.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Designing validations in the domain model layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing validations in the domain model layer
 author: CESARDELATORRE
@@ -126,5 +126,5 @@ Using field validation with data annotations, for example, you do not duplicate 
 
 
 >[!div class="step-by-step"]
-[Previous] (enumeration-classes-over-enum-types.md)
-[Next] (client-side-validation.md)
+[Previous](enumeration-classes-over-enum-types.md)
+[Next](client-side-validation.md)

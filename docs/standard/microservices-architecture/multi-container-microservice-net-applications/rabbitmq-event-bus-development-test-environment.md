@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing an event bus with RabbitMQ for the development or test environment
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing an event bus with RabbitMQ for the development or test environment
 author: CESARDELATORRE
@@ -105,5 +105,5 @@ The Subscribe method accepts an IIntegrationEventHandler object, which is like a
 
 
 >[!div class="step-by-step"]
-[Previous] (integration-event-based-microservice-communications.md)
-[Next] (subscribe-events.md)
+[Previous](integration-event-based-microservice-communications.md)
+[Next](subscribe-events.md)

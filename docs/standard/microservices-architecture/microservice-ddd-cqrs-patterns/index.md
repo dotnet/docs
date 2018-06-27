@@ -64,5 +64,5 @@ DDD training
 
 
 >[!div class="step-by-step"]
-[Previous] (../multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md)
-[Next] (apply-simplified-microservice-cqrs-ddd-patterns.md)
+[Previous](../multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md)
+[Next](apply-simplified-microservice-cqrs-ddd-patterns.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Strategies for handling partial failure
 description: .NET Microservices Architecture for Containerized .NET Applications | Strategies for handling partial failure
 author: CESARDELATORRE
@@ -40,5 +40,5 @@ Strategies for dealing with partial failures include the following.
 
 
 >[!div class="step-by-step"]
-[Previous] (handle-partial-failure.md)
-[Next] (implement-retries-exponential-backoff.md)
+[Previous](handle-partial-failure.md)
+[Next](implement-retries-exponential-backoff.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure hosting recommendations for ASP.NET Core web apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Azure hosting recommendations for ASP.NET web apps
 author: ardalis
@@ -121,4 +121,4 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
     <https://docs.microsoft.com/azure/app-service-web/choose-web-site-cloud-service-vm>
 
 >[!div class="step-by-step"]
-[Previous] (development-process-for-azure.md)
+[Previous](development-process-for-azure.md)

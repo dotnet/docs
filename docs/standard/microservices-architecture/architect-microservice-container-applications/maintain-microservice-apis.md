@@ -1,4 +1,4 @@
----
+﻿---
 title: Creating, evolving, and versioning microservice APIs and contracts
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating, evolving, and versioning microservice APIs and contracts
 author: CESARDELATORRE
@@ -32,5 +32,5 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 
 
 >[!div class="step-by-step"]
-[Previous] (asynchronous-message-based-communication.md)
-[Next] (microservices-addressability-service-registry.md)
+[Previous](asynchronous-message-based-communication.md)
+[Next](microservices-addressability-service-registry.md)

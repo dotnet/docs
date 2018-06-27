@@ -1,4 +1,4 @@
----
+﻿---
 title: Storing application secrets safely during development
 description: .NET Microservices Architecture for Containerized .NET Applications | Storing application secrets safely during development
 author: mjrousos
@@ -47,5 +47,5 @@ Using secrets stored with Secret Manager in an application is accomplished by ca
 
 
 >[!div class="step-by-step"]
-[Previous] (authorization-net-microservices-web-applications.md)
-[Next] (azure-key-vault-protects-secrets.md)
+[Previous](authorization-net-microservices-web-applications.md)
+[Next](azure-key-vault-protects-secrets.md)

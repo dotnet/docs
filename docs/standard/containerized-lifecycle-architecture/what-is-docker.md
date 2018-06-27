@@ -1,4 +1,4 @@
----
+﻿---
 title: What is Docker?
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
@@ -47,5 +47,5 @@ Figure 1-3: Comparison of traditional VMs to Docker containers
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (docker-terminology.md)
+[Previous](index.md)
+[Next](docker-terminology.md)

@@ -74,7 +74,7 @@ manager: "markl"
 |SysTreeView32|Tree|  
 |SysTreeView32|TreeItem|  
   
- **Note** The RichEdit control is supported only for versions shipped with [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] (in RichEd20.dll version 3.1 and later, and MsftEdit.dll version 4.1 and later).  
+ **Note** The RichEdit control is supported only for versions shipped with [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)](in RichEd20.dll version 3.1 and later, and MsftEdit.dll version 4.1 and later).  
   
  The following controls are not supported.  
   

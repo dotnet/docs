@@ -189,7 +189,7 @@ ORDER BY [t0].[CustomerID]
  No resolution is available for this limitation. Specifically, you cannot use `Distinct()` on any result that contains members that are mapped to `text` or `ntext` columns.  
   
 ### Behavior Triggered by Nested Queries  
- [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] (through SP4) binder has some idiosyncrasies that are triggered by nested queries. The set of SQL queries that triggers these idiosyncrasies is not well defined. For this reason, you cannot define the set of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries that might cause SQL Server exceptions.  
+ [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)](through SP4) binder has some idiosyncrasies that are triggered by nested queries. The set of SQL queries that triggers these idiosyncrasies is not well defined. For this reason, you cannot define the set of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries that might cause SQL Server exceptions.  
   
 ### Skip and Take Operators  
  <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).  

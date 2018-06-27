@@ -11,5 +11,5 @@ There are two supported implementations for building server-side containerized D
 
 
 >[!div class="step-by-step"]
-[Previous] (../container-docker-introduction/docker-containers-images-registries.md)
-[Next] (general-guidance.md)
+[Previous](../container-docker-introduction/docker-containers-images-registries.md)
+[Next](general-guidance.md)

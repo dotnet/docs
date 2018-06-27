@@ -1,4 +1,4 @@
----
+﻿---
 title: Official .NET Docker images
 description: .NET Microservices Architecture for Containerized .NET Applications | Official .NET Docker images
 author: CESARDELATORRE
@@ -50,5 +50,5 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 
 
 >[!div class="step-by-step"]
-[Previous] (net-container-os-targets.md)
-[Next] (../architect-microservice-container-applications/index.md)
+[Previous](net-container-os-targets.md)
+[Next](../architect-microservice-container-applications/index.md)

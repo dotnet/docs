@@ -1,4 +1,4 @@
----
+﻿---
 title: When to choose .NET Framework for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Framework for Docker containers
 author: CESARDELATORRE
@@ -59,5 +59,5 @@ In the meantime, if any platform or service in Azure still doesn’t support .NE
 
 
 >[!div class="step-by-step"]
-[Previous] (net-core-container-scenarios.md)
-[Next] (container-framework-choice-factors.md)
+[Previous](net-core-container-scenarios.md)
+[Next](container-framework-choice-factors.md)

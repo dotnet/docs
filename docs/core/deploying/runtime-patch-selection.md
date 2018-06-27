@@ -22,15 +22,15 @@ ms.date: 05/31/2018
 
 Running `restore` as part of the `publish` operation may be undesirable for your scenario. To avoid `restore` during `publish` while creating self-contained applications, do the following:
 
-* Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published
-* Set the `TargetLatestRuntimePatch` property to `true`
+* Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published.
+* Set the `TargetLatestRuntimePatch` property to `true`.
 
 ## No-restore argument with dotnet publish options
 
 If you want to create both self-contained applications and [framework-dependent applications](index.md) with the same project file, and you want to use the `--no-restore` argument with `dotnet publish`, then choose one of the following:
 
-1. Prefer the framework-dependent behavior. If the application is framework-dependent, this is the default behavior. If the application is self-contained, and can use an unpatched 2.1.0 local runtime, set the `TargetLatestRuntimePatch` to `false` in the project file (csproj / vbproj).
+1. Prefer the framework-dependent behavior. If the application is framework-dependent, this is the default behavior. If the application is self-contained, and can use an unpatched 2.1.0 local runtime, set the `TargetLatestRuntimePatch` to `false` in the project file.
 
-2. Prefer the self-contained behavior. If the application is self-contained, this is the default behavior. If the application is framework-dependent, and requires the latest patch installed, set `TargetLatestRuntimePatch` to `true` in the project file (csproj / vbproj).
+2. Prefer the self-contained behavior. If the application is self-contained, this is the default behavior. If the application is framework-dependent, and requires the latest patch installed, set `TargetLatestRuntimePatch` to `true` in the project file.
 
-3. Take explicit control of the runtime framework version by setting `RuntimeFrameworkVersion` to the specific patch version in the project file (csproj / vbproj).
+3. Take explicit control of the runtime framework version by setting `RuntimeFrameworkVersion` to the specific patch version in the project file.

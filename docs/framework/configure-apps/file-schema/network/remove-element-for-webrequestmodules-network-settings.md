@@ -51,7 +51,7 @@ Removes a custom Web request module from the application.
 ## Remarks  
  The `remove` element removes the registered Web request module for the specified URI prefix.  
   
- The value for the `prefix` attribute should be the leading characters of a valid URI -- for example, "http", or "http://www.contoso.com".  
+ The value for the `prefix` attribute should be the leading characters of a valid URI -- for example, "http", or "`http://www.contoso.com` ".  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  

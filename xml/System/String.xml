@@ -11027,7 +11027,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You call the <xref:System.String.Substring%2A> method to extract a substring from a string that begins at a specified character position and ends at the end of the string. The starting character position is a zero-based; in other words, the first character in the string is at index 0, not index 1. To extract a substring that begins at a specified character position and ends before to the end of the string, call the <xref:System.String.Substring%2A> method.  
+ You call the <xref:System.String.Substring%28System.Int32%29> method to extract a substring from a string that begins at a specified character position and ends at the end of the string. The starting character position is a zero-based; in other words, the first character in the string is at index 0, not index 1. To extract a substring that begins at a specified character position and ends before to the end of the string, call the <xref:System.String.Substring%28System.Int32%2CSystem.Int32%29> method.  
   
 > [!NOTE]
 >  This method does not modify the value of the current instance. Instead, it returns a new string that begins at the `startIndex` position in the current string.  
@@ -11035,7 +11035,6 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  To extract a substring that begins with a particular character or character sequence, call a method such as  <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOf%2A> to get the value of `startIndex`. The second example illustrates this; it extracts a key value that begins one character position after the "=" character.  
   
  If `startIndex` is equal to zero, the method returns the original string unchanged.  
-  
    
   
 ## Examples  

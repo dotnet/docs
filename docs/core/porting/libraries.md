@@ -67,18 +67,6 @@ Similar to CAS, Security Transparency allows separating sandboxed code from secu
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
-### global.json
-
-The *global.json* file is an optional file that allows you to set the .NET Core tools version of a project. If you're using nightly builds of .NET Core and wish to specify a specific version of the SDK, specify the version with a *global.json* file. It typically resides in the current working directory or one of its parent directories. 
-
-```json
-{
-  "sdk": {
-    "version": "2.1.0-preview1-006491"
-  }
-}
-```
-
 ## Converting a PCL project
 
 You can convert the targets of a PCL project to .NET Standard by loading the library in Visual Studio 2017 and performing the following steps:

@@ -12,7 +12,7 @@ ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
 
 The `double` keyword signifies a simple type that stores 64-bit floating-point values. The following table shows the precision and approximate range for the `double` type.
 
-|Type|Approximate range|Precision|.NET Framework type|
+|Type|Approximate range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
 |`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=nameWithType>|
 

@@ -14,7 +14,7 @@ The `char` keyword is used to declare an instance of the <xref:System.Char?displ
 
  Unicode characters are used to represent most of the written languages throughout the world.
 
-|Type|Range|Size|.NET Framework type|
+|Type|Range|Size|.NET type|
 |----------|-----------|----------|-------------------------|
 |`char`|U+0000 to U+FFFF|Unicode 16-bit character|<xref:System.Char?displayProperty=nameWithType>|
 

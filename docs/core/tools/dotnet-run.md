@@ -197,9 +197,9 @@ Run the project in the current directory:
 
 Run the specified project:
 
-`dotnet run --project /projects/proj1/proj1.csproj`
+`dotnet run --project ./projects/proj1/proj1.csproj`
 
-Run the project in the current directory (the `--help` argument in this example is passed to the application, since the `--` argument is used):
+Run the project in the current directory (the `--help` argument in this example is passed to the application, since the alone `--` argument is used):
 
 `dotnet run --configuration Release -- --help`
 

@@ -31,7 +31,7 @@ Async code has the following characteristics:
 
 For more information, see the [Async in depth](async-in-depth.md) topic.
 
-The [Asynchronous Programming Patterns](/asynchronous-programming-patterns/index.md) topic provides an overview of the three asynchronous programming patterns supported in .NET:  
+The [Asynchronous Programming Patterns](asynchronous-programming-patterns/index.md) topic provides an overview of the three asynchronous programming patterns supported in .NET:  
   
 -   [Asynchronous Programming Model (APM)](asynchronous-programming-patterns/asynchronous-programming-model-apm.md) (legacy)  
   

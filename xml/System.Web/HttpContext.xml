@@ -25,8 +25,11 @@
 ## Remarks  
  Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.Server%2A> properties for the request.  
   
-   
-  
+> [!IMPORTANT] 
+> This object is ready for garbage collection when the <xref:System.Web.HttpRequest> is completed. Its usage after the request completes could lead to undefined behavior, such as a <xref:System.NullReferenceException>.
+>
+> This object is only available in the thread controlled by ASP.NET. Usage in background threads could lead to undefined behavior.
+
 ## Examples  
  A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192422).  
   

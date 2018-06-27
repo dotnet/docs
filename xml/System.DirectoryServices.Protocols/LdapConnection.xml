@@ -170,7 +170,7 @@
         <exception cref="T:System.ObjectDisposedException">The object handle is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">Thrown if <paramref name="asyncResult" /> was not returned by the corresponding call to <see cref="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /></exception>
+        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> was not returned by the corresponding call to <see cref="Overload:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /></exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
         </permission>
@@ -259,7 +259,7 @@
         <param name="partialMode">A value from <see cref="T:System.DirectoryServices.Protocols.PartialResultProcessing" /> enumeration that specifies the level of partial result to return.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> function.</param>
         <param name="state">An <see cref="T:System.Object" /> that contains the state data for this request.</param>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest(System.DirectoryServices.Protocols.DirectoryRequest,System.DirectoryServices.Protocols.PartialResultProcessing,System.AsyncCallback,System.Object)" /> method sends data asynchronously to the server.</summary>
+        <summary>Sends data asynchronously to the server.</summary>
         <returns>A <see cref="T:System.IAsyncResult" /> object that references the asynchronous send.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object handle is not valid.</exception>
@@ -301,7 +301,7 @@
         <param name="partialMode">A value from <see cref="T:System.DirectoryServices.Protocols.PartialResultProcessing" /> enumeration that specifies the level of partial result to return.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> function.</param>
         <param name="state">An <see cref="T:System.Object" /> that contains the state data for this request.</param>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest(System.DirectoryServices.Protocols.DirectoryRequest,System.TimeSpan,System.DirectoryServices.Protocols.PartialResultProcessing,System.AsyncCallback,System.Object)" /> method sends data asynchronously to the server.</summary>
+        <summary>Sends data asynchronously to the server.</summary>
         <returns>A <see cref="T:System.IAsyncResult" /> object that references the asynchronous send.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object handle is not valid.</exception>
@@ -497,7 +497,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> does not match the <paramref name="asyncResult" /> returned in the <see cref="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /> call.</exception>
+          <paramref name="asyncResult" /> does not match the <paramref name="asyncResult" /> returned in the <see cref="Overload:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /> call.</exception>
         <exception cref="T:System.DirectoryServices.Protocols.LdapException">The error code returned by LDAP does not map to a  <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> enumeration error code.</exception>
         <exception cref="T:System.DirectoryServices.Protocols.DirectoryOperationException">Thrown if the server returned a <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object with an error.</exception>
       </Docs>
@@ -552,7 +552,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> does not match the <paramref name="asyncResult" /> returned in the <see cref="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /> call.</exception>
+          <paramref name="asyncResult" /> does not match the <paramref name="asyncResult" /> returned in the <see cref="Overload:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /> call.</exception>
         <exception cref="T:System.DirectoryServices.Protocols.LdapException">The error code returned by LDAP does not map to a  <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> enumeration error code.</exception>
         <exception cref="T:System.DirectoryServices.Protocols.DirectoryOperationException">Thrown if the server returned a <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object with an error.</exception>
       </Docs>

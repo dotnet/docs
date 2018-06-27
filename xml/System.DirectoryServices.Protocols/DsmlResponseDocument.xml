@@ -284,7 +284,7 @@
       <Docs>
         <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> object.</param>
         <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> method copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <summary>Copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,7 +307,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.Count" /> property gets the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> objects in this collection.</summary>
+        <summary>Gets the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> objects in this collection.</summary>
         <value>The number of <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.IsSynchronized" /> property gets a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> is synchronized (thread-safe).</summary>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> is synchronized (thread-safe).</summary>
         <value>
           <see langword="true" /> if access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -356,7 +356,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.SyncRoot" /> property gets an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />.</summary>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />.</summary>
         <value>An object that can be used to synchronize access to <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

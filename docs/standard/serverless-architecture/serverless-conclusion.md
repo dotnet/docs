@@ -3,7 +3,7 @@ title: Key takeaways - Serverless apps
 description: Serverless provides many benefits and has its own challenges. A summary of key takeaways from this guide.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Conclusion
 

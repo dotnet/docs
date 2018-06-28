@@ -3,7 +3,7 @@ title: Azure Functions - Serverless apps
 description: Azure functions provide serverless capabilities across multiple languages (C#, JavaScript, Java) and platforms to provide event-driven instant scale code.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Azure Functions
 

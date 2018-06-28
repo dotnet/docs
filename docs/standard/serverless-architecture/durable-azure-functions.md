@@ -3,7 +3,7 @@ title: Durable Azure functions - Serverless apps
 description: Durable Azure functions extend the Azure Functions runtime to enable stateful workflows in code.
 author: cecilphillip
 ms.author: cephilli
-ms.date: 05/24/2017
+ms.date: 06/26/2018
 ---
 # Durable Azure functions
 

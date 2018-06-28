@@ -3,7 +3,7 @@ title: Orchestration patterns - Serverless apps
 description: Azure Durable functions pr
 author: cecilphillip
 ms.author: cephilli
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Orchestration Patterns
 

@@ -3,7 +3,7 @@ title: Application Insights - Serverless apps
 description: Application Insights is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps and microservices.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Telemetry with Application Insights
 

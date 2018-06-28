@@ -3,7 +3,7 @@ title: Architecture approaches - Serverless apps
 description: An introduction to architecture approaches for building cloud-based enterprise applications, from N-tier architectures to serverless.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Architecture approaches
 

@@ -3,7 +3,7 @@ title: Serverless architecture - Serverless apps
 description: Exploration of various architectures and apps that are supported by serverless architectures, including web apps, mobile, and IoT.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Serverless architecture
 

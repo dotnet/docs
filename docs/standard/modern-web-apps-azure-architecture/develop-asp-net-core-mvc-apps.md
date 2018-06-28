@@ -1,12 +1,11 @@
 ---
-title: Developing ASP.NET Core MVC Apps
+title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
 ---
-
-# Develop ASP.NET Core MVC Apps
+# Develop ASP.NET Core MVC apps
 
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."  
 > _- Andrew Hunt and David Thomas_
@@ -56,22 +55,22 @@ Once a given request has been matched to a route, but before the action method i
 
 After binding the model but before calling the action method, model validation occurs. Model validation uses optional attributes on the model type, and can help ensure that the provided model object conforms to certain data requirements. Certain values may be specified as required, or limited to a certain length or numeric range, etc. If validation attributes are specified but the model does not conform to their requirements, the property ModelState.IsValid will be false, and the set of failing validation rules will be available to send to the client making the request.
 
-If you are using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
+If you're using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
 
 For web APIs, ASP.NET Core MVC supports [_content negotiation_](/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
 
 > ### References – Mapping Requests to Responses
 >
 > - **Routing to Controller Actions**
- > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
+> <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
 > - **Model Binding**
- > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
+> <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
 > - **Model Validation**
- > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
+> <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
 > - **Filters**
- > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+> <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 
-## Working with Dependencies
+## Working with dependencies
 
 ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enables loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](https://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](https://ardalis.com/new-is-glue)."
 
@@ -391,7 +390,7 @@ Most web APIs should implement a token-based authentication system. Token authen
 > - **Authentication and Authorization for API Apps in Azure App Service**  
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
 
-## Client Communication
+## Client communication
 
 In addition to serving pages and responding to requests for data via web APIs, ASP.NET Core apps can communicate directly with connected clients. This outbound communication can use a variety of transport technologies, the most common being WebSockets. ASP.NET Core SignalR is a library that makes it simple to add real-time server-to-client communication functionality to your applications. SignalR supports a variety of transport technologies, including WebSockets, and abstracts away many of the implementation details from the developer.
 
@@ -415,7 +414,7 @@ When building client communication into your applications, there are typically t
 
 - Client-side library
 
-Clients are not limited to browsers – mobile apps, console apps, and other native apps can also communicate using SignalR/WebSockets. The following simple program echoes all content sent to a chat application to the console, as part of a WebSocketManager sample application:
+Clients aren't limited to browsers – mobile apps, console apps, and other native apps can also communicate using SignalR/WebSockets. The following simple program echoes all content sent to a chat application to the console, as part of a WebSocketManager sample application:
 
 ```csharp
 public class Program
@@ -487,11 +486,11 @@ In addition to these model types, DDD typically employs a variety of patterns:
 
 DDD also recommends the use of the Clean Architecture discussed previously, allowing for loose coupling, encapsulation, and code that can easily be verified using unit tests.
 
-### When Should You Apply DDD
+### When should you apply DDD
 
 DDD is well-suited to large applications with significant business (not just technical) complexity. The application should require the knowledge of domain experts. There should be significant behavior in the domain model itself, representing business rules and interactions beyond simply storing and retrieving the current state of various records from data stores.
 
-### When Shouldn't You Apply DDD
+### When shouldn't you apply DDD
 
 DDD involves investments in modeling, architecture, and communication that may not be warranted for smaller applications or applications that are essentially just CRUD (create/read/update/delete). If you choose to approach your application following DDD, but find that your domain has an anemic model with no behavior, you may need to rethink your approach. Either your application may not need DDD, or you may need assistance refactoring your application to encapsulate business logic in the domain model, rather than in your database or user interface.
 
@@ -551,5 +550,6 @@ _Learn more about Azure deployment options in Chapter 10._
 > - **Introducing Azure Application Gateway**  
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
-> [!div class="step-by-step"][previous](common-client-side-web-technologies.md)
-> [Next](work-with-data-in-asp-net-core-apps.md)
+> [!div class="step-by-step"]
+[Previous](common-client-side-web-technologies.md)
+[Next](work-with-data-in-asp-net-core-apps.md)

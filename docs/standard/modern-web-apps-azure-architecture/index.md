@@ -1,6 +1,6 @@
 ---
 title: Architect modern web applications with ASP.NET Core and Azure
-description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
+description: A guide that provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
@@ -104,4 +104,5 @@ Feel free to forward this guide to your team to help ensure a common understandi
 - **Choosing between .NET Core and .NET Framework for server apps**  
   <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
 
-> [!div class="step-by-step"][next](modern-web-applications-characteristics.md)
+>[!div class="step-by-step"]
+[next](modern-web-applications-characteristics.md)

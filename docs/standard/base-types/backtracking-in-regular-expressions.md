@@ -163,7 +163,7 @@ ms.author: "ronpet"
 |`[-.\w]*`|Match zero, one, or more occurrences of a hyphen, period, or word character.|  
 |`[0-9A-Z]`|Match an alphanumeric character.|  
 |`([-.\w]*[0-9A-Z])*`|Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character. This is the first capturing group.|  
-|`@`|Match an at sign ("@").|  
+|`@`|Match an at sign ("\@").|  
   
  The second regular expression pattern, `^[0-9A-Z][-.\w]*(?<=[0-9A-Z])@`, uses a positive lookbehind assertion. It is defined as shown in the following table.  
   
@@ -173,7 +173,7 @@ ms.author: "ronpet"
 |`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|  
 |`[-.\w]*`|Match zero or more occurrences of a hyphen, period, or word character.|  
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|  
-|`@`|Match an at sign ("@").|  
+|`@`|Match an at sign ("\@").|  
   
 <a name="Lookahead"></a>   
 ### Lookahead Assertions  

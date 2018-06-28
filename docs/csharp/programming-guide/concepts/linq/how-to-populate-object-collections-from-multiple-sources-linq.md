@@ -137,7 +137,8 @@ foreach (var student in queryNamesScores2)
 
 Create and compile a project that targets one of the following options:
 
-- .NET Framework version 3.5 or higher with a reference to System.Core.dll.
+- .NET Framework version 3.5 with a reference to System.Core.dll.
+- .NET Framework version 4.0 or higher.
 - .NET Core version 1.0 or higher.
 
 ## See also

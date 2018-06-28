@@ -40,7 +40,7 @@ public class HomeController : Controller
 }
 ```
 
-Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
+Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
 
 ```csharp
 [Route("[controller\]")]
@@ -48,7 +48,7 @@ public class ProductsController : Controller
 {
     [Route("")] // Matches 'Products'
     [Route("Index")] // Matches 'Products/Index'
-    public IActionResult Index()
+    public IActionResult Index() {}
 }
 ```
 

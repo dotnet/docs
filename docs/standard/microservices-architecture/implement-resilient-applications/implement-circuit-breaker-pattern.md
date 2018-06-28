@@ -240,5 +240,5 @@ Policy.Handle<HttpResponseException>() // etc
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-http-call-retries-exponential-backoff-polly.md)
-[Next] (monitor-app-health.md)
+[Previous](implement-http-call-retries-exponential-backoff-polly.md)
+[Next](monitor-app-health.md)

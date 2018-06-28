@@ -19,7 +19,7 @@ To learn how to set up a development environment to run the code samples, see th
 
 ## Programming languages
 
-.NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
+.NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
 
 Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic (VB). 
 

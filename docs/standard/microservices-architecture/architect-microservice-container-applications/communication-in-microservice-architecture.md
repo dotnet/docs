@@ -103,5 +103,5 @@ Since communication is in real time, client apps show the changes almost instant
 
 
 >[!div class="step-by-step"]
-[Previous] (direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
-[Next] (asynchronous-message-based-communication.md)
+[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
+[Next](asynchronous-message-based-communication.md)

@@ -177,5 +177,5 @@ After the initial architecture and patterns explanation sections, the next secti
     [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
 >[!div class="step-by-step"]
-[Previous] (identify-microservice-domain-model-boundaries.md)
-[Next] (communication-in-microservice-architecture.md)
+[Previous](identify-microservice-domain-model-boundaries.md)
+[Next](communication-in-microservice-architecture.md)

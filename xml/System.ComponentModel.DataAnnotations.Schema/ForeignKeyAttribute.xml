@@ -25,8 +25,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Denotes a property used as a foreign key in a relationship. The annotation may be placed on the foreign key property and specify the associated navigation property name, or placed on a navigation property and specify the associated foreign key name.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Denotes a property used as a foreign key in a relationship. </summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+The annotation may be placed on the foreign key property and specify the associated navigation property name, or it may be placed on a navigation property and specify the associated foreign key name.
+  
+    ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,9 +59,17 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">If you add the ForeignKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</param>
+        <param name="name">The name of the associated navigation property, or the name of one or more associated foreign keys. </param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+If you add the `ForeignKey` attribute to a foreign key property, `name` should specify the name of the associated navigation property. If you add the `ForeignKey` attribute to a navigation property, `name` should specify the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, use commas to separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
+  
+      ]]></format>
+      </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -78,9 +94,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If you add the ForeigKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</summary>
-        <value>The name of the associated navigation property or the associated foreign key property.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the associated navigation property or of the associated foreign keys.</summary>
+        <value>The name of the associated navigation property or of the associated foreign keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+If the `ForeignKey` attribute is applied to a foreign key property, the `Name` property specifies the name of the associated navigation property. If the `ForeignKey` attribute is applied to a navigation property, the `Name` property specifies the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, commas separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
+  
+      ]]></format>
+      </remarks>
       </Docs>
     </Member>
   </Members>

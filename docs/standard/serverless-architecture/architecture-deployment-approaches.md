@@ -3,7 +3,7 @@ title: Architecture deployment approaches - Serverless apps
 description: A guide to different ways enterprise architectures are deployed to the cloud, with comparison between IaaS, PaaS, containers, and serverless.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Architecture deployment approaches
 

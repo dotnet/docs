@@ -3,7 +3,7 @@ title: The Azure serverless platform - Serverless apps
 description: The Azure serverless platform provides capabilities including event-triggered instant scale code, cloud-based pub/sub, workflow orchestration and more.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Azure serverless platform
 

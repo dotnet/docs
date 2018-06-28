@@ -3,7 +3,7 @@ title: Azure Logic Apps - Serverless apps
 description: Azure Logic Apps enable building automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Azure Logic Apps
 

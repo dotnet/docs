@@ -3,7 +3,7 @@ title: Azure Event Grid - Serverless apps
 description: Azure Event Grid is a serverless solution for reliable event delivery and routing at massive scale on a pay-per-event model.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Event Grid
 

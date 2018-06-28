@@ -3,7 +3,7 @@ title: Serverless architecture considerations - Serverless apps
 description: Understand the challenges of architecting serverless applications, from state management and persistent storage to scale, logging, tracing and diagnostics.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Serverless architecture considerations
 

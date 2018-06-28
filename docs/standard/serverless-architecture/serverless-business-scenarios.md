@@ -3,7 +3,7 @@ title: Sample business scenarios and use cases for serverless apps
 description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile backends and ETL pipelines.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 05/24/2018
+ms.date: 06/26/2018
 ---
 # Serverless business scenarios and use cases
 

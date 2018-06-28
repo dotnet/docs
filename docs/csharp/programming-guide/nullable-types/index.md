@@ -21,7 +21,7 @@ For more examples, see [Using Nullable Types](../../../csharp/programming-guide/
   
 -   The syntax `T?` is shorthand for <xref:System.Nullable%601>, where `T` is a value type. The two forms are interchangeable.  
   
--   Assign a value to a nullable type just as you would for an ordinary value type, for example `int? x = 10;` or `double? d = 4.108`. A nullable type can also be assigned the value `null`: `int? x = null.`  
+-   Assign a value to a nullable type just as you would for an ordinary value type, for example `int? x = 10;` or `double? d = 4.108;`. A nullable type can also be assigned the value `null`: `int? x = null;`.  
   
 -   Use the <xref:System.Nullable%601.GetValueOrDefault%2A?displayProperty=nameWithType> method to return either the assigned value, or the default value for the underlying type if the value is `null`, for example `int j = x.GetValueOrDefault();`  
   

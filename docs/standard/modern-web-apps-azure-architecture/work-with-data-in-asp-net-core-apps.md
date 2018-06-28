@@ -30,7 +30,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 
 ### The DbContext
 
-To work with EF Core, you need a subclass of DbContext. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
+To work with EF Core, you need a subclass of <xref:Microsoft.EntityFrameworkCore.DbContext>. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
 
 ```csharp
 public class CatalogContext : DbContext
@@ -73,7 +73,7 @@ You can see the queries EF Core is executing by configuring a logger and ensurin
 
 Figure 8-1 Logging EF Core queries to the console
 
-### Fetching and Storing Data
+### Fetching and storing Data
 
 To retrieve data from EF Core, you access the appropriate property and use LINQ to filter the result. You can also use LINQ to perform projection, transforming the result from one type to another. The following example would retrieve CatalogBrands, ordered by name, filtered by their Enabled property, and projected onto a SelectListItem type:
 
@@ -109,7 +109,7 @@ await _context.SaveChangesAsync();
 
 EF Core supports both synchronous and async methods for fetching and saving. In web applications, it's recommended to use the async/await pattern with the async methods, so that web server threads are not blocked while waiting for data access operations to complete.
 
-### Fetching Related Data
+### Fetching related data
 
 When EF Core retrieves entities, it populates all of the properties that are stored directly with that entity in the database. Navigation properties, such as lists of related entities, are not populated and may have their value set to null. This ensures EF Core is not fetching more data than is needed, which is especially important for web applications, which must quickly process requests and return responses in an efficient manner. To include relationships with an entity using _eager loading_, you specify the property using the Include extension method on the query, as shown:
 
@@ -128,7 +128,7 @@ _Lazy loading_ is a feature that automatically loads related data as it is refer
 
 [Avoid Lazy Loading Entities in Web Applications](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
 
-### Resilient Connections
+### Resilient connections
 
 External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as _connection resiliency_. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry) technique by attempting to rety with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
 
@@ -200,7 +200,7 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 > * **EF Core: Related Data**  
 >   <https://docs.microsoft.com/ef/core/querying/related-data>
 > * **Avoid Lazy Loading Entities in ASPNET Applications**  
->   <http://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
+>   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## EF Core or micro-ORM?
 
@@ -281,7 +281,7 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 * DocumentDB Introduction\
   <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
-## Other Persistence Options
+## Other persistence options
 
 In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 
@@ -304,11 +304,11 @@ In web applications, each web request should be completed in the shortest time p
 
 When implementing caching, it's important to keep in mind separation of concerns. Avoid implementing caching logic in your data access logic, or in your user interface. Instead, encapsulate caching in its own classes, and use configuration to manage its behavior. This follows the Open/Closed and Single Responsibility principles, and will make it easier for you to manage how you use caching in your application as it grows.
 
-### ASP.NET Core Response Caching
+### ASP.NET Core response caching
 
 ASP.NET Core supports two levels of response caching. The first level does not cache anything on the server, but adds HTTP headers that instruct clients and proxy servers to cache responses. This is implemented by adding the ResponseCache attribute to individual controllers or actions:
 
-````csharp
+```csharp
     [ResponseCache(Duration = 60)]
     public IActionResult Contact()
     { }
@@ -316,8 +316,9 @@ ASP.NET Core supports two levels of response caching. The first level does not c
     ViewData["Message"] = "Your contact page.";
     return View();
 }
+```
 
-The above example will result in the following header being added to the response, instructing clients to cache the result for up to 60 seconds.
+The previous example will result in the following header being added to the response, instructing clients to cache the result for up to 60 seconds.
 
 Cache-Control: public,max-age=60
 
@@ -333,13 +334,13 @@ public void Configure(IApplicationBuilder app)
 {
     app.UseResponseCaching();
 }
-````
+```
 
-The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](https://docs.microsoft.com/aspnet/core/performance/caching/middleware#conditions-for-caching).
+The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](/aspnet/core/performance/caching/middleware#conditions-for-caching).
 
-### Data Caching
+### Data caching
 
-Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](https://docs.microsoft.com/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
+Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
 
 You add support for memory (or distributed) caching in ConfigureServices:
 
@@ -433,5 +434,6 @@ new CancellationChangeToken(cts.Token));
 _cache.Get<CancellationTokenSource>("cts").Cancel();
 ```
 
-> [!div class="step-by-step"][previous] (develop-asp-net-core-mvc-apps.md)
-> [Next](test-asp-net-core-mvc-apps.md)
+> [!div class="step-by-step"]
+[Previous](develop-asp-net-core-mvc-apps.md)
+[Next](test-asp-net-core-mvc-apps.md)

@@ -90,7 +90,7 @@ The DOS device path consists of the following components:
       `\\.\UNC\Server\Share\Test\Foo.txt`
       `\\?\UNC\Server\Share\Test\Foo.txt`
 
-    For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(String,String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
+    For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
 
 DOS device paths are fully qualified by definition. Relative directory segments (`.` and `..`) are not allowed. Current directories never enter into their usage.
 
@@ -144,7 +144,7 @@ If the path starts with a drive letter, volume separator, and no component separ
 If the path starts with something other than a separator, the current drive and current directory are applied. For example, if the path is `filecompare` and the current directory is `C:\utilities\`, the result is `C:\utilities\filecompare\`.
 
 > [!IMPORTANT]
-> Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. Starting with .NET Core 2.1, you can call the <xref:System.IO.Path.GetFullPath%28System.String,System.String&29> method to get an absolute path from a relative path and the base path (the current directory) that you want to resolve it against. 
+> Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. Starting with .NET Core 2.1, you can call the <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> method to get an absolute path from a relative path and the base path (the current directory) that you want to resolve it against. 
 
 ### Canonicalizing separators
 

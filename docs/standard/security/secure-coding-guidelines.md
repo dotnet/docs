@@ -40,7 +40,7 @@ Evidence-based security and code access security provide very powerful, explicit
   
 -   Do not use binary formatters.  
   
- Code Access Security and Security-Transparent Code are not be supported as a security boundary with partially trusted code. We advise against loading and executing code of unknown origins without putting alternative security measures in place. The alternative security measures are:  
+ Code Access Security and Security-Transparent Code are not supported as a security boundary with partially trusted code. We advise against loading and executing code of unknown origins without putting alternative security measures in place. The alternative security measures are:  
   
 -   Virtualization  
   

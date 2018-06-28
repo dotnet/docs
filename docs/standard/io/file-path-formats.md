@@ -77,6 +77,10 @@ The Windows operating system has a unified object model that points to all resou
 The DOS device path consists of the following components:
 
 - The device path specifier (`\\.\` or `\\?\`), which identifies the path as a DOS device path.
+
+   > [!NOTE]
+   > The `\\?\` is supported in all versions of .NET Core and in the .NET Framework starting with version 4.6.2.
+   
 - A symbolic link to the "real" device object (C: in this case).
 
    The first segment of the DOS device path after the device path specifier identifies the volume or drive. (For example, `\\?\C:\` and `\\.\BootPartition\`.)
@@ -107,7 +111,7 @@ Almost all paths passed to Windows APIs are normalized. During normalization, Wi
 - Evaluates relative directory components (`.` for the current directory and `..` for the parent directory).
 - Trims certain characters.
 
-This normalization happens implicitly, but you can do it explicitly by calling the Windows [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) using P/Invokle. You can also call the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx).
+This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx). You can also call the Windows [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) directly using P/Invoke. You can also call the 
 
 ### Identifying the path
 
@@ -179,7 +183,10 @@ Why would you want to skip normalization? There are three major reasons:
 
 1. To improve performance by skipping normalization if you've already normalized.
 
-1. To skip the `MAX_PATH` check for path length to allowing for paths that are greater than 259 characters. Most APIs allow this, with some exceptions.
+1. On the .NET Framework only, to skip the `MAX_PATH` check for path length to allow for paths that are greater than 259 characters. Most APIs allow this, with some exceptions.
+
+> [!NOTE]
+> .NET Core handles long paths implicitly and does not perform a `MAX_PATH` check. The `MAX_PATH` check applies only to the .NET Framework.
 
 Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be careful with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
 

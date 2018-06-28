@@ -10,25 +10,23 @@ ms.date: 10/06/2017
 > "Atwood's Law: Any application that can be written in JavaScript, will eventually be written in JavaScript."  
 > _\- Jeff Atwood_
 
-## Summary
-
 There are two general approaches to building web applications today: traditional web applications that perform most of the application logic on the server, and single page applications (SPAs) that perform most of the user interface logic in a web browser, communicating with the web server primarily using web APIs. A hybrid approach is also possible, the simplest being host one or more rich SPA-like sub-applications within a larger traditional web application.
 
 You should use traditional web applications when:
 
--   Your application's client-side requirements are simple or even read-only.
+- Your application's client-side requirements are simple or even read-only.
 
--   Your application needs to function in browsers without JavaScript support.
+- Your application needs to function in browsers without JavaScript support.
 
--   Your team is unfamiliar with JavaScript or TypeScript development techniques.
+- Your team is unfamiliar with JavaScript or TypeScript development techniques.
 
 You should use a SPA when:
 
--   Your application must expose a rich user interface with many features.
+- Your application must expose a rich user interface with many features.
 
--   Your team is familiar with JavaScript and/or TypeScript development.
+- Your team is familiar with JavaScript and/or TypeScript development.
 
--   Your application must already expose an API for other (internal or public) clients.
+- Your application must already expose an API for other (internal or public) clients.
 
 Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers are more difficult with SPA applications than traditional web apps.
 
@@ -86,5 +84,5 @@ The following decision table summarizes some of the basic factors to consider wh
   | Rich, Complex User Interface Requirements | **Limited** | **Well-Suited** |
 
 >[!div class="step-by-step"]
-[Previous] (modern-web-applications-characteristics.md)
+[Previous](modern-web-applications-characteristics.md)
 [Next](architectural-principles.md)

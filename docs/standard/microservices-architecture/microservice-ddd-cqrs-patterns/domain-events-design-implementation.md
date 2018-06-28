@@ -360,5 +360,5 @@ As stated, use domain events to explicitly implement side effects of changes wit
 
 
 >[!div class="step-by-step"]
-[Previous] (client-side-validation.md)
-[Next] (infrastructure-persistence-layer-design.md)
+[Previous](client-side-validation.md)
+[Next](infrastructure-persistence-layer-design.md)

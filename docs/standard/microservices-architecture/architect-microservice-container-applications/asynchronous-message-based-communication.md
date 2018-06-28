@@ -102,5 +102,5 @@ Additional topics to consider when using asynchronous communication are message 
 
 
 >[!div class="step-by-step"]
-[Previous] (communication-in-microservice-architecture.md)
-[Next] (maintain-microservice-apis.md)
+[Previous](communication-in-microservice-architecture.md)
+[Next](maintain-microservice-apis.md)

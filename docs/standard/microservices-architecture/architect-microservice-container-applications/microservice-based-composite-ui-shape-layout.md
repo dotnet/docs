@@ -52,5 +52,5 @@ However, we encourage you to use the following references to learn more about co
 
 
 >[!div class="step-by-step"]
-[Previous] (microservices-addressability-service-registry.md)
-[Next] (resilient-high-availability-microservices.md)
+[Previous](microservices-addressability-service-registry.md)
+[Next](resilient-high-availability-microservices.md)

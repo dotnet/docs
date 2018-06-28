@@ -37,6 +37,7 @@ public class HomeController : Controller
     [Route("Index")] // Combines to define route template "Home/Index"
     [Route("/")] // Does not combine, defines the route template ""
     public IActionResult Index() {}
+}
 ```
 
 Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:

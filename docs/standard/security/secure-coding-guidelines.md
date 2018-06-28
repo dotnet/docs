@@ -30,7 +30,9 @@ Evidence-based security and code access security provide very powerful, explicit
   
 -   Do not use Code Access Security (CAS).  
   
--   Do not use partial trusted code.  
+-   Do not use partial trusted code.
+
+-   Do not use the AllowPartiallyTrustedCaller attribute (APTCA).
   
 -   Do not use .NET Remoting.  
   
@@ -38,7 +40,7 @@ Evidence-based security and code access security provide very powerful, explicit
   
 -   Do not use binary formatters.  
   
- Code Access Security and Security-Transparent Code will not be supported as a security boundary with partially trusted code. We advise against loading and executing code of unknown origins without putting alternative security measures in place. The alternative security measures are:  
+ Code Access Security and Security-Transparent Code are not be supported as a security boundary with partially trusted code. We advise against loading and executing code of unknown origins without putting alternative security measures in place. The alternative security measures are:  
   
 -   Virtualization  
   

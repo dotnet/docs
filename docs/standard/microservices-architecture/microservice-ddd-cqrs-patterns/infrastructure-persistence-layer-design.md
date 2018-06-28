@@ -3,9 +3,8 @@ title: Designing the infrastructure persistence layer
 description: Learn how to design the infrastructure persistence layer.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/11/2017
+ms.date: 06/28/2017
 ---
-
 # Designing the infrastructure persistence layer
 
 Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects.
@@ -164,6 +163,6 @@ The upcoming sections explain how to implement the specification pattern with EF
 - **Specifications. Martin Fowler**
   [_https://www.martinfowler.com/apsupp/spec.pdf/_](https://www.martinfowler.com/apsupp/spec.pdf)
 
-> [!div class="step-by-step"]
+>[!div class="step-by-step"]
 [Previous](domain-events-design-implementation.md)
 [Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)

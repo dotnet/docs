@@ -129,5 +129,5 @@ ACS is currently available for Standard A, D, DS, G, and GS series Linux virtual
 
 
 >[!div class="step-by-step"]
-[Previous] (resilient-high-availability-microservices.md)
-[Next] (using-azure-service-fabric.md)
+[Previous](resilient-high-availability-microservices.md)
+[Next](using-azure-service-fabric.md)

@@ -40,5 +40,5 @@ Strategies for dealing with partial failures include the following.
 
 
 >[!div class="step-by-step"]
-[Previous] (handle-partial-failure.md)
-[Next] (implement-retries-exponential-backoff.md)
+[Previous](handle-partial-failure.md)
+[Next](implement-retries-exponential-backoff.md)

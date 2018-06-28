@@ -136,5 +136,5 @@ You might need to stop running processes when you switch between different confi
 The wizard that adds Docker support communicates with the running Docker process. The wizard will not run correctly if Docker is not running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
 >[!div class="step-by-step"]
-[Previous] (../docker-application-development-process/docker-app-development-workflow.md)
-[Next] (../containerize-net-framework-applications/index.md)
+[Previous](../docker-application-development-process/docker-app-development-workflow.md)
+[Next](../containerize-net-framework-applications/index.md)

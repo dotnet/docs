@@ -267,5 +267,5 @@ public class CatalogControllerGetImage : BaseWebTest
 This functional test exercises the full ASP.NET Core MVC application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/catalog/pic/1") returns the expected byte array for a file in a known location. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server.
 
 >[!div class="step-by-step"]
-[Previous] (work-with-data-in-asp-net-core-apps.md)
-[Next] (development-process-for-azure.md)
+[Previous](work-with-data-in-asp-net-core-apps.md)
+[Next](development-process-for-azure.md)

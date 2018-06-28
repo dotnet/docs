@@ -40,5 +40,5 @@ Following are Service Fabric management tools:
 
 
 >[!div class="step-by-step"]
-[Previous] (run-microservices-based-applications-in-production.md)
-[Next] (monitor-containerized-application-services.md)
+[Previous](run-microservices-based-applications-in-production.md)
+[Next](monitor-containerized-application-services.md)

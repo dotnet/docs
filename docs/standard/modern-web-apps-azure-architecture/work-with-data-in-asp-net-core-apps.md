@@ -1,9 +1,9 @@
 ---
 title: Work with data in ASP.NET Core Apps
-description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Working with data in ASP.NET Core apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/07/2017
+ms.date: 06/28/2018
 ---
 
 # Working with Data in ASP.NET Core Apps
@@ -195,11 +195,11 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 
 > ### References – Entity Framework Core
 >
-> * **EF Core Docs**  
+> - **EF Core Docs**  
 >   <https://docs.microsoft.com/ef/>
-> * **EF Core: Related Data**  
+> - **EF Core: Related Data**  
 >   <https://docs.microsoft.com/ef/core/querying/related-data>
-> * **Avoid Lazy Loading Entities in ASPNET Applications**  
+> - **Avoid Lazy Loading Entities in ASPNET Applications**  
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## EF Core or micro-ORM?
@@ -278,24 +278,24 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 
 **References – DocumentDB**
 
-* DocumentDB Introduction\
+- DocumentDB Introduction\
   <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
 ## Other persistence options
 
 In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 
-* Blob Storage for unstructured text or binary storage, also referred to as object storage.
+- Blob Storage for unstructured text or binary storage, also referred to as object storage.
 
-* Table Storage for structured datasets, accessible via row keys.
+- Table Storage for structured datasets, accessible via row keys.
 
-* Queue Storage for reliable queue-based messaging.
+- Queue Storage for reliable queue-based messaging.
 
-* File Storage for shared file access between Azure virtual machines and on-premises applications.
+- File Storage for shared file access between Azure virtual machines and on-premises applications.
 
 **References – Azure Storage**
 
-* Azure Storage Introduction\
+- Azure Storage Introduction\
   <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## Caching
@@ -434,6 +434,5 @@ new CancellationChangeToken(cts.Token));
 _cache.Get<CancellationTokenSource>("cts").Cancel();
 ```
 
-> [!div class="step-by-step"]
-[Previous](develop-asp-net-core-mvc-apps.md)
-[Next](test-asp-net-core-mvc-apps.md)
+> [!div class="step-by-step"][previous](develop-asp-net-core-mvc-apps.md)
+> [Next](test-asp-net-core-mvc-apps.md)

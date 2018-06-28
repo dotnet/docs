@@ -3,7 +3,7 @@ title: Development process for Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Development process for Azure
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/08/2017
+ms.date: 06/28/2018
 ---
 # Development process for Azure
 

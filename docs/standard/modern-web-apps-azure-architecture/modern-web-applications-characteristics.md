@@ -1,9 +1,9 @@
 ---
 title: Characteristics of modern web applications
-description: Architect Modern Web Applications with ASP.NET Core and Azure | characteristics of modern web applications
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Characteristics of modern web applications
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/06/2017
+ms.date: 06/28/2018
 ---
 
 # Characteristics of Modern Web Applications
@@ -25,7 +25,7 @@ This guidance includes a reference application, _eShopOnWeb_, that demonstrates 
 
 > ### Reference Application
 >
-> * **eShopOnWeb**  
+> - **eShopOnWeb**  
 >   <https://github.com/dotnet/eShopOnWeb>
 
 ## Cloud-hosted and scalable
@@ -64,13 +64,12 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 
 > ### References – Modern Web Applications
 >
-> * **Introduction to ASP.NET Core**  
+> - **Introduction to ASP.NET Core**  
 >   <https://docs.microsoft.com/aspnet/core/>
-> * **Six Key Benefits of ASP.NET Core which make it Different and Better**  
+> - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
 >   <https://blog.trigent.com/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
-> * **Testing in ASP.NET Core**  
+> - **Testing in ASP.NET Core**  
 >   <https://docs.microsoft.com/aspnet/core/testing/>
 
-> [!div class="step-by-step"]
-[Previous](index.md)
-[Next](choose-between-traditional-web-and-single-page-apps.md)
+> [!div class="step-by-step"][previous](index.md)
+> [Next](choose-between-traditional-web-and-single-page-apps.md)

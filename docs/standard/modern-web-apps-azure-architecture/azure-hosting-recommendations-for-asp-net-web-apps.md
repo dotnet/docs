@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 06/27/2018
 ---
+
 # Azure hosting recommendations for ASP.NET Core web apps
 
 > "Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (aka SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner."  
@@ -41,16 +42,6 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 - Visual Studio integration.
 
 Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
-
-### Containers and Azure Container Service
-
-Azure Container Service makes it simpler for you to create, configure, and manage a cluster of virtual machines that are preconfigured to run containerized applications. It uses an optimized configuration of popular open-source scheduling and orchestration tools. This enables you to use your existing skills, or draw upon a large and growing body of community expertise, to deploy and manage container-based applications on Microsoft Azure.
-
-One goal of Azure Container Service is to provide a container hosting environment using open-source tools and technologies that are popular among Microsoft's customers today. To this end, Azure Container Service exposes the standard API endpoints for your chosen orchestrator (DC/OS, Docker Swarm, or Kubernetes). By using these endpoints, you can leverage any software that is capable of talking to those endpoints. For example, for a Docker Swarm endpoint, you might choose to use the Docker command-line interface (CLI). For DC/OS, you might choose the DC/OS CLI. For Kubernetes, you might choose `kubectl`. Figure 11-1 shows how you'd use these endpoints to manage your container clusters.
-
-![](./media/image11-1.png)
-
-**Figure 11-1.** Azure Container Service management with Docker, Kubernetes, or DC/OS endpoints.
 
 ### Azure Kubernetes Service
 
@@ -112,7 +103,7 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 
 ![](./media/image11-2.png)
 
-**Figure 11-2.** Sitecore marketing website reference architecture.
+**Figure 11-1.** Sitecore marketing website reference architecture.
 
 **References – Azure hosting recommendations**
 
@@ -131,5 +122,4 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
-> [!div class="step-by-step"]
-[Previous](development-process-for-azure.md)
+> [!div class="step-by-step"][previous](development-process-for-azure.md)

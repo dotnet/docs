@@ -73,7 +73,7 @@ Instead of giving unmanaged code rights to all applications that use these wrapp
 
 The following approach is the most powerful and hence potentially dangerous (if done incorrectly) for security coding: your library serves as an interface for other code to access certain resources that aren't otherwise available, just as the .NET classes enforce permissions for the resources they use. Wherever you expose a resource, your code must first demand the permission appropriate to the resource (that is, it must perform a security check) and then typically assert its rights to perform the actual operation.
 
-## Related Topics
+## Related topics
 
 |Title|Description|
 |-----------|-----------------|

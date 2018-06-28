@@ -442,6 +442,7 @@ public class Program
     {
         await _connection.StopConnectionAsync();
     }
+}
 ```
 
 Consider ways in which your applications communicate directly with client applications, and consider whether real-time communication would improve your app's user experience.

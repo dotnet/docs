@@ -3051,7 +3051,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
+ <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name. Starting with .NET Framework 4, because execution of code in remote assemblies is disabled by default, a <xref:System.IO.FileLoadException> is also thrown if `assemblyRef` specifies a remote assembly. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.     
   
 > [!NOTE]
 >  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
@@ -3096,7 +3096,11 @@
 </para>
           </block>  
   
- A file that was found could not be loaded.</exception>
+ A file that was found could not be loaded.
+
+-or-
+
+<paramref name="assemblyRef" /> specifies a remote assembly, but the ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="assemblyRef" /> is not a valid assembly. -or-  
   
@@ -3286,7 +3290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name, and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
+ <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name, and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  Starting with .NET Framework 4, because execution of code in remote assemblies is disabled by default, a <xref:System.IO.FileLoadException> is also thrown if `assemblyRef` specifies a remote assembly. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.   
   
 > [!NOTE]
 >  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
@@ -3323,7 +3327,11 @@
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="assemblyRef" /> was compiled with a later version.</exception>
-        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.
+
+-or-
+
+<paramref name="assemblyRef" /> specifies a remote assembly, but the ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
@@ -3570,13 +3578,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Reflection.Assembly.LoadFile%2A> method to load and examine assemblies that have the same identity, but are located in different paths.<xref:System.Reflection.Assembly.LoadFile%2A> does not load files into the load-from  context, and does not resolve dependencies using the load path, as the <xref:System.Reflection.Assembly.LoadFrom%2A> method does. <xref:System.Reflection.Assembly.LoadFile%2A> is useful in this limited scenario because <xref:System.Reflection.Assembly.LoadFrom%2A> cannot be used to load assemblies that have the same identities but different paths; it will load only the first such assembly.  
-  
+ Use the <xref:System.Reflection.Assembly.LoadFile%2A> method to load and examine assemblies that have the same identity, but are located in different paths. <xref:System.Reflection.Assembly.LoadFile%2A> does not load files into the load-from  context, and does not resolve dependencies using the load path, as the <xref:System.Reflection.Assembly.LoadFrom%2A> method does. <xref:System.Reflection.Assembly.LoadFile%2A> is useful in this limited scenario because <xref:System.Reflection.Assembly.LoadFrom%2A> cannot be used to load assemblies that have the same identities but different paths; it will load only the first such assembly.  
+
+Starting with .NET Framework 4, if `path` specifies an assembly in a remote location, assembly loading is disabled by default, and the `LoadFile` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
+    
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="path" /> argument is not an absolute path.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.IO.FileNotFoundException">The <paramref name="path" /> parameter is an empty string ("") or does not exist.</exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="path" /> is not a valid assembly.  
@@ -3623,13 +3637,19 @@
   
 ## Remarks  
  Use the <xref:System.Reflection.Assembly.LoadFile%2A> method to load and examine assemblies that have the same identity, but are located in different paths. <xref:System.Reflection.Assembly.LoadFile%2A> does not load files into the <xref:System.Reflection.Assembly.LoadFrom%2A> context, and does not resolve dependencies using the load path, as the <xref:System.Reflection.Assembly.LoadFrom%2A> method does. <xref:System.Reflection.Assembly.LoadFile%2A> is useful in this limited scenario because <xref:System.Reflection.Assembly.LoadFrom%2A> cannot be used to load assemblies that have the same identities but different paths; it will load only the first such assembly.  
-  
+
+Starting with .NET Framework 4, if `path` specifies an assembly in a remote location, assembly loading is disabled by default, and the `LoadFile` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="path" /> argument is not an absolute path.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <paramref name="path" /> parameter is an empty string ("") or does not exist.</exception>
-        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="path" /> is not a valid assembly.  
   
@@ -3650,6 +3670,19 @@
       </AssemblyInfo>
       <Docs>
         <summary>Loads an assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+             
+## Remarks
+
+Starting with .NET Framework 4, the ability to execute code in assemblies loaded from remote locations is disabled by default, and the call to the `LoadFrom` method throws a <xref:System.IO.FileLoadException>. To load the assembly and execute its code, you must either:
+
+- Explicitly create a sandbox for the assembly. (See [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).)
+
+- Run the assembly's code in full trust by setting the `enabled` attribute of the [`<loadFromRemoteSources>` configuration element](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) to `true`. For more information, see the [`<loadFromRemoteSources>` configuration element](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) article.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="LoadFrom">
@@ -3699,7 +3732,9 @@
   
 -   The load context contains assemblies found by probing: in the GAC, in a host assembly store if the runtime is hosted, or in the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
   
--   The load-from context contains assemblies for which the user provided a path not included in the directories searched by probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path.  
+-   The load-from context contains assemblies for which the user provided a path not included in the directories searched by probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path. 
+
+    Starting with .NET Framework 4, if the URI of `assemblyFile` specifies a remote location, assembly loading is disabled by default, and the `LoadFrom` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
   
 -   The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods; code in these contexts cannot be executed.  
   
@@ -3736,7 +3771,11 @@
           <paramref name="assemblyFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="assemblyFile" /> is not found, or the module you are trying to load does not specify a filename extension.</exception>
-        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="assemblyFile" /> is not a valid assembly; for example, a 32-bit assembly in a 64-bit process. See the exception topic for more information.  
   
@@ -3795,7 +3834,9 @@
   
 -   The load context contains assemblies found by probing: in the GAC, in a host assembly store if the runtime is hosted, or in the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
   
--   The load-from context contains assemblies for which the user provided a path not included in the directories searched by probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path.  
+-   The load-from context contains assemblies for which the user provided a path not included in the directories searched by probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path.
+
+    Starting with .NET Framework 4, if the URI of `assemblyFile` specifies a remote location, assembly loading is disabled by default, and the `LoadFrom` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
   
 -   The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods; code in these contexts cannot be executed.  
   
@@ -3839,7 +3880,11 @@
   
  -or-  
   
- The <paramref name="securityEvidence" /> is not ambiguous and is determined to be invalid.</exception>
+ The <paramref name="securityEvidence" /> is not ambiguous and is determined to be invalid.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="assemblyFile" /> is not a valid assembly; for example, a 32-bit assembly in a 64-bit process. See the exception topic for more information.  
   
@@ -3907,6 +3952,8 @@
 -   The load context contains assemblies found by probing: in the global assembly cache, in a host assembly store if the runtime is hosted, or in the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
   
 -   The load-from context contains assemblies for which the user provided a path that is not included in probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path.  
+
+    Starting with .NET Framework 4, if the URI of `assemblyFile` specifies a remote location, assembly loading is disabled by default, and the `LoadFrom` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
   
 -   The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods; code in these contexts cannot be executed.  
   
@@ -3934,7 +3981,11 @@
           <paramref name="assemblyFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="assemblyFile" /> is not found, or the module you are trying to load does not specify a file name extension.</exception>
-        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="assemblyFile" /> is not a valid assembly; for example, a 32-bit assembly in a 64-bit process. See the exception topic for more information.  
   
@@ -3999,6 +4050,8 @@
 -   The load context contains assemblies found by probing: in the GAC, in a host assembly store if the runtime is hosted, or in the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
   
 -   The load-from context contains assemblies for which the user provided a path not included in the directories searched by probing. <xref:System.Reflection.Assembly.LoadFrom%2A>, <xref:System.AppDomain.CreateInstanceFrom%2A>, and <xref:System.AppDomain.ExecuteAssembly%2A> are examples of methods that load by path.  
+
+    Starting with .NET Framework 4, if the URI of `assemblyFile` specifies a remote location, assembly loading is disabled by default, and the `LoadFrom` method throws a <xref:System.IO.FileLoadException>. To enable execution of code loaded from remote locations, you can use the [`<loadFromRemoteSources>`](~/docs/framework/configure-apps/file-schema/runtime/loadfromremotesources-element.md) configuration element.    
   
 -   The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods; code in these contexts cannot be executed.  
   
@@ -4042,7 +4095,11 @@
   
  -or-  
   
- The <paramref name="securityEvidence" /> is not ambiguous and is determined to be invalid.</exception>
+ The <paramref name="securityEvidence" /> is not ambiguous and is determined to be invalid.
+
+-or-
+
+The ability to execute code in remote assemblies is disabled. See <see href="https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element">&lt;loadFromRemoteSources&gt;</see>. </exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="assemblyFile" /> is not a valid assembly; for example, a 32-bit assembly in a 64-bit process. See the exception topic for more information.  
   

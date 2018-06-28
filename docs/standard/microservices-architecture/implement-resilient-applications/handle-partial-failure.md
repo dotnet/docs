@@ -1,4 +1,4 @@
----
+﻿---
 title: Handling partial failure
 description: .NET Microservices Architecture for Containerized .NET Applications | Handling partial failure
 author: CESARDELATORRE
@@ -35,5 +35,5 @@ In addition, it is essential that you design your microservices and client appli
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (partial-failure-strategies.md)
+[Previous](index.md)
+[Next](partial-failure-strategies.md)

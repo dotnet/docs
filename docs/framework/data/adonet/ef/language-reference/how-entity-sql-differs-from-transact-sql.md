@@ -1,4 +1,4 @@
----
+﻿---
 title: "How Entity SQL Differs from Transact-SQL"
 ms.date: "03/30/2017"
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
@@ -9,7 +9,7 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
 ## Inheritance and Relationships Support  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] works directly with conceptual entity schemas and supports conceptual model features such as inheritance and relationships.  
   
- When working with inheritance, it is often useful to select instances of a subtype from a collection of supertype instances. The [oftype](../../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) operator in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (similar to `oftype` in C# Sequences) provides this capability.  
+ When working with inheritance, it is often useful to select instances of a subtype from a collection of supertype instances. The [oftype](../../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) operator in [!INCLUDE[esql](../../../../../../includes/esql-md.md)](similar to `oftype` in C# Sequences) provides this capability.  
   
 ## Support for Collections  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] treats collections as first-class entities. For example:  
@@ -189,7 +189,7 @@ SELECT C2.FirstName, C2.LastName
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not provide mechanisms for query hints.  
   
  Batching Query Results  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support batching query results. For example, the following is valid [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] (sending as a batch):  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support batching query results. For example, the following is valid [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)](sending as a batch):  
   
 ```  
 select * from products;  

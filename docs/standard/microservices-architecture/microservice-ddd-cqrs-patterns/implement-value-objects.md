@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing value objects
 author: CESARDELATORRE
@@ -323,5 +323,5 @@ public class Address
 
 
 >[!div class="step-by-step"]
-[Previous] (seedwork-domain-model-base-classes-interfaces.md)
-[Next] (enumeration-classes-over-enum-types.md)
+[Previous](seedwork-domain-model-base-classes-interfaces.md)
+[Next](enumeration-classes-over-enum-types.md)

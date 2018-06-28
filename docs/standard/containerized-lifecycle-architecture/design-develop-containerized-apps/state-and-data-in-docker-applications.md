@@ -1,4 +1,4 @@
----
+﻿---
 title: State and data in Docker applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
@@ -45,5 +45,5 @@ Remote data sources and caches like SQL Database, DocumentDB, or a remote cache 
 
 
 >[!div class="step-by-step"]
-[Previous] (monolithic-applications.md)
-[Next] (soa-applications.md)
+[Previous](monolithic-applications.md)
+[Next](soa-applications.md)

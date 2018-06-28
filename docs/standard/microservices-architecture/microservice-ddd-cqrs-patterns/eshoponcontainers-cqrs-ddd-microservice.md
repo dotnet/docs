@@ -1,4 +1,4 @@
----
+﻿---
 title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 description: .NET Microservices Architecture for Containerized .NET Applications | Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 author: CESARDELATORRE
@@ -58,5 +58,5 @@ There is only one application architecture: the architecture of the system or en
 
 
 >[!div class="step-by-step"]
-[Previous] (apply-simplified-microservice-cqrs-ddd-patterns.md)
-[Next] (cqrs-microservice-reads.md)
+[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)
+[Next](cqrs-microservice-reads.md)

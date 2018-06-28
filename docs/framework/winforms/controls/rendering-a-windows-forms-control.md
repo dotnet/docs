@@ -1,4 +1,4 @@
----
+﻿---
 title: "Rendering a Windows Forms Control"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
 ---
 # Rendering a Windows Forms Control
-Rendering refers to the process of creating a visual representation on a user's screen. Windows Forms uses [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] (the new Windows graphics library) for rendering. The managed classes that provide access to [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] are in the <xref:System.Drawing?displayProperty=nameWithType> namespace and its subnamespaces.  
+Rendering refers to the process of creating a visual representation on a user's screen. Windows Forms uses [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)](the new Windows graphics library) for rendering. The managed classes that provide access to [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] are in the <xref:System.Drawing?displayProperty=nameWithType> namespace and its subnamespaces.  
   
  The following elements are involved in control rendering:  
   

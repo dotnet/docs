@@ -1,4 +1,4 @@
----
+﻿---
 title: Architectural principles
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Architectural principles
 author: ardalis
@@ -111,5 +111,5 @@ At a minimum, individual web applications should strive to be their own bounded 
 > <https://martinfowler.com/bliki/BoundedContext.html>
 
 > [!div class="step-by-step"]
-[Previous] (choose-between-traditional-web-and-single-page-apps.md)
-[Next] (common-web-application-architectures.md)
+[Previous](choose-between-traditional-web-and-single-page-apps.md)
+[Next](common-web-application-architectures.md)

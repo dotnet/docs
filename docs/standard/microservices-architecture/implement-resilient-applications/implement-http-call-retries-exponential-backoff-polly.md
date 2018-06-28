@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing HTTP call retries with exponential backoff with Polly
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing HTTP call retries with exponential backoff with Polly
 author: CESARDELATORRE
@@ -165,5 +165,5 @@ private Policy[] CreatePolicies()
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-circuit-breaker-pattern.md)
+[Previous](implement-custom-http-call-retries-exponential-backoff.md)
+[Next](implement-circuit-breaker-pattern.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Common web application architectures
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure | common web application architectures
 author: ardalis
@@ -219,5 +219,5 @@ While monolithic apps can benefit from Docker, breaking up the monolithic applic
 > - **Architecting Microservices e-book** <http://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]
-[Previous] (architectural-principles.md)
-[Next] (common-client-side-web-technologies.md)
+[Previous](architectural-principles.md)
+[Next](common-client-side-web-technologies.md)

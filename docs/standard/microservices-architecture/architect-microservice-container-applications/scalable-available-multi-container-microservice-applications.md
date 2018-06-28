@@ -1,4 +1,4 @@
----
+﻿---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: .NET Microservices Architecture for Containerized .NET Applications | Orchestrating microservices and multi-container applications for high scalability and availability
 author: CESARDELATORRE
@@ -129,5 +129,5 @@ ACS is currently available for Standard A, D, DS, G, and GS series Linux virtual
 
 
 >[!div class="step-by-step"]
-[Previous] (resilient-high-availability-microservices.md)
-[Next] (using-azure-service-fabric.md)
+[Previous](resilient-high-availability-microservices.md)
+[Next](using-azure-service-fabric.md)

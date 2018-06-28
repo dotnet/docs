@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing custom HTTP call retries with exponential backoff
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing custom HTTP call retries with exponential backoff
 author: CESARDELATORRE
@@ -111,5 +111,5 @@ However, this code is suitable only as a proof of concept. The next topic explai
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-resilient-entity-framework-core-sql-connections.md)
-[Next] (implement-http-call-retries-exponential-backoff-polly.md)
+[Previous](implement-resilient-entity-framework-core-sql-connections.md)
+[Next](implement-http-call-retries-exponential-backoff-polly.md)

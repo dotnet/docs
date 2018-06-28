@@ -1,4 +1,4 @@
----
+﻿---
 title: Challenges and solutions for distributed data management
 description: .NET Microservices Architecture for Containerized .NET Applications | Challenges and solutions for distributed data management
 author: CESARDELATORRE
@@ -103,5 +103,5 @@ The use of asynchronous communication is explained with additional details later
 
 
 >[!div class="step-by-step"]
-[Previous] (logical-versus-physical-architecture.md)
-[Next] (identify-microservice-domain-model-boundaries.md)
+[Previous](logical-versus-physical-architecture.md)
+[Next](identify-microservice-domain-model-boundaries.md)

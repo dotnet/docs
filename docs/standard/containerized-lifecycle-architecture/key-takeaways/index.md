@@ -1,4 +1,4 @@
----
+﻿---
 title: Key takeaways
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools (e-book)_v1.1
 author: CESARDELATORRE
@@ -20,4 +20,4 @@ ms.date: 09/22/2017
 Visual Studio Team Services greatly simplifies your DevOps environment designated to Docker environments from your Continuous Deployment pipelines, including simple Docker environments or more advanced microservice and container orchestrators based on Azure.
 
 >[!div class="step-by-step"]
-[Previous] (../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)
+[Previous](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)

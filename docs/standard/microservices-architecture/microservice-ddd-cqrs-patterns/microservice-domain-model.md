@@ -1,4 +1,4 @@
----
+﻿---
 title: Designing a microservice domain model
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a microservice domain model
 author: CESARDELATORRE
@@ -148,5 +148,5 @@ Identifying and working with aggregates requires research and experience. For mo
 
 
 >[!div class="step-by-step"]
-[Previous] (ddd-oriented-microservice.md)
-[Next] (net-core-microservice-domain-model.md)
+[Previous](ddd-oriented-microservice.md)
+[Next](net-core-microservice-domain-model.md)

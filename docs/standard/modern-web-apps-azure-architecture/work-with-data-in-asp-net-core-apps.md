@@ -1,4 +1,4 @@
----
+﻿---
 title: Work with data in ASP.NET Core Apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
 author: ardalis
@@ -431,5 +431,5 @@ _cache.Get<CancellationTokenSource>("cts").Cancel();
 ```
 
 >[!div class="step-by-step"]
-[Previous] (develop-asp-net-core-mvc-apps.md)
-[Next] (test-asp-net-core-mvc-apps.md)
+[Previous](develop-asp-net-core-mvc-apps.md)
+[Next](test-asp-net-core-mvc-apps.md)

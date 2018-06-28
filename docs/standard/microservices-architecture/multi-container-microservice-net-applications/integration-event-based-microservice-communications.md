@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing event-based communication between microservices (integration events)
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing event-based communication between microservices (integration events)
 author: CESARDELATORRE
@@ -123,5 +123,5 @@ The `Subscribe` methods (you can have several implementations depending on the a
 
 
 >[!div class="step-by-step"]
-[Previous] (database-server-container.md)
-[Next] (rabbitmq-event-bus-development-test-environment.md)
+[Previous](database-server-container.md)
+[Next](rabbitmq-event-bus-development-test-environment.md)

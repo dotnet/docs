@@ -1,4 +1,4 @@
----
+﻿---
 title: Containerizing monolithic applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Containerizing monolithic applications
 author: CESARDELATORRE
@@ -67,5 +67,5 @@ As also shown in Figure 4-4, the publish flow pushes an image through a containe
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (docker-application-state-data.md)
+[Previous](index.md)
+[Next](docker-application-state-data.md)

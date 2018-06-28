@@ -1,4 +1,4 @@
----
+﻿---
 title: Applying simplified CQRS and DDD patterns in a microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Applying simplified CQRS and DDD patterns in a microservice
 author: CESARDELATORRE
@@ -31,5 +31,5 @@ The application layer can be the Web API itself. The important design aspect her
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (eshoponcontainers-cqrs-ddd-microservice.md)
+[Previous](index.md)
+[Next](eshoponcontainers-cqrs-ddd-microservice.md)

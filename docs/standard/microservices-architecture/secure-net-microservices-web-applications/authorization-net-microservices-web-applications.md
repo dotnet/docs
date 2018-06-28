@@ -1,4 +1,4 @@
----
+﻿---
 title: About authorization in .NET microservices and web applications
 description: .NET Microservices Architecture for Containerized .NET Applications | About authorization in .NET microservices and web applications
 author: mjrousos
@@ -123,5 +123,5 @@ An example of a custom authorization requirement and handler for checking a user
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (developer-app-secrets-storage.md)
+[Previous](index.md)
+[Next](developer-app-secrets-storage.md)

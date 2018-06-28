@@ -75,15 +75,15 @@ CREATE DATABASE [Demo]
 GO  
 USE [Demo]  
 GO  
-CREATE TABLE [Streams] (  
+CREATE TABLE [Streams](  
 [id] INT PRIMARY KEY IDENTITY(1, 1),  
 [textdata] NVARCHAR(MAX),  
 [bindata] VARBINARY(MAX),  
 [xmldata] XML)  
 GO  
-INSERT INTO [Streams] (textdata, bindata, xmldata) VALUES (N'This is a test', 0x48656C6C6F, N'<test>value</test>')  
-INSERT INTO [Streams] (textdata, bindata, xmldata) VALUES (N'Hello, World!', 0x54657374696E67, N'<test>value2</test>')  
-INSERT INTO [Streams] (textdata, bindata, xmldata) VALUES (N'Another row', 0x666F6F626172, N'<fff>bbb</fff><fff>bbc</fff>')  
+INSERT INTO [Streams](textdata, bindata, xmldata) VALUES (N'This is a test', 0x48656C6C6F, N'<test>value</test>')  
+INSERT INTO [Streams](textdata, bindata, xmldata) VALUES (N'Hello, World!', 0x54657374696E67, N'<test>value2</test>')  
+INSERT INTO [Streams](textdata, bindata, xmldata) VALUES (N'Another row', 0x666F6F626172, N'<fff>bbb</fff><fff>bbc</fff>')  
 GO  
 ```  
   
@@ -296,15 +296,15 @@ CREATE DATABASE [Demo2]
 GO  
 USE [Demo2]  
 GO  
-CREATE TABLE [BinaryStreams] (  
+CREATE TABLE [BinaryStreams](  
 [id] INT PRIMARY KEY IDENTITY(1, 1),  
 [bindata] VARBINARY(MAX))  
 GO  
-CREATE TABLE [TextStreams] (  
+CREATE TABLE [TextStreams](  
 [id] INT PRIMARY KEY IDENTITY(1, 1),  
 [textdata] NVARCHAR(MAX))  
 GO  
-CREATE TABLE [BinaryStreamsCopy] (  
+CREATE TABLE [BinaryStreamsCopy](  
 [id] INT PRIMARY KEY IDENTITY(1, 1),  
 [bindata] VARBINARY(MAX))  
 GO  
@@ -387,7 +387,7 @@ namespace StreamingToServer {
       private static async Task StreamBLOBToServer() {  
          using (SqlConnection conn = new SqlConnection(connectionString)) {  
             await conn.OpenAsync();  
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO [BinaryStreams] (bindata) VALUES (@bindata)", conn)) {  
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO [BinaryStreams](bindata) VALUES (@bindata)", conn)) {  
                using (FileStream file = File.Open("binarydata.bin", FileMode.Open)) {  
   
                   // Add a parameter which uses the FileStream we just opened  
@@ -405,7 +405,7 @@ namespace StreamingToServer {
       private static async Task StreamTextToServer() {  
          using (SqlConnection conn = new SqlConnection(connectionString)) {  
             await conn.OpenAsync();  
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO [TextStreams] (textdata) VALUES (@textdata)", conn)) {  
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO [TextStreams](textdata) VALUES (@textdata)", conn)) {  
                using (StreamReader file = File.OpenText("textdata.txt")) {  
   
                   // Add a parameter which uses the StreamReader we just opened  
@@ -426,7 +426,7 @@ namespace StreamingToServer {
             await conn.OpenAsync(cancellationToken);  
   
             // Artifically delay the command by 100ms  
-            using (SqlCommand cmd = new SqlCommand("WAITFOR DELAY '00:00:00:100';INSERT INTO [BinaryStreams] (bindata) VALUES (@bindata)", conn)) {  
+            using (SqlCommand cmd = new SqlCommand("WAITFOR DELAY '00:00:00:100';INSERT INTO [BinaryStreams](bindata) VALUES (@bindata)", conn)) {  
                using (FileStream file = File.Open("binarydata.bin", FileMode.Open)) {  
   
                   // Add a parameter which uses the FileStream we just opened  
@@ -480,7 +480,7 @@ namespace StreamingFromServerToAnother {
                await Task.WhenAll(openReadConn, openWriteConn);  
   
                using (SqlCommand readCmd = new SqlCommand("SELECT [bindata] FROM [BinaryStreams]", readConn)) {  
-                  using (SqlCommand writeCmd = new SqlCommand("INSERT INTO [BinaryStreamsCopy] (bindata) VALUES (@bindata)", writeConn)) {  
+                  using (SqlCommand writeCmd = new SqlCommand("INSERT INTO [BinaryStreamsCopy](bindata) VALUES (@bindata)", writeConn)) {  
   
                      // Add an empty parameter to the write command which will be used for the streams we are copying  
                      // Size is set to -1 to indicate "MAX"  

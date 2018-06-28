@@ -1,4 +1,4 @@
----
+﻿---
 title: Introduction to containers and Docker
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
@@ -27,4 +27,4 @@ In short, containers offer the benefits of isolation, portability, agility, scal
 
 
 >[!div class="step-by-step"]
-[Next] (what-is-docker.md)
+[Next](what-is-docker.md)

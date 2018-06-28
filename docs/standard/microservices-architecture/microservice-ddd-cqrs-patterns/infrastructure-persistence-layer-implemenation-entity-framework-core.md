@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing the infrastructure persistence layer with Entity Framework Core
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the infrastructure persistence layer with Entity Framework Core
 author: CESARDELATORRE
@@ -465,5 +465,5 @@ Although we don't recommended to return IQueryable from a repository, it’s per
     
 
 >[!div class="step-by-step"]
-[Previous] (infrastructure-persistence-layer-design.md)
-[Next] (nosql-database-persistence-infrastructure.md)
+[Previous](infrastructure-persistence-layer-design.md)
+[Next](nosql-database-persistence-infrastructure.md)

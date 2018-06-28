@@ -1,4 +1,4 @@
----
+﻿---
 title: Implementing resilient Entity Framework Core SQL connections
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing resilient Entity Framework Core SQL connections
 author: CESARDELATORRE
@@ -87,5 +87,5 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-retries-exponential-backoff.md)
-[Next] (implement-custom-http-call-retries-exponential-backoff.md)
+[Previous](implement-retries-exponential-backoff.md)
+[Next](implement-custom-http-call-retries-exponential-backoff.md)

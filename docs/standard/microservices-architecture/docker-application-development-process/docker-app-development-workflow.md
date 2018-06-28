@@ -1,4 +1,4 @@
----
+﻿---
 title: Development workflow for Docker apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Development workflow for Docker apps
 author: CESARDELATORRE
@@ -415,5 +415,5 @@ RUN powershell add-windowsfeature web-asp-net45
     [*https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (../net-core-single-containers-linux-windows-server-hosts/index.md)
+[Previous](index.md)
+[Next](../net-core-single-containers-linux-windows-server-hosts/index.md)

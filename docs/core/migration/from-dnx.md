@@ -57,7 +57,7 @@ The table below shows the mapping between the DNX/DNU commands and their CLI cou
 | dnx run                        	| dotnet run     	| Run code from source.                                                                                           	|
 | dnu build                      	| dotnet build   	| Build an IL binary of your code.                                                                                	|
 | dnu pack                       	| dotnet pack    	| Package up a NuGet package of your code.                                                                        	|
-| dnx \[command] (for example, "dnx web") 	| N/A\*          	| In DNX world, run a command as defined in the project.json.                                                     	|
+| dnx \[command](for example, "dnx web") 	| N/A\*          	| In DNX world, run a command as defined in the project.json.                                                     	|
 | dnu install                    	| N/A\*          	| In the DNX world, install a package as a dependency.                                                            	|
 | dnu restore                    	| dotnet restore 	| Restore dependencies specified in your project.json. ([see note](#dotnet-restore-note))                                                            	|
 | dnu publish                    	| dotnet publish 	| Publish your application for deployment in one of the three forms (portable, portable with native and standalone). 	|

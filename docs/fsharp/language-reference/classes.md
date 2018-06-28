@@ -1,4 +1,4 @@
----
+﻿---
 title: Classes (F#)
 description: Learn how F# Classes are types that represent objects that can have properties, methods, and events.
 ms.date: 05/16/2016
@@ -12,7 +12,7 @@ ms.date: 05/16/2016
 
 ```fsharp
 // Class definition:
-type [access-modifier] type-name [type-params] [access-modifier] ( parameter-list ) [ as identifier ] =
+type [access-modifier] type-name [type-params] [access-modifier]( parameter-list ) [ as identifier ] =
 [ class ]
 [ inherit base-type-name(base-constructor-args) ]
 [ let-bindings ]

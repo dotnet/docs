@@ -1,4 +1,4 @@
----
+﻿---
 title: Data sovereignty per microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Data sovereignty per microservice
 author: CESARDELATORRE
@@ -57,5 +57,5 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 
 
 >[!div class="step-by-step"]
-[Previous] (microservices-architecture.md)
-[Next] (logical-versus-physical-architecture.md)
+[Previous](microservices-architecture.md)
+[Next](logical-versus-physical-architecture.md)

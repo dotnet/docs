@@ -1,4 +1,4 @@
----
+﻿---
 title: Using Enumeration classes instead of enum types
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Enumeration classes instead of enum types
 author: CESARDELATORRE
@@ -122,5 +122,5 @@ public class CardType : Enumeration
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-value-objects.md)
-[Next] (domain-model-layer-validations.md)
+[Previous](implement-value-objects.md)
+[Next](domain-model-layer-validations.md)

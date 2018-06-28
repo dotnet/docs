@@ -1,4 +1,4 @@
----
+﻿---
 title: Service-oriented architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Service-oriented architecture
 author: CESARDELATORRE
@@ -21,5 +21,5 @@ This guide focuses on microservices, because a SOA approach is less prescriptive
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-application-state-data.md)
-[Next] (microservices-architecture.md)
+[Previous](docker-application-state-data.md)
+[Next](microservices-architecture.md)

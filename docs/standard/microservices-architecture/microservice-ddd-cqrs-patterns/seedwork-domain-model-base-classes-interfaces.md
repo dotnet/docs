@@ -1,4 +1,4 @@
----
+﻿---
 title: Seedwork (reusable base classes and interfaces for your domain model)
 description: .NET Microservices Architecture for Containerized .NET Applications | Seedwork (reusable base classes and interfaces for your domain model)
 author: CESARDELATORRE
@@ -138,5 +138,5 @@ public interface IRepository<T> where T : IAggregateRoot
 
 
 >[!div class="step-by-step"]
-[Previous] (net-core-microservice-domain-model.md)
-[Next] (implement-value-objects.md)
+[Previous](net-core-microservice-domain-model.md)
+[Next](implement-value-objects.md)

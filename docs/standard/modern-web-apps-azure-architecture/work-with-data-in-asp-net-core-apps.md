@@ -5,14 +5,11 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
 ---
-
 # Working with Data in ASP.NET Core Apps
 
 > "Data is a precious thing and will last longer than the systems themselves."
-
-Tim Berners-Lee
-
-## Summary
+>
+> Tim Berners-Lee
 
 Data access is an important part of almost any software application. ASP.NET Core supports a variety of data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.
 
@@ -436,5 +433,6 @@ _cache.Get<CancellationTokenSource>("cts").Cancel();
 
 Caching can dramatically improve the performance of web pages that repeatedly request the same values from the database. Be sure to measure data access and page performance before applying caching, and only apply caching where you see a need for improvement. Caching consumes web server memory resources and increases the complexity of the application, so it’s important you don’t prematurely optimize using this technique.
 
-> [!div class="step-by-step"][previous](develop-asp-net-core-mvc-apps.md)
-> [Next](test-asp-net-core-mvc-apps.md)
+>[!div class="step-by-step"]
+[Previous](develop-asp-net-core-mvc-apps.md)
+[Next](test-asp-net-core-mvc-apps.md)

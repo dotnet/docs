@@ -5,18 +5,19 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
 ---
+
 # Develop ASP.NET Core MVC Apps
 
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."  
 > _- Andrew Hunt and David Thomas_
 
-ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. ASP.NET Core apps are lightweight and modular, with built-in support for dependency injection, enabling in greater testability and maintainability. Combined with MVC, which supports building modern web APIs in addition to view-based apps, ASP.NET Core is a powerful framework with which to build enterprise web applications.
+ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. ASP.NET Core apps are lightweight and modular, with built-in support for dependency injection, enabling greater testability and maintainability. Combined with MVC, which supports building modern web APIs in addition to view-based apps, ASP.NET Core is a powerful framework with which to build enterprise web applications.
 
 ## Mapping requests to responses
 
-At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At a low level, this is done with middleware, and simple ASP.NET Core apps and microservices may be comprised solely of custom middleware. When using ASP.NET Core MVC, you can work at a somewhat higher level, thinking in terms of *routes*, *controllers*, and *actions*. Each incoming request is compared with the application's routing table, and if a matching route is found, the associated action method (belonging to a controller) is called to handle the request. If no matching route is found, an error handler (in this case, returning a NotFound result) is called.
+At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At a low level, this is done with middleware, and simple ASP.NET Core apps and microservices may be comprised solely of custom middleware. When using ASP.NET Core MVC, you can work at a somewhat higher level, thinking in terms of _routes_, _controllers_, and _actions_. Each incoming request is compared with the application's routing table, and if a matching route is found, the associated action method (belonging to a controller) is called to handle the request. If no matching route is found, an error handler (in this case, returning a NotFound result) is called.
 
-ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Conventional routes are defined in code, specifying routing *conventions* using syntax like in the example below:
+ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Conventional routes are defined in code, specifying routing _conventions_ using syntax like in the example below:
 
 ```csharp
 app.UseMvc(routes =>;
@@ -25,7 +26,7 @@ app.UseMvc(routes =>;
 });
 ```
 
-In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for *controller*, *action*, and *id*. The controller and action placeholders have default specified ("Home" and "Index", respectively), and the id placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an id parameter. Conventional routes are typically defined in one place for the application, such as in the Configure method in the Startup class.
+In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for _controller_, _action_, and _id_. The controller and action placeholders have default specified ("Home" and "Index", respectively), and the id placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an id parameter. Conventional routes are typically defined in one place for the application, such as in the Configure method in the Startup class.
 
 Attribute routes are applied to controllers and actions directly, rather than specified globally. This has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
 
@@ -57,21 +58,22 @@ After binding the model but before calling the action method, model validation o
 
 If you are using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
 
-For web APIs, ASP.NET Core MVC supports [*content negotiation*](/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
+For web APIs, ASP.NET Core MVC supports [_content negotiation_](/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
 
 > ### References – Mapping Requests to Responses
+>
 > - **Routing to Controller Actions**
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
+ > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
 > - **Model Binding**
-> <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
+ > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
 > - **Model Validation**
-> <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
+ > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
 > - **Filters**
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+ > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 
 ## Working with Dependencies
 
-ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enabled loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](https://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](https://ardalis.com/new-is-glue)."
+ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enables loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](https://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](https://ardalis.com/new-is-glue)."
 
 Static cling occurs when your classes make calls to static methods, or access static properties, which have side effects or dependencies on infrastructure. For example, if you have a method that calls a static method, which in turn writes to a database, your method is tightly coupled to the database. Anything that breaks that database call will break your method. Testing such methods is notoriously difficult, since such tests either require commercial mocking libraries to mock the static calls, or can only be tested with a test database in place. Static calls that don't have any dependence on infrastructure, especially those that are completely stateless, are fine to call and have no impact on coupling or testability (beyond coupling code to the static call itself).
 
@@ -130,7 +132,7 @@ Another approach to decoupling the application from implementation details is to
 
 ### Feature organization
 
-By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by *feature* instead of by file type. This organizational style is typically referred to as feature folders or feature slices (see also: [Vertical Slices](https://deviq.com/vertical-slices/)).
+By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by _feature_ instead of by file type. This organizational style is typically referred to as feature folders or feature slices (see also: [Vertical Slices](https://deviq.com/vertical-slices/)).
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
@@ -258,7 +260,6 @@ public class ValidateModelAttribute : ActionFilterAttribute
 Likewise, a filter can be used to check if a record exists and return a 404 before the action is executed, eliminating the need to perform these checks in the action. Once you've pulled out common conventions and organized your solution to separate infrastructure code and business logic from your UI, your MVC action methods should be extremely thin:
 
 ```csharp
-// PUT api/authors/2/5
 [HttpPut("{id}")]
 [ValidateAuthorExists]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
@@ -271,14 +272,15 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 You can read more about implementing filters and download a working sample from the MSDN article, [Real World ASP.NET Core MVC Filters](https://msdn.microsoft.com/magazine/mt767699.aspx).
 
 > ### References – Structuring Applications
+>
 > - **Areas**  
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
+>   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
 > - **MSDN – Feature Slices for ASP.NET Core MVC**
->  <https://msdn.microsoft.com/magazine/mt763233.aspx>
+ > <https://msdn.microsoft.com/magazine/mt763233.aspx>
 > - **Filters**  
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+>   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 > - **MSDN – Real World ASP.NET Core MVC Filters**  
-> <https://msdn.microsoft.com/magazine/mt767699.aspx>
+>   <https://msdn.microsoft.com/magazine/mt767699.aspx>
 
 ## Security
 
@@ -377,16 +379,17 @@ Most web APIs should implement a token-based authentication system. Token authen
 **Figure 7-4.** Token-based authentication for Web APIs.
 
 > ### References – Security
+>
 > - **Security Docs Overview**  
-> https://docs.microsoft.com/aspnet/core/security/
+>   https://docs.microsoft.com/aspnet/core/security/
 > - **Enforcing SSL in an ASP.NET Core App**  
-> <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
+>   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
 > - **Introduction to Identity**  
-> <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
+>   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
 > - **Introduction to Authorization**  
-> <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
+>   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
 > - **Authentication and Authorization for API Apps in Azure App Service**  
-> <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
+>   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
 
 ## Client Communication
 
@@ -428,13 +431,13 @@ public class Program
         Console.ReadLine();
         StopConnectionAsync();
     }
-    
+
     public static async Task StartConnectionAsync()
     {
         _connection = new Connection();
         await _connection.StartConnectionAsync("ws://localhost:65110/chat");
     }
-    
+
     public static async Task StopConnectionAsync()
     {
         await _connection.StopConnectionAsync();
@@ -444,16 +447,17 @@ public class Program
 Consider ways in which your applications communicate directly with client applications, and consider whether real-time communication would improve your app's user experience.
 
 > ### References – Client Communication
+>
 > - **ASP.NET Core SignalR**  
-> <https://github.com/aspnet/SignalR>
+>   <https://github.com/aspnet/SignalR>
 > - **WebSocket Manager**  
-> https://github.com/radu-matei/websocket-manager
+>   https://github.com/radu-matei/websocket-manager
 
 ## Domain-driven design – Should you apply it?
 
-Domain-Driven Design (DDD) is an agile approach to building software that emphasizes focusing on the *business domain*. It places a heavy emphasis on communication and interaction with business domain expert(s) who can relate to the developers how the real-world system works. For example, if you're building a system that handles stock trades, your domain expert might be an experienced stock broker. DDD is designed to address large, complex business problems, and is often not appropriate for smaller, simpler applications, as the investment in understanding and modeling the domain is not worth it.
+Domain-Driven Design (DDD) is an agile approach to building software that emphasizes focusing on the _business domain_. It places a heavy emphasis on communication and interaction with business domain expert(s) who can relate to the developers how the real-world system works. For example, if you're building a system that handles stock trades, your domain expert might be an experienced stock broker. DDD is designed to address large, complex business problems, and is often not appropriate for smaller, simpler applications, as the investment in understanding and modeling the domain is not worth it.
 
-When building software following a DDD approach, your team (including non-technical stakeholders and contributors) should develop a *ubiquitous language* for the problem space. That is, the same terminology should be used for the real-world concept being modeled, the software equivalent, and any structures that might exist to persist the concept (for example, database tables). Thus, the concepts described in the ubiquitous language should form the basis for your *domain model*.
+When building software following a DDD approach, your team (including non-technical stakeholders and contributors) should develop a _ubiquitous language_ for the problem space. That is, the same terminology should be used for the real-world concept being modeled, the software equivalent, and any structures that might exist to persist the concept (for example, database tables). Thus, the concepts described in the ubiquitous language should form the basis for your _domain model_.
 
 Your domain model is comprised of objects that interact with one another to represent the behavior of the system. These objects may fall into the following categories:
 
@@ -494,8 +498,9 @@ DDD involves investments in modeling, architecture, and communication that may n
 A hybrid approach would be to only use DDD for the transactional or more complex areas of the application, but not for simpler CRUD or read-only portions of the application. For instance, you needn't have the constraints of an Aggregate if you're querying data to display a report or to visualize data for a dashboard. It's perfectly acceptable to have a separate, simpler read model for such requirements.
 
 > ### References – Domain-Driven Design
+>
 > - **DDD in Plain English (StackOverflow Answer)**  
-> <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
+>   <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## Deployment
 
@@ -533,18 +538,18 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 
 - Advanced diagnostics
 
-*Learn more about Azure deployment options in Chapter 10.*
+_Learn more about Azure deployment options in Chapter 10._
 
 > ### References – Deployment
+>
 > - **Hosting and Deployment Overview**  
-> <https://docs.microsoft.com/aspnet/core/publishing/>
+>   <https://docs.microsoft.com/aspnet/core/publishing/>
 > - **When to use Kestrel with a reverse proxy**  
-> <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
+>   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
 > - **Host ASP.NET Core apps in Docker**  
-> <https://docs.microsoft.com/aspnet/core/publishing/docker>
+>   <https://docs.microsoft.com/aspnet/core/publishing/docker>
 > - **Introducing Azure Application Gateway**  
-> <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
+>   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
->[!div class="step-by-step"]
-[Previous](common-client-side-web-technologies.md)
-[Next](work-with-data-in-asp-net-core-apps.md)
+> [!div class="step-by-step"][previous](common-client-side-web-technologies.md)
+> [Next](work-with-data-in-asp-net-core-apps.md)

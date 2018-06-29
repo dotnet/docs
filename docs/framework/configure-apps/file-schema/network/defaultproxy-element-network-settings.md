@@ -76,7 +76,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
         bypassonlocal="true"  
       />  
       <bypasslist>  
-        <add address="[a-z]+\.contoso\.com" />  
+        <add address="[a-z]+\.contoso\.com$" />  
       </bypasslist>  
     </defaultProxy>  
   </system.net>  

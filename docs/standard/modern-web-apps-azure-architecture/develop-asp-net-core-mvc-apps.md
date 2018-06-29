@@ -539,7 +539,7 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 
 - Advanced diagnostics
 
-_Learn more about Azure deployment options in Chapter 10._
+_Learn more about Azure deployment options in [Chapter 10](development-process-for-azure.md)._
 
 > ### References – Deployment
 >

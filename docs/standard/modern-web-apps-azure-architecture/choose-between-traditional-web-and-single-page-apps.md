@@ -1,6 +1,6 @@
 ---
 title: Choose between traditional web apps and single page apps
-description: Architect Modern Web Applications with ASP.NET Core and Azure | Choose Between Traditional Web App or SPA
+description: How do you choose between traditional web apps and single page applications (SPAs)?
 author: ardalis
 ms.author: wiwagn
 ms.date: 6/28/2018

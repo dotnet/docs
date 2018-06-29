@@ -14,7 +14,7 @@ This article explains the policies used by the .NET Core tools, SDK, and runtime
 - Easy and efficient deployment of .NET Core, including security and reliability updates.
 - Usage of the latest tools and commands independent of target runtime.
 
-There are four activities during development and deployment where version binding occurs:
+There are four activities during development and deployment where version selection occurs:
 
 - When you [run an SDK command](#the-sdk-uses-the-latest-installed-version).
 - When you [build an assembly](target-framework-monikers-define-build-time-apis).
@@ -88,7 +88,7 @@ Minor version roll-forward has one side-effect that may affect end users. Consid
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployments-scd). This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime binding occurs at publishing time, not run-time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployments-scd). This approach includes .NET Core. Self-contained distributions do not have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run-time.
 
 The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family. The target framework (including the latest installed security patches) are packaged with the application.
 

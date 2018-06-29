@@ -176,7 +176,7 @@ if (transportBindingElement is UdpTransportBindingElement)
  The custom binding element can export policy assertions in the WSDL binding for a service endpoint to express the capabilities of that binding element. The following example code is taken from the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
   
 #### Policy Export  
- The `UdpTransportBindingElement` type implements``<xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> to add support for exporting policy. As a result, <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> includes `UdpTransportBindingElement` in the generation of policy for any binding that includes it.  
+ The `UdpTransportBindingElement` type implements `<xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType>` to add support for exporting policy. As a result, `<xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType>` includes `UdpTransportBindingElement` in the generation of policy for any binding that includes it.  
   
  In <xref:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy%2A?displayProperty=nameWithType>, add an assertion for UDP and another assertion if the channel is in multicast mode. This is because multicast mode affects how the communication stack is constructed, and thus must be coordinated between both sides.  
   

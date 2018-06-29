@@ -96,7 +96,7 @@ At a minimum, individual web applications should strive to be their own bounded 
 > ### References – Modern Web Applications
 > - **Separation of Concerns**  
 > <https://deviq.com/separation-of-concerns/>
-> - **Encapsulation** 
+> - **Encapsulation**  
 > <https://deviq.com/encapsulation/>
 > - **Dependency Inversion Principle**  
 > <https://deviq.com/dependency-inversion-principle/>

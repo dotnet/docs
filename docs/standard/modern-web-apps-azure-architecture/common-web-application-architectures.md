@@ -306,7 +306,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 >   <https://deviq.com/repository-pattern/>
 > - **Clean Architecture Solution Sample**  
 >   <https://github.com/ardalis/cleanarchitecture>
-> - **Architecting Microservices e-book**
+> - **Architecting Microservices e-book**  
 >   <https://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]

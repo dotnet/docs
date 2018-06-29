@@ -271,11 +271,11 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 You can read more about implementing filters and download a working sample from the MSDN article, [Real World ASP.NET Core MVC Filters](https://msdn.microsoft.com/magazine/mt767699.aspx).
 
-> ### References – Structuring Applications
+> ### References – Structuring applications
 >
 > - **Areas**  
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
-> - **MSDN – Feature Slices for ASP.NET Core MVC**
+> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**  
  > <https://msdn.microsoft.com/magazine/mt763233.aspx>
 > - **Filters**  
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>

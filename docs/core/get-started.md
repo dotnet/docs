@@ -64,7 +64,7 @@ You can get started developing .NET Core apps by following these step-by-step tu
 
 See the [Prerequisites for Linux development](linux-prerequisites.md) article for a list of the supported Linux distros and versions.
 
-# [macOS / OS X](#tab/mac)
+# [macOS](#tab/macos)
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 

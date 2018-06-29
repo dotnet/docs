@@ -175,5 +175,5 @@ Note that Docker containers are themselves stateless. If you want to implement a
 
 
 >[!div class="step-by-step"]
-[Previous] (soa-applications.md)
-[Next] (docker-apps-development-environment.md)
+[Previous](soa-applications.md)
+[Next](docker-apps-development-environment.md)

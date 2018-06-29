@@ -410,5 +410,5 @@ It is that simple. And because it is automatically generated, the Swagger metada
 
 
 >[!div class="step-by-step"]
-[Previous] (microservice-application-design.md)
-[Next] (multi-container-applications-docker-compose.md)
+[Previous](microservice-application-design.md)
+[Next](multi-container-applications-docker-compose.md)

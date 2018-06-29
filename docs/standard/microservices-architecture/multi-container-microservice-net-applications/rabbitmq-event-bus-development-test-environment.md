@@ -105,5 +105,5 @@ The Subscribe method accepts an IIntegrationEventHandler object, which is like a
 
 
 >[!div class="step-by-step"]
-[Previous] (integration-event-based-microservice-communications.md)
-[Next] (subscribe-events.md)
+[Previous](integration-event-based-microservice-communications.md)
+[Next](subscribe-events.md)

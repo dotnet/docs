@@ -44,5 +44,5 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 
 >[!div class="step-by-step"]
-[Previous] (container-framework-choice-factors.md)
-[Next] (official-net-docker-images.md)
+[Previous](container-framework-choice-factors.md)
+[Next](official-net-docker-images.md)

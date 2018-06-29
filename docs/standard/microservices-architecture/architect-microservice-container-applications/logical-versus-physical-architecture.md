@@ -31,5 +31,5 @@ In short, the logical architecture of microservices does not always have to coin
 
 
 >[!div class="step-by-step"]
-[Previous] (data-sovereignty-per-microservice.md)
-[Next] (distributed-data-management.md)
+[Previous](data-sovereignty-per-microservice.md)
+[Next](distributed-data-management.md)

@@ -56,17 +56,20 @@ referenced above contains sections to each of the available installations.
 ## Create the Application
 
 Now that you've installed all the tools, create a new ASP.NET Core
-application. To do that, create a new directory called "WeatherMicroservice"
-and execute the following command in that directory in your favorite shell:
+application in a directory called "WeatherMicroservice" by executing
+the following command in your favorite shell:
 
 ```console
-dotnet new web
+dotnet new web -o WeatherMicroservice
 ```
 
 The `dotnet` command runs the tools necessary
 for .NET development. Each verb executes a different command.
 
 The `dotnet new` command is used to create .Net Core projects.
+
+The `-o WeatherMicroservice` option after the `dotnet new` command
+is used to give the location to create the ASP.NET Core application.
 
 For this microservice, we want the simplest, most lightweight
 web application possible, so we used the "ASP.NET Core Empty" template,

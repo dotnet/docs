@@ -49,7 +49,7 @@ The following provides an overview of the kinds of members a class can contain.
 
 ## Accessibility
 
-Each member of a class has an associated accessibility, which controls the regions of program text that are able to access the member. There are five possible forms of accessibility. These are summarized below.
+Each member of a class has an associated accessibility, which controls the regions of program text that are able to access the member. There are six possible forms of accessibility. These are summarized below.
 
 * `public`
 	- Access not limited

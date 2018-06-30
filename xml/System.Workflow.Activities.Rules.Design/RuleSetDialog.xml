@@ -43,8 +43,8 @@
         <Parameter Name="ruleSet" Type="System.Workflow.Activities.Rules.RuleSet" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that this <see cref="T:System.Workflow.Activies.Rules.RuleSet" /> is executed against. Typically it is the workflow (as used by <see cref="T:System.Workflow.Activities.PolicyActivity" />), but it can be any valid activity.</param>
-        <param name="ruleSet">The initial <see cref="T:System.Workflow.Activies.Rules.RuleSet" /> to be displayed.</param>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that this <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is executed against. Typically it is the workflow (as used by <see cref="T:System.Workflow.Activities.PolicyActivity" />), but it can be any valid activity.</param>
+        <param name="ruleSet">The initial <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to be displayed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Design.RuleSetDialog" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,7 +68,7 @@
       <Docs>
         <param name="activityType">The type of the object that this condition is executed against. Normally it is the workflow, but can be any valid type.</param>
         <param name="typeProvider">An optional <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> implementation that is used to determine what <see langword="Types" /> are available in the condition. If one is not specified, only types in the assembly specified by <c>activityType</c> and any assemblies it references are available.</param>
-        <param name="ruleSet">The initial <see cref="T:System.Workflow.Activies.Rules.RuleSet" /> to be displayed.</param>
+        <param name="ruleSet">The initial <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to be displayed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Design.RuleSetDialog" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,8 +142,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.Activies.Rules.RuleSet" /> as confirmed by the dialog box user.</summary>
-        <value>The <see cref="T:System.Workflow.Activies.Rules.RuleSet" /> as confirmed by the dialog box user.</value>
+        <summary>Gets the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> as confirmed by the dialog box user.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> as confirmed by the dialog box user.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -137,8 +137,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to find computers with bad password attempts.</param>
         <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that have had bad password attempts within the parameters specified.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that have had bad password attempts within the parameters specified.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -175,8 +175,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
         <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that have an expiration time within the specified date and time range.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that have an expiration time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -286,8 +286,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
         <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that have a lockout time within the specified date and time range.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that have a lockout time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -324,8 +324,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
         <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that have a logon time within the specified date and time range.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that have a logon time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -362,8 +362,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
         <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
-        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that have a password set time within the specified date and time range.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that have a password set time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

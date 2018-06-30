@@ -482,8 +482,8 @@
         <Parameter Name="context" Type="System.Activities.RegistrationContext" />
       </Parameters>
       <Docs>
-        <param name="context">For a description of this parameter, see <see cref="M:System.Activities.IPropertyRegistrationCallback.UnRegister(System.Activities.RegistrationContext)" />.</param>
-        <summary>For a description of this member, see <see cref="M:System.Activities.IPropertyRegistrationCallback.UnRegister(System.Activities.RegistrationContext)" />.</summary>
+        <param name="context">For a description of this parameter, see <see cref="M:System.Activities.IPropertyRegistrationCallback.Unregister(System.Activities.RegistrationContext)" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Activities.IPropertyRegistrationCallback.Unregister(System.Activities.RegistrationContext)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

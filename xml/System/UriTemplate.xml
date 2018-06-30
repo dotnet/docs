@@ -573,7 +573,7 @@
       <Docs>
         <param name="baseAddress">The base address.</param>
         <param name="candidate">The <see cref="T:System.Uri" /> to match against the template.</param>
-        <summary>Attempts to match a <see cref="T:System.URI" /> to a <see cref="T:System.UriTemplate" />.</summary>
+        <summary>Attempts to match a <see cref="T:System.Uri" /> to a <see cref="T:System.UriTemplate" />.</summary>
         <returns>An instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

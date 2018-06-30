@@ -376,7 +376,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
         <ReturnType>System.Net.ICredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When the default (system) proxy is being used, gets or sets the credentials to submit to the default proxy server for authentication. The default proxy is used only when <see cref="T:System.Net.Http.HttpClientHandler.UseProxy%2A" /> is set to <see langword="true" /> and <see cref="T:System.Net.Http.HttpClientHandler.Proxy%2A" /> is set to <see langword="null" />.</summary>
+        <summary>When the default (system) proxy is being used, gets or sets the credentials to submit to the default proxy server for authentication. The default proxy is used only when <see cref="P:System.Net.Http.HttpClientHandler.UseProxy" /> is set to <see langword="true" /> and <see cref="P:System.Net.Http.HttpClientHandler.Proxy" /> is set to <see langword="null" />.</summary>
         <value>The credentials needed to authenticate a request to the default proxy server.</value>
         <remarks>To be added.</remarks>
       </Docs>

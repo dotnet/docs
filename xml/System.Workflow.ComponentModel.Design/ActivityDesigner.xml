@@ -457,7 +457,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the activity designer can be resized in a free form designer.</summary>
         <value>
-          <see langword="true" /> if the activity designer can be resized in a <see cref="T:System.Workflow.ComponentModel.Design.FreeFormActivityDesigner" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the activity designer can be resized in a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1298,7 +1298,7 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user starts to visually resize the activity designer when the designer is in a <see cref="T:System.Workflow.ComponentModel.Design.FreeFormActivityDesigner" />.</summary>
+        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user starts to visually resize the activity designer when the designer is in a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1561,7 +1561,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user is finished visually resizing the activity designer when the designer is in a <see cref="T:System.Workflow.ComponentModel.Design.FreeFormActivityDesigner" />.</summary>
+        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user is finished visually resizing the activity designer when the designer is in a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2436,7 +2436,7 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs" /> that contains the event data.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user is visually resizing it at design time. The method is only called if the activity designer is a child of a <see cref="T:System.Workflow.ComponentModel.Design.FreeFormActivityDesigner" />.</summary>
+        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> when a user is visually resizing it at design time. The method is only called if the activity designer is a child of a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

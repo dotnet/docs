@@ -22,7 +22,7 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Workflow.ComponentModel.Design.FreeFormActivityDesigner.ConnectorAdded" />, <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorRemoved" />, and <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorChanged" /> events of a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
+    <summary>Represents the method that will handle the <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorAdded" />, <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorRemoved" />, and <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorChanged" /> events of a <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

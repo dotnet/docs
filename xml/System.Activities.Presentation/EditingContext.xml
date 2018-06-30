@@ -64,8 +64,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an instance of the context item manager that is returned by the <see cref="P:System.Activities.Presentation.EditingContext.Items" /> property.</summary>
-        <returns>
-          <see cref="T:System.Activites.Design.ContextItemManager" />.</returns>
+        <returns>An instance of the context item manager that is returned by the <see cref="P:System.Activities.Presentation.EditingContext.Items" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

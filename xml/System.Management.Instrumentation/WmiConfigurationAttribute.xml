@@ -75,7 +75,7 @@
       </Parameters>
       <Docs>
         <param name="scope">The WMI namespace in which the provider will expose classes. For example, "root\MyProviderNamespace".</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.WmiConfigurationAttribute" /> class that specifies the WMI namespace in which the WMI provider will expose classes.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.WmiConfigurationAttribute" /> class that specifies the WMI namespace in which the WMI provider will expose classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

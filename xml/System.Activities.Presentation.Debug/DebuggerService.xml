@@ -164,7 +164,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a list of the latest breakpoint locations.</summary>
-        <returns>A list of breakpoints of type <see cref="P:System.Activities.Presentation.Debug.BreakpointInfo.SourceLocation" /> culled from the source file.</returns>
+        <returns>A list of breakpoints culled from the source file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

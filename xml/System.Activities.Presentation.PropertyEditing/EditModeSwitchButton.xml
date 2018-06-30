@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a button that enables the user to switch between the different <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" /> modes within the property grid .</summary>
+    <summary>Represents a button that enables the user to switch between the different property container modes within the property grid .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
       <Docs>
         <param name="e">
           <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> event arguments.</param>
-        <summary>Checks whether the <see cref="F:System.Activities.Presentation.PropertyEditing.PropertyContainer.OwningPropertyContainerProperty" /> has changed (or gained or lost) its owning <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" /> and if that is <see langword="true" />, sets up the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> to be the mode to switch to.</summary>
+        <summary>Called when any DependencyProperties of this control change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that, when <see langword="true" />, means that the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> will be calculated automatically to match the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.ActiveEditMode" /> of the owning <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" />. Otherwise, the mode to switch to will be based on the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> property.</summary>
+        <summary>Gets or sets a value that indicates whether the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> is calculated automatically to match the ActiveEditMode of the owning property container.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton" /> will switch automatically to the edit mode of its <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" />; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton" /> switches automatically to the edit mode of its owning property container; <see langword="false" /> if it switches to edit mode defined by the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Registers the dependency property which, when <see langword="true" />, means that the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> will be calculated automatically to match the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.ActiveEditMode" /> of the owning <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" />. Otherwise, the mode to switch to will be based on the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> property.</summary>
+        <summary>Registers the dependency property which, when <see langword="true" />, means that the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> will be calculated automatically to match the ActiveEditMode of the owning PropertyContainer. Otherwise, the mode to switch to will be based on the <see cref="P:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton.TargetEditMode" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

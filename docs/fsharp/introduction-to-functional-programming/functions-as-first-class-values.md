@@ -108,7 +108,7 @@ The following code sends two functions as arguments to `compose`, both of which 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet35.fs)]
     
 >[!NOTE] 
-F# provides two operators, `<<` and `>>`, that compose functions. For example, `let squareAndDouble2 = doubleIt << squareIt` is equivalent to `let squareAndDouble = compose doubleIt squareIt` in the previous example.
+F# provides two operators, `<<` and `>>`, that compose functions. For example, `let squareAndDouble2 = doubleIt >> squareIt` is equivalent to `let squareAndDouble = compose doubleIt squareIt` in the previous example.
 
 The following example of returning a function as the value of a function call creates a simple guessing game. To create a game, call `makeGame` with the value that you want someone to guess sent in for `target`. The return value from function `makeGame` is a function that takes one argument (the guess) and reports whether the guess is correct.
 

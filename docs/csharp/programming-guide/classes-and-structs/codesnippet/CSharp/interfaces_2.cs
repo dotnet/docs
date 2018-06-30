@@ -7,13 +7,8 @@
         // Implementation of IEquatable<T> interface
         public bool Equals(Car car)
         {
-            if (this.Make == car.Make &&
-                this.Model == car.Model &&
-                this.Year == car.Year)
-            {
-                return true;
-            }
-            else
-                return false;
+            return this.Make == car.Make &&
+                   this.Model == car.Model &&
+                   this.Year == car.Year;
         }
     }

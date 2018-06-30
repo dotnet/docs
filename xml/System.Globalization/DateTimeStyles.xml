@@ -60,7 +60,7 @@
   
  The `ParseExact` and `TryParseExact` methods can use any of the <xref:System.Globalization.DateTimeStyles> values. However, if none of the `Allow*` values is selected, the input string must have exactly the same white-space characters as the format string.  
   
- If the input string does not contain any indication of the time zone, the date and time parsing methods interpret the value of the date and time string based on the time zone setting for the operating system. To convert the date and time to the Universal Time or Greenwich Mean Time (GMT), the application should use the AdjustToUniversal value. The same effect can be achieved by calling the <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method. However, using the AdjustToUniversal value with the date and time parsing method is more efficient.  
+ If the input string does not contain any indication of the time zone, the date and time parsing methods interpret the value of the date and time string based on the time zone setting for the operating system. To convert the date and time to the Universal Time or Greenwich Mean Time (GMT), the application should use the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> value. The same effect can be achieved by calling the <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method. However, using the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> value with the date and time parsing method is more efficient.  
   
  ]]></format>
     </remarks>

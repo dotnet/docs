@@ -49,7 +49,7 @@ The following provides an overview of the kinds of members a class can contain.
 
 ## Accessibility
 
-Each member of a class has an associated accessibility, which controls the regions of program text that are able to access the member. There are five possible forms of accessibility. These are summarized below.
+Each member of a class has an associated accessibility, which controls the regions of program text that are able to access the member. There are six possible forms of accessibility. These are summarized below.
 
 * `public`
 	- Access not limited
@@ -58,11 +58,11 @@ Each member of a class has an associated accessibility, which controls the regio
 * `internal`
 	- Access limited to the current assembly (.exe, .dll, etc.)
 * `protected internal`
-	- Access limited to the containing class or classes derived from the containing class
+	- Access limited to the containing class, classes derived from the containing class, or classes within the same assembly
 * `private`
 	- Access limited to this class
 * `private protected`
-    - Access limited to the containing class or classes derived from the containing type within the same assembly
+	- Access limited to the containing class or classes derived from the containing type within the same assembly
 
 ## Type parameters
 

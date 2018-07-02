@@ -32,7 +32,10 @@ You can assign a value to a `readonly` field only in the following contexts:
 public readonly int y = 5;  
 ```
 
-- For an instance field, in the instance constructors of the class that contains the field declaration, or for a static field, in the static constructor of the class that contains the field declaration. These are also the only contexts in which it is valid to pass a `readonly` field as an [out](out-parameter-modifier.md) or [ref](ref.md) parameter.  
+- In an instance constructor of the class that contains the instance field declaration.
+- In the static constructor of the class that contains the static field declaration.
+
+These constructor contexts are also the only contexts in which it is valid to pass a `readonly` field as an [out](out-parameter-modifier.md) or [ref](ref.md) parameter.  
   
 > [!NOTE]
 > The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:  
@@ -59,7 +62,7 @@ The `readonly` modifier on a `struct` definition declares that the struct is **i
 
 [!code-csharp[readonly struct example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyStruct)]  
 
-The preceding example uses readonly auto properties to declare its storage. That instructs the compiler to create `readonly` backing fields for those properties. You could also declare `readonly` fields directly:
+The preceding example uses [readonly auto properties](../../properties.md#read-only) to declare its storage. That instructs the compiler to create `readonly` backing fields for those properties. You could also declare `readonly` fields directly:
 
 ```csharp
 public readonly struct Point

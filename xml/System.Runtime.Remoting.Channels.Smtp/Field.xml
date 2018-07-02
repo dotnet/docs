@@ -1,0 +1,476 @@
+﻿<Type Name="Field" FullName="System.Runtime.Remoting.Channels.Smtp.Field">
+  <TypeSignature Language="C#" Value="public interface Field" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Field" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Smtp.Field" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Field" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Field" />
+  <TypeSignature Language="F#" Value="type Field = interface" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00000569-0000-0010-8000-00AA006D2EA4")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActualSize">
+      <MemberSignature Language="C#" Value="public long ActualSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ActualSize" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.ActualSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ActualSize { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActualSize : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.ActualSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendChunk">
+      <MemberSignature Language="C#" Value="public void AppendChunk (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendChunk(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.Field.AppendChunk(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendChunk (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendChunk(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member AppendChunk : obj -&gt; unit" Usage="field.AppendChunk o" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes_One">
+      <MemberSignature Language="C#" Value="public long Attributes_One { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Attributes_One" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Attributes_One" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes_One As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Attributes_One { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes_One : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Attributes_One" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes_Two">
+      <MemberSignature Language="C#" Value="public long Attributes_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Attributes_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Attributes_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attributes_Two As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Attributes_Two {  void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes_Two : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Attributes_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFormat_One">
+      <MemberSignature Language="C#" Value="public object DataFormat_One ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DataFormat_One() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.Field.DataFormat_One" />
+      <MemberSignature Language="VB.NET" Value="Public Function DataFormat_One () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DataFormat_One();" />
+      <MemberSignature Language="F#" Value="abstract member DataFormat_One : unit -&gt; obj" Usage="field.DataFormat_One " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFormat_Two">
+      <MemberSignature Language="C#" Value="public object DataFormat_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataFormat_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.DataFormat_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataFormat_Two As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataFormat_Two {  void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormat_Two : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.DataFormat_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefinedSize_One">
+      <MemberSignature Language="C#" Value="public long DefinedSize_One { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 DefinedSize_One" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.DefinedSize_One" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefinedSize_One As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long DefinedSize_One { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefinedSize_One : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.DefinedSize_One" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefinedSize_Two">
+      <MemberSignature Language="C#" Value="public long DefinedSize_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 DefinedSize_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.DefinedSize_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefinedSize_Two As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long DefinedSize_Two {  void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.DefinedSize_Two : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.DefinedSize_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChunk">
+      <MemberSignature Language="C#" Value="public object GetChunk (long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetChunk(int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.Field.GetChunk(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChunk (length As Long) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetChunk(long length);" />
+      <MemberSignature Language="F#" Value="abstract member GetChunk : int64 -&gt; obj" Usage="field.GetChunk length" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumericScale_One">
+      <MemberSignature Language="C#" Value="public char NumericScale_One { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char NumericScale_One" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.NumericScale_One" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumericScale_One As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char NumericScale_One { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumericScale_One : char" Usage="System.Runtime.Remoting.Channels.Smtp.Field.NumericScale_One" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumericScale_Two">
+      <MemberSignature Language="C#" Value="public char NumericScale_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char NumericScale_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.NumericScale_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumericScale_Two As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char NumericScale_Two {  void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.NumericScale_Two : char" Usage="System.Runtime.Remoting.Channels.Smtp.Field.NumericScale_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalValue">
+      <MemberSignature Language="C#" Value="public object OriginalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalValue" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.OriginalValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalValue : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.OriginalValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Precision_One">
+      <MemberSignature Language="C#" Value="public char Precision_One { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Precision_One" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Precision_One" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision_One As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char Precision_One { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.Precision_One : char" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Precision_One" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Precision_Two">
+      <MemberSignature Language="C#" Value="public char Precision_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Precision_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Precision_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property Precision_Two As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char Precision_Two {  void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.Precision_Two : char" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Precision_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public object Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Properties { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public long Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Status" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Status { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : int64" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type_One">
+      <MemberSignature Language="C#" Value="public object Type_One { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Type_One" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Type_One" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type_One As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Type_One { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type_One : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Type_One" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type_Two">
+      <MemberSignature Language="C#" Value="public object Type_Two { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Type_Two" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Type_Two" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type_Two As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Type_Two {  void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type_Two : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Type_Two" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlyingValue">
+      <MemberSignature Language="C#" Value="public object UnderlyingValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object UnderlyingValue" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.UnderlyingValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UnderlyingValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingValue : obj" Usage="System.Runtime.Remoting.Channels.Smtp.Field.UnderlyingValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Smtp.Field.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Runtime.Remoting.Channels.Smtp.Field.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

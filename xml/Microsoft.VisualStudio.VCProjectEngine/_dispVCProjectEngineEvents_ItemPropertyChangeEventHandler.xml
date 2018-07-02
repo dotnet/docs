@@ -1,0 +1,33 @@
+<Type Name="_dispVCProjectEngineEvents_ItemPropertyChangeEventHandler" FullName="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler(object Item, int propertyID);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler(Item As Object, propertyID As Integer)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler(System::Object ^ Item, int propertyID);" />
+  <TypeSignature Language="F#" Value="type _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler = delegate of obj * int -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Item" Type="System.Object" />
+    <Parameter Name="propertyID" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Item">To be added.</param>
+    <param name="propertyID">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

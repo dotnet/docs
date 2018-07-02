@@ -123,7 +123,7 @@ At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.Polyl
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,7 +155,7 @@ At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.Polyl
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Byte), "1")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

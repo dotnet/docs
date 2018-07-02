@@ -1,0 +1,81 @@
+﻿<Type Name="termSvrAwarenessType" FullName="Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType">
+  <TypeSignature Language="C#" Value="public enum termSvrAwarenessType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed termSvrAwarenessType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum termSvrAwarenessType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class termSvrAwarenessType" />
+  <TypeSignature Language="F#" Value="type termSvrAwarenessType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="termSvrAwareDefault">
+      <MemberSignature Language="C#" Value="termSvrAwareDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType termSvrAwareDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareDefault" />
+      <MemberSignature Language="VB.NET" Value="termSvrAwareDefault" />
+      <MemberSignature Language="C++ CLI" Value="termSvrAwareDefault" />
+      <MemberSignature Language="F#" Value="termSvrAwareDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="termSvrAwareNo">
+      <MemberSignature Language="C#" Value="termSvrAwareNo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType termSvrAwareNo = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareNo" />
+      <MemberSignature Language="VB.NET" Value="termSvrAwareNo" />
+      <MemberSignature Language="C++ CLI" Value="termSvrAwareNo" />
+      <MemberSignature Language="F#" Value="termSvrAwareNo = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareNo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="termSvrAwareYes">
+      <MemberSignature Language="C#" Value="termSvrAwareYes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType termSvrAwareYes = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareYes" />
+      <MemberSignature Language="VB.NET" Value="termSvrAwareYes" />
+      <MemberSignature Language="C++ CLI" Value="termSvrAwareYes" />
+      <MemberSignature Language="F#" Value="termSvrAwareYes = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType.termSvrAwareYes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.termSvrAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

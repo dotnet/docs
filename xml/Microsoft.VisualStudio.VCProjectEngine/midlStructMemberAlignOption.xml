@@ -1,0 +1,121 @@
+﻿<Type Name="midlStructMemberAlignOption" FullName="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption">
+  <TypeSignature Language="C#" Value="public enum midlStructMemberAlignOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed midlStructMemberAlignOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum midlStructMemberAlignOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class midlStructMemberAlignOption" />
+  <TypeSignature Language="F#" Value="type midlStructMemberAlignOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="midlAlignEightBytes">
+      <MemberSignature Language="C#" Value="midlAlignEightBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption midlAlignEightBytes = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignEightBytes" />
+      <MemberSignature Language="VB.NET" Value="midlAlignEightBytes" />
+      <MemberSignature Language="C++ CLI" Value="midlAlignEightBytes" />
+      <MemberSignature Language="F#" Value="midlAlignEightBytes = 4" Usage="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignEightBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="midlAlignFourBytes">
+      <MemberSignature Language="C#" Value="midlAlignFourBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption midlAlignFourBytes = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignFourBytes" />
+      <MemberSignature Language="VB.NET" Value="midlAlignFourBytes" />
+      <MemberSignature Language="C++ CLI" Value="midlAlignFourBytes" />
+      <MemberSignature Language="F#" Value="midlAlignFourBytes = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignFourBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="midlAlignNotSet">
+      <MemberSignature Language="C#" Value="midlAlignNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption midlAlignNotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignNotSet" />
+      <MemberSignature Language="VB.NET" Value="midlAlignNotSet" />
+      <MemberSignature Language="C++ CLI" Value="midlAlignNotSet" />
+      <MemberSignature Language="F#" Value="midlAlignNotSet = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="midlAlignSingleByte">
+      <MemberSignature Language="C#" Value="midlAlignSingleByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption midlAlignSingleByte = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignSingleByte" />
+      <MemberSignature Language="VB.NET" Value="midlAlignSingleByte" />
+      <MemberSignature Language="C++ CLI" Value="midlAlignSingleByte" />
+      <MemberSignature Language="F#" Value="midlAlignSingleByte = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignSingleByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="midlAlignTwoBytes">
+      <MemberSignature Language="C#" Value="midlAlignTwoBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption midlAlignTwoBytes = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignTwoBytes" />
+      <MemberSignature Language="VB.NET" Value="midlAlignTwoBytes" />
+      <MemberSignature Language="C++ CLI" Value="midlAlignTwoBytes" />
+      <MemberSignature Language="F#" Value="midlAlignTwoBytes = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption.midlAlignTwoBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.midlStructMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

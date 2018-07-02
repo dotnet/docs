@@ -1,0 +1,77 @@
+﻿<Type Name="IDropSource" FullName="Microsoft.CLRAdmin.IDropSource">
+  <TypeSignature Language="C#" Value="public interface IDropSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDropSource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IDropSource" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDropSource" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDropSource" />
+  <TypeSignature Language="F#" Value="type IDropSource = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00000121-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GiveFeedback">
+      <MemberSignature Language="C#" Value="public void GiveFeedback (uint dwEffect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GiveFeedback(unsigned int32 dwEffect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDropSource.GiveFeedback(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GiveFeedback (dwEffect As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GiveFeedback(System::UInt32 dwEffect);" />
+      <MemberSignature Language="F#" Value="abstract member GiveFeedback : uint32 -&gt; unit" Usage="iDropSource.GiveFeedback dwEffect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwEffect" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwEffect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryContinueDrag">
+      <MemberSignature Language="C#" Value="public void QueryContinueDrag (int fEscapePressed, uint grfKeyState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryContinueDrag(int32 fEscapePressed, unsigned int32 grfKeyState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDropSource.QueryContinueDrag(System.Int32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryContinueDrag (fEscapePressed As Integer, grfKeyState As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryContinueDrag(int fEscapePressed, System::UInt32 grfKeyState);" />
+      <MemberSignature Language="F#" Value="abstract member QueryContinueDrag : int * uint32 -&gt; unit" Usage="iDropSource.QueryContinueDrag (fEscapePressed, grfKeyState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fEscapePressed" Type="System.Int32" />
+        <Parameter Name="grfKeyState" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="fEscapePressed">To be added.</param>
+        <param name="grfKeyState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

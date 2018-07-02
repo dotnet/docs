@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type EntitySet&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    interface ICollection&#xA;    interface ICollection&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IList&#xA;    interface IList&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -67,6 +68,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -85,6 +87,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,6 +114,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,6 +139,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,6 +164,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,6 +193,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,6 +218,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,6 +245,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +302,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,6 +327,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,6 +350,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,6 +394,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,6 +447,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,6 +476,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,6 +503,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,6 +529,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,6 +555,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,6 +576,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,6 +601,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,6 +632,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -636,6 +657,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -663,6 +685,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -693,6 +716,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -753,6 +777,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -785,6 +810,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -815,6 +841,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -846,6 +873,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -903,6 +931,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -938,6 +967,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -972,6 +1002,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1008,6 +1039,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1040,6 +1072,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1072,6 +1105,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1106,6 +1140,7 @@ customer.Orders.CopyTo(orderArray, 0)
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1163,6 +1198,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1191,6 +1227,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

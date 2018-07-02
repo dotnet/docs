@@ -1,0 +1,81 @@
+﻿<Type Name="optRefType" FullName="Microsoft.VisualStudio.VCProjectEngine.optRefType">
+  <TypeSignature Language="C#" Value="public enum optRefType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed optRefType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.optRefType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum optRefType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class optRefType" />
+  <TypeSignature Language="F#" Value="type optRefType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="optNoReferences">
+      <MemberSignature Language="C#" Value="optNoReferences" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.optRefType optNoReferences = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.optRefType.optNoReferences" />
+      <MemberSignature Language="VB.NET" Value="optNoReferences" />
+      <MemberSignature Language="C++ CLI" Value="optNoReferences" />
+      <MemberSignature Language="F#" Value="optNoReferences = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.optRefType.optNoReferences" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.optRefType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="optReferences">
+      <MemberSignature Language="C#" Value="optReferences" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.optRefType optReferences = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.optRefType.optReferences" />
+      <MemberSignature Language="VB.NET" Value="optReferences" />
+      <MemberSignature Language="C++ CLI" Value="optReferences" />
+      <MemberSignature Language="F#" Value="optReferences = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.optRefType.optReferences" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.optRefType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="optReferencesDefault">
+      <MemberSignature Language="C#" Value="optReferencesDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.optRefType optReferencesDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.optRefType.optReferencesDefault" />
+      <MemberSignature Language="VB.NET" Value="optReferencesDefault" />
+      <MemberSignature Language="C++ CLI" Value="optReferencesDefault" />
+      <MemberSignature Language="F#" Value="optReferencesDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.optRefType.optReferencesDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.optRefType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

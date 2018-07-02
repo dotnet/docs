@@ -1,0 +1,141 @@
+﻿<Type Name="runtimeLibraryOption" FullName="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption">
+  <TypeSignature Language="C#" Value="public enum runtimeLibraryOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed runtimeLibraryOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum runtimeLibraryOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class runtimeLibraryOption" />
+  <TypeSignature Language="F#" Value="type runtimeLibraryOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="rtMultiThreaded">
+      <MemberSignature Language="C#" Value="rtMultiThreaded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtMultiThreaded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreaded" />
+      <MemberSignature Language="VB.NET" Value="rtMultiThreaded" />
+      <MemberSignature Language="C++ CLI" Value="rtMultiThreaded" />
+      <MemberSignature Language="F#" Value="rtMultiThreaded = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreaded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="rtMultiThreadedDebug">
+      <MemberSignature Language="C#" Value="rtMultiThreadedDebug" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtMultiThreadedDebug = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDebug" />
+      <MemberSignature Language="VB.NET" Value="rtMultiThreadedDebug" />
+      <MemberSignature Language="C++ CLI" Value="rtMultiThreadedDebug" />
+      <MemberSignature Language="F#" Value="rtMultiThreadedDebug = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDebug" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="rtMultiThreadedDebugDLL">
+      <MemberSignature Language="C#" Value="rtMultiThreadedDebugDLL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtMultiThreadedDebugDLL = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDebugDLL" />
+      <MemberSignature Language="VB.NET" Value="rtMultiThreadedDebugDLL" />
+      <MemberSignature Language="C++ CLI" Value="rtMultiThreadedDebugDLL" />
+      <MemberSignature Language="F#" Value="rtMultiThreadedDebugDLL = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDebugDLL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="rtMultiThreadedDLL">
+      <MemberSignature Language="C#" Value="rtMultiThreadedDLL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtMultiThreadedDLL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDLL" />
+      <MemberSignature Language="VB.NET" Value="rtMultiThreadedDLL" />
+      <MemberSignature Language="C++ CLI" Value="rtMultiThreadedDLL" />
+      <MemberSignature Language="F#" Value="rtMultiThreadedDLL = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtMultiThreadedDLL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="rtSingleThreaded">
+      <MemberSignature Language="C#" Value="rtSingleThreaded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtSingleThreaded = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtSingleThreaded" />
+      <MemberSignature Language="VB.NET" Value="rtSingleThreaded" />
+      <MemberSignature Language="C++ CLI" Value="rtSingleThreaded" />
+      <MemberSignature Language="F#" Value="rtSingleThreaded = 4" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtSingleThreaded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="rtSingleThreadedDebug">
+      <MemberSignature Language="C#" Value="rtSingleThreadedDebug" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption rtSingleThreadedDebug = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtSingleThreadedDebug" />
+      <MemberSignature Language="VB.NET" Value="rtSingleThreadedDebug" />
+      <MemberSignature Language="C++ CLI" Value="rtSingleThreadedDebug" />
+      <MemberSignature Language="F#" Value="rtSingleThreadedDebug = 5" Usage="Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption.rtSingleThreadedDebug" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.runtimeLibraryOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

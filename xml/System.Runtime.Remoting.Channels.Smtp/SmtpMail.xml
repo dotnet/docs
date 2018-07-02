@@ -1,0 +1,93 @@
+﻿<Type Name="SmtpMail" FullName="System.Runtime.Remoting.Channels.Smtp.SmtpMail">
+  <TypeSignature Language="C#" Value="public class SmtpMail" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmtpMail extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Smtp.SmtpMail" />
+  <TypeSignature Language="VB.NET" Value="Public Class SmtpMail" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SmtpMail" />
+  <TypeSignature Language="F#" Value="type SmtpMail = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmtpMail ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpMail.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpMail();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public static void Send (System.Runtime.Remoting.Channels.Smtp.MailMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Send(class System.Runtime.Remoting.Channels.Smtp.MailMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpMail.Send(System.Runtime.Remoting.Channels.Smtp.MailMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Send (message As MailMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Send(System::Runtime::Remoting::Channels::Smtp::MailMessage ^ message);" />
+      <MemberSignature Language="F#" Value="static member Send : System.Runtime.Remoting.Channels.Smtp.MailMessage -&gt; unit" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpMail.Send message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Runtime.Remoting.Channels.Smtp.MailMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public static void Send (string from, string to, string subject, string messageText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Send(string from, string to, string subject, string messageText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpMail.Send(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Send (from As String, to As String, subject As String, messageText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Send(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ messageText);" />
+      <MemberSignature Language="F#" Value="static member Send : string * string * string * string -&gt; unit" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpMail.Send (from, to, subject, messageText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="messageText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="from">To be added.</param>
+        <param name="to">To be added.</param>
+        <param name="subject">To be added.</param>
+        <param name="messageText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

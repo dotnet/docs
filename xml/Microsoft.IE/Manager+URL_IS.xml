@@ -1,0 +1,169 @@
+﻿<Type Name="Manager+URL_IS" FullName="Microsoft.IE.Manager+URL_IS">
+  <TypeSignature Language="C#" Value="public enum Manager.URL_IS" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Manager/URL_IS extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager.URL_IS" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Manager.URL_IS" />
+  <TypeSignature Language="C++ CLI" Value="public: enum class Manager::URL_IS" />
+  <TypeSignature Language="F#" Value="type Manager.URL_IS = " />
+  <AssemblyInfo>
+    <AssemblyName>IEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="URLIS_APPLIABLE">
+      <MemberSignature Language="C#" Value="URLIS_APPLIABLE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_APPLIABLE = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_APPLIABLE" />
+      <MemberSignature Language="VB.NET" Value="URLIS_APPLIABLE" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_APPLIABLE" />
+      <MemberSignature Language="F#" Value="URLIS_APPLIABLE = 4" Usage="Microsoft.IE.Manager.URL_IS.URLIS_APPLIABLE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_DIRECTORY">
+      <MemberSignature Language="C#" Value="URLIS_DIRECTORY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_DIRECTORY = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_DIRECTORY" />
+      <MemberSignature Language="VB.NET" Value="URLIS_DIRECTORY" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_DIRECTORY" />
+      <MemberSignature Language="F#" Value="URLIS_DIRECTORY = 5" Usage="Microsoft.IE.Manager.URL_IS.URLIS_DIRECTORY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_FILEURL">
+      <MemberSignature Language="C#" Value="URLIS_FILEURL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_FILEURL = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_FILEURL" />
+      <MemberSignature Language="VB.NET" Value="URLIS_FILEURL" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_FILEURL" />
+      <MemberSignature Language="F#" Value="URLIS_FILEURL = 3" Usage="Microsoft.IE.Manager.URL_IS.URLIS_FILEURL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_HASQUERY">
+      <MemberSignature Language="C#" Value="URLIS_HASQUERY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_HASQUERY = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_HASQUERY" />
+      <MemberSignature Language="VB.NET" Value="URLIS_HASQUERY" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_HASQUERY" />
+      <MemberSignature Language="F#" Value="URLIS_HASQUERY = 6" Usage="Microsoft.IE.Manager.URL_IS.URLIS_HASQUERY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_NOHISTORY">
+      <MemberSignature Language="C#" Value="URLIS_NOHISTORY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_NOHISTORY = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_NOHISTORY" />
+      <MemberSignature Language="VB.NET" Value="URLIS_NOHISTORY" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_NOHISTORY" />
+      <MemberSignature Language="F#" Value="URLIS_NOHISTORY = 2" Usage="Microsoft.IE.Manager.URL_IS.URLIS_NOHISTORY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_OPAQUE">
+      <MemberSignature Language="C#" Value="URLIS_OPAQUE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_OPAQUE = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_OPAQUE" />
+      <MemberSignature Language="VB.NET" Value="URLIS_OPAQUE" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_OPAQUE" />
+      <MemberSignature Language="F#" Value="URLIS_OPAQUE = 1" Usage="Microsoft.IE.Manager.URL_IS.URLIS_OPAQUE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLIS_URL">
+      <MemberSignature Language="C#" Value="URLIS_URL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_IS URLIS_URL = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_IS.URLIS_URL" />
+      <MemberSignature Language="VB.NET" Value="URLIS_URL" />
+      <MemberSignature Language="C++ CLI" Value="URLIS_URL" />
+      <MemberSignature Language="F#" Value="URLIS_URL = 0" Usage="Microsoft.IE.Manager.URL_IS.URLIS_URL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_IS</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

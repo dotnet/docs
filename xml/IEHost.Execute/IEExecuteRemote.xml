@@ -1,0 +1,146 @@
+﻿<Type Name="IEExecuteRemote" FullName="IEHost.Execute.IEExecuteRemote">
+  <TypeSignature Language="C#" Value="public class IEExecuteRemote : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IEExecuteRemote extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:IEHost.Execute.IEExecuteRemote" />
+  <TypeSignature Language="VB.NET" Value="Public Class IEExecuteRemote&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IEExecuteRemote : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type IEExecuteRemote = class&#xA;    inherit MarshalByRefObject" />
+  <AssemblyInfo>
+    <AssemblyName>IEExecRemote</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IEExecuteRemote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:IEHost.Execute.IEExecuteRemote.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IEExecuteRemote();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEExecRemote</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public System.IO.Stream Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Exception" />
+      <MemberSignature Language="DocId" Value="P:IEHost.Execute.IEExecuteRemote.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Exception { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.IO.Stream" Usage="IEHost.Execute.IEExecuteRemote.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEExecRemote</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsAssembly">
+      <MemberSignature Language="C#" Value="public int ExecuteAsAssembly (string file, System.Security.Policy.Evidence evidence, byte[] hash, System.Configuration.Assemblies.AssemblyHashAlgorithm id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAsAssembly(string file, class System.Security.Policy.Evidence evidence, unsigned int8[] hash, valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IEHost.Execute.IEExecuteRemote.ExecuteAsAssembly(System.String,System.Security.Policy.Evidence,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteAsAssembly(System::String ^ file, System::Security::Policy::Evidence ^ evidence, cli::array &lt;System::Byte&gt; ^ hash, System::Configuration::Assemblies::AssemblyHashAlgorithm id);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteAsAssembly : string * System.Security.Policy.Evidence * byte[] * System.Configuration.Assemblies.AssemblyHashAlgorithm -&gt; int" Usage="iEExecuteRemote.ExecuteAsAssembly (file, evidence, hash, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEExecRemote</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="file" Type="System.String" />
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+        <Parameter Name="hash" Type="System.Byte[]" />
+        <Parameter Name="id" Type="System.Configuration.Assemblies.AssemblyHashAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="file">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <param name="hash">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsDll">
+      <MemberSignature Language="C#" Value="public int ExecuteAsDll (string file, System.Security.Policy.Evidence evidence, object pars);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAsDll(string file, class System.Security.Policy.Evidence evidence, object pars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IEHost.Execute.IEExecuteRemote.ExecuteAsDll(System.String,System.Security.Policy.Evidence,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteAsDll(System::String ^ file, System::Security::Policy::Evidence ^ evidence, System::Object ^ pars);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteAsDll : string * System.Security.Policy.Evidence * obj -&gt; int" Usage="iEExecuteRemote.ExecuteAsDll (file, evidence, pars)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEExecRemote</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="file" Type="System.String" />
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+        <Parameter Name="pars" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="file">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <param name="pars">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:IEHost.Execute.IEExecuteRemote.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="iEExecuteRemote.InitializeLifetimeService " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEExecRemote</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

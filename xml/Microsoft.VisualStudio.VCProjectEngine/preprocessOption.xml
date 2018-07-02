@@ -1,0 +1,81 @@
+﻿<Type Name="preprocessOption" FullName="Microsoft.VisualStudio.VCProjectEngine.preprocessOption">
+  <TypeSignature Language="C#" Value="public enum preprocessOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed preprocessOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.preprocessOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum preprocessOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class preprocessOption" />
+  <TypeSignature Language="F#" Value="type preprocessOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="preprocessNo">
+      <MemberSignature Language="C#" Value="preprocessNo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.preprocessOption preprocessNo = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessNo" />
+      <MemberSignature Language="VB.NET" Value="preprocessNo" />
+      <MemberSignature Language="C++ CLI" Value="preprocessNo" />
+      <MemberSignature Language="F#" Value="preprocessNo = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessNo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.preprocessOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="preprocessNoLineNumbers">
+      <MemberSignature Language="C#" Value="preprocessNoLineNumbers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.preprocessOption preprocessNoLineNumbers = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessNoLineNumbers" />
+      <MemberSignature Language="VB.NET" Value="preprocessNoLineNumbers" />
+      <MemberSignature Language="C++ CLI" Value="preprocessNoLineNumbers" />
+      <MemberSignature Language="F#" Value="preprocessNoLineNumbers = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessNoLineNumbers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.preprocessOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="preprocessYes">
+      <MemberSignature Language="C#" Value="preprocessYes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.preprocessOption preprocessYes = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessYes" />
+      <MemberSignature Language="VB.NET" Value="preprocessYes" />
+      <MemberSignature Language="C++ CLI" Value="preprocessYes" />
+      <MemberSignature Language="F#" Value="preprocessYes = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.preprocessOption.preprocessYes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.preprocessOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

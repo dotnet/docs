@@ -1,0 +1,123 @@
+﻿<Type Name="MMC_PSO" FullName="Microsoft.CLRAdmin.MMC_PSO">
+  <TypeSignature Language="C#" Value="public class MMC_PSO" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MMC_PSO extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.MMC_PSO" />
+  <TypeSignature Language="VB.NET" Value="Public Class MMC_PSO" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MMC_PSO" />
+  <TypeSignature Language="F#" Value="type MMC_PSO = class" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MMC_PSO ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.MMC_PSO.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MMC_PSO();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HASHELP">
+      <MemberSignature Language="C#" Value="public const int HASHELP = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HASHELP = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_PSO.HASHELP" />
+      <MemberSignature Language="VB.NET" Value="Public Const HASHELP As Integer  = 2" />
+      <MemberSignature Language="C++ CLI" Value="public: int HASHELP = 2;" />
+      <MemberSignature Language="F#" Value="val mutable HASHELP : int" Usage="Microsoft.CLRAdmin.MMC_PSO.HASHELP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NEWWIZARDTYPE">
+      <MemberSignature Language="C#" Value="public const int NEWWIZARDTYPE = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWWIZARDTYPE = (4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_PSO.NEWWIZARDTYPE" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWWIZARDTYPE As Integer  = 4" />
+      <MemberSignature Language="C++ CLI" Value="public: int NEWWIZARDTYPE = 4;" />
+      <MemberSignature Language="F#" Value="val mutable NEWWIZARDTYPE : int" Usage="Microsoft.CLRAdmin.MMC_PSO.NEWWIZARDTYPE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NO_PROPTITLE">
+      <MemberSignature Language="C#" Value="public const int NO_PROPTITLE = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NO_PROPTITLE = (8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_PSO.NO_PROPTITLE" />
+      <MemberSignature Language="VB.NET" Value="Public Const NO_PROPTITLE As Integer  = 8" />
+      <MemberSignature Language="C++ CLI" Value="public: int NO_PROPTITLE = 8;" />
+      <MemberSignature Language="F#" Value="val mutable NO_PROPTITLE : int" Usage="Microsoft.CLRAdmin.MMC_PSO.NO_PROPTITLE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NOAPPLYNOW">
+      <MemberSignature Language="C#" Value="public const int NOAPPLYNOW = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NOAPPLYNOW = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_PSO.NOAPPLYNOW" />
+      <MemberSignature Language="VB.NET" Value="Public Const NOAPPLYNOW As Integer  = 1" />
+      <MemberSignature Language="C++ CLI" Value="public: int NOAPPLYNOW = 1;" />
+      <MemberSignature Language="F#" Value="val mutable NOAPPLYNOW : int" Usage="Microsoft.CLRAdmin.MMC_PSO.NOAPPLYNOW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

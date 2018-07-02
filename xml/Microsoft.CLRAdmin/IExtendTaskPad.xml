@@ -1,0 +1,187 @@
+﻿<Type Name="IExtendTaskPad" FullName="Microsoft.CLRAdmin.IExtendTaskPad">
+  <TypeSignature Language="C#" Value="public interface IExtendTaskPad" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendTaskPad" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IExtendTaskPad" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendTaskPad" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtendTaskPad" />
+  <TypeSignature Language="F#" Value="type IExtendTaskPad = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("8dee6511-554d-11d1-9fea-00600832db4a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumTasks">
+      <MemberSignature Language="C#" Value="public void EnumTasks (Microsoft.CLRAdmin.IDataObject pdo, string szTaskGroup, out Microsoft.CLRAdmin.IEnumTASK ppEnumTASK);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumTasks(class Microsoft.CLRAdmin.IDataObject pdo, string szTaskGroup, [out] class Microsoft.CLRAdmin.IEnumTASK&amp; ppEnumTASK) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.EnumTasks(Microsoft.CLRAdmin.IDataObject,System.String,Microsoft.CLRAdmin.IEnumTASK@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnumTasks (pdo As IDataObject, szTaskGroup As String, ByRef ppEnumTASK As IEnumTASK)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumTasks(Microsoft::CLRAdmin::IDataObject ^ pdo, System::String ^ szTaskGroup, [Runtime::InteropServices::Out] Microsoft::CLRAdmin::IEnumTASK ^ % ppEnumTASK);" />
+      <MemberSignature Language="F#" Value="abstract member EnumTasks : Microsoft.CLRAdmin.IDataObject * string *  -&gt; unit" Usage="iExtendTaskPad.EnumTasks (pdo, szTaskGroup, ppEnumTASK)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdo" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="szTaskGroup" Type="System.String" />
+        <Parameter Name="ppEnumTASK" Type="Microsoft.CLRAdmin.IEnumTASK&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pdo">To be added.</param>
+        <param name="szTaskGroup">To be added.</param>
+        <param name="ppEnumTASK">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackground">
+      <MemberSignature Language="C#" Value="public void GetBackground (string pszGroup, out Microsoft.CLRAdmin.MMC_TASK_DISPLAY_OBJECT pTDO);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBackground(string pszGroup, [out] valuetype Microsoft.CLRAdmin.MMC_TASK_DISPLAY_OBJECT&amp; pTDO) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.GetBackground(System.String,Microsoft.CLRAdmin.MMC_TASK_DISPLAY_OBJECT@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetBackground (pszGroup As String, ByRef pTDO As MMC_TASK_DISPLAY_OBJECT)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBackground(System::String ^ pszGroup, [Runtime::InteropServices::Out] Microsoft::CLRAdmin::MMC_TASK_DISPLAY_OBJECT % pTDO);" />
+      <MemberSignature Language="F#" Value="abstract member GetBackground : string *  -&gt; unit" Usage="iExtendTaskPad.GetBackground (pszGroup, pTDO)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszGroup" Type="System.String" />
+        <Parameter Name="pTDO" Type="Microsoft.CLRAdmin.MMC_TASK_DISPLAY_OBJECT&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pszGroup">To be added.</param>
+        <param name="pTDO">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptiveText">
+      <MemberSignature Language="C#" Value="public void GetDescriptiveText (string pszGroup, out string pszDescriptiveText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDescriptiveText(string pszGroup, [out] string&amp; pszDescriptiveText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.GetDescriptiveText(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDescriptiveText (pszGroup As String, ByRef pszDescriptiveText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDescriptiveText(System::String ^ pszGroup, [Runtime::InteropServices::Out] System::String ^ % pszDescriptiveText);" />
+      <MemberSignature Language="F#" Value="abstract member GetDescriptiveText : string *  -&gt; unit" Usage="iExtendTaskPad.GetDescriptiveText (pszGroup, pszDescriptiveText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszGroup" Type="System.String" />
+        <Parameter Name="pszDescriptiveText" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pszGroup">To be added.</param>
+        <param name="pszDescriptiveText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListPadInfo">
+      <MemberSignature Language="C#" Value="public void GetListPadInfo (string pszGroup, out Microsoft.CLRAdmin.MMC_LISTPAD_INFO lpListPadInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetListPadInfo(string pszGroup, [out] valuetype Microsoft.CLRAdmin.MMC_LISTPAD_INFO&amp; lpListPadInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.GetListPadInfo(System.String,Microsoft.CLRAdmin.MMC_LISTPAD_INFO@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetListPadInfo (pszGroup As String, ByRef lpListPadInfo As MMC_LISTPAD_INFO)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetListPadInfo(System::String ^ pszGroup, [Runtime::InteropServices::Out] Microsoft::CLRAdmin::MMC_LISTPAD_INFO % lpListPadInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetListPadInfo : string *  -&gt; unit" Usage="iExtendTaskPad.GetListPadInfo (pszGroup, lpListPadInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszGroup" Type="System.String" />
+        <Parameter Name="lpListPadInfo" Type="Microsoft.CLRAdmin.MMC_LISTPAD_INFO&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pszGroup">To be added.</param>
+        <param name="lpListPadInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTitle">
+      <MemberSignature Language="C#" Value="public void GetTitle (string pszGroup, out string pszTitle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTitle(string pszGroup, [out] string&amp; pszTitle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.GetTitle(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTitle (pszGroup As String, ByRef pszTitle As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTitle(System::String ^ pszGroup, [Runtime::InteropServices::Out] System::String ^ % pszTitle);" />
+      <MemberSignature Language="F#" Value="abstract member GetTitle : string *  -&gt; unit" Usage="iExtendTaskPad.GetTitle (pszGroup, pszTitle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszGroup" Type="System.String" />
+        <Parameter Name="pszTitle" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pszGroup">To be added.</param>
+        <param name="pszTitle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskNotify">
+      <MemberSignature Language="C#" Value="public void TaskNotify (Microsoft.CLRAdmin.IDataObject pdo, ref object arg, ref object param);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TaskNotify(class Microsoft.CLRAdmin.IDataObject pdo, object&amp; arg, object&amp; param) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendTaskPad.TaskNotify(Microsoft.CLRAdmin.IDataObject,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TaskNotify (pdo As IDataObject, ByRef arg As Object, ByRef param As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaskNotify(Microsoft::CLRAdmin::IDataObject ^ pdo, System::Object ^ % arg, System::Object ^ % param);" />
+      <MemberSignature Language="F#" Value="abstract member TaskNotify : Microsoft.CLRAdmin.IDataObject *  *  -&gt; unit" Usage="iExtendTaskPad.TaskNotify (pdo, arg, param)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdo" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="arg" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="param" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pdo">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

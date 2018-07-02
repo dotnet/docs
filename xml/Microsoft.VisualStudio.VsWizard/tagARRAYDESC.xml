@@ -1,0 +1,92 @@
+﻿<Type Name="tagARRAYDESC" FullName="Microsoft.VisualStudio.VsWizard.tagARRAYDESC">
+  <TypeSignature Language="C#" Value="public struct tagARRAYDESC" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit tagARRAYDESC extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.tagARRAYDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure tagARRAYDESC" />
+  <TypeSignature Language="C++ CLI" Value="public value class tagARRAYDESC" />
+  <TypeSignature Language="F#" Value="type tagARRAYDESC = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="cDims">
+      <MemberSignature Language="C#" Value="public ushort cDims;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 cDims" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagARRAYDESC.cDims" />
+      <MemberSignature Language="VB.NET" Value="Public cDims As UShort " />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt16 cDims;" />
+      <MemberSignature Language="F#" Value="val mutable cDims : uint16" Usage="Microsoft.VisualStudio.VsWizard.tagARRAYDESC.cDims" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rgbounds">
+      <MemberSignature Language="C#" Value="public IntPtr rgbounds;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int rgbounds" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagARRAYDESC.rgbounds" />
+      <MemberSignature Language="VB.NET" Value="Public rgbounds As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr rgbounds;" />
+      <MemberSignature Language="F#" Value="val mutable rgbounds : nativeint" Usage="Microsoft.VisualStudio.VsWizard.tagARRAYDESC.rgbounds" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tdescElem">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VsWizard.tagTYPEDESC tdescElem;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualStudio.VsWizard.tagTYPEDESC tdescElem" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagARRAYDESC.tdescElem" />
+      <MemberSignature Language="VB.NET" Value="Public tdescElem As tagTYPEDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VsWizard::tagTYPEDESC tdescElem;" />
+      <MemberSignature Language="F#" Value="val mutable tdescElem : Microsoft.VisualStudio.VsWizard.tagTYPEDESC" Usage="Microsoft.VisualStudio.VsWizard.tagARRAYDESC.tdescElem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagTYPEDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

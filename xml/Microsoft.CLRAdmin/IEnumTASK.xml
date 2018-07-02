@@ -1,0 +1,128 @@
+﻿<Type Name="IEnumTASK" FullName="Microsoft.CLRAdmin.IEnumTASK">
+  <TypeSignature Language="C#" Value="public interface IEnumTASK" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumTASK" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IEnumTASK" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnumTASK" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEnumTASK" />
+  <TypeSignature Language="F#" Value="type IEnumTASK = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("338698b1-5a02-11d1-9fec-00600832db4a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public int Clone (ref Microsoft.CLRAdmin.IEnumTASK ppenum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Clone(class Microsoft.CLRAdmin.IEnumTASK&amp; ppenum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IEnumTASK.Clone(Microsoft.CLRAdmin.IEnumTASK@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone (ByRef ppenum As IEnumTASK) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Clone(Microsoft::CLRAdmin::IEnumTASK ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; int" Usage="iEnumTASK.Clone ppenum" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppenum" Type="Microsoft.CLRAdmin.IEnumTASK&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ppenum">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public int Next (uint celt, ref Microsoft.CLRAdmin.MMC_TASK rgelt, ref uint pceltFetched);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(unsigned int32 celt, valuetype Microsoft.CLRAdmin.MMC_TASK&amp; rgelt, unsigned int32&amp; pceltFetched) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IEnumTASK.Next(System.UInt32,Microsoft.CLRAdmin.MMC_TASK@,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As UInteger, ByRef rgelt As MMC_TASK, ByRef pceltFetched As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(System::UInt32 celt, Microsoft::CLRAdmin::MMC_TASK % rgelt, System::UInt32 % pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : uint32 *  *  -&gt; int" Usage="iEnumTASK.Next (celt, rgelt, pceltFetched)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.UInt32" />
+        <Parameter Name="rgelt" Type="Microsoft.CLRAdmin.MMC_TASK&amp;" RefType="ref" />
+        <Parameter Name="pceltFetched" Type="System.UInt32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="celt">To be added.</param>
+        <param name="rgelt">To be added.</param>
+        <param name="pceltFetched">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public int Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IEnumTASK.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int" Usage="iEnumTASK.Reset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public int Skip (uint celt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(unsigned int32 celt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IEnumTASK.Skip(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(System::UInt32 celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : uint32 -&gt; int" Usage="iEnumTASK.Skip celt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="celt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

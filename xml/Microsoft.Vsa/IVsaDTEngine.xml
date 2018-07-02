@@ -1,0 +1,123 @@
+﻿<Type Name="IVsaDTEngine" FullName="Microsoft.Vsa.IVsaDTEngine">
+  <TypeSignature Language="C#" Value="public interface IVsaDTEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaDTEngine" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaDTEngine" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVsaDTEngine" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVsaDTEngine" />
+  <TypeSignature Language="F#" Value="type IVsaDTEngine = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("E0C0FFEE-7eea-4ee5-b7e4-0080c7eb0b74")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachDebugger">
+      <MemberSignature Language="C#" Value="public void AttachDebugger (bool isAttach);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AttachDebugger(bool isAttach) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaDTEngine.AttachDebugger(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachDebugger (isAttach As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachDebugger(bool isAttach);" />
+      <MemberSignature Language="F#" Value="abstract member AttachDebugger : bool -&gt; unit" Usage="iVsaDTEngine.AttachDebugger isAttach" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isAttach" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isAttach">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIDE">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaIDE GetIDE ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaIDE GetIDE() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaDTEngine.GetIDE" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIDE () As IVsaIDE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Vsa::IVsaIDE ^ GetIDE();" />
+      <MemberSignature Language="F#" Value="abstract member GetIDE : unit -&gt; Microsoft.Vsa.IVsaIDE" Usage="iVsaDTEngine.GetIDE " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaIDE</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitCompleted">
+      <MemberSignature Language="C#" Value="public void InitCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaDTEngine.InitCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitCompleted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member InitCompleted : unit -&gt; unit" Usage="iVsaDTEngine.InitCompleted " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetURL">
+      <MemberSignature Language="C#" Value="public string TargetURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.IVsaDTEngine.TargetURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetURL : string with get, set" Usage="Microsoft.Vsa.IVsaDTEngine.TargetURL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

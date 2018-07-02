@@ -1,0 +1,114 @@
+﻿<Type Name="LogMessageEventArgs" FullName="Debugging.LogMessageEventArgs">
+  <TypeSignature Language="C#" Value="public class LogMessageEventArgs : Debugging.DebuggedThreadEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LogMessageEventArgs extends Debugging.DebuggedThreadEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Debugging.LogMessageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LogMessageEventArgs&#xA;Inherits DebuggedThreadEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogMessageEventArgs : Debugging::DebuggedThreadEventArgs" />
+  <TypeSignature Language="F#" Value="type LogMessageEventArgs = class&#xA;    inherit DebuggedThreadEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Debugging.DebuggedThreadEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogMessageEventArgs (Debugging.DebuggedAppDomain ad, Debugging.DebuggedThread thread, int level, short logSwitchName, short message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Debugging.DebuggedAppDomain ad, class Debugging.DebuggedThread thread, int32 level, int16 logSwitchName, int16 message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.LogMessageEventArgs.#ctor(Debugging.DebuggedAppDomain,Debugging.DebuggedThread,System.Int32,System.Int16,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ad As DebuggedAppDomain, thread As DebuggedThread, level As Integer, logSwitchName As Short, message As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogMessageEventArgs(Debugging::DebuggedAppDomain ^ ad, Debugging::DebuggedThread ^ thread, int level, short logSwitchName, short message);" />
+      <MemberSignature Language="F#" Value="new Debugging.LogMessageEventArgs : Debugging.DebuggedAppDomain * Debugging.DebuggedThread * int * int16 * int16 -&gt; Debugging.LogMessageEventArgs" Usage="new Debugging.LogMessageEventArgs (ad, thread, level, logSwitchName, message)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ad" Type="Debugging.DebuggedAppDomain" />
+        <Parameter Name="thread" Type="Debugging.DebuggedThread" />
+        <Parameter Name="level" Type="System.Int32" />
+        <Parameter Name="logSwitchName" Type="System.Int16" />
+        <Parameter Name="message" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="ad">To be added.</param>
+        <param name="thread">To be added.</param>
+        <param name="level">To be added.</param>
+        <param name="logSwitchName">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public int Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Level" />
+      <MemberSignature Language="DocId" Value="P:Debugging.LogMessageEventArgs.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Level { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : int" Usage="Debugging.LogMessageEventArgs.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogSwitchName">
+      <MemberSignature Language="C#" Value="public short LogSwitchName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 LogSwitchName" />
+      <MemberSignature Language="DocId" Value="P:Debugging.LogMessageEventArgs.LogSwitchName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogSwitchName As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short LogSwitchName { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogSwitchName : int16" Usage="Debugging.LogMessageEventArgs.LogSwitchName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public short Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 Message" />
+      <MemberSignature Language="DocId" Value="P:Debugging.LogMessageEventArgs.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Message { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : int16" Usage="Debugging.LogMessageEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

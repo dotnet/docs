@@ -1,0 +1,80 @@
+﻿<Type Name="IExtendControlbar" FullName="Microsoft.CLRAdmin.IExtendControlbar">
+  <TypeSignature Language="C#" Value="public interface IExtendControlbar" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendControlbar" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IExtendControlbar" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendControlbar" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtendControlbar" />
+  <TypeSignature Language="F#" Value="type IExtendControlbar = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("49506520-6F40-11D0-A98B-00C04FD8D565")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ControlbarNotify">
+      <MemberSignature Language="C#" Value="public int ControlbarNotify (uint aevent, int arg, int param);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ControlbarNotify(unsigned int32 aevent, int32 arg, int32 param) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendControlbar.ControlbarNotify(System.UInt32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ControlbarNotify (aevent As UInteger, arg As Integer, param As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ControlbarNotify(System::UInt32 aevent, int arg, int param);" />
+      <MemberSignature Language="F#" Value="abstract member ControlbarNotify : uint32 * int * int -&gt; int" Usage="iExtendControlbar.ControlbarNotify (aevent, arg, param)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aevent" Type="System.UInt32" />
+        <Parameter Name="arg" Type="System.Int32" />
+        <Parameter Name="param" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="aevent">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetControlbar">
+      <MemberSignature Language="C#" Value="public void SetControlbar (Microsoft.CLRAdmin.IControlbar pControlbar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetControlbar(class Microsoft.CLRAdmin.IControlbar pControlbar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendControlbar.SetControlbar(Microsoft.CLRAdmin.IControlbar)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetControlbar (pControlbar As IControlbar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetControlbar(Microsoft::CLRAdmin::IControlbar ^ pControlbar);" />
+      <MemberSignature Language="F#" Value="abstract member SetControlbar : Microsoft.CLRAdmin.IControlbar -&gt; unit" Usage="iExtendControlbar.SetControlbar pControlbar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pControlbar" Type="Microsoft.CLRAdmin.IControlbar" />
+      </Parameters>
+      <Docs>
+        <param name="pControlbar">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

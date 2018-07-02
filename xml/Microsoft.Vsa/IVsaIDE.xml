@@ -1,0 +1,169 @@
+﻿<Type Name="IVsaIDE" FullName="Microsoft.Vsa.IVsaIDE">
+  <TypeSignature Language="C#" Value="public interface IVsaIDE" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaIDE" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaIDE" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVsaIDE" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVsaIDE" />
+  <TypeSignature Language="F#" Value="type IVsaIDE = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("78470A10-8153-407d-AB1B-05067C54C36B")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultSearchPath">
+      <MemberSignature Language="C#" Value="public string DefaultSearchPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSearchPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.IVsaIDE.DefaultSearchPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultSearchPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultSearchPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSearchPath : string with get, set" Usage="Microsoft.Vsa.IVsaIDE.DefaultSearchPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMainWindow">
+      <MemberSignature Language="C#" Value="public void EnableMainWindow (bool isEnable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnableMainWindow(bool isEnable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaIDE.EnableMainWindow(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableMainWindow (isEnable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableMainWindow(bool isEnable);" />
+      <MemberSignature Language="F#" Value="abstract member EnableMainWindow : bool -&gt; unit" Usage="iVsaIDE.EnableMainWindow isEnable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isEnable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isEnable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensibilityObject">
+      <MemberSignature Language="C#" Value="public object ExtensibilityObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExtensibilityObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.IVsaIDE.ExtensibilityObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtensibilityObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExtensibilityObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensibilityObject : obj" Usage="Microsoft.Vsa.IVsaIDE.ExtensibilityObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IDEMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.VsaIDEMode IDEMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Vsa.VsaIDEMode IDEMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.IVsaIDE.IDEMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IDEMode As VsaIDEMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::VsaIDEMode IDEMode { Microsoft::Vsa::VsaIDEMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.IDEMode : Microsoft.Vsa.VsaIDEMode" Usage="Microsoft.Vsa.IVsaIDE.IDEMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaIDEMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowIDE">
+      <MemberSignature Language="C#" Value="public void ShowIDE (bool showOrHide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowIDE(bool showOrHide) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaIDE.ShowIDE(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowIDE (showOrHide As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowIDE(bool showOrHide);" />
+      <MemberSignature Language="F#" Value="abstract member ShowIDE : bool -&gt; unit" Usage="iVsaIDE.ShowIDE showOrHide" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="showOrHide" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="showOrHide">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaIDESite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vsa.IVsaIDESite Site" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.IVsaIDE.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As IVsaIDESite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::IVsaIDESite ^ Site { Microsoft::Vsa::IVsaIDESite ^ get(); void set(Microsoft::Vsa::IVsaIDESite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : Microsoft.Vsa.IVsaIDESite with get, set" Usage="Microsoft.Vsa.IVsaIDE.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaIDESite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

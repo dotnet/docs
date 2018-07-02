@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type TableDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,6 +50,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -66,6 +70,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,6 +97,28 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Table" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetPersistInnerHtml">
+      <MemberSignature Language="C#" Value="public override string GetPersistInnerHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPersistInnerHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TableDesigner.GetPersistInnerHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPersistInnerHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPersistInnerHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetPersistInnerHtml : unit -&gt; string" Usage="tableDesigner.GetPersistInnerHtml " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

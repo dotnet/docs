@@ -1,0 +1,270 @@
+﻿<Type Name="IDataObject" FullName="Microsoft.CLRAdmin.IDataObject">
+  <TypeSignature Language="C#" Value="public interface IDataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IDataObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0000010e-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DAdvise">
+      <MemberSignature Language="C#" Value="public int DAdvise (IntPtr a, uint b, IntPtr c, ref uint d);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DAdvise(native int a, unsigned int32 b, native int c, unsigned int32&amp; d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.DAdvise(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DAdvise (a As IntPtr, b As UInteger, c As IntPtr, ByRef d As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DAdvise(IntPtr a, System::UInt32 b, IntPtr c, System::UInt32 % d);" />
+      <MemberSignature Language="F#" Value="abstract member DAdvise : nativeint * uint32 * nativeint *  -&gt; int" Usage="iDataObject.DAdvise (a, b, c, d)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.UInt32" />
+        <Parameter Name="c" Type="System.IntPtr" />
+        <Parameter Name="d" Type="System.UInt32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DUnadvise">
+      <MemberSignature Language="C#" Value="public int DUnadvise (uint a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DUnadvise(unsigned int32 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.DUnadvise(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DUnadvise (a As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DUnadvise(System::UInt32 a);" />
+      <MemberSignature Language="F#" Value="abstract member DUnadvise : uint32 -&gt; int" Usage="iDataObject.DUnadvise a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumDAdvise">
+      <MemberSignature Language="C#" Value="public int EnumDAdvise (IntPtr a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EnumDAdvise(native int a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.EnumDAdvise(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumDAdvise (a As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumDAdvise(IntPtr a);" />
+      <MemberSignature Language="F#" Value="abstract member EnumDAdvise : nativeint -&gt; int" Usage="iDataObject.EnumDAdvise a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumFormatEtc">
+      <MemberSignature Language="C#" Value="public int EnumFormatEtc (uint a, IntPtr b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EnumFormatEtc(unsigned int32 a, native int b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.EnumFormatEtc(System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumFormatEtc (a As UInteger, b As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumFormatEtc(System::UInt32 a, IntPtr b);" />
+      <MemberSignature Language="F#" Value="abstract member EnumFormatEtc : uint32 * nativeint -&gt; int" Usage="iDataObject.EnumFormatEtc (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.UInt32" />
+        <Parameter Name="b" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCanonicalFormatEtc">
+      <MemberSignature Language="C#" Value="public int GetCanonicalFormatEtc (IntPtr a, IntPtr b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCanonicalFormatEtc(native int a, native int b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.GetCanonicalFormatEtc(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalFormatEtc (a As IntPtr, b As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCanonicalFormatEtc(IntPtr a, IntPtr b);" />
+      <MemberSignature Language="F#" Value="abstract member GetCanonicalFormatEtc : nativeint * nativeint -&gt; int" Usage="iDataObject.GetCanonicalFormatEtc (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public int GetData (ref Microsoft.CLRAdmin.FORMATETC pFormatEtc, ref Microsoft.CLRAdmin.STGMEDIUM b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetData(valuetype Microsoft.CLRAdmin.FORMATETC&amp; pFormatEtc, valuetype Microsoft.CLRAdmin.STGMEDIUM&amp; b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.GetData(Microsoft.CLRAdmin.FORMATETC@,Microsoft.CLRAdmin.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (ByRef pFormatEtc As FORMATETC, ByRef b As STGMEDIUM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetData(Microsoft::CLRAdmin::FORMATETC % pFormatEtc, Microsoft::CLRAdmin::STGMEDIUM % b);" />
+      <MemberSignature Language="F#" Value="abstract member GetData :  *  -&gt; int" Usage="iDataObject.GetData (pFormatEtc, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pFormatEtc" Type="Microsoft.CLRAdmin.FORMATETC&amp;" RefType="ref" />
+        <Parameter Name="b" Type="Microsoft.CLRAdmin.STGMEDIUM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pFormatEtc">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataHere">
+      <MemberSignature Language="C#" Value="public int GetDataHere (ref Microsoft.CLRAdmin.FORMATETC pFormatEtc, ref Microsoft.CLRAdmin.STGMEDIUM b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDataHere(valuetype Microsoft.CLRAdmin.FORMATETC&amp; pFormatEtc, valuetype Microsoft.CLRAdmin.STGMEDIUM&amp; b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.GetDataHere(Microsoft.CLRAdmin.FORMATETC@,Microsoft.CLRAdmin.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataHere (ByRef pFormatEtc As FORMATETC, ByRef b As STGMEDIUM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetDataHere(Microsoft::CLRAdmin::FORMATETC % pFormatEtc, Microsoft::CLRAdmin::STGMEDIUM % b);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataHere :  *  -&gt; int" Usage="iDataObject.GetDataHere (pFormatEtc, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pFormatEtc" Type="Microsoft.CLRAdmin.FORMATETC&amp;" RefType="ref" />
+        <Parameter Name="b" Type="Microsoft.CLRAdmin.STGMEDIUM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pFormatEtc">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryGetData">
+      <MemberSignature Language="C#" Value="public int QueryGetData (IntPtr a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 QueryGetData(native int a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.QueryGetData(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryGetData (a As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int QueryGetData(IntPtr a);" />
+      <MemberSignature Language="F#" Value="abstract member QueryGetData : nativeint -&gt; int" Usage="iDataObject.QueryGetData a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public int SetData (IntPtr a, IntPtr b, int c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SetData(native int a, native int b, int32 c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDataObject.SetData(System.IntPtr,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetData (a As IntPtr, b As IntPtr, c As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int SetData(IntPtr a, IntPtr b, int c);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : nativeint * nativeint * int -&gt; int" Usage="iDataObject.SetData (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.IntPtr" />
+        <Parameter Name="c" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

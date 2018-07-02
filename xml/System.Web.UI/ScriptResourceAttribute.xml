@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type ScriptResourceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -76,26 +77,37 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string stringResourceName, string stringResourceClientTypeName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string stringResourceName, string stringResourceClientTypeName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, stringResourceName As String, stringResourceClientTypeName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ stringResourceName, System::String ^ stringResourceClientTypeName);" />
-      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, stringResourceName, stringResourceClientTypeName)" />
+      <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string scriptResourceName, string typeName);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string scriptResourceName, string typeName) cil managed" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, scriptResourceName As String, typeName As String)" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ scriptResourceName, System::String ^ typeName);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, scriptResourceName, typeName)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string stringResourceName, string stringResourceClientTypeName);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string stringResourceName, string stringResourceClientTypeName) cil managed" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, stringResourceName As String, stringResourceClientTypeName As String)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ stringResourceName, System::String ^ stringResourceClientTypeName);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, stringResourceName, stringResourceClientTypeName)" FrameworkAlternate="netframework-4.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="scriptName" Type="System.String" />
-        <Parameter Name="stringResourceName" Type="System.String" />
-        <Parameter Name="stringResourceClientTypeName" Type="System.String" />
+        <Parameter Name="scriptName" Type="System.String" Index="0" />
+        <Parameter Name="scriptResourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="stringResourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="typeName" Type="System.String" Index="2" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="stringResourceClientTypeName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
         <param name="scriptName">The name of the script library.</param>
         <param name="stringResourceName">The name of the resource file for the script library.</param>
         <param name="stringResourceClientTypeName">The name of the type to create for the values in the resource file.</param>
+        <param name="scriptResourceName">To be added.</param>
+        <param name="typeName">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -119,6 +131,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,6 +167,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -236,6 +250,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

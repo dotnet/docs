@@ -1,0 +1,101 @@
+﻿<Type Name="TypeOfDebugger" FullName="Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger">
+  <TypeSignature Language="C#" Value="public enum TypeOfDebugger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeOfDebugger extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TypeOfDebugger" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeOfDebugger" />
+  <TypeSignature Language="F#" Value="type TypeOfDebugger = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DbgAuto">
+      <MemberSignature Language="C#" Value="DbgAuto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger DbgAuto = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgAuto" />
+      <MemberSignature Language="VB.NET" Value="DbgAuto" />
+      <MemberSignature Language="C++ CLI" Value="DbgAuto" />
+      <MemberSignature Language="F#" Value="DbgAuto = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgAuto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DbgManagedOnly">
+      <MemberSignature Language="C#" Value="DbgManagedOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger DbgManagedOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgManagedOnly" />
+      <MemberSignature Language="VB.NET" Value="DbgManagedOnly" />
+      <MemberSignature Language="C++ CLI" Value="DbgManagedOnly" />
+      <MemberSignature Language="F#" Value="DbgManagedOnly = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgManagedOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DbgMixed">
+      <MemberSignature Language="C#" Value="DbgMixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger DbgMixed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgMixed" />
+      <MemberSignature Language="VB.NET" Value="DbgMixed" />
+      <MemberSignature Language="C++ CLI" Value="DbgMixed" />
+      <MemberSignature Language="F#" Value="DbgMixed = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgMixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DbgNativeOnly">
+      <MemberSignature Language="C#" Value="DbgNativeOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger DbgNativeOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgNativeOnly" />
+      <MemberSignature Language="VB.NET" Value="DbgNativeOnly" />
+      <MemberSignature Language="C++ CLI" Value="DbgNativeOnly" />
+      <MemberSignature Language="F#" Value="DbgNativeOnly = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger.DbgNativeOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.TypeOfDebugger</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

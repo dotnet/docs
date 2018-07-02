@@ -1,0 +1,209 @@
+﻿<Type Name="CPropPage" FullName="Microsoft.CLRAdmin.CPropPage">
+  <TypeSignature Language="C#" Value="public class CPropPage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CPropPage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.CPropPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CPropPage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CPropPage" />
+  <TypeSignature Language="F#" Value="type CPropPage = class" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~CPropPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CPropPage.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!CPropPage ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="cPropPage.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_hIcon">
+      <MemberSignature Language="C#" Value="protected IntPtr m_hIcon;" />
+      <MemberSignature Language="ILAsm" Value=".field family native int m_hIcon" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_hIcon" />
+      <MemberSignature Language="VB.NET" Value="Protected m_hIcon As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr m_hIcon;" />
+      <MemberSignature Language="F#" Value="val mutable m_hIcon : nativeint" Usage="Microsoft.CLRAdmin.CPropPage.m_hIcon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_hPropertyPageRouter">
+      <MemberSignature Language="C#" Value="protected IntPtr m_hPropertyPageRouter;" />
+      <MemberSignature Language="ILAsm" Value=".field family native int m_hPropertyPageRouter" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_hPropertyPageRouter" />
+      <MemberSignature Language="VB.NET" Value="Protected m_hPropertyPageRouter As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr m_hPropertyPageRouter;" />
+      <MemberSignature Language="F#" Value="val mutable m_hPropertyPageRouter : nativeint" Usage="Microsoft.CLRAdmin.CPropPage.m_hPropertyPageRouter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_iCookie">
+      <MemberSignature Language="C#" Value="protected int m_iCookie;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 m_iCookie" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_iCookie" />
+      <MemberSignature Language="VB.NET" Value="Protected m_iCookie As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int m_iCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_iCookie : int" Usage="Microsoft.CLRAdmin.CPropPage.m_iCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sHeaderSubTitle">
+      <MemberSignature Language="C#" Value="protected string m_sHeaderSubTitle;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sHeaderSubTitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_sHeaderSubTitle" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sHeaderSubTitle As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sHeaderSubTitle;" />
+      <MemberSignature Language="F#" Value="val mutable m_sHeaderSubTitle : string" Usage="Microsoft.CLRAdmin.CPropPage.m_sHeaderSubTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sHeaderTitle">
+      <MemberSignature Language="C#" Value="protected string m_sHeaderTitle;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sHeaderTitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_sHeaderTitle" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sHeaderTitle As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sHeaderTitle;" />
+      <MemberSignature Language="F#" Value="val mutable m_sHeaderTitle : string" Usage="Microsoft.CLRAdmin.CPropPage.m_sHeaderTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sTitle">
+      <MemberSignature Language="C#" Value="protected string m_sTitle;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sTitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CPropPage.m_sTitle" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sTitle As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sTitle;" />
+      <MemberSignature Language="F#" Value="val mutable m_sTitle : string" Usage="Microsoft.CLRAdmin.CPropPage.m_sTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageControls">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.Control.ControlCollection PageControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control/ControlCollection PageControls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.CLRAdmin.CPropPage.PageControls" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PageControls As Control.ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::Control::ControlCollection ^ PageControls { System::Windows::Forms::Control::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageControls : System.Windows.Forms.Control.ControlCollection" Usage="Microsoft.CLRAdmin.CPropPage.PageControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control+ControlCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringToByteArray">
+      <MemberSignature Language="C#" Value="protected byte[] StringToByteArray (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance unsigned int8[] StringToByteArray(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CPropPage.StringToByteArray(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function StringToByteArray (input As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Byte&gt; ^ StringToByteArray(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="member this.StringToByteArray : string -&gt; byte[]" Usage="cPropPage.StringToByteArray input" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

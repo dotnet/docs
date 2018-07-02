@@ -1,0 +1,75 @@
+﻿<Type Name="SearchWaitHandler" FullName="System.DirectoryServices.SearchWaitHandler">
+  <TypeSignature Language="C#" Value="public class SearchWaitHandler : System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchWaitHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SearchWaitHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class SearchWaitHandler&#xA;Implements IConfigurationSectionHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SearchWaitHandler : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type SearchWaitHandler = class&#xA;    interface IConfigurationSectionHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Configuration.IConfigurationSectionHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchWaitHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SearchWaitHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SearchWaitHandler();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public virtual object Create (object parent, object configContext, System.Xml.XmlNode section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configContext, class System.Xml.XmlNode section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SearchWaitHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="searchWaitHandler.Create (parent, configContext, section)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Object" />
+        <Parameter Name="configContext" Type="System.Object" />
+        <Parameter Name="section" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="configContext">To be added.</param>
+        <param name="section">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

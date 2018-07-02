@@ -1,0 +1,61 @@
+﻿<Type Name="compileAsManagedOptions" FullName="Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions">
+  <TypeSignature Language="C#" Value="public enum compileAsManagedOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed compileAsManagedOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum compileAsManagedOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class compileAsManagedOptions" />
+  <TypeSignature Language="F#" Value="type compileAsManagedOptions = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="managedAssembly">
+      <MemberSignature Language="C#" Value="managedAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions managedAssembly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions.managedAssembly" />
+      <MemberSignature Language="VB.NET" Value="managedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="managedAssembly" />
+      <MemberSignature Language="F#" Value="managedAssembly = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions.managedAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="managedNotSet">
+      <MemberSignature Language="C#" Value="managedNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions managedNotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions.managedNotSet" />
+      <MemberSignature Language="VB.NET" Value="managedNotSet" />
+      <MemberSignature Language="C++ CLI" Value="managedNotSet" />
+      <MemberSignature Language="F#" Value="managedNotSet = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions.managedNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.compileAsManagedOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

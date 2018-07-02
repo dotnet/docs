@@ -1,0 +1,84 @@
+﻿<Type Name="WmlLiteralTextAdapter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter">
+  <TypeSignature Language="C#" Value="public class WmlLiteralTextAdapter : System.Web.UI.MobileControls.ShippedAdapterSource.WmlControlAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlLiteralTextAdapter extends System.Web.UI.MobileControls.ShippedAdapterSource.WmlControlAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlLiteralTextAdapter&#xA;Inherits WmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlLiteralTextAdapter : System::Web::UI::MobileControls::ShippedAdapterSource::WmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type WmlLiteralTextAdapter = class&#xA;    inherit WmlControlAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ShippedAdapterSource.WmlControlAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WmlLiteralTextAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlLiteralTextAdapter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.LiteralText Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.LiteralText Control" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As LiteralText" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::LiteralText ^ Control { System::Web::UI::MobileControls::LiteralText ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.LiteralText" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.LiteralText</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlLiteralTextAdapter.Render(System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter -&gt; unit" Usage="wmlLiteralTextAdapter.Render writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

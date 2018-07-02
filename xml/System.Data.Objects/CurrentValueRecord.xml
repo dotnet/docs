@@ -7,12 +7,14 @@
   <TypeSignature Language="F#" Value="type CurrentValueRecord = class&#xA;    inherit DbUpdatableDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Objects.DbUpdatableDataRecord</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-3.5">System.Data.Common.DbDataRecord</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Provides access to the current values of object data.</summary>
     <remarks>
@@ -28,5 +30,1292 @@
  ]]></format>
     </remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="DataRecordInfo">
+      <MemberSignature Language="C#" Value="public virtual System.Data.Common.DataRecordInfo DataRecordInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataRecordInfo DataRecordInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.CurrentValueRecord.DataRecordInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataRecordInfo As DataRecordInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Common::DataRecordInfo ^ DataRecordInfo { System::Data::Common::DataRecordInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataRecordInfo : System.Data.Common.DataRecordInfo" Usage="System.Data.Objects.CurrentValueRecord.DataRecordInfo" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IExtendedDataRecord.DataRecordInfo</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DataRecordInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldCount">
+      <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.CurrentValueRecord.FieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.Objects.CurrentValueRecord.FieldCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public override bool GetBoolean (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetBoolean(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetBoolean(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="currentValueRecord.GetBoolean ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public override byte GetByte (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8 GetByte(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetByte(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (ordinal As Integer) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="currentValueRecord.GetByte ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override long GetBytes (int ordinal, long dataIndex, byte[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetBytes(int32 ordinal, int64 dataIndex, unsigned int8[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (ordinal As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int ordinal, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="currentValueRecord.GetBytes (ordinal, dataIndex, buffer, bufferIndex, length)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="dataIndex">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferIndex">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public override char GetChar (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetChar(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetChar(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (ordinal As Integer) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="currentValueRecord.GetChar ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override long GetChars (int ordinal, long dataIndex, char[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetChars(int32 ordinal, int64 dataIndex, char[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (ordinal As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int ordinal, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="currentValueRecord.GetChars (ordinal, dataIndex, buffer, bufferIndex, length)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="dataIndex">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferIndex">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataReader">
+      <MemberSignature Language="C#" Value="public System.Data.Common.DbDataReader GetDataReader (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataReader GetDataReader(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataReader (i As Integer) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataReader ^ GetDataReader(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataReader : int -&gt; System.Data.Common.DbDataReader&#xA;override this.GetDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="currentValueRecord.GetDataReader i" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataReader(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataRecord">
+      <MemberSignature Language="C#" Value="public System.Data.Common.DbDataRecord GetDataRecord (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataRecord GetDataRecord(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDataRecord(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataRecord (ordinal As Integer) As DbDataRecord" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataRecord ^ GetDataRecord(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataRecord : int -&gt; System.Data.Common.DbDataRecord&#xA;override this.GetDataRecord : int -&gt; System.Data.Common.DbDataRecord" Usage="currentValueRecord.GetDataRecord ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataRecord(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeName">
+      <MemberSignature Language="C#" Value="public override string GetDataTypeName (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDataTypeName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="currentValueRecord.GetDataTypeName ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public override DateTime GetDateTime (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime GetDateTime(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDateTime(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (ordinal As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="currentValueRecord.GetDateTime ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDbDataReader">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader GetDbDataReader (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader GetDbDataReader(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDbDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbDataReader (ordinal As Integer) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ GetDbDataReader(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDbDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="currentValueRecord.GetDbDataReader ordinal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public override decimal GetDecimal (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Decimal GetDecimal(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDecimal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (ordinal As Integer) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="currentValueRecord.GetDecimal ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public override double GetDouble (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetDouble(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetDouble(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (ordinal As Integer) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="currentValueRecord.GetDouble ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldType">
+      <MemberSignature Language="C#" Value="public override Type GetFieldType (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetFieldType(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (ordinal As Integer) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="currentValueRecord.GetFieldType ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public override float GetFloat (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float32 GetFloat(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetFloat(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (ordinal As Integer) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="currentValueRecord.GetFloat ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public override Guid GetGuid (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Guid GetGuid(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetGuid(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (ordinal As Integer) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="currentValueRecord.GetGuid ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public override short GetInt16 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int16 GetInt16(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetInt16(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (ordinal As Integer) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="currentValueRecord.GetInt16 ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public override int GetInt32 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetInt32(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetInt32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (ordinal As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="currentValueRecord.GetInt32 ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public override long GetInt64 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetInt64(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetInt64(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (ordinal As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="currentValueRecord.GetInt64 ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public override string GetName (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetName(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="currentValueRecord.GetName ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrdinal">
+      <MemberSignature Language="C#" Value="public override int GetOrdinal (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetOrdinal(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetOrdinal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="currentValueRecord.GetOrdinal name" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecordValue">
+      <MemberSignature Language="C#" Value="protected abstract object GetRecordValue (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetRecordValue(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetRecordValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetRecordValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ GetRecordValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetRecordValue : int -&gt; obj" Usage="currentValueRecord.GetRecordValue ordinal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public override string GetString (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="currentValueRecord.GetString ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="currentValueRecord.GetValue ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public override int GetValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.GetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="currentValueRecord.GetValues values" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNull">
+      <MemberSignature Language="C#" Value="public override bool IsDBNull (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDBNull(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.IsDBNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="currentValueRecord.IsDBNull ordinal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[int ordinal] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.CurrentValueRecord.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.Objects.CurrentValueRecord.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.CurrentValueRecord.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Objects.CurrentValueRecord.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBoolean">
+      <MemberSignature Language="C#" Value="public void SetBoolean (int ordinal, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBoolean(int32 ordinal, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetBoolean(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBoolean (ordinal As Integer, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBoolean(int ordinal, bool value);" />
+      <MemberSignature Language="F#" Value="member this.SetBoolean : int * bool -&gt; unit" Usage="currentValueRecord.SetBoolean (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetByte">
+      <MemberSignature Language="C#" Value="public void SetByte (int ordinal, byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetByte(int32 ordinal, unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetByte(System.Int32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetByte (ordinal As Integer, value As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetByte(int ordinal, System::Byte value);" />
+      <MemberSignature Language="F#" Value="member this.SetByte : int * byte -&gt; unit" Usage="currentValueRecord.SetByte (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetChar">
+      <MemberSignature Language="C#" Value="public void SetChar (int ordinal, char value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetChar(int32 ordinal, char value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetChar(System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetChar (ordinal As Integer, value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetChar(int ordinal, char value);" />
+      <MemberSignature Language="F#" Value="member this.SetChar : int * char -&gt; unit" Usage="currentValueRecord.SetChar (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataRecord">
+      <MemberSignature Language="C#" Value="public void SetDataRecord (int ordinal, System.Data.IDataRecord value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDataRecord(int32 ordinal, class System.Data.IDataRecord value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetDataRecord(System.Int32,System.Data.IDataRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDataRecord (ordinal As Integer, value As IDataRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataRecord(int ordinal, System::Data::IDataRecord ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetDataRecord : int * System.Data.IDataRecord -&gt; unit" Usage="currentValueRecord.SetDataRecord (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Data.IDataRecord" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDateTime">
+      <MemberSignature Language="C#" Value="public void SetDateTime (int ordinal, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDateTime(int32 ordinal, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetDateTime(System.Int32,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDateTime (ordinal As Integer, value As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDateTime(int ordinal, DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.SetDateTime : int * DateTime -&gt; unit" Usage="currentValueRecord.SetDateTime (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDBNull">
+      <MemberSignature Language="C#" Value="public void SetDBNull (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDBNull(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetDBNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDBNull (ordinal As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="member this.SetDBNull : int -&gt; unit" Usage="currentValueRecord.SetDBNull ordinal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDecimal">
+      <MemberSignature Language="C#" Value="public void SetDecimal (int ordinal, decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDecimal(int32 ordinal, valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetDecimal(System.Int32,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDecimal (ordinal As Integer, value As Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDecimal(int ordinal, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.SetDecimal : int * decimal -&gt; unit" Usage="currentValueRecord.SetDecimal (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDouble">
+      <MemberSignature Language="C#" Value="public void SetDouble (int ordinal, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDouble(int32 ordinal, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetDouble(System.Int32,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDouble (ordinal As Integer, value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDouble(int ordinal, double value);" />
+      <MemberSignature Language="F#" Value="member this.SetDouble : int * double -&gt; unit" Usage="currentValueRecord.SetDouble (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFloat">
+      <MemberSignature Language="C#" Value="public void SetFloat (int ordinal, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFloat(int32 ordinal, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetFloat(System.Int32,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFloat (ordinal As Integer, value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFloat(int ordinal, float value);" />
+      <MemberSignature Language="F#" Value="member this.SetFloat : int * single -&gt; unit" Usage="currentValueRecord.SetFloat (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGuid">
+      <MemberSignature Language="C#" Value="public void SetGuid (int ordinal, Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGuid(int32 ordinal, valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetGuid(System.Int32,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetGuid (ordinal As Integer, value As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetGuid(int ordinal, Guid value);" />
+      <MemberSignature Language="F#" Value="member this.SetGuid : int * Guid -&gt; unit" Usage="currentValueRecord.SetGuid (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt16">
+      <MemberSignature Language="C#" Value="public void SetInt16 (int ordinal, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt16(int32 ordinal, int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetInt16(System.Int32,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInt16 (ordinal As Integer, value As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt16(int ordinal, short value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt16 : int * int16 -&gt; unit" Usage="currentValueRecord.SetInt16 (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt32">
+      <MemberSignature Language="C#" Value="public void SetInt32 (int ordinal, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt32(int32 ordinal, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetInt32(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInt32 (ordinal As Integer, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt32(int ordinal, int value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt32 : int * int -&gt; unit" Usage="currentValueRecord.SetInt32 (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt64">
+      <MemberSignature Language="C#" Value="public void SetInt64 (int ordinal, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt64(int32 ordinal, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetInt64(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInt64 (ordinal As Integer, value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt64(int ordinal, long value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt64 : int * int64 -&gt; unit" Usage="currentValueRecord.SetInt64 (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRecordValue">
+      <MemberSignature Language="C#" Value="protected abstract void SetRecordValue (int ordinal, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetRecordValue(int32 ordinal, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetRecordValue(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SetRecordValue (ordinal As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SetRecordValue(int ordinal, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetRecordValue : int * obj -&gt; unit" Usage="currentValueRecord.SetRecordValue (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetString">
+      <MemberSignature Language="C#" Value="public void SetString (int ordinal, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetString(int32 ordinal, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetString(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetString (ordinal As Integer, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetString(int ordinal, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetString : int * string -&gt; unit" Usage="currentValueRecord.SetString (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (int ordinal, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(int32 ordinal, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetValue(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (ordinal As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(int ordinal, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : int * obj -&gt; unit" Usage="currentValueRecord.SetValue (ordinal, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValues">
+      <MemberSignature Language="C#" Value="public int SetValues (params object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SetValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.SetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetValues (ParamArray values As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int SetValues(... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.SetValues : obj[] -&gt; int" Usage="currentValueRecord.SetValues values" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.IDataRecord.GetData">
+      <MemberSignature Language="C#" Value="System.Data.IDataReader IDataRecord.GetData (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDataRecord.GetData(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.CurrentValueRecord.System#Data#IDataRecord#GetData(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Function GetData (ordinal As Integer) As IDataReader Implements IDataRecord.GetData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDataReader ^ System.Data.IDataRecord.GetData(int ordinal) = System::Data::IDataRecord::GetData;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

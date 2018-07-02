@@ -1,0 +1,81 @@
+﻿<Type Name="callingConventionOption" FullName="Microsoft.VisualStudio.VCProjectEngine.callingConventionOption">
+  <TypeSignature Language="C#" Value="public enum callingConventionOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed callingConventionOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.callingConventionOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum callingConventionOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class callingConventionOption" />
+  <TypeSignature Language="F#" Value="type callingConventionOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="callConventionCDecl">
+      <MemberSignature Language="C#" Value="callConventionCDecl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.callingConventionOption callConventionCDecl = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionCDecl" />
+      <MemberSignature Language="VB.NET" Value="callConventionCDecl" />
+      <MemberSignature Language="C++ CLI" Value="callConventionCDecl" />
+      <MemberSignature Language="F#" Value="callConventionCDecl = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionCDecl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.callingConventionOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="callConventionFastCall">
+      <MemberSignature Language="C#" Value="callConventionFastCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.callingConventionOption callConventionFastCall = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionFastCall" />
+      <MemberSignature Language="VB.NET" Value="callConventionFastCall" />
+      <MemberSignature Language="C++ CLI" Value="callConventionFastCall" />
+      <MemberSignature Language="F#" Value="callConventionFastCall = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionFastCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.callingConventionOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="callConventionStdCall">
+      <MemberSignature Language="C#" Value="callConventionStdCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.callingConventionOption callConventionStdCall = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionStdCall" />
+      <MemberSignature Language="VB.NET" Value="callConventionStdCall" />
+      <MemberSignature Language="C++ CLI" Value="callConventionStdCall" />
+      <MemberSignature Language="F#" Value="callConventionStdCall = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.callingConventionOption.callConventionStdCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.callingConventionOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

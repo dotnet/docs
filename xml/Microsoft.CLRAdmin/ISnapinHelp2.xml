@@ -1,0 +1,77 @@
+﻿<Type Name="ISnapinHelp2" FullName="Microsoft.CLRAdmin.ISnapinHelp2">
+  <TypeSignature Language="C#" Value="public interface ISnapinHelp2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISnapinHelp2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.ISnapinHelp2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISnapinHelp2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISnapinHelp2" />
+  <TypeSignature Language="F#" Value="type ISnapinHelp2 = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4861A010-20F9-11d2-A510-00C04FB6DD2C")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHelpTopic">
+      <MemberSignature Language="C#" Value="public int GetHelpTopic (out IntPtr lpCompiledHelpFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHelpTopic([out] native int&amp; lpCompiledHelpFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.ISnapinHelp2.GetHelpTopic(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHelpTopic (ByRef lpCompiledHelpFile As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHelpTopic([Runtime::InteropServices::Out] IntPtr % lpCompiledHelpFile);" />
+      <MemberSignature Language="F#" Value="abstract member GetHelpTopic :  -&gt; int" Usage="iSnapinHelp2.GetHelpTopic lpCompiledHelpFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpCompiledHelpFile" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lpCompiledHelpFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLinkedTopics">
+      <MemberSignature Language="C#" Value="public int GetLinkedTopics (out IntPtr lpCompiledHelpFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLinkedTopics([out] native int&amp; lpCompiledHelpFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.ISnapinHelp2.GetLinkedTopics(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLinkedTopics (ByRef lpCompiledHelpFiles As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLinkedTopics([Runtime::InteropServices::Out] IntPtr % lpCompiledHelpFiles);" />
+      <MemberSignature Language="F#" Value="abstract member GetLinkedTopics :  -&gt; int" Usage="iSnapinHelp2.GetLinkedTopics lpCompiledHelpFiles" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpCompiledHelpFiles" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lpCompiledHelpFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

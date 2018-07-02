@@ -1,0 +1,81 @@
+﻿<Type Name="linkProgressOption" FullName="Microsoft.VisualStudio.VCProjectEngine.linkProgressOption">
+  <TypeSignature Language="C#" Value="public enum linkProgressOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed linkProgressOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.linkProgressOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum linkProgressOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class linkProgressOption" />
+  <TypeSignature Language="F#" Value="type linkProgressOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="linkProgressAll">
+      <MemberSignature Language="C#" Value="linkProgressAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkProgressOption linkProgressAll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressAll" />
+      <MemberSignature Language="VB.NET" Value="linkProgressAll" />
+      <MemberSignature Language="C++ CLI" Value="linkProgressAll" />
+      <MemberSignature Language="F#" Value="linkProgressAll = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkProgressOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkProgressLibs">
+      <MemberSignature Language="C#" Value="linkProgressLibs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkProgressOption linkProgressLibs = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressLibs" />
+      <MemberSignature Language="VB.NET" Value="linkProgressLibs" />
+      <MemberSignature Language="C++ CLI" Value="linkProgressLibs" />
+      <MemberSignature Language="F#" Value="linkProgressLibs = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressLibs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkProgressOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkProgressNotSet">
+      <MemberSignature Language="C#" Value="linkProgressNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkProgressOption linkProgressNotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressNotSet" />
+      <MemberSignature Language="VB.NET" Value="linkProgressNotSet" />
+      <MemberSignature Language="C++ CLI" Value="linkProgressNotSet" />
+      <MemberSignature Language="F#" Value="linkProgressNotSet = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.linkProgressOption.linkProgressNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkProgressOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

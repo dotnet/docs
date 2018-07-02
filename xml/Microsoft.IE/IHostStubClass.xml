@@ -1,0 +1,128 @@
+﻿<Type Name="IHostStubClass" FullName="Microsoft.IE.IHostStubClass">
+  <TypeSignature Language="C#" Value="public class IHostStubClass : Microsoft.IE.IHostStub" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi IHostStubClass extends System.Object implements class Microsoft.IE.IHostEx, class Microsoft.IE.IHostStub" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.IHostStubClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class IHostStubClass&#xA;Implements IHostStub" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IHostStubClass : Microsoft::IE::IHostStub" />
+  <TypeSignature Language="F#" Value="type IHostStubClass = class&#xA;    interface IHostEx&#xA;    interface IHostStub" />
+  <AssemblyInfo>
+    <AssemblyName>IIEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IE.IHostStub</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("05EBA30A-0164-11D3-8729-00C04F79ED0D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(2)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IHostStubClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.IHostStubClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IHostStubClass();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassFactory">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.IE.ISecureFactory GetClassFactory (string className, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetClassFactory([in]string className, [in]string fileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.IHostStubClass.GetClassFactory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassFactory (className As String, fileName As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::IE::ISecureFactory ^ GetClassFactory(System::String ^ className, System::String ^ fileName) = Microsoft::IE::IHostEx::GetClassFactory;" />
+      <MemberSignature Language="F#" Value="abstract member GetClassFactory : string * string -&gt; Microsoft.IE.ISecureFactory&#xA;override this.GetClassFactory : string * string -&gt; Microsoft.IE.ISecureFactory" Usage="iHostStubClass.GetClassFactory (className, fileName)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.IHostEx.GetClassFactory(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecuredClassFactory">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.IE.ISecureFactory GetSecuredClassFactory (int dwIdentityFlags, int dwZone, string lpSite, string pbSecurityId, string lpHash, string className, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetSecuredClassFactory([in]int32 dwIdentityFlags, [in]int32 dwZone, [in]string lpSite, [in]string pbSecurityId, [in]string lpHash, [in]string className, [in]string fileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.IHostStubClass.GetSecuredClassFactory(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecuredClassFactory (dwIdentityFlags As Integer, dwZone As Integer, lpSite As String, pbSecurityId As String, lpHash As String, className As String, fileName As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::IE::ISecureFactory ^ GetSecuredClassFactory(int dwIdentityFlags, int dwZone, System::String ^ lpSite, System::String ^ pbSecurityId, System::String ^ lpHash, System::String ^ className, System::String ^ fileName) = Microsoft::IE::IHostEx::GetSecuredClassFactory;" />
+      <MemberSignature Language="F#" Value="abstract member GetSecuredClassFactory : int * int * string * string * string * string * string -&gt; Microsoft.IE.ISecureFactory&#xA;override this.GetSecuredClassFactory : int * int * string * string * string * string * string -&gt; Microsoft.IE.ISecureFactory" Usage="iHostStubClass.GetSecuredClassFactory (dwIdentityFlags, dwZone, lpSite, pbSecurityId, lpHash, className, fileName)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.IHostEx.GetSecuredClassFactory(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwIdentityFlags" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="lpSite" Type="System.String" />
+        <Parameter Name="pbSecurityId" Type="System.String" />
+        <Parameter Name="lpHash" Type="System.String" />
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwIdentityFlags">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="lpSite">To be added.</param>
+        <param name="pbSecurityId">To be added.</param>
+        <param name="lpHash">To be added.</param>
+        <param name="className">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

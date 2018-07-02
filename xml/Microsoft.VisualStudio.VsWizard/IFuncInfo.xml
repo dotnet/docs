@@ -1,0 +1,406 @@
+﻿<Type Name="IFuncInfo" FullName="Microsoft.VisualStudio.VsWizard.IFuncInfo">
+  <TypeSignature Language="C#" Value="public interface IFuncInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFuncInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.IFuncInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFuncInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFuncInfo" />
+  <TypeSignature Language="F#" Value="type IFuncInfo = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("9157ED43-819E-4A46-8A5B-F1E0303691B3")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BodyText">
+      <MemberSignature Language="C#" Value="public string BodyText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BodyText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.BodyText" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BodyText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BodyText : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.BodyText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="callconv">
+      <MemberSignature Language="C#" Value="public string callconv { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string callconv" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.callconv" />
+      <MemberSignature Language="VB.NET" Value="Public Property callconv As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ callconv { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.callconv : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.callconv" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispID">
+      <MemberSignature Language="C#" Value="public string DispID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DispID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.DispID" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DispID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DispID : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.DispID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpString">
+      <MemberSignature Language="C#" Value="public string HelpString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.HelpString" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpString : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.HelpString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeKind">
+      <MemberSignature Language="C#" Value="public string InvokeKind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InvokeKind" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.InvokeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokeKind As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InvokeKind { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeKind : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.InvokeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public object Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parameters { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : obj" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamText">
+      <MemberSignature Language="C#" Value="public string ParamText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParamText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.ParamText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParamText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParamText : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.ParamText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawName">
+      <MemberSignature Language="C#" Value="public string RawName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RawName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.RawName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RawName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RawName : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.RawName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public string ReturnType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReturnType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReturnType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeString">
+      <MemberSignature Language="C#" Value="public string TypeString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IFuncInfo.TypeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeString : string with get, set" Usage="Microsoft.VisualStudio.VsWizard.IFuncInfo.TypeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

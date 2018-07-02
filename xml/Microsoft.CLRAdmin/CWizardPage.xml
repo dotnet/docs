@@ -1,0 +1,60 @@
+﻿<Type Name="CWizardPage" FullName="Microsoft.CLRAdmin.CWizardPage">
+  <TypeSignature Language="C#" Value="public class CWizardPage : Microsoft.CLRAdmin.CPropPage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CWizardPage extends Microsoft.CLRAdmin.CPropPage" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.CWizardPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CWizardPage&#xA;Inherits CPropPage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CWizardPage : Microsoft::CLRAdmin::CPropPage" />
+  <TypeSignature Language="F#" Value="type CWizardPage = class&#xA;    inherit CPropPage" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.CLRAdmin.CPropPage</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CWizardPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CWizardPage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CWizardPage();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WizardPageSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size WizardPageSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size WizardPageSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.CLRAdmin.CWizardPage.WizardPageSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WizardPageSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size WizardPageSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.WizardPageSize : System.Drawing.Size" Usage="Microsoft.CLRAdmin.CWizardPage.WizardPageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

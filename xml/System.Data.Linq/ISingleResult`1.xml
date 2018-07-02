@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type ISingleResult&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IFunctionResult&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>

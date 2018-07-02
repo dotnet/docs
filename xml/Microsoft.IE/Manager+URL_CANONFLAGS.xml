@@ -1,0 +1,379 @@
+﻿<Type Name="Manager+URL_CANONFLAGS" FullName="Microsoft.IE.Manager+URL_CANONFLAGS">
+  <TypeSignature Language="C#" Value="public enum Manager.URL_CANONFLAGS" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Manager/URL_CANONFLAGS extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager.URL_CANONFLAGS" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Manager.URL_CANONFLAGS" />
+  <TypeSignature Language="C++ CLI" Value="public: enum class Manager::URL_CANONFLAGS" />
+  <TypeSignature Language="F#" Value="type Manager.URL_CANONFLAGS = " />
+  <AssemblyInfo>
+    <AssemblyName>IEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="URL_BROWSER_MODE">
+      <MemberSignature Language="C#" Value="URL_BROWSER_MODE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_BROWSER_MODE = int32(33554432)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_BROWSER_MODE" />
+      <MemberSignature Language="VB.NET" Value="URL_BROWSER_MODE" />
+      <MemberSignature Language="C++ CLI" Value="URL_BROWSER_MODE" />
+      <MemberSignature Language="F#" Value="URL_BROWSER_MODE = 33554432" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_BROWSER_MODE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>33554432</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_CONVERT_IF_DOSPATH">
+      <MemberSignature Language="C#" Value="URL_CONVERT_IF_DOSPATH" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_CONVERT_IF_DOSPATH = int32(2097152)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_CONVERT_IF_DOSPATH" />
+      <MemberSignature Language="VB.NET" Value="URL_CONVERT_IF_DOSPATH" />
+      <MemberSignature Language="C++ CLI" Value="URL_CONVERT_IF_DOSPATH" />
+      <MemberSignature Language="F#" Value="URL_CONVERT_IF_DOSPATH = 2097152" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_CONVERT_IF_DOSPATH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>2097152</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_DONT_ESCAPE_EXTRA_INFO">
+      <MemberSignature Language="C#" Value="URL_DONT_ESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_DONT_ESCAPE_EXTRA_INFO = int32(33554432)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_ESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="VB.NET" Value="URL_DONT_ESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="C++ CLI" Value="URL_DONT_ESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="F#" Value="URL_DONT_ESCAPE_EXTRA_INFO = 33554432" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_ESCAPE_EXTRA_INFO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>33554432</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_DONT_SIMPLIFY">
+      <MemberSignature Language="C#" Value="URL_DONT_SIMPLIFY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_DONT_SIMPLIFY = int32(134217728)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_SIMPLIFY" />
+      <MemberSignature Language="VB.NET" Value="URL_DONT_SIMPLIFY" />
+      <MemberSignature Language="C++ CLI" Value="URL_DONT_SIMPLIFY" />
+      <MemberSignature Language="F#" Value="URL_DONT_SIMPLIFY = 134217728" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_SIMPLIFY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>134217728</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_DONT_UNESCAPE_EXTRA_INFO">
+      <MemberSignature Language="C#" Value="URL_DONT_UNESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_DONT_UNESCAPE_EXTRA_INFO = int32(33554432)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_UNESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="VB.NET" Value="URL_DONT_UNESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="C++ CLI" Value="URL_DONT_UNESCAPE_EXTRA_INFO" />
+      <MemberSignature Language="F#" Value="URL_DONT_UNESCAPE_EXTRA_INFO = 33554432" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_DONT_UNESCAPE_EXTRA_INFO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>33554432</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_ESCAPE_PERCENT">
+      <MemberSignature Language="C#" Value="URL_ESCAPE_PERCENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_ESCAPE_PERCENT = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_PERCENT" />
+      <MemberSignature Language="VB.NET" Value="URL_ESCAPE_PERCENT" />
+      <MemberSignature Language="C++ CLI" Value="URL_ESCAPE_PERCENT" />
+      <MemberSignature Language="F#" Value="URL_ESCAPE_PERCENT = 4096" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_PERCENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>4096</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_ESCAPE_SEGMENT_ONLY">
+      <MemberSignature Language="C#" Value="URL_ESCAPE_SEGMENT_ONLY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_ESCAPE_SEGMENT_ONLY = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_SEGMENT_ONLY" />
+      <MemberSignature Language="VB.NET" Value="URL_ESCAPE_SEGMENT_ONLY" />
+      <MemberSignature Language="C++ CLI" Value="URL_ESCAPE_SEGMENT_ONLY" />
+      <MemberSignature Language="F#" Value="URL_ESCAPE_SEGMENT_ONLY = 8192" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_SEGMENT_ONLY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>8192</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_ESCAPE_SPACES_ONLY">
+      <MemberSignature Language="C#" Value="URL_ESCAPE_SPACES_ONLY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_ESCAPE_SPACES_ONLY = int32(67108864)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_SPACES_ONLY" />
+      <MemberSignature Language="VB.NET" Value="URL_ESCAPE_SPACES_ONLY" />
+      <MemberSignature Language="C++ CLI" Value="URL_ESCAPE_SPACES_ONLY" />
+      <MemberSignature Language="F#" Value="URL_ESCAPE_SPACES_ONLY = 67108864" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_SPACES_ONLY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>67108864</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_ESCAPE_UNSAFE">
+      <MemberSignature Language="C#" Value="URL_ESCAPE_UNSAFE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_ESCAPE_UNSAFE = int32(536870912)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_UNSAFE" />
+      <MemberSignature Language="VB.NET" Value="URL_ESCAPE_UNSAFE" />
+      <MemberSignature Language="C++ CLI" Value="URL_ESCAPE_UNSAFE" />
+      <MemberSignature Language="F#" Value="URL_ESCAPE_UNSAFE = 536870912" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_ESCAPE_UNSAFE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>536870912</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_FILE_USE_PATHURL">
+      <MemberSignature Language="C#" Value="URL_FILE_USE_PATHURL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_FILE_USE_PATHURL = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_FILE_USE_PATHURL" />
+      <MemberSignature Language="VB.NET" Value="URL_FILE_USE_PATHURL" />
+      <MemberSignature Language="C++ CLI" Value="URL_FILE_USE_PATHURL" />
+      <MemberSignature Language="F#" Value="URL_FILE_USE_PATHURL = 65536" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_FILE_USE_PATHURL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>65536</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_INTERNAL_PATH">
+      <MemberSignature Language="C#" Value="URL_INTERNAL_PATH" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_INTERNAL_PATH = int32(8388608)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_INTERNAL_PATH" />
+      <MemberSignature Language="VB.NET" Value="URL_INTERNAL_PATH" />
+      <MemberSignature Language="C++ CLI" Value="URL_INTERNAL_PATH" />
+      <MemberSignature Language="F#" Value="URL_INTERNAL_PATH = 8388608" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_INTERNAL_PATH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>8388608</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_NO_META">
+      <MemberSignature Language="C#" Value="URL_NO_META" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_NO_META = int32(134217728)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_NO_META" />
+      <MemberSignature Language="VB.NET" Value="URL_NO_META" />
+      <MemberSignature Language="C++ CLI" Value="URL_NO_META" />
+      <MemberSignature Language="F#" Value="URL_NO_META = 134217728" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_NO_META" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>134217728</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_PLUGGABLE_PROTOCOL">
+      <MemberSignature Language="C#" Value="URL_PLUGGABLE_PROTOCOL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_PLUGGABLE_PROTOCOL = int32(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_PLUGGABLE_PROTOCOL" />
+      <MemberSignature Language="VB.NET" Value="URL_PLUGGABLE_PROTOCOL" />
+      <MemberSignature Language="C++ CLI" Value="URL_PLUGGABLE_PROTOCOL" />
+      <MemberSignature Language="F#" Value="URL_PLUGGABLE_PROTOCOL = 1073741824" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_PLUGGABLE_PROTOCOL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_UNESCAPE">
+      <MemberSignature Language="C#" Value="URL_UNESCAPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_UNESCAPE = int32(268435456)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE" />
+      <MemberSignature Language="VB.NET" Value="URL_UNESCAPE" />
+      <MemberSignature Language="C++ CLI" Value="URL_UNESCAPE" />
+      <MemberSignature Language="F#" Value="URL_UNESCAPE = 268435456" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>268435456</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_UNESCAPE_HIGH_ANSI_ONLY">
+      <MemberSignature Language="C#" Value="URL_UNESCAPE_HIGH_ANSI_ONLY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_UNESCAPE_HIGH_ANSI_ONLY = int32(4194304)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE_HIGH_ANSI_ONLY" />
+      <MemberSignature Language="VB.NET" Value="URL_UNESCAPE_HIGH_ANSI_ONLY" />
+      <MemberSignature Language="C++ CLI" Value="URL_UNESCAPE_HIGH_ANSI_ONLY" />
+      <MemberSignature Language="F#" Value="URL_UNESCAPE_HIGH_ANSI_ONLY = 4194304" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE_HIGH_ANSI_ONLY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>4194304</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_UNESCAPE_INPLACE">
+      <MemberSignature Language="C#" Value="URL_UNESCAPE_INPLACE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_UNESCAPE_INPLACE = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE_INPLACE" />
+      <MemberSignature Language="VB.NET" Value="URL_UNESCAPE_INPLACE" />
+      <MemberSignature Language="C++ CLI" Value="URL_UNESCAPE_INPLACE" />
+      <MemberSignature Language="F#" Value="URL_UNESCAPE_INPLACE = 1048576" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_UNESCAPE_INPLACE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>1048576</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URL_WININET_COMPATIBILITY">
+      <MemberSignature Language="C#" Value="URL_WININET_COMPATIBILITY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_CANONFLAGS URL_WININET_COMPATIBILITY = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_CANONFLAGS.URL_WININET_COMPATIBILITY" />
+      <MemberSignature Language="VB.NET" Value="URL_WININET_COMPATIBILITY" />
+      <MemberSignature Language="C++ CLI" Value="URL_WININET_COMPATIBILITY" />
+      <MemberSignature Language="F#" Value="URL_WININET_COMPATIBILITY = -2147483648" Usage="Microsoft.IE.Manager.URL_CANONFLAGS.URL_WININET_COMPATIBILITY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_CANONFLAGS</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

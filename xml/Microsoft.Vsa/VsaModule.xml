@@ -1,0 +1,78 @@
+﻿<Type Name="VsaModule" FullName="Microsoft.Vsa.VsaModule">
+  <TypeSignature Language="C#" Value="public class VsaModule : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VsaModule extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.VsaModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsaModule&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaModule : Attribute" />
+  <TypeSignature Language="F#" Value="type VsaModule = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("7f64f934-c1cc-338e-b695-f64d71e820fe")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VsaModule (bool bIsVsaModule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool bIsVsaModule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.VsaModule.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bIsVsaModule As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VsaModule(bool bIsVsaModule);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Vsa.VsaModule : bool -&gt; Microsoft.Vsa.VsaModule" Usage="new Microsoft.Vsa.VsaModule bIsVsaModule" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bIsVsaModule" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bIsVsaModule">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVsaModule">
+      <MemberSignature Language="C#" Value="public bool IsVsaModule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVsaModule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.VsaModule.IsVsaModule" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVsaModule As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVsaModule { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsVsaModule : bool with get, set" Usage="Microsoft.Vsa.VsaModule.IsVsaModule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

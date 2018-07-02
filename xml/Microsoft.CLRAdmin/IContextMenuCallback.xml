@@ -1,0 +1,51 @@
+﻿<Type Name="IContextMenuCallback" FullName="Microsoft.CLRAdmin.IContextMenuCallback">
+  <TypeSignature Language="C#" Value="public interface IContextMenuCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextMenuCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IContextMenuCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContextMenuCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContextMenuCallback" />
+  <TypeSignature Language="F#" Value="type IContextMenuCallback = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("43136EB7-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public void AddItem (ref Microsoft.CLRAdmin.CONTEXTMENUITEM pItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem(valuetype Microsoft.CLRAdmin.CONTEXTMENUITEM&amp; pItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IContextMenuCallback.AddItem(Microsoft.CLRAdmin.CONTEXTMENUITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddItem (ByRef pItem As CONTEXTMENUITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddItem(Microsoft::CLRAdmin::CONTEXTMENUITEM % pItem);" />
+      <MemberSignature Language="F#" Value="abstract member AddItem :  -&gt; unit" Usage="iContextMenuCallback.AddItem pItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pItem" Type="Microsoft.CLRAdmin.CONTEXTMENUITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

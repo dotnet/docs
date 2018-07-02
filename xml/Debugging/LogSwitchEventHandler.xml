@@ -1,0 +1,28 @@
+﻿<Type Name="LogSwitchEventHandler" FullName="Debugging.LogSwitchEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void LogSwitchEventHandler(object sender, LogSwitchEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogSwitchEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Debugging.LogSwitchEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LogSwitchEventHandler(sender As Object, e As LogSwitchEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void LogSwitchEventHandler(System::Object ^ sender, LogSwitchEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LogSwitchEventHandler = delegate of obj * LogSwitchEventArgs -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Debugging.LogSwitchEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

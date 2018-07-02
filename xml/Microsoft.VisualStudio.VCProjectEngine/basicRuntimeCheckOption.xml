@@ -1,0 +1,101 @@
+﻿<Type Name="basicRuntimeCheckOption" FullName="Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption">
+  <TypeSignature Language="C#" Value="public enum basicRuntimeCheckOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed basicRuntimeCheckOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum basicRuntimeCheckOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class basicRuntimeCheckOption" />
+  <TypeSignature Language="F#" Value="type basicRuntimeCheckOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="runtimeBasicCheckAll">
+      <MemberSignature Language="C#" Value="runtimeBasicCheckAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption runtimeBasicCheckAll = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeBasicCheckAll" />
+      <MemberSignature Language="VB.NET" Value="runtimeBasicCheckAll" />
+      <MemberSignature Language="C++ CLI" Value="runtimeBasicCheckAll" />
+      <MemberSignature Language="F#" Value="runtimeBasicCheckAll = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeBasicCheckAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="runtimeBasicCheckNone">
+      <MemberSignature Language="C#" Value="runtimeBasicCheckNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption runtimeBasicCheckNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeBasicCheckNone" />
+      <MemberSignature Language="VB.NET" Value="runtimeBasicCheckNone" />
+      <MemberSignature Language="C++ CLI" Value="runtimeBasicCheckNone" />
+      <MemberSignature Language="F#" Value="runtimeBasicCheckNone = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeBasicCheckNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="runtimeCheckStackFrame">
+      <MemberSignature Language="C#" Value="runtimeCheckStackFrame" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption runtimeCheckStackFrame = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeCheckStackFrame" />
+      <MemberSignature Language="VB.NET" Value="runtimeCheckStackFrame" />
+      <MemberSignature Language="C++ CLI" Value="runtimeCheckStackFrame" />
+      <MemberSignature Language="F#" Value="runtimeCheckStackFrame = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeCheckStackFrame" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="runtimeCheckUninitVariables">
+      <MemberSignature Language="C#" Value="runtimeCheckUninitVariables" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption runtimeCheckUninitVariables = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeCheckUninitVariables" />
+      <MemberSignature Language="VB.NET" Value="runtimeCheckUninitVariables" />
+      <MemberSignature Language="C++ CLI" Value="runtimeCheckUninitVariables" />
+      <MemberSignature Language="F#" Value="runtimeCheckUninitVariables = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption.runtimeCheckUninitVariables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.basicRuntimeCheckOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

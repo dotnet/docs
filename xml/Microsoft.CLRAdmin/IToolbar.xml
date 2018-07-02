@@ -1,0 +1,191 @@
+﻿<Type Name="IToolbar" FullName="Microsoft.CLRAdmin.IToolbar">
+  <TypeSignature Language="C#" Value="public interface IToolbar" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IToolbar" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IToolbar" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IToolbar" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IToolbar" />
+  <TypeSignature Language="F#" Value="type IToolbar = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("43136EB9-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBitmap">
+      <MemberSignature Language="C#" Value="public void AddBitmap (int nImages, IntPtr hbmp, int cxSize, int cySize, int crMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBitmap(int32 nImages, native int hbmp, int32 cxSize, int32 cySize, int32 crMask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.AddBitmap(System.Int32,System.IntPtr,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddBitmap (nImages As Integer, hbmp As IntPtr, cxSize As Integer, cySize As Integer, crMask As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBitmap(int nImages, IntPtr hbmp, int cxSize, int cySize, int crMask);" />
+      <MemberSignature Language="F#" Value="abstract member AddBitmap : int * nativeint * int * int * int -&gt; unit" Usage="iToolbar.AddBitmap (nImages, hbmp, cxSize, cySize, crMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nImages" Type="System.Int32" />
+        <Parameter Name="hbmp" Type="System.IntPtr" />
+        <Parameter Name="cxSize" Type="System.Int32" />
+        <Parameter Name="cySize" Type="System.Int32" />
+        <Parameter Name="crMask" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nImages">To be added.</param>
+        <param name="hbmp">To be added.</param>
+        <param name="cxSize">To be added.</param>
+        <param name="cySize">To be added.</param>
+        <param name="crMask">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddButtons">
+      <MemberSignature Language="C#" Value="public void AddButtons (int nButtons, ref Microsoft.CLRAdmin.MMCBUTTON lpButtons);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddButtons(int32 nButtons, valuetype Microsoft.CLRAdmin.MMCBUTTON&amp; lpButtons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.AddButtons(System.Int32,Microsoft.CLRAdmin.MMCBUTTON@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddButtons (nButtons As Integer, ByRef lpButtons As MMCBUTTON)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddButtons(int nButtons, Microsoft::CLRAdmin::MMCBUTTON % lpButtons);" />
+      <MemberSignature Language="F#" Value="abstract member AddButtons : int *  -&gt; unit" Usage="iToolbar.AddButtons (nButtons, lpButtons)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nButtons" Type="System.Int32" />
+        <Parameter Name="lpButtons" Type="Microsoft.CLRAdmin.MMCBUTTON&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="nButtons">To be added.</param>
+        <param name="lpButtons">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteButton">
+      <MemberSignature Language="C#" Value="public void DeleteButton (int nIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteButton(int32 nIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.DeleteButton(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteButton (nIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteButton(int nIndex);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteButton : int -&gt; unit" Usage="iToolbar.DeleteButton nIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetButtonState">
+      <MemberSignature Language="C#" Value="public void GetButtonState (int idCommand, Microsoft.CLRAdmin.MMC_BUTTON_STATE nState, out int pState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetButtonState(int32 idCommand, class Microsoft.CLRAdmin.MMC_BUTTON_STATE nState, [out] int32&amp; pState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.GetButtonState(System.Int32,Microsoft.CLRAdmin.MMC_BUTTON_STATE,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetButtonState (idCommand As Integer, nState As MMC_BUTTON_STATE, ByRef pState As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetButtonState(int idCommand, Microsoft::CLRAdmin::MMC_BUTTON_STATE ^ nState, [Runtime::InteropServices::Out] int % pState);" />
+      <MemberSignature Language="F#" Value="abstract member GetButtonState : int * Microsoft.CLRAdmin.MMC_BUTTON_STATE *  -&gt; unit" Usage="iToolbar.GetButtonState (idCommand, nState, pState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idCommand" Type="System.Int32" />
+        <Parameter Name="nState" Type="Microsoft.CLRAdmin.MMC_BUTTON_STATE" />
+        <Parameter Name="pState" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="idCommand">To be added.</param>
+        <param name="nState">To be added.</param>
+        <param name="pState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertButton">
+      <MemberSignature Language="C#" Value="public void InsertButton (int nIndex, ref Microsoft.CLRAdmin.MMCBUTTON lpButton);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertButton(int32 nIndex, valuetype Microsoft.CLRAdmin.MMCBUTTON&amp; lpButton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.InsertButton(System.Int32,Microsoft.CLRAdmin.MMCBUTTON@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertButton (nIndex As Integer, ByRef lpButton As MMCBUTTON)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertButton(int nIndex, Microsoft::CLRAdmin::MMCBUTTON % lpButton);" />
+      <MemberSignature Language="F#" Value="abstract member InsertButton : int *  -&gt; unit" Usage="iToolbar.InsertButton (nIndex, lpButton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nIndex" Type="System.Int32" />
+        <Parameter Name="lpButton" Type="Microsoft.CLRAdmin.MMCBUTTON&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="nIndex">To be added.</param>
+        <param name="lpButton">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetButtonState">
+      <MemberSignature Language="C#" Value="public void SetButtonState (int idCommand, Microsoft.CLRAdmin.MMC_BUTTON_STATE nState, int bState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetButtonState(int32 idCommand, class Microsoft.CLRAdmin.MMC_BUTTON_STATE nState, int32 bState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IToolbar.SetButtonState(System.Int32,Microsoft.CLRAdmin.MMC_BUTTON_STATE,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetButtonState (idCommand As Integer, nState As MMC_BUTTON_STATE, bState As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetButtonState(int idCommand, Microsoft::CLRAdmin::MMC_BUTTON_STATE ^ nState, int bState);" />
+      <MemberSignature Language="F#" Value="abstract member SetButtonState : int * Microsoft.CLRAdmin.MMC_BUTTON_STATE * int -&gt; unit" Usage="iToolbar.SetButtonState (idCommand, nState, bState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idCommand" Type="System.Int32" />
+        <Parameter Name="nState" Type="Microsoft.CLRAdmin.MMC_BUTTON_STATE" />
+        <Parameter Name="bState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="idCommand">To be added.</param>
+        <param name="nState">To be added.</param>
+        <param name="bState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

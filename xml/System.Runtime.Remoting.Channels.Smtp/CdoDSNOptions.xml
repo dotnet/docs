@@ -1,0 +1,141 @@
+﻿<Type Name="CdoDSNOptions" FullName="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions">
+  <TypeSignature Language="C#" Value="public enum CdoDSNOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CdoDSNOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CdoDSNOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CdoDSNOptions" />
+  <TypeSignature Language="F#" Value="type CdoDSNOptions = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CdoDSNDefault">
+      <MemberSignature Language="C#" Value="CdoDSNDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNDefault" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNDefault" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNDefault" />
+      <MemberSignature Language="F#" Value="CdoDSNDefault = 0" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoDSNDelay">
+      <MemberSignature Language="C#" Value="CdoDSNDelay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNDelay = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNDelay" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNDelay" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNDelay" />
+      <MemberSignature Language="F#" Value="CdoDSNDelay = 8" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNDelay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoDSNFailure">
+      <MemberSignature Language="C#" Value="CdoDSNFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNFailure = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNFailure" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNFailure" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNFailure" />
+      <MemberSignature Language="F#" Value="CdoDSNFailure = 2" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoDSNNever">
+      <MemberSignature Language="C#" Value="CdoDSNNever" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNNever = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNNever" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNNever" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNNever" />
+      <MemberSignature Language="F#" Value="CdoDSNNever = 1" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNNever" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoDSNSuccess">
+      <MemberSignature Language="C#" Value="CdoDSNSuccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNSuccess = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNSuccess" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNSuccess" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNSuccess" />
+      <MemberSignature Language="F#" Value="CdoDSNSuccess = 4" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNSuccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoDSNSuccessFailOrDelay">
+      <MemberSignature Language="C#" Value="CdoDSNSuccessFailOrDelay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions CdoDSNSuccessFailOrDelay = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNSuccessFailOrDelay" />
+      <MemberSignature Language="VB.NET" Value="CdoDSNSuccessFailOrDelay" />
+      <MemberSignature Language="C++ CLI" Value="CdoDSNSuccessFailOrDelay" />
+      <MemberSignature Language="F#" Value="CdoDSNSuccessFailOrDelay = 14" Usage="System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions.CdoDSNSuccessFailOrDelay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoDSNOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

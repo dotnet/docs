@@ -1,0 +1,107 @@
+﻿<Type Name="Value" FullName="Debugging.Value">
+  <TypeSignature Language="C#" Value="public class Value" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Value extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Debugging.Value" />
+  <TypeSignature Language="VB.NET" Value="Public Class Value" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Value" />
+  <TypeSignature Language="F#" Value="type Value = class" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public long Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Address" />
+      <MemberSignature Language="DocId" Value="P:Debugging.Value.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Address { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : int64" Usage="Debugging.Value.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBreakpoint">
+      <MemberSignature Language="C#" Value="public Debugging.ValueBreakpoint CreateBreakpoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.ValueBreakpoint CreateBreakpoint() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Value.CreateBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBreakpoint () As ValueBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::ValueBreakpoint ^ CreateBreakpoint();" />
+      <MemberSignature Language="F#" Value="member this.CreateBreakpoint : unit -&gt; Debugging.ValueBreakpoint" Usage="value.CreateBreakpoint " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.ValueBreakpoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:Debugging.Value.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="Debugging.Value.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Debugging.Value.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int" Usage="Debugging.Value.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

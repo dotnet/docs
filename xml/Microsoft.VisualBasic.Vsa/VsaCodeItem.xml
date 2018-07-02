@@ -1,0 +1,190 @@
+﻿<Type Name="VsaCodeItem" FullName="Microsoft.VisualBasic.Vsa.VsaCodeItem">
+  <TypeSignature Language="C#" Value="public class VsaCodeItem : Microsoft.VisualBasic.Vsa.VsaItem, Microsoft.Vsa.IVsaCodeItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VsaCodeItem extends Microsoft.VisualBasic.Vsa.VsaItem implements class Microsoft.Vsa.IVsaCodeItem, class Microsoft.Vsa.IVsaItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Vsa.VsaCodeItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsaCodeItem&#xA;Inherits VsaItem&#xA;Implements IVsaCodeItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaCodeItem : Microsoft::VisualBasic::Vsa::VsaItem, Microsoft::Vsa::IVsaCodeItem" />
+  <TypeSignature Language="F#" Value="type VsaCodeItem = class&#xA;    inherit VsaItem&#xA;    interface IVsaCodeItem&#xA;    interface IVsaItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualBasic.Vsa.VsaItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaCodeItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal VsaCodeItem (Microsoft.Vsa.IVsaCodeItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Vsa.IVsaCodeItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.#ctor(Microsoft.Vsa.IVsaCodeItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (item As IVsaCodeItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; VsaCodeItem(Microsoft::Vsa::IVsaCodeItem ^ item);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Vsa.VsaCodeItem : Microsoft.Vsa.IVsaCodeItem -&gt; Microsoft.VisualBasic.Vsa.VsaCodeItem" Usage="new Microsoft.VisualBasic.Vsa.VsaCodeItem item" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Vsa.IVsaCodeItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEventSource">
+      <MemberSignature Language="C#" Value="public void AddEventSource (string EventSourceName, string EventSourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddEventSource(string EventSourceName, string EventSourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.AddEventSource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddEventSource (EventSourceName As String, EventSourceType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddEventSource(System::String ^ EventSourceName, System::String ^ EventSourceType);" />
+      <MemberSignature Language="F#" Value="abstract member AddEventSource : string * string -&gt; unit&#xA;override this.AddEventSource : string * string -&gt; unit" Usage="vsaCodeItem.AddEventSource (EventSourceName, EventSourceType)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaCodeItem.AddEventSource(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EventSourceName" Type="System.String" />
+        <Parameter Name="EventSourceType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="EventSourceName">To be added.</param>
+        <param name="EventSourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSourceText">
+      <MemberSignature Language="C#" Value="public void AppendSourceText (string Text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendSourceText(string Text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.AppendSourceText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendSourceText (Text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AppendSourceText(System::String ^ Text);" />
+      <MemberSignature Language="F#" Value="abstract member AppendSourceText : string -&gt; unit&#xA;override this.AppendSourceText : string -&gt; unit" Usage="vsaCodeItem.AppendSourceText Text" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaCodeItem.AppendSourceText(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDOM">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeObject CodeDOM { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeObject CodeDOM" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaCodeItem.CodeDOM" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeDOM As CodeObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeObject ^ CodeDOM { System::CodeDom::CodeObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDOM : System.CodeDom.CodeObject" Usage="Microsoft.VisualBasic.Vsa.VsaCodeItem.CodeDOM" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaCodeItem.CodeDOM</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveEventSource">
+      <MemberSignature Language="C#" Value="public void RemoveEventSource (string EventSourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveEventSource(string EventSourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaCodeItem.RemoveEventSource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveEventSource (EventSourceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveEventSource(System::String ^ EventSourceName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEventSource : string -&gt; unit&#xA;override this.RemoveEventSource : string -&gt; unit" Usage="vsaCodeItem.RemoveEventSource EventSourceName" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaCodeItem.RemoveEventSource(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EventSourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="EventSourceName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceText">
+      <MemberSignature Language="C#" Value="public string SourceText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaCodeItem.SourceText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceText : string with get, set" Usage="Microsoft.VisualBasic.Vsa.VsaCodeItem.SourceText" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaCodeItem.SourceText</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

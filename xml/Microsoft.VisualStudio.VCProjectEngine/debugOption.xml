@@ -1,0 +1,121 @@
+﻿<Type Name="debugOption" FullName="Microsoft.VisualStudio.VCProjectEngine.debugOption">
+  <TypeSignature Language="C#" Value="public enum debugOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed debugOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.debugOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum debugOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class debugOption" />
+  <TypeSignature Language="F#" Value="type debugOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="debugDisabled">
+      <MemberSignature Language="C#" Value="debugDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.debugOption debugDisabled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.debugOption.debugDisabled" />
+      <MemberSignature Language="VB.NET" Value="debugDisabled" />
+      <MemberSignature Language="C++ CLI" Value="debugDisabled" />
+      <MemberSignature Language="F#" Value="debugDisabled = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.debugOption.debugDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.debugOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="debugEditAndContinue">
+      <MemberSignature Language="C#" Value="debugEditAndContinue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.debugOption debugEditAndContinue = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.debugOption.debugEditAndContinue" />
+      <MemberSignature Language="VB.NET" Value="debugEditAndContinue" />
+      <MemberSignature Language="C++ CLI" Value="debugEditAndContinue" />
+      <MemberSignature Language="F#" Value="debugEditAndContinue = 4" Usage="Microsoft.VisualStudio.VCProjectEngine.debugOption.debugEditAndContinue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.debugOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="debugEnabled">
+      <MemberSignature Language="C#" Value="debugEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.debugOption debugEnabled = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.debugOption.debugEnabled" />
+      <MemberSignature Language="VB.NET" Value="debugEnabled" />
+      <MemberSignature Language="C++ CLI" Value="debugEnabled" />
+      <MemberSignature Language="F#" Value="debugEnabled = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.debugOption.debugEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.debugOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="debugLineInfoOnly">
+      <MemberSignature Language="C#" Value="debugLineInfoOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.debugOption debugLineInfoOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.debugOption.debugLineInfoOnly" />
+      <MemberSignature Language="VB.NET" Value="debugLineInfoOnly" />
+      <MemberSignature Language="C++ CLI" Value="debugLineInfoOnly" />
+      <MemberSignature Language="F#" Value="debugLineInfoOnly = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.debugOption.debugLineInfoOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.debugOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="debugOldStyleInfo">
+      <MemberSignature Language="C#" Value="debugOldStyleInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.debugOption debugOldStyleInfo = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.debugOption.debugOldStyleInfo" />
+      <MemberSignature Language="VB.NET" Value="debugOldStyleInfo" />
+      <MemberSignature Language="C++ CLI" Value="debugOldStyleInfo" />
+      <MemberSignature Language="F#" Value="debugOldStyleInfo = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.debugOption.debugOldStyleInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.debugOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

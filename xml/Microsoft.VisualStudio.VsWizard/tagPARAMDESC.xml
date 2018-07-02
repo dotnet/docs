@@ -1,0 +1,72 @@
+﻿<Type Name="tagPARAMDESC" FullName="Microsoft.VisualStudio.VsWizard.tagPARAMDESC">
+  <TypeSignature Language="C#" Value="public struct tagPARAMDESC" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit tagPARAMDESC extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.tagPARAMDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure tagPARAMDESC" />
+  <TypeSignature Language="C++ CLI" Value="public value class tagPARAMDESC" />
+  <TypeSignature Language="F#" Value="type tagPARAMDESC = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="pparamdescex">
+      <MemberSignature Language="C#" Value="public IntPtr pparamdescex;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int pparamdescex" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagPARAMDESC.pparamdescex" />
+      <MemberSignature Language="VB.NET" Value="Public pparamdescex As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr pparamdescex;" />
+      <MemberSignature Language="F#" Value="val mutable pparamdescex : nativeint" Usage="Microsoft.VisualStudio.VsWizard.tagPARAMDESC.pparamdescex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="wParamFlags">
+      <MemberSignature Language="C#" Value="public ushort wParamFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 wParamFlags" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagPARAMDESC.wParamFlags" />
+      <MemberSignature Language="VB.NET" Value="Public wParamFlags As UShort " />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt16 wParamFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wParamFlags : uint16" Usage="Microsoft.VisualStudio.VsWizard.tagPARAMDESC.wParamFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

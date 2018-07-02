@@ -1,0 +1,198 @@
+<Type Name="_dispCodeModelEvents_SinkHelper" FullName="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper">
+  <TypeSignature Language="C#" Value="public sealed class _dispCodeModelEvents_SinkHelper : Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispCodeModelEvents_SinkHelper extends System.Object implements class Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _dispCodeModelEvents_SinkHelper&#xA;Implements _dispCodeModelEvents" />
+  <TypeSignature Language="C++ CLI" Value="public ref class _dispCodeModelEvents_SinkHelper sealed : Microsoft::VisualStudio::VCCodeModel::_dispCodeModelEvents" />
+  <TypeSignature Language="F#" Value="type _dispCodeModelEvents_SinkHelper = class&#xA;    interface _dispCodeModelEvents" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="public override void Added (EnvDTE.CodeElement , EnvDTE.CodeElement );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void Added(class EnvDTE.CodeElement , class EnvDTE.CodeElement ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.Added(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Added ( As CodeElement,  As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Added(EnvDTE::CodeElement ^ , EnvDTE::CodeElement ^ );" />
+      <MemberSignature Language="F#" Value="abstract member Added : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit&#xA;override this.Added : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents_SinkHelper.Added (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Added(EnvDTE.CodeElement,EnvDTE.CodeElement)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public override void Changed (EnvDTE.CodeElement , EnvDTE.CodeElement );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void Changed(class EnvDTE.CodeElement , class EnvDTE.CodeElement ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.Changed(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Changed ( As CodeElement,  As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Changed(EnvDTE::CodeElement ^ , EnvDTE::CodeElement ^ );" />
+      <MemberSignature Language="F#" Value="abstract member Changed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit&#xA;override this.Changed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents_SinkHelper.Changed (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Changed(EnvDTE.CodeElement,EnvDTE.CodeElement)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_AddedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_AddedEventHandler m_AddedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_AddedEventHandler m_AddedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_AddedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_AddedDelegate As _dispCodeModelEvents_AddedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCCodeModel::_dispCodeModelEvents_AddedEventHandler ^ m_AddedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_AddedDelegate : Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_AddedEventHandler" Usage="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_AddedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_AddedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ChangedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler m_ChangedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler m_ChangedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_ChangedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ChangedDelegate As _dispCodeModelEvents_ChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCCodeModel::_dispCodeModelEvents_ChangedEventHandler ^ m_ChangedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ChangedDelegate : Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler" Usage="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_ChangedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_dwCookie">
+      <MemberSignature Language="C#" Value="public int m_dwCookie;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 m_dwCookie" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_dwCookie" />
+      <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_dwCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_RemovedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler m_RemovedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler m_RemovedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_RemovedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_RemovedDelegate As _dispCodeModelEvents_RemovedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCCodeModel::_dispCodeModelEvents_RemovedEventHandler ^ m_RemovedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_RemovedDelegate : Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler" Usage="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.m_RemovedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="public override void Removed (EnvDTE.CodeElement , EnvDTE.CodeElement );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void Removed(class EnvDTE.CodeElement , class EnvDTE.CodeElement ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_SinkHelper.Removed(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Removed ( As CodeElement,  As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Removed(EnvDTE::CodeElement ^ , EnvDTE::CodeElement ^ );" />
+      <MemberSignature Language="F#" Value="abstract member Removed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit&#xA;override this.Removed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents_SinkHelper.Removed (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Removed(EnvDTE.CodeElement,EnvDTE.CodeElement)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+        <Parameter Name="" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

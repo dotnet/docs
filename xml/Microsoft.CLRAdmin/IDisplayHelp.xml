@@ -1,0 +1,51 @@
+﻿<Type Name="IDisplayHelp" FullName="Microsoft.CLRAdmin.IDisplayHelp">
+  <TypeSignature Language="C#" Value="public interface IDisplayHelp" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDisplayHelp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IDisplayHelp" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDisplayHelp" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDisplayHelp" />
+  <TypeSignature Language="F#" Value="type IDisplayHelp = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("cc593830-b926-11d1-8063-0000f875a9ce")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShowTopic">
+      <MemberSignature Language="C#" Value="public void ShowTopic (string pszHelpTopic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowTopic(string pszHelpTopic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IDisplayHelp.ShowTopic(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowTopic (pszHelpTopic As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowTopic(System::String ^ pszHelpTopic);" />
+      <MemberSignature Language="F#" Value="abstract member ShowTopic : string -&gt; unit" Usage="iDisplayHelp.ShowTopic pszHelpTopic" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszHelpTopic" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pszHelpTopic">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+﻿<Type Name="CCommandHistory" FullName="Microsoft.CLRAdmin.CCommandHistory">
+  <TypeSignature Language="C#" Value="public class CCommandHistory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi CCommandHistory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.CCommandHistory" />
+  <TypeSignature Language="VB.NET" Value="Public Class CCommandHistory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CCommandHistory" />
+  <TypeSignature Language="F#" Value="type CCommandHistory = class" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CCommandHistory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CCommandHistory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CCommandHistory();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireOffConsumerCommand">
+      <MemberSignature Language="C#" Value="public static void FireOffConsumerCommand (int nIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FireOffConsumerCommand(int32 nIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CCommandHistory.FireOffConsumerCommand(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FireOffConsumerCommand (nIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FireOffConsumerCommand(int nIndex);" />
+      <MemberSignature Language="F#" Value="static member FireOffConsumerCommand : int -&gt; unit" Usage="Microsoft.CLRAdmin.CCommandHistory.FireOffConsumerCommand nIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConsumerCommandsArray">
+      <MemberSignature Language="C#" Value="public static string[] GetConsumerCommandsArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetConsumerCommandsArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CCommandHistory.GetConsumerCommandsArray" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetConsumerCommandsArray () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetConsumerCommandsArray();" />
+      <MemberSignature Language="F#" Value="static member GetConsumerCommandsArray : unit -&gt; string[]" Usage="Microsoft.CLRAdmin.CCommandHistory.GetConsumerCommandsArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

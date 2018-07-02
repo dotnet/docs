@@ -1,0 +1,94 @@
+﻿<Type Name="IHostEx" FullName="Microsoft.IE.IHostEx">
+  <TypeSignature Language="C#" Value="public interface IHostEx" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHostEx" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.IHostEx" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHostEx" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHostEx" />
+  <TypeSignature Language="F#" Value="type IHostEx = interface" />
+  <AssemblyInfo>
+    <AssemblyName>IIEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("FC3DA537-C144-42C3-92F8-EA88267EC73B")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetClassFactory">
+      <MemberSignature Language="C#" Value="public Microsoft.IE.ISecureFactory GetClassFactory (string className, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetClassFactory([in]string className, [in]string fileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.IHostEx.GetClassFactory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClassFactory (className As String, fileName As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::IE::ISecureFactory ^ GetClassFactory(System::String ^ className, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetClassFactory : string * string -&gt; Microsoft.IE.ISecureFactory" Usage="iHostEx.GetClassFactory (className, fileName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecuredClassFactory">
+      <MemberSignature Language="C#" Value="public Microsoft.IE.ISecureFactory GetSecuredClassFactory (int dwIdentityFlags, int dwZone, string lpSite, string pbSecurityId, string lpHash, string className, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetSecuredClassFactory([in]int32 dwIdentityFlags, [in]int32 dwZone, [in]string lpSite, [in]string pbSecurityId, [in]string lpHash, [in]string className, [in]string fileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.IHostEx.GetSecuredClassFactory(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSecuredClassFactory (dwIdentityFlags As Integer, dwZone As Integer, lpSite As String, pbSecurityId As String, lpHash As String, className As String, fileName As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::IE::ISecureFactory ^ GetSecuredClassFactory(int dwIdentityFlags, int dwZone, System::String ^ lpSite, System::String ^ pbSecurityId, System::String ^ lpHash, System::String ^ className, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetSecuredClassFactory : int * int * string * string * string * string * string -&gt; Microsoft.IE.ISecureFactory" Usage="iHostEx.GetSecuredClassFactory (dwIdentityFlags, dwZone, lpSite, pbSecurityId, lpHash, className, fileName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwIdentityFlags" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="lpSite" Type="System.String" />
+        <Parameter Name="pbSecurityId" Type="System.String" />
+        <Parameter Name="lpHash" Type="System.String" />
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwIdentityFlags">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="lpSite">To be added.</param>
+        <param name="pbSecurityId">To be added.</param>
+        <param name="lpHash">To be added.</param>
+        <param name="className">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

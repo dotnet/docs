@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type EmulateRecognizeCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -76,6 +77,7 @@ void sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEvent
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

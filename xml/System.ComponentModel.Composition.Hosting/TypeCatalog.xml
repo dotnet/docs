@@ -260,6 +260,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetExports">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Tuple&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; GetExports (System.ComponentModel.Composition.Primitives.ImportDefinition definition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition, class System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; GetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.TypeCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExports (definition As ImportDefinition) As IEnumerable(Of Tuple(Of ComposablePartDefinition, ExportDefinition))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;Tuple&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^, System::ComponentModel::Composition::Primitives::ExportDefinition ^&gt; ^&gt; ^ GetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition);" />
+      <MemberSignature Language="F#" Value="override this.GetExports : System.ComponentModel.Composition.Primitives.ImportDefinition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition * System.ComponentModel.Composition.Primitives.ExportDefinition&gt;" Usage="typeCatalog.GetExports definition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="definition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parts">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.TypeCatalog.Parts" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parts As IQueryable(Of ComposablePartDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ Parts { System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parts : System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="System.ComponentModel.Composition.Hosting.TypeCatalog.Parts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName">
       <MemberSignature Language="C#" Value="string System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />

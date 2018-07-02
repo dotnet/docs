@@ -1,0 +1,81 @@
+﻿<Type Name="linkAssemblyDebug" FullName="Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug">
+  <TypeSignature Language="C#" Value="public enum linkAssemblyDebug" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed linkAssemblyDebug extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug" />
+  <TypeSignature Language="VB.NET" Value="Public Enum linkAssemblyDebug" />
+  <TypeSignature Language="C++ CLI" Value="public enum class linkAssemblyDebug" />
+  <TypeSignature Language="F#" Value="type linkAssemblyDebug = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="linkAssemblyDebugDefault">
+      <MemberSignature Language="C#" Value="linkAssemblyDebugDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug linkAssemblyDebugDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugDefault" />
+      <MemberSignature Language="VB.NET" Value="linkAssemblyDebugDefault" />
+      <MemberSignature Language="C++ CLI" Value="linkAssemblyDebugDefault" />
+      <MemberSignature Language="F#" Value="linkAssemblyDebugDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkAssemblyDebugDisable">
+      <MemberSignature Language="C#" Value="linkAssemblyDebugDisable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug linkAssemblyDebugDisable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugDisable" />
+      <MemberSignature Language="VB.NET" Value="linkAssemblyDebugDisable" />
+      <MemberSignature Language="C++ CLI" Value="linkAssemblyDebugDisable" />
+      <MemberSignature Language="F#" Value="linkAssemblyDebugDisable = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugDisable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkAssemblyDebugFull">
+      <MemberSignature Language="C#" Value="linkAssemblyDebugFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug linkAssemblyDebugFull = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugFull" />
+      <MemberSignature Language="VB.NET" Value="linkAssemblyDebugFull" />
+      <MemberSignature Language="C++ CLI" Value="linkAssemblyDebugFull" />
+      <MemberSignature Language="F#" Value="linkAssemblyDebugFull = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug.linkAssemblyDebugFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkAssemblyDebug</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

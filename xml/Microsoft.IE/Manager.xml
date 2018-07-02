@@ -1,0 +1,447 @@
+﻿<Type Name="Manager" FullName="Microsoft.IE.Manager">
+  <TypeSignature Language="C#" Value="public class Manager : Microsoft.IE.IHostEx" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Manager extends System.Object implements class Microsoft.IE.IHostEx" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager" />
+  <TypeSignature Language="VB.NET" Value="Public Class Manager&#xA;Implements IHostEx" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Manager : Microsoft::IE::IHostEx" />
+  <TypeSignature Language="F#" Value="type Manager = class&#xA;    interface IHostEx" />
+  <AssemblyInfo>
+    <AssemblyName>IEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IE.IHostEx</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("CA35CB3D-0357-11D3-8729-00C04F79ED0D")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Manager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Manager();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreOnTheSameSite">
+      <MemberSignature Language="C#" Value="public static bool AreOnTheSameSite (string pURL1, string pURL2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreOnTheSameSite(string pURL1, string pURL2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.AreOnTheSameSite(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AreOnTheSameSite (pURL1 As String, pURL2 As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AreOnTheSameSite(System::String ^ pURL1, System::String ^ pURL2);" />
+      <MemberSignature Language="F#" Value="static member AreOnTheSameSite : string * string -&gt; bool" Usage="Microsoft.IE.Manager.AreOnTheSameSite (pURL1, pURL2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL1" Type="System.String" />
+        <Parameter Name="pURL2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pURL1">To be added.</param>
+        <param name="pURL2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreTheSame">
+      <MemberSignature Language="C#" Value="public static bool AreTheSame (string pURL1, string pURL2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreTheSame(string pURL1, string pURL2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.AreTheSame(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AreTheSame (pURL1 As String, pURL2 As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AreTheSame(System::String ^ pURL1, System::String ^ pURL2);" />
+      <MemberSignature Language="F#" Value="static member AreTheSame : string * string -&gt; bool" Usage="Microsoft.IE.Manager.AreTheSame (pURL1, pURL2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL1" Type="System.String" />
+        <Parameter Name="pURL2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pURL1">To be added.</param>
+        <param name="pURL2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanonizeURL">
+      <MemberSignature Language="C#" Value="public static string CanonizeURL (string pURL, Microsoft.IE.Manager.URL_CANONFLAGS flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CanonizeURL(string pURL, valuetype Microsoft.IE.Manager/URL_CANONFLAGS flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.CanonizeURL(System.String,Microsoft.IE.Manager.URL_CANONFLAGS)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanonizeURL (pURL As String, flags As Manager.URL_CANONFLAGS) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CanonizeURL(System::String ^ pURL, Microsoft::IE::Manager::URL_CANONFLAGS flags);" />
+      <MemberSignature Language="F#" Value="static member CanonizeURL : string * Microsoft.IE.Manager.URL_CANONFLAGS -&gt; string" Usage="Microsoft.IE.Manager.CanonizeURL (pURL, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL" Type="System.String" />
+        <Parameter Name="flags" Type="Microsoft.IE.Manager+URL_CANONFLAGS" />
+      </Parameters>
+      <Docs>
+        <param name="pURL">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeDomainId">
+      <MemberSignature Language="C#" Value="public static byte[] DecodeDomainId (string hexString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecodeDomainId(string hexString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.DecodeDomainId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeDomainId (hexString As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecodeDomainId(System::String ^ hexString);" />
+      <MemberSignature Language="F#" Value="static member DecodeDomainId : string -&gt; byte[]" Usage="Microsoft.IE.Manager.DecodeDomainId hexString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hexString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hexString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassFactory">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.IE.ISecureFactory GetClassFactory (string assemblyName, string className);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetClassFactory(string assemblyName, string className) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.GetClassFactory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassFactory (assemblyName As String, className As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::IE::ISecureFactory ^ GetClassFactory(System::String ^ assemblyName, System::String ^ className);" />
+      <MemberSignature Language="F#" Value="abstract member GetClassFactory : string * string -&gt; Microsoft.IE.ISecureFactory&#xA;override this.GetClassFactory : string * string -&gt; Microsoft.IE.ISecureFactory" Usage="manager.GetClassFactory (assemblyName, className)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.IHostEx.GetClassFactory(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="className" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">To be added.</param>
+        <param name="className">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeBase">
+      <MemberSignature Language="C#" Value="public static bool GetCodeBase (string pURL, out string codeBase, out string application);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetCodeBase(string pURL, [out] string&amp; codeBase, [out] string&amp; application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.GetCodeBase(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCodeBase (pURL As String, ByRef codeBase As String, ByRef application As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCodeBase(System::String ^ pURL, [Runtime::InteropServices::Out] System::String ^ % codeBase, [Runtime::InteropServices::Out] System::String ^ % application);" />
+      <MemberSignature Language="F#" Value="static member GetCodeBase : string *  *  -&gt; bool" Usage="Microsoft.IE.Manager.GetCodeBase (pURL, codeBase, application)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL" Type="System.String" />
+        <Parameter Name="codeBase" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pURL">To be added.</param>
+        <param name="codeBase">To be added.</param>
+        <param name="application">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationFile">
+      <MemberSignature Language="C#" Value="public static bool GetConfigurationFile (string pURL, out string path, out string file);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetConfigurationFile(string pURL, [out] string&amp; path, [out] string&amp; file) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.GetConfigurationFile(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetConfigurationFile (pURL As String, ByRef path As String, ByRef file As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetConfigurationFile(System::String ^ pURL, [Runtime::InteropServices::Out] System::String ^ % path, [Runtime::InteropServices::Out] System::String ^ % file);" />
+      <MemberSignature Language="F#" Value="static member GetConfigurationFile : string *  *  -&gt; bool" Usage="Microsoft.IE.Manager.GetConfigurationFile (pURL, path, file)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL" Type="System.String" />
+        <Parameter Name="path" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="file" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pURL">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="file">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecuredClassFactory">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.IE.ISecureFactory GetSecuredClassFactory (int flags, int zone, string site, string uniqueIdString, string fileHashString, string typeName, string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.IE.ISecureFactory GetSecuredClassFactory(int32 flags, int32 zone, string site, string uniqueIdString, string fileHashString, string typeName, string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.GetSecuredClassFactory(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecuredClassFactory (flags As Integer, zone As Integer, site As String, uniqueIdString As String, fileHashString As String, typeName As String, assemblyName As String) As ISecureFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::IE::ISecureFactory ^ GetSecuredClassFactory(int flags, int zone, System::String ^ site, System::String ^ uniqueIdString, System::String ^ fileHashString, System::String ^ typeName, System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetSecuredClassFactory : int * int * string * string * string * string * string -&gt; Microsoft.IE.ISecureFactory&#xA;override this.GetSecuredClassFactory : int * int * string * string * string * string * string -&gt; Microsoft.IE.ISecureFactory" Usage="manager.GetSecuredClassFactory (flags, zone, site, uniqueIdString, fileHashString, typeName, assemblyName)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.IHostEx.GetSecuredClassFactory(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.ISecureFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Int32" />
+        <Parameter Name="zone" Type="System.Int32" />
+        <Parameter Name="site" Type="System.String" />
+        <Parameter Name="uniqueIdString" Type="System.String" />
+        <Parameter Name="fileHashString" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="flags">To be added.</param>
+        <param name="zone">To be added.</param>
+        <param name="site">To be added.</param>
+        <param name="uniqueIdString">To be added.</param>
+        <param name="fileHashString">To be added.</param>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSiteName">
+      <MemberSignature Language="C#" Value="public static string GetSiteName (string pURL);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSiteName(string pURL) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.GetSiteName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSiteName (pURL As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetSiteName(System::String ^ pURL);" />
+      <MemberSignature Language="F#" Value="static member GetSiteName : string -&gt; string" Usage="Microsoft.IE.Manager.GetSiteName pURL" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pURL">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERNET_MAX_PATH_LENGTH">
+      <MemberSignature Language="C#" Value="public static readonly int INTERNET_MAX_PATH_LENGTH;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 INTERNET_MAX_PATH_LENGTH" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.INTERNET_MAX_PATH_LENGTH" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly INTERNET_MAX_PATH_LENGTH As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int INTERNET_MAX_PATH_LENGTH;" />
+      <MemberSignature Language="F#" Value=" staticval mutable INTERNET_MAX_PATH_LENGTH : int" Usage="Microsoft.IE.Manager.INTERNET_MAX_PATH_LENGTH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERNET_MAX_SCHEME_LENGTH">
+      <MemberSignature Language="C#" Value="public static readonly int INTERNET_MAX_SCHEME_LENGTH;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 INTERNET_MAX_SCHEME_LENGTH" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.INTERNET_MAX_SCHEME_LENGTH" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly INTERNET_MAX_SCHEME_LENGTH As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int INTERNET_MAX_SCHEME_LENGTH;" />
+      <MemberSignature Language="F#" Value=" staticval mutable INTERNET_MAX_SCHEME_LENGTH : int" Usage="Microsoft.IE.Manager.INTERNET_MAX_SCHEME_LENGTH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERNET_MAX_URL_LENGTH">
+      <MemberSignature Language="C#" Value="public static readonly int INTERNET_MAX_URL_LENGTH;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 INTERNET_MAX_URL_LENGTH" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.INTERNET_MAX_URL_LENGTH" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly INTERNET_MAX_URL_LENGTH As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int INTERNET_MAX_URL_LENGTH;" />
+      <MemberSignature Language="F#" Value=" staticval mutable INTERNET_MAX_URL_LENGTH : int" Usage="Microsoft.IE.Manager.INTERNET_MAX_URL_LENGTH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidURL">
+      <MemberSignature Language="C#" Value="public static bool IsValidURL (string pURL);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidURL(string pURL) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.IsValidURL(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidURL (pURL As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidURL(System::String ^ pURL);" />
+      <MemberSignature Language="F#" Value="static member IsValidURL : string -&gt; bool" Usage="Microsoft.IE.Manager.IsValidURL pURL" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pURL" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pURL">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeFullLink">
+      <MemberSignature Language="C#" Value="public static string MakeFullLink (string link, string CodeBase, string Application);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeFullLink(string link, string CodeBase, string Application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.Manager.MakeFullLink(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeFullLink (link As String, CodeBase As String, Application As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeFullLink(System::String ^ link, System::String ^ CodeBase, System::String ^ Application);" />
+      <MemberSignature Language="F#" Value="static member MakeFullLink : string * string * string -&gt; string" Usage="Microsoft.IE.Manager.MakeFullLink (link, CodeBase, Application)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="link" Type="System.String" />
+        <Parameter Name="CodeBase" Type="System.String" />
+        <Parameter Name="Application" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="link">To be added.</param>
+        <param name="CodeBase">To be added.</param>
+        <param name="Application">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

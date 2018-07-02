@@ -1,0 +1,299 @@
+﻿<Type Name="BaseVsaEngine+Pre" FullName="Microsoft.Vsa.BaseVsaEngine+Pre">
+  <TypeSignature Language="C#" Value="protected enum BaseVsaEngine.Pre" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed BaseVsaEngine/Pre extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.BaseVsaEngine.Pre" />
+  <TypeSignature Language="VB.NET" Value="Protected Enum BaseVsaEngine.Pre" />
+  <TypeSignature Language="C++ CLI" Value="protected: enum class BaseVsaEngine::Pre" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EngineCompiled">
+      <MemberSignature Language="C#" Value="EngineCompiled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineCompiled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineCompiled" />
+      <MemberSignature Language="VB.NET" Value="EngineCompiled" />
+      <MemberSignature Language="C++ CLI" Value="EngineCompiled" />
+      <MemberSignature Language="F#" Value="EngineCompiled = 4" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineCompiled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineInitialised">
+      <MemberSignature Language="C#" Value="EngineInitialised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineInitialised = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineInitialised" />
+      <MemberSignature Language="VB.NET" Value="EngineInitialised" />
+      <MemberSignature Language="C++ CLI" Value="EngineInitialised" />
+      <MemberSignature Language="F#" Value="EngineInitialised = 1024" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineInitialised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotClosed">
+      <MemberSignature Language="C#" Value="EngineNotClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineNotClosed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotClosed" />
+      <MemberSignature Language="VB.NET" Value="EngineNotClosed" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotClosed" />
+      <MemberSignature Language="F#" Value="EngineNotClosed = 1" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotInitialised">
+      <MemberSignature Language="C#" Value="EngineNotInitialised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineNotInitialised = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotInitialised" />
+      <MemberSignature Language="VB.NET" Value="EngineNotInitialised" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotInitialised" />
+      <MemberSignature Language="F#" Value="EngineNotInitialised = 2048" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotInitialised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>2048</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotRunning">
+      <MemberSignature Language="C#" Value="EngineNotRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineNotRunning = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineNotRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotRunning" />
+      <MemberSignature Language="F#" Value="EngineNotRunning = 16" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineNotRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineRunning">
+      <MemberSignature Language="C#" Value="EngineRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre EngineRunning = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.EngineRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineRunning" />
+      <MemberSignature Language="F#" Value="EngineRunning = 8" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.EngineRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerNotSet">
+      <MemberSignature Language="C#" Value="RootMonikerNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre RootMonikerNotSet = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.RootMonikerNotSet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerNotSet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerNotSet" />
+      <MemberSignature Language="F#" Value="RootMonikerNotSet = 64" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.RootMonikerNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>64</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerSet">
+      <MemberSignature Language="C#" Value="RootMonikerSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre RootMonikerSet = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.RootMonikerSet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerSet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerSet" />
+      <MemberSignature Language="F#" Value="RootMonikerSet = 32" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.RootMonikerSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceSet">
+      <MemberSignature Language="C#" Value="RootNamespaceSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre RootNamespaceSet = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.RootNamespaceSet" />
+      <MemberSignature Language="VB.NET" Value="RootNamespaceSet" />
+      <MemberSignature Language="C++ CLI" Value="RootNamespaceSet" />
+      <MemberSignature Language="F#" Value="RootNamespaceSet = 128" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.RootNamespaceSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>128</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteNotSet">
+      <MemberSignature Language="C#" Value="SiteNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre SiteNotSet = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.SiteNotSet" />
+      <MemberSignature Language="VB.NET" Value="SiteNotSet" />
+      <MemberSignature Language="C++ CLI" Value="SiteNotSet" />
+      <MemberSignature Language="F#" Value="SiteNotSet = 512" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.SiteNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteSet">
+      <MemberSignature Language="C#" Value="SiteSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre SiteSet = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.SiteSet" />
+      <MemberSignature Language="VB.NET" Value="SiteSet" />
+      <MemberSignature Language="C++ CLI" Value="SiteSet" />
+      <MemberSignature Language="F#" Value="SiteSet = 256" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.SiteSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>256</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportForDebug">
+      <MemberSignature Language="C#" Value="SupportForDebug" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.BaseVsaEngine/Pre SupportForDebug = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.Pre.SupportForDebug" />
+      <MemberSignature Language="VB.NET" Value="SupportForDebug" />
+      <MemberSignature Language="C++ CLI" Value="SupportForDebug" />
+      <MemberSignature Language="F#" Value="SupportForDebug = 2" Usage="Microsoft.Vsa.BaseVsaEngine.Pre.SupportForDebug" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,68 @@
+﻿<Type Name="DebuggedExceptionEventArgs" FullName="Debugging.DebuggedExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public class DebuggedExceptionEventArgs : Debugging.DebuggedThreadEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebuggedExceptionEventArgs extends Debugging.DebuggedThreadEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Debugging.DebuggedExceptionEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DebuggedExceptionEventArgs&#xA;Inherits DebuggedThreadEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggedExceptionEventArgs : Debugging::DebuggedThreadEventArgs" />
+  <TypeSignature Language="F#" Value="type DebuggedExceptionEventArgs = class&#xA;    inherit DebuggedThreadEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Debugging.DebuggedThreadEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DebuggedExceptionEventArgs (Debugging.DebuggedAppDomain ad, Debugging.DebuggedThread thread, bool unhandled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Debugging.DebuggedAppDomain ad, class Debugging.DebuggedThread thread, bool unhandled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedExceptionEventArgs.#ctor(Debugging.DebuggedAppDomain,Debugging.DebuggedThread,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ad As DebuggedAppDomain, thread As DebuggedThread, unhandled As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggedExceptionEventArgs(Debugging::DebuggedAppDomain ^ ad, Debugging::DebuggedThread ^ thread, bool unhandled);" />
+      <MemberSignature Language="F#" Value="new Debugging.DebuggedExceptionEventArgs : Debugging.DebuggedAppDomain * Debugging.DebuggedThread * bool -&gt; Debugging.DebuggedExceptionEventArgs" Usage="new Debugging.DebuggedExceptionEventArgs (ad, thread, unhandled)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ad" Type="Debugging.DebuggedAppDomain" />
+        <Parameter Name="thread" Type="Debugging.DebuggedThread" />
+        <Parameter Name="unhandled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ad">To be added.</param>
+        <param name="thread">To be added.</param>
+        <param name="unhandled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unhandled">
+      <MemberSignature Language="C#" Value="public bool Unhandled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Unhandled" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedExceptionEventArgs.Unhandled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unhandled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unhandled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Unhandled : bool" Usage="Debugging.DebuggedExceptionEventArgs.Unhandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

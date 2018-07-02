@@ -315,5 +315,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Parts">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.AggregateCatalog.Parts" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parts As IQueryable(Of ComposablePartDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ Parts { System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parts : System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="System.ComponentModel.Composition.Hosting.AggregateCatalog.Parts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

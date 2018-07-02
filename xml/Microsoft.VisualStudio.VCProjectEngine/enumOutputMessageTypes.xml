@@ -1,0 +1,81 @@
+﻿<Type Name="enumOutputMessageTypes" FullName="Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes">
+  <TypeSignature Language="C#" Value="public enum enumOutputMessageTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed enumOutputMessageTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum enumOutputMessageTypes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class enumOutputMessageTypes" />
+  <TypeSignature Language="F#" Value="type enumOutputMessageTypes = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="eOutputMessageNormal">
+      <MemberSignature Language="C#" Value="eOutputMessageNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes eOutputMessageNormal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageNormal" />
+      <MemberSignature Language="VB.NET" Value="eOutputMessageNormal" />
+      <MemberSignature Language="C++ CLI" Value="eOutputMessageNormal" />
+      <MemberSignature Language="F#" Value="eOutputMessageNormal = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eOutputMessageSilent">
+      <MemberSignature Language="C#" Value="eOutputMessageSilent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes eOutputMessageSilent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageSilent" />
+      <MemberSignature Language="VB.NET" Value="eOutputMessageSilent" />
+      <MemberSignature Language="C++ CLI" Value="eOutputMessageSilent" />
+      <MemberSignature Language="F#" Value="eOutputMessageSilent = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageSilent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eOutputMessageVerbose">
+      <MemberSignature Language="C#" Value="eOutputMessageVerbose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes eOutputMessageVerbose = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageVerbose" />
+      <MemberSignature Language="VB.NET" Value="eOutputMessageVerbose" />
+      <MemberSignature Language="C++ CLI" Value="eOutputMessageVerbose" />
+      <MemberSignature Language="F#" Value="eOutputMessageVerbose = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes.eOutputMessageVerbose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumOutputMessageTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

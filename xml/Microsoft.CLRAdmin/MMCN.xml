@@ -1,0 +1,753 @@
+﻿<Type Name="MMCN" FullName="Microsoft.CLRAdmin.MMCN">
+  <TypeSignature Language="C#" Value="public class MMCN" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MMCN extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.MMCN" />
+  <TypeSignature Language="VB.NET" Value="Public Class MMCN" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MMCN" />
+  <TypeSignature Language="F#" Value="type MMCN = class" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MMCN ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.MMCN.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MMCN();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ACTIVATE">
+      <MemberSignature Language="C#" Value="public const uint ACTIVATE = 32769;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 ACTIVATE = (32769)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.ACTIVATE" />
+      <MemberSignature Language="VB.NET" Value="Public Const ACTIVATE As UInteger  = 32769" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 ACTIVATE = 32769;" />
+      <MemberSignature Language="F#" Value="val mutable ACTIVATE : uint32" Usage="Microsoft.CLRAdmin.MMCN.ACTIVATE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32769</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ADD_IMAGES">
+      <MemberSignature Language="C#" Value="public const uint ADD_IMAGES = 32770;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 ADD_IMAGES = (32770)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.ADD_IMAGES" />
+      <MemberSignature Language="VB.NET" Value="Public Const ADD_IMAGES As UInteger  = 32770" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 ADD_IMAGES = 32770;" />
+      <MemberSignature Language="F#" Value="val mutable ADD_IMAGES : uint32" Usage="Microsoft.CLRAdmin.MMCN.ADD_IMAGES" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32770</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BTN_CLICK">
+      <MemberSignature Language="C#" Value="public const uint BTN_CLICK = 32771;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 BTN_CLICK = (32771)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.BTN_CLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const BTN_CLICK As UInteger  = 32771" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 BTN_CLICK = 32771;" />
+      <MemberSignature Language="F#" Value="val mutable BTN_CLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.BTN_CLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32771</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLICK">
+      <MemberSignature Language="C#" Value="public const uint CLICK = 32772;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 CLICK = (32772)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.CLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const CLICK As UInteger  = 32772" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 CLICK = 32772;" />
+      <MemberSignature Language="F#" Value="val mutable CLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.CLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32772</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COLUMN_CLICK">
+      <MemberSignature Language="C#" Value="public const uint COLUMN_CLICK = 32773;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 COLUMN_CLICK = (32773)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.COLUMN_CLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const COLUMN_CLICK As UInteger  = 32773" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 COLUMN_CLICK = 32773;" />
+      <MemberSignature Language="F#" Value="val mutable COLUMN_CLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.COLUMN_CLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32773</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COLUMNS_CHANGED">
+      <MemberSignature Language="C#" Value="public const uint COLUMNS_CHANGED = 32802;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 COLUMNS_CHANGED = (32802)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.COLUMNS_CHANGED" />
+      <MemberSignature Language="VB.NET" Value="Public Const COLUMNS_CHANGED As UInteger  = 32802" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 COLUMNS_CHANGED = 32802;" />
+      <MemberSignature Language="F#" Value="val mutable COLUMNS_CHANGED : uint32" Usage="Microsoft.CLRAdmin.MMCN.COLUMNS_CHANGED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32802</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CONTEXTHELP">
+      <MemberSignature Language="C#" Value="public const uint CONTEXTHELP = 32793;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 CONTEXTHELP = (32793)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.CONTEXTHELP" />
+      <MemberSignature Language="VB.NET" Value="Public Const CONTEXTHELP As UInteger  = 32793" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 CONTEXTHELP = 32793;" />
+      <MemberSignature Language="F#" Value="val mutable CONTEXTHELP : uint32" Usage="Microsoft.CLRAdmin.MMCN.CONTEXTHELP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32793</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CONTEXTMENU">
+      <MemberSignature Language="C#" Value="public const uint CONTEXTMENU = 32774;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 CONTEXTMENU = (32774)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.CONTEXTMENU" />
+      <MemberSignature Language="VB.NET" Value="Public Const CONTEXTMENU As UInteger  = 32774" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 CONTEXTMENU = 32774;" />
+      <MemberSignature Language="F#" Value="val mutable CONTEXTMENU : uint32" Usage="Microsoft.CLRAdmin.MMCN.CONTEXTMENU" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32774</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CUTORMOVE">
+      <MemberSignature Language="C#" Value="public const uint CUTORMOVE = 32775;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 CUTORMOVE = (32775)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.CUTORMOVE" />
+      <MemberSignature Language="VB.NET" Value="Public Const CUTORMOVE As UInteger  = 32775" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 CUTORMOVE = 32775;" />
+      <MemberSignature Language="F#" Value="val mutable CUTORMOVE : uint32" Usage="Microsoft.CLRAdmin.MMCN.CUTORMOVE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32775</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DBLCLICK">
+      <MemberSignature Language="C#" Value="public const uint DBLCLICK = 32776;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DBLCLICK = (32776)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.DBLCLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const DBLCLICK As UInteger  = 32776" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 DBLCLICK = 32776;" />
+      <MemberSignature Language="F#" Value="val mutable DBLCLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.DBLCLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32776</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DELETE">
+      <MemberSignature Language="C#" Value="public const uint DELETE = 32777;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DELETE = (32777)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.DELETE" />
+      <MemberSignature Language="VB.NET" Value="Public Const DELETE As UInteger  = 32777" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 DELETE = 32777;" />
+      <MemberSignature Language="F#" Value="val mutable DELETE : uint32" Usage="Microsoft.CLRAdmin.MMCN.DELETE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32777</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DESELECT_ALL">
+      <MemberSignature Language="C#" Value="public const uint DESELECT_ALL = 32778;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DESELECT_ALL = (32778)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.DESELECT_ALL" />
+      <MemberSignature Language="VB.NET" Value="Public Const DESELECT_ALL As UInteger  = 32778" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 DESELECT_ALL = 32778;" />
+      <MemberSignature Language="F#" Value="val mutable DESELECT_ALL : uint32" Usage="Microsoft.CLRAdmin.MMCN.DESELECT_ALL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32778</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EXPAND">
+      <MemberSignature Language="C#" Value="public const uint EXPAND = 32779;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 EXPAND = (32779)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.EXPAND" />
+      <MemberSignature Language="VB.NET" Value="Public Const EXPAND As UInteger  = 32779" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 EXPAND = 32779;" />
+      <MemberSignature Language="F#" Value="val mutable EXPAND : uint32" Usage="Microsoft.CLRAdmin.MMCN.EXPAND" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32779</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EXPANDSYNC">
+      <MemberSignature Language="C#" Value="public const uint EXPANDSYNC = 32801;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 EXPANDSYNC = (32801)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.EXPANDSYNC" />
+      <MemberSignature Language="VB.NET" Value="Public Const EXPANDSYNC As UInteger  = 32801" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 EXPANDSYNC = 32801;" />
+      <MemberSignature Language="F#" Value="val mutable EXPANDSYNC : uint32" Usage="Microsoft.CLRAdmin.MMCN.EXPANDSYNC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32801</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILTER_CHANGE">
+      <MemberSignature Language="C#" Value="public const uint FILTER_CHANGE = 32795;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILTER_CHANGE = (32795)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.FILTER_CHANGE" />
+      <MemberSignature Language="VB.NET" Value="Public Const FILTER_CHANGE As UInteger  = 32795" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 FILTER_CHANGE = 32795;" />
+      <MemberSignature Language="F#" Value="val mutable FILTER_CHANGE : uint32" Usage="Microsoft.CLRAdmin.MMCN.FILTER_CHANGE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32795</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILTERBTN_CLICK">
+      <MemberSignature Language="C#" Value="public const uint FILTERBTN_CLICK = 32796;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILTERBTN_CLICK = (32796)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.FILTERBTN_CLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const FILTERBTN_CLICK As UInteger  = 32796" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 FILTERBTN_CLICK = 32796;" />
+      <MemberSignature Language="F#" Value="val mutable FILTERBTN_CLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.FILTERBTN_CLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32796</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HELP">
+      <MemberSignature Language="C#" Value="public const uint HELP = 32780;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 HELP = (32780)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.HELP" />
+      <MemberSignature Language="VB.NET" Value="Public Const HELP As UInteger  = 32780" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 HELP = 32780;" />
+      <MemberSignature Language="F#" Value="val mutable HELP : uint32" Usage="Microsoft.CLRAdmin.MMCN.HELP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32780</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INITOCX">
+      <MemberSignature Language="C#" Value="public const uint INITOCX = 32794;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 INITOCX = (32794)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.INITOCX" />
+      <MemberSignature Language="VB.NET" Value="Public Const INITOCX As UInteger  = 32794" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 INITOCX = 32794;" />
+      <MemberSignature Language="F#" Value="val mutable INITOCX : uint32" Usage="Microsoft.CLRAdmin.MMCN.INITOCX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32794</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LISTPAD">
+      <MemberSignature Language="C#" Value="public const uint LISTPAD = 32800;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 LISTPAD = (32800)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.LISTPAD" />
+      <MemberSignature Language="VB.NET" Value="Public Const LISTPAD As UInteger  = 32800" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 LISTPAD = 32800;" />
+      <MemberSignature Language="F#" Value="val mutable LISTPAD : uint32" Usage="Microsoft.CLRAdmin.MMCN.LISTPAD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32800</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MENU_BTNCLICK">
+      <MemberSignature Language="C#" Value="public const uint MENU_BTNCLICK = 32781;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 MENU_BTNCLICK = (32781)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.MENU_BTNCLICK" />
+      <MemberSignature Language="VB.NET" Value="Public Const MENU_BTNCLICK As UInteger  = 32781" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 MENU_BTNCLICK = 32781;" />
+      <MemberSignature Language="F#" Value="val mutable MENU_BTNCLICK : uint32" Usage="Microsoft.CLRAdmin.MMCN.MENU_BTNCLICK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32781</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MINIMIZED">
+      <MemberSignature Language="C#" Value="public const uint MINIMIZED = 32782;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 MINIMIZED = (32782)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.MINIMIZED" />
+      <MemberSignature Language="VB.NET" Value="Public Const MINIMIZED As UInteger  = 32782" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 MINIMIZED = 32782;" />
+      <MemberSignature Language="F#" Value="val mutable MINIMIZED : uint32" Usage="Microsoft.CLRAdmin.MMCN.MINIMIZED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32782</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PASTE">
+      <MemberSignature Language="C#" Value="public const uint PASTE = 32783;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 PASTE = (32783)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.PASTE" />
+      <MemberSignature Language="VB.NET" Value="Public Const PASTE As UInteger  = 32783" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 PASTE = 32783;" />
+      <MemberSignature Language="F#" Value="val mutable PASTE : uint32" Usage="Microsoft.CLRAdmin.MMCN.PASTE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32783</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRELOAD">
+      <MemberSignature Language="C#" Value="public const uint PRELOAD = 32799;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 PRELOAD = (32799)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.PRELOAD" />
+      <MemberSignature Language="VB.NET" Value="Public Const PRELOAD As UInteger  = 32799" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 PRELOAD = 32799;" />
+      <MemberSignature Language="F#" Value="val mutable PRELOAD : uint32" Usage="Microsoft.CLRAdmin.MMCN.PRELOAD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32799</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PRINT">
+      <MemberSignature Language="C#" Value="public const uint PRINT = 32798;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 PRINT = (32798)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.PRINT" />
+      <MemberSignature Language="VB.NET" Value="Public Const PRINT As UInteger  = 32798" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 PRINT = 32798;" />
+      <MemberSignature Language="F#" Value="val mutable PRINT : uint32" Usage="Microsoft.CLRAdmin.MMCN.PRINT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32798</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PROPERTY_CHANGE">
+      <MemberSignature Language="C#" Value="public const uint PROPERTY_CHANGE = 32784;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 PROPERTY_CHANGE = (32784)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.PROPERTY_CHANGE" />
+      <MemberSignature Language="VB.NET" Value="Public Const PROPERTY_CHANGE As UInteger  = 32784" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 PROPERTY_CHANGE = 32784;" />
+      <MemberSignature Language="F#" Value="val mutable PROPERTY_CHANGE : uint32" Usage="Microsoft.CLRAdmin.MMCN.PROPERTY_CHANGE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32784</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QUERY_PASTE">
+      <MemberSignature Language="C#" Value="public const uint QUERY_PASTE = 32785;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 QUERY_PASTE = (32785)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.QUERY_PASTE" />
+      <MemberSignature Language="VB.NET" Value="Public Const QUERY_PASTE As UInteger  = 32785" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 QUERY_PASTE = 32785;" />
+      <MemberSignature Language="F#" Value="val mutable QUERY_PASTE : uint32" Usage="Microsoft.CLRAdmin.MMCN.QUERY_PASTE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32785</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="REFRESH">
+      <MemberSignature Language="C#" Value="public const uint REFRESH = 32786;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 REFRESH = (32786)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.REFRESH" />
+      <MemberSignature Language="VB.NET" Value="Public Const REFRESH As UInteger  = 32786" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 REFRESH = 32786;" />
+      <MemberSignature Language="F#" Value="val mutable REFRESH : uint32" Usage="Microsoft.CLRAdmin.MMCN.REFRESH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32786</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="REMOVE_CHILDREN">
+      <MemberSignature Language="C#" Value="public const uint REMOVE_CHILDREN = 32787;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 REMOVE_CHILDREN = (32787)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.REMOVE_CHILDREN" />
+      <MemberSignature Language="VB.NET" Value="Public Const REMOVE_CHILDREN As UInteger  = 32787" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 REMOVE_CHILDREN = 32787;" />
+      <MemberSignature Language="F#" Value="val mutable REMOVE_CHILDREN : uint32" Usage="Microsoft.CLRAdmin.MMCN.REMOVE_CHILDREN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32787</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RENAME">
+      <MemberSignature Language="C#" Value="public const uint RENAME = 32788;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 RENAME = (32788)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.RENAME" />
+      <MemberSignature Language="VB.NET" Value="Public Const RENAME As UInteger  = 32788" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 RENAME = 32788;" />
+      <MemberSignature Language="F#" Value="val mutable RENAME : uint32" Usage="Microsoft.CLRAdmin.MMCN.RENAME" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32788</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RESTORE_VIEW">
+      <MemberSignature Language="C#" Value="public const uint RESTORE_VIEW = 32797;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 RESTORE_VIEW = (32797)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.RESTORE_VIEW" />
+      <MemberSignature Language="VB.NET" Value="Public Const RESTORE_VIEW As UInteger  = 32797" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 RESTORE_VIEW = 32797;" />
+      <MemberSignature Language="F#" Value="val mutable RESTORE_VIEW : uint32" Usage="Microsoft.CLRAdmin.MMCN.RESTORE_VIEW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32797</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SELECT">
+      <MemberSignature Language="C#" Value="public const uint SELECT = 32789;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 SELECT = (32789)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.SELECT" />
+      <MemberSignature Language="VB.NET" Value="Public Const SELECT As UInteger  = 32789" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 SELECT = 32789;" />
+      <MemberSignature Language="F#" Value="val mutable SELECT : uint32" Usage="Microsoft.CLRAdmin.MMCN.SELECT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32789</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SHOW">
+      <MemberSignature Language="C#" Value="public const uint SHOW = 32790;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 SHOW = (32790)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.SHOW" />
+      <MemberSignature Language="VB.NET" Value="Public Const SHOW As UInteger  = 32790" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 SHOW = 32790;" />
+      <MemberSignature Language="F#" Value="val mutable SHOW : uint32" Usage="Microsoft.CLRAdmin.MMCN.SHOW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32790</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SNAPINHELP">
+      <MemberSignature Language="C#" Value="public const uint SNAPINHELP = 32792;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 SNAPINHELP = (32792)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.SNAPINHELP" />
+      <MemberSignature Language="VB.NET" Value="Public Const SNAPINHELP As UInteger  = 32792" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 SNAPINHELP = 32792;" />
+      <MemberSignature Language="F#" Value="val mutable SNAPINHELP : uint32" Usage="Microsoft.CLRAdmin.MMCN.SNAPINHELP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32792</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIEW_CHANGE">
+      <MemberSignature Language="C#" Value="public const uint VIEW_CHANGE = 32791;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIEW_CHANGE = (32791)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMCN.VIEW_CHANGE" />
+      <MemberSignature Language="VB.NET" Value="Public Const VIEW_CHANGE As UInteger  = 32791" />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 VIEW_CHANGE = 32791;" />
+      <MemberSignature Language="F#" Value="val mutable VIEW_CHANGE : uint32" Usage="Microsoft.CLRAdmin.MMCN.VIEW_CHANGE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32791</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

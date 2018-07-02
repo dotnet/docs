@@ -1,0 +1,39 @@
+﻿<Type Name="DataGridComboBox" FullName="Microsoft.CLRAdmin.DataGridComboBox">
+  <TypeSignature Language="C#" Value="public class DataGridComboBox : System.Windows.Forms.ComboBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridComboBox extends System.Windows.Forms.ComboBox" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.DataGridComboBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridComboBox&#xA;Inherits ComboBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridComboBox : System::Windows::Forms::ComboBox" />
+  <TypeSignature Language="F#" Value="type DataGridComboBox = class&#xA;    inherit ComboBox" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ComboBox</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridComboBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.DataGridComboBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridComboBox();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

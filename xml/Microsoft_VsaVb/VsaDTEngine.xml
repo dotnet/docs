@@ -1,0 +1,31 @@
+﻿<Type Name="VsaDTEngine" FullName="Microsoft_VsaVb.VsaDTEngine">
+  <TypeSignature Language="C#" Value="public interface VsaDTEngine : Microsoft.Vsa.IVsaDTEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VsaDTEngine implements class Microsoft.Vsa.IVsaDTEngine" />
+  <TypeSignature Language="DocId" Value="T:Microsoft_VsaVb.VsaDTEngine" />
+  <TypeSignature Language="VB.NET" Value="Public Interface VsaDTEngine&#xA;Implements IVsaDTEngine" />
+  <TypeSignature Language="C++ CLI" Value="public interface class VsaDTEngine : Microsoft::Vsa::IVsaDTEngine" />
+  <TypeSignature Language="F#" Value="type VsaDTEngine = interface&#xA;    interface IVsaDTEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft_VsaVb</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaDTEngine</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft_VsaVb.VsaDTEngineClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("E0C0FFEE-7EEA-4EE5-B7E4-0080C7EB0B74")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

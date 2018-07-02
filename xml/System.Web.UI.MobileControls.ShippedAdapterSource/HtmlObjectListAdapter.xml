@@ -1,0 +1,401 @@
+﻿<Type Name="HtmlObjectListAdapter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter">
+  <TypeSignature Language="C#" Value="public class HtmlObjectListAdapter : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlControlAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlObjectListAdapter extends System.Web.UI.MobileControls.ShippedAdapterSource.HtmlControlAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlObjectListAdapter&#xA;Inherits HtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlObjectListAdapter : System::Web::UI::MobileControls::ShippedAdapterSource::HtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type HtmlObjectListAdapter = class&#xA;    inherit HtmlControlAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ShippedAdapterSource.HtmlControlAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlObjectListAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlObjectListAdapter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackToList">
+      <MemberSignature Language="C#" Value="protected internal static readonly string BackToList;" />
+      <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string BackToList" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.BackToList" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly BackToList As String " />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ BackToList;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackToList : string" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.BackToList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.ObjectList Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectList Control" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As ObjectList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::ObjectList ^ Control { System::Web::UI::MobileControls::ObjectList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.ObjectList" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ObjectList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTemplatedUI">
+      <MemberSignature Language="C#" Value="public override void CreateTemplatedUI (bool doDataBind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateTemplatedUI(bool doDataBind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.CreateTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateTemplatedUI(bool doDataBind);" />
+      <MemberSignature Language="F#" Value="override this.CreateTemplatedUI : bool -&gt; unit" Usage="htmlObjectListAdapter.CreateTemplatedUI doDataBind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doDataBind" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="doDataBind">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandlePostBackEvent">
+      <MemberSignature Language="C#" Value="public override bool HandlePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HandlePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.HandlePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HandlePostBackEvent (eventArgument As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HandlePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="override this.HandlePostBackEvent : string -&gt; bool" Usage="htmlObjectListAdapter.HandlePostBackEvent eventArgument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasCommands">
+      <MemberSignature Language="C#" Value="protected bool HasCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasCommands() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.HasCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasCommands () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasCommands();" />
+      <MemberSignature Language="F#" Value="member this.HasCommands : unit -&gt; bool" Usage="htmlObjectListAdapter.HasCommands " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDefaultCommand">
+      <MemberSignature Language="C#" Value="protected bool HasDefaultCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasDefaultCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.HasDefaultCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasDefaultCommand () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasDefaultCommand();" />
+      <MemberSignature Language="F#" Value="member this.HasDefaultCommand : unit -&gt; bool" Usage="htmlObjectListAdapter.HasDefaultCommand " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasItemDetails">
+      <MemberSignature Language="C#" Value="protected bool HasItemDetails ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasItemDetails() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.HasItemDetails" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasItemDetails () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasItemDetails();" />
+      <MemberSignature Language="F#" Value="member this.HasItemDetails : unit -&gt; bool" Usage="htmlObjectListAdapter.HasItemDetails " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="public override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="htmlObjectListAdapter.OnInit e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnlyHasDefaultCommand">
+      <MemberSignature Language="C#" Value="protected bool OnlyHasDefaultCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool OnlyHasDefaultCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.OnlyHasDefaultCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Function OnlyHasDefaultCommand () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool OnlyHasDefaultCommand();" />
+      <MemberSignature Language="F#" Value="member this.OnlyHasDefaultCommand : unit -&gt; bool" Usage="htmlObjectListAdapter.OnlyHasDefaultCommand " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="public override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlObjectListAdapter.OnPreRender e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.Render(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter -&gt; unit" Usage="htmlObjectListAdapter.Render writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderItemDetails">
+      <MemberSignature Language="C#" Value="protected virtual void RenderItemDetails (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer, System.Web.UI.MobileControls.ObjectListItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItemDetails(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer, class System.Web.UI.MobileControls.ObjectListItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.RenderItemDetails(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter,System.Web.UI.MobileControls.ObjectListItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemDetails (writer As HtmlMobileTextWriter, item As ObjectListItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemDetails(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::ObjectListItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemDetails : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit&#xA;override this.RenderItemDetails : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit" Usage="htmlObjectListAdapter.RenderItemDetails (writer, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+        <Parameter Name="item" Type="System.Web.UI.MobileControls.ObjectListItem" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderItemsList">
+      <MemberSignature Language="C#" Value="protected virtual void RenderItemsList (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItemsList(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.RenderItemsList(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemsList (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemsList(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemsList : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter -&gt; unit&#xA;override this.RenderItemsList : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter -&gt; unit" Usage="htmlObjectListAdapter.RenderItemsList writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldRenderAsTable">
+      <MemberSignature Language="C#" Value="protected virtual bool ShouldRenderAsTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldRenderAsTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.ShouldRenderAsTable" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldRenderAsTable () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldRenderAsTable();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldRenderAsTable : unit -&gt; bool&#xA;override this.ShouldRenderAsTable : unit -&gt; bool" Usage="htmlObjectListAdapter.ShouldRenderAsTable " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowMore">
+      <MemberSignature Language="C#" Value="protected internal static readonly string ShowMore;" />
+      <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string ShowMore" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.ShowMore" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMore As String " />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMore;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMore : string" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.ShowMore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowMoreFormat">
+      <MemberSignature Language="C#" Value="protected internal static readonly string ShowMoreFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string ShowMoreFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.ShowMoreFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMoreFormat As String " />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMoreFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMoreFormat : string" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlObjectListAdapter.ShowMoreFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

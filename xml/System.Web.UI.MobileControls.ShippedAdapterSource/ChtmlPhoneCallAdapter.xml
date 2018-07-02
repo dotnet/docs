@@ -1,0 +1,63 @@
+﻿<Type Name="ChtmlPhoneCallAdapter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlPhoneCallAdapter">
+  <TypeSignature Language="C#" Value="public class ChtmlPhoneCallAdapter : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlPhoneCallAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChtmlPhoneCallAdapter extends System.Web.UI.MobileControls.ShippedAdapterSource.HtmlPhoneCallAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlPhoneCallAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChtmlPhoneCallAdapter&#xA;Inherits HtmlPhoneCallAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChtmlPhoneCallAdapter : System::Web::UI::MobileControls::ShippedAdapterSource::HtmlPhoneCallAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlPhoneCallAdapter = class&#xA;    inherit HtmlPhoneCallAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ShippedAdapterSource.HtmlPhoneCallAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChtmlPhoneCallAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlPhoneCallAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlPhoneCallAdapter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributes">
+      <MemberSignature Language="C#" Value="protected override void AddAttributes (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributes(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlPhoneCallAdapter.AddAttributes(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributes (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributes(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributes : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter -&gt; unit" Usage="chtmlPhoneCallAdapter.AddAttributes writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

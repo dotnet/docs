@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type VsaItems = class&#xA;    interface IJSVsaItems&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -39,6 +41,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -66,6 +70,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,6 +102,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,6 +156,39 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
       </Docs>
     </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem CreateItem (string name, Microsoft.Vsa.VsaItemType itemType, Microsoft.Vsa.VsaItemFlag itemFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaItem CreateItem(string name, valuetype Microsoft.Vsa.VsaItemType itemType, valuetype Microsoft.Vsa.VsaItemFlag itemFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateItem (name As String, itemType As VsaItemType, itemFlag As VsaItemFlag) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Vsa::IVsaItem ^ CreateItem(System::String ^ name, Microsoft::Vsa::VsaItemType itemType, Microsoft::Vsa::VsaItemFlag itemFlag);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : string * Microsoft.Vsa.VsaItemType * Microsoft.Vsa.VsaItemFlag -&gt; Microsoft.Vsa.IVsaItem&#xA;override this.CreateItem : string * Microsoft.Vsa.VsaItemType * Microsoft.Vsa.VsaItemFlag -&gt; Microsoft.Vsa.IVsaItem" Usage="vsaItems.CreateItem (name, itemType, itemFlag)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="itemType" Type="Microsoft.Vsa.VsaItemType" />
+        <Parameter Name="itemFlag" Type="Microsoft.Vsa.VsaItemFlag" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="itemType">To be added.</param>
+        <param name="itemFlag">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
@@ -161,6 +202,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,6 +249,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,6 +284,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,6 +333,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,6 +368,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

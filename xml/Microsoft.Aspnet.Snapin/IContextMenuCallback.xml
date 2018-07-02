@@ -1,0 +1,52 @@
+﻿<Type Name="IContextMenuCallback" FullName="Microsoft.Aspnet.Snapin.IContextMenuCallback">
+  <TypeSignature Language="C#" Value="public interface IContextMenuCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextMenuCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IContextMenuCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContextMenuCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContextMenuCallback" />
+  <TypeSignature Language="F#" Value="type IContextMenuCallback = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("43136EB7-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public int AddItem (ref Microsoft.Aspnet.Snapin.CONTEXTMENUITEM pItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 AddItem(valuetype Microsoft.Aspnet.Snapin.CONTEXTMENUITEM&amp; pItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IContextMenuCallback.AddItem(Microsoft.Aspnet.Snapin.CONTEXTMENUITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddItem (ByRef pItem As CONTEXTMENUITEM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddItem(Microsoft::Aspnet::Snapin::CONTEXTMENUITEM % pItem);" />
+      <MemberSignature Language="F#" Value="abstract member AddItem :  -&gt; int" Usage="iContextMenuCallback.AddItem pItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pItem" Type="Microsoft.Aspnet.Snapin.CONTEXTMENUITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type ScriptModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,6 +33,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -50,6 +52,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,25 +72,34 @@
       </Docs>
     </Member>
     <Member MemberName="Init">
-      <MemberSignature Language="C#" Value="protected virtual void Init (System.Web.HttpApplication app);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (app As HttpApplication)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
-      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init app" />
+      <MemberSignature Language="C#" Value="protected virtual void Init (System.Web.HttpApplication context);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Init(class System.Web.HttpApplication context) cil managed" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (context As HttpApplication)" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ context);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init context" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="protected virtual void Init (System.Web.HttpApplication app);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (app As HttpApplication)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init app" FrameworkAlternate="netframework-4.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="app" Type="System.Web.HttpApplication" />
+        <Parameter Name="context" Type="System.Web.HttpApplication" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="app" Type="System.Web.HttpApplication" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
         <param name="app">An <see cref="T:System.Web.HttpApplication" /> object that provides access to the methods, properties, and events that are common to all applications in an ASP.NET application.</param>
+        <param name="context">To be added.</param>
         <summary>Initializes a module and prepares it to handle requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -108,6 +120,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,6 +141,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

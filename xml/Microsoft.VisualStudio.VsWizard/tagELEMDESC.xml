@@ -1,0 +1,62 @@
+﻿<Type Name="tagELEMDESC" FullName="Microsoft.VisualStudio.VsWizard.tagELEMDESC">
+  <TypeSignature Language="C#" Value="public struct tagELEMDESC" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit tagELEMDESC extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.tagELEMDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure tagELEMDESC" />
+  <TypeSignature Language="C++ CLI" Value="public value class tagELEMDESC" />
+  <TypeSignature Language="F#" Value="type tagELEMDESC = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="paramdesc">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VsWizard.tagPARAMDESC paramdesc;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualStudio.VsWizard.tagPARAMDESC paramdesc" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagELEMDESC.paramdesc" />
+      <MemberSignature Language="VB.NET" Value="Public paramdesc As tagPARAMDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VsWizard::tagPARAMDESC paramdesc;" />
+      <MemberSignature Language="F#" Value="val mutable paramdesc : Microsoft.VisualStudio.VsWizard.tagPARAMDESC" Usage="Microsoft.VisualStudio.VsWizard.tagELEMDESC.paramdesc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagPARAMDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tdesc">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VsWizard.tagTYPEDESC tdesc;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualStudio.VsWizard.tagTYPEDESC tdesc" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagELEMDESC.tdesc" />
+      <MemberSignature Language="VB.NET" Value="Public tdesc As tagTYPEDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VsWizard::tagTYPEDESC tdesc;" />
+      <MemberSignature Language="F#" Value="val mutable tdesc : Microsoft.VisualStudio.VsWizard.tagTYPEDESC" Usage="Microsoft.VisualStudio.VsWizard.tagELEMDESC.tdesc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagTYPEDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

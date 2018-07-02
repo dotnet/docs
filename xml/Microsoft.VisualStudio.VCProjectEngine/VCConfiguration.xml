@@ -1,0 +1,1175 @@
+﻿<Type Name="VCConfiguration" FullName="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration">
+  <TypeSignature Language="C#" Value="public interface VCConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VCConfiguration" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Interface VCConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public interface class VCConfiguration" />
+  <TypeSignature Language="F#" Value="type VCConfiguration = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("9070242E-7E32-4236-86AA-A4AB041A9D34")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppliedStyleSheets">
+      <MemberSignature Language="C#" Value="public string AppliedStyleSheets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppliedStyleSheets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.AppliedStyleSheets" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppliedStyleSheets As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppliedStyleSheets { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppliedStyleSheets : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.AppliedStyleSheets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(734)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(734)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(734)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ATLMinimizesCRunTimeLibraryUsage">
+      <MemberSignature Language="C#" Value="public bool ATLMinimizesCRunTimeLibraryUsage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ATLMinimizesCRunTimeLibraryUsage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ATLMinimizesCRunTimeLibraryUsage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ATLMinimizesCRunTimeLibraryUsage { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ATLMinimizesCRunTimeLibraryUsage : bool with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(738)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(738)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(738)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public void Build ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Build() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Build" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Build ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Build();" />
+      <MemberSignature Language="F#" Value="abstract member Build : unit -&gt; unit" Usage="vCConfiguration.Build " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(725)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildBrowserInformation">
+      <MemberSignature Language="C#" Value="public bool BuildBrowserInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuildBrowserInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.BuildBrowserInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildBrowserInformation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuildBrowserInformation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildBrowserInformation : bool with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.BuildBrowserInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(735)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(735)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(735)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterSet">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.charSet CharacterSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.VCProjectEngine.charSet CharacterSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.CharacterSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterSet As charSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::charSet CharacterSet { Microsoft::VisualStudio::VCProjectEngine::charSet get(); void set(Microsoft::VisualStudio::VCProjectEngine::charSet value); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterSet : Microsoft.VisualStudio.VCProjectEngine.charSet with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.CharacterSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(739)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(739)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(739)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.charSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clean">
+      <MemberSignature Language="C#" Value="public void Clean ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clean() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Clean" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clean ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clean();" />
+      <MemberSignature Language="F#" Value="abstract member Clean : unit -&gt; unit" Usage="vCConfiguration.Clean " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(727)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationName">
+      <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(700)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(700)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(700)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationType">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes ConfigurationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes ConfigurationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationType As ConfigurationTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::ConfigurationTypes ConfigurationType { Microsoft::VisualStudio::VCProjectEngine::ConfigurationTypes get(); void set(Microsoft::VisualStudio::VCProjectEngine::ConfigurationTypes value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationType : Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(732)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(732)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(732)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (object Config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(object Config) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.CopyTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (Config As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Object ^ Config);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : obj -&gt; unit" Usage="vCConfiguration.CopyTo Config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(733)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Config" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugSettings">
+      <MemberSignature Language="C#" Value="public object DebugSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DebugSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DebugSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugSettings As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DebugSettings { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugSettings : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DebugSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(728)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(728)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="vCConfiguration.Delete " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteExtensionsOnClean">
+      <MemberSignature Language="C#" Value="public string DeleteExtensionsOnClean { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeleteExtensionsOnClean" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteExtensionsOnClean As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeleteExtensionsOnClean { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteExtensionsOnClean : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(704)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(704)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(704)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public string Evaluate (string In);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Evaluate([in]string In) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Evaluate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (In As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Evaluate(System::String ^ In);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : string -&gt; string" Usage="vCConfiguration.Evaluate In" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(709)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="In" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="In">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTools">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.IVCCollection FileTools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.VCProjectEngine.IVCCollection FileTools" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.FileTools" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileTools As IVCCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::IVCCollection ^ FileTools { Microsoft::VisualStudio::VCProjectEngine::IVCCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileTools : Microsoft.VisualStudio.VCProjectEngine.IVCCollection" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.FileTools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(708)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(708)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.IVCCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullReferencesPath">
+      <MemberSignature Language="C#" Value="public string FullReferencesPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullReferencesPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.FullReferencesPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullReferencesPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullReferencesPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullReferencesPath : string" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.FullReferencesPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(745)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(745)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportLibrary">
+      <MemberSignature Language="C#" Value="public string ImportLibrary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImportLibrary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ImportLibrary" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportLibrary As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImportLibrary { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportLibrary : string" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ImportLibrary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(722)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(722)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntermediateDirectory">
+      <MemberSignature Language="C#" Value="public string IntermediateDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IntermediateDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntermediateDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IntermediateDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IntermediateDirectory : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(703)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(703)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(703)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedExtensions">
+      <MemberSignature Language="C#" Value="public bool ManagedExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ManagedExtensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ManagedExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagedExtensions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ManagedExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ManagedExtensions : bool with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ManagedExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchName">
+      <MemberSignature Language="C#" Value="public bool MatchName (string NameToMatch, bool FullOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchName([in]string NameToMatch, [in]bool FullOnly) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.MatchName(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchName (NameToMatch As String, FullOnly As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchName(System::String ^ NameToMatch, bool FullOnly);" />
+      <MemberSignature Language="F#" Value="abstract member MatchName : string * bool -&gt; bool" Usage="vCConfiguration.MatchName (NameToMatch, FullOnly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(729)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NameToMatch" Type="System.String" />
+        <Parameter Name="FullOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="NameToMatch">To be added.</param>
+        <param name="FullOnly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(705)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(705)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(705)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputDirectory">
+      <MemberSignature Language="C#" Value="public string OutputDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputDirectory : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(702)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(702)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(702)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platform">
+      <MemberSignature Language="C#" Value="public object Platform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Platform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Platform As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Platform { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Platform : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Platform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(706)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(706)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryOutput">
+      <MemberSignature Language="C#" Value="public string PrimaryOutput { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryOutput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.PrimaryOutput" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryOutput As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrimaryOutput { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryOutput : string" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.PrimaryOutput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgramDatabase">
+      <MemberSignature Language="C#" Value="public string ProgramDatabase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProgramDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ProgramDatabase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgramDatabase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgramDatabase { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProgramDatabase : string" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ProgramDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(723)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="project">
+      <MemberSignature Language="C#" Value="public object project { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object project" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.project" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property project As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ project { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.project : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.project" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(701)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(701)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rebuild">
+      <MemberSignature Language="C#" Value="public void Rebuild ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rebuild() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Rebuild" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rebuild ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rebuild();" />
+      <MemberSignature Language="F#" Value="abstract member Rebuild : unit -&gt; unit" Usage="vCConfiguration.Rebuild " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(726)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencesPath">
+      <MemberSignature Language="C#" Value="public string ReferencesPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReferencesPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ReferencesPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencesPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferencesPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencesPath : string with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ReferencesPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(744)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(744)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(744)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceTools">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.IVCCollection ReferenceTools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualStudio.VCProjectEngine.IVCCollection ReferenceTools" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ReferenceTools" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceTools As IVCCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::IVCCollection ^ ReferenceTools { Microsoft::VisualStudio::VCProjectEngine::IVCCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceTools : Microsoft.VisualStudio.VCProjectEngine.IVCCollection" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ReferenceTools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(747)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(747)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.IVCCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterOutput">
+      <MemberSignature Language="C#" Value="public bool RegisterOutput { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RegisterOutput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.RegisterOutput" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegisterOutput As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RegisterOutput { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegisterOutput : bool" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.RegisterOutput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(742)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(742)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SatelliteDLLs">
+      <MemberSignature Language="C#" Value="public string SatelliteDLLs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SatelliteDLLs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.SatelliteDLLs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SatelliteDLLs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SatelliteDLLs { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SatelliteDLLs : string" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.SatelliteDLLs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(746)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(746)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopBuild">
+      <MemberSignature Language="C#" Value="public void StopBuild ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopBuild() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.StopBuild" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopBuild ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopBuild();" />
+      <MemberSignature Language="F#" Value="abstract member StopBuild : unit -&gt; unit" Usage="vCConfiguration.StopBuild " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(748)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleSheets">
+      <MemberSignature Language="C#" Value="public object StyleSheets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object StyleSheets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.StyleSheets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StyleSheets As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ StyleSheets { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSheets : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.StyleSheets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(743)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(743)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tools">
+      <MemberSignature Language="C#" Value="public object Tools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tools" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Tools" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tools As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tools { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tools : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.Tools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpToDate">
+      <MemberSignature Language="C#" Value="public bool UpToDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpToDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.UpToDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpToDate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpToDate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpToDate : bool" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.UpToDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="useOfATL">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.useOfATL useOfATL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.VCProjectEngine.useOfATL useOfATL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.useOfATL" />
+      <MemberSignature Language="VB.NET" Value="Public Property useOfATL As useOfATL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::useOfATL useOfATL { Microsoft::VisualStudio::VCProjectEngine::useOfATL get(); void set(Microsoft::VisualStudio::VCProjectEngine::useOfATL value); };" />
+      <MemberSignature Language="F#" Value="member this.useOfATL : Microsoft.VisualStudio.VCProjectEngine.useOfATL with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.useOfATL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(737)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(737)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(737)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.useOfATL</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="useOfMfc">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine.useOfMfc useOfMfc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.VCProjectEngine.useOfMfc useOfMfc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.useOfMfc" />
+      <MemberSignature Language="VB.NET" Value="Public Property useOfMfc As useOfMfc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCProjectEngine::useOfMfc useOfMfc { Microsoft::VisualStudio::VCProjectEngine::useOfMfc get(); void set(Microsoft::VisualStudio::VCProjectEngine::useOfMfc value); };" />
+      <MemberSignature Language="F#" Value="member this.useOfMfc : Microsoft.VisualStudio.VCProjectEngine.useOfMfc with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.useOfMfc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(736)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(736)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(736)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.useOfMfc</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VCProjectEngine">
+      <MemberSignature Language="C#" Value="public object VCProjectEngine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object VCProjectEngine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.VCProjectEngine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VCProjectEngine As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ VCProjectEngine { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VCProjectEngine : obj" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.VCProjectEngine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(710)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(710)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WholeProgramOptimization">
+      <MemberSignature Language="C#" Value="public bool WholeProgramOptimization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WholeProgramOptimization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.WholeProgramOptimization" />
+      <MemberSignature Language="VB.NET" Value="Public Property WholeProgramOptimization As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WholeProgramOptimization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WholeProgramOptimization : bool with get, set" Usage="Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.WholeProgramOptimization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(741)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(741)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(741)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

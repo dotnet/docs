@@ -1,0 +1,101 @@
+﻿<Type Name="tagSYSKIND" FullName="Microsoft.VisualStudio.VsWizard.tagSYSKIND">
+  <TypeSignature Language="C#" Value="public enum tagSYSKIND" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed tagSYSKIND extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.tagSYSKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum tagSYSKIND" />
+  <TypeSignature Language="C++ CLI" Value="public enum class tagSYSKIND" />
+  <TypeSignature Language="F#" Value="type tagSYSKIND = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SYS_MAC">
+      <MemberSignature Language="C#" Value="SYS_MAC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.tagSYSKIND SYS_MAC = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_MAC" />
+      <MemberSignature Language="VB.NET" Value="SYS_MAC" />
+      <MemberSignature Language="C++ CLI" Value="SYS_MAC" />
+      <MemberSignature Language="F#" Value="SYS_MAC = 2" Usage="Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_MAC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagSYSKIND</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SYS_WIN16">
+      <MemberSignature Language="C#" Value="SYS_WIN16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.tagSYSKIND SYS_WIN16 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN16" />
+      <MemberSignature Language="VB.NET" Value="SYS_WIN16" />
+      <MemberSignature Language="C++ CLI" Value="SYS_WIN16" />
+      <MemberSignature Language="F#" Value="SYS_WIN16 = 0" Usage="Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagSYSKIND</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SYS_WIN32">
+      <MemberSignature Language="C#" Value="SYS_WIN32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.tagSYSKIND SYS_WIN32 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN32" />
+      <MemberSignature Language="VB.NET" Value="SYS_WIN32" />
+      <MemberSignature Language="C++ CLI" Value="SYS_WIN32" />
+      <MemberSignature Language="F#" Value="SYS_WIN32 = 1" Usage="Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagSYSKIND</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SYS_WIN64">
+      <MemberSignature Language="C#" Value="SYS_WIN64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.tagSYSKIND SYS_WIN64 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN64" />
+      <MemberSignature Language="VB.NET" Value="SYS_WIN64" />
+      <MemberSignature Language="C++ CLI" Value="SYS_WIN64" />
+      <MemberSignature Language="F#" Value="SYS_WIN64 = 3" Usage="Microsoft.VisualStudio.VsWizard.tagSYSKIND.SYS_WIN64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.tagSYSKIND</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

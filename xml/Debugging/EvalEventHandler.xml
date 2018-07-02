@@ -1,0 +1,28 @@
+﻿<Type Name="EvalEventHandler" FullName="Debugging.EvalEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void EvalEventHandler(object sender, EvalEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EvalEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Debugging.EvalEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub EvalEventHandler(sender As Object, e As EvalEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void EvalEventHandler(System::Object ^ sender, EvalEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type EvalEventHandler = delegate of obj * EvalEventArgs -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Debugging.EvalEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

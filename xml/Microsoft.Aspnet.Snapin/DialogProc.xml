@@ -1,0 +1,33 @@
+﻿<Type Name="DialogProc" FullName="Microsoft.Aspnet.Snapin.DialogProc">
+  <TypeSignature Language="C#" Value="public delegate bool DialogProc(IntPtr hwndDlg, int uMsg, IntPtr wParam, IntPtr lParam);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogProc extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.DialogProc" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DialogProc(hwndDlg As IntPtr, uMsg As Integer, wParam As IntPtr, lParam As IntPtr) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool DialogProc(IntPtr hwndDlg, int uMsg, IntPtr wParam, IntPtr lParam);" />
+  <TypeSignature Language="F#" Value="type DialogProc = delegate of nativeint * int * nativeint * nativeint -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="hwndDlg" Type="System.IntPtr" />
+    <Parameter Name="uMsg" Type="System.Int32" />
+    <Parameter Name="wParam" Type="System.IntPtr" />
+    <Parameter Name="lParam" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="hwndDlg">To be added.</param>
+    <param name="uMsg">To be added.</param>
+    <param name="wParam">To be added.</param>
+    <param name="lParam">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

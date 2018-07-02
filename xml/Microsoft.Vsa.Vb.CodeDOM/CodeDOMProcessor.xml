@@ -1,0 +1,82 @@
+﻿<Type Name="CodeDOMProcessor" FullName="Microsoft.Vsa.Vb.CodeDOM.CodeDOMProcessor">
+  <TypeSignature Language="C#" Value="public class CodeDOMProcessor : Microsoft.Vsa.Vb.CodeDOM._CodeDOMProcessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeDOMProcessor extends System.Object implements class Microsoft.Vsa.Vb.CodeDOM._CodeDOMProcessor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.Vb.CodeDOM.CodeDOMProcessor" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDOMProcessor&#xA;Implements _CodeDOMProcessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDOMProcessor : Microsoft::Vsa::Vb::CodeDOM::_CodeDOMProcessor" />
+  <TypeSignature Language="F#" Value="type CodeDOMProcessor = class&#xA;    interface _CodeDOMProcessor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.Vb.CodeDOM._CodeDOMProcessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("99749841-0D55-4cf4-8D0D-F212ECE9409A")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDOMProcessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.Vb.CodeDOM.CodeDOMProcessor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDOMProcessor();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDOMFromXML">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit CodeDOMFromXML (string xmlStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeCompileUnit CodeDOMFromXML(string xmlStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.Vb.CodeDOM.CodeDOMProcessor.CodeDOMFromXML(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CodeDOMFromXML (xmlStream As String) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::CodeDom::CodeCompileUnit ^ CodeDOMFromXML(System::String ^ xmlStream);" />
+      <MemberSignature Language="F#" Value="abstract member CodeDOMFromXML : string -&gt; System.CodeDom.CodeCompileUnit&#xA;override this.CodeDOMFromXML : string -&gt; System.CodeDom.CodeCompileUnit" Usage="codeDOMProcessor.CodeDOMFromXML xmlStream" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.Vb.CodeDOM._CodeDOMProcessor.CodeDOMFromXML(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlStream" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

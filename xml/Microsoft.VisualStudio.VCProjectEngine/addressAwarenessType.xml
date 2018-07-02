@@ -1,0 +1,81 @@
+﻿<Type Name="addressAwarenessType" FullName="Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType">
+  <TypeSignature Language="C#" Value="public enum addressAwarenessType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed addressAwarenessType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum addressAwarenessType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class addressAwarenessType" />
+  <TypeSignature Language="F#" Value="type addressAwarenessType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="addrAwareDefault">
+      <MemberSignature Language="C#" Value="addrAwareDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType addrAwareDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareDefault" />
+      <MemberSignature Language="VB.NET" Value="addrAwareDefault" />
+      <MemberSignature Language="C++ CLI" Value="addrAwareDefault" />
+      <MemberSignature Language="F#" Value="addrAwareDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="addrAwareLarge">
+      <MemberSignature Language="C#" Value="addrAwareLarge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType addrAwareLarge = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareLarge" />
+      <MemberSignature Language="VB.NET" Value="addrAwareLarge" />
+      <MemberSignature Language="C++ CLI" Value="addrAwareLarge" />
+      <MemberSignature Language="F#" Value="addrAwareLarge = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareLarge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="addrAwareNoLarge">
+      <MemberSignature Language="C#" Value="addrAwareNoLarge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType addrAwareNoLarge = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareNoLarge" />
+      <MemberSignature Language="VB.NET" Value="addrAwareNoLarge" />
+      <MemberSignature Language="C++ CLI" Value="addrAwareNoLarge" />
+      <MemberSignature Language="F#" Value="addrAwareNoLarge = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType.addrAwareNoLarge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.addressAwarenessType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type UserControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -34,6 +36,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -52,6 +56,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,6 +86,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,6 +110,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,6 +123,49 @@
         <returns>The markup that is used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Control.ID" /> property of a child control is empty or <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPersistInnerHtml">
+      <MemberSignature Language="C#" Value="public override string GetPersistInnerHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPersistInnerHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UserControlDesigner.GetPersistInnerHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPersistInnerHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPersistInnerHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetPersistInnerHtml : unit -&gt; string" Usage="userControlDesigner.GetPersistInnerHtml " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldCodeSerialize">
+      <MemberSignature Language="C#" Value="public override bool ShouldCodeSerialize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldCodeSerialize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlDesigner.ShouldCodeSerialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ShouldCodeSerialize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShouldCodeSerialize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldCodeSerialize : bool with get, set" Usage="System.Web.UI.Design.UserControlDesigner.ShouldCodeSerialize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

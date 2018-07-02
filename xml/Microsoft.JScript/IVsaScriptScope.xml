@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type IVsaScriptScope = interface&#xA;    interface IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -60,6 +62,34 @@
         <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem AddItem (string itemName, Microsoft.Vsa.VsaItemType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaItem AddItem(string itemName, valuetype Microsoft.Vsa.VsaItemType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.AddItem(System.String,Microsoft.Vsa.VsaItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemName As String, type As VsaItemType) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Vsa::IVsaItem ^ AddItem(System::String ^ itemName, Microsoft::Vsa::VsaItemType type);" />
+      <MemberSignature Language="F#" Value="abstract member AddItem : string * Microsoft.Vsa.VsaItemType -&gt; Microsoft.Vsa.IVsaItem" Usage="iVsaScriptScope.AddItem (itemName, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemName" Type="System.String" />
+        <Parameter Name="type" Type="Microsoft.Vsa.VsaItemType" />
+      </Parameters>
+      <Docs>
+        <param name="itemName">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateDynamicItem">
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem CreateDynamicItem (string itemName, Microsoft.JScript.Vsa.JSVsaItemType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaItem CreateDynamicItem(string itemName, valuetype Microsoft.JScript.Vsa.JSVsaItemType type) cil managed" />
@@ -87,6 +117,34 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDynamicItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem CreateDynamicItem (string itemName, Microsoft.Vsa.VsaItemType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaItem CreateDynamicItem(string itemName, valuetype Microsoft.Vsa.VsaItemType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.CreateDynamicItem(System.String,Microsoft.Vsa.VsaItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDynamicItem (itemName As String, type As VsaItemType) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Vsa::IVsaItem ^ CreateDynamicItem(System::String ^ itemName, Microsoft::Vsa::VsaItemType type);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDynamicItem : string * Microsoft.Vsa.VsaItemType -&gt; Microsoft.Vsa.IVsaItem" Usage="iVsaScriptScope.CreateDynamicItem (itemName, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemName" Type="System.String" />
+        <Parameter Name="type" Type="Microsoft.Vsa.VsaItemType" />
+      </Parameters>
+      <Docs>
+        <param name="itemName">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -157,6 +215,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,6 +244,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,6 +273,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,6 +333,31 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="public void RemoveItem (Microsoft.Vsa.IVsaItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(class Microsoft.Vsa.IVsaItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.RemoveItem(Microsoft.Vsa.IVsaItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (item As IVsaItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(Microsoft::Vsa::IVsaItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveItem : Microsoft.Vsa.IVsaItem -&gt; unit" Usage="iVsaScriptScope.RemoveItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Vsa.IVsaItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
       <MemberSignature Language="C#" Value="public void RemoveItem (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.RemoveItem(System.String)" />
@@ -278,6 +367,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,6 +398,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

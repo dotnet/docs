@@ -1,0 +1,198 @@
+﻿<Type Name="SecureFactory" FullName="Microsoft.IE.SecureFactory">
+  <TypeSignature Language="C#" Value="public class SecureFactory : Microsoft.IE.ISecureFactory2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecureFactory extends System.Object implements class Microsoft.IE.ISecureFactory, class Microsoft.IE.ISecureFactory2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.SecureFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecureFactory&#xA;Implements ISecureFactory2" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecureFactory : Microsoft::IE::ISecureFactory2" />
+  <TypeSignature Language="F#" Value="type SecureFactory = class&#xA;    interface ISecureFactory2&#xA;    interface ISecureFactory" />
+  <AssemblyInfo>
+    <AssemblyName>IEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IE.ISecureFactory2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CORIESECURITY_SITE">
+      <MemberSignature Language="C#" Value="public static readonly int CORIESECURITY_SITE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 CORIESECURITY_SITE" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.SecureFactory.CORIESECURITY_SITE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CORIESECURITY_SITE As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int CORIESECURITY_SITE;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CORIESECURITY_SITE : int" Usage="Microsoft.IE.SecureFactory.CORIESECURITY_SITE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CORIESECURITY_ZONE">
+      <MemberSignature Language="C#" Value="public static readonly int CORIESECURITY_ZONE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 CORIESECURITY_ZONE" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.SecureFactory.CORIESECURITY_ZONE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CORIESECURITY_ZONE As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int CORIESECURITY_ZONE;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CORIESECURITY_ZONE : int" Usage="Microsoft.IE.SecureFactory.CORIESECURITY_ZONE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceWithSecurity">
+      <MemberSignature Language="C#" Value="public virtual object CreateInstanceWithSecurity (int dwFlag, int dwZone, string pURL, string uniqueIdString, string link, string licenses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstanceWithSecurity(int32 dwFlag, int32 dwZone, string pURL, string uniqueIdString, string link, string licenses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.SecureFactory.CreateInstanceWithSecurity(System.Int32,System.Int32,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstanceWithSecurity (dwFlag As Integer, dwZone As Integer, pURL As String, uniqueIdString As String, link As String, licenses As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstanceWithSecurity(int dwFlag, int dwZone, System::String ^ pURL, System::String ^ uniqueIdString, System::String ^ link, System::String ^ licenses);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceWithSecurity : int * int * string * string * string * string -&gt; obj&#xA;override this.CreateInstanceWithSecurity : int * int * string * string * string * string -&gt; obj" Usage="secureFactory.CreateInstanceWithSecurity (dwFlag, dwZone, pURL, uniqueIdString, link, licenses)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.ISecureFactory2.CreateInstanceWithSecurity(System.Int32,System.Int32,System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwFlag" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="pURL" Type="System.String" />
+        <Parameter Name="uniqueIdString" Type="System.String" />
+        <Parameter Name="link" Type="System.String" />
+        <Parameter Name="licenses" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwFlag">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="pURL">To be added.</param>
+        <param name="uniqueIdString">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="licenses">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceWithSecurity2">
+      <MemberSignature Language="C#" Value="public virtual object CreateInstanceWithSecurity2 (int dwFlags, int dwZone, string wszSite, string wszId, string wszConfig, string wszLicenses, string wszDeploymentManifest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstanceWithSecurity2(int32 dwFlags, int32 dwZone, string wszSite, string wszId, string wszConfig, string wszLicenses, string wszDeploymentManifest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.SecureFactory.CreateInstanceWithSecurity2(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstanceWithSecurity2 (dwFlags As Integer, dwZone As Integer, wszSite As String, wszId As String, wszConfig As String, wszLicenses As String, wszDeploymentManifest As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstanceWithSecurity2(int dwFlags, int dwZone, System::String ^ wszSite, System::String ^ wszId, System::String ^ wszConfig, System::String ^ wszLicenses, System::String ^ wszDeploymentManifest);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceWithSecurity2 : int * int * string * string * string * string * string -&gt; obj&#xA;override this.CreateInstanceWithSecurity2 : int * int * string * string * string * string * string -&gt; obj" Usage="secureFactory.CreateInstanceWithSecurity2 (dwFlags, dwZone, wszSite, wszId, wszConfig, wszLicenses, wszDeploymentManifest)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.ISecureFactory2.CreateInstanceWithSecurity2(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwFlags" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="wszSite" Type="System.String" />
+        <Parameter Name="wszId" Type="System.String" />
+        <Parameter Name="wszConfig" Type="System.String" />
+        <Parameter Name="wszLicenses" Type="System.String" />
+        <Parameter Name="wszDeploymentManifest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwFlags">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="wszSite">To be added.</param>
+        <param name="wszId">To be added.</param>
+        <param name="wszConfig">To be added.</param>
+        <param name="wszLicenses">To be added.</param>
+        <param name="wszDeploymentManifest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCreateInstance">
+      <MemberSignature Language="C#" Value="public void RemoteCreateInstance (Guid riid, out object ppvObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoteCreateInstance(valuetype System.Guid riid, [out] object&amp; ppvObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.SecureFactory.RemoteCreateInstance(System.Guid,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoteCreateInstance (riid As Guid, ByRef ppvObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteCreateInstance(Guid riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObject);" />
+      <MemberSignature Language="F#" Value="member this.RemoteCreateInstance : Guid *  -&gt; unit" Usage="secureFactory.RemoteCreateInstance (riid, ppvObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid" />
+        <Parameter Name="ppvObject" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="riid">To be added.</param>
+        <param name="ppvObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteLockServer">
+      <MemberSignature Language="C#" Value="public void RemoteLockServer (int fLock);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoteLockServer(int32 fLock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.SecureFactory.RemoteLockServer(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoteLockServer (fLock As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteLockServer(int fLock);" />
+      <MemberSignature Language="F#" Value="member this.RemoteLockServer : int -&gt; unit" Usage="secureFactory.RemoteLockServer fLock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fLock" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fLock">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="_IDispWizComboEvents" FullName="Microsoft.VisualStudio.VsWizard._IDispWizComboEvents">
+  <TypeSignature Language="C#" Value="public interface _IDispWizComboEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _IDispWizComboEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard._IDispWizComboEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _IDispWizComboEvents" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _IDispWizComboEvents" />
+  <TypeSignature Language="F#" Value="type _IDispWizComboEvents = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("9CD61E87-E160-4F42-9908-DC4BCF02DF06")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="public void Change ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Change() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard._IDispWizComboEvents.Change" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Change ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Change();" />
+      <MemberSignature Language="F#" Value="abstract member Change : unit -&gt; unit" Usage="_IDispWizComboEvents.Change " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDown">
+      <MemberSignature Language="C#" Value="public void KeyDown (short nKeyCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void KeyDown(int16 nKeyCode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard._IDispWizComboEvents.KeyDown(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub KeyDown (nKeyCode As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void KeyDown(short nKeyCode);" />
+      <MemberSignature Language="F#" Value="abstract member KeyDown : int16 -&gt; unit" Usage="_IDispWizComboEvents.KeyDown nKeyCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-602)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nKeyCode" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="nKeyCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type SyncUpdateCallback = delegate of SyncFromAllServersEvent * string * string * SyncFromAllServersOperationException -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>

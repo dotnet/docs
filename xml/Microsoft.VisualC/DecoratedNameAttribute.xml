@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type DecoratedNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -51,6 +53,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -65,15 +69,23 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DecoratedNameAttribute (string decoratedName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string decoratedName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (decoratedName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute(System::String ^ decoratedName);" />
-      <MemberSignature Language="F#" Value="new Microsoft.VisualC.DecoratedNameAttribute : string -&gt; Microsoft.VisualC.DecoratedNameAttribute" Usage="new Microsoft.VisualC.DecoratedNameAttribute decoratedName" />
+      <MemberSignature Language="C#" Value="public DecoratedNameAttribute (string pszDecoratedName);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string pszDecoratedName) cil managed" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pszDecoratedName As String)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute(System::String ^ pszDecoratedName);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.DecoratedNameAttribute : string -&gt; Microsoft.VisualC.DecoratedNameAttribute" Usage="new Microsoft.VisualC.DecoratedNameAttribute pszDecoratedName" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public DecoratedNameAttribute (string decoratedName);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string decoratedName) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (decoratedName As String)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute(System::String ^ decoratedName);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.DecoratedNameAttribute : string -&gt; Microsoft.VisualC.DecoratedNameAttribute" Usage="new Microsoft.VisualC.DecoratedNameAttribute decoratedName" FrameworkAlternate="netframework-2.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -82,10 +94,12 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="decoratedName" Type="System.String" />
+        <Parameter Name="pszDecoratedName" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="decoratedName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
         <param name="decoratedName">The decorated name of a method.</param>
+        <param name="pszDecoratedName">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DecoratedNameAttribute" /> class using the specified decorated name.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,500 @@
+<Type Name="_dispVCProjectEngineEvents_SinkHelper" FullName="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper">
+  <TypeSignature Language="C#" Value="public sealed class _dispVCProjectEngineEvents_SinkHelper : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispVCProjectEngineEvents_SinkHelper extends System.Object implements class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _dispVCProjectEngineEvents_SinkHelper&#xA;Implements _dispVCProjectEngineEvents" />
+  <TypeSignature Language="C++ CLI" Value="public ref class _dispVCProjectEngineEvents_SinkHelper sealed : Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents" />
+  <TypeSignature Language="F#" Value="type _dispVCProjectEngineEvents_SinkHelper = class&#xA;    interface _dispVCProjectEngineEvents" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ItemAdded">
+      <MemberSignature Language="C#" Value="public override void ItemAdded (object , object );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ItemAdded(object , object ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ItemAdded(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ItemAdded ( As Object,  As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ItemAdded(System::Object ^ , System::Object ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ItemAdded : obj * obj -&gt; unit&#xA;override this.ItemAdded : obj * obj -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ItemAdded (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ItemAdded(System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemMoved">
+      <MemberSignature Language="C#" Value="public override void ItemMoved (object , object , object );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ItemMoved(object , object , object ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ItemMoved(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ItemMoved ( As Object,  As Object,  As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ItemMoved(System::Object ^ , System::Object ^ , System::Object ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ItemMoved : obj * obj * obj -&gt; unit&#xA;override this.ItemMoved : obj * obj * obj -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ItemMoved (, , )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ItemMoved(System.Object,System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemPropertyChange">
+      <MemberSignature Language="C#" Value="public override void ItemPropertyChange (object , int );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ItemPropertyChange(object , int32 ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ItemPropertyChange(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ItemPropertyChange ( As Object,  As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ItemPropertyChange(System::Object ^ , int );" />
+      <MemberSignature Language="F#" Value="abstract member ItemPropertyChange : obj * int -&gt; unit&#xA;override this.ItemPropertyChange : obj * int -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ItemPropertyChange (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ItemPropertyChange(System.Object,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemRemoved">
+      <MemberSignature Language="C#" Value="public override void ItemRemoved (object , object );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ItemRemoved(object , object ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ItemRemoved(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ItemRemoved ( As Object,  As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ItemRemoved(System::Object ^ , System::Object ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ItemRemoved : obj * obj -&gt; unit&#xA;override this.ItemRemoved : obj * obj -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ItemRemoved (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ItemRemoved(System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemRenamed">
+      <MemberSignature Language="C#" Value="public override void ItemRenamed (object , object , string );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ItemRenamed(object , object , string ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ItemRenamed(System.Object,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ItemRenamed ( As Object,  As Object,  As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ItemRenamed(System::Object ^ , System::Object ^ , System::String ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ItemRenamed : obj * obj * string -&gt; unit&#xA;override this.ItemRenamed : obj * obj * string -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ItemRenamed (, , )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ItemRenamed(System.Object,System.Object,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_dwCookie">
+      <MemberSignature Language="C#" Value="public int m_dwCookie;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 m_dwCookie" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_dwCookie" />
+      <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_dwCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemAddedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemAddedEventHandler m_ItemAddedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemAddedEventHandler m_ItemAddedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemAddedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ItemAddedDelegate As _dispVCProjectEngineEvents_ItemAddedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ItemAddedEventHandler ^ m_ItemAddedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemAddedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemAddedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemAddedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemAddedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemMovedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemMovedEventHandler m_ItemMovedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemMovedEventHandler m_ItemMovedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemMovedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ItemMovedDelegate As _dispVCProjectEngineEvents_ItemMovedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ItemMovedEventHandler ^ m_ItemMovedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemMovedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemMovedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemMovedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemMovedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemPropertyChangeDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler m_ItemPropertyChangeDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler m_ItemPropertyChangeDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemPropertyChangeDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ItemPropertyChangeDelegate As _dispVCProjectEngineEvents_ItemPropertyChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ItemPropertyChangeEventHandler ^ m_ItemPropertyChangeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemPropertyChangeDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemPropertyChangeDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemPropertyChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemRemovedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler m_ItemRemovedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler m_ItemRemovedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemRemovedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ItemRemovedDelegate As _dispVCProjectEngineEvents_ItemRemovedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ItemRemovedEventHandler ^ m_ItemRemovedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemRemovedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemRemovedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemRenamedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRenamedEventHandler m_ItemRenamedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRenamedEventHandler m_ItemRenamedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemRenamedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ItemRenamedDelegate As _dispVCProjectEngineEvents_ItemRenamedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ItemRenamedEventHandler ^ m_ItemRenamedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemRenamedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRenamedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ItemRenamedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRenamedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ProjectBuildFinishedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler m_ProjectBuildFinishedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler m_ProjectBuildFinishedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ProjectBuildFinishedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ProjectBuildFinishedDelegate As _dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler ^ m_ProjectBuildFinishedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ProjectBuildFinishedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ProjectBuildFinishedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildFinishedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ProjectBuildStartedDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildStartedEventHandler m_ProjectBuildStartedDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildStartedEventHandler m_ProjectBuildStartedDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ProjectBuildStartedDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ProjectBuildStartedDelegate As _dispVCProjectEngineEvents_ProjectBuildStartedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ProjectBuildStartedEventHandler ^ m_ProjectBuildStartedDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ProjectBuildStartedDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildStartedEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ProjectBuildStartedDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ProjectBuildStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ReportErrorDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ReportErrorEventHandler m_ReportErrorDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ReportErrorEventHandler m_ReportErrorDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ReportErrorDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_ReportErrorDelegate As _dispVCProjectEngineEvents_ReportErrorEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_ReportErrorEventHandler ^ m_ReportErrorDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_ReportErrorDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ReportErrorEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_ReportErrorDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ReportErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_SccEventDelegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SccEventEventHandler m_SccEventDelegate;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SccEventEventHandler m_SccEventDelegate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_SccEventDelegate" />
+      <MemberSignature Language="VB.NET" Value="Public m_SccEventDelegate As _dispVCProjectEngineEvents_SccEventEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualStudio::VCProjectEngine::_dispVCProjectEngineEvents_SccEventEventHandler ^ m_SccEventDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_SccEventDelegate : Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SccEventEventHandler" Usage="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.m_SccEventDelegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SccEventEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectBuildFinished">
+      <MemberSignature Language="C#" Value="public override void ProjectBuildFinished (object , int , int , bool );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ProjectBuildFinished(object , int32 , int32 , bool ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ProjectBuildFinished(System.Object,System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProjectBuildFinished ( As Object,  As Integer,  As Integer,  As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProjectBuildFinished(System::Object ^ , int , int , bool );" />
+      <MemberSignature Language="F#" Value="abstract member ProjectBuildFinished : obj * int * int * bool -&gt; unit&#xA;override this.ProjectBuildFinished : obj * int * int * bool -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ProjectBuildFinished (, , , )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ProjectBuildFinished(System.Object,System.Int32,System.Int32,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="System.Int32" />
+        <Parameter Name="" Type="System.Int32" />
+        <Parameter Name="" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectBuildStarted">
+      <MemberSignature Language="C#" Value="public override void ProjectBuildStarted (object );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ProjectBuildStarted(object ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ProjectBuildStarted(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProjectBuildStarted ( As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProjectBuildStarted(System::Object ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ProjectBuildStarted : obj -&gt; unit&#xA;override this.ProjectBuildStarted : obj -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ProjectBuildStarted " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ProjectBuildStarted(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportError">
+      <MemberSignature Language="C#" Value="public override void ReportError (string , int , string );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void ReportError(string , int32 , string ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.ReportError(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReportError ( As String,  As Integer,  As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReportError(System::String ^ , int , System::String ^ );" />
+      <MemberSignature Language="F#" Value="abstract member ReportError : string * int * string -&gt; unit&#xA;override this.ReportError : string * int * string -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.ReportError (, , )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.ReportError(System.String,System.Int32,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.String" />
+        <Parameter Name="" Type="System.Int32" />
+        <Parameter Name="" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SccEvent">
+      <MemberSignature Language="C#" Value="public override void SccEvent (object , Microsoft.VisualStudio.VCProjectEngine.enumSccEvent );" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void SccEvent(object , valuetype Microsoft.VisualStudio.VCProjectEngine.enumSccEvent ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_SinkHelper.SccEvent(System.Object,Microsoft.VisualStudio.VCProjectEngine.enumSccEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SccEvent ( As Object,  As enumSccEvent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SccEvent(System::Object ^ , Microsoft::VisualStudio::VCProjectEngine::enumSccEvent );" />
+      <MemberSignature Language="F#" Value="abstract member SccEvent : obj * Microsoft.VisualStudio.VCProjectEngine.enumSccEvent -&gt; unit&#xA;override this.SccEvent : obj * Microsoft.VisualStudio.VCProjectEngine.enumSccEvent -&gt; unit" Usage="_dispVCProjectEngineEvents_SinkHelper.SccEvent (, )" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents.SccEvent(System.Object,Microsoft.VisualStudio.VCProjectEngine.enumSccEvent)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Object" />
+        <Parameter Name="" Type="Microsoft.VisualStudio.VCProjectEngine.enumSccEvent" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

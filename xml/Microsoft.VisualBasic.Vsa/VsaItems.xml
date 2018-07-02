@@ -1,0 +1,328 @@
+﻿<Type Name="VsaItems" FullName="Microsoft.VisualBasic.Vsa.VsaItems">
+  <TypeSignature Language="C#" Value="public class VsaItems : Microsoft.Vsa.IVsaItems, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VsaItems extends System.Object implements class Microsoft.Vsa.IVsaItems, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Vsa.VsaItems" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsaItems&#xA;Implements IEnumerable, IVsaItems" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaItems : Microsoft::Vsa::IVsaItems, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type VsaItems = class&#xA;    interface IVsaItems&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaItems</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal VsaItems (Microsoft.Vsa.IVsaItems items);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Vsa.IVsaItems items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.#ctor(Microsoft.Vsa.IVsaItems)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (items As IVsaItems)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; VsaItems(Microsoft::Vsa::IVsaItems ^ items);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Vsa.VsaItems : Microsoft.Vsa.IVsaItems -&gt; Microsoft.VisualBasic.Vsa.VsaItems" Usage="new Microsoft.VisualBasic.Vsa.VsaItems items" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="Microsoft.Vsa.IVsaItems" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCodeItemWrapper">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.VisualBasic.Vsa.VsaItem AddCodeItemWrapper (Microsoft.Vsa.IVsaItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.VisualBasic.Vsa.VsaItem AddCodeItemWrapper(class Microsoft.Vsa.IVsaItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.AddCodeItemWrapper(Microsoft.Vsa.IVsaItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function AddCodeItemWrapper (item As IVsaItem) As VsaItem" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Microsoft::VisualBasic::Vsa::VsaItem ^ AddCodeItemWrapper(Microsoft::Vsa::IVsaItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member AddCodeItemWrapper : Microsoft.Vsa.IVsaItem -&gt; Microsoft.VisualBasic.Vsa.VsaItem&#xA;override this.AddCodeItemWrapper : Microsoft.Vsa.IVsaItem -&gt; Microsoft.VisualBasic.Vsa.VsaItem" Usage="vsaItems.AddCodeItemWrapper item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Vsa.VsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Vsa.IVsaItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaItems.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.VisualBasic.Vsa.VsaItems.Count" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaItems.Count</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem CreateItem (string Name, Microsoft.Vsa.VsaItemType ItemType, Microsoft.Vsa.VsaItemFlag ItemFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaItem CreateItem(string Name, valuetype Microsoft.Vsa.VsaItemType ItemType, valuetype Microsoft.Vsa.VsaItemFlag ItemFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateItem (Name As String, ItemType As VsaItemType, ItemFlag As VsaItemFlag) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Vsa::IVsaItem ^ CreateItem(System::String ^ Name, Microsoft::Vsa::VsaItemType ItemType, Microsoft::Vsa::VsaItemFlag ItemFlag);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : string * Microsoft.Vsa.VsaItemType * Microsoft.Vsa.VsaItemFlag -&gt; Microsoft.Vsa.IVsaItem&#xA;override this.CreateItem : string * Microsoft.Vsa.VsaItemType * Microsoft.Vsa.VsaItemFlag -&gt; Microsoft.Vsa.IVsaItem" Usage="vsaItems.CreateItem (Name, ItemType, ItemFlag)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="ItemType" Type="Microsoft.Vsa.VsaItemType" />
+        <Parameter Name="ItemFlag" Type="Microsoft.Vsa.VsaItemFlag" />
+      </Parameters>
+      <Docs>
+        <param name="Name">To be added.</param>
+        <param name="ItemType">To be added.</param>
+        <param name="ItemFlag">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="vsaItems.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemWrapper">
+      <MemberSignature Language="C#" Value="protected internal Microsoft.Vsa.IVsaItem GetItemWrapper (Microsoft.Vsa.IVsaItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class Microsoft.Vsa.IVsaItem GetItemWrapper(class Microsoft.Vsa.IVsaItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.GetItemWrapper(Microsoft.Vsa.IVsaItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetItemWrapper (item As IVsaItem) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; Microsoft::Vsa::IVsaItem ^ GetItemWrapper(Microsoft::Vsa::IVsaItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.GetItemWrapper : Microsoft.Vsa.IVsaItem -&gt; Microsoft.Vsa.IVsaItem" Usage="vsaItems.GetItemWrapper item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Vsa.IVsaItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vsa.IVsaItem Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaItems.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::IVsaItem ^ default[int] { Microsoft::Vsa::IVsaItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Vsa.IVsaItem" Usage="Microsoft.VisualBasic.Vsa.VsaItems.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaItems.Item(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItem this[string Name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vsa.IVsaItem Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaItems.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Name As String) As IVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::IVsaItem ^ default[System::String ^] { Microsoft::Vsa::IVsaItem ^ get(System::String ^ Name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Microsoft.Vsa.IVsaItem" Usage="Microsoft.VisualBasic.Vsa.VsaItems.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaItems.Item(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ItemCollection">
+      <MemberSignature Language="C#" Value="protected System.Collections.Hashtable m_ItemCollection;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable m_ItemCollection" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Vsa.VsaItems.m_ItemCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected m_ItemCollection As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ m_ItemCollection;" />
+      <MemberSignature Language="F#" Value="val mutable m_ItemCollection : System.Collections.Hashtable" Usage="Microsoft.VisualBasic.Vsa.VsaItems.m_ItemCollection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.Remove(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(int index);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : int -&gt; unit&#xA;override this.Remove : int -&gt; unit" Usage="vsaItems.Remove index" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaItems.Remove(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string Name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string Name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Vsa.VsaItems.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (Name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="vsaItems.Remove Name" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaItems.Remove(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

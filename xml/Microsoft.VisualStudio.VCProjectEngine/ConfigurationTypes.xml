@@ -1,0 +1,121 @@
+﻿<Type Name="ConfigurationTypes" FullName="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes">
+  <TypeSignature Language="C#" Value="public enum ConfigurationTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationTypes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationTypes" />
+  <TypeSignature Language="F#" Value="type ConfigurationTypes = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="typeApplication">
+      <MemberSignature Language="C#" Value="typeApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes typeApplication = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeApplication" />
+      <MemberSignature Language="VB.NET" Value="typeApplication" />
+      <MemberSignature Language="C++ CLI" Value="typeApplication" />
+      <MemberSignature Language="F#" Value="typeApplication = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="typeDynamicLibrary">
+      <MemberSignature Language="C#" Value="typeDynamicLibrary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes typeDynamicLibrary = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeDynamicLibrary" />
+      <MemberSignature Language="VB.NET" Value="typeDynamicLibrary" />
+      <MemberSignature Language="C++ CLI" Value="typeDynamicLibrary" />
+      <MemberSignature Language="F#" Value="typeDynamicLibrary = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeDynamicLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="typeGeneric">
+      <MemberSignature Language="C#" Value="typeGeneric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes typeGeneric = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeGeneric" />
+      <MemberSignature Language="VB.NET" Value="typeGeneric" />
+      <MemberSignature Language="C++ CLI" Value="typeGeneric" />
+      <MemberSignature Language="F#" Value="typeGeneric = 10" Usage="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeGeneric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="typeStaticLibrary">
+      <MemberSignature Language="C#" Value="typeStaticLibrary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes typeStaticLibrary = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeStaticLibrary" />
+      <MemberSignature Language="VB.NET" Value="typeStaticLibrary" />
+      <MemberSignature Language="C++ CLI" Value="typeStaticLibrary" />
+      <MemberSignature Language="F#" Value="typeStaticLibrary = 4" Usage="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeStaticLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="typeUnknown">
+      <MemberSignature Language="C#" Value="typeUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes typeUnknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeUnknown" />
+      <MemberSignature Language="VB.NET" Value="typeUnknown" />
+      <MemberSignature Language="C++ CLI" Value="typeUnknown" />
+      <MemberSignature Language="F#" Value="typeUnknown = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes.typeUnknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.ConfigurationTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,259 @@
+﻿<Type Name="IConsoleNameSpace2" FullName="Microsoft.CLRAdmin.IConsoleNameSpace2">
+  <TypeSignature Language="C#" Value="public interface IConsoleNameSpace2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConsoleNameSpace2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IConsoleNameSpace2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConsoleNameSpace2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConsoleNameSpace2" />
+  <TypeSignature Language="F#" Value="type IConsoleNameSpace2 = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("255F18CC-65DB-11D1-A7DC-00C04FD8D565")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddExtension">
+      <MemberSignature Language="C#" Value="public void AddExtension (Microsoft.CLRAdmin.CLSID a, ref Microsoft.CLRAdmin.SCOPEDATAITEM b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddExtension(valuetype Microsoft.CLRAdmin.CLSID a, valuetype Microsoft.CLRAdmin.SCOPEDATAITEM&amp; b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.AddExtension(Microsoft.CLRAdmin.CLSID,Microsoft.CLRAdmin.SCOPEDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddExtension (a As CLSID, ByRef b As SCOPEDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddExtension(Microsoft::CLRAdmin::CLSID a, Microsoft::CLRAdmin::SCOPEDATAITEM % b);" />
+      <MemberSignature Language="F#" Value="abstract member AddExtension : Microsoft.CLRAdmin.CLSID *  -&gt; unit" Usage="iConsoleNameSpace2.AddExtension (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.CLSID" />
+        <Parameter Name="b" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteItem">
+      <MemberSignature Language="C#" Value="public void DeleteItem (int a, int b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteItem(int32 a, int32 b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.DeleteItem(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteItem (a As Integer, b As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteItem(int a, int b);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteItem : int * int -&gt; unit" Usage="iConsoleNameSpace2.DeleteItem (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Int32" />
+        <Parameter Name="b" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="public void Expand (int a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Expand(int32 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.Expand(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Expand (a As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Expand(int a);" />
+      <MemberSignature Language="F#" Value="abstract member Expand : int -&gt; unit" Usage="iConsoleNameSpace2.Expand a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildItem">
+      <MemberSignature Language="C#" Value="public void GetChildItem (uint a, ref uint b, ref int c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetChildItem(unsigned int32 a, unsigned int32&amp; b, int32&amp; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.GetChildItem(System.UInt32,System.UInt32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetChildItem (a As UInteger, ByRef b As UInteger, ByRef c As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetChildItem(System::UInt32 a, System::UInt32 % b, int % c);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildItem : uint32 *  *  -&gt; unit" Usage="iConsoleNameSpace2.GetChildItem (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.UInt32" />
+        <Parameter Name="b" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="c" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public void GetItem (ref Microsoft.CLRAdmin.SCOPEDATAITEM a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetItem(valuetype Microsoft.CLRAdmin.SCOPEDATAITEM&amp; a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.GetItem(Microsoft.CLRAdmin.SCOPEDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetItem (ByRef a As SCOPEDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetItem(Microsoft::CLRAdmin::SCOPEDATAITEM % a);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem :  -&gt; unit" Usage="iConsoleNameSpace2.GetItem a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextItem">
+      <MemberSignature Language="C#" Value="public void GetNextItem (uint a, ref uint b, ref int c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNextItem(unsigned int32 a, unsigned int32&amp; b, int32&amp; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.GetNextItem(System.UInt32,System.UInt32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetNextItem (a As UInteger, ByRef b As UInteger, ByRef c As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetNextItem(System::UInt32 a, System::UInt32 % b, int % c);" />
+      <MemberSignature Language="F#" Value="abstract member GetNextItem : uint32 *  *  -&gt; unit" Usage="iConsoleNameSpace2.GetNextItem (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.UInt32" />
+        <Parameter Name="b" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="c" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentItem">
+      <MemberSignature Language="C#" Value="public void GetParentItem (int a, out int b, out int c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetParentItem(int32 a, [out] int32&amp; b, [out] int32&amp; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.GetParentItem(System.Int32,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetParentItem (a As Integer, ByRef b As Integer, ByRef c As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetParentItem(int a, [Runtime::InteropServices::Out] int % b, [Runtime::InteropServices::Out] int % c);" />
+      <MemberSignature Language="F#" Value="abstract member GetParentItem : int *  *  -&gt; unit" Usage="iConsoleNameSpace2.GetParentItem (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Int32" />
+        <Parameter Name="b" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="c" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="public void InsertItem (ref Microsoft.CLRAdmin.SCOPEDATAITEM a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertItem(valuetype Microsoft.CLRAdmin.SCOPEDATAITEM&amp; a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.InsertItem(Microsoft.CLRAdmin.SCOPEDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertItem (ByRef a As SCOPEDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertItem(Microsoft::CLRAdmin::SCOPEDATAITEM % a);" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem :  -&gt; unit" Usage="iConsoleNameSpace2.InsertItem a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (ref Microsoft.CLRAdmin.SCOPEDATAITEM a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(valuetype Microsoft.CLRAdmin.SCOPEDATAITEM&amp; a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleNameSpace2.SetItem(Microsoft.CLRAdmin.SCOPEDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (ByRef a As SCOPEDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(Microsoft::CLRAdmin::SCOPEDATAITEM % a);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem :  -&gt; unit" Usage="iConsoleNameSpace2.SetItem a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

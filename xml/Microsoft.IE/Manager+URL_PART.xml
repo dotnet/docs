@@ -1,0 +1,169 @@
+﻿<Type Name="Manager+URL_PART" FullName="Microsoft.IE.Manager+URL_PART">
+  <TypeSignature Language="C#" Value="public enum Manager.URL_PART" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Manager/URL_PART extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager.URL_PART" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Manager.URL_PART" />
+  <TypeSignature Language="C++ CLI" Value="public: enum class Manager::URL_PART" />
+  <TypeSignature Language="F#" Value="type Manager.URL_PART = " />
+  <AssemblyInfo>
+    <AssemblyName>IEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HOSTNAME">
+      <MemberSignature Language="C#" Value="HOSTNAME" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART HOSTNAME = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.HOSTNAME" />
+      <MemberSignature Language="VB.NET" Value="HOSTNAME" />
+      <MemberSignature Language="C++ CLI" Value="HOSTNAME" />
+      <MemberSignature Language="F#" Value="HOSTNAME = 2" Usage="Microsoft.IE.Manager.URL_PART.HOSTNAME" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NONE">
+      <MemberSignature Language="C#" Value="NONE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART NONE = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.NONE" />
+      <MemberSignature Language="VB.NET" Value="NONE" />
+      <MemberSignature Language="C++ CLI" Value="NONE" />
+      <MemberSignature Language="F#" Value="NONE = 0" Usage="Microsoft.IE.Manager.URL_PART.NONE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PASSWORD">
+      <MemberSignature Language="C#" Value="PASSWORD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART PASSWORD = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.PASSWORD" />
+      <MemberSignature Language="VB.NET" Value="PASSWORD" />
+      <MemberSignature Language="C++ CLI" Value="PASSWORD" />
+      <MemberSignature Language="F#" Value="PASSWORD = 4" Usage="Microsoft.IE.Manager.URL_PART.PASSWORD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PORT">
+      <MemberSignature Language="C#" Value="PORT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART PORT = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.PORT" />
+      <MemberSignature Language="VB.NET" Value="PORT" />
+      <MemberSignature Language="C++ CLI" Value="PORT" />
+      <MemberSignature Language="F#" Value="PORT = 5" Usage="Microsoft.IE.Manager.URL_PART.PORT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QUERY">
+      <MemberSignature Language="C#" Value="QUERY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART QUERY = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.QUERY" />
+      <MemberSignature Language="VB.NET" Value="QUERY" />
+      <MemberSignature Language="C++ CLI" Value="QUERY" />
+      <MemberSignature Language="F#" Value="QUERY = 6" Usage="Microsoft.IE.Manager.URL_PART.QUERY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SCHEME">
+      <MemberSignature Language="C#" Value="SCHEME" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART SCHEME = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.SCHEME" />
+      <MemberSignature Language="VB.NET" Value="SCHEME" />
+      <MemberSignature Language="C++ CLI" Value="SCHEME" />
+      <MemberSignature Language="F#" Value="SCHEME = 1" Usage="Microsoft.IE.Manager.URL_PART.SCHEME" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USERNAME">
+      <MemberSignature Language="C#" Value="USERNAME" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.IE.Manager/URL_PART USERNAME = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IE.Manager.URL_PART.USERNAME" />
+      <MemberSignature Language="VB.NET" Value="USERNAME" />
+      <MemberSignature Language="C++ CLI" Value="USERNAME" />
+      <MemberSignature Language="F#" Value="USERNAME = 3" Usage="Microsoft.IE.Manager.URL_PART.USERNAME" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IEHost</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IE.Manager+URL_PART</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

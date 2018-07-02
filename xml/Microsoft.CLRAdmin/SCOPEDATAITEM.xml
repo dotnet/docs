@@ -1,0 +1,202 @@
+﻿<Type Name="SCOPEDATAITEM" FullName="Microsoft.CLRAdmin.SCOPEDATAITEM">
+  <TypeSignature Language="C#" Value="public struct SCOPEDATAITEM" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SCOPEDATAITEM extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.SCOPEDATAITEM" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SCOPEDATAITEM" />
+  <TypeSignature Language="C++ CLI" Value="public value class SCOPEDATAITEM" />
+  <TypeSignature Language="F#" Value="type SCOPEDATAITEM = struct" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="cChildren">
+      <MemberSignature Language="C#" Value="public int cChildren;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 cChildren" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.cChildren" />
+      <MemberSignature Language="VB.NET" Value="Public cChildren As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int cChildren;" />
+      <MemberSignature Language="F#" Value="val mutable cChildren : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.cChildren" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="displayname">
+      <MemberSignature Language="C#" Value="public IntPtr displayname;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int displayname" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.displayname" />
+      <MemberSignature Language="VB.NET" Value="Public displayname As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr displayname;" />
+      <MemberSignature Language="F#" Value="val mutable displayname : nativeint" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.displayname" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 ID" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ID As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int ID;" />
+      <MemberSignature Language="F#" Value="val mutable ID : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.ID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lParam">
+      <MemberSignature Language="C#" Value="public int lParam;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 lParam" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.lParam" />
+      <MemberSignature Language="VB.NET" Value="Public lParam As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int lParam;" />
+      <MemberSignature Language="F#" Value="val mutable lParam : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.lParam" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="mask">
+      <MemberSignature Language="C#" Value="public uint mask;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 mask" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.mask" />
+      <MemberSignature Language="VB.NET" Value="Public mask As UInteger " />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 mask;" />
+      <MemberSignature Language="F#" Value="val mutable mask : uint32" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.mask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nImage">
+      <MemberSignature Language="C#" Value="public int nImage;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 nImage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.nImage" />
+      <MemberSignature Language="VB.NET" Value="Public nImage As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int nImage;" />
+      <MemberSignature Language="F#" Value="val mutable nImage : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.nImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nOpenImage">
+      <MemberSignature Language="C#" Value="public int nOpenImage;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 nOpenImage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.nOpenImage" />
+      <MemberSignature Language="VB.NET" Value="Public nOpenImage As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int nOpenImage;" />
+      <MemberSignature Language="F#" Value="val mutable nOpenImage : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.nOpenImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nState">
+      <MemberSignature Language="C#" Value="public uint nState;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 nState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.nState" />
+      <MemberSignature Language="VB.NET" Value="Public nState As UInteger " />
+      <MemberSignature Language="C++ CLI" Value="public: System::UInt32 nState;" />
+      <MemberSignature Language="F#" Value="val mutable nState : uint32" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.nState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="relativeID">
+      <MemberSignature Language="C#" Value="public int relativeID;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 relativeID" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.SCOPEDATAITEM.relativeID" />
+      <MemberSignature Language="VB.NET" Value="Public relativeID As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int relativeID;" />
+      <MemberSignature Language="F#" Value="val mutable relativeID : int" Usage="Microsoft.CLRAdmin.SCOPEDATAITEM.relativeID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

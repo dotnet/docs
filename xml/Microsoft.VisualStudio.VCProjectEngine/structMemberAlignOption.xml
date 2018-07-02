@@ -1,0 +1,141 @@
+﻿<Type Name="structMemberAlignOption" FullName="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption">
+  <TypeSignature Language="C#" Value="public enum structMemberAlignOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed structMemberAlignOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum structMemberAlignOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class structMemberAlignOption" />
+  <TypeSignature Language="F#" Value="type structMemberAlignOption = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="alignEightBytes">
+      <MemberSignature Language="C#" Value="alignEightBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignEightBytes = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignEightBytes" />
+      <MemberSignature Language="VB.NET" Value="alignEightBytes" />
+      <MemberSignature Language="C++ CLI" Value="alignEightBytes" />
+      <MemberSignature Language="F#" Value="alignEightBytes = 4" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignEightBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="alignFourBytes">
+      <MemberSignature Language="C#" Value="alignFourBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignFourBytes = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignFourBytes" />
+      <MemberSignature Language="VB.NET" Value="alignFourBytes" />
+      <MemberSignature Language="C++ CLI" Value="alignFourBytes" />
+      <MemberSignature Language="F#" Value="alignFourBytes = 3" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignFourBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="alignNotSet">
+      <MemberSignature Language="C#" Value="alignNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignNotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignNotSet" />
+      <MemberSignature Language="VB.NET" Value="alignNotSet" />
+      <MemberSignature Language="C++ CLI" Value="alignNotSet" />
+      <MemberSignature Language="F#" Value="alignNotSet = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="alignSingleByte">
+      <MemberSignature Language="C#" Value="alignSingleByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignSingleByte = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignSingleByte" />
+      <MemberSignature Language="VB.NET" Value="alignSingleByte" />
+      <MemberSignature Language="C++ CLI" Value="alignSingleByte" />
+      <MemberSignature Language="F#" Value="alignSingleByte = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignSingleByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="alignSixteenBytes">
+      <MemberSignature Language="C#" Value="alignSixteenBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignSixteenBytes = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignSixteenBytes" />
+      <MemberSignature Language="VB.NET" Value="alignSixteenBytes" />
+      <MemberSignature Language="C++ CLI" Value="alignSixteenBytes" />
+      <MemberSignature Language="F#" Value="alignSixteenBytes = 5" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignSixteenBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="alignTwoBytes">
+      <MemberSignature Language="C#" Value="alignTwoBytes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption alignTwoBytes = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignTwoBytes" />
+      <MemberSignature Language="VB.NET" Value="alignTwoBytes" />
+      <MemberSignature Language="C++ CLI" Value="alignTwoBytes" />
+      <MemberSignature Language="F#" Value="alignTwoBytes = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption.alignTwoBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.structMemberAlignOption</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

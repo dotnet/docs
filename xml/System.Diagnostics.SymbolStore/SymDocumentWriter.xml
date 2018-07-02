@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type SymDocumentWriter = class&#xA;    inherit SymDocumentWriterBase&#xA;    interface ISymbolDocumentWriter&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.SymbolStore.SymDocumentWriterBase</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -38,6 +41,26 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SymDocumentWriter (ISymUnmanagedDocumentWriter* pDocumentWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(ISymUnmanagedDocumentWriter* pDocumentWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.#ctor(ISymUnmanagedDocumentWriter*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymDocumentWriter(ISymUnmanagedDocumentWriter* pDocumentWriter);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SymbolStore.SymDocumentWriter : nativeptr&lt;ISymUnmanagedDocumentWriter&gt; -&gt; System.Diagnostics.SymbolStore.SymDocumentWriter" Usage="new System.Diagnostics.SymbolStore.SymDocumentWriter pDocumentWriter" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pDocumentWriter" Type="ISymUnmanagedDocumentWriter*" />
+      </Parameters>
+      <Docs>
+        <param name="pDocumentWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SymDocumentWriter (System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* pDocumentWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* pDocumentWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter*)" />
@@ -46,6 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,6 +77,49 @@
       </Parameters>
       <Docs>
         <param name="pDocumentWriter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="__dtor">
+      <MemberSignature Language="C#" Value="public void __dtor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void __dtor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.__dtor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub __dtor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void __dtor();" />
+      <MemberSignature Language="F#" Value="member this.__dtor : unit -&gt; unit" Usage="symDocumentWriter.__dtor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="{dtor}">
+      <MemberSignature Language="C#" Value="public void {dtor} ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void {dtor}() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.{dtor}" />
+      <MemberSignature Language="VB.NET" Value="Public Sub {dtor} ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void {dtor}();" />
+      <MemberSignature Language="F#" Value="member this.{dtor} : unit -&gt; unit" Usage="symDocumentWriter.{dtor} " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,6 +204,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,18 +225,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUnmanaged">
-      <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* GetUnmanaged ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* GetUnmanaged() cil managed" />
+      <MemberSignature Language="C#" Value="public ISymUnmanagedDocumentWriter* GetUnmanaged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance ISymUnmanagedDocumentWriter* GetUnmanaged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.GetUnmanaged" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::Private::ISymUnmanagedDocumentWriter* GetUnmanaged();" />
-      <MemberSignature Language="F#" Value="member this.GetUnmanaged : unit -&gt; nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter&gt;" Usage="symDocumentWriter.GetUnmanaged " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ISymUnmanagedDocumentWriter* GetUnmanaged();" />
+      <MemberSignature Language="F#" Value="member this.GetUnmanaged : unit -&gt; nativeptr&lt;ISymUnmanagedDocumentWriter&gt;" Usage="symDocumentWriter.GetUnmanaged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter*</ReturnType>
+        <ReturnType>ISymUnmanagedDocumentWriter*</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -186,6 +255,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,6 +284,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

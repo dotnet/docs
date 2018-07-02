@@ -1,0 +1,81 @@
+﻿<Type Name="MMC_CONTROL_TYPE" FullName="Microsoft.CLRAdmin.MMC_CONTROL_TYPE">
+  <TypeSignature Language="C#" Value="public enum MMC_CONTROL_TYPE" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MMC_CONTROL_TYPE extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.MMC_CONTROL_TYPE" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MMC_CONTROL_TYPE" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MMC_CONTROL_TYPE" />
+  <TypeSignature Language="F#" Value="type MMC_CONTROL_TYPE = " />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="COMBOBOXBAR">
+      <MemberSignature Language="C#" Value="COMBOBOXBAR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CLRAdmin.MMC_CONTROL_TYPE COMBOBOXBAR = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_CONTROL_TYPE.COMBOBOXBAR" />
+      <MemberSignature Language="VB.NET" Value="COMBOBOXBAR" />
+      <MemberSignature Language="C++ CLI" Value="COMBOBOXBAR" />
+      <MemberSignature Language="F#" Value="COMBOBOXBAR = 2" Usage="Microsoft.CLRAdmin.MMC_CONTROL_TYPE.COMBOBOXBAR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CLRAdmin.MMC_CONTROL_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MENUBUTTON">
+      <MemberSignature Language="C#" Value="MENUBUTTON" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CLRAdmin.MMC_CONTROL_TYPE MENUBUTTON = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_CONTROL_TYPE.MENUBUTTON" />
+      <MemberSignature Language="VB.NET" Value="MENUBUTTON" />
+      <MemberSignature Language="C++ CLI" Value="MENUBUTTON" />
+      <MemberSignature Language="F#" Value="MENUBUTTON = 1" Usage="Microsoft.CLRAdmin.MMC_CONTROL_TYPE.MENUBUTTON" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CLRAdmin.MMC_CONTROL_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TOOLBAR">
+      <MemberSignature Language="C#" Value="TOOLBAR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CLRAdmin.MMC_CONTROL_TYPE TOOLBAR = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.MMC_CONTROL_TYPE.TOOLBAR" />
+      <MemberSignature Language="VB.NET" Value="TOOLBAR" />
+      <MemberSignature Language="C++ CLI" Value="TOOLBAR" />
+      <MemberSignature Language="F#" Value="TOOLBAR = 0" Usage="Microsoft.CLRAdmin.MMC_CONTROL_TYPE.TOOLBAR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CLRAdmin.MMC_CONTROL_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

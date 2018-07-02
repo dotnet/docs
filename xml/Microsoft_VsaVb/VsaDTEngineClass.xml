@@ -1,0 +1,168 @@
+﻿<Type Name="VsaDTEngineClass" FullName="Microsoft_VsaVb.VsaDTEngineClass">
+  <TypeSignature Language="C#" Value="public class VsaDTEngineClass : Microsoft.Vsa.IVsaDTEngine, Microsoft_VsaVb.VsaDTEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi VsaDTEngineClass extends System.Object implements class Microsoft.Vsa.IVsaDTEngine, class Microsoft_VsaVb.VsaDTEngine" />
+  <TypeSignature Language="DocId" Value="T:Microsoft_VsaVb.VsaDTEngineClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsaDTEngineClass&#xA;Implements IVsaDTEngine, VsaDTEngine" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaDTEngineClass : Microsoft::Vsa::IVsaDTEngine, Microsoft_VsaVb::VsaDTEngine" />
+  <TypeSignature Language="F#" Value="type VsaDTEngineClass = class&#xA;    interface IVsaDTEngine&#xA;    interface VsaDTEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft_VsaVb</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaDTEngine</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft_VsaVb.VsaDTEngine</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3089D50C-DDAC-4743-9FBF-C15743A32161")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(2)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VsaDTEngineClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft_VsaVb.VsaDTEngineClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VsaDTEngineClass();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft_VsaVb</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachDebugger">
+      <MemberSignature Language="C#" Value="public virtual void AttachDebugger (bool isAttach);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AttachDebugger([in]bool isAttach) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft_VsaVb.VsaDTEngineClass.AttachDebugger(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AttachDebugger (isAttach As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AttachDebugger(bool isAttach) = Microsoft::Vsa::IVsaDTEngine::AttachDebugger;" />
+      <MemberSignature Language="F#" Value="abstract member AttachDebugger : bool -&gt; unit&#xA;override this.AttachDebugger : bool -&gt; unit" Usage="vsaDTEngineClass.AttachDebugger isAttach" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaDTEngine.AttachDebugger(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft_VsaVb</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isAttach" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isAttach">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIDE">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Vsa.IVsaIDE GetIDE ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Vsa.IVsaIDE GetIDE() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft_VsaVb.VsaDTEngineClass.GetIDE" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIDE () As IVsaIDE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Vsa::IVsaIDE ^ GetIDE() = Microsoft::Vsa::IVsaDTEngine::GetIDE;" />
+      <MemberSignature Language="F#" Value="abstract member GetIDE : unit -&gt; Microsoft.Vsa.IVsaIDE&#xA;override this.GetIDE : unit -&gt; Microsoft.Vsa.IVsaIDE" Usage="vsaDTEngineClass.GetIDE " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaDTEngine.GetIDE</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft_VsaVb</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaIDE</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitCompleted">
+      <MemberSignature Language="C#" Value="public virtual void InitCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitCompleted() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft_VsaVb.VsaDTEngineClass.InitCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitCompleted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitCompleted() = Microsoft::Vsa::IVsaDTEngine::InitCompleted;" />
+      <MemberSignature Language="F#" Value="abstract member InitCompleted : unit -&gt; unit&#xA;override this.InitCompleted : unit -&gt; unit" Usage="vsaDTEngineClass.InitCompleted " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaDTEngine.InitCompleted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft_VsaVb</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetURL">
+      <MemberSignature Language="C#" Value="public virtual string TargetURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaDTEngineClass.TargetURL" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TargetURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TargetURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetURL : string with get, set" Usage="Microsoft_VsaVb.VsaDTEngineClass.TargetURL" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaDTEngine.TargetURL</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft_VsaVb</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678272)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

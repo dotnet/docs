@@ -1,0 +1,101 @@
+﻿<Type Name="eParamAttr" FullName="Microsoft.VisualStudio.VsWizard.eParamAttr">
+  <TypeSignature Language="C#" Value="public enum eParamAttr" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed eParamAttr extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.eParamAttr" />
+  <TypeSignature Language="VB.NET" Value="Public Enum eParamAttr" />
+  <TypeSignature Language="C++ CLI" Value="public enum class eParamAttr" />
+  <TypeSignature Language="F#" Value="type eParamAttr = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="eparamIn">
+      <MemberSignature Language="C#" Value="eparamIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.eParamAttr eparamIn = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.eParamAttr.eparamIn" />
+      <MemberSignature Language="VB.NET" Value="eparamIn" />
+      <MemberSignature Language="C++ CLI" Value="eparamIn" />
+      <MemberSignature Language="F#" Value="eparamIn = 0" Usage="Microsoft.VisualStudio.VsWizard.eParamAttr.eparamIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.eParamAttr</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eparamInOut">
+      <MemberSignature Language="C#" Value="eparamInOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.eParamAttr eparamInOut = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.eParamAttr.eparamInOut" />
+      <MemberSignature Language="VB.NET" Value="eparamInOut" />
+      <MemberSignature Language="C++ CLI" Value="eparamInOut" />
+      <MemberSignature Language="F#" Value="eparamInOut = 2" Usage="Microsoft.VisualStudio.VsWizard.eParamAttr.eparamInOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.eParamAttr</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eparamOut">
+      <MemberSignature Language="C#" Value="eparamOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.eParamAttr eparamOut = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.eParamAttr.eparamOut" />
+      <MemberSignature Language="VB.NET" Value="eparamOut" />
+      <MemberSignature Language="C++ CLI" Value="eparamOut" />
+      <MemberSignature Language="F#" Value="eparamOut = 1" Usage="Microsoft.VisualStudio.VsWizard.eParamAttr.eparamOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.eParamAttr</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eparamOutRetval">
+      <MemberSignature Language="C#" Value="eparamOutRetval" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VsWizard.eParamAttr eparamOutRetval = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VsWizard.eParamAttr.eparamOutRetval" />
+      <MemberSignature Language="VB.NET" Value="eparamOutRetval" />
+      <MemberSignature Language="C++ CLI" Value="eparamOutRetval" />
+      <MemberSignature Language="F#" Value="eparamOutRetval = 3" Usage="Microsoft.VisualStudio.VsWizard.eParamAttr.eparamOutRetval" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VsWizard.eParamAttr</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

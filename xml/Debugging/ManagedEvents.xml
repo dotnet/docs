@@ -1,0 +1,1184 @@
+﻿<Type Name="ManagedEvents" FullName="Debugging.ManagedEvents">
+  <TypeSignature Language="C#" Value="public class ManagedEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedEvents extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Debugging.ManagedEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedEvents" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedEvents" />
+  <TypeSignature Language="F#" Value="type ManagedEvents = class" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedEvents();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainExit">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedAppDomainEventHandler AppDomainExit;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedAppDomainEventHandler AppDomainExit" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.AppDomainExit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AppDomainExit As DebuggedAppDomainEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedAppDomainEventHandler ^ AppDomainExit;" />
+      <MemberSignature Language="F#" Value="member this.AppDomainExit : Debugging.DebuggedAppDomainEventHandler " Usage="member this.AppDomainExit : Debugging.DebuggedAppDomainEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedAppDomainEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyLoad">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedAssemblyEventHandler AssemblyLoad;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedAssemblyEventHandler AssemblyLoad" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.AssemblyLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AssemblyLoad As DebuggedAssemblyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedAssemblyEventHandler ^ AssemblyLoad;" />
+      <MemberSignature Language="F#" Value="member this.AssemblyLoad : Debugging.DebuggedAssemblyEventHandler " Usage="member this.AssemblyLoad : Debugging.DebuggedAssemblyEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedAssemblyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyUnload">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedAssemblyEventHandler AssemblyUnload;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedAssemblyEventHandler AssemblyUnload" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.AssemblyUnload" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AssemblyUnload As DebuggedAssemblyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedAssemblyEventHandler ^ AssemblyUnload;" />
+      <MemberSignature Language="F#" Value="member this.AssemblyUnload : Debugging.DebuggedAssemblyEventHandler " Usage="member this.AssemblyUnload : Debugging.DebuggedAssemblyEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedAssemblyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachToProcess">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedProcess AttachToProcess (int pid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.DebuggedProcess AttachToProcess(int32 pid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.AttachToProcess(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AttachToProcess (pid As Integer) As DebuggedProcess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::DebuggedProcess ^ AttachToProcess(int pid);" />
+      <MemberSignature Language="F#" Value="member this.AttachToProcess : int -&gt; Debugging.DebuggedProcess" Usage="managedEvents.AttachToProcess pid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedProcess</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Break">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedThreadEventHandler Break;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedThreadEventHandler Break" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.Break" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Break As DebuggedThreadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedThreadEventHandler ^ Break;" />
+      <MemberSignature Language="F#" Value="member this.Break : Debugging.DebuggedThreadEventHandler " Usage="member this.Break : Debugging.DebuggedThreadEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedThreadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Breakpoint">
+      <MemberSignature Language="C#" Value="public event Debugging.BreakpointEventHandler Breakpoint;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.BreakpointEventHandler Breakpoint" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.Breakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Breakpoint As BreakpointEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::BreakpointEventHandler ^ Breakpoint;" />
+      <MemberSignature Language="F#" Value="member this.Breakpoint : Debugging.BreakpointEventHandler " Usage="member this.Breakpoint : Debugging.BreakpointEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.BreakpointEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassLoad">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedClassEventHandler ClassLoad;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedClassEventHandler ClassLoad" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ClassLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ClassLoad As DebuggedClassEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedClassEventHandler ^ ClassLoad;" />
+      <MemberSignature Language="F#" Value="member this.ClassLoad : Debugging.DebuggedClassEventHandler " Usage="member this.ClassLoad : Debugging.DebuggedClassEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedClassEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassUnload">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedClassEventHandler ClassUnload;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedClassEventHandler ClassUnload" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ClassUnload" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ClassUnload As DebuggedClassEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedClassEventHandler ^ ClassUnload;" />
+      <MemberSignature Language="F#" Value="member this.ClassUnload : Debugging.DebuggedClassEventHandler " Usage="member this.ClassUnload : Debugging.DebuggedClassEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedClassEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="managedEvents.Close " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlCTrap">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedProcessEventHandler ControlCTrap;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedProcessEventHandler ControlCTrap" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ControlCTrap" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ControlCTrap As DebuggedProcessEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedProcessEventHandler ^ ControlCTrap;" />
+      <MemberSignature Language="F#" Value="member this.ControlCTrap : Debugging.DebuggedProcessEventHandler " Usage="member this.ControlCTrap : Debugging.DebuggedProcessEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedProcessEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAppDomain">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedAppDomainEventHandler CreateAppDomain;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedAppDomainEventHandler CreateAppDomain" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.CreateAppDomain" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CreateAppDomain As DebuggedAppDomainEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedAppDomainEventHandler ^ CreateAppDomain;" />
+      <MemberSignature Language="F#" Value="member this.CreateAppDomain : Debugging.DebuggedAppDomainEventHandler " Usage="member this.CreateAppDomain : Debugging.DebuggedAppDomainEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedAppDomainEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProcess">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedProcessEventHandler CreateProcess;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedProcessEventHandler CreateProcess" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.CreateProcess" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CreateProcess As DebuggedProcessEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedProcessEventHandler ^ CreateProcess;" />
+      <MemberSignature Language="F#" Value="member this.CreateProcess : Debugging.DebuggedProcessEventHandler " Usage="member this.CreateProcess : Debugging.DebuggedProcessEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedProcessEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateThread">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedThreadEventHandler CreateThread;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedThreadEventHandler CreateThread" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.CreateThread" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CreateThread As DebuggedThreadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedThreadEventHandler ^ CreateThread;" />
+      <MemberSignature Language="F#" Value="member this.CreateThread : Debugging.DebuggedThreadEventHandler " Usage="member this.CreateThread : Debugging.DebuggedThreadEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedThreadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggerError">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggerErrorEventHandler DebuggerError;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggerErrorEventHandler DebuggerError" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.DebuggerError" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DebuggerError As DebuggerErrorEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggerErrorEventHandler ^ DebuggerError;" />
+      <MemberSignature Language="F#" Value="member this.DebuggerError : Debugging.DebuggerErrorEventHandler " Usage="member this.DebuggerError : Debugging.DebuggerErrorEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggerErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvalComplete">
+      <MemberSignature Language="C#" Value="public event Debugging.EvalEventHandler EvalComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.EvalEventHandler EvalComplete" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.EvalComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EvalComplete As EvalEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::EvalEventHandler ^ EvalComplete;" />
+      <MemberSignature Language="F#" Value="member this.EvalComplete : Debugging.EvalEventHandler " Usage="member this.EvalComplete : Debugging.EvalEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.EvalEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvalException">
+      <MemberSignature Language="C#" Value="public event Debugging.EvalEventHandler EvalException;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.EvalEventHandler EvalException" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.EvalException" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EvalException As EvalEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::EvalEventHandler ^ EvalException;" />
+      <MemberSignature Language="F#" Value="member this.EvalException : Debugging.EvalEventHandler " Usage="member this.EvalException : Debugging.EvalEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.EvalEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedExceptionEventHandler Exception;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedExceptionEventHandler Exception" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Exception As DebuggedExceptionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedExceptionEventHandler ^ Exception;" />
+      <MemberSignature Language="F#" Value="member this.Exception : Debugging.DebuggedExceptionEventHandler " Usage="member this.Exception : Debugging.DebuggedExceptionEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedExceptionEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ManagedEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ManagedEvents ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="managedEvents.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDebugger">
+      <MemberSignature Language="C#" Value="public Debugging.CorDebugger GetDebugger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.CorDebugger GetDebugger() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.GetDebugger" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDebugger () As CorDebugger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::CorDebugger ^ GetDebugger();" />
+      <MemberSignature Language="F#" Value="member this.GetDebugger : unit -&gt; Debugging.CorDebugger" Usage="managedEvents.GetDebugger " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.CorDebugger</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogMessage">
+      <MemberSignature Language="C#" Value="public event Debugging.LogMessageEventHandler LogMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.LogMessageEventHandler LogMessage" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.LogMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LogMessage As LogMessageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::LogMessageEventHandler ^ LogMessage;" />
+      <MemberSignature Language="F#" Value="member this.LogMessage : Debugging.LogMessageEventHandler " Usage="member this.LogMessage : Debugging.LogMessageEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.LogMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogSwitch">
+      <MemberSignature Language="C#" Value="public event Debugging.LogSwitchEventHandler LogSwitch;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.LogSwitchEventHandler LogSwitch" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.LogSwitch" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LogSwitch As LogSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::LogSwitchEventHandler ^ LogSwitch;" />
+      <MemberSignature Language="F#" Value="member this.LogSwitch : Debugging.LogSwitchEventHandler " Usage="member this.LogSwitch : Debugging.LogSwitchEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.LogSwitchEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuleLoad">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedModuleEventHandler ModuleLoad;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedModuleEventHandler ModuleLoad" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ModuleLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ModuleLoad As DebuggedModuleEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedModuleEventHandler ^ ModuleLoad;" />
+      <MemberSignature Language="F#" Value="member this.ModuleLoad : Debugging.DebuggedModuleEventHandler " Usage="member this.ModuleLoad : Debugging.DebuggedModuleEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedModuleEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuleUnload">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedModuleEventHandler ModuleUnload;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedModuleEventHandler ModuleUnload" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ModuleUnload" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ModuleUnload As DebuggedModuleEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedModuleEventHandler ^ ModuleUnload;" />
+      <MemberSignature Language="F#" Value="member this.ModuleUnload : Debugging.DebuggedModuleEventHandler " Usage="member this.ModuleUnload : Debugging.DebuggedModuleEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedModuleEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameChange">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedThreadEventHandler NameChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedThreadEventHandler NameChange" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.NameChange" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NameChange As DebuggedThreadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedThreadEventHandler ^ NameChange;" />
+      <MemberSignature Language="F#" Value="member this.NameChange : Debugging.DebuggedThreadEventHandler " Usage="member this.NameChange : Debugging.DebuggedThreadEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedThreadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppDomainExit">
+      <MemberSignature Language="C#" Value="protected virtual void OnAppDomainExit (Debugging.DebuggedAppDomainEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAppDomainExit(class Debugging.DebuggedAppDomainEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnAppDomainExit(Debugging.DebuggedAppDomainEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAppDomainExit (e As DebuggedAppDomainEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAppDomainExit(Debugging::DebuggedAppDomainEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAppDomainExit : Debugging.DebuggedAppDomainEventArgs -&gt; unit&#xA;override this.OnAppDomainExit : Debugging.DebuggedAppDomainEventArgs -&gt; unit" Usage="managedEvents.OnAppDomainExit e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedAppDomainEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAssemblyLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnAssemblyLoad (Debugging.DebuggedAssemblyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAssemblyLoad(class Debugging.DebuggedAssemblyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnAssemblyLoad(Debugging.DebuggedAssemblyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAssemblyLoad (e As DebuggedAssemblyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAssemblyLoad(Debugging::DebuggedAssemblyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAssemblyLoad : Debugging.DebuggedAssemblyEventArgs -&gt; unit&#xA;override this.OnAssemblyLoad : Debugging.DebuggedAssemblyEventArgs -&gt; unit" Usage="managedEvents.OnAssemblyLoad e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedAssemblyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAssemblyUnload">
+      <MemberSignature Language="C#" Value="protected virtual void OnAssemblyUnload (Debugging.DebuggedAssemblyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAssemblyUnload(class Debugging.DebuggedAssemblyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnAssemblyUnload(Debugging.DebuggedAssemblyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAssemblyUnload (e As DebuggedAssemblyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAssemblyUnload(Debugging::DebuggedAssemblyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAssemblyUnload : Debugging.DebuggedAssemblyEventArgs -&gt; unit&#xA;override this.OnAssemblyUnload : Debugging.DebuggedAssemblyEventArgs -&gt; unit" Usage="managedEvents.OnAssemblyUnload e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedAssemblyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBreak">
+      <MemberSignature Language="C#" Value="protected virtual void OnBreak (Debugging.DebuggedThreadEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBreak(class Debugging.DebuggedThreadEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnBreak(Debugging.DebuggedThreadEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBreak (e As DebuggedThreadEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBreak(Debugging::DebuggedThreadEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBreak : Debugging.DebuggedThreadEventArgs -&gt; unit&#xA;override this.OnBreak : Debugging.DebuggedThreadEventArgs -&gt; unit" Usage="managedEvents.OnBreak e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedThreadEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBreakpoint">
+      <MemberSignature Language="C#" Value="protected virtual void OnBreakpoint (Debugging.BreakpointEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBreakpoint(class Debugging.BreakpointEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnBreakpoint(Debugging.BreakpointEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBreakpoint (e As BreakpointEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBreakpoint(Debugging::BreakpointEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBreakpoint : Debugging.BreakpointEventArgs -&gt; unit&#xA;override this.OnBreakpoint : Debugging.BreakpointEventArgs -&gt; unit" Usage="managedEvents.OnBreakpoint e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.BreakpointEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClassLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnClassLoad (Debugging.DebuggedClassEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClassLoad(class Debugging.DebuggedClassEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnClassLoad(Debugging.DebuggedClassEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClassLoad (e As DebuggedClassEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClassLoad(Debugging::DebuggedClassEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClassLoad : Debugging.DebuggedClassEventArgs -&gt; unit&#xA;override this.OnClassLoad : Debugging.DebuggedClassEventArgs -&gt; unit" Usage="managedEvents.OnClassLoad e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedClassEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClassUnload">
+      <MemberSignature Language="C#" Value="protected virtual void OnClassUnload (Debugging.DebuggedClassEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClassUnload(class Debugging.DebuggedClassEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnClassUnload(Debugging.DebuggedClassEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClassUnload (e As DebuggedClassEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClassUnload(Debugging::DebuggedClassEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClassUnload : Debugging.DebuggedClassEventArgs -&gt; unit&#xA;override this.OnClassUnload : Debugging.DebuggedClassEventArgs -&gt; unit" Usage="managedEvents.OnClassUnload e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedClassEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnControlCTrap">
+      <MemberSignature Language="C#" Value="protected virtual void OnControlCTrap (Debugging.DebuggedProcessEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnControlCTrap(class Debugging.DebuggedProcessEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnControlCTrap(Debugging.DebuggedProcessEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnControlCTrap (e As DebuggedProcessEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnControlCTrap(Debugging::DebuggedProcessEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnControlCTrap : Debugging.DebuggedProcessEventArgs -&gt; unit&#xA;override this.OnControlCTrap : Debugging.DebuggedProcessEventArgs -&gt; unit" Usage="managedEvents.OnControlCTrap e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedProcessEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAppDomain">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateAppDomain (Debugging.DebuggedAppDomainEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateAppDomain(class Debugging.DebuggedAppDomainEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnCreateAppDomain(Debugging.DebuggedAppDomainEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateAppDomain (e As DebuggedAppDomainEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateAppDomain(Debugging::DebuggedAppDomainEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateAppDomain : Debugging.DebuggedAppDomainEventArgs -&gt; unit&#xA;override this.OnCreateAppDomain : Debugging.DebuggedAppDomainEventArgs -&gt; unit" Usage="managedEvents.OnCreateAppDomain e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedAppDomainEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateProcess">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateProcess (Debugging.DebuggedProcessEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateProcess(class Debugging.DebuggedProcessEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnCreateProcess(Debugging.DebuggedProcessEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateProcess (e As DebuggedProcessEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateProcess(Debugging::DebuggedProcessEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateProcess : Debugging.DebuggedProcessEventArgs -&gt; unit&#xA;override this.OnCreateProcess : Debugging.DebuggedProcessEventArgs -&gt; unit" Usage="managedEvents.OnCreateProcess e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedProcessEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateThread">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateThread (Debugging.DebuggedThreadEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateThread(class Debugging.DebuggedThreadEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnCreateThread(Debugging.DebuggedThreadEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateThread (e As DebuggedThreadEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateThread(Debugging::DebuggedThreadEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateThread : Debugging.DebuggedThreadEventArgs -&gt; unit&#xA;override this.OnCreateThread : Debugging.DebuggedThreadEventArgs -&gt; unit" Usage="managedEvents.OnCreateThread e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedThreadEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDebuggerError">
+      <MemberSignature Language="C#" Value="protected virtual void OnDebuggerError (Debugging.DebuggerErrorEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDebuggerError(class Debugging.DebuggerErrorEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnDebuggerError(Debugging.DebuggerErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDebuggerError (e As DebuggerErrorEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDebuggerError(Debugging::DebuggerErrorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDebuggerError : Debugging.DebuggerErrorEventArgs -&gt; unit&#xA;override this.OnDebuggerError : Debugging.DebuggerErrorEventArgs -&gt; unit" Usage="managedEvents.OnDebuggerError e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggerErrorEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEvalComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnEvalComplete (Debugging.EvalEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEvalComplete(class Debugging.EvalEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnEvalComplete(Debugging.EvalEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEvalComplete (e As EvalEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEvalComplete(Debugging::EvalEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnEvalComplete : Debugging.EvalEventArgs -&gt; unit&#xA;override this.OnEvalComplete : Debugging.EvalEventArgs -&gt; unit" Usage="managedEvents.OnEvalComplete e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.EvalEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEvalException">
+      <MemberSignature Language="C#" Value="protected virtual void OnEvalException (Debugging.EvalEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEvalException(class Debugging.EvalEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnEvalException(Debugging.EvalEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEvalException (e As EvalEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEvalException(Debugging::EvalEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnEvalException : Debugging.EvalEventArgs -&gt; unit&#xA;override this.OnEvalException : Debugging.EvalEventArgs -&gt; unit" Usage="managedEvents.OnEvalException e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.EvalEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnException">
+      <MemberSignature Language="C#" Value="protected virtual void OnException (Debugging.DebuggedExceptionEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnException(class Debugging.DebuggedExceptionEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnException(Debugging.DebuggedExceptionEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnException (e As DebuggedExceptionEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnException(Debugging::DebuggedExceptionEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnException : Debugging.DebuggedExceptionEventArgs -&gt; unit&#xA;override this.OnException : Debugging.DebuggedExceptionEventArgs -&gt; unit" Usage="managedEvents.OnException e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedExceptionEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLogMessage">
+      <MemberSignature Language="C#" Value="protected virtual void OnLogMessage (Debugging.LogMessageEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLogMessage(class Debugging.LogMessageEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnLogMessage(Debugging.LogMessageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLogMessage (e As LogMessageEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLogMessage(Debugging::LogMessageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLogMessage : Debugging.LogMessageEventArgs -&gt; unit&#xA;override this.OnLogMessage : Debugging.LogMessageEventArgs -&gt; unit" Usage="managedEvents.OnLogMessage e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.LogMessageEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLogSwitch">
+      <MemberSignature Language="C#" Value="protected virtual void OnLogSwitch (Debugging.LogSwitchEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLogSwitch(class Debugging.LogSwitchEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnLogSwitch(Debugging.LogSwitchEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLogSwitch (e As LogSwitchEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLogSwitch(Debugging::LogSwitchEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLogSwitch : Debugging.LogSwitchEventArgs -&gt; unit&#xA;override this.OnLogSwitch : Debugging.LogSwitchEventArgs -&gt; unit" Usage="managedEvents.OnLogSwitch e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.LogSwitchEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModuleLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnModuleLoad (Debugging.DebuggedModuleEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModuleLoad(class Debugging.DebuggedModuleEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnModuleLoad(Debugging.DebuggedModuleEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModuleLoad (e As DebuggedModuleEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModuleLoad(Debugging::DebuggedModuleEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnModuleLoad : Debugging.DebuggedModuleEventArgs -&gt; unit&#xA;override this.OnModuleLoad : Debugging.DebuggedModuleEventArgs -&gt; unit" Usage="managedEvents.OnModuleLoad e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedModuleEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModuleUnload">
+      <MemberSignature Language="C#" Value="protected virtual void OnModuleUnload (Debugging.DebuggedModuleEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModuleUnload(class Debugging.DebuggedModuleEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnModuleUnload(Debugging.DebuggedModuleEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModuleUnload (e As DebuggedModuleEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModuleUnload(Debugging::DebuggedModuleEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnModuleUnload : Debugging.DebuggedModuleEventArgs -&gt; unit&#xA;override this.OnModuleUnload : Debugging.DebuggedModuleEventArgs -&gt; unit" Usage="managedEvents.OnModuleUnload e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedModuleEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNameChange">
+      <MemberSignature Language="C#" Value="protected virtual void OnNameChange (Debugging.DebuggedThreadEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNameChange(class Debugging.DebuggedThreadEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnNameChange(Debugging.DebuggedThreadEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNameChange (e As DebuggedThreadEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNameChange(Debugging::DebuggedThreadEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnNameChange : Debugging.DebuggedThreadEventArgs -&gt; unit&#xA;override this.OnNameChange : Debugging.DebuggedThreadEventArgs -&gt; unit" Usage="managedEvents.OnNameChange e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedThreadEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcessExit">
+      <MemberSignature Language="C#" Value="protected virtual void OnProcessExit (Debugging.DebuggedProcessEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnProcessExit(class Debugging.DebuggedProcessEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnProcessExit(Debugging.DebuggedProcessEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnProcessExit (e As DebuggedProcessEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnProcessExit(Debugging::DebuggedProcessEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnProcessExit : Debugging.DebuggedProcessEventArgs -&gt; unit&#xA;override this.OnProcessExit : Debugging.DebuggedProcessEventArgs -&gt; unit" Usage="managedEvents.OnProcessExit e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedProcessEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStepComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnStepComplete (Debugging.StepCompleteEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStepComplete(class Debugging.StepCompleteEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnStepComplete(Debugging.StepCompleteEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStepComplete (e As StepCompleteEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStepComplete(Debugging::StepCompleteEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnStepComplete : Debugging.StepCompleteEventArgs -&gt; unit&#xA;override this.OnStepComplete : Debugging.StepCompleteEventArgs -&gt; unit" Usage="managedEvents.OnStepComplete e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.StepCompleteEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnThreadExit">
+      <MemberSignature Language="C#" Value="protected virtual void OnThreadExit (Debugging.DebuggedThreadEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThreadExit(class Debugging.DebuggedThreadEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnThreadExit(Debugging.DebuggedThreadEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThreadExit (e As DebuggedThreadEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnThreadExit(Debugging::DebuggedThreadEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnThreadExit : Debugging.DebuggedThreadEventArgs -&gt; unit&#xA;override this.OnThreadExit : Debugging.DebuggedThreadEventArgs -&gt; unit" Usage="managedEvents.OnThreadExit e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.DebuggedThreadEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUpdateModuleSymbols">
+      <MemberSignature Language="C#" Value="protected virtual void OnUpdateModuleSymbols (Debugging.UpdateModuleSymbolsEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUpdateModuleSymbols(class Debugging.UpdateModuleSymbolsEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.ManagedEvents.OnUpdateModuleSymbols(Debugging.UpdateModuleSymbolsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUpdateModuleSymbols (e As UpdateModuleSymbolsEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUpdateModuleSymbols(Debugging::UpdateModuleSymbolsEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUpdateModuleSymbols : Debugging.UpdateModuleSymbolsEventArgs -&gt; unit&#xA;override this.OnUpdateModuleSymbols : Debugging.UpdateModuleSymbolsEventArgs -&gt; unit" Usage="managedEvents.OnUpdateModuleSymbols e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Debugging.UpdateModuleSymbolsEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessExit">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedProcessEventHandler ProcessExit;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedProcessEventHandler ProcessExit" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ProcessExit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ProcessExit As DebuggedProcessEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedProcessEventHandler ^ ProcessExit;" />
+      <MemberSignature Language="F#" Value="member this.ProcessExit : Debugging.DebuggedProcessEventHandler " Usage="member this.ProcessExit : Debugging.DebuggedProcessEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedProcessEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepComplete">
+      <MemberSignature Language="C#" Value="public event Debugging.StepCompleteEventHandler StepComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.StepCompleteEventHandler StepComplete" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.StepComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StepComplete As StepCompleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::StepCompleteEventHandler ^ StepComplete;" />
+      <MemberSignature Language="F#" Value="member this.StepComplete : Debugging.StepCompleteEventHandler " Usage="member this.StepComplete : Debugging.StepCompleteEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.StepCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadExit">
+      <MemberSignature Language="C#" Value="public event Debugging.DebuggedThreadEventHandler ThreadExit;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.DebuggedThreadEventHandler ThreadExit" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.ThreadExit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ThreadExit As DebuggedThreadEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::DebuggedThreadEventHandler ^ ThreadExit;" />
+      <MemberSignature Language="F#" Value="member this.ThreadExit : Debugging.DebuggedThreadEventHandler " Usage="member this.ThreadExit : Debugging.DebuggedThreadEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedThreadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateModuleSymbols">
+      <MemberSignature Language="C#" Value="public event Debugging.UpdateModuleSymbolsEventHandler UpdateModuleSymbols;" />
+      <MemberSignature Language="ILAsm" Value=".event class Debugging.UpdateModuleSymbolsEventHandler UpdateModuleSymbols" />
+      <MemberSignature Language="DocId" Value="E:Debugging.ManagedEvents.UpdateModuleSymbols" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateModuleSymbols As UpdateModuleSymbolsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Debugging::UpdateModuleSymbolsEventHandler ^ UpdateModuleSymbols;" />
+      <MemberSignature Language="F#" Value="member this.UpdateModuleSymbols : Debugging.UpdateModuleSymbolsEventHandler " Usage="member this.UpdateModuleSymbols : Debugging.UpdateModuleSymbolsEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.UpdateModuleSymbolsEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

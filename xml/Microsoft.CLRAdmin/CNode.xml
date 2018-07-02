@@ -1,0 +1,886 @@
+﻿<Type Name="CNode" FullName="Microsoft.CLRAdmin.CNode">
+  <TypeSignature Language="C#" Value="public class CNode : Microsoft.CLRAdmin.IEnumTASK" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CNode extends System.Object implements class Microsoft.CLRAdmin.IEnumTASK" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.CNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class CNode&#xA;Implements IEnumTASK" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CNode : Microsoft::CLRAdmin::IEnumTASK" />
+  <TypeSignature Language="F#" Value="type CNode = class&#xA;    interface IEnumTASK" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.CLRAdmin.IEnumTASK</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddImages">
+      <MemberSignature Language="C#" Value="public virtual void AddImages (ref Microsoft.CLRAdmin.IImageList il);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddImages(class Microsoft.CLRAdmin.IImageList&amp; il) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.AddImages(Microsoft.CLRAdmin.IImageList@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddImages (ByRef il As IImageList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddImages(Microsoft::CLRAdmin::IImageList ^ % il);" />
+      <MemberSignature Language="F#" Value="abstract member AddImages :  -&gt; unit&#xA;override this.AddImages :  -&gt; unit" Usage="cNode.AddImages il" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.AddImages(Microsoft.CLRAdmin.IImageList@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="il" Type="Microsoft.CLRAdmin.IImageList&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="il">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ByteArrayToString">
+      <MemberSignature Language="C#" Value="protected static string ByteArrayToString (byte[] b);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string ByteArrayToString(unsigned int8[] b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.ByteArrayToString(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function ByteArrayToString (b As Byte()) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ ByteArrayToString(cli::array &lt;System::Byte&gt; ^ b);" />
+      <MemberSignature Language="F#" Value="static member ByteArrayToString : byte[] -&gt; string" Usage="Microsoft.CLRAdmin.CNode.ByteArrayToString b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public int Clone (ref Microsoft.CLRAdmin.IEnumTASK ppenum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Clone(class Microsoft.CLRAdmin.IEnumTASK&amp; ppenum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.Clone(Microsoft.CLRAdmin.IEnumTASK@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone (ByRef ppenum As IEnumTASK) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Clone(Microsoft::CLRAdmin::IEnumTASK ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; int&#xA;override this.Clone :  -&gt; int" Usage="cNode.Clone ppenum" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Clone(Microsoft.CLRAdmin.IEnumTASK@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppenum" Type="Microsoft.CLRAdmin.IEnumTASK&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ppenum">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseAllMyPropertyPages">
+      <MemberSignature Language="C#" Value="protected virtual void CloseAllMyPropertyPages ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseAllMyPropertyPages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.CloseAllMyPropertyPages" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseAllMyPropertyPages ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseAllMyPropertyPages();" />
+      <MemberSignature Language="F#" Value="abstract member CloseAllMyPropertyPages : unit -&gt; unit&#xA;override this.CloseAllMyPropertyPages : unit -&gt; unit" Usage="cNode.CloseAllMyPropertyPages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookie">
+      <MemberSignature Language="C#" Value="public int Cookie { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Cookie" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.CLRAdmin.CNode.Cookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cookie As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Cookie { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Cookie : int with get, set" Usage="Microsoft.CLRAdmin.CNode.Cookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewPropPages">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.CLRAdmin.CPropPage[] CreateNewPropPages (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.CLRAdmin.CPropPage[] CreateNewPropPages(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.CreateNewPropPages(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNewPropPages (o As Object) As CPropPage()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Microsoft::CLRAdmin::CPropPage ^&gt; ^ CreateNewPropPages(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member CreateNewPropPages : obj -&gt; Microsoft.CLRAdmin.CPropPage[]&#xA;override this.CreateNewPropPages : obj -&gt; Microsoft.CLRAdmin.CPropPage[]" Usage="cNode.CreateNewPropPages o" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.CreateNewPropPages(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CLRAdmin.CPropPage[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertyPages">
+      <MemberSignature Language="C#" Value="protected virtual void CreatePropertyPages ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreatePropertyPages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.CreatePropertyPages" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreatePropertyPages ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreatePropertyPages();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePropertyPages : unit -&gt; unit&#xA;override this.CreatePropertyPages : unit -&gt; unit" Usage="cNode.CreatePropertyPages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoesItemHavePropPage">
+      <MemberSignature Language="C#" Value="public virtual bool DoesItemHavePropPage (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DoesItemHavePropPage(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.DoesItemHavePropPage(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DoesItemHavePropPage (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DoesItemHavePropPage(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member DoesItemHavePropPage : obj -&gt; bool&#xA;override this.DoesItemHavePropPage : obj -&gt; bool" Usage="cNode.DoesItemHavePropPage o" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.DoesItemHavePropPage(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWaitCursor">
+      <MemberSignature Language="C#" Value="protected void EndWaitCursor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EndWaitCursor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.EndWaitCursor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EndWaitCursor ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndWaitCursor();" />
+      <MemberSignature Language="F#" Value="member this.EndWaitCursor : unit -&gt; unit" Usage="cNode.EndWaitCursor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~CNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!CNode ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="cNode.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getColumnTitles">
+      <MemberSignature Language="C#" Value="public virtual string getColumnTitles (int iIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string getColumnTitles(int32 iIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.getColumnTitles(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function getColumnTitles (iIndex As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ getColumnTitles(int iIndex);" />
+      <MemberSignature Language="F#" Value="abstract member getColumnTitles : int -&gt; string&#xA;override this.getColumnTitles : int -&gt; string" Usage="cNode.getColumnTitles iIndex" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.getColumnTitles(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnWidth">
+      <MemberSignature Language="C#" Value="protected virtual int GetColumnWidth (int nColumn, int nMaxStrLength);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetColumnWidth(int32 nColumn, int32 nMaxStrLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.GetColumnWidth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetColumnWidth (nColumn As Integer, nMaxStrLength As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int GetColumnWidth(int nColumn, int nMaxStrLength);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnWidth : int * int -&gt; int&#xA;override this.GetColumnWidth : int * int -&gt; int" Usage="cNode.GetColumnWidth (nColumn, nMaxStrLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nColumn" Type="System.Int32" />
+        <Parameter Name="nMaxStrLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nColumn">To be added.</param>
+        <param name="nMaxStrLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageIndex">
+      <MemberSignature Language="C#" Value="public virtual int GetImageIndex (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetImageIndex(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.GetImageIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImageIndex (i As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetImageIndex(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetImageIndex : int -&gt; int&#xA;override this.GetImageIndex : int -&gt; int" Usage="cNode.GetImageIndex i" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.GetImageIndex(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getNumColumns">
+      <MemberSignature Language="C#" Value="public virtual int getNumColumns ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 getNumColumns() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.getNumColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function getNumColumns () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int getNumColumns();" />
+      <MemberSignature Language="F#" Value="abstract member getNumColumns : unit -&gt; int&#xA;override this.getNumColumns : unit -&gt; int" Usage="cNode.getNumColumns " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.getNumColumns</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getNumRows">
+      <MemberSignature Language="C#" Value="public virtual int getNumRows ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 getNumRows() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.getNumRows" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function getNumRows () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int getNumRows();" />
+      <MemberSignature Language="F#" Value="abstract member getNumRows : unit -&gt; int&#xA;override this.getNumRows : unit -&gt; int" Usage="cNode.getNumRows " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.getNumRows</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getValues">
+      <MemberSignature Language="C#" Value="public virtual string getValues (int iX, int iY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string getValues(int32 iX, int32 iY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.getValues(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function getValues (iX As Integer, iY As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ getValues(int iX, int iY);" />
+      <MemberSignature Language="F#" Value="abstract member getValues : int * int -&gt; string&#xA;override this.getValues : int * int -&gt; string" Usage="cNode.getValues (iX, iY)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.getValues(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iX" Type="System.Int32" />
+        <Parameter Name="iY" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iX">To be added.</param>
+        <param name="iY">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_aPropSheetPage">
+      <MemberSignature Language="C#" Value="protected Microsoft.CLRAdmin.CPropPage[] m_aPropSheetPage;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.CLRAdmin.CPropPage[] m_aPropSheetPage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_aPropSheetPage" />
+      <MemberSignature Language="VB.NET" Value="Protected m_aPropSheetPage As CPropPage() " />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;Microsoft::CLRAdmin::CPropPage ^&gt; ^ m_aPropSheetPage;" />
+      <MemberSignature Language="F#" Value="val mutable m_aPropSheetPage : Microsoft.CLRAdmin.CPropPage[]" Usage="Microsoft.CLRAdmin.CNode.m_aPropSheetPage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CLRAdmin.CPropPage[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_fAllowMultiSelectResults">
+      <MemberSignature Language="C#" Value="protected bool m_fAllowMultiSelectResults;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool m_fAllowMultiSelectResults" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_fAllowMultiSelectResults" />
+      <MemberSignature Language="VB.NET" Value="Protected m_fAllowMultiSelectResults As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool m_fAllowMultiSelectResults;" />
+      <MemberSignature Language="F#" Value="val mutable m_fAllowMultiSelectResults : bool" Usage="Microsoft.CLRAdmin.CNode.m_fAllowMultiSelectResults" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_hIcon">
+      <MemberSignature Language="C#" Value="protected IntPtr m_hIcon;" />
+      <MemberSignature Language="ILAsm" Value=".field family native int m_hIcon" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_hIcon" />
+      <MemberSignature Language="VB.NET" Value="Protected m_hIcon As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr m_hIcon;" />
+      <MemberSignature Language="F#" Value="val mutable m_hIcon : nativeint" Usage="Microsoft.CLRAdmin.CNode.m_hIcon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_hModule">
+      <MemberSignature Language="C#" Value="protected IntPtr m_hModule;" />
+      <MemberSignature Language="ILAsm" Value=".field family native int m_hModule" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_hModule" />
+      <MemberSignature Language="VB.NET" Value="Protected m_hModule As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr m_hModule;" />
+      <MemberSignature Language="F#" Value="val mutable m_hModule : nativeint" Usage="Microsoft.CLRAdmin.CNode.m_hModule" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_hPropertyPageRouter">
+      <MemberSignature Language="C#" Value="protected IntPtr m_hPropertyPageRouter;" />
+      <MemberSignature Language="ILAsm" Value=".field family native int m_hPropertyPageRouter" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_hPropertyPageRouter" />
+      <MemberSignature Language="VB.NET" Value="Protected m_hPropertyPageRouter As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr m_hPropertyPageRouter;" />
+      <MemberSignature Language="F#" Value="val mutable m_hPropertyPageRouter : nativeint" Usage="Microsoft.CLRAdmin.CNode.m_hPropertyPageRouter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_iChildren">
+      <MemberSignature Language="C#" Value="protected int[] m_iChildren;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32[] m_iChildren" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_iChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected m_iChildren As Integer() " />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;int&gt; ^ m_iChildren;" />
+      <MemberSignature Language="F#" Value="val mutable m_iChildren : int[]" Usage="Microsoft.CLRAdmin.CNode.m_iChildren" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_iCookie">
+      <MemberSignature Language="C#" Value="protected int m_iCookie;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 m_iCookie" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_iCookie" />
+      <MemberSignature Language="VB.NET" Value="Protected m_iCookie As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int m_iCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_iCookie : int" Usage="Microsoft.CLRAdmin.CNode.m_iCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_iParentHScopeItem">
+      <MemberSignature Language="C#" Value="protected int m_iParentHScopeItem;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 m_iParentHScopeItem" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_iParentHScopeItem" />
+      <MemberSignature Language="VB.NET" Value="Protected m_iParentHScopeItem As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int m_iParentHScopeItem;" />
+      <MemberSignature Language="F#" Value="val mutable m_iParentHScopeItem : int" Usage="Microsoft.CLRAdmin.CNode.m_iParentHScopeItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_iResultNum">
+      <MemberSignature Language="C#" Value="protected int m_iResultNum;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 m_iResultNum" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_iResultNum" />
+      <MemberSignature Language="VB.NET" Value="Protected m_iResultNum As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int m_iResultNum;" />
+      <MemberSignature Language="F#" Value="val mutable m_iResultNum : int" Usage="Microsoft.CLRAdmin.CNode.m_iResultNum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sDisplayName">
+      <MemberSignature Language="C#" Value="protected string m_sDisplayName;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sDisplayName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_sDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sDisplayName As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sDisplayName;" />
+      <MemberSignature Language="F#" Value="val mutable m_sDisplayName : string" Usage="Microsoft.CLRAdmin.CNode.m_sDisplayName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sGuid">
+      <MemberSignature Language="C#" Value="protected string m_sGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sGuid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_sGuid" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sGuid As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sGuid;" />
+      <MemberSignature Language="F#" Value="val mutable m_sGuid : string" Usage="Microsoft.CLRAdmin.CNode.m_sGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sHelpSection">
+      <MemberSignature Language="C#" Value="protected string m_sHelpSection;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sHelpSection" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_sHelpSection" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sHelpSection As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sHelpSection;" />
+      <MemberSignature Language="F#" Value="val mutable m_sHelpSection : string" Usage="Microsoft.CLRAdmin.CNode.m_sHelpSection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sIDName">
+      <MemberSignature Language="C#" Value="protected string m_sIDName;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sIDName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_sIDName" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sIDName As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sIDName;" />
+      <MemberSignature Language="F#" Value="val mutable m_sIDName : string" Usage="Microsoft.CLRAdmin.CNode.m_sIDName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_sPropPageTemplate">
+      <MemberSignature Language="C#" Value="protected string m_sPropPageTemplate;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_sPropPageTemplate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CLRAdmin.CNode.m_sPropPageTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected m_sPropPageTemplate As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_sPropPageTemplate;" />
+      <MemberSignature Language="F#" Value="val mutable m_sPropPageTemplate : string" Usage="Microsoft.CLRAdmin.CNode.m_sPropPageTemplate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public int Next (uint celt, ref Microsoft.CLRAdmin.MMC_TASK rgelt, ref uint pceltFetched);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(unsigned int32 celt, valuetype Microsoft.CLRAdmin.MMC_TASK&amp; rgelt, unsigned int32&amp; pceltFetched) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.Next(System.UInt32,Microsoft.CLRAdmin.MMC_TASK@,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As UInteger, ByRef rgelt As MMC_TASK, ByRef pceltFetched As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next(System::UInt32 celt, Microsoft::CLRAdmin::MMC_TASK % rgelt, System::UInt32 % pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : uint32 *  *  -&gt; int&#xA;override this.Next : uint32 *  *  -&gt; int" Usage="cNode.Next (celt, rgelt, pceltFetched)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Next(System.UInt32,Microsoft.CLRAdmin.MMC_TASK@,System.UInt32@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.UInt32" />
+        <Parameter Name="rgelt" Type="Microsoft.CLRAdmin.MMC_TASK&amp;" RefType="ref" />
+        <Parameter Name="pceltFetched" Type="System.UInt32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="celt">To be added.</param>
+        <param name="rgelt">To be added.</param>
+        <param name="pceltFetched">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshDisplayName">
+      <MemberSignature Language="C#" Value="protected void RefreshDisplayName ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RefreshDisplayName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.RefreshDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RefreshDisplayName ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RefreshDisplayName();" />
+      <MemberSignature Language="F#" Value="member this.RefreshDisplayName : unit -&gt; unit" Usage="cNode.RefreshDisplayName " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSpecificChildByIndex">
+      <MemberSignature Language="C#" Value="protected void RemoveSpecificChildByIndex (int nIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveSpecificChildByIndex(int32 nIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.RemoveSpecificChildByIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveSpecificChildByIndex (nIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveSpecificChildByIndex(int nIndex);" />
+      <MemberSignature Language="F#" Value="member this.RemoveSpecificChildByIndex : int -&gt; unit" Usage="cNode.RemoveSpecificChildByIndex nIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public int Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int&#xA;override this.Reset : unit -&gt; int" Usage="cNode.Reset " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Reset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public int Skip (uint celt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(unsigned int32 celt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.Skip(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Skip(System::UInt32 celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : uint32 -&gt; int&#xA;override this.Skip : uint32 -&gt; int" Usage="cNode.Skip celt" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Skip(System.UInt32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="celt" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="celt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartWaitCursor">
+      <MemberSignature Language="C#" Value="protected void StartWaitCursor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void StartWaitCursor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.StartWaitCursor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub StartWaitCursor ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void StartWaitCursor();" />
+      <MemberSignature Language="F#" Value="member this.StartWaitCursor : unit -&gt; unit" Usage="cNode.StartWaitCursor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringToByteArray">
+      <MemberSignature Language="C#" Value="protected byte[] StringToByteArray (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance unsigned int8[] StringToByteArray(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.CNode.StringToByteArray(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function StringToByteArray (input As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Byte&gt; ^ StringToByteArray(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="member this.StringToByteArray : string -&gt; byte[]" Usage="cNode.StringToByteArray input" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

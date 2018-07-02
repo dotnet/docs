@@ -1,0 +1,33 @@
+<Type Name="_dispVCProjectEngineEvents_ItemRemovedEventHandler" FullName="Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _dispVCProjectEngineEvents_ItemRemovedEventHandler(object Item, object ItemParent);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispVCProjectEngineEvents_ItemRemovedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine._dispVCProjectEngineEvents_ItemRemovedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _dispVCProjectEngineEvents_ItemRemovedEventHandler(Item As Object, ItemParent As Object)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _dispVCProjectEngineEvents_ItemRemovedEventHandler(System::Object ^ Item, System::Object ^ ItemParent);" />
+  <TypeSignature Language="F#" Value="type _dispVCProjectEngineEvents_ItemRemovedEventHandler = delegate of obj * obj -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Item" Type="System.Object" />
+    <Parameter Name="ItemParent" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Item">To be added.</param>
+    <param name="ItemParent">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

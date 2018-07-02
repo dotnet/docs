@@ -139,6 +139,28 @@ public sealed class First2of3 : NativeActivity
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetAutomationHelpText">
+      <MemberSignature Language="C#" Value="protected override string GetAutomationHelpText ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAutomationHelpText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.GetAutomationHelpText" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationHelpText () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationHelpText();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationHelpText : unit -&gt; string" Usage="activityDesigner.GetAutomationHelpText " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetAutomationIdMemberName">
       <MemberSignature Language="C#" Value="protected override string GetAutomationIdMemberName ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAutomationIdMemberName() cil managed" />

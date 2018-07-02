@@ -1,0 +1,86 @@
+﻿<Type Name="enumFileFormat" FullName="Microsoft.VisualStudio.VCProjectEngine.enumFileFormat">
+  <TypeSignature Language="C#" Value="public enum enumFileFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed enumFileFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.enumFileFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum enumFileFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class enumFileFormat" />
+  <TypeSignature Language="F#" Value="type enumFileFormat = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="eANSI">
+      <MemberSignature Language="C#" Value="eANSI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumFileFormat eANSI = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eANSI" />
+      <MemberSignature Language="VB.NET" Value="eANSI" />
+      <MemberSignature Language="C++ CLI" Value="eANSI" />
+      <MemberSignature Language="F#" Value="eANSI = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eANSI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumFileFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eUnicode">
+      <MemberSignature Language="C#" Value="eUnicode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumFileFormat eUnicode = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eUnicode" />
+      <MemberSignature Language="VB.NET" Value="eUnicode" />
+      <MemberSignature Language="C++ CLI" Value="eUnicode" />
+      <MemberSignature Language="F#" Value="eUnicode = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eUnicode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumFileFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="eUTF8">
+      <MemberSignature Language="C#" Value="eUTF8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.enumFileFormat eUTF8 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eUTF8" />
+      <MemberSignature Language="VB.NET" Value="eUTF8" />
+      <MemberSignature Language="C++ CLI" Value="eUTF8" />
+      <MemberSignature Language="F#" Value="eUTF8 = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.enumFileFormat.eUTF8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.enumFileFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

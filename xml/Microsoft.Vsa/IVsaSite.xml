@@ -1,0 +1,165 @@
+﻿<Type Name="IVsaSite" FullName="Microsoft.Vsa.IVsaSite">
+  <TypeSignature Language="C#" Value="public interface IVsaSite" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaSite" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaSite" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVsaSite" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVsaSite" />
+  <TypeSignature Language="F#" Value="type IVsaSite = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("E0C0FFE2-7eea-4ee2-b7e4-0080c7eb0b74")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCompiledState">
+      <MemberSignature Language="C#" Value="public void GetCompiledState (out byte[] pe, out byte[] debugInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetCompiledState (ByRef pe As Byte(), ByRef debugInfo As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCompiledState([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pe, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % debugInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetCompiledState :  *  -&gt; unit" Usage="iVsaSite.GetCompiledState (pe, debugInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pe">To be added.</param>
+        <param name="debugInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventSourceInstance">
+      <MemberSignature Language="C#" Value="public object GetEventSourceInstance (string itemName, string eventSourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEventSourceInstance(string itemName, string eventSourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaSite.GetEventSourceInstance(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventSourceInstance (itemName As String, eventSourceName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetEventSourceInstance(System::String ^ itemName, System::String ^ eventSourceName);" />
+      <MemberSignature Language="F#" Value="abstract member GetEventSourceInstance : string * string -&gt; obj" Usage="iVsaSite.GetEventSourceInstance (itemName, eventSourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemName" Type="System.String" />
+        <Parameter Name="eventSourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemName">To be added.</param>
+        <param name="eventSourceName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalInstance">
+      <MemberSignature Language="C#" Value="public object GetGlobalInstance (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetGlobalInstance(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaSite.GetGlobalInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalInstance (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetGlobalInstance(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalInstance : string -&gt; obj" Usage="iVsaSite.GetGlobalInstance name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notify">
+      <MemberSignature Language="C#" Value="public void Notify (string notify, object info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Notify(string notify, object info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaSite.Notify(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Notify (notify As String, info As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Notify(System::String ^ notify, System::Object ^ info);" />
+      <MemberSignature Language="F#" Value="abstract member Notify : string * obj -&gt; unit" Usage="iVsaSite.Notify (notify, info)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notify" Type="System.String" />
+        <Parameter Name="info" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="notify">To be added.</param>
+        <param name="info">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCompilerError">
+      <MemberSignature Language="C#" Value="public bool OnCompilerError (Microsoft.Vsa.IVsaError error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnCompilerError(class Microsoft.Vsa.IVsaError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.IVsaSite.OnCompilerError(Microsoft.Vsa.IVsaError)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnCompilerError (error As IVsaError) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnCompilerError(Microsoft::Vsa::IVsaError ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompilerError : Microsoft.Vsa.IVsaError -&gt; bool" Usage="iVsaSite.OnCompilerError error" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="Microsoft.Vsa.IVsaError" />
+      </Parameters>
+      <Docs>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,241 @@
+﻿<Type Name="VCLanguageManager" FullName="Microsoft.VisualStudio.VCCodeModel.VCLanguageManager">
+  <TypeSignature Language="C#" Value="public interface VCLanguageManager" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VCLanguageManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface VCLanguageManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class VCLanguageManager" />
+  <TypeSignature Language="F#" Value="type VCLanguageManager = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("23BE03BE-5CB1-4AD3-A198-F23D276FBF6A")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsReservedName">
+      <MemberSignature Language="C#" Value="public bool IsReservedName (string bstrName, bool bManaged = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsReservedName([in]string bstrName, [in]bool bManaged) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.IsReservedName(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsReservedName (bstrName As String, Optional bManaged As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsReservedName : string * bool -&gt; bool" Usage="vCLanguageManager.IsReservedName (bstrName, bManaged)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+        <Parameter Name="bManaged" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <param name="bManaged">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshUserKeywords">
+      <MemberSignature Language="C#" Value="public void RefreshUserKeywords (string bstrUserTypeFile = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshUserKeywords([in]string bstrUserTypeFile) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.RefreshUserKeywords(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshUserKeywords (Optional bstrUserTypeFile As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member RefreshUserKeywords : string -&gt; unit" Usage="vCLanguageManager.RefreshUserKeywords bstrUserTypeFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrUserTypeFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrUserTypeFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateFileName">
+      <MemberSignature Language="C#" Value="public bool ValidateFileName (string bstrFile, Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension eFileType = Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension.vsCMValidateFileExtCpp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateFileName([in]string bstrFile, [in]valuetype Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension eFileType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.ValidateFileName(System.String,Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateFileName (bstrFile As String, Optional eFileType As vsCMValidateFileExtension = Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension.vsCMValidateFileExtCpp) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ValidateFileName : string * Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension -&gt; bool" Usage="vCLanguageManager.ValidateFileName (bstrFile, eFileType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrFile" Type="System.String" />
+        <Parameter Name="eFileType" Type="Microsoft.VisualStudio.VCCodeModel.vsCMValidateFileExtension" />
+      </Parameters>
+      <Docs>
+        <param name="bstrFile">To be added.</param>
+        <param name="eFileType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateIdentifier">
+      <MemberSignature Language="C#" Value="public bool ValidateIdentifier (string bstrIdentifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateIdentifier([in]string bstrIdentifier) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.ValidateIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateIdentifier (bstrIdentifier As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateIdentifier(System::String ^ bstrIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateIdentifier : string -&gt; bool" Usage="vCLanguageManager.ValidateIdentifier bstrIdentifier" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrIdentifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrIdentifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateParameterNames">
+      <MemberSignature Language="C#" Value="public bool ValidateParameterNames (string bstrName, string bstrParameterNames, EnvDTE.vsCMElement Kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateParameterNames([in]string bstrName, [in]string bstrParameterNames, [in]valuetype EnvDTE.vsCMElement Kind) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.ValidateParameterNames(System.String,System.String,EnvDTE.vsCMElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateParameterNames (bstrName As String, bstrParameterNames As String, Kind As vsCMElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateParameterNames(System::String ^ bstrName, System::String ^ bstrParameterNames, EnvDTE::vsCMElement Kind);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateParameterNames : string * string * EnvDTE.vsCMElement -&gt; bool" Usage="vCLanguageManager.ValidateParameterNames (bstrName, bstrParameterNames, Kind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+        <Parameter Name="bstrParameterNames" Type="System.String" />
+        <Parameter Name="Kind" Type="EnvDTE.vsCMElement" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <param name="bstrParameterNames">To be added.</param>
+        <param name="Kind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateQualifiedName">
+      <MemberSignature Language="C#" Value="public bool ValidateQualifiedName (string bstrName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateQualifiedName([in]string bstrName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.ValidateQualifiedName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateQualifiedName (bstrName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateQualifiedName(System::String ^ bstrName);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateQualifiedName : string -&gt; bool" Usage="vCLanguageManager.ValidateQualifiedName bstrName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateType">
+      <MemberSignature Language="C#" Value="public bool ValidateType (string bstrType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateType([in]string bstrType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.VCLanguageManager.ValidateType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateType (bstrType As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateType(System::String ^ bstrType);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateType : string -&gt; bool" Usage="vCLanguageManager.ValidateType bstrType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

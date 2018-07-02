@@ -1,0 +1,1496 @@
+﻿<Type Name="WmlMobileTextWriter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter">
+  <TypeSignature Language="C#" Value="public class WmlMobileTextWriter : System.Web.UI.MobileControls.ShippedAdapterSource.MobileTextWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlMobileTextWriter extends System.Web.UI.MobileControls.ShippedAdapterSource.MobileTextWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlMobileTextWriter&#xA;Inherits MobileTextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlMobileTextWriter : System::Web::UI::MobileControls::ShippedAdapterSource::MobileTextWriter" />
+  <TypeSignature Language="F#" Value="type WmlMobileTextWriter = class&#xA;    inherit MobileTextWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ShippedAdapterSource.MobileTextWriter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WmlMobileTextWriter (System.IO.TextWriter writer, System.Web.Mobile.MobileCapabilities device, System.Web.UI.MobileControls.MobilePage page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, class System.Web.Mobile.MobileCapabilities device, class System.Web.UI.MobileControls.MobilePage page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities,System.Web.UI.MobileControls.MobilePage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities, page As MobilePage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlMobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device, System::Web::UI::MobileControls::MobilePage ^ page);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter : System.IO.TextWriter * System.Web.Mobile.MobileCapabilities * System.Web.UI.MobileControls.MobilePage -&gt; System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter" Usage="new System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter (writer, device, page)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="device" Type="System.Web.Mobile.MobileCapabilities" />
+        <Parameter Name="page" Type="System.Web.UI.MobileControls.MobilePage" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="device">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFormVariable">
+      <MemberSignature Language="C#" Value="public void AddFormVariable (string clientID, string value, bool generateRandomID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFormVariable(string clientID, string value, bool generateRandomID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.AddFormVariable(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFormVariable (clientID As String, value As String, generateRandomID As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFormVariable(System::String ^ clientID, System::String ^ value, bool generateRandomID);" />
+      <MemberSignature Language="F#" Value="member this.AddFormVariable : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.AddFormVariable (clientID, value, generateRandomID)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientID" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="generateRandomID" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="clientID">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalyzeMode">
+      <MemberSignature Language="C#" Value="public bool AnalyzeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnalyzeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.AnalyzeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnalyzeMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AnalyzeMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AnalyzeMode : bool with get, set" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.AnalyzeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalyzePostBack">
+      <MemberSignature Language="C#" Value="protected virtual void AnalyzePostBack (bool includeVariables, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AnalyzePostBack(bool includeVariables, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.AnalyzePostBack(System.Boolean,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AnalyzePostBack (includeVariables As Boolean, postBackType As WmlPostFieldType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AnalyzePostBack(bool includeVariables, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType postBackType);" />
+      <MemberSignature Language="F#" Value="abstract member AnalyzePostBack : bool * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType -&gt; unit&#xA;override this.AnalyzePostBack : bool * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType -&gt; unit" Usage="wmlMobileTextWriter.AnalyzePostBack (includeVariables, postBackType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeVariables" Type="System.Boolean" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+      </Parameters>
+      <Docs>
+        <param name="includeVariables">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCustomMarkup">
+      <MemberSignature Language="C#" Value="public virtual void BeginCustomMarkup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginCustomMarkup() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.BeginCustomMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginCustomMarkup ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginCustomMarkup();" />
+      <MemberSignature Language="F#" Value="abstract member BeginCustomMarkup : unit -&gt; unit&#xA;override this.BeginCustomMarkup : unit -&gt; unit" Usage="wmlMobileTextWriter.BeginCustomMarkup " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginForm">
+      <MemberSignature Language="C#" Value="public virtual void BeginForm (System.Web.UI.MobileControls.Form form);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.BeginForm(System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginForm(System::Web::UI::MobileControls::Form ^ form);" />
+      <MemberSignature Language="F#" Value="abstract member BeginForm : System.Web.UI.MobileControls.Form -&gt; unit&#xA;override this.BeginForm : System.Web.UI.MobileControls.Form -&gt; unit" Usage="wmlMobileTextWriter.BeginForm form" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
+      </Parameters>
+      <Docs>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateFormPostBackUrl">
+      <MemberSignature Language="C#" Value="protected virtual string CalculateFormPostBackUrl (bool externalSubmit, ref bool encode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool&amp; encode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CalculateFormPostBackUrl(System.Boolean,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormPostBackUrl (externalSubmit As Boolean, ByRef encode As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormPostBackUrl(bool externalSubmit, bool % encode);" />
+      <MemberSignature Language="F#" Value="abstract member CalculateFormPostBackUrl : bool *  -&gt; string&#xA;override this.CalculateFormPostBackUrl : bool *  -&gt; string" Usage="wmlMobileTextWriter.CalculateFormPostBackUrl (externalSubmit, encode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="externalSubmit" Type="System.Boolean" />
+        <Parameter Name="encode" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="externalSubmit">To be added.</param>
+        <param name="encode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateFormQueryString">
+      <MemberSignature Language="C#" Value="protected virtual string CalculateFormQueryString ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormQueryString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CalculateFormQueryString" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormQueryString () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormQueryString();" />
+      <MemberSignature Language="F#" Value="abstract member CalculateFormQueryString : unit -&gt; string&#xA;override this.CalculateFormQueryString : unit -&gt; string" Usage="wmlMobileTextWriter.CalculateFormQueryString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseCharacterFormat">
+      <MemberSignature Language="C#" Value="protected virtual void CloseCharacterFormat ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseCharacterFormat() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CloseCharacterFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseCharacterFormat ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseCharacterFormat();" />
+      <MemberSignature Language="F#" Value="abstract member CloseCharacterFormat : unit -&gt; unit&#xA;override this.CloseCharacterFormat : unit -&gt; unit" Usage="wmlMobileTextWriter.CloseCharacterFormat " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseParagraph">
+      <MemberSignature Language="C#" Value="protected virtual void CloseParagraph ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseParagraph() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CloseParagraph" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseParagraph ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseParagraph();" />
+      <MemberSignature Language="F#" Value="abstract member CloseParagraph : unit -&gt; unit&#xA;override this.CloseParagraph : unit -&gt; unit" Usage="wmlMobileTextWriter.CloseParagraph " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentForm">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Form CurrentForm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Form CurrentForm" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CurrentForm" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentForm As Form" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Form ^ CurrentForm { System::Web::UI::MobileControls::Form ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentForm : System.Web.UI.MobileControls.Form" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.CurrentForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Form</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFormat">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat DefaultFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter/WmlFormat DefaultFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.DefaultFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultFormat As WmlMobileTextWriter.WmlFormat" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlFormat ^ DefaultFormat { System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFormat : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.DefaultFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter+WmlFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultLayout">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout DefaultLayout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter/WmlLayout DefaultLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.DefaultLayout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultLayout As WmlMobileTextWriter.WmlLayout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlLayout ^ DefaultLayout { System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlLayout ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultLayout : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.DefaultLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter+WmlLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCustomMarkup">
+      <MemberSignature Language="C#" Value="public virtual void EndCustomMarkup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCustomMarkup() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EndCustomMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndCustomMarkup ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndCustomMarkup();" />
+      <MemberSignature Language="F#" Value="abstract member EndCustomMarkup : unit -&gt; unit&#xA;override this.EndCustomMarkup : unit -&gt; unit" Usage="wmlMobileTextWriter.EndCustomMarkup " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndForm">
+      <MemberSignature Language="C#" Value="public virtual void EndForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EndForm" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndForm ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndForm();" />
+      <MemberSignature Language="F#" Value="abstract member EndForm : unit -&gt; unit&#xA;override this.EndForm : unit -&gt; unit" Usage="wmlMobileTextWriter.EndForm " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureFormat">
+      <MemberSignature Language="C#" Value="protected virtual void EnsureFormat ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureFormat() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EnsureFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureFormat ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureFormat();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureFormat : unit -&gt; unit&#xA;override this.EnsureFormat : unit -&gt; unit" Usage="wmlMobileTextWriter.EnsureFormat " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureLayout">
+      <MemberSignature Language="C#" Value="protected virtual void EnsureLayout ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureLayout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EnsureLayout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureLayout ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureLayout();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureLayout : unit -&gt; unit&#xA;override this.EnsureLayout : unit -&gt; unit" Usage="wmlMobileTextWriter.EnsureLayout " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterFormat">
+      <MemberSignature Language="C#" Value="public override void EnterFormat (System.Web.UI.MobileControls.Style style);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.EnterFormat style" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLayout">
+      <MemberSignature Language="C#" Value="public override void EnterLayout (System.Web.UI.MobileControls.Style style);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.EnterLayout style" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitFormat">
+      <MemberSignature Language="C#" Value="public override void ExitFormat (System.Web.UI.MobileControls.Style style);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.ExitFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.ExitFormat style" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLayout">
+      <MemberSignature Language="C#" Value="public override void ExitLayout (System.Web.UI.MobileControls.Style style, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitLayout(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="override this.ExitLayout : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="wmlMobileTextWriter.ExitLayout (style, breakAfter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="style">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidSoftkeyLabel">
+      <MemberSignature Language="C#" Value="public virtual bool IsValidSoftkeyLabel (string label);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidSoftkeyLabel(string label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.IsValidSoftkeyLabel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValidSoftkeyLabel (label As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValidSoftkeyLabel(System::String ^ label);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidSoftkeyLabel : string -&gt; bool&#xA;override this.IsValidSoftkeyLabel : string -&gt; bool" Usage="wmlMobileTextWriter.IsValidSoftkeyLabel label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="label" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapClientIDToShortName">
+      <MemberSignature Language="C#" Value="protected internal string MapClientIDToShortName (string clientID, bool generateRandomID);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string MapClientIDToShortName(string clientID, bool generateRandomID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.MapClientIDToShortName(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function MapClientIDToShortName (clientID As String, generateRandomID As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ MapClientIDToShortName(System::String ^ clientID, bool generateRandomID);" />
+      <MemberSignature Language="F#" Value="member this.MapClientIDToShortName : string * bool -&gt; string" Usage="wmlMobileTextWriter.MapClientIDToShortName (clientID, generateRandomID)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientID" Type="System.String" />
+        <Parameter Name="generateRandomID" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="clientID">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfSoftkeys">
+      <MemberSignature Language="C#" Value="protected int NumberOfSoftkeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSoftkeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.NumberOfSoftkeys" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NumberOfSoftkeys As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int NumberOfSoftkeys { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfSoftkeys : int" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.NumberOfSoftkeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenCharacterFormat">
+      <MemberSignature Language="C#" Value="protected virtual void OpenCharacterFormat (System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat format, bool writeBold, bool writeItalic, bool writeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OpenCharacterFormat(class System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter/WmlFormat format, bool writeBold, bool writeItalic, bool writeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.OpenCharacterFormat(System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenCharacterFormat (format As WmlMobileTextWriter.WmlFormat, writeBold As Boolean, writeItalic As Boolean, writeSize As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenCharacterFormat(System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlFormat ^ format, bool writeBold, bool writeItalic, bool writeSize);" />
+      <MemberSignature Language="F#" Value="abstract member OpenCharacterFormat : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat * bool * bool * bool -&gt; unit&#xA;override this.OpenCharacterFormat : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlFormat * bool * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.OpenCharacterFormat (format, writeBold, writeItalic, writeSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter+WmlFormat" />
+        <Parameter Name="writeBold" Type="System.Boolean" />
+        <Parameter Name="writeItalic" Type="System.Boolean" />
+        <Parameter Name="writeSize" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="writeBold">To be added.</param>
+        <param name="writeItalic">To be added.</param>
+        <param name="writeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenParagraph">
+      <MemberSignature Language="C#" Value="protected virtual void OpenParagraph (System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout layout, bool writeAlignment, bool writeWrapping);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OpenParagraph(class System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter/WmlLayout layout, bool writeAlignment, bool writeWrapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.OpenParagraph(System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenParagraph (layout As WmlMobileTextWriter.WmlLayout, writeAlignment As Boolean, writeWrapping As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenParagraph(System::Web::UI::MobileControls::ShippedAdapterSource::WmlMobileTextWriter::WmlLayout ^ layout, bool writeAlignment, bool writeWrapping);" />
+      <MemberSignature Language="F#" Value="abstract member OpenParagraph : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout * bool * bool -&gt; unit&#xA;override this.OpenParagraph : System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WmlLayout * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.OpenParagraph (layout, writeAlignment, writeWrapping)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="layout" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter+WmlLayout" />
+        <Parameter Name="writeAlignment" Type="System.Boolean" />
+        <Parameter Name="writeWrapping" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="layout">To be added.</param>
+        <param name="writeAlignment">To be added.</param>
+        <param name="writeWrapping">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.MobilePage Page { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobilePage Page" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.Page" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Page As MobilePage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.MobileControls.MobilePage" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.Page" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingBreak">
+      <MemberSignature Language="C#" Value="protected bool PendingBreak { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PendingBreak" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.PendingBreak" />
+      <MemberSignature Language="VB.NET" Value="Protected Property PendingBreak As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool PendingBreak { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PendingBreak : bool with get, set" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.PendingBreak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAnalyzeForm">
+      <MemberSignature Language="C#" Value="protected virtual void PostAnalyzeForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostAnalyzeForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.PostAnalyzeForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostAnalyzeForm ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostAnalyzeForm();" />
+      <MemberSignature Language="F#" Value="abstract member PostAnalyzeForm : unit -&gt; unit&#xA;override this.PostAnalyzeForm : unit -&gt; unit" Usage="wmlMobileTextWriter.PostAnalyzeForm " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginForm">
+      <MemberSignature Language="C#" Value="protected virtual void RenderBeginForm (System.Web.UI.MobileControls.Form form);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderBeginForm(System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginForm(System::Web::UI::MobileControls::Form ^ form);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginForm : System.Web.UI.MobileControls.Form -&gt; unit&#xA;override this.RenderBeginForm : System.Web.UI.MobileControls.Form -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginForm form" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
+      </Parameters>
+      <Docs>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginHyperlink">
+      <MemberSignature Language="C#" Value="public virtual void RenderBeginHyperlink (string targetUrl, bool encodeUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginHyperlink(string targetUrl, bool encodeUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderBeginHyperlink(System.String,System.Boolean,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginHyperlink (targetUrl As String, encodeUrl As Boolean, softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginHyperlink(System::String ^ targetUrl, bool encodeUrl, System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginHyperlink : string * bool * string * bool * bool -&gt; unit&#xA;override this.RenderBeginHyperlink : string * bool * string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginHyperlink (targetUrl, encodeUrl, softkeyLabel, implicitSoftkeyLabel, mapToSoftkey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetUrl" Type="System.String" />
+        <Parameter Name="encodeUrl" Type="System.Boolean" />
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="implicitSoftkeyLabel" Type="System.Boolean" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="targetUrl">To be added.</param>
+        <param name="encodeUrl">To be added.</param>
+        <param name="softkeyLabel">To be added.</param>
+        <param name="implicitSoftkeyLabel">To be added.</param>
+        <param name="mapToSoftkey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginPostBack">
+      <MemberSignature Language="C#" Value="public virtual void RenderBeginPostBack (string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginPostBack(string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderBeginPostBack(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginPostBack (softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginPostBack(System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginPostBack : string * bool * bool -&gt; unit&#xA;override this.RenderBeginPostBack : string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginPostBack (softkeyLabel, implicitSoftkeyLabel, mapToSoftkey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="softkeyLabel" Type="System.String" />
+        <Parameter Name="implicitSoftkeyLabel" Type="System.Boolean" />
+        <Parameter Name="mapToSoftkey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="softkeyLabel">To be added.</param>
+        <param name="implicitSoftkeyLabel">To be added.</param>
+        <param name="mapToSoftkey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginSelect">
+      <MemberSignature Language="C#" Value="public virtual void RenderBeginSelect (string name, string iname, string ivalue, string title, bool multiSelect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginSelect(string name, string iname, string ivalue, string title, bool multiSelect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderBeginSelect(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginSelect (name As String, iname As String, ivalue As String, title As String, multiSelect As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginSelect(System::String ^ name, System::String ^ iname, System::String ^ ivalue, System::String ^ title, bool multiSelect);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginSelect : string * string * string * string * bool -&gt; unit&#xA;override this.RenderBeginSelect : string * string * string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginSelect (name, iname, ivalue, title, multiSelect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="iname" Type="System.String" />
+        <Parameter Name="ivalue" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="multiSelect" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="iname">To be added.</param>
+        <param name="ivalue">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="multiSelect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderDoEvent">
+      <MemberSignature Language="C#" Value="protected void RenderDoEvent (string doType, string target, string arg, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, string text, bool includeVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderDoEvent(string doType, string target, string arg, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, string text, bool includeVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderDoEvent(System.String,System.String,System.String,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderDoEvent (doType As String, target As String, arg As String, postBackType As WmlPostFieldType, text As String, includeVariables As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderDoEvent(System::String ^ doType, System::String ^ target, System::String ^ arg, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType postBackType, System::String ^ text, bool includeVariables);" />
+      <MemberSignature Language="F#" Value="member this.RenderDoEvent : string * string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderDoEvent (doType, target, arg, postBackType, text, includeVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doType" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="arg" Type="System.String" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="includeVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="doType">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndForm">
+      <MemberSignature Language="C#" Value="protected virtual void RenderEndForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderEndForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderEndForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndForm ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndForm();" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndForm : unit -&gt; unit&#xA;override this.RenderEndForm : unit -&gt; unit" Usage="wmlMobileTextWriter.RenderEndForm " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndHyperlink">
+      <MemberSignature Language="C#" Value="public virtual void RenderEndHyperlink (bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndHyperlink(bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderEndHyperlink(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndHyperlink (breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndHyperlink(bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndHyperlink : bool -&gt; unit&#xA;override this.RenderEndHyperlink : bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndHyperlink breakAfter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndPostBack">
+      <MemberSignature Language="C#" Value="public virtual void RenderEndPostBack (string target, string argument, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, bool includeVariables, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndPostBack(string target, string argument, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, bool includeVariables, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderEndPostBack(System.String,System.String,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndPostBack (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndPostBack(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType postBackType, bool includeVariables, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndPostBack : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * bool * bool -&gt; unit&#xA;override this.RenderEndPostBack : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndPostBack (target, argument, postBackType, includeVariables, breakAfter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+        <Parameter Name="includeVariables" Type="System.Boolean" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="argument">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndSelect">
+      <MemberSignature Language="C#" Value="public virtual void RenderEndSelect (bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndSelect(bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderEndSelect(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndSelect (breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndSelect(bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndSelect : bool -&gt; unit&#xA;override this.RenderEndSelect : bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndSelect breakAfter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderExtraCards">
+      <MemberSignature Language="C#" Value="public virtual void RenderExtraCards ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderExtraCards() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderExtraCards" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderExtraCards ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderExtraCards();" />
+      <MemberSignature Language="F#" Value="abstract member RenderExtraCards : unit -&gt; unit&#xA;override this.RenderExtraCards : unit -&gt; unit" Usage="wmlMobileTextWriter.RenderExtraCards " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderFormDoEvent">
+      <MemberSignature Language="C#" Value="protected void RenderFormDoEvent (string doType, string arg, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderFormDoEvent(string doType, string arg, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderFormDoEvent(System.String,System.String,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderFormDoEvent (doType As String, arg As String, postBackType As WmlPostFieldType, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderFormDoEvent(System::String ^ doType, System::String ^ arg, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType postBackType, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.RenderFormDoEvent : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * string -&gt; unit" Usage="wmlMobileTextWriter.RenderFormDoEvent (doType, arg, postBackType, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doType" Type="System.String" />
+        <Parameter Name="arg" Type="System.String" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="doType">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderGoAction">
+      <MemberSignature Language="C#" Value="public virtual void RenderGoAction (string target, string argument, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, bool includeVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderGoAction(string target, string argument, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType postBackType, bool includeVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderGoAction(System.String,System.String,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderGoAction (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderGoAction(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType postBackType, bool includeVariables);" />
+      <MemberSignature Language="F#" Value="abstract member RenderGoAction : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * bool -&gt; unit&#xA;override this.RenderGoAction : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderGoAction (target, argument, postBackType, includeVariables)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="postBackType" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+        <Parameter Name="includeVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="argument">To be added.</param>
+        <param name="postBackType">To be added.</param>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderImage">
+      <MemberSignature Language="C#" Value="public virtual void RenderImage (string source, string localSource, string alternateText, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderImage(string source, string localSource, string alternateText, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderImage(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderImage (source As String, localSource As String, alternateText As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderImage(System::String ^ source, System::String ^ localSource, System::String ^ alternateText, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderImage : string * string * string * bool -&gt; unit&#xA;override this.RenderImage : string * string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderImage (source, localSource, alternateText, breakAfter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="localSource" Type="System.String" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="localSource">To be added.</param>
+        <param name="alternateText">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSelectOption">
+      <MemberSignature Language="C#" Value="public virtual void RenderSelectOption (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderSelectOption(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderSelectOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member RenderSelectOption : string -&gt; unit&#xA;override this.RenderSelectOption : string -&gt; unit" Usage="wmlMobileTextWriter.RenderSelectOption text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSelectOption">
+      <MemberSignature Language="C#" Value="public virtual void RenderSelectOption (string text, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderSelectOption(string text, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderSelectOption(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member RenderSelectOption : string * string -&gt; unit&#xA;override this.RenderSelectOption : string * string -&gt; unit" Usage="wmlMobileTextWriter.RenderSelectOption (text, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderText">
+      <MemberSignature Language="C#" Value="public void RenderText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RenderText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.RenderText : string -&gt; unit" Usage="wmlMobileTextWriter.RenderText text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderText">
+      <MemberSignature Language="C#" Value="public void RenderText (string text, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RenderText(string text, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderText(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="member this.RenderText : string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderText (text, breakAfter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderText">
+      <MemberSignature Language="C#" Value="public virtual void RenderText (string text, bool breakAfter, bool encodeText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderText(string text, bool breakAfter, bool encodeText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderText(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderText (text As String, breakAfter As Boolean, encodeText As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderText(System::String ^ text, bool breakAfter, bool encodeText);" />
+      <MemberSignature Language="F#" Value="abstract member RenderText : string * bool * bool -&gt; unit&#xA;override this.RenderText : string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderText (text, breakAfter, encodeText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+        <Parameter Name="encodeText" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <param name="encodeText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTextBox">
+      <MemberSignature Language="C#" Value="public virtual void RenderTextBox (string id, string value, string format, string title, bool password, int size, int maxLength, bool generateRandomID, bool breakAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderTextBox(string id, string value, string format, string title, bool password, int32 size, int32 maxLength, bool generateRandomID, bool breakAfter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.RenderTextBox(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderTextBox (id As String, value As String, format As String, title As String, password As Boolean, size As Integer, maxLength As Integer, generateRandomID As Boolean, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderTextBox(System::String ^ id, System::String ^ value, System::String ^ format, System::String ^ title, bool password, int size, int maxLength, bool generateRandomID, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderTextBox : string * string * string * string * bool * int * int * bool * bool -&gt; unit&#xA;override this.RenderTextBox : string * string * string * string * bool * int * int * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderTextBox (id, value, format, title, password, size, maxLength, generateRandomID, breakAfter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="password" Type="System.Boolean" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+        <Parameter Name="generateRandomID" Type="System.Boolean" />
+        <Parameter Name="breakAfter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="generateRandomID">To be added.</param>
+        <param name="breakAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetFormattingState">
+      <MemberSignature Language="C#" Value="public virtual void ResetFormattingState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetFormattingState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.ResetFormattingState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetFormattingState ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetFormattingState();" />
+      <MemberSignature Language="F#" Value="abstract member ResetFormattingState : unit -&gt; unit&#xA;override this.ResetFormattingState : unit -&gt; unit" Usage="wmlMobileTextWriter.ResetFormattingState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePostBackCard">
+      <MemberSignature Language="C#" Value="protected virtual bool UsePostBackCard (bool includeVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool UsePostBackCard(bool includeVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.UsePostBackCard(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function UsePostBackCard (includeVariables As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool UsePostBackCard(bool includeVariables);" />
+      <MemberSignature Language="F#" Value="abstract member UsePostBackCard : bool -&gt; bool&#xA;override this.UsePostBackCard : bool -&gt; bool" Usage="wmlMobileTextWriter.UsePostBackCard includeVariables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeVariables" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includeVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="public override void WriteAttribute (string attribute, string value, bool encode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAttribute(string attribute, string value, bool encode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteAttribute (attribute As String, value As String, encode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAttribute(System::String ^ attribute, System::String ^ value, bool encode);" />
+      <MemberSignature Language="F#" Value="override this.WriteAttribute : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="encode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="encode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBreak">
+      <MemberSignature Language="C#" Value="protected void WriteBreak ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteBreak() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteBreak" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteBreak ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteBreak();" />
+      <MemberSignature Language="F#" Value="member this.WriteBreak : unit -&gt; unit" Usage="wmlMobileTextWriter.WriteBreak " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEncodedText">
+      <MemberSignature Language="C#" Value="public override void WriteEncodedText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEncodedText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteEncodedText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedText : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedText text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEncodedUrl">
+      <MemberSignature Language="C#" Value="public override void WriteEncodedUrl (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEncodedUrl(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteEncodedUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedUrl (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedUrl : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedUrl url" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePostField">
+      <MemberSignature Language="C#" Value="public void WritePostField (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostField(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WritePostField(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WritePostField : string * string -&gt; unit" Usage="wmlMobileTextWriter.WritePostField (name, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePostField">
+      <MemberSignature Language="C#" Value="public void WritePostField (string name, string value, System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostField(string name, string value, valuetype System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WritePostField(System.String,System.String,System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String, type As WmlPostFieldType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value, System::Web::UI::MobileControls::ShippedAdapterSource::WmlPostFieldType type);" />
+      <MemberSignature Language="F#" Value="member this.WritePostField : string * string * System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType -&gt; unit" Usage="wmlMobileTextWriter.WritePostField (name, value, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="type" Type="System.Web.UI.MobileControls.ShippedAdapterSource.WmlPostFieldType" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePostFieldVariable">
+      <MemberSignature Language="C#" Value="public void WritePostFieldVariable (string name, string arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostFieldVariable(string name, string arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WritePostFieldVariable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostFieldVariable (name As String, arg As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostFieldVariable(System::String ^ name, System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="member this.WritePostFieldVariable : string * string -&gt; unit" Usage="wmlMobileTextWriter.WritePostFieldVariable (name, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="arg" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteText">
+      <MemberSignature Language="C#" Value="public void WriteText (string text, bool encodeText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteText(string text, bool encodeText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteText(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteText (text As String, encodeText As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteText(System::String ^ text, bool encodeText);" />
+      <MemberSignature Language="F#" Value="member this.WriteText : string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteText (text, encodeText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="encodeText" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="encodeText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTextEncodedAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteTextEncodedAttribute (string attribute, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteTextEncodedAttribute(string attribute, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.WmlMobileTextWriter.WriteTextEncodedAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteTextEncodedAttribute (attribute As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteTextEncodedAttribute(System::String ^ attribute, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WriteTextEncodedAttribute : string * string -&gt; unit" Usage="wmlMobileTextWriter.WriteTextEncodedAttribute (attribute, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

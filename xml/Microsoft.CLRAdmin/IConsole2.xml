@@ -1,0 +1,374 @@
+﻿<Type Name="IConsole2" FullName="Microsoft.CLRAdmin.IConsole2">
+  <TypeSignature Language="C#" Value="public interface IConsole2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConsole2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IConsole2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConsole2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConsole2" />
+  <TypeSignature Language="F#" Value="type IConsole2 = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("103D842A-AA63-11D1-A7E1-00C04FD8D565")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="public void Expand (int hItem, int bExpand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Expand(int32 hItem, int32 bExpand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.Expand(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Expand (hItem As Integer, bExpand As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Expand(int hItem, int bExpand);" />
+      <MemberSignature Language="F#" Value="abstract member Expand : int * int -&gt; unit" Usage="iConsole2.Expand (hItem, bExpand)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hItem" Type="System.Int32" />
+        <Parameter Name="bExpand" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hItem">To be added.</param>
+        <param name="bExpand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMainWindow">
+      <MemberSignature Language="C#" Value="public void GetMainWindow (out IntPtr phwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetMainWindow([out] native int&amp; phwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.GetMainWindow(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetMainWindow (ByRef phwnd As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetMainWindow([Runtime::InteropServices::Out] IntPtr % phwnd);" />
+      <MemberSignature Language="F#" Value="abstract member GetMainWindow :  -&gt; unit" Usage="iConsole2.GetMainWindow phwnd" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="phwnd" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="phwnd">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTaskpadViewPreferred">
+      <MemberSignature Language="C#" Value="public void IsTaskpadViewPreferred ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsTaskpadViewPreferred() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.IsTaskpadViewPreferred" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IsTaskpadViewPreferred ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IsTaskpadViewPreferred();" />
+      <MemberSignature Language="F#" Value="abstract member IsTaskpadViewPreferred : unit -&gt; unit" Usage="iConsole2.IsTaskpadViewPreferred " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageBox">
+      <MemberSignature Language="C#" Value="public void MessageBox (string lpszText, string lpszTitle, uint fuStyle, ref int piRetval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MessageBox(string lpszText, string lpszTitle, unsigned int32 fuStyle, int32&amp; piRetval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.MessageBox(System.String,System.String,System.UInt32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MessageBox (lpszText As String, lpszTitle As String, fuStyle As UInteger, ByRef piRetval As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MessageBox(System::String ^ lpszText, System::String ^ lpszTitle, System::UInt32 fuStyle, int % piRetval);" />
+      <MemberSignature Language="F#" Value="abstract member MessageBox : string * string * uint32 *  -&gt; unit" Usage="iConsole2.MessageBox (lpszText, lpszTitle, fuStyle, piRetval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpszText" Type="System.String" />
+        <Parameter Name="lpszTitle" Type="System.String" />
+        <Parameter Name="fuStyle" Type="System.UInt32" />
+        <Parameter Name="piRetval" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="lpszText">To be added.</param>
+        <param name="lpszTitle">To be added.</param>
+        <param name="fuStyle">To be added.</param>
+        <param name="piRetval">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewWindow">
+      <MemberSignature Language="C#" Value="public void NewWindow (int hScopeItem, uint lOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewWindow(int32 hScopeItem, unsigned int32 lOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.NewWindow(System.Int32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NewWindow (hScopeItem As Integer, lOptions As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewWindow(int hScopeItem, System::UInt32 lOptions);" />
+      <MemberSignature Language="F#" Value="abstract member NewWindow : int * uint32 -&gt; unit" Usage="iConsole2.NewWindow (hScopeItem, lOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hScopeItem" Type="System.Int32" />
+        <Parameter Name="lOptions" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="hScopeItem">To be added.</param>
+        <param name="lOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryConsoleVerb">
+      <MemberSignature Language="C#" Value="public void QueryConsoleVerb (out Microsoft.CLRAdmin.IConsoleVerb ppConsoleVerb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryConsoleVerb([out] class Microsoft.CLRAdmin.IConsoleVerb&amp; ppConsoleVerb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.QueryConsoleVerb(Microsoft.CLRAdmin.IConsoleVerb@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryConsoleVerb (ByRef ppConsoleVerb As IConsoleVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryConsoleVerb([Runtime::InteropServices::Out] Microsoft::CLRAdmin::IConsoleVerb ^ % ppConsoleVerb);" />
+      <MemberSignature Language="F#" Value="abstract member QueryConsoleVerb :  -&gt; unit" Usage="iConsole2.QueryConsoleVerb ppConsoleVerb" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppConsoleVerb" Type="Microsoft.CLRAdmin.IConsoleVerb&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppConsoleVerb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryResultImageList">
+      <MemberSignature Language="C#" Value="public void QueryResultImageList (out Microsoft.CLRAdmin.IImageList ppImageList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryResultImageList([out] class Microsoft.CLRAdmin.IImageList&amp; ppImageList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.QueryResultImageList(Microsoft.CLRAdmin.IImageList@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryResultImageList (ByRef ppImageList As IImageList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryResultImageList([Runtime::InteropServices::Out] Microsoft::CLRAdmin::IImageList ^ % ppImageList);" />
+      <MemberSignature Language="F#" Value="abstract member QueryResultImageList :  -&gt; unit" Usage="iConsole2.QueryResultImageList ppImageList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppImageList" Type="Microsoft.CLRAdmin.IImageList&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppImageList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryResultView">
+      <MemberSignature Language="C#" Value="public void QueryResultView (out object pUnknown);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryResultView([out] object&amp; pUnknown) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.QueryResultView(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryResultView (ByRef pUnknown As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryResultView([Runtime::InteropServices::Out] System::Object ^ % pUnknown);" />
+      <MemberSignature Language="F#" Value="abstract member QueryResultView :  -&gt; unit" Usage="iConsole2.QueryResultView pUnknown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pUnknown" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pUnknown">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryScopeImageList">
+      <MemberSignature Language="C#" Value="public void QueryScopeImageList (out Microsoft.CLRAdmin.IImageList ppImageList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryScopeImageList([out] class Microsoft.CLRAdmin.IImageList&amp; ppImageList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.QueryScopeImageList(Microsoft.CLRAdmin.IImageList@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryScopeImageList (ByRef ppImageList As IImageList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryScopeImageList([Runtime::InteropServices::Out] Microsoft::CLRAdmin::IImageList ^ % ppImageList);" />
+      <MemberSignature Language="F#" Value="abstract member QueryScopeImageList :  -&gt; unit" Usage="iConsole2.QueryScopeImageList ppImageList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppImageList" Type="Microsoft.CLRAdmin.IImageList&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppImageList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectScopeItem">
+      <MemberSignature Language="C#" Value="public void SelectScopeItem (int hScopeItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectScopeItem(int32 hScopeItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.SelectScopeItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectScopeItem (hScopeItem As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectScopeItem(int hScopeItem);" />
+      <MemberSignature Language="F#" Value="abstract member SelectScopeItem : int -&gt; unit" Usage="iConsole2.SelectScopeItem hScopeItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hScopeItem" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hScopeItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHeader">
+      <MemberSignature Language="C#" Value="public void SetHeader (ref Microsoft.CLRAdmin.IHeaderCtrl pHeader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHeader(class Microsoft.CLRAdmin.IHeaderCtrl&amp; pHeader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.SetHeader(Microsoft.CLRAdmin.IHeaderCtrl@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHeader (ByRef pHeader As IHeaderCtrl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHeader(Microsoft::CLRAdmin::IHeaderCtrl ^ % pHeader);" />
+      <MemberSignature Language="F#" Value="abstract member SetHeader :  -&gt; unit" Usage="iConsole2.SetHeader pHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pHeader" Type="Microsoft.CLRAdmin.IHeaderCtrl&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pHeader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusText">
+      <MemberSignature Language="C#" Value="public void SetStatusText (string pszStatusText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatusText(string pszStatusText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.SetStatusText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStatusText (pszStatusText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStatusText(System::String ^ pszStatusText);" />
+      <MemberSignature Language="F#" Value="abstract member SetStatusText : string -&gt; unit" Usage="iConsole2.SetStatusText pszStatusText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszStatusText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pszStatusText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetToolbar">
+      <MemberSignature Language="C#" Value="public void SetToolbar (ref object pToolbar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetToolbar(object&amp; pToolbar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.SetToolbar(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetToolbar (ByRef pToolbar As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetToolbar(System::Object ^ % pToolbar);" />
+      <MemberSignature Language="F#" Value="abstract member SetToolbar :  -&gt; unit" Usage="iConsole2.SetToolbar pToolbar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pToolbar" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pToolbar">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAllViews">
+      <MemberSignature Language="C#" Value="public void UpdateAllViews (Microsoft.CLRAdmin.IDataObject lpDataObject, int data, int hint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateAllViews(class Microsoft.CLRAdmin.IDataObject lpDataObject, int32 data, int32 hint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsole2.UpdateAllViews(Microsoft.CLRAdmin.IDataObject,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAllViews (lpDataObject As IDataObject, data As Integer, hint As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateAllViews(Microsoft::CLRAdmin::IDataObject ^ lpDataObject, int data, int hint);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAllViews : Microsoft.CLRAdmin.IDataObject * int * int -&gt; unit" Usage="iConsole2.UpdateAllViews (lpDataObject, data, hint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="data" Type="System.Int32" />
+        <Parameter Name="hint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lpDataObject">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="hint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

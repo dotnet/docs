@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type SymBinder = class&#xA;    inherit SymBinderBase&#xA;    interface ISymbolBinder&#xA;    interface ISymbolBinder1&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.SymbolStore.SymBinderBase</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -42,6 +45,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -49,6 +54,49 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="__dtor">
+      <MemberSignature Language="C#" Value="public void __dtor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void __dtor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.__dtor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub __dtor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void __dtor();" />
+      <MemberSignature Language="F#" Value="member this.__dtor : unit -&gt; unit" Usage="symBinder.__dtor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="{dtor}">
+      <MemberSignature Language="C#" Value="public void {dtor} ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void {dtor}() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.{dtor}" />
+      <MemberSignature Language="VB.NET" Value="Public Sub {dtor} ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void {dtor}();" />
+      <MemberSignature Language="F#" Value="member this.{dtor} : unit -&gt; unit" Usage="symBinder.{dtor} " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -131,6 +179,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +218,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -213,6 +265,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

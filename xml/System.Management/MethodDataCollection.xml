@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type MethodDataCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -51,6 +53,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,29 +80,41 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public virtual void Add (string methodName, System.Management.ManagementBaseObject inParameters, System.Management.ManagementBaseObject outParameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string methodName, class System.Management.ManagementBaseObject inParameters, class System.Management.ManagementBaseObject outParameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Management.MethodDataCollection.Add(System.String,System.Management.ManagementBaseObject,System.Management.ManagementBaseObject)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (methodName As String, inParameters As ManagementBaseObject, outParameters As ManagementBaseObject)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ methodName, System::Management::ManagementBaseObject ^ inParameters, System::Management::ManagementBaseObject ^ outParameters);" />
-      <MemberSignature Language="F#" Value="abstract member Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit&#xA;override this.Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit" Usage="methodDataCollection.Add (methodName, inParameters, outParameters)" />
+      <MemberSignature Language="C#" Value="public virtual void Add (string methodName, System.Management.ManagementBaseObject inParams, System.Management.ManagementBaseObject outParams);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string methodName, class System.Management.ManagementBaseObject inParams, class System.Management.ManagementBaseObject outParams) cil managed" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Management.MethodDataCollection.Add(System.String,System.Management.ManagementBaseObject,System.Management.ManagementBaseObject)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (methodName As String, inParams As ManagementBaseObject, outParams As ManagementBaseObject)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ methodName, System::Management::ManagementBaseObject ^ inParams, System::Management::ManagementBaseObject ^ outParams);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit&#xA;override this.Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit" Usage="methodDataCollection.Add (methodName, inParams, outParams)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public virtual void Add (string methodName, System.Management.ManagementBaseObject inParameters, System.Management.ManagementBaseObject outParameters);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string methodName, class System.Management.ManagementBaseObject inParameters, class System.Management.ManagementBaseObject outParameters) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Management.MethodDataCollection.Add(System.String,System.Management.ManagementBaseObject,System.Management.ManagementBaseObject)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (methodName As String, inParameters As ManagementBaseObject, outParameters As ManagementBaseObject)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ methodName, System::Management::ManagementBaseObject ^ inParameters, System::Management::ManagementBaseObject ^ outParameters);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit&#xA;override this.Add : string * System.Management.ManagementBaseObject * System.Management.ManagementBaseObject -&gt; unit" Usage="methodDataCollection.Add (methodName, inParameters, outParameters)" FrameworkAlternate="netframework-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodName" Type="System.String" />
-        <Parameter Name="inParameters" Type="System.Management.ManagementBaseObject" />
-        <Parameter Name="outParameters" Type="System.Management.ManagementBaseObject" />
+        <Parameter Name="methodName" Type="System.String" Index="0" />
+        <Parameter Name="inParams" Type="System.Management.ManagementBaseObject" Index="1" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="inParameters" Type="System.Management.ManagementBaseObject" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="outParams" Type="System.Management.ManagementBaseObject" Index="2" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="outParameters" Type="System.Management.ManagementBaseObject" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
         <param name="methodName">The name of the method to add.</param>
         <param name="inParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
         <param name="outParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the output parameters to the method.</param>
+        <param name="inParams">To be added.</param>
+        <param name="outParams">To be added.</param>
         <summary>Adds a <see cref="T:System.Management.MethodData" /> to the <see cref="T:System.Management.MethodDataCollection" />. This overload will add a new method with the specified parameter objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -134,6 +150,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,6 +188,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,6 +228,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,6 +264,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,6 +307,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,6 +343,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -354,6 +382,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -391,6 +421,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,6 +459,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

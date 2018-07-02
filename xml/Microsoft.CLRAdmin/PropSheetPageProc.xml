@@ -1,0 +1,31 @@
+﻿<Type Name="PropSheetPageProc" FullName="Microsoft.CLRAdmin.PropSheetPageProc">
+  <TypeSignature Language="C#" Value="public delegate uint PropSheetPageProc(IntPtr hwnd, uint uMsg, IntPtr lParam);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropSheetPageProc extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.PropSheetPageProc" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function PropSheetPageProc(hwnd As IntPtr, uMsg As UInteger, lParam As IntPtr) As UInteger " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::UInt32 PropSheetPageProc(IntPtr hwnd, System::UInt32 uMsg, IntPtr lParam);" />
+  <TypeSignature Language="F#" Value="type PropSheetPageProc = delegate of nativeint * uint32 * nativeint -&gt; uint32" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="hwnd" Type="System.IntPtr" />
+    <Parameter Name="uMsg" Type="System.UInt32" />
+    <Parameter Name="lParam" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.UInt32</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="hwnd">To be added.</param>
+    <param name="uMsg">To be added.</param>
+    <param name="lParam">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

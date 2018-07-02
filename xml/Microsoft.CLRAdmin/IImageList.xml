@@ -1,0 +1,83 @@
+﻿<Type Name="IImageList" FullName="Microsoft.CLRAdmin.IImageList">
+  <TypeSignature Language="C#" Value="public interface IImageList" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImageList" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IImageList" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImageList" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IImageList" />
+  <TypeSignature Language="F#" Value="type IImageList = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("43136EB8-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImageListSetIcon">
+      <MemberSignature Language="C#" Value="public void ImageListSetIcon (IntPtr pIcon, int nLoc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImageListSetIcon(native int pIcon, int32 nLoc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IImageList.ImageListSetIcon(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ImageListSetIcon (pIcon As IntPtr, nLoc As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImageListSetIcon(IntPtr pIcon, int nLoc);" />
+      <MemberSignature Language="F#" Value="abstract member ImageListSetIcon : nativeint * int -&gt; unit" Usage="iImageList.ImageListSetIcon (pIcon, nLoc)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIcon" Type="System.IntPtr" />
+        <Parameter Name="nLoc" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pIcon">To be added.</param>
+        <param name="nLoc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageListSetStrip">
+      <MemberSignature Language="C#" Value="public void ImageListSetStrip (int pBMapSm, int pBMapLg, int nStartLoc, int cMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImageListSetStrip(int32 pBMapSm, int32 pBMapLg, int32 nStartLoc, int32 cMask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IImageList.ImageListSetStrip(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ImageListSetStrip (pBMapSm As Integer, pBMapLg As Integer, nStartLoc As Integer, cMask As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImageListSetStrip(int pBMapSm, int pBMapLg, int nStartLoc, int cMask);" />
+      <MemberSignature Language="F#" Value="abstract member ImageListSetStrip : int * int * int * int -&gt; unit" Usage="iImageList.ImageListSetStrip (pBMapSm, pBMapLg, nStartLoc, cMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pBMapSm" Type="System.Int32" />
+        <Parameter Name="pBMapLg" Type="System.Int32" />
+        <Parameter Name="nStartLoc" Type="System.Int32" />
+        <Parameter Name="cMask" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pBMapSm">To be added.</param>
+        <param name="pBMapLg">To be added.</param>
+        <param name="nStartLoc">To be added.</param>
+        <param name="cMask">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

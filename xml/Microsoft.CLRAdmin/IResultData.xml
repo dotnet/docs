@@ -1,0 +1,404 @@
+﻿<Type Name="IResultData" FullName="Microsoft.CLRAdmin.IResultData">
+  <TypeSignature Language="C#" Value="public interface IResultData" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResultData" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IResultData" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IResultData" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IResultData" />
+  <TypeSignature Language="F#" Value="type IResultData = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("31DA5FA0-E0EB-11cf-9F21-00AA003CA9F6")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteAllRsltItems">
+      <MemberSignature Language="C#" Value="public void DeleteAllRsltItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteAllRsltItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.DeleteAllRsltItems" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteAllRsltItems ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAllRsltItems();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAllRsltItems : unit -&gt; unit" Usage="iResultData.DeleteAllRsltItems " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteItem">
+      <MemberSignature Language="C#" Value="public void DeleteItem (uint itemID, int nCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteItem(unsigned int32 itemID, int32 nCol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.DeleteItem(System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteItem (itemID As UInteger, nCol As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteItem(System::UInt32 itemID, int nCol);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteItem : uint32 * int -&gt; unit" Usage="iResultData.DeleteItem (itemID, nCol)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemID" Type="System.UInt32" />
+        <Parameter Name="nCol" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemID">To be added.</param>
+        <param name="nCol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindItemByLParam">
+      <MemberSignature Language="C#" Value="public void FindItemByLParam (int lParam, out uint pItemID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FindItemByLParam(int32 lParam, [out] unsigned int32&amp; pItemID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.FindItemByLParam(System.Int32,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FindItemByLParam (lParam As Integer, ByRef pItemID As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindItemByLParam(int lParam, [Runtime::InteropServices::Out] System::UInt32 % pItemID);" />
+      <MemberSignature Language="F#" Value="abstract member FindItemByLParam : int *  -&gt; unit" Usage="iResultData.FindItemByLParam (lParam, pItemID)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lParam" Type="System.Int32" />
+        <Parameter Name="pItemID" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lParam">To be added.</param>
+        <param name="pItemID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public int GetItem (ref Microsoft.CLRAdmin.RESULTDATAITEM item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetItem(valuetype Microsoft.CLRAdmin.RESULTDATAITEM&amp; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.GetItem(Microsoft.CLRAdmin.RESULTDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (ByRef item As RESULTDATAITEM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetItem(Microsoft::CLRAdmin::RESULTDATAITEM % item);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem :  -&gt; int" Usage="iResultData.GetItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.CLRAdmin.RESULTDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextItem">
+      <MemberSignature Language="C#" Value="public int GetNextItem (ref Microsoft.CLRAdmin.RESULTDATAITEM item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetNextItem(valuetype Microsoft.CLRAdmin.RESULTDATAITEM&amp; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.GetNextItem(Microsoft.CLRAdmin.RESULTDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextItem (ByRef item As RESULTDATAITEM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetNextItem(Microsoft::CLRAdmin::RESULTDATAITEM % item);" />
+      <MemberSignature Language="F#" Value="abstract member GetNextItem :  -&gt; int" Usage="iResultData.GetNextItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.CLRAdmin.RESULTDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewMode">
+      <MemberSignature Language="C#" Value="public void GetViewMode (out int lViewMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetViewMode([out] int32&amp; lViewMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.GetViewMode(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetViewMode (ByRef lViewMode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetViewMode([Runtime::InteropServices::Out] int % lViewMode);" />
+      <MemberSignature Language="F#" Value="abstract member GetViewMode :  -&gt; unit" Usage="iResultData.GetViewMode lViewMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lViewMode" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lViewMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="public void InsertItem (ref Microsoft.CLRAdmin.RESULTDATAITEM item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertItem(valuetype Microsoft.CLRAdmin.RESULTDATAITEM&amp; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.InsertItem(Microsoft.CLRAdmin.RESULTDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertItem (ByRef item As RESULTDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertItem(Microsoft::CLRAdmin::RESULTDATAITEM % item);" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem :  -&gt; unit" Usage="iResultData.InsertItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.CLRAdmin.RESULTDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyItemState">
+      <MemberSignature Language="C#" Value="public void ModifyItemState (int nIndex, uint itemID, uint uAdd, uint uRemove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyItemState(int32 nIndex, unsigned int32 itemID, unsigned int32 uAdd, unsigned int32 uRemove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.ModifyItemState(System.Int32,System.UInt32,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyItemState (nIndex As Integer, itemID As UInteger, uAdd As UInteger, uRemove As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyItemState(int nIndex, System::UInt32 itemID, System::UInt32 uAdd, System::UInt32 uRemove);" />
+      <MemberSignature Language="F#" Value="abstract member ModifyItemState : int * uint32 * uint32 * uint32 -&gt; unit" Usage="iResultData.ModifyItemState (nIndex, itemID, uAdd, uRemove)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nIndex" Type="System.Int32" />
+        <Parameter Name="itemID" Type="System.UInt32" />
+        <Parameter Name="uAdd" Type="System.UInt32" />
+        <Parameter Name="uRemove" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="nIndex">To be added.</param>
+        <param name="itemID">To be added.</param>
+        <param name="uAdd">To be added.</param>
+        <param name="uRemove">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyViewStyle">
+      <MemberSignature Language="C#" Value="public void ModifyViewStyle (int add, int remove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyViewStyle(int32 add, int32 remove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.ModifyViewStyle(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyViewStyle (add As Integer, remove As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyViewStyle(int add, int remove);" />
+      <MemberSignature Language="F#" Value="abstract member ModifyViewStyle : int * int -&gt; unit" Usage="iResultData.ModifyViewStyle (add, remove)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="add" Type="System.Int32" />
+        <Parameter Name="remove" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="add">To be added.</param>
+        <param name="remove">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDescBarText">
+      <MemberSignature Language="C#" Value="public void SetDescBarText (int DescText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDescBarText(int32 DescText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.SetDescBarText(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDescBarText (DescText As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDescBarText(int DescText);" />
+      <MemberSignature Language="F#" Value="abstract member SetDescBarText : int -&gt; unit" Usage="iResultData.SetDescBarText DescText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DescText" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="DescText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (ref Microsoft.CLRAdmin.RESULTDATAITEM item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(valuetype Microsoft.CLRAdmin.RESULTDATAITEM&amp; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.SetItem(Microsoft.CLRAdmin.RESULTDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (ByRef item As RESULTDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(Microsoft::CLRAdmin::RESULTDATAITEM % item);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem :  -&gt; unit" Usage="iResultData.SetItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.CLRAdmin.RESULTDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemCount">
+      <MemberSignature Language="C#" Value="public void SetItemCount (int nItemCount, uint dwOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItemCount(int32 nItemCount, unsigned int32 dwOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.SetItemCount(System.Int32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItemCount (nItemCount As Integer, dwOptions As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItemCount(int nItemCount, System::UInt32 dwOptions);" />
+      <MemberSignature Language="F#" Value="abstract member SetItemCount : int * uint32 -&gt; unit" Usage="iResultData.SetItemCount (nItemCount, dwOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nItemCount" Type="System.Int32" />
+        <Parameter Name="dwOptions" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="nItemCount">To be added.</param>
+        <param name="dwOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetViewMode">
+      <MemberSignature Language="C#" Value="public void SetViewMode (int lViewMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetViewMode(int32 lViewMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.SetViewMode(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetViewMode (lViewMode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetViewMode(int lViewMode);" />
+      <MemberSignature Language="F#" Value="abstract member SetViewMode : int -&gt; unit" Usage="iResultData.SetViewMode lViewMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lViewMode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lViewMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (int nColumn, uint dwSortOptions, int lUserParam);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort(int32 nColumn, unsigned int32 dwSortOptions, int32 lUserParam) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.Sort(System.Int32,System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sort (nColumn As Integer, dwSortOptions As UInteger, lUserParam As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(int nColumn, System::UInt32 dwSortOptions, int lUserParam);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : int * uint32 * int -&gt; unit" Usage="iResultData.Sort (nColumn, dwSortOptions, lUserParam)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nColumn" Type="System.Int32" />
+        <Parameter Name="dwSortOptions" Type="System.UInt32" />
+        <Parameter Name="lUserParam" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nColumn">To be added.</param>
+        <param name="dwSortOptions">To be added.</param>
+        <param name="lUserParam">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateItem">
+      <MemberSignature Language="C#" Value="public void UpdateItem (uint itemID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateItem(unsigned int32 itemID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IResultData.UpdateItem(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateItem (itemID As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateItem(System::UInt32 itemID);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateItem : uint32 -&gt; unit" Usage="iResultData.UpdateItem itemID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="itemID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+﻿<Type Name="MFCDialogNumberVariableExtender" FullName="Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender">
+  <TypeSignature Language="C#" Value="public interface MFCDialogNumberVariableExtender" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MFCDialogNumberVariableExtender" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender" />
+  <TypeSignature Language="VB.NET" Value="Public Interface MFCDialogNumberVariableExtender" />
+  <TypeSignature Language="C++ CLI" Value="public interface class MFCDialogNumberVariableExtender" />
+  <TypeSignature Language="F#" Value="type MFCDialogNumberVariableExtender = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5CE9BB3C-C324-4AB5-84D1-E094D4BAEF7F")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (object ExtendeeObject, EnvDTE.IExtenderSite ExtenderSite, int Cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object ExtendeeObject, class EnvDTE.IExtenderSite ExtenderSite, int32 Cookie) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender.Initialize(System.Object,EnvDTE.IExtenderSite,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (ExtendeeObject As Object, ExtenderSite As IExtenderSite, Cookie As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Object ^ ExtendeeObject, EnvDTE::IExtenderSite ^ ExtenderSite, int Cookie);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : obj * EnvDTE.IExtenderSite * int -&gt; unit" Usage="mFCDialogNumberVariableExtender.Initialize (ExtendeeObject, ExtenderSite, Cookie)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(65)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtendeeObject" Type="System.Object" />
+        <Parameter Name="ExtenderSite" Type="EnvDTE.IExtenderSite" />
+        <Parameter Name="Cookie" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ExtendeeObject">To be added.</param>
+        <param name="ExtenderSite">To be added.</param>
+        <param name="Cookie">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="public string MaxValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MaxValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaxValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : string with get, set" Usage="Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender.MaxValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValue">
+      <MemberSignature Language="C#" Value="public string MinValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MinValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MinValue : string with get, set" Usage="Microsoft.VisualStudio.VCCodeModel.MFCDialogNumberVariableExtender.MinValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+﻿<Type Name="CdoEventStatus" FullName="System.Runtime.Remoting.Channels.Smtp.CdoEventStatus">
+  <TypeSignature Language="C#" Value="public enum CdoEventStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CdoEventStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Smtp.CdoEventStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CdoEventStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CdoEventStatus" />
+  <TypeSignature Language="F#" Value="type CdoEventStatus = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CdoRunNextSink">
+      <MemberSignature Language="C#" Value="CdoRunNextSink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoEventStatus CdoRunNextSink = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoEventStatus.CdoRunNextSink" />
+      <MemberSignature Language="VB.NET" Value="CdoRunNextSink" />
+      <MemberSignature Language="C++ CLI" Value="CdoRunNextSink" />
+      <MemberSignature Language="F#" Value="CdoRunNextSink = 0" Usage="System.Runtime.Remoting.Channels.Smtp.CdoEventStatus.CdoRunNextSink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoEventStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CdoSkipRemainingSinks">
+      <MemberSignature Language="C#" Value="CdoSkipRemainingSinks" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.Smtp.CdoEventStatus CdoSkipRemainingSinks = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.Smtp.CdoEventStatus.CdoSkipRemainingSinks" />
+      <MemberSignature Language="VB.NET" Value="CdoSkipRemainingSinks" />
+      <MemberSignature Language="C++ CLI" Value="CdoSkipRemainingSinks" />
+      <MemberSignature Language="F#" Value="CdoSkipRemainingSinks = 1" Usage="System.Runtime.Remoting.Channels.Smtp.CdoEventStatus.CdoSkipRemainingSinks" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.Smtp.CdoEventStatus</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

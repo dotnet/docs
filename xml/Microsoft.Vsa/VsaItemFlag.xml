@@ -1,0 +1,93 @@
+﻿<Type Name="VsaItemFlag" FullName="Microsoft.Vsa.VsaItemFlag">
+  <TypeSignature Language="C#" Value="public enum VsaItemFlag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VsaItemFlag extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.VsaItemFlag" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VsaItemFlag" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VsaItemFlag" />
+  <TypeSignature Language="F#" Value="type VsaItemFlag = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("40d8ce77-8139-3483-8674-bb9e3acd9b89")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemFlag Class = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemFlag.Class" />
+      <MemberSignature Language="VB.NET" Value="Class" />
+      <MemberSignature Language="C++ CLI" Value="Class" />
+      <MemberSignature Language="F#" Value="Class = 2" Usage="Microsoft.Vsa.VsaItemFlag.Class" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemFlag</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Module">
+      <MemberSignature Language="C#" Value="Module" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemFlag Module = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemFlag.Module" />
+      <MemberSignature Language="VB.NET" Value="Module" />
+      <MemberSignature Language="C++ CLI" Value="Module" />
+      <MemberSignature Language="F#" Value="Module = 1" Usage="Microsoft.Vsa.VsaItemFlag.Module" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemFlag</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemFlag None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemFlag.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Vsa.VsaItemFlag.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemFlag</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

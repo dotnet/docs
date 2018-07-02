@@ -1,0 +1,2470 @@
+﻿<Type Name="IVCWizCtlUI" FullName="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI">
+  <TypeSignature Language="C#" Value="public interface IVCWizCtlUI" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVCWizCtlUI" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVCWizCtlUI" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVCWizCtlUI" />
+  <TypeSignature Language="F#" Value="type IVCWizCtlUI = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("56324FFE-ADBC-4660-B8AA-A2BA84A162C4")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveXControls">
+      <MemberSignature Language="C#" Value="public object ActiveXControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveXControls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ActiveXControls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveXControls As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveXControls { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveXControls : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ActiveXControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743867)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743867)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBuiltOutput">
+      <MemberSignature Language="C#" Value="public object AddBuiltOutput (object pDeployable, object pProject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddBuiltOutput([in]object pDeployable, [in]object pProject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.AddBuiltOutput(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddBuiltOutput (pDeployable As Object, pProject As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddBuiltOutput(System::Object ^ pDeployable, System::Object ^ pProject);" />
+      <MemberSignature Language="F#" Value="abstract member AddBuiltOutput : obj * obj -&gt; obj" Usage="iVCWizCtlUI.AddBuiltOutput (pDeployable, pProject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743844)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+        <Parameter Name="pProject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <param name="pProject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDebugSymbols">
+      <MemberSignature Language="C#" Value="public object AddDebugSymbols (object pDeployable, object pProject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDebugSymbols([in]object pDeployable, [in]object pProject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.AddDebugSymbols(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDebugSymbols (pDeployable As Object, pProject As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddDebugSymbols(System::Object ^ pDeployable, System::Object ^ pProject);" />
+      <MemberSignature Language="F#" Value="abstract member AddDebugSymbols : obj * obj -&gt; obj" Usage="iVCWizCtlUI.AddDebugSymbols (pDeployable, pProject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743843)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+        <Parameter Name="pProject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <param name="pProject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDeploymentContent">
+      <MemberSignature Language="C#" Value="public object AddDeploymentContent (object pDeployable, object pProject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDeploymentContent([in]object pDeployable, [in]object pProject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.AddDeploymentContent(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDeploymentContent (pDeployable As Object, pProject As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddDeploymentContent(System::Object ^ pDeployable, System::Object ^ pProject);" />
+      <MemberSignature Language="F#" Value="abstract member AddDeploymentContent : obj * obj -&gt; obj" Usage="iVCWizCtlUI.AddDeploymentContent (pDeployable, pProject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743851)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+        <Parameter Name="pProject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <param name="pProject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSymbol">
+      <MemberSignature Language="C#" Value="public void AddSymbol (string bstrSymbol, object varValue, bool bDisabled = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddSymbol([in]string bstrSymbol, [in]object varValue, [in]bool bDisabled) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.AddSymbol(System.String,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSymbol (bstrSymbol As String, varValue As Object, Optional bDisabled As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member AddSymbol : string * obj * bool -&gt; unit" Usage="iVCWizCtlUI.AddSymbol (bstrSymbol, varValue, bDisabled)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrSymbol" Type="System.String" />
+        <Parameter Name="varValue" Type="System.Object" />
+        <Parameter Name="bDisabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrSymbol">To be added.</param>
+        <param name="varValue">To be added.</param>
+        <param name="bDisabled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateNewProjectAtLocation">
+      <MemberSignature Language="C#" Value="public bool CanCreateNewProjectAtLocation (bool fCreateNewSolution, string bstrFullProjectFilePath, bool fDeleteDirectory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCreateNewProjectAtLocation([in]bool fCreateNewSolution, [in]string bstrFullProjectFilePath, [in]bool fDeleteDirectory) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.CanCreateNewProjectAtLocation(System.Boolean,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanCreateNewProjectAtLocation (fCreateNewSolution As Boolean, bstrFullProjectFilePath As String, fDeleteDirectory As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanCreateNewProjectAtLocation(bool fCreateNewSolution, System::String ^ bstrFullProjectFilePath, bool fDeleteDirectory);" />
+      <MemberSignature Language="F#" Value="abstract member CanCreateNewProjectAtLocation : bool * string * bool -&gt; bool" Usage="iVCWizCtlUI.CanCreateNewProjectAtLocation (fCreateNewSolution, bstrFullProjectFilePath, fDeleteDirectory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743853)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fCreateNewSolution" Type="System.Boolean" />
+        <Parameter Name="bstrFullProjectFilePath" Type="System.String" />
+        <Parameter Name="fDeleteDirectory" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="fCreateNewSolution">To be added.</param>
+        <param name="bstrFullProjectFilePath">To be added.</param>
+        <param name="fDeleteDirectory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandHandlerExists">
+      <MemberSignature Language="C#" Value="public bool CommandHandlerExists (object pDispDesc, object memid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CommandHandlerExists([in]object pDispDesc, [in]object memid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.CommandHandlerExists(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CommandHandlerExists (pDispDesc As Object, memid As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CommandHandlerExists(System::Object ^ pDispDesc, System::Object ^ memid);" />
+      <MemberSignature Language="F#" Value="abstract member CommandHandlerExists : obj * obj -&gt; bool" Usage="iVCWizCtlUI.CommandHandlerExists (pDispDesc, memid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743888)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <param name="memid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertAnsiToOEM">
+      <MemberSignature Language="C#" Value="public string ConvertAnsiToOEM (string bstrAnsi);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ConvertAnsiToOEM([in]string bstrAnsi) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ConvertAnsiToOEM(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertAnsiToOEM (bstrAnsi As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertAnsiToOEM(System::String ^ bstrAnsi);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertAnsiToOEM : string -&gt; string" Usage="iVCWizCtlUI.ConvertAnsiToOEM bstrAnsi" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743838)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrAnsi" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrAnsi">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CppParseTypeString">
+      <MemberSignature Language="C#" Value="public object CppParseTypeString (string bstrTypeDecl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CppParseTypeString([in]string bstrTypeDecl) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.CppParseTypeString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CppParseTypeString (bstrTypeDecl As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CppParseTypeString(System::String ^ bstrTypeDecl);" />
+      <MemberSignature Language="F#" Value="abstract member CppParseTypeString : string -&gt; obj" Usage="iVCWizCtlUI.CppParseTypeString bstrTypeDecl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743869)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrTypeDecl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrTypeDecl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGuid">
+      <MemberSignature Language="C#" Value="public string CreateGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateGuid() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.CreateGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateGuid () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateGuid();" />
+      <MemberSignature Language="F#" Value="abstract member CreateGuid : unit -&gt; string" Usage="iVCWizCtlUI.CreateGuid " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743829)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWebTargetFolder">
+      <MemberSignature Language="C#" Value="public object CreateWebTargetFolder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateWebTargetFolder() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.CreateWebTargetFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWebTargetFolder () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateWebTargetFolder();" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebTargetFolder : unit -&gt; obj" Usage="iVCWizCtlUI.CreateWebTargetFolder " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743841)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoesFileExist">
+      <MemberSignature Language="C#" Value="public bool DoesFileExist (string bstrFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DoesFileExist([in]string bstrFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.DoesFileExist(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoesFileExist (bstrFileName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DoesFileExist(System::String ^ bstrFileName);" />
+      <MemberSignature Language="F#" Value="abstract member DoesFileExist : string -&gt; bool" Usage="iVCWizCtlUI.DoesFileExist bstrFileName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743849)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="dte">
+      <MemberSignature Language="C#" Value="public object dte { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object dte" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.dte" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property dte As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ dte { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.dte : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.dte" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypeLibs">
+      <MemberSignature Language="C#" Value="public object FileTypeLibs[string bstrFileName = &quot;&quot;] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FileTypeLibs(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.FileTypeLibs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileTypeLibs(Optional bstrFileName As String = &quot;&quot;) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FileTypeLibs[System::String ^] { System::Object ^ get(System::String ^ bstrFileName); };" />
+      <MemberSignature Language="F#" Value="member this.FileTypeLibs(string) : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.FileTypeLibs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743866)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743866)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSymbol">
+      <MemberSignature Language="C#" Value="public object FindSymbol (string bstrSymbol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindSymbol([in]string bstrSymbol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.FindSymbol(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindSymbol (bstrSymbol As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindSymbol(System::String ^ bstrSymbol);" />
+      <MemberSignature Language="F#" Value="abstract member FindSymbol : string -&gt; obj" Usage="iVCWizCtlUI.FindSymbol bstrSymbol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrSymbol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrSymbol">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finish">
+      <MemberSignature Language="C#" Value="public void Finish (object pdispDocument, object var);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Finish([in]object pdispDocument, [in]object var) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.Finish(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Finish (pdispDocument As Object, var As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Finish(System::Object ^ pdispDocument, System::Object ^ var);" />
+      <MemberSignature Language="F#" Value="abstract member Finish : obj * obj -&gt; unit" Usage="iVCWizCtlUI.Finish (pdispDocument, var)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdispDocument" Type="System.Object" />
+        <Parameter Name="var" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pdispDocument">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatGuid">
+      <MemberSignature Language="C#" Value="public string FormatGuid (string bstrGuid, Microsoft.VisualStudio.VsWizard.eFormat Format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string FormatGuid([in]string bstrGuid, [in]valuetype Microsoft.VisualStudio.VsWizard.eFormat Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.FormatGuid(System.String,Microsoft.VisualStudio.VsWizard.eFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FormatGuid (bstrGuid As String, Format As eFormat) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ FormatGuid(System::String ^ bstrGuid, Microsoft::VisualStudio::VsWizard::eFormat Format);" />
+      <MemberSignature Language="F#" Value="abstract member FormatGuid : string * Microsoft.VisualStudio.VsWizard.eFormat -&gt; string" Usage="iVCWizCtlUI.FormatGuid (bstrGuid, Format)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743830)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrGuid" Type="System.String" />
+        <Parameter Name="Format" Type="Microsoft.VisualStudio.VsWizard.eFormat" />
+      </Parameters>
+      <Docs>
+        <param name="bstrGuid">To be added.</param>
+        <param name="Format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateNextDefaultProjectName">
+      <MemberSignature Language="C#" Value="public string GenerateNextDefaultProjectName (string bstrBaseName, string bstrLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateNextDefaultProjectName([in]string bstrBaseName, [in]string bstrLocation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GenerateNextDefaultProjectName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateNextDefaultProjectName (bstrBaseName As String, bstrLocation As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateNextDefaultProjectName(System::String ^ bstrBaseName, System::String ^ bstrLocation);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateNextDefaultProjectName : string * string -&gt; string" Usage="iVCWizCtlUI.GenerateNextDefaultProjectName (bstrBaseName, bstrLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743852)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrBaseName" Type="System.String" />
+        <Parameter Name="bstrLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrBaseName">To be added.</param>
+        <param name="bstrLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveXControlTypeLib">
+      <MemberSignature Language="C#" Value="public string GetActiveXControlTypeLib (string bstrControlGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetActiveXControlTypeLib([in]string bstrControlGuid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetActiveXControlTypeLib(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetActiveXControlTypeLib (bstrControlGuid As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetActiveXControlTypeLib(System::String ^ bstrControlGuid);" />
+      <MemberSignature Language="F#" Value="abstract member GetActiveXControlTypeLib : string -&gt; string" Usage="iVCWizCtlUI.GetActiveXControlTypeLib bstrControlGuid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743837)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrControlGuid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrControlGuid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppID">
+      <MemberSignature Language="C#" Value="public string GetAppID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAppID() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetAppID" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAppID () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAppID();" />
+      <MemberSignature Language="F#" Value="abstract member GetAppID : unit -&gt; string" Usage="iVCWizCtlUI.GetAppID " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassCommandHandlerDesc">
+      <MemberSignature Language="C#" Value="public object GetClassCommandHandlerDesc (object pDispClass, string bstrCommandName, string bstrControlType = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetClassCommandHandlerDesc([in]object pDispClass, [in]string bstrCommandName, [in]string bstrControlType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetClassCommandHandlerDesc(System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClassCommandHandlerDesc (pDispClass As Object, bstrCommandName As String, Optional bstrControlType As String = &quot;&quot;) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetClassCommandHandlerDesc : obj * string * string -&gt; obj" Usage="iVCWizCtlUI.GetClassCommandHandlerDesc (pDispClass, bstrCommandName, bstrControlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743883)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispClass" Type="System.Object" />
+        <Parameter Name="bstrCommandName" Type="System.String" />
+        <Parameter Name="bstrControlType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pDispClass">To be added.</param>
+        <param name="bstrCommandName">To be added.</param>
+        <param name="bstrControlType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodePageFromLCID">
+      <MemberSignature Language="C#" Value="public string GetCodePageFromLCID (uint dwLCID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCodePageFromLCID([in]unsigned int32 dwLCID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetCodePageFromLCID(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCodePageFromLCID (dwLCID As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCodePageFromLCID(System::UInt32 dwLCID);" />
+      <MemberSignature Language="F#" Value="abstract member GetCodePageFromLCID : uint32 -&gt; string" Usage="iVCWizCtlUI.GetCodePageFromLCID dwLCID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743875)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwLCID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwLCID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandCount">
+      <MemberSignature Language="C#" Value="public object GetCommandCount (object pDispDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetCommandCount([in]object pDispDesc) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetCommandCount(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCommandCount (pDispDesc As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCommandCount(System::Object ^ pDispDesc);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandCount : obj -&gt; obj" Usage="iVCWizCtlUI.GetCommandCount pDispDesc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743884)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandDocumentation">
+      <MemberSignature Language="C#" Value="public string GetCommandDocumentation (object pDispDesc, object memid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCommandDocumentation([in]object pDispDesc, [in]object memid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetCommandDocumentation(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCommandDocumentation (pDispDesc As Object, memid As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCommandDocumentation(System::Object ^ pDispDesc, System::Object ^ memid);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandDocumentation : obj * obj -&gt; string" Usage="iVCWizCtlUI.GetCommandDocumentation (pDispDesc, memid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743886)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <param name="memid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandHandlerString">
+      <MemberSignature Language="C#" Value="public string GetCommandHandlerString (object pDispDesc, object memid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCommandHandlerString([in]object pDispDesc, [in]object memid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetCommandHandlerString(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCommandHandlerString (pDispDesc As Object, memid As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCommandHandlerString(System::Object ^ pDispDesc, System::Object ^ memid);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandHandlerString : obj * obj -&gt; string" Usage="iVCWizCtlUI.GetCommandHandlerString (pDispDesc, memid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743887)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <param name="memid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandName">
+      <MemberSignature Language="C#" Value="public string GetCommandName (object pDispDesc, object memid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCommandName([in]object pDispDesc, [in]object memid) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetCommandName(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCommandName (pDispDesc As Object, memid As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCommandName(System::Object ^ pDispDesc, System::Object ^ memid);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommandName : obj * obj -&gt; string" Usage="iVCWizCtlUI.GetCommandName (pDispDesc, memid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743885)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <param name="memid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComputerName">
+      <MemberSignature Language="C#" Value="public string GetComputerName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetComputerName() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetComputerName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetComputerName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetComputerName();" />
+      <MemberSignature Language="F#" Value="abstract member GetComputerName : unit -&gt; string" Usage="iVCWizCtlUI.GetComputerName " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743882)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionString">
+      <MemberSignature Language="C#" Value="public string GetConnectionString (bool bUseOLEDB);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConnectionString([in]bool bUseOLEDB) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetConnectionString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionString (bUseOLEDB As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConnectionString(bool bUseOLEDB);" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionString : bool -&gt; string" Usage="iVCWizCtlUI.GetConnectionString bUseOLEDB" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743813)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bUseOLEDB" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bUseOLEDB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConsumerClass">
+      <MemberSignature Language="C#" Value="public string GetConsumerClass (string bstrClassName, bool bAttributed = false, bool bCommand = false, bool bChange = false, bool bInsert = false, bool bDelete = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConsumerClass([in]string bstrClassName, [in]bool bAttributed, [in]bool bCommand, [in]bool bChange, [in]bool bInsert, [in]bool bDelete) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetConsumerClass(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConsumerClass (Optional bstrClassName As String, Optional bAttributed As Boolean = false, Optional bCommand As Boolean = false, Optional bChange As Boolean = false, Optional bInsert As Boolean = false, Optional bDelete As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetConsumerClass : string * bool * bool * bool * bool * bool -&gt; string" Usage="iVCWizCtlUI.GetConsumerClass (bstrClassName, bAttributed, bCommand, bChange, bInsert, bDelete)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743831)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrClassName" Type="System.String" />
+        <Parameter Name="bAttributed" Type="System.Boolean" />
+        <Parameter Name="bCommand" Type="System.Boolean" />
+        <Parameter Name="bChange" Type="System.Boolean" />
+        <Parameter Name="bInsert" Type="System.Boolean" />
+        <Parameter Name="bDelete" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrClassName">To be added.</param>
+        <param name="bAttributed">To be added.</param>
+        <param name="bCommand">To be added.</param>
+        <param name="bChange">To be added.</param>
+        <param name="bInsert">To be added.</param>
+        <param name="bDelete">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultWebTargetFolder">
+      <MemberSignature Language="C#" Value="public object GetDefaultWebTargetFolder (object pDeployable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetDefaultWebTargetFolder([in]object pDeployable) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetDefaultWebTargetFolder(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDefaultWebTargetFolder (pDeployable As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetDefaultWebTargetFolder(System::Object ^ pDeployable);" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultWebTargetFolder : obj -&gt; obj" Usage="iVCWizCtlUI.GetDefaultWebTargetFolder pDeployable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743850)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDialogControlsAndTypes">
+      <MemberSignature Language="C#" Value="public object GetDialogControlsAndTypes (string bstrDialogId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetDialogControlsAndTypes([in]string bstrDialogId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetDialogControlsAndTypes(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDialogControlsAndTypes (bstrDialogId As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetDialogControlsAndTypes(System::String ^ bstrDialogId);" />
+      <MemberSignature Language="F#" Value="abstract member GetDialogControlsAndTypes : string -&gt; obj" Usage="iVCWizCtlUI.GetDialogControlsAndTypes bstrDialogId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743836)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrDialogId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrDialogId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDialogIds">
+      <MemberSignature Language="C#" Value="public string GetDialogIds ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDialogIds() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetDialogIds" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDialogIds () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDialogIds();" />
+      <MemberSignature Language="F#" Value="abstract member GetDialogIds : unit -&gt; string" Usage="iVCWizCtlUI.GetDialogIds " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743835)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryViaBrowseDlg">
+      <MemberSignature Language="C#" Value="public string GetDirectoryViaBrowseDlg (string bstrDlgTitle, string bstrInitialDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDirectoryViaBrowseDlg([in]string bstrDlgTitle, [in]string bstrInitialDir) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetDirectoryViaBrowseDlg(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryViaBrowseDlg (bstrDlgTitle As String, bstrInitialDir As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDirectoryViaBrowseDlg(System::String ^ bstrDlgTitle, System::String ^ bstrInitialDir);" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectoryViaBrowseDlg : string * string -&gt; string" Usage="iVCWizCtlUI.GetDirectoryViaBrowseDlg (bstrDlgTitle, bstrInitialDir)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743854)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrDlgTitle" Type="System.String" />
+        <Parameter Name="bstrInitialDir" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrDlgTitle">To be added.</param>
+        <param name="bstrInitialDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostLocale">
+      <MemberSignature Language="C#" Value="public uint GetHostLocale ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetHostLocale() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetHostLocale" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHostLocale () As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 GetHostLocale();" />
+      <MemberSignature Language="F#" Value="abstract member GetHostLocale : unit -&gt; uint32" Usage="iVCWizCtlUI.GetHostLocale " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743880)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstalledLangs">
+      <MemberSignature Language="C#" Value="public string GetInstalledLangs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetInstalledLangs() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetInstalledLangs" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstalledLangs () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetInstalledLangs();" />
+      <MemberSignature Language="F#" Value="abstract member GetInstalledLangs : unit -&gt; string" Usage="iVCWizCtlUI.GetInstalledLangs " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743878)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLangAbbrevFromLCID">
+      <MemberSignature Language="C#" Value="public string GetLangAbbrevFromLCID (uint dwLCID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLangAbbrevFromLCID([in]unsigned int32 dwLCID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetLangAbbrevFromLCID(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLangAbbrevFromLCID (dwLCID As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLangAbbrevFromLCID(System::UInt32 dwLCID);" />
+      <MemberSignature Language="F#" Value="abstract member GetLangAbbrevFromLCID : uint32 -&gt; string" Usage="iVCWizCtlUI.GetLangAbbrevFromLCID dwLCID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743874)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwLCID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwLCID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLangFromLCID">
+      <MemberSignature Language="C#" Value="public string GetLangFromLCID (uint dwLCID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLangFromLCID([in]unsigned int32 dwLCID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetLangFromLCID(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLangFromLCID (dwLCID As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLangFromLCID(System::UInt32 dwLCID);" />
+      <MemberSignature Language="F#" Value="abstract member GetLangFromLCID : uint32 -&gt; string" Usage="iVCWizCtlUI.GetLangFromLCID dwLCID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743873)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwLCID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwLCID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetODBCConsumerClassDecl">
+      <MemberSignature Language="C#" Value="public string GetODBCConsumerClassDecl (bool bBindAllColumns = false, bool bSnapshot = false, string bstrClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetODBCConsumerClassDecl([in]bool bBindAllColumns, [in]bool bSnapshot, [in]string bstrClassName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetODBCConsumerClassDecl(System.Boolean,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetODBCConsumerClassDecl (Optional bBindAllColumns As Boolean = false, Optional bSnapshot As Boolean = false, Optional bstrClassName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetODBCConsumerClassDecl : bool * bool * string -&gt; string" Usage="iVCWizCtlUI.GetODBCConsumerClassDecl (bBindAllColumns, bSnapshot, bstrClassName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743832)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bBindAllColumns" Type="System.Boolean" />
+        <Parameter Name="bSnapshot" Type="System.Boolean" />
+        <Parameter Name="bstrClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bBindAllColumns">To be added.</param>
+        <param name="bSnapshot">To be added.</param>
+        <param name="bstrClassName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetODBCConsumerClassImpl">
+      <MemberSignature Language="C#" Value="public string GetODBCConsumerClassImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetODBCConsumerClassImpl() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetODBCConsumerClassImpl" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetODBCConsumerClassImpl () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetODBCConsumerClassImpl();" />
+      <MemberSignature Language="F#" Value="abstract member GetODBCConsumerClassImpl : unit -&gt; string" Usage="iVCWizCtlUI.GetODBCConsumerClassImpl " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743833)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpenFileNameViaDlg">
+      <MemberSignature Language="C#" Value="public string GetOpenFileNameViaDlg (string bstrDlgTitle, string bstrInitialDir, string bstrFilter, string bstrFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetOpenFileNameViaDlg([in]string bstrDlgTitle, [in]string bstrInitialDir, [in]string bstrFilter, [in]string bstrFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetOpenFileNameViaDlg(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOpenFileNameViaDlg (bstrDlgTitle As String, bstrInitialDir As String, bstrFilter As String, bstrFileName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetOpenFileNameViaDlg(System::String ^ bstrDlgTitle, System::String ^ bstrInitialDir, System::String ^ bstrFilter, System::String ^ bstrFileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetOpenFileNameViaDlg : string * string * string * string -&gt; string" Usage="iVCWizCtlUI.GetOpenFileNameViaDlg (bstrDlgTitle, bstrInitialDir, bstrFilter, bstrFileName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743848)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrDlgTitle" Type="System.String" />
+        <Parameter Name="bstrInitialDir" Type="System.String" />
+        <Parameter Name="bstrFilter" Type="System.String" />
+        <Parameter Name="bstrFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrDlgTitle">To be added.</param>
+        <param name="bstrInitialDir">To be added.</param>
+        <param name="bstrFilter">To be added.</param>
+        <param name="bstrFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrimaryLangIdFromLCID">
+      <MemberSignature Language="C#" Value="public string GetPrimaryLangIdFromLCID (uint dwLCID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPrimaryLangIdFromLCID([in]unsigned int32 dwLCID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetPrimaryLangIdFromLCID(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryLangIdFromLCID (dwLCID As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPrimaryLangIdFromLCID(System::UInt32 dwLCID);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimaryLangIdFromLCID : uint32 -&gt; string" Usage="iVCWizCtlUI.GetPrimaryLangIdFromLCID dwLCID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743876)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwLCID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwLCID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProcessName">
+      <MemberSignature Language="C#" Value="public string GetProcessName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetProcessName() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetProcessName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetProcessName();" />
+      <MemberSignature Language="F#" Value="abstract member GetProcessName : unit -&gt; string" Usage="iVCWizCtlUI.GetProcessName " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743872)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoteMachine">
+      <MemberSignature Language="C#" Value="public string GetRemoteMachine (object pDeployable, string bstrCfg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRemoteMachine([in]object pDeployable, [in]string bstrCfg) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetRemoteMachine(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRemoteMachine (pDeployable As Object, bstrCfg As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRemoteMachine(System::Object ^ pDeployable, System::String ^ bstrCfg);" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteMachine : obj * string -&gt; string" Usage="iVCWizCtlUI.GetRemoteMachine (pDeployable, bstrCfg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743871)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+        <Parameter Name="bstrCfg" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <param name="bstrCfg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubFolderByName">
+      <MemberSignature Language="C#" Value="public object GetSubFolderByName (object pDeployFolder, string pbstrFolderName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSubFolderByName([in]object pDeployFolder, [in]string pbstrFolderName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetSubFolderByName(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubFolderByName (pDeployFolder As Object, pbstrFolderName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSubFolderByName(System::Object ^ pDeployFolder, System::String ^ pbstrFolderName);" />
+      <MemberSignature Language="F#" Value="abstract member GetSubFolderByName : obj * string -&gt; obj" Usage="iVCWizCtlUI.GetSubFolderByName (pDeployFolder, pbstrFolderName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743842)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployFolder" Type="System.Object" />
+        <Parameter Name="pbstrFolderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployFolder">To be added.</param>
+        <param name="pbstrFolderName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubLangIdFromLCID">
+      <MemberSignature Language="C#" Value="public string GetSubLangIdFromLCID (uint dwLCID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSubLangIdFromLCID([in]unsigned int32 dwLCID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetSubLangIdFromLCID(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubLangIdFromLCID (dwLCID As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetSubLangIdFromLCID(System::UInt32 dwLCID);" />
+      <MemberSignature Language="F#" Value="abstract member GetSubLangIdFromLCID : uint32 -&gt; string" Usage="iVCWizCtlUI.GetSubLangIdFromLCID dwLCID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743877)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwLCID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwLCID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSystemLCID">
+      <MemberSignature Language="C#" Value="public uint GetSystemLCID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetSystemLCID() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetSystemLCID" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSystemLCID () As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 GetSystemLCID();" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemLCID : unit -&gt; uint32" Usage="iVCWizCtlUI.GetSystemLCID " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743879)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetURLViaDlg">
+      <MemberSignature Language="C#" Value="public string GetURLViaDlg (string bstrDlgTitle, string bstrStaticLabel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetURLViaDlg([in]string bstrDlgTitle, [in]string bstrStaticLabel) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.GetURLViaDlg(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetURLViaDlg (bstrDlgTitle As String, bstrStaticLabel As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetURLViaDlg(System::String ^ bstrDlgTitle, System::String ^ bstrStaticLabel);" />
+      <MemberSignature Language="F#" Value="abstract member GetURLViaDlg : string * string -&gt; string" Usage="iVCWizCtlUI.GetURLViaDlg (bstrDlgTitle, bstrStaticLabel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743847)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrDlgTitle" Type="System.String" />
+        <Parameter Name="bstrStaticLabel" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrDlgTitle">To be added.</param>
+        <param name="bstrStaticLabel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSymbolDisabled">
+      <MemberSignature Language="C#" Value="public bool IsSymbolDisabled (string bstrSymbol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymbolDisabled([in]string bstrSymbol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.IsSymbolDisabled(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSymbolDisabled (bstrSymbol As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSymbolDisabled(System::String ^ bstrSymbol);" />
+      <MemberSignature Language="F#" Value="abstract member IsSymbolDisabled : string -&gt; bool" Usage="iVCWizCtlUI.IsSymbolDisabled bstrSymbol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrSymbol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrSymbol">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidNumericValue">
+      <MemberSignature Language="C#" Value="public bool IsValidNumericValue (object varValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidNumericValue([in]object varValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.IsValidNumericValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidNumericValue (varValue As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidNumericValue(System::Object ^ varValue);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidNumericValue : obj -&gt; bool" Usage="iVCWizCtlUI.IsValidNumericValue varValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidProgID">
+      <MemberSignature Language="C#" Value="public bool IsValidProgID (object varValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidProgID([in]object varValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.IsValidProgID(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidProgID (varValue As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidProgID(System::Object ^ varValue);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidProgID : obj -&gt; bool" Usage="iVCWizCtlUI.IsValidProgID varValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743827)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWebTierProject">
+      <MemberSignature Language="C#" Value="public bool IsWebTierProject (object pProject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsWebTierProject([in]object pProject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.IsWebTierProject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsWebTierProject (pProject As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsWebTierProject(System::Object ^ pProject);" />
+      <MemberSignature Language="F#" Value="abstract member IsWebTierProject : obj -&gt; bool" Usage="iVCWizCtlUI.IsWebTierProject pProject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743870)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pProject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pProject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (object pdispDocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load([in]object pdispDocument) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.Load(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (pdispDocument As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Object ^ pdispDocument);" />
+      <MemberSignature Language="F#" Value="abstract member Load : obj -&gt; unit" Usage="iVCWizCtlUI.Load pdispDocument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdispDocument" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pdispDocument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigate">
+      <MemberSignature Language="C#" Value="public void Navigate (string bstrPage, string bstrFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Navigate([in]string bstrPage, [in]string bstrFrame) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.Navigate(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (bstrPage As String, Optional bstrFrame As String)" />
+      <MemberSignature Language="F#" Value="abstract member Navigate : string * string -&gt; unit" Usage="iVCWizCtlUI.Navigate (bstrPage, bstrFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrPage" Type="System.String" />
+        <Parameter Name="bstrFrame" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrPage">To be added.</param>
+        <param name="bstrFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateToCommandHandler">
+      <MemberSignature Language="C#" Value="public void NavigateToCommandHandler (object pDispDesc, object memid, string bstrName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NavigateToCommandHandler([in]object pDispDesc, [in]object memid, [in]string bstrName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.NavigateToCommandHandler(System.Object,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NavigateToCommandHandler (pDispDesc As Object, memid As Object, Optional bstrName As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member NavigateToCommandHandler : obj * obj * string -&gt; unit" Usage="iVCWizCtlUI.NavigateToCommandHandler (pDispDesc, memid, bstrName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743889)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDispDesc" Type="System.Object" />
+        <Parameter Name="memid" Type="System.Object" />
+        <Parameter Name="bstrName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pDispDesc">To be added.</param>
+        <param name="memid">To be added.</param>
+        <param name="bstrName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public void Next (object pdispDocument, object var, string bstrFrame, bool bUpdate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Next([in]object pdispDocument, [in]object var, [in]string bstrFrame, [in]bool bUpdate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.Next(System.Object,System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Next (pdispDocument As Object, var As Object, Optional bstrFrame As String, Optional bUpdate As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Next : obj * obj * string * bool -&gt; unit" Usage="iVCWizCtlUI.Next (pdispDocument, var, bstrFrame, bUpdate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdispDocument" Type="System.Object" />
+        <Parameter Name="var" Type="System.Object" />
+        <Parameter Name="bstrFrame" Type="System.String" />
+        <Parameter Name="bUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pdispDocument">To be added.</param>
+        <param name="var">To be added.</param>
+        <param name="bstrFrame">To be added.</param>
+        <param name="bUpdate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OkCancelAlert">
+      <MemberSignature Language="C#" Value="public bool OkCancelAlert (string bstrMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OkCancelAlert([in]string bstrMessage) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.OkCancelAlert(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OkCancelAlert (bstrMessage As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OkCancelAlert(System::String ^ bstrMessage);" />
+      <MemberSignature Language="F#" Value="abstract member OkCancelAlert : string -&gt; bool" Usage="iVCWizCtlUI.OkCancelAlert bstrMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743825)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHelp">
+      <MemberSignature Language="C#" Value="public void OnHelp (string bstrKeyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnHelp([in]string bstrKeyword) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.OnHelp(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnHelp (bstrKeyword As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnHelp(System::String ^ bstrKeyword);" />
+      <MemberSignature Language="F#" Value="abstract member OnHelp : string -&gt; unit" Usage="iVCWizCtlUI.OnHelp bstrKeyword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743823)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrKeyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrKeyword">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentKind">
+      <MemberSignature Language="C#" Value="public object ParentKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ParentKind" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ParentKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentKind As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ParentKind { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentKind : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ParentKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743860)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743860)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentObject">
+      <MemberSignature Language="C#" Value="public object ParentObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ParentObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ParentObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ParentObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParentObject : obj with get, set" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ParentObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743863)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743863)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743863)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(65)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreShowWizard">
+      <MemberSignature Language="C#" Value="public void PreShowWizard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PreShowWizard() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.PreShowWizard" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PreShowWizard ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreShowWizard();" />
+      <MemberSignature Language="F#" Value="abstract member PreShowWizard : unit -&gt; unit" Usage="iVCWizCtlUI.PreShowWizard " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743846)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectObject">
+      <MemberSignature Language="C#" Value="public object ProjectObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ProjectObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectObject : obj with get, set" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ProjectObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(65)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSymbol">
+      <MemberSignature Language="C#" Value="public void RemoveSymbol (string bstrSymbol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveSymbol([in]string bstrSymbol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.RemoveSymbol(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveSymbol (bstrSymbol As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSymbol(System::String ^ bstrSymbol);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveSymbol : string -&gt; unit" Usage="iVCWizCtlUI.RemoveSymbol bstrSymbol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743819)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrSymbol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrSymbol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTemplate">
+      <MemberSignature Language="C#" Value="public void RenderTemplate (string bstrTemplateFile, string bstrTargetFile, bool bDontProcess = false, bool bOverwrite = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderTemplate([in]string bstrTemplateFile, [in]string bstrTargetFile, [in]bool bDontProcess, [in]bool bOverwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.RenderTemplate(System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RenderTemplate (bstrTemplateFile As String, bstrTargetFile As String, Optional bDontProcess As Boolean = false, Optional bOverwrite As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member RenderTemplate : string * string * bool * bool -&gt; unit" Usage="iVCWizCtlUI.RenderTemplate (bstrTemplateFile, bstrTargetFile, bDontProcess, bOverwrite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743821)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrTemplateFile" Type="System.String" />
+        <Parameter Name="bstrTargetFile" Type="System.String" />
+        <Parameter Name="bDontProcess" Type="System.Boolean" />
+        <Parameter Name="bOverwrite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrTemplateFile">To be added.</param>
+        <param name="bstrTargetFile">To be added.</param>
+        <param name="bDontProcess">To be added.</param>
+        <param name="bOverwrite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTemplateToString">
+      <MemberSignature Language="C#" Value="public string RenderTemplateToString (string bstrTemplateFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RenderTemplateToString([in]string bstrTemplateFile) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.RenderTemplateToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplateToString (bstrTemplateFile As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RenderTemplateToString(System::String ^ bstrTemplateFile);" />
+      <MemberSignature Language="F#" Value="abstract member RenderTemplateToString : string -&gt; string" Usage="iVCWizCtlUI.RenderTemplateToString bstrTemplateFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrTemplateFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrTemplateFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportError">
+      <MemberSignature Language="C#" Value="public void ReportError (string bstrErrorMsg = &quot;&quot;, bool bConcatExisting = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportError([in]string bstrErrorMsg, [in]bool bConcatExisting) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ReportError(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportError (Optional bstrErrorMsg As String = &quot;&quot;, Optional bConcatExisting As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member ReportError : string * bool -&gt; unit" Usage="iVCWizCtlUI.ReportError (bstrErrorMsg, bConcatExisting)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743840)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrErrorMsg" Type="System.String" />
+        <Parameter Name="bConcatExisting" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrErrorMsg">To be added.</param>
+        <param name="bConcatExisting">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceHelper">
+      <MemberSignature Language="C#" Value="public object ResourceHelper { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ResourceHelper" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ResourceHelper" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceHelper As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceHelper { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceHelper : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ResourceHelper" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectDataSource">
+      <MemberSignature Language="C#" Value="public string SelectDataSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectDataSource() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SelectDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectDataSource () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SelectDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member SelectDataSource : unit -&gt; string" Usage="iVCWizCtlUI.SelectDataSource " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectODBCDatabase">
+      <MemberSignature Language="C#" Value="public string SelectODBCDatabase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectODBCDatabase() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SelectODBCDatabase" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectODBCDatabase () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SelectODBCDatabase();" />
+      <MemberSignature Language="F#" Value="abstract member SelectODBCDatabase : unit -&gt; string" Usage="iVCWizCtlUI.SelectODBCDatabase " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743815)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaults">
+      <MemberSignature Language="C#" Value="public void SetDefaults (object pdispDocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaults([in]object pdispDocument) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SetDefaults(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaults (pdispDocument As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaults(System::Object ^ pdispDocument);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefaults : obj -&gt; unit" Usage="iVCWizCtlUI.SetDefaults pdispDocument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdispDocument" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pdispDocument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDeploymentAppMappings">
+      <MemberSignature Language="C#" Value="public void SetDeploymentAppMappings (object pWebTargetFolder, object pExecutable, string bstrExtension, string bstrVerbs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDeploymentAppMappings([in]object pWebTargetFolder, [in]object pExecutable, [in]string bstrExtension, [in]string bstrVerbs) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SetDeploymentAppMappings(System.Object,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDeploymentAppMappings (pWebTargetFolder As Object, pExecutable As Object, bstrExtension As String, bstrVerbs As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDeploymentAppMappings(System::Object ^ pWebTargetFolder, System::Object ^ pExecutable, System::String ^ bstrExtension, System::String ^ bstrVerbs);" />
+      <MemberSignature Language="F#" Value="abstract member SetDeploymentAppMappings : obj * obj * string * string -&gt; unit" Usage="iVCWizCtlUI.SetDeploymentAppMappings (pWebTargetFolder, pExecutable, bstrExtension, bstrVerbs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743881)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pWebTargetFolder" Type="System.Object" />
+        <Parameter Name="pExecutable" Type="System.Object" />
+        <Parameter Name="bstrExtension" Type="System.String" />
+        <Parameter Name="bstrVerbs" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pWebTargetFolder">To be added.</param>
+        <param name="pExecutable">To be added.</param>
+        <param name="bstrExtension">To be added.</param>
+        <param name="bstrVerbs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInfo">
+      <MemberSignature Language="C#" Value="public void SetErrorInfo (string bstrDescription, uint ulHRESULT = 0, uint dwReserved = 0, string bstrHelpKeyword = &quot;0&quot;, string bstrSource = &quot;0&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetErrorInfo([in]string bstrDescription, [in]unsigned int32 ulHRESULT, [in]unsigned int32 dwReserved, [in]string bstrHelpKeyword, [in]string bstrSource) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SetErrorInfo(System.String,System.UInt32,System.UInt32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetErrorInfo (bstrDescription As String, Optional ulHRESULT As UInteger = 0, Optional dwReserved As UInteger = 0, Optional bstrHelpKeyword As String = &quot;0&quot;, Optional bstrSource As String = &quot;0&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetErrorInfo : string * uint32 * uint32 * string * string -&gt; unit" Usage="iVCWizCtlUI.SetErrorInfo (bstrDescription, ulHRESULT, dwReserved, bstrHelpKeyword, bstrSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743839)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrDescription" Type="System.String" />
+        <Parameter Name="ulHRESULT" Type="System.UInt32" />
+        <Parameter Name="dwReserved" Type="System.UInt32" />
+        <Parameter Name="bstrHelpKeyword" Type="System.String" />
+        <Parameter Name="bstrSource" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrDescription">To be added.</param>
+        <param name="ulHRESULT">To be added.</param>
+        <param name="dwReserved">To be added.</param>
+        <param name="bstrHelpKeyword">To be added.</param>
+        <param name="bstrSource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRemoteMachine">
+      <MemberSignature Language="C#" Value="public void SetRemoteMachine (object pDeployable, string bstrRemoteMachine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRemoteMachine([in]object pDeployable, [in]string bstrRemoteMachine) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.SetRemoteMachine(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRemoteMachine (pDeployable As Object, bstrRemoteMachine As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRemoteMachine(System::Object ^ pDeployable, System::String ^ bstrRemoteMachine);" />
+      <MemberSignature Language="F#" Value="abstract member SetRemoteMachine : obj * string -&gt; unit" Usage="iVCWizCtlUI.SetRemoteMachine (pDeployable, bstrRemoteMachine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743845)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pDeployable" Type="System.Object" />
+        <Parameter Name="bstrRemoteMachine" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pDeployable">To be added.</param>
+        <param name="bstrRemoteMachine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowWiz">
+      <MemberSignature Language="C#" Value="public void ShowWiz ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowWiz() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ShowWiz" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowWiz ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowWiz();" />
+      <MemberSignature Language="F#" Value="abstract member ShowWiz : unit -&gt; unit" Usage="iVCWizCtlUI.ShowWiz " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743817)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeLibs">
+      <MemberSignature Language="C#" Value="public object TypeLibs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TypeLibs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.TypeLibs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeLibs As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TypeLibs { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibs : obj" Usage="Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.TypeLibs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743865)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743865)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCLRIdentifier">
+      <MemberSignature Language="C#" Value="public bool ValidateCLRIdentifier (string bstrName, bool bReportError = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateCLRIdentifier([in]string bstrName, [in]bool bReportError) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ValidateCLRIdentifier(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateCLRIdentifier (bstrName As String, Optional bReportError As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCLRIdentifier : string * bool -&gt; bool" Usage="iVCWizCtlUI.ValidateCLRIdentifier (bstrName, bReportError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743859)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+        <Parameter Name="bReportError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <param name="bReportError">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCSharpClass">
+      <MemberSignature Language="C#" Value="public bool ValidateCSharpClass (string bstrNamespace, string bstrClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateCSharpClass([in]string bstrNamespace, [in]string bstrClass) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ValidateCSharpClass(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateCSharpClass (bstrNamespace As String, bstrClass As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateCSharpClass(System::String ^ bstrNamespace, System::String ^ bstrClass);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCSharpClass : string * string -&gt; bool" Usage="iVCWizCtlUI.ValidateCSharpClass (bstrNamespace, bstrClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743858)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrNamespace" Type="System.String" />
+        <Parameter Name="bstrClass" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrNamespace">To be added.</param>
+        <param name="bstrClass">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCSharpFile">
+      <MemberSignature Language="C#" Value="public bool ValidateCSharpFile (string bstrName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateCSharpFile([in]string bstrName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ValidateCSharpFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateCSharpFile (bstrName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateCSharpFile(System::String ^ bstrName);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCSharpFile : string -&gt; bool" Usage="iVCWizCtlUI.ValidateCSharpFile bstrName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743856)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCSharpIdentifier">
+      <MemberSignature Language="C#" Value="public bool ValidateCSharpIdentifier (string bstrName, bool bReportError = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateCSharpIdentifier([in]string bstrName, [in]bool bReportError) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ValidateCSharpIdentifier(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateCSharpIdentifier (bstrName As String, Optional bReportError As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCSharpIdentifier : string * bool -&gt; bool" Usage="iVCWizCtlUI.ValidateCSharpIdentifier (bstrName, bReportError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743855)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+        <Parameter Name="bReportError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">To be added.</param>
+        <param name="bReportError">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCSharpNamespace">
+      <MemberSignature Language="C#" Value="public bool ValidateCSharpNamespace (string bstrNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateCSharpNamespace([in]string bstrNamespace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.ValidateCSharpNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateCSharpNamespace (bstrNamespace As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateCSharpNamespace(System::String ^ bstrNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCSharpNamespace : string -&gt; bool" Usage="iVCWizCtlUI.ValidateCSharpNamespace bstrNamespace" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743857)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YesNoAlert">
+      <MemberSignature Language="C#" Value="public bool YesNoAlert (string bstrMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool YesNoAlert([in]string bstrMessage) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.YesNoAlert(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function YesNoAlert (bstrMessage As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool YesNoAlert(System::String ^ bstrMessage);" />
+      <MemberSignature Language="F#" Value="abstract member YesNoAlert : string -&gt; bool" Usage="iVCWizCtlUI.YesNoAlert bstrMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,28 @@
+﻿<Type Name="DebuggedAssemblyEventHandler" FullName="Debugging.DebuggedAssemblyEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DebuggedAssemblyEventHandler(object sender, DebuggedAssemblyEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DebuggedAssemblyEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Debugging.DebuggedAssemblyEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DebuggedAssemblyEventHandler(sender As Object, e As DebuggedAssemblyEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DebuggedAssemblyEventHandler(System::Object ^ sender, DebuggedAssemblyEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DebuggedAssemblyEventHandler = delegate of obj * DebuggedAssemblyEventArgs -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Debugging.DebuggedAssemblyEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,81 @@
+﻿<Type Name="useOfMfc" FullName="Microsoft.VisualStudio.VCProjectEngine.useOfMfc">
+  <TypeSignature Language="C#" Value="public enum useOfMfc" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed useOfMfc extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.useOfMfc" />
+  <TypeSignature Language="VB.NET" Value="Public Enum useOfMfc" />
+  <TypeSignature Language="C++ CLI" Value="public enum class useOfMfc" />
+  <TypeSignature Language="F#" Value="type useOfMfc = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="useMfcDynamic">
+      <MemberSignature Language="C#" Value="useMfcDynamic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.useOfMfc useMfcDynamic = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcDynamic" />
+      <MemberSignature Language="VB.NET" Value="useMfcDynamic" />
+      <MemberSignature Language="C++ CLI" Value="useMfcDynamic" />
+      <MemberSignature Language="F#" Value="useMfcDynamic = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcDynamic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.useOfMfc</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="useMfcStatic">
+      <MemberSignature Language="C#" Value="useMfcStatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.useOfMfc useMfcStatic = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcStatic" />
+      <MemberSignature Language="VB.NET" Value="useMfcStatic" />
+      <MemberSignature Language="C++ CLI" Value="useMfcStatic" />
+      <MemberSignature Language="F#" Value="useMfcStatic = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcStatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.useOfMfc</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="useMfcStdWin">
+      <MemberSignature Language="C#" Value="useMfcStdWin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.useOfMfc useMfcStdWin = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcStdWin" />
+      <MemberSignature Language="VB.NET" Value="useMfcStdWin" />
+      <MemberSignature Language="C++ CLI" Value="useMfcStdWin" />
+      <MemberSignature Language="F#" Value="useMfcStdWin = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.useOfMfc.useMfcStdWin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.useOfMfc</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

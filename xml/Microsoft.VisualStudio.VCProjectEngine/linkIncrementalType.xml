@@ -1,0 +1,81 @@
+﻿<Type Name="linkIncrementalType" FullName="Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType">
+  <TypeSignature Language="C#" Value="public enum linkIncrementalType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed linkIncrementalType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum linkIncrementalType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class linkIncrementalType" />
+  <TypeSignature Language="F#" Value="type linkIncrementalType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="linkIncrementalDefault">
+      <MemberSignature Language="C#" Value="linkIncrementalDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType linkIncrementalDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalDefault" />
+      <MemberSignature Language="VB.NET" Value="linkIncrementalDefault" />
+      <MemberSignature Language="C++ CLI" Value="linkIncrementalDefault" />
+      <MemberSignature Language="F#" Value="linkIncrementalDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkIncrementalNo">
+      <MemberSignature Language="C#" Value="linkIncrementalNo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType linkIncrementalNo = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalNo" />
+      <MemberSignature Language="VB.NET" Value="linkIncrementalNo" />
+      <MemberSignature Language="C++ CLI" Value="linkIncrementalNo" />
+      <MemberSignature Language="F#" Value="linkIncrementalNo = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalNo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="linkIncrementalYes">
+      <MemberSignature Language="C#" Value="linkIncrementalYes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType linkIncrementalYes = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalYes" />
+      <MemberSignature Language="VB.NET" Value="linkIncrementalYes" />
+      <MemberSignature Language="C++ CLI" Value="linkIncrementalYes" />
+      <MemberSignature Language="F#" Value="linkIncrementalYes = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType.linkIncrementalYes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.linkIncrementalType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

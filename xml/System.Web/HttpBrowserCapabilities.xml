@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type HttpBrowserCapabilities = class&#xA;    inherit HttpCapabilitiesBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -37,11 +39,560 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveXControls">
+      <MemberSignature Language="C#" Value="public bool ActiveXControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ActiveXControls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.ActiveXControls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveXControls As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ActiveXControls { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveXControls : bool" Usage="System.Web.HttpBrowserCapabilities.ActiveXControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AOL">
+      <MemberSignature Language="C#" Value="public bool AOL { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AOL" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.AOL" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AOL As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AOL { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AOL : bool" Usage="System.Web.HttpBrowserCapabilities.AOL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundSounds">
+      <MemberSignature Language="C#" Value="public bool BackgroundSounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundSounds" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.BackgroundSounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackgroundSounds As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackgroundSounds { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundSounds : bool" Usage="System.Web.HttpBrowserCapabilities.BackgroundSounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Beta">
+      <MemberSignature Language="C#" Value="public bool Beta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Beta" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Beta" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Beta As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Beta { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Beta : bool" Usage="System.Web.HttpBrowserCapabilities.Beta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Browser">
+      <MemberSignature Language="C#" Value="public string Browser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Browser" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Browser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Browser As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Browser { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Browser : string" Usage="System.Web.HttpBrowserCapabilities.Browser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CDF">
+      <MemberSignature Language="C#" Value="public bool CDF { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CDF" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.CDF" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CDF As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CDF { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CDF : bool" Usage="System.Web.HttpBrowserCapabilities.CDF" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClrVersion">
+      <MemberSignature Language="C#" Value="public Version ClrVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version ClrVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.ClrVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClrVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ ClrVersion { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClrVersion : Version" Usage="System.Web.HttpBrowserCapabilities.ClrVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookies">
+      <MemberSignature Language="C#" Value="public bool Cookies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cookies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookies As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cookies { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cookies : bool" Usage="System.Web.HttpBrowserCapabilities.Cookies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crawler">
+      <MemberSignature Language="C#" Value="public bool Crawler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Crawler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Crawler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Crawler As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Crawler { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Crawler : bool" Usage="System.Web.HttpBrowserCapabilities.Crawler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EcmaScriptVersion">
+      <MemberSignature Language="C#" Value="public Version EcmaScriptVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version EcmaScriptVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.EcmaScriptVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EcmaScriptVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ EcmaScriptVersion { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EcmaScriptVersion : Version" Usage="System.Web.HttpBrowserCapabilities.EcmaScriptVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Frames">
+      <MemberSignature Language="C#" Value="public bool Frames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Frames" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Frames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Frames { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frames : bool" Usage="System.Web.HttpBrowserCapabilities.Frames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClrVersions">
+      <MemberSignature Language="C#" Value="public Version[] GetClrVersions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Version[] GetClrVersions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilities.GetClrVersions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClrVersions () As Version()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Version ^&gt; ^ GetClrVersions();" />
+      <MemberSignature Language="F#" Value="member this.GetClrVersions : unit -&gt; Version[]" Usage="httpBrowserCapabilities.GetClrVersions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JavaApplets">
+      <MemberSignature Language="C#" Value="public bool JavaApplets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool JavaApplets" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.JavaApplets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JavaApplets As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool JavaApplets { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.JavaApplets : bool" Usage="System.Web.HttpBrowserCapabilities.JavaApplets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JavaScript">
+      <MemberSignature Language="C#" Value="public bool JavaScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool JavaScript" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.JavaScript" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JavaScript As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool JavaScript { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.JavaScript : bool" Usage="System.Web.HttpBrowserCapabilities.JavaScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorVersion">
+      <MemberSignature Language="C#" Value="public int MajorVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MajorVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.MajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MajorVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorVersion : int" Usage="System.Web.HttpBrowserCapabilities.MajorVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorVersion">
+      <MemberSignature Language="C#" Value="public double MinorVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinorVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.MinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorVersion As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinorVersion { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorVersion : double" Usage="System.Web.HttpBrowserCapabilities.MinorVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSDomVersion">
+      <MemberSignature Language="C#" Value="public Version MSDomVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version MSDomVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.MSDomVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MSDomVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ MSDomVersion { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MSDomVersion : Version" Usage="System.Web.HttpBrowserCapabilities.MSDomVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platform">
+      <MemberSignature Language="C#" Value="public string Platform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Platform" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Platform As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Platform { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Platform : string" Usage="System.Web.HttpBrowserCapabilities.Platform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public bool Tables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Tables" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Tables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tables As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Tables { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tables : bool" Usage="System.Web.HttpBrowserCapabilities.Tables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagWriter">
+      <MemberSignature Language="C#" Value="public Type TagWriter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TagWriter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.TagWriter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TagWriter As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TagWriter { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagWriter : Type" Usage="System.Web.HttpBrowserCapabilities.TagWriter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.Web.HttpBrowserCapabilities.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VBScript">
+      <MemberSignature Language="C#" Value="public bool VBScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VBScript" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.VBScript" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VBScript As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VBScript { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.VBScript : bool" Usage="System.Web.HttpBrowserCapabilities.VBScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Web.HttpBrowserCapabilities.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="W3CDomVersion">
+      <MemberSignature Language="C#" Value="public Version W3CDomVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version W3CDomVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.W3CDomVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property W3CDomVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ W3CDomVersion { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.W3CDomVersion : Version" Usage="System.Web.HttpBrowserCapabilities.W3CDomVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win16">
+      <MemberSignature Language="C#" Value="public bool Win16 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Win16" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Win16" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Win16 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Win16 { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Win16 : bool" Usage="System.Web.HttpBrowserCapabilities.Win16" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32">
+      <MemberSignature Language="C#" Value="public bool Win32 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Win32" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilities.Win32" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Win32 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Win32 { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Win32 : bool" Usage="System.Web.HttpBrowserCapabilities.Win32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

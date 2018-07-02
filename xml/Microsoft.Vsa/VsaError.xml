@@ -1,0 +1,1689 @@
+﻿<Type Name="VsaError" FullName="Microsoft.Vsa.VsaError">
+  <TypeSignature Language="C#" Value="public enum VsaError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VsaError extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.VsaError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VsaError" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VsaError" />
+  <TypeSignature Language="F#" Value="type VsaError = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("c216f805-8fab-3d33-bf81-7b1035e917b9")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomainCannotBeSet">
+      <MemberSignature Language="C#" Value="AppDomainCannotBeSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError AppDomainCannotBeSet = int32(-2146226176)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.AppDomainCannotBeSet" />
+      <MemberSignature Language="VB.NET" Value="AppDomainCannotBeSet" />
+      <MemberSignature Language="C++ CLI" Value="AppDomainCannotBeSet" />
+      <MemberSignature Language="F#" Value="AppDomainCannotBeSet = -2146226176" Usage="Microsoft.Vsa.VsaError.AppDomainCannotBeSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226176</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainInvalid">
+      <MemberSignature Language="C#" Value="AppDomainInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError AppDomainInvalid = int32(-2146226175)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.AppDomainInvalid" />
+      <MemberSignature Language="VB.NET" Value="AppDomainInvalid" />
+      <MemberSignature Language="C++ CLI" Value="AppDomainInvalid" />
+      <MemberSignature Language="F#" Value="AppDomainInvalid = -2146226175" Usage="Microsoft.Vsa.VsaError.AppDomainInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226175</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBaseCannotBeSet">
+      <MemberSignature Language="C#" Value="ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ApplicationBaseCannotBeSet = int32(-2146226174)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="VB.NET" Value="ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="F#" Value="ApplicationBaseCannotBeSet = -2146226174" Usage="Microsoft.Vsa.VsaError.ApplicationBaseCannotBeSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226174</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBaseInvalid">
+      <MemberSignature Language="C#" Value="ApplicationBaseInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ApplicationBaseInvalid = int32(-2146226173)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ApplicationBaseInvalid" />
+      <MemberSignature Language="VB.NET" Value="ApplicationBaseInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationBaseInvalid" />
+      <MemberSignature Language="F#" Value="ApplicationBaseInvalid = -2146226173" Usage="Microsoft.Vsa.VsaError.ApplicationBaseInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226173</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyExpected">
+      <MemberSignature Language="C#" Value="AssemblyExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError AssemblyExpected = int32(-2146226172)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.AssemblyExpected" />
+      <MemberSignature Language="VB.NET" Value="AssemblyExpected" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyExpected" />
+      <MemberSignature Language="F#" Value="AssemblyExpected = -2146226172" Usage="Microsoft.Vsa.VsaError.AssemblyExpected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226172</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyNameInvalid">
+      <MemberSignature Language="C#" Value="AssemblyNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError AssemblyNameInvalid = int32(-2146226171)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.AssemblyNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="AssemblyNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyNameInvalid" />
+      <MemberSignature Language="F#" Value="AssemblyNameInvalid = -2146226171" Usage="Microsoft.Vsa.VsaError.AssemblyNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226171</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadAssembly">
+      <MemberSignature Language="C#" Value="BadAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError BadAssembly = int32(-2146226170)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.BadAssembly" />
+      <MemberSignature Language="VB.NET" Value="BadAssembly" />
+      <MemberSignature Language="C++ CLI" Value="BadAssembly" />
+      <MemberSignature Language="F#" Value="BadAssembly = -2146226170" Usage="Microsoft.Vsa.VsaError.BadAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226170</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserNotExist">
+      <MemberSignature Language="C#" Value="BrowserNotExist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError BrowserNotExist = int32(-2146226115)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.BrowserNotExist" />
+      <MemberSignature Language="VB.NET" Value="BrowserNotExist" />
+      <MemberSignature Language="C++ CLI" Value="BrowserNotExist" />
+      <MemberSignature Language="F#" Value="BrowserNotExist = -2146226115" Usage="Microsoft.Vsa.VsaError.BrowserNotExist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226115</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedAssemblyInvalid">
+      <MemberSignature Language="C#" Value="CachedAssemblyInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError CachedAssemblyInvalid = int32(-2146226169)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.CachedAssemblyInvalid" />
+      <MemberSignature Language="VB.NET" Value="CachedAssemblyInvalid" />
+      <MemberSignature Language="C++ CLI" Value="CachedAssemblyInvalid" />
+      <MemberSignature Language="F#" Value="CachedAssemblyInvalid = -2146226169" Usage="Microsoft.Vsa.VsaError.CachedAssemblyInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226169</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackUnexpected">
+      <MemberSignature Language="C#" Value="CallbackUnexpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError CallbackUnexpected = int32(-2146226168)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.CallbackUnexpected" />
+      <MemberSignature Language="VB.NET" Value="CallbackUnexpected" />
+      <MemberSignature Language="C++ CLI" Value="CallbackUnexpected" />
+      <MemberSignature Language="F#" Value="CallbackUnexpected = -2146226168" Usage="Microsoft.Vsa.VsaError.CallbackUnexpected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226168</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotAttachToWebServer">
+      <MemberSignature Language="C#" Value="CannotAttachToWebServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError CannotAttachToWebServer = int32(-2146226100)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.CannotAttachToWebServer" />
+      <MemberSignature Language="VB.NET" Value="CannotAttachToWebServer" />
+      <MemberSignature Language="C++ CLI" Value="CannotAttachToWebServer" />
+      <MemberSignature Language="F#" Value="CannotAttachToWebServer = -2146226100" Usage="Microsoft.Vsa.VsaError.CannotAttachToWebServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226100</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDOMNotAvailable">
+      <MemberSignature Language="C#" Value="CodeDOMNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError CodeDOMNotAvailable = int32(-2146226167)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.CodeDOMNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="CodeDOMNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="CodeDOMNotAvailable" />
+      <MemberSignature Language="F#" Value="CodeDOMNotAvailable = -2146226167" Usage="Microsoft.Vsa.VsaError.CodeDOMNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226167</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompiledStateNotFound">
+      <MemberSignature Language="C#" Value="CompiledStateNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError CompiledStateNotFound = int32(-2146226166)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.CompiledStateNotFound" />
+      <MemberSignature Language="VB.NET" Value="CompiledStateNotFound" />
+      <MemberSignature Language="C++ CLI" Value="CompiledStateNotFound" />
+      <MemberSignature Language="F#" Value="CompiledStateNotFound = -2146226166" Usage="Microsoft.Vsa.VsaError.CompiledStateNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226166</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggeeNotStarted">
+      <MemberSignature Language="C#" Value="DebuggeeNotStarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError DebuggeeNotStarted = int32(-2146226114)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.DebuggeeNotStarted" />
+      <MemberSignature Language="VB.NET" Value="DebuggeeNotStarted" />
+      <MemberSignature Language="C++ CLI" Value="DebuggeeNotStarted" />
+      <MemberSignature Language="F#" Value="DebuggeeNotStarted = -2146226114" Usage="Microsoft.Vsa.VsaError.DebuggeeNotStarted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226114</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugInfoNotSupported">
+      <MemberSignature Language="C#" Value="DebugInfoNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError DebugInfoNotSupported = int32(-2146226165)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.DebugInfoNotSupported" />
+      <MemberSignature Language="VB.NET" Value="DebugInfoNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="DebugInfoNotSupported" />
+      <MemberSignature Language="F#" Value="DebugInfoNotSupported = -2146226165" Usage="Microsoft.Vsa.VsaError.DebugInfoNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226165</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementNameInvalid">
+      <MemberSignature Language="C#" Value="ElementNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ElementNameInvalid = int32(-2146226164)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ElementNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ElementNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ElementNameInvalid" />
+      <MemberSignature Language="F#" Value="ElementNameInvalid = -2146226164" Usage="Microsoft.Vsa.VsaError.ElementNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226164</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementNotFound">
+      <MemberSignature Language="C#" Value="ElementNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ElementNotFound = int32(-2146226163)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ElementNotFound" />
+      <MemberSignature Language="VB.NET" Value="ElementNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ElementNotFound" />
+      <MemberSignature Language="F#" Value="ElementNotFound = -2146226163" Usage="Microsoft.Vsa.VsaError.ElementNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226163</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineBusy">
+      <MemberSignature Language="C#" Value="EngineBusy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineBusy = int32(-2146226162)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineBusy" />
+      <MemberSignature Language="VB.NET" Value="EngineBusy" />
+      <MemberSignature Language="C++ CLI" Value="EngineBusy" />
+      <MemberSignature Language="F#" Value="EngineBusy = -2146226162" Usage="Microsoft.Vsa.VsaError.EngineBusy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226162</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineCannotClose">
+      <MemberSignature Language="C#" Value="EngineCannotClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineCannotClose = int32(-2146226161)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineCannotClose" />
+      <MemberSignature Language="VB.NET" Value="EngineCannotClose" />
+      <MemberSignature Language="C++ CLI" Value="EngineCannotClose" />
+      <MemberSignature Language="F#" Value="EngineCannotClose = -2146226161" Usage="Microsoft.Vsa.VsaError.EngineCannotClose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226161</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineCannotReset">
+      <MemberSignature Language="C#" Value="EngineCannotReset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineCannotReset = int32(-2146226160)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineCannotReset" />
+      <MemberSignature Language="VB.NET" Value="EngineCannotReset" />
+      <MemberSignature Language="C++ CLI" Value="EngineCannotReset" />
+      <MemberSignature Language="F#" Value="EngineCannotReset = -2146226160" Usage="Microsoft.Vsa.VsaError.EngineCannotReset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226160</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineClosed">
+      <MemberSignature Language="C#" Value="EngineClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineClosed = int32(-2146226159)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineClosed" />
+      <MemberSignature Language="VB.NET" Value="EngineClosed" />
+      <MemberSignature Language="C++ CLI" Value="EngineClosed" />
+      <MemberSignature Language="F#" Value="EngineClosed = -2146226159" Usage="Microsoft.Vsa.VsaError.EngineClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226159</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineEmpty">
+      <MemberSignature Language="C#" Value="EngineEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineEmpty = int32(-2146226159)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineEmpty" />
+      <MemberSignature Language="VB.NET" Value="EngineEmpty" />
+      <MemberSignature Language="C++ CLI" Value="EngineEmpty" />
+      <MemberSignature Language="F#" Value="EngineEmpty = -2146226159" Usage="Microsoft.Vsa.VsaError.EngineEmpty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226159</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineInitialized">
+      <MemberSignature Language="C#" Value="EngineInitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineInitialized = int32(-2146226157)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineInitialized" />
+      <MemberSignature Language="VB.NET" Value="EngineInitialized" />
+      <MemberSignature Language="C++ CLI" Value="EngineInitialized" />
+      <MemberSignature Language="F#" Value="EngineInitialized = -2146226157" Usage="Microsoft.Vsa.VsaError.EngineInitialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226157</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameInUse">
+      <MemberSignature Language="C#" Value="EngineNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNameInUse = int32(-2146226156)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNameInUse" />
+      <MemberSignature Language="VB.NET" Value="EngineNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameInUse" />
+      <MemberSignature Language="F#" Value="EngineNameInUse = -2146226156" Usage="Microsoft.Vsa.VsaError.EngineNameInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226156</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameInvalid">
+      <MemberSignature Language="C#" Value="EngineNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNameInvalid = int32(-2146226113)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="EngineNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameInvalid" />
+      <MemberSignature Language="F#" Value="EngineNameInvalid = -2146226113" Usage="Microsoft.Vsa.VsaError.EngineNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226113</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameNotSet">
+      <MemberSignature Language="C#" Value="EngineNameNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNameNotSet = int32(-2146226099)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNameNotSet" />
+      <MemberSignature Language="VB.NET" Value="EngineNameNotSet" />
+      <MemberSignature Language="C++ CLI" Value="EngineNameNotSet" />
+      <MemberSignature Language="F#" Value="EngineNameNotSet = -2146226099" Usage="Microsoft.Vsa.VsaError.EngineNameNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226099</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotCompiled">
+      <MemberSignature Language="C#" Value="EngineNotCompiled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNotCompiled = int32(-2146226155)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNotCompiled" />
+      <MemberSignature Language="VB.NET" Value="EngineNotCompiled" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotCompiled" />
+      <MemberSignature Language="F#" Value="EngineNotCompiled = -2146226155" Usage="Microsoft.Vsa.VsaError.EngineNotCompiled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226155</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotExist">
+      <MemberSignature Language="C#" Value="EngineNotExist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNotExist = int32(-2146226112)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNotExist" />
+      <MemberSignature Language="VB.NET" Value="EngineNotExist" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotExist" />
+      <MemberSignature Language="F#" Value="EngineNotExist = -2146226112" Usage="Microsoft.Vsa.VsaError.EngineNotExist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226112</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotInitialized">
+      <MemberSignature Language="C#" Value="EngineNotInitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNotInitialized = int32(-2146226154)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNotInitialized" />
+      <MemberSignature Language="VB.NET" Value="EngineNotInitialized" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotInitialized" />
+      <MemberSignature Language="F#" Value="EngineNotInitialized = -2146226154" Usage="Microsoft.Vsa.VsaError.EngineNotInitialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226154</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotRunning">
+      <MemberSignature Language="C#" Value="EngineNotRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineNotRunning = int32(-2146226153)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineNotRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineNotRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineNotRunning" />
+      <MemberSignature Language="F#" Value="EngineNotRunning = -2146226153" Usage="Microsoft.Vsa.VsaError.EngineNotRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226153</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineRunning">
+      <MemberSignature Language="C#" Value="EngineRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EngineRunning = int32(-2146226152)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EngineRunning" />
+      <MemberSignature Language="VB.NET" Value="EngineRunning" />
+      <MemberSignature Language="C++ CLI" Value="EngineRunning" />
+      <MemberSignature Language="F#" Value="EngineRunning = -2146226152" Usage="Microsoft.Vsa.VsaError.EngineRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226152</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceInvalid">
+      <MemberSignature Language="C#" Value="EventSourceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EventSourceInvalid = int32(-2146226151)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EventSourceInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceInvalid" />
+      <MemberSignature Language="F#" Value="EventSourceInvalid = -2146226151" Usage="Microsoft.Vsa.VsaError.EventSourceInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226151</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNameInUse">
+      <MemberSignature Language="C#" Value="EventSourceNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EventSourceNameInUse = int32(-2146226150)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EventSourceNameInUse" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNameInUse" />
+      <MemberSignature Language="F#" Value="EventSourceNameInUse = -2146226150" Usage="Microsoft.Vsa.VsaError.EventSourceNameInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226150</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNameInvalid">
+      <MemberSignature Language="C#" Value="EventSourceNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EventSourceNameInvalid = int32(-2146226149)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EventSourceNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNameInvalid" />
+      <MemberSignature Language="F#" Value="EventSourceNameInvalid = -2146226149" Usage="Microsoft.Vsa.VsaError.EventSourceNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226149</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNotFound">
+      <MemberSignature Language="C#" Value="EventSourceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EventSourceNotFound = int32(-2146226148)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EventSourceNotFound" />
+      <MemberSignature Language="VB.NET" Value="EventSourceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceNotFound" />
+      <MemberSignature Language="F#" Value="EventSourceNotFound = -2146226148" Usage="Microsoft.Vsa.VsaError.EventSourceNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226148</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceTypeInvalid">
+      <MemberSignature Language="C#" Value="EventSourceTypeInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError EventSourceTypeInvalid = int32(-2146226147)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.EventSourceTypeInvalid" />
+      <MemberSignature Language="VB.NET" Value="EventSourceTypeInvalid" />
+      <MemberSignature Language="C++ CLI" Value="EventSourceTypeInvalid" />
+      <MemberSignature Language="F#" Value="EventSourceTypeInvalid = -2146226147" Usage="Microsoft.Vsa.VsaError.EventSourceTypeInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226147</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileFormatUnsupported">
+      <MemberSignature Language="C#" Value="FileFormatUnsupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError FileFormatUnsupported = int32(-2146226111)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.FileFormatUnsupported" />
+      <MemberSignature Language="VB.NET" Value="FileFormatUnsupported" />
+      <MemberSignature Language="C++ CLI" Value="FileFormatUnsupported" />
+      <MemberSignature Language="F#" Value="FileFormatUnsupported = -2146226111" Usage="Microsoft.Vsa.VsaError.FileFormatUnsupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226111</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypeUnknown">
+      <MemberSignature Language="C#" Value="FileTypeUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError FileTypeUnknown = int32(-2146226110)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.FileTypeUnknown" />
+      <MemberSignature Language="VB.NET" Value="FileTypeUnknown" />
+      <MemberSignature Language="C++ CLI" Value="FileTypeUnknown" />
+      <MemberSignature Language="F#" Value="FileTypeUnknown = -2146226110" Usage="Microsoft.Vsa.VsaError.FileTypeUnknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226110</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledStateFailed">
+      <MemberSignature Language="C#" Value="GetCompiledStateFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError GetCompiledStateFailed = int32(-2146226146)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.GetCompiledStateFailed" />
+      <MemberSignature Language="VB.NET" Value="GetCompiledStateFailed" />
+      <MemberSignature Language="C++ CLI" Value="GetCompiledStateFailed" />
+      <MemberSignature Language="F#" Value="GetCompiledStateFailed = -2146226146" Usage="Microsoft.Vsa.VsaError.GetCompiledStateFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226146</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalInstanceInvalid">
+      <MemberSignature Language="C#" Value="GlobalInstanceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError GlobalInstanceInvalid = int32(-2146226145)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.GlobalInstanceInvalid" />
+      <MemberSignature Language="VB.NET" Value="GlobalInstanceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="GlobalInstanceInvalid" />
+      <MemberSignature Language="F#" Value="GlobalInstanceInvalid = -2146226145" Usage="Microsoft.Vsa.VsaError.GlobalInstanceInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226145</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalInstanceTypeInvalid">
+      <MemberSignature Language="C#" Value="GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError GlobalInstanceTypeInvalid = int32(-2146226144)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="VB.NET" Value="GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="C++ CLI" Value="GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="F#" Value="GlobalInstanceTypeInvalid = -2146226144" Usage="Microsoft.Vsa.VsaError.GlobalInstanceTypeInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226144</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalCompilerError">
+      <MemberSignature Language="C#" Value="InternalCompilerError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError InternalCompilerError = int32(-2146226143)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.InternalCompilerError" />
+      <MemberSignature Language="VB.NET" Value="InternalCompilerError" />
+      <MemberSignature Language="C++ CLI" Value="InternalCompilerError" />
+      <MemberSignature Language="F#" Value="InternalCompilerError = -2146226143" Usage="Microsoft.Vsa.VsaError.InternalCompilerError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226143</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCannotBeRemoved">
+      <MemberSignature Language="C#" Value="ItemCannotBeRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemCannotBeRemoved = int32(-2146226142)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemCannotBeRemoved" />
+      <MemberSignature Language="VB.NET" Value="ItemCannotBeRemoved" />
+      <MemberSignature Language="C++ CLI" Value="ItemCannotBeRemoved" />
+      <MemberSignature Language="F#" Value="ItemCannotBeRemoved = -2146226142" Usage="Microsoft.Vsa.VsaError.ItemCannotBeRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226142</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCannotBeRenamed">
+      <MemberSignature Language="C#" Value="ItemCannotBeRenamed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemCannotBeRenamed = int32(-2146226109)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemCannotBeRenamed" />
+      <MemberSignature Language="VB.NET" Value="ItemCannotBeRenamed" />
+      <MemberSignature Language="C++ CLI" Value="ItemCannotBeRenamed" />
+      <MemberSignature Language="F#" Value="ItemCannotBeRenamed = -2146226109" Usage="Microsoft.Vsa.VsaError.ItemCannotBeRenamed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226109</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemFlagNotSupported">
+      <MemberSignature Language="C#" Value="ItemFlagNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemFlagNotSupported = int32(-2146226141)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemFlagNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ItemFlagNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ItemFlagNotSupported" />
+      <MemberSignature Language="F#" Value="ItemFlagNotSupported = -2146226141" Usage="Microsoft.Vsa.VsaError.ItemFlagNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226141</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNameInUse">
+      <MemberSignature Language="C#" Value="ItemNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemNameInUse = int32(-2146226140)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemNameInUse" />
+      <MemberSignature Language="VB.NET" Value="ItemNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="ItemNameInUse" />
+      <MemberSignature Language="F#" Value="ItemNameInUse = -2146226140" Usage="Microsoft.Vsa.VsaError.ItemNameInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226140</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNameInvalid">
+      <MemberSignature Language="C#" Value="ItemNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemNameInvalid = int32(-2146226139)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ItemNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ItemNameInvalid" />
+      <MemberSignature Language="F#" Value="ItemNameInvalid = -2146226139" Usage="Microsoft.Vsa.VsaError.ItemNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226139</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNotFound">
+      <MemberSignature Language="C#" Value="ItemNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemNotFound = int32(-2146226138)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemNotFound" />
+      <MemberSignature Language="VB.NET" Value="ItemNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ItemNotFound" />
+      <MemberSignature Language="F#" Value="ItemNotFound = -2146226138" Usage="Microsoft.Vsa.VsaError.ItemNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226138</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTypeNotSupported">
+      <MemberSignature Language="C#" Value="ItemTypeNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ItemTypeNotSupported = int32(-2146226137)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ItemTypeNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ItemTypeNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ItemTypeNotSupported" />
+      <MemberSignature Language="F#" Value="ItemTypeNotSupported = -2146226137" Usage="Microsoft.Vsa.VsaError.ItemTypeNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226137</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LCIDNotSupported">
+      <MemberSignature Language="C#" Value="LCIDNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError LCIDNotSupported = int32(-2146226136)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.LCIDNotSupported" />
+      <MemberSignature Language="VB.NET" Value="LCIDNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="LCIDNotSupported" />
+      <MemberSignature Language="F#" Value="LCIDNotSupported = -2146226136" Usage="Microsoft.Vsa.VsaError.LCIDNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226136</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadElementFailed">
+      <MemberSignature Language="C#" Value="LoadElementFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError LoadElementFailed = int32(-2146226135)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.LoadElementFailed" />
+      <MemberSignature Language="VB.NET" Value="LoadElementFailed" />
+      <MemberSignature Language="C++ CLI" Value="LoadElementFailed" />
+      <MemberSignature Language="F#" Value="LoadElementFailed = -2146226135" Usage="Microsoft.Vsa.VsaError.LoadElementFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226135</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingPdb">
+      <MemberSignature Language="C#" Value="MissingPdb" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError MissingPdb = int32(-2146226102)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.MissingPdb" />
+      <MemberSignature Language="VB.NET" Value="MissingPdb" />
+      <MemberSignature Language="C++ CLI" Value="MissingPdb" />
+      <MemberSignature Language="F#" Value="MissingPdb = -2146226102" Usage="Microsoft.Vsa.VsaError.MissingPdb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226102</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingSource">
+      <MemberSignature Language="C#" Value="MissingSource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError MissingSource = int32(-2146226108)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.MissingSource" />
+      <MemberSignature Language="VB.NET" Value="MissingSource" />
+      <MemberSignature Language="C++ CLI" Value="MissingSource" />
+      <MemberSignature Language="F#" Value="MissingSource = -2146226108" Usage="Microsoft.Vsa.VsaError.MissingSource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226108</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NameTooLong">
+      <MemberSignature Language="C#" Value="NameTooLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError NameTooLong = int32(-2146226106)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.NameTooLong" />
+      <MemberSignature Language="VB.NET" Value="NameTooLong" />
+      <MemberSignature Language="C++ CLI" Value="NameTooLong" />
+      <MemberSignature Language="F#" Value="NameTooLong = -2146226106" Usage="Microsoft.Vsa.VsaError.NameTooLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226106</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotClientSideAndNoUrl">
+      <MemberSignature Language="C#" Value="NotClientSideAndNoUrl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError NotClientSideAndNoUrl = int32(-2146226101)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.NotClientSideAndNoUrl" />
+      <MemberSignature Language="VB.NET" Value="NotClientSideAndNoUrl" />
+      <MemberSignature Language="C++ CLI" Value="NotClientSideAndNoUrl" />
+      <MemberSignature Language="F#" Value="NotClientSideAndNoUrl = -2146226101" Usage="Microsoft.Vsa.VsaError.NotClientSideAndNoUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226101</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationInvalid">
+      <MemberSignature Language="C#" Value="NotificationInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError NotificationInvalid = int32(-2146226134)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.NotificationInvalid" />
+      <MemberSignature Language="VB.NET" Value="NotificationInvalid" />
+      <MemberSignature Language="C++ CLI" Value="NotificationInvalid" />
+      <MemberSignature Language="F#" Value="NotificationInvalid = -2146226134" Usage="Microsoft.Vsa.VsaError.NotificationInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226134</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotInitCompleted">
+      <MemberSignature Language="C#" Value="NotInitCompleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError NotInitCompleted = int32(-2146226107)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.NotInitCompleted" />
+      <MemberSignature Language="VB.NET" Value="NotInitCompleted" />
+      <MemberSignature Language="C++ CLI" Value="NotInitCompleted" />
+      <MemberSignature Language="F#" Value="NotInitCompleted = -2146226107" Usage="Microsoft.Vsa.VsaError.NotInitCompleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226107</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionInvalid">
+      <MemberSignature Language="C#" Value="OptionInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError OptionInvalid = int32(-2146226133)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.OptionInvalid" />
+      <MemberSignature Language="VB.NET" Value="OptionInvalid" />
+      <MemberSignature Language="C++ CLI" Value="OptionInvalid" />
+      <MemberSignature Language="F#" Value="OptionInvalid = -2146226133" Usage="Microsoft.Vsa.VsaError.OptionInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226133</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionNotSupported">
+      <MemberSignature Language="C#" Value="OptionNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError OptionNotSupported = int32(-2146226132)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.OptionNotSupported" />
+      <MemberSignature Language="VB.NET" Value="OptionNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="OptionNotSupported" />
+      <MemberSignature Language="F#" Value="OptionNotSupported = -2146226132" Usage="Microsoft.Vsa.VsaError.OptionNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226132</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcNameInUse">
+      <MemberSignature Language="C#" Value="ProcNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ProcNameInUse = int32(-2146226105)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ProcNameInUse" />
+      <MemberSignature Language="VB.NET" Value="ProcNameInUse" />
+      <MemberSignature Language="C++ CLI" Value="ProcNameInUse" />
+      <MemberSignature Language="F#" Value="ProcNameInUse = -2146226105" Usage="Microsoft.Vsa.VsaError.ProcNameInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226105</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcNameInvalid">
+      <MemberSignature Language="C#" Value="ProcNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError ProcNameInvalid = int32(-2146226104)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.ProcNameInvalid" />
+      <MemberSignature Language="VB.NET" Value="ProcNameInvalid" />
+      <MemberSignature Language="C++ CLI" Value="ProcNameInvalid" />
+      <MemberSignature Language="F#" Value="ProcNameInvalid = -2146226104" Usage="Microsoft.Vsa.VsaError.ProcNameInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226104</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeFailed">
+      <MemberSignature Language="C#" Value="RevokeFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RevokeFailed = int32(-2146226131)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RevokeFailed" />
+      <MemberSignature Language="VB.NET" Value="RevokeFailed" />
+      <MemberSignature Language="C++ CLI" Value="RevokeFailed" />
+      <MemberSignature Language="F#" Value="RevokeFailed = -2146226131" Usage="Microsoft.Vsa.VsaError.RevokeFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226131</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerAlreadySet">
+      <MemberSignature Language="C#" Value="RootMonikerAlreadySet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootMonikerAlreadySet = int32(-2146226130)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootMonikerAlreadySet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerAlreadySet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerAlreadySet" />
+      <MemberSignature Language="F#" Value="RootMonikerAlreadySet = -2146226130" Usage="Microsoft.Vsa.VsaError.RootMonikerAlreadySet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226130</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerInUse">
+      <MemberSignature Language="C#" Value="RootMonikerInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootMonikerInUse = int32(-2146226129)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootMonikerInUse" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerInUse" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerInUse" />
+      <MemberSignature Language="F#" Value="RootMonikerInUse = -2146226129" Usage="Microsoft.Vsa.VsaError.RootMonikerInUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226129</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerInvalid">
+      <MemberSignature Language="C#" Value="RootMonikerInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootMonikerInvalid = int32(-2146226128)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootMonikerInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerInvalid" />
+      <MemberSignature Language="F#" Value="RootMonikerInvalid = -2146226128" Usage="Microsoft.Vsa.VsaError.RootMonikerInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226128</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerNotSet">
+      <MemberSignature Language="C#" Value="RootMonikerNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootMonikerNotSet = int32(-2146226127)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootMonikerNotSet" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerNotSet" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerNotSet" />
+      <MemberSignature Language="F#" Value="RootMonikerNotSet = -2146226127" Usage="Microsoft.Vsa.VsaError.RootMonikerNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226127</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerProtocolInvalid">
+      <MemberSignature Language="C#" Value="RootMonikerProtocolInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootMonikerProtocolInvalid = int32(-2146226126)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootMonikerProtocolInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootMonikerProtocolInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootMonikerProtocolInvalid" />
+      <MemberSignature Language="F#" Value="RootMonikerProtocolInvalid = -2146226126" Usage="Microsoft.Vsa.VsaError.RootMonikerProtocolInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226126</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceInvalid">
+      <MemberSignature Language="C#" Value="RootNamespaceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootNamespaceInvalid = int32(-2146226125)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootNamespaceInvalid" />
+      <MemberSignature Language="VB.NET" Value="RootNamespaceInvalid" />
+      <MemberSignature Language="C++ CLI" Value="RootNamespaceInvalid" />
+      <MemberSignature Language="F#" Value="RootNamespaceInvalid = -2146226125" Usage="Microsoft.Vsa.VsaError.RootNamespaceInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226125</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceNotSet">
+      <MemberSignature Language="C#" Value="RootNamespaceNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError RootNamespaceNotSet = int32(-2146226124)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.RootNamespaceNotSet" />
+      <MemberSignature Language="VB.NET" Value="RootNamespaceNotSet" />
+      <MemberSignature Language="C++ CLI" Value="RootNamespaceNotSet" />
+      <MemberSignature Language="F#" Value="RootNamespaceNotSet = -2146226124" Usage="Microsoft.Vsa.VsaError.RootNamespaceNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226124</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveCompiledStateFailed">
+      <MemberSignature Language="C#" Value="SaveCompiledStateFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SaveCompiledStateFailed = int32(-2146226123)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SaveCompiledStateFailed" />
+      <MemberSignature Language="VB.NET" Value="SaveCompiledStateFailed" />
+      <MemberSignature Language="C++ CLI" Value="SaveCompiledStateFailed" />
+      <MemberSignature Language="F#" Value="SaveCompiledStateFailed = -2146226123" Usage="Microsoft.Vsa.VsaError.SaveCompiledStateFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226123</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveElementFailed">
+      <MemberSignature Language="C#" Value="SaveElementFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SaveElementFailed = int32(-2146226122)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SaveElementFailed" />
+      <MemberSignature Language="VB.NET" Value="SaveElementFailed" />
+      <MemberSignature Language="C++ CLI" Value="SaveElementFailed" />
+      <MemberSignature Language="F#" Value="SaveElementFailed = -2146226122" Usage="Microsoft.Vsa.VsaError.SaveElementFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226122</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteAlreadySet">
+      <MemberSignature Language="C#" Value="SiteAlreadySet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SiteAlreadySet = int32(-2146226121)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SiteAlreadySet" />
+      <MemberSignature Language="VB.NET" Value="SiteAlreadySet" />
+      <MemberSignature Language="C++ CLI" Value="SiteAlreadySet" />
+      <MemberSignature Language="F#" Value="SiteAlreadySet = -2146226121" Usage="Microsoft.Vsa.VsaError.SiteAlreadySet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226121</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteInvalid">
+      <MemberSignature Language="C#" Value="SiteInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SiteInvalid = int32(-2146226120)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SiteInvalid" />
+      <MemberSignature Language="VB.NET" Value="SiteInvalid" />
+      <MemberSignature Language="C++ CLI" Value="SiteInvalid" />
+      <MemberSignature Language="F#" Value="SiteInvalid = -2146226120" Usage="Microsoft.Vsa.VsaError.SiteInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226120</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteNotSet">
+      <MemberSignature Language="C#" Value="SiteNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SiteNotSet = int32(-2146226119)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SiteNotSet" />
+      <MemberSignature Language="VB.NET" Value="SiteNotSet" />
+      <MemberSignature Language="C++ CLI" Value="SiteNotSet" />
+      <MemberSignature Language="F#" Value="SiteNotSet = -2146226119" Usage="Microsoft.Vsa.VsaError.SiteNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226119</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceItemNotAvailable">
+      <MemberSignature Language="C#" Value="SourceItemNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SourceItemNotAvailable = int32(-2146226118)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SourceItemNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="SourceItemNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="SourceItemNotAvailable" />
+      <MemberSignature Language="F#" Value="SourceItemNotAvailable = -2146226118" Usage="Microsoft.Vsa.VsaError.SourceItemNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226118</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceMonikerNotAvailable">
+      <MemberSignature Language="C#" Value="SourceMonikerNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError SourceMonikerNotAvailable = int32(-2146226117)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.SourceMonikerNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="SourceMonikerNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="SourceMonikerNotAvailable" />
+      <MemberSignature Language="F#" Value="SourceMonikerNotAvailable = -2146226117" Usage="Microsoft.Vsa.VsaError.SourceMonikerNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226117</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownError">
+      <MemberSignature Language="C#" Value="UnknownError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError UnknownError = int32(-2146225921)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.UnknownError" />
+      <MemberSignature Language="VB.NET" Value="UnknownError" />
+      <MemberSignature Language="C++ CLI" Value="UnknownError" />
+      <MemberSignature Language="F#" Value="UnknownError = -2146225921" Usage="Microsoft.Vsa.VsaError.UnknownError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146225921</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLInvalid">
+      <MemberSignature Language="C#" Value="URLInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError URLInvalid = int32(-2146226116)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.URLInvalid" />
+      <MemberSignature Language="VB.NET" Value="URLInvalid" />
+      <MemberSignature Language="C++ CLI" Value="URLInvalid" />
+      <MemberSignature Language="F#" Value="URLInvalid = -2146226116" Usage="Microsoft.Vsa.VsaError.URLInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226116</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VsaServerDown">
+      <MemberSignature Language="C#" Value="VsaServerDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaError VsaServerDown = int32(-2146226103)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaError.VsaServerDown" />
+      <MemberSignature Language="VB.NET" Value="VsaServerDown" />
+      <MemberSignature Language="C++ CLI" Value="VsaServerDown" />
+      <MemberSignature Language="F#" Value="VsaServerDown = -2146226103" Usage="Microsoft.Vsa.VsaError.VsaServerDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaError</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146226103</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type NotifyOfNewConnectionCallback = delegate of LdapConnection * LdapConnection * string * LdapDirectoryIdentifier * LdapConnection * NetworkCredential * int64 * int -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>

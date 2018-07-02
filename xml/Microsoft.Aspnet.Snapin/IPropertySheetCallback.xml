@@ -1,0 +1,75 @@
+﻿<Type Name="IPropertySheetCallback" FullName="Microsoft.Aspnet.Snapin.IPropertySheetCallback">
+  <TypeSignature Language="C#" Value="public interface IPropertySheetCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertySheetCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IPropertySheetCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPropertySheetCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPropertySheetCallback" />
+  <TypeSignature Language="F#" Value="type IPropertySheetCallback = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("85DE64DD-EF21-11cf-A285-00C04FD8DBE6")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPage">
+      <MemberSignature Language="C#" Value="public void AddPage (IntPtr hPage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddPage(native int hPage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IPropertySheetCallback.AddPage(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPage (hPage As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPage(IntPtr hPage);" />
+      <MemberSignature Language="F#" Value="abstract member AddPage : nativeint -&gt; unit" Usage="iPropertySheetCallback.AddPage hPage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hPage" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePage">
+      <MemberSignature Language="C#" Value="public void RemovePage (IntPtr hPage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemovePage(native int hPage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IPropertySheetCallback.RemovePage(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePage (hPage As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePage(IntPtr hPage);" />
+      <MemberSignature Language="F#" Value="abstract member RemovePage : nativeint -&gt; unit" Usage="iPropertySheetCallback.RemovePage hPage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hPage" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

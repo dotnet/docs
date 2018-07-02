@@ -1,0 +1,376 @@
+﻿<Type Name="DebuggedProcess" FullName="Debugging.DebuggedProcess">
+  <TypeSignature Language="C#" Value="public class DebuggedProcess : Debugging.Controller" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebuggedProcess extends Debugging.Controller" />
+  <TypeSignature Language="DocId" Value="T:Debugging.DebuggedProcess" />
+  <TypeSignature Language="VB.NET" Value="Public Class DebuggedProcess&#xA;Inherits Controller" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggedProcess : Debugging::Controller" />
+  <TypeSignature Language="F#" Value="type DebuggedProcess = class&#xA;    inherit Controller" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Debugging.Controller</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomains">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable AppDomains { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable AppDomains" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedProcess.AppDomains" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppDomains As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ AppDomains { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomains : System.Collections.IEnumerable" Usage="Debugging.DebuggedProcess.AppDomains" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearCurrentException">
+      <MemberSignature Language="C#" Value="public void ClearCurrentException (int tid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearCurrentException(int32 tid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.ClearCurrentException(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearCurrentException (tid As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearCurrentException(int tid);" />
+      <MemberSignature Language="F#" Value="member this.ClearCurrentException : int -&gt; unit" Usage="debuggedProcess.ClearCurrentException tid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tid">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableLogMessages">
+      <MemberSignature Language="C#" Value="public void DisableLogMessages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisableLogMessages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.DisableLogMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisableLogMessages ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisableLogMessages();" />
+      <MemberSignature Language="F#" Value="member this.DisableLogMessages : unit -&gt; unit" Usage="debuggedProcess.DisableLogMessages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableLogMessages">
+      <MemberSignature Language="C#" Value="public void EnableLogMessages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableLogMessages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.EnableLogMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableLogMessages ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableLogMessages();" />
+      <MemberSignature Language="F#" Value="member this.EnableLogMessages : unit -&gt; unit" Usage="debuggedProcess.EnableLogMessages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableLogMessages">
+      <MemberSignature Language="C#" Value="public void EnableLogMessages (bool f);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableLogMessages(bool f) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.EnableLogMessages(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableLogMessages (f As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableLogMessages(bool f);" />
+      <MemberSignature Language="F#" Value="member this.EnableLogMessages : bool -&gt; unit" Usage="debuggedProcess.EnableLogMessages f" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="f" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="f">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public int Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Handle" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedProcess.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Handle { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : int" Usage="Debugging.DebuggedProcess.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedProcess.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="Debugging.DebuggedProcess.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOSSuspended">
+      <MemberSignature Language="C#" Value="public bool IsOSSuspended (int tid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOSSuspended(int32 tid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.IsOSSuspended(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsOSSuspended (tid As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOSSuspended(int tid);" />
+      <MemberSignature Language="F#" Value="member this.IsOSSuspended : int -&gt; bool" Usage="debuggedProcess.IsOSSuspended tid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTransitionStub">
+      <MemberSignature Language="C#" Value="public bool IsTransitionStub (ulong address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsTransitionStub(unsigned int64 address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.IsTransitionStub(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsTransitionStub (address As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsTransitionStub(System::UInt64 address);" />
+      <MemberSignature Language="F#" Value="member this.IsTransitionStub : uint64 -&gt; bool" Usage="debuggedProcess.IsTransitionStub address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyLogSwitch">
+      <MemberSignature Language="C#" Value="public void ModifyLogSwitch (string name, int level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ModifyLogSwitch(string name, int32 level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.ModifyLogSwitch(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyLogSwitch (name As String, level As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyLogSwitch(System::String ^ name, int level);" />
+      <MemberSignature Language="F#" Value="member this.ModifyLogSwitch : string * int -&gt; unit" Usage="debuggedProcess.ModifyLogSwitch (name, level)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="level" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public Debugging.Value Object { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Debugging.Value Object" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedProcess.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Debugging::Value ^ Object { Debugging::Value ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : Debugging.Value" Usage="Debugging.DebuggedProcess.Object" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.Value</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Objects">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Objects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable Objects" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedProcess.Objects" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Objects As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Objects { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Objects : System.Collections.IEnumerable" Usage="Debugging.DebuggedProcess.Objects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMemory">
+      <MemberSignature Language="C#" Value="public int ReadMemory (long address, int sz, byte[] buf);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadMemory(int64 address, int32 sz, unsigned int8[] buf) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.ReadMemory(System.Int64,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadMemory (address As Long, sz As Integer, buf As Byte()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadMemory(long address, int sz, cli::array &lt;System::Byte&gt; ^ buf);" />
+      <MemberSignature Language="F#" Value="member this.ReadMemory : int64 * int * byte[] -&gt; int" Usage="debuggedProcess.ReadMemory (address, sz, buf)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64" />
+        <Parameter Name="sz" Type="System.Int32" />
+        <Parameter Name="buf" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="sz">To be added.</param>
+        <param name="buf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadForFiberCookie">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedThread ThreadForFiberCookie (int cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.DebuggedThread ThreadForFiberCookie(int32 cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.ThreadForFiberCookie(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ThreadForFiberCookie (cookie As Integer) As DebuggedThread" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::DebuggedThread ^ ThreadForFiberCookie(int cookie);" />
+      <MemberSignature Language="F#" Value="member this.ThreadForFiberCookie : int -&gt; Debugging.DebuggedThread" Usage="debuggedProcess.ThreadForFiberCookie cookie" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedThread</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMemory">
+      <MemberSignature Language="C#" Value="public int WriteMemory (long address, int sz, byte[] buf);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WriteMemory(int64 address, int32 sz, unsigned int8[] buf) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedProcess.WriteMemory(System.Int64,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteMemory (address As Long, sz As Integer, buf As Byte()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int WriteMemory(long address, int sz, cli::array &lt;System::Byte&gt; ^ buf);" />
+      <MemberSignature Language="F#" Value="member this.WriteMemory : int64 * int * byte[] -&gt; int" Usage="debuggedProcess.WriteMemory (address, sz, buf)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64" />
+        <Parameter Name="sz" Type="System.Int32" />
+        <Parameter Name="buf" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="sz">To be added.</param>
+        <param name="buf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

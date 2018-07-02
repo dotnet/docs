@@ -14,6 +14,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,6 +25,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Threading.EventWaitHandle</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.Threading.WaitHandle</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
@@ -89,6 +92,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -112,6 +117,50 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.WaitHandle" />
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public bool Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEvent.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; bool" Usage="manualResetEvent.Reset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public bool Set ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEvent.Set" />
+      <MemberSignature Language="VB.NET" Value="Public Function Set () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set();" />
+      <MemberSignature Language="F#" Value="member this.Set : unit -&gt; bool" Usage="manualResetEvent.Set " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

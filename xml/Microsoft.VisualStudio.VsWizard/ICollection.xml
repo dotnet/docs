@@ -1,0 +1,183 @@
+﻿<Type Name="ICollection" FullName="Microsoft.VisualStudio.VsWizard.ICollection">
+  <TypeSignature Language="C#" Value="public interface ICollection : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICollection implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.ICollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICollection&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICollection : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ICollection = interface&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("11FE6ABA-0C5A-4CE3-A551-7C8B14BB63BB")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public void AddAt (object pIDispatch, object position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAt([in]object pIDispatch, object position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.ICollection.AddAt(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAt (pIDispatch As Object, position As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(System::Object ^ pIDispatch, System::Object ^ position);" />
+      <MemberSignature Language="F#" Value="abstract member AddAt : obj * obj -&gt; unit" Usage="iCollection.AddAt (pIDispatch, position)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDispatch" Type="System.Object" />
+        <Parameter Name="position" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pIDispatch">To be added.</param>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public void AddItem (object pIDispatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem([in]object pIDispatch) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.ICollection.AddItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddItem (pIDispatch As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddItem(System::Object ^ pIDispatch);" />
+      <MemberSignature Language="F#" Value="abstract member AddItem : obj -&gt; unit" Usage="iCollection.AddItem pIDispatch" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDispatch" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pIDispatch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public object Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VsWizard.ICollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Count { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : obj" Usage="Microsoft.VisualStudio.VsWizard.ICollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.ICollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="iCollection.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="item">
+      <MemberSignature Language="C#" Value="public object item (object varItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object item([in]object varItem) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.ICollection.item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function item (varItem As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ item(System::Object ^ varItem);" />
+      <MemberSignature Language="F#" Value="abstract member item : obj -&gt; obj" Usage="iCollection.item varItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,131 @@
+﻿<Type Name="IConsoleVerb" FullName="Microsoft.CLRAdmin.IConsoleVerb">
+  <TypeSignature Language="C#" Value="public interface IConsoleVerb" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConsoleVerb" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IConsoleVerb" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConsoleVerb" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConsoleVerb" />
+  <TypeSignature Language="F#" Value="type IConsoleVerb = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("E49F7A60-74AF-11D0-A286-00C04FD8FE93")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDefaultVerb">
+      <MemberSignature Language="C#" Value="public void GetDefaultVerb (ref uint peCmdID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDefaultVerb(unsigned int32&amp; peCmdID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleVerb.GetDefaultVerb(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDefaultVerb (ByRef peCmdID As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDefaultVerb(System::UInt32 % peCmdID);" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultVerb :  -&gt; unit" Usage="iConsoleVerb.GetDefaultVerb peCmdID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peCmdID" Type="System.UInt32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="peCmdID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVerbState">
+      <MemberSignature Language="C#" Value="public void GetVerbState (uint eCmdID, uint nState, ref int pState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVerbState(unsigned int32 eCmdID, unsigned int32 nState, int32&amp; pState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleVerb.GetVerbState(System.UInt32,System.UInt32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetVerbState (eCmdID As UInteger, nState As UInteger, ByRef pState As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVerbState(System::UInt32 eCmdID, System::UInt32 nState, int % pState);" />
+      <MemberSignature Language="F#" Value="abstract member GetVerbState : uint32 * uint32 *  -&gt; unit" Usage="iConsoleVerb.GetVerbState (eCmdID, nState, pState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eCmdID" Type="System.UInt32" />
+        <Parameter Name="nState" Type="System.UInt32" />
+        <Parameter Name="pState" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="eCmdID">To be added.</param>
+        <param name="nState">To be added.</param>
+        <param name="pState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultVerb">
+      <MemberSignature Language="C#" Value="public void SetDefaultVerb (uint eCmdID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultVerb(unsigned int32 eCmdID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleVerb.SetDefaultVerb(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultVerb (eCmdID As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultVerb(System::UInt32 eCmdID);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefaultVerb : uint32 -&gt; unit" Usage="iConsoleVerb.SetDefaultVerb eCmdID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eCmdID" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="eCmdID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVerbState">
+      <MemberSignature Language="C#" Value="public void SetVerbState (uint eCmdID, uint nState, int bState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVerbState(unsigned int32 eCmdID, unsigned int32 nState, int32 bState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IConsoleVerb.SetVerbState(System.UInt32,System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetVerbState (eCmdID As UInteger, nState As UInteger, bState As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVerbState(System::UInt32 eCmdID, System::UInt32 nState, int bState);" />
+      <MemberSignature Language="F#" Value="abstract member SetVerbState : uint32 * uint32 * int -&gt; unit" Usage="iConsoleVerb.SetVerbState (eCmdID, nState, bState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eCmdID" Type="System.UInt32" />
+        <Parameter Name="nState" Type="System.UInt32" />
+        <Parameter Name="bState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eCmdID">To be added.</param>
+        <param name="nState">To be added.</param>
+        <param name="bState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

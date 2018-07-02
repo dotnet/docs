@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Controls.UserControl</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.0">System.Windows.Controls.ContentControl</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -872,6 +873,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnContextMenuOpening">
+      <MemberSignature Language="C#" Value="protected override void OnContextMenuOpening (System.Windows.Controls.ContextMenuEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContextMenuOpening(class System.Windows.Controls.ContextMenuEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContextMenuOpening (e As ContextMenuEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContextMenuOpening(System::Windows::Controls::ContextMenuEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnContextMenuOpening : System.Windows.Controls.ContextMenuEventArgs -&gt; unit" Usage="expressionTextBox.OnContextMenuOpening e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
@@ -911,6 +936,78 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLostKeyboardFocus">
+      <MemberSignature Language="C#" Value="protected override void OnLostKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="expressionTextBox.OnLostKeyboardFocus e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewMouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnPreviewMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseLeftButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="expressionTextBox.OnPreviewMouseLeftButtonDown e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewMouseRightButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnPreviewMouseRightButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewMouseRightButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseRightButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseRightButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseRightButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="expressionTextBox.OnPreviewMouseRightButtonDown e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -1116,7 +1213,7 @@
           <AttributeName>System.CodeDom.Compiler.GeneratedCode("PresentationBuildTasks", "4.0.0.0")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
@@ -1141,6 +1238,42 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IStyleConnector.Connect">
+      <MemberSignature Language="C#" Value="void IStyleConnector.Connect (int connectionId, object target);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IStyleConnector.Connect(int32 connectionId, object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.System#Windows#Markup#IStyleConnector#Connect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Connect (connectionId As Integer, target As Object) Implements IStyleConnector.Connect" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IStyleConnector.Connect(int connectionId, System::Object ^ target) = System::Windows::Markup::IStyleConnector::Connect;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IStyleConnector.Connect(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionId" Type="System.Int32" />
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connectionId">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLocationExpression">

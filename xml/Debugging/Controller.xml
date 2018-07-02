@@ -1,0 +1,231 @@
+﻿<Type Name="Controller" FullName="Debugging.Controller">
+  <TypeSignature Language="C#" Value="public class Controller" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Controller extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Debugging.Controller" />
+  <TypeSignature Language="VB.NET" Value="Public Class Controller" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Controller" />
+  <TypeSignature Language="F#" Value="type Controller = class" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="public void Continue (bool outOfBand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Continue(bool outOfBand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.Continue(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Continue (outOfBand As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Continue(bool outOfBand);" />
+      <MemberSignature Language="F#" Value="member this.Continue : bool -&gt; unit" Usage="controller.Continue outOfBand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outOfBand" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="outOfBand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="public void Detach ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Detach() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.Detach" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Detach ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach();" />
+      <MemberSignature Language="F#" Value="member this.Detach : unit -&gt; unit" Usage="controller.Detach " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetController">
+      <MemberSignature Language="C#" Value="protected CORDBLib.ICorDebugController GetController ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class CORDBLib.ICorDebugController GetController() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.GetController" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetController () As ICorDebugController" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CORDBLib::ICorDebugController ^ GetController();" />
+      <MemberSignature Language="F#" Value="member this.GetController : unit -&gt; CORDBLib.ICorDebugController" Usage="controller.GetController " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CORDBLib.ICorDebugController</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasQueuedCallbacks">
+      <MemberSignature Language="C#" Value="public bool HasQueuedCallbacks (Debugging.DebuggedThread thread);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasQueuedCallbacks(class Debugging.DebuggedThread thread) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.HasQueuedCallbacks(Debugging.DebuggedThread)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasQueuedCallbacks (thread As DebuggedThread) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasQueuedCallbacks(Debugging::DebuggedThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.HasQueuedCallbacks : Debugging.DebuggedThread -&gt; bool" Usage="controller.HasQueuedCallbacks thread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thread" Type="Debugging.DebuggedThread" />
+      </Parameters>
+      <Docs>
+        <param name="thread">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public bool IsRunning ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRunning() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.IsRunning" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsRunning () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsRunning();" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : unit -&gt; bool" Usage="controller.IsRunning " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAllThreadsDebugState">
+      <MemberSignature Language="C#" Value="public void SetAllThreadsDebugState (CORDBLib.CorDebugThreadState state, Debugging.DebuggedThread exceptThis);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAllThreadsDebugState(valuetype CORDBLib.CorDebugThreadState state, class Debugging.DebuggedThread exceptThis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.SetAllThreadsDebugState(CORDBLib.CorDebugThreadState,Debugging.DebuggedThread)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAllThreadsDebugState (state As CorDebugThreadState, exceptThis As DebuggedThread)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAllThreadsDebugState(CORDBLib::CorDebugThreadState state, Debugging::DebuggedThread ^ exceptThis);" />
+      <MemberSignature Language="F#" Value="member this.SetAllThreadsDebugState : CORDBLib.CorDebugThreadState * Debugging.DebuggedThread -&gt; unit" Usage="controller.SetAllThreadsDebugState (state, exceptThis)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="CORDBLib.CorDebugThreadState" />
+        <Parameter Name="exceptThis" Type="Debugging.DebuggedThread" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <param name="exceptThis">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop(int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.Stop(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop (timeout As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop(int timeout);" />
+      <MemberSignature Language="F#" Value="member this.Stop : int -&gt; unit" Usage="controller.Stop timeout" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminate">
+      <MemberSignature Language="C#" Value="public void Terminate (int exitCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(int32 exitCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.Controller.Terminate(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (exitCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(int exitCode);" />
+      <MemberSignature Language="F#" Value="member this.Terminate : int -&gt; unit" Usage="controller.Terminate exitCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exitCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="exitCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Threads">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Threads { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable Threads" />
+      <MemberSignature Language="DocId" Value="P:Debugging.Controller.Threads" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Threads As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Threads { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Threads : System.Collections.IEnumerable" Usage="Debugging.Controller.Threads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

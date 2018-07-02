@@ -7,6 +7,8 @@
   <TypeSignature Language="F#" Value="type EnumeratorToEnumVariantMarshaler = class&#xA;    interface ICustomMarshaler" />
   <AssemblyInfo>
     <AssemblyName>CustomMarshalers</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,6 +31,23 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName=".cctor">
+      <MemberSignature Language="C#" Value="public EnumeratorToEnumVariantMarshaler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname rtspecialname void .cctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler.#cctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumeratorToEnumVariantMarshaler();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CleanUpManagedData">
       <MemberSignature Language="C#" Value="public virtual void CleanUpManagedData (object pManagedObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanUpManagedData(object pManagedObj) cil managed" />
@@ -39,6 +58,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +91,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,6 +124,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,6 +158,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,6 +189,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,6 +225,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

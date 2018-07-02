@@ -1,0 +1,114 @@
+﻿<Type Name="IExtendPropertySheet2" FullName="Microsoft.Aspnet.Snapin.IExtendPropertySheet2">
+  <TypeSignature Language="C#" Value="public interface IExtendPropertySheet2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendPropertySheet2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IExtendPropertySheet2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendPropertySheet2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtendPropertySheet2" />
+  <TypeSignature Language="F#" Value="type IExtendPropertySheet2 = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B7A87232-4A51-11D1-A7EA-00C04FD909DD")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreatePropertyPages">
+      <MemberSignature Language="C#" Value="public int CreatePropertyPages (Microsoft.Aspnet.Snapin.IPropertySheetCallback lpProvider, IntPtr handle, Microsoft.Aspnet.Snapin.IDataObject lpIDataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CreatePropertyPages(class Microsoft.Aspnet.Snapin.IPropertySheetCallback lpProvider, native int handle, class Microsoft.Aspnet.Snapin.IDataObject lpIDataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IExtendPropertySheet2.CreatePropertyPages(Microsoft.Aspnet.Snapin.IPropertySheetCallback,System.IntPtr,Microsoft.Aspnet.Snapin.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreatePropertyPages (lpProvider As IPropertySheetCallback, handle As IntPtr, lpIDataObject As IDataObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CreatePropertyPages(Microsoft::Aspnet::Snapin::IPropertySheetCallback ^ lpProvider, IntPtr handle, Microsoft::Aspnet::Snapin::IDataObject ^ lpIDataObject);" />
+      <MemberSignature Language="F#" Value="abstract member CreatePropertyPages : Microsoft.Aspnet.Snapin.IPropertySheetCallback * nativeint * Microsoft.Aspnet.Snapin.IDataObject -&gt; int" Usage="iExtendPropertySheet2.CreatePropertyPages (lpProvider, handle, lpIDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpProvider" Type="Microsoft.Aspnet.Snapin.IPropertySheetCallback" />
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="lpIDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="lpProvider">To be added.</param>
+        <param name="handle">To be added.</param>
+        <param name="lpIDataObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWatermarks">
+      <MemberSignature Language="C#" Value="public int GetWatermarks (Microsoft.Aspnet.Snapin.IDataObject lpIDataObject, out IntPtr lphWatermark, out IntPtr lphHeader, out IntPtr lphPalette, out int bStretch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetWatermarks(class Microsoft.Aspnet.Snapin.IDataObject lpIDataObject, [out] native int&amp; lphWatermark, [out] native int&amp; lphHeader, [out] native int&amp; lphPalette, [out] int32&amp; bStretch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IExtendPropertySheet2.GetWatermarks(Microsoft.Aspnet.Snapin.IDataObject,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWatermarks (lpIDataObject As IDataObject, ByRef lphWatermark As IntPtr, ByRef lphHeader As IntPtr, ByRef lphPalette As IntPtr, ByRef bStretch As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetWatermarks(Microsoft::Aspnet::Snapin::IDataObject ^ lpIDataObject, [Runtime::InteropServices::Out] IntPtr % lphWatermark, [Runtime::InteropServices::Out] IntPtr % lphHeader, [Runtime::InteropServices::Out] IntPtr % lphPalette, [Runtime::InteropServices::Out] int % bStretch);" />
+      <MemberSignature Language="F#" Value="abstract member GetWatermarks : Microsoft.Aspnet.Snapin.IDataObject *  *  *  *  -&gt; int" Usage="iExtendPropertySheet2.GetWatermarks (lpIDataObject, lphWatermark, lphHeader, lphPalette, bStretch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpIDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
+        <Parameter Name="lphWatermark" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="lphHeader" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="lphPalette" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="bStretch" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lpIDataObject">To be added.</param>
+        <param name="lphWatermark">To be added.</param>
+        <param name="lphHeader">To be added.</param>
+        <param name="lphPalette">To be added.</param>
+        <param name="bStretch">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryPagesFor">
+      <MemberSignature Language="C#" Value="public int QueryPagesFor (Microsoft.Aspnet.Snapin.IDataObject lpDataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 QueryPagesFor(class Microsoft.Aspnet.Snapin.IDataObject lpDataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IExtendPropertySheet2.QueryPagesFor(Microsoft.Aspnet.Snapin.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryPagesFor (lpDataObject As IDataObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int QueryPagesFor(Microsoft::Aspnet::Snapin::IDataObject ^ lpDataObject);" />
+      <MemberSignature Language="F#" Value="abstract member QueryPagesFor : Microsoft.Aspnet.Snapin.IDataObject -&gt; int" Usage="iExtendPropertySheet2.QueryPagesFor lpDataObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="lpDataObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

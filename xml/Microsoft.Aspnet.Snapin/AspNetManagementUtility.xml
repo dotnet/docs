@@ -1,0 +1,331 @@
+﻿<Type Name="AspNetManagementUtility" FullName="Microsoft.Aspnet.Snapin.AspNetManagementUtility">
+  <TypeSignature Language="C#" Value="public sealed class AspNetManagementUtility : Microsoft.Aspnet.Snapin.IAspNetManagementUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetManagementUtility extends System.Object implements class Microsoft.Aspnet.Snapin.IAspNetManagementUtility" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.AspNetManagementUtility" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetManagementUtility&#xA;Implements IAspNetManagementUtility" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetManagementUtility sealed : Microsoft::Aspnet::Snapin::IAspNetManagementUtility" />
+  <TypeSignature Language="F#" Value="type AspNetManagementUtility = class&#xA;    interface IAspNetManagementUtility" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Aspnet.Snapin.IAspNetManagementUtility</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDual)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("FD5CD8B1-6FE0-44F3-BBFB-65E3655B096E")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ProgId("Microsoft.Aspnet.Snapin.AspNetManagementUtility.2")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AspNetManagementUtility ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetManagementUtility();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireVersionList">
+      <MemberSignature Language="C#" Value="public void AcquireVersionList (out string versionList, int versionFirst);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcquireVersionList([out] string&amp; versionList, int32 versionFirst) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.AcquireVersionList(System.String@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AcquireVersionList (ByRef versionList As String, versionFirst As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AcquireVersionList([Runtime::InteropServices::Out] System::String ^ % versionList, int versionFirst);" />
+      <MemberSignature Language="F#" Value="abstract member AcquireVersionList :  * int -&gt; unit&#xA;override this.AcquireVersionList :  * int -&gt; unit" Usage="aspNetManagementUtility.AcquireVersionList (versionList, versionFirst)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.AcquireVersionList(System.String@,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="versionList" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="versionFirst" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="versionList">To be added.</param>
+        <param name="versionFirst">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeScriptMap">
+      <MemberSignature Language="C#" Value="public void ChangeScriptMap (string keyPath, string dllInstall, int flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChangeScriptMap(string keyPath, string dllInstall, int32 flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.ChangeScriptMap(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChangeScriptMap (keyPath As String, dllInstall As String, flags As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ChangeScriptMap(System::String ^ keyPath, System::String ^ dllInstall, int flags);" />
+      <MemberSignature Language="F#" Value="abstract member ChangeScriptMap : string * string * int -&gt; unit&#xA;override this.ChangeScriptMap : string * string * int -&gt; unit" Usage="aspNetManagementUtility.ChangeScriptMap (keyPath, dllInstall, flags)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.ChangeScriptMap(System.String,System.String,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyPath" Type="System.String" />
+        <Parameter Name="dllInstall" Type="System.String" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="keyPath">To be added.</param>
+        <param name="dllInstall">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAspNetConfigSettings">
+      <MemberSignature Language="C#" Value="public void DisplayAspNetConfigSettings (string machineName, string site, string virtualDirectory, string siteName, string location, int processID, out string exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisplayAspNetConfigSettings(string machineName, string site, string virtualDirectory, string siteName, string location, int32 processID, [out] string&amp; exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.DisplayAspNetConfigSettings(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisplayAspNetConfigSettings (machineName As String, site As String, virtualDirectory As String, siteName As String, location As String, processID As Integer, ByRef exception As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DisplayAspNetConfigSettings(System::String ^ machineName, System::String ^ site, System::String ^ virtualDirectory, System::String ^ siteName, System::String ^ location, int processID, [Runtime::InteropServices::Out] System::String ^ % exception);" />
+      <MemberSignature Language="F#" Value="abstract member DisplayAspNetConfigSettings : string * string * string * string * string * int *  -&gt; unit&#xA;override this.DisplayAspNetConfigSettings : string * string * string * string * string * int *  -&gt; unit" Usage="aspNetManagementUtility.DisplayAspNetConfigSettings (machineName, site, virtualDirectory, siteName, location, processID, exception)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.DisplayAspNetConfigSettings(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="machineName" Type="System.String" />
+        <Parameter Name="site" Type="System.String" />
+        <Parameter Name="virtualDirectory" Type="System.String" />
+        <Parameter Name="siteName" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="processID" Type="System.Int32" />
+        <Parameter Name="exception" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="machineName">To be added.</param>
+        <param name="site">To be added.</param>
+        <param name="virtualDirectory">To be added.</param>
+        <param name="siteName">To be added.</param>
+        <param name="location">To be added.</param>
+        <param name="processID">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveWindow">
+      <MemberSignature Language="C#" Value="public static IntPtr GetActiveWindow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;user32.dll&quot; as &quot;GetActiveWindow&quot; auto winapi)native int GetActiveWindow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.GetActiveWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetActiveWindow () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetActiveWindow();" />
+      <MemberSignature Language="F#" Value="static member GetActiveWindow : unit -&gt; nativeint" Usage="Microsoft.Aspnet.Snapin.AspNetManagementUtility.GetActiveWindow " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRemoteConfigured">
+      <MemberSignature Language="C#" Value="public void IsRemoteConfigured (out int isRemoteConfigured);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsRemoteConfigured([out] int32&amp; isRemoteConfigured) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.IsRemoteConfigured(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IsRemoteConfigured (ByRef isRemoteConfigured As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IsRemoteConfigured([Runtime::InteropServices::Out] int % isRemoteConfigured);" />
+      <MemberSignature Language="F#" Value="abstract member IsRemoteConfigured :  -&gt; unit&#xA;override this.IsRemoteConfigured :  -&gt; unit" Usage="aspNetManagementUtility.IsRemoteConfigured isRemoteConfigured" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.IsRemoteConfigured(System.Int32@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isRemoteConfigured" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="isRemoteConfigured">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageBox">
+      <MemberSignature Language="C#" Value="public static int MessageBox (IntPtr hWnd, string text, string caption, int type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;user32.dll&quot; as &quot;MessageBox&quot; auto winapi)int32 MessageBox(native int hWnd, string text, string caption, int32 type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.MessageBox(System.IntPtr,System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MessageBox (hWnd As IntPtr, text As String, caption As String, type As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MessageBox(IntPtr hWnd, System::String ^ text, System::String ^ caption, int type);" />
+      <MemberSignature Language="F#" Value="static member MessageBox : nativeint * string * string * int -&gt; int" Usage="Microsoft.Aspnet.Snapin.AspNetManagementUtility.MessageBox (hWnd, text, caption, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hWnd" Type="System.IntPtr" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="type" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hWnd">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathIsDirectory">
+      <MemberSignature Language="C#" Value="public void PathIsDirectory (string filename, out int result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PathIsDirectory([in]string filename, [out] int32&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.PathIsDirectory(System.String,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PathIsDirectory (filename As String, ByRef result As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PathIsDirectory(System::String ^ filename, [Runtime::InteropServices::Out] int % result);" />
+      <MemberSignature Language="F#" Value="abstract member PathIsDirectory : string *  -&gt; unit&#xA;override this.PathIsDirectory : string *  -&gt; unit" Usage="aspNetManagementUtility.PathIsDirectory (filename, result)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.PathIsDirectory(System.String,System.Int32@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="result" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFileDates">
+      <MemberSignature Language="C#" Value="public void ReadFileDates (string filename, out string creationDate, out string modifiedDate, out string lastAccessDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadFileDates(string filename, [out] string&amp; creationDate, [out] string&amp; modifiedDate, [out] string&amp; lastAccessDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.ReadFileDates(System.String,System.String@,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReadFileDates (filename As String, ByRef creationDate As String, ByRef modifiedDate As String, ByRef lastAccessDate As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadFileDates(System::String ^ filename, [Runtime::InteropServices::Out] System::String ^ % creationDate, [Runtime::InteropServices::Out] System::String ^ % modifiedDate, [Runtime::InteropServices::Out] System::String ^ % lastAccessDate);" />
+      <MemberSignature Language="F#" Value="abstract member ReadFileDates : string *  *  *  -&gt; unit&#xA;override this.ReadFileDates : string *  *  *  -&gt; unit" Usage="aspNetManagementUtility.ReadFileDates (filename, creationDate, modifiedDate, lastAccessDate)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.ReadFileDates(System.String,System.String@,System.String@,System.String@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="creationDate" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="modifiedDate" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="lastAccessDate" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="creationDate">To be added.</param>
+        <param name="modifiedDate">To be added.</param>
+        <param name="lastAccessDate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAsnetMmcAssembly">
+      <MemberSignature Language="C#" Value="public void RegisterAsnetMmcAssembly (int doReg, string typeName, string binaryDirectory, out IntPtr exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsnetMmcAssembly(int32 doReg, string typeName, string binaryDirectory, [out] native int&amp; exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.AspNetManagementUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterAsnetMmcAssembly (doReg As Integer, typeName As String, binaryDirectory As String, ByRef exception As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterAsnetMmcAssembly(int doReg, System::String ^ typeName, System::String ^ binaryDirectory, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit&#xA;override this.RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit" Usage="aspNetManagementUtility.RegisterAsnetMmcAssembly (doReg, typeName, binaryDirectory, exception)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doReg" Type="System.Int32" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="binaryDirectory" Type="System.String" />
+        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="doReg">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="binaryDirectory">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

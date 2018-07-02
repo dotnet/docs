@@ -1,0 +1,106 @@
+﻿<Type Name="ISecureFactory2" FullName="Microsoft.IE.ISecureFactory2">
+  <TypeSignature Language="C#" Value="public interface ISecureFactory2 : Microsoft.IE.ISecureFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecureFactory2 implements class Microsoft.IE.ISecureFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.ISecureFactory2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISecureFactory2&#xA;Implements ISecureFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISecureFactory2 : Microsoft::IE::ISecureFactory" />
+  <TypeSignature Language="F#" Value="type ISecureFactory2 = interface&#xA;    interface ISecureFactory" />
+  <AssemblyInfo>
+    <AssemblyName>IIEHost</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IE.ISecureFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("DA068387-8323-0812-AB50-D3DB2FA0CC21")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateInstanceWithSecurity">
+      <MemberSignature Language="C#" Value="public object CreateInstanceWithSecurity (int dwIdentityFlag, int dwZone, string lpSite, string lpId, string lpLink, string lpLicenses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstanceWithSecurity([in]int32 dwIdentityFlag, [in]int32 dwZone, [in]string lpSite, [in]string lpId, [in]string lpLink, [in]string lpLicenses) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.ISecureFactory2.CreateInstanceWithSecurity(System.Int32,System.Int32,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceWithSecurity (dwIdentityFlag As Integer, dwZone As Integer, lpSite As String, lpId As String, lpLink As String, lpLicenses As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstanceWithSecurity(int dwIdentityFlag, int dwZone, System::String ^ lpSite, System::String ^ lpId, System::String ^ lpLink, System::String ^ lpLicenses);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceWithSecurity : int * int * string * string * string * string -&gt; obj" Usage="iSecureFactory2.CreateInstanceWithSecurity (dwIdentityFlag, dwZone, lpSite, lpId, lpLink, lpLicenses)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IE.ISecureFactory.CreateInstanceWithSecurity(System.Int32,System.Int32,System.String,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwIdentityFlag" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="lpSite" Type="System.String" />
+        <Parameter Name="lpId" Type="System.String" />
+        <Parameter Name="lpLink" Type="System.String" />
+        <Parameter Name="lpLicenses" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwIdentityFlag">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="lpSite">To be added.</param>
+        <param name="lpId">To be added.</param>
+        <param name="lpLink">To be added.</param>
+        <param name="lpLicenses">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceWithSecurity2">
+      <MemberSignature Language="C#" Value="public object CreateInstanceWithSecurity2 (int dwFlags, int dwZone, string wszSite, string wszId, string wszConfig, string wszLicenses, string wszDeploymentManifest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstanceWithSecurity2([in]int32 dwFlags, [in]int32 dwZone, [in]string wszSite, [in]string wszId, [in]string wszConfig, [in]string wszLicenses, [in]string wszDeploymentManifest) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IE.ISecureFactory2.CreateInstanceWithSecurity2(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceWithSecurity2 (dwFlags As Integer, dwZone As Integer, wszSite As String, wszId As String, wszConfig As String, wszLicenses As String, wszDeploymentManifest As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstanceWithSecurity2(int dwFlags, int dwZone, System::String ^ wszSite, System::String ^ wszId, System::String ^ wszConfig, System::String ^ wszLicenses, System::String ^ wszDeploymentManifest);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceWithSecurity2 : int * int * string * string * string * string * string -&gt; obj" Usage="iSecureFactory2.CreateInstanceWithSecurity2 (dwFlags, dwZone, wszSite, wszId, wszConfig, wszLicenses, wszDeploymentManifest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>IIEHost</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwFlags" Type="System.Int32" />
+        <Parameter Name="dwZone" Type="System.Int32" />
+        <Parameter Name="wszSite" Type="System.String" />
+        <Parameter Name="wszId" Type="System.String" />
+        <Parameter Name="wszConfig" Type="System.String" />
+        <Parameter Name="wszLicenses" Type="System.String" />
+        <Parameter Name="wszDeploymentManifest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwFlags">To be added.</param>
+        <param name="dwZone">To be added.</param>
+        <param name="wszSite">To be added.</param>
+        <param name="wszId">To be added.</param>
+        <param name="wszConfig">To be added.</param>
+        <param name="wszLicenses">To be added.</param>
+        <param name="wszDeploymentManifest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,153 @@
+﻿<Type Name="ISnapinAbout" FullName="Microsoft.Aspnet.Snapin.ISnapinAbout">
+  <TypeSignature Language="C#" Value="public interface ISnapinAbout" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISnapinAbout" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.ISnapinAbout" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISnapinAbout" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISnapinAbout" />
+  <TypeSignature Language="F#" Value="type ISnapinAbout = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1245208C-A151-11D0-A7D7-00C04FD909DD")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProvider">
+      <MemberSignature Language="C#" Value="public void GetProvider (out IntPtr pName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetProvider([out] native int&amp; pName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.ISnapinAbout.GetProvider(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetProvider (ByRef pName As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetProvider([Runtime::InteropServices::Out] IntPtr % pName);" />
+      <MemberSignature Language="F#" Value="abstract member GetProvider :  -&gt; unit" Usage="iSnapinAbout.GetProvider pName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pName" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSnapinDescription">
+      <MemberSignature Language="C#" Value="public void GetSnapinDescription (out IntPtr lpDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSnapinDescription([out] native int&amp; lpDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.ISnapinAbout.GetSnapinDescription(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSnapinDescription (ByRef lpDescription As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSnapinDescription([Runtime::InteropServices::Out] IntPtr % lpDescription);" />
+      <MemberSignature Language="F#" Value="abstract member GetSnapinDescription :  -&gt; unit" Usage="iSnapinAbout.GetSnapinDescription lpDescription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpDescription" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lpDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSnapinImage">
+      <MemberSignature Language="C#" Value="public void GetSnapinImage (out IntPtr hAppIcon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSnapinImage([out] native int&amp; hAppIcon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.ISnapinAbout.GetSnapinImage(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSnapinImage (ByRef hAppIcon As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSnapinImage([Runtime::InteropServices::Out] IntPtr % hAppIcon);" />
+      <MemberSignature Language="F#" Value="abstract member GetSnapinImage :  -&gt; unit" Usage="iSnapinAbout.GetSnapinImage hAppIcon" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hAppIcon" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hAppIcon">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSnapinVersion">
+      <MemberSignature Language="C#" Value="public void GetSnapinVersion (out IntPtr lpVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSnapinVersion([out] native int&amp; lpVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.ISnapinAbout.GetSnapinVersion(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSnapinVersion (ByRef lpVersion As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSnapinVersion([Runtime::InteropServices::Out] IntPtr % lpVersion);" />
+      <MemberSignature Language="F#" Value="abstract member GetSnapinVersion :  -&gt; unit" Usage="iSnapinAbout.GetSnapinVersion lpVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpVersion" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lpVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStaticFolderImage">
+      <MemberSignature Language="C#" Value="public void GetStaticFolderImage (out IntPtr hSmallImage, out IntPtr hSmallImageOpen, out IntPtr hLargeImage, out int cMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetStaticFolderImage([out] native int&amp; hSmallImage, [out] native int&amp; hSmallImageOpen, [out] native int&amp; hLargeImage, [out] int32&amp; cMask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.ISnapinAbout.GetStaticFolderImage(System.IntPtr@,System.IntPtr@,System.IntPtr@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetStaticFolderImage (ByRef hSmallImage As IntPtr, ByRef hSmallImageOpen As IntPtr, ByRef hLargeImage As IntPtr, ByRef cMask As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetStaticFolderImage([Runtime::InteropServices::Out] IntPtr % hSmallImage, [Runtime::InteropServices::Out] IntPtr % hSmallImageOpen, [Runtime::InteropServices::Out] IntPtr % hLargeImage, [Runtime::InteropServices::Out] int % cMask);" />
+      <MemberSignature Language="F#" Value="abstract member GetStaticFolderImage :  *  *  *  -&gt; unit" Usage="iSnapinAbout.GetStaticFolderImage (hSmallImage, hSmallImageOpen, hLargeImage, cMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hSmallImage" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="hSmallImageOpen" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="hLargeImage" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="cMask" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hSmallImage">To be added.</param>
+        <param name="hSmallImageOpen">To be added.</param>
+        <param name="hLargeImage">To be added.</param>
+        <param name="cMask">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

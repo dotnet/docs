@@ -1,0 +1,316 @@
+﻿<Type Name="IStream" FullName="Microsoft.CLRAdmin.IStream">
+  <TypeSignature Language="C#" Value="public interface IStream" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStream" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IStream" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStream" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStream" />
+  <TypeSignature Language="F#" Value="type IStream = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0000000c-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public void Clone (out Microsoft.CLRAdmin.IStream ppstm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class Microsoft.CLRAdmin.IStream&amp; ppstm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Clone(Microsoft.CLRAdmin.IStream@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppstm As IStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::CLRAdmin::IStream ^ % ppstm);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iStream.Clone ppstm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppstm" Type="Microsoft.CLRAdmin.IStream&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppstm">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit (uint grfCommitFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(unsigned int32 grfCommitFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Commit(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit (grfCommitFlags As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(System::UInt32 grfCommitFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : uint32 -&gt; unit" Usage="iStream.Commit grfCommitFlags" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="grfCommitFlags" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="grfCommitFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Microsoft.CLRAdmin.IStream pstm, ulong cb, out ulong pcbRead, out ulong pcbWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class Microsoft.CLRAdmin.IStream pstm, unsigned int64 cb, [out] unsigned int64&amp; pcbRead, [out] unsigned int64&amp; pcbWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.CopyTo(Microsoft.CLRAdmin.IStream,System.UInt64,System.UInt64@,System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (pstm As IStream, cb As ULong, ByRef pcbRead As ULong, ByRef pcbWritten As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Microsoft::CLRAdmin::IStream ^ pstm, System::UInt64 cb, [Runtime::InteropServices::Out] System::UInt64 % pcbRead, [Runtime::InteropServices::Out] System::UInt64 % pcbWritten);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Microsoft.CLRAdmin.IStream * uint64 *  *  -&gt; unit" Usage="iStream.CopyTo (pstm, cb, pcbRead, pcbWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pstm" Type="Microsoft.CLRAdmin.IStream" />
+        <Parameter Name="cb" Type="System.UInt64" />
+        <Parameter Name="pcbRead" Type="System.UInt64&amp;" RefType="out" />
+        <Parameter Name="pcbWritten" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pstm">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="pcbRead">To be added.</param>
+        <param name="pcbWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockRegion">
+      <MemberSignature Language="C#" Value="public void LockRegion (ulong libOffset, ulong cb, uint dwLockType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LockRegion(unsigned int64 libOffset, unsigned int64 cb, unsigned int32 dwLockType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.LockRegion(System.UInt64,System.UInt64,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LockRegion (libOffset As ULong, cb As ULong, dwLockType As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LockRegion(System::UInt64 libOffset, System::UInt64 cb, System::UInt32 dwLockType);" />
+      <MemberSignature Language="F#" Value="abstract member LockRegion : uint64 * uint64 * uint32 -&gt; unit" Usage="iStream.LockRegion (libOffset, cb, dwLockType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libOffset" Type="System.UInt64" />
+        <Parameter Name="cb" Type="System.UInt64" />
+        <Parameter Name="dwLockType" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="libOffset">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="dwLockType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public void Read (IntPtr pv, uint cb, out uint pcbRead);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read(native int pv, unsigned int32 cb, [out] unsigned int32&amp; pcbRead) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Read(System.IntPtr,System.UInt32,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Read (pv As IntPtr, cb As UInteger, ByRef pcbRead As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Read(IntPtr pv, System::UInt32 cb, [Runtime::InteropServices::Out] System::UInt32 % pcbRead);" />
+      <MemberSignature Language="F#" Value="abstract member Read : nativeint * uint32 *  -&gt; unit" Usage="iStream.Read (pv, cb, pcbRead)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pv" Type="System.IntPtr" />
+        <Parameter Name="cb" Type="System.UInt32" />
+        <Parameter Name="pcbRead" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pv">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="pcbRead">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revert">
+      <MemberSignature Language="C#" Value="public void Revert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Revert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Revert ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revert();" />
+      <MemberSignature Language="F#" Value="abstract member Revert : unit -&gt; unit" Usage="iStream.Revert " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (long dlibMove, uint dwOrigin, out ulong plibNewPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(int64 dlibMove, unsigned int32 dwOrigin, [out] unsigned int64&amp; plibNewPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Seek(System.Int64,System.UInt32,System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Seek (dlibMove As Long, dwOrigin As UInteger, ByRef plibNewPosition As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(long dlibMove, System::UInt32 dwOrigin, [Runtime::InteropServices::Out] System::UInt64 % plibNewPosition);" />
+      <MemberSignature Language="F#" Value="abstract member Seek : int64 * uint32 *  -&gt; unit" Usage="iStream.Seek (dlibMove, dwOrigin, plibNewPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dlibMove" Type="System.Int64" />
+        <Parameter Name="dwOrigin" Type="System.UInt32" />
+        <Parameter Name="plibNewPosition" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="dlibMove">To be added.</param>
+        <param name="dwOrigin">To be added.</param>
+        <param name="plibNewPosition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSize">
+      <MemberSignature Language="C#" Value="public void SetSize (ulong libNewSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSize(unsigned int64 libNewSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.SetSize(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSize (libNewSize As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSize(System::UInt64 libNewSize);" />
+      <MemberSignature Language="F#" Value="abstract member SetSize : uint64 -&gt; unit" Usage="iStream.SetSize libNewSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libNewSize" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="libNewSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stat">
+      <MemberSignature Language="C#" Value="public void Stat (out Microsoft.CLRAdmin.STATSTG pstatstg, uint grfStatFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stat([out] valuetype Microsoft.CLRAdmin.STATSTG&amp; pstatstg, unsigned int32 grfStatFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Stat(Microsoft.CLRAdmin.STATSTG@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stat (ByRef pstatstg As STATSTG, grfStatFlag As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stat([Runtime::InteropServices::Out] Microsoft::CLRAdmin::STATSTG % pstatstg, System::UInt32 grfStatFlag);" />
+      <MemberSignature Language="F#" Value="abstract member Stat :  * uint32 -&gt; unit" Usage="iStream.Stat (pstatstg, grfStatFlag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pstatstg" Type="Microsoft.CLRAdmin.STATSTG&amp;" RefType="out" />
+        <Parameter Name="grfStatFlag" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="pstatstg">To be added.</param>
+        <param name="grfStatFlag">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockRegion">
+      <MemberSignature Language="C#" Value="public void UnlockRegion (ulong libOffset, ulong cb, uint dwLockType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnlockRegion(unsigned int64 libOffset, unsigned int64 cb, unsigned int32 dwLockType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.UnlockRegion(System.UInt64,System.UInt64,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnlockRegion (libOffset As ULong, cb As ULong, dwLockType As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnlockRegion(System::UInt64 libOffset, System::UInt64 cb, System::UInt32 dwLockType);" />
+      <MemberSignature Language="F#" Value="abstract member UnlockRegion : uint64 * uint64 * uint32 -&gt; unit" Usage="iStream.UnlockRegion (libOffset, cb, dwLockType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libOffset" Type="System.UInt64" />
+        <Parameter Name="cb" Type="System.UInt64" />
+        <Parameter Name="dwLockType" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="libOffset">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="dwLockType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (IntPtr pv, uint cb, out uint pcbWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(native int pv, unsigned int32 cb, [out] unsigned int32&amp; pcbWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IStream.Write(System.IntPtr,System.UInt32,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (pv As IntPtr, cb As UInteger, ByRef pcbWritten As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(IntPtr pv, System::UInt32 cb, [Runtime::InteropServices::Out] System::UInt32 % pcbWritten);" />
+      <MemberSignature Language="F#" Value="abstract member Write : nativeint * uint32 *  -&gt; unit" Usage="iStream.Write (pv, cb, pcbWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pv" Type="System.IntPtr" />
+        <Parameter Name="cb" Type="System.UInt32" />
+        <Parameter Name="pcbWritten" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pv">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="pcbWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

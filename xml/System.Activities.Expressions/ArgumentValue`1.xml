@@ -14,6 +14,7 @@
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Activities.Expressions.EnvironmentLocationValue&lt;T&gt;</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.0">System.Activities.CodeActivity&lt;T&gt;</BaseTypeName>
     <BaseTypeArguments>
       <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
     </BaseTypeArguments>
@@ -114,6 +115,31 @@
       <Docs>
         <param name="metadata">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override T Execute (System.Activities.CodeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !T Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentValue`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override T Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'T" Usage="argumentValue.Execute context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

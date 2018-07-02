@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type SymVariable = class&#xA;    inherit SymVariableBase&#xA;    interface ISymbolVariable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.SymbolStore.SymVariableBase</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -38,6 +41,26 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SymVariable (ISymUnmanagedVariable* pVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(ISymUnmanagedVariable* pVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymVariable.#ctor(ISymUnmanagedVariable*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymVariable(ISymUnmanagedVariable* pVariable);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SymbolStore.SymVariable : nativeptr&lt;ISymUnmanagedVariable&gt; -&gt; System.Diagnostics.SymbolStore.SymVariable" Usage="new System.Diagnostics.SymbolStore.SymVariable pVariable" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pVariable" Type="ISymUnmanagedVariable*" />
+      </Parameters>
+      <Docs>
+        <param name="pVariable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SymVariable (System.Diagnostics.SymbolStore.Private.ISymUnmanagedVariable* pVariable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedVariable* pVariable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymVariable.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedVariable*)" />
@@ -46,6 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,6 +77,49 @@
       </Parameters>
       <Docs>
         <param name="pVariable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="__dtor">
+      <MemberSignature Language="C#" Value="public void __dtor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void __dtor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymVariable.__dtor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub __dtor ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void __dtor();" />
+      <MemberSignature Language="F#" Value="member this.__dtor : unit -&gt; unit" Usage="symVariable.__dtor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="{dtor}">
+      <MemberSignature Language="C#" Value="public void {dtor} ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void {dtor}() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymVariable.{dtor}" />
+      <MemberSignature Language="VB.NET" Value="Public Sub {dtor} ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void {dtor}();" />
+      <MemberSignature Language="F#" Value="member this.{dtor} : unit -&gt; unit" Usage="symVariable.{dtor} " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,6 +134,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,6 +165,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,6 +196,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,6 +227,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,6 +251,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,6 +335,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,6 +365,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,6 +395,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,6 +419,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,6 +442,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

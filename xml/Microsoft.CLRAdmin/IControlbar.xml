@@ -1,0 +1,105 @@
+﻿<Type Name="IControlbar" FullName="Microsoft.CLRAdmin.IControlbar">
+  <TypeSignature Language="C#" Value="public interface IControlbar" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlbar" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IControlbar" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IControlbar" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IControlbar" />
+  <TypeSignature Language="F#" Value="type IControlbar = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("69FB811E-6C1C-11D0-A2CB-00C04FD909DD")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attach">
+      <MemberSignature Language="C#" Value="public void Attach (Microsoft.CLRAdmin.MMC_CONTROL_TYPE nType, object lpUnknown);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(valuetype Microsoft.CLRAdmin.MMC_CONTROL_TYPE nType, object lpUnknown) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IControlbar.Attach(Microsoft.CLRAdmin.MMC_CONTROL_TYPE,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (nType As MMC_CONTROL_TYPE, lpUnknown As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(Microsoft::CLRAdmin::MMC_CONTROL_TYPE nType, System::Object ^ lpUnknown);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : Microsoft.CLRAdmin.MMC_CONTROL_TYPE * obj -&gt; unit" Usage="iControlbar.Attach (nType, lpUnknown)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nType" Type="Microsoft.CLRAdmin.MMC_CONTROL_TYPE" />
+        <Parameter Name="lpUnknown" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="nType">To be added.</param>
+        <param name="lpUnknown">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create (Microsoft.CLRAdmin.MMC_CONTROL_TYPE nType, Microsoft.CLRAdmin.IExtendControlbar pExtendControlbar, out object ppUnknown);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(valuetype Microsoft.CLRAdmin.MMC_CONTROL_TYPE nType, class Microsoft.CLRAdmin.IExtendControlbar pExtendControlbar, [out] object&amp; ppUnknown) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IControlbar.Create(Microsoft.CLRAdmin.MMC_CONTROL_TYPE,Microsoft.CLRAdmin.IExtendControlbar,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create (nType As MMC_CONTROL_TYPE, pExtendControlbar As IExtendControlbar, ByRef ppUnknown As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(Microsoft::CLRAdmin::MMC_CONTROL_TYPE nType, Microsoft::CLRAdmin::IExtendControlbar ^ pExtendControlbar, [Runtime::InteropServices::Out] System::Object ^ % ppUnknown);" />
+      <MemberSignature Language="F#" Value="abstract member Create : Microsoft.CLRAdmin.MMC_CONTROL_TYPE * Microsoft.CLRAdmin.IExtendControlbar *  -&gt; unit" Usage="iControlbar.Create (nType, pExtendControlbar, ppUnknown)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nType" Type="Microsoft.CLRAdmin.MMC_CONTROL_TYPE" />
+        <Parameter Name="pExtendControlbar" Type="Microsoft.CLRAdmin.IExtendControlbar" />
+        <Parameter Name="ppUnknown" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="nType">To be added.</param>
+        <param name="pExtendControlbar">To be added.</param>
+        <param name="ppUnknown">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="public void Detach (object lpUnknown);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(object lpUnknown) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IControlbar.Detach(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Detach (lpUnknown As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(System::Object ^ lpUnknown);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : obj -&gt; unit" Usage="iControlbar.Detach lpUnknown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpUnknown" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="lpUnknown">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

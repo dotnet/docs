@@ -1,0 +1,165 @@
+﻿<Type Name="IPropertySheetProvider" FullName="Microsoft.CLRAdmin.IPropertySheetProvider">
+  <TypeSignature Language="C#" Value="public interface IPropertySheetProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertySheetProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IPropertySheetProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPropertySheetProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPropertySheetProvider" />
+  <TypeSignature Language="F#" Value="type IPropertySheetProvider = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("85DE64DE-EF21-11cf-A285-00C04FD8DBE6")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddExtensionPages">
+      <MemberSignature Language="C#" Value="public void AddExtensionPages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddExtensionPages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IPropertySheetProvider.AddExtensionPages" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddExtensionPages ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddExtensionPages();" />
+      <MemberSignature Language="F#" Value="abstract member AddExtensionPages : unit -&gt; unit" Usage="iPropertySheetProvider.AddExtensionPages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPrimaryPages">
+      <MemberSignature Language="C#" Value="public void AddPrimaryPages (object lpUnknown, int bCreateHandle, int hNotifyWindow, int bScopePane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddPrimaryPages(object lpUnknown, int32 bCreateHandle, int32 hNotifyWindow, int32 bScopePane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IPropertySheetProvider.AddPrimaryPages(System.Object,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPrimaryPages (lpUnknown As Object, bCreateHandle As Integer, hNotifyWindow As Integer, bScopePane As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPrimaryPages(System::Object ^ lpUnknown, int bCreateHandle, int hNotifyWindow, int bScopePane);" />
+      <MemberSignature Language="F#" Value="abstract member AddPrimaryPages : obj * int * int * int -&gt; unit" Usage="iPropertySheetProvider.AddPrimaryPages (lpUnknown, bCreateHandle, hNotifyWindow, bScopePane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpUnknown" Type="System.Object" />
+        <Parameter Name="bCreateHandle" Type="System.Int32" />
+        <Parameter Name="hNotifyWindow" Type="System.Int32" />
+        <Parameter Name="bScopePane" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lpUnknown">To be added.</param>
+        <param name="bCreateHandle">To be added.</param>
+        <param name="hNotifyWindow">To be added.</param>
+        <param name="bScopePane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertySheet">
+      <MemberSignature Language="C#" Value="public void CreatePropertySheet (string title, int type, int cookie, Microsoft.CLRAdmin.IDataObject pIDataObjectm, uint dwOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreatePropertySheet(string title, int32 type, int32 cookie, class Microsoft.CLRAdmin.IDataObject pIDataObjectm, unsigned int32 dwOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IPropertySheetProvider.CreatePropertySheet(System.String,System.Int32,System.Int32,Microsoft.CLRAdmin.IDataObject,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreatePropertySheet (title As String, type As Integer, cookie As Integer, pIDataObjectm As IDataObject, dwOptions As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreatePropertySheet(System::String ^ title, int type, int cookie, Microsoft::CLRAdmin::IDataObject ^ pIDataObjectm, System::UInt32 dwOptions);" />
+      <MemberSignature Language="F#" Value="abstract member CreatePropertySheet : string * int * int * Microsoft.CLRAdmin.IDataObject * uint32 -&gt; unit" Usage="iPropertySheetProvider.CreatePropertySheet (title, type, cookie, pIDataObjectm, dwOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="type" Type="System.Int32" />
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="pIDataObjectm" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="dwOptions" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="cookie">To be added.</param>
+        <param name="pIDataObjectm">To be added.</param>
+        <param name="dwOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindPropertySheet">
+      <MemberSignature Language="C#" Value="public int FindPropertySheet (int cookie, Microsoft.CLRAdmin.IComponent lpComponent, Microsoft.CLRAdmin.IDataObject lpDataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindPropertySheet(int32 cookie, class Microsoft.CLRAdmin.IComponent lpComponent, class Microsoft.CLRAdmin.IDataObject lpDataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IPropertySheetProvider.FindPropertySheet(System.Int32,Microsoft.CLRAdmin.IComponent,Microsoft.CLRAdmin.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindPropertySheet (cookie As Integer, lpComponent As IComponent, lpDataObject As IDataObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindPropertySheet(int cookie, Microsoft::CLRAdmin::IComponent ^ lpComponent, Microsoft::CLRAdmin::IDataObject ^ lpDataObject);" />
+      <MemberSignature Language="F#" Value="abstract member FindPropertySheet : int * Microsoft.CLRAdmin.IComponent * Microsoft.CLRAdmin.IDataObject -&gt; int" Usage="iPropertySheetProvider.FindPropertySheet (cookie, lpComponent, lpDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="lpComponent" Type="Microsoft.CLRAdmin.IComponent" />
+        <Parameter Name="lpDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="lpComponent">To be added.</param>
+        <param name="lpDataObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show (IntPtr window, int page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Show(native int window, int32 page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IPropertySheetProvider.Show(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (window As IntPtr, page As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(IntPtr window, int page);" />
+      <MemberSignature Language="F#" Value="abstract member Show : nativeint * int -&gt; unit" Usage="iPropertySheetProvider.Show (window, page)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="System.IntPtr" />
+        <Parameter Name="page" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

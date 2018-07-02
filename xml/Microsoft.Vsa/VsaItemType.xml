@@ -1,0 +1,93 @@
+﻿<Type Name="VsaItemType" FullName="Microsoft.Vsa.VsaItemType">
+  <TypeSignature Language="C#" Value="public enum VsaItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VsaItemType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.VsaItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VsaItemType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VsaItemType" />
+  <TypeSignature Language="F#" Value="type VsaItemType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("a9f6f86e-fcf5-3d8d-97e4-0fe6c7fe2274")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppGlobal">
+      <MemberSignature Language="C#" Value="AppGlobal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemType AppGlobal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemType.AppGlobal" />
+      <MemberSignature Language="VB.NET" Value="AppGlobal" />
+      <MemberSignature Language="C++ CLI" Value="AppGlobal" />
+      <MemberSignature Language="F#" Value="AppGlobal = 1" Usage="Microsoft.Vsa.VsaItemType.AppGlobal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="Code" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemType Code = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemType.Code" />
+      <MemberSignature Language="VB.NET" Value="Code" />
+      <MemberSignature Language="C++ CLI" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 2" Usage="Microsoft.Vsa.VsaItemType.Code" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reference">
+      <MemberSignature Language="C#" Value="Reference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Vsa.VsaItemType Reference = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.VsaItemType.Reference" />
+      <MemberSignature Language="VB.NET" Value="Reference" />
+      <MemberSignature Language="C++ CLI" Value="Reference" />
+      <MemberSignature Language="F#" Value="Reference = 0" Usage="Microsoft.Vsa.VsaItemType.Reference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaItemType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

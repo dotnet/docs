@@ -1,0 +1,114 @@
+﻿<Type Name="ChtmlFormAdapter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter">
+  <TypeSignature Language="C#" Value="public class ChtmlFormAdapter : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlFormAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChtmlFormAdapter extends System.Web.UI.MobileControls.ShippedAdapterSource.HtmlFormAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChtmlFormAdapter&#xA;Inherits HtmlFormAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChtmlFormAdapter : System::Web::UI::MobileControls::ShippedAdapterSource::HtmlFormAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlFormAdapter = class&#xA;    inherit HtmlFormAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ShippedAdapterSource.HtmlFormAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChtmlFormAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlFormAdapter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderExtraHeadElements">
+      <MemberSignature Language="C#" Value="protected override bool RenderExtraHeadElements (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RenderExtraHeadElements(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter.RenderExtraHeadElements(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderExtraHeadElements (writer As HtmlMobileTextWriter) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RenderExtraHeadElements(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderExtraHeadElements : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter -&gt; bool" Usage="chtmlFormAdapter.RenderExtraHeadElements writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderPagerTag">
+      <MemberSignature Language="C#" Value="protected internal override void RenderPagerTag (System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer, int pageToNavigate, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderPagerTag(class System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter writer, int32 pageToNavigate, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter.RenderPagerTag(System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderPagerTag (writer As HtmlMobileTextWriter, pageToNavigate As Integer, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderPagerTag(System::Web::UI::MobileControls::ShippedAdapterSource::HtmlMobileTextWriter ^ writer, int pageToNavigate, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.RenderPagerTag : System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter * int * string -&gt; unit" Usage="chtmlFormAdapter.RenderPagerTag (writer, pageToNavigate, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.MobileControls.ShippedAdapterSource.HtmlMobileTextWriter" />
+        <Parameter Name="pageToNavigate" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="pageToNavigate">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldRenderFormTag">
+      <MemberSignature Language="C#" Value="protected override bool ShouldRenderFormTag ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldRenderFormTag() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.ChtmlFormAdapter.ShouldRenderFormTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldRenderFormTag () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldRenderFormTag();" />
+      <MemberSignature Language="F#" Value="override this.ShouldRenderFormTag : unit -&gt; bool" Usage="chtmlFormAdapter.ShouldRenderFormTag " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

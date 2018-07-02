@@ -1,0 +1,121 @@
+﻿<Type Name="MFCDialogVariableExtender" FullName="Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender">
+  <TypeSignature Language="C#" Value="public interface MFCDialogVariableExtender" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MFCDialogVariableExtender" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender" />
+  <TypeSignature Language="VB.NET" Value="Public Interface MFCDialogVariableExtender" />
+  <TypeSignature Language="C++ CLI" Value="public interface class MFCDialogVariableExtender" />
+  <TypeSignature Language="F#" Value="type MFCDialogVariableExtender = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5C70AD64-5F55-48C1-861C-D8D6EAFEB7D9")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ControlID">
+      <MemberSignature Language="C#" Value="public string ControlID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender.ControlID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string" Usage="Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender.ControlID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IDType">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualStudio.VCCodeModel.vsCMMFCDialogVariableIDType IDType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualStudio.VCCodeModel.vsCMMFCDialogVariableIDType IDType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender.IDType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IDType As vsCMMFCDialogVariableIDType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualStudio::VCCodeModel::vsCMMFCDialogVariableIDType IDType { Microsoft::VisualStudio::VCCodeModel::vsCMMFCDialogVariableIDType get(); };" />
+      <MemberSignature Language="F#" Value="member this.IDType : Microsoft.VisualStudio.VCCodeModel.vsCMMFCDialogVariableIDType" Usage="Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender.IDType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCCodeModel.vsCMMFCDialogVariableIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (object ExtendeeObject, EnvDTE.IExtenderSite ExtenderSite, int Cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object ExtendeeObject, class EnvDTE.IExtenderSite ExtenderSite, int32 Cookie) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel.MFCDialogVariableExtender.Initialize(System.Object,EnvDTE.IExtenderSite,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (ExtendeeObject As Object, ExtenderSite As IExtenderSite, Cookie As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Object ^ ExtendeeObject, EnvDTE::IExtenderSite ^ ExtenderSite, int Cookie);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : obj * EnvDTE.IExtenderSite * int -&gt; unit" Usage="mFCDialogVariableExtender.Initialize (ExtendeeObject, ExtenderSite, Cookie)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(65)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtendeeObject" Type="System.Object" />
+        <Parameter Name="ExtenderSite" Type="EnvDTE.IExtenderSite" />
+        <Parameter Name="Cookie" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ExtendeeObject">To be added.</param>
+        <param name="ExtenderSite">To be added.</param>
+        <param name="Cookie">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

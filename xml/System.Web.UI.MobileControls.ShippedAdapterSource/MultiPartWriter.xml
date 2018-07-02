@@ -1,0 +1,230 @@
+﻿<Type Name="MultiPartWriter" FullName="System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter">
+  <TypeSignature Language="C#" Value="public abstract class MultiPartWriter : System.Web.UI.HtmlTextWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MultiPartWriter extends System.Web.UI.HtmlTextWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MultiPartWriter&#xA;Inherits HtmlTextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiPartWriter abstract : System::Web::UI::HtmlTextWriter" />
+  <TypeSignature Language="F#" Value="type MultiPartWriter = class&#xA;    inherit HtmlTextWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlTextWriter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MultiPartWriter (System.IO.TextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultiPartWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter : System.IO.TextWriter -&gt; System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter" Usage="new System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter writer" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResource">
+      <MemberSignature Language="C#" Value="public void AddResource (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResource(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.AddResource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.AddResource : string -&gt; unit" Usage="multiPartWriter.AddResource url" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResource">
+      <MemberSignature Language="C#" Value="public abstract void AddResource (string url, string contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string url, string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.AddResource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddResource (url As String, contentType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddResource(System::String ^ url, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : string * string -&gt; unit" Usage="multiPartWriter.AddResource (url, contentType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFile">
+      <MemberSignature Language="C#" Value="public abstract void BeginFile (string url, string contentType, string charset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFile(string url, string contentType, string charset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.BeginFile(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginFile (url As String, contentType As String, charset As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginFile(System::String ^ url, System::String ^ contentType, System::String ^ charset);" />
+      <MemberSignature Language="F#" Value="abstract member BeginFile : string * string * string -&gt; unit" Usage="multiPartWriter.BeginFile (url, contentType, charset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="charset" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <param name="charset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginResponse">
+      <MemberSignature Language="C#" Value="public abstract void BeginResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginResponse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.BeginResponse" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginResponse ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginResponse();" />
+      <MemberSignature Language="F#" Value="abstract member BeginResponse : unit -&gt; unit" Usage="multiPartWriter.BeginResponse " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFile">
+      <MemberSignature Language="C#" Value="public abstract void EndFile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndFile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.EndFile" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndFile ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndFile();" />
+      <MemberSignature Language="F#" Value="abstract member EndFile : unit -&gt; unit" Usage="multiPartWriter.EndFile " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndResponse">
+      <MemberSignature Language="C#" Value="public abstract void EndResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndResponse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.EndResponse" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndResponse ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndResponse();" />
+      <MemberSignature Language="F#" Value="abstract member EndResponse : unit -&gt; unit" Usage="multiPartWriter.EndResponse " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewUrl">
+      <MemberSignature Language="C#" Value="public virtual string NewUrl (string filetype);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string NewUrl(string filetype) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.NewUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function NewUrl (filetype As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ NewUrl(System::String ^ filetype);" />
+      <MemberSignature Language="F#" Value="abstract member NewUrl : string -&gt; string&#xA;override this.NewUrl : string -&gt; string" Usage="multiPartWriter.NewUrl filetype" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filetype" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filetype">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsMultiPart">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsMultiPart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsMultiPart" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.SupportsMultiPart" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsMultiPart As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMultiPart { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsMultiPart : bool" Usage="System.Web.UI.MobileControls.ShippedAdapterSource.MultiPartWriter.SupportsMultiPart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.UI.MobileControls.ShippedAdapterSource</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

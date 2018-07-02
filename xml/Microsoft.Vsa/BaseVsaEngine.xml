@@ -1,0 +1,1580 @@
+﻿<Type Name="BaseVsaEngine" FullName="Microsoft.Vsa.BaseVsaEngine">
+  <TypeSignature Language="C#" Value="public abstract class BaseVsaEngine : Microsoft.Vsa.IVsaEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseVsaEngine extends System.Object implements class Microsoft.Vsa.IVsaEngine" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.BaseVsaEngine" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseVsaEngine&#xA;Implements IVsaEngine" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseVsaEngine abstract : Microsoft::Vsa::IVsaEngine" />
+  <TypeSignature Language="F#" Value="type BaseVsaEngine = class&#xA;    interface IVsaEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaEngine</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("F8932A50-9127-48B6-B115-2BFDC627CEE3")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomain">
+      <MemberSignature Language="C#" Value="public _AppDomain AppDomain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System._AppDomain AppDomain" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.AppDomain" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppDomain As _AppDomain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property _AppDomain ^ AppDomain { _AppDomain ^ get(); void set(_AppDomain ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomain : _AppDomain with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.AppDomain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System._AppDomain</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBase">
+      <MemberSignature Language="C#" Value="public string ApplicationBase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationBase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.ApplicationBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationBase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationBase { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationBase : string with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.ApplicationBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="applicationPath">
+      <MemberSignature Language="C#" Value="protected string applicationPath;" />
+      <MemberSignature Language="ILAsm" Value=".field family string applicationPath" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.applicationPath" />
+      <MemberSignature Language="VB.NET" Value="Protected applicationPath As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ applicationPath;" />
+      <MemberSignature Language="F#" Value="val mutable applicationPath : string" Usage="Microsoft.Vsa.BaseVsaEngine.applicationPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly Assembly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assembly As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="Microsoft.Vsa.BaseVsaEngine.Assembly" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Assembly</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="assemblyVersion">
+      <MemberSignature Language="C#" Value="protected string assemblyVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field family string assemblyVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.assemblyVersion" />
+      <MemberSignature Language="VB.NET" Value="Protected assemblyVersion As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ assemblyVersion;" />
+      <MemberSignature Language="F#" Value="val mutable assemblyVersion : string" Usage="Microsoft.Vsa.BaseVsaEngine.assemblyVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="baseVsaEngine.Close " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.Close</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public virtual bool Compile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Compile" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compile () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Compile();" />
+      <MemberSignature Language="F#" Value="abstract member Compile : unit -&gt; bool&#xA;override this.Compile : unit -&gt; bool" Usage="baseVsaEngine.Compile " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.Compile</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="compiledRootNamespace">
+      <MemberSignature Language="C#" Value="protected string compiledRootNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field family string compiledRootNamespace" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.compiledRootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Protected compiledRootNamespace As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ compiledRootNamespace;" />
+      <MemberSignature Language="F#" Value="val mutable compiledRootNamespace : string" Usage="Microsoft.Vsa.BaseVsaEngine.compiledRootNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoClose">
+      <MemberSignature Language="C#" Value="protected abstract void DoClose ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoClose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.DoClose" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DoClose ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DoClose();" />
+      <MemberSignature Language="F#" Value="abstract member DoClose : unit -&gt; unit" Usage="baseVsaEngine.DoClose " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoCompile">
+      <MemberSignature Language="C#" Value="protected abstract bool DoCompile ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool DoCompile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.DoCompile" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function DoCompile () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool DoCompile();" />
+      <MemberSignature Language="F#" Value="abstract member DoCompile : unit -&gt; bool" Usage="baseVsaEngine.DoCompile " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoLoadSourceState">
+      <MemberSignature Language="C#" Value="protected abstract void DoLoadSourceState (Microsoft.Vsa.IVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoLoadSourceState(class Microsoft.Vsa.IVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.DoLoadSourceState(Microsoft.Vsa.IVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DoLoadSourceState (site As IVsaPersistSite)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DoLoadSourceState(Microsoft::Vsa::IVsaPersistSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member DoLoadSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit" Usage="baseVsaEngine.DoLoadSourceState site" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoSaveCompiledState">
+      <MemberSignature Language="C#" Value="protected abstract void DoSaveCompiledState (out byte[] pe, out byte[] debugInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoSaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.DoSaveCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DoSaveCompiledState (ByRef pe As Byte(), ByRef debugInfo As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DoSaveCompiledState([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pe, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % debugInfo);" />
+      <MemberSignature Language="F#" Value="abstract member DoSaveCompiledState :  *  -&gt; unit" Usage="baseVsaEngine.DoSaveCompiledState (pe, debugInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pe">To be added.</param>
+        <param name="debugInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoSaveSourceState">
+      <MemberSignature Language="C#" Value="protected abstract void DoSaveSourceState (Microsoft.Vsa.IVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoSaveSourceState(class Microsoft.Vsa.IVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.DoSaveSourceState(Microsoft.Vsa.IVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DoSaveSourceState (site As IVsaPersistSite)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DoSaveSourceState(Microsoft::Vsa::IVsaPersistSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member DoSaveSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit" Usage="baseVsaEngine.DoSaveSourceState site" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="engineMoniker">
+      <MemberSignature Language="C#" Value="protected string engineMoniker;" />
+      <MemberSignature Language="ILAsm" Value=".field family string engineMoniker" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.engineMoniker" />
+      <MemberSignature Language="VB.NET" Value="Protected engineMoniker As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ engineMoniker;" />
+      <MemberSignature Language="F#" Value="val mutable engineMoniker : string" Usage="Microsoft.Vsa.BaseVsaEngine.engineMoniker" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="engineName">
+      <MemberSignature Language="C#" Value="protected string engineName;" />
+      <MemberSignature Language="ILAsm" Value=".field family string engineName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.engineName" />
+      <MemberSignature Language="VB.NET" Value="Protected engineName As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ engineName;" />
+      <MemberSignature Language="F#" Value="val mutable engineName : string" Usage="Microsoft.Vsa.BaseVsaEngine.engineName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="engineSite">
+      <MemberSignature Language="C#" Value="protected Microsoft.Vsa.IVsaSite engineSite;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Vsa.IVsaSite engineSite" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.engineSite" />
+      <MemberSignature Language="VB.NET" Value="Protected engineSite As IVsaSite " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::Vsa::IVsaSite ^ engineSite;" />
+      <MemberSignature Language="F#" Value="val mutable engineSite : Microsoft.Vsa.IVsaSite" Usage="Microsoft.Vsa.BaseVsaEngine.engineSite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaSite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="protected Microsoft.Vsa.VsaException Error (Microsoft.Vsa.VsaError vsaErrorNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Vsa.VsaException Error(valuetype Microsoft.Vsa.VsaError vsaErrorNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Error(Microsoft.Vsa.VsaError)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Error (vsaErrorNumber As VsaError) As VsaException" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Microsoft::Vsa::VsaException ^ Error(Microsoft::Vsa::VsaError vsaErrorNumber);" />
+      <MemberSignature Language="F#" Value="member this.Error : Microsoft.Vsa.VsaError -&gt; Microsoft.Vsa.VsaException" Usage="baseVsaEngine.Error vsaErrorNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.VsaException</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vsaErrorNumber" Type="Microsoft.Vsa.VsaError" />
+      </Parameters>
+      <Docs>
+        <param name="vsaErrorNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorLocale">
+      <MemberSignature Language="C#" Value="protected int errorLocale;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 errorLocale" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.errorLocale" />
+      <MemberSignature Language="VB.NET" Value="Protected errorLocale As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int errorLocale;" />
+      <MemberSignature Language="F#" Value="val mutable errorLocale : int" Usage="Microsoft.Vsa.BaseVsaEngine.errorLocale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evidence">
+      <MemberSignature Language="C#" Value="public System.Security.Policy.Evidence Evidence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.Evidence Evidence" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Evidence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Evidence As Evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); void set(System::Security::Policy::Evidence ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.Evidence" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Evidence</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="executionEvidence">
+      <MemberSignature Language="C#" Value="protected System.Security.Policy.Evidence executionEvidence;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Security.Policy.Evidence executionEvidence" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.executionEvidence" />
+      <MemberSignature Language="VB.NET" Value="Protected executionEvidence As Evidence " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Policy::Evidence ^ executionEvidence;" />
+      <MemberSignature Language="F#" Value="val mutable executionEvidence : System.Security.Policy.Evidence" Usage="Microsoft.Vsa.BaseVsaEngine.executionEvidence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="failedCompilation">
+      <MemberSignature Language="C#" Value="protected bool failedCompilation;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool failedCompilation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.failedCompilation" />
+      <MemberSignature Language="VB.NET" Value="Protected failedCompilation As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool failedCompilation;" />
+      <MemberSignature Language="F#" Value="val mutable failedCompilation : bool" Usage="Microsoft.Vsa.BaseVsaEngine.failedCompilation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="genDebugInfo">
+      <MemberSignature Language="C#" Value="protected bool genDebugInfo;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool genDebugInfo" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.genDebugInfo" />
+      <MemberSignature Language="VB.NET" Value="Protected genDebugInfo As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool genDebugInfo;" />
+      <MemberSignature Language="F#" Value="val mutable genDebugInfo : bool" Usage="Microsoft.Vsa.BaseVsaEngine.genDebugInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDebugInfo">
+      <MemberSignature Language="C#" Value="public bool GenerateDebugInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateDebugInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.GenerateDebugInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property GenerateDebugInfo As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateDebugInfo { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateDebugInfo : bool with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.GenerateDebugInfo" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.GenerateDebugInfo</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomOption">
+      <MemberSignature Language="C#" Value="protected abstract object GetCustomOption (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetCustomOption(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.GetCustomOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetCustomOption (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ GetCustomOption(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomOption : string -&gt; obj" Usage="baseVsaEngine.GetCustomOption name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOption">
+      <MemberSignature Language="C#" Value="public virtual object GetOption (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOption(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.GetOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOption (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetOption(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetOption : string -&gt; obj&#xA;override this.GetOption : string -&gt; obj" Usage="baseVsaEngine.GetOption name" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.GetOption(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="haveCompiledState">
+      <MemberSignature Language="C#" Value="protected bool haveCompiledState;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool haveCompiledState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.haveCompiledState" />
+      <MemberSignature Language="VB.NET" Value="Protected haveCompiledState As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool haveCompiledState;" />
+      <MemberSignature Language="F#" Value="val mutable haveCompiledState : bool" Usage="Microsoft.Vsa.BaseVsaEngine.haveCompiledState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitNew">
+      <MemberSignature Language="C#" Value="public virtual void InitNew ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitNew() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.InitNew" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitNew ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitNew();" />
+      <MemberSignature Language="F#" Value="abstract member InitNew : unit -&gt; unit&#xA;override this.InitNew : unit -&gt; unit" Usage="baseVsaEngine.InitNew " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.InitNew</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isClosed">
+      <MemberSignature Language="C#" Value="protected bool isClosed;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isClosed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isClosed" />
+      <MemberSignature Language="VB.NET" Value="Protected isClosed As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isClosed;" />
+      <MemberSignature Language="F#" Value="val mutable isClosed : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompiled">
+      <MemberSignature Language="C#" Value="public bool IsCompiled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompiled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.IsCompiled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompiled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompiled : bool" Usage="Microsoft.Vsa.BaseVsaEngine.IsCompiled" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.IsCompiled</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isDebugInfoSupported">
+      <MemberSignature Language="C#" Value="protected bool isDebugInfoSupported;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isDebugInfoSupported" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isDebugInfoSupported" />
+      <MemberSignature Language="VB.NET" Value="Protected isDebugInfoSupported As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isDebugInfoSupported;" />
+      <MemberSignature Language="F#" Value="val mutable isDebugInfoSupported : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isDebugInfoSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDirty">
+      <MemberSignature Language="C#" Value="public bool IsDirty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.IsDirty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isEngineCompiled">
+      <MemberSignature Language="C#" Value="protected bool isEngineCompiled;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isEngineCompiled" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isEngineCompiled" />
+      <MemberSignature Language="VB.NET" Value="Protected isEngineCompiled As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isEngineCompiled;" />
+      <MemberSignature Language="F#" Value="val mutable isEngineCompiled : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isEngineCompiled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isEngineDirty">
+      <MemberSignature Language="C#" Value="protected bool isEngineDirty;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isEngineDirty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isEngineDirty" />
+      <MemberSignature Language="VB.NET" Value="Protected isEngineDirty As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isEngineDirty;" />
+      <MemberSignature Language="F#" Value="val mutable isEngineDirty : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isEngineDirty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isEngineInitialized">
+      <MemberSignature Language="C#" Value="protected bool isEngineInitialized;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isEngineInitialized" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isEngineInitialized" />
+      <MemberSignature Language="VB.NET" Value="Protected isEngineInitialized As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isEngineInitialized;" />
+      <MemberSignature Language="F#" Value="val mutable isEngineInitialized : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isEngineInitialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isEngineRunning">
+      <MemberSignature Language="C#" Value="protected bool isEngineRunning;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isEngineRunning" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.isEngineRunning" />
+      <MemberSignature Language="VB.NET" Value="Protected isEngineRunning As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isEngineRunning;" />
+      <MemberSignature Language="F#" Value="val mutable isEngineRunning : bool" Usage="Microsoft.Vsa.BaseVsaEngine.isEngineRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public bool IsRunning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.IsRunning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="Microsoft.Vsa.BaseVsaEngine.IsRunning" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.IsRunning</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidIdentifier">
+      <MemberSignature Language="C#" Value="public abstract bool IsValidIdentifier (string ident);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidIdentifier(string ident) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.IsValidIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsValidIdentifier (ident As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsValidIdentifier(System::String ^ ident);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidIdentifier : string -&gt; bool" Usage="baseVsaEngine.IsValidIdentifier ident" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.IsValidIdentifier(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ident" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ident">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidNamespaceName">
+      <MemberSignature Language="C#" Value="protected abstract bool IsValidNamespaceName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsValidNamespaceName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.IsValidNamespaceName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function IsValidNamespaceName (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool IsValidNamespaceName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidNamespaceName : string -&gt; bool" Usage="baseVsaEngine.IsValidNamespaceName name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaItems Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vsa.IVsaItems Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IVsaItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::IVsaItems ^ Items { Microsoft::Vsa::IVsaItems ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : Microsoft.Vsa.IVsaItems" Usage="Microsoft.Vsa.BaseVsaEngine.Items" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Items</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Language" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Microsoft.Vsa.BaseVsaEngine.Language" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Language</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LCID">
+      <MemberSignature Language="C#" Value="public int LCID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.LCID" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.LCID</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCompiledState">
+      <MemberSignature Language="C#" Value="protected virtual System.Reflection.Assembly LoadCompiledState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.Assembly LoadCompiledState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.LoadCompiledState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadCompiledState () As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::Assembly ^ LoadCompiledState();" />
+      <MemberSignature Language="F#" Value="abstract member LoadCompiledState : unit -&gt; System.Reflection.Assembly&#xA;override this.LoadCompiledState : unit -&gt; System.Reflection.Assembly" Usage="baseVsaEngine.LoadCompiledState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="loadedAssembly">
+      <MemberSignature Language="C#" Value="protected System.Reflection.Assembly loadedAssembly;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.Assembly loadedAssembly" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.loadedAssembly" />
+      <MemberSignature Language="VB.NET" Value="Protected loadedAssembly As Assembly " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Reflection::Assembly ^ loadedAssembly;" />
+      <MemberSignature Language="F#" Value="val mutable loadedAssembly : System.Reflection.Assembly" Usage="Microsoft.Vsa.BaseVsaEngine.loadedAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSourceState">
+      <MemberSignature Language="C#" Value="public virtual void LoadSourceState (Microsoft.Vsa.IVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadSourceState(class Microsoft.Vsa.IVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.LoadSourceState(Microsoft.Vsa.IVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadSourceState (site As IVsaPersistSite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadSourceState(Microsoft::Vsa::IVsaPersistSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member LoadSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit&#xA;override this.LoadSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit" Usage="baseVsaEngine.LoadSourceState site" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.LoadSourceState(Microsoft.Vsa.IVsaPersistSite)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nameTable">
+      <MemberSignature Language="C#" Value="protected static System.Collections.Hashtable nameTable;" />
+      <MemberSignature Language="ILAsm" Value=".field family static class System.Collections.Hashtable nameTable" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.nameTable" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared nameTable As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: static System::Collections::Hashtable ^ nameTable;" />
+      <MemberSignature Language="F#" Value=" staticval mutable nameTable : System.Collections.Hashtable" Usage="Microsoft.Vsa.BaseVsaEngine.nameTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Preconditions">
+      <MemberSignature Language="C#" Value="protected void Preconditions (Microsoft.Vsa.BaseVsaEngine.Pre flags);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Preconditions(valuetype Microsoft.Vsa.BaseVsaEngine/Pre flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Preconditions(Microsoft.Vsa.BaseVsaEngine.Pre)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Preconditions (flags As BaseVsaEngine.Pre)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Preconditions(Microsoft::Vsa::BaseVsaEngine::Pre flags);" />
+      <MemberSignature Language="F#" Value="member this.Preconditions : Microsoft.Vsa.BaseVsaEngine.Pre -&gt; unit" Usage="baseVsaEngine.Preconditions flags" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="Microsoft.Vsa.BaseVsaEngine+Pre" />
+      </Parameters>
+      <Docs>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public virtual void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="baseVsaEngine.Reset " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.Reset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetCompiledState">
+      <MemberSignature Language="C#" Value="protected abstract void ResetCompiledState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ResetCompiledState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.ResetCompiledState" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub ResetCompiledState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ResetCompiledState();" />
+      <MemberSignature Language="F#" Value="abstract member ResetCompiledState : unit -&gt; unit" Usage="baseVsaEngine.ResetCompiledState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeCache">
+      <MemberSignature Language="C#" Value="public virtual void RevokeCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RevokeCache() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.RevokeCache" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RevokeCache ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RevokeCache();" />
+      <MemberSignature Language="F#" Value="abstract member RevokeCache : unit -&gt; unit&#xA;override this.RevokeCache : unit -&gt; unit" Usage="baseVsaEngine.RevokeCache " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.RevokeCache</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMoniker">
+      <MemberSignature Language="C#" Value="public string RootMoniker { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootMoniker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.RootMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootMoniker As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootMoniker { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootMoniker : string with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.RootMoniker" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.RootMoniker</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rootNamespace">
+      <MemberSignature Language="C#" Value="protected string rootNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field family string rootNamespace" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.rootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Protected rootNamespace As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ rootNamespace;" />
+      <MemberSignature Language="F#" Value="val mutable rootNamespace : string" Usage="Microsoft.Vsa.BaseVsaEngine.rootNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespace">
+      <MemberSignature Language="C#" Value="public string RootNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.RootNamespace" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.RootNamespace</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public virtual void Run ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Run() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.Run" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Run ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Run();" />
+      <MemberSignature Language="F#" Value="abstract member Run : unit -&gt; unit&#xA;override this.Run : unit -&gt; unit" Usage="baseVsaEngine.Run " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.Run</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveCompiledState">
+      <MemberSignature Language="C#" Value="public virtual void SaveCompiledState (out byte[] pe, out byte[] debugInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveCompiledState (ByRef pe As Byte(), ByRef debugInfo As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveCompiledState([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pe, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % debugInfo);" />
+      <MemberSignature Language="F#" Value="abstract member SaveCompiledState :  *  -&gt; unit&#xA;override this.SaveCompiledState :  *  -&gt; unit" Usage="baseVsaEngine.SaveCompiledState (pe, debugInfo)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pe">To be added.</param>
+        <param name="debugInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSourceState">
+      <MemberSignature Language="C#" Value="public virtual void SaveSourceState (Microsoft.Vsa.IVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveSourceState(class Microsoft.Vsa.IVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.SaveSourceState(Microsoft.Vsa.IVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveSourceState (site As IVsaPersistSite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveSourceState(Microsoft::Vsa::IVsaPersistSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member SaveSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit&#xA;override this.SaveSourceState : Microsoft.Vsa.IVsaPersistSite -&gt; unit" Usage="baseVsaEngine.SaveSourceState site" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveSourceState(Microsoft.Vsa.IVsaPersistSite)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="scriptLanguage">
+      <MemberSignature Language="C#" Value="protected string scriptLanguage;" />
+      <MemberSignature Language="ILAsm" Value=".field family string scriptLanguage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.scriptLanguage" />
+      <MemberSignature Language="VB.NET" Value="Protected scriptLanguage As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ scriptLanguage;" />
+      <MemberSignature Language="F#" Value="val mutable scriptLanguage : string" Usage="Microsoft.Vsa.BaseVsaEngine.scriptLanguage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCustomOption">
+      <MemberSignature Language="C#" Value="protected abstract void SetCustomOption (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetCustomOption(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.SetCustomOption(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SetCustomOption (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SetCustomOption(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetCustomOption : string * obj -&gt; unit" Usage="baseVsaEngine.SetCustomOption (name, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOption">
+      <MemberSignature Language="C#" Value="public virtual void SetOption (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOption(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.SetOption(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetOption (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetOption(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetOption : string * obj -&gt; unit&#xA;override this.SetOption : string * obj -&gt; unit" Usage="baseVsaEngine.SetOption (name, value)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SetOption(System.String,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public Microsoft.Vsa.IVsaSite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vsa.IVsaSite Site" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As IVsaSite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vsa::IVsaSite ^ Site { Microsoft::Vsa::IVsaSite ^ get(); void set(Microsoft::Vsa::IVsaSite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : Microsoft.Vsa.IVsaSite with get, set" Usage="Microsoft.Vsa.BaseVsaEngine.Site" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Site</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaSite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="startupClass">
+      <MemberSignature Language="C#" Value="protected Type startupClass;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Type startupClass" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.startupClass" />
+      <MemberSignature Language="VB.NET" Value="Protected startupClass As Type " />
+      <MemberSignature Language="C++ CLI" Value="protected: Type ^ startupClass;" />
+      <MemberSignature Language="F#" Value="val mutable startupClass : Type" Usage="Microsoft.Vsa.BaseVsaEngine.startupClass" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="startupInstance">
+      <MemberSignature Language="C#" Value="protected Microsoft.Vsa.BaseVsaStartup startupInstance;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Vsa.BaseVsaStartup startupInstance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.startupInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected startupInstance As BaseVsaStartup " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::Vsa::BaseVsaStartup ^ startupInstance;" />
+      <MemberSignature Language="F#" Value="val mutable startupInstance : Microsoft.Vsa.BaseVsaStartup" Usage="Microsoft.Vsa.BaseVsaEngine.startupInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.BaseVsaStartup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateRootMoniker">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateRootMoniker (string rootMoniker);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateRootMoniker(string rootMoniker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Vsa.BaseVsaEngine.ValidateRootMoniker(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateRootMoniker (rootMoniker As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateRootMoniker(System::String ^ rootMoniker);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateRootMoniker : string -&gt; unit&#xA;override this.ValidateRootMoniker : string -&gt; unit" Usage="baseVsaEngine.ValidateRootMoniker rootMoniker" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootMoniker" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.BaseVsaEngine.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Microsoft.Vsa.BaseVsaEngine.Version" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Version</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="vsaItems">
+      <MemberSignature Language="C#" Value="protected Microsoft.Vsa.IVsaItems vsaItems;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Vsa.IVsaItems vsaItems" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Vsa.BaseVsaEngine.vsaItems" />
+      <MemberSignature Language="VB.NET" Value="Protected vsaItems As IVsaItems " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::Vsa::IVsaItems ^ vsaItems;" />
+      <MemberSignature Language="F#" Value="val mutable vsaItems : Microsoft.Vsa.IVsaItems" Usage="Microsoft.Vsa.BaseVsaEngine.vsaItems" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vsa.IVsaItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

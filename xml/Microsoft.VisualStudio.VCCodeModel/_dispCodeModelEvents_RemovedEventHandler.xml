@@ -1,0 +1,33 @@
+<Type Name="_dispCodeModelEvents_RemovedEventHandler" FullName="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _dispCodeModelEvents_RemovedEventHandler(CodeElement Parent, CodeElement Deleted);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispCodeModelEvents_RemovedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_RemovedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _dispCodeModelEvents_RemovedEventHandler(Parent As CodeElement, Deleted As CodeElement)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _dispCodeModelEvents_RemovedEventHandler(CodeElement ^ Parent, CodeElement ^ Deleted);" />
+  <TypeSignature Language="F#" Value="type _dispCodeModelEvents_RemovedEventHandler = delegate of CodeElement * CodeElement -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Parent" Type="EnvDTE.CodeElement" />
+    <Parameter Name="Deleted" Type="EnvDTE.CodeElement" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Parent">To be added.</param>
+    <param name="Deleted">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

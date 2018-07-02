@@ -1,0 +1,139 @@
+﻿<Type Name="SmtpRegisterSink" FullName="System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink">
+  <TypeSignature Language="C#" Value="public class SmtpRegisterSink" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmtpRegisterSink extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink" />
+  <TypeSignature Language="VB.NET" Value="Public Class SmtpRegisterSink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SmtpRegisterSink" />
+  <TypeSignature Language="F#" Value="type SmtpRegisterSink = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmtpRegisterSink ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpRegisterSink();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRegistryEntryForMailbox">
+      <MemberSignature Language="C#" Value="public static Guid CreateRegistryEntryForMailbox (string mailbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid CreateRegistryEntryForMailbox(string mailbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.CreateRegistryEntryForMailbox(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRegistryEntryForMailbox (mailbox As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid CreateRegistryEntryForMailbox(System::String ^ mailbox);" />
+      <MemberSignature Language="F#" Value="static member CreateRegistryEntryForMailbox : string -&gt; Guid" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.CreateRegistryEntryForMailbox mailbox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mailbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mailbox">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRegistryEntryForMailbox">
+      <MemberSignature Language="C#" Value="public static Guid CreateRegistryEntryForMailbox (string processName, string mailbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid CreateRegistryEntryForMailbox(string processName, string mailbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.CreateRegistryEntryForMailbox(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRegistryEntryForMailbox (processName As String, mailbox As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid CreateRegistryEntryForMailbox(System::String ^ processName, System::String ^ mailbox);" />
+      <MemberSignature Language="F#" Value="static member CreateRegistryEntryForMailbox : string * string -&gt; Guid" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.CreateRegistryEntryForMailbox (processName, mailbox)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="processName" Type="System.String" />
+        <Parameter Name="mailbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="processName">To be added.</param>
+        <param name="mailbox">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteRegistryEntryForMailbox">
+      <MemberSignature Language="C#" Value="public static void DeleteRegistryEntryForMailbox (string mailbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteRegistryEntryForMailbox(string mailbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.DeleteRegistryEntryForMailbox(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteRegistryEntryForMailbox (mailbox As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteRegistryEntryForMailbox(System::String ^ mailbox);" />
+      <MemberSignature Language="F#" Value="static member DeleteRegistryEntryForMailbox : string -&gt; unit" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.DeleteRegistryEntryForMailbox mailbox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mailbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mailbox">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterSinkWithSmtp">
+      <MemberSignature Language="C#" Value="public static void RegisterSinkWithSmtp (string mailbox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterSinkWithSmtp(string mailbox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.RegisterSinkWithSmtp(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterSinkWithSmtp (mailbox As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterSinkWithSmtp(System::String ^ mailbox);" />
+      <MemberSignature Language="F#" Value="static member RegisterSinkWithSmtp : string -&gt; unit" Usage="System.Runtime.Remoting.Channels.Smtp.SmtpRegisterSink.RegisterSinkWithSmtp mailbox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting.Channels.Smtp</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mailbox" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mailbox">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

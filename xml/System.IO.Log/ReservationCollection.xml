@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type ReservationCollection = class&#xA;    interface ICollection&lt;int64&gt;&#xA;    interface seq&lt;int64&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -93,6 +94,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -114,6 +116,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,6 +176,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,6 +208,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,6 +238,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,6 +280,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,6 +302,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,6 +324,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,6 +354,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -380,6 +390,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,6 +426,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,6 +455,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -473,6 +486,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -528,6 +542,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -559,6 +574,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -592,6 +608,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

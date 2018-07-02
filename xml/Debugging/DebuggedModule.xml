@@ -1,0 +1,292 @@
+﻿<Type Name="DebuggedModule" FullName="Debugging.DebuggedModule">
+  <TypeSignature Language="C#" Value="public class DebuggedModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebuggedModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Debugging.DebuggedModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class DebuggedModule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggedModule" />
+  <TypeSignature Language="F#" Value="type DebuggedModule = class" />
+  <AssemblyInfo>
+    <AssemblyName>Debugging</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedAssembly Assembly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Debugging.DebuggedAssembly Assembly" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assembly As DebuggedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Debugging::DebuggedAssembly ^ Assembly { Debugging::DebuggedAssembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : Debugging.DebuggedAssembly" Usage="Debugging.DebuggedModule.Assembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedAssembly</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAddress">
+      <MemberSignature Language="C#" Value="public long BaseAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BaseAddress" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.BaseAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseAddress As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BaseAddress { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseAddress : int64" Usage="Debugging.DebuggedModule.BaseAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBreakpoint">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedModuleBreakpoint CreateBreakpoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.DebuggedModuleBreakpoint CreateBreakpoint() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.CreateBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBreakpoint () As DebuggedModuleBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::DebuggedModuleBreakpoint ^ CreateBreakpoint();" />
+      <MemberSignature Language="F#" Value="member this.CreateBreakpoint : unit -&gt; Debugging.DebuggedModuleBreakpoint" Usage="debuggedModule.CreateBreakpoint " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedModuleBreakpoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableClassLoadCallbacks">
+      <MemberSignature Language="C#" Value="public void EnableClassLoadCallbacks (bool a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableClassLoadCallbacks(bool a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.EnableClassLoadCallbacks(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableClassLoadCallbacks (a As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableClassLoadCallbacks(bool a);" />
+      <MemberSignature Language="F#" Value="member this.EnableClassLoadCallbacks : bool -&gt; unit" Usage="debuggedModule.EnableClassLoadCallbacks a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableJITDebugging">
+      <MemberSignature Language="C#" Value="public void EnableJITDebugging (bool trackJitInfo, bool allowJitOpts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableJITDebugging(bool trackJitInfo, bool allowJitOpts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.EnableJITDebugging(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableJITDebugging (trackJitInfo As Boolean, allowJitOpts As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableJITDebugging(bool trackJitInfo, bool allowJitOpts);" />
+      <MemberSignature Language="F#" Value="member this.EnableJITDebugging : bool * bool -&gt; unit" Usage="debuggedModule.EnableJITDebugging (trackJitInfo, allowJitOpts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trackJitInfo" Type="System.Boolean" />
+        <Parameter Name="allowJitOpts" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="trackJitInfo">To be added.</param>
+        <param name="allowJitOpts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassFromToken">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedClass GetClassFromToken (int typeDef);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.DebuggedClass GetClassFromToken(int32 typeDef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.GetClassFromToken(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClassFromToken (typeDef As Integer) As DebuggedClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::DebuggedClass ^ GetClassFromToken(int typeDef);" />
+      <MemberSignature Language="F#" Value="member this.GetClassFromToken : int -&gt; Debugging.DebuggedClass" Usage="debuggedModule.GetClassFromToken typeDef" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedClass</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeDef" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="typeDef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalVariableValue">
+      <MemberSignature Language="C#" Value="public Debugging.Value GetGlobalVariableValue (int fieldDef);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Debugging.Value GetGlobalVariableValue(int32 fieldDef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.GetGlobalVariableValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalVariableValue (fieldDef As Integer) As Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Debugging::Value ^ GetGlobalVariableValue(int fieldDef);" />
+      <MemberSignature Language="F#" Value="member this.GetGlobalVariableValue : int -&gt; Debugging.Value" Usage="debuggedModule.GetGlobalVariableValue fieldDef" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.Value</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldDef" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fieldDef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDynamic">
+      <MemberSignature Language="C#" Value="public bool IsDynamic ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDynamic() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Debugging.DebuggedModule.IsDynamic" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDynamic () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDynamic();" />
+      <MemberSignature Language="F#" Value="member this.IsDynamic : unit -&gt; bool" Usage="debuggedModule.IsDynamic " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Debugging.DebuggedModule.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="public Debugging.DebuggedProcess Process { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Debugging.DebuggedProcess Process" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.Process" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Process As DebuggedProcess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Debugging::DebuggedProcess ^ Process { Debugging::DebuggedProcess ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Process : Debugging.DebuggedProcess" Usage="Debugging.DebuggedModule.Process" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Debugging.DebuggedProcess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="Debugging.DebuggedModule.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Token">
+      <MemberSignature Language="C#" Value="public int Token { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Token" />
+      <MemberSignature Language="DocId" Value="P:Debugging.DebuggedModule.Token" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Token { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : int" Usage="Debugging.DebuggedModule.Token" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Debugging</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

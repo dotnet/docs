@@ -1,0 +1,31 @@
+﻿<Type Name="IHostStub" FullName="Microsoft.IE.IHostStub">
+  <TypeSignature Language="C#" Value="public interface IHostStub : Microsoft.IE.IHostEx" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHostStub implements class Microsoft.IE.IHostEx" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IE.IHostStub" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHostStub&#xA;Implements IHostEx" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHostStub : Microsoft::IE::IHostEx" />
+  <TypeSignature Language="F#" Value="type IHostStub = interface&#xA;    interface IHostEx" />
+  <AssemblyInfo>
+    <AssemblyName>IIEHost</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IE.IHostEx</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.IE.IHostStubClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("FC3DA537-C144-42C3-92F8-EA88267EC73B")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

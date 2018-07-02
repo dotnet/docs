@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type BinaryDelegate&lt;'TArg1, 'TArg2, 'Result&gt; = delegate of 'TArg1 * 'TArg2 -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -26,8 +27,10 @@
     </Attribute>
   </Attributes>
   <Parameters>
-    <Parameter Name="A_0" Type="TArg1" />
-    <Parameter Name="A_1" Type="TArg2" />
+    <Parameter Name="" Type="TArg1" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+    <Parameter Name="A_0" Type="TArg1" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+    <Parameter Name="" Type="TArg2" Index="1" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+    <Parameter Name="A_1" Type="TArg2" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
   </Parameters>
   <ReturnValue>
     <ReturnType>TResult</ReturnType>
@@ -38,6 +41,7 @@
     <typeparam name="TResult">The return type of the delegate.</typeparam>
     <param name="A_0">The first argument.</param>
     <param name="A_1">The second argument.</param>
+    <param name="">To be added.</param>
     <summary>Describes a two-argument delegate. You use it to specify the arguments and return type of the delegate.</summary>
     <returns>The return type of the delegate.</returns>
     <remarks>

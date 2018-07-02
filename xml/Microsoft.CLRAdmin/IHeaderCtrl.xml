@@ -1,0 +1,185 @@
+﻿<Type Name="IHeaderCtrl" FullName="Microsoft.CLRAdmin.IHeaderCtrl">
+  <TypeSignature Language="C#" Value="public interface IHeaderCtrl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHeaderCtrl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IHeaderCtrl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHeaderCtrl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHeaderCtrl" />
+  <TypeSignature Language="F#" Value="type IHeaderCtrl = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("43136EB3-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteColumn">
+      <MemberSignature Language="C#" Value="public void DeleteColumn (int nCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteColumn(int32 nCol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.DeleteColumn(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteColumn (nCol As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteColumn(int nCol);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteColumn : int -&gt; unit" Usage="iHeaderCtrl.DeleteColumn nCol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnText">
+      <MemberSignature Language="C#" Value="public void GetColumnText (int nCol, out int pText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetColumnText(int32 nCol, [out] int32&amp; pText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.GetColumnText(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetColumnText (nCol As Integer, ByRef pText As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetColumnText(int nCol, [Runtime::InteropServices::Out] int % pText);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnText : int *  -&gt; unit" Usage="iHeaderCtrl.GetColumnText (nCol, pText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+        <Parameter Name="pText" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <param name="pText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnWidth">
+      <MemberSignature Language="C#" Value="public void GetColumnWidth (int nCol, out int pWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetColumnWidth(int32 nCol, [out] int32&amp; pWidth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.GetColumnWidth(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetColumnWidth (nCol As Integer, ByRef pWidth As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetColumnWidth(int nCol, [Runtime::InteropServices::Out] int % pWidth);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnWidth : int *  -&gt; unit" Usage="iHeaderCtrl.GetColumnWidth (nCol, pWidth)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+        <Parameter Name="pWidth" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <param name="pWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertColumn">
+      <MemberSignature Language="C#" Value="public void InsertColumn (int nCol, string title, int nFormat, int nWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertColumn(int32 nCol, string title, int32 nFormat, int32 nWidth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.InsertColumn(System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertColumn (nCol As Integer, title As String, nFormat As Integer, nWidth As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertColumn(int nCol, System::String ^ title, int nFormat, int nWidth);" />
+      <MemberSignature Language="F#" Value="abstract member InsertColumn : int * string * int * int -&gt; unit" Usage="iHeaderCtrl.InsertColumn (nCol, title, nFormat, nWidth)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="nFormat" Type="System.Int32" />
+        <Parameter Name="nWidth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <param name="title">To be added.</param>
+        <param name="nFormat">To be added.</param>
+        <param name="nWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColumnText">
+      <MemberSignature Language="C#" Value="public void SetColumnText (int nCol, string title);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetColumnText(int32 nCol, string title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.SetColumnText(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnText (nCol As Integer, title As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnText(int nCol, System::String ^ title);" />
+      <MemberSignature Language="F#" Value="abstract member SetColumnText : int * string -&gt; unit" Usage="iHeaderCtrl.SetColumnText (nCol, title)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+        <Parameter Name="title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <param name="title">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColumnWidth">
+      <MemberSignature Language="C#" Value="public void SetColumnWidth (int nCol, int nWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetColumnWidth(int32 nCol, int32 nWidth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IHeaderCtrl.SetColumnWidth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnWidth (nCol As Integer, nWidth As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnWidth(int nCol, int nWidth);" />
+      <MemberSignature Language="F#" Value="abstract member SetColumnWidth : int * int -&gt; unit" Usage="iHeaderCtrl.SetColumnWidth (nCol, nWidth)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nCol" Type="System.Int32" />
+        <Parameter Name="nWidth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nCol">To be added.</param>
+        <param name="nWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

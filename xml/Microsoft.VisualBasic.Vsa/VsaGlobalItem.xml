@@ -1,0 +1,82 @@
+﻿<Type Name="VsaGlobalItem" FullName="Microsoft.VisualBasic.Vsa.VsaGlobalItem">
+  <TypeSignature Language="C#" Value="public class VsaGlobalItem : Microsoft.VisualBasic.Vsa.VsaItem, Microsoft.Vsa.IVsaGlobalItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VsaGlobalItem extends Microsoft.VisualBasic.Vsa.VsaItem implements class Microsoft.Vsa.IVsaGlobalItem, class Microsoft.Vsa.IVsaItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Vsa.VsaGlobalItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsaGlobalItem&#xA;Inherits VsaItem&#xA;Implements IVsaGlobalItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaGlobalItem : Microsoft::VisualBasic::Vsa::VsaItem, Microsoft::Vsa::IVsaGlobalItem" />
+  <TypeSignature Language="F#" Value="type VsaGlobalItem = class&#xA;    inherit VsaItem&#xA;    interface IVsaGlobalItem&#xA;    interface IVsaItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualBasic.Vsa.VsaItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Vsa.IVsaGlobalItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExposeMembers">
+      <MemberSignature Language="C#" Value="public bool ExposeMembers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExposeMembers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaGlobalItem.ExposeMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExposeMembers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExposeMembers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExposeMembers : bool with get, set" Usage="Microsoft.VisualBasic.Vsa.VsaGlobalItem.ExposeMembers" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaGlobalItem.ExposeMembers</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeString">
+      <MemberSignature Language="C#" Value="public string TypeString { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Vsa.VsaGlobalItem.TypeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeString {  void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeString : string" Usage="Microsoft.VisualBasic.Vsa.VsaGlobalItem.TypeString" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Vsa.IVsaGlobalItem.TypeString</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

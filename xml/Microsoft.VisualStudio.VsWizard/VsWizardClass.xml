@@ -1,0 +1,97 @@
+﻿<Type Name="VsWizardClass" FullName="Microsoft.VisualStudio.VsWizard.VsWizardClass">
+  <TypeSignature Language="C#" Value="public class VsWizardClass : EnvDTE.IDTWizard, Microsoft.VisualStudio.VsWizard.VsWizard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi VsWizardClass extends System.Object implements class EnvDTE.IDTWizard, class Microsoft.VisualStudio.VsWizard.VsWizard" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VsWizard.VsWizardClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class VsWizardClass&#xA;Implements IDTWizard, VsWizard" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsWizardClass : EnvDTE::IDTWizard, Microsoft::VisualStudio::VsWizard::VsWizard" />
+  <TypeSignature Language="F#" Value="type VsWizardClass = class&#xA;    interface IDTWizard&#xA;    interface VsWizard" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>EnvDTE.IDTWizard</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualStudio.VsWizard.VsWizard</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("70745ECA-FD20-4BB5-BF4E-E7DE25B4847C")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(2)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VsWizardClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.VsWizardClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VsWizardClass();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public virtual void Execute (object Application, int hwndOwner, ref object[] ContextParams, ref object[] CustomParams, out EnvDTE.wizardResult retval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute([in]object Application, [in]int32 hwndOwner, [in]object[]&amp; ContextParams, [in]object[]&amp; CustomParams, [out] valuetype EnvDTE.wizardResult&amp; retval) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VsWizard.VsWizardClass.Execute(System.Object,System.Int32,System.Object[]@,System.Object[]@,EnvDTE.wizardResult@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Execute (Application As Object, hwndOwner As Integer, ByRef ContextParams As Object(), ByRef CustomParams As Object(), ByRef retval As wizardResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Execute(System::Object ^ Application, int hwndOwner, cli::array &lt;System::Object ^&gt; ^ % ContextParams, cli::array &lt;System::Object ^&gt; ^ % CustomParams, [Runtime::InteropServices::Out] EnvDTE::wizardResult % retval) = EnvDTE::IDTWizard::Execute;" />
+      <MemberSignature Language="F#" Value="abstract member Execute : obj * int *  *  *  -&gt; unit&#xA;override this.Execute : obj * int *  *  *  -&gt; unit" Usage="vsWizardClass.Execute (Application, hwndOwner, ContextParams, CustomParams, retval)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:EnvDTE.IDTWizard.Execute(System.Object,System.Int32,System.Object[]@,System.Object[]@,EnvDTE.wizardResult@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VsWizard</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Application" Type="System.Object" />
+        <Parameter Name="hwndOwner" Type="System.Int32" />
+        <Parameter Name="ContextParams" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="CustomParams" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="retval" Type="EnvDTE.wizardResult&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="Application">To be added.</param>
+        <param name="hwndOwner">To be added.</param>
+        <param name="ContextParams">To be added.</param>
+        <param name="CustomParams">To be added.</param>
+        <param name="retval">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

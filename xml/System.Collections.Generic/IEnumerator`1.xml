@@ -16,6 +16,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IEnumerator`1.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
       <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Collections.Generic.IEnumerator&lt;'T&gt;.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -103,6 +105,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

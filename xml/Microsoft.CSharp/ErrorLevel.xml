@@ -1,0 +1,106 @@
+﻿<Type Name="ErrorLevel" FullName="Microsoft.CSharp.ErrorLevel">
+  <TypeSignature Language="C#" Value="public enum ErrorLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.ErrorLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ErrorLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ErrorLevel" />
+  <TypeSignature Language="F#" Value="type ErrorLevel = " />
+  <AssemblyInfo>
+    <AssemblyName>cscompmgd</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The recommended alternative is Microsoft.CSharp.CSharpCodeProvider and System.CodeDom.Compiler.ICodeCompiler.  The CSharpCodeProvider and CodeDom ICodeCompiler provide a much richer set of functionality for specifying how to launch the compiler.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.ErrorLevel Error = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.ErrorLevel.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="Microsoft.CSharp.ErrorLevel.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>cscompmgd</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CSharp.ErrorLevel</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FatalError">
+      <MemberSignature Language="C#" Value="FatalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.ErrorLevel FatalError = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.ErrorLevel.FatalError" />
+      <MemberSignature Language="VB.NET" Value="FatalError" />
+      <MemberSignature Language="C++ CLI" Value="FatalError" />
+      <MemberSignature Language="F#" Value="FatalError = 3" Usage="Microsoft.CSharp.ErrorLevel.FatalError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>cscompmgd</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CSharp.ErrorLevel</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.ErrorLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.ErrorLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.CSharp.ErrorLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>cscompmgd</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CSharp.ErrorLevel</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="Warning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.ErrorLevel Warning = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.ErrorLevel.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 1" Usage="Microsoft.CSharp.ErrorLevel.Warning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>cscompmgd</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CSharp.ErrorLevel</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

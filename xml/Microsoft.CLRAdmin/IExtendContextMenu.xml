@@ -1,0 +1,81 @@
+﻿<Type Name="IExtendContextMenu" FullName="Microsoft.CLRAdmin.IExtendContextMenu">
+  <TypeSignature Language="C#" Value="public interface IExtendContextMenu" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendContextMenu" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IExtendContextMenu" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendContextMenu" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtendContextMenu" />
+  <TypeSignature Language="F#" Value="type IExtendContextMenu = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4F3B7A4F-CFAC-11CF-B8E3-00C04FD8D5B0")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddMenuItems">
+      <MemberSignature Language="C#" Value="public void AddMenuItems (Microsoft.CLRAdmin.IDataObject piDataObject, Microsoft.CLRAdmin.IContextMenuCallback piCallback, ref int pInsertionAllowed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMenuItems(class Microsoft.CLRAdmin.IDataObject piDataObject, class Microsoft.CLRAdmin.IContextMenuCallback piCallback, int32&amp; pInsertionAllowed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendContextMenu.AddMenuItems(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IContextMenuCallback,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMenuItems (piDataObject As IDataObject, piCallback As IContextMenuCallback, ByRef pInsertionAllowed As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMenuItems(Microsoft::CLRAdmin::IDataObject ^ piDataObject, Microsoft::CLRAdmin::IContextMenuCallback ^ piCallback, int % pInsertionAllowed);" />
+      <MemberSignature Language="F#" Value="abstract member AddMenuItems : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IContextMenuCallback *  -&gt; unit" Usage="iExtendContextMenu.AddMenuItems (piDataObject, piCallback, pInsertionAllowed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="piDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="piCallback" Type="Microsoft.CLRAdmin.IContextMenuCallback" />
+        <Parameter Name="pInsertionAllowed" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="piDataObject">To be added.</param>
+        <param name="piCallback">To be added.</param>
+        <param name="pInsertionAllowed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public void Command (int lCommandID, Microsoft.CLRAdmin.IDataObject piDataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Command(int32 lCommandID, class Microsoft.CLRAdmin.IDataObject piDataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IExtendContextMenu.Command(System.Int32,Microsoft.CLRAdmin.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Command (lCommandID As Integer, piDataObject As IDataObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Command(int lCommandID, Microsoft::CLRAdmin::IDataObject ^ piDataObject);" />
+      <MemberSignature Language="F#" Value="abstract member Command : int * Microsoft.CLRAdmin.IDataObject -&gt; unit" Usage="iExtendContextMenu.Command (lCommandID, piDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lCommandID" Type="System.Int32" />
+        <Parameter Name="piDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="lCommandID">To be added.</param>
+        <param name="piDataObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

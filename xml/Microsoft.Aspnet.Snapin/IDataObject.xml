@@ -1,0 +1,270 @@
+﻿<Type Name="IDataObject" FullName="Microsoft.Aspnet.Snapin.IDataObject">
+  <TypeSignature Language="C#" Value="public interface IDataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IDataObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AspNetMMCExt</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0000010e-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DAdvise">
+      <MemberSignature Language="C#" Value="public int DAdvise (IntPtr a, int b, IntPtr c, ref int d);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DAdvise(native int a, int32 b, native int c, int32&amp; d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.DAdvise(System.IntPtr,System.Int32,System.IntPtr,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DAdvise (a As IntPtr, b As Integer, c As IntPtr, ByRef d As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DAdvise(IntPtr a, int b, IntPtr c, int % d);" />
+      <MemberSignature Language="F#" Value="abstract member DAdvise : nativeint * int * nativeint *  -&gt; int" Usage="iDataObject.DAdvise (a, b, c, d)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.Int32" />
+        <Parameter Name="c" Type="System.IntPtr" />
+        <Parameter Name="d" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DUnadvise">
+      <MemberSignature Language="C#" Value="public int DUnadvise (int a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DUnadvise(int32 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.DUnadvise(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DUnadvise (a As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DUnadvise(int a);" />
+      <MemberSignature Language="F#" Value="abstract member DUnadvise : int -&gt; int" Usage="iDataObject.DUnadvise a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumDAdvise">
+      <MemberSignature Language="C#" Value="public int EnumDAdvise (IntPtr a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EnumDAdvise(native int a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.EnumDAdvise(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumDAdvise (a As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumDAdvise(IntPtr a);" />
+      <MemberSignature Language="F#" Value="abstract member EnumDAdvise : nativeint -&gt; int" Usage="iDataObject.EnumDAdvise a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumFormatEtc">
+      <MemberSignature Language="C#" Value="public int EnumFormatEtc (int a, IntPtr b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EnumFormatEtc(int32 a, native int b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.EnumFormatEtc(System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumFormatEtc (a As Integer, b As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumFormatEtc(int a, IntPtr b);" />
+      <MemberSignature Language="F#" Value="abstract member EnumFormatEtc : int * nativeint -&gt; int" Usage="iDataObject.EnumFormatEtc (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Int32" />
+        <Parameter Name="b" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCanonicalFormatEtc">
+      <MemberSignature Language="C#" Value="public int GetCanonicalFormatEtc (IntPtr a, IntPtr b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCanonicalFormatEtc(native int a, native int b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.GetCanonicalFormatEtc(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalFormatEtc (a As IntPtr, b As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCanonicalFormatEtc(IntPtr a, IntPtr b);" />
+      <MemberSignature Language="F#" Value="abstract member GetCanonicalFormatEtc : nativeint * nativeint -&gt; int" Usage="iDataObject.GetCanonicalFormatEtc (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public int GetData (ref Microsoft.Aspnet.Snapin.FORMATETC pFormatEtc, ref Microsoft.Aspnet.Snapin.STGMEDIUM b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetData(valuetype Microsoft.Aspnet.Snapin.FORMATETC&amp; pFormatEtc, valuetype Microsoft.Aspnet.Snapin.STGMEDIUM&amp; b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.GetData(Microsoft.Aspnet.Snapin.FORMATETC@,Microsoft.Aspnet.Snapin.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (ByRef pFormatEtc As FORMATETC, ByRef b As STGMEDIUM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetData(Microsoft::Aspnet::Snapin::FORMATETC % pFormatEtc, Microsoft::Aspnet::Snapin::STGMEDIUM % b);" />
+      <MemberSignature Language="F#" Value="abstract member GetData :  *  -&gt; int" Usage="iDataObject.GetData (pFormatEtc, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pFormatEtc" Type="Microsoft.Aspnet.Snapin.FORMATETC&amp;" RefType="ref" />
+        <Parameter Name="b" Type="Microsoft.Aspnet.Snapin.STGMEDIUM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pFormatEtc">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataHere">
+      <MemberSignature Language="C#" Value="public int GetDataHere (ref Microsoft.Aspnet.Snapin.FORMATETC pFormatEtc, ref Microsoft.Aspnet.Snapin.STGMEDIUM b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDataHere(valuetype Microsoft.Aspnet.Snapin.FORMATETC&amp; pFormatEtc, valuetype Microsoft.Aspnet.Snapin.STGMEDIUM&amp; b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.GetDataHere(Microsoft.Aspnet.Snapin.FORMATETC@,Microsoft.Aspnet.Snapin.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataHere (ByRef pFormatEtc As FORMATETC, ByRef b As STGMEDIUM) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetDataHere(Microsoft::Aspnet::Snapin::FORMATETC % pFormatEtc, Microsoft::Aspnet::Snapin::STGMEDIUM % b);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataHere :  *  -&gt; int" Usage="iDataObject.GetDataHere (pFormatEtc, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pFormatEtc" Type="Microsoft.Aspnet.Snapin.FORMATETC&amp;" RefType="ref" />
+        <Parameter Name="b" Type="Microsoft.Aspnet.Snapin.STGMEDIUM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="pFormatEtc">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryGetData">
+      <MemberSignature Language="C#" Value="public int QueryGetData (Microsoft.Aspnet.Snapin.FORMATETC a);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 QueryGetData(valuetype Microsoft.Aspnet.Snapin.FORMATETC a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.QueryGetData(Microsoft.Aspnet.Snapin.FORMATETC)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryGetData (a As FORMATETC) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int QueryGetData(Microsoft::Aspnet::Snapin::FORMATETC a);" />
+      <MemberSignature Language="F#" Value="abstract member QueryGetData : Microsoft.Aspnet.Snapin.FORMATETC -&gt; int" Usage="iDataObject.QueryGetData a" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.Aspnet.Snapin.FORMATETC" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public int SetData (IntPtr a, IntPtr b, int c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SetData(native int a, native int b, int32 c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Aspnet.Snapin.IDataObject.SetData(System.IntPtr,System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetData (a As IntPtr, b As IntPtr, c As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int SetData(IntPtr a, IntPtr b, int c);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : nativeint * nativeint * int -&gt; int" Usage="iDataObject.SetData (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AspNetMMCExt</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.IntPtr" />
+        <Parameter Name="b" Type="System.IntPtr" />
+        <Parameter Name="c" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

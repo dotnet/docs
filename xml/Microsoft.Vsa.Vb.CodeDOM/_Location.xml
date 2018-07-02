@@ -1,0 +1,116 @@
+<Type Name="_Location" FullName="Microsoft.Vsa.Vb.CodeDOM._Location">
+  <TypeSignature Language="C#" Value="public interface _Location" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Location" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.Vb.CodeDOM._Location" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _Location" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _Location" />
+  <TypeSignature Language="F#" Value="type _Location = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("FF5D372E-733C-46ed-ADF1-A4ECBAAF3E28")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginningColumn">
+      <MemberSignature Language="C#" Value="public uint BeginningColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BeginningColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.Vb.CodeDOM._Location.BeginningColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property BeginningColumn As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 BeginningColumn { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberSignature Language="F#" Value="member this.BeginningColumn : uint32 with get, set" Usage="Microsoft.Vsa.Vb.CodeDOM._Location.BeginningColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginningLine">
+      <MemberSignature Language="C#" Value="public uint BeginningLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BeginningLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.Vb.CodeDOM._Location.BeginningLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property BeginningLine As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 BeginningLine { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberSignature Language="F#" Value="member this.BeginningLine : uint32 with get, set" Usage="Microsoft.Vsa.Vb.CodeDOM._Location.BeginningLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndColumn">
+      <MemberSignature Language="C#" Value="public uint EndColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 EndColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.Vb.CodeDOM._Location.EndColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndColumn As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 EndColumn { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberSignature Language="F#" Value="member this.EndColumn : uint32 with get, set" Usage="Microsoft.Vsa.Vb.CodeDOM._Location.EndColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLine">
+      <MemberSignature Language="C#" Value="public uint EndLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 EndLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Vsa.Vb.CodeDOM._Location.EndLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndLine As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 EndLine { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberSignature Language="F#" Value="member this.EndLine : uint32 with get, set" Usage="Microsoft.Vsa.Vb.CodeDOM._Location.EndLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Vsa.Vb.CodeDOMProcessor</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

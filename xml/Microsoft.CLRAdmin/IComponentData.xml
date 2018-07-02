@@ -1,0 +1,206 @@
+﻿<Type Name="IComponentData" FullName="Microsoft.CLRAdmin.IComponentData">
+  <TypeSignature Language="C#" Value="public interface IComponentData" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentData" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IComponentData" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentData" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComponentData" />
+  <TypeSignature Language="F#" Value="type IComponentData = interface" />
+  <AssemblyInfo>
+    <AssemblyName>mscorcfg</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("955AB28A-5218-11D0-A985-00C04FD8D565")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareObjects">
+      <MemberSignature Language="C#" Value="public int CompareObjects (Microsoft.CLRAdmin.IDataObject lpDataObjectA, Microsoft.CLRAdmin.IDataObject lpDataObjectB);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareObjects(class Microsoft.CLRAdmin.IDataObject lpDataObjectA, class Microsoft.CLRAdmin.IDataObject lpDataObjectB) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.CompareObjects(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareObjects (lpDataObjectA As IDataObject, lpDataObjectB As IDataObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareObjects(Microsoft::CLRAdmin::IDataObject ^ lpDataObjectA, Microsoft::CLRAdmin::IDataObject ^ lpDataObjectB);" />
+      <MemberSignature Language="F#" Value="abstract member CompareObjects : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IDataObject -&gt; int" Usage="iComponentData.CompareObjects (lpDataObjectA, lpDataObjectB)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpDataObjectA" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="lpDataObjectB" Type="Microsoft.CLRAdmin.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="lpDataObjectA">To be added.</param>
+        <param name="lpDataObjectB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateComponent">
+      <MemberSignature Language="C#" Value="public void CreateComponent (out Microsoft.CLRAdmin.IComponent ppComponent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateComponent([out] class Microsoft.CLRAdmin.IComponent&amp; ppComponent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.CreateComponent(Microsoft.CLRAdmin.IComponent@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateComponent (ByRef ppComponent As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateComponent([Runtime::InteropServices::Out] Microsoft::CLRAdmin::IComponent ^ % ppComponent);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponent :  -&gt; unit" Usage="iComponentData.CreateComponent ppComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppComponent" Type="Microsoft.CLRAdmin.IComponent&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppComponent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Destroy">
+      <MemberSignature Language="C#" Value="public void Destroy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Destroy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.Destroy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Destroy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Destroy();" />
+      <MemberSignature Language="F#" Value="abstract member Destroy : unit -&gt; unit" Usage="iComponentData.Destroy " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayInfo">
+      <MemberSignature Language="C#" Value="public void GetDisplayInfo (ref Microsoft.CLRAdmin.SCOPEDATAITEM ResultDataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDisplayInfo(valuetype Microsoft.CLRAdmin.SCOPEDATAITEM&amp; ResultDataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.GetDisplayInfo(Microsoft.CLRAdmin.SCOPEDATAITEM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDisplayInfo (ByRef ResultDataItem As SCOPEDATAITEM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDisplayInfo(Microsoft::CLRAdmin::SCOPEDATAITEM % ResultDataItem);" />
+      <MemberSignature Language="F#" Value="abstract member GetDisplayInfo :  -&gt; unit" Usage="iComponentData.GetDisplayInfo ResultDataItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ResultDataItem" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ResultDataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (object pUnknown);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object pUnknown) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (pUnknown As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Object ^ pUnknown);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : obj -&gt; unit" Usage="iComponentData.Initialize pUnknown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pUnknown" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pUnknown">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notify">
+      <MemberSignature Language="C#" Value="public int Notify (Microsoft.CLRAdmin.IDataObject lpDataObject, uint aevent, IntPtr arg, IntPtr param);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Notify(class Microsoft.CLRAdmin.IDataObject lpDataObject, unsigned int32 aevent, native int arg, native int param) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.Notify(Microsoft.CLRAdmin.IDataObject,System.UInt32,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Notify (lpDataObject As IDataObject, aevent As UInteger, arg As IntPtr, param As IntPtr) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Notify(Microsoft::CLRAdmin::IDataObject ^ lpDataObject, System::UInt32 aevent, IntPtr arg, IntPtr param);" />
+      <MemberSignature Language="F#" Value="abstract member Notify : Microsoft.CLRAdmin.IDataObject * uint32 * nativeint * nativeint -&gt; int" Usage="iComponentData.Notify (lpDataObject, aevent, arg, param)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
+        <Parameter Name="aevent" Type="System.UInt32" />
+        <Parameter Name="arg" Type="System.IntPtr" />
+        <Parameter Name="param" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="lpDataObject">To be added.</param>
+        <param name="aevent">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryDataObject">
+      <MemberSignature Language="C#" Value="public void QueryDataObject (int cookie, uint type, out Microsoft.CLRAdmin.IDataObject ppDataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryDataObject(int32 cookie, unsigned int32 type, [out] class Microsoft.CLRAdmin.IDataObject&amp; ppDataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CLRAdmin.IComponentData.QueryDataObject(System.Int32,System.UInt32,Microsoft.CLRAdmin.IDataObject@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub QueryDataObject (cookie As Integer, type As UInteger, ByRef ppDataObject As IDataObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueryDataObject(int cookie, System::UInt32 type, [Runtime::InteropServices::Out] Microsoft::CLRAdmin::IDataObject ^ % ppDataObject);" />
+      <MemberSignature Language="F#" Value="abstract member QueryDataObject : int * uint32 *  -&gt; unit" Usage="iComponentData.QueryDataObject (cookie, type, ppDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorcfg</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="type" Type="System.UInt32" />
+        <Parameter Name="ppDataObject" Type="Microsoft.CLRAdmin.IDataObject&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="ppDataObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

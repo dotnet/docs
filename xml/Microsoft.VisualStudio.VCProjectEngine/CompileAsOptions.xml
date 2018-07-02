@@ -1,0 +1,81 @@
+﻿<Type Name="CompileAsOptions" FullName="Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions">
+  <TypeSignature Language="C#" Value="public enum CompileAsOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompileAsOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompileAsOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompileAsOptions" />
+  <TypeSignature Language="F#" Value="type CompileAsOptions = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="compileAsC">
+      <MemberSignature Language="C#" Value="compileAsC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions compileAsC = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsC" />
+      <MemberSignature Language="VB.NET" Value="compileAsC" />
+      <MemberSignature Language="C++ CLI" Value="compileAsC" />
+      <MemberSignature Language="F#" Value="compileAsC = 1" Usage="Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="compileAsCPlusPlus">
+      <MemberSignature Language="C#" Value="compileAsCPlusPlus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions compileAsCPlusPlus = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsCPlusPlus" />
+      <MemberSignature Language="VB.NET" Value="compileAsCPlusPlus" />
+      <MemberSignature Language="C++ CLI" Value="compileAsCPlusPlus" />
+      <MemberSignature Language="F#" Value="compileAsCPlusPlus = 2" Usage="Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsCPlusPlus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="compileAsDefault">
+      <MemberSignature Language="C#" Value="compileAsDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions compileAsDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsDefault" />
+      <MemberSignature Language="VB.NET" Value="compileAsDefault" />
+      <MemberSignature Language="C++ CLI" Value="compileAsDefault" />
+      <MemberSignature Language="F#" Value="compileAsDefault = 0" Usage="Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions.compileAsDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCProjectEngine</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualStudio.VCProjectEngine.CompileAsOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

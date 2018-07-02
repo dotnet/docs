@@ -1,0 +1,33 @@
+<Type Name="_dispCodeModelEvents_ChangedEventHandler" FullName="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _dispCodeModelEvents_ChangedEventHandler(CodeElement Parent, CodeElement Modified);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _dispCodeModelEvents_ChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents_ChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _dispCodeModelEvents_ChangedEventHandler(Parent As CodeElement, Modified As CodeElement)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _dispCodeModelEvents_ChangedEventHandler(CodeElement ^ Parent, CodeElement ^ Modified);" />
+  <TypeSignature Language="F#" Value="type _dispCodeModelEvents_ChangedEventHandler = delegate of CodeElement * CodeElement -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Parent" Type="EnvDTE.CodeElement" />
+    <Parameter Name="Modified" Type="EnvDTE.CodeElement" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Parent">To be added.</param>
+    <param name="Modified">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,123 @@
+<Type Name="_dispCodeModelEvents" FullName="Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents">
+  <TypeSignature Language="C#" Value="public interface _dispCodeModelEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _dispCodeModelEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _dispCodeModelEvents" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _dispCodeModelEvents" />
+  <TypeSignature Language="F#" Value="type _dispCodeModelEvents = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3B2A8525-5F69-48F0-8871-2B4F7C272A9E")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="public void Added (EnvDTE.CodeElement Parent, EnvDTE.CodeElement NewElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Added(class EnvDTE.CodeElement Parent, class EnvDTE.CodeElement NewElement) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Added(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Added (Parent As CodeElement, NewElement As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Added(EnvDTE::CodeElement ^ Parent, EnvDTE::CodeElement ^ NewElement);" />
+      <MemberSignature Language="F#" Value="abstract member Added : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents.Added (Parent, NewElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Parent" Type="EnvDTE.CodeElement" />
+        <Parameter Name="NewElement" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="Parent">To be added.</param>
+        <param name="NewElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public void Changed (EnvDTE.CodeElement Parent, EnvDTE.CodeElement Modified);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Changed(class EnvDTE.CodeElement Parent, class EnvDTE.CodeElement Modified) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Changed(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Changed (Parent As CodeElement, Modified As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Changed(EnvDTE::CodeElement ^ Parent, EnvDTE::CodeElement ^ Modified);" />
+      <MemberSignature Language="F#" Value="abstract member Changed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents.Changed (Parent, Modified)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Parent" Type="EnvDTE.CodeElement" />
+        <Parameter Name="Modified" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="Parent">To be added.</param>
+        <param name="Modified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="public void Removed (EnvDTE.CodeElement Parent, EnvDTE.CodeElement Deleted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Removed(class EnvDTE.CodeElement Parent, class EnvDTE.CodeElement Deleted) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualStudio.VCCodeModel._dispCodeModelEvents.Removed(EnvDTE.CodeElement,EnvDTE.CodeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Removed (Parent As CodeElement, Deleted As CodeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Removed(EnvDTE::CodeElement ^ Parent, EnvDTE::CodeElement ^ Deleted);" />
+      <MemberSignature Language="F#" Value="abstract member Removed : EnvDTE.CodeElement * EnvDTE.CodeElement -&gt; unit" Usage="_dispCodeModelEvents.Removed (Parent, Deleted)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualStudio.VCCodeModel</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Parent" Type="EnvDTE.CodeElement" />
+        <Parameter Name="Deleted" Type="EnvDTE.CodeElement" />
+      </Parameters>
+      <Docs>
+        <param name="Parent">To be added.</param>
+        <param name="Deleted">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

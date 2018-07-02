@@ -35,7 +35,6 @@ Threading enables your Visual Basic program to perform concurrent processing so 
 |[Parameters and Return Values for Multithreaded Procedures (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)|Describes how to pass and return parameters with multithreaded applications.|  
 |[Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)|Shows how to create a simple multithreaded application.|  
 |[Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)|Describes how to control the interactions of threads.|  
-|[Thread Timers (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-timers.md)|Describes how to run procedures on separate threads at fixed intervals.|  
 |[Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)|Describes how to use a pool of worker threads that are managed by the system.|  
 |[How to: Use a Thread Pool (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)|Demonstrates synchronized use of multiple threads in the thread pool.|  
 |[Threading](../../../../standard/threading/index.md)|Describes how to implement threading in the .NET Framework.|

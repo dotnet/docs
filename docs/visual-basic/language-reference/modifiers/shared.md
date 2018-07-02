@@ -44,7 +44,7 @@ Specifies that one or more declared programming elements are associated with a c
   
 -   **Accessing through an Instance Expression.** If you access a shared element through an expression that returns an instance of its class or structure, the compiler makes the access through the class or structure name instead of evaluating the expression. This produces unexpected results if you intended the expression to perform other actions as well as returning the instance. The following example illustrates this.  
   
-    ```  
+    ```vb
     Sub main()  
         shareTotal.total = 10  
         ' The preceding line is the preferred way to access total.  

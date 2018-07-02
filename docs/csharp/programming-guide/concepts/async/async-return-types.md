@@ -18,7 +18,7 @@ For more information about async methods, see [Asynchronous Programming with asy
   
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
-##  <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
+##  <a name="BKMK_TaskTReturnType"></a> Task\<TResult\> Return Type  
 The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
   
 In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a string.
@@ -50,17 +50,17 @@ The following code separates calling the `WaitAndApologize` method from awaiting
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns2a.cs#1)]  
  
 ##  <a name="BKMK_VoidReturnType"></a> Void return type  
-You use the `void` return type in asynchronous event handlers, which require a `void` return type. For methods other than event handlers don't return a value, you should return a <xref:System.Threading.Tasks.Task> instead, because an async method that returns `void` can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
+You use the `void` return type in asynchronous event handlers, which require a `void` return type. For methods other than event handlers that don't return a value, you should return a <xref:System.Threading.Tasks.Task> instead, because an async method that returns `void` can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
 The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, the exception is stored in the returned task and is rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.  
   
-For more information about how to catch exceptions in async methods, see [try-catch](../../../../csharp/language-reference/keywords/try-catch.md) .  
+For more information about how to catch exceptions in async methods, see the [Exceptions in Async Methods](../../../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../../../language-reference/keywords/try-catch.md) topic.  
   
 The following eample defines an async event handler.  
  
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns3.cs)]  
  
-## Generalized async return types and ValueTask<T>
+## Generalized async return types and ValueTask\<TResult\>
 
 Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method.
  

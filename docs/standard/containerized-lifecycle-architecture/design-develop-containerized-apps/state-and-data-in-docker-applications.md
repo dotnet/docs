@@ -45,5 +45,5 @@ Remote data sources and caches like SQL Database, DocumentDB, or a remote cache 
 
 
 >[!div class="step-by-step"]
-[Previous] (monolithic-applications.md)
-[Next] (soa-applications.md)
+[Previous](monolithic-applications.md)
+[Next](soa-applications.md)

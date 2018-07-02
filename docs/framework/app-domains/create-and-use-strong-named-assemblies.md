@@ -17,6 +17,9 @@ ms.author: "ronpet"
 ---
 # Creating and Using Strong-Named Assemblies
 <a name="top"></a> A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)  
+
+> [!WARNING]
+> Do not rely on strong names for security. They provide a unique identity only.
   
  A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the integrity of the strong-named assembly would be compromised.  
   

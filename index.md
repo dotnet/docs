@@ -28,7 +28,7 @@ ms.custom: "updateeachrelease"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.0">
+                <a href="/dotnet/api/?view=netcore-2.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -584,7 +584,7 @@ ms.custom: "updateeachrelease"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://www.visualstudio.com/vs/game-development">
+                                                <a href="https://visualstudio.microsoft.com/vs/game-development">
                                                     <h3>Game Development with Visual Studio</h3>
                                                     <p>Write and debug your games using your game engine of choice with Visual
                                                         Studio.

@@ -375,5 +375,5 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 
 >[!div class="step-by-step"]
-[Previous] (rabbitmq-event-bus-development-test-environment.md)
-[Next] (test-aspnet-core-services-web-apps.md)
+[Previous](rabbitmq-event-bus-development-test-environment.md)
+[Next](test-aspnet-core-services-web-apps.md)

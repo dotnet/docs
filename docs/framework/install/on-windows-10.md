@@ -60,7 +60,7 @@ The .NET Framework 3.5 supports apps built for the .NET Framework 1.0 through 3.
 
 - You cannot install an earlier version of the .NET Framework on your machine if a later version is already installed.
 
-- 4.x versions of the .NET Framework can be used to run applications built for the .NET Framework 4.0 through that version. For example, .NET Framework 4.7 can be used to run applications built for the .NET Framework 4.0 through 4.7. The latest version (the .NET Framework 4.7.1) can be used to run applications built will all versions of the .NET Framework starting with 4.0.
+- 4.x versions of the .NET Framework can be used to run applications built for the .NET Framework 4.0 through that version. For example, .NET Framework 4.7 can be used to run applications built for the .NET Framework 4.0 through 4.7. The latest version (the .NET Framework 4.7.2) can be used to run applications built with all versions of the .NET Framework starting with 4.0.
 
 For a list of all the versions of the .NET Framework available to download, see the [.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral) page.
 

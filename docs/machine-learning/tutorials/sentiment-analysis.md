@@ -4,7 +4,7 @@ description: Discover how to use ML.NET in a binary classification scenario to u
 ms.date: 06/04/2018
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriaste action.
+#Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 # Tutorial: Use ML.NET in a sentiment analysis binary classification scenario
 
@@ -30,7 +30,7 @@ The sample is a console app that uses ML.NET to train a model that classifies an
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 * The [Wikipedia detox line data tab separated file (wikiPedia-detox-250-line-data.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv).
 * The [Wikipedia detox line test tab separated file (wikipedia-detox-250-line-test.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv).
@@ -108,13 +108,13 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#1 "Add necessary usings")]
 
-You need to create three global variables to hold the path to the recently downloaded files:
+You need to create three global fields to hold the paths to the recently downloaded files:
 
 * `_dataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_modelPath` has the path where the trained model is saved.
 
-Add the following code to the line right above the `Main` method to specify the recently downloaded files:
+Add the following code to the line right above the `Main` method to specify those paths:
 
 [!code-csharp[Declare file variables](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#2 "Declare variables to store data files")]
 
@@ -163,7 +163,7 @@ The `Train` method executes the following tasks:
 Create the `Train` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static PredictionModel<SentimentData, SentimentPrediction> Train()
+public static async Task<PredictionModel<SentimentData, SentimentPrediction>> Train()
 {
 
 }
@@ -175,7 +175,7 @@ Initialize a new instance of <xref:Microsoft.ML.LearningPipeline> that will incl
 
 [!code-csharp[LearningPipeline](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#5 "Create a learning pipeline")]
 
-The <xref:Microsoft.ML.TextLoader%601> object is the first part of the pipeline, and loads the training file data.
+The <xref:Microsoft.ML.Data.TextLoader> object is the first part of the pipeline, and loads the training file data.
 
 [!code-csharp[TextLoader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#6 "Add a text loader to the pipeline")]
 
@@ -235,7 +235,7 @@ Add a call to the new method from the `Main` method, right under the `Train` met
 
 [!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#12 "Call the Evaluate method")]
 
-The <xref:Microsoft.ML.TextLoader%601> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
+The <xref:Microsoft.ML.Data.TextLoader> class loads the new test dataset with the same schema. You can evaluate the model using this dataset as a quality check. Add the following code to the `Evaluate` method:
 
 [!code-csharp[LoadText](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#13 "Load the test dataset")]
 

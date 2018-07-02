@@ -27,7 +27,7 @@ Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Auc?di
 
 ## Binary classification
 
-A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
+A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](tasks.md#binary-classification) section of the [Machine learning tasks](tasks.md) topic.
 
 ## Classification
 
@@ -79,7 +79,7 @@ Traditionally, the parameters for the prediction function. For example, the weig
 
 ## Multiclass classification
 
-A [classification](#classification) case where the [label](#label) is one out of three or more classes. For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
+A [classification](#classification) case where the [label](#label) is one out of three or more classes. For more information, see the [Multiclass classification](tasks.md#multiclass-classification) section of the [Machine learning tasks](tasks.md) topic.
 
 ## N-gram
 
@@ -107,7 +107,7 @@ Related ML.NET API: <xref:Microsoft.ML.Models.BinaryClassificationMetrics.Negati
 
 ## Regression
 
-A [supervised machine learning](#supervised-machine-learning) task where the output is a real value, for example, double. Examples include predicting stock prices.
+A [supervised machine learning](#supervised-machine-learning) task where the output is a real value, for example, double. Examples include predicting stock prices. For more information, see the [Regression](tasks.md#regression) section of the [Machine learning tasks](tasks.md) topic.
 
 ## Relative absolute error
 

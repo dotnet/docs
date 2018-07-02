@@ -80,9 +80,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
+ 
+The `url` argument can be of the form *C:\path\sample.chm* or */folder/file.htm*. For information on the format of paths, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md).   
   
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. To run this example, paste the following code into a form that contains a button named `Button1`.  
@@ -127,11 +126,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
- If you provide the keyword `null`, the table of contents for the Help file will be displayed.  
-  
-   
+
+The `url` argument can be of the form *C:\path\sample.chm* or */folder/file.htm*. For information on the format of paths, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md).
+
+If `keyword` is `null`, the table of contents for the Help file will be displayed.  
   
 ## Examples  
  The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
@@ -180,11 +178,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for the `navigator` parameter: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
-  
-   
+
+The `url` argument can be of the form *C:\path\sample.chm* or */folder/file.htm*. For information on the format of paths, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md).   
+
+Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for the `navigator` argument: <xref:System.Windows.Forms.HelpNavigator.TableOfContents?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.Find?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.Index?displayProperty=nameWithType>, or <xref:System.Windows.Forms.HelpNavigator.Topic?displayProperty=nameWithType>.  
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to open a Help file to its index page. To run this example, paste the following code into a form that contains a button named `Button2`.  
@@ -230,12 +227,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Compiled Help files provide table-of-contents, index, search, and keyword links in pages. You can use the `param` parameter to provide additional refinement of the <xref:System.Windows.Forms.HelpNavigator.Topic>, <xref:System.Windows.Forms.HelpNavigator.TopicId>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex> command. If the value specified in the `command` parameter is <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Find>, this value should be an `empty string`. If the `command` parameter references <xref:System.Windows.Forms.HelpNavigator.Topic>, <xref:System.Windows.Forms.HelpNavigator.TopicId>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex>, this value should be a string that contains the topic name, or the keyword or numeric identifier of the topic to display.  
-  
- The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
+## Remarks 
+
+The `url` argument can be of the form *C:\path\sample.chm* or */folder/file.htm*. For information on the format of paths, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md).   
+
+Compiled Help files provide table-of-contents, index, search, and keyword links in pages. You can use the `parameter` argument to provide additional refinement of the <xref:System.Windows.Forms.HelpNavigator.Topic?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.TopicId?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex?displayProperty=nameWithType> command. If the value specified in the `command` argument is <xref:System.Windows.Forms.HelpNavigator.TableOfContents?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.Index?displayProperty=nameWithType>, or <xref:System.Windows.Forms.HelpNavigator.Find?displayProperty=nameWithType>, this value should be an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>). If the `command` argument references <xref:System.Windows.Forms.HelpNavigator.Topic?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.TopicId?displayProperty=nameWithType>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex?displayProperty=nameWithType>, this value should be a string that contains the topic name, or the keyword or numeric identifier of the topic to display.  
   
 ## Examples  
  The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  

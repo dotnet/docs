@@ -21,7 +21,12 @@ ms.assetid: 3828989d-c967-4a51-b948-857ebc8fdf26
   
  [!code-csharp[CsProgGuideTypes#51](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-type-dynamic_3.cs)]  
   
- Operations in which the result is not `dynamic` include conversions from `dynamic` to another type, and constructor calls that include arguments of type `dynamic`. For example, the type of `testInstance` in the following declaration is `ExampleClass`, not `dynamic`.  
+ Operations in which the result is not `dynamic` include:
+ 
+* Conversions from `dynamic` to another type. 
+* Constructor calls that include arguments of type `dynamic`. 
+
+For example, the type of `testInstance` in the following declaration is `ExampleClass`, not `dynamic`:
   
  [!code-csharp[CsProgGuideTypes#52](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-type-dynamic_4.cs)]  
   

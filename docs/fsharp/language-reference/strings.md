@@ -15,14 +15,14 @@ String literals are delimited by the quotation mark (") character. The backslash
 
 |Character|Escape sequence|
 |---------|---------------|
-|Backspace|\b|
-|Newline|\n|
-|Carriage return|\r|
-|Tab|\t|
-|Backslash|\\|
-|Quotation mark|\"|
-|Apostrophe|\'|
-|Unicode character|\u*XXXX* or \U*XXXXXXXX* (where *X* indicates a hexadecimal digit)|
+|Backspace|`\b`|
+|Newline|`\n`|
+|Carriage return|`\r`|
+|Tab|`\t`|
+|Backslash|`\\`|
+|Quotation mark|`\"`|
+|Apostrophe|`\'`|
+|Unicode character|`\uXXXX` or `\UXXXX` (where `X` indicates a hexadecimal digit)|
 
 If preceded by the @ symbol, the literal is a verbatim string. This means that any escape sequences are ignored, except that two quotation mark characters are interpreted as one quotation mark character.
 

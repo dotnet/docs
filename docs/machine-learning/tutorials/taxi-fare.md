@@ -181,7 +181,7 @@ After adding the data to the pipeline and transforming it into the correct input
 
 <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 
-Add the following code into the `Train` method following the data processing code added in the preceding section:
+Add the following code into the `Train` method following the data processing code added in the previous step:
 
 ```csharp
 pipeline.Add(new FastTreeRegressor());

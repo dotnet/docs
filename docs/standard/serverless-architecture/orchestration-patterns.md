@@ -5,15 +5,15 @@ author: cecilphillip
 ms.author: cephilli
 ms.date: 06/26/2018
 ---
-# Orchestration Patterns
+# Orchestration patterns
 
-Durable Functions makes it easier to create stateful workflows that are composed of discrete, long running activities in a serverless environment. Since Durable Functions is able to track the progress of your workflows and periodically checkpoints the execution history, it lends itself to implementing some interesting patterns.
+Durable Functions makes it easier to create stateful workflows that are composed of discrete, long running activities in a serverless environment. Since Durable Functions can track the progress of your workflows and periodically checkpoints the execution history, it lends itself to implementing some interesting patterns.
 
 ## Function chaining
 
 In a typical sequential process, activities need to execute one after the other in a particular order. Optionally, the upcoming activity may require some output from the previous function. This dependency on the ordering of activities creates a function chain of execution.
 
-The benefit of using Durable Functions to implement this workflow pattern comes from its ability to do checkpointing. If the server crashes, the network times out or some other issue occurs, Durable functions is able to resume from the last known state and continue running your workflow event if it's on another server.
+The benefit of using Durable Functions to implement this workflow pattern comes from its ability to do checkpointing. If the server crashes, the network times out or some other issue occurs, Durable functions can resume from the last known state and continue running your workflow event if it's on another server.
 
 ```csharp
 [FunctionName("PlaceOrder")]
@@ -33,7 +33,7 @@ public static async Task<string> PlaceOrder([OrchestrationTrigger] DurableOrches
 
 In the preceding code sample, the `CallActivityAsync` function is responsible for running a given activity on a virtual machine in the data center. When the await returns and the underlying Task completes, the execution will be recorded to the history table. The code in the orchestrator function can make use of any of the familiar constructs of the Task Parallel Library and the async/await keywords.
 
-Below is a simplified example of what the `ProcessPayment` method may look like.
+The following code is a simplified example of what the `ProcessPayment` method may look like:
 
 ```csharp
 [FunctionName("ProcessPayment")]
@@ -54,7 +54,7 @@ public static bool ProcessPayment([ActivityTrigger] DurableActivityContext conte
 
 In some cases, workflows may contain activities that take a relatively long period of time to complete. Imagine a process that kicks off the backup of media files into blob storage. Depending on the size and quantity of the media files, this backup process may take hours to complete.
 
-In this scenario, the `DurableOrchestrationClient`'s ability to check the status of a running workflow becomes useful. When using an `HttpTrigger` to initiate a workflow, the `CreateCheckStatusResponse` method can be used to return an instance of `HttpResponseMessage`. This response provides the client with a URI in the payload that can be used to check the status of the running process.
+In this scenario, the `DurableOrchestrationClient`'s ability to check the status of a running workflow becomes useful. When using an `HttpTrigger` to start a workflow, the `CreateCheckStatusResponse` method can be used to return an instance of `HttpResponseMessage`. This response provides the client with a URI in the payload that can be used to check the status of the running process.
 
 ```csharp
 [FunctionName("OrderWorkflow")]
@@ -99,7 +99,7 @@ As the process continues, the status response will change to either **Failed** o
 
 ## Monitoring
 
-For simple recurring tasks, Azure Functions provides the TimerTrigger that can be scheduled based on a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios where more flexible scheduling is needed. This scenario is when the monitoring pattern and Durable Functions can help.
+For simple recurring tasks, Azure Functions provides the `TimerTrigger` that can be scheduled based on a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios where more flexible scheduling is needed. This scenario is when the monitoring pattern and Durable Functions can help.
 
 Durable Functions allows for flexible scheduling intervals, lifetime management, and the creation of multiple monitor processes from a single orchestration function. One use case for this functionality might be to create watchers for stock price changes that complete once a certain threshold is met.
 
@@ -143,13 +143,13 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 }
 ```
 
-`DurableOrchestrationContext`'s `CreateTimer` method sets up the schedule for the next invocation of the loop to check for stock price changes. DurableOrchestrationContext also has a `CurrentUtcDateTime` property to get the current DateTime value in UTC. It's better to use this property instead of `DateTime.UtcNow` because it is easily mocked for testing.
+`DurableOrchestrationContext`'s `CreateTimer` method sets up the schedule for the next invocation of the loop to check for stock price changes. `DurableOrchestrationContext` also has a `CurrentUtcDateTime` property to get the current DateTime value in UTC. It's better to use this property instead of `DateTime.UtcNow` because it's easily mocked for testing.
 
-## Recommended Resources
+## Recommended resources
 
-* [Azure Durable Functions](/azure/azure-functions/durable-functions-overview)
+* [Azure Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
 * [Unit Testing in .NET Core and .NET Standard](https://docs.microsoft.com/en-us/dotnet/core/testing/)
 
 >[!div class="step-by-step"]
-[Previous] (./durable-azure-functions.md)
-[Next] (./serverless-business-scenarios.md)
+[Previous](durable-azure-functions.md)
+[Next](serverless-business-scenarios.md)

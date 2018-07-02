@@ -7,11 +7,11 @@ ms.date: 06/26/2018
 ---
 # Azure Logic Apps
 
-[Azure Logic Apps](/azure/logic-apps) provides a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems. You build workflows using a visual designer. You can trigger workflows based on events or timers and leverage connectors to integration applications and facilitate business-to-business (B2B) communication. Logic Apps integrates seamlessly with Azure Functions.
+[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps) provides a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems. You build workflows using a visual designer. You can trigger workflows based on events or timers and leverage connectors to integration applications and facilitate business-to-business (B2B) communication. Logic Apps integrates seamlessly with Azure Functions.
 
 ![Azure Logic Apps logo](./media/logic-apps-logo.png)
 
-Logic Apps is able to do more than just connect your cloud services (like functions) with cloud resources (like queues and databases). You can also orchestrate on-premises workflows with the on-premises gateway. For example, you can use the Logic App to trigger an on-premises SQL stored procedure in response to a cloud-based event or conditional logic in your workflow. Learn more about [Connecting to on-premises data sources with Azure On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway).
+Logic Apps can do more than just connect your cloud services (like functions) with cloud resources (like queues and databases). You can also orchestrate on-premises workflows with the on-premises gateway. For example, you can use the Logic App to trigger an on-premises SQL stored procedure in response to a cloud-based event or conditional logic in your workflow. Learn more about [Connecting to on-premises data sources with Azure On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway).
 
 ![Logic Apps architecture](./media/logic-apps-architecture.png)
 
@@ -23,10 +23,10 @@ Once the app is triggered, you can use the visual designer to build out steps, l
 
 ![Logic App workflow](./media/logic-app-workflow.png)
 
-The Logic Apps dashboard shows the history of running your workflows and whether or not each run completed successfully or not. You can navigate into any given run and inspect the data used by each step for troubleshooting. Logic Apps also provides existing templates you can edit and are well suited for complex enterprise workflows.
+The Logic Apps dashboard shows the history of running your workflows and whether each run completed successfully or not. You can navigate into any given run and inspect the data used by each step for troubleshooting. Logic Apps also provides existing templates you can edit and are well suited for complex enterprise workflows.
 
-To learn more, see: [Azure Logic Apps](/azure/logic-apps).
+To learn more, see [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps).
 
 >[!div class="step-by-step"]
-[Previous] (./application-insights.md)
-[Next] (./event-grid.md)
+[Previous](application-insights.md)
+[Next](event-grid.md)

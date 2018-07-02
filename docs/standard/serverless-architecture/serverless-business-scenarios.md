@@ -1,17 +1,17 @@
 ---
 title: Sample business scenarios and use cases for serverless apps
-description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile backends and ETL pipelines.
+description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile back ends and ETL pipelines.
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
 ---
 # Serverless business scenarios and use cases
 
-There are many use cases and scenarios for serverless applications. This chapter includes samples that illustrate the different scenarios. The scenarios include links to related documentation and public source code repositories. The samples in this chapter will enable you to get started on your own building and implementing serverless solutions.
+There are many use cases and scenarios for serverless applications. This chapter includes samples that illustrate the different scenarios. The scenarios include links to related documentation and public source code repositories. The samples in this chapter enable you to get started on your own building and implementing serverless solutions.
 
 ## Analyze and archive images
 
-This sample demonstrates serverless events (Event Grid), workflows (Logic App) and code (Azure Functions). It also shows how to integrate with another resource, in this case Cognitive Services for image analysis.
+This sample demonstrates serverless events (Event Grid), workflows (Logic App), and code (Azure Functions). It also shows how to integrate with another resource, in this case Cognitive Services for image analysis.
 
 A console application allows you to pass a link to a URL on the web. The app publishes the URL as an event grid message. In parallel, a serverless function app and a logic app subscribe to the message. The serverless function app serializes the image to blob storage. It also stores information in Azure Table Storage. The metadata stores the original image URL and the name of the blob image. The logic app interacts with the Custom Vision API to analyze the image and create a machine-generated caption. The caption is stored in the metadata table.
 
@@ -25,9 +25,9 @@ The full repository and instructions to build the logic app are available here: 
 
 ## Cross-platform mobile client using Xamarin.Forms and functions
 
-See how to implement a simple serverless Azure Function in the Azure Web Portal or in Visual Studio. Build a client with Xamarin.Forms that runs on Android, iOS, and Windows. The application is then refined to use JavaScript Object Notation (JSON) as a communication medium between the server and the mobile clients with a serverless backend.
+See how to implement a simple serverless Azure Function in the Azure Web Portal or in Visual Studio. Build a client with Xamarin.Forms that runs on Android, iOS, and Windows. The application is then refined to use JavaScript Object Notation (JSON) as a communication medium between the server and the mobile clients with a serverless back end.
 
-For more information, see: [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/)
+For more information, see [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/)
 
 ## Generate a photo mosaic with serverless image recognition
 
@@ -37,7 +37,7 @@ The sample uses Azure Functions and Microsoft Cognitive Services Custom Vision S
 
 For example, you can train your model with Orlando landmarks, such as the Orlando Eye. Custom Vision will recognize an image of the Orlando Eye, and the function will create a photo mosaic composed of Bing image search results for "Orlando Eye."
 
-For more information, see: [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/).
+For more information, see [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/).
 
 ## Migrate an existing application to the cloud
 
@@ -57,7 +57,7 @@ Extract, Transform, and Load (ETL) is a common business function that integrates
 
 ![ETL architecture](./media/csvimport.png)
 
-For source code and a hands-on lab, see: [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol).
+For source code and a hands-on lab, see [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol).
 
 ## Shorten links and track metrics
 
@@ -67,7 +67,7 @@ Azure Functions is used to serve a Single Page Application (SPA) that allows you
 
 ![Link shortener architecture](./media/link-shortener-architecture.png)
 
-You can then create a PowerBI dashboard to gather insights about the data collected. On the backend, Application Insights provides important metrics. Telemetry includes how long it takes for the average user to redirect and how long it takes to access Azure Table Storage.
+You can then create a Power BI dashboard to gather insights about the data collected. On the back end, Application Insights provides important metrics. Telemetry includes how long it takes for the average user to redirect and how long it takes to access Azure Table Storage.
 
 ![Power BI example](./media/power-bi-example.png)
 
@@ -77,11 +77,11 @@ The full link shortener repository with instructions is available here: [Serverl
 
 The sample consists of an Azure IoT Hub and an Azure Function. A new message on the IoT Hub triggers the Azure Function. The serverless code sends the same message content back to the device that sent it. The project has all the code and deployment configuration needed for the solution.
 
-For more information, see: [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/).
+For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/).
 
-## Recommended Resources
+## Recommended resources
 
-* [Azure Functions photo mosaic generator](https://azure.microsoft.com/en-us/resources/samples/functions-dotnet-photo-mosaic/)
+* [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
 * [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
 * [Azure Storage for serverless .NET apps in minutes](https://blogs.msdn.microsoft.com/webdev/2018/01/25/azure-storage-for-serverless-net-apps-in-minutes/)
 * [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
@@ -92,5 +92,5 @@ For more information, see: [Azure IoT Hub ping](https://azure.microsoft.com/reso
 * [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 
 >[!div class="step-by-step"]
-[Previous] (./orchestration-patterns.md)
-[Next] (./serverless-conclusion.md)
+[Previous](orchestration-patterns.md)
+[Next](serverless-conclusion.md)

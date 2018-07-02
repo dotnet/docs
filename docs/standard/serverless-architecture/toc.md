@@ -1,4 +1,4 @@
-# [Serverless apps. Architecture, patterns, and Azure implementation.](index.md)
+# [Serverless apps e-book](index.md)
 ## [Architecture approaches](architecture-approaches.md)
 ### [Architecture deployment approaches](architecture-deployment-approaches.md)
 ## [Serverless architecture](serverless-architecture.md)

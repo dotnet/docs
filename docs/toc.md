@@ -295,7 +295,7 @@
 
 ## [Tour of F#](fsharp/tour.md)
 ## [Get Started](fsharp/get-started/index.md)
-### [Installing F#](fsharp/get-started/installing-fsharp.md)
+### [Install F#](fsharp/get-started/install-fsharp.md)
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)

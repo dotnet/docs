@@ -31,7 +31,7 @@ The use of a single version number makes it easier for users to know what versio
 
 .NET Core applies a set of policies that determine which versions of the .NET Core runtime and SDK are used in various scenarios. These scenarios and policies are fully explored in the article on [version selection](selection.md).
 
-One can think of these policies performing the following roles:
+You can think of these policies as performing the following roles:
 
 * Enable easy and efficient deployment of .NET Core, including security and reliability updates.
 * Enable developers to use the latest tools and commands independent of target runtime.

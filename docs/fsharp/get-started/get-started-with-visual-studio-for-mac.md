@@ -1,17 +1,11 @@
 ---
 title: Get started with F# in Visual Studio for Mac
 description: Learn how to use F# with Visual Studio for Mac.
-ms.date: 02/13/2017
+ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio for Mac
 
-F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE.  To begin, you should [download Visual Studio for Mac](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), if you haven't already.  This article uses the Visual Studio Community 2017 for Mac, but you can use F# with the version of your choice.
-
-## Installing F# #
-
-After downloading Visual Studio for Mac, it will prompt you to choose what you want to install.  For the purposes of this article we will be leaving the defaults.  In contrast to Visual Studio for Windows, you do not need to specifically install F# support.  Press "Install" to proceed.
-
-After the install completes, choose "Start Visual Studio".  You can also launch it through Finder on macOS.
+F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](installing-fsharp.md#installing-f-with-visual-studio-for-mac).
 
 ## Creating a console application
 

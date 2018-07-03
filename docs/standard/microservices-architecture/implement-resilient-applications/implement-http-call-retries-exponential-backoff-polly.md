@@ -1,6 +1,6 @@
 ---
-title: Implementing HTTP call retries with exponential backoff with Polly
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing HTTP call retries with exponential backoff with Polly
+title: Implement HTTP call retries with exponential backoff with Polly
+description: Learn how to handle HTTP failures with Polly and HttpClientFactory
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/10/2018
@@ -16,18 +16,18 @@ However, using Polly’s library with your own custom code with HttpClient can b
 
 The following steps show how you can use Http retries with Polly integrated into HttpClientFactory, which is explained in the previous section.
 
-**Reference the ASPNET Core 2.1 packages**
+**Reference the ASP.NET Core 2.1 packages**
 
-Your project has to be using the ASPNET Core 2.1 packages from NuGet. You typically need the AspNetCore metapackage, and the extension package Microsoft.Extensions.Http.Polly.
+Your project has to be using the ASP.NET Core 2.1 packages from NuGet. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly’s Retry policy, in Startup**
 
-As previously shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
 
 ```csharp
 //ConfigureServices()  - Startup.cs
 services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to 5 minutes
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
@@ -83,5 +83,5 @@ Policy
 
 
 >[!div class="step-by-step"]
-[Previous](implement-custom-http-call-retries-exponential-backoff.md)
+[Previous](explore-custom-http-call-retries-exponential-backoff.md)
 [Next](implement-circuit-breaker-pattern.md)

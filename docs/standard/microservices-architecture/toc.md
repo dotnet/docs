@@ -65,7 +65,7 @@
 ### [Strategies for handling partial failure](implement-resilient-applications/partial-failure-strategies.md)
 ### [Implementing retries with exponential backoff](implement-resilient-applications/implement-retries-exponential-backoff.md)
 ### [Implementing resilient Entity Framework Core SQL connections](implement-resilient-applications/implement-resilient-entity-framework-core-sql-connections.md)
-### [Exploring custom HTTP call retries with exponential backoff](implement-resilient-applications/implement-custom-http-call-retries-exponential-backoff.md)
+### [Exploring custom HTTP call retries with exponential backoff](implement-resilient-applications/explore-custom-http-call-retries-exponential-backoff.md)
 ### [Use HttpClientFactory to implement resilient HTTP requests](implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)
 ### [Implement HTTP call retries with exponential backoff with Polly](implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md)
 ### [Implement the Circuit Breaker pattern](implement-resilient-applications/implement-circuit-breaker-pattern.md)

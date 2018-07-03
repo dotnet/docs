@@ -77,7 +77,6 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem
 
 The first DbContext is \_catalogContext and the second DbContext is within the \_integrationEventLogService object. The Commit action is performed across multiple DbContexts using an EF execution strategy.
 
-
 ## Additional resources
 
 -   **EF Connection Resiliency** (Entity Framework Core)
@@ -89,7 +88,6 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 -   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
     <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
 
-
 >[!div class="step-by-step"]
 [Previous](implement-retries-exponential-backoff.md)
-[Next](implement-custom-http-call-retries-exponential-backoff.md)
+[Next]explore-custom-http-call-retries-exponential-backoff.md)

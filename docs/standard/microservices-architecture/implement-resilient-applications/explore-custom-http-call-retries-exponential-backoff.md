@@ -1,13 +1,13 @@
 ---
 title: Explore custom HTTP call retries with exponential backoff
-description: .NET Microservices Architecture for Containerized .NET Applications | Explore custom HTTP call retries with exponential backoff. The purpose of this secction is just to explain and explore the problem.
+description: Learn how you could implement, from scratch, HTTP call retries with exponential backoff to handle possible HTTP failure scenarios.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/08/2018
 ---
 # Explore custom HTTP call retries with exponential backoff
 
-In order to create resilient microservices, you would need to handle possible HTTP failure scenarios. For that purpose, you could create your own implementation of retries with exponential backoff.
+To create resilient microservices, you need to handle possible HTTP failure scenarios. One way of handling those failures, although not recommended, is to create your own implementation of retries with exponential backoff.
 
 **Important note:** This section shows you how you could create your own custom code to implement HTTP call retries. However, it is not recommended to do it by your own but to use more powerful and reliable while simpler to use mechanisms, such as `HttpClientFactory` with Polly, available since .NET Core 2.1. Those recommended approaches are explained in the next sections. 
 
@@ -107,7 +107,9 @@ public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? t
 }
 ```
 
-However, and as mentioned, this code is suitable only as a proof of concept. The next topic explains how to use more sophisticated approaches while simpler to use with HttpClientFactory, available since .NET Core 2.1, plus proven libraries like Polly.
+Remember that this code is suitable only as a proof of concept. 
+The next sections explain how to use more sophisticated approaches while simpler, by using HttpClientFactory.
+HttpClientFactory is available since .NET Core 2.1, with proven resiliency libraries like Polly. 
 
 
 >[!div class="step-by-step"]

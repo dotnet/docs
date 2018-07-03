@@ -37,5 +37,5 @@ The following example demonstrates using `goto` to break out from nested loops.
 [C# Reference](../index.md)  
 [C# Programming Guide](../../programming-guide/index.md)  
 [C# Keywords](index.md)  
-[goto Statement](/cpp/cpp/goto-statement-cpp)  
+[goto Statement (C++)](/cpp/cpp/goto-statement-cpp)  
 [Jump Statements](jump-statements.md)  

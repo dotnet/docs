@@ -40,7 +40,7 @@ Configures the delivery format, delivery method, and from address for sending em
 |Attribute|Description|  
 |---------------|-----------------|  
 |`deliveryFormat`|Specifies the delivery format for outgoing emails. Acceptable values are SevenBit and International.|  
-|`deliveryMethod`|Specifies the delivery method for emails. Acceptable values are network, pickupDirectoryFromIis, and specifiedPickupDirectory.|  
+|`deliveryMethod`|Specifies the delivery method for emails. Acceptable values are Network, PickupDirectoryFromIis, and SpecifiedPickupDirectory.|  
 |`from`|Specifies the from address for outgoing emails.|  
   
 ### Child Elements  
@@ -63,7 +63,7 @@ Configures the delivery format, delivery method, and from address for sending em
 <configuration>  
   <system.net>  
     <mailSettings>  
-      <smtp deliveryMethod="network" deliveryFormat="SevenBit"  from="ben@contoso.com">  
+      <smtp deliveryMethod="Network" deliveryFormat="SevenBit"  from="ben@contoso.com">  
         <network  
           host="localhost"  
           port="25"  

@@ -201,7 +201,7 @@ And that's it! You have successfully trained a machine learning model that can p
 
 ### Save the model
 
-Before you go onto the next step, save the model to a .zip file by adding the following code at the end of the `Train` method:
+At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save the model to a .zip file, add the following code at the end of the `Train` method:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#5 "Save the model asynchronously and return the model")]
 

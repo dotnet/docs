@@ -2,6 +2,7 @@
 title: Use ML.NET to cluster iris flowers (clustering)
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
+ms.author: johalex
 ms.date: 07/02/2018
 ms.topic: tutorial
 ms.custom: mvc
@@ -128,7 +129,7 @@ The learning pipeline loads all of the data and algorithms necessary to train th
 
 ## Load and transform data
 
-The first step to perform is to load the training data set. In our case, training data set is stored in the text file with a path defined by the `_dataPath` field. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
+The first step to perform is to load the training data set. In our case, the training data set is stored in the text file with a path defined by the `_dataPath` field. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
 
 [!code-csharp[Add step to load data](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#6)]
 
@@ -138,23 +139,23 @@ The next step is to combine all of the feature columns into the **Features** col
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. ML.NET provides a <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer> learner that implements [k-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering) with improved method for choosing the initial cluster centroids.
+After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. ML.NET provides a <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer> learner that implements [k-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering) with an improved method for choosing the initial cluster centroids.
 
-Add the following code into the `Train` method following the data processing code added in the preceding section:
+Add the following code into the `Train` method following the data processing code added in the previous step:
 
 [!code-csharp[Add a learner step](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#8)]
 
-Note that we specify that the data set should be split in three clusters.
+Use the <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> property to specify number of clusters. The code above specifies that the data set should be split in three clusters.
 
 ## Train the model
 
-The steps added in the preceding sections prepared the pipeline for training. None of the steps has been executed. The `pipeline.Train<TInput, TOutput>` method produces the model that takes in an instance of the `TInput` type and outputs an instance of the `TOutput` type. Add the following code into the `Train` method:
+The steps added in the preceding sections prepared the pipeline for training, however, none have been executed. The `pipeline.Train<TInput, TOutput>` method produces the model that takes in an instance of the `TInput` type and outputs an instance of the `TOutput` type. Add the following code into the `Train` method:
 
 [!code-csharp[Train the model and return](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#9)]
 
 ### Save the model
 
-Before you go onto the next step, save the model to a .zip file. To do that add the following code to the `Main` method below the call to the `Train` method:
+At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save your model to a .zip file, add the following code to the `Main` method below the call to the `Train` method:
 
 [!code-csharp[Save the model](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#10)]
 
@@ -186,7 +187,12 @@ To find out the cluster to which the specified item belongs to, go back to the *
 
 [!code-csharp[Predict and output results](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#13)]
 
-Run the program to see which cluster contains the specified data instance and squared distances from that instance to the cluster centroids.
+Run the program to see which cluster contains the specified data instance and squared distances from that instance to the cluster centroids. Your results should be similar to the following. As the pipeline processes, it might display warnings or processing messages. These have been removed from the following output for clarity.
+
+```text
+Cluster: 2
+Distances: 0.4192338 0.0008847713 0.9660053
+```
 
 Congratulations! You've now successfully built a machine learning model for iris clustering and used it to make predictions. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/IrisClustering) GitHub repository.
 

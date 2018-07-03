@@ -28,11 +28,6 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Obsolete("SmtpClient and its network of types are poorly designed, we strongly recommend you use https://github.com/jstedfast/MailKit and https://github.com/jstedfast/MimeKit instead")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Allows applications to send email by using the Simple Mail Transfer Protocol (SMTP).</summary>
     <remarks>

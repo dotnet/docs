@@ -1,14 +1,14 @@
---
-title: Installing F#
+---
+title: Install F#
 description: Learn how to install F# based on your environment.
 ms.date: 07/03/2018
---
+---
 
-# Installing F# #
+# Install F# #
 
-There are multiple ways to install F# depending on your environment.
+You can install F# in multiple ways, depending on your environment.
 
-## Installing F# with Visual Studio
+## Install F# with Visual Studio
 
 If you're downloading [Visual Studio](https://visualstudio.microsoft.com/) for the first time, it will first install the Visual Studio installer. Install the appropriate SKU of Visual Studio from the installer. If you already have it installed, click **Modify**.
 
@@ -16,13 +16,13 @@ You'll next see a list of Workloads. Select **ASP.NET and web development**, whi
 
 Next, click **Modify** in the lower right-hand side.  This will install everything you have selected. You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 
-## Installing F# with Visual Studio for Mac
+## Install F# with Visual Studio for Mac
 
 F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/), no matter what configuration you choose.
 
 After the install completes, choose "Start Visual Studio". You can also launch it through Finder on macOS.
 
-## Installing F# with Visual Studio Code
+## Install F# with Visual Studio Code
 
 You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide. You can verify that it is installed correctly by typing `git --version` at a command prompt and pressing **Enter**.
 
@@ -30,7 +30,7 @@ You must have [git installed](https://git-scm.com/download) and available on you
 
 Ionide uses [Mono](http://www.mono-project.com). The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
-```
+```console
 brew install mono
 ```
 
@@ -40,7 +40,7 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 On Linux, Ionide also uses [Mono](https://www.mono-project.com). If you're on Debian or Ubuntu, you can use the following:
 
-```
+```console
 sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
@@ -55,9 +55,7 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 ---
 
-## Installing Visual Studio Code and the Ionide plugin
-
-You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.
+You will then need [Visual Studio Code](https://code.visualstudio.com) installed.
 
 Next, click the Extensions icon and search for "Ionide":
 

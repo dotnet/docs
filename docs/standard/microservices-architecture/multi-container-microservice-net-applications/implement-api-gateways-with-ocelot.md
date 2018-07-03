@@ -1,18 +1,18 @@
 ---
 title: Implementing API Gateways with Ocelot
-description: .NET Microservices Architecture for Containerized .NET Applications | In this section you can learn how to implement API Gateways with Ocelot, which is an open sourced and lightweight API Gateway based on .NET Core. You will also learn how to use Ocelot in a container-based environment.
+description: Learn how to implement API Gateways with Ocelot and how to use Ocelot in a container-based environment.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/06/2018
+ms.date: 07/03/2018
 ---
 # Implementing API Gateways with Ocelot
 
 The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is using [Ocelot](https://github.com/ThreeMammals/Ocelot) because Ocelot is a simple and lightweight API Gateway that you can deploy anywhere along with your microservices/containers such as in any of the following environments used by eShopOnContainers.
 
--	Docker host, in your local dev PC, on-premises or in the cloud
--	Kubernetes cluster, on-premises or in managed cloud such as Azure Kubernetes Service (AKS)
--	Service Fabric cluster, on-premises or in the cloud
--	Service Fabric mesh, as PaaS/Serverless in Azure
+- Docker host, in your local dev PC, on-premises or in the cloud.
+- Kubernetes cluster, on-premises or in managed cloud such as Azure Kubernetes Service (AKS).
+- Service Fabric cluster, on-premises or in the cloud.
+- Service Fabric mesh, as PaaS/Serverless in Azure.
 
 ## Architect and design your API Gateways
 
@@ -34,14 +34,13 @@ Going much further in the design, sometimes a fine-grained API Gateway can also 
 
 For instance, fine granularity in the API Gateway tier can be especially useful for more advanced composite UI applications that are based on microservices, because the concept of a fine-grained API Gateway is similar to a UI composition service. 
 
-You can read further information about this topic in the section [Creating composite UI based on microservices](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/microservice-based-composite-ui-shape-layout).
+For more information about UI composition services, see [Creating composite UI based on microservices](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/microservice-based-composite-ui-shape-layout).
 
 As key takeaway, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the several development teams creating autonomous microservices.
 
-
 ### Sample microservices/containers to reroute through the API Gateways
 
-As an example, 'eShopOnContainers' has around six internal microservice-types that have to be published through the API Gateways, as shown in the following image.
+As an example, `eShopOnContainers` has around six internal microservice-types that have to be published through the API Gateways, as shown in the following image.
  
 ![](./media/image29.png)
 
@@ -79,25 +78,26 @@ public async Task<IActionResult> GetItemById(int id)
     return NotFound();
 }
 ```
-The Http request will end up running that kind of C# code accessing the microservice database plus any additional action.
+The HTTP request will end up running that kind of C# code accessing the microservice database plus any additional action.
 
-In regards the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice’s container has always an internal port, usually port 80, specified in its dockerfile, as in the following dockerfile.
+In regards to the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice’s container has always an internal port, usually port 80, specified in its dockerfile, as in the following dockerfile:
 
-```csharp
+```
 FROM microsoft/aspnetcore:2.0.5 AS base
 WORKDIR /app
 EXPOSE 80
 ```
+
 The port 80 shown in the code is internal within the Docker host, so it cannot be reached by the client apps. 
-The client apps can access only to the external ports (if any) published when deploying with docker-compose.
+The client apps can access only to the external ports (if any) published when deploying with `docker-compose`.
 
-Those external ports should not be published when deploying into a production environment. This is precisely why you want to use the API Gateway, to avoid the direct communication between the client apps and the microservices.
+Those external ports shouldn't be published when deploying into a production environment. This is precisely why you want to use the API Gateway, to avoid the direct communication between the client apps and the microservices.
 
-However, when developing, you want to access the microservice/container directly and run it through Swagger. That’s why in eShopOnContainers the external ports are still specified even when they won’t be used by the API Gateway or the client apps.
+However, when developing, you want to access the microservice/container directly and run it through Swagger. That’s why in eShopOnContainers, the external ports are still specified even when they won’t be used by the API Gateway or the client apps.
 
-Here’s an example of the docker-compose.override.yml file for the Catalog microservice.
+Here’s an example of the `docker-compose.override.yml` file for the Catalog microservice:
 
-```csharp
+```
 catalog.api:
   environment:
     - ASPNETCORE_ENVIRONMENT=Development
@@ -109,49 +109,47 @@ catalog.api:
                   # The API Gateway redirects and access through the internal port (80).
 ```
 
-You can see how in the docker-compose.override.yml configuration the internal port for the Catalog container is port 80, but the port for external access is 5101. But this port shouldn’t be used by the application when using an API Gateway, only to debug run and test just the Catalog microservice.
+You can see how in the docker-compose.override.yml configuration the internal port for the Catalog container is port 80, but the port for external access is 5101. But this port shouldn’t be used by the application when using an API Gateway, only to debug, run and test just the Catalog microservice.
 
-Normally, you won’t be deploying with docker-compose into a production environment because the right production deployment environment for microservices is an orchestrator like Kubernetes or Service Fabric and when deploying to those environments you will use different configuration files where you won’t publish directly any external port for the microservices but you will always use the reverse proxy from the API Gateway.
+Normally, you won’t be deploying with docker-compose into a production environment because the right production deployment environment for microservices is an orchestrator like Kubernetes or Service Fabric. When deploying to those environments you use different configuration files where you won’t publish directly any external port for the microservices but, you'll always use the reverse proxy from the API Gateway.
 
-Let’s run the catalog microservice in your local Docker host either by running the full eShopOnContainers solution from Visual Studio (it’ll run all the services in the docker-compose files) or just starting the Catalog microservice with the following docker-compose command in CMD or PowerShell positioned at the folder where the docker-compose.yml and docker-compose.override.yml are placed.
+Run the catalog microservice in your local Docker host either by running the full eShopOnContainers solution from Visual Studio (it’ll run all the services in the docker-compose files) or just starting the Catalog microservice with the following docker-compose command in CMD or PowerShell positioned at the folder where the `docker-compose.yml` and docker-compose.override.yml are placed.
 
-```csharp
+```
 docker-compose run --service-ports catalog.api
 ```
 
-This command will only run the catalog.api service container plus its dependencies which are specified in the docker-compose.yml.
-In this case, the dependencies are the SQL Server container and RabbitMQ container.
+This command only runs the catalog.api service container plus dependencies that are specified in the docker-compose.yml. In this case, the SQL Server container and RabbitMQ container.
 
-Then you could directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that “external” port, in this case http://localhost:5101 
+Then, you can directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that “external” port, in this case `http://localhost:5101`. 
 
 ![](./media/image31.png)
 
 **Figure 8-30.** Testing the Catalog microservice with its Swagger UI
 
-At this point, you could set a breakpoint in C# code in Visual Studio, test the microservice with the methods exposed in Swagger UI, etc. and finally clean-up everything with the “docker-compose down” command.
+At this point, you could set a breakpoint in C# code in Visual Studio, test the microservice with the methods exposed in Swagger UI, and finally clean-up everything with the `docker-compose down` command.
 
-However, this direct-access communication to the microservice, in this case through the external port 5101, is precisely what you want to avoid in your application. And you can avoid that by setting the additional level of indirection of the API Gateway, Ocelot, in this case. That way, the client app won’t directly access the microservice.
-
+However, this direct-access communication to the microservice, in this case through the external port 5101, is precisely what you want to avoid in your application. And you can avoid that by setting the additional level of indirection of the API Gateway (Ocelot, in this case). That way, the client app won’t directly access the microservice.
 
 ## Implementing your API Gateways with Ocelot
 
 Ocelot is basically a set of middlewares that you can apply in a specific order.
 
-Ocelot is designed to work with ASP.NET Core only and it targets netstandard2.0 so it can be used anywhere .NET Standard 2.0 is supported, including .NET Core 2.0 runtime and .NET Framework 4.6.1 runtime and up.
+Ocelot is designed to work with ASP.NET Core only. It targets netstandard2.0 so it can be used anywhere .NET Standard 2.0 is supported, including .NET Core 2.0 runtime and .NET Framework 4.6.1 runtime and up.
 
-You install Ocelot and its dependencies in your ASP.NET Core project with Ocelot's NuGet package.
+You install Ocelot and its dependencies in your ASP.NET Core project with [Ocelot's NuGet package](https://www.nuget.org/packages/Ocelot/), from Visual Studio.
 
-```csharp
+```
 Install-Package Ocelot
 ```
 
-In eShopOnContainers, its API Gateway implementation is a simple ASP.NET Core WebHost project, and Ocelot’s middlewares handle all the API Gateway features, as shown in the following image.
+In eShopOnContainers, its API Gateway implementation is a simple ASP.NET Core WebHost project, and Ocelot’s middlewares handle all the API Gateway features, as shown in the following image:
 
 ![](./media/image32.png)
 
 **Figure 8-31.** The OcelotApiGw base project in eShopOnContainers
 
-This ASP.NET Core WebHost project is made by two simple files, the Program.cs and Startup.cs.
+This ASP.NET Core WebHost project is made by two simple files, the `Program.cs` and `Startup.cs`.
 
 The Program.cs just needs to create and configure the typical ASP.NET Core BuildWebHost. 
 
@@ -181,9 +179,9 @@ namespace OcelotApiGw
 }
 ```
 
-The important point here for Ocelot is the **configuration.json** file that you must provide to the builder through the AddJsonFile() method. That configuration.json is where you specify all the API Gateway ReRoutes, meaning the external endpoints with specific ports and the correlated internal endpoints, usually using different ports.
+The important point here for Ocelot is the `configuration.json` file that you must provide to the builder through the `AddJsonFile()` method. That `configuration.json` is where you specify all the API Gateway ReRoutes, meaning the external endpoints with specific ports and the correlated internal endpoints, usually using different ports.
 
-```csharp
+```
 {
     "ReRoutes": [],
     "GlobalConfiguration": {}
@@ -194,7 +192,7 @@ There are two sections to the configuration. An array of Re-Routes and a GlobalC
 
 Here’s a simplified example of [ReRoute configuration](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/ApiGateways/Web.Bff.Shopping/apigw/configuration.json) file from one of the API Gateways from eShopOnContainers.
 
-```csharp
+```
 {
   "ReRoutes": [
     {
@@ -234,11 +232,11 @@ Here’s a simplified example of [ReRoute configuration](https://github.com/dotn
   }
 ```
 
-The main functionality of an Ocelot API Gateway is to take incoming http requests and forward them on to a downstream service, currently as another http request. Ocelot’s describes the routing of one request to another as a Re-Route.
+The main functionality of an Ocelot API Gateway is to take incoming HTTP requests and forward them on to a downstream service, currently as another HTTP request. Ocelot’s describes the routing of one request to another as a Re-Route.
 
 For instance, let’s focus on one of the Re-Routes in the configuration.json from above, the configuration for the Basket microservice.
 
-```csharp
+```
 {
       "DownstreamPathTemplate": "/api/{version}/{everything}",
       "DownstreamScheme": "http",
@@ -256,11 +254,12 @@ For instance, let’s focus on one of the Re-Routes in the configuration.json fr
       }
 }
 ```
+
 The DownstreamPathTemplate, Scheme, and DownstreamHostAndPorts make the internal microservice URL that this request will be forwarded to. 
 
 The port is the internal port used by the service. When using containers, the port specified at its dockerfile.
 
-The Host will be a service name that will depend on the service name resolution you are using. When using docker-compose, the services names are provided by the Docker Host, which is using the service names provided in the docker-compose files. If using an orchestrator like Kubernetes or Service Fabric, that name should be resolved by the DNS or name resolution provided by each orchestrator.
+The `Host` is a service name that depends on the service name resolution you are using. When using docker-compose, the services names are provided by the Docker Host, which is using the service names provided in the docker-compose files. If using an orchestrator like Kubernetes or Service Fabric, that name should be resolved by the DNS or name resolution provided by each orchestrator.
 
 DownstreamHostAndPorts is an array that contains the host and port of any downstream services that you wish to forward requests to. Usually this will just contain one entry but sometimes you might want to load balance requests to your downstream services and Ocelot lets you add more than one entry and then select a load balancer. But if using Azure and any orchestrator it is probably a better idea to load balance with the cloud and orchestrator infrastructure.
 
@@ -268,7 +267,7 @@ The UpstreamPathTemplate is the URL that Ocelot will use to identify which Downs
 
 At this point, you could have a single Ocelot API Gateway (ASP.NET Core WebHost) using one or [multiple merged configuration.json files](http://ocelot.readthedocs.io/en/latest/features/configuration.html#merging-configuration-files) or you can also store the [configuration in a Consul KV store](http://ocelot.readthedocs.io/en/latest/features/configuration.html#store-configuration-in-consul). 
 
-But as introduced in the architecture and design section, if you really want to have autonomous microservices it might be better to split that single monolithic API Gateway into multiple API Gateways and/or BFF (Backend for Frontend). For that purpose, let’s see how to implement that approach with Docker containers.
+But as introduced in the architecture and design sections, if you really want to have autonomous microservices, it might be better to split that single monolithic API Gateway into multiple API Gateways and/or BFF (Backend for Frontend). For that purpose, let’s see how to implement that approach with Docker containers.
 
 ### Using a single Docker container image to run multiple different API Gateway / BFF container types 
 
@@ -280,7 +279,7 @@ The design in eShopOnContainers implements a single Docker container image with 
 
 In eShopOnContainers, the “Generic Ocelot API Gateway Docker Image” is created with the project named 'OcelotApiGw' and the image name “eshop/ocelotapigw” that is specified in the docker-compose.yml file. Then, when deploying to Docker, there will be four API-Gateway containers created from that same Docker image, as shown in the following extract from the docker-compose.yml file.
 
-```csharp
+```
 PARTIAL DOCKER-COMPOSE.YML
 
   mobileshoppingapigw:
@@ -310,7 +309,7 @@ PARTIAL DOCKER-COMPOSE.YML
 
 Additionally, and as you can see in the docker-compose.override.yml file, the only difference between those API Gateway containers is the Ocelot configuration file, which is different for each service container and is specified at runtime through a Docker volume, as shown in the following docker-compose.override.yml file.
 
-```csharp
+```
 mobileshoppingapigw:
   environment:
     - ASPNETCORE_ENVIRONMENT=Development
@@ -398,7 +397,7 @@ In the case of the “Marketing” business area and microservices, it is a very
 
 In an Ocelot API Gateway you can sit the authentication service, such as an ASP.NET Core Web API service using [IdentityServer](http://identityserver.io/) providing the auth token, either out or inside the API Gateway.
 
-Since in eShopOnContainers is using multiple API Gateways with boundaries based on BFF and business areas, the Identity/Auth service is left out of the API Gateways, as highlighted in yellow in the following diagram.
+Since eShopOnContainers is using multiple API Gateways with boundaries based on BFF and business areas, the Identity/Auth service is left out of the API Gateways, as highlighted in yellow in the following diagram.
 
  ![](./media/image39.png)
 
@@ -410,13 +409,13 @@ However, Ocelot also supports to sit the Identity/Auth microservice within the A
 
 **Figure 8-39.** Authentication in Ocelot API Gateway
 
-Since in eShopOnContainers we have split the API Gateway into multiple BFF (Backend for Frontend) and business areas API Gateways, another option would had been to create an additional API Gateway for cross-cutting concerns. That choice would be fair in a more complex microservice based architecture with multiple cross-cutting concerns microservices. But sin we have just one cross-cutting concerns in eShopOnContainers it was decided to just handle the security service out of the API Gateway realm, for simplicity’s sake.
+Because eShopOnContainers application has split the API Gateway into multiple BFF (Backend for Frontend) and business areas API Gateways, another option would had been to create an additional API Gateway for cross-cutting concerns. That choice would be fair in a more complex microservice based architecture with multiple cross-cutting concerns microservices. Since there's only one cross-cutting concern in eShopOnContainers, it was decided to just handle the security service out of the API Gateway realm, for simplicity’s sake.
 
-In any case, the authentication module of Ocelot API Gateway will be visited at first when trying to use any secured microservice (if secured at the API Gateway level). That will redirect to visit the Identity or auth microservice to get the access token so you can access the protected services with the access_token.
+In any case, if the app is secured at the API Gateway level, the authentication module of the Ocelot API Gateway is visited at first when trying to use any secured microservice. That re-directs the HTTP request to visit the Identity or auth microservice to get the access token so so you can visit the protected services with the access_token.
 
 The way you secure with authentication any service at the API Gateway level is by setting the AuthenticationProviderKey in its related settings at the configuration.json.
 
-```csharp
+```
     {
       "DownstreamPathTemplate": "/api/{version}/{everything}",
       "DownstreamScheme": "http",
@@ -505,7 +504,7 @@ As next step, if you try to access any secured microservice like the Basket micr
 
 **Authorization at Ocelot’s Re-Routes tier.**  Ocelot supports claims-based authorization evaluated after the authentication. You set the authorization at a route level by adding the following code to the re-route configuration. 
 
-```csharp
+```
 "RouteClaimsRequirement": {
     "UserType": "employee"
 }
@@ -515,7 +514,7 @@ In that example, when the authorization middleware is called, Ocelot will find i
 
 ## Using Kubernetes Ingress plus Ocelot API Gateways
 
-When using Kubernetes (like in an Azure Kubernetes Service cluster),, you usually unify all the http requests through the [Kuberentes Ingress tier](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on *Nginx*. 
+When using Kubernetes (like in an Azure Kubernetes Service cluster),, you usually unify all the HTTP requests through the [Kuberentes Ingress tier](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on *Nginx*. 
 
 In Kuberentes, if you don’t use any ingress approach, then your services and pods have IPs only routable by the cluster network. 
 
@@ -529,7 +528,7 @@ However, when targeting a “production” environment based on Kuberentes, eSho
 
 Note that API Gateways are front-ends or facades surfacing only the services but not the web applications that are usually out of their scope. In addition, the API Gateways might hide certain internal microservices. 
 
-The ingress, however, is just redirecting http requests but not trying to hide any microservice or web app.
+The ingress, however, is just redirecting HTTP requests but not trying to hide any microservice or web app.
 
 Having an ingress Nginx tier in Kuberentes in front of the web applications plus the several Ocelot API Gateways / BFF is the ideal architecture, as shown in the following diagram.
 

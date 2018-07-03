@@ -68,7 +68,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Extension methods](https://www.codeproject.com/Tips/709310/Extension-Method-In-Csharp)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)
 - [Partial methods](../language-reference/keywords/partial-method.md)
-- Object and collection initializers
+- [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 

@@ -14,6 +14,7 @@
 ### [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/)
 ### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/containerized-lifecycle-architecture/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
+### [Serverless apps: Architecture, patterns, and Azure implementation](standard/serverless-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md)

@@ -9,9 +9,9 @@ This article covers how you can get started with F# on any operating system (Win
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0 or later](https://www.microsoft.com/net/download/). There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
+To begin, you must install the latest [.NET Core SDK](https://www.microsoft.com/net/download/).
 
-This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#. To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
+This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](get-started-vscode.md) is a great option as a text editor for F#.
 
 ## Build a simple multi-project solution
 
@@ -72,7 +72,7 @@ Add the `Library` project to the `FSNetCore` solution using the [dotnet sln add]
 dotnet sln add src/Library/Library.fsproj
 ```
 
-Restore the NuGet dependencies using the `dotnet restore` command ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
+Run `dotnet build` to build the project. Unresolved dependencies will be restored when building.
 
 ### Write a console application that consumes the class library
 
@@ -143,5 +143,6 @@ I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
 I used to be World but now I'm ""World"" thanks to JSON.NET!
 ```
 
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+## Next steps
+
+Next, checkout the [Tour of F#](../tour.md) to learn more about different F# features.

@@ -96,6 +96,9 @@ public class PrimeWebDefaultRequestShould
 -   **Unit testing in .NET Core using dotnet test**
     [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](../../../core/testing/unit-testing-with-dotnet-test.md)
 
+-   **Steve Smith. Integration testing** (ASP.NET Core)
+    [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](/aspnet/core/test/integration-tests)
+
 -   **xUnit.net**. Official site.
     [*https://xunit.github.io/*](https://xunit.github.io/)
 

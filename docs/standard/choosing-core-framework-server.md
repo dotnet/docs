@@ -3,7 +3,7 @@ title: Choose between .NET Core and .NET Framework for server apps
 description: A guide on which implementation of .NET you should consider when building a server app in .NET.
 author: cartermp
 ms.author: mairaw
-ms.date: 03/15/2018
+ms.date: 06/19/2018
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 
@@ -82,8 +82,6 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 * ASP.NET Web Forms applications: ASP.NET Web Forms are only available in the .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
 
 * ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. ASP.NET Core [Razor Pages](/aspnet/core/mvc/razor-pages/) have many similarities with Web Pages.
-
-* ASP.NET SignalR server/client implementation. Currently, [ASP.NET SignalR](https://github.com/aspnet/SignalR) is available in preview mode with ASP.NET Core 2.1.
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 

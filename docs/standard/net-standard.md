@@ -3,7 +3,7 @@ title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/13/2017
+ms.date: 05/18/2018
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---

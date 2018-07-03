@@ -1,34 +1,33 @@
 ---
 title: Choose between traditional web apps and single page apps
-description: Architect modern web applications with ASP.NET Core and Microsoft Azure
+description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/06/2017
+ms.date: 6/28/2018
 ---
+
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
 
 > "Atwood's Law: Any application that can be written in JavaScript, will eventually be written in JavaScript."  
 > _\- Jeff Atwood_
 
-## Summary
-
 There are two general approaches to building web applications today: traditional web applications that perform most of the application logic on the server, and single page applications (SPAs) that perform most of the user interface logic in a web browser, communicating with the web server primarily using web APIs. A hybrid approach is also possible, the simplest being host one or more rich SPA-like sub-applications within a larger traditional web application.
 
 You should use traditional web applications when:
 
--   Your application's client-side requirements are simple or even read-only.
+- Your application's client-side requirements are simple or even read-only.
 
--   Your application needs to function in browsers without JavaScript support.
+- Your application needs to function in browsers without JavaScript support.
 
--   Your team is unfamiliar with JavaScript or TypeScript development techniques.
+- Your team is unfamiliar with JavaScript or TypeScript development techniques.
 
 You should use a SPA when:
 
--   Your application must expose a rich user interface with many features.
+- Your application must expose a rich user interface with many features.
 
--   Your team is familiar with JavaScript and/or TypeScript development.
+- Your team is familiar with JavaScript and/or TypeScript development.
 
--   Your application must already expose an API for other (internal or public) clients.
+- Your application must already expose an API for other (internal or public) clients.
 
 Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers are more difficult with SPA applications than traditional web apps.
 
@@ -65,10 +64,11 @@ Note that frequently SPAs need to implement features that are built-in to tradit
 Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-side programming techniques and libraries. Your team should be competent in writing modern JavaScript using a SPA framework like Angular.
 
 > ### References – SPA Frameworks
-> - **AngularJS**  
-> <https://angularjs.org/>
-> - **Comparison of 4 Popular JavaScript Frameworks**  
-> <https://www.developereconomics.com/feature-comparison-of-4-popular-js-mv-frameworks>
+>
+> - **Angular**  
+>   <https://angular.io>
+> - **Comparison of JavaScript Frameworks**  
+>   <https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/>
 
 **Your application must already expose an API for other (internal or public) clients**
 
@@ -78,13 +78,13 @@ If you're already supporting a web API for use by other clients, it may require 
 
 The following decision table summarizes some of the basic factors to consider when choosing between a traditional web application and a SPA.
 
-  | **Factor** | **Traditional Web App** | **Single Page Application** |
-  |---|---|---|
-  | Required Team Familiarity with JavaScript/TypeScript | **Minimal** | **Required** |
-  | Support Browsers without Scripting | **Supported** | **Not Supported** |
-  | Minimal Client-Side Application Behavior | **Well-Suited** | **Overkill** |
-  | Rich, Complex User Interface Requirements | **Limited** | **Well-Suited** |
+| **Factor**                                           | **Traditional Web App** | **Single Page Application** |
+| ---------------------------------------------------- | ----------------------- | --------------------------- |
+| Required Team Familiarity with JavaScript/TypeScript | **Minimal**             | **Required**                |
+| Support Browsers without Scripting                   | **Supported**           | **Not Supported**           |
+| Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                |
+| Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             |
 
 >[!div class="step-by-step"]
-[Previous] (modern-web-applications-characteristics.md)
+[Previous](modern-web-applications-characteristics.md)
 [Next](architectural-principles.md)

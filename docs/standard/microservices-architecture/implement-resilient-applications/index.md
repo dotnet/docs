@@ -17,5 +17,5 @@ The many individual components of your application should also incorporate healt
 
 
 >[!div class="step-by-step"]
-[Previous] (../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)
-[Next] (handle-partial-failure.md)
+[Previous](../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)
+[Next](handle-partial-failure.md)

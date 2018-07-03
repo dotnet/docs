@@ -1,4 +1,4 @@
-// compile with: csc /target:library /reference:abstractshape.dll shapes.cs
+// compile with: csc -target:library -reference:abstractshape.dll shapes.cs
 public class Square : Shape
 {
     private int side;

@@ -83,5 +83,5 @@ Policy
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-circuit-breaker-pattern.md)
+[Previous](implement-custom-http-call-retries-exponential-backoff.md)
+[Next](implement-circuit-breaker-pattern.md)

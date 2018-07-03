@@ -16,6 +16,9 @@ ms.author: "ronpet"
 # Sn.exe (Strong Name Tool)
 The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../../docs/framework/app-domains/strong-named-assemblies.md). Sn.exe provides options for key management, signature generation, and signature verification.  
   
+> [!WARNING]
+> Do not rely on strong names for security. They provide a unique identity only.
+
  For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md) and [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
   
  The Strong Name tool is automatically installed with Visual Studio. To start the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  

@@ -23,13 +23,17 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * Diagnosing whether a patient has a certain disease or not.
 * Making a decision to mark an email as "spam" or not.
 
-## Multi-class classification
+For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
+
+## Multiclass classification
 
 A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
 * Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
 * Understanding movie reviews as "positive", "neutral", or "negative".
 * Categorizing hotel reviews as "location", "price", "cleanliness", etc.
+
+For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
 
 ## Regression
 

@@ -17,13 +17,13 @@ major features added in each release.
 To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
 
 * [C# 7.3](csharp-7-3.md):
-  - This page describes the latest features in the C# language. C# 7.3 is currently available in [Visual Studio 2017 version 15.7](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.1 SDK 2.1.300 RC1](../../core/whats-new/index.md).
+  - This page describes the latest features in the C# language. C# 7.3 is currently available in [Visual Studio 2017 version 15.7](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.1 SDK 2.1.300 RC1](../../core/whats-new/index.md).
 * [C# 7.2](csharp-7-2.md):
-  - This page describes the features added in the C# language. C# 7.2 is currently available in [Visual Studio 2017 version 15.5](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - This page describes the features added in the C# language. C# 7.2 is currently available in [Visual Studio 2017 version 15.5](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 * [C# 7.1](csharp-7-1.md):
-  - This page describes the features added in C# 7.1. These features were added in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - This page describes the features added in C# 7.1. These features were added in [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 * [C# 7.0](csharp-7.md):
-  - This page describes the features added in C# 7.0. These features were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
+  - This page describes the features added in C# 7.0. These features were added in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
 * [C# 6](csharp-6.md):
   - This page describes the features that were added in C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.
 * [Cross Platform Support](../../core/index.md):

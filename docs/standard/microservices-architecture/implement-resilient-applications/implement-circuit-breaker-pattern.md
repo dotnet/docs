@@ -151,5 +151,5 @@ Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` 
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-http-call-retries-exponential-backoff-polly.md)
-[Next] (monitor-app-health.md)
+[Previous](implement-http-call-retries-exponential-backoff-polly.md)
+[Next](monitor-app-health.md)

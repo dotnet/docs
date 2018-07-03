@@ -27,5 +27,5 @@ RUN powershell add-windowsfeature web-asp-net45
 ```
 
 >[!div class="step-by-step"]
-[Previous] (visual-studio-tools-for-docker.md)
-[Next] (../docker-devops-workflow/index.md)
+[Previous](visual-studio-tools-for-docker.md)
+[Next](../docker-devops-workflow/index.md)

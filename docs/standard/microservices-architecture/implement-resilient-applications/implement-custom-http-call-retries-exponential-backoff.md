@@ -111,5 +111,5 @@ However, and as mentioned, this code is suitable only as a proof of concept. The
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-resilient-entity-framework-core-sql-connections.md)
-[Next] (use-httpclientfactory-to-implement-resilient-http-requests.md)
+[Previous](implement-resilient-entity-framework-core-sql-connections.md)
+[Next](use-httpclientfactory-to-implement-resilient-http-requests.md)

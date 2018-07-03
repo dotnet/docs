@@ -40,7 +40,7 @@ Defines a proxy server.
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
 |`autoDetect`|Specifies whether the proxy is automatically detected. The default value is `unspecified`.|  
-|`bypassonlocal`|Specifies whether the proxy is bypassed for local resources. Local resources include the local server (http://localhost, http://loopback, or http://127.0.0.1) and a URI without a period (http://webserver). The default value is `unspecified`.|  
+|`bypassonlocal`|Specifies whether the proxy is bypassed for local resources. Local resources include the local server (`http://localhost`, `http://loopback`, or `http://127.0.0.1`) and a URI without a period (`http://webserver`). The default value is `unspecified`.|  
 |`proxyaddress`|Specifies the proxy URI to use.|  
 |`scriptLocation`|Specifies the location of the configuration script.|  
 |`usesystemdefault`|Specifies whether to use Internet Explorer proxy settings. If set to `true`, subsequent attributes will override Internet Explorer proxy settings. The default value is `unspecified`.|  

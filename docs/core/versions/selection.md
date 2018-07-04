@@ -27,9 +27,9 @@ The rest of this document examines those four scenarios.
 
 SDK commands include `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` CLI must choose an SDK version for any command. The .NET Core CLI uses the latest SDK installed on the machine by default. You'll use the .NET Core SDK v2.1.301 when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. Note that this is true for preview versions as well as released versions. You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
-On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core version earlier than the latest installed version.
+On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 
-*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. This is the same as the default behavior, when no *global.json** file is found.
+*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. This is the same as the default behavior, when no *global.json* file is found.
 
 The following example shows the *global.json* syntax:
 
@@ -45,7 +45,7 @@ The process for selecting an SDK version is:
 
 1. `dotnet` searches for a *global.json* file iteratively reverse-navigating the path upward from the current working directory.
 1. `dotnet` uses the SDK specified in the first *global.json* found.
-1. `dotnet` binds to the latest installed SDK if no *global.json* is found.
+1. `dotnet` uses the latest installed SDK if no *global.json* is found.
 
 You can learn more about selecting an SDK version in the [matching rules](../tools/global-json.md) section of the topic on *global.json*.
 
@@ -79,21 +79,21 @@ A few usage examples demonstrate the behavior:
 
 - 2.0.4 is required. 2.0.5 is the highest patch version installed. 2.0.5 is used.
 - 2.0.4 is required. No 2.0.* versions are installed. 1.1.1 is the highest runtime installed. An error message is displayed.
-- 2.04 is required. 2.0.0 is the latest version installed. An error message is displayed.
+- 2.0.4 is required. 2.0.0 is the highest version installed. An error message is displayed.
 - 2.0.4 is required. No 2.0.* versions are installed. 2.2.2 is the highest 2.x runtime version installed. 2.2.2 is used.
 - 2.0.4 is required. No 2.x versions are installed. 3.0.0 (not a currently available version) is installed. An error message is displayed.
 
 Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:
 
 - 2.0.4 is required. No 2.0.* versions are installed. 2.2.2 is installed. 2.2.2 is used.
-- 2.0.5 is later installed. 2.0.5 will be used for subsequent application launches, not 2.2.2. The latest patch is preferred over an updated minor version.
-- It's possible that 2.0.5 and 2.2.2 might behave differently, particularly for scenarios like serializing binary data.
+- 2.0.5 is later installed. 2.0.5 will be used for subsequent application launches, not 2.2.2. The latest patch of the required minor version is preferred over a higher minor version.
+- It's possible that 2.0.5 and 2.2.2 behave differently, particularly for scenarios like serializing binary data.
 
 ## Self-contained deployments include the selected runtime
 
 You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployments-scd). This approach bundles the .NET Core runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
-The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family. The target framework (including the latest installed security patches) are packaged with the application.
+The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
 It's an error if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET Core applications.
 
@@ -103,4 +103,4 @@ Self-contained deployments may require a specific patch version. You can overrid
 <RuntimeFrameworkVersion>2.0.4</RuntimeFrameworkVersion>
 ```
 
-The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* patch level of the framework.
+The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.

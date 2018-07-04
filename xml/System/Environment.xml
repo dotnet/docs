@@ -666,7 +666,16 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
+
+The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. 
+
+To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
+  
+Environment variable names are not case-sensitive.  
+ 
+### On Windows systems
+
+ On Windows systems, the environment block of the current process includes the following environment variables:  
   
 -   All per-machine environment variables that are defined at the time the process is created, along with their values.  
   
@@ -676,11 +685,9 @@ goto :EOF
   
  If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
   
- To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
-  
- Environment variable names are not case-sensitive.  
-  
-   
+### On macOS and Linux systems
+
+On macOS and Linux, the `GetEnvironmentVariable(String)` method retrieves the value of any environment variable that is defined within the scope of the dotnet process. Once the dotnet process ends, that environment variable ceases to exist.  .NET Core does not support per-machine or per-user environment variables.   
   
 ## Examples  
  The following example uses the <xref:System.Environment.GetEnvironmentVariable%2A> method to retrieve the `windir` environment variable, which contains the path of the Windows directory.  
@@ -743,14 +750,21 @@ goto :EOF
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The `target` parameter specifies whether the environment variable is retrieved from the current process or from the Windows operating system registry key for the current user or local machine. All per-user and per-machine environment variables are automatically copied into the environment block of the current process. However, environment variables added only to the environment block of the current process  persist only for the duration of the process.  
+## Remarks 
+
+To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
   
- To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
+Environment variable names are not case-sensitive.  
+
+### On Windows systems
+
+On Windows, the `target` parameter specifies whether the environment variable is retrieved from the current process or from the Windows operating system registry key for the current user or local machine. All per-user and per-machine environment variables are automatically copied into the environment block of the current process. However, environment variables added only to the environment block of the current process  persist only for the duration of the process.  
   
- Environment variable names are not case-sensitive.  
-  
-   
+### On macOS and Linux systems
+
+On macOS and Linux, the `GetEnvironmentVariable(String, EnvironmentVariableTarget)` method supports a `target` value of <xref:EnvironmentVariableTarget.Process?displayProperty=nameWithtype> only. Calls with a `target` value of <xref:EnvironmentVariableTarget.Machine?displayProperty=nameWithtype> or <xref:EnvironmentVariableTarget.User?displayProperty=nameWithtype> are not supported and return `null`. 
+
+Per-process environment variables are those defined within the scope of the dotnet process. Once the dotnet process ends, those environment variable ceases to exist.   
   
 ## Examples  
  The following example creates environment variables for the Process, User, and Machine targets, checks whether the operating system registry contains the User and Machine environment variables, then deletes the environment variables.  
@@ -826,7 +840,19 @@ goto :EOF
 ## Remarks  
  The names and values for the environment variables are stored as key-value pairs in the returned <xref:System.Collections.IDictionary>.  
   
-   
+### On Windows systems
+
+On Windows systems, the `GetEnvironmentVariables` method returns the following environment variabless:
+  
+- All per-machine environment variables that are defined at the time the process is created, along with their values.  
+  
+- All per-user environment variables that are defined at the time the process is created, along with their values.  
+
+- Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
+
+### On macOS and Linux systems
+
+On MacOS and Linux, calling the `GetenvironmentVariables` method retrieves the name and value of all environment variables that are defined within the scope of the dotnet process itself. Once the dotnet process ends, that environment variables cease to exist.  .NET Core does not support per-machine or per-user environment variables.   
   
 ## Examples  
  The following example demonstrates the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
@@ -880,11 +906,18 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `target` parameter specifies whether the source is the current process, the registry key for the current user, or the registry key for the local machine.  
-  
- The names and values of the environment variables are stored as key/value pairs in the returned <xref:System.Collections.IDictionary> object.  
-  
-   
+
+The names and values of the environment variables are stored as key/value pairs in the returned <xref:System.Collections.IDictionary> object.  
+
+### On Windows systems
+
+On Windows systems, the `target` parameter specifies whether the source is the current process, the registry key for the current user, or the registry key for the local machine.  
+
+### On macOS and Linux systems
+
+On macOS and Linux, only a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> is supported. Per-process environment variables are defined within the scope of the dotnet process. Once the dotnet process ends, that environment variables cease to exist.  
+
+Per-machine and per-user environment variables are not supported. A `target` value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> returns an empty array.
   
 ## Examples  
  The following example creates environment variables for the Process, User, and Machine targets, checks whether the operating system registry contains the User and Machine environment variables, then deletes the environment variables.  

@@ -27,6 +27,15 @@ With .NET Core 2.0, downloads show a single version number in their file name. T
 
 The use of a single version number makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading an SDK or runtime, the version number you see is going to be the same.
 
+### Version selection
+
+.NET Core applies a set of policies that determine which versions of the .NET Core runtime and SDK are used in various scenarios. These scenarios and policies are fully explored in the article on [version selection](selection.md).
+
+You can think of these policies as performing the following roles:
+
+* Enable easy and efficient deployment of .NET Core, including security and reliability updates.
+* Enable developers to use the latest tools and commands independent of target runtime.
+
 ### Installers
 
 With .NET Core 2.0, downloads for the [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [releases](https://www.microsoft.com/net/download/core) adhere to a new naming scheme that is easier to understand.

@@ -1602,9 +1602,14 @@ Per-machine and per-user environment variables are not supported. A `target` val
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
+
+The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Environment variables that are unique to the current process environment block persist only until the process ends.
+
+In addition, on Windows systems only, the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) and to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value). Per-machine and per-user environment variables are copied into the environment block of the current process.  
+ 
+On .NET Core on maxOS and Linux systems, calls to the  <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> are ignored. 
   
- If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
+ If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` argument does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
   
  If `variable` contains a non-initial hexadecimal zero character, the characters before the zero character are considered the environment variable name and all subsequent characters are ignored.  
   
@@ -1619,16 +1624,16 @@ Per-machine and per-user environment variables are not supported. A `target` val
 -   It consists of a single character whose value is U+0000.  
   
  If `variable` does not exist, no error occurs although the operation cannot be performed. Be careful when `target` is <xref:System.EnvironmentVariableTarget.Machine>, because you can accidentally delete an environment variable that affects your entire local machine, not just the current process or user.  
-  
- If `target` is <xref:System.EnvironmentVariableTarget.User>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
+
+### EnvironmentVariableTarget.Machine and EnvironmentVariableTarget.User on Windows systems
+
+If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
   
  Similarly, if `target` is <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User> or <xref:System.EnvironmentVariableTarget.Machine>, other applications are notified of the set operation by a Windows `WM_SETTINGCHANGE` message.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
-  
-   
   
 ## Examples  
  The following example creates environment variables for the <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  

@@ -1,17 +1,17 @@
 ---
-title: Implementing custom HTTP call retries with exponential backoff
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing custom HTTP call retries with exponential backoff
+title: Explore custom HTTP call retries with exponential backoff
+description: Learn how you could implement, from scratch, HTTP call retries with exponential backoff to handle possible HTTP failure scenarios.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 06/08/2018
 ---
-# Implementing custom HTTP call retries with exponential backoff
+# Explore custom HTTP call retries with exponential backoff
 
-In order to create resilient microservices, you need to handle possible HTTP failure scenarios. For that purpose, you could create your own implementation of retries with exponential backoff.
+To create resilient microservices, you need to handle possible HTTP failure scenarios. One way of handling those failures, although not recommended, is to create your own implementation of retries with exponential backoff.
 
-In addition to handling temporal resource unavailability, the exponential backoff also needs to take into account that the cloud provider might throttle availability of resources to prevent usage overload. For example, creating too many connection requests very quickly might be viewed as a Denial of Service ([DoS](https://en.wikipedia.org/wiki/Denial-of-service_attack)) attack by the cloud provider. As a result, you need to provide a mechanism to scale back connection requests when a capacity threshold has been encountered.
+**Important note:** This section shows you how you could create your own custom code to implement HTTP call retries. However, it is not recommended to do it by your own but to use more powerful and reliable while simpler to use mechanisms, such as `HttpClientFactory` with Polly, available since .NET Core 2.1. Those recommended approaches are explained in the next sections. 
 
-As an initial exploration, you could implement your own code with a utility class for exponential backoff as in [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260), plus code like the following (which is also available on a [GitHub repo](https://gist.github.com/CESARDELATORRE/d80c6423a1aebaffaf387469f5194f5b)).
+As an initial exploration, you could implement your own code with a utility class for exponential backoff as in [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260), plus code like the following (which is also available at this [GitHub repo](https://gist.github.com/CESARDELATORRE/d80c6423a1aebaffaf387469f5194f5b)).
 
 ```csharp
 public sealed class RetryWithExponentialBackoff
@@ -107,9 +107,11 @@ public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? t
 }
 ```
 
-However, this code is suitable only as a proof of concept. The next topic explains how to use more sophisticated and proven libraries.
+Remember that this code is suitable only as a proof of concept. 
+The next sections explain how to use more sophisticated approaches while simpler, by using HttpClientFactory.
+HttpClientFactory is available since .NET Core 2.1, with proven resiliency libraries like Polly. 
 
 
 >[!div class="step-by-step"]
 [Previous](implement-resilient-entity-framework-core-sql-connections.md)
-[Next](implement-http-call-retries-exponential-backoff-polly.md)
+[Next](use-httpclientfactory-to-implement-resilient-http-requests.md)

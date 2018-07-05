@@ -1,11 +1,11 @@
 ---
-title: Implementing resilient Entity Framework Core SQL connections
-description: .NET Microservices Architecture for Containerized .NET Applications | Implementing resilient Entity Framework Core SQL connections
+title: Implement resilient Entity Framework Core SQL connections
+description: .NET Microservices Architecture for Containerized .NET Applications | Implement resilient Entity Framework Core SQL connections. This technique is especially important when using Azure SQL Database in the cloud.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 06/08/2018
 ---
-# Implementing resilient Entity Framework Core SQL connections
+# Implement resilient Entity Framework Core SQL connections
 
 For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have [resilient EF Core connections](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency).
 
@@ -19,13 +19,13 @@ public class Startup
     public IServiceProvider ConfigureServices(IServiceCollection services)
     {
         // ...
-        services.AddDbContext<OrderingContext>(options =>
+        services.AddDbContext<CatalogContext>(options =>
         {
             options.UseSqlServer(Configuration["ConnectionString"],
             sqlServerOptionsAction: sqlOptions =>
             {
                 sqlOptions.EnableRetryOnFailure(
-                maxRetryCount: 5,
+                maxRetryCount: 10,
                 maxRetryDelay: TimeSpan.FromSeconds(30),
                 errorNumbersToAdd: null);
             });
@@ -37,7 +37,7 @@ public class Startup
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 
-When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retriable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
+When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
 
 However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit—everything inside the transaction has be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges calls from multiple DbContexts in the transaction.
 
@@ -79,13 +79,15 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 
 ## Additional resources
 
+-   **EF Connection Resiliency** (Entity Framework Core)
+    [*https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency*](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency)
+
 -   **Connection Resiliency and Command Interception with the Entity Framework**
     [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
 
 -   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
     <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
 
-
 >[!div class="step-by-step"]
 [Previous](implement-retries-exponential-backoff.md)
-[Next](implement-custom-http-call-retries-exponential-backoff.md)
+[Next]explore-custom-http-call-retries-exponential-backoff.md)

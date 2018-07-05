@@ -43,6 +43,8 @@ AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
 ## Examples  
  [!code-csharp[System.Net.Http.HttpClientHandler#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclienthandler/cs/source.cs#1)]  
   
+ The preceding code example uses an `async Task Main()` entry point. That feature requires C# 7.1 or later.
+  
  ]]></format>
     </remarks>
   </Docs>

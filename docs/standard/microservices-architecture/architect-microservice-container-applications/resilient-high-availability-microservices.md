@@ -73,5 +73,5 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 
 >[!div class="step-by-step"]
-[Previous] (microservice-based-composite-ui-shape-layout.md)
-[Next] (scalable-available-multi-container-microservice-applications.md)
+[Previous](microservice-based-composite-ui-shape-layout.md)
+[Next](scalable-available-multi-container-microservice-applications.md)

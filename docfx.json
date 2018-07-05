@@ -95,7 +95,10 @@
       "ms.topic": "conceptual",
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html" 
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "featureFlags": [
+        "enable_uhf_ppe"
+      ]
     },
     "fileMetadata": {
       "feedback_product_url": {
@@ -183,6 +186,7 @@
         "docs/standard/microservices-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/modern-web-apps-azure-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/modernize-with-azure-and-containers/**/**.md": "dotnet-ebooks",
+        "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       }

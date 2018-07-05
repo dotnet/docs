@@ -122,5 +122,5 @@ public class CardType : Enumeration
 
 
 >[!div class="step-by-step"]
-[Previous] (implement-value-objects.md)
-[Next] (domain-model-layer-validations.md)
+[Previous](implement-value-objects.md)
+[Next](domain-model-layer-validations.md)

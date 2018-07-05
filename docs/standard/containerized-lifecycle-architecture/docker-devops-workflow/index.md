@@ -30,5 +30,5 @@ The complexity of containerized application development increases steadily depen
 
 
 >[!div class="step-by-step"]
-[Previous] (../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
-[Next] (docker-application-outer-loop-devops-workflow.md)
+[Previous](../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
+[Next](docker-application-outer-loop-devops-workflow.md)

@@ -41,5 +41,5 @@ This section lists terms and definitions you should be familiar with before gett
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-defined.md)
-[Next] (docker-containers-images-registries.md)
+[Previous](docker-defined.md)
+[Next](docker-containers-images-registries.md)

@@ -14,6 +14,7 @@
 ### [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/)
 ### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/containerized-lifecycle-architecture/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
+### [Serverless apps: Architecture, patterns, and Azure implementation](standard/serverless-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md)
@@ -120,7 +121,7 @@
 ### [Unit Testing Published Output](core/testing/unit-testing-published-output.md)
 ### [Live unit testing .NET Core projects with Visual Studio](/visualstudio/test/live-unit-testing-start)
 ## [Versioning](core/versions/index.md)
-<!--### [🔧 Servicing](core/versions/servicing.md)-->
+### [.NET Core version selection](core/versions/selection.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
@@ -294,6 +295,7 @@
 
 ## [Tour of F#](fsharp/tour.md)
 ## [Get Started](fsharp/get-started/index.md)
+### [Install F#](fsharp/get-started/install-fsharp.md)
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)

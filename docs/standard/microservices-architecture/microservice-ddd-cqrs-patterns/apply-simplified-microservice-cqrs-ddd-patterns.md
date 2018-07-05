@@ -31,5 +31,5 @@ The application layer can be the Web API itself. The important design aspect her
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (eshoponcontainers-cqrs-ddd-microservice.md)
+[Previous](index.md)
+[Next](eshoponcontainers-cqrs-ddd-microservice.md)

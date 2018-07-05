@@ -94,7 +94,7 @@ public class PrimeWebDefaultRequestShould
     [*https://docs.microsoft.com/aspnet/core/mvc/controllers/testing*](/aspnet/core/mvc/controllers/testing)
 
 -   **Steve Smith. Integration testing** (ASP.NET Core)
-    [*https://docs.microsoft.com/aspnet/core/testing/integration-testing*](/aspnet/core/testing/integration-testing)
+    [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](/aspnet/core/test/integration-tests)
 
 -   **Unit testing in .NET Core using dotnet test**
     [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](../../../core/testing/unit-testing-with-dotnet-test.md)
@@ -120,5 +120,5 @@ There are a few approaches you can use. In the docker-compose.yml file that you 
 Once the compose application is up and running, you can take advantage of breakpoints and exceptions if you are running Visual Studio. Or you can run the integration tests automatically in your CI pipeline in Visual Studio Team Services or any other CI/CD system that supports Docker containers.
 
 >[!div class="step-by-step"]
-[Previous] (subscribe-events.md)
-[Next] (../microservice-ddd-cqrs-patterns/index.md)
+[Previous](subscribe-events.md)
+[Next](../microservice-ddd-cqrs-patterns/index.md)

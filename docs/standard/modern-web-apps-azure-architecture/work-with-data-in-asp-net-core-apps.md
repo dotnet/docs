@@ -1,17 +1,15 @@
 ---
 title: Work with data in ASP.NET Core Apps
-description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Working with data in ASP.NET Core apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/07/2017
+ms.date: 06/28/2018
 ---
 # Working with Data in ASP.NET Core Apps
 
 > "Data is a precious thing and will last longer than the systems themselves."
-
-Tim Berners-Lee
-
-## Summary
+>
+> Tim Berners-Lee
 
 Data access is an important part of almost any software application. ASP.NET Core supports a variety of data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.
 
@@ -29,7 +27,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 
 ### The DbContext
 
-To work with EF Core, you need a subclass of DbContext. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
+To work with EF Core, you need a subclass of <xref:Microsoft.EntityFrameworkCore.DbContext>. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
 
 ```csharp
 public class CatalogContext : DbContext
@@ -72,7 +70,7 @@ You can see the queries EF Core is executing by configuring a logger and ensurin
 
 Figure 8-1 Logging EF Core queries to the console
 
-### Fetching and Storing Data
+### Fetching and storing Data
 
 To retrieve data from EF Core, you access the appropriate property and use LINQ to filter the result. You can also use LINQ to perform projection, transforming the result from one type to another. The following example would retrieve CatalogBrands, ordered by name, filtered by their Enabled property, and projected onto a SelectListItem type:
 
@@ -108,9 +106,9 @@ await _context.SaveChangesAsync();
 
 EF Core supports both synchronous and async methods for fetching and saving. In web applications, it's recommended to use the async/await pattern with the async methods, so that web server threads are not blocked while waiting for data access operations to complete.
 
-### Fetching Related Data
+### Fetching related data
 
-When EF Core retrieves entities, it populates all of the properties that are stored directly with that entity in the database. Navigation properties, such as lists of related entities, are not populated and may have their value set to null. This ensures EF Core is not fetching more data than is needed, which is especially important for web applications, which must quickly process requests and return responses in an efficient manner. To include relationships with an entity using *eager loading*, you specify the property using the Include extension method on the query, as shown:
+When EF Core retrieves entities, it populates all of the properties that are stored directly with that entity in the database. Navigation properties, such as lists of related entities, are not populated and may have their value set to null. This ensures EF Core is not fetching more data than is needed, which is especially important for web applications, which must quickly process requests and return responses in an efficient manner. To include relationships with an entity using _eager loading_, you specify the property using the Include extension method on the query, as shown:
 
 ```csharp
 // .Include requires using Microsoft.EntityFrameworkCore
@@ -121,13 +119,15 @@ var brandsWithItems = await _context.CatalogBrands
 
 You can include multiple relationships, and you can also include sub-relationships using ThenInclude. EF Core will execute a single query to retrieve the resulting set of entities.
 
-Another option for loading related data is to use *explicit loading*. Explicit loading allows you to load additional data into an entity that has already been retrieved. Since this involves a separate request to the database, it's not recommended for web applications, which should minimize the number of database round trips made per request.
+Another option for loading related data is to use _explicit loading_. Explicit loading allows you to load additional data into an entity that has already been retrieved. Since this involves a separate request to the database, it's not recommended for web applications, which should minimize the number of database round trips made per request.
 
-*Lazy loading* is a feature that automatically loads related data as it is referenced by the application. It's not currently supported by EF Core, but as with explicit loading it should typically be disabled for web applications.
+_Lazy loading_ is a feature that automatically loads related data as it is referenced by the application. EF Core has added support for lazy loading in version 2.1. Lazy loading is not enabled by default and requires installing the `Microsoft.EntityFrameworkCore.Proxies`. As with explicit loading, lazy loading should typically be disabled for web applications, since its use will result in additional database queries being made within each web request. Unfortunately, the overhead incurred by lazy loading often goes unnoticed at development time, when latency is small and often the data sets used for testing are small. However, in production, with more users, more data, and more latency, the additional database requests can often result in poor performance for web applications that make heavy use of lazy loading.
 
-### Resilient Connections
+[Avoid Lazy Loading Entities in Web Applications](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
 
-External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as *connection resiliency*. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry) technique by attempting to rety with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
+### Resilient connections
+
+External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as _connection resiliency_. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry) technique by attempting to retry with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
 
 For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have resilient EF Core connections.
 
@@ -147,19 +147,19 @@ public class Startup
         {
             sqlOptions.EnableRetryOnFailure(
             maxRetryCount: 5,
-            maxRetryDelay: TimeSpan.FromSeconds(30), 
-            errorNumbersToAdd: null); 
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
         });
     });
 }
 //...
 ```
 
-  #### Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts 
-  
-  When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retriable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
-  
-  However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit—everything inside the transaction has be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges from multiple DbContexts in it.
+#### Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
+
+When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retriable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
+
+However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit—everything inside the transaction has be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges from multiple DbContexts in it.
 
 System.InvalidOperationException: The configured execution strategy 'SqlServerRetryingExecutionStrategy' does not support user initiated transactions. Use the execution strategy returned by 'DbContext.Database.CreateExecutionStrategy()' to execute all the operations in the transaction as a retriable unit.
 
@@ -170,7 +170,7 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
 // within an explicit transaction
 // See:
 // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
-var strategy = _catalogContext.Database.CreateExecutionStrategy(); 
+var strategy = _catalogContext.Database.CreateExecutionStrategy();
 await strategy.ExecuteAsync(async () =>
 {
     // Achieving atomicity between original Catalog database operation and the
@@ -179,7 +179,7 @@ await strategy.ExecuteAsync(async () =>
     {
         _catalogContext.CatalogItems.Update(catalogItem);
         await _catalogContext.SaveChangesAsync();
-        
+
         // Save to EventLog only if product price changed
         if (raiseProductPriceChangedEvent)
         await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
@@ -191,12 +191,13 @@ await strategy.ExecuteAsync(async () =>
 The first DbContext is the \_catalogContext and the second DbContext is within the \_integrationEventLogService object. Finally, the Commit action would be performed multiple DbContexts and using an EF Execution Strategy.
 
 > ### References – Entity Framework Core
+>
 > - **EF Core Docs**  
-> <https://docs.microsoft.com/ef/>
+>   <https://docs.microsoft.com/ef/>
 > - **EF Core: Related Data**  
-> <https://docs.microsoft.com/ef/core/querying/related-data>
+>   <https://docs.microsoft.com/ef/core/querying/related-data>
 > - **Avoid Lazy Loading Entities in ASPNET Applications**  
-> <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
+>   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## EF Core or micro-ORM?
 
@@ -264,8 +265,7 @@ NoSQL databases typically do not enforce [ACID](https://en.wikipedia.org/wiki/AC
 
 ## Azure DocumentDB
 
-Azure DocumentDB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. DocumentDB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in DocumentDB are stored as JSON documents. Resources are managed as *items*, which are documents containing metadata, and *feeds*, which are collections of items. Figure 8-2 shows the relationship between different DocumentDB resources.
-
+Azure DocumentDB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. DocumentDB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in DocumentDB are stored as JSON documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_, which are collections of items. Figure 8-2 shows the relationship between different DocumentDB resources.
 
 ![The hierarchical relationship between resources in DocumentDB, a NoSQL JSON database](./media/image8-2.png)
 
@@ -275,25 +275,25 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 
 **References – DocumentDB**
 
--   DocumentDB Introduction\
-    <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
+- DocumentDB Introduction\
+  <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
-## Other Persistence Options
+## Other persistence options
 
 In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 
--   Blob Storage for unstructured text or binary storage, also referred to as object storage.
+- Blob Storage for unstructured text or binary storage, also referred to as object storage.
 
--   Table Storage for structured datasets, accessible via row keys.
+- Table Storage for structured datasets, accessible via row keys.
 
--   Queue Storage for reliable queue-based messaging.
+- Queue Storage for reliable queue-based messaging.
 
--   File Storage for shared file access between Azure virtual machines and on-premises applications.
+- File Storage for shared file access between Azure virtual machines and on-premises applications.
 
 **References – Azure Storage**
 
--   Azure Storage Introduction\
-    <https://docs.microsoft.com/azure/storage/storage-introduction>
+- Azure Storage Introduction\
+  <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## Caching
 
@@ -301,7 +301,7 @@ In web applications, each web request should be completed in the shortest time p
 
 When implementing caching, it's important to keep in mind separation of concerns. Avoid implementing caching logic in your data access logic, or in your user interface. Instead, encapsulate caching in its own classes, and use configuration to manage its behavior. This follows the Open/Closed and Single Responsibility principles, and will make it easier for you to manage how you use caching in your application as it grows.
 
-### ASP.NET Core Response Caching
+### ASP.NET Core response caching
 
 ASP.NET Core supports two levels of response caching. The first level does not cache anything on the server, but adds HTTP headers that instruct clients and proxy servers to cache responses. This is implemented by adding the ResponseCache attribute to individual controllers or actions:
 
@@ -309,12 +309,13 @@ ASP.NET Core supports two levels of response caching. The first level does not c
     [ResponseCache(Duration = 60)]
     public IActionResult Contact()
     { }
-    
+
     ViewData["Message"] = "Your contact page.";
     return View();
 }
+```
 
-The above example will result in the following header being added to the response, instructing clients to cache the result for up to 60 seconds.
+The previous example will result in the following header being added to the response, instructing clients to cache the result for up to 60 seconds.
 
 Cache-Control: public,max-age=60
 
@@ -332,11 +333,11 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](https://docs.microsoft.com/aspnet/core/performance/caching/middleware#conditions-for-caching).
+The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](/aspnet/core/performance/caching/middleware#conditions-for-caching).
 
-### Data Caching
+### Data caching
 
-Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](https://docs.microsoft.com/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
+Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
 
 You add support for memory (or distributed) caching in ConfigureServices:
 
@@ -367,7 +368,7 @@ public class CachedCatalogService : ICatalogService
         _cache = cache;
         _catalogService = catalogService;
     }
-    
+
     public async Task<IEnumerable<SelectListItem>> GetBrands()
     {
         return await _cache.GetOrCreateAsync(_brandsKey, async entry =>
@@ -376,7 +377,7 @@ public class CachedCatalogService : ICatalogService
             return await _catalogService.GetBrands();
         });
     }
-    
+
     public async Task<Catalog> GetCatalogItems(int pageIndex, int itemsPage, int? brandID, int? typeId)
     {
         string cacheKey = String.Format(_itemsKeyTemplate, pageIndex, itemsPage, brandID, typeId);
@@ -386,7 +387,7 @@ public class CachedCatalogService : ICatalogService
             return await _catalogService.GetCatalogItems(pageIndex, itemsPage, brandID, typeId);
         });
     }
-    
+
     public async Task<IEnumerable<SelectListItem>> GetTypes()
     {
         return await _cache.GetOrCreateAsync(_typesKey, async entry =>
@@ -408,7 +409,7 @@ services.AddScoped<CatalogService>();
 
 With this in place, the database calls to fetch the catalog data will only be made once per minute, rather than on every request. Depending on the traffic to the site, this can have a very significant impact on the number of queries made to the database, and the average page load time for the home page that currently depends on all three of the queries exposed by this service.
 
-An issue that arises when caching is implemented is *stale data* – that is, data that has changed at the source but an out of date version remains in the cache. A simple way to mitigate this issue is to use small cache durations, since for a busy application there is limited additional benefit to extending the length data is cached. For example, consider a page that makes a single database query, and is requested 10 times per second. If this page is cached for one minute, it will result in the number of database queries made per minute to drop from 600 to 1, a reduction of 99.8%. If instead the cache duration were made one hour, the overall reduction would be 99.997%, but now the likelihood and potential age of stale data are both increased dramatically.
+An issue that arises when caching is implemented is _stale data_ – that is, data that has changed at the source but an out of date version remains in the cache. A simple way to mitigate this issue is to use small cache durations, since for a busy application there is limited additional benefit to extending the length data is cached. For example, consider a page that makes a single database query, and is requested 10 times per second. If this page is cached for one minute, it will result in the number of database queries made per minute to drop from 600 to 1, a reduction of 99.8%. If instead the cache duration were made one hour, the overall reduction would be 99.997%, but now the likelihood and potential age of stale data are both increased dramatically.
 
 Another approach is to proactively remove cache entries when the data they contain is updated. Any individual entry can be removed if its key is known:
 
@@ -430,6 +431,8 @@ new CancellationChangeToken(cts.Token));
 _cache.Get<CancellationTokenSource>("cts").Cancel();
 ```
 
+Caching can dramatically improve the performance of web pages that repeatedly request the same values from the database. Be sure to measure data access and page performance before applying caching, and only apply caching where you see a need for improvement. Caching consumes web server memory resources and increases the complexity of the application, so it’s important you don’t prematurely optimize using this technique.
+
 >[!div class="step-by-step"]
-[Previous] (develop-asp-net-core-mvc-apps.md)
-[Next] (test-asp-net-core-mvc-apps.md)
+[Previous](develop-asp-net-core-mvc-apps.md)
+[Next](test-asp-net-core-mvc-apps.md)

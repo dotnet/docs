@@ -13,5 +13,5 @@ However, before we get into the application life cycle and DevOps, it is importa
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (common-container-design-principles.md)
+[Previous](index.md)
+[Next](common-container-design-principles.md)

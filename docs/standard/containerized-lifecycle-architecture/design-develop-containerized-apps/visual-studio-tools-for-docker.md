@@ -66,5 +66,5 @@ Deploy an ASP.NET container to a remote Docker host: [https://docs.microsoft.com
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-apps-inner-loop-workflow.md)
-[Next] (set-up-windows-containers-with-powershell.md)
+[Previous](docker-apps-inner-loop-workflow.md)
+[Next](set-up-windows-containers-with-powershell.md)

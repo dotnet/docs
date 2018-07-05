@@ -265,7 +265,7 @@
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|The principal matching these parameters already exists in the collection.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.|  
-|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string|  
+|<xref:System.ArgumentException>|`identityType` is an empty string|  
   
  ]]></format>
         </remarks>
@@ -361,7 +361,7 @@
       <Docs>
         <param name="computer">A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>`true` if the collection contains the specified object; `false` otherwise. </returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -394,7 +394,7 @@
       <Docs>
         <param name="group">A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -429,7 +429,7 @@
       <Docs>
         <param name="principal">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -462,7 +462,7 @@
       <Docs>
         <param name="user">A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</param>
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <returns>`true` if the collection contains the specified object; `false` otherwise.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -497,8 +497,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object of the principal.</param>
         <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <c>identityValue</c></param>
         <param name="identityValue">A string that identifies the principal, in the format specified by <c>identityType</c></param>
-        <summary>Returns true if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="indentityType" />/<paramref name="idendityValue" /> pair is in the collection</summary>
-        <returns>Returns a <see langword="bool" />.</returns>
+        <summary>Returns `true` if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
+        <returns>`true` if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; `false` otherwise. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -917,7 +917,7 @@
 |<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.  In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection.  However, it is possible that another API created the duplicate.|  
-|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string.|  
+|<xref:System.ArgumentException>|`identityType` is an empty string.|  
   
  ]]></format>
         </remarks>

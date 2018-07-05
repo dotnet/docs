@@ -5,7 +5,7 @@ ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio for Mac
 
-F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](installing-fsharp.md#installing-f-with-visual-studio-for-mac).
+F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](install-fsharp.md#install-f-with-visual-studio-for-mac).
 
 ## Creating a console application
 

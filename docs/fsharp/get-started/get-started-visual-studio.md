@@ -7,7 +7,7 @@ ms.date: 07/03/2018
 
 F# and the Visual F# tooling are supported in the Visual Studio IDE.
 
-To begin, ensure that you have [Visual Studio installed with F#](installing-fsharp.md#installing-f-with-visual-studio).
+To begin, ensure that you have [Visual Studio installed with F#](install-fsharp.md#install-f-with-visual-studio).
 
 ## Creating a console application
 

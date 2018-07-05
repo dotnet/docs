@@ -42,6 +42,7 @@
 ### [Subscribing to events](multi-container-microservice-net-applications/subscribe-events.md)
 ### [Testing ASP.NET Core services and web apps](multi-container-microservice-net-applications/test-aspnet-core-services-web-apps.md)
 ### [Implement background tasks in microservices with IHostedService](multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md)
+### [Implementing API Gateways with Ocelot](multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)
 ## [Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](microservice-ddd-cqrs-patterns/index.md)
 ### [Applying simplified CQRS and DDD patterns in a microservice](microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns.md)
 ### [Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers](microservice-ddd-cqrs-patterns/eshoponcontainers-cqrs-ddd-microservice.md)

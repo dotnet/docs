@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 6a2b261e-a1cc-49a6-b4f0-6cacae385a1e
 ---
 # Passing Arrays Using ref and out (C# Programming Guide)
-Like all [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters, an `out` parameter of an array type must be assigned before it is used; that is, it must be assigned by the callee. For example:  
+Like all [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters, an `out` parameter of an array type must be assigned before it is used; that is, it must be assigned by the caller. For example:  
   
  [!code-csharp[csProgGuideArrays#39](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-using-ref-and-out_1.cs)]  
   

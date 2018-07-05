@@ -49,7 +49,7 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 ### [Windows](#tab/windows)
 
-If you're on Windows, you must [install Visual Studio with F# support](installing-fsharp.md#installing-f-with-visual-studio). This installs all the necessary components to write, compile, and execute F# code.
+If you're on Windows, you must [install Visual Studio with F# support](#install-f-with-visual-studio). This installs all the necessary components to write, compile, and execute F# code.
 
 You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
 

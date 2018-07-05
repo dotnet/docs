@@ -1,3 +1,4 @@
+#region everything
 namespace WrapTwoInterfaceEvents
 {
     using System;
@@ -29,6 +30,7 @@ namespace WrapTwoInterfaceEvents
         // Explicit interface implementation required.
         // Associate IDrawingObject's event with
         // PreDrawEvent
+        #region IDrawingObjectOnDraw
         event EventHandler IDrawingObject.OnDraw
         {
             add
@@ -46,6 +48,8 @@ namespace WrapTwoInterfaceEvents
                 }
             }
         }
+        #endregion
+
         // Explicit interface implementation required.
         // Associate IShape's event with
         // PostDrawEvent
@@ -133,3 +137,4 @@ namespace WrapTwoInterfaceEvents
     Drawing a shape.
     Sub2 receives the IShape event.
 */
+#endregion

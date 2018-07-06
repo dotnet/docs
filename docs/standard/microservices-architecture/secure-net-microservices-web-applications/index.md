@@ -37,7 +37,7 @@ services.AddDbContext<ApplicationDbContext>(options =>
 
 Once ASP.NET Core Identity is configured, you enable it by calling app.UseIdentity in the service’s Startup.Configure method.
 
-Using ASP.NET Code Identity enables several scenarios:
+Using ASP.NET Core Identity enables several scenarios:
 
 -   Create new user information using the UserManager type (userManager.CreateAsync).
 

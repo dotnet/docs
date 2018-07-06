@@ -9,21 +9,21 @@ This article covers how you can get started with F# on any operating system (Win
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0 or later](https://www.microsoft.com/net/download/). There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
+To begin, you must install the latest [.NET Core SDK](https://www.microsoft.com/net/download/).
 
-This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#. To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
+This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](get-started-vscode.md) is a great option as a text editor for F#.
 
 ## Build a simple multi-project solution
 
 Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create new solution file called `FSNetCore`:
 
-```
+```console
 dotnet new sln -o FSNetCore
 ```
 
 The following directory structure is produced after running the previous command:
 
-```
+```console
 FSNetCore
     ├── FSNetCore.sln
 ```
@@ -34,13 +34,13 @@ Change directories to *FSNetCore*.
 
 Use the `dotnet new` command, create a class library project in the **src** folder named Library.
 
-```
+```console
 dotnet new lib -lang F# -o src/Library
 ```
 
 The following directory structure is produced after running the previous command:
 
-```
+```console
 └── FSNetCore
     ├── FSNetCore.sln
     └── src
@@ -62,29 +62,29 @@ let getJsonNetJson value =
 
 Add the Newtonsoft.Json NuGet package to the Library project.
 
-```
+```console
 dotnet add src/Library/Library.fsproj package Newtonsoft.Json
 ```
 
 Add the `Library` project to the `FSNetCore` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:
 
-```
+```console
 dotnet sln add src/Library/Library.fsproj
 ```
 
-Restore the NuGet dependencies using the `dotnet restore` command ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
+Run `dotnet build` to build the project. Unresolved dependencies will be restored when building.
 
 ### Write a console application that consumes the class library
 
 Use the `dotnet new` command, create a console application in the **src** folder named App.
 
-```
+```console
 dotnet new console -lang F# -o src/App
 ```
 
 The following directory structure is produced after running the previous command:
 
-```
+```console
 └── FSNetCore
     ├── FSNetCore.sln
     └── src
@@ -115,13 +115,13 @@ let main argv =
 
 Add a reference to the `Library` project using [dotnet add reference](../../core/tools/dotnet-add-reference.md).
 
-```
+```console
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 ```
 
 Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` command:
 
-```
+```console
 dotnet sln add src/App/App.fsproj
 ```
 
@@ -129,19 +129,20 @@ Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-not
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments:
 
-```
+```console
 cd src/App
 dotnet run Hello World
 ```
 
 You should see the following results:
 
-```
+```console
 Nice command-line arguments! Here's what JSON.NET has to say about them:
 
 I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
 I used to be World but now I'm ""World"" thanks to JSON.NET!
 ```
 
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+## Next steps
+
+Next, check out the [Tour of F#](../tour.md) to learn more about different F# features.

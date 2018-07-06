@@ -44,12 +44,12 @@ Equality and inequality are defined for any object type that has identity, such 
 |[= (Equals)](equals-entity-sql.md)|Compares the equality of two expressions.|
 |[> (Greater Than)](greater-than-entity-sql.md)|Compares two expressions to determine whether the left expression has a value greater than the right expression.|
 |[>= (Greater Than or Equal To)](greater-than-or-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression has a value greater than or equal to the right expression.|
-|[IS &#91;NOT&#93; NULL](isnull-entity-sql.md)|Determines if a query expression is null.|
+|[IS \[NOT\] NULL](isnull-entity-sql.md)|Determines if a query expression is null.|
 |[< (Less Than)](less-than-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than the right expression.|
 |[<= (Less Than or Equal To)](less-than-or-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than or equal to the right expression.|
-|[&#91;NOT&#93; BETWEEN](between-entity-sql.md)|Determines whether an expression results in a value in a specified range.|
+|[\[NOT\] BETWEEN](between-entity-sql.md)|Determines whether an expression results in a value in a specified range.|
 |[!= (Not Equal To)](not-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression isn't equal to the right expression.|
-|[&#91;NOT&#93; LIKE](like-entity-sql.md)|Determines whether a specific character string matches a specified pattern.|
+|[\[NOT\] LIKE](like-entity-sql.md)|Determines whether a specific character string matches a specified pattern.|
 
 ## Logical and case expression operators
 
@@ -100,9 +100,9 @@ Entity SQL provides various powerful set operations. This includes set operators
 |--------------|---------|
 |[ANYELEMENT](anyelement-entity-sql.md)|Extracts an element from a multivalued collection.|
 |[EXCEPT](except-entity-sql.md)|Returns a collection of any distinct values from the query expression to the left of the EXCEPT operand that aren't also returned from the query expression to the right of the EXCEPT operand.|
-|[&#91;NOT&#93; EXISTS](exists-entity-sql.md)|Determines if a collection is empty.|
+|[\[NOT\] EXISTS](exists-entity-sql.md)|Determines if a collection is empty.|
 |[FLATTEN](flatten-entity-sql.md)|Converts a collection of collections into a flattened collection.|
-|[&#91;NOT&#93; IN](in-entity-sql.md)|Determines whether a value matches any value in a collection.|
+|[\[NOT\] IN](in-entity-sql.md)|Determines whether a value matches any value in a collection.|
 |[INTERSECT](intersect-entity-sql.md)|Returns a collection of any distinct values that are returned by both the query expressions on the left and right sides of the INTERSECT operand.|
 |[OVERLAPS](overlaps-entity-sql.md)|Determines whether two collections have common elements.|
 |[SET](set-entity-sql.md)|Used to convert a collection of objects into a set by yielding a new collection with all duplicate elements removed.|
@@ -116,7 +116,7 @@ Entity SQL provides operations that allow the type of an expression (value) to b
 |--------------|---------|
 |[CAST](cast-entity-sql.md)|Converts an expression of one data type to another.|
 |[COLLECTION](collection-entity-sql.md)|Used in a [FUNCTION](function-entity-sql.md) operation to declare a collection of entity types or complex types.|
-|[IS &#91;NOT&#93; OF](isof-entity-sql.md)|Determines whether the type of an expression is of the specified type or one of its subtypes.|
+|[IS \[NOT\] OF](isof-entity-sql.md)|Determines whether the type of an expression is of the specified type or one of its subtypes.|
 |[OFTYPE](oftype-entity-sql.md)|Returns a collection of objects from a query expression that is of a specific type.|
 |[Named Type Constructor](named-type-constructor-entity-sql.md)|Used to create instances of entity types or complex types.|
 |[MULTISET](multiset-entity-sql.md)|Creates an instance of a multiset from a list of values.|

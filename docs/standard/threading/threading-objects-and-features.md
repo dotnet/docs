@@ -19,7 +19,7 @@ The .NET Framework provides a number of objects that help you create and manage 
  Explains the **ThreadPool** class, which enables you to request a thread to execute a task without having to do any thread management yourself.  
   
  [Timers](../../../docs/standard/threading/timers.md)  
- Explains how to use a **Timer** to specify a delegate to be called at a specified time.  
+ Describes timers that can be used in a multithreaded environment.  
   
  [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
  Explains how to use the **Monitor** class to synchronize access to a member or to build your own thread management types.  

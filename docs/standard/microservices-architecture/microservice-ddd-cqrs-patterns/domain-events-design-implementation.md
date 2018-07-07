@@ -179,7 +179,7 @@ public class OrderingContext : DbContext, IUnitOfWork
         await _mediator.DispatchDomainEventsAsync(this);
 
         // After this line runs, all the changes (from the Command Handler and Domain
-        // event handlers) performed through the DbContext will be commited
+        // event handlers) performed through the DbContext will be committed
         var result = await base.SaveChangesAsync();
     }
 }

@@ -110,19 +110,18 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The parser:</summary>
+        <summary><format type="text/markdown"><![CDATA[  
+  
+The parser:
+  
+- Requires an authority.
+- Converts back slashes into forward slashes.
+- Unescapes path dots, forward slashes, and back slashes.
+- Removes trailing dots, empty segments, and dots-only segments.
+  
+ ]]></format></summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
--   requires an authority  
-  
--   converts back slashes into forward slashes  
-  
--   unescapes path dots, forward slashes, and back slashes  
-  
- ]]></format>
+          
         </remarks>
       </Docs>
     </Member>

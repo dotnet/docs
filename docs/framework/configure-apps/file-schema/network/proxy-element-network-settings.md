@@ -61,7 +61,7 @@ Defines a proxy server.
   
  The value for the `proxyaddress` attribute should be a well-formed Uniform Resource Indicator (URI).  
   
- The `scriptLocation` attribute refers to the automatic detection of proxy configuration scripts. The <xref:System.Net.WebProxy> class will attempt to locate a configuration script (usually named Wpad.dat) when the **Use automatic configuration script** option is selected in Internet Explorer.  
+ The `scriptLocation` attribute refers to the automatic detection of proxy configuration scripts. The <xref:System.Net.WebProxy> class will attempt to locate a configuration script (usually named Wpad.dat) when the **Use automatic configuration script** option is selected in Internet Explorer. If `bypassonlocal` is set to any value, `scriptLocation` will be ignored; do not use the `bypassonlocal` attribute **at all** if you want to use `scriptLocation`.
   
  Use the `usesystemdefault` attribute for .NET Framework version 1.1 applications that are migrating to version 2.0.  
   

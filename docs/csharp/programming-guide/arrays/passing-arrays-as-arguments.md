@@ -24,7 +24,7 @@ Arrays can be passed as arguments to method parameters. Because arrays are refer
 ## Example  
   
 ### Description  
- In the following example, an array of strings is initialized and passed as an argument to a `PrintArray` method for strings. The method displays the elements of the array. Next, the `ChangeArray` method is called to reverse the array elements, and then the `ChangeArrayElement` method is called to modify the first three elements of the array. After each method returns, the `PrintArray` method is called to show that passing an array by value does not prevent changes to the array elements.  
+ In the following example, an array of strings is initialized and passed as an argument to a `DisplayArray` method for strings. The method displays the elements of the array. Next, the `ChangeArray` method is called to reverse the array elements, and then the `ChangeArrayElements` method is called to modify the first three elements of the array. After each method returns, the `PrintArray` method is called to show that passing an array by value does not prevent changes to the array elements.  
   
 ### Code  
  [!code-csharp[csProgGuideArrays#30](codesnippet/CSharp/passing-arrays-as-arguments_4.cs)]  

@@ -1135,6 +1135,7 @@
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
+### [Iris clustering](machine-learning/tutorials/iris-clustering.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning basics](machine-learning/resources/basics.md)

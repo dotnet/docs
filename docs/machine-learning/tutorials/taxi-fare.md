@@ -291,6 +291,6 @@ In this tutorial, you learned how to:
 > * Evaluate the model
 > * Use the model for predictions
 
-Check out our GitHub repository to continue learning and find more samples.
+Advance to the next tutorial to learn more.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/)
+> [Iris clustering](iris-clustering.md)

@@ -675,13 +675,11 @@ Environment variable names are case-sensitive on Linux and macOS but are not cas
  
 ### On Windows systems
 
- On Windows systems, the environment block of the current process includes the following environment variables:  
-  
-- All per-machine environment variables that are defined at the time the process is created, along with their values.  
-  
-- All per-user environment variables that are defined at the time the process is created, along with their values.  
+ On Windows systems, the environment block of the current process includes:
+ 
+- All environment variables that are provided to it by the parent process that created it. For example, a .NET application launched from a console window inherits all of the console window's environment variables. 
 
-- All environment variables that are provided to it by the parent process that created it. For example, if a .NET application is launched from a Console window, it inherits all of the Console window's environment variables.
+  If there is no parent process, per-machine and per-user environment variables are used instead. For example, a new console window has all per-machine and per-user environment variables defined at the time it was launched.
 
 - Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. These environment variables persist until the .NET application terminates.  
   

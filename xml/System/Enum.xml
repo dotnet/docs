@@ -2886,7 +2886,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+ The `format` parameter can be one of the following format strings: "G" or "g", "D" or "d", "X" or "x", and "F" or "f" (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -2967,7 +2967,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+ The `format` parameter can be one of the following format strings: "G" or "g", "D" or "d", "X" or "x", and "F" or "f" (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  Specify only `format`; the `provider` parameter is obsolete.  
   

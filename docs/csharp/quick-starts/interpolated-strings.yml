@@ -18,7 +18,7 @@ items:
 - title: Create an interpolated string
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the code in the interactive window (replace `\<name>` with your name) and select **Run**:
+    Run the following code in the interactive window. To do that, type the code in the interactive window (replace `<name>` with your name) and select **Run**:
 
     ```csharp
     var name = "<name>";

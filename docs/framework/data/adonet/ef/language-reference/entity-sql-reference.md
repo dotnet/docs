@@ -48,7 +48,7 @@ Equality and inequality are defined for any object type that has identity, such 
 |[< (Less Than)](less-than-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than the right expression.|
 |[<= (Less Than or Equal To)](less-than-or-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression has a value less than or equal to the right expression.|
 |[\[NOT\] BETWEEN](between-entity-sql.md)|Determines whether an expression results in a value in a specified range.|
-|[!= (Not Equal To)](not-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression isn't equal to the right expression.|
+|[\!= (Not Equal To)](not-equal-to-entity-sql.md)|Compares two expressions to determine whether the left expression isn't equal to the right expression.|
 |[\[NOT\] LIKE](like-entity-sql.md)|Determines whether a specific character string matches a specified pattern.|
 
 ## Logical and case expression operators
@@ -58,7 +58,7 @@ Logical operators test for the truth of a condition. The CASE expression evaluat
 |Operator|Description|
 |--------------|-----------------|
 |[&& (Logical AND)](and-entity-sql.md)|Logical AND.|
-|[! (Logical NOT)](not-entity-sql.md)|Logical NOT.|
+|[\! (Logical NOT)](not-entity-sql.md)|Logical NOT.|
 |[&#124;&#124; (Logical OR)](or-entity-sql.md)|Logical OR.|
 |[CASE](case-entity-sql.md)|Evaluates a set of Boolean expressions to determine the result.|
 |[THEN](then-entity-sql.md)|The result of a [WHEN](http://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|

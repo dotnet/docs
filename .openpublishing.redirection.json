@@ -619,6 +619,10 @@
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
         },
         {
+            "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
+            "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
+        },
+        {
             "source_path": "docs/framework/wcf/extending/extending-wcf.md",
             "redirect_url": "/dotnet/framework/wcf/extending/index",
             "redirect_document_id": true
@@ -1329,6 +1333,11 @@
         {
             "source_path":"docs/visual-basic/programming-guide/concepts/threading/thread-timers.md",
             "redirect_url":"/dotnet/standard/threading/timers"
+        },
+        {
+            "source_path":"docs/fsharp/language-reference/primitive-types.md",
+            "redirect_url":"/dotnet/fsharp/language-reference/basic-types",
+            "redirect_document_id": true
         }
     ]
 }

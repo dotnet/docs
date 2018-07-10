@@ -8,7 +8,7 @@ ms.date: 06/28/2018
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
-![cover image](./media/cover.jpg)
+![cover image](./media/cover.png)
 
 PUBLISHED BY
 

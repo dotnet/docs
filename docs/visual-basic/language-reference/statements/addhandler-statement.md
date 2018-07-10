@@ -19,11 +19,11 @@ AddHandler event, AddressOf eventhandler
 ```  
   
 ## Parts  
- `event`  
- The name of the event to handle.  
-  
- `eventhandler`  
- The name of a procedure that handles the event.  
+|||
+|---|---|
+|event|The name of the event to handle.|  
+|`eventhandler`|The name of a procedure that handles the event.|
+|||
   
 ## Remarks  
  The `AddHandler` and `RemoveHandler` statements allow you to start and stop event handling at any time during program execution.  

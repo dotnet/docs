@@ -22,14 +22,14 @@ The Event-based Asynchronous Pattern provides you with an effective way to expos
  If you implement the Event-based Asynchronous Pattern, you must provide a number of guarantees to ensure that your class will behave properly and clients of your class can rely on such behavior.  
   
 ### Completion  
- Always invoke the *MethodName***Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
+ Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
   
 ### Completed Event and EventArgs  
- For each separate *MethodName***Async** method, apply the following design requirements:  
+ For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  
   
--   Define a *MethodName***Completed** event on the same class as the method.  
+-   Define a <em>MethodName</em>**Completed** event on the same class as the method.  
   
--   Define an <xref:System.EventArgs> class and accompanying delegate for the *MethodName***Completed** event that derives from the <xref:System.ComponentModel.AsyncCompletedEventArgs> class. The default class name should be of the form *MethodName***CompletedEventArgs**.  
+-   Define an <xref:System.EventArgs> class and accompanying delegate for the <em>MethodName</em>**Completed** event that derives from the <xref:System.ComponentModel.AsyncCompletedEventArgs> class. The default class name should be of the form *MethodName***CompletedEventArgs**.  
   
 -   Ensure that the <xref:System.EventArgs> class is specific to the return values of the *MethodName* method. When you use the <xref:System.EventArgs> class, you should never require developers to cast the result.  
   

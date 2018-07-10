@@ -78,6 +78,17 @@ Latest versions of each variant:
 
 * This .NET Core Docker sample demonstrates a best practice pattern for [building Docker images for .NET Core apps for production.](https://github.com/dotnet/dotnet-docker/tree/master/samples/dotnetapp)
 
+## Forward the request scheme and original IP address
+
+Proxy servers, load balancers, and other network appliances often obscure information about a request before it reaches the containerized app:
+
+* When HTTPS requests are proxied over HTTP, the original scheme (HTTPS) is lost and must be forwarded in a header.
+* Because an app receives a request from the proxy and not its true source on the Internet or corporate network, the original client IP address must also be forwarded in a header.
+
+This information may be important in request processing, for example in redirects, authentication, link generation, policy evaluation, and client geolocation.
+
+To forward the scheme and original IP address to a containerized ASP.NET Core app, use Forwarded Headers Middleware. For more information, see [Configure ASP.NET Core to work with proxy servers and load balancers](/aspnet/core/host-and-deploy/proxy-load-balancer).
+
 ## Your first ASP.NET Core Docker app
 
 For this tutorial, lets use an ASP.NET Core Docker sample application for the app we want to dockerize. This ASP.NET Core Docker sample application demonstrates a best practice pattern for building Docker images for ASP.NET Core apps for production. The sample works with both Linux and Windows containers.
@@ -252,7 +263,6 @@ Congratulations! you have just:
 > * Ran the ASP.NET sample app locally
 > * Built and ran the sample with Docker for Linux containers
 > * Built and ran the sample with Docker for Windows containers
-
 
 **Next Steps**
 

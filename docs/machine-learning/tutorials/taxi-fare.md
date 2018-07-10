@@ -3,7 +3,7 @@ title: Use ML.NET to predict New York taxi fares (regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
 ms.author: johalex
-ms.date: 06/18/2018
+ms.date: 07/02/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -11,7 +11,7 @@ ms.custom: mvc
 # Tutorial: Use ML.NET to predict New York taxi fares (regression)
 
 > [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting New York City taxi fares.
 
@@ -33,21 +33,21 @@ In this tutorial, you learn how to:
 
 ## Understand the problem
 
-This problem is centered around **predicting the fare of a taxi trip in New York City**. At first glance, it may seem to depend simply on the distance traveled. However, taxi vendors in New York charge varying amounts for other factors such as additional passengers or paying with a credit card instead of cash.
+This problem is about predicting the fare of a taxi trip in New York City. At first glance, it may seem to depend simply on the distance traveled. However, taxi vendors in New York charge varying amounts for other factors such as additional passengers or paying with a credit card instead of cash.
 
 ## Select the appropriate machine learning task
 
-To predict the taxi fare, you first select the appropriate machine learning task. You are looking to predict a real value (a double that represents price) based on the other factors in the dataset. You choose a [**regression**](../resources/glossary.md#regression) task.
+You want to predict the price value, which is a real value, based on the other factors in the data set. To do that you choose a [regression](../resources/glossary.md#regression) machine learning task.
 
 ## Create a console application
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "TaxiFarePrediction" and then select the **OK** button.
 
-2. Create a directory named *Data* in your project to save the data set files:
+1. Create a directory named *Data* in your project to store the data set and model files:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-3. Install the **Microsoft.ML NuGet Package**:
+1. Install the **Microsoft.ML** NuGet Package:
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
@@ -55,9 +55,9 @@ To predict the taxi fare, you first select the appropriate machine learning task
 
 1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) and the [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv) data sets and save them to the *Data* folder you've created at the previous step. We use these data sets to train the machine learning model and then evaluate how accurate the model is. These data sets are originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
 
-2. In **Solution Explorer**, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Always**.
+1. In **Solution Explorer**, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-3. Open the **taxi-fare-train.csv** data set and look at column headers in the first row. Take a look at each of the columns. Understand the data and decide which columns are **features** and which one is the **label**.
+1. Open the **taxi-fare-train.csv** data set and look at column headers in the first row. Take a look at each of the columns. Understand the data and decide which columns are **features** and which one is the **label**.
 
 The **label** is the identifier of the column you want to predict. The identified **features** are used to predict the label.
 
@@ -87,7 +87,10 @@ Remove the existing class definition and add the following code, which has two c
 
 `TaxiTrip` is the input data class and has definitions for each of the data set columns. Use the [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) attribute to specify the indices of the source columns in the data set.
 
-The `TaxiTripFarePrediction` class is used to represent predicted results. It has a single float (`FareAmount`) field with a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied. The **Score** column is the special column in ML.NET. The model outputs predicted values into that column.
+The `TaxiTripFarePrediction` class represents predicted results. It has a single float field, `FareAmount`, with a `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute applied. In case of the regression task the **Score** column contains predicted label values.
+
+> [!NOTE]
+> Use the `float` type to represent floating-point values in the input and prediction data classes.
 
 ## Define data and model paths
 
@@ -111,7 +114,7 @@ Add the following additional `using` directives to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
-In `Main`, replace the `Console.WriteLine("Hello World!")` with the following code:
+In the `Main` method, replace the `Console.WriteLine("Hello World!")` with the following code:
 
 ```csharp
 PredictionModel<TaxiTrip, TaxiTripFarePrediction> model = Train();
@@ -134,7 +137,7 @@ var pipeline = new LearningPipeline();
 
 ## Load and transform data
 
-The first step that the learning pipeline performs is loading data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` field. That file contains the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
+The first step to perform is to load data from the training data set. In our case, training data set is stored in the text file with a path defined by the `_datapath` field. That file has the header with the column names, so the first row should be ignored while loading data. Columns in the file are separated by the comma (","). Add the following code into the `Train` method:
 
 ```csharp
 pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, separator: ','));
@@ -142,7 +145,7 @@ pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, sep
 
 In the next steps we refer to the columns by the names defined in the `TaxiTrip` class.
 
-When the model is trained and evaluated, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.ColumnCopier> and add the following code:
+When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the taxi trip fare, copy the `FareAmount` column into the **Label** column. To do that, use <xref:Microsoft.ML.Transforms.ColumnCopier> and add the following code:
 
 ```csharp
 pipeline.Add(new ColumnCopier(("FareAmount", "Label")));
@@ -156,7 +159,7 @@ pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
                                              "PaymentType"));
 ```
 
-The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. This step is necessary as a learner processes only features from the **Features** column. Add the following code:
+The last step in data preparation combines all of the feature columns into the **Features** column using the <xref:Microsoft.ML.Transforms.ColumnConcatenator> transformation class. By default, a learning algorithm processes only features from the **Features** column. Add the following code:
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",
@@ -174,7 +177,7 @@ Notice that the `TripTime` column, which corresponds to the `trip_time_in_secs` 
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. You chose a **regression task** for this problem, so you add a <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner, which is one of the regression learners provided by ML.NET.
+After adding the data to the pipeline and transforming it into the correct input format, you select a learning algorithm (**learner**). The learner trains the model. You chose a **regression** task for this problem, so you use a <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner, which is one of the regression learners provided by ML.NET.
 
 <xref:Microsoft.ML.Trainers.FastTreeRegressor> learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 
@@ -198,7 +201,7 @@ And that's it! You have successfully trained a machine learning model that can p
 
 ### Save the model
 
-Before you go onto the next step, save the model to a .zip file by adding the following code at the end of the `Train` method:
+At this point, you have a model that can be integrated into any of your existing or new .NET applications. To save the model to a .zip file, add the following code at the end of the `Train` method:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#5 "Save the model asynchronously and return the model")]
 
@@ -222,7 +225,7 @@ Because the `async Main` method is the feature added in C# 7.1 and the default l
 
 ## Evaluate the model
 
-Evaluation is the process of checking how well the model predicts label values. It's important that the model makes good predictions on data that was not used to train the model. One way to do this is to split the data into train and test data sets, as it's done in this tutorial. Now that you've trained the model on the train data, you can see how well it performs on the test data.
+Evaluation is the process of checking how well the model predicts label values. It's important that the model makes good predictions on data that was not used to train the model. One way to do this is to split the data into training and test data sets, as it's done in this tutorial. Now that you've trained the model on the training data, you can see how well it performs on the test data.
 
 Go back to the `Main` method and add the following code beneath the call to the `Train`method:
 
@@ -255,7 +258,7 @@ Add the following code to evaluate the model and produce the evaluation metrics:
 
 ## Use the model for predictions
 
-Next, create a class to house test scenarios that you can use to make sure the model is working correctly:
+Create a class to house test data instances:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TestTrips.cs*. Then, select the **Add** button.
@@ -275,7 +278,7 @@ To predict the fare of the specified trip, go back to the *Program.cs* file and 
 
 Run the program to see the predicted taxi fare for your test case.
 
-Congratulations! You've now successfully built a machine learning model for predicting taxi trip fares, evaluated its accuracy, and used it to make predictions. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) repository.
+Congratulations! You've now successfully built a machine learning model for predicting taxi trip fares, evaluated its accuracy, and used it to make predictions. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) GitHub repository.
 
 ## Next steps
 

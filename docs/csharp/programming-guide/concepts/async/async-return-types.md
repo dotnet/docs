@@ -43,7 +43,7 @@ In the following example, the `WaitAndApologize` async method doesn't contain a 
   
 `WaitAndApologize` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value.  
   
-As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `Task_MethodAsync` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.  
+As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `WaitAndApologize` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.  
   
 The following code separates calling the `WaitAndApologize` method from awaiting the task that the method returns.  
  

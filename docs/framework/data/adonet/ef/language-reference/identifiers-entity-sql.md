@@ -10,7 +10,7 @@ Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 
  A simple identifier in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is a sequence of alphanumeric and underscore characters. The first character of the identifier must be an alphabetical character (a-z or A-Z).  
   
 ## Quoted Identifiers  
- A quoted identifier is any sequence of characters enclosed in square brackets ([]). Quoted identifiers let you specify identifiers with characters that are not valid in identifiers. All characters between the square brackets become part of the identifier, including all whitespace.  
+ A quoted identifier is any sequence of characters enclosed in square brackets ([]). Quoted identifiers let you specify identifiers with characters that are not valid in identifiers. All characters between the square brackets become part of the identifier, including all white space.  
   
  A quoted identifier cannot include the following characters:  
   

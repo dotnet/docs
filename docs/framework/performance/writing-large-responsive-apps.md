@@ -190,7 +190,7 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 // etc...  
 ```  
   
- The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-whitespace character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
+ The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-white-space character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
   
  **Example 4: StringBuilder**  
   

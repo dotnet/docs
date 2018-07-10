@@ -40,7 +40,8 @@ End Module
     End Sub  
     ```  
   
-## See Also  
- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)  
- [How to: Use Expression Trees to Build Dynamic Queries](http://msdn.microsoft.com/library/1e37e0cc-eef3-48bb-8b69-3adabf322735)
+## See also
+
+[Anonymous Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+[Expression Trees (Visual Basic)](../../programming-guide/concepts/expression-trees/index.md)  
+[How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)](../../programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)  

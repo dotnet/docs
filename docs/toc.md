@@ -354,7 +354,7 @@
 ### [Literals](fsharp/language-reference/literals.md)
 ### [F# Types](fsharp/language-reference/fsharp-types.md)
 ### [Type Inference](fsharp/language-reference/type-inference.md)
-### [Primitive Types](fsharp/language-reference/primitive-types.md)
+### [Basic Types](fsharp/language-reference/basic-types.md)
 ### [Unit Type](fsharp/language-reference/unit-type.md)
 ### [Strings](fsharp/language-reference/strings.md)
 ### [Tuples](fsharp/language-reference/tuples.md)

@@ -110,7 +110,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `returntype`  
   
-     Required if `Option``Strict` is `On`. Data type of the value returned by this property.  
+     Required if `Option Strict` is `On`. Data type of the value returned by this property.  
   
 -   `Implements`  
   

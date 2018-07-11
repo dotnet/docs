@@ -46,7 +46,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 -   For BasicHttpBinding, envelope headers are logged for the incoming messages in the /addressing/none namespace.  
   
--   Whitespaces can be mismatched.  
+-   White spaces can be mismatched.  
   
 -   For incoming messages, empty elements can be represented differently. For example, \<tag>\</tag> instead of  \<tag/>  
   

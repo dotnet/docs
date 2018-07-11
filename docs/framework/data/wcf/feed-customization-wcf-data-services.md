@@ -77,7 +77,7 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ## Feed Customization Considerations  
  You should consider the following when defining custom feed mappings.  
   
--   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only whitespace. Because of this, mapped elements that contain only whitespace are not materialized on the client with the same whitespace. To preserve this whitespace on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
+-   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
   
 ## Versioning Requirements  
  Feed customization has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:  

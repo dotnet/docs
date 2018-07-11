@@ -395,7 +395,7 @@ Content-Length: 0
   
 2.  Create an empty MIME package.  
   
-3.  Identify within the Original XML Infoset the element information items to be optimized. For the items to be optimized, the characters that make up the `[children]` of the element information item must be in the canonical form of `xs:base64Binary` (see XSD-2, 3.2.16 base64Binary) and must not contain any whitespace characters preceding, inline with, or following the non-whitespace content.  
+3.  Identify within the Original XML Infoset the element information items to be optimized. For the items to be optimized, the characters that make up the `[children]` of the element information item must be in the canonical form of `xs:base64Binary` (see XSD-2, 3.2.16 base64Binary) and must not contain any white-space characters preceding, inline with, or following the non-white-space content.  
   
 4.  Create an XOP SOAP Envelope that is a copy of the Original SOAP Envelope, but with the children of each element information item identified in the previous step replaced by an `xop:Include` element information item constructed as follows:  
   

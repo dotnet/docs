@@ -14,6 +14,7 @@ Channel listeners are responsible for creating channels and receiving messages f
 The following diagram illustrates the process of receiving messages and delivering them to the layer above.
 
 ![Channel listeners and channels](./media/wcfc-wcfchannelsigure1highlevelc.gif "wcfc_WCFChannelsigure1HighLevelc")
+
 A channel listener receiving messages and delivering to the layer above through channels.
 
 The process can be conceptually modeled as a queue inside each channel although the implementation may not actually use a queue. The channel listener is responsible for receiving messages from the layer below or the network and putting them in the queue. The channel is responsible for getting messages from the queue and handing them to the layer above when that layer asks for a message, for example by calling `Receive` on the channel.

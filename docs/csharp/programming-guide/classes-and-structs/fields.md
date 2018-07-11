@@ -35,7 +35,7 @@ A *field* is a variable of any type that is declared directly in a [class](../..
   
  A field can optionally be declared [static](../../../csharp/language-reference/keywords/static.md). This makes the field available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
   
- A field can be declared [readonly](../../../csharp/language-reference/keywords/readonly.md). A read-only field can only be assigned a value during initialization or in a constructor. A `static``readonly` field is very similar to a constant, except that the C# compiler does not have access to the value of a static read-only field at compile time, only at run time. For more information, see [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md).  
+ A field can be declared [readonly](../../../csharp/language-reference/keywords/readonly.md). A read-only field can only be assigned a value during initialization or in a constructor. A `static readonly` field is very similar to a constant, except that the C# compiler does not have access to the value of a static read-only field at compile time, only at run time. For more information, see [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

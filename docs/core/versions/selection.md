@@ -47,7 +47,7 @@ The process for selecting an SDK version is:
 1. `dotnet` uses the SDK specified in the first *global.json* found.
 1. `dotnet` uses the latest installed SDK if no *global.json* is found.
 
-You can learn more about selecting an SDK version in the [matching rules](../tools/global-json.md) section of the topic on *global.json*.
+You can learn more about selecting an SDK version in the [Matching rules](../tools/global-json.md#matching-rules) section of the topic on *global.json*.
 
 ## Target Framework Monikers define build time APIs
 

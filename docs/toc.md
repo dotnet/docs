@@ -321,11 +321,6 @@
 ### Asynchronous and Concurrent Programming
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 
-<!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->
-### [Visual F# Development Environment Features](fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
-### [Configuring Projects](fsharp/using-fsharp-in-visual-studio/configuring-projects.md)
-### [Targeting Older Versions of .NET](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
-
 ## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
 ### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
 ### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)

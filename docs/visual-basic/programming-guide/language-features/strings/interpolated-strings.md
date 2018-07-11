@@ -32,7 +32,7 @@ where:
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) such as "D" or "d".
 
 > [!IMPORTANT]
-> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compiler error.
+> You cannot have any white space between the `$` and the `"` that starts the string. Doing so causes a compiler error.
 
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   

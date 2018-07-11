@@ -34,7 +34,7 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
 ## Mapping Between JSON and the XML Infoset  
  Formally, the mapping is between JSON as described in [RFC 4627](http://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](http://go.microsoft.com/fwlink/?LinkId=98809) . See this topic for the definitions of *information items* and fields in [square brackets].  
   
- A blank JSON document maps to blank XML document, and a blank XML document maps to a blank JSON document. On the XML to JSON mapping, preceding white space and trailing white space after the document are not allowed.  
+ A blank JSON document maps to a blank XML document, and a blank XML document maps to a blank JSON document. On the XML to JSON mapping, preceding white space and trailing white space after the document are not allowed.  
   
  The mapping is defined between either a Document Information Item (DII) or an Element Information Item (EII) and JSON. The EII, or the DII’s [document element] property, is referred to as the Root JSON Element. Note that document fragments (XML with multiple root elements) are not supported in this mapping.  
   

@@ -666,21 +666,34 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
+
+The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. 
+
+To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
   
--   All per-machine environment variables that are defined at the time the process is created, along with their values.  
+Environment variable names are case-sensitive on Linux and macOS but are not case-sensitive on Windows.  
+ 
+### On Windows systems
+
+ On Windows systems, the environment block of the current process includes:
+ 
+- All environment variables that are provided to it by the parent process that created it. For example, a .NET application launched from a console window inherits all of the console window's environment variables. 
+
+  If there is no parent process, per-machine and per-user environment variables are used instead. For example, a new console window has all per-machine and per-user environment variables defined at the time it was launched.
+
+- Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. These environment variables persist until the .NET application terminates.  
   
--   All per-user environment variables that are defined at the time the process is created, along with their values.  
-  
--   Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
-  
- If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
-  
- To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
-  
- Environment variable names are not case-sensitive.  
-  
-   
+If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
+
+### On macOS and Linux systems
+
+On macOS and Linux, the environment block of the current proccess includes the following environment variables:
+
+- All environment variables that are provided to it by the parent process that created it. For .NET applications launched from a shell, this includes all environment variables defined in the shell.
+
+- Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. These environment variables persist until the .NET application terminates.  
+
+.NET Core on macOS and Linux does not support per-machine or per-user environment variables.   
   
 ## Examples  
  The following example uses the <xref:System.Environment.GetEnvironmentVariable%2A> method to retrieve the `windir` environment variable, which contains the path of the Windows directory.  
@@ -743,14 +756,25 @@ goto :EOF
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The `target` parameter specifies whether the environment variable is retrieved from the current process or from the Windows operating system registry key for the current user or local machine. All per-user and per-machine environment variables are automatically copied into the environment block of the current process. However, environment variables added only to the environment block of the current process  persist only for the duration of the process.  
+## Remarks 
+
+To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
   
- To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
+Environment variable names are case-sensitive on Linux and macOS but are not case-sensitive on Windows. 
+
+### On Windows systems
+
+On Windows, the `target` parameter specifies whether the environment variable is retrieved from the current process or from the Windows operating system registry key for the current user or local machine. All per-user and per-machine environment variables are automatically copied into the environment block of the current process, as are any other environment variables that are available to the parent process that created the .NET process. However, environment variables added only to the environment block of the current process by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> persist only for the duration of the process.  
   
- Environment variable names are not case-sensitive.  
-  
-   
+### On macOS and Linux systems
+
+On macOS and Linux, the `GetEnvironmentVariable(String, EnvironmentVariableTarget)` method supports a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithtype> only. Calls with a `target` value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithtype> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithtype> are not supported and return `null`. 
+
+Per-process environment variables are:
+
+- Those inherited from the parent process, typically the shell used to invoke `dotnet.exe` or to launch the .NET application.
+
+- Those defined by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. These environment variables persist only until the `dotnet` process or the .NET application terminates.   
   
 ## Examples  
  The following example creates environment variables for the Process, User, and Machine targets, checks whether the operating system registry contains the User and Machine environment variables, then deletes the environment variables.  
@@ -826,7 +850,21 @@ goto :EOF
 ## Remarks  
  The names and values for the environment variables are stored as key-value pairs in the returned <xref:System.Collections.IDictionary>.  
   
-   
+### On Windows systems
+
+On Windows systems, the `GetEnvironmentVariables` method returns the following environment variabless:
+  
+- All per-machine environment variables that are defined at the time the process is created, along with their values.  
+  
+- All per-user environment variables that are defined at the time the process is created, along with their values.  
+
+- Any variables inherited from the parent process from which the .NET application was launched or added to the process block while the process is running. Environment variables are added while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
+
+### On macOS and Linux systems
+
+On MacOS and Linux, the `GetEnvironmentVariables` method retrieves the name and value of all environment variables that are inherited from the parent process that launched the `dotnet` process or that are defined within the scope of the `dotnet` process itself. Once the `dotnet` process ends, these latter environment variables cease to exist. 
+
+.NET Core does not support per-machine or per-user environment variables.   
   
 ## Examples  
  The following example demonstrates the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
@@ -880,11 +918,18 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `target` parameter specifies whether the source is the current process, the registry key for the current user, or the registry key for the local machine.  
-  
- The names and values of the environment variables are stored as key/value pairs in the returned <xref:System.Collections.IDictionary> object.  
-  
-   
+
+The names and values of the environment variables are stored as key/value pairs in the returned <xref:System.Collections.IDictionary> object.  
+
+### On Windows systems
+
+On Windows systems, the `target` parameter specifies whether the source is the current process, the registry key for the current user, or the registry key for the local machine.  
+
+### On macOS and Linux systems
+
+On macOS and Linux, only a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> is supported. Per-process environment variables are inherited from the parent process (typically the shell) used to launch the `dotnet` process or are defined within the scope of the `dotnet` process itself. Once the dotnet process ends, these latter environment variables cease to exist.  
+
+Per-machine and per-user environment variables are not supported. A `target` value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> returns an empty array.
   
 ## Examples  
  The following example creates environment variables for the Process, User, and Machine targets, checks whether the operating system registry contains the User and Machine environment variables, then deletes the environment variables.  
@@ -1569,9 +1614,14 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
+
+The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Environment variables that are unique to the current process environment block persist only until the process ends.
+
+In addition, on Windows systems only, the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) and to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value). Per-machine and per-user environment variables are copied into the environment block of the current process.  
+ 
+On .NET Core on maxOS and Linux systems, calls to the  <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value) or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> are ignored. 
   
- If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
+ If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` argument does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
   
  If `variable` contains a non-initial hexadecimal zero character, the characters before the zero character are considered the environment variable name and all subsequent characters are ignored.  
   
@@ -1586,16 +1636,16 @@ goto :EOF
 -   It consists of a single character whose value is U+0000.  
   
  If `variable` does not exist, no error occurs although the operation cannot be performed. Be careful when `target` is <xref:System.EnvironmentVariableTarget.Machine>, because you can accidentally delete an environment variable that affects your entire local machine, not just the current process or user.  
-  
- If `target` is <xref:System.EnvironmentVariableTarget.User>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
+
+### EnvironmentVariableTarget.Machine and EnvironmentVariableTarget.User on Windows systems
+
+If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
   
  Similarly, if `target` is <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User> or <xref:System.EnvironmentVariableTarget.Machine>, other applications are notified of the set operation by a Windows `WM_SETTINGCHANGE` message.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
-  
-   
   
 ## Examples  
  The following example creates environment variables for the <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  

@@ -184,7 +184,7 @@ ms.author: "ronpet"
   
  Because a word boundary is not the same as, or a subset of, a word character, there is no possibility that the regular expression engine will cross a word boundary when matching word characters. This means that for this regular expression, backtracking can never contribute to the overall success of any match -- it can only degrade performance, because the regular expression engine is forced to save its state for each successful preliminary match of a word character.  
   
- If you determine that backtracking is not necessary, you can disable it by using the `(?>``subexpression``)` language element. The following example parses an input string by using two regular expressions. The first, `\b\p{Lu}\w*\b`, relies on backtracking. The second, `\b\p{Lu}(?>\w*)\b`, disables backtracking. As the output from the example shows, they both produce the same result.  
+ If you determine that backtracking is not necessary, you can disable it by using the `(?>subexpression)` language element. The following example parses an input string by using two regular expressions. The first, `\b\p{Lu}\w*\b`, relies on backtracking. The second, `\b\p{Lu}(?>\w*)\b`, disables backtracking. As the output from the example shows, they both produce the same result.  
   
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack2.cs#10)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack2.vb#10)]  
@@ -266,20 +266,20 @@ ms.author: "ronpet"
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/group1.cs#8)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/group1.vb#8)]  
   
- When you use subexpressions only to apply quantifiers to them, and you are not interested in the captured text, you should disable group captures. For example, the `(?:``subexpression``)` language element prevents the group to which it applies from capturing matched substrings. In the following example, the regular expression pattern from the previous example is changed to `\b(?:\w+[;,]?\s?)+[.?!]`. As the output shows, it prevents the regular expression engine from populating the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collections.  
+ When you use subexpressions only to apply quantifiers to them, and you are not interested in the captured text, you should disable group captures. For example, the `(?:subexpression)` language element prevents the group to which it applies from capturing matched substrings. In the following example, the regular expression pattern from the previous example is changed to `\b(?:\w+[;,]?\s?)+[.?!]`. As the output shows, it prevents the regular expression engine from populating the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collections.  
   
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/group2.cs#9)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/group2.vb#9)]  
   
  You can disable captures in one of the following ways:  
   
--   Use the `(?:``subexpression``)` language element. This element prevents the capture of matched substrings in the group to which it applies. It does not disable substring captures in any nested groups.  
+-   Use the `(?:subexpression)` language element. This element prevents the capture of matched substrings in the group to which it applies. It does not disable substring captures in any nested groups.  
   
--   Use the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> option. It disables all unnamed or implicit captures in the regular expression pattern. When you use this option, only substrings that match named groups defined with the `(?<``name``>``subexpression``)` language element can be captured. The <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> flag can be passed to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> static matching method.  
+-   Use the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> option. It disables all unnamed or implicit captures in the regular expression pattern. When you use this option, only substrings that match named groups defined with the `(?<name>subexpression)` language element can be captured. The <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> flag can be passed to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> static matching method.  
   
 -   Use the `n` option in the `(?imnsx)` language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the `(-n)` option enables unnamed or implicit captures. For more information, see [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md).  
   
--   Use the `n` option in the `(?imnsx:``subexpression``)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.  
+-   Use the `n` option in the `(?imnsx:subexpression)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.  
   
  [Back to top](#top)  
   

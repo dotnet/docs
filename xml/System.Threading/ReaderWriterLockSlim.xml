@@ -485,11 +485,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">The current thread cannot acquire the write lock when it holds the read lock.  
-  
- -or-  
-  
- The <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> property is <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" />, and the current thread has attempted to acquire the read lock when it already holds the read lock.  
+        <exception cref="T:System.Threading.LockRecursionException">The <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> property is <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" />, and the current thread has attempted to acquire the read lock when it already holds the read lock.  
   
  -or-  
   
@@ -639,7 +635,7 @@
   
  -or-  
   
- The current thread has entered read mode, so trying to enter the lock in write mode would create the possibility of a deadlock.  
+ The current thread has entered read mode and doesn't already own a write lock, so trying to enter the lock in write mode would create the possibility of a deadlock.  
   
  -or-  
   

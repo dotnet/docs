@@ -1,5 +1,5 @@
 ---
-title: "Option Infer Statement"
+title: "Option Infer Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.OptionInfer"

@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Clipboard Object"
+title: "My.Computer.Clipboard Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Clipboard"

@@ -1,5 +1,5 @@
 ---
-title: "RaiseEvent Statement"
+title: "RaiseEvent Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.RaiseEventMethod"

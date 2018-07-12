@@ -34,7 +34,7 @@ A method that returns a *reference return value* must satisfy the following two 
 - the method signature includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the return type,
 - each [return](../../language-reference/keywords/return.md) statement in the method body includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the name of the returned instance.
 
-The following example shows the method that satisfies those conditions and returns a reference to a `Person` object named `p`:
+The following example shows a method that satisfies those conditions and returns a reference to a `Person` object named `p`:
 
 ```csharp
 public ref Person GetContactInformation(string fname, string lname)

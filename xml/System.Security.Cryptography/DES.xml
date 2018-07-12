@@ -39,7 +39,7 @@
  This algorithm supports a key length of 64 bits.  
   
 > [!NOTE]
-> A newer asymmetric encryption algorithm, Advanced Encryption Standard (AES), is available. Consider using the <xref:System.Security.Cryptography.Aes> class instead of the <xref:System.Security.Cryptography.DES> class. Use <xref:System.Security.Cryptography.DES> only for compatibility with legacy applications and data.
+> A newer symmetric encryption algorithm, Advanced Encryption Standard (AES), is available. Consider using the <xref:System.Security.Cryptography.Aes> class instead of the <xref:System.Security.Cryptography.DES> class. Use <xref:System.Security.Cryptography.DES> only for compatibility with legacy applications and data.
   
  ]]></format>
     </remarks>

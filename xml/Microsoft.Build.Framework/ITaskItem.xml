@@ -141,7 +141,7 @@
       <Docs>
         <param name="metadataName">The name of the metadata entry.</param>
         <summary>Gets the value of the specified metadata entry.</summary>
-        <returns>The value of the <paramref name="attributeName" /> metadata.</returns>
+        <returns>The value of the <paramref name="attributeName" /> metadata, or an empty string if no value can be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

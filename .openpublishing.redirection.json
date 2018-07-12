@@ -1335,9 +1335,37 @@
             "redirect_url":"/dotnet/standard/threading/timers"
         },
         {
+            "source_path":"docs/csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
+            "redirect_url":"/dotnet/api/system.componentmodel.backgroundworker"
+        },
+        {
+            "source_path":"docs/visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
+            "redirect_url":"/dotnet/api/system.componentmodel.backgroundworker"
+        },
+        {
             "source_path":"docs/fsharp/language-reference/primitive-types.md",
             "redirect_url":"/dotnet/fsharp/language-reference/basic-types",
             "redirect_document_id": true
+        },
+        {
+            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/index.md",
+            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id":true
+        },
+        {
+            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md",
+            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id":true
+        },
+        {
+            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/configuring-projects.md",
+            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id":true
+        },
+        {
+            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md",
+            "redirect_url":"/visualstudio/ide/fsharp-target-older-dotnet-versions",
+            "redirect_document_id":true
         }
     ]
 }

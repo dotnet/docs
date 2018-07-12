@@ -1,5 +1,5 @@
 ---
-title: "Option &lt;keyword&gt; Statement"
+title: "Option &lt;keyword&gt; Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.option"

@@ -1,5 +1,5 @@
 ---
-title: "Property Statement"
+title: "Property Statement (Visual Basic)"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.PropertySet"

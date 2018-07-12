@@ -29,16 +29,19 @@ In addition, reference return values are not allowed on async methods. An asynch
  
 ## Defining a ref return value
 
-You define a ref return value by adding the [ref](../../language-reference/keywords/ref.md) keyword to the return type of the method signature. For example, the following signature indicates that the `GetContactInformation` property returns a reference to a `Person` object to the caller:
+A method that returns a *reference return value* must satisfy the following two conditions:
+
+- The method signature includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the return type.
+- Each [return](../../language-reference/keywords/return.md) statement in the method body includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the name of the returned instance.
+
+The following example shows a method that satisfies those conditions and returns a reference to a `Person` object named `p`:
 
 ```csharp
-public ref Person GetContactInformation(string fname, string lname);
-```
-
-In addition, the name of the object returned by each [return](../../language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](../../language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a reference to a `Person` object named `p`:
-
-```csharp
-return ref p;
+public ref Person GetContactInformation(string fname, string lname)
+{
+    // ...method implementation...
+    return ref p;
+}
 ```
 
 ## Consuming a ref return value

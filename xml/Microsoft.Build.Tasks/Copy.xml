@@ -268,7 +268,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Delay between any necessary retries. Defaults to <see cref="F:Microsoft.Build.Tasks.Copy.RetryDelayMillisecondsDefault" /></summary>
+        <summary>Delay between any necessary retries. Defaults to 1,000 milliseconds. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

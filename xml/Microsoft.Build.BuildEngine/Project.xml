@@ -581,17 +581,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the ToolsVersion XML attribute found on the <see cref="Project" />[Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element in the project file.</summary>
+        <summary>Sets or gets the ToolsVersion XML attribute found on the [Project element](/visualstudio/msbuild/project-element-msbuild) in the project file.</summary>
         <value>A string representing the Tools version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
+ If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project element](/visualstudio/msbuild/project-element-msbuild), getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
   
  The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
   
- For more information about Tools versions, see `MSBuild Tool Set (ToolsVersion)`.  
+ For more information about Tools versions, see [MSBuild ToolSet (ToolsVersion)](/visualstudio/msbuild/msbuild-toolset-toolsversion).  
   
  ]]></format>
         </remarks>

@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the ambient data.</summary>
-        <value>The value of the ambient data.</value>
+        <value>The value of the ambient data. If no value has been set, the returned value is <c>default(T)</c>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

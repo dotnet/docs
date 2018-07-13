@@ -3705,7 +3705,10 @@ Directory::CreateDirectory("Public\\Html");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.FileNotFoundException">The specified path was not found.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="path" /> was not found (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="path" /> was not found (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -3776,7 +3779,10 @@ Directory::CreateDirectory("Public\\Html");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.FileNotFoundException">The specified path was not found.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="path" /> was not found (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="path" /> was not found (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">

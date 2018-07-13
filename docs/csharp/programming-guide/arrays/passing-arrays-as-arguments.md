@@ -35,7 +35,7 @@ You pass an initialized multidimensional array to a method in the same way that 
 
 [!code-csharp[csProgGuideArrays#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#41)]
 
- The following code shows a partial declaration of a print method that accepts a two-dimensional array as its argument.
+The following code shows a partial declaration of a print method that accepts a two-dimensional array as its argument.
 
 [!code-csharp[csProgGuideArrays#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#36)]
 

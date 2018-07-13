@@ -71,7 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Dialect attribute.</summary>
-        <value>A string that contains the URI that identifies the dialect. The default value is <see cref="F:System.IdentityModel.Protocols.WSIdentity.WSIdentityConstants.Dialect" />, which indicates that <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> objects in the collection correspond to the Information Card profile.</value>
+        <value>A string that contains the URI that identifies the dialect. The default value is System.IdentityModel.Protocols.WSTrust.WSIdentityConstants.Dialect, which indicates that <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> objects in the collection correspond to the Information Card profile.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

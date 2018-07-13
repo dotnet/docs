@@ -183,7 +183,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls <see cref="M:System.Disposable.Dispose" /> on all extensions that implement <see cref="T:System.IDisposable" />.</summary>
+        <summary>Calls <see cref="M:System.IDisposable.Dispose" /> on all extensions that implement <see cref="T:System.IDisposable" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

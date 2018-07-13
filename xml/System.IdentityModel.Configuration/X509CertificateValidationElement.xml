@@ -151,7 +151,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the revocation mode.</summary>
-        <value>The revocation mode. The default is <see cref="F:System.Security.Cryptography.X509Certificates.X509RevocationMode.OnLine" />.</value>
+        <value>The revocation mode. The default is <see cref="F:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

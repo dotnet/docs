@@ -80,7 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the primary user of the issued token.</summary>
-        <value>An <see cref="T:System.ServiceModel.Protocols.WSTrust.EndpointReference" /> that contains the address of the primary user of the token. This is the contents of the wst:Primary element.</value>
+        <value>An <see cref="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" /> that contains the address of the primary user of the token. This is the contents of the wst:Primary element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

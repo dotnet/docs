@@ -72,7 +72,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the supported <see cref="T:Microsoft.IdentityModel.Tokens.Saml2Attribute" /> collection.</summary>
+        <summary>Gets the supported <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> collection.</summary>
         <value>The collection of supported attributes. The default is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>

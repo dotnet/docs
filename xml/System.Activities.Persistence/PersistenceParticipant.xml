@@ -191,7 +191,7 @@
       </Parameters>
       <Docs>
         <param name="readWriteValues">The read-write values that were loaded from the persistence store. This dictionary corresponds to the dictionary of read-write values persisted in the most recent persistence episode.</param>
-        <summary>The host invokes this method and passes all the loaded values in the <see cref="P:System.Activities.Persistence.SaveWorkflowCommand.InstanceData" /> collection (filled by the <see cref="T:System.Activities.Persistence.LoadWorkflowCommand" /> or <see cref="T:System.Activities.Persistence.LoadWorkflowByInstanceKeyCommand" />) as a dictionary parameter.</summary>
+        <summary>The host invokes this method and passes all the loaded values in the <see cref="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData" /> collection (filled by the <see cref="T:System.Activities.DurableInstancing.LoadWorkflowCommand" /> or <see cref="T:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand" />) as a dictionary parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

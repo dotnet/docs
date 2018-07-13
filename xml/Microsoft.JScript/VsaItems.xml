@@ -23,11 +23,11 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:Microsoft.JScript.Vsa.IVsaItem" /> objects that can be addressed either by name or by index.</summary>
+    <summary>Represents a collection of <see cref="T:Microsoft.JScript.Vsa.IJSVsaItem" /> objects that can be addressed either by name or by index.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
-    <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+    <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+    <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
     <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
   </Docs>
   <Members>
@@ -54,9 +54,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -83,9 +83,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -115,9 +115,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -153,7 +153,7 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -216,9 +216,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -230,9 +230,9 @@
       <Docs>
         <summary>Gets an item from the collection.</summary>
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
@@ -266,8 +266,8 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -300,9 +300,9 @@
         <value>The item that is named <paramref name="itemName" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -314,9 +314,9 @@
       <Docs>
         <summary>Removes an item from the collection.</summary>
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
@@ -349,9 +349,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
@@ -384,9 +384,9 @@
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaItems" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
+        <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
+        <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
         <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
       </Docs>
     </Member>

@@ -77,7 +77,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of name-value pairs that corresponds to the metadata of the <see cref="T:System.Workflow.ComponentModel.Activity" />, such as an activity’s <see cref="P:System.Workflow.ComponentModel.Activity.Name" /> property, or a <see cref="T:System.Workflow.Activities.WhileActivity" /> activity’s <see cref="P:System.Workflow.Activities.While.Condition" /> property.</summary>
+        <summary>The collection of name-value pairs that corresponds to the metadata of the <see cref="T:System.Workflow.ComponentModel.Activity" />, such as an activity’s <see cref="P:System.Workflow.ComponentModel.Activity.Name" /> property, or a <see cref="T:System.Workflow.Activities.WhileActivity" /> activity’s <see cref="P:System.Workflow.Activities.WhileActivity.Condition" /> property.</summary>
         <value>The collection of metadata of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

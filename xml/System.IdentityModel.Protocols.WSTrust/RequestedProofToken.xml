@@ -134,7 +134,7 @@
       </Parameters>
       <Docs>
         <param name="secret">An array of <see cref="T:System.Byte" /> that contains the key material.</param>
-        <param name="wrappingCredentials">A <see cref="T:System.IdentityModel.SecurityTokenService.EncryptingCredentials" /> that represents the credentials used to encrypt the key material.</param>
+        <param name="wrappingCredentials">A <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> that represents the credentials used to encrypt the key material.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedProofToken" /> class using the specified key material and encrypting credentials.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

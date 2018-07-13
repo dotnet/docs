@@ -133,7 +133,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the encrypting credentials for the key.</summary>
-        <value>A <see cref="T:System.IdentityModel.SecurityTokenService.EncryptingCredentials" /> that represents the credentials used to encrypt the key. <see langword="null" /> indicates that the key is not encrypted.</value>
+        <value>A <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> that represents the credentials used to encrypt the key. <see langword="null" /> indicates that the key is not encrypted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

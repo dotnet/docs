@@ -559,7 +559,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <Parameters />
       <Docs>
         <summary>
-          Calculates the final hash code after consecutive <see cref="M:System.HashCode.Add" /> invocations.
+          Calculates the final hash code after consecutive <see cref="Overload:System.HashCode.Add" /> invocations.
         </summary>
         <returns>The calculated hash code.</returns>
         <remarks>

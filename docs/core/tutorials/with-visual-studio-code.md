@@ -82,6 +82,11 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > [!TIP] 
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
+## FAQ
+
+### I'm missing required assets to build and debug C# in VSCode. My debugger says "No Configuration."
+The Visual Studio Code C# extension can generate assets to build and debug for you. If you missed the prompt when you first opened a new C# project, you can still run this command by opening the Command Palette (Ctrl + Shift + P) and typing ">.NET: Generate Assets for Build and Debug". Selecting this will generate the .vscode, launch.json, and tasks.json configuration files that you need.
+
 ## See also
 [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   
 [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

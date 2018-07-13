@@ -393,7 +393,7 @@
  Or, if you want to propagate the completion type, you can use this more sophisticated code:  
   
 ```  
-target.Completion.ContinueWith(completion => { if (completion.IsFaulted) 3   
+target.Completion.ContinueWith(completion => { if (completion.IsFaulted)    
   
 ((IDataflowBlock)batchBlock).Fault(completion.Exception);   
 else   

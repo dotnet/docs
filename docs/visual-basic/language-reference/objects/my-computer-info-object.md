@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Info Object"
+title: "My.Computer.Info Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Info object"

@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser Object"
+title: "TextFieldParser Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "TextFieldParser object"

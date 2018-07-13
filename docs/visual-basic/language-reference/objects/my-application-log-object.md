@@ -1,5 +1,5 @@
 ---
-title: "My.Application.Log Object"
+title: "My.Application.Log Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application.Log object"

@@ -50,7 +50,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
   
  The `x:Type` markup extension can be used in object element syntax. In this case, specifying the value of the <xref:System.Windows.Markup.TypeExtension.TypeName%2A> property is required to properly initialize the extension.  
   
- The `x:Type` markup extension can also be used as a verbose attribute; however this use is not typical: `<``object` `property``="{x:Type TypeName=``typeNameValue``}" .../>`  
+ The `x:Type` markup extension can also be used as a verbose attribute; however this use is not typical: `<object property="{x:Type TypeName=typeNameValue}" .../>`  
   
 ## WPF Usage Notes  
   

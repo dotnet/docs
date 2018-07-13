@@ -42,7 +42,7 @@ Note: [`Microsoft.NETCore.Portable.Compatibility`](https://www.nuget.org/package
 
 ### Target frameworks
 
-Target framework versions are updated when new APIs are added. They have no concept of patch version, since they represent API shape and not implementation concerns. Major and minor versioning follows the SemVer rules specified earlier, and coincides with the `MAJOR` and `MINOR` numbers of the .NET Core distributions that implement them.
+Target framework versions are updated when new APIs are added. They have no concept of patch version, since they represent API shape and not implementation concerns. Major and minor versioning follows the SemVer rules specified earlier, and coincides with the `MAJOR` and `MINOR` numbers of the .NET Core distributions that implement them or the .NET Standard version that defines them. 
 
 ## Versioning in practice
 

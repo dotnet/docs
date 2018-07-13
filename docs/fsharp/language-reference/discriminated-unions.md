@@ -76,23 +76,6 @@ let getShapeHeight shape =
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
 
-Union constructors can also be treated as proper functions:
-
-```fsharp
-type OneOrTwoSequences =
-    | One of seq<'T>
-    | Two of seq<'T> * seq<'T>
-
-let one = [1; 2; 3] |> One
-let two = ([1; 2; 3], [4; 5; 6]) ||> Two
-
-let (One s) = one
-let (Two s1, s2) = two
-
-printfn "One: %A" s
-printfn "Two: %A\n%A" s1 s2
-```
-
 ### Unwrapping Discriminated Unions
 
 In F# Discriminated Unions are often used in domain-modeling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:

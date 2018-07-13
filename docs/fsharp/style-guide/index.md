@@ -27,7 +27,7 @@ You should keep the following principles in mind any time you write F# code, esp
 
 4. **Good F# code performs well without exposing mutation**
 
-    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Avoid exposing mutation to callers. Instead, seek to build a functional interface for a mutation-based implementation when performance is critical.
+    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Avoid exposing mutation to callers. Instead, [build a functional interface that hides a mutation-based implementation](conventions.md#performance) when performance is critical.
 
 5. **Good F# code is toolable**
 

@@ -21,7 +21,7 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 ## .NET implementation support
 
-The following table lists all versions of .NET Standard and the platforms supported:
+The following table lists the minimum platform versions that support each .NET Standard version.
 
 [!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
 

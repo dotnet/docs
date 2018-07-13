@@ -214,6 +214,19 @@ A computation expression has an underlying type, which the expression returns. T
 ## Custom Operations
 You can define a custom operation on a computation expression and use a custom operation as an operator in a computation expression. For example, you can include a query operator in a query expression. When you define a custom operation, you must define the Yield and For methods in the computation expression. To define a custom operation, put it in a builder class for the computation expression, and then apply the [`CustomOperationAttribute`](https://msdn.microsoft.com/library/199f3927-79df-484b-ba66-85f58cc49b19). This attribute takes a string as an argument, which is the name to be used in a custom operation. This name comes into scope at the start of the opening curly brace of the computation expression. Therefore, you shouldn’t use identifiers that have the same name as a custom operation in this block. For example, avoid the use of identifiers such as `all` or `last` in query expressions.
 
+### Extending existing Builders with new Custom Operations
+If you already have a builder class, its custom operations can be extended from outside of this builder class. Extensions must be declared in modules. Namespaces cannot contain extension members except in the same file and the same namespace declaration group where the type is defined.
+
+The following example shows the extension of the existing `Microsoft.FSharp.Linq.QueryBuilder` class.
+
+```fsharp
+type Microsoft.FSharp.Linq.QueryBuilder with
+
+    [<CustomOperation("existsNot")>]
+    member __.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
+        Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
+```
+
 ## See Also
 [F# Language Reference](index.md)
 

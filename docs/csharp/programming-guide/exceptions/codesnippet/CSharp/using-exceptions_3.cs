@@ -9,7 +9,7 @@
                 {
                     using(var sw = new StreamWriter(@"C:\test\test.txt"))
                     {
-                    sw.WriteLine("Hello");
+                       sw.WriteLine("Hello");
                     }   
                 }
                 // Put the more specific exceptions first.

@@ -21,7 +21,7 @@ The <xref:System.IDisposable?displayProperty=nameWithType> interface is not cove
 
 [Arrays](arrays.md)  
 [Attributes](attributes.md)  
-[Collections](collections.md)  
+[Collections](guidelines-for-collections.md)  
 [Serialization](serialization.md)  
 [System.Xml Usage](system-xml-usage.md)  
 [Equality Operators](equality-operators.md)  

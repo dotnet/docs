@@ -1,27 +1,32 @@
-        static void TestCatch2()
+        using System;
+        using System.IO;
+
+        public class ExceptionExample
         {
-            System.IO.StreamWriter sw = null;
-            try
+            static void Main()
             {
-                sw = new System.IO.StreamWriter(@"C:\test\test.txt");
-                sw.WriteLine("Hello");
-            }
+                try
+                {
+                    using(var sw = new StreamWriter(@"C:\test\test.txt"))
+                    {
+                    sw.WriteLine("Hello");
+                    }   
+                }
+                // Put the more specific exceptions first.
+                catch (DirectoryNotFoundException ex)
+                {
+                    System.Console.WriteLine(ex.ToString());  
+                }
+                catch (FileNotFoundException ex)
+                {
+                    System.Console.WriteLine(ex.ToString());  
+                }
+                // Put the least specific exception last.
+                catch (IOException ex)
+                {
+                    System.Console.WriteLine(ex.ToString());  
+                }
 
-            catch (System.IO.FileNotFoundException ex)
-            {
-                // Put the more specific exception first.
-                System.Console.WriteLine(ex.ToString());  
+                Console.WriteLine("Done"); 
             }
-
-            catch (System.IO.IOException ex)
-            {
-                // Put the less specific exception last.
-                System.Console.WriteLine(ex.ToString());  
-            }
-            finally 
-            {
-                sw.Close();
-            }
-
-            System.Console.WriteLine("Done"); 
         }

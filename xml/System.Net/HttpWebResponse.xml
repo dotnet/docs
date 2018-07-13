@@ -245,7 +245,9 @@
   
 ## Remarks  
  The <xref:System.Net.HttpWebResponse.Close%2A> method closes the response stream and releases the connection to the resource for reuse by other requests.  
-  
+ 
+ You should not access any properties of the <xref:System.Net.HttpWebResponse> object after the call to the `Close` method. On .NET Core, an <xref:System.ObjectDisposedException> is thrown.
+
  You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or the <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType>, but doing so does not cause an error. Failure to close the stream can cause your application to run out of connections.  
   
 > [!NOTE]
@@ -262,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ObjectDisposedException">**.NET Core only:** This <see cref="T:System.Net.HttpWebResponse" /> object has been disposed.</exception>       
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">

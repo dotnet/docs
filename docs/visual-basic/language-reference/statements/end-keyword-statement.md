@@ -80,9 +80,9 @@ When preceded by a number sign (`#`), the `End` keyword terminates a preprocessi
 |Part|Description|
 |---|---|
 |`#End`|Required. Terminates the definition of the preprocessing block.|
-|`#ExternalSource`|Required to terminate an external source block begun by a matching [#ExternalSource Directive](../directives/externalsource-directive.md).|
-|`#If`|Required to terminate a conditional compilation block begun by a matching `#If` directive. See [#If...Then...#Else Directives](../directives/if-then-else-directives.md).|
-|`#Region`|Required to terminate a source region block begun by a matching [#Region Directive](../directives/region-directive.md).|
+|`ExternalSource`|Required to terminate an external source block begun by a matching [#ExternalSource Directive](../directives/externalsource-directive.md).|
+|`If`|Required to terminate a conditional compilation block begun by a matching `#If` directive. See [#If...Then...#Else Directives](../directives/if-then-else-directives.md).|
+|`Region`|Required to terminate a source region block begun by a matching [#Region Directive](../directives/region-directive.md).|
 |||
 
 ## Remarks

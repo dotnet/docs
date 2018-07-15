@@ -42,7 +42,7 @@ type Extensions() =
 
 ## Intrinsic type extensions
 
-An intrinsic type extension is an extension that appears in the same namespace or module, in the same source file, or in the same assembly (DLL or executable file) as the type being extended.
+An intrinsic type extension is an extension that appears in the same namespace or module as the type it is extending.
 
 Intrinsic type extensions are sometimes a cleaner way to separate functionality from the type declaration. For example:
 
@@ -99,17 +99,25 @@ Optional extension members are compiled to static members for which the object i
 
 It is possible to declare a type extension on a generic type where the type variable is constrained. The requirement is that the constraint of the extension declaration matches the constraint of the declared type.
 
-However, even when constraints are matched between a declared type and a type extension, it is possible for a constraint to be inferred by the body of an extended member that enforces a further constraint that will lead to a type error:
+However, even when constraints are matched between a declared type and a type extension, it is possible for a constraint to be inferred by the body of an extended member that imposes a different requirement on the type parameter than the declared type. For example:
 
 ```fsharp
 open System.Collections.Generic
 
 // NOT POSSIBLE AND FAILS TO COMPILE!
+//
+// The member 'Sum' has a different requirement on 'T than the type IEnumerable<'T>
 type IEnumerable<'T> with
     member this.Sum() = Seq.sum this
 ```
 
-To get around this restriction, you can use extension methods.
+There is no way to get this code to work with an optional type extension:
+
+* As is, the `Sum` member has a different constraint on `'T` (`static member get_Zero` and `static member (+)`) than what the type extension defines.
+* Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
+* Making changing the member to `member inline Sum` will give an error that type constraints are mismatched
+
+What is really desired in situations like this are static methods that "float in space" and can be presented as if they are extending a type. This is where extension methods come into play.
 
 ## Extension methods
 
@@ -142,10 +150,10 @@ Type extensions also have the following attributes:
 
 The following limitations also exist for type extensions:
 
-* Type extensions cannot be virtual or abstract methods.
-* Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
+* Type extensions do not support virtual or abstract methods.
 * Type extensions do not support override methods as augmentations.
-* Type extensions do not permit constructors as augmentations.
+* Optional Type extensions do not support constructors as augmentations.
+* Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 * Type extensions are not valid for `byref<'T>` (though they can be declared).
 * Type extensions are not valid for attributes (though they can be declared).
 * You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods in the case of an ambiguous call.

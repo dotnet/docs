@@ -152,6 +152,7 @@ The following limitations also exist for type extensions:
 
 * Type extensions do not support virtual or abstract methods.
 * Type extensions do not support override methods as augmentations.
+* Type extensions do not support [Statically Resolved Type Parameters](generics/statically-resolved-type-parameters.md).
 * Optional Type extensions do not support constructors as augmentations.
 * Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 * Type extensions are not valid for `byref<'T>` (though they can be declared).

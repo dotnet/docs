@@ -156,7 +156,7 @@ public class PetTests
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
 > [!NOTE]
-> Although you expect that the `expected` and `actual` values are equal, the initial assertions with the `Assert.NotEqual` checks specify that they are *not equal*. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
+> Although you expect that the `expected` and `actual` values are equal, the initial assertions with the `Assert.NotEqual` checks specify that they are *not equal*. Always initially create your tests to fail once in order to check the logic of the tests. After you confirm the tests fail, you adjust the assertions to allow them to pass.
 
 The following shows the complete project structure:
 

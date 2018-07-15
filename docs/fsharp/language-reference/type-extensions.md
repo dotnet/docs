@@ -42,7 +42,7 @@ type Extensions() =
 
 ## Intrinsic type extensions
 
-An intrinsic type extension is an extension that appears in the same namespace or module, in the same source file, and in the same assembly (DLL or executable file) as the type being extended.
+An intrinsic type extension is an extension that appears in the same namespace or module, in the same source file, or in the same assembly (DLL or executable file) as the type being extended.
 
 Intrinsic type extensions are sometimes a cleaner way to separate functionality from the type declaration. For example:
 
@@ -95,13 +95,16 @@ Optional extensions do not appear on the extended type when examined by reflecti
 
 Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they were instance members or static members according to how they are declared.
 
-It is not possible to define an optional extension on a generic type when the type variable is constrained. For example, the following is not possible:
+## Generic limitation of intrinsic and optional type extensions
+
+It is possible to declare a type extension on a generic type where the type variable is constrained. The requirement is that the constraint of the extension declaration matches the constraint of the declared type.
+
+However, even when constraints are matched between a declared type and a type extension, it is possible for a constraint to be inferred by the body of an extended member that enforces a further constraint that will lead to a type error:
 
 ```fsharp
 open System.Collections.Generic
 
-// NOT POSSIBLE!
-// Seq.sum constraints 'T.
+// NOT POSSIBLE AND FAILS TO COMPILE!
 type IEnumerable<'T> with
     member this.Sum() = Seq.sum this
 ```
@@ -110,7 +113,7 @@ To get around this restriction, you can use extension methods.
 
 ## Extension methods
 
-Finally, *extension methods* (sometimes called "C# style extension members") can be declared in F# as either a let-bound value value in a module or a member on a class.
+Finally, extension methods (sometimes called "C# style extension members") can be declared in F# as either a let-bound value value in a module or a member on a class.
 
 Extension methods are useful for when you wish to define extensions on a generic type that will constrain the type variable. For example:
 
@@ -135,11 +138,16 @@ Type extensions also have the following attributes:
 * Intrinsic and optional type extensions can define _any_ member type, not just methods. So extension properties are also possible, for example.
 * The `self-identifier` token in the [syntax](type-extensions.md#syntax) represents the instance of the type being invoked, just like ordinary members.
 * Extended members can be static or instance members.
+* Type variables on a type extension must match the constraints of the declared type.
 
 The following limitations also exist for type extensions:
 
 * Type extensions cannot be virtual or abstract methods.
 * Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
+* Type extensions do not support override methods as augmentations.
+* Type extensions do not permit constructors as augmentations.
+* Type extensions are not valid for `byref<'T>` (though they can be declared).
+* Type extensions are not valid for attributes (though they can be declared).
 * You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods in the case of an ambiguous call.
 
 Finally, if multiple intrinsic type extensions exist for one type, all members must be unique. For optional type extensions, members in different type extensions to the same type can have the same names. Ambiguity errors occur only if client code opens two different scopes that define the same member names.

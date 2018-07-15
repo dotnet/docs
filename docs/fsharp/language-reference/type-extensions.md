@@ -42,7 +42,9 @@ type Extensions() =
 
 ## Intrinsic type extensions
 
-An intrinsic type extension is an extension that appears in the same namespace or module as the type it is extending.
+An intrinsic type extension is a type extension that extends a user-defined type.
+
+Intrinsic type extensions **must** be defined in the same file **and** namespace or module as the type they are extending. Any other definition will result in them being [optional type extensions](type-extensions.md#optional-type-extensions).
 
 Intrinsic type extensions are sometimes a cleaner way to separate functionality from the type declaration. For example:
 

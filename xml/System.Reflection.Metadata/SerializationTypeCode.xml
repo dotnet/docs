@@ -40,7 +40,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Boolean" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Boolean" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -63,7 +63,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Byte" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Byte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -86,7 +86,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Char" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Char" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -109,7 +109,7 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Double" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Double" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -155,7 +155,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Int16" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Int16" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -178,7 +178,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Int32" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Int32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -201,7 +201,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Int64" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Int64" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -224,7 +224,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Invalid" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Invalid" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -247,7 +247,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.SByte" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.SByte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -270,7 +270,7 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.Single" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.Single" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -293,7 +293,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.String" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.String" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SZArray">
@@ -316,7 +316,7 @@
       </ReturnValue>
       <MemberValue>29</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.SZArray" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.SZArray" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TaggedObject">
@@ -385,7 +385,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt16" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.UInt16" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -408,7 +408,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt32" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.UInt32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -431,7 +431,7 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt64" />.</summary>
+        <summary>A value equivalent to <see cref="System.Reflection.Metadata.SignatureTypeCode.UInt64" />.</summary>
       </Docs>
     </Member>
   </Members>

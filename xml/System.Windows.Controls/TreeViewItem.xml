@@ -544,14 +544,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.TreeViewItem" /> has keyboard focus.</summary>
+        <summary>Gets a value that indicates whether the containing <see cref="T:System.Windows.Controls.TreeView" /> has keyboard focus.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.TreeViewItem" /> has keyboard focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the containing <see cref="T:System.Windows.Controls.TreeView" /> has keyboard focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the keyboard changes focus from a <xref:System.Windows.Controls.TreeViewItem> to a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.ToolBar>, the value of this property remains `true`.  
+ If the keyboard changes focus from the <xref:System.Windows.Controls.TreeView> to a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.ToolBar>, the value of this property remains `true`.  
   
 <a name="dependencyPropertyInfo_IsSelectionActive"></a>   
 ## Dependency Property Information  

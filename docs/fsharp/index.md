@@ -18,7 +18,7 @@ let getGreeting name =
 // Use the EntryPoint attribute to run the program.
 [<EntryPoint>]
 let main args =
-    // Define a list of names
+    // Define an array of names
     let names = [| "Don"; "Julia"; "Xi" |]
     
     // Print a fun greeting for each name!

@@ -1565,8 +1565,8 @@
         <Parameter Name="supports" Type="System.CodeDom.Compiler.GeneratorSupport" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="generatorSupport">To be added.</param>
-        <param name="supports">To be added.</param>
+        <param name="generatorSupport">A <see cref="T:System.CodeDom.Compiler.GeneratorSupport" /> object that indicates the type of code generation support to verify.</param>
+        <param name="supports">A <see cref="T:System.CodeDom.Compiler.GeneratorSupport" /> object that indicates the type of code generation support to verify.</param>
         <summary>Returns a value indicating whether the specified code generation support is provided.</summary>
         <returns>
           <see langword="true" /> if the specified code generation support is provided; otherwise, <see langword="false" />.</returns>

@@ -66,8 +66,8 @@
         <Parameter Name="setting" Type="System.Configuration.SpecialSetting" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="specialSetting">To be added.</param>
-        <param name="setting">To be added.</param>
+        <param name="specialSetting">A <see cref="T:System.Configuration.SpecialSetting" /> enumeration value defining the category of the application settings property.</param>
+        <param name="setting">A <see cref="T:System.Configuration.SpecialSetting" /> enumeration value defining the category of the application settings property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SpecialSettingAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Configuration.SpecialSetting" />

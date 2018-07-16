@@ -162,8 +162,8 @@
         <Parameter Name="comment" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="comment">To be added.</param>
+        <param name="data">The comment data.</param>
+        <param name="comment">The comment data.</param>
         <summary>Create an XML comment.</summary>
         <returns>The <see cref="T:System.Xml.XmlComment" /> value.</returns>
         <remarks>To be added.</remarks>

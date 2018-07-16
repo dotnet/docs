@@ -670,8 +670,8 @@
         <Parameter Name="property" Type="System.Configuration.ConfigurationProperty" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <param name="property">To be added.</param>
+        <param name="prop">The property to access.</param>
+        <param name="property">The property to access.</param>
         <summary>Gets or sets a property or attribute of this configuration element.</summary>
         <value>The specified property, attribute, or child element.</value>
         <remarks>
@@ -718,8 +718,8 @@
         <Parameter Name="property_name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="property_name">To be added.</param>
+        <param name="propertyName">The name of the <see cref="T:System.Configuration.ConfigurationProperty" /> to access.</param>
+        <param name="property_name">The name of the <see cref="T:System.Configuration.ConfigurationProperty" /> to access.</param>
         <summary>Gets or sets a property, attribute, or child element of this configuration element.</summary>
         <value>The specified property, attribute, or child element</value>
         <remarks>
@@ -765,8 +765,8 @@
         <Parameter Name="list" Type="System.Collections.IList" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="errorList">To be added.</param>
-        <param name="list">To be added.</param>
+        <param name="errorList">An object that implements the <see cref="T:System.Collections.IList" /> interface.</param>
+        <param name="list">An object that implements the <see cref="T:System.Collections.IList" /> interface.</param>
         <summary>Adds the invalid-property errors in this <see cref="T:System.Configuration.ConfigurationElement" /> object, and in all subelements, to the passed list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1074,8 +1074,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" Index="1" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="element">To be added.</param>
+        <param name="elementName">The name of the unknown subelement.</param>
+        <param name="element">The name of the unknown subelement.</param>
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> being used for deserialization.</param>
         <summary>Gets a value indicating whether an unknown element is encountered during deserialization.</summary>
         <returns>
@@ -1499,12 +1499,12 @@
         <Parameter Name="updateMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="parentElement">To be added.</param>
-        <param name="parent">To be added.</param>
-        <param name="saveMode">To be added.</param>
-        <param name="updateMode">To be added.</param>
+        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> at the current level containing a merged view of the properties.</param>
+        <param name="source">A <see cref="T:System.Configuration.ConfigurationElement" /> at the current level containing a merged view of the properties.</param>
+        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" />, or <see langword="null" /> if this is the top level.</param>
+        <param name="parent">The parent <see cref="T:System.Configuration.ConfigurationElement" />, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> that determines which property values to include.</param>
+        <param name="updateMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> that determines which property values to include.</param>
         <summary>Modifies the <see cref="T:System.Configuration.ConfigurationElement" /> object to remove all values that should not be saved.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

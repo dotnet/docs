@@ -137,8 +137,8 @@
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="default_value">To be added.</param>
+        <param name="defaultValue">The default value of the configuration entity.</param>
+        <param name="default_value">The default value of the configuration entity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -195,10 +195,10 @@
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="default_value">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="flags">To be added.</param>
+        <param name="defaultValue">The default value of the configuration entity.</param>
+        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -254,14 +254,14 @@
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="default_value">To be added.</param>
-        <param name="typeConverter">To be added.</param>
-        <param name="converter">To be added.</param>
-        <param name="validator">To be added.</param>
-        <param name="validation">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="flags">To be added.</param>
+        <param name="defaultValue">The default value of the configuration entity.</param>
+        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="typeConverter">The type of the converter to apply.</param>
+        <param name="converter">The type of the converter to apply.</param>
+        <param name="validator">The validator to use.</param>
+        <param name="validation">The validator to use.</param>
+        <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -318,14 +318,14 @@
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="default_value">To be added.</param>
-        <param name="typeConverter">To be added.</param>
-        <param name="converter">To be added.</param>
-        <param name="validator">To be added.</param>
-        <param name="validation">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="flags">To be added.</param>
+        <param name="defaultValue">The default value of the configuration entity.</param>
+        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="typeConverter">The type of the converter to apply.</param>
+        <param name="converter">The type of the converter to apply.</param>
+        <param name="validator">The validator to use.</param>
+        <param name="validation">The validator to use.</param>
+        <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
         <param name="description">The description of the configuration entity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>

@@ -876,9 +876,17 @@
         <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.UnaryDelegate&lt;TValue,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Pred">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Pred">A Boolean test that determines which elements will be removed.</param>
+        <summary>Removes elements from the container that pass a specified test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+For more information, see [list::remove_if (STL/CLR)](/cpp/dotnet/list-stl-clr#remove_if).
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="rend">

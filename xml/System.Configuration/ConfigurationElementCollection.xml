@@ -1664,8 +1664,8 @@
       <Docs>
         <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> object at the current level containing a merged view of the properties.</param>
         <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object of the current element, or <see langword="null" /> if this is the top level.</param>
-        <param name="saveMode">To be added.</param>
-        <param name="updateMode">To be added.</param>
+        <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> enumerated value that determines which property values to include.</param>
+        <param name="updateMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> enumerated value that determines which property values to include.</param>
         <summary>Reverses the effect of merging configuration information from different levels of the configuration hierarchy</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

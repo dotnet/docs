@@ -137,8 +137,8 @@
         <Parameter Name="encrypted_node" Type="System.Xml.XmlNode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="encryptedNode">To be added.</param>
-        <param name="encrypted_node">To be added.</param>
+        <param name="encryptedNode">The <see cref="T:System.Xml.XmlNode" /> object to decrypt.</param>
+        <param name="encrypted_node">The <see cref="T:System.Xml.XmlNode" /> object to decrypt.</param>
         <summary>Decrypts the passed <see cref="T:System.Xml.XmlNode" /> object.</summary>
         <returns>A decrypted <see cref="T:System.Xml.XmlNode" /> object.</returns>
         <remarks>To be added.</remarks>

@@ -172,8 +172,10 @@
         <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="force">To be added.</param>
-        <param name="require">To be added.</param>
+        <param name="force">
+          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object must be written to the file; otherwise, <see langword="false" />.</param>
+        <param name="require">
+          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object must be written to the file; otherwise, <see langword="false" />.</param>
         <summary>Forces the declaration for this <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

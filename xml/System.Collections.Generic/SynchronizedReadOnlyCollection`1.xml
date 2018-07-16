@@ -101,8 +101,8 @@
         <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="syncRoot">To be added.</param>
-        <param name="sync_root">To be added.</param>
+        <param name="syncRoot">The object used to synchronize access to the thread-safe, read-only collection.</param>
+        <param name="sync_root">The object used to synchronize access to the thread-safe, read-only collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -166,8 +166,8 @@
         <Parameter Name="list" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" Index="1" />
       </Parameters>
       <Docs>
-        <param name="syncRoot">To be added.</param>
-        <param name="sync_root">To be added.</param>
+        <param name="syncRoot">The object used to synchronize access to the thread-safe, read-only collection.</param>
+        <param name="sync_root">The object used to synchronize access to the thread-safe, read-only collection.</param>
         <param name="list">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of elements used to initialize the thread-safe, read-only collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified enumerable list of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>To be added.</remarks>
@@ -205,8 +205,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="syncRoot">To be added.</param>
-        <param name="sync_root">To be added.</param>
+        <param name="syncRoot">The object used to synchronize access to the thread-safe, read-only collection.</param>
+        <param name="sync_root">The object used to synchronize access to the thread-safe, read-only collection.</param>
         <param name="list">The <see cref="T:System.Array" /> of type <c>T</c> elements used to initialize the thread-safe, read-only collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified array of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>To be added.</remarks>

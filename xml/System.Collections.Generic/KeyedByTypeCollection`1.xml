@@ -230,8 +230,8 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
-        <param name="item">To be added.</param>
-        <param name="kind">To be added.</param>
+        <param name="item">The object to insert into the collection.</param>
+        <param name="kind">The object to insert into the collection.</param>
         <summary>Inserts an element into the collection at a specific location.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -334,8 +334,8 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the <c>item</c> to be replaced.</param>
-        <param name="item">To be added.</param>
-        <param name="kind">To be added.</param>
+        <param name="item">The object to add to the collection.</param>
+        <param name="kind">The object to add to the collection.</param>
         <summary>Replaces the item at the specified index with a new object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

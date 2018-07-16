@@ -408,8 +408,10 @@
         <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="force">To be added.</param>
-        <param name="require">To be added.</param>
+        <param name="force">
+          <see langword="true" /> if the associated section should be written in the configuration file; otherwise, <see langword="false" />.</param>
+        <param name="require">
+          <see langword="true" /> if the associated section should be written in the configuration file; otherwise, <see langword="false" />.</param>
         <summary>Forces the associated configuration section to appear in the configuration file, or removes an existing section from the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1015,8 +1017,8 @@
         <Parameter Name="provider" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="protectionProvider">To be added.</param>
-        <param name="provider">To be added.</param>
+        <param name="protectionProvider">The name of the protection provider to use.</param>
+        <param name="provider">The name of the protection provider to use.</param>
         <summary>Marks a configuration section for protection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1052,6 +1054,7 @@
  The target section is already a protected data section.</exception>
         <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
         <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
+        <related type="Article" href="https://msdn.microsoft.com/library/53tyfkaw(v=vs.100).aspx">Encrypting Configuration Information Using Protected Configuration</related>
       </Docs>
     </Member>
     <Member MemberName="RequirePermission">
@@ -1275,8 +1278,8 @@ Dim apSection As AppSettingsSection = _
         <Parameter Name="xml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="rawXml">To be added.</param>
-        <param name="xml">To be added.</param>
+        <param name="rawXml">The XML to use.</param>
+        <param name="xml">The XML to use.</param>
         <summary>Sets the object to an XML representation of the associated configuration section within the configuration file.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

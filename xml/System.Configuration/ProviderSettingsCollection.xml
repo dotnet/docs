@@ -267,8 +267,8 @@
         <Parameter Name="n" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="n">To be added.</param>
+        <param name="index">The index of the <see cref="T:System.Configuration.ProviderSettings" /> to return.</param>
+        <param name="n">The index of the <see cref="T:System.Configuration.ProviderSettings" /> to return.</param>
         <summary>Gets or sets a value at the specified index in the <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection.</summary>
         <value>The specified <see cref="T:System.Configuration.ProviderSettings" />.</value>
         <remarks>
@@ -336,8 +336,8 @@
         <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="key">To be added.</param>
+        <param name="name">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object to remove.</param>
+        <param name="key">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object to remove.</param>
         <summary>Removes an element from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

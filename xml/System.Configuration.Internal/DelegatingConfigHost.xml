@@ -179,8 +179,8 @@
       <Docs>
         <param name="encryptedXml">An encrypted section of a configuration file.</param>
         <param name="protectionProvider">A <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object.</param>
-        <param name="protectedConfigSection">To be added.</param>
-        <param name="protectedSection">To be added.</param>
+        <param name="protectedConfigSection">A <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
+        <param name="protectedSection">A <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
         <summary>Decrypts an encrypted configuration section.</summary>
         <returns>A string representing a decrypted configuration section.</returns>
         <remarks>To be added.</remarks>
@@ -255,11 +255,11 @@
         <Parameter Name="protectedSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="clearTextXml">To be added.</param>
-        <param name="encryptedXml">To be added.</param>
+        <param name="clearTextXml">A section of the configuration that is not encrypted.</param>
+        <param name="encryptedXml">A section of the configuration that is not encrypted.</param>
         <param name="protectionProvider">A <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object.</param>
-        <param name="protectedConfigSection">To be added.</param>
-        <param name="protectedSection">To be added.</param>
+        <param name="protectedConfigSection">A <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
+        <param name="protectedSection">A <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
         <summary>Encrypts a section of a configuration object.</summary>
         <returns>A string representing an encrypted section of the configuration object.</returns>
         <remarks>To be added.</remarks>
@@ -300,8 +300,8 @@
       </Parameters>
       <Docs>
         <param name="configPath">A string representing the path to a configuration file.</param>
-        <param name="locationSubPath">To be added.</param>
-        <param name="locatinSubPath">To be added.</param>
+        <param name="locationSubPath">A string representing a location subpath.</param>
+        <param name="locatinSubPath">A string representing a location subpath.</param>
         <summary>Returns a configuration path based on a location subpath.</summary>
         <returns>A string representing a configuration path.</returns>
         <remarks>To be added.</remarks>
@@ -614,8 +614,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="configRoot">To be added.</param>
-        <param name="root">To be added.</param>
+        <param name="configRoot">An <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</param>
+        <param name="root">An <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</param>
         <param name="hostInitParams">A parameter object containing the values used for initializing the configuration host.</param>
         <summary>Initializes the configuration host.</summary>
         <remarks>To be added.</remarks>
@@ -667,8 +667,8 @@
         <param name="locationSubPath">A string representing a location subpath (passed by reference).</param>
         <param name="configPath">A string representing the path to a configuration file.</param>
         <param name="locationConfigPath">The location configuration path.</param>
-        <param name="configRoot">To be added.</param>
-        <param name="root">To be added.</param>
+        <param name="configRoot">The configuration root element.</param>
+        <param name="root">The configuration root element.</param>
         <param name="hostInitConfigurationParams">A parameter object representing the parameters used to initialize the host.</param>
         <summary>Initializes the host for configuration.</summary>
         <remarks>To be added.</remarks>

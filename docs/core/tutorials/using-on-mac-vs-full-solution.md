@@ -104,11 +104,11 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the **Unit Tests** panel on the right side of the screen.
 
-![Unit Tests panel](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanel.png)
+   ![Unit Tests panel](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanel.png)
 
 1. Click the **Dock** icon to keep the panel open.
 
-![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
+   ![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
 
 1. Click the **Run All** button.
    

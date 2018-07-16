@@ -11,11 +11,11 @@ The Value Option type in F# is generally used when the following two circumstanc
 1. A scenario is appropriate for an [F# Option](options.md).
 2. Using a struct provides a performance benefit in your scenario.
 
-It's important to note that not all performance-sensitive scenarios are "solved" by using structs, and you must consider the additional cost of copying when using them instead of reference types. However, in large F# programs it is common to have many Optional types instantiated and flowed through hot paths, where structs can sometimes yield better overall performance over the lifetime of a program.
+It's important to note that not all performance-sensitive scenarios are "solved" by using structs, and you must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, because structs can sometimes yield better overall performance over the lifetime of a program.
 
 ## Definition
 
-Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-union) that is nearly identical to reference Option:
+Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-union) that is nearly identical to reference option type:
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]
@@ -55,7 +55,7 @@ match (result1, result2) with
 | ValueNone, ValueNone -> printfn "None of them are dates!"
 ```
 
-As with [Options](options.md), the naming convention for a function that returns `ValueOption` is to prefix with `try`.
+As with [Options](options.md), the naming convention for a function that returns `ValueOption` is to prefix it with `try`.
 
 ## Value Option properties and methods
 
@@ -69,7 +69,7 @@ There is currently one module-bound function for Value Options, `defaultValueArg
 val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T 
 ```
 
-As with the `defaultArg` function, this will return the underlying value of the given Value Option if it exists; otherwise, it will return the specified default value.
+As with the `defaultArg` function, this returns the underlying value of the given Value Option if it exists; otherwise, it returns the specified default value.
 
 At this time, there are no other module-bound functions for Value Options.
 

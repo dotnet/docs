@@ -9,18 +9,18 @@ Computation expressions in F# provide a convenient syntax for writing computatio
 
 ## Overview
 
-Computations can take many forms. The most common form of computation is single-threaded execution, which is easy to understand and modify. However, not all forms of computation are as straightforward:
+Computations can take many forms. The most common form of computation is single-threaded execution, which is easy to understand and modify. However, not all forms of computation are as straightforward as single-threaded execution. Some examples include:
 
 * Non-deterministic computations
 * Asynchronous computations
 * Effectful computations
 * Generative computations
 
-More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is quite easy to "leak" computations outside of a given context without certain abstractions to prevent you from doing so.
+More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is quite easy to "leak" computations outside of a given context without abstractions to prevent you from doing so. These abstractions are often challenging to write by yourself, which is why F# has a generalized way to do so called Computation Expressions.
 
-Computation expressions offer a uniform syntax and abstraction model for encoding context-sensitive computations.
+Computation Expressions offer a uniform syntax and abstraction model for encoding context-sensitive computations.
 
-Every computation expressio is backed by a *builder* type. This builder type defines the operations that are available for the computation expression. Further below, [Creating a New Type of Computation Expression](computation-expressions.md#creating-a-new-type-of-computation-expression) shows how this is done.
+Every computation expressio is backed by a *builder* type. This builder type defines the operations that are available for the computation expression. See [Creating a New Type of Computation Expression](computation-expressions.md#creating-a-new-type-of-computation-expression), which shows how this is done.
 
 ### Syntax overview
 
@@ -30,7 +30,7 @@ All computation expressions have the following form:
 builder-expr { cexper }
 ```
 
-Where `builder-expr` is a name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
+Where `builder-expr` the name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
 
 ```fsharp
 let fetchAndDownload url =
@@ -55,9 +55,9 @@ expr { return! ... }
 expr { match! ... }
 ```
 
-Each of these keywords, and other standard F# keywords are only available in a computation expression if they have been defined in the backing builder type. The only exception to this is `match!`, which is itself syntactic sugar for use of `let!` followed by a pattern match on the result.
+Each of these keywords, and other standard F# keywords are only available in a computation expression if they have been defined in the backing builder type. The only exception to this is `match!`, which is itself syntactic sugar for the use of `let!` followed by a pattern match on the result.
 
-The builder type is a class type that defines special methods that govern the way the fragments of the computation expression are combined; that is, code that controls how the expression executes. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
+The builder type is an object that defines special methods that govern the way the fragments of the computation expression are combined; that is, that is, its methods control how the computation expression behaves. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
 
 ### `let!`
 
@@ -140,7 +140,7 @@ When evaluated, the computation expression called by `yield!` will have its item
 
 ### `return`
 
-The `return` keyword takes a value and wraps it in the type corresponding to the computation expression. Aside from computation expressions using `yield`, it is used to "complete" a computation expression:
+The `return` keyword wraps a value in the type corresponding to the computation expression. Aside from computation expressions using `yield`, it is used to "complete" a computation expression:
 
 ```fsharp
 let req = // 'req' is of type is 'Async<data>'
@@ -157,7 +157,7 @@ let result = Async.RunSynchronously req
 
 ### `return!`
 
-The `return!` keyword takes a computation expression, realizes its value, and wraps that result in the type corresponding to the computation expression:
+The `return!` keyword realizes the value of a computation expression and wraps that result in the type corresponding to the computation expression:
 
 ```fsharp
 let req = // 'req' is of type is 'Async<data>'

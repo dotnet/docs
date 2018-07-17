@@ -125,7 +125,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the release version of the client script is used on the Web page unless overridden by setting the <see cref="P:System.Web.UI.ScriptReference.ScriptMode" /> property of a <see cref="T:System.Web.UI.ScriptReference" /> instance to <see cref="F:System.Web.UI.ScriptMode.Debug" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the release version of the client script is used on the Web page.</summary>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the release version of the client script is used on the Web page unless overridden by setting the <see cref="P:System.Web.UI.ScriptReferenceBase.ScriptMode" /> property of a <see cref="T:System.Web.UI.ScriptReference" /> instance to <see cref="F:System.Web.UI.ScriptMode.Debug" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the release version of the client script is used on the Web page.</summary>
       </Docs>
     </Member>
   </Members>

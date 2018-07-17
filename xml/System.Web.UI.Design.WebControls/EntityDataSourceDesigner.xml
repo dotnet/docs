@@ -292,7 +292,7 @@
       <Docs>
         <param name="viewName">The name of the view to return.</param>
         <summary>Returns a data source view that has the specified name.</summary>
-        <returns>A <see cref="T:System.Web.UI.WebControls.Design.EntityDesignerDataSourceView" /> object with the name specified by <paramref name="viewName" />.</returns>
+        <returns>An object with the name specified by <paramref name="viewName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

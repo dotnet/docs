@@ -188,7 +188,7 @@
         <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
         <param name="text">The label text.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <param name="markStyle">An enumeration value that specifies the tick mark style used for the label.</param>
         <summary>Adds a custom label to the collection, using the given axis range, text, row index and marking style.</summary>
         <returns>The newly added <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object.</returns>
         <remarks>To be added.</remarks>
@@ -221,7 +221,7 @@
         <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
         <param name="format">The label text format.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <param name="markStyle">An enumeration value that specifies the tick mark style used for the label.</param>
         <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, text format, row index and marking style.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +254,7 @@
         <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
         <param name="text">The label text.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <param name="markStyle">An enumeration value that specifies the tick mark style used for the label.</param>
         <param name="gridTick">A <see cref="T:System.Web.UI.DataVisualization.Charting.GridTickTypes" /> enumeration value that specifies the grid tick type used for the label.</param>
         <summary>Adds a custom label to the collection, using the given axis range, text, row index, marking style and grid tick type.</summary>
         <returns>The newly added <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object.</returns>
@@ -292,7 +292,7 @@
         <param name="max">The maximum value of the axis range.</param>
         <param name="format">The label text format.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <param name="markStyle">An enumeration value that specifies the tick mark style used for the label.</param>
         <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, and will be generated for the axis range that is determined by the <paramref name="min" /> and <paramref name="max" /> arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>

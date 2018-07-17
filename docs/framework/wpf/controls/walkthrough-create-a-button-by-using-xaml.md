@@ -31,8 +31,13 @@ The objective of this walkthrough is to learn how to create an animated button f
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
       Title="AnimatedButton" Height="300" Width="300"   
-      Background="Black">   <!-- Buttons arranged vertically inside a StackPanel. -->   <StackPanel HorizontalAlignment="Left">     <Button>Button 1</Button>     <Button>Button 2</Button>     <Button>Button 3</Button>   </StackPanel>  
-  
+      Background="Black">
+      <!-- Buttons arranged vertically inside a StackPanel. -->
+      <StackPanel HorizontalAlignment="Left">
+          <Button>Button 1</Button>
+          <Button>Button 2</Button>
+          <Button>Button 3</Button>
+      </StackPanel>  
     </Window>  
     ```  
   

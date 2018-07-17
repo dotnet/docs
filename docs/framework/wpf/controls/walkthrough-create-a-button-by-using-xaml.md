@@ -165,7 +165,17 @@ The objective of this walkthrough is to learn how to create an animated button f
   
     ```xaml  
     <Application.Resources>  
-      <GradientStopCollection x:Key="MyGlassGradientStopsResource">     <GradientStop Color="WhiteSmoke" Offset="0.2" />     <GradientStop Color="Transparent" Offset="0.4" />     <GradientStop Color="WhiteSmoke" Offset="0.5" />     <GradientStop Color="Transparent" Offset="0.75" />     <GradientStop Color="WhiteSmoke" Offset="0.9" />     <GradientStop Color="Transparent" Offset="1" />   </GradientStopCollection>   <LinearGradientBrush x:Key="MyGlassBrushResource"     StartPoint="0,0" EndPoint="1,1" Opacity="0.75"     GradientStops="{StaticResource MyGlassGradientStopsResource}" />  
+      <GradientStopCollection x:Key="MyGlassGradientStopsResource">
+        <GradientStop Color="WhiteSmoke" Offset="0.2" />     
+        <GradientStop Color="Transparent" Offset="0.4" />    
+        <GradientStop Color="WhiteSmoke" Offset="0.5" />     
+        <GradientStop Color="Transparent" Offset="0.75" />     
+        <GradientStop Color="WhiteSmoke" Offset="0.9" />     
+        <GradientStop Color="Transparent" Offset="1" />   
+      </GradientStopCollection>   
+      <LinearGradientBrush x:Key="MyGlassBrushResource"    
+        StartPoint="0,0" EndPoint="1,1" Opacity="0.75"
+        GradientStops="{StaticResource MyGlassGradientStopsResource}" />  
     <!-- Styles and other resources below here. -->  
     ```  
   

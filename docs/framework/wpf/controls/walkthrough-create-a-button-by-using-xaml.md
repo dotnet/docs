@@ -185,7 +185,7 @@ The objective of this walkthrough is to learn how to create an animated button f
     <Setter.Value>  
       <ControlTemplate TargetType="{x:Type Button}">  
         <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"  
-    ClipToBounds="True">  
+          ClipToBounds="True">  
   
         <!-- Outer Rectangle with rounded corners. -->  
         <Rectangle x:Name="outerRectangle" HorizontalAlignment="Stretch"   
@@ -197,7 +197,34 @@ The objective of this walkthrough is to learn how to create an animated button f
           VerticalAlignment="Stretch" Stroke="Transparent" StrokeThickness="20"   
           Fill="{TemplateBinding Background}" RadiusX="20" RadiusY="20" />  
   
-        <!-- Glass Rectangle -->     <Rectangle x:Name="glassCube" HorizontalAlignment="Stretch"       VerticalAlignment="Stretch"       StrokeThickness="2" RadiusX="10" RadiusY="10" Opacity="0"       Fill="{StaticResource MyGlassBrushResource}"       RenderTransformOrigin="0.5,0.5">       <Rectangle.Stroke>         <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">           <LinearGradientBrush.GradientStops>             <GradientStop Offset="0.0" Color="LightBlue" />             <GradientStop Offset="1.0" Color="Gray" />           </LinearGradientBrush.GradientStops>         </LinearGradientBrush>       </Rectangle.Stroke>       <!-- These transforms have no effect as they are declared here.             The reason the transforms are included is to be targets             for animation (see later). -->       <Rectangle.RenderTransform>         <TransformGroup>           <ScaleTransform />           <RotateTransform />         </TransformGroup>       </Rectangle.RenderTransform>       <!-- A BevelBitmapEffect is applied to give the button a             "Beveled" look. -->       <Rectangle.BitmapEffect>         <BevelBitmapEffect />       </Rectangle.BitmapEffect>     </Rectangle>  
+        <!-- Glass Rectangle -->     
+        <Rectangle x:Name="glassCube" HorizontalAlignment="Stretch"       
+          VerticalAlignment="Stretch"       
+          StrokeThickness="2" RadiusX="10" RadiusY="10" Opacity="0"       
+          Fill="{StaticResource MyGlassBrushResource}"       
+          RenderTransformOrigin="0.5,0.5">
+          <Rectangle.Stroke>         
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0.0" Color="LightBlue" />
+                <GradientStop Offset="1.0" Color="Gray" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>       
+          </Rectangle.Stroke>       
+          <!-- These transforms have no effect as they are declared here.
+          The reason the transforms are included is to be targets
+          for animation (see later). -->       
+          <Rectangle.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform />
+              <RotateTransform />
+            </TransformGroup>
+          </Rectangle.RenderTransform>
+          <!-- A BevelBitmapEffect is applied to give the button a "Beveled" look. -->
+          <Rectangle.BitmapEffect>
+            <BevelBitmapEffect />
+          </Rectangle.BitmapEffect>
+        </Rectangle>  
   
         <!-- Present Text of the button. -->  
         <DockPanel Name="myContentPresenterDockPanel">  

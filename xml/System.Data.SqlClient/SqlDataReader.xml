@@ -3298,8 +3298,6 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.SqlClient.SqlDataReader>.  
-  
  The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of `RecordsAffected` will be two.  
   
  <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  

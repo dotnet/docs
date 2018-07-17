@@ -125,8 +125,8 @@
       </Parameters>
       <Docs>
         <param name="token">The security token to serialize.</param>
-        <param name="tokenHandler">To be added.</param>
-        <param name="handler">To be added.</param>
+        <param name="tokenHandler">The handler with which to serialize the token.</param>
+        <param name="handler">The handler with which to serialize the token.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified security token and token handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

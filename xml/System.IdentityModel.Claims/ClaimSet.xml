@@ -200,8 +200,8 @@
         <Parameter Name="right" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
-        <param name="claimType">To be added.</param>
-        <param name="resourceType">To be added.</param>
+        <param name="claimType">The uniform resource identifier (URI) of a claim type. Several claim types are available as static properties of the <see cref="T:System.IdentityModel.Claims.ClaimTypes" /> class.</param>
+        <param name="resourceType">The uniform resource identifier (URI) of a claim type. Several claim types are available as static properties of the <see cref="T:System.IdentityModel.Claims.ClaimTypes" /> class.</param>
         <param name="right">The URI of the right associated with the new claim. Several rights are available as static properties of the <see cref="T:System.IdentityModel.Claims.Rights" /> class.</param>
         <summary>When overridden in a derived class, searches for a <see cref="T:System.IdentityModel.Claims.Claim" /> object that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
         <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that enables you to enumerate the claims that matches the specified criteria.</returns>

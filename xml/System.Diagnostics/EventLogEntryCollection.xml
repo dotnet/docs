@@ -71,8 +71,8 @@
         <Parameter Name="index" Type="System.Int32" Index="1" />
       </Parameters>
       <Docs>
-        <param name="entries">To be added.</param>
-        <param name="eventLogEntries">To be added.</param>
+        <param name="entries">The one-dimensional array of <see cref="T:System.Diagnostics.EventLogEntry" /> instances that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="eventLogEntries">The one-dimensional array of <see cref="T:System.Diagnostics.EventLogEntry" /> instances that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
         <param name="index">The zero-based index in the array at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Diagnostics.EventLogEntryCollection" /> to an array of <see cref="T:System.Diagnostics.EventLogEntry" /> instances, starting at a particular array index.</summary>
         <remarks>

@@ -52,10 +52,10 @@
  Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Target" /> property.</param>
         <param name="issuer">An <see cref="T:System.Xml.XmlElement" /> that represents the policy issuer. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" /> property.</param>
         <param name="parameters">A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that represents the parameters for this element. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" /> property.</param>
-        <param name="privacyNoticeLink">To be added.</param>
-        <param name="policyNoticeLink">To be added.</param>
-        <param name="privacyNoticeVersion">To be added.</param>
-        <param name="policyNoticeVersion">To be added.</param>
+        <param name="privacyNoticeLink">The <see cref="T:System.Uri" /> where the privacy policy is located. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink" /> property.</param>
+        <param name="policyNoticeLink">The <see cref="T:System.Uri" /> where the privacy policy is located. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink" /> property.</param>
+        <param name="privacyNoticeVersion">The version of the privacy information. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion" /> property.</param>
+        <param name="policyNoticeVersion">The version of the privacy information. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion" /> property.</param>
         <param name="isManagedIssuer">
           <see langword="true" /> if the issuer is managed; otherwise <see langword="false" />. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.CardSpacePolicyElement" /> class using the specified target and issuer of the policy, the policy parameters, privacy notice location, and the privacy notice version.</summary>

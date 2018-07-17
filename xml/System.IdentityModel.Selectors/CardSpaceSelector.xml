@@ -55,9 +55,9 @@
       </Parameters>
       <Docs>
         <param name="policyChain">An array of <see cref="T:System.IdentityModel.Selectors.CardSpacePolicyElement" /> that describes the federated security chain that the client requires a final token to unwind.</param>
-        <param name="tokenSerializer">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>Generates a security token using the [!INCLUDE[infocard](~/includes/infocard-md.md)] system and the specified policy chain and token serializer.</summary>
+        <param name="tokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
+        <param name="serializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
+        <summary>Generates a security token using the CardSpace system and the specified policy chain and token serializer.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> that represents the generated security token.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -103,9 +103,9 @@
         <param name="endpoint">An <see cref="T:System.Xml.XmlElement" /> that represents the endpoint address of the recipient where the token is presented.</param>
         <param name="policy">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.Xml.XmlElement" /> that contains a policy fragment that specifies the token types and claims that are requested by the recipient.</param>
         <param name="requiredRemoteTokenIssuer">An <see cref="T:System.Xml.XmlElement" /> that represents the issuer of the token.</param>
-        <param name="tokenSerializer">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>Generates a security token using the [!INCLUDE[infocard](~/includes/infocard-md.md)] system and the specified endpoint, policy, token issuer, and token serializer.</summary>
+        <param name="tokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
+        <param name="serializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
+        <summary>Generates a security token using the CardSpace system and the specified endpoint, policy, token issuer, and token serializer.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> that represents the generated security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

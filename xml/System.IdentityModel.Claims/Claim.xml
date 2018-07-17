@@ -148,8 +148,8 @@
         <Parameter Name="identifier" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="sid">To be added.</param>
-        <param name="identifier">To be added.</param>
+        <param name="sid">A <see cref="T:System.Security.Principal.SecurityIdentifier" /> that represents the deny-only SID.</param>
+        <param name="identifier">A <see cref="T:System.Security.Principal.SecurityIdentifier" /> that represents the deny-only SID.</param>
         <summary>Creates a <see cref="T:System.IdentityModel.Claims.Claim" /> object that represents a deny-only specified security identifier (SID).</summary>
         <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
         <remarks>

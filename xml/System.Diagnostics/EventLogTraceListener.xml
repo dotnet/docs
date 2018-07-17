@@ -345,8 +345,8 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
-        <param name="severity">To be added.</param>
-        <param name="eventType">To be added.</param>
+        <param name="severity">One of the enumeration values that specifies the type of event that has caused the trace.</param>
+        <param name="eventType">One of the enumeration values that specifies the type of event that has caused the trace.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="data">A data object to write to the output file or stream.</param>
         <summary>Writes trace information, a data object, and event information to the event log.</summary>
@@ -417,8 +417,8 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
-        <param name="severity">To be added.</param>
-        <param name="eventType">To be added.</param>
+        <param name="severity">One of the enumeration values that specifies the type of event that has caused the trace.</param>
+        <param name="eventType">One of the enumeration values that specifies the type of event that has caused the trace.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="data">An array of data objects.</param>
         <summary>Writes trace information, an array of data objects, and event information to the event log.</summary>
@@ -494,8 +494,8 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
-        <param name="severity">To be added.</param>
-        <param name="eventType">To be added.</param>
+        <param name="severity">One of the enumeration values that specifies the type of event that has caused the trace.</param>
+        <param name="eventType">One of the enumeration values that specifies the type of event that has caused the trace.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="message">The trace message.</param>
         <summary>Writes trace information, a message, and event information to the event log.</summary>
@@ -567,8 +567,8 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
-        <param name="severity">To be added.</param>
-        <param name="eventType">To be added.</param>
+        <param name="severity">One of the enumeration values that specifies the type of event that has caused the trace.</param>
+        <param name="eventType">One of the enumeration values that specifies the type of event that has caused the trace.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
         <param name="args">An <see langword="object" /> array containing zero or more objects to format.</param>

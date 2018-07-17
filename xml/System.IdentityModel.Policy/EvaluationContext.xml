@@ -72,8 +72,8 @@
         <Parameter Name="claimSet" Type="System.IdentityModel.Claims.ClaimSet" Index="1" />
       </Parameters>
       <Docs>
-        <param name="policy">To be added.</param>
-        <param name="authorizationPolicy">To be added.</param>
+        <param name="policy">An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents the authorization policy that is adding claims to the evaluation context.</param>
+        <param name="authorizationPolicy">An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents the authorization policy that is adding claims to the evaluation context.</param>
         <param name="claimSet">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that contains a set of claims.</param>
         <summary>Adds a set of claims to the evaluation context.</summary>
         <remarks>
@@ -202,8 +202,8 @@
         <Parameter Name="time" Type="System.DateTime" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="expirationTime">To be added.</param>
-        <param name="time">To be added.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> value that indicates the date and time when this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object is no longer valid.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> value that indicates the date and time when this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object is no longer valid.</param>
         <summary>Sets the date and time at which this <see cref="T:System.IdentityModel.Policy.EvaluationContext" /> is no longer valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

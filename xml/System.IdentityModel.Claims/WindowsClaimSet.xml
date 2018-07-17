@@ -53,8 +53,8 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -90,8 +90,8 @@
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" Index="1" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
         <param name="includeWindowsGroups">
           <see langword="true" /> to include the claims representing the Windows groups to which this user belongs; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
@@ -127,8 +127,8 @@
         <Parameter Name="expirationTime" Type="System.DateTime" Index="1" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
         <param name="expirationTime">A <see cref="T:System.DateTime" /> that specifies the expiration time for the claim set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>To be added.</remarks>
@@ -157,8 +157,8 @@
         <Parameter Name="expirationTime" Type="System.DateTime" Index="2" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
         <param name="includeWindowsGroups">
           <see langword="true" /> to include the Windows groups to which this user belongs; otherwise, <see langword="false" />.</param>
         <param name="expirationTime">A <see cref="T:System.DateTime" /> that specifies the expiration time for the claim set.</param>

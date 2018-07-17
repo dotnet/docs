@@ -73,10 +73,10 @@
         <Parameter Name="resolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver&amp;" RefType="out" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="tokenRequirement">To be added.</param>
-        <param name="requirement">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <param name="resolver">To be added.</param>
+        <param name="tokenRequirement">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> that specifies the security token requirements.</param>
+        <param name="requirement">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> that specifies the security token requirements.</param>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that matches the specified security token requirements.</param>
+        <param name="resolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that matches the specified security token requirements.</param>
         <summary>Gets a security token authenticator that meets the specified security token requirements.</summary>
         <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" /> that authenticates security tokens in incoming SOAP messages that meet the specified requirements.</returns>
         <remarks>
@@ -114,8 +114,8 @@
         <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="tokenRequirement">To be added.</param>
-        <param name="requirement">To be added.</param>
+        <param name="tokenRequirement">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> that specifies the security token requirements.</param>
+        <param name="requirement">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> that specifies the security token requirements.</param>
         <summary>Gets a security token provider that meets the specified security token requirements.</summary>
         <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> that provides security tokens that meet the specified requirements for outgoing SOAP messages.</returns>
         <remarks>

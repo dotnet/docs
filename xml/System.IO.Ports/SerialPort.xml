@@ -2375,8 +2375,8 @@
         <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="str">To be added.</param>
+        <param name="text">The string for output.</param>
+        <param name="str">The string for output.</param>
         <summary>Writes the specified string to the serial port.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2572,8 +2572,8 @@
         <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="str">To be added.</param>
+        <param name="text">The string to write to the output buffer.</param>
+        <param name="str">The string to write to the output buffer.</param>
         <summary>Writes the specified string and the <see cref="P:System.IO.Ports.SerialPort.NewLine" /> value to the output buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -102,8 +102,8 @@
       <Docs>
         <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
         <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
-        <param name="encryptingKeyIdentifier">To be added.</param>
-        <param name="identifier">To be added.</param>
+        <param name="encryptingKeyIdentifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the encrypting key that is specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
+        <param name="identifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the encrypting key that is specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted, the cryptographic algorithm used to encrypt the key, and a key identifier for the encrypting key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -150,8 +150,8 @@
       <Docs>
         <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
         <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
-        <param name="encryptingKeyIdentifier">To be added.</param>
-        <param name="identifier">To be added.</param>
+        <param name="encryptingKeyIdentifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the encrypting key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
+        <param name="identifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the encrypting key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
         <param name="carriedKeyName">A user-readable name that is associated with the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted, the cryptographic algorithm used to encrypt the key, a key identifier for the encrypting key and a user-readable name.</summary>
         <remarks>
@@ -201,8 +201,8 @@
       <Docs>
         <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
         <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
-        <param name="encryptingKeyIdentifier">To be added.</param>
-        <param name="identifier">To be added.</param>
+        <param name="encryptingKeyIdentifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
+        <param name="identifier">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" /> property.</param>
         <param name="carriedKeyName">A user-readable name that is associated with the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" /> property.</param>
         <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
         <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
@@ -371,8 +371,8 @@
         <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="clause">To be added.</param>
+        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to.</param>
+        <param name="clause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> and has the same encrypted key, encryption method and user-readable name as the current instance; otherwise, <see langword="false" />.</returns>

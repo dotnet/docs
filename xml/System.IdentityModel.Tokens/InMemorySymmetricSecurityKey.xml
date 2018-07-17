@@ -57,8 +57,8 @@
         <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="symmetricKey">To be added.</param>
-        <param name="key">To be added.</param>
+        <param name="symmetricKey">An array of <see cref="T:System.Byte" /> that contains the symmetric key.</param>
+        <param name="key">An array of <see cref="T:System.Byte" /> that contains the symmetric key.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -91,10 +91,10 @@
         <Parameter Name="clone" Type="System.Boolean" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="symmetricKey">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="cloneBuffer">To be added.</param>
-        <param name="clone">To be added.</param>
+        <param name="symmetricKey">An array of <see cref="T:System.Byte" /> that contains the symmetric key.</param>
+        <param name="key">An array of <see cref="T:System.Byte" /> that contains the symmetric key.</param>
+        <param name="cloneBuffer"><see langword="true" /> to clone the array passed into the <paramref name="symmetricKey" /> parameter; otherwise, <see langword="false" />.</param>
+        <param name="clone"><see langword="true" /> to clone the array passed into the <paramref name="key" /> parameter; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key and a value that indicates whether the binary data must be cloned.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

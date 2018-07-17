@@ -313,8 +313,8 @@
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the <see langword="&lt;saml:Advice&gt;" /> XML element.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML assertion that are defined in the SAML specification.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
+        <param name="keyInfoTokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that can read a <see langword="KeyInfo" /> clause.</param>
         <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature for SAML assertions that contain this <see langword="&lt;saml:Advice&gt;" /> XML element.</param>
         <summary>Reads the <see langword="&lt;saml:Advice&gt;" /> XML element using the specified XML reader.</summary>
         <remarks>To be added.</remarks>
@@ -354,8 +354,8 @@
       <Docs>
         <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the <see langword="&lt;saml:Advice&gt;" /> element.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing the <see langword="&lt;saml:Advice&gt;" /> element and its child elements and attributes that are defined in the SAML specification.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <param name="keyInfoTokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
         <summary>Writes this <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> into the specified XML writer as an <see langword="&lt;saml:Advice&gt;" /> element.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

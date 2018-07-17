@@ -126,8 +126,8 @@
       <Docs>
         <param name="servicePrincipalName">The service principal name to get a <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token for.</param>
         <param name="tokenImpersonationLevel">A <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> that specifies the degree to which a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token can act on behalf of the client process.</param>
-        <param name="networkCredential">To be added.</param>
-        <param name="credential">To be added.</param>
+        <param name="networkCredential">A <see cref="T:System.Net.NetworkCredential" /> that represents the identity of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" />.</param>
+        <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> that represents the identity of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" /> class using the specified service principal name, client identity, and whether a client allows a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token to impersonate the client's credentials.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

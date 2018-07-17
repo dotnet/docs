@@ -257,8 +257,8 @@
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
-        <param name="tokenToBeRenewed">To be added.</param>
-        <param name="token">To be added.</param>
+        <param name="tokenToBeRenewed">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
         <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
         <summary>Begins an asynchronous operation that renews a security token.</summary>
@@ -305,8 +305,8 @@
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
-        <param name="tokenToBeRenewed">To be added.</param>
-        <param name="token">To be added.</param>
+        <param name="tokenToBeRenewed">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
         <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
         <summary>Begins an asynchronous operation that renews a security token.</summary>
@@ -713,8 +713,8 @@
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
-        <param name="tokenToBeRenewed">To be added.</param>
-        <param name="token">To be added.</param>
+        <param name="tokenToBeRenewed">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
         <summary>Renews a security token.</summary>
         <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
         <remarks>
@@ -756,8 +756,8 @@
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
-        <param name="tokenToBeRenewed">To be added.</param>
-        <param name="token">To be added.</param>
+        <param name="tokenToBeRenewed">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to renew.</param>
         <summary>Renews a security token.</summary>
         <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
         <remarks>

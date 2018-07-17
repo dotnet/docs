@@ -380,14 +380,14 @@
         <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="buffer">To be added.</param>
+        <param name="array">The byte array to read the data into.</param>
+        <param name="buffer">The byte array to read the data into.</param>
         <param name="offset">The byte offset in <c>array</c> at which to begin reading data from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
-        <param name="asyncCallback">To be added.</param>
-        <param name="cback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <param name="state">To be added.</param>
+        <param name="asyncCallback">An optional asynchronous callback, to be called when the read operation is complete.</param>
+        <param name="cback">An optional asynchronous callback, to be called when the read operation is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
         <summary>Begins an asynchronous read operation. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An object that represents the asynchronous read operation, which could still be pending.</returns>
         <remarks>
@@ -464,14 +464,14 @@
         <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="buffer">To be added.</param>
+        <param name="array">The buffer containing data to write to the current stream.</param>
+        <param name="buffer">The buffer containing data to write to the current stream.</param>
         <param name="offset">The byte offset in <c>array</c> at which to begin writing.</param>
         <param name="count">The maximum number of bytes to write.</param>
-        <param name="asyncCallback">To be added.</param>
-        <param name="cback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <param name="state">To be added.</param>
+        <param name="asyncCallback">An optional asynchronous callback to be called when the write operation is complete.</param>
+        <param name="cback">An optional asynchronous callback to be called when the write operation is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
         <summary>Begins an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An  object that represents the asynchronous write operation, which could still be pending.</returns>
         <remarks>
@@ -696,8 +696,8 @@
         <Parameter Name="async_result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="async_result">To be added.</param>
+        <param name="asyncResult">The reference to the pending asynchronous request to finish.</param>
+        <param name="async_result">The reference to the pending asynchronous request to finish.</param>
         <summary>Waits for the pending asynchronous read to complete. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>The number of bytes read from the stream, between 0 (zero) and the number of bytes you requested. <see cref="T:System.IO.Compression.GZipStream" /> returns 0 only at the end of the stream; otherwise, it blocks until at least one byte is available.</returns>
         <remarks>
@@ -763,8 +763,8 @@
         <Parameter Name="async_result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="async_result">To be added.</param>
+        <param name="asyncResult">The object that represents the asynchronous call.</param>
+        <param name="async_result">The object that represents the asynchronous call.</param>
         <summary>Handles the end of an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

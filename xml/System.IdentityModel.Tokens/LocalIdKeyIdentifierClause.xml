@@ -186,8 +186,8 @@
         <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="clause">To be added.</param>
+        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to.</param>
+        <param name="clause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> and the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties match the current instance; otherwise, <see langword="false" />. See the remarks for more details.</returns>

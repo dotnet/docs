@@ -333,7 +333,7 @@ The following illustration shows the results of what you just added:
 
 ## Create the UI for ExpenseReportPage
 
-*ExpenseReportPage.xaml* displays the expense report for the person that's selected on the **`ExpenseItHome`** page. In this section, you'll controls and create the UI for **ExpenseReportPage**. You'll also add background and fill colors to the various UI elements.
+*ExpenseReportPage.xaml* displays the expense report for the person that's selected on the **`ExpenseItHome`** page. In this section, you'll create the UI for **ExpenseReportPage**. You'll also add background and fill colors to the various UI elements.
 
 1. Open *ExpenseReportPage.xaml*.
 

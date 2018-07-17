@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 author: jralexander
 ms.author: johalex
-ms.date: 06/01/2018
+ms.date: 07/17/2018
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -25,11 +25,10 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 NET Core 2.1 is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
 
-
 * Red Hat Enterprise Linux 7, 6
 * CentOS 7
 * Oracle Linux 7
-* Fedora 27
+* Fedora 28, 27
 * Debian 9, 8.7 or later versions
 * Ubuntu 18.04, 17.10, 16.04, 14.04
 * Linux Mint 18, 17
@@ -37,7 +36,7 @@ NET Core 2.1 is supported on the following Linux 64-bit (`x86_64` or `amd64`) di
 * SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later
 * Alpine Linux 3.7 or later versions
 
-See [.NET Core 2.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
 **NET Core 2.0**
 

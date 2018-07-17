@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
 ---
 # Interface Properties (C# Programming Guide)
-Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface indexer accessor:  
+Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface property accessor:  
   
  [!code-csharp[csProgGuideProperties#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/interface-properties_1.cs)]  
   

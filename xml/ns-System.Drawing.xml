@@ -8,7 +8,7 @@
  The <xref:System.Drawing.Graphics> class provides methods for drawing to the display device. Classes such as <xref:System.Drawing.Rectangle> and <xref:System.Drawing.Point> encapsulate GDI+ primitives. The <xref:System.Drawing.Pen> class is used to draw lines and curves, while classes derived from the abstract class <xref:System.Drawing.Brush> are used to fill the interiors of shapes.  
   
 > [!CAUTION]
->  Classes within the <xref:System.Drawing> namespace are not supported for use within a Windows or ASP.NET service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions. For a supported alternative, see [Windows Imaging Components](http://msdn.microsoft.com/library/windows/desktop/ee719654\(v=vs.85\).aspx).  
+> Classes within the <xref:System.Drawing> namespace are not supported for use within a Windows or ASP.NET service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions. For a supported alternative, see [Windows Imaging Components](/windows/desktop/wic/-wic-about-windows-imaging-codec).
   
  ]]></format>
     </remarks>

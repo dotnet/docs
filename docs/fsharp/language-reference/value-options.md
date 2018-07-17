@@ -6,16 +6,16 @@ ms.date: 06/16/2018
 
 # Value Options
 
-The Value Option type in F# is generally used when the following two circumstances hold:
+The Value Option type in F# is used when the following two circumstances hold:
 
 1. A scenario is appropriate for an [F# Option](options.md).
 2. Using a struct provides a performance benefit in your scenario.
 
-It's important to note that not all performance-sensitive scenarios are "solved" by using structs, and you must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, because structs can sometimes yield better overall performance over the lifetime of a program.
+Not all performance-sensitive scenarios are "solved" by using structs. You must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, because structs can sometimes yield better overall performance over the lifetime of a program.
 
 ## Definition
 
-Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-union) that is nearly identical to reference option type:
+Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-union) that is similar to the reference option type:
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]
@@ -69,7 +69,7 @@ There is currently one module-bound function for Value Options, `defaultValueArg
 val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T 
 ```
 
-As with the `defaultArg` function, this returns the underlying value of the given Value Option if it exists; otherwise, it returns the specified default value.
+As with the `defaultArg` function, `defaultValueArg` returns the underlying value of the given Value Option if it exists; otherwise, it returns the specified default value.
 
 At this time, there are no other module-bound functions for Value Options.
 

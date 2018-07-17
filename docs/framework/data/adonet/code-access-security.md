@@ -83,7 +83,7 @@ The .NET Framework offers role-based security as well as code access security (C
 ```  
   
 #### KeyRestrictions Syntax  
- The following example enables the same connection string, enables the use of the `Encrypt` and `Packet``Size` connection string options, but restricts the use of any other connection string options.  
+ The following example enables the same connection string, enables the use of the `Encrypt` and `Packet Size` connection string options, but restricts the use of any other connection string options.  
   
 ```xml  
 <connectionStrings>  

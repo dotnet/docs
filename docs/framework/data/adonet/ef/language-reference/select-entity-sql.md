@@ -26,7 +26,7 @@ SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE wh
  Allows only one item to be specified, and does not add on a row wrapper.  
   
  `topSubclause`  
- Any valid expression that indicates the number of first results to return from the query, of the form `top (``expr``)`.  
+ Any valid expression that indicates the number of first results to return from the query, of the form `top(expr)`.  
   
  The LIMIT parameter of the [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) operator also lets you select the first n items in the result set.  
   

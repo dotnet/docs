@@ -90,10 +90,13 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 In the first section, `"name": ".NET Core Launch (console)"`, find the `"program"` field. Change its value to 
 
-```"program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",```
+```json
+"program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",
+```
 
 That section of your `.vscode/launch.json` should then look like this after the change:
-```
+
+```json
 {
     "name": ".NET Core Launch (console)",
     "type": "coreclr",

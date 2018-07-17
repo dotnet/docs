@@ -82,6 +82,37 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > [!TIP] 
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
+8. If debugging doesn't work in Visual Studio Code, you might need to change some configurations. Open `.vscode/launcher.json` file; you'll see 3 configuration sections:
+
+* `"name": ".NET Core Launch (console)"`
+* `"name": ".NET Core Launch (web)"`
+* `"name": ".NET Core Attach"`
+
+In the first section, `"name": ".NET Core Launch (console)"`, find the `"program"` field. Change its value to 
+
+```json
+"program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",
+```
+
+That section of your `.vscode/launch.json` should then look like this after the change:
+
+```json
+{
+    "name": ".NET Core Launch (console)",
+    "type": "coreclr",
+    "request": "launch",
+    "preLaunchTask": "build",
+    "program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",
+    "args": [],
+    "cwd": "${workspaceFolder}",
+    "console": "internalConsole",
+    "stopAtEntry": false,
+    "internalConsoleOptions": "openOnSessionStart"
+},
+```
+
+Debugging in Visual Studio Code should work after that change.
+
 ## See also
 [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   
 [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

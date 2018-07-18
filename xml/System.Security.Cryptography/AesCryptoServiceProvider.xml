@@ -172,10 +172,10 @@
         <Parameter Name="iv" Type="System.Byte[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
-        <param name="rgbKey">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="rgbIV">To be added.</param>
-        <param name="iv">To be added.</param>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="key">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
         <summary>Creates a symmetric AES decryptor object using the specified key and initialization vector (IV).</summary>
         <returns>A symmetric AES decryptor object.</returns>
         <remarks>
@@ -276,10 +276,10 @@
         <Parameter Name="iv" Type="System.Byte[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
-        <param name="rgbKey">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="rgbIV">To be added.</param>
-        <param name="iv">To be added.</param>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="key">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
         <summary>Creates a symmetric encryptor object using the specified key and initialization vector (IV).</summary>
         <returns>A symmetric AES encryptor object.</returns>
         <remarks>

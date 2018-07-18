@@ -843,8 +843,8 @@
         <Parameter Name="state" Type="System.Object" Index="2" />
       </Parameters>
       <Docs>
-        <param name="remoteEP">To be added.</param>
-        <param name="end_point">To be added.</param>
+        <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the remote host.</param>
+        <param name="end_point">An <see cref="T:System.Net.EndPoint" /> that represents the remote host.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
         <param name="state">An object that contains state information for this request.</param>
         <summary>Begins an asynchronous request for a remote host connection.</summary>
@@ -898,6 +898,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>        
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -941,8 +944,8 @@
       <Docs>
         <param name="address">The <see cref="T:System.Net.IPAddress" /> of the remote host.</param>
         <param name="port">The port number of the remote host.</param>
-        <param name="requestCallback">To be added.</param>
-        <param name="callback">To be added.</param>
+        <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by an <see cref="T:System.Net.IPAddress" /> and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connection.</returns>
@@ -995,6 +998,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>        
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -1038,8 +1044,8 @@
       <Docs>
         <param name="addresses">At least one <see cref="T:System.Net.IPAddress" />, designating the remote host.</param>
         <param name="port">The port number of the remote host.</param>
-        <param name="requestCallback">To be added.</param>
-        <param name="callback">To be added.</param>
+        <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by an <see cref="T:System.Net.IPAddress" /> array and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connections.</returns>
@@ -1092,6 +1098,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -1135,8 +1144,8 @@
       <Docs>
         <param name="host">The name of the remote host.</param>
         <param name="port">The port number of the remote host.</param>
-        <param name="requestCallback">To be added.</param>
-        <param name="callback">To be added.</param>
+        <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by a host name and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connection.</returns>
@@ -1187,6 +1196,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginDisconnect">
@@ -1478,8 +1490,8 @@
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
         <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="socket_flags">To be added.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
         <param name="state">A user-defined object that contains information about the receive operation. This object is passed to the <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> delegate when the operation is complete.</param>
         <summary>Begins to asynchronously receive data from a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
@@ -1553,6 +1565,9 @@
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1600,10 +1615,10 @@
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
         <param name="offset">The location in <c>buffer</c> to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <param name="error">To be added.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="errorCode">A <see cref="T:System.Net.Sockets.SocketError" /> object that stores the socket error.</param>
+        <param name="error">A <see cref="T:System.Net.Sockets.SocketError" /> object that stores the socket error.</param>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
         <param name="state">A user-defined object that contains information about the receive operation. This object is passed to the <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> delegate when the operation is complete.</param>
         <summary>Begins to asynchronously receive data from a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
@@ -1660,6 +1675,9 @@
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveFrom">
@@ -1708,10 +1726,10 @@
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
         <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to store the data.</param>
         <param name="size">The number of bytes to receive.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="socket_flags">To be added.</param>
-        <param name="remoteEP">To be added.</param>
-        <param name="remote_end">To be added.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the source of the data.</param>
+        <param name="remote_end">An <see cref="T:System.Net.EndPoint" /> that represents the source of the data.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
         <param name="state">An object that contains state information for this request.</param>
         <summary>Begins to asynchronously receive data from a specified network device.</summary>
@@ -1787,6 +1805,7 @@
         <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.Socket.Accept" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveMessageFrom">
@@ -2216,8 +2235,8 @@
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to send.</param>
         <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to begin sending data.</param>
         <param name="size">The number of bytes to send.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="socket_flags">To be added.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
         <param name="state">An object that contains state information for this request.</param>
         <summary>Sends data asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
@@ -2286,6 +2305,9 @@
         <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
         <altmember cref="T:System.AsyncCallback" />
         <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-client-socket-example.md">Asynchronous Client Socket Example</related>
+        <related type="Article" href="~/docs/framework/network-programming/asynchronous-server-socket-example.md">Asynchronous Server Socket Example</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginSendFile">
@@ -2512,10 +2534,10 @@
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to send.</param>
         <param name="offset">The zero-based position in <c>buffer</c> at which to begin sending data.</param>
         <param name="size">The number of bytes to send.</param>
-        <param name="socketFlags">To be added.</param>
-        <param name="socket_flags">To be added.</param>
-        <param name="remoteEP">To be added.</param>
-        <param name="remote_end">To be added.</param>
+        <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
+        <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the remote device.</param>
+        <param name="remote_end">An <see cref="T:System.Net.EndPoint" /> that represents the remote device.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
         <param name="state">An object that contains state information for this request.</param>
         <summary>Sends data asynchronously to a specific remote host.</summary>
@@ -2587,6 +2609,7 @@
         <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
         <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
         <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <related type="Article" href="~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md">Marshaling a Delegate as a Callback Method</related>
       </Docs>
     </Member>
     <Member MemberName="Bind">
@@ -3997,8 +4020,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information for this asynchronous operation as well as any user defined data.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information for this asynchronous operation as well as any user defined data.</param>
         <summary>Asynchronously accepts an incoming connection attempt and creates a new <see cref="T:System.Net.Sockets.Socket" /> to handle remote host communication.</summary>
         <returns>A <see cref="T:System.Net.Sockets.Socket" /> to handle communication with the remote host.</returns>
         <remarks>
@@ -4153,8 +4176,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
         <summary>Ends a pending asynchronous connection request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4309,8 +4332,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
         <summary>Ends a pending asynchronous read.</summary>
         <returns>The number of bytes received.</returns>
         <remarks>
@@ -4478,10 +4501,10 @@
         <Parameter Name="end_point" Type="System.Net.EndPoint&amp;" RefType="ref" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
-        <param name="endPoint">To be added.</param>
-        <param name="end_point">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
+        <param name="endPoint">The source <see cref="T:System.Net.EndPoint" />.</param>
+        <param name="end_point">The source <see cref="T:System.Net.EndPoint" />.</param>
         <summary>Ends a pending asynchronous read from a specific endpoint.</summary>
         <returns>If successful, the number of bytes received. If unsuccessful, returns 0.</returns>
         <remarks>
@@ -4640,8 +4663,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information for this asynchronous operation.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information for this asynchronous operation.</param>
         <summary>Ends a pending asynchronous send.</summary>
         <returns>If successful, the number of bytes sent to the <see cref="T:System.Net.Sockets.Socket" />; otherwise, an invalid <see cref="T:System.Net.Sockets.Socket" /> error.</returns>
         <remarks>
@@ -4882,8 +4905,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that stores state information and any user defined data for this asynchronous operation.</param>
         <summary>Ends a pending asynchronous send to a specific location.</summary>
         <returns>If successful, the number of bytes sent; otherwise, an invalid <see cref="T:System.Net.Sockets.Socket" /> error.</returns>
         <remarks>

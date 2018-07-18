@@ -2159,8 +2159,8 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
       </Parameters>
       <Docs>
         <param name="asyncResult">The pending request for a stream.</param>
-        <param name="context">To be added.</param>
-        <param name="transportContext">To be added.</param>
+        <param name="context">The <see cref="T:System.Net.TransportContext" /> for the <see cref="T:System.IO.Stream" />.</param>
+        <param name="transportContext">The <see cref="T:System.Net.TransportContext" /> for the <see cref="T:System.IO.Stream" />.</param>
         <summary>Ends an asynchronous request for a <see cref="T:System.IO.Stream" /> object to use to write data and outputs the <see cref="T:System.Net.TransportContext" /> associated with the stream.</summary>
         <returns>A <see cref="T:System.IO.Stream" /> to use to write request data.</returns>
         <remarks>
@@ -2198,6 +2198,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <altmember cref="M:System.Net.TransportContext.GetChannelBinding(System.Security.Authentication.ExtendedProtection.ChannelBindingKind)" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">

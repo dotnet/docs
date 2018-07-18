@@ -99,8 +99,8 @@
         <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="msg">To be added.</param>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="msg">The error message that explains the reason for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,8 +128,8 @@
         <Parameter Name="filters" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" Index="1" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="msg">To be added.</param>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="msg">The error message that explains the reason for the exception.</param>
         <param name="filters">A collection of message filters.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message and a collection of filters.</summary>
         <remarks>To be added.</remarks>
@@ -159,10 +159,10 @@
         <Parameter Name="inner" Type="System.Exception" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="inner">To be added.</param>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="msg">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The <see cref="T:System.Exception" /> that caused the current exception to be thrown.</param>
+        <param name="inner">The <see cref="T:System.Exception" /> that caused the current exception to be thrown.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <Parameter Name="filters" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" Index="2" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="inner">To be added.</param>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="msg">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The <see cref="T:System.Exception" /> that caused the current exception to be thrown.</param>
+        <param name="inner">The <see cref="T:System.Exception" /> that caused the current exception to be thrown.</param>
         <param name="filters">A collection of message filters.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message, an exception, and a collection of filters.</summary>
         <remarks>To be added.</remarks>

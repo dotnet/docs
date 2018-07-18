@@ -144,8 +144,8 @@
       </Parameters>
       <Docs>
         <param name="uri">The Uniform Resource Identifier (URI) that points to the data to encrypt.</param>
-        <param name="transformChain">To be added.</param>
-        <param name="tc">To be added.</param>
+        <param name="transformChain">A <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object that describes transforms to be done on the data to encrypt.</param>
+        <param name="tc">A <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object that describes transforms to be done on the data to encrypt.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedReference" /> class using the specified Uniform Resource Identifier (URI) and transform chain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

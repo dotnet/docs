@@ -735,8 +735,8 @@
       </Parameters>
       <Docs>
         <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
-        <param name="faultCode">To be added.</param>
-        <param name="code">To be added.</param>
+        <param name="faultCode">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
+        <param name="code">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
         <param name="reason">The reason of the SOAP fault.</param>
         <param name="action">A description of how the message should be processed.</param>
         <summary>Creates a message that contains a SOAP fault, the reason for the fault, a version and an action.</summary>
@@ -783,8 +783,8 @@
       </Parameters>
       <Docs>
         <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
-        <param name="faultCode">To be added.</param>
-        <param name="code">To be added.</param>
+        <param name="faultCode">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
+        <param name="code">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
         <param name="reason">The reason of the SOAP fault.</param>
         <param name="detail">The details of the SOAP fault.</param>
         <param name="action">A description of how the message should be processed.</param>

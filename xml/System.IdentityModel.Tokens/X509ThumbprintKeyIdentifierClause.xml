@@ -98,8 +98,8 @@
         <Parameter Name="certificateThumbprint" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="thumbprint">To be added.</param>
-        <param name="certificateThumbprint">To be added.</param>
+        <param name="thumbprint">An array of <see cref="T:System.Byte" /> that contains the thumbprint of the X.509 certificate.</param>
+        <param name="certificateThumbprint">An array of <see cref="T:System.Byte" /> that contains the thumbprint of the X.509 certificate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class using the specified thumbprint for an X.509 certificate.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

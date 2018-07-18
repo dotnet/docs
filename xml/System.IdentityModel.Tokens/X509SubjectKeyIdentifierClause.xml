@@ -58,8 +58,8 @@
         <Parameter Name="certificateSubject" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="ski">To be added.</param>
-        <param name="certificateSubject">To be added.</param>
+        <param name="ski">An array of <see cref="T:System.Byte" /> that contains the subject key identifier.</param>
+        <param name="certificateSubject">An array of <see cref="T:System.Byte" /> that contains the subject key identifier.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" /> class using the specified subject key identifier.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -218,8 +218,8 @@
       </Parameters>
       <Docs>
         <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> to create the key identifier clause for.</param>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="clause">To be added.</param>
+        <param name="keyIdentifierClause">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" /> that represents the key identifier clause. This parameter is passed uninitialized.</param>
+        <param name="clause">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" /> that represents the key identifier clause. This parameter is passed uninitialized.</param>
         <summary>Creates a key identifier clause using the specified X.509 certificate.</summary>
         <returns>
           <see langword="true" /> when a key identifier clause can be created for the specified X.509 certificate; otherwise, <see langword="false" />.</returns>

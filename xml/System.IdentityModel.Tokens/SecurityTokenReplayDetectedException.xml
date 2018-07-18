@@ -112,8 +112,8 @@
       </Parameters>
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred.</param>
-        <param name="inner">To be added.</param>
-        <param name="innerException">To be added.</param>
+        <param name="inner">An <see cref="T:System.Exception" /> that represents the root cause of the exception.</param>
+        <param name="innerException">An <see cref="T:System.Exception" /> that represents the root cause of the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException" /> class using the specified error message and root cause of the error.</summary>
         <remarks>To be added.</remarks>
       </Docs>

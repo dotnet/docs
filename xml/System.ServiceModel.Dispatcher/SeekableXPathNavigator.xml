@@ -75,10 +75,10 @@
         <Parameter Name="second" Type="System.Int64" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="firstPosition">To be added.</param>
-        <param name="first">To be added.</param>
-        <param name="secondPosition">To be added.</param>
-        <param name="second">To be added.</param>
+        <param name="firstPosition">The first position in the comparison.</param>
+        <param name="first">The first position in the comparison.</param>
+        <param name="secondPosition">The second position in the comparison.</param>
+        <param name="second">The second position in the comparison.</param>
         <summary>When overridden in a derived class, returns a value that describes the document order of the two specified positions.</summary>
         <returns>One of the <see cref="T:System.Xml.XmlNodeOrder" /> values that describes the relation of <paramref name="firstPosition" /> to <paramref name="secondPosition" /> in the document.</returns>
         <remarks>To be added.</remarks>
@@ -152,8 +152,8 @@
         <Parameter Name="node_position" Type="System.Int64" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="nodePosition">To be added.</param>
-        <param name="node_position">To be added.</param>
+        <param name="nodePosition">The position of the node whose local name is being retrieved.</param>
+        <param name="node_position">The position of the node whose local name is being retrieved.</param>
         <summary>When overridden in a derived class, returns the local name of the node at the position specified.</summary>
         <returns>The local name of the node at the specified position. <see cref="F:System.String.Empty" /> is returned if the node does not have a local name, for example if the current position references a text node.</returns>
         <remarks>To be added.</remarks>
@@ -186,8 +186,8 @@
         <Parameter Name="node_position" Type="System.Int64" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="nodePosition">To be added.</param>
-        <param name="node_position">To be added.</param>
+        <param name="nodePosition">The position of the node whose name is being retrieved.</param>
+        <param name="node_position">The position of the node whose name is being retrieved.</param>
         <summary>When overridden in a derived class, returns the name of the node at the specified position.</summary>
         <returns>The name of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a name.</returns>
         <remarks>
@@ -227,8 +227,8 @@
         <Parameter Name="node_position" Type="System.Int64" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="nodePosition">To be added.</param>
-        <param name="node_position">To be added.</param>
+        <param name="nodePosition">The position of the node whose namespace is being retrieved.</param>
+        <param name="node_position">The position of the node whose namespace is being retrieved.</param>
         <summary>When overridden in a derived class, returns the namespace of the node at the specified position.</summary>
         <returns>The namespace of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a namespace.</returns>
         <remarks>To be added.</remarks>
@@ -261,8 +261,8 @@
         <Parameter Name="node_position" Type="System.Int64" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="nodePosition">To be added.</param>
-        <param name="node_position">To be added.</param>
+        <param name="nodePosition">The position of the node whose node type is being retrieved.</param>
+        <param name="node_position">The position of the node whose node type is being retrieved.</param>
         <summary>When overridden in a derived class, returns the type of the node at the specified position.</summary>
         <returns>One of the <see cref="T:System.Xml.XPath.XPathNodeType" /> values that indicate the type of the XML node.</returns>
         <remarks>To be added.</remarks>
@@ -295,8 +295,8 @@
         <Parameter Name="node_position" Type="System.Int64" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="nodePosition">To be added.</param>
-        <param name="node_position">To be added.</param>
+        <param name="nodePosition">The position of the node whose text value is being retrieved.</param>
+        <param name="node_position">The position of the node whose text value is being retrieved.</param>
         <summary>When overridden in a derived class, returns the text value of the node at the specified position.</summary>
         <returns>The text value of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a text value.</returns>
         <remarks>

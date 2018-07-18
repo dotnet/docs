@@ -90,8 +90,8 @@
         <Parameter Name="result" Type="System.Object" Index="2" />
       </Parameters>
       <Docs>
-        <param name="messageVersion">To be added.</param>
-        <param name="version">To be added.</param>
+        <param name="messageVersion">The SOAP message version.</param>
+        <param name="version">The SOAP message version.</param>
         <param name="parameters">The out parameters.</param>
         <param name="result">The return value.</param>
         <summary>Serializes a reply message from a specified message version, array of parameters, and a return value.</summary>

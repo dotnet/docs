@@ -293,8 +293,8 @@
         <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="configurationName">To be added.</param>
-        <param name="name">To be added.</param>
+        <param name="configurationName">A value of the <see langword="configurationName" /> attribute that identifies the <see langword="binding" /> element whose settings are used to initialize the binding.</param>
+        <param name="name">A value of the <see langword="configurationName" /> attribute that identifies the <see langword="binding" /> element whose settings are used to initialize the binding.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CustomBinding" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

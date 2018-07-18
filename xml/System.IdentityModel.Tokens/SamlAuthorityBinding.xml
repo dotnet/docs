@@ -87,8 +87,8 @@
         <Parameter Name="location" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
-        <param name="authorityKind">To be added.</param>
-        <param name="kind">To be added.</param>
+        <param name="authorityKind">An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the type of queries that the SAML authority that has additional information about the subject responds to.</param>
+        <param name="kind">An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the type of queries that the SAML authority that has additional information about the subject responds to.</param>
         <param name="binding">A URI reference that identifies the SAML protocol binding to use when communicating with the SAML authority that has additional information about the subject.</param>
         <param name="location">A URI reference that describes how to locate and communicate with the SAML authority that has additional information about the subject.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> class using the specified query types, protocol binding, and SAML authority location.</summary>

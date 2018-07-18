@@ -122,8 +122,8 @@
       </Parameters>
       <Docs>
         <param name="strUri">The Uniform Resource Identifier (URI) of the information to be referenced by the new instance of <see cref="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" />.</param>
-        <param name="typeName">To be added.</param>
-        <param name="strType">To be added.</param>
+        <param name="typeName">The URI that describes the type of data to retrieve.</param>
+        <param name="strType">The URI that describes the type of data to retrieve.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" /> class with the specified Uniform Resource Identifier (URI) pointing to the referenced <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> object and the URI that describes the type of data to retrieve.</summary>
         <remarks>To be added.</remarks>
       </Docs>

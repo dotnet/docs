@@ -491,8 +491,8 @@
       </Parameters>
       <Docs>
         <param name="content">A <see cref="T:System.String" /> that contains the content for this attachment.</param>
-        <param name="contentEncoding">To be added.</param>
-        <param name="encoding">To be added.</param>
+        <param name="contentEncoding">An <see cref="T:System.Text.Encoding" />. This value can be <see langword="null." /></param>
+        <param name="encoding">An <see cref="T:System.Text.Encoding" />. This value can be <see langword="null." /></param>
         <param name="mediaType">The MIME media type of the content.</param>
         <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" />, the specified text encoding, and MIME media type of the content.</summary>
         <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>

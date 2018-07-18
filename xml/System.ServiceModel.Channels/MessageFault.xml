@@ -293,8 +293,8 @@
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
-        <param name="serializer">To be added.</param>
-        <param name="formatter">To be added.</param>
+        <param name="serializer">The serializer to use when serializing the detail object.</param>
+        <param name="formatter">The serializer to use when serializing the detail object.</param>
         <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that uses the specified <see cref="T:System.ServiceModel.FaultCode" />, <see cref="T:System.ServiceModel.FaultReason" />, detail object, and  <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> objects.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object with initial values from the passed in parameters.</returns>
         <remarks>To be added.</remarks>
@@ -333,8 +333,8 @@
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
-        <param name="serializer">To be added.</param>
-        <param name="formatter">To be added.</param>
+        <param name="serializer">The serializer to use when serializing the detail object.</param>
+        <param name="formatter">The serializer to use when serializing the detail object.</param>
         <param name="actor">The value of the actor.</param>
         <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that uses the specified <see cref="T:System.ServiceModel.FaultCode" />, <see cref="T:System.ServiceModel.FaultReason" />, detail object, <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />, and actor.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object with initial values from the passed in parameters.</returns>
@@ -375,8 +375,8 @@
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
-        <param name="serializer">To be added.</param>
-        <param name="formatter">To be added.</param>
+        <param name="serializer">The serializer to use when serializing the detail object.</param>
+        <param name="formatter">The serializer to use when serializing the detail object.</param>
         <param name="actor">The value of the actor.</param>
         <param name="node">The value of the node.</param>
         <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that uses the specified <see cref="T:System.ServiceModel.FaultCode" />, <see cref="T:System.ServiceModel.FaultReason" />, detail object, <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />, actor, and node values.</summary>

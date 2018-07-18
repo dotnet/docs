@@ -116,8 +116,8 @@
         <Parameter Name="other" Type="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="elementToBeCloned">To be added.</param>
-        <param name="other">To be added.</param>
+        <param name="elementToBeCloned">Instance of this class to clone.</param>
+        <param name="other">Instance of this class to clone.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" /> class from an existing instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>

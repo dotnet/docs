@@ -199,8 +199,8 @@ EncryptedXml exml = new EncryptedXml(doc, ev);
       </Parameters>
       <Docs>
         <param name="uri">A Uniform Resource Identifier (URI) pointing to the encrypted data.</param>
-        <param name="transformChain">To be added.</param>
-        <param name="tc">To be added.</param>
+        <param name="transformChain">A <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object that describes transforms to do on the encrypted data.</param>
+        <param name="tc">A <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object that describes transforms to do on the encrypted data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.CipherReference" /> class using the specified Uniform Resource Identifier (URI) and transform chain information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

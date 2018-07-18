@@ -248,8 +248,8 @@
         <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="skiClause">To be added.</param>
+        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to this instance.</param>
+        <param name="skiClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to this instance.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance can be resolved to the specified key identifier.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
@@ -289,8 +289,8 @@
         <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="skiClause">To be added.</param>
+        <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to get the key for.</param>
+        <param name="skiClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to get the key for.</param>
         <summary>Gets the key for the specified key identifier clause.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that represents the key.</returns>
         <remarks>

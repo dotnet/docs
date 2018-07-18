@@ -369,8 +369,8 @@
         <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML authorization statement.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML authorization statement that is defined in the SAML specification.</param>
         <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <param name="resolver">To be added.</param>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <param name="resolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
         <summary>Reads the SAML authorization statement from the specified XML reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -84,8 +84,8 @@
         <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <param name="exception">To be added.</param>
+        <param name="error">The exception thrown during processing.</param>
+        <param name="exception">The exception thrown during processing.</param>
         <summary>Enables error-related processing and returns a value that indicates whether the dispatcher aborts the session and the instance context in certain cases.</summary>
         <returns>
           <see langword="true" /> if Windows Communication Foundation (WCF) should not abort the session (if there is one) and instance context if the instance context is not <see cref="F:System.ServiceModel.InstanceContextMode.Single" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
@@ -153,8 +153,8 @@
         <Parameter Name="fault" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" Index="2" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <param name="exception">To be added.</param>
+        <param name="error">The <see cref="T:System.Exception" /> object thrown in the course of the service operation.</param>
+        <param name="exception">The <see cref="T:System.Exception" /> object thrown in the course of the service operation.</param>
         <param name="version">The SOAP version of the message.</param>
         <param name="fault">The <see cref="T:System.ServiceModel.Channels.Message" /> object that is returned to the client, or service, in the duplex case.</param>
         <summary>Enables the creation of a custom <see cref="T:System.ServiceModel.FaultException`1" /> that is returned from an exception in the course of a service method.</summary>

@@ -114,8 +114,8 @@
       </Parameters>
       <Docs>
         <param name="operation">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to export or serialize.</param>
-        <param name="attribute">To be added.</param>
-        <param name="format">To be added.</param>
+        <param name="attribute">An <see cref="T:System.ServiceModel.XmlSerializerFormatAttribute" /> used to hold SOAP use and format options.</param>
+        <param name="format">An <see cref="T:System.ServiceModel.XmlSerializerFormatAttribute" /> used to hold SOAP use and format options.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

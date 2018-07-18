@@ -97,8 +97,8 @@
         <Parameter Name="elemProp" Type="System.Xml.XmlElement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="elementProperty">To be added.</param>
-        <param name="elemProp">To be added.</param>
+        <param name="elementProperty">An <see cref="T:System.Xml.XmlElement" /> object to use for initialization.</param>
+        <param name="elemProp">An <see cref="T:System.Xml.XmlElement" /> object to use for initialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> class using an <see cref="T:System.Xml.XmlElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

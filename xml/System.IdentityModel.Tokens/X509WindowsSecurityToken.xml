@@ -58,10 +58,10 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="cert">To be added.</param>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</param>
+        <param name="cert">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents the identity of a Windows domain or computer account.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents the identity of a Windows domain or computer account.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" /> class using the specified X.509 certificate and Windows domain or computer account.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -123,10 +123,10 @@
         <Parameter Name="id" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="cert">To be added.</param>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</param>
+        <param name="cert">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents the identity of a Windows domain or computer account.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents the identity of a Windows domain or computer account.</param>
         <param name="id">A unique identifier of the security token.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" /> class using the specified X.509 certificate, Windows domain or computer account, and unique identifier.</summary>
         <remarks>To be added.</remarks>

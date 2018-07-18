@@ -86,12 +86,12 @@
         <param name="assertionId">The identifier for the assertion.</param>
         <param name="issuer">The SAML authority that issued this SAML assertion.</param>
         <param name="issueInstant">A <see cref="T:System.DateTime" /> that specifies when the SAML assertion was issued.</param>
-        <param name="samlConditions">To be added.</param>
-        <param name="conditions">To be added.</param>
-        <param name="samlAdvice">To be added.</param>
-        <param name="advice">To be added.</param>
-        <param name="samlStatements">To be added.</param>
-        <param name="statements">To be added.</param>
+        <param name="samlConditions">A <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> that specifies a set of conditions that may be taken into account when assessing the validity of the SAML assertion.</param>
+        <param name="conditions">A <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> that specifies a set of conditions that may be taken into account when assessing the validity of the SAML assertion.</param>
+        <param name="samlAdvice">A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that specifies additional information supplied by the SAML authority that can aide in the processing of the SAML assertion.</param>
+        <param name="advice">A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that specifies additional information supplied by the SAML authority that can aide in the processing of the SAML assertion.</param>
+        <param name="samlStatements">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> that contain SAML statements.</param>
+        <param name="statements">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> that contain SAML statements.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> class using the specified SAML assertion identifier, issuer of the assertion, the date and time when the assertion was issued, a set of processing conditions, additional information, and a collection of SAML statements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -462,8 +462,8 @@
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the digital signature.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
+        <param name="keyInfoTokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
         <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements that are defined in the SAML specification.</param>
         <summary>Reads the digital signature for a SAML assertion from an XML reader.</summary>
@@ -515,8 +515,8 @@
       <Docs>
         <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML assertion.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML assertion that are defined in the SAML specification.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
+        <param name="keyInfoTokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
         <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
         <summary>Reads a SAML assertion from the specified XML reader.</summary>
         <remarks>To be added.</remarks>
@@ -692,8 +692,8 @@
       <Docs>
         <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML assertion.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing the objects in the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> to XML.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <param name="keyInfoTokenSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
         <summary>Writes the SAML assertion into the specified XML writer as a <see langword="&lt;saml:Assertion&gt;" /> element.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -128,8 +128,8 @@
         <Parameter Name="headers" Type="System.ServiceModel.Channels.MessageHeaders" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <param name="headers">To be added.</param>
+        <param name="collection">A collection of message headers.</param>
+        <param name="headers">A collection of message headers.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> class with the specified collection of message headers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,8 +165,8 @@
       </Parameters>
       <Docs>
         <param name="version">The SOAP version of the message.</param>
-        <param name="initialSize">To be added.</param>
-        <param name="capacity">To be added.</param>
+        <param name="initialSize">The size of the header.</param>
+        <param name="capacity">The size of the header.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> class with the specified message version and size.</summary>
         <remarks>To be added.</remarks>
       </Docs>

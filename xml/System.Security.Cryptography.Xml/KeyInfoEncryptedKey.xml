@@ -114,8 +114,8 @@
         <Parameter Name="ek" Type="System.Security.Cryptography.Xml.EncryptedKey" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="encryptedKey">To be added.</param>
-        <param name="ek">To be added.</param>
+        <param name="encryptedKey">An <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> object that encapsulates an encrypted key.</param>
+        <param name="ek">An <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> object that encapsulates an encrypted key.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoEncryptedKey" /> class using an <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

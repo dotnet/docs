@@ -91,8 +91,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="clauses">To be added.</param>
-        <param name="identifiers">To be added.</param>
+        <param name="clauses">An array of <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that contains the key identifier clauses.</param>
+        <param name="identifiers">An array of <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that contains the key identifier clauses.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> class using the specified key identifier clauses.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,8 +124,8 @@
         <Parameter Name="item" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="clause">To be added.</param>
-        <param name="item">To be added.</param>
+        <param name="clause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be added to the end of the list.</param>
+        <param name="item">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be added to the end of the list.</param>
         <summary>Adds a key identifier clause to the end of the list.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -323,8 +323,8 @@
         <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="i">To be added.</param>
+        <param name="index">The zero-based index of the key identifier clause in the collection of key identifier clauses.</param>
+        <param name="i">The zero-based index of the key identifier clause in the collection of key identifier clauses.</param>
         <summary>Gets the key identifier clause at the specified index.</summary>
         <value>The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> at the specified index.</value>
         <remarks>To be added.</remarks>
@@ -453,11 +453,11 @@
       </Parameters>
       <Docs>
         <typeparam name="TClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the type of key identifier clause to search the collection for.</typeparam>
-        <param name="clause">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="clause">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that is of the type specified in the <typeparamref name="TClause" /> parameter when a clause of that type could be found in the collection. This parameter is passed un-initialized.</param>
+        <param name="result">When this method returns, contains a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that is of the type specified in the <typeparamref name="TClause" /> parameter when a clause of that type could be found in the collection. This parameter is passed un-initialized.</param>
         <summary>Searches for a key identifier clause of the specified type and returns a value that indicates whether a clause of that type could be found. When a type is found it is returned in the <see langword="out" /> parameter.</summary>
         <returns>
-          <see langword="true" /> when a key identifier clause of the type specified in the <paramref name="TClause" /> parameter exists in the collection; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> when a key identifier clause of the type specified in the <typeparamref name="TClause" /> parameter exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1002,8 +1002,8 @@
       </Parameters>
       <Docs>
         <param name="from">A <see cref="T:System.String" /> that contains the address information of the message sender.</param>
-        <param name="recipients">To be added.</param>
-        <param name="to">To be added.</param>
+        <param name="recipients">A <see cref="T:System.String" /> that contains the addresses that the message is sent to.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the addresses that the message is sent to.</param>
         <param name="subject">A <see cref="T:System.String" /> that contains the subject line for the message.</param>
         <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
         <summary>Sends the specified email message to an SMTP server for delivery. The message sender, recipients, subject, and message body are specified using <see cref="T:System.String" /> objects.</summary>
@@ -1245,8 +1245,8 @@
       </Parameters>
       <Docs>
         <param name="from">A <see cref="T:System.String" /> that contains the address information of the message sender.</param>
-        <param name="recipients">To be added.</param>
-        <param name="to">To be added.</param>
+        <param name="recipients">A <see cref="T:System.String" /> that contains the address that the message is sent to.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the address that the message is sent to.</param>
         <param name="subject">A <see cref="T:System.String" /> that contains the subject line for the message.</param>
         <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
         <param name="userToken">A user-defined object that is passed to the method invoked when the asynchronous operation completes.</param>

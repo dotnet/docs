@@ -103,8 +103,8 @@
         <Parameter Name="flags" Type="System.Security.Permissions.DataProtectionPermissionFlags" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="flag">To be added.</param>
-        <param name="flags">To be added.</param>
+        <param name="flag">A bitwise combination of the <see cref="T:System.Security.Permissions.DataProtectionPermissionFlags" /> values.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Security.Permissions.DataProtectionPermissionFlags" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.DataProtectionPermission" /> class with the specified permission flags.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -229,8 +229,8 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="securityElement">To be added.</param>
-        <param name="e">To be added.</param>
+        <param name="securityElement">A <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding used to reconstruct the permission.</param>
+        <param name="e">A <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding used to reconstruct the permission.</param>
         <summary>Reconstructs a permission with a specific state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

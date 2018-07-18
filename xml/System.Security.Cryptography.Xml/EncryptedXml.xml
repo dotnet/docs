@@ -369,8 +369,8 @@
       </Parameters>
       <Docs>
         <param name="encryptedData">The data to decrypt.</param>
-        <param name="symmetricAlgorithm">To be added.</param>
-        <param name="symAlg">To be added.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>encryptedData</c>.</param>
+        <param name="symAlg">The symmetric key used to decrypt <c>encryptedData</c>.</param>
         <summary>Decrypts an <see langword="&lt;EncryptedData&gt;" /> element using the specified symmetric algorithm.</summary>
         <returns>A byte array that contains the raw decrypted plain text.</returns>
         <remarks>
@@ -547,8 +547,8 @@
       </Parameters>
       <Docs>
         <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
-        <param name="symmetricAlgorithm">To be added.</param>
-        <param name="symAlg">To be added.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>keyData</c>.</param>
+        <param name="symAlg">The symmetric key used to decrypt <c>keyData</c>.</param>
         <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using a symmetric algorithm.</summary>
         <returns>A byte array that contains the plain text key.</returns>
         <remarks>
@@ -598,8 +598,8 @@
       <Docs>
         <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
         <param name="rsa">The asymmetric key used to decrypt <c>keyData</c>.</param>
-        <param name="useOAEP">To be added.</param>
-        <param name="fOAEP">To be added.</param>
+        <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
+        <param name="fOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using an asymmetric algorithm.</summary>
         <returns>A byte array that contains the plain text key.</returns>
         <remarks>
@@ -887,9 +887,9 @@
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="plainText">To be added.</param>
-        <param name="symmetricAlgorithm">To be added.</param>
-        <param name="symAlg">To be added.</param>
+        <param name="plainText">The data to encrypt.</param>
+        <param name="symmetricAlgorithm">The symmetric algorithm to use for encryption.</param>
+        <param name="symAlg">The symmetric algorithm to use for encryption.</param>
         <summary>Encrypts data in the specified byte array using the specified symmetric algorithm.</summary>
         <returns>A byte array of encrypted data.</returns>
         <remarks>
@@ -960,8 +960,8 @@
       </Parameters>
       <Docs>
         <param name="inputElement">The element or its contents to encrypt.</param>
-        <param name="symmetricAlgorithm">To be added.</param>
-        <param name="symAlg">To be added.</param>
+        <param name="symmetricAlgorithm">The symmetric algorithm to use for encryption.</param>
+        <param name="symAlg">The symmetric algorithm to use for encryption.</param>
         <param name="content">
           <see langword="true" /> to encrypt only the contents of the element; <see langword="false" /> to encrypt the entire element.</param>
         <summary>Encrypts the specified element or its contents using the specified symmetric algorithm.</summary>
@@ -1046,8 +1046,8 @@
       </Parameters>
       <Docs>
         <param name="keyData">The key to encrypt.</param>
-        <param name="symmetricAlgorithm">To be added.</param>
-        <param name="symAlg">To be added.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to encrypt <c>keyData</c>.</param>
+        <param name="symAlg">The symmetric key used to encrypt <c>keyData</c>.</param>
         <summary>Encrypts a key using a symmetric algorithm that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
         <returns>A byte array that represents the encrypted value of the <paramref name="keyData" /> parameter.</returns>
         <remarks>
@@ -1099,8 +1099,8 @@
       <Docs>
         <param name="keyData">The key to encrypt.</param>
         <param name="rsa">The asymmetric key used to encrypt <c>keyData</c>.</param>
-        <param name="useOAEP">To be added.</param>
-        <param name="fOAEP">To be added.</param>
+        <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
+        <param name="fOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <summary>Encrypts the key that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
         <returns>A byte array that represents the encrypted value of the <paramref name="keyData" /> parameter.</returns>
         <remarks>
@@ -1158,8 +1158,8 @@
       </Parameters>
       <Docs>
         <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that contains the initialization vector (IV) to retrieve.</param>
-        <param name="symmetricAlgorithmUri">To be added.</param>
-        <param name="symAlgUri">To be added.</param>
+        <param name="symmetricAlgorithmUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <c>encryptedData</c> value.</param>
+        <param name="symAlgUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <c>encryptedData</c> value.</param>
         <summary>Retrieves the decryption initialization vector (IV) from an <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
         <returns>A byte array that contains the decryption initialization vector (IV).</returns>
         <remarks>
@@ -1209,8 +1209,8 @@
       </Parameters>
       <Docs>
         <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that contains the decryption key to retrieve.</param>
-        <param name="symmetricAlgorithmUri">To be added.</param>
-        <param name="symAlgUri">To be added.</param>
+        <param name="symmetricAlgorithmUri">The size of the decryption key to retrieve.</param>
+        <param name="symAlgUri">The size of the decryption key to retrieve.</param>
         <summary>Retrieves the decryption key from the specified <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
         <returns>A <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> object associated with the decryption key.</returns>
         <remarks>

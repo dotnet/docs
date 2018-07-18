@@ -131,8 +131,8 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="buffer">To be added.</param>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> object to test.</param>
+        <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> object to test.</param>
         <summary>This method returns <see langword="false" /> for every message that is not <see langword="null" />.</summary>
         <returns>Returns <see langword="false" />.</returns>
         <remarks>

@@ -81,8 +81,8 @@
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -118,8 +118,8 @@
         <Parameter Name="id" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="identity">To be added.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
+        <param name="identity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
         <param name="id">A unique identifier for the security token.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
         <remarks>

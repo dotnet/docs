@@ -586,8 +586,8 @@
         <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="clause">To be added.</param>
+        <param name="keyIdentifierClause">The specified key identifier clause.</param>
+        <param name="clause">The specified key identifier clause.</param>
         <summary>Indicates whether the current token's key identifier clause matches a specified key identifier clause.</summary>
         <returns>
           <see langword="true" /> if the current token's key identifier clause matches a specified key identifier clause; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>

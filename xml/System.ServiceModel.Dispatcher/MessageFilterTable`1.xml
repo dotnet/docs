@@ -108,8 +108,8 @@
         <Parameter Name="default_priority" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="defaultPriority">To be added.</param>
-        <param name="default_priority">To be added.</param>
+        <param name="defaultPriority">The default priority for filter table.</param>
+        <param name="default_priority">The default priority for filter table.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilterTable`1" /> class with the specified initial default priority.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -376,8 +376,8 @@
       </Parameters>
       <Docs>
         <param name="array">The zero-based array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> &lt;Filter, <c>FilterData</c>&gt; to which the pairs are being copied.</param>
-        <param name="arrayIndex">To be added.</param>
-        <param name="index">To be added.</param>
+        <param name="arrayIndex">The index at which to begin copying.</param>
+        <param name="index">The index at which to begin copying.</param>
         <summary>Copies the filter/<paramref name="FilterData" /> pairs to an array that starts at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -559,8 +559,8 @@
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
-        <param name="filter">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+        <param name="result">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message and returns that filter in an <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> if match criterion of one <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>
@@ -607,8 +607,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
-        <param name="filter">To be added.</param>
-        <param name="result">To be added.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>messageBuffer</c>.</param>
+        <param name="result">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>messageBuffer</c>.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message and returns that filter in an <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> if match criterion of exactly one filter in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>

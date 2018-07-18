@@ -467,8 +467,8 @@
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
-        <param name="listenUriBaseAddress">To be added.</param>
-        <param name="listenUri">To be added.</param>
+        <param name="listenUriBaseAddress">The <see cref="T:System.Uri" /> that provides the base address on which the service listens.</param>
+        <param name="listenUri">The <see cref="T:System.Uri" /> that provides the base address on which the service listens.</param>
         <param name="parameters">The object array that specifies requirements for the channel factory that is built.</param>
         <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
         <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>
@@ -511,8 +511,8 @@
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
-        <param name="listenUriBaseAddress">To be added.</param>
-        <param name="listenUri">To be added.</param>
+        <param name="listenUriBaseAddress">The <see cref="T:System.Uri" /> that provides the base address on which the service listens.</param>
+        <param name="listenUri">The <see cref="T:System.Uri" /> that provides the base address on which the service listens.</param>
         <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that specifies requirements for the channel listener that is built.</param>
         <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
         <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>

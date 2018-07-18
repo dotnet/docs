@@ -16,7 +16,6 @@
   <Docs>
     <summary>Defines identifiers used to indicate the root folder for a folder browser to initially browse to.</summary>
     <remarks>To be added.</remarks>
-    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Desktop">
@@ -39,7 +38,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The user's desktop.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Favorites">
@@ -62,7 +60,6 @@
       <MemberValue>6</MemberValue>
       <Docs>
         <summary>The user's favorites list.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MyComputer">
@@ -85,7 +82,6 @@
       <MemberValue>17</MemberValue>
       <Docs>
         <summary>The contents of the My Computer icon.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -108,7 +104,6 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>The user's My Documents folder.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -131,7 +126,6 @@
       <MemberValue>39</MemberValue>
       <Docs>
         <summary>User's location to store pictures.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NetAndDialUpConnections">
@@ -154,7 +148,6 @@
       <MemberValue>49</MemberValue>
       <Docs>
         <summary>Network and dial-up connections.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NetworkNeighborhood">
@@ -177,7 +170,6 @@
       <MemberValue>18</MemberValue>
       <Docs>
         <summary>The network neighborhood.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Printers">
@@ -200,7 +192,6 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>A folder containing installed printers.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Recent">
@@ -223,7 +214,6 @@
       <MemberValue>8</MemberValue>
       <Docs>
         <summary>A folder containing shortcuts to recently opened files.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -246,7 +236,6 @@
       <MemberValue>9</MemberValue>
       <Docs>
         <summary>A folder containing shortcuts to applications to send documents to.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartMenu">
@@ -269,7 +258,6 @@
       <MemberValue>11</MemberValue>
       <Docs>
         <summary>The user's start menu.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -292,7 +280,6 @@
       <MemberValue>21</MemberValue>
       <Docs>
         <summary>The user's file templates.</summary>
-        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

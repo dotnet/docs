@@ -1,69 +1,94 @@
-## Prerequisites
-* [Visual Studio 2015](https://www.visualstudio.com/downloads)
-* [.NET Compiler Platform SDK](https://aka.ms/roslynsdktemplates)
-* [Getting Started C# Syntax Analysis](https://github.com/dotnet/roslyn/wiki/Getting-Started-C%23-Syntax-Analysis)
-* [Getting Started C# Semantic Analysis](https://github.com/dotnet/roslyn/wiki/Getting-Started-C%23-Semantic-Analysis)
-* [Getting Started C# Syntax Transformation](https://github.com/dotnet/roslyn/wiki/Getting-Started-C%23-Syntax-Transformation)
+---
+title: Tutorial: Write your first analyzer and code fix
+description: This tutorial provides step-by-step instructions to build an analyzer and code fix using the .NET Compiler SDK (Roslyn APIs).
+ms.date: 07/13/2018
+ms.custom: mvc
+---
+# Write your first analyzer and code fix
 
-## Introduction
 In previous releases of Visual Studio, it has been difficult to create custom warnings that target C# or Visual Basic. With the Diagnostics API in the .NET Compiler Platform ("Roslyn"), this once difficult task has become easy! All that is needed is to perform a bit of analysis to identify an issue, and optionally provide a tree transformation as a code fix. The heavy lifting of running your analysis on a background thread, showing squiggly underlines in the editor, populating the Visual Studio Error List, creating "light bulb" suggestions and showing rich previews is all done for you automatically.
 
 In this walkthrough, we'll explore the creation of an Analyzer and an accompanying Code Fix using the Roslyn APIs. An Analyzer is a way to perform source code analysis and report a problem to the user. Optionally, an Analyzer can also provide a Code Fix which represents a modification to the user's source code. For example, an Analyzer could be created to detect and report any local variable names that begin with an uppercase letter, and provide a Code Fix that corrects them.
 
-## Writing the Analyzer
+
+## Prerequisites
+* [Visual Studio 2017](https://www.visualstudio.com/downloads)
+* [.NET Compiler Platform SDK](https://aka.ms/roslynsdktemplates)
+* [Getting Started C# Syntax Analysis](../get-started/syntax-analysis.md)
+* [Getting Started C# Semantic Analysis](../get-started/semantic-analysis.md)
+* [Getting Started C# Syntax Transformation](../get-started/syntax-transformation.md)
+
+In previous releases of Visual Studio, it has been difficult to create custom warnings that target C# or Visual Basic. With the Diagnostics API in the .NET Compiler Platform ("Roslyn"), this once difficult task has become easy! All that is needed is to perform a bit of analysis to identify an issue, and optionally provide a tree transformation as a code fix. The heavy lifting of running your analysis on a background thread, showing squiggly underlines in the editor, populating the Visual Studio Error List, creating "light bulb" suggestions and showing rich previews is all done for you automatically.
+
+In this walkthrough, we'll explore the creation of an Analyzer and an accompanying Code Fix using the Roslyn APIs. An Analyzer is a way to perform source code analysis and report a problem to the user. Optionally, an Analyzer can also provide a Code Fix which represents a modification to the user's source code. For example, an Analyzer could be created to detect and report any local variable names that begin with an uppercase letter, and provide a Code Fix that corrects them.
+
+## Creating the analyzer project
+
 Suppose that you wanted to report to the user any local variable declarations that can be converted to local constants. For example, consider the following code:
 
-```C#
+```csharp
 int x = 0;
 Console.WriteLine(x);
 ```
 
 In the code above, x is assigned a constant value and is never written to. Thus, it can be declared using the const modifier:
 
-```C#
+```csharp
 const int x = 0;
 Console.WriteLine(x);
 ```
 
 The analysis to determine whether a variable can be made constant is actually fairly involved, requiring syntactic analysis, constant analysis of the initializer expression and dataflow analysis to ensure that the variable is never written to. However, performing this analysis with the .NET Compiler Platform and exposing it as an Analyzer is pretty easy.
 
-1) Create a new C# **Analyzer with Code Fix** project.
-  * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
-  * Under **Visual C# -> Extensibility**, choose **Analyzer with Code Fix (NuGet + VSIX)**.
-  * Name your project "**FirstAnalyzerCS**" and click OK.
+1. Create a new C# **Analyzer with Code Fix** project.
+   * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
+   * Under **Visual C# -> Extensibility**, choose **Analyzer with Code Fix (NuGet + VSIX)**.
+   * Name your project "**MakeConst**" and click OK.
+  
+1. Press F5 to run the newly created Analyzer project in a second instance of Visual Studio. The project template creates three projects, and the .VSIX is the one the debugger will start.
+   * In the second Visual Studio instance that you just started, create a new C# Console Application project. Hover over the token with a wavy underline, and the warning text provided by an Analyzer appears.
 
-![New Project dialog](images/how-to-write-a-csharp-analyzer-and-code-fix-figure1.png)
+   This Analyzer is provided by the AnalyzeSymbol method in the debugger project. So initially, the debugger project contains enough code to create an Analyzer for every type declaration in a C# file whose identifier contains lowercase letters.
 
-2) Press F5 to run the newly created Analyzer project in a second instance of Visual Studio. The project template creates three projects, and the .VSIX is the one the debugger will start.
-  * In the second Visual Studio instance that you just started, create a new C# Console Application project. Hover over the token with a wavy underline, and the warning text provided by an Analyzer appears.
+   ![Analyzer reporting warning](media/how-to-write-csharp-analyzer-code-fix/report-warning.png)
 
-This Analyzer is provided by the AnalyzeSymbol method in the debugger project. So initially, the debugger project contains enough code to create an Analyzer for every type declaration in a C# file whose identifier contains lowercase letters.
+   * Now that you've seen the initial Analyzer in action, close the second Visual Studio instance and return to your Analyzer project.
 
-![Analyzer reporting warning](images/how-to-write-a-csharp-analyzer-and-code-fix-figure2.png)
+    > [!TIP]
+    > When you run your analyzer, you start a second copy of Visual Studio. This second copy uses a different registry hive to store settings. That enables you to differentiate the visual settings in the two copies of Visual Studio. You can pick a different theme for the experimental run of Visual Studio. In addition, don't roam your settings or login to your Visual Studio account using the experimental run of Visual Studio. That keeps the settings different.
 
-  * Now that you've seen the initial Analyzer in action, close the second Visual Studio instance and return to your Analyzer project.
+1. Take a moment to familiarize yourself with the Diagnostic Analyzer in the **DiagnosticAnalyzer.cs** file of your project. There are two important aspects to draw your attention to:
+   * Every Diagnostic Analyzer must provide a `[DiagnosticAnalyzer]` attribute that describes the language it operates on.
+   * Every Diagnostic Analyzer must derive from the `DiagnosticAnalyzer` class.
 
-3) Take a moment to familiarize yourself with the Diagnostic Analyzer in the DiagnosticAnalyzer.cs file of your project. There are two important aspects to draw your attention to:
-  * Every Diagnostic Analyzer must provide a [DiagnosticAnalyzer] attribute that describes the language it operates on.
-  * Every Diagnostic Analyzer must implement the DiagnosticAnalyzer interface.
+1. The analyzer project template also creates a test project template for you. Look at the **MakeConstAnalyzerUnitTest.cs** file in the test project. It contains two tests: one that analyzes the empty string, and one that analyzes a snippet of code with a class whose name contains lower case letters. The first shows the general format for a test where your analyzer does not find code that it should change. The second shows the general format for a test where your analyzer finds code that it modifies.
 
-4) There are various ways to implement our analyzer to find local variables that could be constant. One straightforward way is to visit the syntax nodes for local declarations one at a time, ensuring their initializers have constant values. To start:
-  * Change the registered action from one that acts on symbols to one that acts on syntax by replacing the context.RegisterSymbolAction method with the following:
+## Creating the analyzer
 
-```C#
-context.RegisterSyntaxNodeAction(AnalyzeNode, SyntaxKind.LocalDeclarationStatement); 
+There are various ways to implement your analyzer to find local variables that could be constant. One straightforward way is to visit the syntax nodes for local declarations one at a time, ensuring their initializers have constant values. 
+
+<< INTRO This>>
+
+To start, change the registered action from one that acts on symbols to one that acts on syntax. In the `MakeConstAnalyzerAnalyzer.Initializer` method, find the line that registers the action on symbols:
+
+```csharp
+context.RegisterSymbolAction(AnalyzeSymbol, SymbolKind.NamedType);
 ```
 
+Replace it with the following line:
+
+[!code-csharp[Register the node action](/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstAnalyzer.cs#RegisterNodeAction "Register a node action")]
+
+MOVE TO INTRO COMMENT
   * Delete the TODO comment.
   * Delete the AnalyzeSymbol method, which no longer applies.
   * Use Ctrl+. on AnalyzeNode to generate the AnalyzeNode method.
-  * Update the Diagnostic metadata near the top of the type to match the const rule (or change the values in the resources.resx file).
+  * Update the Diagnostic metadata near the top of the type to match the const rule (or change the values in the resources.resx file). (USE RESX FILE. SEE NEW FIGURE 2)
 
 ```C#
-public const string DiagnosticId = "MakeConstCS";
-private const string Title = "Variable can be made constant";
-private const string MessageFormat = "Can be made constant";
-private const string Description = "Make Constant";
+private const string Title = "Variable can be made constant"; // resx
+private const string MessageFormat = "Can be made constant"; // resx
+private const string Description = "Make Constant"; // resx
 private const string Category = "Usage";
 ```
 
@@ -223,6 +248,8 @@ private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
 8) Press F5 to run the Analyzer project in a second instance of Visual Studio.
   * In the second Visual Studio instance create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method.
 
+
+<< MOVE THIS TO THE UNITTESTS>>
 ```C#
 static void Main(string[] args)
 {
@@ -241,6 +268,9 @@ static void Main(string[] args)
 ![Editing updates warnings live](images/how-to-write-a-csharp-analyzer-and-code-fix-figure4.png)
  
 9) Congratulations! You've created your first Analyzer using the .NET Compiler Platform APIs to perform non-trivial syntactic and semantic analysis.
+
+<<< UP TO HERE   >>>
+
 
 ## Writing the Code Fix
 Any Analyzer can provide one or more Code Fixes which define an edit that can be performed to the source code to address the reported issue. For the Analyzer that you just created, you can provide a Code Fix that inserts the const keyword when the user chooses it from the light bulb UI in the editor. To do so, follow the steps below.

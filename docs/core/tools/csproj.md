@@ -264,3 +264,37 @@ Base path for the *.nuspec* file.
 
 ### NuspecProperties
 Semicolon separated list of key=value pairs.
+
+## AssemblyInfo properties
+[Assembly attributes](../../framework/app-domains/set-assembly-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
+
+### Properties per attribute
+
+Each attribute has a property that control it's content and one to disable it's generation as follow :
+
+| Attribute                               | Property               | Property to disable                             |
+|-----------------------------------------|------------------------|-------------------------------------------------|
+| `AssemblyCompanyAttribute`              | `Company`              | `GenerateAssemblyCompanyAttribute`              |
+| `AssemblyConfigurationAttribute`        | `Configuration`        | `GenerateAssemblyConfigurationAttribute`        |
+| `AssemblyCopyrightAttribute`            | `Copyright`            | `GenerateAssemblyCopyrightAttribute`            |
+| `AssemblyDescriptionAttribute`          | `Description`          | `GenerateAssemblyDescriptionAttribute`          |
+| `AssemblyFileVersionAttribute`          | `FileVersion`          | `GenerateAssemblyFileVersionAttribute`          |
+| `AssemblyInformationalVersionAttribute` | `InformationalVersion` | `GenerateAssemblyInformationalVersionAttribute` |
+| `AssemblyProductAttribute`              | `Product`              | `GenerateAssemblyProductAttribute`              |
+| `AssemblyTitleAttribute`                | `AssemblyTitle`        | `GenerateAssemblyTitleAttribute`                |
+| `AssemblyVersionAttribute`              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
+| `NeutralResourcesLanguageAttribute`     | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
+
+Notes:
+
+* `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example if `$(Version)` is `1.2.3-beta.4` then the value would be `1.2.3`.
+* `InformationalVersion` defaults to the value of `$(Version)`.
+* `InformationalVersion` has `$(SourceRevisionId)` apended if the property is present (Can be disabled using `IncludeSourceRevisionInInformationalVersion`).
+* `Copyright` and `Description` properties are also used for NuGet metadata.
+* `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
+
+### GenerateAssemblyInfo 
+A Boolean that enable or disable all the AssemblyInfo generation. The default value is `true`. 
+
+### GeneratedAssemblyInfoFile 
+The path of the generated assembly info file. Default to a file in the `$(IntermediateOutputPath)` (obj) directory.

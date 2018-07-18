@@ -66,7 +66,7 @@ type Variant with
     member x.Print() = Variant.print x
 ```
 
-This allows you to separate the declaration of a `Variant` type, functionality to print such a class, and offer a way to access this functionality as if it were a member on the type. This is an alternative to defining everything as a member on `Variant`. This is not necessarily preferable to do, but it is an option if you prefer to cleanly separate things.
+Using a type extension allows you to separate the declaration of a `Variant` type, functionality to print such a class, and offer a way to access this functionality as if it is a member on the type. Using an intrinsic type extension is an alternative to defining everything as a member on `Variant`.
 
 Intrinsic type extensions are compiled as members on the type they augment, and appear on the type when the type is examined by reflection.
 
@@ -91,11 +91,11 @@ type IEnumerable<'T> with
         }
 ```
 
-You can now access `RepeatElements` as if it were a member on <xref:System.Collections.Generic.IEnumerable`1> so long as the `Extensions` module is opened in the scope that you are working in.
+You can now access `RepeatElements` as if it is a member on <xref:System.Collections.Generic.IEnumerable`1> so long as the `Extensions` module is opened in the scope that you are working in.
 
 Optional extensions do not appear on the extended type when examined by reflection. Optional extensions must be in modules, and they are only in scope when the module that contains the extension is open or is otherwise in scope.
 
-Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they were instance members or static members according to how they are declared.
+Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they are instance members or static members according to how they are declared.
 
 ## Generic limitation of intrinsic and optional type extensions
 
@@ -119,11 +119,11 @@ There is no way to get this code to work with an optional type extension:
 * Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
 * Making changing the member to `member inline Sum` will give an error that type constraints are mismatched
 
-What is really desired in situations like this are static methods that "float in space" and can be presented as if they are extending a type. This is where extension methods come into play.
+What is desired are static methods that "float in space" and can be presented as if they are extending a type. This is where extension methods become necessary.
 
 ## Extension methods
 
-Finally, extension methods (sometimes called "C# style extension members") can be declared in F# as either a let-bound value value in a module or a member on a class.
+Finally, extension methods (sometimes called "C# style extension members") can be declared in F# as either a let-bound value in a module or a member on a class.
 
 Extension methods are useful for when you wish to define extensions on a generic type that will constrain the type variable. For example:
 
@@ -159,7 +159,7 @@ The following limitations also exist for type extensions:
 * Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 * Type extensions are not valid for `byref<'T>` (though they can be declared).
 * Type extensions are not valid for attributes (though they can be declared).
-* You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods in the case of an ambiguous call.
+* You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods if there is an ambiguous call.
 
 Finally, if multiple intrinsic type extensions exist for one type, all members must be unique. For optional type extensions, members in different type extensions to the same type can have the same names. Ambiguity errors occur only if client code opens two different scopes that define the same member names.
 

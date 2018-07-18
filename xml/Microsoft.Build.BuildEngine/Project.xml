@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most whitespace and all XML comments.  
+ A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most white space and all XML comments.  
   
  Every <xref:Microsoft.Build.BuildEngine.Project> must be associated with an <xref:Microsoft.Build.BuildEngine.Engine> to access shared information. During a build, the <xref:Microsoft.Build.BuildEngine.Engine> object keeps track of which projects are currently building.  
   

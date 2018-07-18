@@ -9351,7 +9351,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadLeft%28System.Int32%29> method pads the beginning of the returned string. This means that, when used with right-to-left languages, it pads the right portion of the string.  
   
 > [!NOTE]
->  If the <xref:System.String.PadLeft%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading white space so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadLeft%2A> method pads the current instance with white-space characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading white space so that its total length is `totalWidth` characters.  
   
    
   
@@ -9418,7 +9418,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadLeft%28System.Int32%2CSystem.Char%29> method pads the beginning of the returned string. This means that, when used with right-to-left languages, it pads the right portion of the string.  
   
 > [!NOTE]
->  If the <xref:System.String.PadLeft%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading `paddingChar` characters so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadLeft%2A> method pads the current instance with white-space characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading `paddingChar` characters so that its total length is `totalWidth` characters.  
   
    
   
@@ -9499,7 +9499,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadRight%28System.Int32%29> method pads the end of the returned string. This means that, when used with right-to-left languages, it pads the left portion of the string.  
   
 > [!NOTE]
->  If the <xref:System.String.PadRight%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing white space so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadRight%2A> method pads the current instance with white-space characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing white space so that its total length is `totalWidth` characters.  
   
    
   
@@ -9566,7 +9566,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadRight%28System.Int32%2CSystem.Char%29> method pads the end of the returned string. This means that, when used with right-to-left languages, it pads the left portion of the string.  
   
 > [!NOTE]
->  If the <xref:System.String.PadRight%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing `paddingChar` characters so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadRight%2A> method pads the current instance with white-space characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing `paddingChar` characters so that its total length is `totalWidth` characters.  
   
    
   
@@ -10015,9 +10015,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(\d+)`|Match one or more decimal digits. This is the first capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
+|`\s+`|Match one or more white-space characters.|  
 |`([-+*/])`|Match an arithmetic operator sign (+, -, *, or /). This is the second capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
+|`\s+`|Match one or more white-space characters.|  
 |`(\d+)`|Match one or more decimal digits. This is the third capturing group.|  
   
  You can also use a regular expression to extract substrings from a string based on a pattern rather than a fixed set of characters. This is a common scenario when either of these conditions occurs:  
@@ -10057,11 +10057,11 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\s-`|Match a whitespace character followed by a hyphen.|  
-|`\s?`|Match zero or one whitespace character.|  
+|`\s-`|Match a white-space character followed by a hyphen.|  
+|`\s?`|Match zero or one white-space character.|  
 |`[+*]?`|Match zero or one occurrence of either the + or * character.|  
-|`\s?`|Match zero or one whitespace character.|  
-|`-\s`|Match a hyphen followed by a whitespace character.|  
+|`\s?`|Match zero or one white-space character.|  
+|`-\s`|Match a hyphen followed by a white-space character.|  
   
 ## Search methods and the Substring method  
  If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  
@@ -10179,9 +10179,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(\d+)`|Match one or more decimal digits. This is the first capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
+|`\s+`|Match one or more white-space characters.|  
 |`([-+*/])`|Match an arithmetic operator sign (+, -, *, or /). This is the second capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
+|`\s+`|Match one or more white-space characters.|  
 |`(\d+)`|Match one or more decimal digits. This is the third capturing group.|  
   
  You can also use a regular expression to extract substrings from a string based on a pattern rather than a fixed set of characters. This is a common scenario when either of these conditions occurs:  
@@ -10221,11 +10221,11 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\s-`|Match a whitespace character followed by a hyphen.|  
-|`\s?`|Match zero or one whitespace character.|  
+|`\s-`|Match a white-space character followed by a hyphen.|  
+|`\s?`|Match zero or one white-space character.|  
 |`[+*]?`|Match zero or one occurrence of either the + or * character.|  
-|`\s?`|Match zero or one whitespace character.|  
-|`-\s`|Match a hyphen followed by a whitespace character.|  
+|`\s?`|Match zero or one white-space character.|  
+|`-\s`|Match a hyphen followed by a white-space character.|  
   
 ### Search methods and the Substring method  
  If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  

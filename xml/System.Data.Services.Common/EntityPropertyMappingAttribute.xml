@@ -281,7 +281,7 @@
   
  [!code-xml[Astoria Custom Feeds#EdmFeedMappedToAttributeSpecific](~/samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedmappedtoattributespecific)]  
   
- The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property cannot contain whitespace.  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property cannot contain white space.  
   
  The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property is not expressed as a true XPath expression, but the specified element and attribute names must represent well-formed XML elements and attributes. An invalid value will cause an exception to occur when the data service is initialized.  
   

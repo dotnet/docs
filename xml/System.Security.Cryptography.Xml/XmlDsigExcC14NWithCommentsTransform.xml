@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `inclusiveNamespacesPrefixList` parameter contains a whitespace-delimited list of namespace prefixes to canonicalize using the standard canonicalization algorithm rather than the exclusive canonicalization algorithm.  To specify the default namespace, which does not have a prefix, pass the special prefix "#default".  
+ The `inclusiveNamespacesPrefixList` parameter contains a white-space delimited list of namespace prefixes to canonicalize using the standard canonicalization algorithm rather than the exclusive canonicalization algorithm.  To specify the default namespace, which does not have a prefix, pass the special prefix "#default".  
   
  ]]></format>
         </remarks>

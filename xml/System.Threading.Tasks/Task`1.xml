@@ -131,7 +131,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  [!code-csharp[System.Threading.Tasks.Task.ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.ctor/cs/run3.cs#2)]
  [!code-vb[System.Threading.Tasks.Task.ctor#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.ctor/vb/run3.vb#2)]  
   
- The regular expression pattern `\p{P}*\s+` matches zero, one, or more punctuation characters followed by one or more whitespace characters. It assumes that the total number of matches equals the approximate word count.  
+ The regular expression pattern `\p{P}*\s+` matches zero, one, or more punctuation characters followed by one or more white-space characters. It assumes that the total number of matches equals the approximate word count.  
   
  ]]></format>
         </remarks>

@@ -216,7 +216,7 @@
         <param name="text">The text to add to the object.</param>
         <summary>Adds text to the object.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">if the text parameter value contains non-whitespace characters.</exception>
+        <exception cref="T:System.ArgumentException">if the text parameter value contains non-white-space characters.</exception>
         <altmember cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />
       </Docs>
     </Member>

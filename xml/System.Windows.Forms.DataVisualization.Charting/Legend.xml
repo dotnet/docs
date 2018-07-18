@@ -1713,7 +1713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the legend text exceeds the value specified by this property, text will be automatically wrapped when the next whitespace character is encountered. Text will not be wrapped if there are no whitespace characters in the text.  
+ When the legend text exceeds the value specified by this property, text will be automatically wrapped when the next white-space character is encountered. Text will not be wrapped if there are no white-space characters in the text.  
   
  Set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property to zero to disable the feature.  
   

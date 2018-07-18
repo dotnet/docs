@@ -855,7 +855,7 @@
  A string specifying a font family name.  For example, `"Arial"` or `"Century Gothic"`.  
   
  *fontFamilyNamesList*  
- A string specifying multiple font family names, each separated by a comma (any whitespace following a comma is ignored).  The first font family specified serves as the primary font family; subsequent font families serve as fallback families to be used in cases where the primary font family is unavailable or not applicable.  For example, `"Arial, Century Gothic"` specifies Arial as the primary font family, with Century Gothic as the fallback font family.  
+ A string specifying multiple font family names, each separated by a comma (any white space following a comma is ignored).  The first font family specified serves as the primary font family; subsequent font families serve as fallback families to be used in cases where the primary font family is unavailable or not applicable.  For example, `"Arial, Century Gothic"` specifies Arial as the primary font family, with Century Gothic as the fallback font family.  
   
  *fontFamilyFolderReference*  
  A string specifying a folder containing the font, along with a font family name.  The folder and font family name are delimited by a # character.  The folder reference may be absolute, or relative.  For example, `"Custom Fonts\#My Custom Font"`.  

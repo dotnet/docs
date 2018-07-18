@@ -133,7 +133,7 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the output as an Item. Whitespace is trimmed.  
+        <summary>Returns the output as an Item. White space is trimmed.  
   
  ConsoleOutput is enabled when ConsoleToMSBuild is true. This avoids holding lines in memory if they aren't used. ConsoleOutput is a combination of stdout and stderr.</summary>
         <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>

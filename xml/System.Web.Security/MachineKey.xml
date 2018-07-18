@@ -186,7 +186,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="userData" /> parameter is null.</exception>
-        <exception cref="T:System.ArgumentException">The purposes array contains one or more whitespace-only entries.</exception>
+        <exception cref="T:System.ArgumentException">The purposes array contains one or more white-space-only entries.</exception>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -228,7 +228,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="protectedData" /> parameter is null.</exception>
-        <exception cref="T:System.ArgumentException">The purposes array contains one or more whitespace-only entries.</exception>
+        <exception cref="T:System.ArgumentException">The purposes array contains one or more white-space-only entries.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">Possible causes include the following:  
   
 -   The protected data was tampered with.  

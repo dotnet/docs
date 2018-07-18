@@ -49,7 +49,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column number in the line where this code ends. This includes whitespace at the start of the line.</summary>
+        <summary>Gets the column number in the line where this code ends. This includes white space at the start of the line.</summary>
         <value>The column number where this code ends.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the code that the context contains, discarding any whitespace.</summary>
+        <summary>Gets the code that the context contains, discarding any white space.</summary>
         <returns>The code that the context contains.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -195,7 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column number in the line where this code starts. This includes whitespace at the start of the line.</summary>
+        <summary>Gets the column number in the line where this code starts. This includes white space at the start of the line.</summary>
         <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

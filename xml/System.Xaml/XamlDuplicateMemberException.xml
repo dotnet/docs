@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you handle this exception from a XAML node stream, members might be reported as duplicates in several possible situations. For example, an explicit property element for a XAML content property might be preceded by whitespace that is interpreted as content, if the collection is whitespace significant. Or the XAML writer might be attempting to reset a property that should instead be using a `GetObject` default value. If you analyze individual nodes in the XAML node stream, you can often determine the source of the problem.  
+ If you handle this exception from a XAML node stream, members might be reported as duplicates in several possible situations. For example, an explicit property element for a XAML content property might be preceded by white space that is interpreted as content, if the collection is white-space significant. Or the XAML writer might be attempting to reset a property that should instead be using a `GetObject` default value. If you analyze individual nodes in the XAML node stream, you can often determine the source of the problem.  
   
  If a XAML object writer provides special handing for duplicate members, it can prevent some duplicate member exceptions if you specify <xref:System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck%2A> as `true` in <xref:System.Xaml.XamlObjectWriterSettings> that initialize the <xref:System.Xaml.XamlObjectWriter>.  
   

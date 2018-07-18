@@ -99,7 +99,7 @@
 |`user@contoso.com`|`user\000040contoso\00002Ecom`|  
 |`Anti-Cross Site Scripting Namespace`|`Anti\00002DCross\000020Site\000020Scripting\000020Namespace`|  
   
- The CSS character escape sequence consists of a backslash character (\\) followed by up to six hexadecimal digits that represent a character code from the ISO 10646 standard. (The ISO 10646 standard is effectively equivalent to Unicode.) Any character other than a hexadecimal digit terminates the escape sequence. If a character that follows the escape sequence is also a valid hexadecimal digit, it must either include six digits in the escape sequence or use a whitespace character to terminate the escape sequence. For example, `\000020` denotes a space.  
+ The CSS character escape sequence consists of a backslash character (\\) followed by up to six hexadecimal digits that represent a character code from the ISO 10646 standard. (The ISO 10646 standard is effectively equivalent to Unicode.) Any character other than a hexadecimal digit terminates the escape sequence. If a character that follows the escape sequence is also a valid hexadecimal digit, it must either include six digits in the escape sequence or use a white-space character to terminate the escape sequence. For example, `\000020` denotes a space.  
   
  ]]></format>
         </remarks>

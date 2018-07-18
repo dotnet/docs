@@ -272,18 +272,18 @@ Semicolon separated list of key=value pairs.
 
 Each attribute has a property that control it's content and one to disable it's generation as follow :
 
-| Attribute                               | Property               | Property to disable                             |
-|-----------------------------------------|------------------------|-------------------------------------------------|
-| `AssemblyCompanyAttribute`              | `Company`              | `GenerateAssemblyCompanyAttribute`              |
-| `AssemblyConfigurationAttribute`        | `Configuration`        | `GenerateAssemblyConfigurationAttribute`        |
-| `AssemblyCopyrightAttribute`            | `Copyright`            | `GenerateAssemblyCopyrightAttribute`            |
-| `AssemblyDescriptionAttribute`          | `Description`          | `GenerateAssemblyDescriptionAttribute`          |
-| `AssemblyFileVersionAttribute`          | `FileVersion`          | `GenerateAssemblyFileVersionAttribute`          |
-| `AssemblyInformationalVersionAttribute` | `InformationalVersion` | `GenerateAssemblyInformationalVersionAttribute` |
-| `AssemblyProductAttribute`              | `Product`              | `GenerateAssemblyProductAttribute`              |
-| `AssemblyTitleAttribute`                | `AssemblyTitle`        | `GenerateAssemblyTitleAttribute`                |
-| `AssemblyVersionAttribute`              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
-| `NeutralResourcesLanguageAttribute`     | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
+| Attribute                                                      | Property               | Property to disable                             |
+|----------------------------------------------------------------|------------------------|-------------------------------------------------|
+| <xref:System.Reflection.AssemblyCompanyAttribute>              | `Company`              | `GenerateAssemblyCompanyAttribute`              |
+| <xref:System.Reflection.AssemblyConfigurationAttribute>        | `Configuration`        | `GenerateAssemblyConfigurationAttribute`        |
+| <xref:System.Reflection.AssemblyCopyrightAttribute>            | `Copyright`            | `GenerateAssemblyCopyrightAttribute`            |
+| <xref:System.Reflection.AssemblyDescriptionAttribute>          | `Description`          | `GenerateAssemblyDescriptionAttribute`          |
+| <xref:System.Reflection.AssemblyFileVersionAttribute>          | `FileVersion`          | `GenerateAssemblyFileVersionAttribute`          |
+| <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `InformationalVersion` | `GenerateAssemblyInformationalVersionAttribute` |
+| <xref:System.Reflection.AssemblyProductAttribute>              | `Product`              | `GenerateAssemblyProductAttribute`              |
+| <xref:System.Reflection.AssemblyTitleAttribute>                | `AssemblyTitle`        | `GenerateAssemblyTitleAttribute`                |
+| <xref:System.Reflection.AssemblyVersionAttribute>              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
+| <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
 
 Notes:
 

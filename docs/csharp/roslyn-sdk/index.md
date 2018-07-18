@@ -40,7 +40,7 @@ and the associated code fixes are packaged together in a single project.
 
 Analyzers and code fixes use static analysis to understand code. They
 do not run the code or provide other testing benefits. They can, however,
-point out practices that often lead to bugs, unmaintanable code, or
+point out practices that often lead to bugs, unmaintainable code, or
 standard guideline validation.
 
 The .NET Compiler Platform SDK provides a single set of APIs that enable
@@ -48,7 +48,7 @@ you to examine and understand a C# or Visual Basic codebase. Because you
 can use this single codebase, you can write analyzers and code fixes more
 easily by leveraging the syntactic and semantic analysis APIs provided by
 the .NET Compiler Platform SDK. Freed from the large task of replicating
-the anaysis done by the compiler, you can concentrate on the more focused
+the analysis done by the compiler, you can concentrate on the more focused
 task of finding and fixing common coding errors for your project or library.
 
 A smaller benefit is that your analyzers and code fixes are smaller and

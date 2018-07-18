@@ -44,7 +44,7 @@ For more information about installing the latest version of Visual Studio, see [
 
 The first step is to create the application infrastructure, which includes an application definition, two pages, and an image.
 
-1. Create a new WPF Application project in Visual Basic or Visual C# named **ExpenseIt**:
+1. Create a new WPF Application project in Visual Basic or Visual C# named **`ExpenseIt`**:
 
    1. Open Visual Studio and select **File** > **New** > **Project**.
 
@@ -52,7 +52,7 @@ The first step is to create the application infrastructure, which includes an ap
 
    2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Classic Desktop**.
 
-   3. Select the **WPF App (.NET Framework)** template. Enter the name **ExpenseIt** and then select **OK**.
+   3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 
       ![New Project dialog with WPF app selected](media/new-project-dialog.png)
 
@@ -91,7 +91,7 @@ The first step is to create the application infrastructure, which includes an ap
 
 5. Change the following properties on the <xref:System.Windows.Navigation.NavigationWindow> element:
 
-    - Set the <xref:System.Windows.Window.Title%2A> property to "ExpenseIt".
+    - Set the <xref:System.Windows.Window.Title%2A> property to "`ExpenseIt`".
 
     - Set the <xref:System.Windows.FrameworkElement.Width%2A> property to 500 pixels.
 
@@ -125,17 +125,17 @@ The first step is to create the application infrastructure, which includes an ap
 
 In this section, you'll add two pages and an image to the application.
 
-1. Add a new WPF page to the project, and name it *ExpenseItHome.xaml*:
+1. Add a new WPF page to the project, and name it *`ExpenseItHome.xaml`*:
 
-   1. In **Solution Explorer**, right-click on the **ExpenseIt** project node and choose **Add** > **Page**.
+   1. In **Solution Explorer**, right-click on the **`ExpenseIt`** project node and choose **Add** > **Page**.
 
-   1. In the **Add New Item** dialog, the **Page (WPF)** template is already selected. Enter the name **ExpenseItHome**, and then select **Add**.
+   1. In the **Add New Item** dialog, the **Page (WPF)** template is already selected. Enter the name **`ExpenseItHome`**, and then select **Add**.
 
     This page is the first page that's displayed when the application is launched. It will show a list of people to select from, to show an expense report for.
 
-2. Open *ExpenseItHome.xaml*.
+2. Open *`ExpenseItHome.xaml`*.
 
-3. Set the <xref:System.Windows.Controls.Page.Title%2A> to "ExpenseIt - Home".
+3. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - Home`".
 
     Your XAML should look like this in Visual Basic:
 
@@ -147,9 +147,9 @@ In this section, you'll add two pages and an image to the application.
 
 4. Open *MainWindow.xaml*.
 
-5. Set the <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property on the <xref:System.Windows.Navigation.NavigationWindow> to "ExpenseItHome.xaml".
+5. Set the <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property on the <xref:System.Windows.Navigation.NavigationWindow> to "`ExpenseItHome.xaml`".
 
-    This sets *ExpenseItHome.xaml* to be the first page opened when the application starts. Your XAML should look like this in Visual Basic:
+    This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts. Your XAML should look like this in Visual Basic:
 
     [!code-xaml[ExpenseIt#7_A](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/MainWindow.xaml#7_a)]
 
@@ -164,15 +164,15 @@ In this section, you'll add two pages and an image to the application.
 
 6. Add another new WPF page to the project, and name it *ExpenseReportPage.xaml*::
 
-   1. In **Solution Explorer**, right-click on the **ExpenseIt** project node and choose **Add** > **Page**.
+   1. In **Solution Explorer**, right-click on the **`ExpenseIt`** project node and choose **Add** > **Page**.
 
    1. In the **Add New Item** dialog, the **Page (WPF)** template is already selected. Enter the name **ExpenseReportPage**, and then select **Add**.
 
-    This page will show the expense report for the person that is selected on the **ExpenseItHome** page.
+    This page will show the expense report for the person that is selected on the **`ExpenseItHome`** page.
 
 7. Open *ExpenseReportPage.xaml*.
 
-8. Set the <xref:System.Windows.Controls.Page.Title%2A> to "ExpenseIt - View Expense".
+8. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
     Your XAML should look like this in Visual Basic:
 
@@ -186,7 +186,7 @@ In this section, you'll add two pages and an image to the application.
 
     When you create a new Page file, Visual Studio automatically creates a *code-behind* file. These code-behind files handle the logic for responding to user input.
 
-    Your code should look like this for **ExpenseItHome**:
+    Your code should look like this for **`ExpenseItHome`**:
 
     [!code-csharp[ExpenseIt#2_5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt2/ExpenseItHome.xaml.cs#2_5)]
     [!code-vb[ExpenseIt#2_5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseItHome.xaml.vb#2_5)]
@@ -223,14 +223,14 @@ Layout provides an ordered way to place UI elements, and also manages the size a
 - <xref:System.Windows.Controls.VirtualizingStackPanel>
 - <xref:System.Windows.Controls.WrapPanel>
 
-Each of these layout controls supports a special type of layout for its child elements. ExpenseIt pages can be resized, and each page has elements that are arranged horizontally and vertically alongside other elements. Consequently, the <xref:System.Windows.Controls.Grid> is the ideal layout element for the application.
+Each of these layout controls supports a special type of layout for its child elements. `ExpenseIt` pages can be resized, and each page has elements that are arranged horizontally and vertically alongside other elements. Consequently, the <xref:System.Windows.Controls.Grid> is the ideal layout element for the application.
 
 > [!TIP]
 > For more information about <xref:System.Windows.Controls.Panel> elements, see [Panels overview](../../../../docs/framework/wpf/controls/panels-overview.md). For more information about layout, see [Layout](../../../../docs/framework/wpf/advanced/layout.md).
 
-In the section, you create a single-column table with three rows and a 10-pixel margin by adding column and row definitions to the <xref:System.Windows.Controls.Grid> in *ExpenseItHome.xaml*.
+In the section, you create a single-column table with three rows and a 10-pixel margin by adding column and row definitions to the <xref:System.Windows.Controls.Grid> in *`ExpenseItHome.xaml`*.
 
-1. Open *ExpenseItHome.xaml*.
+1. Open *`ExpenseItHome.xaml`*.
 
 2. Set the <xref:System.Windows.FrameworkElement.Margin%2A> property on the <xref:System.Windows.Controls.Grid> element to "10,0,10,10", which corresponds to left, top, right and bottom margins:
 
@@ -257,7 +257,7 @@ In the section, you create a single-column table with three rows and a 10-pixel 
 
 In this section, you'll update the home page UI to show a list of people that a user can select from to show the expense report for. Controls are UI objects that allow users to interact with your application. For more information, see [Controls](../../../../docs/framework/wpf/controls/index.md).
 
-To create this UI, you'll add the following elements to *ExpenseItHome.xaml*:
+To create this UI, you'll add the following elements to *`ExpenseItHome.xaml`*:
 
 - <xref:System.Windows.Controls.ListBox> (for the list of people).
 - <xref:System.Windows.Controls.Label> (for the list header).
@@ -265,7 +265,7 @@ To create this UI, you'll add the following elements to *ExpenseItHome.xaml*:
 
 Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md).
 
-1. Open *ExpenseItHome.xaml*.
+1. Open *`ExpenseItHome.xaml`*.
 
 2. Add the following XAML somewhere between the <xref:System.Windows.Controls.Grid> tags:
 
@@ -284,7 +284,7 @@ The following illustration shows the controls you just created:
 
 In this section, you'll update the home page UI with an image and a page title.
 
-1. Open *ExpenseItHome.xaml*.
+1. Open *`ExpenseItHome.xaml`*.
 
 2. Add another column to the <xref:System.Windows.Controls.Grid.ColumnDefinitions%2A> with a fixed <xref:System.Windows.Controls.ColumnDefinition.Width%2A> of 230 pixels:
 
@@ -318,13 +318,13 @@ The following illustration shows the results of what you just added:
 
 ## Add code to handle events
 
-1. Open *ExpenseItHome.xaml*.
+1. Open *`ExpenseItHome.xaml`*.
 
 2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a simple event handler](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480).
 
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]
 
-3. Open *ExpenseItHome.xaml.vb* or *ExpenseItHome.xaml.cs*.
+3. Open *`ExpenseItHome.xaml.vb`* or *`ExpenseItHome.xaml.cs`*.
 
 4. Add the following code to the `ExpenseItHome` class to add a button click event handler. The event handler opens the **ExpenseReportPage** page.
 
@@ -333,7 +333,7 @@ The following illustration shows the results of what you just added:
 
 ## Create the UI for ExpenseReportPage
 
-*ExpenseReportPage.xaml* displays the expense report for the person that's selected on the **ExpenseItHome** page. In this section, you'll controls and create the UI for **ExpenseReportPage**. You'll also add background and fill colors to the various UI elements.
+*ExpenseReportPage.xaml* displays the expense report for the person that's selected on the **`ExpenseItHome`** page. In this section, you'll create the UI for **ExpenseReportPage**. You'll also add background and fill colors to the various UI elements.
 
 1. Open *ExpenseReportPage.xaml*.
 
@@ -341,7 +341,7 @@ The following illustration shows the results of what you just added:
 
     [!code-xaml[ExpenseIt#17](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseReportPage.xaml#17)]
 
-    This UI is similar to *ExpenseItHome.xaml*, except the report data is displayed in a <xref:System.Windows.Controls.DataGrid>.
+    This UI is similar to *`ExpenseItHome.xaml`*, except the report data is displayed in a <xref:System.Windows.Controls.DataGrid>.
 
 3. Build and run the application.
 
@@ -378,11 +378,11 @@ The appearance of various elements is often the same for all elements of the sam
 
     - `listHeaderTextStyle`: To format the list header <xref:System.Windows.Controls.Label>.
 
-    - `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on ExpenseItHome.xaml.
+    - `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on `ExpenseItHome.xaml`.
 
     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a .NET Framework application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md).
 
-3. Open *ExpenseItHome.xaml*.
+3. Open *`ExpenseItHome.xaml`*.
 
 4. Replace everything between the <xref:System.Windows.Controls.Grid> elements with the following XAML:
 
@@ -402,7 +402,7 @@ The appearance of various elements is often the same for all elements of the sam
 
 In this section, you'll create the XML data that is bound to various controls.
 
-1. Open *ExpenseItHome.xaml*.
+1. Open *`ExpenseItHome.xaml`*.
 
 2. After the opening <xref:System.Windows.Controls.Grid> element, add the following XAML to create an <xref:System.Windows.Data.XmlDataProvider> that contains the data for each person:
 
@@ -428,7 +428,7 @@ In this section, you'll create the XML data that is bound to various controls.
 
 ## Connect data to controls
 
-Next, you'll add code to retrieve the name that's selected on the **ExpenseItHome** page and pass it to the constructor of **ExpenseReportPage**. **ExpenseReportPage** sets its data context with the passed item, which is what the controls defined in *ExpenseReportPage.xaml* bind to.
+Next, you'll add code to retrieve the name that's selected on the **`ExpenseItHome`** page and pass it to the constructor of **ExpenseReportPage**. **ExpenseReportPage** sets its data context with the passed item, which is what the controls defined in *ExpenseReportPage.xaml* bind to.
 
 1. Open *ExpenseReportPage.xaml.vb* or *ExpenseReportPage.xaml.cs*.
 
@@ -437,7 +437,7 @@ Next, you'll add code to retrieve the name that's selected on the **ExpenseItHom
     [!code-csharp[ExpenseIt#26](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseReportPage.xaml.cs#26)]
     [!code-vb[ExpenseIt#26](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt8/ExpenseReportPage.xaml.vb#26)]
 
-3. Open *ExpenseItHome.xaml.vb* or *ExpenseItHome.xaml.cs*.
+3. Open *`ExpenseItHome.xaml.vb`* or *`ExpenseItHome.xaml.cs`*.
 
 4. Change the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to call the new constructor passing the expense report data of the selected person.
 
@@ -466,7 +466,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 6. Select a person and then select the **View** button.
 
-The following illustration shows both pages of the ExpenseIt application with controls, layout, styles, data binding, and data templates applied:
+The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
 ![ExpenseIt sample screen shots](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure5.png)
 

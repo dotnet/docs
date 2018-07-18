@@ -116,7 +116,7 @@
         <Parameter Name="parameters" Type="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">The instance of <see cref="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters)" /> used to initialize the new instance.</param>
+        <param name="parameters">The instance of <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> used to initialize the new instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class from an existing instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>

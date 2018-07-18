@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="assembly">The <see cref="P:System.Type.Assembly" /> to add a reference for.</param>
-        <summary>Adds an already-loaded assembly. It is the caller's responsibility to load the assembly, and <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" /> includes the types from this assembly for dispensing when <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType" /> is called.</summary>
+        <summary>Adds an already-loaded assembly. It is the caller's responsibility to load the assembly, and <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" /> includes the types from this assembly for dispensing when <see cref="Overload:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType" /> is called.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="assembly" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>

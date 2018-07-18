@@ -243,8 +243,8 @@
         <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback object that the client application uses to listen for messages from the connected service.</param>
+        <param name="instance">The callback object that the client application uses to listen for messages from the connected service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="callbackInstance" /> as the callback object in a duplex conversation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -371,8 +371,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback object that the client application uses to listen for messages from the connected service.</param>
+        <param name="instance">The callback object that the client application uses to listen for messages from the connected service.</param>
         <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified  <see cref="T:System.ServiceModel.InstanceContext" /> and  <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects.</summary>
         <remarks>To be added.</remarks>
@@ -402,8 +402,8 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
+        <param name="instance">The callback object that the client uses to listen for messages from the connected service.</param>
         <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified callback service and endpoint configuration information.</summary>
         <remarks>
@@ -441,8 +441,8 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback service.</param>
+        <param name="instance">The callback service.</param>
         <param name="binding">The binding with which to call the service.</param>
         <param name="remoteAddress">The address of the service endpoint.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class.</summary>
@@ -475,8 +475,8 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
+        <param name="instance">The callback object that the client uses to listen for messages from the connected service.</param>
         <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
         <param name="remoteAddress">The address of the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class.</summary>
@@ -518,8 +518,8 @@
         <Parameter Name="remoteAddress" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="instance">To be added.</param>
+        <param name="callbackInstance">The callback object that the client uses to listen for messages from the connected service.</param>
+        <param name="instance">The callback object that the client uses to listen for messages from the connected service.</param>
         <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
         <param name="remoteAddress">The address of the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class.</summary>

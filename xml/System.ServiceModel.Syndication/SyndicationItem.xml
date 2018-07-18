@@ -161,8 +161,8 @@
       <Docs>
         <param name="title">The item title.</param>
         <param name="content">The item content.</param>
-        <param name="itemAlternateLink">To be added.</param>
-        <param name="feedAlternateLink">To be added.</param>
+        <param name="itemAlternateLink">The item URL.</param>
+        <param name="feedAlternateLink">The item URL.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class with the specified title, content, and link.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -209,8 +209,8 @@
       <Docs>
         <param name="title">The title of the syndication item.</param>
         <param name="content">A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance containing the content of the syndication item.</param>
-        <param name="itemAlternateLink">To be added.</param>
-        <param name="feedAlternateLink">To be added.</param>
+        <param name="itemAlternateLink">The alternate URI for the syndication item.</param>
+        <param name="feedAlternateLink">The alternate URI for the syndication item.</param>
         <param name="id">The ID of the syndication item.</param>
         <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication item was last updated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
@@ -259,8 +259,8 @@
       <Docs>
         <param name="title">The title of the syndication item.</param>
         <param name="content">The content of the syndication item.</param>
-        <param name="itemAlternateLink">To be added.</param>
-        <param name="feedAlternateLink">To be added.</param>
+        <param name="itemAlternateLink">The alternate URI for the syndication item.</param>
+        <param name="feedAlternateLink">The alternate URI for the syndication item.</param>
         <param name="id">The ID of the syndication item.</param>
         <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication item was last updated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
@@ -306,8 +306,8 @@
         <Parameter Name="link" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="permalink">To be added.</param>
-        <param name="link">To be added.</param>
+        <param name="permalink">The <see cref="T:System.Uri" /> that points to the content.</param>
+        <param name="link">The <see cref="T:System.Uri" /> that points to the content.</param>
         <summary>Adds a *permalink* to the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

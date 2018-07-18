@@ -56,8 +56,8 @@
         <Parameter Name="operation" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="operationContext">To be added.</param>
-        <param name="operation">To be added.</param>
+        <param name="operationContext">The operation context.</param>
+        <param name="operation">The operation context.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebOperationContext" /> class with the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +85,7 @@
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Attaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance to the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +680,7 @@
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Detaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance from the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

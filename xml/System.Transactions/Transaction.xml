@@ -191,8 +191,8 @@
         <Parameter Name="option" Type="System.Transactions.DependentCloneOption" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="cloneOption">To be added.</param>
-        <param name="option">To be added.</param>
+        <param name="cloneOption">A <see cref="T:System.Transactions.DependentCloneOption" /> that controls what kind of dependent transaction to create.</param>
+        <param name="option">A <see cref="T:System.Transactions.DependentCloneOption" /> that controls what kind of dependent transaction to create.</param>
         <summary>Creates a dependent clone of the transaction.</summary>
         <returns>A <see cref="T:System.Transactions.DependentTransaction" /> that represents the dependent clone.</returns>
         <remarks>
@@ -339,15 +339,24 @@
         <Parameter Name="options" Type="System.Transactions.EnlistmentOptions" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="resourceManagerIdentifier">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="enlistmentNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <param name="enlistmentOptions">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="resourceManagerIdentifier">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="manager">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="enlistmentNotification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two phase commit notifications.</param>
+        <param name="notification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two phase commit notifications.</param>
+        <param name="enlistmentOptions"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <param name="options"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <summary>Enlists a durable resource manager that supports two phase commit to participate in a transaction.</summary>
+        <returns>An <see cref="T:System.Transactions.Enlistment" /> object that describes the enlistment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](https://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  For more information on how a resource manager responds to commit notification and prepare the commit in two-phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](https://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+  
+ Resource managers enlisted for participation in a transaction through this method receive two phase commit notifications that correspond to the methods defined on the <xref:System.Transactions.IEnlistmentNotification> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnlistDurable">
@@ -389,15 +398,24 @@
         <Parameter Name="options" Type="System.Transactions.EnlistmentOptions" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="resourceManagerIdentifier">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="singlePhaseNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <param name="enlistmentOptions">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="resourceManagerIdentifier">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="manager">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="singlePhaseNotification">>An object that implements the <see cref="T:System.Transactions.ISinglePhaseNotification" /> interface that must be able to receive single phase commit and two phase commit notifications.</param>
+        <param name="notification">>An object that implements the <see cref="T:System.Transactions.ISinglePhaseNotification" /> interface that must be able to receive single phase commit and two phase commit notifications.</param>
+        <param name="enlistmentOptions"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <param name="options"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <summary>Enlists a durable resource manager that supports single phase commit optimization to participate in a transaction.</summary>
+        <returns>An <see cref="T:System.Transactions.Enlistment" /> object that describes the enlistment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](https://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  
+  
+ You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](https://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="EnlistPromotableSinglePhase">
@@ -502,8 +520,8 @@
         <Parameter Name="notification" Type="System.Transactions.IPromotableSinglePhaseNotification" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="promotableSinglePhaseNotification">To be added.</param>
-        <param name="notification">To be added.</param>
+        <param name="promotableSinglePhaseNotification">A <see cref="T:System.Transactions.IPromotableSinglePhaseNotification" /> interface implemented by the participant.</param>
+        <param name="notification">A <see cref="T:System.Transactions.IPromotableSinglePhaseNotification" /> interface implemented by the participant.</param>
         <summary>Enlists a resource manager that has an internal transaction using a promotable single phase enlistment (PSPE).</summary>
         <returns>A <see cref="T:System.Transactions.SinglePhaseEnlistment" /> interface implementation that describes the enlistment.</returns>
         <remarks>
@@ -514,7 +532,7 @@
   
  The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus.InDoubt> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
   
- For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](http://msdn.microsoft.com/library/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+ For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](https://msdn.microsoft.com/library/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](https://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
  **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
@@ -534,7 +552,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](https://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](https://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
  ]]></format>
         </remarks>
@@ -577,10 +595,10 @@
         <Parameter Name="options" Type="System.Transactions.EnlistmentOptions" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="enlistmentNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <param name="enlistmentOptions">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="enlistmentNotification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two-phase commit notifications.</param>
+        <param name="notification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two-phase commit notifications.</param>
+        <param name="enlistmentOptions"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <param name="options"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
         <summary>Enlists a volatile resource manager that supports two phase commit to participate in a transaction.</summary>
         <returns>An <see cref="T:System.Transactions.Enlistment" /> object that describes the enlistment.</returns>
         <remarks>
@@ -640,19 +658,19 @@
         <Parameter Name="options" Type="System.Transactions.EnlistmentOptions" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="singlePhaseNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <param name="enlistmentOptions">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="singlePhaseNotification">An object that implements the <see cref="T:System.Transactions.ISinglePhaseNotification" /> interface that must be able to receive single phase commit and two phase commit notifications.</param>
+        <param name="notification">An object that implements the <see cref="T:System.Transactions.ISinglePhaseNotification" /> interface that must be able to receive single phase commit and two phase commit notifications.</param>
+        <param name="enlistmentOptions"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <param name="options"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
         <summary>Enlists a volatile resource manager that supports single phase commit optimization to participate in a transaction.</summary>
         <returns>An <see cref="T:System.Transactions.Enlistment" /> object that describes the enlistment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. To obtain a durable enlistment in a transaction, use the <xref:System.Transactions.Transaction.EnlistDurable%2A> method. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. To obtain a durable enlistment in a transaction, use the <xref:System.Transactions.Transaction.EnlistDurable%2A> method. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](https://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](https://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
- You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+ You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](https://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
  ]]></format>
         </remarks>
@@ -929,14 +947,14 @@
         <Parameter Name="options" Type="System.Transactions.EnlistmentOptions" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="resourceManagerIdentifier">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="promotableNotification">To be added.</param>
-        <param name="enlistmentNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <param name="enlistmentOptions">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceManagerIdentifier">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="manager">A unique identifier for a resource manager, which should persist across resource manager failure or reboot.</param>
+        <param name="promotableNotification">An object that acts as a commit delegate for a non-distributed transaction internal to a resource manager.</param>
+        <param name="enlistmentNotification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two phase commit notifications.</param>
+        <param name="notification">An object that implements the <see cref="T:System.Transactions.IEnlistmentNotification" /> interface to receive two phase commit notifications.</param>
+        <param name="enlistmentOptions"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <param name="options"><see cref="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" /> if the resource manager wants to perform additional work during the prepare phase.</param>
+        <summary>Promotes and enlists a durable resource manager that supports two phase commit to participate in a transaction.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1064,8 +1082,8 @@
         <Parameter Name="ex" Type="System.Exception" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="ex">To be added.</param>
+        <param name="e">An explanation of why a rollback occurred.</param>
+        <param name="ex">An explanation of why a rollback occurred.</param>
         <summary>Rolls back (aborts) the transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1153,8 +1171,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="info">To be added.</param>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
         <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" /> ) for this serialization.</param>
         <summary>Gets a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize this transaction.</summary>
         <remarks>To be added.</remarks>

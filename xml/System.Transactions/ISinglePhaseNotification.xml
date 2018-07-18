@@ -79,8 +79,8 @@
         <Parameter Name="enlistment" Type="System.Transactions.SinglePhaseEnlistment" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="singlePhaseEnlistment">To be added.</param>
-        <param name="enlistment">To be added.</param>
+        <param name="singlePhaseEnlistment">A <see cref="T:System.Transactions.SinglePhaseEnlistment" /> used to send a response to the transaction manager.</param>
+        <param name="enlistment">A <see cref="T:System.Transactions.SinglePhaseEnlistment" /> used to send a response to the transaction manager.</param>
         <summary>Represents the resource manager's implementation of the callback for the single phase commit optimization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

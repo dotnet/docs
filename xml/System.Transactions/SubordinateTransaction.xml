@@ -71,8 +71,8 @@
         <Parameter Name="superior" Type="System.Transactions.ISimpleTransactionSuperior" Index="1" />
       </Parameters>
       <Docs>
-        <param name="isoLevel">To be added.</param>
-        <param name="level">To be added.</param>
+        <param name="isoLevel">The isolation level of the transaction</param>
+        <param name="level">The isolation level of the transaction</param>
         <param name="superior">A <see cref="T:System.Transactions.ISimpleTransactionSuperior" /></param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.SubordinateTransaction" /> class.</summary>
         <remarks>

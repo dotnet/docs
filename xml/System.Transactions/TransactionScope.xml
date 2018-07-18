@@ -139,8 +139,8 @@
         <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="transactionToUse">To be added.</param>
-        <param name="transaction">To be added.</param>
+        <param name="transactionToUse">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+        <param name="transaction">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,11 +212,9 @@
         <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncFlowOption">To be added.</param>
-        <param name="asyncFlow">To be added.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified asynchronous flow option.</summary>
+        <param name="asyncFlowOption">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <param name="asyncFlow">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified asynchronous flow option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +251,8 @@
         <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">To be added.</param>
-        <param name="option">To be added.</param>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -366,11 +364,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="transactionToUse">To be added.</param>
-        <param name="transaction">To be added.</param>
-        <param name="scopeTimeout">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transactionToUse">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+        <param name="transaction">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+        <param name="scopeTimeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value, and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,11 +407,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">To be added.</param>
-        <param name="option">To be added.</param>
-        <param name="scopeTimeout">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="scopeTimeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and requirements.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,9 +448,9 @@
       </Parameters>
       <Docs>
         <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
-        <param name="option">To be added.</param>
-        <param name="transactionOptions">To be added.</param>
-        <param name="options">To be added.</param>
+        <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="transactionOptions">A <see cref="T:System.Transactions.TransactionOptions" /> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
+        <param name="options">A <see cref="T:System.Transactions.TransactionOptions" /> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -498,11 +496,11 @@
         <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">To be added.</param>
-        <param name="option">To be added.</param>
-        <param name="asyncFlowOption">To be added.</param>
-        <param name="asyncFlow">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="asyncFlowOption">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <param name="asyncFlow">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements and asynchronous flow option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,13 +539,23 @@
         <Parameter Name="opt" Type="System.Transactions.EnterpriseServicesInteropOption" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">To be added.</param>
-        <param name="transactionOptions">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="interopOption">To be added.</param>
-        <param name="opt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="transactionOptions">A <see cref="T:System.Transactions.TransactionOptions" /> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
+        <param name="options">A <see cref="T:System.Transactions.TransactionOptions" /> structure that describes the transaction options to use if a new transaction is created. If an existing transaction is used, the timeout value in this parameter applies to the transaction scope. If that time expires before the scope is disposed, the transaction is aborted.</param>
+        <param name="interopOption">An instance of the <see cref="T:System.Transactions.EnterpriseServicesInteropOption" /> enumeration that describes how the associated transaction interacts with COM+ transactions.</param>
+        <param name="opt">An instance of the <see cref="T:System.Transactions.EnterpriseServicesInteropOption" /> enumeration that describes how the associated transaction interacts with COM+ transactions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified scope and COM+ interoperability requirements, and transaction options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+When you use the `transactionOptions` parameter to specify an <xref:System.Transactions.IsolationLevel>, and the scope creates a transaction later, the new transaction is associated with the specified isolation level. If an isolation level is passed in together with a transaction, the transaction must have an identical isolation level, or an exception is thrown.
+  
+**Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -586,14 +594,22 @@
         <Parameter Name="opt" Type="System.Transactions.EnterpriseServicesInteropOption" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="transactionToUse">To be added.</param>
-        <param name="transaction">To be added.</param>
-        <param name="scopeTimeout">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="interopOption">To be added.</param>
-        <param name="opt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="transactionToUse">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+        <param name="transaction">The transaction to be set as the ambient transaction, so that transactional work done inside the scope uses this transaction.</param>
+        <param name="scopeTimeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="interopOption">An instance of the <see cref="T:System.Transactions.EnterpriseServicesInteropOption" /> enumeration that describes how the associated transaction interacts with COM+ transactions.</param>
+        <param name="opt">An instance of the <see cref="T:System.Transactions.EnterpriseServicesInteropOption" /> enumeration that describes how the associated transaction interacts with COM+ transactions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and COM+ interoperability requirements, and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+**Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -632,13 +648,13 @@
         <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">To be added.</param>
-        <param name="option">To be added.</param>
-        <param name="scopeTimeout">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="asyncFlowOption">To be added.</param>
-        <param name="asyncFlow">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="option">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="scopeTimeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> after which the transaction scope times out and aborts the transaction.</param>
+        <param name="asyncFlowOption">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <param name="asyncFlow">An instance of the <see cref="T:System.Transactions.TransactionScopeAsyncFlowOption" /> enumeration that describes whether the ambient transaction associated with the transaction scope will flow across thread continuations when using Task or async/await .NET async programming patterns.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value, requirements, and asynchronous flow option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

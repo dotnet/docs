@@ -110,8 +110,8 @@
         <Parameter Name="href" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="href">To be added.</param>
+        <param name="url">The URL for the XSD schema. Initializes the <see cref="P:System.Web.Services.Discovery.SchemaReference.Ref" /> property.</param>
+        <param name="href">The URL for the XSD schema. Initializes the <see cref="P:System.Web.Services.Discovery.SchemaReference.Ref" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class using the supplied URL as the XSD schema reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

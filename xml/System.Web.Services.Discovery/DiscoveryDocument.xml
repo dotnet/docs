@@ -245,8 +245,8 @@
         <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="textReader">To be added.</param>
+        <param name="reader">The <see cref="T:System.IO.TextReader" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <param name="textReader">The <see cref="T:System.IO.TextReader" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
         <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.IO.TextReader" />.</summary>
         <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.IO.TextReader" />.</returns>
         <remarks>
@@ -384,8 +384,8 @@
         <Parameter Name="textWriter" Type="System.IO.TextWriter" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="textWriter">To be added.</param>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
+        <param name="textWriter">The <see cref="T:System.IO.TextWriter" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
         <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -428,8 +428,8 @@
         <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="xmlWriter">To be added.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
+        <param name="xmlWriter">The <see cref="T:System.Xml.XmlWriter" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
         <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

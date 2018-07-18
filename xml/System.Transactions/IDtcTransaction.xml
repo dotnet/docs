@@ -78,14 +78,21 @@
         <Parameter Name="whatever2" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="retaining">To be added.</param>
-        <param name="whatever">To be added.</param>
-        <param name="async">To be added.</param>
-        <param name="whatever2">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reason">An optional <see cref="T:System.EnterpriseServices.BOID" /> that indicates why the transaction is being aborted. This parameter can be <see langword="null" />, indicating that no reason for the abort is provided.</param>
+        <param name="manager">An optional <see cref="T:System.EnterpriseServices.BOID" /> that indicates why the transaction is being aborted. This parameter can be <see langword="null" />, indicating that no reason for the abort is provided.</param>
+        <param name="retaining">This value must be <see langword="false" />.</param>
+        <param name="whatever">This value must be <see langword="false" />.</param>
+        <param name="async">When <c>async</c> is <see langword="true" />, an asynchronous abort is performed and the caller must use <see langword="ITransactionOutcomeEvents" /> to learn about the outcome of the transaction.</param>
+        <param name="whatever2">When <c>whatever2</c> is <see langword="true" />, an asynchronous abort is performed and the caller must use <see langword="ITransactionOutcomeEvents" /> to learn about the outcome of the transaction.</param>
+        <summary>Aborts a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -128,14 +135,23 @@
         <Parameter Name="whatever3" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="retaining">To be added.</param>
-        <param name="whatever">To be added.</param>
-        <param name="commitType">To be added.</param>
-        <param name="whatever2">To be added.</param>
-        <param name="reserved">To be added.</param>
-        <param name="whatever3">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="retaining">This value must be <see langword="false" />.</param>
+        <param name="whatever">This value must be <see langword="false" />.</param>
+        <param name="commitType">A value taken from the OLE DB enumeration <see langword="XACTTC" />.</param>
+        <param name="whatever2">A value taken from the OLE DB enumeration <see langword="XACTTC" />.</param>
+        <param name="reserved">This value must be zero.</param>
+        <param name="whatever3">This value must be zero.</param>
+        <summary>Commits a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For values of `commitType`, see `ITransaction::Commit` in the OLE DB Programmers Reference.  
+  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTransactionInfo">
@@ -174,8 +190,8 @@
         <Parameter Name="whatever" Type="System.IntPtr" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="transactionInformation">To be added.</param>
-        <param name="whatever">To be added.</param>
+        <param name="transactionInformation">Pointer to the caller-allocated <see cref="T:System.EnterpriseServices.XACTTRANSINFO" /> structure that will receive information about the transaction. This value must not be <see langword="null" />.</param>
+        <param name="whatever">Pointer to the caller-allocated <see cref="T:System.EnterpriseServices.XACTTRANSINFO" /> structure that will receive information about the transaction. This value must not be <see langword="null" />.</param>
         <summary>Retrieves information about a transaction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

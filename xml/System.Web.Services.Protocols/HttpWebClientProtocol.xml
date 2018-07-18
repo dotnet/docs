@@ -299,8 +299,8 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> that exposes the XML Web service methods.</param>
-        <param name="mappings">To be added.</param>
-        <param name="mapping">To be added.</param>
+        <param name="mappings">An <see cref="T:System.Collections.ArrayList" /> that is used to store the mappings.</param>
+        <param name="mapping">An <see cref="T:System.Collections.ArrayList" /> that is used to store the mappings.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />.</summary>
         <returns>
           <see langword="true" /> if <paramref name="type" /> can be assigned to a <see cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />; otherwise, <see langword="false" />.</returns>
@@ -335,8 +335,8 @@
       </Parameters>
       <Docs>
         <param name="types">An array of type <see cref="T:System.Type" /> that contains the types that expose the XML Web service methods.</param>
-        <param name="mappings">To be added.</param>
-        <param name="mapping">To be added.</param>
+        <param name="mappings">An <see cref="T:System.Collections.ArrayList" /> that is used to store the mappings.</param>
+        <param name="mapping">An <see cref="T:System.Collections.ArrayList" /> that is used to store the mappings.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />, as well as in a <see cref="T:System.Collections.Hashtable" /> that this method returns.</summary>
         <returns>A <see cref="T:System.Collections.Hashtable" /> that contains the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types. The types contained in <paramref name="types" /> are used as keys.</returns>
         <remarks>To be added.</remarks>

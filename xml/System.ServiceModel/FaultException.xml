@@ -245,8 +245,8 @@
         <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <param name="msg">To be added.</param>
+        <param name="reason">The reason for the fault.</param>
+        <param name="msg">The reason for the fault.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class with the specified fault reason.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,8 +335,8 @@
         <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <param name="msg">To be added.</param>
+        <param name="reason">The reason for the SOAP fault.</param>
+        <param name="msg">The reason for the SOAP fault.</param>
         <param name="code">The SOAP fault code for the fault.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason and SOAP fault code.</summary>
         <remarks>To be added.</remarks>

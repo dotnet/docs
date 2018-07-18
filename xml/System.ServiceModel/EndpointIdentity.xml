@@ -473,8 +473,8 @@
         <Parameter Name="other" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="other">To be added.</param>
+        <param name="obj">The <see cref="T:System.Object" /> compared for equality with the current identity.</param>
+        <param name="other">The <see cref="T:System.Object" /> compared for equality with the current identity.</param>
         <summary>Returns a value that determines whether a specified object is equal to the current identity object or if they have equal security properties.</summary>
         <returns>
           <see langword="true" /> if the specified object <paramref name="obj" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
@@ -572,8 +572,8 @@
         <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <param name="claim">To be added.</param>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -611,10 +611,10 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <param name="claim">To be added.</param>
-        <param name="claimComparer">To be added.</param>
-        <param name="comparer">To be added.</param>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claimComparer">The <see cref="T:System.Collections.IEqualityComparer" /> used to compare claims.</param>
+        <param name="comparer">The <see cref="T:System.Collections.IEqualityComparer" /> used to compare claims.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim and an interface and compares equality.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -56,8 +56,8 @@
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="methodInfo">To be added.</param>
-        <param name="method_info">To be added.</param>
+        <param name="methodInfo">A <see cref="T:System.Reflection.MethodInfo" /> to initialize the properties of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> common to the <see cref="T:System.Reflection.MethodInfo" />.</param>
+        <param name="method_info">A <see cref="T:System.Reflection.MethodInfo" /> to initialize the properties of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> common to the <see cref="T:System.Reflection.MethodInfo" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> class with the <see cref="T:System.Reflection.MethodInfo" /> passed in.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -325,8 +325,8 @@
         <Parameter Name="method_infos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="methodInfos">To be added.</param>
-        <param name="method_infos">To be added.</param>
+        <param name="methodInfos">An array of <see cref="T:System.Reflection.MethodInfo" /> representing the asynchronous and synchronous methods for which to create <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> objects.</param>
+        <param name="method_infos">An array of <see cref="T:System.Reflection.MethodInfo" /> representing the asynchronous and synchronous methods for which to create <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> objects.</param>
         <summary>Given an array of <see cref="T:System.Reflection.MethodInfo" /> that can contain information about both asynchronous and synchronous methods, creates an array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />, representing the methods within <paramref name="methodInfos" />.</returns>
         <remarks>
@@ -371,8 +371,8 @@
         <Parameter Name="types" Type="System.Web.Services.Protocols.LogicalMethodTypes" Index="1" />
       </Parameters>
       <Docs>
-        <param name="methodInfos">To be added.</param>
-        <param name="method_infos">To be added.</param>
+        <param name="methodInfos">An array of <see cref="T:System.Reflection.MethodInfo" /> representing the asynchronous and synchronous methods for which to create <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> objects.</param>
+        <param name="method_infos">An array of <see cref="T:System.Reflection.MethodInfo" /> representing the asynchronous and synchronous methods for which to create <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> objects.</param>
         <param name="types">A bitwise combination of the <see cref="T:System.Web.Services.Protocols.LogicalMethodTypes" /> values. Determines whether just asynchronous or synchronous methods or both are included in the returned array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</param>
         <summary>Given an array of <see cref="T:System.Reflection.MethodInfo" />, where the returned array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> can be restricted to only asynchronous or synchronous methods, creates an array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />, representing the methods within <paramref name="methodInfos" />, filtered by the value of <paramref name="types" />.</returns>
@@ -758,8 +758,8 @@
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="methodInfo">To be added.</param>
-        <param name="method_info">To be added.</param>
+        <param name="methodInfo">The <see cref="T:System.Reflection.MethodInfo" /> that might be a <see langword="Begin" /> method of an asynchronous invocation.</param>
+        <param name="method_info">The <see cref="T:System.Reflection.MethodInfo" /> that might be a <see langword="Begin" /> method of an asynchronous invocation.</param>
         <summary>Returns a value indicating whether the method passed in represents a <see langword="Begin" /> method of an asynchronous invocation.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="methodInfo" /> parameter is a <see langword="Begin" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>
@@ -801,8 +801,8 @@
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="methodInfo">To be added.</param>
-        <param name="method_info">To be added.</param>
+        <param name="methodInfo">The <see cref="T:System.Reflection.MethodInfo" /> that might be an <see langword="End" /> method of an asynchronous invocation.</param>
+        <param name="method_info">The <see cref="T:System.Reflection.MethodInfo" /> that might be an <see langword="End" /> method of an asynchronous invocation.</param>
         <summary>Returns a value indicating whether the method passed in represents an <see langword="End" /> method of an asynchronous invocation.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="methodInfo" /> parameter is an <see langword="End" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>

@@ -299,12 +299,19 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationDescription">The operation description.</param>
+        <param name="operation">The operation description.</param>
+        <param name="bindingParameters">A collection of binding parameters.</param>
+        <param name="parameters">A collection of binding parameters.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior">
@@ -337,12 +344,19 @@
         <Parameter Name="client" Type="System.ServiceModel.Dispatcher.ClientOperation" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="clientOperation">To be added.</param>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationDescription">The operation description.</param>
+        <param name="operation">The operation description.</param>
+        <param name="clientOperation">The client operation.</param>
+        <param name="client">The client operation.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior">
@@ -375,12 +389,19 @@
         <Parameter Name="service" Type="System.ServiceModel.Dispatcher.DispatchOperation" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="dispatchOperation">To be added.</param>
-        <param name="service">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationDescription">The operation description.</param>
+        <param name="operation">The operation description.</param>
+        <param name="dispatchOperation">The operation to dispatch to.</param>
+        <param name="service">The operation to dispatch to.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.Validate">
@@ -410,8 +431,8 @@
         <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="operationDescription">To be added.</param>
-        <param name="operation">To be added.</param>
+        <param name="operationDescription">The operation description.</param>
+        <param name="operation">The operation description.</param>
         <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

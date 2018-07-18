@@ -58,8 +58,8 @@
         <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="cert">To be added.</param>
+        <param name="certificate">The certificate to clone.</param>
+        <param name="cert">The certificate to clone.</param>
         <summary>Initializes a new instance of a <see cref="T:System.ServiceModel.X509CertificateEndpointIdentity" /> class using an existing certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -176,10 +176,10 @@
         <Parameter Name="o2" Type="System.Transactions.TransactionOptions" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="o1">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="o2">To be added.</param>
+        <param name="x">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the left of the equality operator.</param>
+        <param name="o1">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the left of the equality operator.</param>
+        <param name="y">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the right of the equality operator.</param>
+        <param name="o2">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the right of the equality operator.</param>
         <summary>Tests whether two specified <see cref="T:System.Transactions.TransactionOptions" /> instances are equivalent.</summary>
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are equal; otherwise, <see langword="false" />.</returns>
@@ -226,10 +226,10 @@
         <Parameter Name="o2" Type="System.Transactions.TransactionOptions" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="o1">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="o2">To be added.</param>
+        <param name="x">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the left of the equality operator.</param>
+        <param name="o1">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the left of the equality operator.</param>
+        <param name="y">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the right of the equality operator.</param>
+        <param name="o2">The <see cref="T:System.Transactions.TransactionOptions" /> instance that is to the right of the equality operator.</param>
         <summary>Returns a value that indicates whether two <see cref="T:System.Transactions.TransactionOptions" /> instances are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are not equal; otherwise, <see langword="false" />.</returns>

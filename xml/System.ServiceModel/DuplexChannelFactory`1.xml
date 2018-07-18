@@ -132,8 +132,8 @@
         <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -362,8 +362,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding.</summary>
         <remarks>
@@ -402,8 +402,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which channels produced by the factory connect.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
         <remarks>
@@ -442,8 +442,8 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
         <remarks>
@@ -683,8 +683,8 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
         <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
@@ -723,8 +723,8 @@
         <Parameter Name="remoteAddress" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
         <param name="remoteAddress">The remote address that provides the location of the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified callback object, binding, and remote address.</summary>
@@ -758,8 +758,8 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="callbackInstance">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
         <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
         <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract, and a specified configuration and endpoint address.</summary>

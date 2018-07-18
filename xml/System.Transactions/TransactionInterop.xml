@@ -137,8 +137,8 @@
       </Parameters>
       <Docs>
         <param name="transaction">The <see cref="T:System.Transactions.Transaction" /> object to be marshaled.</param>
-        <param name="whereabouts">To be added.</param>
-        <param name="exportCookie">To be added.</param>
+        <param name="whereabouts">An address that describes the location of the destination transaction manager. This permits two transaction managers to communicate with one another and thereby propagate a transaction from one system to the other.</param>
+        <param name="exportCookie">An address that describes the location of the destination transaction manager. This permits two transaction managers to communicate with one another and thereby propagate a transaction from one system to the other.</param>
         <summary>Transforms a transaction object into an export transaction cookie.</summary>
         <returns>An export transaction cookie representing the specified <see cref="T:System.Transactions.Transaction" /> object.</returns>
         <remarks>
@@ -189,8 +189,8 @@
         <Parameter Name="dtc" Type="System.Transactions.IDtcTransaction" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="transactionNative">To be added.</param>
-        <param name="dtc">To be added.</param>
+        <param name="transactionNative">The <see cref="T:System.Transactions.IDtcTransaction" /> object to be marshaled.</param>
+        <param name="dtc">The <see cref="T:System.Transactions.IDtcTransaction" /> object to be marshaled.</param>
         <summary>Generates a <see cref="T:System.Transactions.Transaction" /> from a specified <see cref="T:System.Transactions.IDtcTransaction" />.</summary>
         <returns>A <see cref="T:System.Transactions.Transaction" /> instance that represents the given <see cref="T:System.Transactions.IDtcTransaction" />.</returns>
         <remarks>
@@ -239,8 +239,8 @@
         <Parameter Name="exportCookie" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <param name="exportCookie">To be added.</param>
+        <param name="cookie">A marshaled form of the transaction object.</param>
+        <param name="exportCookie">A marshaled form of the transaction object.</param>
         <summary>Generates a <see cref="T:System.Transactions.Transaction" /> from the specified an export cookie.</summary>
         <returns>A <see cref="T:System.Transactions.Transaction" /> from the specified export cookie.</returns>
         <remarks>
@@ -289,8 +289,8 @@
         <Parameter Name="token" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="propagationToken">To be added.</param>
-        <param name="token">To be added.</param>
+        <param name="propagationToken">A propagation token representing a transaction.</param>
+        <param name="token">A propagation token representing a transaction.</param>
         <summary>Generates a <see cref="T:System.Transactions.Transaction" /> instance from the specified transmitter propagation token.</summary>
         <returns>A <see cref="T:System.Transactions.Transaction" /> from the specified transmitter propagation token.</returns>
         <remarks>

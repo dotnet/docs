@@ -230,8 +230,8 @@
         <Parameter Name="configurationName" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="configurationName">To be added.</param>
+        <param name="endpointConfigurationName">The name within the application configuration file where the channel is configured.</param>
+        <param name="configurationName">The name within the application configuration file where the channel is configured.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -314,8 +314,8 @@
         <Parameter Name="serviceType" Type="System.Type" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="channelType">To be added.</param>
-        <param name="serviceType">To be added.</param>
+        <param name="channelType">The channel type to use.</param>
+        <param name="serviceType">The channel type to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -398,8 +398,8 @@
       </Parameters>
       <Docs>
         <typeparam name="TContent">The type of content to read.</typeparam>
-        <param name="dataContractSerializer">To be added.</param>
-        <param name="serializer">To be added.</param>
+        <param name="dataContractSerializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
         <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
         <returns>An object of the specified type.</returns>
         <remarks>

@@ -384,8 +384,8 @@
         <Parameter Name="parameters" Type="System.Object[]" Index="1" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <param name="method_name">To be added.</param>
+        <param name="methodName">The name of the XML Web service method.</param>
+        <param name="method_name">The name of the XML Web service method.</param>
         <param name="parameters">An array of objects that contains the parameters to pass to the XML Web service. The order of the values in the array corresponds to the order of the parameters in the calling method of the derived class.</param>
         <summary>Invokes an XML Web service method synchronously using SOAP.</summary>
         <returns>An array of objects that contains the return value and any <see langword="reference" /> or <see langword="out" /> parameters of the derived class method.</returns>

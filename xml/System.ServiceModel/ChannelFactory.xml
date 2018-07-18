@@ -555,8 +555,8 @@
       </Parameters>
       <Docs>
         <param name="configurationName">The name of the configuration file used to initialize the channel factory.</param>
-        <param name="address">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> with which to initialize the channel factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> with which to initialize the channel factory.</param>
         <summary>Initializes the service endpoint of the channel factory with a specified address and configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

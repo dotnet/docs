@@ -342,8 +342,8 @@
         <Parameter Name="other" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="specification">To be added.</param>
-        <param name="other">To be added.</param>
+        <param name="specification">The <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> to merge.</param>
+        <param name="other">The <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> to merge.</param>
         <summary>Merges two message part specifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

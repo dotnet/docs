@@ -233,8 +233,8 @@
         <Parameter Name="manager" Type="System.Guid" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="resourceManagerIdentifier">To be added.</param>
-        <param name="manager">To be added.</param>
+        <param name="resourceManagerIdentifier">A <see cref="T:System.Guid" /> that uniquely identifies the resource to be recovered from.</param>
+        <param name="manager">A <see cref="T:System.Guid" /> that uniquely identifies the resource to be recovered from.</param>
         <summary>Notifies the transaction manager that a resource manager recovering from failure has finished reenlisting in all unresolved transactions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -242,7 +242,7 @@
 ## Remarks  
  All durable resource managers should do recovery when they first start up by calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method for each outstanding transaction.  Only when all of the reenlistments are done should the resource manager call <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>.  
   
- For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+ For more information on recovery, see [Performing Recovery](https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
   
  **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
@@ -291,15 +291,50 @@
         <Parameter Name="notification" Type="System.Transactions.IEnlistmentNotification" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="resourceManagerIdentifier">To be added.</param>
-        <param name="manager">To be added.</param>
-        <param name="recoveryInformation">To be added.</param>
-        <param name="recoveryInfo">To be added.</param>
-        <param name="enlistmentNotification">To be added.</param>
-        <param name="notification">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="resourceManagerIdentifier">A <see cref="T:System.Guid" /> that uniquely identifies the resource manager.</param>
+        <param name="manager">A <see cref="T:System.Guid" /> that uniquely identifies the resource manager.</param>
+        <param name="recoveryInformation">Contains additional information of recovery information.</param>
+        <param name="recoveryInfo">Contains additional information of recovery information.</param>
+        <param name="enlistmentNotification">A resource object that implements <see cref="T:System.Transactions.IEnlistmentNotification" /> to receive notifications.</param>
+        <param name="notification">A resource object that implements <see cref="T:System.Transactions.IEnlistmentNotification" /> to receive notifications.</param>
+        <summary>Reenlists a durable participant in a transaction.</summary>
+        <returns>An <see cref="T:System.Transactions.Enlistment" /> that describes the enlistment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+A resource manager facilitates resolution of durable enlistments in a transaction by reenlisting the transaction participant after resource failure.
+
+The `resourceManagerIdentifier` parameter is used to consistently label the participant of a transaction in the event of a resource failure. When calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method, the resource manager must provide the same `resourceManagerIdentifier` as it used when it originally called the <xref:System.Transactions.Transaction.EnlistDurable%2A> method during enlistment, or a <xref:System.Transactions.TransactionException> is thrown.
+
+When a participant is reenlisted using this method, the phase 2 methods of <xref:System.Transactions.IEnlistmentNotification> that correspond to the transaction's outcome (that is, <xref:System.Transactions.IEnlistmentNotification.Commit%2A> , <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> or <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> ) are called as appropriate.
+
+After the participants are successfully reenlisted, you should then call <xref:System.Transactions.TransactionManager.RecoveryComplete%2A> to complete the recovery.
+
+You should only call this method when a resource manager restarts from failure. In addition, you should only reenlist unresolved transactions logged by a resource manager during the initial Prepare phase of a two-phase commit. Any attempt to call this method at invalid times can produce erroneous results.
+
+If the transaction manager fails, and your resource manager performs recovery only a short time after you called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method on an enlistment in phase 1 of the Two-Phase Commit protocol, your resource manager might either receive the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> or <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> callback.
+
+For more information on recovery, see [Performing Recovery](https://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).
+
+**Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="recoveryInformation" /> is invalid.  
+  
+ -or-  
+  
+ Transaction Manager information in <paramref name="recoveryInformation" /> does not match the configured transaction manager.  
+  
+ -or-  
+  
+ <paramref name="RecoveryInformation" /> is not recognized by <see cref="N:System.Transactions" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Transactions.TransactionManager.RecoveryComplete(System.Guid)" /> has already been called for the specified <paramref name="resourceManagerIdentifier" />. The reenlistment is rejected.</exception>
+        <exception cref="T:System.Transactions.TransactionException">The <paramref name="resourceManagerIdentifier" /> does not match the content of the specified recovery information in <paramref name="recoveryInformation" />.</exception>
       </Docs>
     </Member>
   </Members>

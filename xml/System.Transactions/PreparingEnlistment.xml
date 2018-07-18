@@ -138,8 +138,8 @@
         <Parameter Name="ex" Type="System.Exception" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="ex">To be added.</param>
+        <param name="e">An explanation of why a rollback is triggered.</param>
+        <param name="ex">An explanation of why a rollback is triggered.</param>
         <summary>Indicates that the transaction should be rolled back.</summary>
         <remarks>To be added.</remarks>
       </Docs>

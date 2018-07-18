@@ -346,8 +346,8 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="1" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="endpoint">To be added.</param>
+        <param name="serviceEndpoint">The endpoint for the callback object.</param>
+        <param name="endpoint">The endpoint for the callback object.</param>
         <param name="parameters">The collection of binding parameters that are configured.</param>
         <summary>Configures the binding elements to support the callback behavior.</summary>
         <remarks>To be added.</remarks>
@@ -387,8 +387,8 @@
       </Parameters>
       <Docs>
         <param name="serviceEndpoint">The endpoint configured by the attribute.</param>
-        <param name="clientRuntime">To be added.</param>
-        <param name="behavior">To be added.</param>
+        <param name="clientRuntime">The client run-time object that the attribute configures.</param>
+        <param name="behavior">The client run-time object that the attribute configures.</param>
         <summary>Configures the client runtime to support the callback object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,8 +427,8 @@
       </Parameters>
       <Docs>
         <param name="serviceEndpoint">The endpoint to be modified.</param>
-        <param name="endpointDispatcher">To be added.</param>
-        <param name="dispatcher">To be added.</param>
+        <param name="endpointDispatcher">The endpoint dispatcher that the method modifies.</param>
+        <param name="dispatcher">The endpoint dispatcher that the method modifies.</param>
         <summary>Implementation of the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" /> method. This implementation has no effect.</summary>
         <remarks>To be added.</remarks>
       </Docs>

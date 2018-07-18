@@ -429,8 +429,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">To be added.</param>
-        <param name="reader">To be added.</param>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
         <summary>Creates XML syndication content.</summary>
         <returns>An instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> class that contains the new content.</returns>
         <remarks>To be added.</remarks>

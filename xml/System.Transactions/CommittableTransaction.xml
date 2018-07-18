@@ -226,10 +226,10 @@
         <Parameter Name="user_defined_state" Type="System.Object" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncCallback">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <param name="user_defined_state">To be added.</param>
+        <param name="asyncCallback">The <see cref="T:System.AsyncCallback" /> delegate that is invoked when the transaction completes. This parameter can be <see langword="null" />, in which case the application is not notified of the transaction's completion. Instead, the application must use the <see cref="T:System.IAsyncResult" /> interface to check for completion and wait accordingly, or call <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> to wait for completion.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that is invoked when the transaction completes. This parameter can be <see langword="null" />, in which case the application is not notified of the transaction's completion. Instead, the application must use the <see cref="T:System.IAsyncResult" /> interface to check for completion and wait accordingly, or call <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> to wait for completion.</param>
+        <param name="asyncState">An object, which might contain arbitrary state information, associated with the asynchronous commitment. This object is passed to the callback, and is not interpreted by <see cref="N:System.Transactions" />. A null reference is permitted.</param>
+        <param name="user_defined_state">An object, which might contain arbitrary state information, associated with the asynchronous commitment. This object is passed to the callback, and is not interpreted by <see cref="N:System.Transactions" />. A null reference is permitted.</param>
         <summary>Begins an attempt to commit the transaction asynchronously.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> interface that can be used by the caller to check the status of the asynchronous operation, or to wait for the operation to complete.</returns>
         <remarks>
@@ -329,8 +329,8 @@
         <Parameter Name="ar" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="ar">To be added.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> object associated with the asynchronous commitment.</param>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object associated with the asynchronous commitment.</param>
         <summary>Ends an attempt to commit the transaction asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

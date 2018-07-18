@@ -120,8 +120,8 @@
         <Parameter Name="mode" Type="System.ServiceModel.WebHttpSecurityMode" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="securityMode">To be added.</param>
-        <param name="mode">To be added.</param>
+        <param name="securityMode">The value of <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> that specifies the type of security that is used to configure a service endpoint to receive HTTP requests.</param>
+        <param name="mode">The value of <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> that specifies the type of security that is used to configure a service endpoint to receive HTTP requests.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with the type of security used by the binding explicitly specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

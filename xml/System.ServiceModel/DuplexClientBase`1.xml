@@ -437,8 +437,8 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="bindingConfigurationName">To be added.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="bindingConfigurationName">The name of the client endpoint information in the application configuration file.</param>
         <param name="remoteAddress">The address of the service endpoint to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
         <remarks>
@@ -485,8 +485,8 @@
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
         <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
-        <param name="remoteAddress">To be added.</param>
-        <param name="address">To be added.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <param name="address">The address of the service endpoint to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

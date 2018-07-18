@@ -113,8 +113,8 @@
         <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="cert">To be added.</param>
+        <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+        <param name="cert">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

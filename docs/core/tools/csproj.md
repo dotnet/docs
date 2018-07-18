@@ -270,7 +270,7 @@ Semicolon separated list of key=value pairs.
 
 ### Properties per attribute
 
-Each attribute has a property that control it's content and one to disable it's generation as follow :
+Each attribute has a property that control it's content and another to disable it's generation as follow :
 
 | Attribute                                                      | Property               | Property to disable                             |
 |----------------------------------------------------------------|------------------------|-------------------------------------------------|

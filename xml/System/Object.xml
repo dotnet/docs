@@ -443,7 +443,7 @@
   
 -   After the garbage collector has discovered that an object is inaccessible, unless the object has been exempted from finalization by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
--   During shutdown of an application domain, unless the object is exempt from finalization. During shutdown, even objects that are still accessible are finalized.  
+-   **On .NET Framework only**, during shutdown of an application domain, unless the object is exempt from finalization. During shutdown, even objects that are still accessible are finalized.  
   
  <xref:System.Object.Finalize%2A> is automatically called only once on a given instance, unless the object is re-registered by using a mechanism such as <xref:System.GC.ReRegisterForFinalize%2A?displayProperty=nameWithType> and the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method has not been subsequently called.  
   

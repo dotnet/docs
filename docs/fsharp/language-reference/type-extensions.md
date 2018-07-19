@@ -25,14 +25,6 @@ type typename with
 // Extension methods
 open System.Runtime.CompilerServices
 
-// On a module
-[<Extension>]
-module TypeNameExtensions =
-    let [inline] extension-name (ty: typename) [args] =
-        body
-    ...
-
-// On a class
 [<Extension>]
 type Extensions() =
     [static] member self-identifier.extension-name (ty: typename, [args]) =
@@ -123,7 +115,7 @@ What is desired are static methods that "float in space" and can be presented as
 
 ## Extension methods
 
-Finally, extension methods (sometimes called "C# style extension members") can be declared in F# as either a let-bound value in a module or a member on a class.
+Finally, extension methods (sometimes called "C# style extension members") can be declared in F# as a static member method on a class.
 
 Extension methods are useful for when you wish to define extensions on a generic type that will constrain the type variable. For example:
 
@@ -133,9 +125,9 @@ namespace Extensions
 open System.Runtime.CompilerServices
 
 [<Extension>]
-module IEnumerableExtensions =
+type IEnumerableExtensions() =
     [<Extension>]
-    let inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
+    static member inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
 ```
 
 When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable`1>, so long as `Extensions` has been opened or is in scope.

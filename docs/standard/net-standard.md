@@ -75,7 +75,7 @@ Derivative artifacts are provided to enable more convenient reading and to enabl
 
 The primary distribution vehicle for the .NET Standard reference assemblies is [NuGet packages](../core/packages.md). Implementations are delivered in a variety of ways, appropriate for each .NET implementation.
 
-NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard Framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. If you want a broader set of APIs, you should target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
+NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. For the broadest set of APIs, target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
 
 The [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library/) metapackage references the complete set of NuGet packages that define .NET Standard.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET libraries and associated APIs that define .NET Standard. You can reference additional packages that target `netstandard` to get access to additional APIs.
 
@@ -99,13 +99,13 @@ You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a 
 
 ## .NET Framework compatibility mode
 
-Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard projects to reference .NET Framework libraries as if they were compiled for .NET Standard. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs.
+Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard projects to reference .NET Framework libraries as if they were compiled for .NET Standard. Referencing .NET Framework libraries doesn't work for all projects, such as libraries that use Windows Presentation Foundation (WPF) APIs.
 
 For more information, see [.NET Framework compatibility mode](../core/porting/third-party-deps.md#net-framework-compatibility-mode).
 
 ## .NET Standard libraries and Visual Studio
 
-In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or later installed on Windows or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/visual-studio-mac/) or later installed on macOS.
+In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/visual-studio-mac/) or later installed on macOS.
 
 If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
 
@@ -117,13 +117,13 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 Similarities:
 
-- Defines APIs that can be used for binary code sharing.
+- Define APIs that can be used for binary code sharing.
 
 Differences:
 
 - .NET Standard is a curated set of APIs, while PCL profiles are defined by intersections of existing platforms.
 - .NET Standard linearly versions, while PCL profiles do not.
-- PCL profiles represents Microsoft platforms while the .NET Standard is agnostic to platform.
+- PCL profiles represents Microsoft platforms while the .NET Standard is platform-agnostic.
 
 ### PCL compatibility
 

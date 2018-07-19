@@ -1270,10 +1270,10 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="connectionId">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="connectionId">The connection ID.</param>
+        <param name="target">The target.</param>
+        <summary>Calls the StyleBamlReader to attach events on EventSetters and Templates in compiled content.</summary>
+        <remarks>This interface is intended for use only by the markup compiler.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLocationExpression">

@@ -334,11 +334,11 @@
         <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pIDString">To be added.</param>
-        <param name="dwIDStringLen">To be added.</param>
-        <param name="phmenu">To be added.</param>
-        <param name="pidChild">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pIDString">The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</param>
+        <param name="dwIDStringLen">Specifies the length of the identity string specified by <paramref name="pIDString" />.</param>
+        <param name="phmenu">Pointer to a buffer that receives the HMENU of the accessible element.</param>
+        <param name="pidChild">Pointer to a buffer that receives the child ID of the accessible element.</param>
+        <summary>The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,12 +414,12 @@
         <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pIDString">To be added.</param>
-        <param name="dwIDStringLen">To be added.</param>
-        <param name="phwnd">To be added.</param>
-        <param name="pidObject">To be added.</param>
-        <param name="pidChild">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pIDString">The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</param>
+        <param name="dwIDStringLen">Specifies the length of the identity string specified by <paramref name="pIDString" />.</param>
+        <param name="phwnd">Pointer to a buffer that receives the HWND of the accessible element.</param>
+        <param name="pidObject">Pointer to a buffer that receives the object ID of the accessible element.</param>
+        <param name="pidChild">Pointer to a buffer that receives the child ID of the accessible element.</param>
+        <summary>The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

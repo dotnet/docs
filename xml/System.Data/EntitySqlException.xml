@@ -275,8 +275,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full error message. As available, the message contains the error description, context, line number, and column number.</summary>
+        <value>A string describing the full error message. As available, the message contains the error description, context, line number, and column number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

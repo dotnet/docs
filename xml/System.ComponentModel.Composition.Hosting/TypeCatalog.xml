@@ -279,9 +279,9 @@
         <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="definition">Conditions that specify which exports to match.</param>
+        <summary>Gets a collection of exports that match the conditions specified by the import definition.</summary>
+        <returns>A collection of exports that match the conditions specified by <paramref name="definition" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,8 +301,10 @@
         <ReturnType>System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the part definitions that are contained in the catalog.</summary>
+        <value>The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects that are contained in the <see cref="T:System.ComponentModel.Composition.Hosting.TypeCatalog" /> object.</value>
+        <exception cref="T:System.ObjectDisposedException">
+          The <see cref="T:System.ComponentModel.Composition.Hosting.TypeCatalog" /> object has been disposed of.</exception>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

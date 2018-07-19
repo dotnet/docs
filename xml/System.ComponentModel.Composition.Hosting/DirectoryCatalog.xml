@@ -586,8 +586,10 @@
         <ReturnType>System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the part definitions that are contained in the directory catalog.</summary>
+        <value>The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects that are contained in the <see cref="T:System.ComponentModel.Composition.Hosting.DirectoryCatalog" />.</value>
+        <exception cref="T:System.ObjectDisposedException">
+          The <see cref="T:System.ComponentModel.Composition.Hosting.DirectoryCatalog" /> object has been disposed of.</exception>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

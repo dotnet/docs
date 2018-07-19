@@ -600,9 +600,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the processor platform to be targeted by the output file.</summary>
+        <value>The processor platform to be targeted by the output file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This property can have a value of **x86**, **x64**, or **anycpu**. Default is **anycpu**. For more information, see [/platform (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/platform-compiler-option.md).
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredUILang">

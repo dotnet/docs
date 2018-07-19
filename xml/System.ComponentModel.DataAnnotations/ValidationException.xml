@@ -278,10 +278,18 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the serialized object data for the exception that occurred.</param>
+        <param name="context">Context information about the source or destination of the exception.</param>
+        <summary>Gets information about the exception and adds it to the <see cref="T:System.Runtime.Serialization.SerializationInfoEnumerator" /> object</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This method adds information about the exception to the <xref:System.Runtime.Serialization.SerializationInfo> object that is targeted for serialization. 
+During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> class that is transmitted over the stream in the <xref:System.Runtime.Serialization.StreamingContext>.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationAttribute">

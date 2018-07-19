@@ -564,8 +564,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The <see cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" /> that contains the event data.</param>
+        <summary>Invoked when an element receives keyboard focus. Implement this method in a derived class to handle this event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

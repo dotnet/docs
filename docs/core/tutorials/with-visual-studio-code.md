@@ -68,7 +68,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
     ![Selecting .NET Core](media/with-visual-studio-code/selectcore.png)
 
-5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9.
+5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
 
     ![Setting a Breakpoint](media/with-visual-studio-code/setbreakpoint.png)
 

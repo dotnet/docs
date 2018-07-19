@@ -86,7 +86,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 |`Placeholder`|`placeholder`|`PlaceHolder`|  
 |`SignIn`|`signIn`|`SignOn`|  
 |`SignOut`|`signOut`|`SignOff`|  
-|`UserName`|`username`|`UserName`|  
+|`UserName`|`userName`|`Username`|  
 |`WhiteSpace`|`whiteSpace`|`Whitespace`|  
 |`Writable`|`writable`|`Writeable`|  
   

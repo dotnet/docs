@@ -42,7 +42,7 @@ This sample demonstrates a service that hosts multiple endpoints at a single `Li
   
  As on the server, by default, these two addresses are the same. To specify a `Via` on the client that is different from the endpoint's address, `ClientViaBehavior` is used:  
   
-```  
+```csharp  
 Uri via = new Uri("http://localhost/ServiceModelSamples/service.svc");  
 CalculatorClient calcClient = new CalculatorClient();  
 calcClient.ChannelFactory.Endpoint.Behaviors.Add(  

@@ -116,7 +116,7 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
 - Debian
   - `debian-x64`
   - `debian.8-x64`
-  - `debian.9-x64`
+  - `debian.9-x64` (.NET Core 1.1 or later versions)
 - Fedora
   - `fedora-x64`
   - `fedora.27-x64`

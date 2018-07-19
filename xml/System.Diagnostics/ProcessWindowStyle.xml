@@ -59,7 +59,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The hidden window style. A window can be either visible or hidden. The system displays a hidden window by not drawing it. If a window is hidden, it is effectively disabled. A hidden window can process messages from the system or from other windows, but it cannot process input from the user or display output. Frequently, an application may keep a new window hidden while it customizes the window's appearance, and then make the window style <see langword="Normal" />. To use <see cref="F:System.Diagnostics.ProcessWindowStyle.Hidden" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> property must be <see langword="false" />.</summary>
+        <summary>The hidden window style. A window can be either visible or hidden. The system displays a hidden window by not drawing it. If a window is hidden, it is effectively disabled. A hidden window can process messages from the system or from other windows, but it cannot process input from the user or display output. Frequently, an application may keep a new window hidden while it customizes the window's appearance, and then make the window style <see cref="F:System.Diagnostics.ProcessWindowStyle.Normal" />. To use <see cref="F:System.Diagnostics.ProcessWindowStyle.Hidden" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> property must be <see langword="true" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maximized">
@@ -155,7 +155,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The normal, visible window style. The system displays a window with <see langword="Normal" /> style on the screen, in a default location. If a window is visible, the user can supply input to the window and view the window's output. Frequently, an application may initialize a new window to the <see langword="Hidden" /> style while it customizes the window's appearance, and then make the window style <see langword="Normal" />.</summary>
+        <summary>The normal, visible window style. The system displays a window with <see cref="F:System.Diagnostics.ProcessWindowStyle.Normal" /> style on the screen, in a default location. If a window is visible, the user can supply input to the window and view the window's output. Frequently, an application may initialize a new window to the <see cref="F:System.Diagnostics.ProcessWindowStyle.Hidden" /> style while it customizes the window's appearance, and then make the window style <see cref="F:System.Diagnostics.ProcessWindowStyle.Normal" />.</summary>
       </Docs>
     </Member>
   </Members>

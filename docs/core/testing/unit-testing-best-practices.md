@@ -2,39 +2,36 @@
 
 By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 
-## Purpose
-The purpose of this document is to offer suggested best practices when writing unit tests.
+## Why unit test?
 
-## Why Unit Test?
-
-### Less Time Performing Functional Tests
+### Less time performing functional tests
 Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else), must follow in order to validate the expected behavior. These steps may not always be known to the tester, which means they will have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
 
 Unit tests on the other hand take milliseconds, can be run at the press of a button and do not necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
 
-### Protection Against Regression
+### Protection against regression
 Regression defects are defects that are introduced when a change is made to the application. It is common for testers to not only test their new feature but also features that existed beforehand in order to verify that previously implemented features still function as expected.
 
 With unit testing, it's possible to rerun your entire suite of tests after every build or even after you change a line of code. Giving you confidence that your new code does not break existing functionality.
 
-### Executable Documentation
+### Executable documentation
 It may not always be obvious what a particular method does or how it behaves given a certain input. You may ask yourself: How does this method behave if I pass it a blank string? Null?
 
 When you have a suite of well-named unit tests, each test should be able to clearly explain the expected output for a given input. In addition, it should be able to verify that it actually works.
 
-### Less Coupled Code
+### Less coupled code
 When code is tightly coupled, it can be difficult to unit test. Without creating unit tests for the code that you're writing, coupling may be less apparent.
 
 Writing tests for your code will naturally decouple your code, because it would be near impossible to test otherwise.
 
-## What Makes a Good Unit Test?
+## What makes a good unit test?
 - **Fast**. It is not uncommon for mature projects to have thousands of unit tests. Unit tests should take very little time to run. Milliseconds.
 - **Isolated**. Unit tests are standalone, can be run in isolation, and have no dependencies on any outside factors such as a file system or database.
 - **Repeatable**. Running a unit test should be consistent with its results, that is, it always returns the same result if you do not change anything in between runs.
 - **Self-Checking**. The test should be able to automatically detect if it passed or failed without any human interaction.
 - **Timely**. A unit test should not take a disproportionally long time to write compared to the code being tested. If you find testing the code taking a large amount of time compared to writing the code, consider a design that is more testable.
 
-## Lets Speak the Same Language
+## Lets speak the same language
 The term *mock* is unfortunately very misused when talking about testing. The following defines the most common types of *fakes* when writing unit tests:
 
 *Fake* - A fake is a generic term which can be used to describe either a stub or a mock object. Whether it is a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
@@ -86,9 +83,9 @@ In this case, we are checking a property on the Fake (asserting against it), so 
 
 The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you do not assert against a stub.
 
-## Best Practices
+## Best practices
 
-### Arranging Your Tests
+### Arranging your tests
 Arrange, Act, Assert is a common pattern when unit testing. As the name implies, it consists of three main actions:
 - *Arrange* your objects, creating and setting them up as necessary.
 - *Act* on an object.
@@ -122,7 +119,7 @@ public void IsValidWord_InputIsNull_ReturnsFalse()
 }
 ```
 
-### Naming Your Tests
+### Naming your tests
 The name of your test should consist of three parts:
 - The name of the method being tested.
 - The scenario under which it's being tested.
@@ -155,7 +152,7 @@ public void IsValidWord_InputIsNull_ReturnsFalse()
 }
 ```
 
-### Avoid Magic Strings
+### Avoid magic strings
 Naming variables in unit tests is as important, if not more important, than naming variables in production code. Unit tests should not contain magic strings.
 
 #### Why?
@@ -187,7 +184,7 @@ public void TryParseWord_InputIsNumber_ReturnsInvalidInputErrorCode()
 }
 ```
 
-### Avoid Logic in Tests
+### Avoid logic in tests
 When writing your unit tests avoid manual string concatenation and logical conditions such as `if`, `while`, `for`, `switch`, etc.
 
 #### Why?
@@ -236,7 +233,7 @@ public void ExclaimAllWords_TwoWords_ReturnsArrayOfExclaimedWords()
 }
 ```
 
-### Prefer Helper Methods to Setup and Teardown
+### Prefer helper methods to setup and teardown
 If you require a similar object or state for your tests, prefer a helper method than leveraging Setup and Teardown attributes if they exist.
 
 #### Why?
@@ -295,7 +292,7 @@ private Glossary CreateDefaultGlossary()
 }
 ```
 
-### Avoid Multiple Asserts
+### Avoid multiple asserts
 When writing your tests, try to only include one Assert per test. Common approaches to using only one assert include:
 - Create a separate test for each assert.
 - Use parameterized tests.
@@ -330,7 +327,7 @@ public void IsValidWord_InputIsNullOrEmpty_ReturnsFalse(string input)
 }
 ```
 
-### Write Minimally Passing Tests
+### Write minimally passing tests
 The input to be used in a unit test should be the simplest possible in order to pass the behavior that you are currently testing.
 
 #### Why?
@@ -363,9 +360,9 @@ public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
 }
 ```
 
-## How Do I...?
+## How do I...?
 
-### Test Private Methods
+### Test private methods
 In most cases, there should not be a need to test a private method. Private methods are an implementation detail. You can think of it this way: private methods never exist in isolation. At some point, there is going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one. 
 
 Consider the following case
@@ -400,7 +397,7 @@ public void ParseLogLine_ByDefault_ReturnsTrimmedResult()
 
 With this viewpoint, if you see a private method, find the public method and write your tests against that method. Just because a private method returns the expected result, does not mean the system that eventually calls the private method uses the result correctly.
 
-### Stub Static References
+### Stub static references
 One of the principles of a unit test is that it must have full control of the system under test. This can be problematic when production code includes calls to static references (e.g. `DateTime.Now`). Consider the following code
 
 ```csharp

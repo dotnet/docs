@@ -92,7 +92,7 @@ public class Employee{
     <Employee>  
         <Name>Haley</Name>  
     </Employee>  
-</Employees >  
+</Employees>  
 </Group>  
 ```  
   
@@ -121,6 +121,7 @@ public class Group{
         <Name>Haley</Name>  
     </Employee>  
 </TeamMembers>  
+</Group>  
 ```  
   
  The <xref:System.Xml.Serialization.XmlArrayItemAttribute>, on the other hand, controls how the items contained in the array are serialized. Note that the attribute is applied to the field returning the array.  
@@ -193,7 +194,7 @@ public class Manager:Employee{
         <Name>Ann</Name>  
         <Level>3</Level>  
     <Employee>  
-</Employees >  
+</Employees>  
 </Group>  
 ```  
   

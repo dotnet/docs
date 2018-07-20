@@ -2,6 +2,8 @@
 
 By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 
+Unit testing is an important aspect of developing quality software. Your unit tests should be given the same level of care as your production code, if not more so. This guide offers a collection of best practices when writing unit tests.
+
 ## Why unit test?
 
 ### Less time performing functional tests
@@ -170,6 +172,18 @@ public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
     var result = glossary.ConcatenateWords(firstWord, secondWord)
 
     Assert.Equals("aardvark,baboon", result)
+}
+```
+
+#### Better:
+```csharp
+public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
+{
+    var glossary = new Glossary();
+
+    var result = glossary.ConcatenateWords("a", "b")
+
+    Assert.Equals("a,b", result)
 }
 ```
 
@@ -345,18 +359,6 @@ public void IsValidWord_InputIsNullOrEmpty_ReturnsFalse(string input)
     var result = glossary.IsValidWord(input);
 
     Assert.False(result);
-}
-```
-
-#### Better:
-```csharp
-public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
-{
-    var glossary = new Glossary();
-
-    var result = glossary.ConcatenateWords("a", "b")
-
-    Assert.Equals("a,b", result)
 }
 ```
 

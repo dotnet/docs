@@ -24,7 +24,6 @@ The purpose of this document is to offer suggested best practices when writing u
 - [How Do I...?](#how-do-i)
     * [Test Private Methods](#test-private-methods)
     * [Stub Static References](#stub-static-references)
-- [Additional Resources](#additional-resources)
 
 ## Why Unit Test?
 

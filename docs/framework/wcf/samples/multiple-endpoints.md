@@ -44,7 +44,7 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
   <!-- Passing "secure" into the constructor of the CalculatorClient  
        class selects this endpoint.-->  
   <endpoint name="secure"  
-address="http://localhost/servicemodelsamples/service.svc/secure"   
+            address="http://localhost/servicemodelsamples/service.svc/secure"   
             binding="wsHttpBinding"   
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 </client>  
@@ -52,7 +52,7 @@ address="http://localhost/servicemodelsamples/service.svc/secure"
   
  The client uses both endpoints as shown in the following code.  
   
-```  
+```csharp  
 static void Main()  
 {  
     // Create a client to the basic endpoint configuration.  

@@ -55,7 +55,7 @@ items:
        public override string ToString() => Name;
     }
 
-    public enum Unit { item, pound, ounce, dozen };
+    public enum Unit { item, kilogram, gram, dozen };
 
     var item = new Vegetable("eggplant");
     var date = DateTime.Now;

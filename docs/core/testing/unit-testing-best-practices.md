@@ -197,11 +197,11 @@ public void TryParseWord_InputIsNumber_ReturnsInvalidInputErrorCode()
 public void TryParseWord_InputIsNumber_ReturnsInvalidInputErrorCode()
 {
     var glossary = new Glossary();
-    const int INVALID_INPUT = -1;
+    const int ERROR_RESULT = -1;
 
     glossary.TryParseWord("1", out var result)
 
-    Assert.Equal(INVALID_INPUT, result);
+    Assert.Equal(ERROR_RESULT, result);
 }
 ```
 

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>[Json.NET](http://www.newtonsoft.com/json) should be used serialization and deserialization. Provides serialization and deserialization functionality for AJAX-enabled applications.</summary>
+    <summary>[Json.NET](http://www.newtonsoft.com/json) should be used for serialization and deserialization. Provides serialization and deserialization functionality for AJAX-enabled applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,7 +50,7 @@
    
   
 ## Examples  
- The first example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+ The first example provides a simple illustration of how to serialize and deserialize data objects. It requires a class named Person which is shown below.  
   
  [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]
  [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  

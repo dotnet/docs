@@ -2,7 +2,9 @@
 
 By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 
-Unit testing is an important aspect of developing quality software. Your unit tests should be given the same level of care as your production code, if not more so. This guide offers a collection of best practices when writing unit tests.
+There are numerous benefits to writing unit tests; they help with regression, provide documentation, and facilitate good design. However, hard to read and brittle unit tests can wreak havoc on your code base.
+
+In this guide, you'll learn some best practices when writing unit tests to keep your tests resilient and easy to understand.
 
 ## Why unit test?
 

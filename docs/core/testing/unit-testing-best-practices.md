@@ -152,6 +152,27 @@ public void IsValidWord_InputIsNull_ReturnsFalse()
 }
 ```
 
+### Write minimally passing tests
+The input to be used in a unit test should be the simplest possible in order to pass the behavior that you are currently testing.
+
+#### Why?
+- Tests become more resilient to future changes in the codebase.
+- Closer to testing behavior over implementation.
+
+#### Bad:
+```csharp
+public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
+{
+    var glossary = new Glossary();
+    var firstWord = "aardvark";
+    var secondWord = "baboon";
+
+    var result = glossary.ConcatenateWords(firstWord, secondWord)
+
+    Assert.Equals("aardvark,baboon", result)
+}
+```
+
 ### Avoid magic strings
 Naming variables in unit tests is as important, if not more important, than naming variables in production code. Unit tests should not contain magic strings.
 
@@ -324,27 +345,6 @@ public void IsValidWord_InputIsNullOrEmpty_ReturnsFalse(string input)
     var result = glossary.IsValidWord(input);
 
     Assert.False(result);
-}
-```
-
-### Write minimally passing tests
-The input to be used in a unit test should be the simplest possible in order to pass the behavior that you are currently testing.
-
-#### Why?
-- Tests become more resilient to future changes in the codebase.
-- Closer to testing behavior over implementation.
-
-#### Bad:
-```csharp
-public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
-{
-    var glossary = new Glossary();
-    var firstWord = "aardvark";
-    var secondWord = "baboon";
-
-    var result = glossary.ConcatenateWords(firstWord, secondWord)
-
-    Assert.Equals("aardvark,baboon", result)
 }
 ```
 

@@ -39,7 +39,7 @@ As stated previously, the data owned by each microservice is private to that mic
 
 To analyze this problem, let’s look at an example from the [eShopOnContainers reference application](http://aka.ms/eshoponcontainers). The Catalog microservice maintains information about all the products, including their stock level. The Ordering microservice manages orders and must verify that a new order does not exceed the available catalog product stock. (Or the scenario might involve logic that handles backordered products.) In a hypothetical monolithic version of this application, the ordering subsystem could simply use an ACID transaction to check the available stock, create the order in the Orders table, and update the available stock in the Products table.
 
-However, in a microservices- based application, the Order and Product tables are owned by their respective microservices. No microservice should ever include databases owned by another microservice in its own transactions or queries, as shown in Figure 4-9.
+However, in a microservices-based application, the Order and Product tables are owned by their respective microservices. No microservice should ever include databases owned by another microservice in its own transactions or queries, as shown in Figure 4-9.
 
 ![](./media/image9.PNG)
 
@@ -59,7 +59,7 @@ Communicating across microservice boundaries is a real challenge. In this contex
 
 In a distributed system like a microservices-based application, with so many artifacts moving around and with distributed services across many servers or hosts, components will eventually fail. Partial failure and even larger outages will occur, so you need to design your microservices and the communication across them taking into account the risks common in this type of distributed system.
 
-A popular approach is to implement HTTP (REST)- based microservices, due to their simplicity. An HTTP-based approach is perfectly acceptable; the issue here is related to how you use it. If you use HTTP requests and responses just to interact with your microservices from client applications or from API Gateways, that is fine. But if you create long chains of synchronous HTTP calls across microservices, communicating across their boundaries as if the microservices were objects in a monolithic application, your application will eventually run into problems.
+A popular approach is to implement HTTP (REST)-based microservices, due to their simplicity. An HTTP-based approach is perfectly acceptable; the issue here is related to how you use it. If you use HTTP requests and responses just to interact with your microservices from client applications or from API Gateways, that is fine. But if you create long chains of synchronous HTTP calls across microservices, communicating across their boundaries as if the microservices were objects in a monolithic application, your application will eventually run into problems.
 
 For instance, imagine that your client application makes an HTTP API call to an individual microservice like the Ordering microservice. If the Ordering microservice in turn calls additional microservices using HTTP within the same request/response cycle, you are creating a chain of HTTP calls. It might sound reasonable initially. However, there are important points to consider when going down this path:
 

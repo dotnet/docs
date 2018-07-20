@@ -289,9 +289,10 @@
  The following example uses the <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A> property to display the content of a <xref:System.Windows.Controls.TabItem> differently, depending on the hometown of the selected person.  
   
  [!code-xaml[TabControlContentTemplateSelector#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Window1.xaml#1)]  
-[!code-xaml[TabControlContentTemplateSelector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Window1.xaml#2)]  
-  
- [!code-csharp[TabControlContentTemplateSelector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Window1.xaml.cs#3)]
+[!code-xaml[TabControlContentTemplateSelector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Window1.xaml#2)]
+[!code-csharp[TabControlContentTemplateSelector#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Data.cs#1)] 
+[!code-csharp[TabControlContentTemplateSelector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplateSelector/CSharp/Window1.xaml.cs#3)]
+[!code-vb[TabControlContentTemplateSelector#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabControlContentTemplateSelector/VisualBasic/Person.vb#1)] 
  [!code-vb[TabControlContentTemplateSelector#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabControlContentTemplateSelector/VisualBasic/Window1.xaml.vb#3)]  
   
  ]]></format>

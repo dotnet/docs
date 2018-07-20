@@ -399,15 +399,15 @@ With this viewpoint, if you see a private method, find the public method and wri
 One of the principles of a unit test is that it must have full control of the system under test. This can be problematic when production code includes calls to static references (e.g. `DateTime.Now`). Consider the following code
 
 ```csharp
-public bool CanPerformOperation()
+public int GetDiscountedPrice(int price)
 {
-    if(DateTime.Now == DayOfWeek.Sunday) 
+    if(DateTime.Now == DayOfWeek.Tuesday) 
     {
-        return true;
+        return price / 2;
     }
     else 
     {
-        return false;
+        return price;
     }
 }
 ```
@@ -415,22 +415,22 @@ public bool CanPerformOperation()
 How can this code possibly be unit tested? You may try an approach such as
 
 ```csharp
-public void CanPerformOperation_OnSunday_ReturnsTrue()
+public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
 {
-    var operationService = new OperationService();
+    var priceCalculator = new PriceCalculator();
 
-    var result = operationService.CanPerformOperation();
+    var actual = priceCalculator.GetDiscountedPrice(2);
 
-    Assert.True(result);
+    Assert.Equals(2, actual)   
 }
 
-public void CanPerformOperation_OnMonday_ReturnsFalse()
+public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 {
-    var operationService = new OperationService();
+    var priceCalculator = new PriceCalculator();
 
-    var result = operationService.CanPerformOperation();
+    var actual = priceCalculator.GetDiscountedPrice(2);
 
-    Assert.False(result);   
+    Assert.Equals(1, actual);
 }
 ```
 
@@ -448,15 +448,15 @@ public interface IDateTimeProvider
     DayOfWeek DayOfWeek();
 }
 
-public bool CanPerformOperation(IDateTimeProvider dateTimeProvider)
+public bool GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 {
-    if(dateTimeProvider.DayOfWeek() == DayOfWeek.Sunday)
+    if(DateTime.Now == DayOfWeek.Tuesday) 
     {
-        return true;
+        return price / 2;
     }
-    else
+    else 
     {
-        return false;
+        return price;
     }
 }
 ```
@@ -464,26 +464,26 @@ public bool CanPerformOperation(IDateTimeProvider dateTimeProvider)
 Your test suite now becomes
 
 ```csharp
-public void CanPerformOperation_OnSunday_ReturnsTrue()
+public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
 {
-    var operationService = new OperationService();
-    var dateTimeProviderStub = new Mock<IDateTimeProvider>();
-    dateTimeProviderStub.Setup(dtp => dtp.DayOfWeek()).Returns(DayOfWeek.Sunday);
-
-    var result = operationService.CanPerformOperation(dateTimeProviderStub);
-
-    Assert.True(result);
-}
-
-public void CanPerformOperation_OnMonday_ReturnsFalse()
-{
-    var operationService = new OperationService();
+    var priceCalculator = new PriceCalculator();
     var dateTimeProviderStub = new Mock<IDateTimeProvider>();
     dateTimeProviderStub.Setup(dtp => dtp.DayOfWeek()).Returns(DayOfWeek.Monday);
 
-    var result = operationService.CanPerformOperation(dateTimeProviderStub);
+    var actual = priceCalculator.GetDiscountedPrice(2, dateTimeProviderStub);
 
-    Assert.False(result);
+    Assert.Equals(2, actual);
+}
+
+public void GetDiscountedPrice_OnTuesday_ReturnsFullPrice()
+{
+    var priceCalculator = new PriceCalculator();
+    var dateTimeProviderStub = new Mock<IDateTimeProvider>();
+    dateTimeProviderStub.Setup(dtp => dtp.DayOfWeek()).Returns(DayOfWeek.Tuesday);
+
+    var actual = priceCalculator.GetDiscountedPrice(2, dateTimeProviderStub);
+
+    Assert.Equals(1, actual);
 }
 ```
 

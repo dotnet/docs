@@ -1,9 +1,9 @@
 ---
 title: Type Extensions (F#)
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 07/14/2018
+ms.date: 07/20/2018
 ---
-# Type Extensions
+# Type extensions
 
 Type extensions (also called _augmentations_) are a family of features that let you add new members to a previously defined object type. The three features are:
 
@@ -36,9 +36,9 @@ type Extensions() =
 
 An intrinsic type extension is a type extension that extends a user-defined type.
 
-Intrinsic type extensions **must** be defined in the same file **and** namespace or module as the type they are extending. Any other definition will result in them being [optional type extensions](type-extensions.md#optional-type-extensions).
+Intrinsic type extensions must be defined in the same file **and** in the same namespace or module as the type they're extending. Any other definition will result in them being [optional type extensions](type-extensions.md#optional-type-extensions).
 
-Intrinsic type extensions are sometimes a cleaner way to separate functionality from the type declaration. For example:
+Intrinsic type extensions are sometimes a cleaner way to separate functionality from the type declaration. The following example shows how to define an intrinsic type extension:
 
 ```fsharp
 namespace Example
@@ -58,9 +58,15 @@ type Variant with
     member x.Print() = Variant.print x
 ```
 
-Using a type extension allows you to separate the declaration of a `Variant` type, functionality to print such a class, and offer a way to access this functionality as if it is a member on the type. Using an intrinsic type extension is an alternative to defining everything as a member on `Variant`.
+Using a type extension allows you to separate each of the following:
 
-Intrinsic type extensions are compiled as members on the type they augment, and appear on the type when the type is examined by reflection.
+* The declaration of a `Variant` type
+* Functionality to print the `Variant` class depending on its "shape"
+* A way to access the printing functionality with object-style `.`-notation
+
+This is an alternative to defining everything as a member on `Variant`. Although it is not an inherently better approach, it can be a cleaner representation of functionality in some situations.
+
+Intrinsic type extensions are compiled as members of the type they augment, and appear on the type when the type is examined by reflection.
 
 ## Optional type extensions
 
@@ -83,17 +89,17 @@ type IEnumerable<'T> with
         }
 ```
 
-You can now access `RepeatElements` as if it is a member on <xref:System.Collections.Generic.IEnumerable`1> so long as the `Extensions` module is opened in the scope that you are working in.
+You can now access `RepeatElements` as if it's a member of <xref:System.Collections.Generic.IEnumerable%601> as long as the `Extensions` module is opened in the scope that you are working in.
 
-Optional extensions do not appear on the extended type when examined by reflection. Optional extensions must be in modules, and they are only in scope when the module that contains the extension is open or is otherwise in scope.
+Optional extensions do not appear on the extended type when examined by reflection. Optional extensions must be in modules, and they're only in scope when the module that contains the extension is open or is otherwise in scope.
 
-Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they are instance members or static members according to how they are declared.
+Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they're instance members or static members according to how they're declared.
 
 ## Generic limitation of intrinsic and optional type extensions
 
-It is possible to declare a type extension on a generic type where the type variable is constrained. The requirement is that the constraint of the extension declaration matches the constraint of the declared type.
+It's possible to declare a type extension on a generic type where the type variable is constrained. The requirement is that the constraint of the extension declaration matches the constraint of the declared type.
 
-However, even when constraints are matched between a declared type and a type extension, it is possible for a constraint to be inferred by the body of an extended member that imposes a different requirement on the type parameter than the declared type. For example:
+However, even when constraints are matched between a declared type and a type extension, it's possible for a constraint to be inferred by the body of an extended member that imposes a different requirement on the type parameter than the declared type. For example:
 
 ```fsharp
 open System.Collections.Generic
@@ -111,7 +117,7 @@ There is no way to get this code to work with an optional type extension:
 * Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
 * Making changing the member to `member inline Sum` will give an error that type constraints are mismatched
 
-What is desired are static methods that "float in space" and can be presented as if they are extending a type. This is where extension methods become necessary.
+What is desired are static methods that "float in space" and can be presented as if they're extending a type. This is where extension methods become necessary.
 
 ## Extension methods
 
@@ -130,7 +136,7 @@ type IEnumerableExtensions() =
     static member inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
 ```
 
-When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable`1>, so long as `Extensions` has been opened or is in scope.
+When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable%601>, so long as `Extensions` has been opened or is in scope.
 
 ## Other remarks
 
@@ -155,7 +161,7 @@ The following limitations also exist for type extensions:
 
 Finally, if multiple intrinsic type extensions exist for one type, all members must be unique. For optional type extensions, members in different type extensions to the same type can have the same names. Ambiguity errors occur only if client code opens two different scopes that define the same member names.
 
-## See Also
+## See also
 
 [F# Language Reference](index.md)
 

@@ -445,7 +445,7 @@
         <param name="includePrivateParameters">
           <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
         <summary>When overridden in a derived class, exports the <see cref="T:System.Security.Cryptography.RSAParameters" />.</summary>
-        <returns>The parameters for <see cref="T:System.Security.Cryptography.DSA" />.</returns>
+        <returns>The parameters for <see cref="T:System.Security.Cryptography.RSA" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

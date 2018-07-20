@@ -24,7 +24,7 @@ When code is tightly coupled, it can be difficult to unit test. Without creating
 
 Writing tests for your code will naturally decouple your code, because it would be near impossible to test otherwise.
 
-## What makes a good unit test?
+## Characteristics of a good unit test
 - **Fast**. It is not uncommon for mature projects to have thousands of unit tests. Unit tests should take very little time to run. Milliseconds.
 - **Isolated**. Unit tests are standalone, can be run in isolation, and have no dependencies on any outside factors such as a file system or database.
 - **Repeatable**. Running a unit test should be consistent with its results, that is, it always returns the same result if you do not change anything in between runs.

@@ -5,26 +5,6 @@ By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](ht
 ## Purpose
 The purpose of this document is to offer suggested best practices when writing unit tests.
 
-## Contents
-- [Why Unit Test?](#why-unit-test)
-    * [Less Time Performing Functional Tests](#less-time-performing-functional-tests)
-    * [Protection Against Regression](#protection-against-regression)
-    * [Executable Documentation](#executable-documentation)
-    * [Less Coupled Code](#less-coupled-code)
-- [What Makes a Good Unit Test?](#what-makes-a-good-unit-test)
-- [Lets Speak the Same Language](#lets-speak-the-same-language)
-- [Best Practices](#best-practices)
-    * [Arranging Your Tests](#arranging-your-tests)
-    * [Naming Your Tests](#naming-your-tests)
-    * [Avoid Magic Strings](#avoid-magic-strings)
-    * [Avoid Logic In Tests](#avoid-logic-in-tests)
-    * [Prefer Helper Methods to Setup and Teardown](#prefer-helper-methods-to-setup-and-teardown)
-    * [Avoid Multiple Asserts](#avoid-multiple-asserts)
-    * [Write Minimally Passing Tests](#write-minimally-passing-tests)
-- [How Do I...?](#how-do-i)
-    * [Test Private Methods](#test-private-methods)
-    * [Stub Static References](#stub-static-references)
-
 ## Why Unit Test?
 
 ### Less Time Performing Functional Tests

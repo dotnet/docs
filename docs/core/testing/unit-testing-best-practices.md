@@ -360,9 +360,7 @@ public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
 }
 ```
 
-## How do I...?
-
-### Test private methods
+### Validate private methods by unit testing public methods
 In most cases, there should not be a need to test a private method. Private methods are an implementation detail. You can think of it this way: private methods never exist in isolation. At some point, there is going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one. 
 
 Consider the following case

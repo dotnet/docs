@@ -3,15 +3,15 @@ title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/18/2018
+ms.date: 07/19/2018
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. 
+The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there's no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations.
 
-The .NET Standard enables the following key scenarios: 
+The .NET Standard enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET implementations to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
@@ -25,7 +25,8 @@ The following table lists the minimum platform versions that support each .NET S
 
 [!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
 
-To find the highest version of .NET Standard that you can target, do the following:
+To find the highest version of .NET Standard that you can target, do the following steps:
+
 1. Find the row that indicates the .NET implementation you want to run on.
 2. Find the column in that row that indicates your version starting from right to left.
 3. The column header indicates the .NET Standard version that your target supports (and any lower .NET Standard versions will also support it).
@@ -39,6 +40,7 @@ When choosing a .NET Standard version, you should consider this trade-off:
 - The lower the version, the more platforms implement it.
 
 In general, we recommend you to target the *lowest* version of .NET Standard possible. So, after you find the highest .NET Standard version you can target, follow these steps:
+
 1. Target the next lower version of .NET Standard and build your project.
 2. If your project builds successfully, repeat step 1. Otherwise, retarget to the next higher version and that's the version you should use.
 
@@ -47,27 +49,11 @@ In general, we recommend you to target the *lowest* version of .NET Standard pos
 There are two primary versioning rules:
 
 - Additive: .NET Standard versions are logically concentric circles: higher versions incorporate all APIs from previous versions. There are no breaking changes between versions.
-- Immutable. Once shipped, .NET Standard versions are frozen. New APIs will first become available in specific .NET implementations, such as .NET Core. If the .NET Standard review board believes the new APIs should be made available everywhere, they'll be added in a new .NET Standard version.
-
-## Comparison to Portable Class Libraries
-
-.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
-
-.NET Standard and PCL profiles were created for similar purposes but also differ in key ways.
-
-Similarities:
-
-- Defines APIs that can be used for binary code sharing.
-
-Differences:
-
-- .NET Standard is a curated set of APIs, while PCL profiles are defined by intersections of existing platforms.
-- .NET Standard linearly versions, while PCL profiles do not.
-- PCL profiles represents Microsoft platforms while the .NET Standard is agnostic to platform.
+- Immutable: Once shipped, .NET Standard versions are frozen. New APIs first become available in specific .NET implementations, such as .NET Core. If the .NET Standard review board believes the new APIs should be available for all .NET implementations, they're added in a new .NET Standard version.
 
 ## Specification
 
-The .NET Standard specification is a standardized set of APIs. The specification is maintained by .NET implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard versions through [GitHub](https://github.com/dotnet/standard).
+The .NET Standard specification is a standardized set of APIs. The specification is maintained by .NET implementors, specifically Microsoft (includes .NET Framework, .NET Core, and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard versions through [GitHub](https://github.com/dotnet/standard).
 
 ### Official artifacts
 
@@ -75,7 +61,7 @@ The official specification is a set of .cs files that define the APIs that are p
 
 The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 
-A given component, like System.Runtime, describes:
+A given component, like `System.Runtime`, describes:
 
 - Part of .NET Standard (just its scope).
 - Multiple versions of .NET Standard, for that scope.
@@ -87,11 +73,11 @@ Derivative artifacts are provided to enable more convenient reading and to enabl
 
 ### Package representation
 
-The primary distribution vehicle for the .NET Standard reference assemblies is [NuGet packages](../core/packages.md). Implementations will be delivered in a variety of ways, appropriate for each .NET implementation.
+The primary distribution vehicle for the .NET Standard reference assemblies is [NuGet packages](../core/packages.md). Implementations are delivered in a variety of ways, appropriate for each .NET implementation.
 
-NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard Framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. 
+NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. For the broadest set of APIs, target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
 
-The `NETStandard.Library` metapackage references the complete set of NuGet packages that define .NET Standard.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET libraries and associated APIs that define .NET Standard. You can reference additional packages that target `netstandard` to get access to additional APIs. 
+The [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library/) metapackage references the complete set of NuGet packages that define .NET Standard.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET libraries and associated APIs that define .NET Standard. You can reference additional packages that target `netstandard` to get access to additional APIs.
 
 ### Versioning
 
@@ -107,6 +93,38 @@ APIs added to any of the implementations (such as, .NET Framework, .NET Core and
 - Use libraries that depend on the same .NET Standard version or lower.
 - If you find a library that depends on a higher .NET Standard version, you either need to adopt that same version or decide not to use that library.
 
+## Targeting .NET Standard
+
+You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard with .NET Core tools](../core/packages.md).
+
+## .NET Framework compatibility mode
+
+Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard projects to reference .NET Framework libraries as if they were compiled for .NET Standard. Referencing .NET Framework libraries doesn't work for all projects, such as libraries that use Windows Presentation Foundation (WPF) APIs.
+
+For more information, see [.NET Framework compatibility mode](../core/porting/third-party-deps.md#net-framework-compatibility-mode).
+
+## .NET Standard libraries and Visual Studio
+
+In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/visual-studio-mac/) or later installed on macOS.
+
+If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
+
+## Comparison to Portable Class Libraries
+
+.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
+
+.NET Standard and PCL profiles were created for similar purposes but also differ in key ways.
+
+Similarities:
+
+- Define APIs that can be used for binary code sharing.
+
+Differences:
+
+- .NET Standard is a curated set of APIs, while PCL profiles are defined by intersections of existing platforms.
+- .NET Standard linearly versions, while PCL profiles do not.
+- PCL profiles represents Microsoft platforms while the .NET Standard is platform-agnostic.
+
 ### PCL compatibility
 
 .NET Standard is compatible with a subset of PCL profiles. .NET Standard 1.0, 1.1 and 1.2 each overlap with a set of PCL profiles. This overlap was created for two reasons:
@@ -118,7 +136,7 @@ Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.C
 
 Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs. `netstandard` packaging is compatible with existing users.
 
-You can see the set of PCL profiles that are compatible with the .NET Standard: 
+You can see the set of PCL profiles that are compatible with the .NET Standard:
 
 | PCL Profile | .NET Standard | PCL Platforms
 |:-----------:|:-------------:|------------------------------------------------------------------------------
@@ -134,10 +152,6 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 | Profile157  | 1.0           | Windows 8.1, Windows Phone 8.1, Windows Phone Silverlight 8.1
 | Profile259  | 1.0           | .NET Framework 4.5, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8
 
-
-## Targeting .NET Standard
-
-You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard with .NET Core tools](../core/packages.md).
-
 ## See also
+
 [.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)

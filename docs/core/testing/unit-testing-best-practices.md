@@ -419,15 +419,6 @@ public int GetDiscountedPrice(int price)
 How can this code possibly be unit tested? You may try an approach such as
 
 ```csharp
-public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
-{
-    var priceCalculator = new PriceCalculator();
-
-    var actual = priceCalculator.GetDiscountedPrice(2);
-
-    Assert.Equals(2, actual)   
-}
-
 public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 {
     var priceCalculator = new PriceCalculator();
@@ -436,11 +427,20 @@ public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 
     Assert.Equals(1, actual);
 }
+
+public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
+{
+    var priceCalculator = new PriceCalculator();
+
+    var actual = priceCalculator.GetDiscountedPrice(2);
+
+    Assert.Equals(2, actual)
+}
 ```
 
 Unfortunately, you will quickly realize that there are a few problems with your tests. 
 
-- If the test suite is ran on a Sunday, the first test will pass, and the second test will fail.
+- If the test suite is ran on a Tuesday, the first test will pass, and the second test will fail.
 - If the test suite is ran on any other day, the first test will fail, and the second test will pass.
 - How is it even possible to test a specific day of the week..?
 

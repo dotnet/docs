@@ -14,8 +14,8 @@ When you assign a method to a delegate, *covariance* and *contravariance* provid
 ### Code  
   
 ```csharp  
-class Mammals{}  
-class Dogs : Mammals{}  
+class Mammals {}  
+class Dogs : Mammals {}  
   
 class Program  
 {  

@@ -53,7 +53,7 @@ End Class
 ```  
   
 ```csharp  
-public class TaxRates{  
+public class TaxRates {  
     [XmlElement(ElementName = "TaxRate")]  
     public decimal ReturnTaxRate;  
 }  
@@ -76,10 +76,10 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     public Employee[] Employees;  
 }  
-public class Employee{  
+public class Employee {  
     public string Name;  
 }  
 ```  
@@ -106,7 +106,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArray("TeamMembers")]  
     public Employee[] Employees;  
 }  
@@ -134,7 +134,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArrayItem("MemberName")]  
     public Employee[] Employees;  
 }  
@@ -169,15 +169,15 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArrayItem(Type = typeof(Employee)),  
     XmlArrayItem(Type = typeof(Manager))]  
     public Employee[] Employees;  
 }  
-public class Employee{  
+public class Employee {  
     public string Name;  
 }  
-public class Manager:Employee{  
+public class Manager:Employee {  
     public int Level;  
 }  
 ```  
@@ -209,7 +209,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlElement]  
     public Employee[] Employees;  
 }  
@@ -255,7 +255,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlElement(Type = typeof(Employee)),   
     XmlElement(Type = typeof(Manager))]  
     public ArrayList Info;  
@@ -280,7 +280,7 @@ End Class
 ```csharp  
 [XmlRoot("NewGroupName")]  
 [XmlType("NewTypeName")]  
-public class Group{  
+public class Group {  
     public Employee[] Employees;  
 }  
 ```  

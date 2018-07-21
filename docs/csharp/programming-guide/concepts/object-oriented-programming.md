@@ -301,7 +301,7 @@ var sampleObject =
  To inherit from a base class:  
   
 ```csharp  
-class DerivedClass:BaseClass{}  
+class DerivedClass:BaseClass {}  
 ```  
   
  By default all classes can be inherited. However, you can specify whether a class must not be used as a base class, or create a class that can be used as a base class only.  

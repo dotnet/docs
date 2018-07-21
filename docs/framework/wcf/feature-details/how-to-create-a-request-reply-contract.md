@@ -19,7 +19,7 @@ A request-reply contract specifies a method that returns a reply. The reply must
 ## Example  
  The following sample defines a contract for a calculator service that provides `Add` and `Subtract` methods. The `Multiply` method is not part of the contract because it is not marked by the <xref:System.ServiceModel.OperationContractAttribute> class and so it is not accessible to clients.  
   
-```
+```csharp
 using System.ServiceModel;
 
 [ServiceContract]

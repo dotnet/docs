@@ -271,7 +271,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
  This simple caching strategy adheres to good cache design because it has a size cap.  However, there is more code now than in the original, which means more maintenance costs.  You should adopt the caching strategy only if you’ve found a performance problem, and PerfView has shown that <xref:System.Text.StringBuilder> allocations are a significant contributor.  
   
 ### LINQ and lambdas  
-Language-Integrated Query (LINQ), in conjunction with lambda expressions, is a great example of a productive feature. However, its use may have a significant impact on performance over time, and you might find you need to rewrite your code.
+Language-Integrated Query (LINQ), in conjunction with lambda expressions, is an example of a productivity feature. However, its use may have a significant impact on performance over time, and you might find you need to rewrite your code.
   
  **Example 5: Lambdas, List\<T>, and IEnumerable\<T>**  
   

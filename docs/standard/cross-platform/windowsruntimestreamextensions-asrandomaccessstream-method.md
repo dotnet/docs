@@ -64,5 +64,5 @@ A [!INCLUDE[wrt](../../../includes/wrt-md.md)] random access stream, which repre
  Supported in: Windows 8.1  
   
 ## See Also  
- <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions`  
+ &lt;!--zz &lt;xref:System.IO.WindowsRuntimeStreamExtensions&gt;--&gt; `System.IO.WindowsRuntimeStreamExtensions`  
  [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)

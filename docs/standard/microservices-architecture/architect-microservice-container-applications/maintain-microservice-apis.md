@@ -31,6 +31,6 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
     <https://www.infoq.com/articles/roy-fielding-on-versioning>
 
 
->[!div class="step-by-step"]
-[Previous](asynchronous-message-based-communication.md)
-[Next](microservices-addressability-service-registry.md)
+> [!div class="step-by-step"]
+> [Previous](asynchronous-message-based-communication.md)
+> [Next](microservices-addressability-service-registry.md)

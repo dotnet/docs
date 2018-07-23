@@ -31,98 +31,98 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
   
 ### Implement Service Versioning  
   
-1.  Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines the client endpoints which will be used to send messages to the `roundingCalc` (v1) and the `regularCalc` (v2) services.  
+1. Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines the client endpoints which will be used to send messages to the `roundingCalc` (v1) and the `regularCalc` (v2) services.  
   
-    ```xml  
-    <services>  
-        <service behaviorConfiguration="routingConfiguration"  
-                 name="System.ServiceModel.Routing.RoutingService">  
-          <host>  
-            <baseAddresses>  
-              <add baseAddress="http://localhost/routingservice/router" />  
-            </baseAddresses>  
-          </host>  
-          <!--Set up the inbound endpoint for the Routing Service-->  
-          <endpoint address="calculator"  
-                    binding="wsHttpBinding"  
-                    name="routerEndpoint"  
-                    contract="System.ServiceModel.Routing.IRequestReplyRouter" />  
-        </service>  
-    </services>  
-    <client>  
-    <!--set up the destination endpoints-->  
-          <endpoint name="regularCalcEndpoint"  
-                    address="net.tcp://localhost:9090/servicemodelsamples/service/"  
-                    binding="netTcpBinding"  
-                    contract="*" />  
+   ```xml  
+   <services>  
+       <service behaviorConfiguration="routingConfiguration"  
+                name="System.ServiceModel.Routing.RoutingService">  
+         <host>  
+           <baseAddresses>  
+             <add baseAddress="http://localhost/routingservice/router" />  
+           </baseAddresses>  
+         </host>  
+         <!--Set up the inbound endpoint for the Routing Service-->  
+         <endpoint address="calculator"  
+                   binding="wsHttpBinding"  
+                   name="routerEndpoint"  
+                   contract="System.ServiceModel.Routing.IRequestReplyRouter" />  
+       </service>  
+   </services>  
+   <client>  
+   <!--set up the destination endpoints-->  
+         <endpoint name="regularCalcEndpoint"  
+                   address="net.tcp://localhost:9090/servicemodelsamples/service/"  
+                   binding="netTcpBinding"  
+                   contract="*" />  
   
-          <endpoint name="roundingCalcEndpoint"  
-                    address="http://localhost:8080/servicemodelsamples/service/"  
-                    binding="wsHttpBinding"  
-                    contract="*" />  
-        </client>  
-    ```  
+         <endpoint name="roundingCalcEndpoint"  
+                   address="http://localhost:8080/servicemodelsamples/service/"  
+                   binding="wsHttpBinding"  
+                   contract="*" />  
+       </client>  
+   ```  
   
-2.  Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
+2. Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
   
-    ```xml  
-    <!-- use the namespace table element to define a prefix for our custom namespace-->  
-    <namespaceTable>  
-      <add prefix="custom" namespace="http://my.custom.namespace/"/>  
-    </namespaceTable>  
-    <filters>  
-      <!--define the different message filters-->  
-      <!--define an xpath message filter to look for the  
-          custom header containing a value of 2-->  
-      <filter name="XPathFilterRegular" filterType="XPath"  
-              filterData="sm:header()/custom:CalcVer = '2'"/>  
-      <!--define an xpath message filter to look for the  
-          custom header containing a value of 1-->  
-      <filter name="XPathFilterRounding" filterType="XPath"  
-              filterData="sm:header()/custom:CalcVer = '1'"/>  
-       <!--define an xpath message filter to look for  
-           messages that do not contain the custom header-->  
-       <filter name="XPathFilterNoHeader" filterType="XPath"  
-               filterData="count(sm:header()/custom:CalcVer)=0"/>  
-    </filters  
-    ```  
+   ```xml  
+   <!-- use the namespace table element to define a prefix for our custom namespace-->  
+   <namespaceTable>  
+     <add prefix="custom" namespace="http://my.custom.namespace/"/>  
+   </namespaceTable>  
+   <filters>  
+     <!--define the different message filters-->  
+     <!--define an xpath message filter to look for the  
+         custom header containing a value of 2-->  
+     <filter name="XPathFilterRegular" filterType="XPath"  
+             filterData="sm:header()/custom:CalcVer = '2'"/>  
+     <!--define an xpath message filter to look for the  
+         custom header containing a value of 1-->  
+     <filter name="XPathFilterRounding" filterType="XPath"  
+             filterData="sm:header()/custom:CalcVer = '1'"/>  
+      <!--define an xpath message filter to look for  
+          messages that do not contain the custom header-->  
+      <filter name="XPathFilterNoHeader" filterType="XPath"  
+              filterData="count(sm:header()/custom:CalcVer)=0"/>  
+   </filters  
+   ```  
   
-    > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
+   > [!NOTE]
+   >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "<http://www.w3.org/2003/05/soap-envelope>".  
   
-3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
+3. Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
   
-     The following defines the filter table and adds the filters defined earlier.  
+    The following defines the filter table and adds the filters defined earlier.  
   
-    ```xml  
-    <filterTables>  
-      <filterTable name="filterTable1">  
-          <!--add the filters to the message filter table-->  
-          <!--look for the custom header = 1, and if we find it,  
-              send the message to the rounding calc endpoint-->  
-          <add filterName="XPathFilterRounding" endpointName="roundingCalcEndpoint"/>  
-          <!--look for the custom header = 2, and if we find it,  
-              send the message to the rounding calc endpoint-->  
-          <add filterName="XPathFilterRegular" endpointName="regularCalcEndpoint"/>  
-          <!--look for the absence of the custom header, and if  
-              it is not present, assume the v1 endpoint-->  
-          <add filterName="XPathFilterNoHeader" endpointName="roundingCalcEndpoint"/>  
-      </filterTable>  
-    </filterTables>  
-    ```  
+   ```xml  
+   <filterTables>  
+     <filterTable name="filterTable1">  
+         <!--add the filters to the message filter table-->  
+         <!--look for the custom header = 1, and if we find it,  
+             send the message to the rounding calc endpoint-->  
+         <add filterName="XPathFilterRounding" endpointName="roundingCalcEndpoint"/>  
+         <!--look for the custom header = 2, and if we find it,  
+             send the message to the rounding calc endpoint-->  
+         <add filterName="XPathFilterRegular" endpointName="regularCalcEndpoint"/>  
+         <!--look for the absence of the custom header, and if  
+             it is not present, assume the v1 endpoint-->  
+         <add filterName="XPathFilterNoHeader" endpointName="roundingCalcEndpoint"/>  
+     </filterTable>  
+   </filterTables>  
+   ```  
   
-4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints:  
+4. To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints:  
   
-    ```xml  
-    <behaviors>  
-      <!--default routing service behavior definition-->  
-      <serviceBehaviors>  
-        <behavior name="routingConfiguration">  
-          <routing filterTableName="filterTable1" />  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-    ```  
+   ```xml  
+   <behaviors>  
+     <!--default routing service behavior definition-->  
+     <serviceBehaviors>  
+       <behavior name="routingConfiguration">  
+         <routing filterTableName="filterTable1" />  
+       </behavior>  
+     </serviceBehaviors>  
+   </behaviors>  
+   ```  
   
 ## Example  
  The following is a complete listing of the configuration file.  

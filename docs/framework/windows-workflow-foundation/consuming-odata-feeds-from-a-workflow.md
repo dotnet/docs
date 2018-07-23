@@ -94,7 +94,7 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
   
  **Raw data returned:**  
 **\<?xml version="1.0" encoding="utf-8" standalone="yes"?>**   
-**\<ContactName xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices">Maria Anders\</ContactName>**  In a workflow, the code from this example could be incorporated into the <xref:System.Activities.CodeActivity.Execute%2A> override of a <xref:System.Activities.CodeActivity>-based custom activity, but the same functionality can also be accomplished by using the <xref:System.Activities.Expressions.InvokeMethod%601> activity. The <xref:System.Activities.Expressions.InvokeMethod%601> activity enables workflow authors to invoke static and instance methods of a class, and also has an option to invoke the specified method asynchronously. In the following example, an <xref:System.Activities.Expressions.InvokeMethod%601> activity is configured to call the <xref:System.Net.WebClient.DownloadString%2A> method of the <xref:System.Net.WebClient> class and return a list of customers.  
+**\<ContactName xmlns="<http://schemas.microsoft.com/ado/2007/08/dataservices">Maria> Anders\</ContactName>**  In a workflow, the code from this example could be incorporated into the <xref:System.Activities.CodeActivity.Execute%2A> override of a <xref:System.Activities.CodeActivity>-based custom activity, but the same functionality can also be accomplished by using the <xref:System.Activities.Expressions.InvokeMethod%601> activity. The <xref:System.Activities.Expressions.InvokeMethod%601> activity enables workflow authors to invoke static and instance methods of a class, and also has an option to invoke the specified method asynchronously. In the following example, an <xref:System.Activities.Expressions.InvokeMethod%601> activity is configured to call the <xref:System.Net.WebClient.DownloadString%2A> method of the <xref:System.Net.WebClient> class and return a list of customers.  
   
  [!code-csharp[CFX_WCFDataServicesActivityExample#3](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#3)]  
   
@@ -108,10 +108,10 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
 **Raw data returned:**   
 **\<?xml version="1.0" encoding="utf-8" standalone="yes"?>**   
 **\<feed**   
- **xml:base="http://services.odata.org/Northwind/Northwind.svc/"**  
- **xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"**  
- **xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"**  
- **xmlns="http://www.w3.org/2005/Atom">**  
+ **xml:base="<http://services.odata.org/Northwind/Northwind.svc/>"**  
+ **xmlns:d="<http://schemas.microsoft.com/ado/2007/08/dataservices>"**  
+ **xmlns:m="<http://schemas.microsoft.com/ado/2007/08/dataservices/metadata>"**  
+ **xmlns="<http://www.w3.org/2005/Atom">>**  
  **\<title type="text">Orders\</title>**  
  **\<id>http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders\</id>**  
  **\<updated>2010-05-19T19:37:07Z\</updated>**  
@@ -124,6 +124,6 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
  **\<name />**  
  **\</author>**  
  **\<link rel="edit" title="Order" href="Orders(10643)" />**  
- **\<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Customer"**  
+ **\<link rel="<http://schemas.microsoft.com/ado/2007/08/dataservices/related/Customer>"**  
  **type="application/atom+xml;type=entry" title="Customer" href="Orders(10643)/Customer" />**  
 **...**  This example provides one method that workflow application authors can use to consume the raw data returned from an OData service. For more information about accessing WCF Data Services using URIs, see [Accessing Data Service Resources (WCF Data Services)](http://go.microsoft.com/fwlink/?LinkId=193397) and [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564).

@@ -110,6 +110,6 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 * Delegate type
     - A `null` reference or a reference to an instance of a compatible delegate type
 
->[!div class="step-by-step"]
-[Previous](program-structure.md)
-[Next](expressions.md)
+> [!div class="step-by-step"]
+> [Previous](program-structure.md)
+> [Next](expressions.md)

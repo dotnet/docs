@@ -51,6 +51,6 @@ A container image is a way to package an app or service and deploy it in a relia
 
 Docker developers don't say, "It works on my machine, why not in production?" They say, "It runs on Docker". Docker-packaged apps can be executed on any supported Docker environment. Docker packaged apps run consistently on all deployment targets (Dev, QA, staging, production).
 
->[!div class="step-by-step"]
-[Previous](index.md)
-[Next](docker-terminology.md)
+> [!div class="step-by-step"]
+> [Previous](index.md)
+> [Next](docker-terminology.md)

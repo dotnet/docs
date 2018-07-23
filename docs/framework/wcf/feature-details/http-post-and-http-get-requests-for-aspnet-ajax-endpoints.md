@@ -26,62 +26,62 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 ### To create a WCF service that responds to HTTP GET or HTTP POST requests  
   
-1.  Define a basic WCF service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Add the <xref:System.ServiceModel.Web.WebGetAttribute> attribute to stipulate that an operation should respond to HTTP GET requests. You can also add the <xref:System.ServiceModel.Web.WebInvokeAttribute> attribute to explicitly specify HTTP POST, or not specify an attribute, which defaults to HTTP POST.  
+1. Define a basic WCF service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Add the <xref:System.ServiceModel.Web.WebGetAttribute> attribute to stipulate that an operation should respond to HTTP GET requests. You can also add the <xref:System.ServiceModel.Web.WebInvokeAttribute> attribute to explicitly specify HTTP POST, or not specify an attribute, which defaults to HTTP POST.  
   
-    ```  
-    [ServiceContract]  
-    public interface IMusicService  
-    {  
-        //This operation uses a GET method.  
-        [OperationContract]  
-        [WebGet]  
-        string LookUpArtist(string album);  
+   ```  
+   [ServiceContract]  
+   public interface IMusicService  
+   {  
+       //This operation uses a GET method.  
+       [OperationContract]  
+       [WebGet]  
+       string LookUpArtist(string album);  
   
-        //This operation will use a POST method.  
-        [OperationContract]  
-        [WebInvoke]  
-        void AddAlbum(string user, string album);  
+       //This operation will use a POST method.  
+       [OperationContract]  
+       [WebInvoke]  
+       void AddAlbum(string user, string album);  
   
-        //This operation will use POST method by default  
-        //since nothing else is explicitly specified.  
-        [OperationContract]  
-        string[] GetAlbums(string user);  
+       //This operation will use POST method by default  
+       //since nothing else is explicitly specified.  
+       [OperationContract]  
+       string[] GetAlbums(string user);  
+  
+       //Other operations omitted…  
+  
+   }  
+   ```  
+  
+2. Implement the `IMusicService` service contract with a `MusicService`.  
+  
+   ```  
+   public class MusicService : IMusicService  
+   {  
+       public void AddAlbum(string user, string album)  
+       {  
+           //Add implementation here.  
+       }  
   
         //Other operations omitted…  
+   }  
+   ```  
   
-    }  
-    ```  
+3. Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
   
-2.  Implement the `IMusicService` service contract with a `MusicService`.  
-  
-    ```  
-    public class MusicService : IMusicService  
-    {  
-        public void AddAlbum(string user, string album)  
-        {  
-            //Add implementation here.  
-        }  
-  
-         //Other operations omitted…  
-    }  
-    ```  
-  
-3.  Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
-  
-    ```  
-    <%@ServiceHost   
-        language=c#   
-        Debug="true"   
-        Service="Microsoft.Ajax.Samples.MusicService"  
-        Factory=System.ServiceModel.Activation.WebScriptServiceHostFactory  
-    %>  
-    ```  
+   ```  
+   <%@ServiceHost   
+       language=c#   
+       Debug="true"   
+       Service="Microsoft.Ajax.Samples.MusicService"  
+       Factory=System.ServiceModel.Activation.WebScriptServiceHostFactory  
+   %>  
+   ```  
   
 ### To call the service  
   
-1.  You can test your service's GET operations without any client code, by using the browser. For example, if your service is configured at the "http://example.com/service.svc" address, then typing "http://example.com/service.svc/LookUpArtist?album=SomeAlbum" into the browser address bar invokes the service and causes the response to be downloaded or displayed.  
+1. You can test your service's GET operations without any client code, by using the browser. For example, if your service is configured at the "<http://example.com/service.svc>" address, then typing "<http://example.com/service.svc/LookUpArtist?album=SomeAlbum>" into the browser address bar invokes the service and causes the response to be downloaded or displayed.  
   
-2.  You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md).  
+2. You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md).  
   
 ## See Also  
  [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)  

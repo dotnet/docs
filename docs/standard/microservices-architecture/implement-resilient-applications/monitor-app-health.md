@@ -190,6 +190,6 @@ Finally, if you were storing all the event streams, you can use Microsoft Power 
 -   **Microsoft Operations Management Suite**
     [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)
 
->[!div class="step-by-step"]
-[Previous](implement-circuit-breaker-pattern.md)
-[Next](../secure-net-microservices-web-applications/index.md)
+> [!div class="step-by-step"]
+> [Previous](implement-circuit-breaker-pattern.md)
+> [Next](../secure-net-microservices-web-applications/index.md)

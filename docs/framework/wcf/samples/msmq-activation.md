@@ -11,11 +11,11 @@ This sample demonstrates how to host applications in Windows Process Activation 
   
 > [!NOTE]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+> 
 >  \<InstallDrive>:\WF_WCF_Samples  
->   
->  If this directory does not exist, go to Windows Communication Foundation (WCF) HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank"  and Windows Workflow Foundation (WF) Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+> 
+>  If this directory does not exist, go to Windows Communication Foundation (WCF) HYPERLINK "<http://go.microsoft.com/fwlink/?LinkId=150780>" \t "_blank"  and Windows Workflow Foundation (WF) Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> 
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
  Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. Windows Communication Foundation (WCF) uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.  

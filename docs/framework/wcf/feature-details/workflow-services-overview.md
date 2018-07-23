@@ -24,10 +24,10 @@ Workflow services are WCF-based services that are implemented using workflows. W
   
  <xref:System.ServiceModel.Activities.SendReply> Activity  
   
--   <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
+- <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
   
--   <!--zz <xref:System.ServiceModel.Activities.SendReply.ValueType%2A> -->
-`xref:System.ServiceModel.Activities.SendReply.ValueType`
+- <!--zz <xref:System.ServiceModel.Activities.SendReply.ValueType%2A> -->
+  `xref:System.ServiceModel.Activities.SendReply.ValueType`
   
  <xref:System.ServiceModel.Activities.TransactedReceiveScope> Activity  
   

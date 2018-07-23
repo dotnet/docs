@@ -27,20 +27,20 @@ If you are already familiar with Windows Communication Foundation (WCF), you kno
   
 > [!TIP]
 >  What is the difference between ActAs and OnBehalfOf?  
->   
+> 
 >  From the WS-Trust procotol standpoint:  
->   
->  1.  An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
-> 2.  An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
->   
+> 
+> 1. An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
+>    2.  An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
+> 
 >  The ActAs feature is typically used in scenarios that require composite delegation, where the final recipient of the issued token can inspect the entire delegation chain and see not just the client, but all intermediaries. This lets it perform access control, auditing and other related activities based on the entire identity delegation chain. The ActAs feature is commonly used in multi-tiered systems to authenticate and pass information about identities between the tiers without having to pass this information at the application/business logic layer.  
->   
+> 
 >  The OnBehalfOf feature is used in scenarios where only the identity of the original client is important and is effectively the same as the identity impersonation feature available in Windows. When OnBehalfOf is used, the final recipient of the issued token can only see claims about the original client, and the information about intermediaries is not preserved. One common pattern where the OnBehalfOf feature is used is the proxy pattern where the client cannot access the STS directly but instead communicates through a proxy gateway. The proxy gateway authenticates the caller and puts information about the caller into the OnBehalfOf element of the RST message that it then sends to the real STS for processing. The resulting token contains only claims related to the client of the proxy, making the proxy completely transparent to the receiver of the issued token.Note that WIF does not support \<wsse:SecurityTokenReference> or \<wsa:EndpointReferences> as a child of \<wst:OnBehalfOf>. The WS-Trust specification allows for three ways to identify the original requestor (on behalf of whom the proxy is acting). These are:  
->   
->  -   Security token reference. A reference to a token, either in the message, or possibly retrieved out of band).  
-> -   Endpoint reference. Used as a key to look up data, again out of band.  
-> -   Security token. Identifies the original requestor directly.  
->   
+> 
+> - Security token reference. A reference to a token, either in the message, or possibly retrieved out of band).  
+>   -   Endpoint reference. Used as a key to look up data, again out of band.  
+>   -   Security token. Identifies the original requestor directly.  
+> 
 >  WIF supports only security tokens, either encrypted or unencrypted, as a direct child element of \<wst:OnBehalfOf>.  
   
  This information is conveyed to a WS-Trust issuer using the ActAs and OnBehalfOf token elements in the RST.  

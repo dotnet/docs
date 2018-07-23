@@ -9,11 +9,11 @@ ms.author: "mairaw"
 # Implementation of Discretionary Behaviors in the XslTransform Class
 > [!NOTE]
 >  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
-  
+
  Discretionary behaviors are described as behaviors listed in the World Wide Web Consortium (W3C) XSL Transformations (XSLT) Version 1.0 Recommendation (www.w3.org/TR/xslt), in which the implementation provider chooses one of several possible options as a way to handle a situation. For example, in section 7.3 Creating Processing Instructions, the W3C Recommendation says that it is an error if instantiating the content of `xsl:processing-instruction` creates nodes other than text nodes. For some problems, the W3C tells what decision should be made if the processor decides to recover from the error. For the problem given in section 7.3, the W3C says that the implementation can recover from this error by ignoring the nodes and their content.  
-  
+
  Therefore, for each of the discretionary behaviors allowed by the W3C, the table below lists the discretionary behaviors implemented for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] implementation of the <xref:System.Xml.Xsl.XslTransform> class, and what section in the W3C XSLT 1.0 Recommendation that this problem is discussed.  
-  
+
 |Problem|Behavior|Section|  
 |-------------|--------------|-------------|  
 |A text node matches both `xsl:strip-space` and `xsl:preserve-space`.|Recover|3.4|  
@@ -40,35 +40,36 @@ ms.author: "mairaw"
 |Adding a namespace node to an element after children have been added to it or after attributes have been added to it|Recover|Errata e25|  
 |`xsl:number` is NaN, infinite, or less than 0.5.|Recover|Errata e24|  
 |The second argument node-set to the document function is empty and the URI reference is relative|Recover|Errata e14|  
-  
+
  Sections from the errata can be found in the World Wide Web Consortium (W3C) XSL Transformations (XSLT) Version 1.0 Specification Errata, located at www.w3.org/1999/11/REC-xslt-19991116-errata.  
-  
+
 ## Custom-Defined Implementation Behaviors  
  There are behaviors unique to the <xref:System.Xml.Xsl.XslTransform> class implementation. This section discusses the provider-specific implementation of the `xsl:sort` and optional features that are supported by the <xref:System.Xml.Xsl.XslTransform> class.  
-  
+
 ## xsl:sort  
  When using a transformation to sort, the W3C XSLT 1.0 Recommendation makes some observations. They are:  
-  
+
 -   Two XSLT processors may be conforming processors, but still may sort differently.  
-  
+
 -   Not all XSLT processors support the same languages.  
-  
+
 -   With regard to languages, different processors may vary on their sorting on a particular language not specified on the `xsl:sort.`  
-  
+
  The following table shows the sorting behavior implemented for each data type in the .NET Framework implementation of a transformation using <xref:System.Xml.Xsl.XslTransform>.  
-  
-|Data type|Sorting behavior|  
-|---------------|----------------------|  
-|Text|Data is sorted using the common language runtime (CLR) String.Compare method, and the cultural locale. When the data type equals "text", sorting in the <xref:System.Xml.Xsl.XslTransform> class behaves identically to the string comparison behaviors of the CLR.|  
-|Number|Numeric values are treated as XML Path Language (XPath) numbers and are sorted according to the details outlined in the W3C XML Path Language (XPath) Version 1.0 Recommendation, Section 3.5 (www.w3.org/TR/xpath.html#numbers).|  
-  
+
+
+| Data type |                                                                                                                          Sorting behavior                                                                                                                           |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   Text    | Data is sorted using the common language runtime (CLR) String.Compare method, and the cultural locale. When the data type equals "text", sorting in the <xref:System.Xml.Xsl.XslTransform> class behaves identically to the string comparison behaviors of the CLR. |
+|  Number   |                  Numeric values are treated as XML Path Language (XPath) numbers and are sorted according to the details outlined in the W3C XML Path Language (XPath) Version 1.0 Recommendation, Section 3.5 (www.w3.org/TR/xpath.html#numbers).                  |
+
 ## Optional Features Supported  
  The following table shows the features that are optional for an XSLT processor to implement and are implemented in the <xref:System.Xml.Xsl.XslTransform> class.  
-  
+
 |Feature|Reference location|Notes|  
 |-------------|------------------------|-----------|  
 |`disable-output-escaping` attribute on `<xsl:text...>` and `<xsl:value-of...>` tags.|W3C XSLT 1.0 Recommendation,<br /><br /> Section 16.4|The `disable-output-escaping` attribute is ignored when the `xsl:text` or `xsl:value-of` elements are used in an `xsl:comment`, `xsl:processing-instruction`, or `xsl:attribute` element.<br /><br /> Result tree fragments that contain text and the text output that has been escaped are not supported.<br /><br /> The disable-output-escaping attribute is ignored when transforming to an <xref:System.Xml.XmlReader> or <xref:System.Xml.XmlWriter> object.|  
-  
+
 ## See Also  
  <xref:System.Xml.Xsl.XslTransform>  
  [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)  

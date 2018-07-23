@@ -60,7 +60,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 .NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools).
 
-To install a Global Tool, you use the [dotnet tool install](..\tools\dotnet-tool-install.md) command. For example:
+To install a Global Tool, you use the [dotnet tool install](../tools/dotnet-tool-install.md) command. For example:
 
 ```console
 dotnet tool install -g dotnetsay

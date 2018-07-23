@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Strings
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
 

@@ -112,6 +112,6 @@ The next sections explain how to use more sophisticated approaches while simpler
 HttpClientFactory is available since .NET Core 2.1, with proven resiliency libraries like Polly. 
 
 
->[!div class="step-by-step"]
-[Previous](implement-resilient-entity-framework-core-sql-connections.md)
-[Next](use-httpclientfactory-to-implement-resilient-http-requests.md)
+> [!div class="step-by-step"]
+> [Previous](implement-resilient-entity-framework-core-sql-connections.md)
+> [Next](use-httpclientfactory-to-implement-resilient-http-requests.md)

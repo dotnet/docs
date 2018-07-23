@@ -67,7 +67,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 
 ## Step 2. Create a Dockerfile related to an existing .NET base image
 
-You need a Dockerfile for each custom image you want to build; you also need a Dockerfile for each container to be deployed, whether you deploy automatically from Visual Studio or manually using the Docker CLI (docker run and docker-compose commands). If your application contains a single custom service, you need a single Dockerfile. If your application contains multiple services (as in a microservices architecture), you need one Dockerfile for each service.
+You need a Dockerfile for each custom image you want to build; you also need a Dockerfile for each container to be deployed, whether you deploy automatically from Visual Studio or manually using the Docker CLI (docker run and docker-compose commands). If your application contains a single custom service, you need a single Dockerfile. If your application contains multiple services (as in a microservices architecture), you need one Dockerfile for each service.
 
 The Dockerfile is placed in the root folder of your application or service. It contains the commands that tell Docker how to set up and run your application or service in a container. You can manually create a Dockerfile in code and add it to your project along with your .NET dependencies.
 
@@ -97,15 +97,15 @@ The following example shows a sample Dockerfile for an ASP.NET Core container.
 
 ```Dockerfile
 FROM microsoft/aspnetcore:2.0
-  
+
 ARG source
-  
+
 WORKDIR /app
-  
+
 EXPOSE 80
-  
+
 COPY ${source:-obj/Docker/publish} .
-  
+
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
@@ -164,13 +164,13 @@ Note that the Docker images are built automatically for you in Visual Studio. Th
 
 You, as developer, need to develop and test locally until you push a completed feature or change to your source control system (for example, to GitHub). This means that you need to create the Docker images and deploy containers to a local Docker host (Windows or Linux VM) and run, test, and debug against those local containers.
 
-To create a custom image in your local environment by using Docker CLI and your Dockerfile, you can use the docker build command, as in Figure 5-5.
+To create a custom image in your local environment by using Docker CLI and your Dockerfile, you can use the docker build command, as in Figure 5-5.
 
 ![](./media/image8.png)
 
 **Figure 5-5**. Creating a custom Docker image
 
-Optionally, instead of directly running docker build from the project folder, you can first generate a deployable folder with the required .NET libraries and binaries by running dotnet publish, and then use the docker build command.
+Optionally, instead of directly running docker build from the project folder, you can first generate a deployable folder with the required .NET libraries and binaries by running dotnet publish, and then use the docker build command.
 
 This will create a Docker image with the name cesardl/netcore-webapi-microservice-docker:first. In this case, :first is a tag representing a specific version. You can repeat this step for each custom image you need to create for your composed Docker application.
 
@@ -180,7 +180,7 @@ You can find the existing images in your local repository by using the docker im
 
 ![](./media/image9.png)
 
-**Figure 5-6.** Viewing existing images using the docker images command
+**Figure 5-6.** Viewing existing images using the docker images command
 
 ### Creating Docker images with Visual Studio
 
@@ -196,7 +196,7 @@ To use a docker-compose.yml file, you need to create the file in your main or ro
 
 ```yml
 version: '3'
-  
+
 services:
 
   webmvc:
@@ -237,7 +237,6 @@ services:
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
-
 ```
 
 Note that this docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which always applies, plus configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how you can split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
@@ -278,11 +277,11 @@ You could deploy a multi-container application with a single docker-compose.yml 
 
 ## Step 5. Build and run your Docker application
 
-If your application only has a single container, you can run it by deploying it to your Docker host (VM or physical server). However, if your application contains multiple services, you can deploy it as a composed application, either using a single CLI command (docker-compose up), or with Visual Studio, which will use that command under the covers. Let’s look at the different options.
+If your application only has a single container, you can run it by deploying it to your Docker host (VM or physical server). However, if your application contains multiple services, you can deploy it as a composed application, either using a single CLI command (docker-compose up), or with Visual Studio, which will use that command under the covers. Let’s look at the different options.
 
 ### Option A: Running a single-container with Docker CLI
 
-You can run a Docker container using the docker run command, as in Figure 5-9:
+You can run a Docker container using the docker run command, as in Figure 5-9:
 
 ```console
   docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
@@ -331,7 +330,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 ### A note about testing and deploying with orchestrators
 
-The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach if you are targeting Docker clusters and orchestrators like Docker Swarm, Mesosphere DC/OS, or Kubernetes. If you are using a cluster like [Docker Swarm mode](https://docs.docker.com/engine/swarm/) (available in Docker CE for Windows and Mac since version 1.12), you need to deploy and test with additional commands like [docker service create](https://docs.docker.com/engine/reference/commandline/service_create/) for single services. If you are deploying an application composed of several containers, you use [docker compose bundle](https://docs.docker.com/compose/reference/bundle/) and [docker deploy myBundleFile](https://docs.docker.com/engine/reference/commandline/deploy/) to deploy the composed application as a *stack*. For more information, see the blog post [Introducing Experimental Distributed Application Bundles](https://blog.docker.com/2016/06/docker-app-bundle/) in the Docker documentation. on the Docker site.
+The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach if you are targeting Docker clusters and orchestrators like Docker Swarm, Mesosphere DC/OS, or Kubernetes. If you are using a cluster like [Docker Swarm mode](https://docs.docker.com/engine/swarm/) (available in Docker CE for Windows and Mac since version 1.12), you need to deploy and test with additional commands like [docker service create](https://docs.docker.com/engine/reference/commandline/service_create/) for single services. If you are deploying an application composed of several containers, you use [docker compose bundle](https://docs.docker.com/compose/reference/bundle/) and [docker deploy myBundleFile](https://docs.docker.com/engine/reference/commandline/deploy/) to deploy the composed application as a *stack*. For more information, see the blog post [Introducing Experimental Distributed Application Bundles](https://blog.docker.com/2016/06/docker-app-bundle/) in the Docker documentation. on the Docker site.
 
 For [DC/OS](https://mesosphere.com/blog/2015/09/02/dcos-cli-command-line-tool-datacenter/) and [Kubernetes](http://kubernetes.io/docs/user-guide/deployments/) you would use different deployment commands and scripts as well.
 
@@ -395,11 +394,11 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ```Dockerfile
 FROM microsoft/windowsservercore
-  
+
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
-  
+
 RUN powershell -Command Add-WindowsFeature Web-Server
-  
+
 CMD [ "ping", "localhost", "-t" ]
 ```
 
@@ -414,6 +413,6 @@ RUN powershell add-windowsfeature web-asp-net45
 -   **aspnet-docker/Dockerfile.** Example Powershell commands to run from dockerfiles to include Windows features.
     [*https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
 
->[!div class="step-by-step"]
-[Previous](index.md)
-[Next](../net-core-single-containers-linux-windows-server-hosts/index.md)
+> [!div class="step-by-step"]
+> [Previous](index.md)
+> [Next](../net-core-single-containers-linux-windows-server-hosts/index.md)

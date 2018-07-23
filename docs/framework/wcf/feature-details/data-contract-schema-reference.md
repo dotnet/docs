@@ -7,45 +7,46 @@ ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
 ---
 # Data Contract Schema Reference
 This topic describes the subset of the XML Schema (XSD) used by <xref:System.Runtime.Serialization.DataContractSerializer> to describe common language runtime (CLR) types for XML serialization.  
-  
+
 ## DataContractSerializer Mappings  
  The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a Windows Communication Foundation (WCF) service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). For more information, see [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
-  
+
  The `DataContractSerializer` also maps XSD to CLR types when Svcutil.exe is used to access Web Services Description Language (WSDL) or XSD documents and generate data contracts for services or clients.  
-  
+
  Only XML Schema instances that conform to requirements stated in this document can be mapped to CLR types using `DataContractSerializer`.  
-  
+
 ### Support Levels  
  The `DataContractSerializer` provides the following levels of support for a given XML Schema feature:  
-  
+
 -   **Supported**. There is explicit mapping from this feature to CLR types or attributes (or both) using `DataContractSerializer`.  
-  
+
 -   **Ignored**. The feature is allowed in schemas imported by the `DataContractSerializer`, but has no effect on code generation.  
-  
+
 -   **Forbidden**. The `DataContractSerializer` does not support importing a schema using the feature. For example, Svcutil.exe, when accessing a WSDL with a schema that uses such a feature, falls back to using the <xref:System.Xml.Serialization.XmlSerializer> instead. This is by default.  
-  
+
 ## General Information  
-  
+
 -   The schema namespace is described at [XML Schema](http://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.  
-  
+
 -   Any attributes with a non-schema namespace are ignored.  
-  
+
 -   Any annotations (except for those described in this document) are ignored.  
-  
+
 ### \<xs:schema>: attributes  
-  
-|Attribute|DataContract|  
-|---------------|------------------|  
-|`attributeFormDefault`|Ignored.|  
-|`blockDefault`|Ignored.|  
-|`elementFormDefault`|Must be qualified. All elements must be qualified for a schema to be supported by `DataContractSerializer`. This can be accomplished by either setting xs:schema/@elementFormDefault to "qualified" or by setting xs:element/@form to "qualified" on each individual element declaration.|  
-|`finalDefault`|Ignored.|  
-|`Id`|Ignored.|  
-|`targetNamespace`|Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace http://schemas.microsoft.com/2003/10/Serialization/.|  
-|`version`|Ignored.|  
-  
+
+
+|       Attribute        |                                                                                                                                       DataContract                                                                                                                                        |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `attributeFormDefault` |                                                                                                                                         Ignored.                                                                                                                                          |
+|     `blockDefault`     |                                                                                                                                         Ignored.                                                                                                                                          |
+|  `elementFormDefault`  | Must be qualified. All elements must be qualified for a schema to be supported by `DataContractSerializer`. This can be accomplished by either setting xs:schema/@elementFormDefault to "qualified" or by setting xs:element/@form to "qualified" on each individual element declaration. |
+|     `finalDefault`     |                                                                                                                                         Ignored.                                                                                                                                          |
+|          `Id`          |                                                                                                                                         Ignored.                                                                                                                                          |
+|   `targetNamespace`    |                                        Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace http://schemas.microsoft.com/2003/10/Serialization/.                                        |
+|       `version`        |                                                                                                                                         Ignored.                                                                                                                                          |
+
 ### \<xs:schema>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`include`|Supported. `DataContractSerializer` supports xs:include and xs:import. However, Svcutil.exe restricts following `xs:include/@schemaLocation` and `xs:import/@location` references when metadata is loaded from a local file. The list of schema files must be passed through an out-of-band mechanism and not through `include` in this case; `include`d schema documents are ignored.|  
@@ -58,14 +59,14 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`element`|Supported. See Global Element Declaration (GED).|  
 |`attribute`|Ignored. `DataContractSerializer` does not support use of `xs:group`, `xs:attributeGroup`, and `xs:attribute`. These declarations are ignored as children of `xs:schema`, but cannot be referenced from within `complexType` or other supported constructs.|  
 |`notation`|Ignored.|  
-  
+
 ## Complex Types – \<xs:complexType>  
-  
+
 ### General Information  
  Each complex type \<xs:complexType> maps to a data contract.  
-  
+
 ### \<xs:complexType>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`abstract`|Must be false (default).|  
@@ -74,9 +75,9 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`id`|Ignored.|  
 |`mixed`|Must be false (default).|  
 |`name`|Supported and mapped to the data contract name. If there are periods in the name, an attempt is made to map the type to an inner type. For example, a complex type named `A.B` maps to a data contract type that is an inner type of a type with the data contract name `A`, but only if such a data contract type exists. More than one level of nesting is possible: for example, `A.B.C` can be an inner type, but only if `A` and `A.B` both exist.|  
-  
+
 ### \<xs:complexType>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`simpleContent`|Extensions are forbidden.<br /><br /> Restriction is allowed only from `anySimpleType`.|  
@@ -89,17 +90,17 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`attributeGroup`|Forbidden. In the WCF v1 release, `DataContractSerializer` ignores the presence of `attributeGroup` inside `xs:complexType`.|  
 |`anyAttribute`|Forbidden.|  
 |(empty)|Maps to a data contract with no data members.|  
-  
+
 ### \<xs:sequence> in a complex type: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`id`|Ignored.|  
 |`maxOccurs`|Must be 1 (default).|  
 |`minOccurs`|Must be 1 (default).|  
-  
+
 ### \<xs:sequence> in a complex type: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`element`|Each instance maps to a data member.|  
@@ -108,20 +109,20 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`sequence`|Forbidden.|  
 |`any`|Forbidden.|  
 |(empty)|Maps to a data contract with no data members.|  
-  
+
 ## Elements – \<xs:element>  
-  
+
 ### General Information  
  `<xs:element>` can occur in the following contexts:  
-  
+
 -   It can occur within an `<xs:sequence>`, which describes a data member of a regular (non-collection) data contract. In this case, the `maxOccurs` attribute must be 1. (A value of 0 is not allowed).  
-  
+
 -   It can occur within an `<xs:sequence>`, which describes a data member of a collection data contract. In this case, the `maxOccurs` attribute must be greater than 1 or "unbounded".  
-  
+
 -   It can occur within an `<xs:schema>` as a Global Element Declaration (GED).  
-  
+
 ### \<xs:element> with maxOccurs=1 within an \<xs:sequence> (Data Members)  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`ref`|Forbidden.|  
@@ -135,23 +136,23 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`maxOccurs`|1|  
 |`minOccurs`|Maps to the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of a data member (`IsRequired` is true when `minOccurs` is 1).|  
 |`nillable`|Affects type mapping. See Type/primitive mapping.|  
-  
+
 ### \<xs:element> with maxOccurs>1 within an \<xs:sequence> (Collections)  
-  
+
 -   Maps to a <xref:System.Runtime.Serialization.CollectionDataContractAttribute>.  
-  
+
 -   In collection types, only one xs:element is allowed within an xs:sequence.  
-  
+
  Collections can be of the following types:  
-  
+
 -   Regular collections (for example, arrays).  
-  
+
 -   Dictionary collections (mapping one value to another; for example, a <xref:System.Collections.Hashtable>).  
-  
+
 -   The only difference between a dictionary and an array of a key/value pair type is in the generated programming model. There is a schema annotation mechanism that can be used to indicate that a given type is a dictionary collection.  
-  
+
  The rules for the `ref`, `block`, `default`, `fixed`, `form`, and `id` attributes are the same as for the non-collection case. Other attributes include those in the following table.  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`name`|Supported, maps to the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> property in the `CollectionDataContractAttribute` attribute.|  
@@ -159,17 +160,17 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`maxOccurs`|Greater than 1 or "unbounded". The DC schema should use "unbounded".|  
 |`minOccurs`|Ignored.|  
 |`nillable`|Affects type mapping. This attribute is ignored for dictionary collections.|  
-  
+
 ### \<xs:element> within an \<xs:schema> Global Element Declaration  
-  
+
 -   A Global Element Declaration (GED) that has the same name and namespace as a type in schema, or that defines an anonymous type inside itself, is said to be associated with the type.  
-  
+
 -   Schema export: associated GEDs are generated for every generated type, both simple and complex.  
-  
+
 -   Deserialization/serialization: associated GEDs are used as root elements for the type.  
-  
+
 -   Schema import: associated GEDs are not required and are ignored if they follow the following rules (unless they define types).  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`abstract`|Must be false for associated GEDs.|  
@@ -182,9 +183,9 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`nillable`|Must be true for associated GEDs.|  
 |`substitutionGroup`|Forbidden in associated GEDs.|  
 |`type`|Supported, and must match the associated type for associated GEDs (unless the element contains an anonymous type).|  
-  
+
 ### \<xs:element>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`simpleType`|Supported.*|  
@@ -193,50 +194,50 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`key`|Ignored.|  
 |`keyref`|Ignored.|  
 |(blank)|Supported.|  
-  
+
  \* When using the `simpleType` and `complexType,` mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:  
-  
+
 -   WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
-  
+
 -   The generated data contract name of the inner type is the data contract name of the outer type followed by a period, the name of the element, and the string "Type".  
-  
+
 -   If a data contract with such a name already exists, the name is made unique by appending "1", "2", "3", and so on until a unique name is created.  
-  
+
 ## Simple Types - \<xs:simpleType>  
-  
+
 ### \<xs:simpleType>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`final`|Ignored.|  
 |`id`|Ignored.|  
 |`name`|Supported, maps to the data contract name.|  
-  
+
 ### \<xs:simpleType>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`restriction`|Supported. Maps to enumeration data contracts. This attribute is ignored if it does not match the enumeration pattern. See the `xs:simpleType` restrictions section.|  
 |`list`|Supported. Maps to flag enumeration data contracts. See the `xs:simpleType` lists section.|  
 |`union`|Forbidden.|  
-  
+
 ### \<xs:restriction>  
-  
+
 -   Complex type restrictions are supported only for base="`xs:anyType`".  
-  
+
 -   Simple type restrictions of `xs:string` that do not have any restriction facets other than `xs:enumeration` are mapped to enumeration data contracts.  
-  
+
 -   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. For more information about primitive type mapping, see Type/primitive mapping.  
-  
+
 ### \<xs:restriction>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`base`|Must be a supported simple type or `xs:anyType`.|  
 |`id`|Ignored.|  
-  
+
 ### \<xs:restriction> for all other cases: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`simpleType`|If present, must be derived from a supported primitive type.|  
@@ -253,18 +254,18 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`whiteSpace`|Ignored.|  
 |`pattern`|Ignored.|  
 |(blank)|Supported.|  
-  
+
 ## Enumeration  
-  
+
 ### \<xs:restriction> for enumerations: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`base`|If present, must be `xs:string`.|  
 |`id`|Ignored.|  
-  
+
 ### \<xs:restriction> for enumerations: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`simpleType`|If present, must be an enumeration restriction supported by the data contract (this section).|  
@@ -281,9 +282,9 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`whiteSpace`|Forbidden.|  
 |`pattern`|Forbidden.|  
 |(empty)|Supported, maps to empty enumeration type.|  
-  
+
  The following code shows a C# enumeration class.  
-  
+
 ```  
 public enum MyEnum  
 {  
@@ -291,11 +292,11 @@ public enum MyEnum
    second = 4,  
    third =5  
 ```  
-  
+
  }  
-  
+
  This class maps to the following schema by the `DataContractSerializer`. If enumeration values start from 1, `xs:annotation` blocks are not generated.  
-  
+
 ```xml  
 <xs:simpleType name="MyEnum">  
 <xs:restriction base="xs:string">  
@@ -322,27 +323,27 @@ public enum MyEnum
 </xs:restriction>  
 </xs:simpleType>  
 ```  
-  
+
 ### \<xs:list>  
  `DataContractSerializer` maps enumeration types marked with `System.FlagsAttribute` to `xs:list` derived from `xs:string`. No other `xs:list` variations are supported.  
-  
+
 ### \<xs:list>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`itemType`|Forbidden.|  
 |`id`|Ignored.|  
-  
+
 ### \<xs:list>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`simpleType`|Must be restriction from `xs:string` using `xs:enumeration` facet.|  
-  
+
  If enumeration value does not follow a power of 2 progression (default for Flags), the value is stored in the `xs:annotation/xs:appInfo/ser:EnumerationValue` element.  
-  
+
  For example, the following code flags an enumeration type.  
-  
+
 ```  
 [Flags]  
 public enum AuthFlags  
@@ -354,9 +355,9 @@ public enum AuthFlags
   AuthWindowsLiveID = 64,  
 }  
 ```  
-  
+
  This type maps to the following schema.  
-  
+
 ```xml  
 <xs:simpleType name="AuthFlags">  
     <xs:list>  
@@ -386,16 +387,16 @@ rialization/">64</EnumerationValue>
     </xs:list>  
   </xs:simpleType>  
 ```  
-  
+
 ## Inheritance  
-  
+
 ### General rules  
  A data contract can inherit from another data contract. Such data contracts map to a base and are derived by extension types using the `<xs:extension>` XML Schema construct.  
-  
+
  A data contract cannot inherit from a collection data contract.  
-  
+
  For example, the following code is a data contract.  
-  
+
 ```  
 [DataContract]  
 public class Person  
@@ -410,9 +411,9 @@ public class Employee : Person
   public int ID;  
 }  
 ```  
-  
+
  This data contract maps to the following XML Schema type declaration.  
-  
+
 ```xml  
 <xs:complexType name="Employee">  
  <xs:complexContent mixed="false">  
@@ -430,44 +431,44 @@ public class Employee : Person
  </xs:sequence>  
 </xs:complexType>  
 ```  
-  
+
 ### \<xs:complexContent>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`id`|Ignored.|  
 |`mixed`|Must be false.|  
-  
+
 ### \<xs:complexContent>: contents  
-  
+
 |Contents|Schema|  
 |--------------|------------|  
 |`restriction`|Forbidden, except when base="`xs:anyType`". The latter is equivalent to placing the content of the `xs:restriction` directly under the container of the `xs:complexContent`.|  
 |`extension`|Supported. Maps to data contract inheritance.|  
-  
+
 ### \<xs:extension> in \<xs:complexContent>: attributes  
-  
+
 |Attribute|Schema|  
 |---------------|------------|  
 |`id`|Ignored.|  
 |`base`|Supported. Maps to the base data contract type that this type inherits from.|  
-  
+
 ### \<xs:extension> in \<xs:complexContent>: contents  
  The rules are the same as for `<xs:complexType>` contents.  
-  
+
  If an `<xs:sequence>` is provided, its member elements map to additional data members that are present in the derived data contract.  
-  
+
  If a derived type contains an element with the same name as an element in a base type, the duplicate element declaration maps to a data member with a name that is generated to be unique. Positive integer numbers are added to the data member name ("member1", "member2", and so on) until a unique name is found. Conversely:  
-  
+
 -   If a derived data contract has a data member with the same name and type as a data member in a base data contract, `DataContractSerializer` generates this corresponding element in the derived type.  
-  
+
 -   If a derived data contract has a data member with the same name as a data member in a base data contract but a different type, the `DataContractSerializer` imports a schema with an element of the type `xs:anyType` in both base type and derived type declarations. The original type name is preserved in `xs:annotations/xs:appInfo/ser:ActualType/@Name`.  
-  
+
  Both variations may lead to a schema with an ambiguous content model, which depends on the order of the respective data members.  
-  
+
 ## Type/primitive mapping  
  The `DataContractSerializer` uses the following mapping for XML Schema primitive types.  
-  
+
 |XSD type|.NET type|  
 |--------------|---------------|  
 |`anyType`|<xref:System.Object>.|  
@@ -516,10 +517,10 @@ public class Employee : Person
 |`unsignedShort`|<xref:System.UInt16>.|  
 |`unsignedByte`|<xref:System.Byte>.|  
 |`positiveInteger`|<xref:System.Int64>.|  
-  
+
 ## ISerializable types mapping  
  In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, `ISerializable` was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. `DataContractSerializer` naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the http://schemas.datacontract.org/2004/07/System namespace.  
-  
+
 ```xml  
 <xs:complexType name="Exception">  
  <xs:sequence>  
@@ -529,16 +530,16 @@ public class Employee : Person
  <xs:attribute ref="ser:FactoryType"/>  
 </xs:complexType>  
 ```  
-  
+
  The optional attribute `ser:FactoryType` declared in the Data Contract Serialization schema references a factory class that can deserialize the type. The factory class must be part of the known types collection of the `DataContractSerializer` instance being used. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
-  
+
 ## DataContract Serialization Schema  
  A number of schemas exported by the `DataContractSerializer` use types, elements, and attributes from a special Data Contract Serialization namespace:  
-  
+
  http://schemas.microsoft.com/2003/10/Serialization  
-  
+
  The following is a complete Data Contract Serialization schema declaration.  
-  
+
 ```xml  
 <xs:schema attributeFormDefault="qualified"          
    elementFormDefault="qualified"        
@@ -546,7 +547,7 @@ public class Employee : Person
     "http://schemas.microsoft.com/2003/10/Serialization/"   
    xmlns:xs="http://www.w3.org/2001/XMLSchema"        
    xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">  
-  
+
  <!-- Top-level elements for primitive types. -->  
  <xs:element name="anyType" nillable="true" type="xs:anyType"/>  
  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>  
@@ -571,13 +572,13 @@ public class Employee : Person
        nillable="true" type="xs:unsignedLong"/>  
  <xs:element name="unsignedShort"  
        nillable="true" type="xs:unsignedShort"/>  
-  
+
  <!-- Primitive types introduced for certain .NET simple types. -->  
  <xs:element name="char" nillable="true" type="tns:char"/>  
  <xs:simpleType name="char">  
   <xs:restriction base="xs:int"/>  
  </xs:simpleType>  
-  
+
  <!-- xs:duration is restricted to an ordered value space,  
     to map to System.TimeSpan -->  
  <xs:element name="duration" nillable="true" type="tns:duration"/>  
@@ -589,30 +590,30 @@ public class Employee : Person
    <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>  
   </xs:restriction>  
  </xs:simpleType>  
-  
+
  <xs:element name="guid" nillable="true" type="tns:guid"/>  
  <xs:simpleType name="guid">  
   <xs:restriction base="xs:string">  
    <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>  
   </xs:restriction>  
  </xs:simpleType>  
-  
+
  <!-- This is used for schemas exported from ISerializable type. -->  
  <xs:attribute name="FactoryType" type="xs:QName"/>  
 </xs:schema>  
 ```  
-  
+
  The following should be noted:  
-  
+
 -   `ser:char` is introduced to represent Unicode characters of type <xref:System.Char>.  
-  
+
 -   The `valuespace` of `xs:duration` is reduced to an ordered set so that it can be mapped to a <xref:System.TimeSpan>.  
-  
+
 -   `FactoryType` is used in schemas exported from types that are derived from <xref:System.Runtime.Serialization.ISerializable>.  
-  
+
 ## Importing non-DataContract schemas  
  `DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).  
-  
+
 ```  
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
 [System.Xml.Serialization.XmlSchemaProviderAttribute("ExportSchema")]  
@@ -646,10 +647,10 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
   }  
 }  
 ```  
-  
+
 ## DateTimeOffset Serialization  
  The <xref:System.DateTimeOffset> is not treated as a primitive type. Instead, it is serialized as a complex element with two parts. The first part represents the date time, and the second part represents the offset from the date time. An example of a serialized DateTimeOffset value is shown in the following code.  
-  
+
 ```xml  
 <OffSet xmlns:a="http://schemas.datacontract.org/2004/07/System">  
   <DateTime i:type="b:dateTime" xmlns=""   
@@ -660,9 +661,9 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
    </OffsetMinutes>   
 </OffSet>  
 ```  
-  
+
  The schema is as follows.  
-  
+
 ```xml  
 <xs:schema targetNamespace="http://schemas.datacontract.org/2004/07/System">  
    <xs:complexType name="DateTimeOffset">  
@@ -675,7 +676,7 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
    </xs:complexType>  
 </xs:schema>  
 ```  
-  
+
 ## See Also  
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Runtime.Serialization.DataContractAttribute>  

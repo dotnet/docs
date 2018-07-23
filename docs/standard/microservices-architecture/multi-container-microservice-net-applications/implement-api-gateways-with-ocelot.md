@@ -573,6 +573,6 @@ There are other important features to research and use, when using an Ocelot API
 
 
 
->[!div class="step-by-step"]
-[Previous] (background-tasks-with-ihostedservice.md)
-[Next] (../microservice-ddd-cqrs-patterns/index.md)
+> [!div class="step-by-step"]
+> [Previous](background-tasks-with-ihostedservice.md)
+> [Next](../microservice-ddd-cqrs-patterns/index.md)

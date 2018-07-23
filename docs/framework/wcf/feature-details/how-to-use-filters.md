@@ -87,70 +87,70 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ### Define Filters  
   
-1.  To route messages based on the "RoundingCalculator" custom header that the client application adds to the message, define a filter that uses an XPath query to check for the presence of this header. Because this header is defined by using a custom namespace, also add a namespace entry that defines a custom namespace prefix of "custom" that is used in the XPath query. The following example defines the necessary routing section, namespace table, and XPath filter.  
+1. To route messages based on the "RoundingCalculator" custom header that the client application adds to the message, define a filter that uses an XPath query to check for the presence of this header. Because this header is defined by using a custom namespace, also add a namespace entry that defines a custom namespace prefix of "custom" that is used in the XPath query. The following example defines the necessary routing section, namespace table, and XPath filter.  
   
-    ```xml  
-    <routing>  
-          <!-- use the namespace table element to define a prefix for our custom namespace-->  
-          <namespaceTable>  
-            <add prefix="custom" namespace="http://my.custom.namespace/"/>  
-          </namespaceTable>  
-          <filters>  
-            <!--define the different message filters-->  
-            <!--define an xpath message filter to look for the custom header coming from the client-->  
-            <filter name="XPathFilter" filterType="XPath"   
-                    filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 'rounding'"/>  
-          </filters>  
-    </routing>  
-    ```  
+   ```xml  
+   <routing>  
+         <!-- use the namespace table element to define a prefix for our custom namespace-->  
+         <namespaceTable>  
+           <add prefix="custom" namespace="http://my.custom.namespace/"/>  
+         </namespaceTable>  
+         <filters>  
+           <!--define the different message filters-->  
+           <!--define an xpath message filter to look for the custom header coming from the client-->  
+           <filter name="XPathFilter" filterType="XPath"   
+                   filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 'rounding'"/>  
+         </filters>  
+   </routing>  
+   ```  
   
-     This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
+    This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
   
-    > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
+   > [!NOTE]
+   >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "<http://www.w3.org/2003/05/soap-envelope>".  
   
-2.  You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the "regular/calculator" endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
+2. You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the "regular/calculator" endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
   
-    ```xml  
-    <!--define an endpoint name filter looking for messages that show up on the virtual regular calculator endpoint-->  
-    <filter name="EndpointNameFilter" filterType="EndpointName" filterData="calculatorEndpoint"/>  
-    ```  
+   ```xml  
+   <!--define an endpoint name filter looking for messages that show up on the virtual regular calculator endpoint-->  
+   <filter name="EndpointNameFilter" filterType="EndpointName" filterData="calculatorEndpoint"/>  
+   ```  
   
-     If a message is received by the service endpoint named "calculatorEndpoint", this filter evaluates to `true`.  
+    If a message is received by the service endpoint named "calculatorEndpoint", this filter evaluates to `true`.  
   
-3.  Next, define a filter that looks for messages sent to the address of the roundingEndpoint. The client can send requests to this endpoint to indicate that the message should be routed to the roundingCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> to determine if the message arrived at the "rounding/calculator" endpoint.  
+3. Next, define a filter that looks for messages sent to the address of the roundingEndpoint. The client can send requests to this endpoint to indicate that the message should be routed to the roundingCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> to determine if the message arrived at the "rounding/calculator" endpoint.  
   
-    ```xml  
-    <!--define a filter looking for messages that show up with the address prefix.  The corresponds to the rounding calc virtual endpoint-->  
-    <filter name="PrefixAddressFilter" filterType="PrefixEndpointAddress"  
-            filterData="http://localhost/routingservice/router/rounding/"/>  
-    ```  
+   ```xml  
+   <!--define a filter looking for messages that show up with the address prefix.  The corresponds to the rounding calc virtual endpoint-->  
+   <filter name="PrefixAddressFilter" filterType="PrefixEndpointAddress"  
+           filterData="http://localhost/routingservice/router/rounding/"/>  
+   ```  
   
-     If a message is received at an address that begins with "http://localhost/routingservice/router/rounding/" then this filter evaluates to **true**. Because the base address used by this configuration is "http://localhost/routingservice/router" and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is "http://localhost/routingservice/router/rounding/calculator", which matches this filter.  
+    If a message is received at an address that begins with "<http://localhost/routingservice/router/rounding/>" then this filter evaluates to **true**. Because the base address used by this configuration is "<http://localhost/routingservice/router>" and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is "<http://localhost/routingservice/router/rounding/calculator>", which matches this filter.  
   
-    > [!NOTE]
-    >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
-    >   
-    >  -   localhost  
-    > -   127.0.0.1  
-    > -   www.contoso.com  
-    > -   ContosoWeb01  
+   > [!NOTE]
+   >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
+   > 
+   > - localhost  
+   >   - 127.0.0.1  
+   >   - www.contoso.com  
+   >   - ContosoWeb01  
   
-4.  The final filter must support the routing of messages that arrive at the general endpoint without the custom header. For this scenario, the messages should alternate between the regularCalc and roundingCalc services. To support the "round robin" routing of these messages,  use a custom filter that allows one filter instance to match for each message processed.  The following defines two instances of a RoundRobinMessageFilter, which are grouped together to indicate that they should alternate between each other.  
+4. The final filter must support the routing of messages that arrive at the general endpoint without the custom header. For this scenario, the messages should alternate between the regularCalc and roundingCalc services. To support the "round robin" routing of these messages,  use a custom filter that allows one filter instance to match for each message processed.  The following defines two instances of a RoundRobinMessageFilter, which are grouped together to indicate that they should alternate between each other.  
   
-    ```xml  
-    <!-- Set up the custom message filters.  In this example,   
-         we'll use the example round robin message filter,   
-         which alternates between the references-->  
-    <filter name="RoundRobinFilter1" filterType="Custom"  
-                    customType="CustomFilterAssembly.RoundRobinMessageFilter, CustomFilterAssembly"  
-                    filterData="group1"/>  
-    <filter name="RoundRobinFilter2" filterType="Custom"  
-                    customType="CustomFilterAssembly.RoundRobinMessageFilter, CustomFilterAssembly"  
-                    filterData="group1"/>  
-    ```  
+   ```xml  
+   <!-- Set up the custom message filters.  In this example,   
+        we'll use the example round robin message filter,   
+        which alternates between the references-->  
+   <filter name="RoundRobinFilter1" filterType="Custom"  
+                   customType="CustomFilterAssembly.RoundRobinMessageFilter, CustomFilterAssembly"  
+                   filterData="group1"/>  
+   <filter name="RoundRobinFilter2" filterType="Custom"  
+                   customType="CustomFilterAssembly.RoundRobinMessageFilter, CustomFilterAssembly"  
+                   filterData="group1"/>  
+   ```  
   
-     During run time, this filter type alternates between all defined filter instances of this type that are configured as the same group into one collection. This causes messages processed by this custom filter to alternate between returning `true` for RoundRobinFilter1 and RoundRobinFilter2.  
+    During run time, this filter type alternates between all defined filter instances of this type that are configured as the same group into one collection. This causes messages processed by this custom filter to alternate between returning `true` for RoundRobinFilter1 and RoundRobinFilter2.  
   
 ### Define Filter Tables  
   

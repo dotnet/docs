@@ -59,8 +59,8 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Performance](../../docs/framework/performance/index.md)  
  Provides information about caching, lazy initialization, reliability, and ETW events.  
   
- <!--zz [Advanced Reading for the .NET Framework](http://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
- Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --> 
+ &lt;!--zz [Advanced Reading for the .NET Framework](http://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
+ Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --&gt; 
   
 ## Reference  
  [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  

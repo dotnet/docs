@@ -406,19 +406,19 @@ GetAppContainerFolderPath(acSid, out acDir);
 <a name="Resources"></a>   
 ## Resources  
  **The Common Language Runtime**  
- -   [CLR Profiling API Reference](../../../../docs/framework/unmanaged-api/profiling/index.md)  
+- [CLR Profiling API Reference](../../../../docs/framework/unmanaged-api/profiling/index.md)  
   
--   [CLR Metadata API Reference](../../../../docs/framework/unmanaged-api/metadata/index.md)  
+  -   [CLR Metadata API Reference](../../../../docs/framework/unmanaged-api/metadata/index.md)  
   
  **The CLR's interaction with the Windows Runtime**  
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
   
  **Windows Store apps**  
- -   [File access and permissions (Windows Runtime apps](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)  
+- [File access and permissions (Windows Runtime apps](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)  
   
--   [Get a developer license](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx)  
+  -   [Get a developer license](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx)  
   
--   [IPackageDebugSettings Interface](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx)  
+  -   [IPackageDebugSettings Interface](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx)  
   
 ## See Also  
  [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

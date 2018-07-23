@@ -28,48 +28,48 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 ### To configure the WAS to support TCP activation  
   
-1.  To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. In an administrator-level Command Prompt window, run the following command.  
+1. To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. In an administrator-level Command Prompt window, run the following command.  
   
-    ```  
-    %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
-    ```  
+   ```  
+   %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
+   ```  
   
-    > [!NOTE]
-    >  This command is a single line of text. This command adds a net.tcp site binding to the default Web site listening on TCP port 808 with any host name.  
+   > [!NOTE]
+   >  This command is a single line of text. This command adds a net.tcp site binding to the default Web site listening on TCP port 808 with any host name.  
   
-2.  Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the application, run the following command from an administrator-level command prompt.  
+2. Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the application, run the following command from an administrator-level command prompt.  
   
-    ```  
-    %windir%\system32\inetsrv\appcmd.exe set app   
-    "Default Web Site/<WCF Application>" /enabledProtocols:http,net.tcp  
-    ```  
+   ```  
+   %windir%\system32\inetsrv\appcmd.exe set app   
+   "Default Web Site/<WCF Application>" /enabledProtocols:http,net.tcp  
+   ```  
   
-    > [!NOTE]
-    >  This command is a single line of text. This command enables the /\<*WCF Application*> application to be accessed using both http://localhost*/\<WCF Application>* and net.tcp://localhost/*\<WCF Application>*.  
+   > [!NOTE]
+   >  This command is a single line of text. This command enables the /\<*WCF Application*> application to be accessed using both http://localhost<em>/\<WCF Application></em> and net.tcp://localhost/*\<WCF Application>*.  
   
-     Remove the net.tcp site binding you added for this sample.  
+    Remove the net.tcp site binding you added for this sample.  
   
-     As a convenience, the following two steps are implemented in a batch file called RemoveNetTcpSiteBinding.cmd located in the sample directory.  
+    As a convenience, the following two steps are implemented in a batch file called RemoveNetTcpSiteBinding.cmd located in the sample directory.  
   
-    1.  Remove net.tcp from the list of enabled protocols by running the following command in an administrator-level Command Prompt window.  
+   1.  Remove net.tcp from the list of enabled protocols by running the following command in an administrator-level Command Prompt window.  
   
-        ```  
-        %windir%\system32\inetsrv\appcmd.exe set app   
-        "Default Web Site/servicemodelsamples<WCF Application>" " /enabledProtocols:http  
-        ```  
+       ```  
+       %windir%\system32\inetsrv\appcmd.exe set app   
+       "Default Web Site/servicemodelsamples<WCF Application>" " /enabledProtocols:http  
+       ```  
   
-        > [!NOTE]
-        >  This command is a single line of text.  
+       > [!NOTE]
+       >  This command is a single line of text.  
   
-    2.  Remove the net.tcp site binding by running the following command in an elevated Command Prompt window:  
+   2.  Remove the net.tcp site binding by running the following command in an elevated Command Prompt window:  
   
-        ```  
-        %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
-        --bindings.[protocol='net.tcp',bindingInformation='808:*']  
-        ```  
+       ```  
+       %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
+       --bindings.[protocol='net.tcp',bindingInformation='808:*']  
+       ```  
   
-        > [!NOTE]
-        >  This command is a single line of text.  
+       > [!NOTE]
+       >  This command is a single line of text.  
   
 ### To remove net.tcp from the list of enabled protocols  
   

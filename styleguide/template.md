@@ -442,7 +442,7 @@ You can see an example of checked lists in action in the [.NET Core docs](https:
 ### Buttons
 
 > [!div class="button"]
-[button links](../docs/core/index.md)
+> [button links](../docs/core/index.md)
 
 You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -456,8 +456,8 @@ You can see an example of selectors in action at the [Azure docs](https://docs.m
 
 ### Step-By-Steps
 
->[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [!div class="step-by-step"]
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 
 You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

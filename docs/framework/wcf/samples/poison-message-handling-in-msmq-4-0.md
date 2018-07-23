@@ -289,26 +289,26 @@ Processing Purchase Order: 23e0b991-fbf9-4438-a0e2-20adf93a4f89
   
 #### To run the sample on a computer joined to a workgroup  
   
-1.  If your computer is not part of a domain, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
+1. If your computer is not part of a domain, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```xml  
-    <bindings>  
-        <netMsmqBinding>  
-            <binding name="TransactedBinding">  
-                <security mode="None"/>  
-            </binding>  
-        </netMsmqBinding>  
-    </bindings>  
-    ```  
+   ```xml  
+   <bindings>  
+       <netMsmqBinding>  
+           <binding name="TransactedBinding">  
+               <security mode="None"/>  
+           </binding>  
+       </netMsmqBinding>  
+   </bindings>  
+   ```  
   
-     Ensure the endpoint is associated with the binding by setting the endpoint's bindingConfiguration attribute.  
+    Ensure the endpoint is associated with the binding by setting the endpoint's bindingConfiguration attribute.  
   
-2.  Ensure that you change the configuration on the PoisonMessageServer, server and the client before you run the sample.  
+2. Ensure that you change the configuration on the PoisonMessageServer, server and the client before you run the sample.  
   
-    > [!NOTE]
-    >  Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel`, and `Message` security to `None`.  
+   > [!NOTE]
+   >  Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel`, and `Message` security to `None`.  
   
-3.  In order for Meta Data Exchange to work, we register a URL with http binding. This requires that the service run in an elevated command window. Otherwise, you get an exception such as: Unhandled Exception: System.ServiceModel.AddressAccessDeniedException: HTTP could not register URL http://+:8000/ServiceModelSamples/service/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details). ---> System.Net.HttpListenerException: Access is denied.  
+3. In order for Meta Data Exchange to work, we register a URL with http binding. This requires that the service run in an elevated command window. Otherwise, you get an exception such as: Unhandled Exception: System.ServiceModel.AddressAccessDeniedException: HTTP could not register URL http://+:8000/ServiceModelSamples/service/. Your process does not have access rights to this namespace (see <http://go.microsoft.com/fwlink/?LinkId=70353> for details). ---> System.Net.HttpListenerException: Access is denied.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

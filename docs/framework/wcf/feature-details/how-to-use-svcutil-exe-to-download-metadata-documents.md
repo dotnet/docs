@@ -10,10 +10,10 @@ You can use Svcutil.exe to download metadata from running services and to save t
   
 > [!CAUTION]
 >  When running Svcutil.exe to get metadata for a service that exposes two different service contracts that each contain an operation of the same name, Svcutil.exe displays an error saying, "Cannot obtain Metadata from ...." For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b). To work around this issue, do one of the following:  
->   
->  -   Rename one of the operations  
-> -   Set the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> to a different name.  
-> -   Set one of the operations' namespaces to a different namespace using the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
+> 
+> - Rename one of the operations  
+>   -   Set the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> to a different name.  
+>   -   Set one of the operations' namespaces to a different namespace using the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
 ### To download metadata using Svcutil.exe  
   

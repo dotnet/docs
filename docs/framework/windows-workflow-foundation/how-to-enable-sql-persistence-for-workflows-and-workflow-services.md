@@ -15,9 +15,9 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
   
 > [!NOTE]
 >  To clean up the persistence database to have a fresh database, run the scripts in %WINDIR%\Microsoft.NET\Framework\v4.xxx\SQL\EN in the following order.  
->   
->  1.  SqlWorkflowInstanceStoreSchema.sql  
-> 2.  SqlWorkflowInstanceStoreLogic.sql  
+> 
+> 1. SqlWorkflowInstanceStoreSchema.sql  
+>    2.  SqlWorkflowInstanceStoreLogic.sql  
   
 > [!IMPORTANT]
 >  If you do not create a persistence database, the SQL Workflow Instance Store feature throws an exception similar to the following one when a host tries to persist workflows.  

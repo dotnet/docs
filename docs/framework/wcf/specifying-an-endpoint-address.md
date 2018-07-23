@@ -14,15 +14,15 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
 ## Definition of an Endpoint Address  
  In WCF, an <xref:System.ServiceModel.EndpointAddress> models an endpoint reference (EPR) as defined in the WS-Addressing standard.  
   
- The address URI for most transports has four parts. For example, this URI, "http://www.fabrikam.com:322/mathservice.svc/secureEndpoint" has the following four parts:  
+ The address URI for most transports has four parts. For example, this URI, "<http://www.fabrikam.com:322/mathservice.svc/secureEndpoint>" has the following four parts:  
   
--   Scheme: http:  
+- Scheme: http:  
   
--   Machine: www.fabrikam.com  
+- Machine: www.fabrikam.com  
   
--   (Optional) Port: 322  
+- (Optional) Port: 322  
   
--   Path: /mathservice.svc/secureEndpoint  
+- Path: /mathservice.svc/secureEndpoint  
   
  Part of the EPR model is that each endpoint reference can carry some reference parameters that add extra identifying information. In WCF, these reference parameters are modeled as instances of the <xref:System.ServiceModel.Channels.AddressHeader> class.  
   

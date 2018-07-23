@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Lists
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 A list in F# is an ordered, immutable series of elements of the same type. To perform basic operations on lists, use the functions in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788).
 
@@ -55,18 +55,20 @@ Lists in F# are implemented as singly linked lists, which means that operations 
 ## Properties
 The list type supports the following properties:
 
-|Property|Type|Description|
-|--------|----|-----------|
-|[Head](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740)|`'T`|The first element.|
-|[Empty](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)|`'T list`|A static property that returns an empty list of the appropriate type.|
-|[IsEmpty](https://msdn.microsoft.com/library/3ba087b2-2fc2-406d-b10a-cff6a19322da)|`bool`|`true` if the list has no elements.|
-|[Item](https://msdn.microsoft.com/library/bdb2553a-0e54-4ff8-baed-ab1aac8f5dae)|`'T`|The element at the specified index (zero-based).|
-|[Length](https://msdn.microsoft.com/library/25f715c8-9daa-4c4d-a6c7-26772f9dab4d)|`int`|The number of elements.|
-|[Tail](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91)|`'T list`|The list without the first element.|
+
+|                                      Property                                      |   Type    |                              Description                              |
+|------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------|
+|  [Head](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740)   |   `'T`    |                          The first element.                           |
+|  [Empty](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)  | `'T list` | A static property that returns an empty list of the appropriate type. |
+| [IsEmpty](https://msdn.microsoft.com/library/3ba087b2-2fc2-406d-b10a-cff6a19322da) |  `bool`   |                  `true` if the list has no elements.                  |
+|  [Item](https://msdn.microsoft.com/library/bdb2553a-0e54-4ff8-baed-ab1aac8f5dae)   |   `'T`    |           The element at the specified index (zero-based).            |
+| [Length](https://msdn.microsoft.com/library/25f715c8-9daa-4c4d-a6c7-26772f9dab4d)  |   `int`   |                        The number of elements.                        |
+|  [Tail](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91)   | `'T list` |                  The list without the first element.                  |
+
 Following are some examples of using these properties.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1307.fs)]
-    
+
 ## Using Lists
 Programming with lists enables you to perform complex operations with a small amount of code. This section describes common operations on lists that are important to functional programming.
 
@@ -380,7 +382,7 @@ The output is as follows:
 Lists can be joined together. To join two lists into one, use [List.append](https://msdn.microsoft.com/library/2954da80-3f4a-4a4b-9371-794645c03426). To join more than two lists, use [List.concat](https://msdn.microsoft.com/library/c5afd433-8764-4ea8-a6a8-937fb4d77c4c).
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet26.fs)]
-    
+
 ### Fold and Scan Operations
 Some list operations involve interdependencies between all of the list elements. The fold and scan operations are like `List.iter` and `List.map` in that you invoke a function on each element, but these operations provide an additional parameter called the *accumulator* that carries information through the computation.
 
@@ -417,7 +419,7 @@ The function [List.reduce](https://msdn.microsoft.com/library/048e1f95-691b-49cb
 In the following code, the first call to the lambda expression is given the arguments 2 and 4, and returns 6, and the next call is given the arguments 6 and 10, so the result is 16.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lists/snippet33.fs)]
-    
+
 ### Converting Between Lists and Other Collection Types
 The `List` module provides functions for converting to and from both sequences and arrays. To convert to or from a sequence, use [List.toSeq](https://msdn.microsoft.com/library/7024be4b-ee70-43cc-8d0a-e6564a4ff7c0) or [List.ofSeq](https://msdn.microsoft.com/library/74ab9289-4a59-4433-92eb-3f662d7f7db0). To convert to or from an array, use [List.toArray](https://msdn.microsoft.com/library/ac87dd82-a0cd-40b3-b1fa-dd3168134547) or [List.ofArray](https://msdn.microsoft.com/library/f4bddc26-8c8f-4307-a6d7-a49dceb97032).
 

@@ -13,22 +13,22 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
 ### To generate classes that conform to a specific schema  
   
-1.  Open a command prompt.  
+1. Open a command prompt.  
   
-2.  Pass the XML Schema as an argument to the XML Schema Definition tool, which creates a set of classes that are precisely matched to the XML Schema, for example:  
+2. Pass the XML Schema as an argument to the XML Schema Definition tool, which creates a set of classes that are precisely matched to the XML Schema, for example:  
   
-    ```  
-    xsd mySchema.xsd  
-    ```  
+   ```  
+   xsd mySchema.xsd  
+   ```  
   
-     The tool can only process schemas that reference the World Wide Web Consortium XML specification of March 16, 2001. In other words, the XML Schema namespace must be "http://www.w3.org/2001/XMLSchema" as shown in the following example.  
+    The tool can only process schemas that reference the World Wide Web Consortium XML specification of March 16, 2001. In other words, the XML Schema namespace must be "<http://www.w3.org/2001/XMLSchema>" as shown in the following example.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+   ```  
   
-3.  Modify the classes with methods, properties, or fields, as necessary. For more information about modifying a class with attributes, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md) and [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
+3. Modify the classes with methods, properties, or fields, as necessary. For more information about modifying a class with attributes, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md) and [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
  It is often useful to examine the schema of the XML stream that is generated when instances of a class (or classes) are serialized. For example, you might publish your schema for others to use, or you might compare it to a schema with which you are trying to achieve conformity.  
   

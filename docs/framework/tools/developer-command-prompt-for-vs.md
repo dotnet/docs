@@ -18,7 +18,7 @@ ms.author: "mairaw"
 The Developer Command Prompt for Visual Studio automatically sets the environment variables that enable you to easily use .NET Framework tools. The Developer Command Prompt is installed with full or community editions of Visual Studio. It isn't installed with the Express versions of Visual Studio.
 
 > [!div class="button"]
-[Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 ## Searching for the Command Prompt on your machine
 

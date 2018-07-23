@@ -22,40 +22,40 @@ One of the benefits of Visual Studio is the ability to create professional-looki
   
 ### To create the form containing a ListView and TreeView control  
   
-1.  On the **File** menu, point to **New**, and then click **Project**.  
+1. On the **File** menu, point to **New**, and then click **Project**.  
   
-2.  In the **New Project** dialog box, do the following:  
+2. In the **New Project** dialog box, do the following:  
   
-    1.  In the categories, choose either **Visual Basic** or **Visual C#**.  
+   1.  In the categories, choose either **Visual Basic** or **Visual C#**.  
   
-    2.  In the list of templates, choose **Windows Forms Application**.  
+   2.  In the list of templates, choose **Windows Forms Application**.  
   
-3.  Click **OK**. A new Windows Forms project is created.  
+3. Click **OK**. A new Windows Forms project is created.  
   
-4.  Add a <xref:System.Windows.Forms.SplitContainer> control to the form and set its <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
+4. Add a <xref:System.Windows.Forms.SplitContainer> control to the form and set its <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-5.  Add an <xref:System.Windows.Forms.ImageList> named `imageList1` to the form and use the Properties window to add two images: a folder image and a document image, in that order.  
+5. Add an <xref:System.Windows.Forms.ImageList> named `imageList1` to the form and use the Properties window to add two images: a folder image and a document image, in that order.  
   
-6.  Add a <xref:System.Windows.Forms.TreeView> control named `treeview1` to the form, and position it on the left side of the <xref:System.Windows.Forms.SplitContainer> control. In the Properties window for `treeView1` do the following:  
+6. Add a <xref:System.Windows.Forms.TreeView> control named `treeview1` to the form, and position it on the left side of the <xref:System.Windows.Forms.SplitContainer> control. In the Properties window for `treeView1` do the following:  
   
-    1.  Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
+   1.  Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-    2.  Set the <xref:System.Windows.Forms.TreeView.ImageList%2A> property to `imagelist1.`  
+   2.  Set the <xref:System.Windows.Forms.TreeView.ImageList%2A> property to `imagelist1.`  
   
-7.  Add a <xref:System.Windows.Forms.ListView> control named `listView1` to the form, and position it on the right side of the <xref:System.Windows.Forms.SplitContainer> control. In the Properties window for `listview1` do the following:  
+7. Add a <xref:System.Windows.Forms.ListView> control named `listView1` to the form, and position it on the right side of the <xref:System.Windows.Forms.SplitContainer> control. In the Properties window for `listview1` do the following:  
   
-    1.  Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
+   1. Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-    2.  Set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details>.  
+   2. Set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details>.  
   
-    3.  Open the ColumnHeader Collection Editor by clicking the ellipses (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) in the <xref:System.Windows.Forms.ListView.Columns%2A> property**.** Add three columns and set their <xref:System.Windows.Forms.ColumnHeader.Text%2A> property to `Name`, `Type`, and `Last Modified`, respectively. Click **OK** to close the dialog box.  
+   3. Open the ColumnHeader Collection Editor by clicking the ellipses (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) in the <xref:System.Windows.Forms.ListView.Columns%2A> property<strong>.</strong> Add three columns and set their <xref:System.Windows.Forms.ColumnHeader.Text%2A> property to `Name`, `Type`, and `Last Modified`, respectively. Click **OK** to close the dialog box.  
   
-    4.  Set the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property to `imageList1.`  
+   4. Set the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property to `imageList1.`  
   
-8.  Implement the code to populate the <xref:System.Windows.Forms.TreeView> with nodes and subnodes. Add this code to the `Form1` class.  
+8. Implement the code to populate the <xref:System.Windows.Forms.TreeView> with nodes and subnodes. Add this code to the `Form1` class.  
   
-     [!code-csharp[System.Windows.Forms.ExplorerStyleInterface#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ExplorerStyleInterface/CS/Form1.cs#1)]
-     [!code-vb[System.Windows.Forms.ExplorerStyleInterface#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ExplorerStyleInterface/VB/Form1.vb#1)]  
+    [!code-csharp[System.Windows.Forms.ExplorerStyleInterface#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ExplorerStyleInterface/CS/Form1.cs#1)]
+    [!code-vb[System.Windows.Forms.ExplorerStyleInterface#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ExplorerStyleInterface/VB/Form1.vb#1)]  
   
 9. Since the previous code uses the System.IO namespace, add the appropriate using or import statement at the top of the form.  
   

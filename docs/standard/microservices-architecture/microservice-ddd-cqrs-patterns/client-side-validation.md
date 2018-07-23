@@ -36,14 +36,14 @@ The implementation of client-side validation depends on what kind of client appl
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
 
--   **Ado Kukic. Angular 2 Form Validation** **
-    **[*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
+- **Ado Kukic. Angular 2 Form Validation** **
+  <em>*[</em>https://scotch.io/tutorials/angular-2-form-validation*](<https://scotch.io/tutorials/angular-2-form-validation>)
 
--   **Form Validation**
-    [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
+- **Form Validation**
+  [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 
--   **Validation.** Breeze documentation.
-    [*https://breeze.github.io/doc-js/validation.html*](https://breeze.github.io/doc-js/validation.html)
+- **Validation.** Breeze documentation.
+  [*https://breeze.github.io/doc-js/validation.html*](https://breeze.github.io/doc-js/validation.html)
 
 In summary, these are the most important concepts in regards to validation:
 
@@ -58,6 +58,6 @@ In summary, these are the most important concepts in regards to validation:
 -   In most of the cases, having redundant validation in the client side is good, because the application can be proactive.
 
 
->[!div class="step-by-step"]
-[Previous](domain-model-layer-validations.md)
-[Next](domain-events-design-implementation.md)
+> [!div class="step-by-step"]
+> [Previous](domain-model-layer-validations.md)
+> [Next](domain-events-design-implementation.md)

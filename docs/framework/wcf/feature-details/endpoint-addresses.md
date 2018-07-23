@@ -13,13 +13,13 @@ Every endpoint has an address associated with it, which is used to locate and id
 ## URI Structure of an Address  
  The address URI for most transports has four parts. For example, the four parts of the URI http://www.fabrikam.com:322/mathservice.svc/secureEndpoint can be itemized as follows:  
   
--   Scheme: http:  
+- Scheme: http:  
   
--   Machine: www.fabrikam.com  
+- Machine: www.fabrikam.com  
   
--   (optional) Port: 322  
+- (optional) Port: 322  
   
--   Path: /mathservice.svc/secureEndpoint  
+- Path: /mathservice.svc/secureEndpoint  
   
 ## Defining an Address for a Service  
  The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  

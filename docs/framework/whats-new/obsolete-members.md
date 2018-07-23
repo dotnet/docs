@@ -12,80 +12,80 @@ ms.author: "ronpet"
 ---
 # Obsolete Members in the .NET Framework
 The tables in this article list the type members that are obsolete in the .NET Framework 4.5 and later versions organized by assembly. Use the following links to see a list of the obsolete members and the recommended alternatives in each assembly. This topic doesn't list the members of obsolete types. For a list of obsolete types, see [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md).  
-  
+
 -   [Obsolete members in system assemblies](#SystemMembers)  
-  
+
     -   [mscorlib.dll](#mscorlib)  
-  
+
     -   [PresentationCore.dll](#PresentationCore)  
-  
+
     -   [PresentationFramework.dll](#PresFW)  
-  
+
     -   [System.Activities.dll](#Act)  
-  
+
     -   [System.Activities.Presentation.dll](#ActPres)  
-  
+
     -   [System.Core.dll](#core)  
-  
+
     -   [System.Data.dll](#data)  
-  
+
     -   [System.Data.Entity.dll](#entity)  
-  
+
     -   [System.Data.OracleClient.dll](#oracleclient)  
-  
+
     -   [System.Design.dll](#design)  
-  
+
     -   [System.dll](#system)  
-  
+
     -   [System.Drawing.dll](#drawing)  
-  
+
     -   [System.Messaging.dll](#messaging)  
-  
+
     -   [System.ServiceModel.dll](#servicemodel)  
-  
+
     -   [System.ServiceModel.Discovery.dll](#smDisc)  
-  
+
     -   [System.Web.DataVisualization.dll](#datavisualization)  
-  
+
     -   [System.Web.dll](#web)  
-  
+
     -   [System.Web.DynamicData.dll](#dynamicdata)  
-  
+
     -   [System.Web.Extensions.dll](#extensions)  
-  
+
     -   [System.Web.Services.dll](#services)  
-  
+
     -   [System.Windows.Forms.dll](#forms)  
-  
+
     -   [System.Xaml.dll](#xaml)  
-  
+
     -   [System.Xml.dll](#xml)  
-  
+
 -   [Obsolete members in Microsoft assemblies](#MicrosoftMembers)  
-  
+
     -   [IEHost.dll and IEExec.exe](#IEHost)  
-  
+
     -   [ISymWrapper.dll](#isymwrapper)  
-  
+
     -   [Microsoft.Build.Conversion.v4.0.dll](#conversion)  
-  
+
     -   [Microsoft.Build.Engine.dll](#engine)  
-  
+
     -   [Microsoft.Build.Framework.dll](#BuildFW)  
-  
+
     -   [Microsoft.Build.Utilities.v4.0.dll](#BuildUtil4)  
-  
+
     -   [Microsoft.Data.Entity.Build.Tasks.dll](#data_entity_tasks)  
-  
+
     -   [Microsoft.VisualBasic.dll](#visualbasic)  
-  
+
 <a name="SystemMembers"></a>   
 ## Obsolete Members in System Assemblies  
  The following tables list the obsolete members in system assemblies. These assemblies are used for general\-purpose application development that targets the .NET Framework.  
-  
+
 <a name="mscorlib"></a>   
 ### Assembly: mscorlib.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.Win32.Registry?displayProperty=nameWithType>|<xref:Microsoft.Win32.Registry.DynData>|The <xref:Microsoft.Win32.Registry.DynData> registry key only works on Win9x, which is no longer supported by the CLR. On NT-based operating systems, use the  <xref:Microsoft.Win32.Registry.PerformanceData?displayProperty=nameWithType> registry key or the <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData%2A?displayProperty=nameWithType> registry proxy instead.|  
@@ -248,10 +248,10 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Threading.Thread?displayProperty=nameWithType>|<xref:System.Threading.Thread.Suspend%2A>|<xref:System.Threading.Thread.Suspend%2A> has been deprecated. Please use other classes in <xref:System.Threading?displayProperty=nameWithType>, such as <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> , <xref:System.Threading.EventWaitHandle>, and <xref:System.Threading.Semaphore>, to synchronize threads or protect resources.|  
 |<xref:System.Threading.ThreadPool?displayProperty=nameWithType>|<xref:System.Threading.ThreadPool.BindHandle%28System.IntPtr%29>|<xref:System.Threading.ThreadPool.BindHandle%28System.IntPtr%29> has been deprecated. Please use <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Threading.WaitHandle?displayProperty=nameWithType>|<xref:System.Threading.WaitHandle.Handle%2A>|Use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=nameWithType> property instead.|  
-  
+
 <a name="PresentationCore"></a>   
 ### Assembly: PresentationCore.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.BitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
@@ -283,28 +283,28 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Windows.Media.Effects.OuterGlowBitmapEffect?displayProperty=nameWithType>|<xref:System.Windows.Media.Effects.BitmapEffect.UpdateUnmanagedPropertyState%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.Media.Media3D.Viewport3DVisual?displayProperty=nameWithType>|<xref:System.Windows.Media.Media3D.Viewport3DVisual.BitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.Media.Media3D.Viewport3DVisual?displayProperty=nameWithType>|<xref:System.Windows.Media.Media3D.Viewport3DVisual.BitmapEffectInput%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
-  
+
 <a name="PresFW"></a>   
 ### Assembly: PresentationFramework.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Windows.Data.BindingListCollectionView?displayProperty=nameWithType>|<xref:System.Windows.Data.CollectionView.OnBeginChangeLogging%2A>|Replaced by <xref:System.Windows.Data.CollectionView.OnAllowsCrossThreadChangesChanged%2A?displayProperty=nameWithType>.|  
 |<xref:System.Windows.Data.CollectionView?displayProperty=nameWithType>|<xref:System.Windows.Data.CollectionView.ClearChangeLog%2A>|Replaced by <xref:System.Windows.Data.CollectionView.ClearPendingChanges%2A?displayProperty=nameWithType>.|  
 |<xref:System.Windows.Data.CollectionView?displayProperty=nameWithType>|<xref:System.Windows.Data.CollectionView.OnBeginChangeLogging%2A>|Replaced by <xref:System.Windows.Data.CollectionView.OnAllowsCrossThreadChangesChanged%2A?displayProperty=nameWithType>.|  
 |<xref:System.Windows.Data.ListCollectionView?displayProperty=nameWithType>|<xref:System.Windows.Data.ListCollectionView.OnBeginChangeLogging%2A>|Replaced by <xref:System.Windows.Data.ListCollectionView.OnAllowsCrossThreadChangesChanged%2A?displayProperty=nameWithType>.|  
-  
+
 <a name="Act"></a>   
 ### Assembly: System.Activities.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Activities.Debugger.XamlDebuggerXmlReader?displayProperty=nameWithType>|<xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.Xaml.XamlReader%2CSystem.Xaml.IXamlLineInfo%2CSystem.IO.TextReader%29>|First deprecated in the .NET Framework 4.5.<br /><br /> Don't use this constructor. Use <xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.IO.TextReader%29?displayProperty=nameWithType> or <xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.IO.TextReader%2CSystem.Xaml.XamlSchemaContext%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Activities.Debugger.XamlDebuggerXmlReader?displayProperty=nameWithType>|<xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.Xaml.XamlReader%2CSystem.IO.TextReader%29?displayProperty=nameWithType>|First deprecated in the .NET Framework 4.5.<br /><br /> Don't use this constructor. Use <xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.IO.TextReader%29?displayProperty=nameWithType> or <xref:System.Activities.Debugger.XamlDebuggerXmlReader.%23ctor%28System.IO.TextReader%2CSystem.Xaml.XamlSchemaContext%29?displayProperty=nameWithType> instead.|  
-  
+
 <a name="ActPres"></a>   
 ### Assembly: System.Activities.Presentation.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Activities.Presentation.DragDropHelper?displayProperty=nameWithType>|<xref:System.Activities.Presentation.DragDropHelper.DoDragMove%28System.Activities.Presentation.WorkflowViewElement%2CSystem.Windows.Point%29>|This method does not support dragging multiple items.|  
@@ -316,10 +316,10 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Activities.Presentation.Services.ModelChangedEventArgs?displayProperty=nameWithType>|<xref:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsAdded%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Don't use this property. Use <xref:System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo%2A> instead.|  
 |<xref:System.Activities.Presentation.Services.ModelChangedEventArgs?displayProperty=nameWithType>|<xref:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsRemoved%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Don't use this property. Use <xref:System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo%2A> instead.|  
 |<xref:System.Activities.Presentation.Services.ModelChangedEventArgs?displayProperty=nameWithType>|<xref:System.Activities.Presentation.Services.ModelChangedEventArgs.PropertiesChanged%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Don't use this property. Use <xref:System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo%2A> instead.|  
-  
+
 <a name="core"></a>   
 ### Assembly: System.Core.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Diagnostics.Eventing.Reader.StandardEventKeywords?displayProperty=nameWithType>|<xref:System.Diagnostics.Eventing.Reader.StandardEventKeywords.CorrelationHint>|First deprecated in the .NET Framework 4.5.<br /><br /> Incorrect value; use <xref:System.Diagnostics.Eventing.Reader.StandardEventKeywords.CorrelationHint2> instead.|  
@@ -359,10 +359,10 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Runtime.CompilerServices.RuntimeOps?displayProperty=nameWithType>|<xref:System.Runtime.CompilerServices.RuntimeOps.ExpandoTrySetValue%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
 |<xref:System.Runtime.CompilerServices.RuntimeOps?displayProperty=nameWithType>|<xref:System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
 |<xref:System.Runtime.CompilerServices.RuntimeOps?displayProperty=nameWithType>|<xref:System.Runtime.CompilerServices.RuntimeOps.Quote%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
-  
+
 <a name="data"></a>   
 ### Assembly: System.Data.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Data.DataSysDescriptionAttribute?displayProperty=nameWithType>|<xref:System.Data.DataSysDescriptionAttribute.%23ctor%2A>|<xref:System.Data.DataSysDescriptionAttribute> has been deprecated.|  
@@ -381,29 +381,29 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Data.SqlClient.SqlClientPermission?displayProperty=nameWithType>|<xref:System.Data.SqlClient.SqlClientPermission.%23ctor%28System.Security.Permissions.PermissionState%2CSystem.Boolean%29>|Use of this constructor generates a compiler error.<br /><br /> <xref:System.Data.SqlClient.SqlClientPermission.%23ctor%28System.Security.Permissions.PermissionState%2CSystem.Boolean%29> has been deprecated. Pass the <xref:System.Data.SqlClient.SqlClientPermission.%23ctor%28System.Security.Permissions.PermissionState%29> constructor a value of <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType>.|  
 |<xref:System.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=nameWithType>|<xref:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectionReset%2A>|<xref:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectionReset%2A> has been deprecated. <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> will ignore the 'connection reset' keyword and always reset the connection.|  
 |<xref:System.Data.SqlClient.SqlParameterCollection?displayProperty=nameWithType>|<xref:System.Data.SqlClient.SqlParameterCollection.Add%28System.String%2CSystem.Object%29>|<xref:System.Data.SqlClient.SqlParameterCollection.Add%28System.String%2CSystem.Object%29> has been deprecated. Use <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A?displayProperty=nameWithType>.|  
-  
+
 <a name="entity"></a>   
 ### Assembly: System.Data.Entity.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Data.Metadata.Edm.AssociationSetEnd?displayProperty=nameWithType>|<xref:System.Data.Metadata.Edm.AssociationSetEnd.Role%2A>|This property is going away, please use the <xref:System.Data.Metadata.Edm.AssociationSetEnd.Name%2A?displayProperty=nameWithType> property instead.|  
 |<xref:System.Data.Metadata.Edm.MetadataWorkspace?displayProperty=nameWithType>|<xref:System.Data.Metadata.Edm.MetadataWorkspace.GetRequiredOriginalValueMembers%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use <xref:System.Data.Metadata.Edm.MetadataWorkspace.GetRelevantMembersForUpdate%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Data.Objects.ObjectContext?displayProperty=nameWithType>|<xref:System.Data.Objects.ObjectContext.ApplyPropertyChanges%2A>|Use <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Data.Objects.ObjectContext?displayProperty=nameWithType>|<xref:System.Data.Objects.ObjectContext.SaveChanges%28System.Boolean%29>|Use <xref:System.Data.Objects.ObjectContext.SaveChanges%28System.Data.Objects.SaveOptions%29> instead.|  
-  
+
 <a name="oracleclient"></a>   
 ### Assembly: System.Data.OracleClient.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Data.OracleClient.OracleParameter?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameter.Precision%2A>|<xref:System.Data.OracleClient.OracleParameter.Precision%2A> has been deprecated. Use the <xref:System.Math?displayProperty=nameWithType> classes to explicitly set the precision of a decimal.|  
 |<xref:System.Data.OracleClient.OracleParameter?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameter.Scale%2A>|<xref:System.Data.OracleClient.OracleParameter.Scale%2A> has been deprecated. Use the <xref:System.Math?displayProperty=nameWithType> classes to explicitly set the scale of a decimal.|  
 |<xref:System.Data.OracleClient.OracleParameterCollection?displayProperty=nameWithType>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29>|<xref:System.Data.OracleClient.OracleParameterCollection.Add%28System.String%2CSystem.Object%29> has been deprecated. Use <xref:System.Data.OracleClient.OracleParameterCollection.AddWithValue%2A?displayProperty=nameWithType>.|  
-  
+
 <a name="design"></a>   
 ### Assembly: System.Design.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.ComponentModel.Design.ComponentDesigner?displayProperty=nameWithType>|<xref:System.ComponentModel.Design.ComponentDesigner.InitializeNonDefault%2A>|This method has been deprecated. Use <xref:System.ComponentModel.Design.ComponentDesigner.InitializeExistingComponent%2A?displayProperty=nameWithType> instead.|  
@@ -453,10 +453,10 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Web.UI.Design.WebControls.DataListDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.WebControls.DataListDesigner.SetTemplateContent%2A>|Use of this method is not recommended because template editing is handled in <xref:System.Web.UI.Design.ControlDesigner?displayProperty=nameWithType>. To support template editing, expose template data in the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A?displayProperty=nameWithType> property and call [`ControlDesigner.SetViewFlags(ViewFlags.TemplateEditing, true)`].|  
 |<xref:System.Web.UI.Design.WebControls.PanelDesigner?displayProperty=nameWithType>|<xref:System.Web.UI.Design.WebControls.PanelDesigner.OnBehaviorAttached%2A>|The recommended alternative is <xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType>.|  
 |<xref:System.Windows.Forms.Design.ControlDesigner?displayProperty=nameWithType>|<xref:System.Windows.Forms.Design.ControlDesigner.OnSetComponentDefaults%2A>|This method has been deprecated. Use <xref:System.Windows.Forms.Design.ControlDesigner.InitializeNewComponent%2A?displayProperty=nameWithType> instead.|  
-  
+
 <a name="system"></a>   
 ### Assembly: System.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=nameWithType>|<xref:Microsoft.CSharp.CSharpCodeProvider.CreateCompiler%2A>|Callers should not use the <xref:System.CodeDom.Compiler.ICodeCompiler?displayProperty=nameWithType> interface and should instead use the methods directly on the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> class.|  
@@ -565,53 +565,54 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Net.Sockets.TcpListener?displayProperty=nameWithType>|<xref:System.Net.Sockets.TcpListener.%23ctor%28System.Int32%29>|This method has been deprecated. Please use <xref:System.Net.Sockets.TcpListener.%23ctor%28System.Net.IPAddress%2CSystem.Int32%29> instead.|  
 |<xref:System.Net.WebSockets.WebSocket?displayProperty=nameWithType>|<xref:System.Net.WebSockets.WebSocket.IsApplicationTargeting45%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> This member is for internal use only and will be removed in a future version of the .NET Framework. Do not call it.|  
 |<xref:System.Security.Claims.DynamicRoleClaimProvider?displayProperty=nameWithType>|<xref:System.Security.Claims.DynamicRoleClaimProvider.AddDynamicRoleClaims%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this member generates a compiler error.<br /><br /> Use <xref:System.Security.Claims.ClaimsAuthenticationManager?displayProperty=nameWithType> to add claims to a <xref:System.Security.Claims.ClaimsIdentity>.|  
-  
+
 <a name="drawing"></a>   
 ### Assembly: System.Drawing.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Drawing.FontFamily?displayProperty=nameWithType>|<xref:System.Drawing.FontFamily.GetFamilies%2A>|Do not use the <xref:System.Drawing.FontFamily.GetFamilies%2A> method; use the <xref:System.Drawing.FontFamily.Families%2A?displayProperty=nameWithType> property instead.|  
 |<xref:System.Drawing.Imaging.EncoderParameter?displayProperty=nameWithType>|<xref:System.Drawing.Imaging.EncoderParameter.%23ctor%28System.Drawing.Imaging.Encoder%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29>|First deprecated in the .NET Framework 4.5.<br /><br /> This constructor has been deprecated. Use <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%28System.Drawing.Imaging.Encoder%2CSystem.Int32%2CSystem.Drawing.Imaging.EncoderParameterValueType%2CSystem.IntPtr%29>.|  
-  
+
 <a name="messaging"></a>   
 ### Assembly: System.Messaging.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Messaging.MessageQueue?displayProperty=nameWithType>|<xref:System.Messaging.MessageQueue.GetEnumerator%2A>|This method returns a <xref:System.Messaging.MessageEnumerator?displayProperty=nameWithType> that implements the <xref:System.Messaging.MessageEnumerator.RemoveCurrent%2A?displayProperty=nameWithType> family of methods incorrectly. Please use <xref:System.Messaging.MessageQueue.GetMessageEnumerator2%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Messaging.MessageQueue?displayProperty=nameWithType>|<xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A>|This method returns a <xref:System.Messaging.MessageEnumerator?displayProperty=nameWithType> that implements the <xref:System.Messaging.MessageEnumerator.RemoveCurrent%2A?displayProperty=nameWithType> family of methods incorrectly. Please use <xref:System.Messaging.MessageQueue.GetMessageEnumerator2%2A?displayProperty=nameWithType> instead.|  
-  
+
 <a name="servicemodel"></a>   
 ### Assembly: System.ServiceModel.dll  
-  
-|Type|Member|Message|  
-|----------|------------|-------------|  
-|<xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>|<xref:System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> This property is obsolete. To enable Http <xref:System.Net.CookieContainer>, use the <!----zz <xref:System.ServiceModel.BasicHttpBinding.AllowCookies%2A?displayProperty=nameWithType> --> `System.ServiceModel.BasicHttpBinding.AllowCookies` property instead.|  
-|<xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>|<xref:System.ServiceModel.Configuration.BindingsSection.NetPeerTcpBinding%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> The peer channel feature is obsolete and will be removed in the future.|  
-|<xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase?displayProperty=nameWithType>|<xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
-|<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase?displayProperty=nameWithType>|<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
-|<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase?displayProperty=nameWithType>|<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
-|<xref:System.ServiceModel.Security.WindowsClientCredential?displayProperty=nameWithType>|<xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A>|This property is deprecated and is maintained for backward compatibility only. The local machine policy will be used to determine if NTLM should be used.|  
-  
+
+
+|                                             Type                                             |                                         Member                                         |                                                                                                                                                         Message                                                                                                                                                          |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>           |        <xref:System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer%2A>        | First deprecated in the .NET Framework 4.5.<br /><br /> This property is obsolete. To enable Http <xref:System.Net.CookieContainer>, use the <!----zz <xref:System.ServiceModel.BasicHttpBinding.AllowCookies%2A?displayProperty=nameWithType> --> `System.ServiceModel.BasicHttpBinding.AllowCookies` property instead. |
+|    <xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>     |     <xref:System.ServiceModel.Configuration.BindingsSection.NetPeerTcpBinding%2A>      |                                                                                             First deprecated in the .NET Framework 4.5.<br /><br /> The peer channel feature is obsolete and will be removed in the future.                                                                                              |
+| <xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase?displayProperty=nameWithType> | <xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors%2A> |                                               First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.                                               |
+|  <xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase?displayProperty=nameWithType>  |   <xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors%2A>   |                                               First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.                                               |
+|  <xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase?displayProperty=nameWithType>  |      <xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations%2A>       |                                               First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.                                               |
+|   <xref:System.ServiceModel.Security.WindowsClientCredential?displayProperty=nameWithType>   |        <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A>        |                                                                                This property is deprecated and is maintained for backward compatibility only. The local machine policy will be used to determine if NTLM should be used.                                                                                 |
+
 <a name="smDisc"></a>   
 ### Assembly: System.ServiceModel.Discovery.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint?displayProperty=nameWithType>|<xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.TransportSettings%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.TransportSettings%2A> property is obsolete. Consider using  <xref:System.ServiceModel.Channels.UdpTransportBindingElement?displayProperty=nameWithType> for setting the transport properties.|  
 |<xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint?displayProperty=nameWithType>|<xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.TransportSettings%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.TransportSettings%2A> property is obsolete. Consider using <xref:System.ServiceModel.Channels.UdpTransportBindingElement?displayProperty=nameWithType> for setting the transport properties.|  
-  
+
 <a name="datavisualization"></a>   
 ### Assembly: System.Web.DataVisualization.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Web.UI.DataVisualization.Charting.Chart?displayProperty=nameWithType>|<xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A>|<xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A> has been deprecated. Please investigate <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> instead.|  
-  
+
 <a name="web"></a>   
 ### Assembly: System.Web.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Web.HttpContext?displayProperty=nameWithType>|<xref:System.Web.HttpContext.GetAppConfig%2A>|The recommended alternative is <xref:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection%2A?displayProperty=nameWithType> in System.Web.dll.|  
@@ -643,17 +644,17 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Web.UI.TemplateControl?displayProperty=nameWithType>|<xref:System.Web.UI.TemplateControl.AutoHandlers%2A>|Use of this property is not recommended because it is no longer useful.|  
 |<xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType>|<xref:System.Web.UI.WebControls.GridView.CreateAutoGeneratedColumn%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> This method is kept for backward compatibility. This API is no longer used.|  
 |<xref:System.Web.UI.WebControls.Xml?displayProperty=nameWithType>|<xref:System.Web.UI.WebControls.Xml.Document%2A>|The recommended alternative is the <xref:System.Web.UI.WebControls.Xml.XPathNavigator%2A?displayProperty=nameWithType> property. Create a <xref:System.Xml.XPath.XPathDocument?displayProperty=nameWithType> and call <xref:System.Xml.XPath.XPathDocument.CreateNavigator%2A?displayProperty=nameWithType> to create an <xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>.|  
-  
+
 <a name="dynamicdata"></a>   
 ### Assembly: System.Web.DynamicData.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Web.DynamicData.DynamicDataExtensions?displayProperty=nameWithType>|<xref:System.Web.DynamicData.DynamicDataExtensions.EnablePersistedSelection%2A>|Use the `EnablePersistedSelection` property on a databound control such as <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> or <xref:System.Web.UI.WebControls.ListView?displayProperty=nameWithType>.|  
-  
+
 <a name="extensions"></a>   
 ### Assembly: System.Web.Extensions.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Web.UI.CompositeScriptReference?displayProperty=nameWithType>|<xref:System.Web.UI.CompositeScriptReference.IsFromSystemWebExtensions%2A>|Use <xref:System.Web.UI.CompositeScriptReference.IsAjaxFrameworkScript%2A?displayProperty=nameWithType>.|  
@@ -664,18 +665,18 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Web.UI.ScriptReferenceBase?displayProperty=nameWithType>|<xref:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded%2A>|<xref:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded%2A> is no longer required in script references.|  
 |<xref:System.Web.UI.ScriptResourceAttribute?displayProperty=nameWithType>|<xref:System.Web.UI.ScriptResourceAttribute.ScriptResourceName%2A>|This property is obsolete. Use <xref:System.Web.UI.ScriptResourceAttribute.StringResourceName%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Web.UI.ScriptResourceAttribute?displayProperty=nameWithType>|<xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A>|This property is obsolete. Use <xref:System.Web.UI.ScriptResourceAttribute.StringResourceClientTypeName%2A?displayProperty=nameWithType> instead.|  
-  
+
 <a name="services"></a>   
 ### Assembly: System.Web.Services.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Web.Services.Discovery.DiscoveryClientProtocol?displayProperty=nameWithType>|<xref:System.Web.Services.Discovery.DiscoveryClientProtocol.LoadExternals%2A>|This method will be removed from a future version. The method call is no longer required for resource discovery.|  
 |<xref:System.Web.Services.Protocols.SoapHeaderAttribute?displayProperty=nameWithType>|<xref:System.Web.Services.Protocols.SoapHeaderAttribute.Required%2A>|This property will be removed from a future version. The presence of a particular header in a SOAP message is no longer enforced.|  
-  
+
 <a name="forms"></a>   
 ### Assembly: System.Windows.Forms.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Windows.Forms.AccessibleStates?displayProperty=nameWithType>|<xref:System.Windows.Forms.AccessibleStates.Valid>|This enumeration value has been deprecated. There is no replacement.|  
@@ -689,18 +690,18 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Windows.Forms.Label?displayProperty=nameWithType>|<xref:System.Windows.Forms.Label.RenderTransparent%2A>|This property has been deprecated. Use <xref:System.Windows.Forms.Control.BackColor%2A> instead.|  
 |<xref:System.Windows.Forms.ListBox?displayProperty=nameWithType>|<xref:System.Windows.Forms.ListBox.AddItemsCore%2A>|This method has been deprecated. There is no replacement.|  
 |<xref:System.Windows.Forms.PrintPreviewDialog?displayProperty=nameWithType>|<xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A>|This property has been deprecated. Use the <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A?displayProperty=nameWithType> property instead.|  
-  
+
 <a name="xaml"></a>   
 ### Assembly: System.Xaml.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute?displayProperty=nameWithType>|<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ExpressionType%2A>|This is not used by the XAML parser. Please look at <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute?displayProperty=nameWithType>.|  
 |<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute?displayProperty=nameWithType>|<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.%23ctor%28System.Type%2CSystem.Type%29>|The `expressionType` argument is not used by the XAML parser. To specify the expected return type, use <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.%23ctor%28System.Type%29?displayProperty=nameWithType>. To specify custom handling for expression types, use <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute?displayProperty=nameWithType>.|  
-  
+
 <a name="xml"></a>   
 ### Assembly: System.Xml.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Xml.ValidationType?displayProperty=nameWithType>|<xref:System.Xml.ValidationType.Auto>|Validation type should be specified as <xref:System.Xml.ValidationType.DTD?displayProperty=nameWithType> or <xref:System.Xml.ValidationType.Schema?displayProperty=nameWithType>.|  
@@ -719,64 +720,64 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>|<xref:System.Xml.Serialization.XmlSerializer.FromMappings%28System.Xml.Serialization.XmlMapping%5B%5D%2CSystem.Security.Policy.Evidence%29>|This method is obsolete and will be removed in a future release of the .NET Framework. Please use an overload of <xref:System.Xml.Serialization.XmlSerializer.FromMappings%2A?displayProperty=nameWithType> that does not take an <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> parameter.|  
 |<xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>|<xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Xml.Serialization.XmlAttributeOverrides%2CSystem.Type%5B%5D%2CSystem.Xml.Serialization.XmlRootAttribute%2CSystem.String%2CSystem.String%2CSystem.Security.Policy.Evidence%29>|This method is obsolete and will be removed in a future release of the .NET Framework. Please use an <xref:System.Xml.Serialization.XmlSerializer.%23ctor%2A?displayProperty=nameWithType> constructor overload that does not take an <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> parameter.|  
 |<xref:System.Xml.Serialization.XmlSerializerFactory?displayProperty=nameWithType>|<xref:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer%28System.Type%2CSystem.Xml.Serialization.XmlAttributeOverrides%2CSystem.Type%5B%5D%2CSystem.Xml.Serialization.XmlRootAttribute%2CSystem.String%2CSystem.String%2CSystem.Security.Policy.Evidence%29>|This method is obsolete and will be removed in a future release of the .NET Framework. Please use an overload of <xref:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer%2A?displayProperty=nameWithType> that does not take an <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> parameter.|  
-  
+
 <a name="MicrosoftMembers"></a>   
 ## Obsolete Members in Microsoft Assemblies  
  The following tables list the obsolete members in Microsoft assemblies. These are special-purpose assemblies and include assemblies that target an individual language (such as Microsoft.VisualBasic.dll) or a build system (such as Microsoft.Build.Engine.dll).  
-  
+
 <a name="IEHost"></a>   
 ### Assembly: IEHost.dll and IEExec.exe  
  The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Alternatives to this technology include ClickOnce, XAML Browser Applications (XBAP), and Microsoft Silverlight.  
-  
+
 <a name="isymwrapper"></a>   
 ### Assembly: ISymWrapper.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:System.Diagnostics.SymbolStore.SymBinder?displayProperty=nameWithType>|<xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%28System.Int32%2CSystem.String%2CSystem.String%29>|The recommended alternative is <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%28System.IntPtr%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType>. <xref:System.Diagnostics.SymbolStore.ISymbolBinder1.GetReader%2A?displayProperty=nameWithType> takes the importer interface pointer as an <xref:System.IntPtr?displayProperty=nameWithType> instead of an <xref:System.Int32?displayProperty=nameWithType>, and thus works on both 32-bit and 64-bit architectures.|  
-  
+
 <a name="conversion"></a>   
 ### Assembly: Microsoft.Build.Conversion.v4.0.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.Build.Conversion.ProjectFileConverter?displayProperty=nameWithType>|<xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%28Microsoft.Build.BuildEngine.ProjectLoadSettings%29>|Use parameterless <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert> overload instead.|  
 |<xref:Microsoft.Build.Conversion.ProjectFileConverter?displayProperty=nameWithType>|<xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%28System.String%29>|Use parameterless <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert> overload instead.|  
 |<xref:Microsoft.Build.Conversion.ProjectFileConverter?displayProperty=nameWithType>|<xref:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory%28Microsoft.Build.BuildEngine.Engine%29>|Use parameterless <xref:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory?displayProperty=nameWithType> method instead.|  
 |<xref:Microsoft.Build.Conversion.ProjectFileConverter?displayProperty=nameWithType>|<xref:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory%28Microsoft.Build.BuildEngine.Engine%2CMicrosoft.Build.BuildEngine.ProjectLoadSettings%29>|Use parameterless <xref:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory?displayProperty=nameWithType> method instead.|  
-  
+
 <a name="engine"></a>   
 ### Assembly: Microsoft.Build.Engine.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.Build.BuildEngine.Engine?displayProperty=nameWithType>|<xref:Microsoft.Build.BuildEngine.Engine.BinPath%2A>|Avoid setting <xref:Microsoft.Build.BuildEngine.Engine.BinPath%2A>. If you were simply passing in the .NET Framework location as the <xref:Microsoft.Build.BuildEngine.Engine.BinPath%2A>, no other action is necessary. Otherwise, define Toolsets instead in the registry or config file, or by adding elements to the Engine's <xref:Microsoft.Build.BuildEngine.ToolsetCollection?displayProperty=nameWithType>, in order to use a custom <xref:Microsoft.Build.BuildEngine.Engine.BinPath%2A>.|  
 |<xref:Microsoft.Build.BuildEngine.Engine?displayProperty=nameWithType>|<xref:Microsoft.Build.BuildEngine.Engine.%23ctor%28System.String%29>|If you were simply passing in the .NET Framework location as the <xref:Microsoft.Build.BuildEngine.Engine.BinPath%2A>, just change to the parameterless <xref:Microsoft.Build.BuildEngine.Engine.%23ctor?displayProperty=nameWithType> constructor. Otherwise, you can define custom toolsets in the registry or configuration file, or add elements to the Engine's <xref:Microsoft.Build.BuildEngine.ToolsetCollection?displayProperty=nameWithType>. Then use either the <xref:Microsoft.Build.BuildEngine.Engine.%23ctor?displayProperty=nameWithType> or <xref:Microsoft.Build.BuildEngine.Engine.%23ctor%28Microsoft.Build.BuildEngine.ToolsetDefinitionLocations%29?displayProperty=nameWithType> constructor instead.|  
-  
+
 <a name="BuildFW"></a>   
 ### Assembly: Microsoft.Build.Framework.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.Build.Framework.XamlTypes.ContentType?displayProperty=nameWithType>|<xref:Microsoft.Build.Framework.XamlTypes.ContentType.ItemGroupName%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this member generates a compiler error.<br /><br /> Use the <xref:Microsoft.Build.Framework.XamlTypes.ContentType.ItemType%2A?displayProperty=nameWithType> property instead.|  
-  
+
 <a name="BuildUtil4"></a>   
 ### Assembly: Microsoft.Build.Utilities.v4.0.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.Build.Utilities.ToolTask?displayProperty=nameWithType>|<xref:Microsoft.Build.Utilities.ToolTask.EnvironmentOverride%2A>|Use the <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A?displayProperty=nameWithType> property.|  
-  
+
 <a name="data_entity_tasks"></a>   
 ### Assembly: Microsoft.Data.Entity.Build.Tasks.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<!--zz <xref:Microsoft.Data.Entity.Build.Tasks.EntityDeploy?displayProperty=nameWithType> --> `Microsoft.Data.Entity.Build.Tasks.EntityDeploy`| <!--zz <xref:Microsoft.Data.Entity.Build.Tasks.EntityDeploy.EntityDataModelEmbeddedResources%2A>  -->`Microsoft.Data.Entity.Build.Tasks.EntityDeploy.EntityDataModelEmbeddedResources`|First deprecated in the .NET Framework 4.5.<br /><br /> Used only for version 3.5 backward compatibility.|  
-  
+
 <a name="visualbasic"></a>   
 ### Assembly: Microsoft.VisualBasic.dll  
-  
+
 |Type|Member|Message|  
 |----------|------------|-------------|  
 |<xref:Microsoft.VisualBasic.FileSystem?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.FileSystem.FilePut%28System.Object%2CSystem.Object%2CSystem.Object%29>|This member has been deprecated. Please use <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A?displayProperty=nameWithType> to write <xref:System.Object> types, or coerce `FileNumber` and `RecordNumber` to <xref:System.Int32> for writing non-object types.|  
@@ -791,7 +792,7 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding.FallbackSetComplex%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
 |<xref:Microsoft.VisualBasic.CompilerServices.Operators?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
 |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which is not supported by this version of the .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of the Framework.|  
-  
+
 ## See Also  
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
  [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md)

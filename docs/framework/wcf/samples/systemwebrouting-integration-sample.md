@@ -26,51 +26,51 @@ This sample may already be installed on your computer. Check for the following (
   
 #### To use this sample  
   
-1.  Using Visual Studio, open the WebRoutingIntegration.sln file.  
+1. Using Visual Studio, open the WebRoutingIntegration.sln file.  
   
-2.  To run the solution and start the Web development server, press F5.  
+2. To run the solution and start the Web development server, press F5.  
   
-     A directory listing for the sample appears. Note that there are no files with an .svc file extension.  
+    A directory listing for the sample appears. Note that there are no files with an .svc file extension.  
   
-3.  In the address bar, add `movies` to the URL, so that it reads http://localhost:[port]/movies and press ENTER.  
+3. In the address bar, add `movies` to the URL, so that it reads http://localhost:[port]/movies and press ENTER.  
   
-     The movies feed appears in the browser.  
+    The movies feed appears in the browser.  
   
-4.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+4. In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
   
-     The channels feed appears in the browser.  
+    The channels feed appears in the browser.  
   
-5.  Close the Web browser, by pressing ALT+F4.  
+5. Close the Web browser, by pressing ALT+F4.  
   
-     If the development server has not exited, right-click the notification area icon and select **Stop**.  
+    If the development server has not exited, right-click the notification area icon and select **Stop**.  
   
 #### To use this sample when hosted in IIS  
   
-1.  Using Visual Studio, open the WebRoutingIntegration.sln file.  
+1. Using Visual Studio, open the WebRoutingIntegration.sln file.  
   
-2.  Build the project, by pressing CTRL+SHIFT+B.  
+2. Build the project, by pressing CTRL+SHIFT+B.  
   
-3.  Create a Web application in Internet Information Services (IIS) Manager.  
+3. Create a Web application in Internet Information Services (IIS) Manager.  
   
-    1.  In IIS Manager, right click the **Default Web Site** and select **Add an Application**.  
+   1.  In IIS Manager, right click the **Default Web Site** and select **Add an Application**.  
   
-    2.  For the **alias**, type in `WebRoutingIntegration`.  
+   2.  For the **alias**, type in `WebRoutingIntegration`.  
   
-    3.  For the **Physical Path**, select the Service folder inside the project.  
+   3.  For the **Physical Path**, select the Service folder inside the project.  
   
-    4.  Press **OK**.  
+   4.  Press **OK**.  
   
-4.  Start the application, by right-clicking the Web application and selecting **Manage Application** and then **Browse**.  
+4. Start the application, by right-clicking the Web application and selecting **Manage Application** and then **Browse**.  
   
-5.  In the address bar, add `movies` to the URL, so that is reads http://localhost:[port]/movies and press ENTER.  
+5. In the address bar, add `movies` to the URL, so that is reads http://localhost:[port]/movies and press ENTER.  
   
-     The movies feed appears in the browser.  
+    The movies feed appears in the browser.  
   
-6.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+6. In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
   
-     The channels feed appears in the browser.  
+    The channels feed appears in the browser.  
   
-7.  Close the Web browser, by pressing ALT+F4.  
+7. Close the Web browser, by pressing ALT+F4.  
   
  This sample demonstrates that the hosting layer is capable of composing with the classes in the <xref:System.Web.Routing> namespace for routing the requests of services hosted over HTTP.  
   

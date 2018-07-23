@@ -8,10 +8,10 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
   
 > [!WARNING]
 >  The new Windows Workflow Foundation features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] are not available for projects that target previous versions of the framework. If a project that targets [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is re-targeted to a previous version of the framework, several issues can occur.  
->   
->  -   C# expressions will be replaced in the designer with the message **Value was set in XAML**.  
-> -   Many build errors will occur, including the following error.  
->   
+> 
+> - C# expressions will be replaced in the designer with the message **Value was set in XAML**.  
+>   -   Many build errors will occur, including the following error.  
+> 
 >  **The file format is not compatible with current targeting framework. To convert the file format, please explicitly save the file. This error message will go away after you save the file and reopen the designer.**  
   
 ##  <a name="BKMK_Versioning"></a> Workflow Versioning  

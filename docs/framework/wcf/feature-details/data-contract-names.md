@@ -23,10 +23,10 @@ Sometimes a client and a service do not share the same types. They can still pas
 ## Data Contract Namespaces  
  A data contract namespace takes the form of a Uniform Resource Identifier (URI). The URI can be either absolute or relative. By default, data contracts for a particular type are assigned a namespace that comes from the common language runtime (CLR) namespace of that type.  
   
- By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to the namespace "http://schemas.datacontract.org/2004/07/Clr.Namespace". To override this default, apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to the entire module or assembly. Alternatively, to control the data contract namespace for each type, set the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>.  
+ By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to the namespace "<http://schemas.datacontract.org/2004/07/Clr.Namespace>". To override this default, apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to the entire module or assembly. Alternatively, to control the data contract namespace for each type, set the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>.  
   
 > [!NOTE]
->  The "http://schemas.microsoft.com/2003/10/Serialization"namespace is reserved and cannot be used as a data contract namespace.  
+>  The "<http://schemas.microsoft.com/2003/10/Serialization"namespace> is reserved and cannot be used as a data contract namespace.  
   
 > [!NOTE]
 >  You cannot override the default namespace in data contract types that contain `delegate` declarations.  

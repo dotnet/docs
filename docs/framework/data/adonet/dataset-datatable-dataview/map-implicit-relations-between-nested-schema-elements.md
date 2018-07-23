@@ -6,15 +6,15 @@ ms.assetid: 6b25002a-352e-4d9b-bae3-15129458a355
 # Map Implicit Relations Between Nested Schema Elements
 An XML Schema definition language (XSD) schema can have complex types nested inside one another. In this case, the mapping process applies default mapping and creates the following in the <xref:System.Data.DataSet>:  
   
--   One table for each of the complex types (parent and child).  
+- One table for each of the complex types (parent and child).  
   
--   If no unique constraint exists on the parent, one additional primary key column per table definition named *TableName*_Id where *TableName* is the name of the parent table.  
+- If no unique constraint exists on the parent, one additional primary key column per table definition named *TableName*_Id where *TableName* is the name of the parent table.  
   
--   A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint*#* where *#* is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
+- A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint<em>#</em> where *#* is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
   
--   A foreign key constraint on the child table identifying the additional column as the foreign key referring to the primary key of the parent table. The constraint is named *ParentTable_ChildTable* where *ParentTable* is the name of the parent table and *ChildTable* is the name of the child table.  
+- A foreign key constraint on the child table identifying the additional column as the foreign key referring to the primary key of the parent table. The constraint is named *ParentTable_ChildTable* where *ParentTable* is the name of the parent table and *ChildTable* is the name of the child table.  
   
--   A data relation between the parent and child tables.  
+- A data relation between the parent and child tables.  
   
  The following example shows a schema where **OrderDetail** is a child element of **Order**.  
   

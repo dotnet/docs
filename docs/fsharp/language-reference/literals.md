@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Literals
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN (for now).
+> The API reference links in this article will take you to MSDN (for now).
 
 This topic provides a table that shows how to specify the type of a literal in F#.
 

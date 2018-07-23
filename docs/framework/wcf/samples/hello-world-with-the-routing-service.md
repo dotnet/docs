@@ -8,28 +8,28 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
   
 ### To use this sample  
   
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open HelloRoutingService.sln.  
+1. Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open HelloRoutingService.sln.  
   
-2.  Press F5 or CTRL+SHIFT+B.  
+2. Press F5 or CTRL+SHIFT+B.  
   
-    > [!NOTE]
-    >  If you press F5, the Calculator Client automatically starts. If you press CTRL+SHIFT+B (build), you must start following applications yourself.  
-    >   
-    >  1.  Calculator client (./CalculatorClient/bin/client.exe  
-    > 2.  Calculator service (./CalculatorService/bin/service.exe)  
-    > 3.  Routing service (./RoutingService/bin/RoutingService.exe)  
+   > [!NOTE]
+   >  If you press F5, the Calculator Client automatically starts. If you press CTRL+SHIFT+B (build), you must start following applications yourself.  
+   > 
+   > 1. Calculator client (./CalculatorClient/bin/client.exe  
+   >    2.  Calculator service (./CalculatorService/bin/service.exe)  
+   >    3.  Routing service (./RoutingService/bin/RoutingService.exe)  
   
-3.  Press ENTER to start the client.  
+3. Press ENTER to start the client.  
   
-     You should see the following output:  
+    You should see the following output:  
   
-     Add(100,15.99) = 115.99  
+    Add(100,15.99) = 115.99  
   
-     Subtract(145,76.54) = 68.46  
+    Subtract(145,76.54) = 68.46  
   
-     Multiply(9,81.25) = 731.25  
+    Multiply(9,81.25) = 731.25  
   
-     Divide(22,7) = 3.14285714285714  
+    Divide(22,7) = 3.14285714285714  
   
 ## Configurable via Code or App.Config  
  The sample ships configured to use an App.config file to define the router’s behavior. You can also change the name of the App.config file to something else so that it is not recognized and uncomment the method call to ConfigureRouterViaCode(). Either method results in the same behavior from the router.  

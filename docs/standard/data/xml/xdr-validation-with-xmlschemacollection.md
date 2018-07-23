@@ -153,5 +153,5 @@ namespace ValidationSample
   
 ## See Also  
  <xref:System.Xml.XmlValidatingReader.ValidationType%2A>  
- <!--zz <xref:System.Xml.XmlValidatingReader.Settings%2A>-->  `System.Xml.XmlValidatingReader.Settings`  
+ &lt;!--zz &lt;xref:System.Xml.XmlValidatingReader.Settings%2A&gt;--&gt;  `System.Xml.XmlValidatingReader.Settings`  
  [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)

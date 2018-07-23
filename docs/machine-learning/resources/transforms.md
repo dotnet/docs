@@ -23,17 +23,17 @@ Click to jump immediately to a certain section of transforms:
 | Transform | Definition |
 | --- | --- |
 | CategoricalHashOneHotVectorizer | Encodes the categorical variable with hash-based encoding. |
-| CategoricalOneHotVectorizer | Encodes the categorical variable with one-hot encoding based on term dictionary. |
+| CategoricalOneHotVectorizer | Encodes the categorical variable with one-hot encoding based on a term dictionary. |
 
 ## Combiners and segregators
 
 | Transform | Definition |
 | --- | --- |
-| CombinerByContiguousGroupId | Groups values of a scalar column into a vector, by a contiguous group ID. |
+| CombinerByContiguousGroupId | Groups values of a scalar column into a vector based on a contiguous group ID. |
 | FeatureCombiner | Combines all the features into one feature column. |
 | ManyHeterogeneousModelCombiner | Combines a sequence of TransformModels and a PredictorModel into a single PredictorModel. |
 | ModelCombiner	| Combines a sequence of TransformModels into a single model. |
-| Segregator | Un-groups vector columns into sequences of rows, inverse of Group transform. |
+| Segregator | Ungroups vector columns into sequences of rows; the inverse of Group transform. |
 | TwoHeterogeneousModelCombiner	| Combines a TransformModel and a PredictorModel into a single PredictorModel. |
 
 ## Feature selection
@@ -48,7 +48,7 @@ Click to jump immediately to a certain section of transforms:
 | Transform | Definition |
 | --- | --- |
 | HashConverter	| Converts column values into hashes. This transform accepts both numeric and text inputs, both single and vector-valued columns. This is a part of the Dracula transform. |
-| TreeLeafFeaturizer | Trains a tree ensemble, or loads it from a file, then maps a numeric feature vector to three outputs: 1. A vector containing the individual tree outputs of the tree ensemble. 2. A vector indicating the leaves that the feature vector falls on in the tree ensemble. 3. A vector indicating the paths that the feature vector falls on in the tree ensemble. If a both a model file and a trainer are specified - will use the model file. If neither are specified, will train a default FastTree model. This can handle key labels by training a regression model towards their optionally permuted indices. |
+| TreeLeafFeaturizer | Trains a tree ensemble, or loads it from a file, then maps a numeric feature vector to three outputs: 1. A vector containing the individual tree outputs of the tree ensemble. 2. A vector indicating the leaves that the feature vector falls on in the tree ensemble. 3. A vector indicating the paths that the feature vector falls on in the tree ensemble. If both a model file and a trainer are specified, the vector will use the model file. If neither are specified, the vector will train a default FastTree model. This can handle key labels by training a regression model towards their optionally permuted indices. |
 
 ## Label parsing
 
@@ -78,7 +78,7 @@ Click to jump immediately to a certain section of transforms:
 | ConditionalNormalizer	| Normalize the columns only if needed. |
 | GlobalContrastNormalizer | Performs a global contrast normalization on input values: Y = (s * X - M) / D, where s is a scale, M is mean and D is either L2 norm or standard deviation. | 
 | LogMeanVarianceNormalizer | Normalizes the data based on the computed mean and variance of the logarithm of the data. |
-| LpNormalizer | Normalize vectors (rows) individually by rescaling them to unit norm (L2, L1 or LInf). Performs the following operation on a vector X: Y = (X - M) / D, where M is mean and D is either L2 norm, L1 norm or LInf norm. |
+| LpNormalizer | Normalize vectors (rows) individually by rescaling them to the unit norm (L2, L1 or LInf). Performs the following operation on a vector X: Y = (X - M) / D, where M is mean and D is either the L2 norm, the L1 norm, or the LInf norm. |
 | MeanVarianceNormalizer | Normalizes the data based on the computed mean and variance of the data. |
 | MinMaxNormalizer | Normalizes the data based on the observed minimum and maximum values of the data. | 
 | SupervisedBinNormalizer | Similar to BinNormalizer, but calculates bins based on correlation with the label column, not equi-density. The new value is bin_number / number_of_bins. |
@@ -112,20 +112,20 @@ Click to jump immediately to a certain section of transforms:
 | CharacterTokenizer | Character-oriented tokenizer where text is considered a sequence of characters. |
 | TextFeaturizer | A transform that turns a collection of text documents into numerical feature vectors. The feature vectors are normalized counts of (word and/or character) ngrams in a given tokenized text. |
 | TextToKeyConverter | Converts input values (words, numbers, etc.) to index in a dictionary. |
-| WordTokenizer	| The input to this transform is text, and the output is a vector of text containing the words (tokens) in the original text. The separator is space, but can be specified as any other character (or multiple characters) if needed. |
+| WordTokenizer	| The input to this transform is text, and the output is a vector of text containing the words (tokens) in the original text. The separator is space, but any other character (or multiple characters) can be specified. |
 
 ## Miscellaneous
 
 | Transform | Definition |
 | --- | --- |
 | ApproximateBootstrapSampler |	Approximate bootstrap sampling.|
-| BinaryPredictionScoreColumnsRenamer | For binary prediction, it renames the PredictedLabel and Score columns to include the name of the positive class.|
+| BinaryPredictionScoreColumnsRenamer | For binary prediction, renames the PredictedLabel and Score columns to include the name of the positive class.|
 | DataCache	| Caches using the specified cache option. |
 | DatasetScorer	| Score a dataset with a predictor model. |
 | DatasetTransformScorer | Score a dataset with a transform model. |
 | NoOperation | Does nothing. |
 | RandomNumberGenerator	| Adds a column with a generated number sequence. |
 | ScoreColumnSelector | Selects only the last score columns and the extra columns specified in the arguments. |
-| Scorer | Turn the predictor model into a transform model. |
+| Scorer | Turns the predictor model into a transform model. |
 | SentimentAnalyzer | Uses a pretrained sentiment model to score input strings. |
-| TrainTestDatasetSplitter | Split the dataset into train and test sets. |
+| TrainTestDatasetSplitter | Splits the dataset into train and test sets. |

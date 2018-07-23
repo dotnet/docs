@@ -1,4 +1,4 @@
-﻿<Type Name="XslTransform" FullName="System.Xml.Xsl.XslTransform">
+<Type Name="XslTransform" FullName="System.Xml.Xsl.XslTransform">
   <TypeSignature Language="C#" Value="public sealed class XslTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XslTransform extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XslTransform" />
@@ -787,8 +787,14 @@
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   
-    
+|Scenario|Type of evidence to provide|  
+|--------------|---------------------------------|  
+|The XSLT style sheet is self-contained or comes from a code base that you trust.|Use the evidence from your assembly.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform(); &#13;&#10;xslt.Load(xslReader, resolver, this.GetType().Assembly.Evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is known, and there is a verifiable URL.|Create evidence using the URL.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform();&#13;&#10; Evidence evidence = XmlSecureResolver.CreateEvidenceForUrl(stylesheetURL); &#13;&#10;xslt.Load(xslReader,resolver,evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known.|Set evidence to `null`. Script blocks are not processed, the XSLT `document()` function is not supported, and privileged extension objects are disallowed.<br /><br /> Additionally, you can also set the `resolver` parameter to `null`. This ensures that `xsl:import` and `xsl:include` elements are not processed.|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known, but you require script support.|Request evidence from the caller. The API of the caller must provide a way to provide evidence, typically the <xref:System.Security.Policy.Evidence> class.|  
   
+     
 ## Examples  
  The following example performs an XSLT transformation where `xsltReader` is an <xref:System.Xml.XmlReader> containing a style sheet and `secureURL` is a trusted URL that can be used to create <xref:System.Security.Policy.Evidence>. The <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%2A?displayProperty=nameWithType> method is used to create <xref:System.Security.Policy.Evidence> which is applied to the style sheet.  
   
@@ -858,7 +864,14 @@
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   
-  ]]></format>
+|Scenario|Type of evidence to provide|  
+|--------------|---------------------------------|  
+|The XSLT style sheet is self-contained or comes from a code base that you trust.|Use the evidence from your assembly.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform(); &#13;&#10;xslt.Load(style sheet, resolver, this.GetType().Assembly.Evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is known, and there is a verifiable URL.|Create evidence using the URL.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform(); &#13;&#10;Evidence evidence = XmlSecureResolver.CreateEvidenceForUrl(style sheetURL); &#13;&#10;xslt.Load(style sheet,resolver,evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known.|Set evidence to `null`. Script blocks are not processed, the XSLT `document()` function is not supported, and privileged extension objects are disallowed.<br /><br /> Additionally, you can also set the `resolver` parameter to `null`. This ensures that `xsl:import` and `xsl:include` elements are not processed.|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known, but you require script support.|Request evidence from the caller. The API of the caller must provide a way to provide evidence, typically the <xref:System.Security.Policy.Evidence> class.|  
+  
+ ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Xsl.XsltCompileException">The loaded resource is not a valid style sheet.</exception>
         <exception cref="T:System.Security.SecurityException">The referenced style sheet requires functionality that is not allowed by the evidence provided.  
@@ -922,11 +935,18 @@
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   
-    
+|Scenario|Type of evidence to provide|  
+|--------------|---------------------------------|  
+|The XSLT style sheet is self-contained or comes from a code base that you trust.|Use the evidence from your assembly.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform(); &#13;&#10;xslt.Load(xslNav, resolver, this.GetType().Assembly.Evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is known, and there is a verifiable URL.|Create evidence using the URL.<br /><br /> <pre><code class="lang-csharp">XsltTransform xslt = new XslTransform(); &#13;&#10;Evidence evidence = XmlSecureResolver.CreateEvidenceForUrl(style sheetURL); &#13;&#10;xslt.Load(xslNav,resolver,evidence);</code></pre>|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known.|Set evidence to `null`. Script blocks are not processed, the XSLT `document()` function is not supported, and privileged extension objects are disallowed.<br /><br /> Additionally, you can also set the `resolver` parameter to `null`. This ensures that `xsl:import` and `xsl:include` elements are not processed.|  
+|The XSLT style sheet comes from an outside source. The origin of the source is not known, but you require script support.|Request evidence from the caller. The API of the caller must provide a way to provide evidence, typically the `Evidence` class.|  
+  
+   
   
 ## Examples  
  The following example performs an XSLT transformation using a style sheet from an outside source. Because the style sheet comes from an untrusted source, the `resolver` and `evidence` parameters are set to `null`.  
-  
+ 
  [!code-csharp[XslTransform.Load5#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Load5/CS/trans_noev.cs#1)]
  [!code-vb[XslTransform.Load5#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XslTransform.Load5/VB/trans_noev.vb#1)]  
   

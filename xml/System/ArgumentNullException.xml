@@ -1,4 +1,4 @@
-﻿<Type Name="ArgumentNullException" FullName="System.ArgumentNullException">
+<Type Name="ArgumentNullException" FullName="System.ArgumentNullException">
   <TypeSignature Language="C#" Value="public class ArgumentNullException : ArgumentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArgumentNullException extends System.ArgumentException" />
   <TypeSignature Language="DocId" Value="T:System.ArgumentNullException" />
@@ -163,7 +163,13 @@
   
  The following table shows the initial property values for an instance of <xref:System.ArgumentNullException>.  
   
-  ]]></format>
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.ArgumentException.Message%2A>|A localized error message string that identifies the null argument. For example, if the `paramName` argument is "arg1", the English language message string is:<br /><br /> `Value cannot be null.Parameter name: arg01`|  
+|<xref:System.ArgumentException.ParamName%2A>|The parameter name string.|  
+  
+ ]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="Binding" FullName="System.Windows.Forms.Binding">
+<Type Name="Binding" FullName="System.Windows.Forms.Binding">
   <TypeSignature Language="C#" Value="public class Binding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Binding extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Binding" />
@@ -44,7 +44,13 @@
   
  Second, you can specify an instance of any one of the classes in the following table as the data source.  
   
-  Third, you must specify the navigation path, which can be an empty string (""), a single property name, or a period-delimited hierarchy of names. If you set the navigation path to an empty string, the <xref:System.Object.ToString%2A> method will be called on the underlying data source object.  
+|Description|C# example|  
+|-----------------|-----------------|  
+|Any class that implements <xref:System.ComponentModel.IBindingList> or <xref:System.ComponentModel.ITypedList>. These include the following: <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataView>, or <xref:System.Data.DataViewManager>.|`DataSet ds = new DataSet("myDataSet");`|  
+|Any class that implements <xref:System.Collections.IList> to create an indexed collection of objects. The collection must be created and filled before creating the <xref:System.Windows.Forms.Binding>. The objects in the list must all be of the same type; otherwise, an exception will be thrown.|`ArrayList ar1 = new ArrayList;  Customer1 cust1 = new Customer("Louis");  ar1.Add(cust1);`|  
+|A strongly typed <xref:System.Collections.IList> of strongly typed objects|`Customer [] custList = new Customer[3];`|  
+  
+ Third, you must specify the navigation path, which can be an empty string (""), a single property name, or a period-delimited hierarchy of names. If you set the navigation path to an empty string, the <xref:System.Object.ToString%2A> method will be called on the underlying data source object.  
   
  If the data source is a <xref:System.Data.DataTable>, which can contain multiple <xref:System.Data.DataColumn> objects, the navigation path must be used to resolve to a specific column.  
   
@@ -144,7 +150,7 @@
  [!code-cpp[Classic Binding Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Binding Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Binding Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Binding Example/CS/source.cs#1)]
  [!code-vb[Classic Binding Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Binding Example/VB/source.vb#1)]  
-  
+ 
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.BindingContext" />

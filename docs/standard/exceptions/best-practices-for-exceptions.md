@@ -98,17 +98,19 @@ For example, on .NET implementations that support App Domains, exceptions may oc
 
 - If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.
 
-## Include a localized description string in every exception
-
-The error message that the user sees is derived from the description string of the exception that was thrown, and not from the name of the exception class.
-
 ## Use grammatically correct error messages
 
-Write clear sentences and include ending punctuation. Each sentence in a description string of an exception should end in a period. For example, "The log table has overflowed." would be an appropriate description string.
+Write clear sentences and include ending punctuation. Each sentence in the string assigned to the <xref:System.Exception.Message?displayProperty=nameWithType> property should end in a period. For example, "The log table has overflowed." would be an appropriate message string.
+
+## Include a localized string message in every exception
+
+The error message that the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType>  property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A). 
+
+For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see [Resources in Desktop Apps](../../framework/resources/index.md) and <xref:System.Resources.ResourceManager?displayProperty=nameWithType>.
 
 ## In custom exceptions, provide additional properties as needed
 
-Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful. For example, the <xref:System.IO.FileNotFoundException> provides the <xref:System.IO.FileNotFoundException.FileName> property.
+Provide additional properties for an exception (in addition to the custom message string) only when there's a programmatic scenario where the additional information is useful. For example, the <xref:System.IO.FileNotFoundException> provides the <xref:System.IO.FileNotFoundException.FileName> property.
 
 ## Place throw statements so that the stack trace will be helpful
 

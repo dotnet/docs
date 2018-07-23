@@ -11,7 +11,7 @@ ms.author: "ronpet"
 # Parallel LINQ (PLINQ)
 Parallel LINQ (PLINQ) is a parallel implementation of LINQ to Objects. PLINQ implements the full set of LINQ standard query operators as extension methods for the <xref:System.Linq> namespace and has additional operators for parallel operations. PLINQ combines the simplicity and readability of LINQ syntax with the power of parallel programming. Just like code that targets the Task Parallel Library, PLINQ queries scale in the degree of concurrency based on the capabilities of the host computer.  
   
- In many scenarios, PLINQ can significantly increase the speed of LINQ to Objects queries by using all available cores on the host computer more efficiently. This increased performance brings high performance computing power onto the desktop.  
+ In many scenarios, PLINQ can significantly increase the speed of LINQ to Objects queries by using all available cores on the host computer more efficiently. This increased performance brings high-performance computing power onto the desktop.  
   
 ## In This Section  
  [Introduction to PLINQ](../../../docs/standard/parallel-programming/introduction-to-plinq.md)  

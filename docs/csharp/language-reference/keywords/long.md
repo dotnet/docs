@@ -81,7 +81,7 @@ The literal 4294967296 in the previous examples is of type `long`, because it ex
   
 ```csharp  
 int x = 8L;        // Error: no implicit conversion from long to int  
-int x = (int)8L;   // OK: explicit conversion to int  
+int y = (int)8L;   // OK: explicit conversion to int  
 ```  
   
  There is a predefined implicit conversion from [sbyte](../../../csharp/language-reference/keywords/sbyte.md), [byte](../../../csharp/language-reference/keywords/byte.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), or [char](../../../csharp/language-reference/keywords/char.md) to `long`.  

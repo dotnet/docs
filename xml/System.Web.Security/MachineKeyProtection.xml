@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data and that the data should be encrypted (for the <see cref="M:System.Web.Security.Encode" /> method) or that the data should be both decrypted and validated (for the <see cref="M:System.Web.Security.Decode" /> method).</summary>
+        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data and that the data should be encrypted (for the <see cref="M:System.Web.Security.MachineKey.Encode(System.Byte[],System.Web.Security.MachineKeyProtection)" /> method) or that the data should be both decrypted and validated (for the <see cref="M:System.Web.Security.MachineKey.Decode(System.String,System.Web.Security.MachineKeyProtection)" /> method).</summary>
       </Docs>
     </Member>
     <Member MemberName="Encryption">
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the data should be encrypted (for the <see cref="M:System.Web.Security.Encode" /> method) or decrypted (for the <see cref="M:System.Web.Security.Decode" /> method).</summary>
+        <summary>Specifies that the data should be encrypted (for the <see cref="M:System.Web.Security.MachineKey.Encode(System.Byte[],System.Web.Security.MachineKeyProtection)" /> method) or decrypted (for the <see cref="M:System.Web.Security.MachineKey.Decode(System.String,System.Web.Security.MachineKeyProtection)" /> method).</summary>
       </Docs>
     </Member>
     <Member MemberName="Validation">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data (for the <see cref="M:System.Web.Security.Encode" /> method) or validated (for the <see cref="M:System.Web.Security.Decode" /> method).</summary>
+        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data (for the <see cref="M:System.Web.Security.MachineKey.Encode(System.Byte[],System.Web.Security.MachineKeyProtection)" /> method) or validated (for the <see cref="M:System.Web.Security.MachineKey.Decode(System.String,System.Web.Security.MachineKeyProtection)" /> method).</summary>
       </Docs>
     </Member>
   </Members>

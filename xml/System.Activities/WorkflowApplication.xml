@@ -3278,8 +3278,8 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         <ReturnType>System.Func&lt;System.Activities.WorkflowApplicationIdleEventArgs,System.Activities.PersistableIdleAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Activities.ActivityFunc" /> that is invoked when the current workflow instance is idle and can be persisted.</summary>
-        <value>The <see cref="T:System.Activities.ActivityFunc" /> that is invoked when the current workflow instance is idle and can be persisted.</value>
+        <summary>Gets or sets the delegate that is invoked when the current workflow instance is idle and can be persisted.</summary>
+        <value>The delegate that is invoked when the current workflow instance is idle and can be persisted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

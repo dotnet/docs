@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern"
+title: "How to: Implement a Component That Supports the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "AsyncCompletedEventArgs class"
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
 ---
-# Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern
+# How to: Implement a Component That Supports the Event-based Asynchronous Pattern
 If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
  This walkthrough illustrates how to create a component that implements the Event-based Asynchronous Pattern. It is implemented using helper classes from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace, which ensures that the component works correctly under any application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], Console applications and Windows Forms applications. This component is also designable with a <xref:System.Windows.Forms.PropertyGrid> control and your own custom designers.  
@@ -248,6 +248,4 @@ If you are writing a class with some operations that may incur noticeable delays
 ## See Also  
  [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
  [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
- [NOT IN BUILD: Multithreading in Visual Basic](https://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)  
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)
+ [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  

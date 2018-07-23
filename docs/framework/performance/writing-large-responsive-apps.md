@@ -271,7 +271,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
  This simple caching strategy adheres to good cache design because it has a size cap.  However, there is more code now than in the original, which means more maintenance costs.  You should adopt the caching strategy only if you’ve found a performance problem, and PerfView has shown that <xref:System.Text.StringBuilder> allocations are a significant contributor.  
   
 ### LINQ and lambdas  
- Using Language-Integrated Query (LINQ) and lambda expressions is a great example of using productive features that you might later find you need to rewrite if the code becomes a significant impact on performance.  
+Language-Integrated Query (LINQ), in conjunction with lambda expressions, is an example of a productivity feature. However, its use may have a significant impact on performance over time, and you might find you need to rewrite your code.
   
  **Example 5: Lambdas, List\<T>, and IEnumerable\<T>**  
   
@@ -299,7 +299,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)`s => s.Name == name`[closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
+ In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  

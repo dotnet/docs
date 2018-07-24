@@ -34,7 +34,7 @@ There are a number of ways to expose asynchronous features to client code. The E
  [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md)  
  Describes how to create a component that implements the Event-based Asynchronous Pattern. It is implemented using helper classes from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace, which ensures that the component works correctly under any application model.  
 
- [How to: Implement a Client of the Event-based Asynchronous Pattern](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md)
+ [How to: Implement a Client of the Event-based Asynchronous Pattern](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md)  
  Describes how to create a client that uses a component that implements the Event-based Asynchronous Pattern.
   
  [How to: Use Components That Support the Event-based Asynchronous Pattern](how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  

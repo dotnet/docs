@@ -125,17 +125,17 @@ Failure to follow the above will result in a compilation error.
 
 [Pattern Matching](language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
 
-[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L705-L739)]
+[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L705-L742)]
 
 You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
 
-[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L741-L759)]
+[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L744-L762)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentally bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.  It is best used when you don't care about certain pieces of a decomposed type when pattern matching, or the final clause when you have enumerated all meaningful cases in a pattern matching expression.
 
 [Active Patterns](language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 
-[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L761-L783)]
+[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L764-L786)]
 
 ## Optional Types
 
@@ -143,7 +143,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 [The Option Type](language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NullReferenceException` in many circumstances.
 
-[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L791-L811)]
+[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L789-L814)]
 
 ## Units of Measure
 
@@ -151,7 +151,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, thus eliminating runtime errors associated with that kind of work.
 
-[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L818-L839)]
+[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L817-L842)]
 
 The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
 
@@ -161,15 +161,15 @@ F# also has full support for .NET classes, [Interfaces](language-reference/inter
 
 [Classes](language-reference/classes.md) are types that represent .NET objects, which can have properties, methods, and events as its [Members](language-reference/members/index.md).
 
-[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L848-L877)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L845-L880)]
 
 Defining generic classes is also very straightforward.
 
-[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L884-L905)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L883-L908)]
 
 To implement an Interface, you can use either `interface ... with` syntax or an [Object Expression](language-reference/object-expressions.md).
 
-[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L912-L931)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L911-L934)]
 
 ## Which Types to Use
 

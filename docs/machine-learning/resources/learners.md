@@ -4,7 +4,7 @@ The following table will help you understand the different learning algorithms (
 > [!NOTE]
 > ML.NET is currently in Preview. Not all learning algorithms are currently supported. To submit a request for a certain learner, please open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
 
-| Learner Name | Binary classification | Multi-class classification | Regression | Ranking | Clustering | Anomaly Detection |
+| Learner Name | Binary classification | Multiclass classification | Regression | Ranking | Clustering | Anomaly Detection |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|
 | Averaged Perceptron |[:heavy_check_mark:](xref:Microsoft.ML.Trainers.AveragedPerceptronBinaryClassifier)||||||
 | FastForest|[:heavy_check_mark:](xref:Microsoft.ML.Trainers.FastForestBinaryClassifier)||[:heavy_check_mark:](xref:Microsoft.ML.Trainers.FastForestRegressor)||||

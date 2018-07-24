@@ -407,7 +407,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Nullable%601.HasValue%2A> property of a `Nullable<Integer>` object to determine whether it should display the object's <xref:System.Nullable%601.Value%2A> property or its <xref:System.Nullable%601.GetValueOrDefault%2A> property.  
+ The following example uses the <xref:System.Nullable%601.HasValue%2A> property of a `Nullable<int>` (`Nullable(Of Integer)` in Visual Basic) object to determine whether it should display the object's <xref:System.Nullable%601.Value%2A> property or its <xref:System.Nullable%601.GetValueOrDefault%2A> property.  
   
  [!code-csharp[System.Nullable~1.HasValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullable~1.hasvalue/cs/hasvalue2.cs#1)]
  [!code-vb[System.Nullable~1.HasValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullable~1.hasvalue/vb/hasvalue2.vb#1)]  
@@ -614,7 +614,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Nullable%601.HasValue%2A> property of a `Nullable<Integer>` object to determine whether it should display the object's <xref:System.Nullable%601.Value%2A> property or its <xref:System.Nullable%601.GetValueOrDefault%2A> property.  
+ The following example uses the <xref:System.Nullable%601.HasValue%2A> property of a `Nullable<int>` (`Nullable(Of Integer)` in Visual Basic) object to determine whether it should display the object's <xref:System.Nullable%601.Value%2A> property or its <xref:System.Nullable%601.GetValueOrDefault%2A> property.  
   
  [!code-csharp[System.Nullable~1.HasValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullable~1.hasvalue/cs/hasvalue2.cs#1)]
  [!code-vb[System.Nullable~1.HasValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullable~1.hasvalue/vb/hasvalue2.vb#1)]  

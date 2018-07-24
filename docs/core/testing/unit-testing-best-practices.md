@@ -89,6 +89,39 @@ The main thing to remember about mocks versus stubs is that mocks are just like 
 
 ## Best practices
 
+### Naming your tests
+The name of your test should consist of three parts:
+- The name of the method being tested.
+- The scenario under which it's being tested.
+- The expected behavior when the scenario is invoked.
+
+#### Why?
+- Naming standards are important because they explicitly express intent of the test.
+
+#### Bad:
+```csharp
+public void Test_Invalid()
+{
+    var glossary = new Glossary();
+
+    var result = glossary.IsValidWord(null);
+
+    Assert.False(result);
+}
+```
+
+#### Better:
+```csharp
+public void IsValidWord_InputIsNull_ReturnsFalse()
+{
+    var glossary = new Glossary();
+
+    var result = glossary.IsValidWord(null);
+
+    Assert.False(result);
+}
+```
+
 ### Arranging your tests
 Arrange, Act, Assert is a common pattern when unit testing. As the name implies, it consists of three main actions:
 - *Arrange* your objects, creating and setting them up as necessary.
@@ -117,39 +150,6 @@ public void IsValidWord_InputIsNull_ReturnsFalse()
 {
     var glossary = new Glossary();
     
-    var result = glossary.IsValidWord(null);
-
-    Assert.False(result);
-}
-```
-
-### Naming your tests
-The name of your test should consist of three parts:
-- The name of the method being tested.
-- The scenario under which it's being tested.
-- The expected behavior when the scenario is invoked.
-
-#### Why?
-- Naming standards are important because they explicitly express intent of the test.
-
-#### Bad:
-```csharp
-public void Test_Invalid()
-{
-    var glossary = new Glossary();
-
-    var result = glossary.IsValidWord(null);
-
-    Assert.False(result);
-}
-```
-
-#### Better:
-```csharp
-public void IsValidWord_InputIsNull_ReturnsFalse()
-{
-    var glossary = new Glossary();
-
     var result = glossary.IsValidWord(null);
 
     Assert.False(result);

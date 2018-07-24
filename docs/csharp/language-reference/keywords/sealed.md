@@ -44,7 +44,7 @@ sealed class B : A {}
   
  The result is an error message:  
   
- `'MyDerivedC' cannot inherit from sealed class 'SealedClass'.`  
+ `'MyDerivedC': cannot derive from sealed type 'SealedClass'`  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

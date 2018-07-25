@@ -261,18 +261,14 @@ static void Main(string[] args)
 
   * You'll see that they are reported as warnings as below.
 
-![Can make const warnings](images/how-to-write-a-csharp-analyzer-and-code-fix-figure3.png)
+![Can make const warnings](media/make-const-warning.png)
 
-  * Notice that if you type const before each variable, the warnings are automatically removed. Additionally, changing a variable to const can affect the reporting of other variables.
+  * Notice that if you type const before each variable, the warnings are automatically removed. Additionally, changing a variable to const can affect the reporting of other variables. Add the `const` modifier to both `i` and `j`, and you get a new warning on `k` because it can now be `const`.
 
-![Editing updates warnings live](images/how-to-write-a-csharp-analyzer-and-code-fix-figure4.png)
- 
 9) Congratulations! You've created your first Analyzer using the .NET Compiler Platform APIs to perform non-trivial syntactic and semantic analysis.
 
-<<< UP TO HERE   >>>
-
-
 ## Writing the Code Fix
+
 Any Analyzer can provide one or more Code Fixes which define an edit that can be performed to the source code to address the reported issue. For the Analyzer that you just created, you can provide a Code Fix that inserts the const keyword when the user chooses it from the light bulb UI in the editor. To do so, follow the steps below.
 
 1) First, open the CodeFixProvider.cs file that was already added by the Analyzer with Code Fix template.  This Code Fix is already wired up to the Diagnostic ID produced by your Diagnostic Analyzer, but it doesn't yet implement the right code transform.
@@ -283,6 +279,7 @@ Any Analyzer can provide one or more Code Fixes which define an edit that can be
 
 4) In RegisterCodeFixesAsync, change the ancestor node type you're searching for to LocalDeclarationStatementSyntax to match the Diagnostic.
 
+<SnippetFindDeclarationNode>
 ```C#
 // Find the local declaration identified by the diagnostic.
 var declaration = root.FindToken(diagnosticSpan.Start).Parent.AncestorsAndSelf().OfType<LocalDeclarationStatementSyntax>().First();
@@ -357,13 +354,14 @@ namespace FirstAnalyzerCS
 ```
 
 7) Now it's time to implement the MakeConstAsync method, which will transform the original Document into the fixed Document.
-  * First, declare a MakeConstAsync method with the following signature.  This method will transform the Document representing the user's source file into a fixed Document that now contains a const declaration.
+
+    * First, declare a `MakeConstAsync` method with the following signature.  This method will transform the <xref:Microsoft.CodeAnalysis.Document> representing the user's source file into a fixed <xref:Microsoft.CodeAnalysis.Document> that now contains a `const` declaration.
 
 ```C#
 private async Task<Document> MakeConstAsync(Document document, LocalDeclarationStatementSyntax localDeclaration, CancellationToken cancellationToken)
 ```
 
-  * Then, create a new const keyword token that will be inserted at the front of the declaration statement. Be careful to first remove any leading trivia from the first token of the declaration statement and attach it to the const token.
+    * Then, create a new const keyword token that will be inserted at the front of the declaration statement. Be careful to first remove any leading trivia from the first token of the declaration statement and attach it to the const token.
 
 ```C#
 // Remove the leading trivia from the local declaration.
@@ -376,28 +374,30 @@ var trimmedLocal = localDeclaration.ReplaceToken(
 var constToken = SyntaxFactory.Token(leadingTrivia, SyntaxKind.ConstKeyword, SyntaxFactory.TriviaList(SyntaxFactory.ElasticMarker));
 ```
 
-  * Next, create a new SyntaxTokenList containing the const token and the existing modifiers of the declaration statement.
+    * Next, create a new SyntaxTokenList containing the const token and the existing modifiers of the declaration statement.
 
 ```C#
 // Insert the const token into the modifiers list, creating a new modifiers list.
 var newModifiers = trimmedLocal.Modifiers.Insert(0, constToken);
 ```
 
-  * Create a new declaration statement containing the new list of modifiers.
+    * Create a new declaration statement containing the new list of modifiers.
 
 ```C#
 // Produce the new local declaration.
 var newLocal = trimmedLocal.WithModifiers(newModifiers);
 ```
 
-  * Add a Formatter syntax annotation to the new declaration statement, which is an indicator to the Code Fix engine to format any whitespace using the C# formatting rules.  You will need to hit Ctrl+. on the Formatter type to add a using statement for the Microsoft.CodeAnalysis.Formatting namespace.
+    * Add a Formatter syntax annotation to the new declaration statement, which is an indicator to the Code Fix engine to format any whitespace using the C# formatting rules.  You will need to hit Ctrl+. on the Formatter type to add a using statement for the Microsoft.CodeAnalysis.Formatting namespace.
 
 ```C#
 // Add an annotation to format the new local declaration.
 var formattedLocal = newLocal.WithAdditionalAnnotations(Formatter.Annotation);
 ```
 
-  * Retrieve the root SyntaxNode from the Document and use it to replace the old declaration statement with the new one.
+Note that you have to add a new namespace here.
+
+    * Retrieve the root SyntaxNode from the Document and use it to replace the old declaration statement with the new one.
 
 ```C#
 // Replace the old local declaration with the new local declaration.
@@ -405,14 +405,14 @@ var oldRoot = await document.GetSyntaxRootAsync(cancellationToken);
 var newRoot = oldRoot.ReplaceNode(localDeclaration, formattedLocal);
 ```
 
-  * Finally, return a new Document containing the updated syntax root, representing the result of the tree transformation that you just performed.
+    * Finally, return a new Document containing the updated syntax root, representing the result of the tree transformation that you just performed.
 
 ```C#
 // Return document with transformed tree.
 return document.WithSyntaxRoot(newRoot);
 ```
 
-  * At this point, your MakeConstAsync method should be like so:
+    * At this point, your MakeConstAsync method should be like so:
 
 ```C#
 private async Task<Document> MakeConstAsync(Document document, LocalDeclarationStatementSyntax localDeclaration, CancellationToken cancellationToken)
@@ -445,7 +445,8 @@ private async Task<Document> MakeConstAsync(Document document, LocalDeclarationS
 ```
 
 8) Press F5 to run the Analyzer project in a second instance of Visual Studio.
-  * In the second Visual Studio instance, create a new C# Console Application project and, like before, add a few local variable declarations initialized with to constant values in the Main method.
+
+    * In the second Visual Studio instance, create a new C# Console Application project and, like before, add a few local variable declarations initialized with to constant values in the Main method.
 
 ```C#
 static void Main(string[] args)
@@ -456,30 +457,34 @@ static void Main(string[] args)
 }
 ```
 
-  * You'll see that they are reported as warnings and "light bulb" suggestions appear next to them when the editor caret is on the same line.
-  * Move the editor caret to one of the squiggly underlines and press Ctrl+. to display the suggestion. Notice that a preview window appears next to the suggestion menu showing what the code will look like after the Code Fix is invoked. 
-
-![Light-bulb menu with preview](images/how-to-write-a-csharp-analyzer-and-code-fix-figure5.png)
+    * You'll see that they are reported as warnings and "light bulb" suggestions appear next to them when the editor caret is on the same line.
+    * Move the editor caret to one of the squiggly underlines and press Ctrl+. to display the suggestion. Notice that a preview window appears next to the suggestion menu showing what the code will look like after the Code Fix is invoked.
 
 ## Fixing Bugs
+
 Sadly, there are a few bugs in the implementation.
 
 * The Diagnostic Analyzer's AnalyzeNode method does not check to see if the constant value is actually convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant.
 
-* Reference types are not handled properly. The only constant value allowed for a reference type is null, except in this case of System.String, which allows string literals. In other words, const string s = "abc"' is legal, but const object s = "abc"' is not. 
+* Reference types are not handled properly. The only constant value allowed for a reference type is null, except in this case of System.String, which allows string literals. In other words, const string s = "abc"' is legal, but const object s = "abc"' is not.
 
 * If a variable is declared with the "var" keyword, the Code Fix does the wrong thing and generates a "const var" declaration, which is not supported by the C# language. To fix this bug, the code fix must replace the "var" keyword with the inferred type's name.
 Fortunately, all of the above bugs can be addressed using the same techniques that you just learned.
 
-1) To fix the first bug, first open DiagnosticAnalyzer.cs and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values.
-  * Immediately _before_ the first foreach loop, call context.SemanicModel.GetTypeInfo() to retrieve detailed information about the declared type of the local declaration:
+<<< WRite tests for each of these >>>
 
-```C#
+1) To fix the first bug, first open **DiagnosticAnalyzer.cs** and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values.
+
+    * Immediately _before_ the first foreach loop, call `context.SemanicModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
+
+SnippetBugs
+
+```csharp
 var variableTypeName = localDeclaration.Declaration.Type;
 var variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
 ```
 
-  * Next, add the following code before the closing curly brace of the foreach loop to call context.SemanticModel.ClassifyConversion() and determine whether the initializer is convertible to the local declaration type. If there is no conversion, or the conversion is user-defined, the variable can't be a local constant.
+    * Next, add the following code before the closing curly brace of the foreach loop to call `context.SemanticModel.ClassifyConversion()` and determine whether the initializer is convertible to the local declaration type. If there is no conversion, or the conversion is user-defined, the variable can't be a local constant.
 
 ```C#
 // Ensure that the initializer value can be converted to the type of the
@@ -491,8 +496,11 @@ if (!conversion.Exists || conversion.IsUserDefined)
 }
 ```
 
+<< One more test should pass>>
+
 2) The next bug fix builds upon the last one.
-  * Before the closing curly brace of the same foreach loop, add the following code to check the type of the local declaration when the constant is a string or null.
+
+    * Before the closing curly brace of the same foreach loop, add the following code to check the type of the local declaration when the constant is a string or null.
 
 ```C#
 // Special cases:
@@ -513,7 +521,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 }
 ```
 
-  * With this code in place, the AnalyzeNode method should look like so.
+    * With this code in place, the AnalyzeNode method should look like so.
 
 ```C#
 private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
@@ -590,7 +598,8 @@ private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
 ```
 
 3) Fixing the third issue requires a little more code to replace the var' keyword with the correct type name.
-  * Return to CodeFixProvider.cs and replace the code at the comment which reads "Produce the new local declaration" with the following code:
+
+    * Return to CodeFixProvider.cs and replace the code at the comment which reads "Produce the new local declaration" with the following code:
 
 ```C#
 // If the type of the declaration is 'var', create a new type name
@@ -607,7 +616,7 @@ var newLocal = trimmedLocal.WithModifiers(newModifiers)
                            .WithDeclaration(variableDeclaration);
 ```
 
-  * Next, add a check inside curly braces of the if-block you wrote above to ensure that the type of the variable declaration is not an alias. If it is an alias to some other type (e.g. "using var = System.String;") then it is legal to declare a local "const var".
+    * Next, add a check inside curly braces of the if-block you wrote above to ensure that the type of the variable declaration is not an alias. If it is an alias to some other type (e.g. "using var = System.String;") then it is legal to declare a local "const var".
 
 ```C#
 var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
@@ -621,7 +630,7 @@ if (aliasInfo == null)
 }
 ```
 
-  * Inside the curly braces that you wrote in the code above, add the following code to retrieve the type inferred for var' inside the curly braces of the if-block you wrote above.
+    * Inside the curly braces that you wrote in the code above, add the following code to retrieve the type inferred for var' inside the curly braces of the if-block you wrote above.
 
 ```C#
 // Retrieve the type inferred for var.
@@ -634,7 +643,7 @@ if (type.Name != "var")
 }
 ```
 
-  * Now, add the code to create a new TypeSyntax for the inferred type inside the curly braces of the if-block you wrote above.
+    * Now, add the code to create a new TypeSyntax for the inferred type inside the curly braces of the if-block you wrote above.
 
 ```C#
 // Create a new TypeSyntax for the inferred type. Be careful
@@ -644,8 +653,9 @@ var typeName = SyntaxFactory.ParseTypeName(type.ToDisplayString())
     .WithTrailingTrivia(variableTypeName.GetTrailingTrivia());
 ```
 
-  * Add a Simplifier syntax annotation to the type name to ensure that the code fix engine reduces the type name to its minimally-qualified form.  Use Ctrl+. on Simplifier to add the using statement for Microsoft.CodeAnalysis.Simplification.
+    * Add a Simplifier syntax annotation to the type name to ensure that the code fix engine reduces the type name to its minimally-qualified form.  Use Ctrl+. on Simplifier to add the using statement for Microsoft.CodeAnalysis.Simplification.
 
+// ADDS A NAMESPACE
 ```C#
 // Add an annotation to simplify the type name.
 var simplifiedTypeName = typeName.WithAdditionalAnnotations(Simplifier.Annotation);

@@ -10,13 +10,20 @@ Version numbers for the .NET Core are challenging because .NET Core SDK and .NET
 2. Maintain alignment in version numbers between .NET Core SDK and .NET Core Runtime.
 3. Use semantic versioning for both the .NET Core SDK and .NET Core Runtime.
 
-2.0.0 forced version alignment and this proceeded smoothly for one release. In December 2017 .NET Core SDK had a feature release, with no corresponding release in the .NET Core Runtime. The team chose goals 1 and 3, losing alignment between the .NET Core Runtime and SDK and resulted in a several .NET Core SDK 2.1.x versions that were released before .NET Core Runtime 2.1. Since the SDK is not forwards compatible, these 2.1.x SDK versions could not target .NET Core Runtime 2.1. The team responded to the considerable confusion this caused by switching to goals 1 and 2, abandoning semantic versioning as described in [.NET Core versioning]([[ index.md]]).
+2.0.0 forced version alignment and this proceeded smoothly for one release. In December 2017 .NET Core SDK had a feature release, with no corresponding release in the .NET Core Runtime. The team chose goals 1 and 3, losing alignment between the .NET Core Runtime and SDK and resulted in a several .NET Core SDK 2.1.x versions that were released before .NET Core Runtime 2.1. Since the SDK is not forwards compatible, these 2.1.x SDK versions could not target .NET Core Runtime 2.1. The team responded to the considerable confusion this caused by switching to goals 1 and 2, abandoning semantic versioning as described in [.NET Core versioning](index.md).
 
 Because the timing of the decision to abandon semantic versioning, there were transitional releases in the 2.1.10x and 2.1.20x version number ranges that can also not target .NET Core Runtime 2.1. 
 
 The first two digits of the version numbers realign with the 2.1.0 version of the .NET Core Runtime and the 2.1.300 version of the .NET Core SDK.
 
 Evaluating [releases.json](https://github.com/dotnet/core/blob/master/release-notes/releases.json) yields the following. [[Who can help fill in the missing C# versions?]]
+
+<< this table should include LTS.  Check with Lee Coward >>
+.. Add releases on June 19 and July 10.
+.. Add a column for ASP.NET Core Runtime
+.. Ask Phillip about F# column
+.. Footnote for VB versions aligning to Visauls Studio
+
 
 | Date       | .NET Core SDK(4) | .NET Core Runtimes | Contains C# | Contains VB | Notes |
 |------------|------------------|--------------------|-------------|-------------|-------|

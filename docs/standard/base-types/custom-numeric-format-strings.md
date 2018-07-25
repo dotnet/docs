@@ -47,7 +47,7 @@ You can create a custom numeric format string, which consists of one or more cus
   
  The following sections provide detailed information about each of the custom numeric format specifiers.  
 
-[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-culture-note.md)] 
+[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-note.md)] 
   
 <a name="Specifier0"></a>   
 ## The "0" custom specifier  

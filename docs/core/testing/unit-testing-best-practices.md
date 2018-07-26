@@ -99,28 +99,10 @@ The name of your test should consist of three parts:
 - Naming standards are important because they explicitly express intent of the test.
 
 #### Bad:
-```csharp
-public void Test_Invalid()
-{
-    var glossary = new Glossary();
-
-    var result = glossary.IsValidWord(null);
-
-    Assert.False(result);
-}
-```
+[!code-csharp[BeforeNaming](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeNaming)]
 
 #### Better:
-```csharp
-public void IsValidWord_InputIsNull_ReturnsFalse()
-{
-    var glossary = new Glossary();
-
-    var result = glossary.IsValidWord(null);
-
-    Assert.False(result);
-}
-```
+[!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
 
 ### Arranging your tests
 Arrange, Act, Assert is a common pattern when unit testing. As the name implies, it consists of three main actions:
@@ -133,28 +115,10 @@ Arrange, Act, Assert is a common pattern when unit testing. As the name implies,
 - Less chance to intermix assertions with "Act" code.
 
 #### Bad:
-```csharp
-public void IsValidWord_InputIsNull_ReturnsFalse()
-{
-    // Arrange
-    var glossary = new Glossary();
-
-    // Assert
-    Assert.False(glossary.IsValidWord(null));
-}
-```
+[!code-csharp[BeforeArranging](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeArranging)]
 
 #### Better:
-```csharp
-public void IsValidWord_InputIsNull_ReturnsFalse()
-{
-    var glossary = new Glossary();
-    
-    var result = glossary.IsValidWord(null);
-
-    Assert.False(result);
-}
-```
+[!code-csharp[AfterArranging](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterArranging)]
 
 ### Write minimally passing tests
 The input to be used in a unit test should be the simplest possible in order to pass the behavior that you are currently testing.
@@ -164,30 +128,10 @@ The input to be used in a unit test should be the simplest possible in order to 
 - Closer to testing behavior over implementation.
 
 #### Bad:
-```csharp
-public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
-{
-    var glossary = new Glossary();
-    var firstWord = "aardvark";
-    var secondWord = "baboon";
-
-    var result = glossary.ConcatenateWords(firstWord, secondWord)
-
-    Assert.Equals("aardvark,baboon", result)
-}
-```
+[!code-csharp[BeforeMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMinimallyPassing)]
 
 #### Better:
-```csharp
-public void ConcatenateWords_ByDefault_ReturnsStringWithCommaBetween()
-{
-    var glossary = new Glossary();
-
-    var result = glossary.ConcatenateWords("a", "b")
-
-    Assert.Equals("a,b", result)
-}
-```
+[!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
 
 ### Avoid magic strings
 Naming variables in unit tests is as important, if not more important, than naming variables in production code. Unit tests should not contain magic strings.
@@ -197,29 +141,10 @@ Naming variables in unit tests is as important, if not more important, than nami
 - Explicitly shows what you're trying to *prove* rather than trying to *accomplish*.
 
 #### Bad:
-```csharp
-public void TryParseWord_InputIsNumber_ReturnsInvalidInputErrorCode()
-{
-    var glossary = new Glossary();
-
-    glossary.TryParseWord("1", out var result)
-
-    Assert.Equal(-1, result);
-}
-```
+[!code-csharp[BeforeMagicString](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMagicString)]
 
 #### Better:
-```csharp
-public void TryParseWord_InputIsNumber_ReturnsInvalidInputErrorCode()
-{
-    var glossary = new Glossary();
-    const int ERROR_RESULT = -1;
-
-    glossary.TryParseWord("1", out var result)
-
-    Assert.Equal(ERROR_RESULT, result);
-}
-```
+[!code-csharp[AfterMagicString](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterMagicString)]
 
 ### Avoid logic in tests
 When writing your unit tests avoid manual string concatenation and logical conditions such as `if`, `while`, `for`, `switch`, etc.
@@ -229,46 +154,10 @@ When writing your unit tests avoid manual string concatenation and logical condi
 - Focus on the end result, rather than implementation details.
 
 #### Bad:
-```csharp
-public void ExclaimAllWords_TwoWords_ReturnsArrayOfExclaimedWords()
-{
-    var glossary = new Glossary();
-    var wordList = new string[] 
-    {
-        "cat",
-        "dog"
-    };
-
-    var result = glossary.ExclaimAllWords(wordList);
-
-    for(int x = 0; x < result.length; x++)
-    {
-        Assert.Equal(wordList[x] + '!', result[x]);
-    }
-}
-```
+[!code-csharp[LogicInTests](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#LogicInTests)]
 
 #### Better:
-```csharp
-public void ExclaimAllWords_TwoWords_ReturnsArrayOfExclaimedWords()
-{
-    var glossary = new Glossary();
-    var input = new string[] 
-    {
-        "a",
-        "b"
-    };
-    var expected = new string[] 
-    {
-        "a!",
-        "b!"
-    };
-
-    var result = glossary.ExclaimAllWords(input);
-
-    Assert.Equal(expected, result);
-}
-```
+[!code-csharp[AfterTestLogic](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterTestLogic)]
 
 ### Prefer helper methods to setup and teardown
 If you require a similar object or state for your tests, prefer a helper method than leveraging Setup and Teardown attributes if they exist.
@@ -279,55 +168,22 @@ If you require a similar object or state for your tests, prefer a helper method 
 - Less chance of sharing state between tests which creates unwanted dependencies between them.
 
 #### Bad:
+[!code-csharp[BeforeSetup](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeSetup)]
+
 ```csharp
-Glossary glossary;
-
-[SetUp]
-public void Initialize()
-{
-    glossary = new Glossary();
-}
-
-// more tests..
-
-public void ParseWord_NullValue_ThrowsArgumentException()
-{
-    Assert.Throws<ArgumentException>(() => glossary.ParseWord(null));
-}
-
-public void ParseWord_EmptyString_ReturnsEmptyString()
-{
-    Assert.Empty(glossary.ParseWord(""));
-}
+// more tests...
 ```
+
+[!code-csharp[BeforeHelperMethod](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeHelperMethod)]
 
 #### Better:
+[!code-csharp[AfterHelperMethod](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterHelperMethod)]
+
 ```csharp
-public void ParseWord_NullValue_ThrowsArgumentException()
-{
-    var glossary = CreateDefaultGlossary();
-
-    var result = () => glossary.ParseWord(null);
-
-    Assert.Throws<ArgumentException>(result);
-}
-
-public void ParseWord_EmptyString_ReturnsEmptyString()
-{
-    var glossary = CreateDefaultGlossary();
-
-    var result = glossary.ParseWord("");
-
-    Assert.Empty(result);
-}
-
-// more tests..
-
-private Glossary CreateDefaultGlossary()
-{
-    return new Glossary();
-}
+// more tests...
 ```
+
+[!code-csharp[AfterSetup](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterSetup)]
 
 ### Avoid multiple asserts
 When writing your tests, try to only include one Assert per test. Common approaches to using only one assert include:
@@ -340,29 +196,10 @@ When writing your tests, try to only include one Assert per test. Common approac
 - Gives you the entire picture as to why your tests are failing. 
 
 #### Bad:
-```csharp
-public void IsValidWord_InputIsNullOrEmpty_ReturnsFalse()
-{
-    var glossary = new Glossary();
-
-    Assert.False(glossary.IsValidWord(null)); // potential NullException
-    Assert.False(glossary.IsValidWord("")); // this never gets executed if the above test fails
-}
-```
+[!code-csharp[BeforeMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMultipleAsserts)]
 
 #### Better:
-```csharp
-[InlineData(null)]
-[InlineData("")]
-public void IsValidWord_InputIsNullOrEmpty_ReturnsFalse(string input)
-{
-    var glossary = new Glossary();
-    
-    var result = glossary.IsValidWord(input);
-
-    Assert.False(result);
-}
-```
+[!code-csharp[AfterMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterMultipleAsserts)]
 
 ### Validate private methods by unit testing public methods
 In most cases, there should not be a need to test a private method. Private methods are an implementation detail. You can think of it this way: private methods never exist in isolation. At some point, there is going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one. 

@@ -7,6 +7,8 @@ ms.date: 01/30/2017
 ---
 # .NET Core Support
 
+<< DEscribe Current and LTS support strategy. Point to table in the version history table
+>>
 This is a general description of .NET Core support.
 
 ## LTS and Current Release Trains

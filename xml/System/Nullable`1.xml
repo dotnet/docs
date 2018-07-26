@@ -287,13 +287,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the value of the current <see cref="T:System.Nullable`1" /> object, or the object's default value.</summary>
-        <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property if the  <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="true" />; otherwise, the default value of the current <see cref="T:System.Nullable`1" /> object. The type of the default value is the type argument of the current <see cref="T:System.Nullable`1" /> object, and the value of the default value consists solely of binary zeroes.</returns>
+        <summary>Retrieves the value of the current <see cref="T:System.Nullable`1" /> object, or the default value of the underlying type.</summary>
+        <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property if the  <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="true" />; otherwise, the default value of the underlying type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Nullable%601.GetValueOrDefault%2A> method returns a value even if the <xref:System.Nullable%601.HasValue%2A> property is `false` (unlike the <xref:System.Nullable%601.Value%2A> property, which throws an exception).  
+ The <xref:System.Nullable%601.GetValueOrDefault%2A> method returns a value even if the <xref:System.Nullable%601.HasValue%2A> property is `false` (unlike the <xref:System.Nullable%601.Value%2A> property, which throws an exception). If the <xref:System.Nullable%601.HasValue%2A> property is `false`, the method returns the [default](~/docs/csharp/language-reference/keywords/default-values-table.md) value of the underlying type.  
   
    
   

@@ -22,8 +22,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an enumerator for the elements of a <see cref="T:System.ReadOnlySpan`1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) of the C# language and the [For Each...Next](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) construct in Visual Basic hides the complexity of enumerators. Instead of directly manipulating the enumerator, using `foreach` or `For Each...Next` is recommended. 
+
+Initially, the enumerator is positioned before the first element in the <xref:System.ReadOnlySpan`1>. At this position, <xref:System.ReadOnlySpan`1.Enumerator.Current> is undefined. You must call <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> to advance the enumerator to the first item in the <xref:System.ReadOnlySpan`1> before reading the value of <xref:System.ReadOnlySpan`1.Enumerator.Current>.
+
+<xref:System.ReadOnlySpan`1.Enumerator.Current> returns the same value until <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> is called. <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> sets <xref:System.ReadOnlySpan`1.Enumerator.Current> to the next item in the <xref:System.ReadOnlySpan`1>.
+
+If <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> passes the end of the <xref:System.ReadOnlySpan`1>, <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this state, subsequent calls to <xref:System.ReadOnlySpan`1.Enumerator.MoveNext%2A> also return `false` and <xref:System.ReadOnlySpan`1.Enumerator.Current> is undefined. You cannot set <xref:System.ReadOnlySpan`1.Enumerator.Current> to the first item in the <xref:System.ReadOnlySpan`1> again; you must create a new enumerator instance instead. 
+
+Though the <xref:System.ReadOnlySpan`1> is allocated on the stack, the underlying data on which the <xref:System.ReadOnlySpan`1> points to, may not be. Therefore, enumerating through a <xref:System.ReadOnlySpan`1> is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you must implement your own synchronization.
+
+Unlike some other enumerator structures in .NET, the <xref:System.ReadOnlySpan`1.Enumerator>:
+
+- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator`1> interface. This is because <xref:System.ReadOnlySpan`1.Enumerator> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) and cannot be boxed.
+
+- Does not include a `Reset` method, which can set the enumerator to its initial position before the first element in the span. (The <xref:System.Collections.IEnumerator.Reset?displayProperty=nameWithType> method must be implemented as part of the interface, but most implementors either throw an exception or provide no implementation.)]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -44,12 +60,20 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.T&amp;</ReturnType>
+        <ReturnType>T@</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the item at the current position of the enumerator.</summary>
+        <value>The element in the <see cref="T:System.ReadOnlySpan`1" /> at the current position of the enumerator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[`Current` is undefined under either of the following conditions: 
+
+- Immediately after the enumerator is created, the enumerator is positioned before the first element in the span. <xref:System.ReadOnlySpan`1.Enumerator.MoveNext*> must be called to advance the enumerator to the first element of the span before reading the value of `Current`.
+
+- The last call to <xref:System.ReadOnlySpan`1.Enumerator.MoveNext*> returned `false`, which indicates the end of the span. 
+
+`Current` returns the same value until <xref:System.ReadOnlySpan`1.Enumerator.MoveNext*> is called. <xref:System.ReadOnlySpan`1.Enumerator.MoveNext*> sets `Current` to the next item in the span.]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -69,9 +93,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Advances the enumerator to the next item of the <see cref="System.ReadOnlySpan`1" />.</summary>
+        <returns>`true` if the enumerator successfully advanced to the next item; `false` if the end of the span has been passed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[After an enumerator is created, it is positioned before the first element in the span, and the first call to `MoveNext` advances the enumerator to the first item in the span. 
+
+If `MoveNext` passes the end of the span, `MoveNext` returns `false`. When the enumerator is at this state, subsequent calls to `MoveNext` also return `false`.]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

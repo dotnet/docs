@@ -60,7 +60,7 @@ The ref return value is an alias to another variable in the called method's scop
 Assume the `GetContactInformation` method is declared as a ref return:
 
 ```csharp
-public ref Person GetContactInformation(string fname, string lname)
+public ref Person GetContactInformation(string fname, string lname);
 ```
 
 A by-value assignment reads the value of a variable and assigns it to a new variable:

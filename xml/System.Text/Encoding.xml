@@ -45,11 +45,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
  Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
- The .NET Framework provides the following implementations of the <xref:System.Text.Encoding> class to support current Unicode encodings and other encodings:  
+ .NET provides the following implementations of the <xref:System.Text.Encoding> class to support current Unicode encodings and other encodings:  
   
 -   <xref:System.Text.ASCIIEncoding> encodes Unicode characters as single 7-bit ASCII characters. This encoding only supports character values between U+0000 and U+007F. Code page 20127. Also available through the <xref:System.Text.Encoding.ASCII%2A> property.  
   
@@ -65,150 +65,153 @@
   
  Use the <xref:System.Text.Encoding.GetEncoding%2A> method to obtain other encodings, and call the <xref:System.Text.Encoding.GetEncodings%2A> method to get a list of all encodings.  
   
- The following table lists the encodings supported by the .NET Framework. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> and <xref:System.Text.EncodingInfo.DisplayName%2A?displayProperty=nameWithType> properties. An asterisk in the last column indicates that the code page is natively supported by the .NET Framework, regardless of the underlying platform. Note that code pages whose <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> property corresponds to an international standard do not necessarily comply in full with that standard.  
-  
-|Code page|Name|Display name|.NET Framework support|  
+ The following table lists the encodings supported by .NET Framework and .NET Core. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> and <xref:System.Text.EncodingInfo.DisplayName%2A?displayProperty=nameWithType> properties. A check mark in the **.NET Framework support** and **.NET Core support** columns indicates that the code page is natively supported by that .NET implementation, regardless of the underlying platform. For .NET Framework, the availability of other encodings listed in the table depends on the operating system. For .NET Core, other encodings are available by using the <xref:System.Text.CodePagesEncodingProvider?displayProperty=nameWithType> class or by deriving from the <xref:System.Text.EncodingProvider?displayProperty=nameWithType> class.  
+
+> [!NOTE]
+> Code pages whose <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> property corresponds to an international standard do not necessarily comply in full with that standard. 
+
+|Code page|Name|Display name|.NET Framework support| .NET Core support | 
 |---------------|----------|------------------|----------------------------|  
-|37|IBM037|IBM EBCDIC (US-Canada)||  
-|437|IBM437|OEM United States||  
-|500|IBM500|IBM EBCDIC (International)||  
-|708|ASMO-708|Arabic (ASMO 708)||  
-|720|DOS-720|Arabic (DOS)||  
-|737|ibm737|Greek (DOS)||  
-|775|ibm775|Baltic (DOS)||  
-|850|ibm850|Western European (DOS)||  
-|852|ibm852|Central European (DOS)||  
-|855|IBM855|OEM Cyrillic||  
-|857|ibm857|Turkish (DOS)||  
-|858|IBM00858|OEM Multilingual Latin I||  
-|860|IBM860|Portuguese (DOS)||  
-|861|ibm861|Icelandic (DOS)||  
-|862|DOS-862|Hebrew (DOS)||  
-|863|IBM863|French Canadian (DOS)||  
-|864|IBM864|Arabic (864)||  
-|865|IBM865|Nordic (DOS)||  
-|866|cp866|Cyrillic (DOS)||  
-|869|ibm869|Greek, Modern (DOS)||  
-|870|IBM870|IBM EBCDIC (Multilingual Latin-2)||  
-|874|windows-874|Thai (Windows)||  
-|875|cp875|IBM EBCDIC (Greek Modern)||  
-|932|shift_jis|Japanese (Shift-JIS)||  
-|936|gb2312|Chinese Simplified (GB2312)|✓|  
-|949|ks_c_5601-1987|Korean||  
-|950|big5|Chinese Traditional (Big5)||  
-|1026|IBM1026|IBM EBCDIC (Turkish Latin-5)||  
-|1047|IBM01047|IBM Latin-1||  
-|1140|IBM01140|IBM EBCDIC (US-Canada-Euro)||  
-|1141|IBM01141|IBM EBCDIC (Germany-Euro)||  
-|1142|IBM01142|IBM EBCDIC (Denmark-Norway-Euro)||  
-|1143|IBM01143|IBM EBCDIC (Finland-Sweden-Euro)||  
-|1144|IBM01144|IBM EBCDIC (Italy-Euro)||  
-|1145|IBM01145|IBM EBCDIC (Spain-Euro)||  
-|1146|IBM01146|IBM EBCDIC (UK-Euro)||  
-|1147|IBM01147|IBM EBCDIC (France-Euro)||  
-|1148|IBM01148|IBM EBCDIC (International-Euro)||  
-|1149|IBM01149|IBM EBCDIC (Icelandic-Euro)||  
-|1200|utf-16|Unicode|✓|  
-|1201|unicodeFFFE|Unicode (Big endian)|✓|  
-|1250|windows-1250|Central European (Windows)||  
-|1251|windows-1251|Cyrillic (Windows)||  
-|1252|Windows-1252|Western European (Windows)|✓|  
-|1253|windows-1253|Greek (Windows)||  
-|1254|windows-1254|Turkish (Windows)||  
-|1255|windows-1255|Hebrew (Windows)||  
-|1256|windows-1256|Arabic (Windows)||  
-|1257|windows-1257|Baltic (Windows)||  
-|1258|windows-1258|Vietnamese (Windows)||  
-|1361|Johab|Korean (Johab)||  
-|10000|macintosh|Western European (Mac)||  
-|10001|x-mac-japanese|Japanese (Mac)||  
-|10002|x-mac-chinesetrad|Chinese Traditional (Mac)||  
-|10003|x-mac-korean|Korean (Mac)|✓|  
-|10004|x-mac-arabic|Arabic (Mac)||  
-|10005|x-mac-hebrew|Hebrew (Mac)||  
-|10006|x-mac-greek|Greek (Mac)||  
-|10007|x-mac-cyrillic|Cyrillic (Mac)||  
-|10008|x-mac-chinesesimp|Chinese Simplified (Mac)|✓|  
-|10010|x-mac-romanian|Romanian (Mac)||  
-|10017|x-mac-ukrainian|Ukrainian (Mac)||  
-|10021|x-mac-thai|Thai (Mac)||  
-|10029|x-mac-ce|Central European (Mac)||  
-|10079|x-mac-icelandic|Icelandic (Mac)||  
-|10081|x-mac-turkish|Turkish (Mac)||  
-|10082|x-mac-croatian|Croatian (Mac)||  
-|12000|utf-32|Unicode (UTF-32)|✓|  
-|12001|utf-32BE|Unicode (UTF-32 Big endian)|✓|  
-|20000|x-Chinese-CNS|Chinese Traditional (CNS)||  
-|20001|x-cp20001|TCA Taiwan||  
-|20002|x-Chinese-Eten|Chinese Traditional (Eten)||  
-|20003|x-cp20003|IBM5550 Taiwan||  
-|20004|x-cp20004|TeleText Taiwan||  
-|20005|x-cp20005|Wang Taiwan||  
-|20105|x-IA5|Western European (IA5)||  
-|20106|x-IA5-German|German (IA5)||  
-|20107|x-IA5-Swedish|Swedish (IA5)||  
-|20108|x-IA5-Norwegian|Norwegian (IA5)||  
-|20127|us-ascii|US-ASCII|✓|  
-|20261|x-cp20261|T.61||  
-|20269|x-cp20269|ISO-6937||  
-|20273|IBM273|IBM EBCDIC (Germany)||  
-|20277|IBM277|IBM EBCDIC (Denmark-Norway)||  
-|20278|IBM278|IBM EBCDIC (Finland-Sweden)||  
-|20280|IBM280|IBM EBCDIC (Italy)||  
-|20284|IBM284|IBM EBCDIC (Spain)||  
-|20285|IBM285|IBM EBCDIC (UK)||  
-|20290|IBM290|IBM EBCDIC (Japanese katakana)||  
-|20297|IBM297|IBM EBCDIC (France)||  
-|20420|IBM420|IBM EBCDIC (Arabic)||  
-|20423|IBM423|IBM EBCDIC (Greek)||  
-|20424|IBM424|IBM EBCDIC (Hebrew)||  
-|20833|x-EBCDIC-KoreanExtended|IBM EBCDIC (Korean Extended)||  
-|20838|IBM-Thai|IBM EBCDIC (Thai)||  
-|20866|koi8-r|Cyrillic (KOI8-R)||  
-|20871|IBM871|IBM EBCDIC (Icelandic)||  
-|20880|IBM880|IBM EBCDIC (Cyrillic Russian)||  
-|20905|IBM905|IBM EBCDIC (Turkish)||  
-|20924|IBM00924|IBM Latin-1||  
-|20932|EUC-JP|Japanese (JIS 0208-1990 and 0212-1990)||  
-|20936|x-cp20936|Chinese Simplified (GB2312-80)|✓|  
-|20949|x-cp20949|Korean Wansung|✓|  
-|21025|cp1025|IBM EBCDIC (Cyrillic Serbian-Bulgarian)||  
-|21866|koi8-u|Cyrillic (KOI8-U)||  
-|28591|iso-8859-1|Western European (ISO)|✓|  
-|28592|iso-8859-2|Central European (ISO)||  
-|28593|iso-8859-3|Latin 3 (ISO)||  
-|28594|iso-8859-4|Baltic (ISO)||  
-|28595|iso-8859-5|Cyrillic (ISO)||  
-|28596|iso-8859-6|Arabic (ISO)||  
-|28597|iso-8859-7|Greek (ISO)||  
-|28598|iso-8859-8|Hebrew (ISO-Visual)|✓|  
-|28599|iso-8859-9|Turkish (ISO)||  
-|28603|iso-8859-13|Estonian (ISO)||  
-|28605|iso-8859-15|Latin 9 (ISO)||  
-|29001|x-Europa|Europa||  
-|38598|iso-8859-8-i|Hebrew (ISO-Logical)|✓|  
-|50220|iso-2022-jp|Japanese (JIS)|✓|  
-|50221|csISO2022JP|Japanese (JIS-Allow 1 byte Kana)|✓|  
-|50222|iso-2022-jp|Japanese (JIS-Allow 1 byte Kana - SO/SI)|✓|  
-|50225|iso-2022-kr|Korean (ISO)|✓|  
-|50227|x-cp50227|Chinese Simplified (ISO-2022)|✓|  
-|51932|euc-jp|Japanese (EUC)|✓|  
-|51936|EUC-CN|Chinese Simplified (EUC)|✓|  
-|51949|euc-kr|Korean (EUC)|✓|  
-|52936|hz-gb-2312|Chinese Simplified (HZ)|✓|  
-|54936|GB18030|Chinese Simplified (GB18030)|✓|  
-|57002|x-iscii-de|ISCII Devanagari|✓|  
-|57003|x-iscii-be|ISCII Bengali|✓|  
-|57004|x-iscii-ta|ISCII Tamil|✓|  
-|57005|x-iscii-te|ISCII Telugu|✓|  
-|57006|x-iscii-as|ISCII Assamese|✓|  
-|57007|x-iscii-or|ISCII Oriya|✓|  
-|57008|x-iscii-ka|ISCII Kannada|✓|  
-|57009|x-iscii-ma|ISCII Malayalam|✓|  
-|57010|x-iscii-gu|ISCII Gujarati|✓|  
-|57011|x-iscii-pa|ISCII Punjabi|✓|  
-|65000|utf-7|Unicode (UTF-7)|✓|  
-|65001|utf-8|Unicode (UTF-8)|✓|  
+|37|IBM037|IBM EBCDIC (US-Canada)|||  
+|437|IBM437|OEM United States|||  
+|500|IBM500|IBM EBCDIC (International)|||  
+|708|ASMO-708|Arabic (ASMO 708)|||  
+|720|DOS-720|Arabic (DOS)|||  
+|737|ibm737|Greek (DOS)|||  
+|775|ibm775|Baltic (DOS)|||  
+|850|ibm850|Western European (DOS)|||  
+|852|ibm852|Central European (DOS)|||  
+|855|IBM855|OEM Cyrillic|||  
+|857|ibm857|Turkish (DOS)|||  
+|858|IBM00858|OEM Multilingual Latin I|||  
+|860|IBM860|Portuguese (DOS)|||  
+|861|ibm861|Icelandic (DOS)|||  
+|862|DOS-862|Hebrew (DOS)|||  
+|863|IBM863|French Canadian (DOS)|||  
+|864|IBM864|Arabic (864)|||  
+|865|IBM865|Nordic (DOS)|||  
+|866|cp866|Cyrillic (DOS)|||  
+|869|ibm869|Greek, Modern (DOS)|||  
+|870|IBM870|IBM EBCDIC (Multilingual Latin-2)|||  
+|874|windows-874|Thai (Windows)|||  
+|875|cp875|IBM EBCDIC (Greek Modern)|||  
+|932|shift_jis|Japanese (Shift-JIS)|||  
+|936|gb2312|Chinese Simplified (GB2312)|✓||  
+|949|ks_c_5601-1987|Korean|||  
+|950|big5|Chinese Traditional (Big5)|||  
+|1026|IBM1026|IBM EBCDIC (Turkish Latin-5)|||  
+|1047|IBM01047|IBM Latin-1|||  
+|1140|IBM01140|IBM EBCDIC (US-Canada-Euro)|||  
+|1141|IBM01141|IBM EBCDIC (Germany-Euro)|||  
+|1142|IBM01142|IBM EBCDIC (Denmark-Norway-Euro)|||  
+|1143|IBM01143|IBM EBCDIC (Finland-Sweden-Euro)|||  
+|1144|IBM01144|IBM EBCDIC (Italy-Euro)|||  
+|1145|IBM01145|IBM EBCDIC (Spain-Euro)|||  
+|1146|IBM01146|IBM EBCDIC (UK-Euro)|||  
+|1147|IBM01147|IBM EBCDIC (France-Euro)|||  
+|1148|IBM01148|IBM EBCDIC (International-Euro)|||  
+|1149|IBM01149|IBM EBCDIC (Icelandic-Euro)|||  
+|1200|utf-16|Unicode|✓|✓|  
+|1201|unicodeFFFE|Unicode (Big endian)|✓|✓|  
+|1250|windows-1250|Central European (Windows)|||  
+|1251|windows-1251|Cyrillic (Windows)|||  
+|1252|Windows-1252|Western European (Windows)|✓||  
+|1253|windows-1253|Greek (Windows)|||  
+|1254|windows-1254|Turkish (Windows)|||  
+|1255|windows-1255|Hebrew (Windows)|||  
+|1256|windows-1256|Arabic (Windows)|||  
+|1257|windows-1257|Baltic (Windows)|||  
+|1258|windows-1258|Vietnamese (Windows)|||  
+|1361|Johab|Korean (Johab)|||  
+|10000|macintosh|Western European (Mac)|||  
+|10001|x-mac-japanese|Japanese (Mac)|||  
+|10002|x-mac-chinesetrad|Chinese Traditional (Mac)|||  
+|10003|x-mac-korean|Korean (Mac)|✓||  
+|10004|x-mac-arabic|Arabic (Mac)|||  
+|10005|x-mac-hebrew|Hebrew (Mac)|||  
+|10006|x-mac-greek|Greek (Mac)|||  
+|10007|x-mac-cyrillic|Cyrillic (Mac)|||  
+|10008|x-mac-chinesesimp|Chinese Simplified (Mac)|✓||  
+|10010|x-mac-romanian|Romanian (Mac)|||  
+|10017|x-mac-ukrainian|Ukrainian (Mac)|||  
+|10021|x-mac-thai|Thai (Mac)|||  
+|10029|x-mac-ce|Central European (Mac)|||  
+|10079|x-mac-icelandic|Icelandic (Mac)|||  
+|10081|x-mac-turkish|Turkish (Mac)|||  
+|10082|x-mac-croatian|Croatian (Mac)|||  
+|12000|utf-32|Unicode (UTF-32)|✓|✓|  
+|12001|utf-32BE|Unicode (UTF-32 Big endian)|✓|✓|  
+|20000|x-Chinese-CNS|Chinese Traditional (CNS)|||  
+|20001|x-cp20001|TCA Taiwan|||  
+|20002|x-Chinese-Eten|Chinese Traditional (Eten)|||  
+|20003|x-cp20003|IBM5550 Taiwan|||  
+|20004|x-cp20004|TeleText Taiwan|||  
+|20005|x-cp20005|Wang Taiwan|||  
+|20105|x-IA5|Western European (IA5)|||  
+|20106|x-IA5-German|German (IA5)|||  
+|20107|x-IA5-Swedish|Swedish (IA5)|||  
+|20108|x-IA5-Norwegian|Norwegian (IA5)|||  
+|20127|us-ascii|US-ASCII|✓|✓|  
+|20261|x-cp20261|T.61|||  
+|20269|x-cp20269|ISO-6937|||  
+|20273|IBM273|IBM EBCDIC (Germany)|||  
+|20277|IBM277|IBM EBCDIC (Denmark-Norway)|||  
+|20278|IBM278|IBM EBCDIC (Finland-Sweden)|||  
+|20280|IBM280|IBM EBCDIC (Italy)|||  
+|20284|IBM284|IBM EBCDIC (Spain)|||  
+|20285|IBM285|IBM EBCDIC (UK)|||  
+|20290|IBM290|IBM EBCDIC (Japanese katakana)|||  
+|20297|IBM297|IBM EBCDIC (France)|||  
+|20420|IBM420|IBM EBCDIC (Arabic)|||  
+|20423|IBM423|IBM EBCDIC (Greek)|||  
+|20424|IBM424|IBM EBCDIC (Hebrew)|||  
+|20833|x-EBCDIC-KoreanExtended|IBM EBCDIC (Korean Extended)|||  
+|20838|IBM-Thai|IBM EBCDIC (Thai)|||  
+|20866|koi8-r|Cyrillic (KOI8-R)|||  
+|20871|IBM871|IBM EBCDIC (Icelandic)|||  
+|20880|IBM880|IBM EBCDIC (Cyrillic Russian)|||  
+|20905|IBM905|IBM EBCDIC (Turkish)|||  
+|20924|IBM00924|IBM Latin-1|||  
+|20932|EUC-JP|Japanese (JIS 0208-1990 and 0212-1990)|||  
+|20936|x-cp20936|Chinese Simplified (GB2312-80)|✓||  
+|20949|x-cp20949|Korean Wansung|✓||  
+|21025|cp1025|IBM EBCDIC (Cyrillic Serbian-Bulgarian)|||  
+|21866|koi8-u|Cyrillic (KOI8-U)|||  
+|28591|iso-8859-1|Western European (ISO)|✓|✓|  
+|28592|iso-8859-2|Central European (ISO)|||  
+|28593|iso-8859-3|Latin 3 (ISO)|||  
+|28594|iso-8859-4|Baltic (ISO)|||  
+|28595|iso-8859-5|Cyrillic (ISO)|||  
+|28596|iso-8859-6|Arabic (ISO)|||  
+|28597|iso-8859-7|Greek (ISO)|||  
+|28598|iso-8859-8|Hebrew (ISO-Visual)|✓||  
+|28599|iso-8859-9|Turkish (ISO)|||  
+|28603|iso-8859-13|Estonian (ISO)|||  
+|28605|iso-8859-15|Latin 9 (ISO)|||  
+|29001|x-Europa|Europa|||  
+|38598|iso-8859-8-i|Hebrew (ISO-Logical)|✓||  
+|50220|iso-2022-jp|Japanese (JIS)|✓||  
+|50221|csISO2022JP|Japanese (JIS-Allow 1 byte Kana)|✓||  
+|50222|iso-2022-jp|Japanese (JIS-Allow 1 byte Kana - SO/SI)|✓||  
+|50225|iso-2022-kr|Korean (ISO)|✓||  
+|50227|x-cp50227|Chinese Simplified (ISO-2022)|✓||  
+|51932|euc-jp|Japanese (EUC)|✓||  
+|51936|EUC-CN|Chinese Simplified (EUC)|✓||  
+|51949|euc-kr|Korean (EUC)|✓||  
+|52936|hz-gb-2312|Chinese Simplified (HZ)|✓||  
+|54936|GB18030|Chinese Simplified (GB18030)|✓||  
+|57002|x-iscii-de|ISCII Devanagari|✓||  
+|57003|x-iscii-be|ISCII Bengali|✓||  
+|57004|x-iscii-ta|ISCII Tamil|✓||  
+|57005|x-iscii-te|ISCII Telugu|✓||  
+|57006|x-iscii-as|ISCII Assamese|✓||  
+|57007|x-iscii-or|ISCII Oriya|✓||  
+|57008|x-iscii-ka|ISCII Kannada|✓||  
+|57009|x-iscii-ma|ISCII Malayalam|✓||  
+|57010|x-iscii-gu|ISCII Gujarati|✓||  
+|57011|x-iscii-pa|ISCII Punjabi|✓||  
+|65000|utf-7|Unicode (UTF-7)|✓|✓|  
+|65001|utf-8|Unicode (UTF-8)|✓|✓|  
   
  The following example calls the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29> and <xref:System.Text.Encoding.GetEncoding%28System.String%29> methods to get the Greek (Windows) code page encoding. It compares the <xref:System.Text.Encoding> objects returned by the method calls to show that they are equal, and then maps displays the Unicode code point and the corresponding code page value for each character in the Greek alphabet.  
   
@@ -793,12 +796,12 @@
  -or-  
   
  <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
  **srcEncoding.** <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -865,12 +868,12 @@
  <paramref name="bytes" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in the byte array.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
  **srcEncoding.** <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -923,9 +926,9 @@
   
 -   A best-fit fallback handler, which replaces bytes that cannot be decoded with some suitable replacement character.  
   
--   A replacement fallback handler, which replaces bytes that cannot be decoded with some arbitrary replacement character. The .NET Framework includes one replacement fallback handler, <xref:System.Text.DecoderFallback>, which by default replaces bytes that cannot be decoded with a question mark ("?") character.  
+-   A replacement fallback handler, which replaces bytes that cannot be decoded with some arbitrary replacement character. .NET includes one replacement fallback handler, <xref:System.Text.DecoderFallback>, which by default replaces bytes that cannot be decoded with a question mark ("?") character.  
   
--   An exception fallback handler, which throws an exception when bytes cannot be decoded. The .NET Framework includes one exception fallback handler, <xref:System.Text.DecoderExceptionFallback>, which throws a <xref:System.Text.DecoderFallbackException> when bytes cannot be decoded.  
+-   An exception fallback handler, which throws an exception when bytes cannot be decoded. .NET includes one exception fallback handler, <xref:System.Text.DecoderExceptionFallback>, which throws a <xref:System.Text.DecoderFallbackException> when bytes cannot be decoded.  
   
  ]]></format>
         </remarks>
@@ -1036,9 +1039,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   A best-fit fallback handler, which replaces characters that cannot be encoded with some suitable replacement character.  
   
--   A replacement fallback handler, which replaces characters that cannot be encoded with some arbitrary replacement character. The .NET Framework includes one replacement fallback handler, <xref:System.Text.EncoderFallback>, which by default replaces characters that cannot be encoded with a question mark ("?") character.  
+-   A replacement fallback handler, which replaces characters that cannot be encoded with some arbitrary replacement character. .NET includes one replacement fallback handler, <xref:System.Text.EncoderFallback>, which by default replaces characters that cannot be encoded with a question mark ("?") character.  
   
--   An exception fallback handler, which throws an exception when characters cannot be encoded. The .NET Framework includes one exception fallback handler, <xref:System.Text.EncoderExceptionFallback>, which throws an <xref:System.Text.EncoderFallbackException> when characters cannot be decoded.  
+-   An exception fallback handler, which throws an exception when characters cannot be encoded. .NET includes one exception fallback handler, <xref:System.Text.EncoderExceptionFallback>, which throws an <xref:System.Text.EncoderFallbackException> when characters cannot be decoded.  
   
  ]]></format>
         </remarks>
@@ -1248,7 +1251,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1355,7 +1358,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1440,7 +1443,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1533,7 +1536,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="chars" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1655,7 +1658,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1737,7 +1740,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1856,7 +1859,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="chars" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1983,7 +1986,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="byteCount" /> is less than the resulting number of bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2092,7 +2095,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2200,7 +2203,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2292,7 +2295,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2402,7 +2405,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <paramref name="bytes" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2501,7 +2504,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2597,7 +2600,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2721,7 +2724,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2823,7 +2826,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <paramref name="byteCount" /> or <paramref name="charCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="charCount" /> is less than the resulting number of characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2943,7 +2946,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  <paramref name="charIndex" /> is not a valid index in <paramref name="chars" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="chars" /> does not have enough capacity from <paramref name="charIndex" /> to the end of the array to accommodate the resulting characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3123,9 +3126,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  The fallback handler depends on the encoding type of `codepage`. If `codepage` is a code page or double-byte character set (DBCS) encoding, a best-fit fallback handler is used. Otherwise, a replacement fallback handler is used. These fallback handlers may not be appropriate for your app. To specify the fallback handler used by the encoding specified by `codepage`, you can call the <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29> overload.  
   
- The <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. Alternatively, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all encodings.  
-  
- In addition to the encodings that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
+ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. In .NET Core, the <xref:System.Text.Encoding.GetEncoding%2A> method returns the encodings natively supported by .NET Core. On both .NET implementations, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all available encodings. 
+
+ In addition to the encodings that are natively available on .NET Core or that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
 
 You can also supply a value of 0 for the `codepage` argument. Its precise behavior depends on whether any encodings have been made available by registering an <xref:System.Text.EncodingProvider> object:
 
@@ -3210,10 +3213,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
 ## Remarks  
  The fallback handler depends on the encoding type of `name`. If `name` is a code page or double-byte character set (DBCS) encoding, a best-fit fallback handler is used. Otherwise, a replacement fallback handler is used. These fallback handlers may not be appropriate for your app. To specify the fallback handler used by the encoding specified by `name`, you can call the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29> overload.  
-  
- The <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. Alternatively, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all encodings. 
-  
- In addition to the encodings that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
+
+In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. In .NET Core, the <xref:System.Text.Encoding.GetEncoding%2A> method returns the encodings natively supported by .NET Core. On both .NET implementations, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all available encodings. 
+
+ In addition to the encodings that are natively available on .NET Core or that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
    
 > [!NOTE]
 >  The ANSI code pages can be different on different computers, or can be changed for a single computer, leading to data corruption. For the most consistent results, you should use Unicode, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page.  
@@ -3292,10 +3295,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
 > [!NOTE]
 >  Some unsupported code pages cause the exception <xref:System.ArgumentException> to be thrown, whereas others cause <xref:System.NotSupportedException>. Therefore, your code must catch all exceptions indicated in the Exceptions section.  
-  
- The <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. You can call the <xref:System.Text.Encoding.GetEncodings%2A> method in the full .NET Framework on the Windows desktop to get a list of all encodings.   
-  
- In addition to the encodings that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object.  If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
+
+In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. In .NET Core, the <xref:System.Text.Encoding.GetEncoding%2A> method returns the encodings natively supported by .NET Core. On both .NET implementations, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all available encodings. 
+
+ In addition to the encodings that are natively available on .NET Core or that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
 
 You can also supply a value of 0 for the `codepage` argument. Its precise behavior depends on whether any encodings have been made available by registering an <xref:System.Text.EncodingProvider> object:
 
@@ -3308,7 +3311,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 > [!NOTE]
 >  The ANSI code pages can be different on different computers and can change on a single computer, leading to data corruption. For this reason, if the active code page is an ANSI code page, encoding and decoding data using the default code page returned by `Encoding.GetEncoding(0)` is not recommended. For the most consistent results, you should use Unicode, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page. 
   
- To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the full .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property. To determine the current active code page, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
+ To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property. To determine the current active code page, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
   
  <xref:System.Text.Encoding.GetEncoding%2A> returns a cached instance with default settings. You should use the constructors of derived classes to get an instance with different settings. For example, the <xref:System.Text.UTF32Encoding> class provides a constructor that lets you enable error detection.  
   
@@ -3379,14 +3382,13 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings.  
-  
- In addition to the encodings that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered. 
+
+In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method relies on the underlying platform to support most code pages. However, the .NET Framework natively supports some encodings. For a list of code pages, see the <xref:System.Text.Encoding> class topic. In .NET Core, the <xref:System.Text.Encoding.GetEncoding%2A> method returns the encodings natively supported by .NET Core. On both .NET implementations, you can call the <xref:System.Text.Encoding.GetEncodings%2A> method to get an array of <xref:System.Text.EncodingInfo> objects that contains information about all available encodings. 
+
+ In addition to the encodings that are natively available on .NET Core or that are intrinsically supported on a specific platform version of the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method returns any additional encodings that are made available by registering an <xref:System.Text.EncodingProvider> object. If the same encoding has been registered by multiple <xref:System.Text.EncodingProvider> objects, this method returns the last one registered.  
   
 > [!NOTE]
 >  The ANSI code pages can be different on different computers and can change on a single computer, leading to data corruption. For the most consistent results, you should use a Unicode encoding, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page.  
-  
- For a list of code pages, see the <xref:System.Text.Encoding> class topic. You can call the <xref:System.Text.Encoding.GetEncodings%2A> method on the full .NET Framework on the Windows desktop to get a list of all encodings.  
   
  <xref:System.Text.Encoding.GetEncoding%2A> returns a cached instance with default settings. You should use the constructors of derived classes to get an instance with different settings. For example, the <xref:System.Text.UTF32Encoding> class provides a constructor that lets you enable error detection.  
   
@@ -3451,7 +3453,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 > [!NOTE]
 >  The list of supported encodings returned by the <xref:System.Text.Encoding.GetEncodings%2A> method does not include any additional encodings made available by any <xref:System.Text.EncodingProvider> implementations that were registered by calls to the <xref:System.Text.Encoding.RegisterProvider%2A> method.  
   
- Encodings 50220 and 50222 are both associated with the name "iso-2022-jp", but they are not identical. Encoding 50220 converts half-width Katakana characters to full-width Katakana characters, whereas encoding 50222 uses a shift-in/shift-out sequence to encode half-width Katakana characters. The display name for encoding 50222 is "Japanese (JIS-Allow 1 byte Kana - SO/SI)" to distinguish it from encoding 50220, which has the display name "Japanese (JIS)".  
+ On the .NET Framework, encodings 50220 and 50222 are both associated with the name "iso-2022-jp", but they are not identical. Encoding 50220 converts half-width Katakana characters to full-width Katakana characters, whereas encoding 50222 uses a shift-in/shift-out sequence to encode half-width Katakana characters. The display name for encoding 50222 is "Japanese (JIS-Allow 1 byte Kana - SO/SI)" to distinguish it from encoding 50220, which has the display name "Japanese (JIS)".  
   
  If you request the encoding name "iso-2022-jp", the .NET Framework returns encoding 50220. However, the encoding that is appropriate for your app depends on the preferred treatment of the half-width Katakana characters.  
   
@@ -3556,7 +3558,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `charCount` parameter actually specifies the number of <xref:System.Char> objects that represent the Unicode characters to encode, because the .NET Framework internally uses UTF-16 to represent Unicode characters. Consequently, most Unicode characters can be represented by one <xref:System.Char> object, but a Unicode character represented by a surrogate pair, for example, requires two <xref:System.Char> objects.  
+ The `charCount` parameter actually specifies the number of <xref:System.Char> objects that represent the Unicode characters to encode, because .NET internally uses UTF-16 to represent Unicode characters. Consequently, most Unicode characters can be represented by one <xref:System.Char> object, but a Unicode character represented by a surrogate pair, for example, requires two <xref:System.Char> objects.  
   
  To calculate the exact array size required by <xref:System.Text.Encoding.GetBytes%2A> to store the resulting bytes, you should use the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
@@ -3584,7 +3586,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3668,7 +3670,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3819,7 +3821,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
  See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> reference topic for a discussion of decoding techniques and considerations.  
   
- Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
+ Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) topic.  
   
    
   
@@ -3847,7 +3849,7 @@ The goal is to save this file, then open and decode it as a binary stream.
         <exception cref="T:System.ArgumentException">The byte array contains invalid Unicode code points.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3941,7 +3943,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> reference topic for a discussion of decoding techniques and considerations.  
   
- Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
+ Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) topic.  
   
  ]]></format>
         </remarks>
@@ -3949,7 +3951,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <paramref name="bytes" /> is a null pointer.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A   fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for a complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A   fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for a complete explanation)  
   
  -and-  
   
@@ -4043,7 +4045,7 @@ The goal is to save this file, then open and decode it as a binary stream.
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -4578,7 +4580,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
 
 - A custom encoding provider can choose which encoding to return when either of these <xref:System.Text.Encoding.GetEncoding%2A> method overloads is passed an argument of `0`. The provider can also choose to not return an encoding by having the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> method return `null`. 
   
- [!INCLUDE[net_v46](~/includes/net-v46-md.md)] includes one encoding provider, <xref:System.Text.CodePagesEncodingProvider>, that makes the encodings available that are present in the full .NET Framework but are not available in [!INCLUDE[net_v46](~/includes/net-v46-md.md)]. By default, [!INCLUDE[net_v46](~/includes/net-v46-md.md)] only supports the Unicode encodings, ASCII, and code page 28591.  
+Starting with the .NET Framework 4.6, the .NET Framework includes one encoding provider, <xref:System.Text.CodePagesEncodingProvider>, that makes the encodings available that are present in the full .NET Framework but are not available in the Universal Windows Platform. By default, the Universal Windows Platform only supports the Unicode encodings, ASCII, and code page 28591.  
   
  If the same encoding provider is used in multiple calls to the <xref:System.Text.Encoding.RegisterProvider%2A> method, only the first method call registers the provider. Subsequent calls are ignored.  
   
@@ -4631,7 +4633,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ For information about the encodings supported by the .NET and a discussion of which Unicode encoding to use, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
  The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to instantiate a little endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
@@ -4698,7 +4700,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  For a discussion of little endian byte order, see the <xref:System.Text.Encoding> class topic.  
   
- For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ For information about the encodings supported by .NET and a discussion of which Unicode encoding to use, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -4811,7 +4813,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a <xref:System.Text.UTF8Encoding> object that encodes Unicode (UTF-16-encoded) characters into a sequence of one to four bytes per character, and that decodes a UTF-8-encoded byte array to Unicode (UTF-16-encoded) characters. For information about the character encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ This property returns a <xref:System.Text.UTF8Encoding> object that encodes Unicode (UTF-16-encoded) characters into a sequence of one to four bytes per character, and that decodes a UTF-8-encoded byte array to Unicode (UTF-16-encoded) characters. For information about the character encodings supported by .NET and a discussion of which Unicode encoding to use, see [Character Encoding in .NET](~/docs/standard/base-types/character-encoding.md).  
   
  The <xref:System.Text.UTF8Encoding> object that is returned by this property might not have the appropriate behavior for your app.  
   

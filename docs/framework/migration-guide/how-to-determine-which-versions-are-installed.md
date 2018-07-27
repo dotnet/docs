@@ -136,7 +136,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |.NET Framework 4.6 installed on all other Windows OS versions|393297|
     |.NET Framework 4.6.1 installed on Windows 10|394254|
     |.NET Framework 4.6.1 installed on all other Windows OS versions|394271|
-    |.NET Framework 4.6.2 installed on Windows 10 Anniversary Update|394802|
+    |.NET Framework 4.6.2 installed on Windows 10 Anniversary Update and Windows Server 2016|394802|
     |.NET Framework 4.6.2 installed on all other Windows OS versions|394806|
     |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|

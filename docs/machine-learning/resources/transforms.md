@@ -1,3 +1,11 @@
+---
+title: Machine learning transforms
+description: Explore the different machine learning transforms supported in ML.NET.
+ms.date: 07/24/2018
+author: jralexander
+ms.author: johalex
+---
+
 # Machine learning transforms
 
 The following tables contains all of the supported data transforms in ML.NET and a description of their functionality.

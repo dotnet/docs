@@ -255,5 +255,5 @@ user\_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-ric
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-apps-development-environment.md)
-[Next] (visual-studio-tools-for-docker.md)
+[Previous](docker-apps-development-environment.md)
+[Next](visual-studio-tools-for-docker.md)

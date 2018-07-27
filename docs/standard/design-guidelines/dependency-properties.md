@@ -37,7 +37,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
   
  A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
   
-```  
+```xaml
 <Grid>  
     <Grid.ColumnDefinitions>  
         <ColumnDefinition />  
@@ -51,7 +51,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
   
  The definition of an attached property looks mostly like that of a regular dependency property, except that the accessors are represented by static Get and Set methods:  
   
-```  
+```csharp
 public class Grid {  
   
     public static int GetColumn(DependencyObject obj) {  

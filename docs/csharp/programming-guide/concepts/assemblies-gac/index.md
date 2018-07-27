@@ -21,7 +21,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 -   If you want to load an assembly only to inspect it, use a method such as <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A>.  
   
 ## Assembly Manifest  
- Within every assembly is an *assembly manifest*. Similar to a table of contents, the assembly manifest contains the following:  
+ Within every assembly, there is an *assembly manifest*. Similar to a table of contents, the assembly manifest contains the following:  
   
 -   The assembly's identity (its name and version).  
   

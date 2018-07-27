@@ -59,5 +59,5 @@ In summary, these are the most important concepts in regards to validation:
 
 
 >[!div class="step-by-step"]
-[Previous] (domain-model-layer-validations.md)
-[Next] (domain-events-design-implementation.md)
+[Previous](domain-model-layer-validations.md)
+[Next](domain-events-design-implementation.md)

@@ -12,7 +12,7 @@ ms.assetid: f2ece624-837a-40cf-92c5-343e7f33397c
 
 The `ulong` keyword denotes an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=nameWithType>|  
   

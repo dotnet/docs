@@ -78,7 +78,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 -   **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation engine.  
   
- For implicit styles not in themes, the type must match exactly—a `MyButton``Button`-derived class will not implicitly use a style for `Button`.  
+ For implicit styles not in themes, the type must match exactly - a `MyButton` `Button`-derived class will not implicitly use a style for `Button`.  
   
 <a name="themestyles"></a>   
 ## Default (Theme) Styles  

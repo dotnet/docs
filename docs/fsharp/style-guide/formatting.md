@@ -15,7 +15,7 @@ These guidelines are based on [A comprehensive guide to F# Formatting Convention
 
 ## General rules for indentation
 
-F# uses significant whitespace by default. The following guidelines are intended to provide guidance as to how to juggle some challenges this can impose.
+F# uses significant white space by default. The following guidelines are intended to provide guidance as to how to juggle some challenges this can impose.
 
 ### Using spaces
 
@@ -547,9 +547,9 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
-### Formatting whitespace in expressions
+### Formatting white space in expressions
 
-Avoid extraneous whitespace in F# expressions.
+Avoid extraneous white space in F# expressions.
 
 ```fsharp
 // OK

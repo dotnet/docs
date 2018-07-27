@@ -66,7 +66,7 @@ class C
 {
     static S s = new S();
 
-    public void M()
+    unsafe public void M()
     {
         fixed (int* ptr = s.myFixedField)
         {
@@ -87,7 +87,7 @@ ref VeryLargeStruct refLocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
-For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md).
+For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/keywords/foreach-in.md).
 
 ### `stackalloc` arrays support initializers
 
@@ -172,7 +172,7 @@ public class B
 
 public class D : B
 {
-   public D(int i) : B(i, out var j)
+   public D(int i) : base(i, out var j)
    {
       Console.WriteLine($"The value of 'j' is {j}");
    }

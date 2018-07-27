@@ -11,7 +11,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ### Creating the source project
 
-Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
+Open a shell window. Create a directory called *unit-testing-using-mstest* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
 a new solution file for the class library and the test project. Next, create a *PrimeService* directory. The following outline shows the directory and file structure thus far:
 
 ```

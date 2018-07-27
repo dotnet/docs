@@ -1,6 +1,6 @@
 ---
 title: "#define (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 06/30/2018
 f1_keywords: 
   - "#define"
 helpviewer_keywords: 
@@ -23,9 +23,9 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
   
  You can define a symbol, but you cannot assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives.  
   
- You can also define a symbol with the [/define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
+ You can also define a symbol with the [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
   
- A symbol that you define with `/define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
+ A symbol that you define with `-define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
   
  The scope of a symbol that was created by using `#define` is the file in which the symbol was defined.  
   

@@ -23,8 +23,8 @@ ms.author: "ronpet"
   
 |Anchor|Description|  
 |------------|-----------------|  
-|`^`|The match must occur at the beginning of the string or line. For more information, see [Start of String or Line](#Start).|  
-|`$`|The match must occur at the end of the string or line, or before `\n` at the end of the string or line. For more information, see [End of String or Line](#End).|  
+|`^`|By default, the match must occur at the beginning of the string; in multiline mode, it must occur at the beginning of the line. For more information, see [Start of String or Line](#Start).|  
+|`$`|By default, the match must occur at the end of the string or before `\n` at the end of the string; in multiline mode, it must occur at the end of the line or before `\n` at the end of the line. For more information, see [End of String or Line](#End).|  
 |`\A`|The match must occur at the beginning of the string only (no multiline support). For more information, see [Start of String Only](#StartOnly).|  
 |`\Z`|The match must occur at the end of the string, or before `\n` at the end of the string. For more information, see [End of String or Before Ending Newline](#EndOrNOnly).|  
 |`\z`|The match must occur at the end of the string only. For more information, see [End of String Only](#EndOnly).|  
@@ -34,7 +34,7 @@ ms.author: "ronpet"
   
 <a name="Start"></a>   
 ## Start of String or Line: ^  
- The `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
+ By default, the `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
   
  The following example uses the `^` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method:  
   

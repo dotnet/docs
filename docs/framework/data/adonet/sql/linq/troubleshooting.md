@@ -54,7 +54,7 @@ The following information exposes some issues you might encounter in your [!INCL
  This requirement does not apply to [!INCLUDE[sqprsqlong](../../../../../../includes/sqprsqlong-md.md)].  
   
 ## GroupBy InvalidOperationException  
- This exception is thrown when a column value is null in a <xref:System.Linq.Enumerable.GroupBy%2A> query that groups by a `boolean` expression, such as `group x by (Phone==@phone)`. Because the expression is a `boolean`, the key is inferred to be `boolean`, not `nullable``boolean`. When the translated comparison produces a null, an attempt is made to assign a `nullable``boolean` to a `boolean`, and the exception is thrown.  
+ This exception is thrown when a column value is null in a <xref:System.Linq.Enumerable.GroupBy%2A> query that groups by a `boolean` expression, such as `group x by (Phone==@phone)`. Because the expression is a `boolean`, the key is inferred to be `boolean`, not `nullable` `boolean`. When the translated comparison produces a null, an attempt is made to assign a `nullable` `boolean` to a `boolean`, and the exception is thrown.  
   
  To avoid this situation (assuming you want to treat nulls as false), use an approach such as the following:  
   

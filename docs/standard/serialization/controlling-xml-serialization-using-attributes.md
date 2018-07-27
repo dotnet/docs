@@ -53,7 +53,7 @@ End Class
 ```  
   
 ```csharp  
-public class TaxRates{  
+public class TaxRates {  
     [XmlElement(ElementName = "TaxRate")]  
     public decimal ReturnTaxRate;  
 }  
@@ -76,10 +76,10 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     public Employee[] Employees;  
 }  
-public class Employee{  
+public class Employee {  
     public string Name;  
 }  
 ```  
@@ -92,7 +92,7 @@ public class Employee{
     <Employee>  
         <Name>Haley</Name>  
     </Employee>  
-</Employees >  
+</Employees>  
 </Group>  
 ```  
   
@@ -106,7 +106,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArray("TeamMembers")]  
     public Employee[] Employees;  
 }  
@@ -121,6 +121,7 @@ public class Group{
         <Name>Haley</Name>  
     </Employee>  
 </TeamMembers>  
+</Group>  
 ```  
   
  The <xref:System.Xml.Serialization.XmlArrayItemAttribute>, on the other hand, controls how the items contained in the array are serialized. Note that the attribute is applied to the field returning the array.  
@@ -133,7 +134,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArrayItem("MemberName")]  
     public Employee[] Employees;  
 }  
@@ -168,15 +169,15 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlArrayItem(Type = typeof(Employee)),  
     XmlArrayItem(Type = typeof(Manager))]  
     public Employee[] Employees;  
 }  
-public class Employee{  
+public class Employee {  
     public string Name;  
 }  
-public class Manager:Employee{  
+public class Manager:Employee {  
     public int Level;  
 }  
 ```  
@@ -193,7 +194,7 @@ public class Manager:Employee{
         <Name>Ann</Name>  
         <Level>3</Level>  
     <Employee>  
-</Employees >  
+</Employees>  
 </Group>  
 ```  
   
@@ -208,7 +209,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlElement]  
     public Employee[] Employees;  
 }  
@@ -254,7 +255,7 @@ End Class
 ```  
   
 ```csharp  
-public class Group{  
+public class Group {  
     [XmlElement(Type = typeof(Employee)),   
     XmlElement(Type = typeof(Manager))]  
     public ArrayList Info;  
@@ -279,7 +280,7 @@ End Class
 ```csharp  
 [XmlRoot("NewGroupName")]  
 [XmlType("NewTypeName")]  
-public class Group{  
+public class Group {  
     public Employee[] Employees;  
 }  
 ```  

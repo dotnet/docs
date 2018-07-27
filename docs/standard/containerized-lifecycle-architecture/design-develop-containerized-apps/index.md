@@ -14,5 +14,5 @@ There are many great-fit use cases for containers, not just for microservices-or
 
 
 >[!div class="step-by-step"]
-[Prev] (../Microsoft-platform-tools-containerized-apps/index.md)
-[Next] (design-docker-applications.md)
+[Prev](../Microsoft-platform-tools-containerized-apps/index.md)
+[Next](design-docker-applications.md)

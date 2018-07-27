@@ -53,5 +53,5 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 
 
 >[!div class="step-by-step"]
-[Previous] (containerize-monolithic-applications.md)
-[Next] (service-oriented-architecture.md)
+[Previous](containerize-monolithic-applications.md)
+[Next](service-oriented-architecture.md)

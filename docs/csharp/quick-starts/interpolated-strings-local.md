@@ -71,7 +71,7 @@ public class Vegetable
 
 public class Program
 {
-   public enum Unit { item, pound, ounce, dozen };
+   public enum Unit { item, kilogram, gram, dozen };
 
    public static void Main()
    {

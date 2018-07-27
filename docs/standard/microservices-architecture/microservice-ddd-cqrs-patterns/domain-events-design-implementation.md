@@ -179,7 +179,7 @@ public class OrderingContext : DbContext, IUnitOfWork
         await _mediator.DispatchDomainEventsAsync(this);
 
         // After this line runs, all the changes (from the Command Handler and Domain
-        // event handlers) performed through the DbContext will be commited
+        // event handlers) performed through the DbContext will be committed
         var result = await base.SaveChangesAsync();
     }
 }
@@ -360,5 +360,5 @@ As stated, use domain events to explicitly implement side effects of changes wit
 
 
 >[!div class="step-by-step"]
-[Previous] (client-side-validation.md)
-[Next] (infrastructure-persistence-layer-design.md)
+[Previous](client-side-validation.md)
+[Next](infrastructure-persistence-layer-design.md)

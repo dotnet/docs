@@ -22,14 +22,14 @@ The Event-based Asynchronous Pattern provides you with an effective way to expos
  If you implement the Event-based Asynchronous Pattern, you must provide a number of guarantees to ensure that your class will behave properly and clients of your class can rely on such behavior.  
   
 ### Completion  
- Always invoke the *MethodName***Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
+ Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
   
 ### Completed Event and EventArgs  
- For each separate *MethodName***Async** method, apply the following design requirements:  
+ For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  
   
--   Define a *MethodName***Completed** event on the same class as the method.  
+-   Define a <em>MethodName</em>**Completed** event on the same class as the method.  
   
--   Define an <xref:System.EventArgs> class and accompanying delegate for the *MethodName***Completed** event that derives from the <xref:System.ComponentModel.AsyncCompletedEventArgs> class. The default class name should be of the form *MethodName***CompletedEventArgs**.  
+-   Define an <xref:System.EventArgs> class and accompanying delegate for the <em>MethodName</em>**Completed** event that derives from the <xref:System.ComponentModel.AsyncCompletedEventArgs> class. The default class name should be of the form *MethodName***CompletedEventArgs**.  
   
 -   Ensure that the <xref:System.EventArgs> class is specific to the return values of the *MethodName* method. When you use the <xref:System.EventArgs> class, you should never require developers to cast the result.  
   
@@ -67,7 +67,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 -   If your class supports multiple concurrent invocations, enable the developer to track each invocation separately by defining the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, called `userSuppliedState`. This parameter should always be the last parameter in the *MethodName***Async** method's signature.  
   
--   If your class defines the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, be sure to track the lifetime of the operation with that task ID, and be sure to provide it back into the completion handler. There are helper classes available to assist. For more information on concurrency management, see [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
+-   If your class defines the *MethodName***Async** overload that takes an object-valued state parameter, or task ID, be sure to track the lifetime of the operation with that task ID, and be sure to provide it back into the completion handler. There are helper classes available to assist. For more information on concurrency management, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
   
 -   If your class defines the *MethodName***Async** method without the state parameter, and it does not support multiple concurrent invocations, ensure that any attempt to invoke *MethodName***Async** before the prior *MethodName***Async** invocation has completed raises an <xref:System.InvalidOperationException>.  
   
@@ -121,7 +121,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 > [!NOTE]
 >  You can circumvent these rules if you explicitly want to go against the policy of the application model, but still benefit from the other advantages of using the Event-based Asynchronous Pattern. For example, you may want a class operating in Windows Forms to be free threaded. You can create a free threaded class, as long as developers understand the implied restrictions. Console applications do not synchronize the execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls. This can cause `ProgressChanged` events to be raised out of order. If you wish to have serialized execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls, implement and install a <xref:System.Threading.SynchronizationContext?displayProperty=nameWithType> class.  
   
- For more information about using <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager> to enable your asynchronous operations, see [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
+ For more information about using <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager> to enable your asynchronous operations, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
   
 ## Guidelines  
   
@@ -144,8 +144,8 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
  <xref:System.ComponentModel.ProgressChangedEventArgs>  
  <xref:System.ComponentModel.BackgroundWorker>  
  [Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)  
+ [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
  [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
  [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
  [How to: Use Components That Support the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  
- [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
+ [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)

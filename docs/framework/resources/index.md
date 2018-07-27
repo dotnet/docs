@@ -1,8 +1,9 @@
 ---
-title: "Resources in Desktop Apps"
-ms.date: "03/30/2017"
+title: "Resources in .NET Apps"
+ms.date: "07/25/2018"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
+  - "deploying applications [.NET Core], resources"
   - "application resources"
   - "resource files"
   - "satellite assemblies"
@@ -13,16 +14,14 @@ ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Resources in Desktop Apps
+# Resources in .NET Apps
 Nearly every production-quality app has to use resources. A resource is any nonexecutable data that is logically deployed with an app. A resource might be displayed in an app as error messages or as part of the user interface. Resources can contain data in a number of forms, including strings, images, and persisted objects. (To write persisted objects to a resource file, the objects must be serializable.) Storing your data in a resource file enables you to change the data without recompiling your entire app. It also enables you to store data in a single location, and eliminates the need to rely on hard-coded data that is stored in multiple locations.  
   
- The .NET Framework provides comprehensive support for the creation and localization of resources in desktop apps. In addition, the .NET Framework supports a simple model for packaging and deploying these localized resources in desktop apps.  
+ The .NET Framework and .NET Core provide comprehensive support for the creation and localization of resources. In addition, .NET supports a simple model for packaging and deploying localized resources.  
   
- For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd) in the Internet Explorer Developer Center.  
+ For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
   
- [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps use a different resource model from desktop apps and store their resources in a single package resource index (PRI) file. For information about resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkId=241674) in the Windows Dev Center.  
-  
-## Creating and Localizing Resources  
+ ## Creating and Localizing Resources  
  In a non-localized app, you can use resource files as a repository for app data, particularly for strings that might otherwise be hard-coded in multiple locations in source code. Most commonly, you create resources as either text (.txt) or XML (.resx) files, and use [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile them into binary .resources files. These files can then be embedded in the app's executable file by a language compiler. For more information about creating resources, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).  
   
  You can also localize your app's resources for specific cultures. This enables you to build localized (translated) versions of your apps. When you develop an app that uses localized resources, you designate a culture that serves as the neutral or fallback culture whose resources are used if no suitable resources are available. Typically, the resources of the neutral culture are stored in the app's executable. The remaining resources for individual localized cultures are stored in standalone satellite assemblies. For more information, see [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md).  
@@ -41,11 +40,11 @@ Nearly every production-quality app has to use resources. A resource is any none
   
 -   If a culture is not explicitly assigned, by retrieving the default thread UI culture from the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> property.  
   
--   If a default thread UI culture is not explicitly assigned, by retrieving the culture for the current user on the local computer by calling the Windows `GetUserDefaultUILanguage` function.  
+-   If a default thread UI culture is not explicitly assigned, by retrieving the culture for the current user on the local computer. .NET implementations running on Windows do this  by calling the Windows [`GetUserDefaultUILanguage`](/windows/desktop/api/winnls/nf-winnls-getuserdefaultuilanguage) function.  
   
  For more information about how the current UI culture is set, see the <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> reference pages.  
   
- You can then retrieve resources for the current UI culture or for a specific culture by using the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class. Although the <xref:System.Resources.ResourceManager> class is most commonly used for retrieving resources in desktop apps, the <xref:System.Resources?displayProperty=nameWithType> namespace contains additional types that you can use to retrieve resources. These include:  
+ You can then retrieve resources for the current UI culture or for a specific culture by using the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class. Although the <xref:System.Resources.ResourceManager> class is most commonly used for retrieving resources, the <xref:System.Resources?displayProperty=nameWithType> namespace contains additional types that you can use to retrieve resources. These include:  
   
 -   The <xref:System.Resources.ResourceReader> class, which enables you to enumerate resources embedded in an assembly or stored in a standalone binary .resources file. It is useful when you don't know the precise names of the resources that are available at run time.  
   

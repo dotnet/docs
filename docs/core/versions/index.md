@@ -27,6 +27,15 @@ With .NET Core 2.0, downloads show a single version number in their file name. T
 
 The use of a single version number makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading an SDK or runtime, the version number you see is going to be the same.
 
+### Version selection
+
+.NET Core applies a set of policies that determine which versions of the .NET Core runtime and SDK are used in various scenarios. These scenarios and policies are fully explored in the article on [version selection](selection.md).
+
+You can think of these policies as performing the following roles:
+
+* Enable easy and efficient deployment of .NET Core, including security and reliability updates.
+* Enable developers to use the latest tools and commands independent of target runtime.
+
 ### Installers
 
 With .NET Core 2.0, downloads for the [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [releases](https://www.microsoft.com/net/download/core) adhere to a new naming scheme that is easier to understand.
@@ -39,14 +48,14 @@ The installer UI in those downloads was also modified to clearly present the nam
 Here are some examples of this format:
 
 ```
-dotnet-runtime-2.0.4-macos.10.12-x64.pkg            # Mac runtime installer
-dotnet-sdk-2.0.4-win10-x64.exe                      # Windows SDK installer
-dotnet-sdk-2.0.4-fedora.24-x64.tar.gz               # Fedora 24 binary archive
+dotnet-runtime-2.0.4-osx.10.12-x64.pkg            # Mac runtime installer
+dotnet-sdk-2.0.4-win-x64.exe                      # Windows SDK installer
+dotnet-sdk-2.0.4-linux-x64.tar.gz                 # Linux binary archive
 
 #Ubuntu file set needed for the SDK
-dotnet-host-2.0.4-ubuntu.16.04-x64.deb              # Host / muxer and host policy
-dotnet-runtime-2.0.4-ubuntu.16.04-x64.deb           # runtime
-dotnet-sdk-2.0.4-ubuntu.16.04-x64.deb               # SDK tools
+dotnet-host-2.0.4-ubuntu.16.04-x64.deb            # Host / muxer and host policy
+dotnet-runtime-2.0.4-ubuntu.16.04-x64.deb         # runtime
+dotnet-sdk-2.0.4-ubuntu.16.04-x64.deb             # SDK tools
 ```
 
 The format is readable and clearly shows what you're downloading, what version it is, and where you can use it. The runtime package name includes `runtime`, and the SDK includes `SDK`.

@@ -189,5 +189,5 @@ There is no silver bullet or a right architecture pattern for every given case. 
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (data-driven-crud-microservice.md)
+[Previous](index.md)
+[Next](data-driven-crud-microservice.md)

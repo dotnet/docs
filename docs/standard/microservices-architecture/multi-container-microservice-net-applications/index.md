@@ -15,5 +15,5 @@ However, if you know how to design and develop a microservices-based application
 
 
 >[!div class="step-by-step"]
-[Previous] (../containerize-net-framework-applications/index.md)
-[Next] (microservice-application-design.md)
+[Previous](../containerize-net-framework-applications/index.md)
+[Next](microservice-application-design.md)

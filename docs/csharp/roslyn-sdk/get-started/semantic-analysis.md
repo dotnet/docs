@@ -126,7 +126,7 @@ Select only the name property, and only distinct names by removing any overloads
 
 You can also build the full query using the LINQ query syntax, and then display all the method names in  the console:
 
-[!code-csharp[build and display the results of this query.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#12 "Build and display the results of the query.")]
+[!code-csharp[build and display the results of this query.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#13 "Build and display the results of the query.")]
 
 Build and run the program. You should see the following output:
 

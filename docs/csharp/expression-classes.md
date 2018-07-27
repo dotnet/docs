@@ -16,7 +16,7 @@ Rather than run through the full list, let's understand how the framework classe
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions
 may be very simple: the constant expression `1` returns the constant value of 1. They may be more
-complicated: The expression `(-B + Math.Sqrt(B*B + 4 * A * C)) / (2 * A)` returns one root for a
+complicated: The expression `(-B + Math.Sqrt(B*B - 4 * A * C)) / (2 * A)` returns one root for a
 quadratic equation (in the case where the equation has a solution).  
 
 ## It all starts with System.Linq.Expression

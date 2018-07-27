@@ -23,7 +23,7 @@ ms.assetid: ec197989-fa49-4725-a455-e06b551eb65f
   
  If you do not specify **-nostdlib**, mscorlib.dll will be imported into your program (same as specifying **-nostdlib-**). Specifying **-nostdlib** is the same as specifying **-nostdlib+**.  
   
-### To set this compiler option in the Visual Studio development environment  
+### To set this compiler option in the Visual Studio development environment (**Visual Studio 2015 and earlier versions only**) 
   
 1.  Open the **Properties** page for the project.  
   

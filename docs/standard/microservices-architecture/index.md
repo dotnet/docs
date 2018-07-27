@@ -148,4 +148,4 @@ We wrote this guide to help you understand the architecture of containerized app
 [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com)
 
 >[!div class="step-by-step"]
-[Next] (container-docker-introduction/index.md)
+[Next](container-docker-introduction/index.md)

@@ -1,4 +1,4 @@
-    // compile with: /unsafe
+    // compile with: -unsafe
 
     class UnsafeTest
     {

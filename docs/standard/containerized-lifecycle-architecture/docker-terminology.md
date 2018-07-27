@@ -41,5 +41,5 @@ This section lists terms and definitions with which you should become familiar w
 
 
 >[!div class="step-by-step"]
-[Previous] (what-is-docker.md)
-[Next] (docker-containers-images-and-registries.md)
+[Previous](what-is-docker.md)
+[Next](docker-containers-images-and-registries.md)

@@ -174,5 +174,5 @@ For example, in the preceding OrderAggregate code example, there are several pri
 
 
 >[!div class="step-by-step"]
-[Previous] (microservice-domain-model.md)
-[Next] (seedwork-domain-model-base-classes-interfaces.md)
+[Previous](microservice-domain-model.md)
+[Next](seedwork-domain-model-base-classes-interfaces.md)

@@ -1,29 +1,13 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-ms.date: 02/13/2017
+ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), if you haven't already.  This article uses the Visual Studio 2017 Community Edition, but you can use F# with the version of your choice.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.
 
-## Installing F# #
-
-If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer. If you already have it installed, click **Modify**.
-
-You'll next see a list of Workloads. You can install F# through any of the following workloads:
-
-|Workload|Action|
-|--------|------|
-| .NET Core cross-platform development | No action - F# is installed by default |
-| ASP.NET and web development | No action - F# is installed by default |
-| Azure development | No action - F# is installed by default |
-| Mobile development with .NET | No action - F# is installed by default |
-| Data science and analytical applications | No action - F# is installed by default |
-| .NET desktop development | Select **F# desktop language support** from the right-hand side |
-| Data storage and processing | Select **F# desktop language support** from the right-hand side |
-
-Next, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
+To begin, ensure that you have [Visual Studio installed with F#](install-fsharp.md#install-f-with-visual-studio).
 
 ## Creating a console application
 
@@ -57,7 +41,7 @@ It is in this function that we call the `square` function with an argument of `1
 
 ## Running your code
 
-You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
+You can run the code and see results by pressing **Ctrl**+**F5**.  This runs the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
@@ -72,8 +56,8 @@ Congratulations!  You've created your first F# project in Visual Studio, written
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
- [Visual F#](index.md)  
- [Tour of F#](../tour.md)  
- [F# language reference](../language-reference/index.md)  
- [Type inference](../language-reference/type-inference.md)  
- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  
+
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

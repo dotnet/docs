@@ -70,5 +70,4 @@ newThread.Abort();
 ## See Also  
  <xref:System.Threading.Thread>  
  [Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)  
- [Parameters and Return Values for Multithreaded Procedures (C#)](../../../../csharp/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)  
  [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)

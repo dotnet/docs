@@ -52,5 +52,5 @@ There are several features of your application that affect your decision. You sh
     - If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.
 
 >[!div class="step-by-step"]
-[Previous] (net-framework-container-scenarios.md)
-[Next] (net-container-os-targets.md)
+[Previous](net-framework-container-scenarios.md)
+[Next](net-container-os-targets.md)

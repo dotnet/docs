@@ -323,5 +323,5 @@ public class Address
 
 
 >[!div class="step-by-step"]
-[Previous] (seedwork-domain-model-base-classes-interfaces.md)
-[Next] (enumeration-classes-over-enum-types.md)
+[Previous](seedwork-domain-model-base-classes-interfaces.md)
+[Next](enumeration-classes-over-enum-types.md)

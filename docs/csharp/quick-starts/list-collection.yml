@@ -16,7 +16,7 @@ items:
 - title: Create lists
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace "<name>" with your name) and click the **Run** button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace `<name>` with your name) and click the **Run** button:
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };

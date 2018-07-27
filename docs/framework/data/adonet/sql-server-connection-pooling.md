@@ -66,8 +66,7 @@ using (SqlConnection connection = new SqlConnection(
 > [!NOTE]
 >  Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
   
-> [!NOTE]
->  Login and logout events will not be raised on the server when a connection is fetched from or returned to the connection pool. This is because the connection is not actually closed when it is returned to the connection pool. For more information, see [Audit Login Event Class](http://msdn2.microsoft.com/library/ms190260.aspx) and [Audit Logout Event Class](http://msdn2.microsoft.com/library/ms175827.aspx) in SQL Server Books Online.  
+For more info about the events associated with opening and closing connections, see [Audit Login Event Class](/sql/relational-databases/event-classes/audit-login-event-class) and [Audit Logout Event Class](/sql/relational-databases/event-classes/audit-logout-event-class) in the SQL Server documentation.  
   
 ## Removing Connections  
  The connection pooler removes a connection from the pool after it has been idle for approximately 4-8 minutes, or if the pooler detects that the connection with the server has been severed. Note that a severed connection can be detected only after attempting to communicate with the server. If a connection is found that is no longer connected to the server, it is marked as invalid. Invalid connections are removed from the connection pool only when they are closed or reclaimed.  

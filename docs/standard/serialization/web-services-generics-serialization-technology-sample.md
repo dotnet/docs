@@ -52,7 +52,7 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
   
 1.  Open a browser window and select its address bar.  
   
-2.  Type **http://localhost/[virtual directory]/Service.asmx**, where [virtual directory] represents the virtual directory you created when you built the sample.  
+2.  Type `http://localhost/[virtual directory]/Service.asmx`, where `[virtual directory]` represents the virtual directory you created when you built the sample.  
   
 ## Remarks  
  The sample displays a default ASP.NET page that contains links to the definition of the Web Service. You can customize the display in addition to modifying the source code for the Web service. For more information, see [Building XML Web Service Clients](https://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c).  

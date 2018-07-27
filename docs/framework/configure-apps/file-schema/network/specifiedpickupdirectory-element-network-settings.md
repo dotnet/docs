@@ -57,7 +57,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 <configuration>  
   <system.net>  
     <mailSettings>  
-      <smtp deliveryMethod="specifiedPickupDirectory">  
+      <smtp deliveryMethod="SpecifiedPickupDirectory">  
         <specifiedPickupDirectory  
           pickupDirectoryLocation="c:\maildrop"  
         />  

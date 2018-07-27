@@ -108,7 +108,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within whitespace significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [Whitespace Processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within white-space significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
   
 ### TypeConverterAttribute  
  **Reference Documentation:**  <xref:System.ComponentModel.TypeConverterAttribute>  
@@ -163,7 +163,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as whitespace significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [Whitespace Processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as white-space significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
   
 ### XamlDeferLoadAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XamlDeferLoadAttribute>  

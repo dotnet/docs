@@ -28,5 +28,5 @@ Note that there is certain overlap between the service registry and the API gate
 
 
 >[!div class="step-by-step"]
-[Previous] (maintain-microservice-apis.md)
-[Next] (microservice-based-composite-ui-shape-layout.md)
+[Previous](maintain-microservice-apis.md)
+[Next](microservice-based-composite-ui-shape-layout.md)

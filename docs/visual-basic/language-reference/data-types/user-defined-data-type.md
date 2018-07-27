@@ -1,5 +1,5 @@
 ---
-title: "User-Defined Data Type"
+title: "User-Defined Data Type (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "UserDefined"
@@ -35,9 +35,9 @@ Holds data in a format you define. The `Structure` statement defines the format.
  The default value of a structure data type consists of the combination of the default values of each of its members.  
   
 ## Declaration Format  
- A structure declaration starts with the [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md) and ends with the `End``Structure` statement. The `Structure` statement supplies the name of the structure, which is also the identifier of the data type the structure is defining. Other parts of the code can use this identifier to declare variables, parameters, and function return values to be of this structure's data type.  
+ A structure declaration starts with the [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md) and ends with the `End Structure` statement. The `Structure` statement supplies the name of the structure, which is also the identifier of the data type the structure is defining. Other parts of the code can use this identifier to declare variables, parameters, and function return values to be of this structure's data type.  
   
- The declarations between the `Structure` and `End``Structure` statements define the members of the structure.  
+ The declarations between the `Structure` and `End Structure` statements define the members of the structure.  
   
 ## Member Access Levels  
  You must declare every member using a [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md) or a statement that specifies access level, such as [Public](../../../visual-basic/language-reference/modifiers/public.md), [Friend](../../../visual-basic/language-reference/modifiers/friend.md), or [Private](../../../visual-basic/language-reference/modifiers/private.md). If you use a `Dim` statement, the access level defaults to public.  

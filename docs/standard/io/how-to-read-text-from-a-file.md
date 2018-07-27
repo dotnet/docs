@@ -1,6 +1,6 @@
 ---
 title: "How to: Read Text from a File"
-ms.date: "03/30/2017"
+ms.date: "06/19/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -18,16 +18,16 @@ ms.author: "mairaw"
 # How to: Read Text from a File
 The following examples show how to read text synchronously and asynchronously from a text file using .NET for desktop apps. In both examples, when you create the instance of the <xref:System.IO.StreamReader> class, you provide the relative or absolute path to the file. The following examples assume that the file named TestFile.txt is in the same folder as the application.  
   
- These code examples do not apply developing for Windows Store Apps because the Windows Runtime provides different streams types reading and writing to files. For an example that shows how to read text from a file within the context of a Windows Store app, see [Quickstart: Reading and writing files](http://msdn.microsoft.com/library/windows/apps/hh758325.aspx). For examples that show how to convert between .NET Framework streams and Windows runtime streams see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md).  
+ These code examples do not apply to developing for Windows Store Apps because the Windows Runtime provides different stream types for reading and writing to files. For an example that shows how to read text from a file in a Windows Store app, see [Quickstart: Reading and writing files](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh758325(v=win.10)). For examples that show how to convert between .NET Framework streams and Windows runtime streams, see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md).  
   
 ## Example  
- The first example shows a synchronous read operation within a console application. In this example, the text file is opened using a stream reader, the contents are copied to a string and string is output to the console.  
+ The following example shows a synchronous read operation within a console application. In this example, the text file is opened using a stream reader, the contents are copied to a string, and the string is output to the console.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source3.cs#3)]
  [!code-vb[Conceptual.BasicIO.TextFiles#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source3.vb#3)]  
   
 ## Example  
- The second example shows an asynchronous read operation within a Windows Presentation Foundation (WPF) application.  
+ The following example shows an asynchronous read operation in a Windows Presentation Foundation (WPF) application.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source6.cs#6)]
  [!code-vb[Conceptual.BasicIO.TextFiles#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source6.vb#6)]  

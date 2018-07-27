@@ -23,15 +23,15 @@ You should keep the following principles in mind any time you write F# code, esp
 
 3. **Good F# code makes use of object programming, not object orientation**
 
-    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-control.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions that must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and [overloading](../language-reference/members/methods.md#overloaded-methods) also aid consumption of this functionality for callers.
+    F# has full support for programming with objects in .NET, including [classes](../language-reference/classes.md), [interfaces](../language-reference/interfaces.md), [access modifiers](../language-reference/access-control.md), [abstract classes](../language-reference/abstract-classes.md), and so on. For more complicated functional code, such as functions that must be context-aware, objects can easily encapsulate contextual information in ways that functions cannot. Features such as [optional parameters](../language-reference/members/methods.md#optional-arguments) and careful use of [overloading](../language-reference/members/methods.md#overloaded-methods) can make consumption of this functionality easier for callers.
 
 4. **Good F# code performs well without exposing mutation**
 
-    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Avoid exposing mutation to callers. Seek a functional interface over a mutation-based implementation.
+    It's no secret that to write high-performance code, you must use mutation. It's how computers work, after all. Such code is often error-prone and difficult to get right. Avoid exposing mutation to callers. Instead, [build a functional interface that hides a mutation-based implementation](conventions.md#performance) when performance is critical.
 
 5. **Good F# code is toolable**
 
-    Tools are invaluable for working in large codebases, you can write F# code such that it can be used more effectively with F# language tooling. One example is making sure you don't overdo it with a point-free style of programming, so that intermediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
+    Tools are invaluable for working in large codebases, and you can write F# code such that it can be used more effectively with F# language tooling. One example is making sure you don't overdo it with a point-free style of programming, so that intermediate values can be inspected with a debugger. Another example is using [XML documentation comments](../language-reference/xml-documentation.md) describing constructs such that tooltips in editors can display those comments at the call site. Always think about how your code will be read, navigated, debugged, and manipulated by other programmers with their tools.
 
 ## Next steps
 

@@ -250,10 +250,8 @@ The `IHostedService` interface provides a convenient way to start background tas
 
 -   **ASP.NET Core 2.1 Hosting samples** 
 
-    [*https://github.com/aspnet/Hosting/tree/dev/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/dev/samples/GenericHostSample)
-
-
+    [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
-[Previous] (test-aspnet-core-services-web-apps.md)
-[Next] (../microservice-ddd-cqrs-patterns/index.md)
+[Previous](test-aspnet-core-services-web-apps.md)
+[Next](../microservice-ddd-cqrs-patterns/index.md)

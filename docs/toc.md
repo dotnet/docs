@@ -14,6 +14,7 @@
 ### [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/)
 ### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/containerized-lifecycle-architecture/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
+### [Serverless apps: Architecture, patterns, and Azure implementation](standard/serverless-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md)
@@ -91,6 +92,7 @@
 ### [Dependency management](core/tools/dependencies.md)
 ### [Additions to the csproj format](core/tools/csproj.md)
 ## Migration
+### [.NET Core 2.0 to 2.1](core/migration/20-21.md)
 ### [Migration to csproj format](core/migration/index.md)
 ### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
@@ -119,8 +121,7 @@
 ### [Unit Testing Published Output](core/testing/unit-testing-published-output.md)
 ### [Live unit testing .NET Core projects with Visual Studio](/visualstudio/test/live-unit-testing-start)
 ## [Versioning](core/versions/index.md)
-### [.NET Core Support](core/versions/lts-current.md)
-<!--### [🔧 Servicing](core/versions/servicing.md)-->
+### [.NET Core version selection](core/versions/selection.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
@@ -294,6 +295,7 @@
 
 ## [Tour of F#](fsharp/tour.md)
 ## [Get Started](fsharp/get-started/index.md)
+### [Install F#](fsharp/get-started/install-fsharp.md)
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
@@ -318,11 +320,6 @@
 <!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
 ### Asynchronous and Concurrent Programming
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-
-<!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->
-### [Visual F# Development Environment Features](fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
-### [Configuring Projects](fsharp/using-fsharp-in-visual-studio/configuring-projects.md)
-### [Targeting Older Versions of .NET](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
 
 ## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
 ### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
@@ -352,7 +349,7 @@
 ### [Literals](fsharp/language-reference/literals.md)
 ### [F# Types](fsharp/language-reference/fsharp-types.md)
 ### [Type Inference](fsharp/language-reference/type-inference.md)
-### [Primitive Types](fsharp/language-reference/primitive-types.md)
+### [Basic Types](fsharp/language-reference/basic-types.md)
 ### [Unit Type](fsharp/language-reference/unit-type.md)
 ### [Strings](fsharp/language-reference/strings.md)
 ### [Tuples](fsharp/language-reference/tuples.md)
@@ -414,7 +411,7 @@
 ### [Namespaces](fsharp/language-reference/namespaces.md)
 ### [Modules](fsharp/language-reference/modules.md)
 ### [Import Declarations: The open Keyword](fsharp/language-reference/import-declarations-the-open-keyword.md)
-### [Signatures](fsharp/language-reference/signatures.md)
+### [Signature Files](fsharp/language-reference/signature-files.md)
 ### [Units of Measure](fsharp/language-reference/units-of-measure.md)
 ### [XML Documentation](fsharp/language-reference/xml-documentation.md)
 ### [Lazy Computations](fsharp/language-reference/lazy-computations.md)
@@ -1133,11 +1130,13 @@
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
+### [Iris clustering](machine-learning/tutorials/iris-clustering.md)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning basics](machine-learning/resources/basics.md)
 ### [Machine learning tasks](machine-learning/resources/tasks.md)
 ### [Learning algorithms](machine-learning/resources/learners.md)
+### [Data transforms](machine-learning/resources/transforms.md)
 
 <!-- End ML.NET Content -->
 

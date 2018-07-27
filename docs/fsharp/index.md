@@ -19,12 +19,12 @@ let getGreeting name =
 [<EntryPoint>]
 let main args =
     // Define a list of names
-    let names = [| "Don"; "Julia"; "Xi" |]
+    let names = [ "Don"; "Julia"; "Xi" ]
     
     // Print a fun greeting for each name!
     names
-    |> Array.map getGreeting
-    |> Array.iter (fun greeting -> printfn "%s" greeting)
+    |> List.map getGreeting
+    |> List.iter (fun greeting -> printfn "%s" greeting)
 
     0
 ```

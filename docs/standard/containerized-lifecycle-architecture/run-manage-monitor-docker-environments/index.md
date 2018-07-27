@@ -16,5 +16,5 @@ How you run your containerized applications in production (infrastructure archit
 
 
 >[!div class="step-by-step"]
-[Previous] (../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
-[Next] (run-microservices-based-applications-in-production.md)
+[Previous](../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
+[Next](run-microservices-based-applications-in-production.md)

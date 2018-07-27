@@ -55,7 +55,7 @@
 
 ## Quick links to example code
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-utc-note.md)]
 
 This article includes several examples that use the `DateTime` type:
 
@@ -4780,7 +4780,7 @@ The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref
 
 Numerous examples that call the `DateTime.Parse` method are interspersed throughout the [Remarks](#remarks) section of this article and in the documentation for the individual `DateTime.Parse` overloads.
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-with-utc-note.md)]
 
 You can also download a complete set of `DateTime.Parse` examples, which are included in a [.NET Core 2.0 project for C#](https://github.com/dotnet/samples/raw/master/snippets/csharp/downloads/api/System/DateTime.Parse.zip) and a [.NET Core 2.0 project for Visual Basic](https://github.com/dotnet/samples/raw/master/snippets/visualbasic/downloads/api/System/DateTime.Parse.zip), from the [dotnet/samples GitHub repository](https://github.com/dotnet/samples).
 

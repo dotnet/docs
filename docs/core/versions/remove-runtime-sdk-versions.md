@@ -131,7 +131,7 @@ Select any versions you want to remove from your machine and click **Uninstall**
 
 # [MacOS](#tab/MacOS)
 
-On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.4 SDK and runtime, you would use hte following bash commands:
+On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.4 SDK and runtime, you would use the following bash commands:
 
 ```bash
 sudo rm -rf /usr/local/share/dotnet/sdk/1.0.1

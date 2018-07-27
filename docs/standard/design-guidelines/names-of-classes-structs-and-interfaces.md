@@ -54,7 +54,7 @@ public struct Nullable<T> where T:struct { ... }
  **✓ DO** prefix descriptive type parameter names with `T`.  
   
 ```  
-public interface ISessionChannel<TSession> where TSession : ISession{  
+public interface ISessionChannel<TSession> where TSession : ISession {  
     TSession Session { get; }  
 }  
 ```  

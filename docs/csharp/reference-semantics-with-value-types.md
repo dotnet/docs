@@ -215,7 +215,7 @@ in a manner that could promote it to the managed heap.
 
 ## `readonly ref struct` type
 
-Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` delcarations. 
+Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations. 
 
 The following example demonstrates the declaration of `readonly ref struct`.
 

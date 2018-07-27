@@ -1,6 +1,6 @@
 ---
 title: "App Resources for Libraries That Target Multiple Platforms"
-ms.date: "03/30/2017"
+ms.date: "07/18/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -17,6 +17,8 @@ ms.author: "mairaw"
 ---
 # App Resources for Libraries That Target Multiple Platforms
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] and targets the portable subset of the .NET Framework class library. Using  a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
+
+[!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
   
  The [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project makes only a very limited subset of the types in the <xref:System.Resources> namespace available to your application, but it does allow you to use the <xref:System.Resources.ResourceManager> class to retrieve resources. However, if you are creating an app by using Visual Studio, you should use the strongly typed wrapper created by Visual Studio instead of using the <xref:System.Resources.ResourceManager> class directly.  
   

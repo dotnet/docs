@@ -52,9 +52,7 @@ In the preceding example, if you use a statement like the following example:
   
 you will get the compiler error message:  
   
-`The left-hand side of an assignment must be an l-value`  
-  
-which is the same error you get when you attempt to assign a value to a constant.  
+`A readonly field cannot be assigned to (except in a constructor or a variable initializer)`
 
 ## Readonly struct example
 

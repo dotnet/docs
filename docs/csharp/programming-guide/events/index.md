@@ -57,4 +57,3 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Delegates](../../../csharp/programming-guide/delegates/index.md)  
  [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)

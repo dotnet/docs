@@ -172,7 +172,7 @@ public class B
 
 public class D : B
 {
-   public D(int i) : B(i, out var j)
+   public D(int i) : base(i, out var j)
    {
       Console.WriteLine($"The value of 'j' is {j}");
    }

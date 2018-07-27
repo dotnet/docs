@@ -1,6 +1,6 @@
 ---
 title: "Developing for Multiple Platforms with the .NET Framework"
-ms.date: "03/30/2017"
+ms.date: "07/18/2018"
 ms.technology: dotnet-standard
 ms.assetid: b153baaa-130c-4169-860b-e580591de91e
 author: "mairaw"
@@ -9,7 +9,10 @@ ms.author: "mairaw"
 # Developing for Multiple Platforms with the .NET Framework
 You can develop apps for both Microsoft and non-Microsoft platforms by using the .NET Framework and Visual Studio.  
   
-## Options for cross-platform development  
+## Options for cross-platform development
+
+[!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
+  
  To develop for multiple platforms, you can share source code or binaries, and you can make calls between .NET Framework code and Windows Runtime APIs.  
   
 |If you want to...|Use...|  

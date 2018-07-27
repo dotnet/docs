@@ -68,7 +68,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
     ![Selecting .NET Core](media/with-visual-studio-code/selectcore.png)
 
-5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9.
+5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
 
     ![Setting a Breakpoint](media/with-visual-studio-code/setbreakpoint.png)
 
@@ -84,7 +84,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 ## FAQ
 
-### I'm missing required assets to build and debug C# in VSCode. My debugger says "No Configuration."
+### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."
 The Visual Studio Code C# extension can generate assets to build and debug for you. If you missed the prompt when you first opened a new C# project, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this will generate the .vscode, launch.json, and tasks.json configuration files that you need.
 
 ## See also

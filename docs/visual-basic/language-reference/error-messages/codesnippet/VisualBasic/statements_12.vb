@@ -1,1 +1,0 @@
-        Dim sampleString As String = "Hello World" : MsgBox(sampleString)

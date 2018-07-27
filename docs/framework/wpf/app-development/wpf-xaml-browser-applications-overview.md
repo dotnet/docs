@@ -13,7 +13,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ---
 # WPF XAML Browser Applications Overview
 <a name="introduction"></a>
-[!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] combines features of both Web applications and rich-client applications. Like Web applications, XBAPs can be deployed to a Web server and started from Internet Explorer or Firefox. Like rich-client applications, XBAPs can take advantage of the capabilities of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Developing XBAPs is also similar to rich-client development. This topic provides a simple, high-level introduction to XBAP development and describes where XBAP development differs from standard rich-client development.  
+[!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] combines features of both Web applications and rich-client applications. Like Web applications, XBAPs can be deployed to a Web server and started from Internet Explorer or Firefox. Like rich-client applications, XBAPs can take advantage of the capabilities of WPF. Developing XBAPs is also similar to rich-client development. This topic provides a simple, high-level introduction to XBAP development and describes where XBAP development differs from standard rich-client development.  
   
  This topic contains the following sections:  
   
@@ -29,12 +29,12 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
 <a name="creating_a_new_xaml_browser_application_xbap"></a>   
 ## Creating a New XAML Browser Application (XBAP)  
- The simplest way to create a new XBAP project is with [!INCLUDE[vs_dev10_ext](../../../../includes/vs-dev10-ext-md.md)]. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](http://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f).  
+ The simplest way to create a new XBAP project is with Microsoft Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](http://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f).  
   
- When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
+ When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from Visual Studio, the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
 > [!NOTE]
->  If you are not developing with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] or want to learn more about the project files, see [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  
+>  If you are not developing with Visual Studio or want to learn more about the project files, see [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  
   
 <a name="deploying_a_xbap"></a>   
 ## Deploying an XBAP  
@@ -44,11 +44,11 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 |----------|-----------------|  
 |Executable (.exe)|This contains the compiled code and has an .exe extension.|  
 |Application manifest (.manifest)|This contains metadata associated with the application and has a .manifest extension.|  
-|Deployment manifest (.xbap)|This file contains the information that [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] uses to deploy the application and has the .xbap extension.|  
+|Deployment manifest (.xbap)|This file contains the information that ClickOnce uses to deploy the application and has the .xbap extension.|  
   
  You deploy XBAPs to a Web server, for example [!INCLUDE[TLA#tla_iis50](../../../../includes/tlasharptla-iis50-md.md)] or later versions. You do not have to install the .NET Framework on the Web server, but you do have to register the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA#tla_mime](../../../../includes/tlasharptla-mime-md.md)] types and file name extensions. For more information, see [Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications](../../../../docs/framework/wpf/app-development/how-to-configure-iis-5-0-and-iis-6-0-to-deploy-wpf-applications.md).  
   
- To prepare your XBAP for deployment, copy the .exe and the associated manifests to the Web server. Create an HTML page that contains a hyperlink to open the deployment manifest, which is the file that has the .xbap extension. When the user clicks the link to the .xbap file, [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] automatically handles the mechanics of downloading and starting the application. The following example code shows an HTML page that contains a hyperlink that points to an XBAP.  
+ To prepare your XBAP for deployment, copy the .exe and the associated manifests to the Web server. Create an HTML page that contains a hyperlink to open the deployment manifest, which is the file that has the .xbap extension. When the user clicks the link to the .xbap file, ClickOnce automatically handles the mechanics of downloading and starting the application. The following example code shows an HTML page that contains a hyperlink that points to an XBAP.  
   
 ```html
 <html>   
@@ -76,13 +76,13 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ### Clearing Cached XBAPs  
  In some situations after rebuilding and starting your XBAP, you may find that an earlier version of the XBAP is opened. For example, this behavior may occur when your XBAP assembly version number is static and you start the XBAP from the command line. In this case, because the version number between the cached version (the version that was previously started) and the new version remains the same, the new version of the XBAP is not downloaded. Instead, the cached version is loaded.  
   
- In these situations, you can remove the cached version by using the **Mage** command (installed with Visual Studio or the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)]) at the command prompt. The following command clears the application cache.  
+ In these situations, you can remove the cached version by using the **Mage** command (installed with Visual Studio or the Windows SDK) at the command prompt. The following command clears the application cache.  
   
  ```console
  Mage.exe -cc
  ```
   
- This command guarantees that the latest version of your XBAP is started. When you debug your application in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], the latest version of your XBAP should be started. In general, you should update your deployment version number with each build. For more information about Mage, see [Mage.exe (Manifest Generation and Editing Tool)](../../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
+ This command guarantees that the latest version of your XBAP is started. When you debug your application in Visual Studio, the latest version of your XBAP should be started. In general, you should update your deployment version number with each build. For more information about Mage, see [Mage.exe (Manifest Generation and Editing Tool)](../../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
   
 <a name="communicating_with_the_host_web_page"></a>   
 ## Communicating with the Host Web Page  
@@ -92,7 +92,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
  [!code-vb[XbapBrowserInterop#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
   
 ### Debugging XBAPs that Use HostScript  
- If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)]. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:  
+ If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in Visual Studio. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:  
   
 1.  In Visual Studio, open the project properties.  
   
@@ -117,11 +117,11 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
      The changes will take effect after you restart Internet Explorer.  
   
 > [!CAUTION]
->  Enabling active content in Internet Explorer may put your computer at risk. For more information, see [Security and privacy features in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=179286). If you do not want to change your Internet Explorer security settings, you can launch the HTML page from a server and attach the [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] debugger to the process.  
+>  Enabling active content in Internet Explorer may put your computer at risk. If you do not want to change your Internet Explorer security settings, you can launch the HTML page from a server and attach the Visual Studio debugger to the process.  
   
 <a name="xbap_security_considerations"></a>   
 ## XBAP Security Considerations  
- XBAPs typically execute in a partial-trust security sandbox that is restricted to the Internet zone permission set. Consequently, your implementation must support the subset of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements that are supported in the Internet zone or you must elevate the permissions of your application. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md).  
+ XBAPs typically execute in a partial-trust security sandbox that is restricted to the Internet zone permission set. Consequently, your implementation must support the subset of WPF elements that are supported in the Internet zone or you must elevate the permissions of your application. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md).  
   
  When you use a <xref:System.Windows.Controls.WebBrowser> control in your application, WPF internally instantiates the native WebBrowser ActiveX control. When your application is a partial-trust XBAP running in Internet Explorer, the ActiveX control runs in a dedicated thread of the Internet Explorer process. Therefore, the following limitations apply:  
   
@@ -178,7 +178,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
  Starting in [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], XBAP cold-start time is mitigated by displaying an unmanaged progress page early in the deployment cycle. The progress page appears almost immediately after the application is started, because it is displayed by native hosting code and rendered in HTML.  
   
- In addition, improved concurrency of the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] download sequence improves the start time by up to ten percent. After [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] downloads and validates manifests, the application download starts, and the progress bar starts to update.  
+ In addition, improved concurrency of the ClickOnce download sequence improves start time by up to ten percent. After ClickOnce downloads and validates manifests, the application download starts, and the progress bar starts to update.  
   
 ## See Also  
  [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](../../../../docs/framework/wpf/app-development/configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)  

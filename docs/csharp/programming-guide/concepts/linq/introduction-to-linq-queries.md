@@ -18,7 +18,7 @@ A *query* is an expression that retrieves data from a data source. Queries are u
   
 2.  Create the query.  
   
-3.  Execute the query.  
+3.  Query Execution.  
   
  The following example shows how the three parts of a query operation are expressed in source code. The example uses an integer array as a data source for convenience; however, the same concepts apply to other data sources also. This example is referred to throughout the rest of this topic.  
   

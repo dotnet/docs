@@ -26,11 +26,18 @@ Beyond the obvious reason of readability, it is important to follow the guidelin
  **✓ CONSIDER** meaningful names for operator overload parameters if doing so adds significant value.  
   
  **X DO NOT** use abbreviations or numeric indices for operator overload parameter names.  
-  
- *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
-  
- *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
-  
+ 
+### Naming Generic Type Arguments
+ **✓ DO** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name would not add value.
+ 
+ **✓ DO** use `T` if you have no additional contextual information about the type parameter.
+ 
+*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
+ 
+*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+
+*Partially based on article [Generics FAQ: Best Practices](https://msdn.microsoft.com/en-us/library/aa479858.aspx?f=255&MSPPError=-2147217396), published in October 2005 by Juval Lowy*
+
 ## See Also  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

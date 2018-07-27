@@ -93,7 +93,7 @@ If the [async workflow](asynchronous-workflows.md), this type is `Async<unit>`. 
 
 ### `yield`
 
-The `yield` keyword is for returning a value from the computation expression so that it can be consumed as an <xref:system.collections.generic.ienumerable-1>:
+The `yield` keyword is for returning a value from the computation expression so that it can be consumed as an <xref:System.Collections.Generic.IEnumerable%601>:
 
 ```fsharp
 let squares =

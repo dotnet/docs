@@ -15,7 +15,7 @@ Not all performance-sensitive scenarios are "solved" by using structs. You must 
 
 ## Definition
 
-Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-union) that is similar to the reference option type:
+Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions) that is similar to the reference option type:
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]

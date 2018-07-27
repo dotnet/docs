@@ -11,7 +11,7 @@ Over time, as you install updated versions of the .NET Core runtime and SDK, you
 
 The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows or unix:
 
-# [Windows](#tab/windows)
+# [Windows](#tab/Windows)
 
 ```console
 C:\> dotnet --list-sdks
@@ -49,7 +49,7 @@ Microsoft.NETCore.App 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 ```
 
-# [Linux](#tab/linux)
+# [Linux](#tab/Linux)
 
 ```console
 $ dotnet --list-sdks
@@ -129,6 +129,16 @@ Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 Select any versions you want to remove from your machine and click **Uninstall**.
 
+# [Linux](#tab/Linux)
+
+On linux, use the `apt-get` package manager to remove any older versions of the .NET Core SDK. For example, to uninstall the 1.0.1 SDK, use the following command:
+
+```bash
+sudo apt-get remove dotnet-dev-1.0.1
+```
+
+The Linux SDK installers automatically remove older versions of the SDK when upgrading. For example, upgrading from 2.1.300 to 2.1.301 will remove version 2.1.300 when the installation has finished.
+
 # [MacOS](#tab/MacOS)
 
 On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.4 SDK and runtime, you would use the following bash commands:
@@ -139,15 +149,5 @@ sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
 ```
 
 The directories are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
-
-# [Linux](#tab/Linux)
-
-On linux, use the `apt-get` package manager to remove any older versions of the .NET Core SDK. For example, to uninstall the 1.0.1 SDK, use the following command:
-
-```bash
-sudo apt-get remove dotnet-dev-1.0.1
-```
-
-The Linux SDK installers automatically remove older versions of the SDK when upgrading. For example, upgrading from 2.1.300 to 2.1.301 will remove version 2.1.300 when the installation has finished.
 
 ***

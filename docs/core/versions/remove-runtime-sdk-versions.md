@@ -7,7 +7,7 @@ ms.author: wiwagn
 ---
 # How to remove the .NET Core Runtime and SDK
 
-Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md). Removing an SDK removes the associated runtime as well.
+Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md).
 
 The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows or unix:
 
@@ -50,17 +50,78 @@ Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 ```
 
 # [Linux](#tab/linux)
+
+```console
+$ dotnet --list-sdks
+1.0.1 [/usr/local/share/dotnet/sdk]
+1.0.4 [/usr/local/share/dotnet/sdk]
+2.0.0-preview1-005977 [/usr/local/share/dotnet/sdk]
+2.0.0-preview2-006497 [/usr/local/share/dotnet/sdk]
+2.0.0 [/usr/local/share/dotnet/sdk]
+2.1.4 [/usr/local/share/dotnet/sdk]
+2.1.300-preview2-008530 [/usr/local/share/dotnet/sdk]
+2.1.300 [/usr/local/share/dotnet/sdk]
+2.1.301 [/usr/local/share/dotnet/sdk]
+
+$ dotnet --list-runtimes
+Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 1.0.4 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.2 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+```
+
 # [MacOS](#tab/MacOS)
 
-<< Add this on my mac>>
+```console
+$ dotnet --list-sdks
+1.0.1 [/usr/local/share/dotnet/sdk]
+1.0.4 [/usr/local/share/dotnet/sdk]
+2.0.0-preview1-005977 [/usr/local/share/dotnet/sdk]
+2.0.0-preview2-006497 [/usr/local/share/dotnet/sdk]
+2.0.0 [/usr/local/share/dotnet/sdk]
+2.1.4 [/usr/local/share/dotnet/sdk]
+2.1.300-preview2-008530 [/usr/local/share/dotnet/sdk]
+2.1.300 [/usr/local/share/dotnet/sdk]
+2.1.301 [/usr/local/share/dotnet/sdk]
+
+$ dotnet --list-runtimes
+Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 1.0.4 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.2 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+```
 
 ***
 
-<< Add this on my mac>>
+## Uninstalling .NET Core
 
-***
-
-## On Windows
+# [Windows](#tab/Windows)
 
 .NET Core uses the Windows **Add/Remove Programs** dialog to remove versions of the .NET Core runtime and SDK. The following figure shows the **Add/Remove Programs** dialog with several versions of the .NET runtime and SDK installed.
 
@@ -68,6 +129,25 @@ Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 
 Select any versions you want to remove from your machine and click **Uninstall**.
 
-## On MacOS and Linux
+# [MacOS](#tab/MacOS)
 
-<< Add this on my Mac >>
+On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.4 SDK and runtime, you would use hte following bash commands:
+
+```bash
+sudo rm -rf /usr/local/share/dotnet/sdk/1.0.1
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
+```
+
+The directories are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
+
+# [Linux](#tab/Linux)
+
+On linux, use the `apt-get` package manager to remove any older versions of the .NET Core SDK. For example, to uninstall the 1.0.1 SDK, use the following command:
+
+```bash
+sudo apt-get remove dotnet-dev-1.0.1
+```
+
+The Linux SDK installers automatically remove older versions of the SDK when upgrading. For example, upgrading from 2.1.300 to 2.1.301 will remove version 2.1.300 when the installation has finished.
+
+***

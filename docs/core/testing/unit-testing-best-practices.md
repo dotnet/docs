@@ -17,7 +17,7 @@ In this guide, you'll learn some best practices when writing unit tests to keep 
 ### Less time performing functional tests
 Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else), must follow in order to validate the expected behavior. These steps may not always be known to the tester, which means they will have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
 
-Unit tests on the other hand take milliseconds, can be run at the press of a button and do not necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
+Unit tests, on the other hand, take milliseconds, can be run at the press of a button and do not necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
 
 ### Protection against regression
 Regression defects are defects that are introduced when a change is made to the application. It is common for testers to not only test their new feature but also features that existed beforehand in order to verify that previously implemented features still function as expected.
@@ -32,7 +32,7 @@ When you have a suite of well-named unit tests, each test should be able to clea
 ### Less coupled code
 When code is tightly coupled, it can be difficult to unit test. Without creating unit tests for the code that you're writing, coupling may be less apparent.
 
-Writing tests for your code will naturally decouple your code, because it would be near impossible to test otherwise.
+Writing tests for your code will naturally decouple your code, because it would be more difficult to test otherwise.
 
 ## Characteristics of a good unit test
 - **Fast**. It is not uncommon for mature projects to have thousands of unit tests. Unit tests should take very little time to run. Milliseconds.
@@ -41,7 +41,7 @@ Writing tests for your code will naturally decouple your code, because it would 
 - **Self-Checking**. The test should be able to automatically detect if it passed or failed without any human interaction.
 - **Timely**. A unit test should not take a disproportionally long time to write compared to the code being tested. If you find testing the code taking a large amount of time compared to writing the code, consider a design that is more testable.
 
-## Lets speak the same language
+## Let's speak the same language
 The term *mock* is unfortunately very misused when talking about testing. The following defines the most common types of *fakes* when writing unit tests:
 
 *Fake* - A fake is a generic term which can be used to describe either a stub or a mock object. Whether it is a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
@@ -61,7 +61,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-This would be an example of Mock being used improperly. In this case, it is a stub. We're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also very misleading because again, the order is not a mock.
+This would be an example of stub being referred to as a mock. In this case, it is a stub. We're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also very misleading because again, the order is not a mock.
 
 A better approach would be
 
@@ -89,7 +89,7 @@ Assert.True(mockOrder.Validated);
 
 In this case, we are checking a property on the Fake (asserting against it), so in the above code snippet, the `mockOrder` is a Mock.
 
-**It's important to get this terminology correct. If you call your stubs "mocks", other developers are going to make false assumptions about your intent.**
+[!IMPORTANT] It's important to get this terminology correct. If you call your stubs "mocks", other developers are going to make false assumptions about your intent.
 
 The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you do not assert against a stub.
 
@@ -111,7 +111,7 @@ The name of your test should consist of three parts:
 [!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
 
 ### Arranging your tests
-Arrange, Act, Assert is a common pattern when unit testing. As the name implies, it consists of three main actions:
+**Arrange, Act, Assert** is a common pattern when unit testing. As the name implies, it consists of three main actions:
 - *Arrange* your objects, creating and setting them up as necessary.
 - *Act* on an object.
 - *Assert* that something is as expected.
@@ -127,7 +127,7 @@ Arrange, Act, Assert is a common pattern when unit testing. As the name implies,
 [!code-csharp[AfterArranging](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterArranging)]
 
 ### Write minimally passing tests
-The input to be used in a unit test should be the simplest possible in order to pass the behavior that you are currently testing.
+The input to be used in a unit test should be the simplest possible in order to verify the behavior that you are currently testing.
 
 #### Why?
 - Tests become more resilient to future changes in the codebase.

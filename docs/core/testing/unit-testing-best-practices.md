@@ -102,7 +102,9 @@ The name of your test should consist of three parts:
 - The expected behavior when the scenario is invoked.
 
 #### Why?
-- Naming standards are important because they explicitly express intent of the test.
+- Naming standards are important because they explicitly express the intent of the test.
+
+Tests are more than just making sure our code works, they also provide us with documentation. Just by looking at the suite of unit tests, we should be able to infer the behavior of our code without even looking at the code itself. Additionally, when tests fail, we can see exactly which scenarios do not meet our expectations.
 
 #### Bad:
 [!code-csharp[BeforeNaming](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeNaming)]
@@ -120,6 +122,8 @@ The name of your test should consist of three parts:
 - Clearly separates what is being tested from the *arrange* and *assert* steps.
 - Less chance to intermix assertions with "Act" code.
 
+Readability is one of the most important aspects when writing a test. Separating each of these actions within the test clearly highlight the dependencies required to call our code, how our code is being called, and what we are trying to assert. While it may be possible to combine some steps and reduce the size of our test, our primary goal is to make the test as readable as possible.
+
 #### Bad:
 [!code-csharp[BeforeArranging](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeArranging)]
 
@@ -132,6 +136,8 @@ The input to be used in a unit test should be the simplest possible in order to 
 #### Why?
 - Tests become more resilient to future changes in the codebase.
 - Closer to testing behavior over implementation.
+
+Tests that include more information than required to pass the test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests we want to focus on the behavior. Setting extra properties on models or using non-zero values when not required, only detracts from what you are trying to prove.
 
 #### Bad:
 [!code-csharp[BeforeMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMinimallyPassing)]
@@ -146,6 +152,10 @@ Naming variables in unit tests is as important, if not more important, than nami
 - Prevents the need for the reader of the test to inspect the production code in order to figure out what makes the value special.
 - Explicitly shows what you're trying to *prove* rather than trying to *accomplish*.
 
+Magic strings can cause confusion to the reader of your tests. If a string looks out of the ordinary, they may wonder why a certain value was chosen for a parameter or return value. This may lead them to take a closer look at the implementation details, rather than focus on the test.
+
+[!TIP] When writing tests, we should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
+
 #### Bad:
 [!code-csharp[BeforeMagicString](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMagicString)]
 
@@ -158,6 +168,10 @@ When writing your unit tests avoid manual string concatenation and logical condi
 #### Why?
 - Less chance to introduce a bug inside of your tests.
 - Focus on the end result, rather than implementation details.
+
+The last place that you want to find a bug is within your test suite. We should have a high level of confidence in our tests, otherwise, they are not going to provide a whole lot of value. When we introduce logic into our tests, the chances of introducing a bug increases dramatically.
+
+[!TIP] If it feels like logic is required in your test, consider splitting the test up into two or more different tests.
 
 #### Bad:
 [!code-csharp[LogicInTests](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#LogicInTests)]
@@ -172,6 +186,10 @@ If you require a similar object or state for your tests, prefer a helper method 
 - Less confusion when reading the tests since all of the code is visible from within each test.
 - Less chance of setting up too much or too little for the given test.
 - Less chance of sharing state between tests which creates unwanted dependencies between them.
+
+In unit testing frameworks, `Setup` is called before each and every unit test within your test suite. While some may see this as a useful tool, it generally ends up leading to bloated and hard to read tests. Each test will generally have different requirements in order to get the test up and running. Unfortunately, `Setup` forces you to use the exact same requirements for each test.
+
+[!NOTE] xUnit has removed both SetUp and TearDown as of version 2.x
 
 #### Bad:
 [!code-csharp[BeforeSetup](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeSetup)]
@@ -200,6 +218,10 @@ When writing your tests, try to only include one Assert per test. Common approac
 - If one Assert fails, the subsequent Asserts will not be evaluated.
 - Ensures you are not asserting multiple cases in your tests.
 - Gives you the entire picture as to why your tests are failing. 
+
+When introducing multiple asserts into a test case, it is not guaranteed that all of the asserts will be executed. In most unit testing frameworks, once an assertion fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
+
+[!NOTE] A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that we expect it to be in.
 
 #### Bad:
 [!code-csharp[BeforeMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMultipleAsserts)]

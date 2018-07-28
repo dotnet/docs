@@ -1,7 +1,7 @@
 ---
 title: "Nullable types (C# Programming Guide)"
 description: Learn about C# nullable types and how to use them
-ms.date: 07/26/2018
+ms.date: 07/30/2018
 helpviewer_keywords: 
   - "nullable types [C#]"
   - "C# language, nullable types"
@@ -39,6 +39,8 @@ Nullable types have the following characteristics:
 - Use the <xref:System.Nullable%601.GetValueOrDefault(%600)> method to return either the assigned value, or the provided default value if the value of the nullable type is `null`.
   
 - Use the [null-coalescing operator](../../language-reference/operators/null-coalescing-operator.md), `??`, to assign a value to an underlying type based on a value of the nullable type: `int? x = null; int y = x ?? -1;`. In the example, since `x` is null, the result value of `y` is `-1`.
+
+- If a user-defined conversion is defined between two data types, the same conversion can also be used with the nullable versions of these data types.
   
 - Nested nullable types are not allowed. The following line doesn't compile: `Nullable<Nullable<int>> n;`  
 

@@ -1,7 +1,7 @@
 ---
 title: "Using nullable types (C# Programming Guide)"
 description: Learn how to work with C# nullable types
-ms.date: 07/26/2018
+ms.date: 07/30/2018
 helpviewer_keywords: 
   - "nullable types [C#], about nullable types"
 ms.assetid: 0bacbe72-ce15-4b14-83e1-9c14e6380c28
@@ -14,19 +14,17 @@ You can refer to a nullable type in any of the following forms: `Nullable<T>` or
   
 ## Declaration and assignment
 
-You assign a value to a nullable type as you would for an ordinary value type. For example:
+As a value type is implicitly converted to the corresponding nullable type, you assign a value to a nullable type as you would for its underlying value type. You also can assign the `null` value.  For example:
   
 [!code-csharp[declare and assign](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#1)]
 
-As the example above shows, you also can assign the `null` value.
-  
-## Value of a nullable type
+## Examination of a nullable type value
 
 Use the following readonly properties to examine an instance of a nullable type for null and retrieve a value of an underlying type:  
   
 - <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> indicates whether an instance of a nullable type has a valid value of its underlying type.
   
-- <xref:System.Nullable%601.Value%2A?displayProperty=nameWithType> gets the value of an underlying type if `HasValue` is `true`. If `HasValue` is `false`, the `Value` property throws an <xref:System.InvalidOperationException>.
+- <xref:System.Nullable%601.Value%2A?displayProperty=nameWithType> gets the value of an underlying type if <xref:System.Nullable%601.HasValue%2A> is `true`. If <xref:System.Nullable%601.HasValue%2A> is `false`, the <xref:System.Nullable%601.Value%2A> property throws an <xref:System.InvalidOperationException>.
   
 The code in the following example uses the `HasValue` property to test whether the variable contains a value before displaying it:
   
@@ -35,20 +33,20 @@ The code in the following example uses the `HasValue` property to test whether t
 You also can compare a nullable type variable with `null` instead of using the `HasValue` property, as the following example shows:  
   
 [!code-csharp-interactive[use comparison with null](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#3)]
-  
-## Explicit conversions
 
-A nullable type can be cast to a regular type, either explicitly with a cast, or by using the `Value` property. For example:  
-  
-[!code-csharp[explicit conversions](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#4)]
-  
-If a user-defined conversion is defined between two data types, the same conversion can also be used with the nullable versions of these data types.  
-  
-## Implicit conversions
+## Conversion from a nullable type to an underlying type
 
-The conversion from an ordinary type to a nullable type, is implicit:
+If you need to assign a nullable type value to a non-nullable type, use the [null-coalescing operator `??`](../../language-reference/operators/null-coalescing-operator.md) to specify the value to be assigned if a nullable type value is null (you also can use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method to do that):
   
-[!code-csharp[implicit conversion](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#5)]
+[!code-csharp-interactive[?? operator](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#4)]
+
+Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a nullable type value is null should be the default value of the underlying value type.
+  
+You can explicitly cast a nullable type to a non-nullable type. For example:  
+  
+[!code-csharp[explicit cast](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#5)]
+
+At run time, if the value of a nullable type is null, the explicit cast throws an <xref:System.InvalidOperationException>.
   
 ## Operators
 
@@ -56,22 +54,14 @@ The predefined unary and binary operators and any user-defined operators that ex
   
 [!code-csharp[operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#6)]
   
-For the relational operators (`<`, `>`, `<=`, `>=`), if the value of one or both operands is null, the result is `false`. Do not assume that because a particular comparison (for example, `<=`) returns `false`, the opposite case (`>`) returns `true`. The following example shows that 10 is
+For the relational operators (`<`, `>`, `<=`, `>=`), if the value of one or both operands is null, the result is `false`. Do not assume that because a particular comparison (for example, `<=`) returns `false`, the opposite comparison (`>`) returns `true`. The following example shows that 10 is
 
 - neither greater than or equal to null,
 - nor less than null.
   
-[!code-csharp-interactive[operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#7)]
+[!code-csharp-interactive[relational and equality operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#7)]
   
-The above example also shows that an equality comparison of two nullable types that are both null evaluates to `true`.  
-  
-## Assignment to non-nullable type
-
-When you need to assign a nullable type value to a non-nullable type, use the [null-coalescing operator](../../language-reference/operators/null-coalescing-operator.md) `??` to specify the value to be assigned if a nullable type value is null:
-  
-[!code-csharp-interactive[?? operator](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#8)]
-
-Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a nullable type value is null should be the default value of the underlying type.
+The above example also shows that an equality comparison of two nullable types that are both null evaluates to `true`.
   
 ## The bool? type
 
@@ -98,8 +88,8 @@ Note that these two operators don't follow the rules described in the [Operators
   
 ## See also
 
- [C# Programming Guide](../../programming-guide/index.md)  
  [Nullable types](index.md)  
  [Boxing nullable types](boxing-nullable-types.md)  
  [How to: Safely cast from bool? to bool](how-to-safely-cast-from-bool-to-bool.md)  
  [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  
+ [C# Programming Guide](../../programming-guide/index.md)  

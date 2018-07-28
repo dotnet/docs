@@ -1,10 +1,12 @@
-title: Unit testing best practices
+---
+title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience
 author: jpreese
 ms.author: wiwagn
 ms.date: 07/28/2018
+---
 
-# Unit Testing Best Practices
+# Unit testing best practices
 
 By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 

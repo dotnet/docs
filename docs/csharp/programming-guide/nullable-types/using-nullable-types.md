@@ -14,7 +14,7 @@ You can refer to a nullable type in any of the following forms: `Nullable<T>` or
   
 ## Declaration and assignment
 
-As a value type is implicitly converted to the corresponding nullable type, you assign a value to a nullable type as you would for its underlying value type. You also can assign the `null` value.  For example:
+As a value type can be implicitly converted to the corresponding nullable type, you assign a value to a nullable type as you would for its underlying value type. You also can assign the `null` value.  For example:
   
 [!code-csharp[declare and assign](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#1)]
 
@@ -22,7 +22,7 @@ As a value type is implicitly converted to the corresponding nullable type, you 
 
 Use the following readonly properties to examine an instance of a nullable type for null and retrieve a value of an underlying type:  
   
-- <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> indicates whether an instance of a nullable type has a valid value of its underlying type.
+- <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> indicates whether an instance of a nullable type has a value of its underlying type.
   
 - <xref:System.Nullable%601.Value%2A?displayProperty=nameWithType> gets the value of an underlying type if <xref:System.Nullable%601.HasValue%2A> is `true`. If <xref:System.Nullable%601.HasValue%2A> is `false`, the <xref:System.Nullable%601.Value%2A> property throws an <xref:System.InvalidOperationException>.
   
@@ -54,7 +54,7 @@ The predefined unary and binary operators and any user-defined operators that ex
   
 [!code-csharp[operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#6)]
   
-For the relational operators (`<`, `>`, `<=`, `>=`), if the value of one or both operands is null, the result is `false`. Do not assume that because a particular comparison (for example, `<=`) returns `false`, the opposite comparison (`>`) returns `true`. The following example shows that 10 is
+For the relational operators (`<`, `>`, `<=`, `>=`), if one or both operands are null, the result is `false`. Do not assume that because a particular comparison (for example, `<=`) returns `false`, the opposite comparison (`>`) returns `true`. The following example shows that 10 is
 
 - neither greater than or equal to null,
 - nor less than null.

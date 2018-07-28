@@ -22,13 +22,13 @@ Nullable types have the following characteristics:
   
 - The syntax `T?` is shorthand for `Nullable<T>`. The two forms are interchangeable.  
   
-- Assign a value to a nullable type just as you would for an ordinary value type, for example `int? x = 10;` or `double? d = 4.108;`. You also can assign the `null` value: `int? x = null;`.  
+- Assign a value to a nullable type just as you would for an underlying value type: `int? x = 10;` or `double? d = 4.108;`. You also can assign the `null` value: `int? x = null;`.  
   
 - Use the <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> and <xref:System.Nullable%601.Value%2A?displayProperty=nameWithType> readonly properties to test for null and retrieve the value, as shown in the following example: `if (x.HasValue) y = x.Value;`  
   
   - The <xref:System.Nullable%601.HasValue%2A> property returns `true` if the variable contains a value, or `false` if it's `null`.
   
-  - The <xref:System.Nullable%601.Value%2A> property returns a value if the variable contains a value. Otherwise, an <xref:System.InvalidOperationException> is thrown.  
+  - The <xref:System.Nullable%601.Value%2A> property returns a value if <xref:System.Nullable%601.HasValue%2A> returns `true`. Otherwise, an <xref:System.InvalidOperationException> is thrown.  
   
 - You can also use the `==` and `!=` operators with a nullable type, as shown in the following example: `if (x != null) y = x.Value;`. If `a` and `b` are both null, `a == b` evaluates to `true`.  
   

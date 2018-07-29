@@ -69,7 +69,7 @@ Serverless may be used to implement one or more layers.
 * Services aren't dependent on a single data store.
 * The system is designed with failure in mind, and the app may still run even when certain services fail.
 
-Microservices don't have to be mutual to other architecture approaches. For example, an N-Tier architecture may use microservices for the middle tier. It's also possible to implement microservices in a variety of ways, from virtual directories on IIS hosts to containers. The characteristics of microservices make them especially ideal for serverless implementations.
+Microservices don't have to be mutually exclusive to other architecture approaches. For example, an N-Tier architecture may use microservices for the middle tier. It's also possible to implement microservices in a variety of ways, from virtual directories on IIS hosts to containers. The characteristics of microservices make them especially ideal for serverless implementations.
 
 ![Microservices architecture](./media/microservices-architecture.png)
 

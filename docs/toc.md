@@ -108,6 +108,7 @@
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](/aspnet/core/publishing/visual-studio-tools-for-docker)
 ## [Unit Testing](core/testing/index.md)
+### [Unit Testing Best Practices](core/testing/unit-testing-best-practices.md)
 ### [C# unit testing with xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [C# unit testing with NUnit](core/testing/unit-testing-with-nunit.md)
 ### [C# unit testing with MSTest](core/testing/unit-testing-with-mstest.md)

@@ -1,7 +1,7 @@
 ---
 title: Computation Expressions (F#)
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 05/16/2016
+ms.date: 07/27/2018
 ---
 # Computation Expressions
 
@@ -16,9 +16,9 @@ Computations can take many forms. The most common form of computation is single-
 * Effectful computations
 * Generative computations
 
-More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is easy to "leak" computations outside of a given context without abstractions to prevent you from doing so. These abstractions are often challenging to write by yourself, which is why F# has a generalized way to do so called Computation Expressions.
+More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is easy to "leak" computations outside of a given context without abstractions to prevent you from doing so. These abstractions are often challenging to write by yourself, which is why F# has a generalized way to do so called **computation expressions**.
 
-Computation Expressions offer a uniform syntax and abstraction model for encoding context-sensitive computations.
+Computation expressions offer a uniform syntax and abstraction model for encoding context-sensitive computations.
 
 Every computation expression is backed by a *builder* type. The builder type defines the operations that are available for the computation expression. See [Creating a New Type of Computation Expression](computation-expressions.md#creating-a-new-type-of-computation-expression), which shows how to create a custom computation expression.
 
@@ -30,7 +30,7 @@ All computation expressions have the following form:
 builder-expr { cexper }
 ```
 
-where `builder-expr` the name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
+where `builder-expr` is the name of a builder type that defines the computation expression, and `cexper` is the expression body of the computation expression. For example, `async` computation expression code can look like this:
 
 ```fsharp
 let fetchAndDownload url =
@@ -43,7 +43,7 @@ let fetchAndDownload url =
     }
 ```
 
-There is a special, additional syntax available within a computation expression, as shown in the previous example. The following expression forms are possible with Computation Expressions:
+There is a special, additional syntax available within a computation expression, as shown in the previous example. The following expression forms are possible with computation expressions:
 
 ```fsharp
 expr { let! ... }
@@ -57,7 +57,7 @@ expr { match! ... }
 
 Each of these keywords, and other standard F# keywords are only available in a computation expression if they have been defined in the backing builder type. The only exception to this is `match!`, which is itself syntactic sugar for the use of `let!` followed by a pattern match on the result.
 
-The builder type is an object that defines special methods that govern the way the fragments of the computation expression are combined; that is, that is, its methods control how the computation expression behaves. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
+The builder type is an object that defines special methods that govern the way the fragments of the computation expression are combined; that is, its methods control how the computation expression behaves. Another way to describe a builder class is to say that it enables you to customize the operation of many F# constructs, such as loops and bindings.
 
 ### `let!`
 
@@ -87,7 +87,7 @@ let doThingsAsync data url =
     }
 ```
 
-If the [async workflow](asynchronous-workflows.md), this type is `Async<unit>`. For other computation expressions, the type is likely to be `CExpType<unit>`.
+For the [async workflow](asynchronous-workflows.md), this type is `Async<unit>`. For other computation expressions, the type is likely to be `CExpType<unit>`.
 
 `do!` is defined by the `Bind(x, f)` member on the builder type, where `f` produces a `unit`.
 
@@ -173,7 +173,7 @@ let result = Async.RunSynchronously req
 
 ### `match!`
 
-The `match!` keyword allows you to inline a call to another computation expression and pattern match on its result:
+Starting with F# 4.5, the `match!` keyword allows you to inline a call to another computation expression and pattern match on its result:
 
 ```fsharp
 let doThingsAsync url =

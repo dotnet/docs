@@ -311,6 +311,8 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` are not added to `Configure`.
+
 **mvc, razor**
 
 `-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
@@ -349,6 +351,8 @@ Each project template may have additional options available. The core templates 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
+
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` are not added to `Configure`.
 
 **page**
 

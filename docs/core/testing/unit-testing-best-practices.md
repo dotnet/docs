@@ -63,7 +63,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-This would be an example of stub being referred to as a mock. In this case, it is a stub. We're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also very misleading because again, the order is not a mock.
+This would be an example of stub being referred to as a mock. In this case, it is a stub. You're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also very misleading because again, the order is not a mock.
 
 A better approach would be
 
@@ -76,9 +76,9 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-By renaming the class to `FakeOrder`, we've made the class a lot more generic, the class can be used as a mock or a stub. Whichever is better for the test case. In the above example, `FakeOrder` is used as a stub. We're not using the `FakeOrder` in any shape or form during the assert. We just passed it into the `Purchase` class to satisfy the requirements of the constructor.
+By renaming the class to `FakeOrder`, you've made the class a lot more generic, the class can be used as a mock or a stub. Whichever is better for the test case. In the above example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was just passed into the `Purchase` class to satisfy the requirements of the constructor.
 
-To use it as a Mock, we could do something like this
+To use it as a Mock, you could do something like this
 
 ```csharp
 var mockOrder = new FakeOrder();
@@ -89,7 +89,7 @@ purchase.ValidateOrders();
 Assert.True(mockOrder.Validated);
 ```
 
-In this case, we are checking a property on the Fake (asserting against it), so in the above code snippet, the `mockOrder` is a Mock.
+In this case, you are checking a property on the Fake (asserting against it), so in the above code snippet, the `mockOrder` is a Mock.
 
 [!IMPORTANT] It's important to get this terminology correct. If you call your stubs "mocks", other developers are going to make false assumptions about your intent.
 
@@ -106,7 +106,7 @@ The name of your test should consist of three parts:
 #### Why?
 - Naming standards are important because they explicitly express the intent of the test.
 
-Tests are more than just making sure our code works, they also provide us with documentation. Just by looking at the suite of unit tests, we should be able to infer the behavior of our code without even looking at the code itself. Additionally, when tests fail, we can see exactly which scenarios do not meet our expectations.
+Tests are more than just making sure your code works, they also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code without even looking at the code itself. Additionally, when tests fail, you can see exactly which scenarios do not meet your expectations.
 
 #### Bad:
 [!code-csharp[BeforeNaming](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeNaming)]
@@ -124,7 +124,7 @@ Tests are more than just making sure our code works, they also provide us with d
 - Clearly separates what is being tested from the *arrange* and *assert* steps.
 - Less chance to intermix assertions with "Act" code.
 
-Readability is one of the most important aspects when writing a test. Separating each of these actions within the test clearly highlight the dependencies required to call our code, how our code is being called, and what we are trying to assert. While it may be possible to combine some steps and reduce the size of our test, our primary goal is to make the test as readable as possible.
+Readability is one of the most important aspects when writing a test. Separating each of these actions within the test clearly highlight the dependencies required to call your code, how your code is being called, and what you are trying to assert. While it may be possible to combine some steps and reduce the size of your test, the primary goal is to make the test as readable as possible.
 
 #### Bad:
 [!code-csharp[BeforeArranging](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeArranging)]
@@ -139,7 +139,7 @@ The input to be used in a unit test should be the simplest possible in order to 
 - Tests become more resilient to future changes in the codebase.
 - Closer to testing behavior over implementation.
 
-Tests that include more information than required to pass the test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests we want to focus on the behavior. Setting extra properties on models or using non-zero values when not required, only detracts from what you are trying to prove.
+Tests that include more information than required to pass the test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests you want to focus on the behavior. Setting extra properties on models or using non-zero values when not required, only detracts from what you are trying to prove.
 
 #### Bad:
 [!code-csharp[BeforeMinimallyPassing](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMinimallyPassing)]
@@ -156,7 +156,7 @@ Naming variables in unit tests is as important, if not more important, than nami
 
 Magic strings can cause confusion to the reader of your tests. If a string looks out of the ordinary, they may wonder why a certain value was chosen for a parameter or return value. This may lead them to take a closer look at the implementation details, rather than focus on the test.
 
-[!TIP] When writing tests, we should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
+[!TIP] When writing tests, you should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
 
 #### Bad:
 [!code-csharp[BeforeMagicString](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMagicString)]
@@ -171,7 +171,7 @@ When writing your unit tests avoid manual string concatenation and logical condi
 - Less chance to introduce a bug inside of your tests.
 - Focus on the end result, rather than implementation details.
 
-When we add logic into our test suite, we dramatically increase the chance of introducing a bug into it. The last place that you want to find a bug is within your test suite. We should have a high level of confidence that our tests work, otherwise, we aren't going to trust them. Tests that we do not trust, do not provide any value. When a test fails, we want to have a sense that something is actually wrong with our code and it cannot be ignored.
+When you introduce logic into your test suite, the chance of introducing a bug into it increases dramatically. The last place that you want to find a bug is within your test suite. You should have a high level of confidence that your tests work, otherwise, you will not trust them. Tests that you do not trust, do not provide any value. When a test fails, you want to have a sense that something is actually wrong with your code and that it cannot be ignored.
 
 [!TIP] If logic in your test seems unavoidable, consider splitting the test up into two or more different tests.
 
@@ -223,7 +223,7 @@ When writing your tests, try to only include one Assert per test. Common approac
 
 When introducing multiple asserts into a test case, it is not guaranteed that all of the asserts will be executed. In most unit testing frameworks, once an assertion fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
 
-[!NOTE] A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that we expect it to be in.
+[!NOTE] A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that you expect it to be in.
 
 #### Bad:
 [!code-csharp[BeforeMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMultipleAsserts)]
@@ -249,9 +249,9 @@ private string trimInput(string input)
 }
 ```
 
-Your first reaction may be to start writing a test for `trimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that we do not expect, rendering a test against `trimInput` useless. 
+Your first reaction may be to start writing a test for `trimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `trimInput` useless. 
 
-The real test should be done against the public facing method `ParseLogLine` because that is what we ultimately care about. 
+The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about. 
 
 ```csharp
 public void ParseLogLine_ByDefault_ReturnsTrimmedResult()

@@ -31,6 +31,8 @@ Nullable types have the following characteristics:
   - The <xref:System.Nullable%601.Value%2A> property returns a value if <xref:System.Nullable%601.HasValue%2A> returns `true`. Otherwise, an <xref:System.InvalidOperationException> is thrown.  
   
 - You can also use the `==` and `!=` operators with a nullable type, as shown in the following example: `if (x != null) y = x.Value;`. If `a` and `b` are both null, `a == b` evaluates to `true`.  
+
+- Beginning with C# 7.0, you can use pattern matching to both examine and get a value of a nullable type: `if (x is int xValue) y = xValue;`.
   
 - The default value of `T?` is an instance whose <xref:System.Nullable%601.HasValue%2A> property returns `false`.  
 

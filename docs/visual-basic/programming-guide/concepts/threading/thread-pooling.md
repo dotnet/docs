@@ -51,7 +51,6 @@ End Sub
  <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
  <xref:System.Threading>  
  <xref:System.Threading.ThreadPool>  
- [How to: Use a Thread Pool (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)  
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)  
  [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)  
  [Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)

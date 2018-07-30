@@ -2,4 +2,3 @@
 ## [Multithreaded Applications](multithreaded-applications.md)
 ## [Thread Synchronization](thread-synchronization.md)
 ## [Thread Pooling](thread-pooling.md)
-### [How to: Use a Thread Pool](how-to-use-a-thread-pool.md)

@@ -311,7 +311,7 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if IndividualAuth or OrganizationalAuth aren't being used.
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
 **mvc, razor**
 
@@ -352,7 +352,7 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if IndividualAuth or OrganizationalAuth aren't being used.
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
 **page**
 

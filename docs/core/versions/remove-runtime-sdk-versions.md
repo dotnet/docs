@@ -131,23 +131,56 @@ Select any versions you want to remove from your machine and click **Uninstall**
 
 # [Linux](#tab/Linux)
 
-On linux, use the `apt-get` package manager to remove any older versions of the .NET Core SDK. For example, to uninstall the 1.0.1 SDK, use the following command:
+There are more options to uninstall .NET Core (either SDK or runtime) on Linux. The best way for you to uninstall .NET Core is to mirror the action you used to install .NET Core. The specifics depend on your chosen distribution and the installation method.
+
+> [!IMPORTANT]
+> For Red Hat installations, consult the [Red Hat Getting Started Guide](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel) for information on installing and uninstalling .NET Core.
+
+Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager installations will automatically remove the older version upon the successful installation of a newer version.
+
+If you installed .NET Core using a package manager, you use that same package manager to uninstall .NET SDK or runtime. .NET Core installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax on your environment:
+
+- [apt-get](https://wiki.debian.org/apt-get) is used by Debian based systems, including Ubuntu.
+- [yum](http://yum.baseurl.org/wiki/YumCommands) is used on Fedora, SUSE Linux Enterprise System (SLES), CentOS, and Oracle Linux.
+- [zypper](https://www.suse.com/documentation/opensuse114/book_opensuse_reference/data/sec_zypper.html) is used on openSUSE.
+- [dnf](https://docs.fedoraproject.org/f27/system-administrators-guide/package-management/DNF.html) is used on Fedora.
+
+In almost all cases, the command to remove a package is `remove`.
+
+The package name for the .NET Core SDK installation for most package managers is `dotnet-sdk`, followed by the version number. For example, the .NET Core SDK version 2.1 is the package `dotnet-sdk-2.1`.
+
+For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET Core runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
+
+.NET Core installations prior to 2.0 did not uninstall the host application when the SDK was uninstalled using the package manager. Using `apt-get`, the command is:
 
 ```bash
-sudo apt-get remove dotnet-dev-1.0.1
+apt-get remove dotnet-host
 ```
 
-The Linux SDK installers automatically remove older versions of the SDK when upgrading. For example, upgrading from 2.1.300 to 2.1.301 will remove version 2.1.300 when the installation has finished.
+Note that there is no version attached to `dotnet-host`
+
+If you installed using a tarball, you must remove .NET Core using the manual method:
+
+You remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+
+```bash
+sudo rm -rf /usr/share/dotnet/sdk/1.0.1
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/1.0.1
+sudo rm -rf /usr/share/dotnet/host/fxr/1.0.1
+```
+
+The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 # [MacOS](#tab/MacOS)
 
-On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.4 SDK and runtime, you would use the following bash commands:
+On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
 sudo rm -rf /usr/local/share/dotnet/sdk/1.0.1
 sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/1.0.1
+sudo rm -rf /usr/local/share/dotnet/host/fxr/1.0.1
 ```
 
-The directories are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
-
-***
+The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.

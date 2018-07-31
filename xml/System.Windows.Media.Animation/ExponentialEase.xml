@@ -31,16 +31,12 @@
   
  ![Exponential Ease for three Exponent values](~/add/media/expo-easeproperty.png "Exponential Ease for three Exponent values")  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.ExponentialEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.ExponentialEase>.
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_ExponentialEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <ExponentialEase .../>  
 ```  
   

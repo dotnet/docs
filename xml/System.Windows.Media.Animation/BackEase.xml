@@ -30,16 +30,12 @@
 > [!NOTE]
 >  Because this animation causes values to retract before progressing, the animation might interpolate into negative numbers unexpectedly. This can cause errors when animating properties that do not allow negative numbers. For example, if you apply this animation to the <xref:System.Windows.FrameworkElement.Height%2A> of an object (e.g. from 0 to 200 with an <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> of <xref:System.Windows.Media.Animation.EasingMode.EaseIn>), the animation will attempt to interpolate through negative numbers for <xref:System.Windows.FrameworkElement.Height%2A> which will throw an error.  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.BackEase> which you can explore using the following Silverlight sample.  
+There are several other easing functions besides <xref:System.Windows.Media.Animation.BackEase>. 
+In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
- In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
-  
-<a name="xamlObjectElementUsage_BackEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <BackEase .../>  
 ```  
   

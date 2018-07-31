@@ -29,16 +29,12 @@
   
  The valid values for *t* are -1 <= *t* <= 1. Values greater than 1 are evaluated as 1, and values less than -1 are evaluated as -1. This means that for values outside this interval, the animation continues, but the easing function pauses when it enters the invalid domain, and it resumes after it leaves the invalid domain.  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.CircleEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.CircleEase>.
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_CircleEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <CircleEase .../>  
 ```  
   

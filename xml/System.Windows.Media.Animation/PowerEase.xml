@@ -29,16 +29,12 @@
   
  Because of this, the <xref:System.Windows.Media.Animation.PowerEase> function can be substituted for <xref:System.Windows.Media.Animation.QuadraticEase> (*f*(*t*) = *t*<sup>2</sup>), <xref:System.Windows.Media.Animation.CubicEase> (*f*(*t*) = *t*<sup>3</sup>), <xref:System.Windows.Media.Animation.QuarticEase> (*f*(*t*) = *t*<sup>4</sup>), and <xref:System.Windows.Media.Animation.QuinticEase> (*f*(*t*) = *t*<sup>5</sup>). For example, if you wanted to use a <xref:System.Windows.Media.Animation.PowerEase> function to create the same behavior as a <xref:System.Windows.Media.Animation.QuadraticEase> function (*f*(*t*) = *t*<sup>2</sup>), you would specify a <xref:System.Windows.Media.Animation.PowerEase.Power%2A> property value of 2.  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.PowerEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.PowerEase>.
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_PowerEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <PowerEase .../>  
 ```  
   

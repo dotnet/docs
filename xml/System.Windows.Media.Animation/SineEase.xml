@@ -27,19 +27,16 @@
   
  ![Formula for SineEase](~/add/media/sine-formula.png "Formula for SineEase")  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.SineEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.SineEase>. 
+
 > [!NOTE]
 >  You can use <xref:System.Windows.Media.Animation.PowerEase> to create the same behavior as <xref:System.Windows.Media.Animation.CubicEase>, <xref:System.Windows.Media.Animation.QuadraticEase>, <xref:System.Windows.Media.Animation.QuarticEase>, and <xref:System.Windows.Media.Animation.QuinticEase> by using the <xref:System.Windows.Media.Animation.PowerEase.Power%2A> property. For example, if you want to use <xref:System.Windows.Media.Animation.PowerEase> to substitute for <xref:System.Windows.Media.Animation.CubicEase>, specify a <xref:System.Windows.Media.Animation.PowerEase.Power%2A> value of 3.  
   
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_SineEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <SineEase .../>  
 ```  
   

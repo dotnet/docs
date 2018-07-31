@@ -25,16 +25,12 @@
   
  You can specify how many bounces occur using the <xref:System.Windows.Media.Animation.BounceEase.Bounces%2A> property and specify how bouncy (how elastic the bounces are) using the <xref:System.Windows.Media.Animation.BounceEase.Bounciness%2A> property. The <xref:System.Windows.Media.Animation.BounceEase.Bounciness%2A> property specifies the amplitude scaling of the next bounce. For example, a bounciness value of 2 doubles the amplitude of the next bounce during an ease in, and it halves the amplitude of the next bounce during an ease out.  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.BounceEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.BounceEase>.
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_BounceEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <BounceEase .../>  
 ```  
   

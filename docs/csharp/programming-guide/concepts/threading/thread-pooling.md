@@ -56,7 +56,6 @@ private void AnotherLongTask(Object state)
  <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
  <xref:System.Threading>  
  <xref:System.Threading.ThreadPool>  
- [How to: Use a Thread Pool (C#)](../../../../csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)  
  [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)  
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
  [Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)

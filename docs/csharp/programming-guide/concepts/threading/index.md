@@ -34,5 +34,4 @@ Threading enables your C# program to perform concurrent processing so that you c
 |[Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)|Describes how to create and use threads.|  
 |[Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)|Describes how to control the interactions of threads.|  
 |[Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md)|Describes how to use a pool of worker threads that are managed by the system.|  
-|[How to: Use a Thread Pool (C#)](../../../../csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)|Demonstrates synchronized use of multiple threads in the thread pool.|  
 |[Threading](../../../../../docs/standard/threading/index.md)|Describes how to implement threading in the .NET Framework.|

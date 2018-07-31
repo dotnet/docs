@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 ---
 # C# Reference
+
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
   
 ## In This Section  
+
  [C# Keywords](../../csharp/language-reference/keywords/index.md)  
  Provides links to information about C# keywords and syntax.  
   

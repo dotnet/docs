@@ -91,7 +91,8 @@ Assert.True(mockOrder.Validated);
 
 In this case, you are checking a property on the Fake (asserting against it), so in the above code snippet, the `mockOrder` is a Mock.
 
-[!IMPORTANT] It's important to get this terminology correct. If you call your stubs "mocks", other developers are going to make false assumptions about your intent.
+> [!IMPORTANT]
+> It's important to get this terminology correct. If you call your stubs "mocks", other developers are going to make false assumptions about your intent.
 
 The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you do not assert against a stub.
 
@@ -156,7 +157,8 @@ Naming variables in unit tests is as important, if not more important, than nami
 
 Magic strings can cause confusion to the reader of your tests. If a string looks out of the ordinary, they may wonder why a certain value was chosen for a parameter or return value. This may lead them to take a closer look at the implementation details, rather than focus on the test.
 
-[!TIP] When writing tests, you should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
+> [!TIP] 
+> When writing tests, you should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
 
 #### Bad:
 [!code-csharp[BeforeMagicString](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMagicString)]
@@ -173,7 +175,8 @@ When writing your unit tests avoid manual string concatenation and logical condi
 
 When you introduce logic into your test suite, the chance of introducing a bug into it increases dramatically. The last place that you want to find a bug is within your test suite. You should have a high level of confidence that your tests work, otherwise, you will not trust them. Tests that you do not trust, do not provide any value. When a test fails, you want to have a sense that something is actually wrong with your code and that it cannot be ignored.
 
-[!TIP] If logic in your test seems unavoidable, consider splitting the test up into two or more different tests.
+> [!TIP]
+> If logic in your test seems unavoidable, consider splitting the test up into two or more different tests.
 
 #### Bad:
 [!code-csharp[LogicInTests](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#LogicInTests)]
@@ -191,7 +194,8 @@ If you require a similar object or state for your tests, prefer a helper method 
 
 In unit testing frameworks, `Setup` is called before each and every unit test within your test suite. While some may see this as a useful tool, it generally ends up leading to bloated and hard to read tests. Each test will generally have different requirements in order to get the test up and running. Unfortunately, `Setup` forces you to use the exact same requirements for each test.
 
-[!NOTE] xUnit has removed both SetUp and TearDown as of version 2.x
+> [!NOTE] 
+> xUnit has removed both SetUp and TearDown as of version 2.x
 
 #### Bad:
 [!code-csharp[BeforeSetup](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeSetup)]
@@ -223,7 +227,8 @@ When writing your tests, try to only include one Assert per test. Common approac
 
 When introducing multiple asserts into a test case, it is not guaranteed that all of the asserts will be executed. In most unit testing frameworks, once an assertion fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
 
-[!NOTE] A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that you expect it to be in.
+> [!NOTE]
+> A common exception to this rule is when asserting against an object. In this case, it is generally acceptable to have multiple asserts against each property to ensure the object is in the state that you expect it to be in.
 
 #### Bad:
 [!code-csharp[BeforeMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/before/StringCalculatorTests.cs#BeforeMultipleAsserts)]

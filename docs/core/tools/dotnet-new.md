@@ -311,7 +311,7 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't  added to `Startup.Configure`. This option only applies if authentication is not specified.
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if authentication is not specified.
 
 **mvc, razor**
 
@@ -352,7 +352,7 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't  added to `Startup.Configure`. This option only applies if authentication is not specified.
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if authentication is not specified.
 
 **page**
 

@@ -82,36 +82,10 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > [!TIP] 
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
-8. If debugging doesn't work in Visual Studio Code, you might need to change some configurations. Open `.vscode/launcher.json` file; you'll see 3 configuration sections:
+## FAQ
 
-* `"name": ".NET Core Launch (console)"`
-* `"name": ".NET Core Launch (web)"`
-* `"name": ".NET Core Attach"`
-
-In the first section, `"name": ".NET Core Launch (console)"`, find the `"program"` field. Change its value to 
-
-```json
-"program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",
-```
-
-That section of your `.vscode/launch.json` should then look like this after the change:
-
-```json
-{
-    "name": ".NET Core Launch (console)",
-    "type": "coreclr",
-    "request": "launch",
-    "preLaunchTask": "build",
-    "program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.1/app.dll",
-    "args": [],
-    "cwd": "${workspaceFolder}",
-    "console": "internalConsole",
-    "stopAtEntry": false,
-    "internalConsoleOptions": "openOnSessionStart"
-},
-```
-
-Debugging in Visual Studio Code should work after that change.
+### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."
+The Visual Studio Code C# extension can generate assets to build and debug for you. If you missed the prompt when you first opened a new C# project, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this will generate the .vscode, launch.json, and tasks.json configuration files that you need.
 
 ## See also
 [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   

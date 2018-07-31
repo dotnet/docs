@@ -53,34 +53,34 @@ Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 
 ```console
 $ dotnet --list-sdks
-1.0.1 [/usr/local/share/dotnet/sdk]
-1.0.4 [/usr/local/share/dotnet/sdk]
-2.0.0-preview1-005977 [/usr/local/share/dotnet/sdk]
-2.0.0-preview2-006497 [/usr/local/share/dotnet/sdk]
-2.0.0 [/usr/local/share/dotnet/sdk]
-2.1.4 [/usr/local/share/dotnet/sdk]
-2.1.300-preview2-008530 [/usr/local/share/dotnet/sdk]
-2.1.300 [/usr/local/share/dotnet/sdk]
-2.1.301 [/usr/local/share/dotnet/sdk]
+1.0.1 [/usr/share/dotnet/sdk]
+1.0.4 [/usr/share/dotnet/sdk]
+2.0.0-preview1-005977 [/usr/share/dotnet/sdk]
+2.0.0-preview2-006497 [/usr/share/dotnet/sdk]
+2.0.0 [/usr/share/dotnet/sdk]
+2.1.4 [/usr/share/dotnet/sdk]
+2.1.300-preview2-008530 [/usr/share/dotnet/sdk]
+2.1.300 [/usr/share/dotnet/sdk]
+2.1.301 [/usr/share/dotnet/sdk]
 
 $ dotnet --list-runtimes
-Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 1.0.4 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.2 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.1 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 1.0.4 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.0.5 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 1.1.2 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.0.5 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 # [MacOS](#tab/MacOS)
@@ -140,14 +140,14 @@ Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK whe
 
 If you installed .NET Core using a package manager, you use that same package manager to uninstall .NET SDK or runtime. .NET Core installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax on your environment:
 
-- [apt-get](https://wiki.debian.org/apt-get) is used by Debian based systems, including Ubuntu.
-- [yum](http://yum.baseurl.org/wiki/YumCommands) is used on Fedora, SUSE Linux Enterprise System (SLES), CentOS, and Oracle Linux.
-- [zypper](https://www.suse.com/documentation/opensuse114/book_opensuse_reference/data/sec_zypper.html) is used on openSUSE.
-- [dnf](https://docs.fedoraproject.org/f27/system-administrators-guide/package-management/DNF.html) is used on Fedora.
+- [apt-get(8)](https://linux.die.net/man/8/apt-get) is used by Debian based systems, including Ubuntu.
+- [yum(8)](https://linux.die.net/man/8/yum) is used on Fedora, CentOS, and Oracle Linux.
+- [zypper(8)](https://en.opensuse.org/SDB:Zypper_manual_(plain)) is used on openSUSE and SUSE Linux Enterprise System (SLES).
+- [dnf(8)](https://dnf.readthedocs.io/latest/command_ref.html) is used on Fedora.
 
 In almost all cases, the command to remove a package is `remove`.
 
-The package name for the .NET Core SDK installation for most package managers is `dotnet-sdk`, followed by the version number. For example, the .NET Core SDK version 2.1 is the package `dotnet-sdk-2.1`.
+The package name for the .NET Core SDK installation for most package managers is `dotnet-sdk`, followed by the version number. Starting with the version 2.1.300 of the .NET Core SDK and version `2.1` of the runtime, only the major and minor version numbers are necessary: for example, the .NET Core SDK version 2.1.300 can be referenced as the package `dotnet-sdk-2.1`. Prior versions require the entire version string: for example, `dotnet-sdk-21.200` would be required for version 2.1.200 of the .NET Core SDK.
 
 For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET Core runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
 

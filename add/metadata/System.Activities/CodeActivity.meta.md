@@ -1,80 +1,35 @@
 ---
 uid: System.Activities.CodeActivity
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.CacheMetadata(System.Activities.CodeActivityMetadata)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.CacheMetadata(System.Activities.ActivityMetadata)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.CacheMetadata
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.ImplementationVersion
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.Execute(System.Activities.CodeActivityContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Activities.CodeActivity.Implementation
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

@@ -1,62 +1,27 @@
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.Copy(System.ServiceModel.Configuration.X509InitiatorCertificateClientElement)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.X509FindType
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.StoreName
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.StoreLocation
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509InitiatorCertificateClientElement.FindValue
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

@@ -1,35 +1,15 @@
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest(System.Web.HttpContext)
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.IsReusable
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

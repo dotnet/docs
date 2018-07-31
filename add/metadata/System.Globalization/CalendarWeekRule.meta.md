@@ -1,8 +1,5 @@
 ---
 uid: System.Globalization.CalendarWeekRule
-ms.technology: 
-  - "dotnet-standard"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---

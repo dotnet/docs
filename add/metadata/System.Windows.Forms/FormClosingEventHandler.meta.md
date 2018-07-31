@@ -1,8 +1,3 @@
 ---
 uid: System.Windows.Forms.FormClosingEventHandler
-ms.technology: 
-  - "dotnet-winforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

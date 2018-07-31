@@ -1,23 +1,14 @@
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor
-ms.technology: 
-  - "dotnet-standard"
 ms.author: "riande"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor.#ctor(System.Data.SqlClient.SqlDependency)
-ms.technology: 
-  - "dotnet-standard"
 ms.author: "riande"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor.UniqueId
-ms.technology: 
-  - "dotnet-standard"
 ms.author: "riande"
-manager: "wpickett"
 ---

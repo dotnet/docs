@@ -1,53 +1,23 @@
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension.VirtualPath
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension.SiteName
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension.Attach(System.ServiceModel.ServiceHostBase)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension.ApplicationVirtualPath
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Activation.VirtualPathExtension.Detach(System.ServiceModel.ServiceHostBase)
-ms.technology: 
-  - "dotnet-standard"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

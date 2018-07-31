@@ -1,35 +1,15 @@
 ---
 uid: System.Web.Services.Description.Soap12Binding
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Description.Soap12Binding.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Description.Soap12Binding.HttpTransport
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Services.Description.Soap12Binding.Namespace
-ms.technology: 
-  - "dotnet-webforms"
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---

@@ -26,7 +26,7 @@ Converts the specified stream to a random access stream.
 
 ```csharp
 [CLSCompliantAttribute(false)]
-public static  IRandomAccessStream AsRandomAccessStream(Stream stream)
+public static IRandomAccessStream AsRandomAccessStream(Stream stream)
 ```
 
 ```vb
@@ -46,7 +46,7 @@ The stream to convert.
 
 ## Return Value
 
-Type: [Windows.Storage.Streams.RandomAccessStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.randomaccessstream.aspx)  
+Type: <xref:Windows.Storage.Streams.RandomAccessStream>  
 A [!INCLUDE[wrt](../../../includes/wrt-md.md)] random access stream, which represents the converted stream.
 
 ## Exceptions

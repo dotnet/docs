@@ -12,21 +12,21 @@ The following examples use `dotnet test`. If you're using `vstest.console.exe`, 
 ## MSTest
 
 ```csharp
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace MSTestNamespace
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
     [TestClass]
-    public class UnitTestClass1
+    public class UnitTest1
     {
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void TestMethod1()
         {
         }
 
         [TestCategory("CategoryA")]
-        [Priority(3)]
+        [Priority(2)]
         [TestMethod]
         public void TestMethod2()
         {
@@ -39,8 +39,8 @@ namespace MSTestNamespace
 | ---------- | ------ |
 | `dotnet test --filter Method` | Runs tests whose `FullyQualifiedName` contains `Method`. Available in `vstest 15.1+`. |
 | `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
-| `dotnet test --filter ClassName=MSTestNamespace.UnitTestClass1` | Runs tests which are in class `MSTestNamespace.UnitTestClass1`.<br>**Note:** The `ClassName` value should have a namespace, so `ClassName=UnitTestClass1` won't work. |
-| `dotnet test --filter FullyQualifiedName!=MSTestNamespace.UnitTestClass1.TestMethod1` | Runs all tests except `MSTestNamespace.UnitTestClass1.TestMethod1`. |
+| `dotnet test --filter ClassName=MSTestNamespace.UnitTest1` | Runs tests which are in class `MSTestNamespace.UnitTest1`.<br>**Note:** The `ClassName` value should have a namespace, so `ClassName=UnitTest1` won't work. |
+| `dotnet test --filter FullyQualifiedName!=MSTestNamespace.UnitTest1.TestMethod1` | Runs all tests except `MSTestNamespace.UnitTest1.TestMethod1`. |
 | `dotnet test --filter TestCategory=CategoryA` | Runs tests which are annotated with `[TestCategory("CategoryA")]`. |
 | `dotnet test --filter Priority=3` | Runs tests which are annotated with `[Priority(3)]`.<br>**Note:** `Priority~3` is an invalid value, as it isn't a string. |
 
@@ -48,9 +48,9 @@ namespace MSTestNamespace
 
 | Expression | Result |
 | ---------- | ------ |
-| <code>dotnet test --filter "FullyQualifiedName~UnitTestClass1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| <code>dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+| <code>dotnet test --filter "FullyQualifiedName~UnitTest1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTest1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
+| `dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"` | Runs tests which have `UnitTest1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
+| <code>dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `UnitTest1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
 
 ## xUnit
 

@@ -631,11 +631,11 @@ This reference is used for pinning and must never be dereferenced.]]></format>
       <Docs>
         <param name="left">The first read-only span to compare.</param>
         <param name="right">The second read-only span to compare.</param>
-        <summary>Returns a value that indicates whether two <see cref="T:System.ReadOnlySpan`1" /> value types are not equal.</summary>
+        <summary>Returns a value that indicates whether two <see cref="T:System.ReadOnlySpan`1" /> instances are not equal.</summary>
         <returns>
-          <see langword="true" /> if the two <see cref="T:System.ReadOnlySpan`1" /> value types are not equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the two <see cref="T:System.ReadOnlySpan`1" /> instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[Two <xref:System.ReadOnlySpan%601> value types are not equal if they have different lengths or if the corresponding elements of `left` and `right` point to different memory locations.]]></format>
+          <format type="text/markdown"><![CDATA[Two <xref:System.ReadOnlySpan%601> instances are not equal if they have different lengths or if the corresponding elements of `left` and `right` point to different memory locations.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -727,7 +727,7 @@ This reference is used for pinning and must never be dereferenced.]]></format>
         <summary>Copies the contents of this read-only span into a new array.</summary>
         <returns>An array containing the data in the current span.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[This method performs a heap allocation and data copy, and therefore, should be avoided if possible. It it sometimes necessary when APIs that support <xref:System.ReadOnlySpan%601> value types are not available, but APIs that work with arrays are.]]></format>
+          <format type="text/markdown"><![CDATA[This method performs a heap allocation and data copy, and therefore, should be avoided if possible. It it sometimes necessary when APIs that support <xref:System.ReadOnlySpan%601> are not available, but APIs that work with arrays are.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -749,7 +749,7 @@ This reference is used for pinning and must never be dereferenced.]]></format>
       <Parameters />
       <Docs>
         <summary>Returns the string representation of this <see cref="T:System.ReadOnlySpan`1" />.</summary>
-        <returns>The string representation of this value type.</returns>
+        <returns>The string representation of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[For a `ReadOnlySpan<Char>`, the `ToString` method returns a <xref:System.String> that contains the characters pointed to by the span. Otherwise, it returns a <xref:System.String> with the name of the type and the number of elements that the span contains.]]></format>
         </remarks>

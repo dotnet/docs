@@ -153,16 +153,16 @@ You can test for null in a very light syntactic way before performing a member a
 [Multi-line String Literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
  String literals can contain newline sequences.  You no longer need the old work around of using `<xml><![CDATA[...text with newlines...]]></xml>.Value`  
   
-Comments  
-You can put comments after implicit line continuations, inside initializer expressions, and amongst LINQ expression terms.  
+**Comments**  
+You can put comments after implicit line continuations, inside initializer expressions, and among LINQ expression terms.  
   
- Smarter Fully-qualified Name Resolution  
+**Smarter Fully-qualified Name Resolution**  
  Given code such as `Threading.Thread.Sleep(1000)`, Visual Basic used to look up the namespace "Threading", discover it was ambiguous between System.Threading and System.Windows.Threading, and then report an error.  Visual Basic now considers both possible namespaces together.  If you show the completion list, the Visual Studio editor lists members from both types in the completion list.  
   
- Year-first Date Literals  
+ **Year-first Date Literals**  
  You can have date literals in yyyy-mm-dd format, `#2015-03-17 16:10 PM#`.  
   
- Readonly Interface Properties  
+ **Readonly Interface Properties**  
  You can implement readonly interface properties using a readwrite property.  The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.  
   
  [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)  
@@ -171,7 +171,7 @@ You can put comments after implicit line continuations, inside initializer expre
  [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/directives.md)  
  You can disable and enable specific warnings for regions within a source file.  
   
- XML Doc-comment Improvements  
+ **XML Doc-comment Improvements**  
  When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (generics, operators, etc.), colorizing, and refactoring.  
   
  [Partial Module and Interface Definitions](../../visual-basic/language-reference/modifiers/partial.md)  
@@ -183,10 +183,10 @@ You can put comments after implicit line continuations, inside initializer expre
  [Overrides Definitions are Implicitly Overloads](../../visual-basic/language-reference/modifiers/overrides.md)  
  If you add the `Overrides` modifier to a definition, the compiler implicitly adds `Overloads` so that you can type less code in common cases.  
   
- CObj Allowed in Attributes Arguments  
+ **CObj Allowed in Attributes Arguments**  
  The compiler used to give an error that CObj(…) was not a constant when used in attribute constructions.  
   
- Declaring and Consuming Ambiguous Methods from Different Interfaces  
+ **Declaring and Consuming Ambiguous Methods from Different Interfaces**  
  Previously the following code yielded errors that prevented you from declaring `IMock` or from calling `GetDetails` (if these had been declared in C#):  
   
 ```vb  

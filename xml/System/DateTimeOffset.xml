@@ -3608,7 +3608,13 @@
   
  [!code-csharp[System.DateTimeOffset.ParseExact#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/cs/ParseExact.cs#1)]
  [!code-vb[System.DateTimeOffset.ParseExact#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/vb/ParseExact.vb#1)]  
-  
+
+The following example parses an array of strings that are expected to conform to [ISO 8601](~/docs/standard/base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier). As the output from the example shows, strings with leading or trailing spaces fail to parse successfully, as do strings with date and time elements that are out of range.
+
+[!code-csharp[Parsing an ISO 8601 string](~/samples/snippets/csharp/api/system/datetimeoffset/parseexact/parseexact-iso8601.cs)]
+[!code-vb[Parsing an ISO 8601 string](~/samples/snippets/visualbasic/api/system/datetimeoffset/parseexact/parseexact-iso8601.vb)]
+
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The offset is greater than 14 hours or less than -14 hours.</exception>
@@ -3659,13 +3665,47 @@
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="formatProvider">To be added.</param>
-        <param name="styles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="input">A character span that represents a date and time.</param>
+        <param name="format">A character span that contains a format specifier that defines the expected format of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that provides culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />.</param>
+        <summary>Converts a character span that represents a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specified format exactly.</summary>
+        <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="format" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
+        <remarks>
+
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method parses a character span that represents a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time appear in the order specified by `format`. If `input` does not match the `format` pattern, the method throws a <xref:System.FormatException>.  In contrast, the <xref:System.DateTimeOffset.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=nameWithType> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. <xref:System.DateTimeOffset.Parse%2A> also allows the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time to appear in any order.  
+  
+ The `format` parameter is a character span that contains either a single-character standard format specifier or one or more custom format specifiers that define the required format of the `input` parameter. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If `format` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the method throws a <xref:System.FormatException>.  
+  
+ If `format` requires that `input` contain a date but not a time, the resulting <xref:System.DateTimeOffset> object is assigned a time of midnight (0:00:00). If `format` requires that `input` contain a time but not a date, the resulting <xref:System.DateTimeOffset> object is assigned the current date on the local system. If `format` does not require that `input` contain an offset, the resulting <xref:System.DateTimeOffset> object is assigned the time zone offset of the local system.  
+  
+ The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter, as is the precise format of `input` if `format` is a standard format specifier. The `formatProvider` parameter can be either of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property defines the symbols and formatting in `input`.  
+  
+-   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
+  
+ If `formatprovider` is `null`, the <xref:System.Globalization.CultureInfo> object that corresponds to the current culture is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The offset is greater than 14 hours or less than -14 hours.  
+-or-  
+The <paramref name="styles" /> parameter includes an unsupported value.  
+-or-  
+The <paramref name="styles" /> parameter contains <see cref="T:System.Globalization.DateTimeStyles" /> values that cannot be used together.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is an empty character span.  
+ -or-  
+ <paramref name="input" /> does not contain a valid string representation of a date and time.  
+ -or-  
+ <paramref name="format" /> is an empty character span.  
+ -or-  
+ The hour component and the AM/PM designator in <paramref name="input" /> do not agree.</exception>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3689,13 +3729,65 @@
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="formats">To be added.</param>
-        <param name="formatProvider">To be added.</param>
-        <param name="styles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="input">A character span that contains a date and time to convert.</param>
+        <param name="formats">An array of format specifiers that define the expected formats of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />.</param>
+        <summary>Converts a character span that contains the string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified formats, culture-specific format information, and style. The format of the date and time representation must match one of the specified formats exactly.</summary>
+        <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="formats" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
+        <remarks>
+
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ 
+This method parses a character span representing a date that matches any one of the patterns assigned to the `formats` parameter. If `input` does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `input` to multiple formatting patterns, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=nameWithType> method.  
+  
+ The `formats` parameter is a string array whose elements contain either a single standard format specifier or one or more custom format specifiers that define the possible pattern of the `input` parameter. When the method is called, `input` must match one of these patterns. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If the matched element in `formats` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the method throws a <xref:System.FormatException>.  
+  
+> [!IMPORTANT]
+>  Using the `formats` parameter of this overload to specify multiple formats can help reduce the frustration many users experience when they enter dates and times. In particular, the ability to define multiple input patterns enables an application to handle date and time representations that can either include or lack leading zeros in months, days, hours, minutes, and seconds.
+  
+ If the matched element in `formats` requires that `input` contain a date but not a time, the resulting <xref:System.DateTimeOffset> object is assigned a time of midnight (0:00:00). If the matched element in `formats` requires that `input` contain a time but not a date, the resulting <xref:System.DateTimeOffset> object is assigned the current date on the local system. If the matched element in `formats` does not require that `input` contain an offset, the offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the `styles` parameter. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeLocal>, the offset of the local time zone is assigned to the <xref:System.DateTimeOffset> object. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeUniversal>, the Coordinated Universal Time (UTC) offset, or +00:00, is assigned to the <xref:System.DateTimeOffset> object. If neither value is specified, the offset of the local time zone is used.  
+  
+ The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise format of `input`, if the matching element of `formats` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and formatting in `input`.  
+  
+-   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
+  
+ If `formatprovider` is `null`, the <xref:System.Globalization.CultureInfo> object that corresponds to the current culture is used.  
+  
+ The `styles` parameter defines whether white space is permitted in the input string, indicates how strings without an explicit offset component are parsed, and supports UTC conversion as part of the parsing operation. All members of the <xref:System.Globalization.DateTimeStyles> enumeration are supported except <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>. The following table lists the effect of each supported member.  
+  
+|`DateTimeStyles` member|Behavior|  
+|-----------------------------|--------------|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default value.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by `format`. Extra white space can appear between date and time components and within individual components (except the offset), and is ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Allows `input` to include leading spaces not specified by `formats`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Allows `input` to include trailing spaces not specified by `formats`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Allows `input` to include leading, trailing, and inner spaces not specified by `formats`. All extra white-space characters not specified in the matched element in `formats` are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.None>|Indicates that additional white space is not permitted in `input`. White space must appear exactly as specified in a particular element of `formats` for a match to occur. This is the default behavior.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
+  
+ ]]></format>
+        
+        </remarks>
+        <exception cref="T:System.ArgumentException">The offset is greater than 14 hours or less than -14 hours.  
+-or-  
+<paramref name="styles" /> includes an unsupported value.  
+-or-  
+The <paramref name="styles" /> parameter contains <see cref="T:System.Globalization.DateTimeStyles" /> values that cannot be used together.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is an empty character span.  
+-or-  
+<paramref name="input" /> does not contain a valid string representation of a date and time.  
+-or-  
+No element of <paramref name="formats" /> contains a valid format specifier.  
+-or-  
+The hour component and the AM/PM designator in <paramref name="input" /> do not agree.</exception>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3780,7 +3872,19 @@
   
  [!code-csharp[System.DateTimeOffset.ParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/cs/ParseExact.cs#2)]
  [!code-vb[System.DateTimeOffset.ParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/vb/ParseExact.vb#2)]  
-  
+
+The following example uses a variety of <xref:System.Globalization.DateTimeStyles> values to parse an array of strings that are expected to conform to [ISO 8601](~/docs/standard/base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier). As the output from the example shows, strings that are in the proper format fail to parse if:
+
+- they contain white space, and an appropriate <xref:System.Globalization.DateTimeStyles> flag (such as <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> has not been supplied in the method call.
+
+- they contain date and time elements that are out of range.
+
+Strings that do not specify a UTC offset are assumed to have the offset of the local time zone (in this case, -07:00) unless the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag is supplied in the method call. In that case, they are assumed to be Universal Coordinated Time.
+
+[!code-csharp[Parsing ISO 8601 strings](~/samples/snippets/csharp/api/system/datetimeoffset/parseexact/parseexact-iso8601-2.cs)]
+[!code-vb[Parsing ISO 8601 strings](~/samples/snippets/visualbasic/api/system/datetimeoffset/parseexact/parseexact-iso8601-2.vb)]
+
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The offset is greater than 14 hours or less than -14 hours.  
@@ -5351,14 +5455,56 @@ Me.ToUtcDateTime().ToFileTime()
         <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="formatProvider">To be added.</param>
-        <param name="styles">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="input">A character span that contains the representation of a date and time to convert.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" /> </param>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succedded, or <see cref="F:System.DateTimeOffset.MinValue" /> if the conversion failed. The conversion fails if the </param>
+        <summary>Converts the representation of a date and time in a character span to its <see cref="System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specied format exactly.</summary>
+        <returns><see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This overload is like the <xref:System.DateTimeOffset.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=nameWithType> method, except that this method does not throw an exception if the conversion fails. It parses the representation of a date and time that must exactly match the pattern specified by the `format` parameter. If `input` does not match this pattern, with some possible variations in white space defined by the `styles` parameter, the parsing operation fails and the method returns `false`.  
+  
+The `format` parameter is a character span that contains either a single standard format specifier or one or more custom format specifiers that define the required pattern of `input`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If `format` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the parsing operation fails and the method returns `false`.  
+  
+If `format` requires that `input` contain a date but not a time, the resulting <xref:System.DateTimeOffset> object is assigned a time of midnight (0:00:00). If `format` requires that `input` contain a time but not a date, the resulting <xref:System.DateTimeOffset> object is assigned the current date on the local system. If `format` does not require that `input` contain an offset, the offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the `styles` parameter. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeLocal>, the offset of the local time zone is assigned to the <xref:System.DateTimeOffset> object. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeUniversal>, the Coordinated Universal Time (UTC) offset, or +00:00, is assigned to the <xref:System.DateTimeOffset> object. If neither value is specified, the offset of the local time zone is used.  
+  
+The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise pattern of `input` if `format` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and standard formats allowed in `input`.  
+  
+-   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
+  
+ If `formatprovider` is `null`, the <xref:System.Globalization.CultureInfo> object that corresponds to the current culture is used.  
+  
+ The `styles` parameter defines whether white space is allowed in the input string, indicates how strings without an explicit offset component are parsed, and supports UTC conversion as part of the parsing operation. All members of the <xref:System.Globalization.DateTimeStyles> enumeration are supported except <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>. The following table lists the effect of each supported member.  
+  
+|`DateTimeStyles` member|Behavior|  
+|-----------------------------|--------------|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a date and time representation, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default behavior.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by format. Extra white space can appear between date and time components and within individual components, other than the offset, and is ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Allows `input` to include leading spaces not specified by `format`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Allows `input` to include trailing spaces not specified by `format`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Allows `input` to include leading, trailing, and inner spaces not specified by `format`. All extra white-space characters not specified in `format` are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.None>|Indicates that additional white space is not permitted in `input`. White space must appear exactly as specified in `format`. This is the default behavior.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect, because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
+
+ ]]></format>
+        
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.  
+-or-  
+<see cref="F:System.Globalization.DateTimeStyles.NoCurrentDateDefault" /> is not supported.  
+-or-  
+<paramref name="styles" /> includes mutually exclusive <see cref="T:System.Globalization.DateTimeStyles" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -5391,7 +5537,51 @@ Me.ToUtcDateTime().ToFileTime()
         <param name="result">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+        
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+ 
+This method parses the string representation of a date that matches any one of the patterns assigned to the `formats` array. If `input` does not match any one of these patterns with any variations defined by the `styles` parameter, the parsing operation fails and the method returns `false`. Aside from comparing `input` to multiple strings that contain format specifiers, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=nameWithType> method.  
+  
+ The `formats` parameter is a string array whose elements contain either a single standard format specifier or one or more custom format specifiers that define the possible pattern of `input`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If the matched element in `formats` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the parse operation fails and the method returns `false`.  
+  
+> [!IMPORTANT]
+>  Using the `formats` parameter of this overload to specify multiple formats can help reduce the frustration many users experience when they enter dates and times. In particular, the ability to define multiple input patterns enables an application to handle date and time representations that can either include or lack leading zeros in months, days, hours, minutes, and seconds. The example provides an illustration of this.  
+  
+ If the matched element in `formats` requires that `input` contain a date but not a time, the resulting <xref:System.DateTimeOffset> object is assigned a time of midnight (0:00:00). If the matched element in `formats` requires that input contain a time but not a date, the resulting <xref:System.DateTimeOffset> object is assigned the current date on the local system. If the matched element in `formats` does not require that `input` contain an offset, the offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the `styles` parameter. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType>, the offset of the local time zone is assigned to the <xref:System.DateTimeOffset> object. If `styles` includes <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType>, the Coordinated Universal Time (UTC) offset, or +00:00, is assigned to the <xref:System.DateTimeOffset> object. If neither value is specified, the offset of the local time zone is used.  
+  
+ The particular date and time symbols used in `input` are defined by the `formatProvider` parameter. The same is true for the precise pattern of `input` if the matching element of `formats` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and formatting in `input`.  
+  
+-   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
+  
+ If `formatprovider` is `null`, the <xref:System.Globalization.CultureInfo> object that corresponds to the current culture is used.  
+  
+ The `styles` parameter defines whether white space is permitted in the input string, indicates how strings without an explicit offset component are parsed, and supports UTC conversion as part of the parsing operation. All members of the <xref:System.Globalization.DateTimeStyles> enumeration are supported except <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>. The following table lists the effect of each supported member.  
+  
+|`DateTimeStyles` member|Behavior|  
+|-----------------------------|--------------|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default value.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by the elements in `formats`. Extra white space can appear between date and time components and within individual components (except for the offset) and is ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Allows `input` to include leading spaces not specified by the elements in `formats`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Allows `input` to include trailing spaces not specified by the elements in `formats`. These are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Allows `input` to include leading, trailing, and inner spaces not specified by the elements in `formats`. All extra white-space characters not specified in the matched element in `formats` are ignored when parsing the string.|  
+|<xref:System.Globalization.DateTimeStyles.None>|Indicates that additional white space is not permitted in `input`. White space must appear exactly as specified in a particular element in `formats` for a successful match to occur. This is the default behavior.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.  
+-or-  
+<see cref="F:System.Globalization.DateTimeStyles.NoCurrentDateDefault" /> is not supported.  
+-or-  
+<paramref name="styles" /> includes mutually exclusive <see cref="T:System.Globalization.DateTimeStyles" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -5472,13 +5662,23 @@ Me.ToUtcDateTime().ToFileTime()
 |<xref:System.Globalization.DateTimeStyles.None>|Indicates that additional white space is not permitted in `input`. White space must appear exactly as specified in `format`. This is the default behavior.|  
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect, because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
   
-   
-  
-## Examples  
+## Examples 
+
  The following example uses the <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method with standard and custom format specifiers, the invariant culture, and various <xref:System.Globalization.DateTimeStyles> values to parse several date and time strings.  
   
  [!code-csharp[System.DateTimeOffset.TryParseExact#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.TryParseExact/cs/TryParseExact.cs#1)]
  [!code-vb[System.DateTimeOffset.TryParseExact#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.TryParseExact/vb/TryParseExact.vb#1)]  
+
+The following example uses a variety of <xref:System.Globalization.DateTimeStyles> values to parse an array of strings that are expected to conform to [ISO 8601](~/docs/standard/base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier). As the output from the example shows, strings that are in the proper format fail to parse if:
+
+- they contain white space, and an appropriate <xref:System.Globalization.DateTimeStyles> flag (such as <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> has not been supplied in the method call.
+
+- they contain date and time elements that are out of range.
+
+Strings that do not specify a UTC offset are assumed to have the offset of the local time zone (in this case, -07:00, which reflects the offset of the Pacific Daylight Time zone) unless the <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> flag is supplied in the method call. In that case, they are assumed to be Universal Coordinated Time.
+
+[!code-csharp[Parsing ISO 8601 strings](~/samples/snippets/csharp/api/system/datetimeoffset/tryparseexact/tryparseexacto8601-2.cs)]
+[!code-vb[Parsing ISO 8601 strings](~/samples/snippets/visualbasic/api/system/datetimeoffset/tryparseexact/tryparseexacto8601-2.vb)]
   
  ]]></format>
         </remarks>

@@ -26,22 +26,16 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
 - Primitive types, such as [string][string] and [int][int].
-- Collections, such as [List<T>][list] and [Dictionary<K,V>][dictionary].
-- Utility types, such as [HttpClient][httpclient], and [FileStream][filestream].
-- Data types, such as [DataSet][dataset], and [DbSet][dbset].
-- High performance types, such as [Vector][vector] and [Pipelines][pipelines].
+- Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%601?displayProperty=nameWithType>.
+- Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
+- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
+- High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines][pipelines].
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
-[string]: https://docs.microsoft.com/dotnet/api/system.string?view=netcore-2.1
-[int]: https://docs.microsoft.com/dotnet/api/system.int32?view=netcore-2.1
-[dictionary]: https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2?view=netcore-2.1
-[list]: https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netcore-2.1
-[httpclient]: https://docs.microsoft.com/dotnet/api/system.net.http.httpclient?view=netcore-2.1
-[filestream]: https://docs.microsoft.com/dotnet/api/system.io.filestream?view=netcore-2.1
+[string]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string
+[int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
 [pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
-[vector]: https://docs.microsoft.com/dotnet/api/system.numerics.vector?view=netcore-2.1
-[dataset]: https://docs.microsoft.com/dotnet/api/system.data.dataset?view=netcore-2.1
 [dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 
 ## Frameworks
@@ -69,7 +63,7 @@ These components are distributed in the following ways:
 
 ### Open Source
 
-[.NET Core](https://github.com/dotnet/core) is open source (MIT license) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It is now one of the most active .NET Foundation projects. It can be freely adopted by individuals and companies, including for personal, academic or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
+[.NET Core](https://github.com/dotnet/core) is open source ([MIT license](https://github.com/dotnet/core/blob/master/LICENSE.TXT)) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It is now one of the most active .NET Foundation projects. It can be freely adopted by individuals and companies, including for personal, academic or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
 
 ### Designed for Adaptability
 
@@ -87,8 +81,8 @@ Windows and Unix implementations are similar in size. Windows has a larger imple
 
 There are a mix of platform-specific and platform-neutral libraries in .NET Core. You can see the pattern in a few examples:
 
-- [CoreCLR](https://github.com/dotnet/coreclr) is platform-specific. It's built in C/C++, so is platform-specific by construction.
-- [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that the storage and cryptography APIs differ significantly on each OS.
+- [CoreCLR](https://github.com/dotnet/coreclr) is platform-specific. It builds on top of OS subsystems, like the memory manager and thread scheduler.
+- [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that storage and cryptography APIs are different on each OS.
 - [System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections) and [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq) are platform-neutral, given that they create and operate over data structures.
 
 ## Comparisons to other .NET implementations
@@ -101,8 +95,8 @@ It is perhaps easiest to understand the size and shape of .NET Core by comparing
 
 The major differences between .NET Core and the .NET Framework:
 
-- **App-models** -- .NET Core does not support all the .NET Framework app-models. In particular, it doesn't ASP.NET Web Forms and MVC. It was announced that [.NET Core 3 will support WPF and Windows Forms](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/).
-- **APIs** -- .NET Core contains a large subset of .NET Framework Base Class Library, with a different factoring (assembly names are different; type shape differs in key cases). These differences require changes to port source to .NET Core in some cases (see [microsoft/dotnet-apiport[(https://github.com/microsoft/dotnet-apiport)). .NET Core implements the [.NET Standard](../standard/net-standard.md) API specification.
+- **App-models** -- .NET Core does not support all the .NET Framework app-models. In particular, it doesn't support ASP.NET Web Forms and MVC. It was announced that [.NET Core 3 will support WPF and Windows Forms](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/).
+- **APIs** -- .NET Core contains a large subset of .NET Framework Base Class Library, with a different factoring (assembly names are different; members exposed on types differ in key cases). These differences require changes to port source to .NET Core in some cases (see [microsoft/dotnet-apiport[(https://github.com/microsoft/dotnet-apiport)). .NET Core implements the [.NET Standard](../standard/net-standard.md) API specification.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.

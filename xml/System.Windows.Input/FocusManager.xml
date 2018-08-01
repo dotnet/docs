@@ -1,4 +1,4 @@
-﻿<Type Name="FocusManager" FullName="System.Windows.Input.FocusManager">
+<Type Name="FocusManager" FullName="System.Windows.Input.FocusManager">
   <TypeSignature Language="C#" Value="public static class FocusManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FocusManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.FocusManager" />
@@ -105,8 +105,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the element this property is attached to has logical focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.FocusManager.FocusedElement%2A> is the element which has logical focus for a specific focus scope.  This object may or may not have keyboard focus.  Keyboard focus refers to the element that receives keyboard input.  For more information on focus, keyboard focus, and logical focus, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ <xref:System.Windows.Input.FocusManager.GetFocusedElement%2A> and <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A> can be used to get and set the focused element within the specified focus scope.  
+  
+<a name="dependencyPropertyInfo_FocusedElement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.FocusManager.FocusedElementProperty>|  
+|Metadata properties set to **true**|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to make a <xref:System.Windows.Controls.Button> the focused element.  
+  
+ [!code-xml[markupsnippets#MarkupFocusManagerFocusedElementXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupfocusmanagerfocusedelementxaml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedElementProperty">
@@ -269,7 +293,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an element gets focus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +331,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the element this property is attached to is a focus scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A focus scope is a container element that keeps track of the <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> within its scope.  By default, the <xref:System.Windows.Window> class is a focus scope as are the <xref:System.Windows.Controls.Menu>, <xref:System.Windows.Controls.ContextMenu>, and <xref:System.Windows.Controls.ToolBar> classes.  An element which is a focus scope has <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> set to `true`.  
+  
+ For more information on focus, keyboard focus, and logical focus, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+<a name="dependencyPropertyInfo_IsFocusScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.FocusManager.IsFocusScopeProperty>|  
+|Metadata properties set to **true**|None|  
+  
+   
+  
+## Examples  
+ The following example makes a <xref:System.Windows.Controls.StackPanel> a focus scope.  
+  
+ [!code-xml[markupsnippets#MarkupIsFocusScopeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupisfocusscopexaml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFocusScopeProperty">
@@ -355,7 +403,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an element loses focus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
+<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
   <TypeSignature Language="C#" Value="public class EntityDataSource : System.Web.UI.DataSourceControl, System.Web.DynamicData.IDynamicDataSource, System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSource extends System.Web.UI.DataSourceControl implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource, class System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSource" />
@@ -1991,8 +1991,23 @@ ObjectQuery<Product> products = context.Product
         <ReturnType>System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when validation fails in a partial methods or when an exception is raised.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.EntityDataSource.System%23Web%23DynamicData%23IDynamicDataSource%23Exception> event is implemented to provide for compatibility with ASP.NET Dynamic Data. This event, defined by the <xref:System.Web.DynamicData.IDynamicDataSource> interface, is explicitly implemented by the <xref:System.Web.UI.WebControls.EntityDataSource>. A handler for this event cannot be registered in markup. It can be used only when the <xref:System.Web.UI.WebControls.EntityDataSource> instance is cast to an <xref:System.Web.DynamicData.IDynamicDataSource> interface.  
+  
+ The <xref:System.Web.UI.WebControls.EntityDataSource.System%23Web%23DynamicData%23IDynamicDataSource%23Exception> event provides an <xref:System.Web.DynamicData.DynamicValidatorEventArgs> object that returns the <xref:System.Exception>. The <xref:System.Web.UI.WebControls.EntityDataSource.System%23Web%23DynamicData%23IDynamicDataSource%23Exception> event may be raised in the following cases:  
+  
+-   When an object is created. This enables the partial methods on the object to raise exceptions during validation of property settings.  
+  
+-   When an exception occurs during the execution of the query.  
+  
+-   When an exception occurs during the execution of any INSERT, UPDATE, or DELETE operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged">

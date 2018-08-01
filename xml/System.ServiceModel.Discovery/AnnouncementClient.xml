@@ -1,4 +1,4 @@
-﻿<Type Name="AnnouncementClient" FullName="System.ServiceModel.Discovery.AnnouncementClient">
+<Type Name="AnnouncementClient" FullName="System.ServiceModel.Discovery.AnnouncementClient">
   <TypeSignature Language="C#" Value="public sealed class AnnouncementClient : IDisposable, System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnouncementClient extends System.Object implements class System.IDisposable, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.AnnouncementClient" />
@@ -887,7 +887,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the communication object completes its transition from the closing state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -908,7 +908,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the communication object first enters the closing state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -981,7 +981,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the communication object first enters the faulted state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,7 +1060,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the communication object completes its transition from the opening state into the opened state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1081,7 +1081,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the communication object first enters the opening state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

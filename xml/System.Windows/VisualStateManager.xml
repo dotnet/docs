@@ -1,4 +1,4 @@
-﻿<Type Name="VisualStateManager" FullName="System.Windows.VisualStateManager">
+<Type Name="VisualStateManager" FullName="System.Windows.VisualStateManager">
   <TypeSignature Language="C#" Value="public class VisualStateManager : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualStateManager extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualStateManager" />
@@ -72,8 +72,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.VisualStateManager" /> object that transitions between the states of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.VisualStateManager.CustomVisualStateManager%2A> is `null`, the <xref:System.Windows.VisualStateManager> uses its own logic to transition between states. If you want to implement your own logic for transitioning between states, create a class that inherits from <xref:System.Windows.VisualStateManager> and override the <xref:System.Windows.VisualStateManager.GoToStateCore%2A> method. To use the custom class, set the <xref:System.Windows.VisualStateManager.CustomVisualStateManager%2A> property to an object of your custom type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomVisualStateManagerProperty">

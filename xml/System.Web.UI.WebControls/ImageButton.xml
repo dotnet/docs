@@ -1,4 +1,4 @@
-﻿<Type Name="ImageButton" FullName="System.Web.UI.WebControls.ImageButton">
+<Type Name="ImageButton" FullName="System.Web.UI.WebControls.ImageButton">
   <TypeSignature Language="C#" Value="public class ImageButton : System.Web.UI.WebControls.Image, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler, System.Web.UI.WebControls.IButtonControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageButton extends System.Web.UI.WebControls.Image implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.WebControls.IButtonControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageButton" />
@@ -1192,8 +1192,16 @@ End Sub
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see the <see cref="E:System.Web.UI.WebControls.IButtonControl.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IButtonControl.Click> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.WebControls.IButtonControl> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IButtonControl.Text">

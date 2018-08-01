@@ -1,4 +1,4 @@
-﻿<Type Name="ClientBase&lt;TChannel&gt;" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;">
+<Type Name="ClientBase&lt;TChannel&gt;" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;">
   <TypeSignature Language="C#" Value="public abstract class ClientBase&lt;TChannel&gt; : IDisposable, System.ServiceModel.ICommunicationObject where TChannel : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ClientBase`1&lt;class TChannel&gt; extends System.Object implements class System.IDisposable, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1" />
@@ -1355,8 +1355,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event handler that is invoked when the <see cref="T:System.ServiceModel.ClientBase`1" /> object has transitioned from its current state to the closed state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Closing">
@@ -1384,8 +1391,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event handler that is invoked when the <see cref="T:System.ServiceModel.ClientBase`1" /> object transitions from its current state to the closed state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.EndClose">
@@ -1495,8 +1509,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event handler that is invoked when a fault occurs while performing an operation on the <see cref="T:System.ServiceModel.ClientBase`1" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
@@ -1590,8 +1611,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event handler that is invoked when the <see cref="T:System.ServiceModel.ClientBase`1" /> object transitions from the created state to the opened state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Opening">
@@ -1619,8 +1647,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event handler that is invoked when the <see cref="T:System.ServiceModel.ClientBase`1" /> object transitions from the created state to the opened state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+For more information, see <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

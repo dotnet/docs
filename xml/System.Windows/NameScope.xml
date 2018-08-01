@@ -1,4 +1,4 @@
-﻿<Type Name="NameScope" FullName="System.Windows.NameScope">
+<Type Name="NameScope" FullName="System.Windows.NameScope">
   <TypeSignature Language="C#" Value="public class NameScope : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Windows.Markup.INameScopeDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameScope extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.INameScope, class System.Windows.Markup.INameScopeDictionary" />
   <TypeSignature Language="DocId" Value="T:System.Windows.NameScope" />
@@ -488,8 +488,24 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets dynamically attached <see cref="T:System.Windows.NameScope" /> instances.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property requires attached property usage in XAML, or use of the <xref:System.Windows.NameScope.GetNameScope%2A> and <xref:System.Windows.NameScope.SetNameScope%2A> accessors in code. Setting the namescope in XAML is not common. The attached property usage is primarily to facilitate attaching XAML namescopes to objects that do not share inheritance for XAML namescope implementations. <xref:System.Windows.DependencyObject> and derived classes support this inheritance natively.  
+  
+<a name="dependencyPropertyInfo_NameScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.NameScope.NameScopeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Markup.INameScope" />
       </Docs>
     </Member>
     <Member MemberName="NameScopeProperty">

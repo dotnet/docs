@@ -1,4 +1,4 @@
-﻿<Type Name="Binding" FullName="System.Windows.Data.Binding">
+<Type Name="Binding" FullName="System.Windows.Data.Binding">
   <TypeSignature Language="C#" Value="public class Binding : System.Windows.Data.BindingBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Binding extends System.Windows.Data.BindingBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.Binding" />
@@ -1062,8 +1062,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a value is transferred from the binding target to the binding source, but only for bindings with the <see cref="P:System.Windows.Data.Binding.NotifyOnSourceUpdated" /> value set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_SourceUpdatedEvent"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.SourceUpdatedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.EventHandler%601>, constrained to <xref:System.Windows.Data.DataTransferEventArgs>.|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateSource" />
+        <altmember cref="E:System.Windows.Data.Binding.TargetUpdated" />
       </Docs>
     </Member>
     <Member MemberName="SourceUpdatedEvent">
@@ -1100,8 +1117,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a value is transferred from the binding source to the binding target, but only for bindings with the <see cref="P:System.Windows.Data.Binding.NotifyOnTargetUpdated" /> value set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_TargetUpdatedEvent"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.TargetUpdatedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.EventHandler%601>, constrained to <xref:System.Windows.Data.DataTransferEventArgs>.|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateTarget" />
+        <altmember cref="E:System.Windows.Data.Binding.SourceUpdated" />
       </Docs>
     </Member>
     <Member MemberName="TargetUpdatedEvent">
@@ -1416,8 +1450,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Xml.XmlNamespaceManager" /> used to perform namespace-aware <see langword="XPath" /> queries in XML bindings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property uses property value inheritance, which reproduces the behavior of namespace inheritance that is present in [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)]. For details, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+<a name="dependencyPropertyInfo_XmlNamespaceManager"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.XmlNamespaceManagerProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceManagerProperty">

@@ -1,4 +1,4 @@
-﻿<Type Name="InputLanguageManager" FullName="System.Windows.Input.InputLanguageManager">
+<Type Name="InputLanguageManager" FullName="System.Windows.Input.InputLanguageManager">
   <TypeSignature Language="C#" Value="public sealed class InputLanguageManager : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputLanguageManager extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageManager" />
@@ -243,8 +243,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the preferred input language for the associated dependency object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_InputLanguage"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.InputLanguageManager.InputLanguageProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ When the associated dependency object receives the input focus, the input language specified by this attached property is selected automatically.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.GetInputLanguage(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.SetInputLanguage(System.Windows.DependencyObject,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanged">
@@ -412,8 +430,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether or not the previously active input language should be restored when the associated dependency object looses the input focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_RestoreInputLanguage"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.InputLanguageManager.RestoreInputLanguageProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ This property has no effect if the <xref:System.Windows.Input.InputLanguageManager.InputLanguage%2A> attached property is not available on the associated dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.GetRestoreInputLanguage(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RestoreInputLanguageProperty">

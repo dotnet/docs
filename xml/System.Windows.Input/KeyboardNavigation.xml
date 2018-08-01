@@ -1,4 +1,4 @@
-﻿<Type Name="KeyboardNavigation" FullName="System.Windows.Input.KeyboardNavigation">
+<Type Name="KeyboardNavigation" FullName="System.Windows.Input.KeyboardNavigation">
   <TypeSignature Language="C#" Value="public sealed class KeyboardNavigation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyboardNavigation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigation" />
@@ -54,8 +54,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the Return character is accepted by a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AcceptsReturn"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="AcceptsReturnProperty">
@@ -92,8 +107,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the logical control tab navigation behavior for the children of the element that this property is set on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies how the container will move the focus when control tab navigation occurs.  
+  
+ Control tab navigation is invoked by using the CTRL+TAB key combination.  
+  
+<a name="dependencyPropertyInfo_ControlTabNavigation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="ControlTabNavigationProperty">
@@ -135,8 +168,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the directional navigation behavior for the children of the element that this property is set on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Directional navigation is invoked by using the arrow keys.  
+  
+<a name="dependencyPropertyInfo_DirectionalNavigation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="DirectionalNavigationProperty">
@@ -382,8 +431,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the element that this property is set on is a tab stop.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsTabStop"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.IsTabStopProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="IsTabStopProperty">
@@ -600,8 +664,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the tab index for the element that this property is set on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_TabIndex"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.TabIndexProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">
@@ -638,8 +717,34 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the logical tab navigation behavior for the children of the element that this property is set on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tab navigation is invoked by using the TAB key.  
+  
+<a name="dependencyPropertyInfo_TabNavigation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.KeyboardNavigation.TabNavigationProperty>|  
+|Metadata properties set to **true**|None|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Menu> with a number of <xref:System.Windows.Controls.MenuItem> objects.  The <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> attached property is set to <xref:System.Windows.Input.KeyboardNavigationMode.Cycle> on the <xref:System.Windows.Controls.Menu>.  This means that when focus is changed using the tab key within the <xref:System.Windows.Controls.Menu>, focus will move from each element and when the last element is reached focus will return to the first element.  
+  
+ [!code-xml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
+  
+ [!code-csharp[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]
+ [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarkupSnippets/visualbasic/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
       </Docs>
     </Member>
     <Member MemberName="TabNavigationProperty">

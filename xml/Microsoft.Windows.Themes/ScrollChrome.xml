@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
+<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
   <TypeSignature Language="C#" Value="public sealed class ScrollChrome : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollChrome extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ScrollChrome" />
@@ -618,8 +618,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" /> for the <see cref="T:Microsoft.Windows.Themes.ScrollChrome" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_ThemeColor"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.ScrollGlyphProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollGlyphProperty">

@@ -1,4 +1,4 @@
-﻿<Type Name="WindowChrome" FullName="System.Windows.Shell.WindowChrome">
+<Type Name="WindowChrome" FullName="System.Windows.Shell.WindowChrome">
   <TypeSignature Language="C#" Value="public class WindowChrome : System.Windows.Freezable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowChrome extends System.Windows.Freezable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.WindowChrome" />
@@ -784,8 +784,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the instance of <see cref="T:System.Windows.Shell.WindowChrome" /> that is attached to a window.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_WindowChrome"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.WindowChromeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowChromeProperty">

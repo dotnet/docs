@@ -1,4 +1,4 @@
-﻿<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
+<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
   <TypeSignature Language="C#" Value="public class ToolBar : System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBar extends System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolBar" />
@@ -472,8 +472,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.ToolBar" /> item is an overflow item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a read-only attached property. Read-only attached properties are uncommon, and have no direct [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage. However, you can use the attached property reference as a property trigger in a style, to apply different style values to an item within a toolbar that is in the overflow panel.  
+  
+<a name="dependencyPropertyInfo_IsOverflowItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolBar.IsOverflowItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlTextUsage_IsOverflowItem"></a>   
+## XAML Text Usage  
+ See Remarks.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ToolBarOverflowPanel" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />
+        <altmember cref="T:System.Windows.Controls.ToolBarTray" />
       </Docs>
     </Member>
     <Member MemberName="IsOverflowItemProperty">
@@ -838,8 +860,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates when an item should be placed in the overflow panel instead of in the main panel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_OverflowMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolBar.OverflowModeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ToolBarOverflowPanel" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />
+        <altmember cref="T:System.Windows.Controls.ToolBarTray" />
       </Docs>
     </Member>
     <Member MemberName="OverflowModeProperty">

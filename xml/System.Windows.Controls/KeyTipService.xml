@@ -1,4 +1,4 @@
-﻿<Type Name="KeyTipService" FullName="System.Windows.Controls.KeyTipService">
+<Type Name="KeyTipService" FullName="System.Windows.Controls.KeyTipService">
   <TypeSignature Language="C#" Value="public class KeyTipService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyTipService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipService" />
@@ -30,7 +30,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the KeyTip is activated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,8 +243,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the element that this property is attached to is in KeyTip scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsKeyTipScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.KeyTipService.IsKeyTipScopeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyTipScopeProperty">
@@ -279,8 +293,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text to use for the KeyTip.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_KeyTip"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.KeyTipService.KeyTipProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyTipAccessed">
@@ -295,7 +323,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the KeyTip is accessed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,8 +379,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style to use with the KeyTip.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_KeyTipStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.KeyTipService.KeyTipStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyTipStyleProperty">
@@ -387,7 +429,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the KeyTip is accessed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

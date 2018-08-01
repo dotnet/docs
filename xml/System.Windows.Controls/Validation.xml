@@ -1,4 +1,4 @@
-﻿<Type Name="Validation" FullName="System.Windows.Controls.Validation">
+<Type Name="Validation" FullName="System.Windows.Controls.Validation">
   <TypeSignature Language="C#" Value="public static class Validation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Validation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Validation" />
@@ -101,8 +101,38 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the bound element runs into a validation error, but only for bindings with the <see cref="P:System.Windows.Data.Binding.NotifyOnValidationError" /> value set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> object. Validation occurs during binding target-to-binding source value transfer before the converter is called. The following describes the validation process:  
+  
+1.  When a value is being transferred from the target property to the source property, the data binding engine first removes any <xref:System.Windows.Controls.ValidationError> that may have been added to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> attached property of the bound element. It then checks if there are any custom <xref:System.Windows.Controls.ValidationRule>s defined for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each of the <xref:System.Windows.Controls.ValidationRule>s until one of them runs into an error or until all of them pass.  
+  
+2.  Once there is a custom rule that does not pass, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. When <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> is not empty, the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property of the element is set to `true`. Also, if the <xref:System.Windows.Data.Binding.NotifyOnValidationError%2A> property of the <xref:System.Windows.Data.Binding> is set to `true`, then the binding engine raises the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> attached event on the element.  
+  
+3.  If all of the rules pass, the binding engine then calls the converter, if one exists.  
+  
+4.  If the converter passes, the binding engine calls the setter of the source property.  
+  
+5.  If the binding has an <xref:System.Windows.Controls.ExceptionValidationRule> associated with it and an exception is thrown during step 4, the binding engine checks to see if there is a <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A>. You have the option to use the <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> callback to provide a custom handler for handling exceptions. If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element.  
+  
+ Also note that a valid value transfer in either direction (target-to-source or source-to-target) clears the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.Errors%2A>attached property.  
+  
+ For more information, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+<a name="routedEventInfo_Error"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.ErrorEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.EventHandler%601>, constrained by <xref:System.Windows.Controls.ValidationErrorEventArgs>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorEvent">
@@ -160,8 +190,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.ControlTemplate" /> used to generate validation error feedback on the adorner layer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model allows you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> object. If the user enters an invalid value, you may want to provide some feedback about the error on the application [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)]. One way to provide such feedback is to set the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.ErrorTemplate%2A> attached property to a custom <xref:System.Windows.Controls.ControlTemplate>.  
+  
+ For a detailed discussion of validation, see the Data Validation section of the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+<a name="dependencyPropertyInfo_ErrorTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.ErrorTemplateProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.AdornedElementPlaceholder" />
       </Docs>
     </Member>
     <Member MemberName="ErrorTemplateProperty">
@@ -510,8 +558,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element that appears to indicate that a validation error occurred on the bound element where this property is set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> attached properties reference each other, and you can set either one.  For example, suppose that a <xref:System.Windows.Controls.Label> displays validation errors that occur on a data-bound <xref:System.Windows.Controls.TextBox>.  You can do one of the following to establish that relationship:  
+  
+-   Set <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.TextBox> to the <xref:System.Windows.Controls.Label>.  
+  
+-   Set <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.Label> to the <xref:System.Windows.Controls.TextBox>.  
+  
+-   When you set one of the properties, the other property is set to the element on which you set the attached property; regardless of which of the previous options you choose, the <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.TextBox> is the <xref:System.Windows.Controls.Label> and the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A> for the <xref:System.Windows.Controls.Label> is the <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="dependencyPropertyInfo_ValidationAdornerSite"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.ValidationAdornerSiteProperty>|  
+|Metadata properties set to **true**|None|  
+  
+   
+  
+## Examples  
+ The following example uses a <xref:System.Windows.Controls.Label> as the adorner site for the validation errors that occur on items in an <xref:System.Windows.Controls.ItemsControl>. The example sets the <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for each item container in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> to the label.  The example uses the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> property to get the item container that has the error and binds the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Label> to the first <xref:System.Windows.Controls.ValidationError> that is reported.  
+  
+ [!code-xml[BindingGroupSnippets#ItemBindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#itembindinggroup)]  
+[!code-xml[BindingGroupSnippets#ValidationAdornerSiteFor](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#validationadornersitefor)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationAdornerSiteFor">
@@ -527,8 +604,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element for which this element appears to indicate that an error occurred.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> attached properties reference each other, and you can set either one.  For example, suppose that a <xref:System.Windows.Controls.Label> displays validation errors that occur on a data bound <xref:System.Windows.Controls.TextBox>.  You can do one of the following to establish that relationship:  
+  
+-   Set <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.TextBox> to the <xref:System.Windows.Controls.Label>.  
+  
+-   Set <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.Label> to the <xref:System.Windows.Controls.TextBox>.  
+  
+ When you set one of the properties, the other property is set to the element on which you set the attached property; regardless of which of the previous options you choose, the <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for the <xref:System.Windows.Controls.TextBox> is the <xref:System.Windows.Controls.Label> and the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A> for the <xref:System.Windows.Controls.Label> is the <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="dependencyPropertyInfo_ValidationAdornerSiteFor"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.ValidationAdornerSiteForProperty>|  
+|Metadata properties set to **true**|None|  
+  
+   
+  
+## Examples  
+ The following example uses a <xref:System.Windows.Controls.Label> as the adorner site for the validation errors that occur on items in an <xref:System.Windows.Controls.ItemsControl>. The example sets the <xref:System.Windows.Controls.Validation.ValidationAdornerSite%2A?displayProperty=nameWithType> for each item container in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> to the label.  The example uses the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=nameWithType> property to get the item container that has the error and binds the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Label> to the first <xref:System.Windows.Controls.ValidationError> that is reported.  
+  
+ [!code-xml[BindingGroupSnippets#ItemBindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#itembindinggroup)]  
+[!code-xml[BindingGroupSnippets#ValidationAdornerSiteFor](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#validationadornersitefor)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationAdornerSiteForProperty">

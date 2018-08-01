@@ -1,4 +1,4 @@
-﻿<Type Name="ContextMenuService" FullName="System.Windows.Controls.ContextMenuService">
+<Type Name="ContextMenuService" FullName="System.Windows.Controls.ContextMenuService">
   <TypeSignature Language="C#" Value="public static class ContextMenuService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ContextMenuService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContextMenuService" />
@@ -117,8 +117,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content of a <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_ContextMenu"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.ContextMenuProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosing">
@@ -133,7 +148,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Controls.ContextMenu" /> closes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +185,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Controls.ContextMenu" /> opens.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,8 +529,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> has the drop shadow effect enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ContextMenu> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType> property is `false`.  
+  
+<a name="dependencyPropertyInfo_HasDropShadow"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.HasDropShadowProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -552,8 +590,58 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates where along the x-direction to place the <see cref="T:System.Windows.Controls.ContextMenu" /> with respect to the parent control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_HorizontalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.HorizontalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_HorizontalOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HorizontalOffset="double"/>  
+- or –  
+<object HorizontalOffset="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_HorizontalOffset"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -590,8 +678,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> can be shown.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ContextMenuService.IsEnabled%2A> property is `false` the context menu does not appear when the user right-clicks the parent control.  
+  
+<a name="dependencyPropertyInfo_IsEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.IsEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to disable a context menu by setting the <xref:System.Windows.Controls.ContextMenuService.IsEnabled%2A> property to false.  
+  
+ [!code-xml[ContextMenuService_snip#ContextMenuServiceIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#contextmenuserviceisenabled)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -628,8 +739,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the placement of the <see cref="T:System.Windows.Controls.ContextMenu" /> relative to the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> or <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_Placement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.PlacementProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -666,8 +800,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the area relative to which the context menu is positioned when it opens.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_PlacementRectangle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.PlacementRectangleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -704,8 +861,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the parent control of the <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_PlacementTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.PlacementTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -1037,8 +1210,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> should be shown when its parent is grayed out.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_ShowOnDisabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.ShowOnDisabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ This example creates and displays a <xref:System.Windows.Controls.ContextMenu> on a disabled button.  
+  
+ [!code-xml[ContextMenuService_snip#ContextMenuServiceShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#contextmenuserviceshowondisabled)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ShowOnDisabledProperty">
@@ -1075,8 +1270,58 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates where along the y-direction to place the <see cref="T:System.Windows.Controls.ContextMenu" /> with respect to the parent control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_VerticalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_VerticalOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object VerticalOffset="double"/>  
+- or –  
+<object VerticalOffset="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_VerticalOffset"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">

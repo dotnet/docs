@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDataSource" FullName="System.Web.UI.WebControls.XmlDataSource">
+<Type Name="XmlDataSource" FullName="System.Web.UI.WebControls.XmlDataSource">
   <TypeSignature Language="C#" Value="public class XmlDataSource : System.Web.UI.HierarchicalDataSourceControl, System.ComponentModel.IListSource, System.Web.UI.IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSource extends System.Web.UI.HierarchicalDataSourceControl implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.XmlDataSource" />
@@ -1032,8 +1032,16 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.Web.UI.IDataSource.DataSourceChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.XmlDataSource> instance is cast to the <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Web.UI.IDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">

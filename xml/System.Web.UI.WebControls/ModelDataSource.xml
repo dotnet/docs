@@ -1,4 +1,4 @@
-﻿<Type Name="ModelDataSource" FullName="System.Web.UI.WebControls.ModelDataSource">
+<Type Name="ModelDataSource" FullName="System.Web.UI.WebControls.ModelDataSource">
   <TypeSignature Language="C#" Value="public class ModelDataSource : System.Web.UI.IDataSource, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelDataSource extends System.Object implements class System.Web.UI.IDataSource, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataSource" />
@@ -187,8 +187,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the underlying data source has changed. The change may be due to a change in the control's properties, or a change in the data due to an edit action performed by the data source control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ModelDataSource> instance is cast to an <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">

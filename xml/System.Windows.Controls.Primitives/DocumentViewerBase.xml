@@ -1,4 +1,4 @@
-﻿<Type Name="DocumentViewerBase" FullName="System.Windows.Controls.Primitives.DocumentViewerBase">
+<Type Name="DocumentViewerBase" FullName="System.Windows.Controls.Primitives.DocumentViewerBase">
   <TypeSignature Language="C#" Value="public abstract class DocumentViewerBase : System.Windows.Controls.Control, IServiceProvider, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract DocumentViewerBase extends System.Windows.Controls.Control implements class System.IServiceProvider, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DocumentViewerBase" />
@@ -571,8 +571,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether or not a child element in the viewer should be used as a master page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property is used to indicate which <xref:System.Windows.Controls.Primitives.DocumentPageView> in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection represents master page.  The master page corresponds to the page that is currently active (being displayed) in the viewer.  
+  
+ Typically, no more than one member of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection is marked as the master page.  If more than one member of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection is marked as the master page, then the first indicated <xref:System.Windows.Controls.Primitives.DocumentPageView> in the logical tree (depth-first) is designated the active master. If no members of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection are marked as the master page, then the master page defaults to the first member of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection.  
+  
+ Use the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.SetIsMasterPage%2A> method to set and attach this property to a specified element (dependency object).  Use the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.GetIsMasterPage%2A> method to read the value of this attached property from a specified element.  
+  
+<a name="dependencyPropertyInfo_IsMasterPage"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPageProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMasterPageProperty">

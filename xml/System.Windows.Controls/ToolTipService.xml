@@ -1,4 +1,4 @@
-﻿<Type Name="ToolTipService" FullName="System.Windows.Controls.ToolTipService">
+<Type Name="ToolTipService" FullName="System.Windows.Controls.ToolTipService">
   <TypeSignature Language="C#" Value="public static class ToolTipService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ToolTipService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipService" />
@@ -117,8 +117,29 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum time between the display of two tooltips where the second tooltip appears without a delay.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when a user moves the mouse pointer over an object that has a tooltip, there is a delay before the tooltip is displayed. This delay is equal to the value of the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> property. However, after a tooltip is displayed there is a period of time during which another tooltip can be displayed without waiting for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> time to pass. You specify this time period by using the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property. When the user moves the mouse within this time period from one element that has a visible tooltip to another element that has a tooltip, the value of the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> property for the second tooltip is not applied and the second tooltip appears immediately.  
+  
+ For information about how to get or set this property, see the <xref:System.Windows.Controls.ToolTipService.GetBetweenShowDelay%2A> and <xref:System.Windows.Controls.ToolTipService.SetBetweenShowDelay%2A> methods.  
+  
+<a name="dependencyPropertyInfo_BetweenShowDelay"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.BetweenShowDelayProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value of the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> property is less than zero (0).</exception>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetBetweenShowDelay(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetBetweenShowDelay(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="BetweenShowDelayProperty">
@@ -719,8 +740,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the tooltip displays a drop shadow effect.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default style for a tooltip control adds a drop shadow effect. If you do not explicitly set the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> property, the property value is `false` until the first time the tooltip is displayed. The default tooltip style is applied when a tooltip is displayed and the style sets the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> property to `true`.  
+  
+ If the tooltip is a <xref:System.Windows.Controls.ToolTip?displayProperty=nameWithType> object and both the <xref:System.Windows.Controls.ToolTip.HasDropShadow%2A?displayProperty=nameWithType> property and the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A?displayProperty=nameWithType> property are specified, the value of the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A?displayProperty=nameWithType> property is used.  
+  
+ For information about how to get or set this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetHasDropShadow%2A> and <xref:System.Windows.Controls.ToolTipService.SetHasDropShadow%2A> methods.  
+  
+<a name="dependencyPropertyInfo_HasDropShadow"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.HasDropShadowProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property of the <xref:System.Windows.Controls.ToolTipService> class.  
+  
+ [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.HasDropShadow" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHasDropShadow(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHasDropShadow(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -757,8 +807,57 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the offset from the left of the area that is specified for the tooltip by the <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> and <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> property and the <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> property values provide additional adjustment to the position of a tooltip that is defined by the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> property and the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> property values.  
+  
+ <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> behaves similarly to the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A?displayProperty=nameWithType> property.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="xamlAttributeUsage_HorizontalOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HorizontalOffset="double"/>  
+- or -  
+<object HorizontalOffset="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_HorizontalOffset"></a>   
+## XAML Values  
+ `double`  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value that is equal to or greater than 0.0 but that is smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. This is interpreted as a device-independent unit (1/96th of an inch per unit) measurement. Strings do not have to explicitly include decimal points.  
+  
+ `qualifiedDouble`  
+ A <xref:System.Double> value that is followed by one of these unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ For information about how to get or set this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetHorizontalOffset%2A> and <xref:System.Windows.Controls.ToolTipService.SetHorizontalOffset%2A> methods.  
+  
+<a name="dependencyPropertyInfo_HorizontalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.HorizontalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHorizontalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHorizontalOffset(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -795,8 +894,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the length of time before a tooltip opens.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when a user moves the mouse pointer over an object that has a tooltip, there is a delay before the tooltip is displayed. This delay is equal to the value of the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> property. However, after a tooltip is displayed there is a period of time during which another tooltip can be displayed without waiting for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> time to pass. You specify this time period by using the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property. When the user moves the mouse within this time period from one element that has a visible tooltip to another element that has a tooltip, the value of the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> property for the second tooltip is not applied and the second tooltip appears immediately.  
+  
+ For information about how to get or set this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetInitialShowDelay%2A> and <xref:System.Windows.Controls.ToolTipService.SetInitialShowDelay%2A> methods.  
+  
+<a name="dependencyPropertyInfo_InitialShowDelay"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.InitialShowDelayProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.ToolTipService> timing properties.  
+  
+ [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value of the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> property is less than zero (0).</exception>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowDuration" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetInitialShowDelay(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetInitialShowDelay(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="InitialShowDelayProperty">
@@ -833,8 +961,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a tooltip appears.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine whether a tooltip is currently visible, use the <xref:System.Windows.Controls.ToolTipService.IsOpen%2A> property.  
+  
+ For information about how to get or set this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetIsEnabled%2A> and <xref:System.Windows.Controls.ToolTipService.SetIsEnabled%2A> methods.  
+  
+<a name="dependencyPropertyInfo_IsEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.IsEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> property.  
+  
+ [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+  
+ [!code-csharp[ToolTipService#SetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setisenabled)]
+ [!code-vb[ToolTipService#SetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setisenabled)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetIsEnabled(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -908,8 +1065,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the orientation of the tooltip when it opens, and specifies how the tooltip behaves when it overlaps screen boundaries.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetPlacement%2A> and <xref:System.Windows.Controls.ToolTipService.SetPlacement%2A> methods.  
+  
+ <xref:System.Windows.Controls.ToolTipService.Placement%2A> behaves similarly to the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A?displayProperty=nameWithType> property.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_Placement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.PlacementProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacement(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacement(System.Windows.DependencyObject,System.Windows.Controls.Primitives.PlacementMode)" />
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -946,8 +1122,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the rectangular area relative to which the tooltip is positioned.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A> property specifies a <xref:System.Windows.Rect> structure relative to which the <xref:System.Windows.Controls.ToolTip> control is positioned when it opens. If <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A> is not `null`, the <xref:System.Windows.Rect> structure is defined relative to the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> object. Otherwise, the specified <xref:System.Windows.Rect> structure is defined relative to the upper-left corner of the screen.  
+  
+ If the <xref:System.Windows.Controls.ToolTipService.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Mouse>, the tooltip is displayed relative to the location of the mouse, and the value of the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> property has no effect.  
+  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetPlacementRectangle%2A> and <xref:System.Windows.Controls.ToolTipService.SetPlacementRectangle%2A> methods.  
+  
+ <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> behaves similarly to the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A?displayProperty=nameWithType> property.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_PlacementRectangle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.PlacementRectangleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementRectangle(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementRectangle(System.Windows.DependencyObject,System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -984,8 +1183,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object relative to which the tooltip is positioned.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> does not have to be the object on which the tooltip is defined. For example, a <xref:System.Windows.Controls.TextBlock> that describes an <xref:System.Windows.Controls.Image> could specify its tooltip to appear over the <xref:System.Windows.Controls.Image> when the user pauses the mouse pointer on the <xref:System.Windows.Controls.TextBlock>.  
+  
+ If you do not specify a <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> and the tooltip has a visual parent, the visual parent acts as the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A>. If the tooltip does not have a visual parent and the value of the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> property is `null`, the tooltip control is positioned relative to the upper-left corner of the screen.  
+  
+ This property is an attached property. For information about how to get or set this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetPlacementTarget%2A> and <xref:System.Windows.Controls.ToolTipService.SetPlacementTarget%2A> methods.  
+  
+ <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> behaves similarly to the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A?displayProperty=nameWithType> property.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="dependencyPropertyInfo_PlacementTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.PlacementTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementTarget(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementTarget(System.Windows.DependencyObject,System.Windows.UIElement)" />
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -1547,8 +1769,40 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount of time that a tooltip remains visible.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defines the time that a tooltip remains visible while the user pauses the mouse pointer over the object that defines the tooltip. If the user moves the mouse pointer off of the object, the tooltip closes.  
+  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetShowDuration%2A> and <xref:System.Windows.Controls.ToolTipService.SetShowDuration%2A> methods.  
+  
+<a name="dependencyPropertyInfo_ShowDuration"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.ShowDurationProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> property for a tooltip.  
+  
+ [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+  
+ [!code-csharp[ToolTipService#SetShowDuration](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowduration)]
+ [!code-vb[ToolTipService#SetShowDuration](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowduration)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value of the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> property is less than zero (0).</exception>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowDuration(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowDuration(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ShowDurationProperty">
@@ -1585,8 +1839,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a tooltip appears for an object that is not enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetShowOnDisabled%2A> and <xref:System.Windows.Controls.ToolTipService.SetShowOnDisabled%2A> methods.  
+  
+<a name="dependencyPropertyInfo_ShowOnDisabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.ShowOnDisabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> property.  
+  
+ [!code-xml[ToolTipSimple#ShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#showondisabled)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowOnDisabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowOnDisabled(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="ShowOnDisabledProperty">
@@ -1623,8 +1901,49 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content of a tooltip.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tooltip content can range from a simple text string to more complex objects such as a <xref:System.Windows.Controls.StackPanel> element that has embedded controls and images. However, tooltip content cannot take focus. For example, a <xref:System.Windows.Controls.Button> inside a tooltip cannot receive a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] provides a <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> control that defines a tooltip and provides properties that you can use to specify tooltip behavior. However, a tooltip can be any element, such as a <xref:System.Windows.Controls.DockPanel> or an <xref:System.Windows.Controls.Image>.  
+  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetToolTip%2A> and <xref:System.Windows.Controls.ToolTipService.SetToolTip%2A> methods.  
+  
+ The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax shown here is appropriate if the object that fills the tooltip is a primitive with native type conversion, such as a string. If the object does not support native type conversion or support its own type converter, you might need to specify a verbose form of attached property syntax as follows:  
+  
+```  
+<object>  
+  <ToolTipService.ToolTip>  
+    <objectThatFillsTheToolTip .../>  
+  </ToolTipService.ToolTip>  
+</object>  
+```  
+  
+ The placeholder element *objectThatFillsTheToolTip* could also have child elements, if that object permits them. However, the need for this usage should be relatively rare, because most [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usages will instead use practical control implementations of the service that are exposed by <xref:System.Windows.Controls.ToolTip>.  
+  
+<a name="dependencyPropertyInfo_ToolTip"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.ToolTipProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a tooltip by using the <xref:System.Windows.Controls.ToolTipService>.  
+  
+ [!code-xml[ToolTipAssign#ToolTipServiceToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipAssign/CSharp/Pane1.xaml#tooltipservicetooltip)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.ToolTip" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetToolTip(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetToolTip(System.Windows.DependencyObject,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosing">
@@ -1639,7 +1958,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Controls.ToolTip" /> closes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1705,7 +2024,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Controls.ToolTip" /> opens.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1793,8 +2112,53 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance from the top of the area that is specified for the tooltip by the <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> and <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an attached property. For information about how to get or set the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetVerticalOffset%2A> and <xref:System.Windows.Controls.ToolTipService.SetVerticalOffset%2A> methods. <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> behaves similarly to the <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A?displayProperty=nameWithType> property.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+<a name="xamlAttributeUsage_VerticallOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object VerticalOffset="double"/>  
+- or -  
+<object VerticalOffset="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_VerticalOffset"></a>   
+## XAML Values  
+ `double`  
+ <xref:System.Double>  
+  
+ The string representation of a <xref:System.Double> value that is equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. This is interpreted as a device-independent unit (1/96th inch) measurement. Strings do not have to explicitly include decimal points.  
+  
+ `qualifiedDouble`  
+ A <xref:System.Double> value that is followed by one of these unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+<a name="dependencyPropertyInfo_VerticalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ToolTipService.VerticalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetVerticalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetVerticalOffset(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">

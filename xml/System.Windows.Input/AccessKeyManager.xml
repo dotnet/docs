@@ -1,4 +1,4 @@
-﻿<Type Name="AccessKeyManager" FullName="System.Windows.Input.AccessKeyManager">
+<Type Name="AccessKeyManager" FullName="System.Windows.Input.AccessKeyManager">
   <TypeSignature Language="C#" Value="public sealed class AccessKeyManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AccessKeyManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyManager" />
@@ -48,8 +48,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the access key is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is used to identify elements that define a scope for access keys, such as menu keys and pop-up keys.  
+  
+ The event specified by the <xref:System.Windows.Input.AccessKeyManager.AccessKeyPressedEvent> field will never be raised; it is used to identify classes that define new scopes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AccessKeyPressedEvent">

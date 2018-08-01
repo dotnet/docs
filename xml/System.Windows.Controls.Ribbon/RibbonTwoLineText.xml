@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonTwoLineText" FullName="System.Windows.Controls.Ribbon.RibbonTwoLineText">
+<Type Name="RibbonTwoLineText" FullName="System.Windows.Controls.Ribbon.RibbonTwoLineText">
   <TypeSignature Language="C#" Value="public class RibbonTwoLineText : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonTwoLineText extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" />
@@ -167,8 +167,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether this control layout can extend to two lines or if it is restricted to one line.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_HasTwoLines"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLinesProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTwoLinesProperty">
@@ -451,8 +465,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the geometry data that defines the shape that is displayed with the label.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PathData"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathDataProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PathDataProperty">

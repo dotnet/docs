@@ -1,4 +1,4 @@
-﻿<Type Name="SiteMapDataSource" FullName="System.Web.UI.WebControls.SiteMapDataSource">
+<Type Name="SiteMapDataSource" FullName="System.Web.UI.WebControls.SiteMapDataSource">
   <TypeSignature Language="C#" Value="public class SiteMapDataSource : System.Web.UI.HierarchicalDataSourceControl, System.ComponentModel.IListSource, System.Web.UI.IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapDataSource extends System.Web.UI.HierarchicalDataSourceControl implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapDataSource" />
@@ -699,8 +699,22 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a data source control has changed in some way that affects data-bound controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SiteMapDataSource> instance is cast to an <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/en-us/library/ms178359(v=vs.100).aspx">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <altmember cref="T:System.Web.UI.IDataSource" />
+        <altmember cref="E:System.Web.UI.IDataSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">

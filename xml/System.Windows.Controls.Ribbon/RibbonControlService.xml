@@ -1,4 +1,4 @@
-﻿<Type Name="RibbonControlService" FullName="System.Windows.Controls.Ribbon.RibbonControlService">
+<Type Name="RibbonControlService" FullName="System.Windows.Controls.Ribbon.RibbonControlService">
   <TypeSignature Language="C#" Value="public static class RibbonControlService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RibbonControlService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlService" />
@@ -56,8 +56,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether this control can be added directly to the Quick Access Toolbar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanAddToQuickAccessToolBarDirectly"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectlyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanAddToQuickAccessToolBarDirectlyProperty">
@@ -92,8 +106,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the background of the control when it is in the Checked state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CheckedBackground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackgroundProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedBackgroundProperty">
@@ -128,8 +156,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the outer border of the control when it in the Checked state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CheckedBorderBrush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrushProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedBorderBrushProperty">
@@ -164,8 +206,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control. For the default property values, see <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition>.  
+  
+<a name="dependencyPropertyInfo_ControlSizeDefinition"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinitionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="ControlSizeDefinitionProperty">
@@ -200,8 +258,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the amount that the corners of a ribbon button are rounded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CornerRadius"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadiusProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CornerRadiusProperty">
@@ -236,8 +308,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the default <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition%2A> property is not set for a ribbon control, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition%2A> property is used instead. The default control size definition is based on the control’s property settings. If a <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is specified, it is the default. If <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is `null`, and a <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is specified, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is the default. If both the <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> and <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> are `null`, the image is set to <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Collapsed> by default. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.Label%2A> property is null or empty, it is hidden by default.  
+  
+<a name="dependencyPropertyInfo_DefaultControlSizeDefinition"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinitionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultControlSizeDefinitionProperty">
@@ -272,7 +360,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a ribbon popup is closed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +396,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the background of the control when it has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FocusedBackground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackgroundProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedBackgroundProperty">
@@ -344,8 +446,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the outer border of the control when it has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FocusedBorderBrush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrushProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusedBorderBrushProperty">
@@ -1122,8 +1238,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text that is displayed next to or below the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible%2A> property on the <xref:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition%2A> to control the visibility of the label.  
+  
+<a name="dependencyPropertyInfo_Label"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.LabelProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelProperty">
@@ -1158,8 +1289,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_LargeImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="LargeImageSourceProperty">
@@ -1194,8 +1340,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the background of the control when the mouse pointer is over it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MouseOverBackground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackgroundProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseOverBackgroundProperty">
@@ -1230,8 +1390,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the outer border of the control when the mouse pointer is over it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MouseOverBorderBrush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrushProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseOverBorderBrushProperty">
@@ -1266,8 +1440,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the background of the control when it is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PressedBackground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackgroundProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PressedBackgroundProperty">
@@ -1302,8 +1490,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the outer border of the control when it is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PressedBorderBrush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrushProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PressedBorderBrushProperty">
@@ -1338,8 +1540,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> for this control when it is hosted in the Quick Access Toolbar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control. This property specifies how the image and label will appear when this control is hosted in the Quick Access Toolbar.  
+  
+<a name="dependencyPropertyInfo_QATControlSizeDefinition"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinitionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBar" />
       </Docs>
     </Member>
     <Member MemberName="QuickAccessToolBarControlSizeDefinitionProperty">
@@ -1374,8 +1592,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a unique identifier that links a ribbon control to a corresponding control in the Quick Access Toolbar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_QuickAccessToolBarId"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarIdProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QuickAccessToolBarIdProperty">
@@ -2097,8 +2329,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Small" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SmallImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/b9734605-83aa-4e69-b0e0-a45df7261a94">Ribbon Layout and Resizing</related>
       </Docs>
     </Member>
     <Member MemberName="SmallImageSourceProperty">
@@ -2133,8 +2380,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the descriptive text that is displayed in the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipDescriptionProperty">
@@ -2169,8 +2434,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the descriptive text that is displayed in the footer of the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterDescriptionProperty">
@@ -2205,8 +2488,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed in the footer of the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterImageSourceProperty">
@@ -2241,8 +2542,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the title text that is displayed in the footer of the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterTitleProperty">
@@ -2277,8 +2596,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed in the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipImageSourceProperty">
@@ -2313,8 +2650,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the title text that is displayed in the ToolTip for this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipTitleProperty">

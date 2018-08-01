@@ -1,4 +1,4 @@
-﻿<Type Name="RenderOptions" FullName="System.Windows.Media.RenderOptions">
+<Type Name="RenderOptions" FullName="System.Windows.Media.RenderOptions">
   <TypeSignature Language="C#" Value="public static class RenderOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RenderOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderOptions" />
@@ -40,8 +40,29 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.BitmapScalingMode" /> for a given <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property on a <xref:System.Windows.UIElement> or <xref:System.Windows.Media.DrawingGroup> descendant that is animating a bitmap.  
+  
+ When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property to <xref:System.Windows.Media.BitmapScalingMode.LowQuality?displayProperty=nameWithType>, you can create a smoother animation when scaling a bitmap.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetBitmapScalingMode%2A> and <xref:System.Windows.Media.RenderOptions.SetBitmapScalingMode%2A> methods.  
+  
+<a name="dependencyPropertyInfo_BitmapScalingMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RenderOptions.BitmapScalingModeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetBitmapScalingMode(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetBitmapScalingMode(System.Windows.DependencyObject,System.Windows.Media.BitmapScalingMode)" />
       </Docs>
     </Member>
     <Member MemberName="BitmapScalingModeProperty">
@@ -78,8 +99,41 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the cache invalidation threshold maximum value for a given <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property is supported by <xref:System.Windows.Media.TileBrush> and its derived types. It is intended to be used with brushes that have intermediate surfaces, such as <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>. It only has an effect when the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> property is set to <xref:System.Windows.Media.CachingHint.Cache>.  
+  
+ By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios, where neither the contents nor the use of the brush in the scene is changing, not caching the content provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way, the default behavior of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] is to re-render all the content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
+  
+ By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property on the brush to <xref:System.Windows.Media.CachingHint.Cache>, you can increase performance by using cached versions of the tiled brush objects.  
+  
+ The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative-size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated because of changes in scale. For example, when the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property is set to 2.0, the cache for the <xref:System.Windows.Media.TileBrush> needs to be regenerated only when its size exceeds two times the size of the current cache.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum%2A> and <xref:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum%2A> methods.  
+  
+<a name="dependencyPropertyInfo_CacheInvalidationThresholdMaximum"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximumProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
+  
+ [!code-xml[RenderOptions#CachingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml#cachingxaml)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Media.RenderOptions.CachingHint" />
       </Docs>
     </Member>
     <Member MemberName="CacheInvalidationThresholdMaximumProperty">
@@ -116,8 +170,41 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the cache invalidation threshold minimum value for a given <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property is supported by <xref:System.Windows.Media.TileBrush> and its derived types. It is intended to be used with brushes that have intermediate surfaces, such as <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>. It only has an effect when the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> property is set to <xref:System.Windows.Media.CachingHint.Cache>.  
+  
+ By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios, where neither the contents nor the use of the brush in the scene is changing, not caching the content provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way the default behavior of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] is to re-render all the content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
+  
+ By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property on the brush to <xref:System.Windows.Media.CachingHint.Cache>, you can increase performance by using cached versions of the tiled brush objects.  
+  
+ The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative-size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated because of changes in scale. For example, when the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> property is set to 0.5, the cache for the <xref:System.Windows.Media.TileBrush> needs to be regenerated only when its size is reduced to less than one half the size of the current cache.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum%2A> methods.  
+  
+<a name="dependencyPropertyInfo_CacheInvalidationThresholdMinimum"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimumProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
+  
+ [!code-xml[RenderOptions#CachingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml#cachingxaml)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Media.RenderOptions.CachingHint" />
       </Docs>
     </Member>
     <Member MemberName="CacheInvalidationThresholdMinimumProperty">
@@ -154,8 +241,42 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates that rendered content should be cached when possible.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property is supported by <xref:System.Windows.Media.TileBrush> and its derived types. It is intended to be used with brushes that have intermediate surfaces, such as <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>.  
+  
+ By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios, where neither the contents nor the use of the brush in the scene is changing, not caching provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way, the default behavior of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] is to re-render all the content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
+  
+ By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property of the brush to <xref:System.Windows.Media.CachingHint.Cache>, you can increase performance by using cached versions of the tiled brush objects.  
+  
+ The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative-size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated because of changes in scale. For example, when the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property is set to 2.0, the cache for the <xref:System.Windows.Media.TileBrush> needs to be regenerated only when its size exceeds two times the size of the current cache.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetCachingHint%2A> and <xref:System.Windows.Media.RenderOptions.SetCachingHint%2A> methods.  
+  
+<a name="dependencyPropertyInfo_CachingHint"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RenderOptions.CachingHintProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
+  
+ [!code-xml[RenderOptions#CachingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml#cachingxaml)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetCachingHint(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetCachingHint(System.Windows.DependencyObject,System.Windows.Media.CachingHint)" />
+        <altmember cref="P:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum" />
+        <altmember cref="P:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum" />
       </Docs>
     </Member>
     <Member MemberName="CachingHintProperty">
@@ -191,8 +312,69 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates to the rendering engine whether text can be rendered with ClearType.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> attached property to indicate that text can be rendered with ClearType in a specific part of the visual tree.  
+  
+ ClearType text does not display correctly on a background that is not fully opaque. Intermediate render targets, such as <xref:System.Windows.UIElement.Effect%2A>, <xref:System.Windows.UIElement.OpacityMask%2A>, <xref:System.Windows.Media.VisualBrush>, <xref:System.Windows.Media.DrawingBrush>, <xref:System.Windows.UIElement.Clip%2A>, and <xref:System.Windows.UIElement.Opacity%2A>, can introduce backgrounds that are not fully opaque. WPF disables ClearType when it detects that the buffer into which text is drawn could have a transparent background.  
+  
+ Set the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> property to <xref:System.Windows.Media.ClearTypeHint.Enabled> to indicate that a subtree is safe for ClearType text rendering. Do this only when you can be certain that the text is rendering to a fully opaque background. When an element in the subtree introduces transparency, you can enable ClearType; however, rendering issues may occur. If a portion of the subtree introduces more intermediate rendering targets, you must set <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> again on the children of that subtree.  
+  
+ The following list shows how to make sure that text to be rendered with ClearType appears correctly.  
+  
+-   Do not introduce intermediate render targets between <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> and the text to be rendered with ClearType.  
+  
+-   Assign an opaque background that is as close as possible in the visual tree to the text.  
+  
+-   Be aware that <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> re-enables ClearType for a subtree; however, it does not force ClearType rendering.  
+  
+-   Be aware that <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> does not override your system settings or <xref:System.Windows.Media.TextOptions.TextRenderingMode%2A> settings.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> attached property does not affect the <xref:System.Windows.Controls.TextBox> control; however, it does work with the <xref:System.Windows.Controls.TextBlock> control.  
+  
+> [!NOTE]
+>  On many controls, the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> attached property has no effect unless you set an opaque background behind the text.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetClearTypeHint%2A> and <xref:System.Windows.Media.RenderOptions.SetClearTypeHint%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example shows how the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> property affects different branches of the visual tree. In the first text block control, text is rendered with ClearType because the text block inherits the setting from the main window. In the second text block, ClearType is not used because the parent element's <xref:System.Windows.UIElement.OpacityMask%2A> property is set. In the third text block, <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A> is used, but rendering issues may occur.  
+  
+```xaml
+<Window x:Class="ClearTypeHintDemo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300"
+        AllowsTransparency="True" 
+        WindowStyle="None" 
+        RenderOptions.ClearTypeHint="Enabled" 
+        Background="White">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="opacityBrush" >
+            <GradientStop Color="#FF000000" Offset="0.0" />
+            <GradientStop Color="#00000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <StackPanel>
+        <TextBlock Text="This text is rendered with ClearType." />
+        <StackPanel OpacityMask="{StaticResource opacityBrush}" >
+            <TextBlock Text="This text is not rendered with ClearType." />
+            <TextBlock RenderOptions.ClearTypeHint="Enabled" 
+                       Text="This text is rendered with ClearType but may alpha-blend incorrectly." />
+        </StackPanel>
+    </StackPanel>
+</Window>  
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearTypeHintProperty">
@@ -228,8 +410,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.EdgeMode" /> enumeration value for a non-text primitive that determines how its edges are rendered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.RenderOptions.EdgeMode%2A> attached property to improve rendering performance by specifying that a visual object should be rendered with aliased edges. Text objects are always displayed with anti-aliasing, and are unaffected by setting the edge mode value. When you set the edge mode value of a visual object, all the descendant drawing primitives of the visual object are set to the same edge mode value.  
+  
+ To access this property in code, use the <xref:System.Windows.Media.RenderOptions.GetEdgeMode%2A> and <xref:System.Windows.Media.RenderOptions.SetEdgeMode%2A> methods.  
+  
+<a name="dependencyPropertyInfo_EdgeMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.RenderOptions.EdgeModeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Media.RenderOptions.GetEdgeMode(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Media.RenderOptions.SetEdgeMode(System.Windows.DependencyObject,System.Windows.Media.EdgeMode)" />
       </Docs>
     </Member>
     <Member MemberName="EdgeModeProperty">

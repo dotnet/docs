@@ -1,4 +1,4 @@
-﻿<Type Name="TextSearch" FullName="System.Windows.Controls.TextSearch">
+<Type Name="TextSearch" FullName="System.Windows.Controls.TextSearch">
   <TypeSignature Language="C#" Value="public sealed class TextSearch : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextSearch extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextSearch" />
@@ -187,8 +187,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the string that identifies an item in a control's collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the text to displayed when an item is selected, and enables the user to select an item by typing the value of this property. As soon as the user types enough of the value to distinguish the item from other items in the selection, the item will be selected. Use this property on an item in a collection.  
+  
+<a name="dependencyPropertyInfo_Text"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.TextSearch.TextProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ComboBox> that contains images as items instead of text. The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is set to `true`, so text is displayed when one of the images is selected.  
+  
+ [!code-xml[ComboBoxProps_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.ComboBox.IsEditable" />
       </Docs>
     </Member>
     <Member MemberName="TextPath">
@@ -204,8 +227,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the items' property that identifies each item in a control's collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property on a control that contains a collection of items. The value of the specified property is the text that the user can type to select the item, and the text that is displayed if the control is set to display text in its <xref:System.Windows.Controls.TextBox>. If you set the <xref:System.Windows.Controls.TextSearch.Text%2A> property on a control's collection item, the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property will be ignored.  If you set the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property to a value that is not the name of an actual property, <xref:System.Windows.Controls.TextSearch.TextPath%2A> is ignored.  
+  
+<a name="dependencyPropertyInfo_TextPath"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.TextSearch.TextPathProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ComboBox> that contains images as items instead of text. The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is set to `true`, so text is displayed when one of the images is selected.  
+  
+ [!code-xml[ComboBoxProps_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.ComboBox.IsEditable" />
       </Docs>
     </Member>
     <Member MemberName="TextPathProperty">

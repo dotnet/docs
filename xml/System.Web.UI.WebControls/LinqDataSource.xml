@@ -1,4 +1,4 @@
-﻿<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
+<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
   <TypeSignature Language="C#" Value="public class LinqDataSource : System.Web.UI.WebControls.ContextDataSource, System.Web.DynamicData.IDynamicDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSource extends System.Web.UI.WebControls.ContextDataSource implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSource" />
@@ -2130,8 +2130,15 @@ protected void LinqDataSource_Selecting(object sender,
         <ReturnType>System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="T:System.Web.DynamicData.IDynamicDataSource" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.LinqDataSource> instance is cast to an <xref:System.Web.DynamicData.IDynamicDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TableName">

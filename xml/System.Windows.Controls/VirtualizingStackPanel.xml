@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualizingStackPanel" FullName="System.Windows.Controls.VirtualizingStackPanel">
+<Type Name="VirtualizingStackPanel" FullName="System.Windows.Controls.VirtualizingStackPanel">
   <TypeSignature Language="C#" Value="public class VirtualizingStackPanel : System.Windows.Controls.VirtualizingPanel, System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi VirtualizingStackPanel extends System.Windows.Controls.VirtualizingPanel implements class System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizingStackPanel" />
@@ -263,8 +263,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an item is being re-virtualized by the <see cref="T:System.Windows.Controls.ItemsControl" /> that is associated with this instance of <see cref="T:System.Windows.Controls.VirtualizingStackPanel" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_CleanUpVirtualizedItem"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItemEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Controls.CleanUpVirtualizedItemEventHandler>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="F:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItemEvent" />
       </Docs>
     </Member>
     <Member MemberName="CleanUpVirtualizedItemEvent">

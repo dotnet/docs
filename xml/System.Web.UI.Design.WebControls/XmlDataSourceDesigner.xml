@@ -1,4 +1,4 @@
-﻿<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
+<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class XmlDataSourceDesigner : System.Web.UI.Design.HierarchicalDataSourceDesigner, System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSourceDesigner extends System.Web.UI.Design.HierarchicalDataSourceDesigner implements class System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" />
@@ -425,8 +425,18 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetView">
@@ -583,8 +593,18 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents">

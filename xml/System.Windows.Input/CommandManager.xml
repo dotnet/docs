@@ -1,4 +1,4 @@
-﻿<Type Name="CommandManager" FullName="System.Windows.Input.CommandManager">
+<Type Name="CommandManager" FullName="System.Windows.Input.CommandManager">
   <TypeSignature Language="C#" Value="public sealed class CommandManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommandManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandManager" />
@@ -269,8 +269,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="M:System.Windows.Input.RoutedCommand.CanExecute(System.Object,System.Windows.IInputElement)" /> method on the <see cref="T:System.Windows.Input.RoutedCommand" /> is called and the <see cref="E:System.Windows.Input.CommandManager.PreviewCanExecute" /> event was not handled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_CanExecute"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.CanExecuteEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.CanExecuteRoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.CommandManager.PreviewCanExecute" />
       </Docs>
     </Member>
     <Member MemberName="CanExecuteEvent">
@@ -307,8 +323,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" /> method on the <see cref="T:System.Windows.Input.RoutedCommand" /> is called and the <see cref="E:System.Windows.Input.CommandManager.PreviewExecuted" /> event was not handled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Executed"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.ExecutedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.ExecutedRoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.CommandManager.PreviewExecuted" />
       </Docs>
     </Member>
     <Member MemberName="ExecutedEvent">
@@ -382,8 +414,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="M:System.Windows.Input.RoutedCommand.CanExecute(System.Object,System.Windows.IInputElement)" /> method on the <see cref="T:System.Windows.Input.RoutedCommand" /> is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_PreviewCanExecute"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.PreviewCanExecuteEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.CanExecuteRoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.CommandManager.CanExecute" />
       </Docs>
     </Member>
     <Member MemberName="PreviewCanExecuteEvent">
@@ -420,8 +468,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" /> method on the <see cref="T:System.Windows.Input.RoutedCommand" /> is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_PreviewExecuted"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.PreviewExecutedEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.ExecutedRoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.CommandManager.Executed" />
       </Docs>
     </Member>
     <Member MemberName="PreviewExecutedEvent">

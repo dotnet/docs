@@ -1,4 +1,4 @@
-﻿<Type Name="TextOptions" FullName="System.Windows.Media.TextOptions">
+<Type Name="TextOptions" FullName="System.Windows.Media.TextOptions">
   <TypeSignature Language="C#" Value="public static class TextOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextOptions" />
@@ -205,8 +205,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the element. This is an attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
       </Docs>
     </Member>
     <Member MemberName="TextFormattingModeProperty">
@@ -241,8 +243,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the element. This is an attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="TextHintingModeProperty">
@@ -277,8 +281,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the element. This is an attached property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can tune the rendering of WPF ClearType text by using the [!INCLUDE[win7](~/includes/win7-md.md)] ClearType Text Tuner. To access the text tuner in [!INCLUDE[win7](~/includes/win7-md.md)], open the Control Panel, click **Appearance and Personalization**, click **Display**, and then click **Adjust ClearType text**.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextRenderingMode" />
       </Docs>
     </Member>
     <Member MemberName="TextRenderingModeProperty">

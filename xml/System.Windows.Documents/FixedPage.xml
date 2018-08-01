@@ -1,4 +1,4 @@
-﻿<Type Name="FixedPage" FullName="System.Windows.Documents.FixedPage">
+<Type Name="FixedPage" FullName="System.Windows.Documents.FixedPage">
   <TypeSignature Language="C#" Value="public sealed class FixedPage : System.Windows.FrameworkElement, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FixedPage extends System.Windows.FrameworkElement implements class System.Windows.Markup.IAddChild, class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FixedPage" />
@@ -248,8 +248,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance between the bottom of the page and the bottom of the parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the bottom offset has not been set, <xref:System.Windows.Documents.FixedPage.Bottom%2A> returns <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_Bottom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.BottomProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Documents.FixedPage.Left" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Right" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Top" />
       </Docs>
     </Member>
     <Member MemberName="BottomProperty">
@@ -653,8 +671,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance between the left edge of the page and the left edge of the parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the left offset has not been set, <xref:System.Windows.Documents.FixedPage.Left%2A> returns <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_Left"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.LeftProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Documents.FixedPage.Right" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Top" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="LeftProperty">
@@ -739,8 +775,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URI associated with the page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a URI has not been set, <xref:System.Windows.Documents.FixedPage.NavigateUri%2A> returns `null`. When you set the <xref:System.Windows.Documents.FixedPage.NavigateUri%2A> on one of the objects listed, the application attempts to navigate to the value specified when the object is clicked.  
+  
+ You can use the <xref:System.Windows.Documents.FixedPage.NavigateUri%2A> attached property from the following objects: <xref:System.Windows.Documents.FixedPage>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Controls.Canvas>, and <xref:System.Windows.Documents.Glyphs>.  
+  
+<a name="dependencyPropertyInfo_NavigateUri"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.NavigateUriProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUriProperty">
@@ -936,8 +989,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance between the right edge of the page and the right edge of the parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the right offset has not been set, <xref:System.Windows.Documents.FixedPage.Right%2A> returns <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_Right"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.RightProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Documents.FixedPage.Left" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Top" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="RightProperty">
@@ -1275,8 +1346,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance between the top of the page and the top of the parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the top offset has not been set, <xref:System.Windows.Documents.FixedPage.Top%2A> returns <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_Top"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.TopProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Documents.FixedPage.Left" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Right" />
+        <altmember cref="P:System.Windows.Documents.FixedPage.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="TopProperty">

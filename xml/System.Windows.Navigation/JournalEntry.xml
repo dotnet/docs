@@ -1,4 +1,4 @@
-﻿<Type Name="JournalEntry" FullName="System.Windows.Navigation.JournalEntry">
+<Type Name="JournalEntry" FullName="System.Windows.Navigation.JournalEntry">
   <TypeSignature Language="C#" Value="public class JournalEntry : System.Windows.DependencyObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit JournalEntry extends System.Windows.DependencyObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntry" />
@@ -209,8 +209,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the content of a journal entry is either retained or re-created when navigated to in navigation history.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Controls.Page.KeepAlive%2A> for how this property is used by pages.  
+  
+<a name="dependencyPropertyInfo_KeepAlive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Navigation.JournalEntry.KeepAliveProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the attached <xref:System.Windows.Navigation.JournalEntry.KeepAlive%2A> property for a <xref:System.Windows.Controls.Page>.  
+  
+ [!code-xml[JournalEntrySnippets#JEKeepAliveMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntrySnippets/CSharp/JEKeepAlivePage.xaml#jekeepalivemarkup)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepAliveProperty">

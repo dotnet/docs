@@ -1,4 +1,4 @@
-﻿<Type Name="DataObject" FullName="System.Windows.DataObject">
+<Type Name="DataObject" FullName="System.Windows.DataObject">
   <TypeSignature Language="C#" Value="public sealed class DataObject : System.Runtime.InteropServices.ComTypes.IDataObject, System.Windows.IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataObject extends System.Object implements class System.Runtime.InteropServices.ComTypes.IDataObject, class System.Windows.IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObject" />
@@ -585,8 +585,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the associated dependency object has prepared appropriate data formats that represent the copy selection, added the copy selection formats to a <see cref="T:System.Windows.DataObject" />, and is ready to either place the <see cref="T:System.Windows.DataObject" /> on the <see cref="T:System.Windows.Clipboard" /> or begin a drag-and-drop operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is intended to provide an opportunity for applications to inspect the contents of the <xref:System.Windows.DataObject> prior to the copy operation, change, remove or add data formats, or cancel the entire copy operation by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
+  
+<a name="routedEventInfo_Copying"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DataObject.CopyingEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.DataObjectCopyingEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyingEvent">
@@ -1170,8 +1186,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the associated dependency object is ready to paste data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is intended to provide an opportunity for applications to inspect the contents of the <xref:System.Windows.DataObject> prior to the paste operation, change, remove or add data formats, or cancel the entire copy operation by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
+  
+<a name="routedEventInfo_Pasting"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DataObject.PastingEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PastingEvent">
@@ -1724,8 +1756,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the associated dependency object attempts to add a new data format to a <see cref="T:System.Windows.DataObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is intended to provide an opportunity for applications to increase data transfer performance by preventing unwanted or redundant data formats from being added to a <xref:System.Windows.DataObject>.  
+  
+<a name="routedEventInfo_SettingData"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DataObject.SettingDataEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SettingDataEvent">

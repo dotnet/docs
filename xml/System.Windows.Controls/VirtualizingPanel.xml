@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualizingPanel" FullName="System.Windows.Controls.VirtualizingPanel">
+<Type Name="VirtualizingPanel" FullName="System.Windows.Controls.VirtualizingPanel">
   <TypeSignature Language="C#" Value="public abstract class VirtualizingPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VirtualizingPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizingPanel" />
@@ -153,8 +153,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the size of the cache before and after the viewport when the <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cache is the amount of space above or below the viewport in which items are not virtualized. Use a cache to avoid generating [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements as they’re scrolled into view.  The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheLengthProperty">
@@ -189,8 +196,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of unit that is used by the <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of the possible values, see the <xref:System.Windows.Controls.VirtualizationCacheLengthUnit> enumeration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheLengthUnitProperty">
@@ -593,8 +607,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Get or sets a value that indicates whether this <see cref="T:System.Windows.Controls.VirtualizingPanel" /> should virtualize an item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Panel and Control objects use this property on item containers to track when the container can and cannot be virtualized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContainerVirtualizableProperty">
@@ -629,8 +650,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates that this <see cref="T:System.Windows.Controls.VirtualizingPanel" /> is virtualizing its child collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. For example, the <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+  
+<a name="dependencyPropertyInfo_CleanUpVirtualizedItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizingProperty>|  
+|Metadata properties set to                                                  `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to bind to an XML data source and virtualize the items displayed in a                                  <xref:System.Windows.Controls.ListBox> element by using                                  [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that the                                  <xref:System.Windows.Controls.VirtualizingPanel.IsVirtualizing%2A> attached property is explicitly set to                                  `true`.  
+  
+ [!code-xml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVirtualizingProperty">
@@ -665,8 +708,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether this <see cref="T:System.Windows.Controls.VirtualizingPanel" /> virtualizes the items in its collection when it displays groups.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The standard layout system creates item containers and computes layout for each item associated with a list control. In this context, "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on the screen. It is intensive, both in terms of memory and processor, to generate a large number of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few may be on the screen at a given time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVirtualizingWhenGroupingProperty">
@@ -806,7 +856,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that indicates whether scrolling is measured as items in the collection or as pixels.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1092,8 +1142,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets how a panel in an <see cref="T:System.Windows.Controls.ItemsControl" /> virtualizes its child items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Windows.Controls.VirtualizingPanel> creates an item container for each visible item and discards it when it is no longer needed (such as when the item is scrolled out of view). When an <xref:System.Windows.Controls.ItemsControl> contains a lot of items, the process of creating and discarding item containers can negatively affect performance. When <xref:System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.VirtualizationMode.Recycling>, the <xref:System.Windows.Controls.VirtualizingPanel> reuses item containers instead of creating a new one each time.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and sets the <xref:System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A?displayProperty=nameWithType> attached property to <xref:System.Windows.Controls.VirtualizationMode.Recycling>.  
+  
+ [!code-xml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
+  
+ The following example shows the data used in the previous example.  
+  
+ [!code-csharp[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#listboxdata)]
+ [!code-vb[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#listboxdata)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VirtualizationModeProperty">

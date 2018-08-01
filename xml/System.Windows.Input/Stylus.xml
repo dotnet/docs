@@ -1,4 +1,4 @@
-﻿<Type Name="Stylus" FullName="System.Windows.Input.Stylus">
+<Type Name="Stylus" FullName="System.Windows.Input.Stylus">
   <TypeSignature Language="C#" Value="public static class Stylus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Stylus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Stylus" />
@@ -1008,8 +1008,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element captures the stylus events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_GotStylusCapture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.GotStylusCaptureEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the background color of a <xref:System.Windows.Controls.TextBox> when the <xref:System.Windows.Controls.TextBox> captures and releases stylus events. This example assumes that there is a textbox called `textBox1`, and that the <xref:System.Windows.Input.Stylus.GotStylusCapture> and <xref:System.Windows.Input.Stylus.LostStylusCapture> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[StylusSamples#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="GotStylusCaptureEvent">
@@ -1046,8 +1071,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether flicks are enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)], a flick, one of the possible system gestures, is a short, quick, straight stroke that can be mapped to a navigation or shortcut command. By default, flicks are disabled on the <xref:System.Windows.Controls.InkCanvas>, <xref:System.Windows.Controls.InkPresenter>, and <xref:System.Windows.Controls.Primitives.ScrollBar>. Flicks are enabled on all other controls.  
+  
+<a name="dependencyPropertyInfo_IsFlicksEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.IsFlicksEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to disable flicks on a <xref:System.Windows.Controls.Canvas>.  
+
+```xaml
+<Camvas Name="canvas1" Stylus.IsFlicksEnabled="False" ></Canvas>
+```
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFlicksEnabledProperty">
@@ -1084,8 +1132,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a values indicating whether press and hold is enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Press and hold maps to a right-click on a mouse. In [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)] you can disable this behavior on elements if you foresee a situation where the user might hold the tablet pen down without intending to simulate a right-click.  
+  
+<a name="dependencyPropertyInfo_IsPressAndHoldEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.IsPressAndHoldEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to enable press and hold on a <xref:System.Windows.Controls.Slider>.  
+
+```xaml
+<Slider Name="horizontalSlider1" Stylus.IsPressAndHoldEnabled="True" />
+```
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPressAndHoldEnabledProperty">
@@ -1122,8 +1193,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a value indicating whether tap feedback is enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)], a short animation occurs when the user taps the control. By default, tap feedback is disabled on the <xref:System.Windows.Controls.InkCanvas>. It is enabled on all other controls.  
+  
+<a name="dependencyPropertyInfo_IsTapFeedbackEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.IsTapFeedbackEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example disables tap feedback on a <xref:System.Windows.Controls.Canvas>.  
+
+```xaml
+<Canvas Name="canvas1" Stylus.IsTapFeedbackEnabled="False"></Canvas>
+```
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTapFeedbackEnabledProperty">
@@ -1160,8 +1255,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a value indicating whether touch feedback is enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)], a short animation occurs when the user touches the control with a finger. By default, touch feedback is disabled on the <xref:System.Windows.Controls.InkCanvas>. It is enabled on all other controls.  
+  
+<a name="dependencyPropertyInfo_IsTouchFeedbackEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.IsTouchFeedbackEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example enables touch feedback on an <xref:System.Windows.Controls.InkCanvas>.  
+
+```xaml
+<InkCanvas Name="inkCanvas1" Stylus.IsTouchFeedbackEnabled="True" />
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTouchFeedbackEnabledProperty">
@@ -1198,8 +1317,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element releases stylus events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_LostStylusCapture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.LostStylusCaptureEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the background color of a <xref:System.Windows.Controls.TextBox> when the <xref:System.Windows.Controls.TextBox> captures and releases stylus events. This example assumes that there is a textbox called `textBox1`, and that the <xref:System.Windows.Input.Stylus.GotStylusCapture> and <xref:System.Windows.Input.Stylus.LostStylusCapture> events are connected to the event handlers in the example.  
+  
+ [!code-csharp[StylusSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[StylusSamples#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="LostStylusCaptureEvent">
@@ -1236,8 +1380,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user presses one of the buttons on the stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusButtonDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusButtonDownEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine which button raised the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown> event. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#13)]
+ [!code-vb[StylusSamples#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonDownEvent">
@@ -1274,8 +1443,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user releases one of the buttons on the stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusButtonUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusButtonUpEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine which button raised the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp> event. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#14)]
+ [!code-vb[StylusSamples#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonUpEvent">
@@ -1312,8 +1506,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when user touches the tip of the stylus to the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusDownEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusDownEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to ensure that the stylus is not captured when the user touches the stylus to the tablet. This example assumes that the <xref:System.Windows.Input.Stylus.PreviewStylusDown> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[StylusSamples#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusDownEvent">
@@ -1350,8 +1569,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs if the stylus moves while it is within range of (but not touching) the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusInAirMove"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusInAirMoveEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine which element the stylus is positioned over. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[StylusSamples#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusInAirMoveEvent">
@@ -1388,8 +1632,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus comes within range of the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusInRange"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusInRangeEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether the stylus is inverted. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusInRange> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#21)]
+ [!code-vb[StylusSamples#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusInRangeEvent">
@@ -1426,8 +1695,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus moves while it is touching the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusMove"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusMoveEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The example demonstrates how to determine the position of the stylus when it moves. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusMove> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#16)]
+ [!code-vb[StylusSamples#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusMove" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusMoveEvent">
@@ -1464,8 +1758,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus goes out of range of the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusOutOfRange"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusOutOfRangeEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether the stylus is inverted. This example assumes there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#20)]
+ [!code-vb[StylusSamples#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusOutOfRangeEvent">
@@ -1502,8 +1821,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user makes a system gesture with this stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusSystemGesture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusSystemGestureEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusSystemGestureEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine the system gesture that raised the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture> event. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#17)]
+ [!code-vb[StylusSamples#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusSystemGestureEvent">
@@ -1540,8 +1884,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user lifts the stylus from the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewStylusUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.PreviewStylusUpEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine the position of the stylus when the user lifts it from the tablet. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.PreviewStylusUp> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#22](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#22)]
+ [!code-vb[StylusSamples#22](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusUpEvent">
@@ -2339,8 +2708,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user presses one of the buttons on the stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusButtonDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusButtonDownEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to show a shortcut menu when the user presses the barrel button on a stylus. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and a <xref:System.Windows.Controls.ContextMenu> called `textBoxContextMenu`, and that the <xref:System.Windows.Input.Stylus.StylusButtonDown> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[StylusSamples#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonDownEvent">
@@ -2377,8 +2771,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user releases one of the buttons on the stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusButtonUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusButtonUpEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy the selected text when the user releases the barrel button on a stylus. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusButtonUp> event is connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#11)]
+ [!code-vb[StylusSamples#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonUpEvent">
@@ -2415,8 +2834,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user touches the tip of the stylus to the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusDownEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusDownEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusDown" />
       </Docs>
     </Member>
     <Member MemberName="StylusDownEvent">
@@ -2453,8 +2897,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus cursor enters the bounds of an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusEnter"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusEnterEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the color of a <xref:System.Windows.Controls.Button> when the stylus cursor enters and leaves its bounds. This example assumes that there is a <xref:System.Windows.Controls.Button> called `button1` and that the <xref:System.Windows.Input.Stylus.StylusEnter> and <xref:System.Windows.Input.Stylus.StylusLeave> events are connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#4](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[StylusSamples#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusEnter" />
       </Docs>
     </Member>
     <Member MemberName="StylusEnterEvent">
@@ -2491,8 +2960,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus moves while it is in range of, but not touching, the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusInAirMove"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusInAirMoveEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine which element the stylus is positioned over. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.StylusInAirMove> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[StylusSamples#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="StylusInAirMoveEvent">
@@ -2529,8 +3023,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus comes within range of the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusInRange"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusInRangeEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property of an <xref:System.Windows.Controls.InkCanvas> to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByStroke> when the stylus is inverted. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that the <xref:System.Windows.Input.Stylus.StylusInRange> event is connected to the event handlers. To see the cursor change, set the <xref:System.Windows.Controls.InkCanvas.UseCustomCursor%2A> property to `true` on `inkCanvas1`.  
+  
+ [!code-csharp[StylusSamples#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#18)]
+ [!code-vb[StylusSamples#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="StylusInRangeEvent">
@@ -2567,8 +3086,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus cursor leaves the bounds of an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusLeave"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusLeaveEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the color of a <xref:System.Windows.Controls.Button> when the stylus cursor enters and leaves its bounds. This example assumes that there is a <xref:System.Windows.Controls.Button> called `button1` and that the <xref:System.Windows.Input.Stylus.StylusEnter> and <xref:System.Windows.Input.Stylus.StylusLeave> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#4](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[StylusSamples#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusLeave" />
       </Docs>
     </Member>
     <Member MemberName="StylusLeaveEvent">
@@ -2605,8 +3149,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus moves while it is touching the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusMove"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusMoveEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusMove" />
       </Docs>
     </Member>
     <Member MemberName="StylusMoveEvent">
@@ -2643,8 +3212,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the stylus goes out of range of the tablet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route.  Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusOutOfRange"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusOutOfRangeEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the cursor to an arrow when the stylus goes out of range. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that the <xref:System.Windows.Input.Stylus.StylusOutOfRange> event is connected to an event handler. To see the cursor change, set the <xref:System.Windows.Controls.InkCanvas.UseCustomCursor%2A> property to `true` on `inkCanvas1`.  
+  
+ [!code-csharp[StylusSamples#19](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#19)]
+ [!code-vb[StylusSamples#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="StylusOutOfRangeEvent">
@@ -2681,8 +3275,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user makes a system gesture with this stylus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusSystemGesture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusSystemGestureEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusSystemGestureEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine the system gesture that raised the <xref:System.Windows.Input.Stylus.StylusSystemGesture> event. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.StylusSystemGesture> event is connected to an event handler.  
+  
+ [!code-csharp[StylusSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#12)]
+ [!code-vb[StylusSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="StylusSystemGestureEvent">
@@ -2719,8 +3338,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user raises the stylus from the Tablet PC.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. An attached event is, fundamentally, a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept used to reference events that are handled on objects that do not, themselves, define events. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] further expands an attached event's capabilities, allowing it to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_StylusUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Stylus.StylusUpEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.StylusEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusUp" />
       </Docs>
     </Member>
     <Member MemberName="StylusUpEvent">

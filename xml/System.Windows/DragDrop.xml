@@ -1,4 +1,4 @@
-﻿<Type Name="DragDrop" FullName="System.Windows.DragDrop">
+<Type Name="DragDrop" FullName="System.Windows.DragDrop">
   <TypeSignature Language="C#" Value="public static class DragDrop" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DragDrop extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DragDrop" />
@@ -571,8 +571,39 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged into the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ Handling this event is optional for the drop target, and is not necessary for all drag-and-drop scenarios. You typically handle this event to provide a preview of the effects of the drag-and-drop operation, if appropriate for your application. Do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.DragEnter> event, as it will be overwritten in the <xref:System.Windows.DragDrop.DragOver> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.DragEnterEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewDragEnter>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.DragDrop.DragEnter> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code previews the effects of the drag-and-drop operation by saving the current <xref:System.Windows.Shapes.Shape.Fill%2A> brush. It then checks to see if the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, the <xref:System.Windows.Media.Brush> is applied to the ellipse. The change is reverted in the <xref:System.Windows.DragDrop.DragLeave> event handler. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, no action is performed.  
+  
+ [!code-csharp[DragDropSnippets#DragEnter](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragenter)]
+ [!code-vb[DragDropSnippets#DragEnter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragenter)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragEnter" />
+        <altmember cref="E:System.Windows.ContentElement.DragEnter" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DragEnterEvent">
@@ -621,8 +652,39 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged out of the bounds of an element that is acting as a drop target without being dropped.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ You typically handle this event to undo any changes that you made in the <xref:System.Windows.DragDrop.DragEnter> event handler.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.DragLeaveEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewDragLeave>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.DragDrop.DragLeave> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code undoes the preview performed in the <xref:System.Windows.DragDrop.DragEnter> event handler by applying the saved <xref:System.Windows.Media.Brush> to the ellipse.  
+  
+ [!code-csharp[DragDropSnippets#DragLeave](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragleave)]
+ [!code-vb[DragDropSnippets#DragLeave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragleave)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragLeave" />
+        <altmember cref="E:System.Windows.ContentElement.DragLeave" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DragLeaveEvent">
@@ -671,8 +733,39 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while an object is dragged within the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ The <xref:System.Windows.DragDrop.DragOver> event is paired with the <xref:System.Windows.DragDrop.GiveFeedback> event on the drag source. In the <xref:System.Windows.DragDrop.DragOver> event handler, you typically check that the transferred data is in a format that the drop target can process. You can also check whether any modifier keys are pressed, which typically indicates whether the user intends a move or a copy action. After these checks are performed, you set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property to notify the drag source what effect dropping the data will have. The drag source receives this information in the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> property of the <xref:System.Windows.DragDrop.GiveFeedback> event arguments, and can set an appropriate cursor to give feedback to the user.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.DragOverEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewDragOver>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.DragDrop.DragOver> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code checks to see if the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, it sets the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property to <xref:System.Windows.DragDropEffects.Copy>. This indicates to the drag source that the data can be copied to the ellipse. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.DragDropEffects.None>. This indicates to the drag source that the ellipse is not a valid drop target for the data.  
+  
+ [!code-csharp[DragDropSnippets#DragOver](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragover)]
+ [!code-vb[DragDropSnippets#DragOver](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragover)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
+        <altmember cref="E:System.Windows.ContentElement.DragOver" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DragOverEvent">
@@ -721,8 +814,39 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dropped within the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DragDrop.Drop> event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
+  
+ In the <xref:System.Windows.DragDrop.Drop> event handler, you extract the transferred data from the <xref:System.Windows.DataObject> and perform any processing of the data that your application requires. To notify the drag source of the effect of the drop, such as a copy or move, set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.Drop> event handler. The value of this property is the return value of the <xref:System.Windows.DragDrop.DoDragDrop%2A> method that initiated the drag-and-drop operation. If the value that is returned does not match one of the `allowedEffects` specified in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>, the drag-and-drop operation is not performed. The initial value of the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property is the same as the `allowedEffects` specified in the call to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. If you do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property, this initial value is returned and it is assumed that one the `allowedEffects` occurred.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.DropEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewDrop>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.DragDrop.Drop> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code applies the effects of the drag-and-drop operation. It checks to see if the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, the <xref:System.Windows.Media.Brush> is applied to the ellipse. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, no action is performed.  
+  
+ [!code-csharp[DragDropSnippets#Drop](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#drop)]
+ [!code-vb[DragDropSnippets#Drop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
+        <altmember cref="E:System.Windows.ContentElement.Drop" />
+        <altmember cref="M:System.Windows.DragDrop.AddDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DropEvent">
@@ -771,8 +895,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while a drag-and-drop operation is in progress, and enables the drag source to give feedback to the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DragDrop.GiveFeedback> event is raised continuously while the drag source is being dragged. This event is paired with the <xref:System.Windows.DragDrop.DragOver> event on the drop target. The default handler for this event checks whether the drag source is over a valid drop target. If it is, it checks the allowed effects of the drop target. It then gives feedback to the end user regarding the allowed drop effects. This is typically done by changing the mouse cursor to a no-drop, copy, or move cursor. You should only handle this event if you need to use custom cursors to provide feedback to the user. If you handle this event, you must mark it as handled to prevent the default behavior from overriding your handler.  
+  
+> [!CAUTION]
+>  This event is raised continuously during the drag-and-drop operation. Therefore, you should avoid resource-intensive tasks in the event handler. For example, use a cached cursor instead of creating a new cursor each time the <xref:System.Windows.DragDrop.GiveFeedback> event is raised.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.GiveFeedbackEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.GiveFeedbackEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewGiveFeedback>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.GiveFeedback" />
+        <altmember cref="E:System.Windows.ContentElement.GiveFeedback" />
+        <altmember cref="M:System.Windows.DragDrop.AddGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedbackEvent">
@@ -821,8 +969,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged into the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ For more information, see the <xref:System.Windows.DragDrop.DragEnter> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.PreviewDragEnterEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.DragEnter>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragEnter" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewDragEnter" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragEnterEvent">
@@ -871,8 +1042,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged out of the bounds of an element that is acting as a drop target without being dropped.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ For more information, see the <xref:System.Windows.DragDrop.DragLeave> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.PreviewDragLeaveEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.DragLeave>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragLeave" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewDragLeave" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragLeaveEvent">
@@ -921,8 +1115,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while an object is dragged within the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+  
+ For more information, see the <xref:System.Windows.DragDrop.DragOver> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.DragDrop.PreviewDragOverEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.DragOver>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragOver" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewDragOver" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragOverEvent">
@@ -971,8 +1188,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dropped within the bounds of an element that is acting as a drop target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
+  
+ For more information, see the <xref:System.Windows.DragDrop.Drop> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.DragDrop.PreviewDropEvent>|  
+|Routing Strategy|Tunneling|  
+|Delegate|<xref:System.Windows.DragEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.Drop>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDrop" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewDrop" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDropEvent">
@@ -1021,8 +1261,29 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while a drag-and-drop operation is in progress, and enables the drag source to give feedback to the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised continuously while the drag source is being dragged. For more information, see the <xref:System.Windows.DragDrop.GiveFeedback> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.DragDrop.PreviewGiveFeedbackEvent>|  
+|Routing Strategy|Tunneling|  
+|Delegate|<xref:System.Windows.GiveFeedbackEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.GiveFeedback>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewGiveFeedback" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewGiveFeedback" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewGiveFeedbackEvent">
@@ -1071,8 +1332,29 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while a drag-and-drop operation is in progress, and enables the drop source to end the drag-and-drop operation depending on the key/button states.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised continuously while the drag source is being dragged. For more information, see the <xref:System.Windows.DragDrop.QueryContinueDrag> event.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.DragDrop.PreviewQueryContinueDragEvent>|  
+|Routing Strategy|Tunneling|  
+|Delegate|<xref:System.Windows.QueryContinueDragEventHandler>|  
+  
+ The corresponding bubbling event is <xref:System.Windows.DragDrop.QueryContinueDrag>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewQueryContinueDrag" />
+        <altmember cref="E:System.Windows.ContentElement.PreviewQueryContinueDrag" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewQueryContinueDragEvent">
@@ -1121,8 +1403,29 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs continuously while a drag-and-drop operation is in progress, and enables the drop source to end the drag-and-drop operation depending on the key/button states.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DragDrop.QueryContinueDrag> event is raised continuously while the drag source is being dragged. You can handle this event to determine what action ends the drag-and-drop operation based on the state of the ESC, SHIFT, CTRL, and ALT keys, as well as the state of the mouse buttons. The default handler for this event cancels the drag-and-drop operation if the ESC key is pressed, and drops the data if the mouse button is released. If you handle this event to change the default behavior, be sure to provide an equivalent mechanism in your handler to end the drag-and-drop operation. Otherwise, the <xref:System.Windows.DragDrop.DoDragDrop%2A> method will not return and your application will stop responding. If you handle this event, you must mark it as handled to prevent the default behavior from overriding your handler.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.DragDrop.QueryContinueDragEvent>|  
+|Routing Strategy|Bubbling|  
+|Delegate|<xref:System.Windows.QueryContinueDragEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.DragDrop.PreviewQueryContinueDrag>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.UIElement.QueryContinueDrag" />
+        <altmember cref="E:System.Windows.ContentElement.QueryContinueDrag" />
+        <altmember cref="M:System.Windows.DragDrop.AddQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDragEvent">

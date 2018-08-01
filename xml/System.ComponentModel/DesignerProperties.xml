@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerProperties" FullName="System.ComponentModel.DesignerProperties">
+<Type Name="DesignerProperties" FullName="System.ComponentModel.DesignerProperties">
   <TypeSignature Language="C#" Value="public static class DesignerProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DesignerProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerProperties" />
@@ -73,8 +73,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a <see cref="T:System.Windows.DependencyObject" /> is running in the context of a designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Component and control developers may use this property to perform different logic when running in the context of a designer than they would when running in an application.  
+  
+ Designers may change the value of this property to move a control from design mode to run mode and back. Components that make changes to their state based on the value of this property should override the virtual <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> method and update their state if their **IsInDesignMode** property value changes.  
+  
+<a name="dependencyPropertyInfo_DesignerPropertiesIsInDesignMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.ComponentModel.DesignerProperties.IsInDesignModeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInDesignModeProperty">

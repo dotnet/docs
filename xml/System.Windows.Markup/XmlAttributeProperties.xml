@@ -1,4 +1,4 @@
-﻿<Type Name="XmlAttributeProperties" FullName="System.Windows.Markup.XmlAttributeProperties">
+<Type Name="XmlAttributeProperties" FullName="System.Windows.Markup.XmlAttributeProperties">
   <TypeSignature Language="C#" Value="public sealed class XmlAttributeProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlAttributeProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlAttributeProperties" />
@@ -296,8 +296,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an attached property value that stores XML namespace maps for use by the WPF XAML parser for .NET Framework 3.0 and .NET Framework 3.5.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_XmlNamespaceMaps"></a>   
+## XAML Text Usage  
+  
+<a name="dependencyPropertyInfo_XmlNamespaceMaps"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMapsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceMapsProperty">
@@ -339,8 +356,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the attached property value that stores <see langword="xmlns" /> definitions for use by the WPF XAML parser for .NET Framework 3.0 and .NET Framework 3.5.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_XmlnsDefinition"></a>   
+## XAML Text Usage  
+  
+<a name="dependencyPropertyInfo_XmlnsDefinition"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinitionProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlnsDefinitionProperty">
@@ -382,8 +416,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the attached property value that stores <see langword="xmlns" /> dictionaries for use by the WPF XAML parser for .NET Framework 3.0 and .NET Framework 3.5.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_XmlnsDictionary"></a>   
+## XAML Text Usage  
+  
+<a name="dependencyPropertyInfo_XmlnsDictionary"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionaryProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlnsDictionaryProperty">
@@ -425,8 +476,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the mapped value of the <see langword="xml:space" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_XmlSpace"></a>   
+## XAML Text Usage  
+  
+<a name="dependencyPropertyInfo_XmlSpace"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Markup.XmlAttributeProperties.XmlSpaceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSpaceProperty">

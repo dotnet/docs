@@ -1,4 +1,4 @@
-﻿<Type Name="ItemsControl" FullName="System.Windows.Controls.ItemsControl">
+<Type Name="ItemsControl" FullName="System.Windows.Controls.ItemsControl">
   <TypeSignature Language="C#" Value="public class ItemsControl : System.Windows.Controls.Control, System.Windows.Controls.Primitives.IContainItemStorage, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ItemsControl extends System.Windows.Controls.Control implements class System.Windows.Controls.Primitives.IContainItemStorage, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemsControl" />
@@ -294,8 +294,38 @@ ListBox that contains multiple types of objects
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the assigned value of the item container when alternating item containers are used.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> and <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> properties enable you to specify the appearance for two or more alternating item containers. For example, you can specify alternating background colors for every third item in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> is assigned to each item container in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> begins at 0, increments until it is <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> is 3 and there are seven items in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> for each item.  
+  
+|Position of Item in the <xref:System.Windows.Controls.ItemsControl>|<xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>|  
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|1|0|  
+|2|1|  
+|3|2|  
+|4|0|  
+|5|1|  
+|6|2|  
+|7|0|  
+  
+ There are several methods you can use to specify different appearances for the alternating item containers. One method is to bind properties of the items container to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the item container that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> value. You can also use triggers to change the value of an item container's property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>.  
+  
+   
+  
+## Examples  
+ The following example specifies that the <xref:System.Windows.Controls.ListBox> (which inherits from <xref:System.Windows.Controls.ItemsControl>) has alternating item containers (which are of type <xref:System.Windows.Controls.ListBoxItem>) and specifies a different background and foreground for each one.  The example binds the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> and provides an <xref:System.Windows.Controls.AlternationConverter> for each property.  
+  
+ [!code-xml[AlternationIndexSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#2)]  
+  
+ The following example does the same as the previous example by using <xref:System.Windows.Trigger> objects.  
+  
+ [!code-xml[AlternationIndexSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternationIndexProperty">

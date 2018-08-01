@@ -1,4 +1,4 @@
-﻿<Type Name="TextCompositionManager" FullName="System.Windows.Input.TextCompositionManager">
+<Type Name="TextCompositionManager" FullName="System.Windows.Input.TextCompositionManager">
   <TypeSignature Language="C#" Value="public sealed class TextCompositionManager : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextCompositionManager extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextCompositionManager" />
@@ -283,8 +283,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Input.TextComposition" /> is completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the tunneling version of this event.  For the bubbling version, see <xref:System.Windows.Input.TextCompositionManager.TextInput>.  
+  
+ This is an attached event identified by the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputEvent> field.  Use the <xref:System.Windows.Input.TextCompositionManager.AddPreviewTextInputHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemovePreviewTextInputHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInputStart" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputEvent">
@@ -321,8 +332,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a new <see cref="T:System.Windows.Input.TextComposition" /> is started.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the tunneling version of this event.  For the bubbling version, see <xref:System.Windows.Input.TextCompositionManager.TextInputStart>.  
+  
+ This is an attached event identified by the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStartEvent> field.  Use the <xref:System.Windows.Input.TextCompositionManager.AddPreviewTextInputStartHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemovePreviewTextInputStartHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInput" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputStartEvent">
@@ -359,8 +381,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Input.TextComposition" /> is updated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the tunneling version of this event.  For the bubbling version, see <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>.  
+  
+ This is an attached event identified by the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdateEvent> field.  Use the <xref:System.Windows.Input.TextCompositionManager.AddPreviewTextInputUpdateHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemovePreviewTextInputUpdateHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInput" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.PreviewTextInputStart" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputUpdateEvent">
@@ -640,8 +673,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Input.TextComposition" /> is completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the bubbling version of this event.  For the tunneling version, see <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput>.  
+  
+ This is an attached event.  Use the <xref:System.Windows.Input.TextCompositionManager.AddTextInputHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemoveTextInputHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInputStart" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInputUpdate" />
       </Docs>
     </Member>
     <Member MemberName="TextInputEvent">
@@ -678,8 +722,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a new <see cref="T:System.Windows.Input.TextComposition" /> is started.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the bubbling version of this event.  For the tunneling version, see <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart>.  
+  
+ This is an attached event.  Use the <xref:System.Windows.Input.TextCompositionManager.AddTextInputStartHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemoveTextInputStartHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInput" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInputUpdate" />
       </Docs>
     </Member>
     <Member MemberName="TextInputStartEvent">
@@ -716,8 +771,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Input.TextComposition" /> is updated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the bubbling version of this event.  For the tunneling version, see <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdateEvent>.  
+  
+ This is an attached event.  Use the <xref:System.Windows.Input.TextCompositionManager.AddTextInputUpdateHandler%2A> and <xref:System.Windows.Input.TextCompositionManager.RemoveTextInputUpdateHandler%2A> methods to manage this event on a specified dependency object.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInput" />
+        <altmember cref="E:System.Windows.Input.TextCompositionManager.TextInputUpdate" />
       </Docs>
     </Member>
     <Member MemberName="TextInputUpdateEvent">

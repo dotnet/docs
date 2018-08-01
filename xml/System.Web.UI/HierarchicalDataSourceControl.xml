@@ -1,4 +1,4 @@
-﻿<Type Name="HierarchicalDataSourceControl" FullName="System.Web.UI.HierarchicalDataSourceControl">
+<Type Name="HierarchicalDataSourceControl" FullName="System.Web.UI.HierarchicalDataSourceControl">
   <TypeSignature Language="C#" Value="public abstract class HierarchicalDataSourceControl : System.Web.UI.Control, System.Web.UI.IHierarchicalDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HierarchicalDataSourceControl extends System.Web.UI.Control implements class System.Web.UI.IHierarchicalDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HierarchicalDataSourceControl" />
@@ -557,8 +557,18 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Web.UI.HierarchicalDataSourceControl" /> has changed in some way that affects data-bound controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HierarchicalDataSourceControl> instance is cast to an <xref:System.Web.UI.IHierarchicalDataSource> interface.  
+  
+ The <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised when the properties of a data-bound control or the underlying data has changed in some way that affects the data bindings between a data-bound control and its data.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchicalDataSource.GetHierarchicalView">

@@ -1,4 +1,4 @@
-﻿<Type Name="DataSourceControl" FullName="System.Web.UI.DataSourceControl">
+<Type Name="DataSourceControl" FullName="System.Web.UI.DataSourceControl">
   <TypeSignature Language="C#" Value="public abstract class DataSourceControl : System.Web.UI.Control, System.ComponentModel.IListSource, System.Web.UI.IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataSourceControl extends System.Web.UI.Control implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceControl" />
@@ -692,8 +692,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a data source control has changed in a way that affects data-bound controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when the underlying data source has changed. The change may be due to a change in the control's properties or a change in the data due to an edit action performed by the <xref:System.Web.UI.DataSourceControl>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">

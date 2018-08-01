@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyGrid" FullName="System.Windows.Forms.PropertyGrid">
+<Type Name="PropertyGrid" FullName="System.Windows.Forms.PropertyGrid">
   <TypeSignature Language="C#" Value="public class PropertyGrid : System.Windows.Forms.ContainerControl, System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyGrid extends System.Windows.Forms.ContainerControl implements class System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGrid" />
@@ -3212,7 +3212,7 @@
         <ReturnType>System.ComponentModel.Design.ComponentRenameEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is browsing a COM object and the user renames the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

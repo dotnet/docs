@@ -1,4 +1,4 @@
-﻿<Type Name="AutomationProperties" FullName="System.Windows.Automation.AutomationProperties">
+<Type Name="AutomationProperties" FullName="System.Windows.Automation.AutomationProperties">
   <TypeSignature Language="C#" Value="public static class AutomationProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AutomationProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationProperties" />
@@ -32,8 +32,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the accelerator key for the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AcceleratorKey"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.AcceleratorKeyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AcceleratorKeyProperty">
@@ -70,8 +85,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the access key for the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AccessKey"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.AccessKeyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AccessKeyProperty">
@@ -108,8 +138,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or set the string that uniquely identifies the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AutomationId"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.AutomationIdProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutomationIdProperty">
@@ -494,8 +539,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the help text for the specified element. The help text generally is the same text that is provided in the tooltip for the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_HelpText"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.HelpTextProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-support-for-the-tooltip-control-type.md">UI Automation Support for the ToolTip Control Type</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HelpTextProperty">
@@ -532,8 +593,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the specified element is a column header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsColumnHeader"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.IsColumnHeaderProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md">Expose the Content of a Table Using UI Automation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/implementing-the-ui-automation-table-control-pattern.md">Implementing the UI Automation Table Control Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsColumnHeaderProperty">
@@ -569,8 +647,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsOffscreenBehavior"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.IsOffscreenBehaviorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenBehaviorProperty">
@@ -606,8 +698,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the specified element is required to be filled out on a form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsRequiredForForm"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.IsRequiredForFormProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm" />
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormProperty">
@@ -644,8 +752,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the specified element is a row header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsRowHeader"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.IsRowHeaderProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsRowHeaderProperty">
@@ -682,8 +805,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a description of the status of an item within an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables a client to ascertain whether an element is conveying status about an item. For example, an item associated with a contact in a messaging application might be "Busy" or "Connected".  
+  
+<a name="dependencyPropertyInfo_ItemStatus"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.ItemStatusProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus" />
       </Docs>
     </Member>
     <Member MemberName="ItemStatusProperty">
@@ -720,8 +860,24 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a description of the type of the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to obtain information about items in a list, tree view, or data grid. For example, an item in a file directory view might be a "Document File" or a "Folder".  
+  
+<a name="dependencyPropertyInfo_ItemType"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.ItemTypeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ItemTypeProperty">
@@ -758,8 +914,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element that contains the text label for the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_LabeledBy"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.LabeledByProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-support-for-the-edit-control-type.md">UI Automation Support for the Edit Control Type</related>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.LabeledBy" />
       </Docs>
     </Member>
     <Member MemberName="LabeledByProperty">
@@ -832,8 +1005,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Name"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Automation.AutomationProperties.NameProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-properties-overview.md">UI Automation Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NameProperty">

@@ -1,4 +1,4 @@
-﻿<Type Name="ClientBase&lt;TChannel&gt;+ChannelBase&lt;T&gt;" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+ChannelBase&lt;T&gt;">
+<Type Name="ClientBase&lt;TChannel&gt;+ChannelBase&lt;T&gt;" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+ChannelBase&lt;T&gt;">
   <TypeSignature Language="C#" Value="protected internal class ClientBase&lt;TChannel&gt;.ChannelBase&lt;T&gt; : IDisposable, System.ServiceModel.Channels.IOutputChannel, System.ServiceModel.Channels.IRequestChannel, System.ServiceModel.IClientChannel, System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt; where TChannel : class where T : class" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit ClientBase`1/ChannelBase`1&lt;class TChannel, class T&gt; extends System.Object implements class System.IDisposable, class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IOutputChannel, class System.ServiceModel.Channels.IRequestChannel, class System.ServiceModel.IClientChannel, class System.ServiceModel.ICommunicationObject, class System.ServiceModel.IContextChannel, class System.ServiceModel.IExtensibleObject`1&lt;class System.ServiceModel.IContextChannel&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1.ChannelBase`1" />
@@ -1282,7 +1282,7 @@
         <ReturnType>System.EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when the ClientBase object receives an unknown message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1611,7 +1611,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when the ClientBase object has transitioned from its current state to the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1639,7 +1639,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when the ClientBase object transitions from its current state to the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1733,7 +1733,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when fault occurs while performing an operation on the ClientBase object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1834,7 +1834,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when the ClientBase object has transitioned from the created state to the opened state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1862,7 +1862,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler that is invoked when the ClientBase object transitions from the created state to the opened state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

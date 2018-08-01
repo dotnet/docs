@@ -1,4 +1,4 @@
-﻿<Type Name="Mouse" FullName="System.Windows.Input.Mouse">
+<Type Name="Mouse" FullName="System.Windows.Input.Mouse">
   <TypeSignature Language="C#" Value="public static class Mouse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Mouse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Mouse" />
@@ -719,8 +719,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element captures the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ Because of the bubbling routing, the actual element that has capture might be a child element, not necessarily the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event arguments to determine the actual element that has mouse capture.  
+  
+<a name="routedEventInfo_GotMouseCapture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.GotMouseCaptureEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+-   There is no defined corresponding tunneling event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GotMouseCaptureEvent">
@@ -797,8 +819,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element loses mouse capture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders. T  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ Because of the bubbling routing, the actual element that lost capture might be a child element, not necessarily the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event arguments to determine the actual element that lost capture.  
+  
+<a name="routedEventInfo_LostMouseCapture"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.LostMouseCaptureEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+-   There is no defined corresponding tunneling event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LostMouseCaptureEvent">
@@ -875,8 +919,41 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when any mouse button is depressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine which mouse button was depressed, check the <xref:System.Windows.Input.MouseButtonEventArgs.ChangedButton%2A> property in the <xref:System.Windows.Input.MouseButtonEventArgs> passed to the handler.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework builds on this attached event by surfacing it as two different [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>: <xref:System.Windows.UIElement.MouseLeftButtonDown> and <xref:System.Windows.UIElement.MouseRightButtonDown>. These implementations handle the underlying <xref:System.Windows.Input.Mouse.MouseDown> event and read the arguments of the event to determine whether the left or right mouse button was involved. For a three-button mouse, there is no framework-level event support for the center button. You should use the <xref:System.Windows.Input.Mouse.MouseDown> event and check the <xref:System.Windows.Input.MouseEventArgs.MiddleButton%2A> state in the event arguments.  
+  
+> [!IMPORTANT]
+>  A few <xref:System.Windows.ContentElement> derived classes that have control-like behavior, for example, <xref:System.Windows.Documents.Hyperlink>, might have inherent class handling for mouse button events. The left mouse button down event is the most likely event to have class handling in a control. The class handling often marks the underlying <xref:System.Windows.Input.Mouse> class event as handled. Once the event is marked handled, other instance handlers that are attached to that element are not ordinarily raised. Any other class or instance handlers that are attached to elements in the bubbling direction towards the root in the UI tree are also not ordinarily raised.  
+  
+ You can resolve the issue that is outlined in the preceding Important note and still receive <xref:System.Windows.UIElement.MouseDown> events for left mouse button down events on a derived class that has class handling by using either of these solutions:  
+  
+-   Attach handlers for the <xref:System.Windows.UIElement.PreviewMouseDown> event, which is not marked as handled by the controls. Notice that because this is a preview event, the route starts at the root and tunnels down to the control.  
+  
+-   Register a handler on the control procedurally by calling <xref:System.Windows.UIElement.AddHandler%2A> and choosing the signature option that enables handlers to listen for events even if they are already marked as handled in the routed event data.  
+  
+ For routed events that relate to the mouse, be careful about how or when you mark them handled. The difficulty in making the appropriate choices about whether parent elements should also be informed about any given mouse action is in fact why the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework chose the model of having the underlying mouse routed event be surfaced as [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] events along the route. Similar issues exist with tunneling mouse events.  Should you handle the event and not have it be handled by further children toward the source, and how would that affect compositing a control where the compositing pieces might have expected mouse behaviors?  
+  
+<a name="routedEventInfo_MouseDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseDownEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Mouse.PreviewMouseDown>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDownEvent">
@@ -920,8 +997,28 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer enters the boundaries of an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ This event uses the direct event handling routing strategy. Direct routed events are not raised along a route (they are only handled in the same element on which they are raised).  They do, however, enable other aspects of routed event behaviors, such as event triggers in styles.  
+  
+ Although this event is used to track when the mouse enters an element, it is also reporting the <xref:System.Windows.UIElement.IsMouseOver%2A> property has changed from `false` to `true` on this element.  
+  
+<a name="routedEventInfo_MouseEnter"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseEnterEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseEnterEvent">
@@ -965,8 +1062,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer leaves the boundaries of an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ This event uses the direct event handling routing strategy. Direct routed events do not follow a route (they are only handled in the same element on which they are raised).  They do, however, enable other aspects of routed event behaviors, such as event triggers in styles.  
+  
+ Although this event is used to track when the mouse leaves an element, it is also reporting that the <xref:System.Windows.UIElement.IsMouseOver%2A> property value has changed from `true` to `false` on this element.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseLeaveEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveEvent">
@@ -1010,8 +1126,25 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer moves.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseMoveEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Mouse.PreviewMouseMove>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseMoveEvent">
@@ -1055,8 +1188,33 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when any mouse button is released.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Which mouse button was released is determined by checking the arguments of the event.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework builds on this attached event by surfacing it as two different [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events on <xref:System.Windows.UIElement>: <xref:System.Windows.UIElement.MouseLeftButtonUp> and <xref:System.Windows.UIElement.MouseRightButtonUp>. These implementations handle the underlying <xref:System.Windows.Input.Mouse.MouseUp> event and read the arguments of the event to determine whether the left or right mouse button was involved. For three-button, there is no framework-level event support for the center button, and you should use the <xref:System.Windows.Input.Mouse.MouseUp> event and check for the center button condition in the event arguments.  
+  
+ For routed events that relate to the mouse, be careful about how or when you mark them handled. The difficulty in making the appropriate choices about whether parent elements should also be informed about any given mouse action is in fact why the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework chose the model of having the underlying <xref:System.Windows.Input.Mouse> routed event be surfaced as [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] events all along the route.  
+  
+ Similar issues exist with tunneling mouse events.  Should you handle the event and not have it be handled by children further towards the source, and how would that affect compositing in a control where the compositing pieces might have expected mouse behaviors?  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseUpEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+ The corresponding tunneling event is <xref:System.Windows.Input.Mouse.PreviewMouseUp>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUpEvent">
@@ -1100,8 +1258,28 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse wheel is rotated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Focus or mouse capture take precedence over where the mouse pointer is.  If you receive this event from a focused or captured element, the mouse pointer might in fact be over another element at the time.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_MouseWheel"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.MouseWheelEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.MouseWheelEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Mouse.PreviewMouseWheel>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelDeltaForOneLine">
@@ -1216,8 +1394,32 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when any mouse button is depressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Which mouse button was depressed is determined by checking the arguments of the event. This is an attached event (using tunneling routing strategy) that is intended through attached event syntax to be referenced by existing [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements that take input.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework builds on this attached event by surfacing it as two different [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events on <xref:System.Windows.UIElement>: <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> and <xref:System.Windows.UIElement.PreviewMouseRightButtonDown>. These implementations handle the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown> event and read the arguments of the event to determine whether the left or right mouse button was involved. For three-button, there is no framework-level event support for the center button, and you should use the <xref:System.Windows.Input.Mouse.PreviewMouseDown> event and check for the center button condition in the event arguments.  
+  
+ For routed events that relate to the mouse, be careful about how or when you mark them handled. Handling the event near the root and handling it by a child further toward the source may not be appropriate for composited controls, where the compositing pieces might have expected mouse behaviors. The difficulty in making the appropriate choices about whether other elements should also be informed about any given mouse action is in fact why the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework chose the model of having the underlying <xref:System.Windows.Input.Mouse> routed event be surfaced as [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] events along the route.  
+  
+<a name="routedEventInfo_PreviewMouseDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseDownEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Mouse.MouseDown>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseDownEvent">
@@ -1261,8 +1463,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the primary mouse button is pressed outside the element that is capturing mouse events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ This event is not resurfaced on base elements. It is mainly of concern to control authors that are attempting to reconcile mouse capture and mouse input within their control compositing.  
+  
+<a name="routedEventInfo_PreviewMouseDownOutsideCaptureElement"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElementEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseDownOutsideCapturedElementEvent">
@@ -1306,8 +1526,28 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse moves over an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs both when the mouse pointer is newly moved in the element bounds, and also when the mouse pointer moves while still remaining in the element bounds.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewMouseMove"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseMoveEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Mouse.MouseMove>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseMoveEvent">
@@ -1351,8 +1591,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when any mouse button is released.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Which mouse button was released is determined by checking the arguments of the event.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework builds on this attached event by surfacing it as two different [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] events on <xref:System.Windows.UIElement>: <xref:System.Windows.UIElement.PreviewMouseLeftButtonUp> and <xref:System.Windows.UIElement.PreviewMouseRightButtonUp>. These implementations handle the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp> event and read the arguments of the event to determine whether the left or right mouse button was involved. For three-button, there is no framework-level event support for the center button, and you should use the <xref:System.Windows.Input.Mouse.PreviewMouseUp> event and check for the center button condition in the event arguments.  
+  
+ For routed events that relate to the mouse, be careful about how or when you mark them handled. Handling the event near the root and not handling by a child further toward the source may not be appropriate for composited controls, where the compositing pieces might have expected mouse behaviors. The difficulty in making the appropriate choices about whether other elements should also be informed about any given mouse action is in fact why the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework chose the model of having the underlying <xref:System.Windows.Input.Mouse> routed event be surfaced as [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] events along the route.  
+  
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseUpEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Mouse.MouseUp>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseUpEvent">
@@ -1396,8 +1659,28 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the primary mouse button is released outside the element that is capturing mouse events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ This event is not resurfaced on base elements. It is mainly of concern to control authors that are attempting to reconcile mouse capture and mouse input within their control compositing.  
+  
+<a name="routedEventInfo_PreviewMouseUpOutsideCaptureElement"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElementEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+-   There is no corresponding bubbling event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseUpOutsideCapturedElementEvent">
@@ -1441,8 +1724,28 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse wheel rotates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Focus or mouse capture take precedence over where the mouse pointer is; therefore, if you receive this event from a focused or captured element, the mouse pointer might in fact be over another element at the time.  
+  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewMouseWheel"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.PreviewMouseWheelEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.MouseWheelEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Mouse.MouseWheel>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseWheelEvent">
@@ -1521,8 +1824,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element queries for the current mouse cursor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_Querycursor"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Mouse.QueryCursorEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.QueryCursorEventHandler>|  
+  
+ There is no defined corresponding tunneling event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryCursorEvent">

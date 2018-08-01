@@ -1,4 +1,4 @@
-﻿<Type Name="Grid" FullName="System.Windows.Controls.Grid">
+<Type Name="Grid" FullName="System.Windows.Controls.Grid">
   <TypeSignature Language="C#" Value="public class Grid : System.Windows.Controls.Panel, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Grid extends System.Windows.Controls.Panel implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Grid" />
@@ -116,8 +116,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates which column child content within a <see cref="T:System.Windows.Controls.Grid" /> should appear in.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Columns in a <xref:System.Windows.Controls.Grid> are defined using the <xref:System.Windows.Controls.ColumnDefinition> element.  
+  
+<a name="dependencyPropertyInfo_Column"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Grid.ColumnProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnDefinitions">
@@ -206,8 +221,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the total number of columns that child content spans within a <see cref="T:System.Windows.Controls.Grid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Columns in a <xref:System.Windows.Controls.Grid> are defined using the <xref:System.Windows.Controls.ColumnDefinition> element.  
+  
+<a name="dependencyPropertyInfo_ColumnSpan"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Grid.ColumnSpanProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpanProperty">
@@ -430,8 +460,43 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates that multiple <see cref="T:System.Windows.Controls.Grid" /> elements are sharing size information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Columns and rows participating in size sharing do not respect <xref:System.Windows.GridUnitType.Star> sizing. In this scenario, <xref:System.Windows.GridUnitType.Star> sizing is treated as <xref:System.Windows.GridUnitType.Auto>.  
+  
+ Grid size sharing does not work if <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A> is set to `true` within a resource template, and a <xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A> is defined outside of that template.  
+  
+<a name="dependencyPropertyInfo_IsSharedSizeScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Grid.IsSharedSizeScopeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate how to use the <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-xml[gridIssharedsizescopeProp#1](~/samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#1)]  
+  
+ ...  
+  
+ [!code-xml[gridIssharedsizescopeProp#2](~/samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#2)]  
+  
+ ...  
+  
+ Events defined in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] are handled using code.  
+  
+ [!code-csharp[gridIssharedsizescopeProp#3](~/samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[gridIssharedsizescopeProp#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/gridIssharedsizescopeProp/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSharedSizeScopeProperty">
@@ -546,8 +611,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates which row child content within a <see cref="T:System.Windows.Controls.Grid" /> should appear in.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Rows in a <xref:System.Windows.Controls.Grid> are defined using the <xref:System.Windows.Controls.RowDefinition> element.  
+  
+<a name="dependencyPropertyInfo_Row"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Grid.RowProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowDefinitions">
@@ -635,8 +715,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the total number of rows that child content spans within a <see cref="T:System.Windows.Controls.Grid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Rows in a <xref:System.Windows.Controls.Grid> are defined using the <xref:System.Windows.Controls.RowDefinition> element.  
+  
+<a name="dependencyPropertyInfo_RowSpan"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Grid.RowSpanProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowSpanProperty">

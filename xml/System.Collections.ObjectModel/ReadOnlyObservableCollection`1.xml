@@ -1,4 +1,4 @@
-﻿<Type Name="ReadOnlyObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;T&gt;">
+<Type Name="ReadOnlyObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ReadOnlyObservableCollection&lt;T&gt; : System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ReadOnlyObservableCollection`1&lt;T&gt; extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!T&gt; implements class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" />
@@ -304,8 +304,15 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> instance is cast to an <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
@@ -341,8 +348,15 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> instance is cast to an <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

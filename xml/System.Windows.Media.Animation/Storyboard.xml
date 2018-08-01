@@ -1,4 +1,4 @@
-﻿<Type Name="Storyboard" FullName="System.Windows.Media.Animation.Storyboard">
+<Type Name="Storyboard" FullName="System.Windows.Media.Animation.Storyboard">
   <TypeSignature Language="C#" Value="public class Storyboard : System.Windows.Media.Animation.ParallelTimeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Storyboard extends System.Windows.Media.Animation.ParallelTimeline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Storyboard" />
@@ -2759,8 +2759,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object that should be animated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target object must be a dependency object.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Media.Animation.Storyboard.Target%2A> property is not serializable, because it can be set to any <xref:System.Windows.DependencyObject>. There is no guaranteed that this object can be correctly referenced in XAML.  
+  
+<a name="dependencyPropertyInfo_Target"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.Storyboard.TargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetName">
@@ -2776,8 +2794,38 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the object to animate. The object must be a <see cref="T:System.Windows.FrameworkElement" />, <see cref="T:System.Windows.FrameworkContentElement" />, or <see cref="T:System.Windows.Freezable" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property is optional. If the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> is not specified, a storyboard's animations are applied to one of the following:  
+  
+-   If the storyboard to which the animation belongs was started using a <xref:System.Windows.Media.Animation.BeginStoryboard>, the element that owns the <xref:System.Windows.Media.Animation.BeginStoryboard> action that triggers the storyboard is targeted.  
+  
+-   If the storyboard was started using the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method, the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> specified when the storyboard was started with the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method is targeted.  
+  
+ When this property is set on a timeline with children, those child timelines "inherit" the parent's <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> unless they specify their own.  
+  
+## Making an Object Targetable  
+ When using [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you perform one of the following two actions to make an object targetable by a storyboard:  
+  
+-   If the object is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>, set its <xref:System.Windows.FrameworkElement.Name%2A> property.  
+  
+-   If the object is a <xref:System.Windows.Freezable> or a custom <xref:System.Windows.FrameworkContentElement> or <xref:System.Windows.FrameworkContentElement>, assign it a name using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) markup extension.  
+  
+ When using code, you make an object targetable by using the <xref:System.Windows.NameScope.RegisterName%2A> method to assign the object a name.  
+  
+<a name="dependencyPropertyInfo_TargetName"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.Storyboard.TargetNameProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetNameProperty">

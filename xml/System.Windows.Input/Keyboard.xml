@@ -1,4 +1,4 @@
-﻿<Type Name="Keyboard" FullName="System.Windows.Input.Keyboard">
+<Type Name="Keyboard" FullName="System.Windows.Input.Keyboard">
   <TypeSignature Language="C#" Value="public static class Keyboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Keyboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Keyboard" />
@@ -576,8 +576,43 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element receives keyboard focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md) and [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
+  
+ If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled, keyboard focus does change.  
+  
+<a name="routedEventInfo_GotKeyboardFocusEvent"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.GotKeyboardFocusEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.KeyboardFocusChangedEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.TextBox> and attaches event handlers for the <xref:System.Windows.UIElement.GotKeyboardFocus> event and the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus> event.  When the <xref:System.Windows.Controls.TextBox> obtains keyboard focus, the background color is changed and the text of the <xref:System.Windows.Controls.TextBox> is cleared.  When the <xref:System.Windows.Controls.TextBlock> loses keyboard focus, the background color is changed and a method is called which resets variables used in the sample.  
+  
+ [!code-xml[keyboardsample#KeyboardSampleXAMLHandlerHookup](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml#keyboardsamplexamlhandlerhookup)]  
+  
+ [!code-csharp[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplegotfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplegotfocus)]  
+  
+ [!code-csharp[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplelostfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplelostfocus)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -749,8 +784,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the keyboard input provider acquires focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_KeyboardInputProviderAcquireFocus"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocusEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputProviderAcquireFocusEvent">
@@ -793,8 +846,37 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key on the keyboard is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_KeyDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.KeyDownEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.KeyEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Keyboard.PreviewKeyDown>.  
+  
+   
+  
+## Examples  
+ The following example creates <xref:System.Windows.Controls.TextBox> that attaches an event handler for the <xref:System.Windows.UIElement.KeyDown> event.  When the <xref:System.Windows.Input.Key.Return> is pressed, the event handler displays the text in the <xref:System.Windows.Controls.TextBox> in a <xref:System.Windows.Controls.TextBlock>.  
+  
+ [!code-xml[keydown#KeyDownUI](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyDown/CSharp/Window1.xaml#keydownui)]  
+  
+ [!code-csharp[keydown#KeyDownSample](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyDown/CSharp/Window1.xaml.cs#keydownsample)]
+ [!code-vb[keydown#KeyDownSample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyDown/VisualBasic/Window1.xaml.vb#keydownsample)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownEvent">
@@ -838,8 +920,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key on the keyboard is released.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_KeyUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.KeyUpEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.KeyEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Keyboard.PreviewKeyUp>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpEvent">
@@ -883,8 +984,43 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element loses keyboard focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md) and [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
+  
+ If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled, keyboard focus does not change.  
+  
+<a name="routedEventInfo_LostKeyboardFocus"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.LostKeyboardFocusEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.KeyboardFocusChangedEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.TextBox> and attaches event handlers for the <xref:System.Windows.UIElement.GotKeyboardFocus> event and the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus> event.  When the <xref:System.Windows.Controls.TextBox> obtains keyboard focus, the background color is changed and the text of the <xref:System.Windows.Controls.TextBox> is cleared.  When the <xref:System.Windows.Controls.TextBlock> loses keyboard focus, the background color is changed and a method is called that resets variables used in the sample.  
+  
+ [!code-xml[keyboardsample#KeyboardSampleXAMLHandlerHookup](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml#keyboardsamplexamlhandlerhookup)]  
+  
+ [!code-csharp[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplegotfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplegotfocus)]  
+  
+ [!code-csharp[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplelostfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplelostfocus)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LostKeyboardFocusEvent">
@@ -965,8 +1101,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element is in the process of acquiring keyboard focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled, keyboard focus does not change.  
+  
+ Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md) and [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
+  
+<a name="routedEventInfo_PreviewGotKeyborad"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocusEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.KeyboardFocusChangedEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Keyboard.GotKeyboardFocus>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewGotKeyboardFocusEvent">
@@ -1009,8 +1167,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the keyboard input provider is in the process of acquiring focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewKeyboardInputProviderAcquireFocus"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocusEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyboardInputProviderAcquireFocusEvent">
@@ -1053,8 +1229,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key on the keyboard is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewKeyDown"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.PreviewKeyDownEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.KeyEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Keyboard.KeyDown>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDownEvent">
@@ -1098,8 +1292,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key on the keyboard is released.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+<a name="routedEventInfo_PreviewKeyUp"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.PreviewKeyUpEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.KeyEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Keyboard.KeyUp>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyUpEvent">
@@ -1143,8 +1355,30 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an element is in the process of losing keyboard focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an attached event. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached events as routed events. Attached events are fundamentally a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language concept for referencing events that can be handled on objects that do not define that event, which [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] expands upon by also enabling the event to traverse a route. Attached events do not have a direct handling syntax in code; to attach handlers for a routed event in code, you use a designated Add*Handler method. For details, see [Attached Events Overview](~/docs/framework/wpf/advanced/attached-events-overview.md).  
+  
+ If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled, keyboard focus does not change.  
+  
+ Keyboard focus refers to the object that is receiving keyboard input. The element with keyboard focus has <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  There can be only one element with keyboard focus on the entire desktop.  Logical focus refers to the object within a focus scope that has focus.  For more information on focus, keyboard focus, and logical focus, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md) and [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
+  
+<a name="routedEventInfo_PreviewLostKeyboardFocus"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.KeyboardFocusChangedEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewLostKeyboardFocusEvent">

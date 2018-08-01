@@ -26,7 +26,7 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
 - Primitive types, such as [string][string] and [int][int].
-- Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%601?displayProperty=nameWithType>.
+- Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
 - High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines][pipelines].

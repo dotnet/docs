@@ -1,6 +1,6 @@
 ---
 title: How to remove .NET runtime and SDK
-description: Instructions for removing the .NET Core Runtime and SDK components on Windows, Mac, and Linx
+description: Instructions for removing the .NET Core Runtime and SDK components on Windows, Mac, and Linux
 ms.date: 07/28/2018
 author: billwagner
 ms.author: wiwagn
@@ -9,7 +9,7 @@ ms.author: wiwagn
 
 Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md).
 
-The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows or unix:
+The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, MacOS, or Linix:
 
 # [Windows](#tab/Windows)
 
@@ -147,7 +147,7 @@ If you installed .NET Core using a package manager, you use that same package ma
 
 In almost all cases, the command to remove a package is `remove`.
 
-The package name for the .NET Core SDK installation for most package managers is `dotnet-sdk`, followed by the version number. Starting with the version 2.1.300 of the .NET Core SDK and version `2.1` of the runtime, only the major and minor version numbers are necessary: for example, the .NET Core SDK version 2.1.300 can be referenced as the package `dotnet-sdk-2.1`. Prior versions require the entire version string: for example, `dotnet-sdk-21.200` would be required for version 2.1.200 of the .NET Core SDK.
+The package name for the .NET Core SDK installation for most package managers is `dotnet-sdk`, followed by the version number. Starting with the version 2.1.300 of the .NET Core SDK and version `2.1` of the runtime, only the major and minor version numbers are necessary: for example, the .NET Core SDK version 2.1.300 can be referenced as the package `dotnet-sdk-2.1`. Prior versions require the entire version string: for example, `dotnet-sdk-2.1.200` would be required for version 2.1.200 of the .NET Core SDK.
 
 For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET Core runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
 

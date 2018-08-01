@@ -4,10 +4,10 @@ description: Learn about the .NET thread pool that provides background worker th
 ms.date: "08/01/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "thread pooling [.NET Framework]"
-  - "thread pools [.NET Framework]"
-  - "threading [.NET Framework], thread pool"
-  - "threading [.NET Framework], pooling"
+  - "thread pooling [.NET]"
+  - "thread pools [.NET]"
+  - "threading [.NET], thread pool"
+  - "threading [.NET], pooling"
 ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,7 +22,7 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
   
 ## XAML Values  
   
-|||  
+| | |  
 |-|-|  
 |`prefix`|Optional. A prefix that refers to a mapped, non-default XAML namespace. `prefix` is shown explicitly in the usage because you rarely reference static properties that come from a default XAML namespace. See Remarks.|  
 |`typeName`|Required. The name of the type that defines the desired static member.|  
@@ -53,7 +53,7 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
   
  **Object element syntax:** `<x:Static Member="` `prefix` `:` `typeName` `.` `staticMemberName` `" .../>`  
   
- **Attribute syntax with explicit Member property for initialization string:** `<` `object` `` `property` `="{x:Static Member=` `prefix` `:` `typeName` `.` `staticMemberName` `}" .../>`  
+ **Attribute syntax with explicit Member property for initialization string:** `<` `object` `property` `="{x:Static Member=` `prefix` `:` `typeName` `.` `staticMemberName` `}" .../>`  
   
  In the .NET Framework XAML Services implementation, the handling for this markup extension is defined by the <xref:System.Windows.Markup.StaticExtension> class.  
   

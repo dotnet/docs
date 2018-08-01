@@ -40,14 +40,17 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
  [!code-csharp[CFX_WCFDataServicesActivityExample#10](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#10)]  
   
  When this workflow is invoked, the following data is written to the console:  
-  
- **Calling WCF Data Service...**  
-**8/25/1997**   
-**10/3/1997**   
-**10/13/1997**   
-**1/15/1998**   
-**3/16/1998**   
-**4/9/1998**    
+
+```
+Calling WCF Data Service...
+8/25/1997
+10/3/1997
+10/13/1997
+1/15/1998
+3/16/1998
+4/9/1998
+```
+
 > [!NOTE]
 >  If a connection to the OData server cannot be established, you will get an exception similar to the following exception:  
 >   
@@ -77,24 +80,31 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
  [!code-csharp[CFX_WCFDataServicesActivityExample#20](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#20)]  
   
  When this workflow is invoked, the following data is written to the console. Since this query returns many customers, only part of the output is displayed here.  
-  
- **Calling WCF Data Service...**  
-**Alfreds Futterkiste, Contact: Maria Anders**   
-**Ana Trujillo Emparedados y helados, Contact: Ana Trujillo**   
-**Antonio Moreno Taquería, Contact: Antonio Moreno**   
-**Around the Horn, Contact: Thomas Hardy**   
-**Berglunds snabbköp, Contact: Christina Berglund**   
-**...**    
+
+```
+Calling WCF Data Service...
+Alfreds Futterkiste, Contact: Maria Anders
+Ana Trujillo Emparedados y helados, Contact: Ana Trujillo
+Antonio Moreno Taquería, Contact: Antonio Moreno
+Around the Horn, Contact: Thomas Hardy
+Berglunds snabbköp, Contact: Christina Berglund
+...
+```
+
 ## Consuming an OData Feed Without Using the Client Libraries  
  OData exposes data as resources that are addressable by URIs. When you use the client libraries these URIs are created for you, but you do not have to use the client libraries. If desired, OData services can be accessed directly without using the client libraries. When not using the client libraries the location of the service and the desired data are specified by the URI and the results are returned in the response to the HTTP request. This raw data can then be processed or manipulated in the desired manner. One way to retrieve the results of an OData query is by using the <xref:System.Net.WebClient> class. In this example, the contact name for the customer represented by the key ALFKI is retrieved.  
   
  [!code-csharp[CFX_WCFDataServicesActivityExample#2](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#2)]  
   
  When this code is run, the following output is displayed to the console:  
-  
- **Raw data returned:**  
-**\<?xml version="1.0" encoding="utf-8" standalone="yes"?>**   
-**\<ContactName xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices">Maria Anders\</ContactName>**  In a workflow, the code from this example could be incorporated into the <xref:System.Activities.CodeActivity.Execute%2A> override of a <xref:System.Activities.CodeActivity>-based custom activity, but the same functionality can also be accomplished by using the <xref:System.Activities.Expressions.InvokeMethod%601> activity. The <xref:System.Activities.Expressions.InvokeMethod%601> activity enables workflow authors to invoke static and instance methods of a class, and also has an option to invoke the specified method asynchronously. In the following example, an <xref:System.Activities.Expressions.InvokeMethod%601> activity is configured to call the <xref:System.Net.WebClient.DownloadString%2A> method of the <xref:System.Net.WebClient> class and return a list of customers.  
+
+```xml
+Raw data returned:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>   
+<ContactName xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices">Maria Anders</ContactName>
+```
+
+In a workflow, the code from this example could be incorporated into the <xref:System.Activities.CodeActivity.Execute%2A> override of a <xref:System.Activities.CodeActivity>-based custom activity, but the same functionality can also be accomplished by using the <xref:System.Activities.Expressions.InvokeMethod%601> activity. The <xref:System.Activities.Expressions.InvokeMethod%601> activity enables workflow authors to invoke static and instance methods of a class, and also has an option to invoke the specified method asynchronously. In the following example, an <xref:System.Activities.Expressions.InvokeMethod%601> activity is configured to call the <xref:System.Net.WebClient.DownloadString%2A> method of the <xref:System.Net.WebClient> class and return a list of customers.  
   
  [!code-csharp[CFX_WCFDataServicesActivityExample#3](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#3)]  
   
@@ -103,27 +113,31 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
  [!code-csharp[CFX_WCFDataServicesActivityExample#1](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#1)]  
   
  When this workflow is invoked, the following output is displayed to the console. Since this query returns several orders, only part of the output is displayed here.  
-  
- **Calling WCF Data Service...**  
-**Raw data returned:**   
-**\<?xml version="1.0" encoding="utf-8" standalone="yes"?>**   
-**\<feed**   
- **xml:base="http://services.odata.org/Northwind/Northwind.svc/"**  
- **xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"**  
- **xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"**  
- **xmlns="http://www.w3.org/2005/Atom">**  
- **\<title type="text">Orders\</title>**  
- **\<id>http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders\</id>**  
- **\<updated>2010-05-19T19:37:07Z\</updated>**  
- **\<link rel="self" title="Orders" href="Orders" />**  
- **\<entry>**  
- **\<id>http://services.odata.org/Northwind/Northwind.svc/Orders(10643)\</id>**  
- **\<title type="text">\</title>**  
- **\<updated>2010-05-19T19:37:07Z\</updated>**  
- **\<author>**  
- **\<name />**  
- **\</author>**  
- **\<link rel="edit" title="Order" href="Orders(10643)" />**  
- **\<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Customer"**  
- **type="application/atom+xml;type=entry" title="Customer" href="Orders(10643)/Customer" />**  
-**...**  This example provides one method that workflow application authors can use to consume the raw data returned from an OData service. For more information about accessing WCF Data Services using URIs, see [Accessing Data Service Resources (WCF Data Services)](http://go.microsoft.com/fwlink/?LinkId=193397) and [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564).
+
+```xml
+Calling WCF Data Service...
+Raw data returned:
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>*
+<feed
+xml:base="http://services.odata.org/Northwind/Northwind.svc/"
+xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom">
+<title type="text">Orders\</title>
+<id>http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders\</id>
+<updated>2010-05-19T19:37:07Z\</updated>
+<link rel="self" title="Orders" href="Orders" />
+<entry>
+<id>http://services.odata.org/Northwind/Northwind.svc/Orders(10643)\</id>
+<title type="text">\</title>
+<updated>2010-05-19T19:37:07Z\</updated>
+<author>
+<name />
+</author>
+<link rel="edit" title="Order" href="Orders(10643)" />
+<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Customer" type="application/atom+xml;type=entry" title="Customer" href="Orders(10643)/Customer" />
+...
+```
+
+This example provides one method that workflow application authors can use to consume the raw data returned from an OData service. For more information about accessing WCF Data Services using URIs, see [Accessing Data Service Resources (WCF Data Services)](http://go.microsoft.com/fwlink/?LinkId=193397) and [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564).

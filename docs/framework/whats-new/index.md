@@ -60,8 +60,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 
 A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
-<a name="core-472" />
-#### Core
+#### <a name="core-472" />Core
 
 The .NET Framework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
 

@@ -9,7 +9,7 @@ ms.author: wiwagn
 
 Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md).
 
-The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, MacOS, or Linux:
+The .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, macOS, or Linux:
 
 # [Windows](#tab/Windows)
 
@@ -83,7 +83,7 @@ Microsoft.NETCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
-# [MacOS](#tab/MacOS)
+# [macOS](#tab/macOS)
 
 ```console
 $ dotnet --list-sdks
@@ -172,7 +172,7 @@ sudo rm -rf /usr/share/dotnet/host/fxr/1.0.1
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
-# [MacOS](#tab/MacOS)
+# [macOS](#tab/macOS)
 
 On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 

@@ -131,7 +131,7 @@ to use these techniques.
 
 - [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
 - [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
-- [Use a thread pool](../programming-guide/concepts/threading/how-to-use-a-thread-pool.md).
+- [Use a thread pool](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## Command line args to your program
 

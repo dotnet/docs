@@ -105,7 +105,6 @@ using NUnit.Framework;
 
 namespace NUnitNamespace
 {
-    [TestClass]
     public class UnitTest1
     {
       [Category("CategoryA")]

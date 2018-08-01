@@ -136,7 +136,7 @@ There are more options to uninstall .NET Core (either SDK or runtime) on Linux. 
 > [!IMPORTANT]
 > For Red Hat installations, consult the [Red Hat Getting Started Guide](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel) for information on installing and uninstalling .NET Core.
 
-Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager installations will automatically remove the older version upon the successful installation of a newer version.
+Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.
 
 If you installed .NET Core using a package manager, you use that same package manager to uninstall .NET SDK or runtime. .NET Core installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax on your environment:
 
@@ -184,3 +184,5 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/1.0.1
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
+
+Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.

@@ -63,7 +63,7 @@
   
  You extend your WPF content into the window frame by specifying a ControlTemplate that defines the appearance and behavior of the frame content. You set the TargetType of the ControlTemplate to the type of the window that you are customizing.  
   
-```  
+```xaml
 <ControlTemplate TargetType="{x:Type local:MainWindow}">  
 ```  
   
@@ -71,7 +71,7 @@
   
  The following XAML markup shows the main elements needed to customize a window using the WindowChrome class.  
   
-```  
+```xaml
 <Style x:Key="StandardStyle" TargetType="{x:Type local:MainWindow}">  
     <Setter Property="shell:WindowChrome.WindowChrome">  
         <Setter.Value>  
@@ -103,7 +103,7 @@
   
  The first setter attaches the WindowChrome to the window. It uses all default values for the WindowChrome properties, which makes the window look like a standard window.  
   
-```  
+```xaml
 <Setter Property="shell:WindowChrome.WindowChrome">  
     <Setter.Value>  
         <shell:WindowChrome />  
@@ -113,7 +113,7 @@
   
  The window template must specify a content presenter to display the contents of the window specified in your application. By default the WindowChrome class extends the client area to cover the non-client border. In order to uncover the glass frame, you need to specify a margin around the ContentPresenter. This markup specifies a border with a white background around the content presenter to emulate the appearance of a standard window. It also specifies a margin that is bound to the WindowNonClientFrameThickness property, which gets the default system width for the frame.  
   
-```  
+```xaml
 <Border Background="White"  
     Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
     <ContentPresenter Content="{TemplateBinding Content}" />  
@@ -122,7 +122,7 @@
   
  The application icon and title are not displayed by the WindowChrome class; they have to be added to the border as custom content. The following XAML adds an image and a textblock to display the icon and title. Both elements are bound to the corresponding properties on the window. The image width is bound to the SmallIconSize width, which gets the default system size for the icon. The IsHitTestVisibleInChrome attached property is set on the image so that it can receive mouse events.  
   
-```  
+```xaml
 <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
        VerticalAlignment="Top" HorizontalAlignment="Left"  
        Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   

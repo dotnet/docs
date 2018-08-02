@@ -46,13 +46,12 @@ Nullable types have the following characteristics:
   
 - Nested nullable types are not allowed. The following line doesn't compile: `Nullable<Nullable<int>> n;`  
 
-For more examples, see the [Using nullable types](using-nullable-types.md) topic.
+For more information, see the [Using nullable types](using-nullable-types.md) topic.
   
 ## See also
 
  <xref:System.Nullable%601?displayProperty=nameWithType>  
  <xref:System.Nullable?displayProperty=nameWithType>  
- [Boxing nullable types](boxing-nullable-types.md)  
  [?? Operator](../../language-reference/operators/null-coalescing-operator.md)  
  [C# Programming Guide](../index.md)  
  [C# Guide](../../index.md)  

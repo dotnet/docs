@@ -39,7 +39,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>After changes are saved, the <see cref="M:System.Data.Objects.ObjectContext.AcceptAllChangesAfterSave" /> method is called, which resets change tracking in the <see cref="T:System.Data.Objects.ObjectStateManager" />.</summary>
+        <summary>After changes are saved, the <see cref="M:System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave" /> method is called, which resets change tracking in the <see cref="T:System.Data.Objects.ObjectStateManager" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="DetectChangesBeforeSave">
@@ -79,7 +79,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Changes are saved without the <see cref="M:System.Data.Objects.ObjectContext.DetectChanges" /> or the <see cref="M:System.Data.Objects.ObjectContext.AcceptAllChangesAfterSave" /> methods being called.</summary>
+        <summary>Changes are saved without the <see cref="M:System.Data.Objects.ObjectContext.DetectChanges" /> or the <see cref="M:System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave" /> methods being called.</summary>
       </Docs>
     </Member>
   </Members>

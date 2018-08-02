@@ -1101,7 +1101,7 @@ Int32 count = (int32) ExecuteScalar();
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader" />.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Data.IDbCommand.ExecuteReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

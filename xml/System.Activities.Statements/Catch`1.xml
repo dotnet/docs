@@ -27,7 +27,7 @@
   </Attributes>
   <Docs>
     <typeparam name="TException">The type of exception that the <see cref="T:System.Activities.Statements.Catch`1" /> block is handling.</typeparam>
-    <summary>Contains the actions to be executed after an exception is raised in the corresponding Try block of a <see cref="T:System.Activities.Statements.TryCatchFinally" /> activity.</summary>
+    <summary>Contains the actions to be executed after an exception is raised in the corresponding Try block of a <see cref="T:System.Activities.Statements.TryCatch.Finally" /> activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

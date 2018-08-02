@@ -47,7 +47,7 @@ The .NET Framework 4.7.2 can be installed on Windows 10, Windows 8.1, Windows 7 
 
 You can target the .NET Framework 4.7.2 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=874338). 
 
-## What's new in the .NET Framework 4.7.2
+### What's new in the .NET Framework 4.7.2
 
 The .NET Framework 4.7.2 includes new features in the following areas:
 
@@ -61,7 +61,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core-472" />
-### Core
+#### Core
 
 The .NET Framework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
 
@@ -222,7 +222,7 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 ```
 
 <a name="asp-net472" />
-### ASP.NET
+#### ASP.NET
 
 **Support for dependency injection in Web Forms**
 
@@ -269,7 +269,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
 ```
 
 <a name="net472" />
-### Networking
+#### Networking
 
 **Implementation of HttpClientHandler properties**
 
@@ -279,7 +279,7 @@ The .NET Framework 4.7.1 added eight properties to the <xref:System.Net.Http.Htt
 - <xref:System.Net.Http.HttpClientHandler.SslProtocols>
 
 <a name="sql472" />
-### SQLClient
+#### SQLClient
 
 **Support for Azure Active Directory Universal Authentication and Multi-Factor authentication**
 
@@ -326,7 +326,7 @@ The basic flow of enclave-based Always Encrypted is:
 1. The driver shares encryption keys authorized by the client with the secure enclave for the duration of the SQL connection.
 
 <a name="wpf472" />
-### Windows Presentation Foundation
+#### Windows Presentation Foundation
 
 **Finding ResourceDictionaries by Source**
 
@@ -393,7 +393,7 @@ public class StaticResourceResolvedEventArgs : EventArgs
 The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
 <a name="clickonce472" />
-### ClickOnce
+#### ClickOnce
 
 HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in the application manifest, deployment will succeed under .NET Framework 4.7.2:
 
@@ -418,7 +418,7 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
-### Core
+#### Core
 
 **Support for .NET Standard 2.0**
 
@@ -443,21 +443,21 @@ Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=
 The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) blog post. For information on ref return values, see [Ref return values and ref locals (C# Guide)](~/docs/csharp/programming-guide/classes-and-structs/ref-returns.md) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
 
 <a name="clr" />
-### Common language runtime (CLR)
+#### Common language runtime (CLR)
 
 **Garbage collection performance improvements**
 
 Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) blog post. 
 
 <a name="net471"/>
-### Networking
+#### Networking
 
 **SHA-2 support for Message.HashAlgorithm**
 
 In the .NET Framework 4.7 and earlier versions, the <xref:System.Messaging.Message.HashAlgorithm%2A?displayProperty=nameWithType> property supported values of <xref:System.Messaging.HashAlgorithm.Md5?displayProperty=nameWithType> and <xref:System.Messaging.HashAlgorithm.Sha?displayProperty=nameWithType> only. Starting with the .NET Framework 4.7.1, <xref:System.Messaging.HashAlgorithm.Sha256?displayProperty=nameWithType>, <xref:System.Messaging.HashAlgorithm.Sha384?displayProperty=nameWithType>, and <xref:System.Messaging.HashAlgorithm.Sha512?displayProperty=nameWithType> are also supported. Whether this value is actually used depends on MSMQ, since the <xref:System.Messaging.Message> instance itself does no hashing but simply passes on values to MSMQ. For more information, see the "SHA-2 support for Message.HashAlgorithm" section in the [.NET Framework 4.7.1 ASP.NET and Configuration features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features/) blog post.
 
 <a name="asp-net471" />
-### ASP.NET
+#### ASP.NET
 
 **Execution steps in ASP.NET applications**
 
@@ -498,7 +498,7 @@ The .NET Framework 4.7 includes new features in the following areas:
 For a list of new APIs added to the .NET Framework 4.7, see [.NET Framework 4.7 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the .NET Framework 4.7, see [.NET Framework 4.7 List of Changes](http://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-changes.md) on GitHub.  For additional information, see [Announcing the .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) in the .NET blog.
 
 <a name="Core47" />
-### Core
+#### Core
 
 The .NET Framework 4.7 improves serialization by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>:
 
@@ -515,7 +515,7 @@ You can see an [example of .NET Framework 4.7 cryptography improvements](https:/
 In the .NET Framework 4.7, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> serializes control characters in conformity with the ECMAScript 6 standard. This behavior is enabled by default for applications that target the .NET Framework 4.7, and is an opt-in feature for applications that are running under the .NET Framework 4.7 but target a previous version of the .NET Framework. For more information, see [Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md).
 
 <a name="net47" />
-### Networking
+#### Networking
 
 The .NET Framework 4.7 adds the following network-related feature:
 
@@ -524,7 +524,7 @@ The .NET Framework 4.7 adds the following network-related feature:
 The TLS stack, which is used by <xref:System.Net.Security.SslStream?displayProperty=nameWithType> and up-stack components such as HTTP, FTP, and SMTP, allows developers to use the default TLS protocols supported by the operating system. Developers need no longer hard-code a TLS version.
 
 <a name="ASP-NET47" />
-### ASP.NET
+#### ASP.NET
 
 In the .NET Framework 4.7, ASP.NET includes the following new features:
 
@@ -539,7 +539,7 @@ Starting with the .NET Framework 4.7, ASP.NET adds a new set of APIs that allow 
 - **Memory Limit Reactions**. By default, ASP.NET attempts to trim the object cache and periodically call <xref:System.GC.Collect%2A?displayProperty=nameWithType> when the private byte process limit is near. For some applications, the frequency of calls to <xref:System.GC.Collect%2A?displayProperty=nameWithType> or the amount of cache that is trimmed are inefficient. Developers can now replace or supplement the default behavior by subscribing **IObserver** implementations to the application's memory monitor.
 
 <a name="wcf47" />
-### Windows Communication Foundation (WCF)
+#### Windows Communication Foundation (WCF)
 
 Windows Communication Foundation (WCF) adds the following features and changes:
 
@@ -563,7 +563,7 @@ WCF includes a number of code changes that eliminate race conditions, thereby im
 - Improved reliability when removing a waiter by calling the **ChannelSynchronizer.RemoveWaiter** method.
 
 <a name="wf47" />
-### Windows Forms
+#### Windows Forms
 
 In the .NET Framework 4.7, Windows Forms improves support for high DPI monitors.
 
@@ -574,7 +574,7 @@ Starting with applications that target the .NET Framework 4.7, the .NET Framewor
 High DPI support is an opt-in feature that you configure by defining a [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) section in your application configuration file. For more information on adding high DPI support and dynamic DPI support to your Windows Forms application, see [High DPI Support in Windows Forms](../winforms/high-dpi-support-in-windows-forms.md).
 
 <a name="WPF47"></a> 
-### Windows Presentation Foundation (WPF)
+#### Windows Presentation Foundation (WPF)
 
 In the .NET Framework 4.7, WPF includes the following enhancements:
 

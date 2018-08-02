@@ -417,7 +417,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the <see href="/windows/desktop/winsock/windows-sockets-error-codes-2">Windows Sockets version 2 API error code</see> documentation for a detailed description of the error.</exception>
         <altmember cref="T:System.Net.Sockets.TcpClient" />
         <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
         <altmember cref="T:System.Net.Sockets.Socket" />
@@ -470,7 +470,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the <see href="/windows/desktop/winsock/windows-sockets-error-codes-2">Windows Sockets version 2 API error code</see> documentation for a detailed description of the error.</exception>
         <altmember cref="T:System.Net.Sockets.TcpClient" />
         <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
         <altmember cref="T:System.Net.Sockets.Socket" />
@@ -1184,7 +1184,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the <see href="/windows/desktop/winsock/windows-sockets-error-codes-2">Windows Sockets version 2 API error code</see> documentation for a detailed description of the error.</exception>
         <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
         <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
         <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
@@ -1312,7 +1312,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the <see href="/windows/desktop/winsock/windows-sockets-error-codes-2">Windows Sockets version 2 API error code</see> documentation for a detailed description of the error.</exception>
         <block subset="none" type="usage">
           <para>The <see cref="M:System.Net.Sockets.TcpListener.Stop" /> method also closes the underlying <see cref="T:System.Net.Sockets.Socket" />, and creates a new <see cref="T:System.Net.Sockets.Socket" /> for the <see cref="T:System.Net.Sockets.TcpListener" />. If you set any properties on the underlying <see cref="T:System.Net.Sockets.Socket" /> prior to calling the <see cref="M:System.Net.Sockets.TcpListener.Stop" /> method, those properties will not carry over to the new <see cref="T:System.Net.Sockets.Socket" />.</para>
         </block>

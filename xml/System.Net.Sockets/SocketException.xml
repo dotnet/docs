@@ -207,7 +207,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
   
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation.  
   
  ]]></format>
         </remarks>
@@ -282,7 +282,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.SocketException.SocketErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
   
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation.  
   
  ]]></format>
         </remarks>

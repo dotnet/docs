@@ -37,15 +37,15 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
  Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](http://go.microsoft.com/fwlink/?LinkId=109968).  
   
 ## Create an .svc File for the WCF Service  
- WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
+ WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
   
 ```  
 <% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>  
 ```  
   
- It consists of the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
+ It consists of the \[@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
   
-```  
+```csharp  
 new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );  
 ```  
   
@@ -58,9 +58,9 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
 -   As a precompiled .dll file located in the global assembly cache (GAC) or in the application’s \bin directory. Precompiled binaries are not updated until a new version of the class library is deployed.  
   
--   As un-compiled source files located in the application’s \App_Code directory. Source files located in this directory are dynamically required when processing the application’s first request. Any changes to files in the \App_Code directory cause the entire application to be recycled and recompiled when the next request is received.  
+-   As uncompiled source files located in the application’s \App_Code directory. Source files located in this directory are dynamically required when processing the application’s first request. Any changes to files in the \App_Code directory cause the entire application to be recycled and recompiled when the next request is received.  
   
--   As un-compiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the @ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.  
+-   As uncompiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the \@ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.  
   
  For more information about the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](http://go.microsoft.com/fwlink/?LinkId=94773).  
   

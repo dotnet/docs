@@ -15,35 +15,35 @@ ms.author: ronpet
 
 This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
   
-## Current Version
+## Current version
 
-Visual Basic 15.5   
+Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
 For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 ## Previous versions
 
-Visual Basic 15.3   
+Visual Basic 15.3 / Visual Studio 2017 Version 15.3  
 For new features, see [Visual Basic 15.3](#visual-basic-153)
 
-Visual Basic 2017   
+Visual Basic 2017 / Visual Studio 2017  
 For new features, see [Visual Basic 2017](#visual-basic-2017)
 
-Visual Basic / Visual Studio .NET 2015   
+Visual Basic / Visual Studio 2015   
 For new features, see [Visual Basic 14](#visual-basic-14)
 
-Visual Basic / Visual Studio .NET 2013  
+Visual Basic / Visual Studio 2013  
 Technology previews of the .NET Compiler Platform (“Roslyn”)
 
-Visual Basic / Visual Studio .NET 2012   
+Visual Basic / Visual Studio 2012   
 `Async` and `await` keywords, iterators, caller info attributes
 
-Visual Basic, Visual Studio .NET 2010   
+Visual Basic, Visual Studio 2010   
 Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access
 
-Visual Basic / Visual Studio .NET 2008   
+Visual Basic / Visual Studio 2008   
 Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types  
 
-Visual Basic / Visual Studio .NET 2005   
+Visual Basic / Visual Studio 2005   
 The `My` type and helper types (access to app, computer, files system, network)
 
 Visual Basic / Visual Studio .NET 2003   
@@ -117,7 +117,7 @@ You can define a binary literal by using the prefix `&B` or `&b`. In addition, y
 
 For more information, see the "Literal assignments" section of the [Byte](../language-reference/data-types/byte-data-type.md#literal-assignments), [Integer](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments), and [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) data types.
 
-**Support for C# reference return values**
+[**Support for C# reference return values**](../programming-guide/language-features/procedures/ref-return-values.md)
 
 Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
@@ -144,25 +144,25 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
-[String Interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
+[String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
-[Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null-conditional member access and indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
-[Multi-line String Literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
+[Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
  String literals can contain newline sequences.  You no longer need the old work around of using `<xml><![CDATA[...text with newlines...]]></xml>.Value`  
   
-Comments  
-You can put comments after implicit line continuations, inside initializer expressions, and amongst LINQ expression terms.  
+**Comments**  
+You can put comments after implicit line continuations, inside initializer expressions, and among LINQ expression terms.  
   
- Smarter Fully-qualified Name Resolution  
+**Smarter fully-qualified name resolution**  
  Given code such as `Threading.Thread.Sleep(1000)`, Visual Basic used to look up the namespace "Threading", discover it was ambiguous between System.Threading and System.Windows.Threading, and then report an error.  Visual Basic now considers both possible namespaces together.  If you show the completion list, the Visual Studio editor lists members from both types in the completion list.  
   
- Year-first Date Literals  
+ **Year-first date literals**  
  You can have date literals in yyyy-mm-dd format, `#2015-03-17 16:10 PM#`.  
   
- Readonly Interface Properties  
+ **Readonly interface properties**  
  You can implement readonly interface properties using a readwrite property.  The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.  
   
  [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)  
@@ -171,22 +171,22 @@ You can put comments after implicit line continuations, inside initializer expre
  [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/directives.md)  
  You can disable and enable specific warnings for regions within a source file.  
   
- XML Doc-comment Improvements  
+ **XML doc comment improvements**  
  When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (generics, operators, etc.), colorizing, and refactoring.  
   
- [Partial Module and Interface Definitions](../../visual-basic/language-reference/modifiers/partial.md)  
+ [Partial module and interface definitions](../../visual-basic/language-reference/modifiers/partial.md)  
  In addition to classes and structs, you can declare partial modules and interfaces.  
   
- [#Region Directives inside Method Bodies](../../visual-basic/language-reference/directives/region-directive.md)  
+ [#Region directives inside method bodies](../../visual-basic/language-reference/directives/region-directive.md)  
  You can put #Region…#End Region delimiters anywhere in a file, inside functions, and even spanning across function bodies.  
   
- [Overrides Definitions are Implicitly Overloads](../../visual-basic/language-reference/modifiers/overrides.md)  
+ [Overrides definitions are implicitly overloads](../../visual-basic/language-reference/modifiers/overrides.md)  
  If you add the `Overrides` modifier to a definition, the compiler implicitly adds `Overloads` so that you can type less code in common cases.  
   
- CObj Allowed in Attributes Arguments  
+ **CObj allowed in attributes arguments**  
  The compiler used to give an error that CObj(…) was not a constant when used in attribute constructions.  
   
- Declaring and Consuming Ambiguous Methods from Different Interfaces  
+ **Declaring and consuming ambiguous methods from different interfaces**  
  Previously the following code yielded errors that prevented you from declaring `IMock` or from calling `GetDetails` (if these had been declared in C#):  
   
 ```vb  

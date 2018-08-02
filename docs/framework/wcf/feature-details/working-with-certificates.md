@@ -96,9 +96,9 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  Common questions about certificates are which certificate to use, and why. The answer depends on whether you are programming a client or service. The following information provides a general guideline and is not an exhaustive answer to these questions.  
   
 ### Service Certificates  
- Service certificates have the primary task of authenticating the server to clients. One of the initial checks when a client authenticates a server is to compare the value of the **Subject** field to the Uniform Resource Identifier (URI) used to contact the service: the DNS of both must match. For example, if the URI of the service is "http://www.contoso.com/endpoint/" then the **Subject** field must also contain the value "www.contoso.com".  
+ Service certificates have the primary task of authenticating the server to clients. One of the initial checks when a client authenticates a server is to compare the value of the **Subject** field to the Uniform Resource Identifier (URI) used to contact the service: the DNS of both must match. For example, if the URI of the service is `http://www.contoso.com/endpoint/` then the **Subject** field must also contain the value `www.contoso.com`.  
   
- Note that the field can contain several values, each prefixed with an initialization to indicate the value. Most commonly, the initialization is "CN" for common name, for example, "CN = www.contoso.com". It is also possible for the **Subject** field to be blank, in which case the **Subject Alternative Name** field can contain the **DNS Name** value.  
+ Note that the field can contain several values, each prefixed with an initialization to indicate the value. Most commonly, the initialization is "CN" for common name, for example, `CN = www.contoso.com`. It is also possible for the **Subject** field to be blank, in which case the **Subject Alternative Name** field can contain the **DNS Name** value.  
   
  Also note the value of the **Intended Purposes** field of the certificate should include an appropriate value, such as "Server Authentication" or "Client Authentication".  
   

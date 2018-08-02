@@ -680,9 +680,9 @@
         <Parameter Name="schemas" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemas">The <see cref="T:System.Xml.Schema.XmLSchemaSet" /> that contains the cache of XML Schema definition language (XSD) schemas.</param>
+        <param name="schemas">The <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that contains the cache of XML Schema definition language (XSD) schemas.</param>
         <summary>Gets the type of XML schema used to serialize the XPath filter.</summary>
-        <returns>The <see cref="T:System.Xml.Schema.XmLSchemaType" /> used to serialize the XPath filter.</returns>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchemaType" /> used to serialize the XPath filter.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemas" /> is <see langword="null" />.</exception>

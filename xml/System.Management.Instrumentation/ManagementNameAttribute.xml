@@ -65,7 +65,7 @@ static public int PrintValue([ManagementName("The Value")]int i)
       </Parameters>
       <Docs>
         <param name="name">The user-friendly name for the object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Managemen.Instrumentationt.ManagementNameAttribute" /> class using the specified name.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.ManagementNameAttribute" /> class using the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -51,6 +51,8 @@ You can explicitly cast a nullable type to a non-nullable type. For example:
 [!code-csharp[explicit cast](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#6)]
 
 At run time, if the value of a nullable type is null, the explicit cast throws an <xref:System.InvalidOperationException>.
+
+A non-nullable value type is implicitly converted to the corresponding nullable type.
   
 ## Operators
 
@@ -104,6 +106,5 @@ Note that these two operators don't follow the rules described in the [Operators
 ## See also
 
  [Nullable types](index.md)  
- [How to: Safely cast from bool? to bool](how-to-safely-cast-from-bool-to-bool.md)  
- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  
  [C# Programming Guide](../../programming-guide/index.md)  
+ [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  

@@ -58,7 +58,7 @@ Multiple frameworks have been built on top of .NET Core:
 These components are distributed in the following ways:
 
 - [.NET Core Runtime](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes the .NET Core runtime and framework libraries.
-- ASP.NET Core Runtime -- includes ASP.NET Core and .NET Core runtime and framework libraries.
+- [ASP.NET Core Runtime](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes ASP.NET Core and .NET Core runtime and framework libraries.
 - [.NET Core SDK](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes the .NET CLI Tools, ASP.NET Core runtime, and .NET Core runtime and framework.
 
 ### Open Source

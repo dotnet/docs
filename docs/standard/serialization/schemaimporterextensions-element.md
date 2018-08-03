@@ -15,7 +15,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 ```xml  
 <schemaImporterExtensions>  
     <!-- Add types -->  
-</SchemaImporterExtension>  
+</schemaImporterExtensions>  
 ```  
   
 ## Child Elements  
@@ -41,7 +41,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
         System.Web.Mobile, Version - 2.0.0.0, Culture = neutral,   
         PublicKeyToken = b03f5f6f11d40a3a" />  
     </schemaImporterExtensions>  
-/system.sxml.serializaiton>  
+</system.xml.serialization>  
 ```  
   
 ## See Also  

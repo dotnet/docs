@@ -71,7 +71,7 @@ XML serialization converts (serializes) the public fields and properties of an o
  [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
  Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.  
   
- [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
+ [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
  Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.  
   
 ## Related Sections  

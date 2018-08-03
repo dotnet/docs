@@ -22,7 +22,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)|Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> to create mappings.|  
+|[\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)|Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> to create mappings.|  
   
 ## Parent Elements  
   
@@ -49,5 +49,5 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
  <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
  [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
- [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
+ [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
  [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)

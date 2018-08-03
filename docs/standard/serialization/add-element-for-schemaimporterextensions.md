@@ -1,17 +1,17 @@
 ---
-title: "&lt;add&gt; Element for &lt;xmlSchemaImporterExtensions&gt;"
+title: "&lt;add&gt; Element for &lt;schemaImporterExtensions&gt;"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
-  - "<add> element for <xmlSchemaImporterExtensions> element"
+  - "<add> element for <schemaImporterExtensions> element"
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 ---
-# &lt;add&gt; Element for &lt;xmlSchemaImporterExtensions&gt;
+# &lt;add&gt; Element for &lt;schemaImporterExtensions&gt;
 Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
 \<system.xml.serialization>  
-\<XmlSchemaImporterExtensions>  
+\<schemaImporterExtensions>  
 \<add>  
   
 ## Syntax  
@@ -37,7 +37,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
   
 |Element|Description|  
 |-------------|-----------------|  
-|\<xmlSchemaImporterExtensions>|Contains the types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter>.|  
+|\<schemaImporterExtensions>|Contains the types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter>.|  
   
 ## Example  
  The following code example adds an extension type that the XmlSchemaImporter can use when mapping types.  
@@ -45,11 +45,11 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 ```xml  
 <configuration>  
   <system.xml.serialization>  
-    <xmlSchemaImporterExtensions>  
+    <schemaImporterExtensions>  
        <add name="contoso" type="System.Web.Mobile.MobileCapabilities,   
        System.Web.Mobile, Version=2.0.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a" />   
-    </xmlSchemaImporterExtensions>  
+    </schemaImporterExtensions>  
   </system.xml.serialization>  
 </configuration>  
 ```  

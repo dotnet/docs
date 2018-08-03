@@ -61,7 +61,7 @@
   
  This example consists of three classes: `UrlsSection`, `UrlsCollection` and `UrlConfigElement`.The `UrlsSection` class uses the <xref:System.Configuration.ConfigurationCollectionAttribute> to define a custom configuration section. This section contains a URL collection (defined by the `UrlsCollection` class) of URL elements (defined by the `UrlConfigElement` class). When you run the example, an instance of the `UrlsSection` class is created and the following configuration elements are generated in the application configuration file:  
   
-```  
+```xml  
 <configuration>  
     <configSections>  
         <section name="MyUrls" type="UrlsSection,   

@@ -22,7 +22,7 @@
   
 ## Examples  
   
-```  
+```csharp  
   
 public sealed class MyDelayActivity : IActivityTemplateFactory  
   
@@ -77,7 +77,7 @@ public sealed class MyDelayActivity : IActivityTemplateFactory
 ## Examples  
  Create a template that configures a Delay activity with a duration of ten seconds.  
   
-```  
+```csharp  
   
 public sealed class MyDelayActivity : IActivityTemplateFactory  
   

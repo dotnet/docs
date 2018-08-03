@@ -36,7 +36,7 @@
 > [!NOTE]
 >  Instead of instantiating the <xref:System.Activities.Expressions.MultidimensionalArrayItemReference%601> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
   
-```  
+```csharp  
   
 public static void MultidimensionalArrayItemReferenceSample()  
 {  

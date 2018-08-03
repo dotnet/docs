@@ -28,7 +28,7 @@
 ## Examples  
  The following code example calls <xref:System.Activities.Expressions.ExpressionServices.Convert%2A> to compute the sum of the array element at index 0 and the array element at index 1. Next, the resulting sum is assigned to a variable and is printed to the console.  
   
-```  
+```csharp  
   
 public static void ComputeSumWithConvert()  
 {  
@@ -66,7 +66,7 @@ public static void ComputeSumWithConvert()
   
  The following code example is provided for comparison purposes. This second example shows how to compute the sum by instantiating the <xref:System.Activities.Expressions.Add%603> expression activity. The two examples are functionally equivalent but as you can see the second approach involves more coding and is not as straightforward as calling <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>. Therefore the first example is recommended.  
   
-```  
+```csharp  
   
 public static void ComputeSumWithExpressionActivity()  
 {  
@@ -192,7 +192,7 @@ public static void ComputeSumWithExpressionActivity()
 ## Examples  
  The following two code examples illustrate the use of <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A> and <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>. The first code example uses <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A> in an `Assign` activity to convert a lambda expression into a string property that is assigned a value. Next, <xref:System.Activities.Expressions.ExpressionServices.Convert%2A> is called to convert a lambda expression into a string property value that is printed to the console in the `WriteLine` activity.  
   
-```  
+```csharp  
   
 // Define a struct with a property named AProperty.  
 struct StructWithProperty  
@@ -233,7 +233,7 @@ public static void ConvertReferenceForValueTypePropertyReferenceSample()
   
  The following code example is like the previous one except that the expression to convert is a reference to an item in a multidimensional array.  
   
-```  
+```csharp  
   
 public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()  
 {  

@@ -27,7 +27,7 @@
 ## Examples  
  The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
   
-```  
+```csharp  
 using System;  
 using System.Configuration;  
   
@@ -60,7 +60,7 @@ class Program
   
  The following example demonstrates a configuration file used by the previous example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <appSettings>  
@@ -101,7 +101,7 @@ class Program
 ## Examples  
  The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
   
-```  
+```csharp  
 using System;  
 using System.Configuration;  
   
@@ -134,7 +134,7 @@ class Program
   
  The following example demonstrates a configuration file used by the previous example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <appSettings>  

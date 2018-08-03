@@ -35,7 +35,7 @@
 ## Examples  
  The <xref:System.Activities.Presentation.Model.ModelItem> can be thought of as a thin proxy for an object at which it points. First define a simple `Animal` object.  
   
-```  
+```csharp  
   
 public class Animal  
 {  
@@ -60,7 +60,7 @@ public class Location
   
  Secondly, create an instance of that `Animal` and a <xref:System.Activities.Presentation.Model.ModelItem> that is a proxy for it. The object can then be retrieved by calling <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A>. The following code also shows how to use other properties defined by <xref:System.Activities.Presentation.Model.ModelItem>.  
   
-```  
+```csharp  
   
 EditingContext ec = new EditingContext();  
 var companion1 = new Animal { Name = "Houdini the parakeet" };  

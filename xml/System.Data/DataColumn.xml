@@ -939,7 +939,7 @@
 > [!NOTE]
 >  A column of data type `Byte[]` requires special treatment in certain cases since, unlike the base .NET Framework data types, it is a reference data type. If a column of data type `Byte[]` is used as a <xref:System.Data.DataTable.PrimaryKey%2A>, or as a <xref:System.Data.DataView.Sort%2A> or <xref:System.Data.DataView.RowFilter%2A> key for a <xref:System.Data.DataView>, any change to the column value must involve assigning the `Byte[]` column value to a separately instantiated `Byte[]` object. This assignment is required to trigger the update of the internal indexes used by sorting, filtering, and primary key operations. This is illustrated by the following example:  
   
-```  
+```csharp  
 byte[] columnValue = (byte[])myDataTable.Rows[0][0];  
 byte[] newValue = (byte[])columnValue.Clone();  
 newValue[1] = 2;  
@@ -1130,7 +1130,7 @@ myDataTable.Rows[0][0] = newValue;
   
  A second use is to create an aggregate column. Similar to a calculated value, an aggregate performs an operation based on the complete set of rows in the <xref:System.Data.DataTable>. A simple example is to count the number of rows returned in the set. This is the method you would use to count the number of transactions completed by a particular salesperson, as shown in this Visual Basic code:  
   
-```  
+```vb  
 DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"  
 ```  
   

@@ -36,7 +36,7 @@
   
  The following example is an excerpt of the configuration file that is used by the previous example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <configSections>  
@@ -1100,7 +1100,7 @@
 ## Examples  
  The following example shows two possible trust levels for a Web application when the <xref:System.Configuration.SectionInformation.RequirePermission%2A> property of the `appSettings` section is `true`.  
   
-```  
+```xml  
 <system.web>  
    // With the following trust value   
    // the code below works.  

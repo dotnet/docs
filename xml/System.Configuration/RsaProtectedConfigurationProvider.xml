@@ -41,7 +41,7 @@
   
  The following example shows an excerpt from a configuration file after encryption.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <connectionStrings configProtectionProvider="RsaProtectedConfigurationProvider">  

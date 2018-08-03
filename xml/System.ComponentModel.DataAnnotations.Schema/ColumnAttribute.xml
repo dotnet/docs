@@ -146,7 +146,7 @@
 ## Remarks  
  The specified order is relative to the order values specified on other properties in the class. For example, given the following definition, the column `Line1` appears before `Line2`, and `Line2` appears before `Country`.  
   
-```  
+```csharp  
 public class Address  
 {  
 [Column(Order = 1)]  

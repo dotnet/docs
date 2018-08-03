@@ -57,7 +57,7 @@
   
  When you run the console application, an instance of the `UrlsSection` class is created and the following configuration elements are generated in the application configuration file:  
   
-```  
+```xml  
 <configuration>  
     <configSections>  
         <section name="MyUrls" type="UrlsSection,   

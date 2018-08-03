@@ -43,7 +43,7 @@
   
  The following example is an excerpt of the configuration file that contains the custom section used by the previous sample.  
   
-```  
+```xml  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
   <configSections>  
     <section name="custom" type="Microsoft.Samples.AspNet.Configuration.SampleSection, ConfigurationValidatorAttribute" />  

@@ -34,7 +34,7 @@
 ## Examples  
  The following configuration file excerpt shows how to declaratively specify protected data providers.  
   
-```  
+```xml  
 <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">  
   <providers>  
     <clear />  

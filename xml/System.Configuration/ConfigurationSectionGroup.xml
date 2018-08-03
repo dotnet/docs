@@ -26,7 +26,7 @@
 ## Remarks  
  Settings in configuration files (such as the Web.config file) are organized into sections. Because some sections are related, it is often convenient to group them in a section group. The <xref:System.Configuration.ConfigurationSectionGroup> class represents the `sectionGroup` XML element that is used to group sections when they are defined in the `configSections` element of a configuration file. Section groups can be nested (a section group can contain other section groups as well as sections). The following example shows a `configSections` element that defines three nested section groups:  
   
-```  
+```xml  
 <configSections>  
   <sectionGroup name="system.web.extensions"...>  
     <sectionGroup name="scripting" ...>  

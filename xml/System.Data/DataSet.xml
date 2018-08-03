@@ -1391,7 +1391,7 @@
   
  Before you compile and run the sample, you need to create four XML files in the sample directory. First, create ElementsWithAttributes.xml:  
   
-```  
+```xml  
 <MySchool>  
   <Course CourseID="C1045" Year="2012"  Title="Calculus" Credits="4" DepartmentID="7">New</Course>  
   <Course CourseID="C1061" Year="2012"  Title="Physics" Credits="4" DepartmentID="1" />  
@@ -1402,7 +1402,7 @@
   
  Next, create ElementsWithChildElementsxml.xml:  
   
-```  
+```xml  
 <MySchool>  
   <Course>  
     <CourseID>C1045</CourseID>  

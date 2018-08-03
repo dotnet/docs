@@ -34,7 +34,7 @@ Bindings are objects that are used to specify the communication details that are
   
 -   <xref:System.ServiceModel.NetMsmqBinding>: Uses the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] to create queued message connections with other WCF endpoints.  
 
-- NetTcpBinding: This binding offers higher performance than HTTP bindings and is ideal for use in a local network.
+- <xref:System.ServiceModel.NetTcpBinding>: This binding offers higher performance than HTTP bindings and is ideal for use in a local network.
   
  For a complete list, with descriptions, of all the WCF-provided bindings, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
   

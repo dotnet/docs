@@ -608,7 +608,7 @@ Console.WriteLine(el)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child4>4</Child4>  
 ```  
   
@@ -808,7 +808,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child2>4</Child2>  
 <Child2>5</Child2>  
 <Child2>6</Child2>  
@@ -915,7 +915,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 1</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 2</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 3</aw:Child1>  

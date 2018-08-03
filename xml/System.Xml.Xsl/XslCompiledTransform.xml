@@ -368,7 +368,7 @@
 > [!NOTE]
 >  You have to reference the XSLT assembly when compiling the code. For example, `csc /r:system.dll;system.xml.dll;bookOrders.dll myCode.cs`.  
   
-```  
+```csharp  
 // Load the type of the class.  
 XslCompiledTransform xslt = new XslCompiledTransform();  
 xslt.Load(typeof(bookOrders));  

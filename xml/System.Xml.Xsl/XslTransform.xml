@@ -1113,7 +1113,7 @@
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -1137,7 +1137,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -1150,13 +1150,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
  ]]></format>
@@ -1346,7 +1346,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -1370,7 +1370,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -1383,13 +1383,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
  ]]></format>
@@ -1457,7 +1457,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -1481,7 +1481,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -1494,13 +1494,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
  ]]></format>
@@ -1568,7 +1568,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -1592,7 +1592,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -1605,13 +1605,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
    
@@ -1684,7 +1684,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -1708,7 +1708,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -1721,13 +1721,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />  
   <template match="/">  
   Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
  ]]></format>
@@ -2044,7 +2044,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -2068,7 +2068,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -2081,13 +2081,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
    
@@ -2166,7 +2166,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -2190,7 +2190,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -2203,13 +2203,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
      Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
    
@@ -2290,7 +2290,7 @@ Root node is book.
   
  The following example performs a transformation on a node fragment.  
   
-```  
+```csharp  
 XslTransform xslt = new XslTransform();       
 xslt.Load("print_root.xsl");  
 XmlDocument doc = new XmlDocument();  
@@ -2314,7 +2314,7 @@ Root node is book.
   
  `library.xml`  
   
-```  
+```xml  
 <library>  
   <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
@@ -2327,13 +2327,13 @@ Root node is book.
   
  `print_root.xsl`  
   
-```  
-<style sheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
+```xml  
+<stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />  
   <template match="/">  
   Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
-</style sheet>  
+</stylesheet>  
 ```  
   
    

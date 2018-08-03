@@ -24,7 +24,7 @@
   
  Web service clients learn where to find the Web service description (WSDL) document by adding a `WebReference` object. The Web service clients then save the discovered documents to the disk by using the `WriteAll` method. For example, the discovered documents may be .xsd schema files or service descriptions. At the end of the process, the client deletes the files. You can change the default location of the files in the temporary folder by using the `tempFilesLocation` switch in the `<xmlSerializer>` element, specified in the Machine.config configuration file, as in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.web>  
   <system.xml.serialization>  

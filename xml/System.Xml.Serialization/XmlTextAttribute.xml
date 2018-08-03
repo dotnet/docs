@@ -54,7 +54,7 @@
   
  The [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) occasionally generates the <xref:System.Xml.Serialization.XmlTextAttribute> when creating classes from an XML Schema definition (XSD) file. This occurs when the schema contains a `complexType` with mixed content; in that case, the corresponding class contains a member that returns a string array to which the <xref:System.Xml.Serialization.XmlTextAttribute> is applied. For example, when the `Xml Schema Definition` tool processes this schema:  
   
-```  
+```xml  
 <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace=""   
 xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:element name="LinkList" type="LinkList" />  

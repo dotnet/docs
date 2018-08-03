@@ -1,7 +1,7 @@
 ---
 title: "Using nullable types (C# Programming Guide)"
 description: Learn how to work with C# nullable types
-ms.date: 07/30/2018
+ms.date: 08/02/2018
 helpviewer_keywords: 
   - "nullable types [C#], about nullable types"
 ms.assetid: 0bacbe72-ce15-4b14-83e1-9c14e6380c28
@@ -51,6 +51,8 @@ You can explicitly cast a nullable type to a non-nullable type. For example:
 [!code-csharp[explicit cast](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#6)]
 
 At run time, if the value of a nullable type is null, the explicit cast throws an <xref:System.InvalidOperationException>.
+
+A non-nullable value type is implicitly converted to the corresponding nullable type.
   
 ## Operators
 
@@ -66,7 +68,18 @@ For the relational operators (`<`, `>`, `<=`, `>=`), if one or both operands are
 [!code-csharp-interactive[relational and equality operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#8)]
   
 The above example also shows that an equality comparison of two nullable types that are both null evaluates to `true`.
-  
+
+## Boxing and unboxing
+
+A nullable value type is [boxed](../types/boxing-and-unboxing.md) by the following rules:
+
+- If <xref:System.Nullable%601.HasValue%2A> returns `false`, the null reference is produced.  
+- If <xref:System.Nullable%601.HasValue%2A> returns `true`, a value of the underlying value type `T` is boxed, not the instance of <xref:System.Nullable%601>.
+
+You can unbox the boxed value type to the corresponding nullable type, as the following example shows:
+
+[!code-csharp-interactive[boxing and unboxing](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#9)]
+
 ## The bool? type
 
 The `bool?` nullable type can contain three different values: [true](../../language-reference/keywords/true-literal.md), [false](../../language-reference/keywords/false-literal.md) and [null](../../language-reference/keywords/null.md). The `bool?` type is like the Boolean variable type that is used in SQL. To ensure that the results produced by the `&` and `|` operators are consistent with the three-valued Boolean type in SQL, the following predefined operators are provided:
@@ -93,7 +106,5 @@ Note that these two operators don't follow the rules described in the [Operators
 ## See also
 
  [Nullable types](index.md)  
- [Boxing nullable types](boxing-nullable-types.md)  
- [How to: Safely cast from bool? to bool](how-to-safely-cast-from-bool-to-bool.md)  
- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  
  [C# Programming Guide](../../programming-guide/index.md)  
+ [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  

@@ -34,7 +34,7 @@
 ## Remarks  
  The following example shows how to use the <xref:System.Diagnostics.Tracing.EventSource.EventData> structure.  
   
-```  
+```csharp  
   
 [NonEvent]  
 public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg4) {  

@@ -360,7 +360,7 @@
 ## Remarks  
  You can use standard .NET Framework substitution operators (for example, {1}) in the string). They will be replaced with the string representation of the corresponding part of the event payload.  
   
-```  
+```csharp  
 [Event(1, Message = "Application Falure: {0}", Level = EventLevel.Error, Keywords = Keywords.Diagnostic)]  
         public void Failure(string message) { WriteEvent(1, message); }  
   

@@ -1835,7 +1835,7 @@ GO
   
  [How to Get Schema Information from Database](https://code.msdn.microsoft.com/How-to-Get-Schema-b66d62e2) has C# and Visual Basic versions of this code sample in a Visual Studio project.  
   
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  

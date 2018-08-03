@@ -54,7 +54,7 @@
   
 ## Examples  
   
-```  
+```csharp  
 private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B}");  
   
     EventProviderTraceListener listener = new EventProviderTraceListener(providerId.ToString(), "Test Listener", "::");  

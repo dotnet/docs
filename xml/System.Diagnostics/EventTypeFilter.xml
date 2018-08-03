@@ -37,7 +37,7 @@
   
  To set the event type at which to begin tracing, edit the configuration file that corresponds to the name of your application. Within this file, you can add a listener, set its filter type, and specify the event type to trace. The configuration file should be formatted as follows.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sharedListeners>  

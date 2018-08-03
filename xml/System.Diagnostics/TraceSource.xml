@@ -88,7 +88,7 @@
   
  The trace listeners use the values of the <xref:System.Diagnostics.Trace> class properties <xref:System.Diagnostics.Trace.Indent%2A>, <xref:System.Diagnostics.Trace.IndentSize%2A>, and <xref:System.Diagnostics.Trace.AutoFlush%2A> to format trace output. You can use configuration file attributes to set the <xref:System.Diagnostics.Trace.Indent%2A>, <xref:System.Diagnostics.Trace.IndentSize%2A>, and <xref:System.Diagnostics.Trace.AutoFlush%2A> properties. The following example sets the <xref:System.Diagnostics.Trace.AutoFlush%2A> property to `false` and the <xref:System.Diagnostics.Trace.IndentSize%2A> property to 3.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="3" />  
@@ -261,7 +261,7 @@
   
  The following is a sample of a trace source element specifying the custom attribute `SecondTraceSourceAttribute`:  
   
-```  
+```xml  
 <sources>  
   <source name="TraceTest" switchName="TestSourceSwitch"   
     switchType="Testing.MySourceSwitch, TraceSample"   
@@ -510,7 +510,7 @@
   
  The following XML element shows referring to a trace source in the configuration file.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

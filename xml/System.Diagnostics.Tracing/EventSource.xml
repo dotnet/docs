@@ -1708,7 +1708,7 @@
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -1765,7 +1765,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -1828,7 +1828,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(byte[] arg1)  
 {  
@@ -1885,7 +1885,7 @@ public void Info1(byte[] arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(int  arg1)  
 {  
@@ -1950,7 +1950,7 @@ public void Info1(int  arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2025,7 +2025,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2082,7 +2082,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2246,7 +2246,7 @@ public void Info1(int arg1, int arg2, int arg3)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(Int64 arg1, Byte[] arg2)  
 {  
@@ -2305,7 +2305,7 @@ public void Info1(Int64 arg1, Byte[] arg2)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2421,7 +2421,7 @@ public void Info1(Int64 arg1, string arg2)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2480,7 +2480,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2539,7 +2539,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2600,7 +2600,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2661,7 +2661,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2722,7 +2722,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  
@@ -2783,7 +2783,7 @@ public void Info1(string arg1)
   
  When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
   
-```  
+```csharp  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info1(string arg1)  
 {  

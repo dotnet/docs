@@ -212,7 +212,7 @@
 ## Remarks  
  Classes that inherit from the <xref:System.Diagnostics.TraceListener> class can add custom attributes by overriding the <xref:System.Diagnostics.TraceListener.GetSupportedAttributes%2A> method and returning a string array of custom attribute names. The <xref:System.Diagnostics.TraceListener.Attributes%2A> property identifies the custom attributes that are referenced in the application's configuration file. For example, in the following configuration file excerpt the <xref:System.Diagnostics.DelimitedListTraceListener> custom attribute "delimiter" is referenced. In this case, the <xref:System.Diagnostics.TraceListener.Attributes%2A> property returns a <xref:System.Collections.Specialized.StringDictionary> containing the string "delimiter".  
   
-```  
+```xml  
 <listeners>  
   <add name="delimitedListener"   
     type="System.Diagnostics.DelimitedListTraceListener"   

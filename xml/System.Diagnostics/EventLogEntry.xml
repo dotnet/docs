@@ -476,7 +476,7 @@
   
  The <xref:System.Diagnostics.EventLogEntry.ReplacementStrings%2A> property contains the localized versions of replacement strings that are used in the event log entry. If you provide resource files that contain strings in each target language for your application, you can emit event log messages in the language that is used on that computer. To do that, create an instance of the <xref:System.Resources.ResourceManager> class for the resource assembly that contains your replacement strings. The first parameter of the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor identifies the resource assembly to be used. Use the <xref:System.Resources.ResourceManager.GetString%2A> method of that instance to supply localized messages for log events. The following code automatically sets the message to the language for the current culture.  
   
-```  
+```csharp  
 ResourceManager LocRM = new ResourceManager("ReplacementStrings.TestStrings",   
       typeof(Program).Assembly);  
 EventLog e1 = new EventLog("LocTest", "MyMachine", "LocTest");  

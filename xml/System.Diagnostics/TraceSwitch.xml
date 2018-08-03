@@ -272,7 +272,7 @@
 ## Remarks  
  To set the level of your <xref:System.Diagnostics.TraceSwitch>, edit the configuration file that corresponds to the name of your application. In this file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  

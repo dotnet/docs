@@ -677,7 +677,7 @@ catch (Exception ex) {
 ## Examples  
  The following C# example shows how a connection attempt to a valid server but non-existent database causes a <xref:System.Data.SqlClient.SqlException>, which includes the client connection ID:  
   
-```  
+```csharp  
 using System.Data.SqlClient;  
 using System;  
   
@@ -699,7 +699,7 @@ public class A {
   
  The following Visual Basic sample is functionally equivalent to the previous (C#) sample:  
   
-```  
+```vb  
 Imports System.Data.SqlClient  
 Imports System  
   

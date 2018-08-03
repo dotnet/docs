@@ -202,7 +202,7 @@
   
  Use caution when you use this overload of the <xref:System.Data.SqlClient.SqlParameter> constructor to specify integer parameter values. Because this overload takes a `value` of type <xref:System.Object>, you must convert the integral value to an <xref:System.Object> type when the value is zero, as the following C# example demonstrates.  
   
-```  
+```csharp  
 Parameter = new SqlParameter("@pname", (object)0);  
 ```  
   
@@ -719,7 +719,7 @@ Parameter = new SqlParameter("@pname", (object)0);
 ## Remarks  
  The locale identifies conventions and language for a particular geographical region. The codepage used to encode a specific string (the character set) is based on the locale used by that string or the environment that produced it. This property sets (for input parameters) or gets (for output parameters) the locale to be attached to a string when exchanging data with the server. This property is typically used together with the <xref:System.Data.SqlClient.SqlParameter.CompareInfo%2A> property.  
   
-```  
+```csharp  
 static void CreateSqlParameterLocaleId(){  
    SqlParameter parameter = new SqlParameter("pName", SqlDbType.VarChar);  
    parameter.LocaleId = 1033;   // English - United States  

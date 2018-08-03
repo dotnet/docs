@@ -35,7 +35,7 @@
 ## Examples  
  The following sample configuration file enables tracing of animations, writing the output to a text file called "debug.txt".  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

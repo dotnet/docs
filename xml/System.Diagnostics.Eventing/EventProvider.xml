@@ -455,7 +455,7 @@
   
 ## Examples  
   
-```  
+```csharp  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
   
 enum Keyword  
@@ -541,7 +541,7 @@ enum Level
   
 ## Examples  
   
-```  
+```csharp  
 private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
   
 EventProvider provider = new EventProvider(providerId);  
@@ -658,7 +658,7 @@ provider.Close();
   
 ## Examples  
   
-```  
+```csharp  
 if (!provider.WriteMessageEvent("Event string."))  
     Console.WriteLine(EventProvider.GetLastWriteEventError());  
 ```  
@@ -710,7 +710,7 @@ if (!provider.WriteMessageEvent("Event string."))
   
 ## Examples  
   
-```  
+```csharp  
 // Calling this method with level and keyword set to zero is the same  
 // as calling WriteMessageEvent(string); the event is always written.  
 if (!provider.WriteMessageEvent("Event string.", 0, 0))  

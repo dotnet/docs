@@ -144,7 +144,7 @@
   
  Within the XML configuration file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. Dynamic changes to the configuration file are not detected while the application is executing. You must stop and restart an application before changes to the configuration file take effect. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  

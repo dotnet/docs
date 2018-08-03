@@ -670,7 +670,7 @@
   
  The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
   
-```  
+```csharp  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  
@@ -740,7 +740,7 @@ using (dataReader) {
   
  The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
   
-```  
+```csharp  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  
@@ -803,7 +803,7 @@ using (dataReader) {
   
  The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
   
-```  
+```csharp  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
 using (dataReader) {  

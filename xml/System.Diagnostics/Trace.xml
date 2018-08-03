@@ -155,7 +155,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  
@@ -243,7 +243,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  
@@ -333,7 +333,7 @@
   
  You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <switches>  
@@ -1543,7 +1543,7 @@ End of list of errors
   
  To set the <xref:System.Diagnostics.Trace.UseGlobalLock%2A> for <xref:System.Diagnostics.Trace>, you can also edit the configuration file that corresponds to the name of your application. The configuration file should be formatted like the following example:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace useGlobalLock="false" />  
@@ -1958,14 +1958,14 @@ End of list of errors
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2048,14 +2048,14 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2142,14 +2142,14 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2236,14 +2236,14 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.Write("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2638,14 +2638,14 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2728,14 +2728,14 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2822,14 +2822,14 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
@@ -2916,14 +2916,14 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  **First example**  
   
-```  
+```csharp  
 if(mySwitch.TraceError)   
     Trace.WriteLine("aNumber = " + aNumber + " out of range");  
 ```  
   
  **Second example**  
   
-```  
+```csharp  
 Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>

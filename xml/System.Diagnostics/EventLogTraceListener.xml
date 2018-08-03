@@ -25,7 +25,7 @@
   
  The following example adds a <xref:System.Diagnostics.EventLogTraceListener> object named `myListener` to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. The `initializeData` parameter specifies the name of the event log source that is to be passed to the <xref:System.Diagnostics.EventLogTraceListener.%23ctor%28System.String%29> constructor.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

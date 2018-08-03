@@ -157,7 +157,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
-        <summary>Raises the <see cref="M:System.Web.UI.Control.Render(System.EventArgs)" /> event and sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered to the browser.</summary>
+        <summary>Raises the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> event and sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered to the browser.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>

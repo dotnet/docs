@@ -199,7 +199,7 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.AnnouncementMessage,System.AsyncCallback,System.Object)" />.</param>
+        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />.</param>
         <summary>Users that inherit from <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> to implement a custom announcement listener service must override this method and begin to process incoming offline announcement (Bye) messages here.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +226,7 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.AnnouncementMessage,System.AsyncCallback,System.Object)" />.</param>
+        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />.</param>
         <summary>Users that inherit from <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> to implement a custom announcement listener service must override this method and begin to process incoming offline announcement (Bye) messages here.</summary>
         <remarks>To be added.</remarks>
       </Docs>

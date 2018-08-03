@@ -1,6 +1,6 @@
 ---
 title: What is F#
-description: Learn about what the F# programming language is and what programming with it is like.
+description: Learn about what the F# programming language is and what F# programming is like. Learn about rich data types, functions, and how they fit together.
 ms.date: 08/03/2018
 ---
 # What is F# #
@@ -10,18 +10,18 @@ F# is a functional programming language that makes it easy to write correct and 
 F# programming primarily involves defining types and functions that are type-inferred and generalized automatically. This allows your focus to remain on the problem domain and manipulating its data, rather than the details of programming.
 
 ```fsharp
-open System // Get access to functionality in System namespace.
+open System // Gets access to functionality in System namespace.
 
-// Takes a name and produces a greeting.
+// Defines a function that takes a name and produces a greeting.
 let getGreeting name =
     sprintf "Hello, %s! Isn't F# great?" name
 
 [<EntryPoint>]
 let main args =
-    // Define a list of names
+    // Defines a list of names
     let names = [ "Don"; "Julia"; "Xi" ]
 
-    // Print a fun greeting for each name!
+    // Prints a greeting for each name!
     names
     |> List.map getGreeting
     |> List.iter (fun greeting -> printfn "%s" greeting)

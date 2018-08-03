@@ -301,8 +301,8 @@
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 
+## [What is F#](fsharp/what-is-fsharp.md)
 ## [Tour of F#](fsharp/tour.md)
-## [What is F#])fsharp/what-is-fsharp.md)
 
 ## Tutorials
 ### Introduction to Functional Programming
@@ -314,11 +314,6 @@
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
-
-## [F# style guide](fsharp/style-guide/index.md)
-### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
-### [F# coding conventions](fsharp/style-guide/conventions.md)
-### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)
 ### [Keyword Reference](fsharp/language-reference/keyword-reference.md)
@@ -418,6 +413,11 @@
 ### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
+
+## [F# style guide](fsharp/style-guide/index.md)
+### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
+### [F# coding conventions](fsharp/style-guide/conventions.md)
+### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
 
 ## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
 ### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)

@@ -38,11 +38,14 @@ End Class 'LineInfoDocument
 ```
 
 ```csharp
-class LineInfoDocument : XmlDocument {
-  public override XmlElement CreateElement(string prefix, string localname, string nsURI) {
-  LineInfoElement elem = new LineInfoElement(prefix, localname, nsURI, this);
-  return elem;
+class LineInfoDocument : XmlDocument 
+{
+  public override XmlElement CreateElement(string prefix, string localname, string nsURI) 
+  {
+      LineInfoElement elem = new LineInfoElement(prefix, localname, nsURI, this);
+      return elem;
   }
+}
 ```
 
 ## Extending a Class

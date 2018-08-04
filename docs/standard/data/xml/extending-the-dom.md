@@ -61,12 +61,12 @@ Class LineInfoElement
    Friend Sub New(prefix As String, localname As String, nsURI As String, doc As XmlDocument)
       MyBase.New(prefix, localname, nsURI, doc)
       CType(doc, LineInfoDocument).IncrementElementCount()
-   End Sub 'New
+   End Sub
 
    Public Sub SetLineInfo(linenum As Integer, linepos As Integer)
       lineNumber = linenum
       linePosition = linepos
-   End Sub 'SetLineInfo
+   End Sub
 
    Public ReadOnly Property LineNumber() As Integer
       Get
@@ -82,8 +82,8 @@ Class LineInfoElement
 
    Public Function HasLineInfo() As Boolean
       Return True
-   End Function 'HasLineInfo
-End Class 'LineInfoElement ' End LineInfoElement class.
+   End Function
+End Class ' End LineInfoElement class.
 ```
 
 ```csharp
@@ -122,8 +122,6 @@ Imports System
 Imports System.Xml
 Imports System.IO
 
- _
-
 Class LineInfoDocument
    Inherits XmlDocument
 
@@ -131,22 +129,21 @@ Class LineInfoDocument
 
    Friend Sub New()
       elementCount = 0
-   End Sub 'New
+   End Sub
 
    Public Overrides Function CreateElement(prefix As String, localname As String, nsURI As String) As XmlElement
       Dim elem As New LineInfoElement(prefix, localname, nsURI, Me)
       Return elem
-   End Function 'CreateElement
+   End Function
 
    Public Sub IncrementElementCount()
       elementCount += 1
-   End Sub 'IncrementElementCount
+   End Sub
 
    Public Function GetCount() As Integer
       Return elementCount
-   End Function 'GetCount
-End Class 'LineInfoDocument
- _ 'End LineInfoDocument class.
+   End Function
+End Class 'End LineInfoDocument class.
 
 Class LineInfoElement
    Inherits XmlElement
@@ -167,8 +164,8 @@ Public Class Test
       Dim doc As New LineInfoDocument()
       doc.Load(filename)
       Console.WriteLine("Number of elements in {0}: {1}", filename, doc.GetCount())
-   End Sub 'Main
-End Class 'Test
+   End Sub
+End Class
 ```
 
 ```csharp
@@ -231,7 +228,7 @@ book.xml
 
 #### Output
 
-```
+```console
 Number of elements in book.xml: 3
 ```
 

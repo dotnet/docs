@@ -294,7 +294,6 @@
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)
 
-## [Tour of F#](fsharp/tour.md)
 ## [Get Started](fsharp/get-started/index.md)
 ### [Install F#](fsharp/get-started/install-fsharp.md)
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
@@ -302,33 +301,19 @@
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 
-## [F# style guide](fsharp/style-guide/index.md)
-### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
-### [F# coding conventions](fsharp/style-guide/conventions.md)
-### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
+## [What is F#](fsharp/what-is-fsharp.md)
+## [Tour of F#](fsharp/tour.md)
 
 ## Tutorials
-### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
+### Introduction to Functional Programming
+#### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
+### Asynchronous and Concurrent Programming
+#### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
 #### [Create a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
-
-<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
-## Introduction to Functional Programming
-### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
-
-<!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
-### Asynchronous and Concurrent Programming
-#### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-
-## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
-### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
-### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
-### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
-### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
-<!--### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)-->
-### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
+### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)
 ### [Keyword Reference](fsharp/language-reference/keyword-reference.md)
@@ -428,6 +413,18 @@
 ### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
+
+## [F# style guide](fsharp/style-guide/index.md)
+### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
+### [F# coding conventions](fsharp/style-guide/conventions.md)
+### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
+
+## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
+### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
+### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
+### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
+### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
+### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
 <!-- End F# Content -->
 
 <!-- VB Content -->

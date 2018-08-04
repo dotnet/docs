@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 06/12/2018
+ms.date: 07/31/2018
 ---
 # dotnet new
 
@@ -311,6 +311,8 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+
 **mvc, razor**
 
 `-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
@@ -349,6 +351,8 @@ Each project template may have additional options available. The core templates 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
+
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
 **page**
 

@@ -73,7 +73,7 @@ Controls the serialization mode of <xref:System.DateTime> objects.
 [\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)  
 Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.
 
-[\<add> Element for \<xmlSchemaImporterExtensions>](add-element-for-xmlschemaimporterextensions.md)  
+[\<add> Element for \<schemaImporterExtensions>](add-element-for-schemaimporterextensions.md)  
 Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.
 
 ## Related Sections

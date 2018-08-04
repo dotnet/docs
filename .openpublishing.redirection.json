@@ -952,6 +952,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path":"docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",
+            "redirect_url":"/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
+        },
+        {
             "source_path": "docs/standard/serialization/marshal-by-value.md",
             "redirect_url": "/dotnet/standard/serialization-concepts"
         },
@@ -1376,6 +1380,14 @@
             "redirect_document_id":true
         },
         {
+            "source_path":"docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
+            "redirect_url":"/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+        },
+        {
+            "source_path":"docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
+            "redirect_url":"/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+        },
+        {
             "source_path":"docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
             "redirect_url":"/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
         },
@@ -1386,6 +1398,14 @@
         {
             "source_path":"docs/visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
             "redirect_url":"/dotnet/api/system.threading.threadpool.queueuserworkitem"
+        },
+        {
+            "source_path":"docs/csharp/programming-guide/concepts/threading/thread-pooling.md",
+            "redirect_url":"/dotnet/standard/threading/the-managed-thread-pool"
+        },
+        {
+            "source_path":"docs/visual-basic/programming-guide/concepts/threading/thread-pooling.md",
+            "redirect_url":"/dotnet/standard/threading/the-managed-thread-pool"
         }
     ]
 }

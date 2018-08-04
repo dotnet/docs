@@ -1,6 +1,6 @@
 ---
 title: "Marshaling Data with Platform Invoke"
-ms.date: "03/30/2017"
+ms.date: "07/31/2018"
 dev_langs: 
   - "cpp"
 helpviewer_keywords: 
@@ -27,7 +27,8 @@ To call functions exported from an unmanaged library, a .NET Framework applicati
   
 |Unmanaged type in Wtypes.h|Unmanaged C language type|Managed class name|Description|  
 |--------------------------------|-------------------------------|------------------------|-----------------|  
-|**HANDLE**|**void\***|<xref:System.IntPtr?displayProperty=nameWithType>|32 bits on 32-bit Windows operating systems, 64 bits on 64-bit Windows operating systems.|  
+|**VOID**|**void**|<xref:System.Void?displayProperty=nameWithType>|Applied to a function that does not return a value.|
+|**HANDLE**|**void \***|<xref:System.IntPtr?displayProperty=nameWithType>|32 bits on 32-bit Windows operating systems, 64 bits on 64-bit Windows operating systems.|  
 |**BYTE**|**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|8 bits|  
 |**SHORT**|**short**|<xref:System.Int16?displayProperty=nameWithType>|16 bits|  
 |**WORD**|**unsigned short**|<xref:System.UInt16?displayProperty=nameWithType>|16 bits|  
@@ -39,10 +40,10 @@ To call functions exported from an unmanaged library, a .NET Framework applicati
 |**ULONG**|**unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|32 bits|  
 |**CHAR**|**char**|<xref:System.Char?displayProperty=nameWithType>|Decorate with ANSI.|  
 |**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|Decorate with Unicode.|  
-|**LPSTR**|**char\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
+|**LPSTR**|**char \***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
 |**LPCSTR**|**Const char\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with ANSI.|  
-|**LPWSTR**|**wchar_t\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
-|**LPCWSTR**|**Const wchar_t\***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPWSTR**|**wchar_t \***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
+|**LPCWSTR**|**Const wchar_t \***|<xref:System.String?displayProperty=nameWithType> or <xref:System.Text.StringBuilder?displayProperty=nameWithType>|Decorate with Unicode.|  
 |**FLOAT**|**Float**|<xref:System.Single?displayProperty=nameWithType>|32 bits|  
 |**DOUBLE**|**Double**|<xref:System.Double?displayProperty=nameWithType>|64 bits|  
   

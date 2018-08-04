@@ -85,7 +85,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 ## FAQ
 
 ### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."
-The Visual Studio Code C# extension can generate assets to build and debug for you. If you missed the prompt when you first opened a new C# project, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this will generate the .vscode, launch.json, and tasks.json configuration files that you need.
+The Visual Studio Code C# extension can generate assets to build and debug for you. Visual Studio Code prompts you to generate these assets when you first open a C# project. If you didn't generate assets then, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this generates the .vscode, launch.json, and tasks.json configuration files that you need.
 
 ## See also
 [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   

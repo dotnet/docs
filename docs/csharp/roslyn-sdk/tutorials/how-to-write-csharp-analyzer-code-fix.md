@@ -69,7 +69,7 @@ The template shows the basic features that are part of any analyzer:
 1. Register actions. The actions represent code changes that should trigger your analyzer to examine code for violations. When Visual Studio detects code edits that match a registered action, it calls your analyzer's registered method.
 1. Create diagnostics. When your analyzer detects a violation, it creates a diagnostic object that Visual Studio uses to notify the user of the violation.
 
-You register actions in your override of <xref:Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initalize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)?displayProperty=nameWithType> method. The actions your register create the diagnostics. In this tutorial, you'll visit **syntax nodes** looking for local declarations, and see which of those have constant values.
+You register actions in your override of <xref:Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)?displayProperty=nameWithType> method. The actions your register create the diagnostics. In this tutorial, you'll visit **syntax nodes** looking for local declarations, and see which of those have constant values.
 
 ### Create the analyzer structure
 
@@ -83,7 +83,7 @@ Replace it with the following line:
 
 [!code-csharp[Register the node action](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConst/MakeConstAnalyzer.cs#RegisterNodeAction "Register a node action")]
 
-After that change, you can delete the `AnalyzeSymbol` method. This analyzer examines <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.LocalDeclarationStatement?displayProperty=nameWithType>, not <xref:Microsoft.CodeAnalysis.SyntaxKind.NamedType?displayProperty=nameWithType> statements. Then, put your cursor on the `AnalyzeNode` method, press **Ctrl+.** and generate the `AnalyzeNode` method.
+After that change, you can delete the `AnalyzeSymbol` method. This analyzer examines <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.LocalDeclarationStatement?displayProperty=nameWithType>, not <xref:Microsoft.CodeAnalysis.SymbolKind.NamedType?displayProperty=nameWithType> statements. Then, put your cursor on the `AnalyzeNode` method, press **Ctrl+.** and generate the `AnalyzeNode` method.
 
 This change highlights an important design consideration for every analyzer you write: Visual Studio calls analyzers as the user is editing code. Register actions for the types of code changes that could create something your analyzer should examine. That helps minimize any performance impact for Visual Studio users that load your analyzer.
 
@@ -274,7 +274,7 @@ private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
 
 Run your tests, and they should pass. Press F5 to run the Analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You can look at the code in your unit tests for examples to analyze. You'll see that they are reported as warnings as below.
 
-![Can make const warnings](media/make-const-warning.png)
+![Can make const warnings](media/how-to-write-csharp-analyzer-code-fix/make-const-warning.png)
 
 Notice that if you type const before each variable, the warnings are automatically removed. Additionally, changing a variable to const can affect the reporting of other variables. Add the `const` modifier to both `i` and `j`, and you get a new warning on `k` because it can now be `const`.
 
@@ -603,7 +603,7 @@ variableDeclaration = variableDeclaration.WithType(simplifiedTypeName);
 
 The code you've added should be shown in the following example:
 
-[!code-csharp[Replace Var designations](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConst/MakeConstAnalyzer.cs#ReplaceVar "Replace a var designation with the explicit type")]
+[!code-csharp[Replace Var designations](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
 
 Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press Ctrl+F5 to run the Analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
 

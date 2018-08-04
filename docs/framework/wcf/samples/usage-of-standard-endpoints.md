@@ -103,30 +103,30 @@ In the `CreateServiceEndpoint` function, a `CustomEndpoint` object is created. I
 
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
+{
+    public CustomEndpoint() 
+        : this(string.Empty)
     {
-        public CustomEndpoint()
-            : this(string.Empty)
-        {
-        }
-
-        public CustomEndpoint(string address)
-            : this(address, ContractDescription.GetContract(typeof(ICalculator)))
-        {
-        }
-
-        public CustomEndpoint(string address, ContractDescription contract)
-            : base(contract)
-        {
-            this.Binding = new BasicHttpBinding();
-            this.IsSystemEndpoint = false;
-        }
-
-        public bool Property
-        {
-            get;
-            set;
-        }
     }
+
+    public CustomEndpoint(string address)
+        : this(address, ContractDescription.GetContract(typeof(ICalculator)))
+    {
+    }
+
+    public CustomEndpoint(string address, ContractDescription contract)
+        : base(contract)
+    {
+        this.Binding = new BasicHttpBinding();
+        this.IsSystemEndpoint = false;
+    }
+
+    public bool Property
+    {
+        get;
+        set;
+    }
+}
 ```
 
  To perform the communication between service and client, a service reference is created in the client to the service. When the sample is built and executed, the service executes and the client communicates with it. Note that the service reference should be updated every time there is some change in the service.

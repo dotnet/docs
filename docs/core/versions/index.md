@@ -7,7 +7,7 @@ ms.date: 07/26/2018
 ---
 # .NET Core versioning
 
-.NET Core refers to the .NET Core Runtime and the .NET Core SDK that contains the tools you need to develop applications. .NET Core SDKs are designed to work with any previous version of the .NET Core Runtime. This article explains the runtime and the SDK version strategy. An explanation of version numbers for .NET Standard can be found in the article introducing [.NET Standard](../../standard/net-standard.md#net-implementation-support).
+.NET Core refers to the .NET Core Runtime and the .NET Core SDK, which contains the tools you need to develop applications. .NET Core SDKs are designed to work with any previous version of the .NET Core Runtime. This article explains the runtime and the SDK version strategy. An explanation of version numbers for .NET Standard can be found in the article introducing [.NET Standard](../../standard/net-standard.md#net-implementation-support).
 
 The .NET Core Runtime and .NET Core SDK add new features at a different rate - in general the .NET Core SDK provides updated tools more quickly than the .NET Core Runtime changes the runtime you use in production. Unfortunately, this problem has resulted in several versioning strategies over the last few years. You can learn about the history in the article on [.NET Core versioning](version-history.md).
 
@@ -15,9 +15,9 @@ The .NET Core Runtime and .NET Core SDK add new features at a different rate - i
 
 ".NET Core 2.1" refers to the .NET Core Runtime version number. The .NET Core Runtime has a major/minor/patch approach to versioning that follows [semantic versioning](#semantic-versioning).
 
-The .NET Core SDK does not follow semantic versioning. The .NET Core SDK releases faster and its versions, must communicate both the aligned runtime and the  SDK's own minor and patch releases. The first two positions of the .NET Core SDK version are locked to the .NET Core Runtime it released with. Each version of the SDK can create applications for this runtime or any lower version.
+The .NET Core SDK doesn't follow semantic versioning. The .NET Core SDK releases faster and its versions must communicate both the aligned runtime and the SDK's own minor and patch releases. The first two positions of the .NET Core SDK version are locked to the .NET Core Runtime it released with. Each version of the SDK can create applications for this runtime or any lower version.
 
-The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100 (starting at 100). The final two digits represent the patch number. For example, the release of .NET Core 2.2 may create releases like the following table:
+The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100. Minor version 1, patch version 2 would be represented as 102. The final two digits represent the patch number. For example, the release of .NET Core 2.2 may create releases like the following table:
 
 | Change                | .NET Core Runtime | .NET Core SDK (*) |
 |-----------------------|-------------------|-------------------|
@@ -26,12 +26,12 @@ The third position of the SDK version number communicates both the minor and pat
 | Runtime and SDK Patch | 2.2.1             | 2.2.102           |
 | SDK Feature change    | 2.2.1             | 2.2.200           |
 
-(*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [history of .NET Core versioning](version-history.md).
+(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [history of .NET Core versioning](version-history.md).
 
 NOTES:
 
-* If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation is not expected to occur.
-* 99 patch releases without a feature release will not occur. If a release approaches this number, it forces a feature release.
+* If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
+* 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
 
 You can see more details in the initial proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
 
@@ -50,7 +50,7 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
 `MAJOR` is incremented when:
 
 * Significant changes occur to the product, or a new product direction.
-* Breaking changes were taken. There is a high bar to accepting breaking changes.
+* Breaking changes were taken. There's a high bar to accepting breaking changes.
 * An old version is no longer supported.
 * A newer `MAJOR` version of an existing dependency is adopted.
 
@@ -84,9 +84,9 @@ After a release goes out, the release branches generally stop producing daily bu
 
 ## Relationship to .NET Standard versions
 
-.NET Standard consists of a .net reference assembly. There are multiple implementations specific to each platform. The reference assembly contains the definition of .NET Standard. Each implementation fulfills the .NET Standard contract on the specific platform. .NET Standard usually refers to the reference library.
+.NET Standard consists of a .NET reference assembly. There are multiple implementations specific to each platform. The reference assembly contains the definition of .NET all the versions of .NET Standard. Each implementation fulfills the .NET Standard contract on the specific platform. .NET Standard usually refers to the reference library. You can learn more about .NET Standard in the article on [.NET Standard](../../standard/net-standard.md) in the .NET Guide.
 
-The .NET Standard reference implementation uses a `MAJOR.MINOR` versioning scheme. `PATCH` level isn't useful for .NET Standard because if exposes only an API (no implementation) and by definition any change to the API would represent a change in the feature set, and thus a new minor version.
+The .NET Standard reference implementation uses a `MAJOR.MINOR` versioning scheme. `PATCH` level isn't useful for .NET Standard because if exposes only an API (no implementation) and by definition any change to the API would represent a change in the feature set, and thus a new `MINOR` version.
 
 The implementations on each runtime may be updated, typically as part of the runtime release, and thus not evident to the programmers using .NET Standard on that platform.
 

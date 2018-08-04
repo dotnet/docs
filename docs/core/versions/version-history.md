@@ -6,7 +6,7 @@ ms.date: 07/26/2018
 
 # NET Core version history
 
-Version numbers for .NET Core are challenging because .NET Core SDK and .NET Core Runtime release on different cadences. The different cadences means a choice to do only two of the following three things:
+Version numbers for .NET Core are challenging because .NET Core SDK and .NET Core Runtime release on different cadences. The different cadences mean the team was forced to do only two of the following three things:
 
 1. Release independently, specifically allowing tools, C# and VB to advance faster than the .NET Core Runtime.
 2. Maintain alignment in version numbers between .NET Core SDK and .NET Core Runtime.

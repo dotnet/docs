@@ -158,7 +158,7 @@ This is the third of six tasks required to create a Windows Communication Founda
 > Edit App.config in GettingStartedLib to reflect the changes made in code: 
 > 1. Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
 > 2. Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
-> 3. Change line 22 to `<endpoint address="" binding="basicHttpBinding" contract="GettingStartedLib.ICalculator">`
+> 3. Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
         
 ### To verify the service is working  
   

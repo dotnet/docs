@@ -58,13 +58,13 @@ XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] offer some simil
  For example, if you have an element in a variable named `customers`, and you want to find a grandchild element named `CompanyName` under all child elements named `Customer`, you would write an XPath expression as follows:  
   
 ```csharp  
-customers.XPathSelectElements("./Customer/CompanyName");  
+customers.XPathSelectElements("./Customer/CompanyName")
 ```  
   
  The equivalent [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query is:  
   
 ```csharp  
-customers.Element("Customer").Elements("CompanyName");  
+customers.Elements("Customer").Elements("CompanyName")
 ```  
   
  There are similar parallels for each of the XPath axes.  

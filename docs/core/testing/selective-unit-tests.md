@@ -107,18 +107,18 @@ namespace NUnitNamespace
 {
     public class UnitTest1
     {
-      [Category("CategoryA")]
-      [Property("Priority", 1)]
-      [Test]
-      public void TestMethod1()
-      {
-      }
+        [Category("CategoryA")]
+        [Property("Priority", 1)]
+        [Test]
+        public void TestMethod1()
+        {
+        }
 
-      [Property("Priority", 2)]
-      [Test]
-      public void TestMethod2()
-      {
-      }
+        [Property("Priority", 2)]
+        [Test]
+        public void TestMethod2()
+        {
+        }
     }
 }
 ```

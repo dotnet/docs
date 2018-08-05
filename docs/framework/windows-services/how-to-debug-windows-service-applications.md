@@ -74,7 +74,7 @@ A service must be run from within the context of the Services Control Manager ra
   
 1.  Add a method to your service that runs the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods:  
   
-    ```  
+    ```csharp  
     internal void TestStartupAndStop(string[] args)  
     {  
         this.OnStart(args);  
@@ -85,7 +85,7 @@ A service must be run from within the context of the Services Control Manager ra
   
 2.  Rewrite the `Main` method as follows:  
   
-    ```  
+    ```csharp  
     static void Main(string[] args)  
     {  
         if (Environment.UserInteractive)  

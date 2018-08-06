@@ -1124,7 +1124,7 @@ public class GoodController : ApiController
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the whole response body is read. This method does not buffer the stream.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the response headers are read. This method does not read nor buffer the response body.  
   
  ]]></format>
         </remarks>
@@ -1174,7 +1174,7 @@ public class GoodController : ApiController
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the whole response body is read. This method does not buffer the stream.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the response headers are read. This method does not read nor buffer the response body.  
   
  ]]></format>
         </remarks>

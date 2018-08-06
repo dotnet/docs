@@ -154,7 +154,6 @@ class ThreadingExample
  <xref:System.Threading>  
  <xref:System.Threading.EventWaitHandle.Set%2A>  
  <xref:System.Threading.Monitor>  
- [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
  [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
  [Mutexes](../../../../standard/threading/mutexes.md)  
  [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)  

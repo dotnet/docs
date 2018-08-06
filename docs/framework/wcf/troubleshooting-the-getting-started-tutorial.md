@@ -32,11 +32,11 @@ Only those methods that are marked with the `ServiceOperationAttribute` are expo
 
  You get this error if you do not add the Proxy.cs or Proxy.vb file to your client project.  
 
-**Running the client: Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:8000/ServiceModelSamples/Service/CalculatorService. TCP error code 10061: No connection could be made because the target machine actively refused it.**
+**Running the client: Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to `http://localhost:8000/ServiceModelSamples/Service/CalculatorService`. TCP error code 10061: No connection could be made because the target machine actively refused it.**
 
 This error occurs if you run the client application without running the service.  
   
-**Unhandled Exception: System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with 'http://localhost:8000/ServiceModelSamples/Service/CalculatorService' for target 'http://localhost:8000/ServiceModelSamples/Service/CalculatorService' failed**  
+**Unhandled Exception: System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` for target `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` failed**  
 
 This error occurs on a domain-joined computer that does not have network connectivity. Either connect your computer to the network or turn off security for both the client and the service. For the service, modify the code that creates the WSHttpBinding to the following.  
   

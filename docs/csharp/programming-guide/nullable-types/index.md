@@ -46,7 +46,7 @@ Nullable types have the following characteristics:
   
 - Nested nullable types are not allowed. The following line doesn't compile: `Nullable<Nullable<int>> n;`  
 
-For more information, see the [Using nullable types](using-nullable-types.md) topic.
+For more information, see the [Using nullable types](using-nullable-types.md) and [How to: Identify a nullable type](how-to-identify-a-nullable-type.md) topics.
   
 ## See also
 

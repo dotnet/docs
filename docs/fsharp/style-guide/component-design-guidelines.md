@@ -323,39 +323,7 @@ type System.ServiceModel.Channels.IInputChannel with
 
 ### Exceptions
 
-Exceptions are exceptional in .NET; that is, they should not occur frequently at runtime. When they do, the information they contain is valuable. Exceptions are a core first class concept of .NET; it hence follows that appropriate application of the Exceptions should be used as part of the design of the interface of a component.
-
-#### Follow the .NET guidelines for exceptions
-
-The [.NET Library Design Guidelines](../../standard/design-guidelines/exceptions.md) give excellent advice on the use of exceptions in the context of all .NET programming. Some of these guidelines are as follows:
-
-* Do not use exceptions for normal flow of control. Although this technique is often used in languages such as OCaml, it is bug-prone and can be inefficient on .NET. Instead, consider returning a `None` option value to indicate a failure that is a common or expected occurrence.
-
-* Document exceptions thrown by your components when a function is used incorrectly.
-
-* Where possible, employ existing exceptions from the System namespaces. Avoid <xref:System.ApplicationException>, though.
-
-* Do not throw <xref:System.Exception> when it will escape to user code. This includes avoiding the use of `failwith`, `failwithf`, which are handy functions for use in scripting and for code under development, but should be removed from F# library code in favor of throwing a more specific exception type.
-
-* Use `nullArg`, `invalidArg`, and `invalidOp` as the mechanism to throw <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, and <xref:System.InvalidOperationException> when appropriate.
-
-#### Consider using option values for return types when failure is not an exceptional scenario
-
-The .NET approach to exceptions is that they should be “exceptional”; that is, they should occur relatively infrequently. However, some operations (for example, searching a table) may fail frequently. F# option values are an excellent way to represent the return types of these operations. These operations conventionally start with the name prefix “try”:
-
-```fsharp
-// bad: throws exception if no element meets criteria
-member this.FindFirstIndex(pred : 'T -> bool) : int =
-    ...
-
-// bad: returns -1 if no element meets criteria
-member this.FindFirstIndex(pred : 'T -> bool) : int =
-    ...
-
-// good: returns None if no element meets criteria
-member this.TryFindFirstIndex(pred : 'T -> bool) : int option =
-    ...
-```
+See [Error Management](conventions.md#error-management) to learn about appropriate use of exceptions, results, and options.
 
 ### Extension Members
 

@@ -46,7 +46,7 @@ If the module needs additional server-level permissions:
 |Resource|Description|  
 |--------------|-----------------|  
 |[Module Signing](http://go.microsoft.com/fwlink/?LinkId=98590) in SQL Server Books Online|Describes module signing, providing a sample scenario and links to the relevant Transact-SQL topics.|  
-|[Signing Stored Procedures with a Certificate](http://msdn.microsoft.com/library/bb283630.aspx) in SQL Server Books Online|Provides a tutorial for signing a stored procedure with a certificate.|  
+|[Signing Stored Procedures with a Certificate](/sql/relational-databases/tutorial-signing-stored-procedures-with-a-certificate) in SQL Server Books Online|Provides a tutorial for signing a stored procedure with a certificate.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

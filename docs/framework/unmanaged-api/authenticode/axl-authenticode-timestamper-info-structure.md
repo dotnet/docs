@@ -28,7 +28,7 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`dwError`|The error code.|  
 |`algHash`|The hash algorithm.|  
 |`ftTimestamp`|The time of the time stamp.|  
-|`pChainContext`|The time stamper’s chain context.  See the [CERT_CONTEXT](http://msdn.microsoft.com/library/windows/desktop/aa377189.aspx) structure.|  
+|`pChainContext`|The time stamper’s chain context.  See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
   
 ## See Also  
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

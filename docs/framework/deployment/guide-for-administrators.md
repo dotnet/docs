@@ -246,7 +246,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 -   [URL moniker error codes](http://msdn.microsoft.com/library/ms775145.aspx)  
   
--   [WinHttp error codes](http://msdn.microsoft.com/library/aa383770.aspx)  
+-   [WinHttp error codes](/windows/desktop/WinHttp/error-messages)  
   
  Other error codes:  
   

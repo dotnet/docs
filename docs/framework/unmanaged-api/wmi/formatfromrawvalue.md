@@ -38,7 +38,7 @@ int FormatFromRawValue (
 ## Parameters
 
 `dwCounterType`  
-[in] The counter type. For a list of counter types, see [WMI Performance Counter Types](https://msdn.microsoft.com/library/aa394569(v=vs.85).aspx). `dwCounterType` can be any counter type except for `PERF_LARGE_RAW_FRACTION` and `PERF_LARGE_RAW_BASE`. 
+[in] The counter type. For a list of counter types, see [WMI Performance Counter Types](/windows/desktop/WmiSdk/wmi-performance-counter-types). `dwCounterType` can be any counter type except for `PERF_LARGE_RAW_FRACTION` and `PERF_LARGE_RAW_BASE`. 
 
 `dwFormat`  
 [in] The format to which to convert the raw performance data. It can be one of the following values:

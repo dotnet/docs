@@ -70,10 +70,10 @@ HRESULT ConnectServerWmi (
 | NTLMDOMAIN:*domain name* | NT LAN Manager authentication is used, and this parameter contains an NTLM domain name. |
 
 `pCtx`   
-[in] Typically, this parameter is is `null`. Otherwise, it is a pointer to an [IWbemContext](https://msdn.microsoft.com/library/aa391465%28v=vs.85%29.aspx) object required by one or more dynamic class providers. 
+[in] Typically, this parameter is is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) object required by one or more dynamic class providers. 
 
 `ppNamespace`  
-[out] When the function returns, receives a pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object bound to the specified namespace. It is set to point to `null` when there is an error.
+[out] When the function returns, receives a pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object bound to the specified namespace. It is set to point to `null` when there is an error.
 
 `impLevel`  
 [in] The impersonation level.

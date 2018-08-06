@@ -45,7 +45,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
     ```  
   
     > [!NOTE]
-    >  This command is a single line of text. This command enables the /\<*WCF Application*> application to be accessed using both http://localhost*/\<WCF Application>* and net.tcp://localhost/*\<WCF Application>*.  
+    >  This command is a single line of text. This command enables the /\<*WCF Application*> application to be accessed using both `http://localhost/<WCF Application>` and `net.tcp://localhost/<WCF Application>`.
   
      Remove the net.tcp site binding you added for this sample.  
   

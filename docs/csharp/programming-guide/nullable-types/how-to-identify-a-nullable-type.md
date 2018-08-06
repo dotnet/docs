@@ -1,44 +1,33 @@
 ---
-title: "How to: Identify a Nullable Type (C# Programming Guide)"
-ms.date: 07/20/2015
+title: "How to: Identify a nullable type (C# Programming Guide)"
+description: "Learn how to determine whether a type is a nullable type or an instance is of a nullable type"
+ms.date: 08/06/2018
 helpviewer_keywords: 
   - "nullable types [C#], identifying"
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
 ---
-# How to: Identify a Nullable Type (C# Programming Guide)
-You can use the C# [typeof](../../../csharp/language-reference/keywords/typeof.md) operator to create a <xref:System.Type> object that represents a Nullable type:  
+# How to: Identify a nullable type (C# Programming Guide)
+
+The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a nullable type:
+
+[!code-csharp-interactive[whether Type is nullable](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#1)]
+
+As the example shows, you use the [typeof](../../language-reference/keywords/typeof.md) operator to create a <xref:System.Type?displayProperty=nameWithType> object.  
   
-```  
-System.Type type = typeof(int?);  
-```  
+If you want to determine whether an instance is of a nullable type, don't use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to get a <xref:System.Type> instance to be tested with the preceding code. When you call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method on an instance of a nullable type, the instance is [boxed](using-nullable-types.md#boxing-and-unboxing) to <xref:System.Object>. As boxing of a non-null instance of a nullable type is equivalent to boxing of a value of the underlying type, <xref:System.Object.GetType%2A> returns a <xref:System.Type> object that represents the underlying type of a nullable type:
+
+[!code-csharp-interactive[GetType example](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#2)]
+
+Don't use the [is](../../language-reference/keywords/is.md) operator to determine whether an instance is of a nullable type. As the following example shows, you cannot distinguish types of instances of a nullable type and its underlying type with using the `is` operator:
+
+[!code-csharp-interactive[is operator example](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#3)]
+
+You can use the code presented in the following example to determine whether an instance is of a nullable type:
+
+[!code-csharp-interactive[whether an instance is of a nullable type](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#4)]
   
- You can also use the classes and methods of the <xref:System.Reflection> namespace to generate <xref:System.Type> objects that represent Nullable types. However, if you try to obtain type information from Nullable variables at runtime by using the <xref:System.Object.GetType%2A> method or the `is` operator, the result is a <xref:System.Type> object that represents the underlying type, not the Nullable type itself.  
-  
- Calling `GetType` on a Nullable type causes a boxing operation to be performed when the type is implicitly converted to <xref:System.Object>. Therefore <xref:System.Object.GetType%2A> always returns a <xref:System.Type> object that represents the underlying type, not the Nullable type.  
-  
-```  
-int? i = 5;  
-Type t = i.GetType();  
-Console.WriteLine(t.FullName); //"System.Int32"  
-```  
-  
- The C# [is](../../../csharp/language-reference/keywords/is.md) operator also operates on a Nullable's underlying type. Therefore you cannot use `is` to determine whether a variable is a Nullable type. The following example shows that the `is` operator treats a Nullable\<int> variable as an int.  
-  
-```  
-static void Main(string[] args)  
-{  
-  int? i = 5;  
-  if (i is int) // true  
-    //…  
-}  
-```  
-  
-## Example  
- Use the following code to determine whether a <xref:System.Type> object represents a Nullable type. Remember that this code always returns false if the `Type` object was returned from a call to <xref:System.Object.GetType%2A>, as explained earlier in this topic.  
-  
-```  
-if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>)) {…}  
-```  
-  
-## See Also  
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
+## See also
+
+[Nullable types](index.md)  
+[Using nullable types](using-nullable-types.md)  
+<sref:System.Nullable.GetUnderlyingType%2A>  

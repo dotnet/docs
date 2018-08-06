@@ -32,11 +32,11 @@ This sample may already be installed on your computer. Check for the following (
   
      A directory listing for the sample appears. Note that there are no files with an .svc file extension.  
   
-3.  In the address bar, add `movies` to the URL, so that it reads http://localhost:[port]/movies and press ENTER.  
+3.  In the address bar, add `movies` to the URL, so that it reads `http://localhost:[port]/movies` and press ENTER.  
   
      The movies feed appears in the browser.  
   
-4.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+4.  In the address bar, add `channels` to the URL, so that is reads `http://localhost:[port]/channels` and press ENTER.  
   
      The channels feed appears in the browser.  
   
@@ -62,11 +62,11 @@ This sample may already be installed on your computer. Check for the following (
   
 4.  Start the application, by right-clicking the Web application and selecting **Manage Application** and then **Browse**.  
   
-5.  In the address bar, add `movies` to the URL, so that is reads http://localhost:[port]/movies and press ENTER.  
+5.  In the address bar, add `movies` to the URL, so that is reads `http://localhost:[port]/movies` and press ENTER.  
   
      The movies feed appears in the browser.  
   
-6.  In the address bar, add `channels` to the URL, so that is reads http://localhost:[port]/channels and press ENTER.  
+6.  In the address bar, add `channels` to the URL, so that is reads `http://localhost:[port]/channels` and press ENTER.  
   
      The channels feed appears in the browser.  
   

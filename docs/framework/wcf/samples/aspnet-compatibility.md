@@ -32,7 +32,7 @@ This sample requires a [!INCLUDE[netfx40_long](../../../../includes/netfx40-long
   
  This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified as the `ICalculatorSession` contract to allow a set of operations to be performed, while keeping a running result.  
   
-```  
+```csharp  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculatorSession  
 {  
@@ -56,11 +56,11 @@ public interface ICalculatorSession
  The service uses the ASP.NET session to store the result for each client session. This allows the service to maintain the running result for each client across multiple calls to the service.  
   
 > [!NOTE]
->  ASP.NET session state and WCF sessions are very different things.  See the [Session](../../../../docs/framework/wcf/samples/session.md) for details on WCF sessions.  
+> ASP.NET session state and WCF sessions are very different things. See [Session](../../../../docs/framework/wcf/samples/session.md) for details on WCF sessions.
   
  The service has an intimate dependency on ASP.NET session state and requires ASP.NET compatibility mode to function correctly. These requirements are expressed declaratively by applying the `AspNetCompatibilityRequirements` attribute.  
   
-```  
+```csharp  
 [AspNetCompatibilityRequirements(RequirementsMode =  
                        AspNetCompatibilityRequirementsMode.Required)]  
 public class CalculatorService : ICalculatorSession  
@@ -102,11 +102,11 @@ public class CalculatorService : ICalculatorSession
         return Result;  
     }  
 }  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console
 0, + 100, - 50, * 17.65, / 2 = 441.25  
 Press <ENTER> to terminate client.  
 ```  

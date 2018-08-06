@@ -43,7 +43,7 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
 <% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>  
 ```  
   
- It consists of the \[@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
+ It consists of the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
   
 ```csharp  
 new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );  

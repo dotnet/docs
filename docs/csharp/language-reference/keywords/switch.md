@@ -168,7 +168,7 @@ Without pattern matching, this code might be written as follows. The use of type
 
 [!code-csharp[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
-## The `case` statement and the `when` clause
+## <a name="when" /> The `case` statement and the `when` clause
 
 Starting with C# 7.0, because case statements need not be mutually exclusive, you can add a `when` clause to specify an additional condition that must be satisfied for the case statement to evaluate to true. The `when` clause can be any expression that returns a Boolean value. One of the more common uses for the `when` clause is used to prevent a switch section from executing when the value of a match expression is `null`. 
 

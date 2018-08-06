@@ -1,6 +1,9 @@
 ---
 title: "Comparison of XPath and LINQ to XML"
 ms.date: 07/20/2015
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 87d361b1-daa9-4fd4-a53a-cbfa40111ad3
 ---
 # Comparison of XPath and LINQ to XML
@@ -45,7 +48,13 @@ XPath and LINQ to XML offer some similar functionality. Both can be used to quer
   
  If you wanted to find the immediately preceding element in LINQ to XML, you would write the following expression:  
   
- `ElementsBeforeSelf().Last()`  
+```csharp
+ElementsBeforeSelf().Last()
+```
+  
+```vb
+ElementsBeforeSelf().Last()
+```
   
 ## Performance Differences  
  XPath queries that use the XPath functionality in LINQ to XML will not perform as well as LINQ to XML queries.  
@@ -59,12 +68,20 @@ XPath and LINQ to XML offer some similar functionality. Both can be used to quer
 customers.XPathSelectElements("./Customer/CompanyName")
 ```  
   
+```vb
+customers.XPathSelectElements("./Customer/CompanyName")
+```
+
  The equivalent LINQ to XML query is:  
   
 ```csharp  
 customers.Elements("Customer").Elements("CompanyName")
 ```  
   
+```vb
+customers.Elements("Customer").Elements("CompanyName")
+```  
+
  There are similar parallels for each of the XPath axes.  
   
 |XPath axis|LINQ to XML axis|  

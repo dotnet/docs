@@ -32,7 +32,7 @@ This section describes features and behaviors that are specific to the .NET Fram
   
  For complete documentation of the SQL Server Database Engine, see SQL Server Books Online for the version of SQL Server you are using.  
   
- [SQL Server Books Online](http://msdn.microsoft.com/library/ms130214.aspx)  
+ [SQL Server Books Online](/sql/sql-server/sql-server-technical-documentation)  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

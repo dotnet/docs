@@ -32,7 +32,7 @@ HRESULT UpdateSymbolStore2(
   
 #### Parameters  
  `pIStream`  
- [in] A pointer to an [IStream](https://msdn.microsoft.com/library/aa380034.aspx) that contains the line information.  
+ [in] A pointer to an [IStream](/windows/desktop/api/objidl/nn-objidl-istream) that contains the line information.  
   
  `pDeltaLines`  
  [in] A pointer to a [SYMLINEDELTA](../../../../docs/framework/unmanaged-api/diagnostics/symlinedelta-structure.md) structure that contains the lines that have changed.  

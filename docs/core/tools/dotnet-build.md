@@ -15,7 +15,13 @@ ms.date: 05/25/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+```
+dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
+    [--no-restore] [-nodeReuse:false] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
+dotnet build [-h|--help]
+```
+# [.NET Core 2.0](#tab/netcore20)
 ```
 dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
     [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
@@ -61,7 +67,57 @@ The project file to build. If a project file is not specified, MSBuild searches 
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+
+`-c|--configuration {Debug|Release}`
+
+Defines the build configuration. The default value is `Debug`.
+
+`-f|--framework <FRAMEWORK>`
+
+Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](csproj.md).
+
+`--force`
+
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`--no-dependencies`
+
+Ignores project-to-project (P2P) references and only builds the specified root project.
+
+`--no-incremental`
+
+Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
+
+`--no-restore`
+
+Doesn't execute an implicit restore during build.
+
+`-nodeReuse:false`
+
+Prevents worker processes from being created.
+
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
+
+`-r|--runtime <RUNTIME_IDENTIFIER>`
+
+Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+`--version-suffix <VERSION_SUFFIX>`
+
+Defines the version suffix for an asterisk (`*`) in the version field of the project file. The format follows NuGet's version guidelines.
+
+# [.NET Core 2.0](#tab/netcore20)
 
 `-c|--configuration {Debug|Release}`
 

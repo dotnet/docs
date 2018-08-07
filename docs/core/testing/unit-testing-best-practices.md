@@ -310,13 +310,12 @@ public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 }
 ```
 
-Unfortunately, you will quickly realize that there are a few problems with your tests. 
+Unfortunately, you will quickly realize that there are a couple problems with your tests. 
 
-- If the test suite is ran on a Tuesday, the first test will pass, and the second test will fail.
-- If the test suite is ran on any other day, the first test will fail, and the second test will pass.
-- How is it even possible to test a specific day of the week..?
+- If the test suite is run on a Tuesday, the second test will pass, but the first test will fail.
+- If the test suite is run on any other day, the first test will pass, but the second test will fail.
 
-To solve this problem, you'll need to introduce a *seam* into your production code. One approach to solve this is to wrap the code that you need to control in an interface and have the production code depend on that interface.
+To solve these problems, you'll need to introduce a *seam* into your production code. One approach is to wrap the code that you need to control in an interface and have the production code depend on that interface.
 
 ```csharp
 public interface IDateTimeProvider

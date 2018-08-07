@@ -2,7 +2,7 @@
 title: "\_AxlRSAKeyValueToPublicKeyToken function"
 ms.date: "03/30/2017"
 api_name: 
-  - "_AxlRSAKeyValueToPublicKeyToken"
+  - "\_AxlRSAKeyValueToPublicKeyToken"
 api_location: 
   - "clr.dll"
 api_type: 
@@ -25,7 +25,7 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  `pModulusBlob`  
  [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) structure.  
   

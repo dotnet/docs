@@ -21,7 +21,7 @@ The **-checked** option specifies whether an integer arithmetic statement that r
 ## Remarks  
  An integer arithmetic statement that is in the scope of a `checked` or `unchecked` keyword is not subject to the effect of the **-checked** option.  
   
- If an integer arithmetic statement that is not in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **-checked+** (**-checked**) is used in the compilation, that statement causes an exception at run time. If **-checked-** is used in the compilation, that statement does not cause an exception at run time.  
+ If an integer arithmetic statement that is not in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **-checked+** (or **-checked**) is used in the compilation, that statement causes an exception at run time. If **-checked-** is used in the compilation, that statement does not cause an exception at run time.  
   
  The default value for this option is **-checked-**. One scenario for using **-checked-** is in building large applications. Sometimes automated tools are used to build such applications, and such a tool might automatically set **-checked** to +. You can override the tool's global default by specifying **-checked-**.  
   

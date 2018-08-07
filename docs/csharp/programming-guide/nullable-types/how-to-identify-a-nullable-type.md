@@ -30,4 +30,4 @@ You can use the code presented in the following example to determine whether an 
 
 [Nullable types](index.md)  
 [Using nullable types](using-nullable-types.md)  
-<sref:System.Nullable.GetUnderlyingType%2A>  
+<xref:System.Nullable.GetUnderlyingType%2A>  

@@ -154,6 +154,12 @@ This is the third of six tasks required to create a Windows Communication Founda
   
     5.  Step 5 – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to hit enter. If you do not do this, the app will close immediately and the service will shut down.Also notice a  try/catch block used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)  
   
+> [!IMPORTANT]
+> Edit App.config in GettingStartedLib to reflect the changes made in code: 
+> 1. Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
+> 2. Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+> 3. Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
+        
 ### To verify the service is working  
   
 1.  Run the GettingStartedHost console application from inside [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]. When running on [!INCLUDE[wv](../../../includes/wv-md.md)] and later operating systems, the service must be run with administrator privileges. Because Visual Studio was run with Administrator privileges, GettingStartedHost is also run with Administrator privileges. You can also start a new command prompt running it with Administrator privileges and run service.exe within it.  

@@ -13,7 +13,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 
 |Constraint|Description|
 |----------------|-----------------|
-|`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable> can be specified. For more information, see [Using Nullable Types](../nullable-types/using-nullable-types.md).|
+|`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable types, see [Nullable types](../nullable-types/index.md).|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : unmanaged`|The type argument must not be a reference type and must not contain any reference type members at any level of nesting.|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|

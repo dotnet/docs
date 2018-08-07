@@ -52,7 +52,7 @@ Console.WriteLine(root);
 ## Example  
  The following example shows the creation of a document that contains two namespaces. One is the default namespace. Another is a namespace with a prefix.  
   
- By including namespace attributes in the root element, the namespaces are serialized so that http://www.adventure-works.com is the default namespace, and www.fourthcoffee.com is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
+ By including namespace attributes in the root element, the namespaces are serialized so that `http://www.adventure-works.com` is the default namespace, and `www.fourthcoffee.com` is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
   
 ```csharp  
 // The http://www.adventure-works.com namespace is forced to be the default namespace.  

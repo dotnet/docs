@@ -113,7 +113,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 ### Extracting Data from a Network
 
-This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
+This snippet downloads the HTML from the homepage at [www.dotnetfoundation.org](https://www.dotnetfoundation.org) and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.

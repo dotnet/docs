@@ -1,8 +1,8 @@
 ---
-title: "\_AxlRSAKeyValueToPublicKeyToken function"
+title: "_AxlRSAKeyValueToPublicKeyToken function"
 ms.date: "03/30/2017"
 api_name: 
-  - "\_AxlRSAKeyValueToPublicKeyToken"
+  - "_AxlRSAKeyValueToPublicKeyToken"
 api_location: 
   - "clr.dll"
 api_type: 

@@ -28,6 +28,6 @@ dotnet vstest out/MyProject.Tests.dll
 > Note: If your app is targeting a framework other than `netcoreapp` you can still run the `dotnet vstest` command by passing in the targeted framework with a framework flag. For example, `dotnet vstest <MyPublishedTests>.dll  --Framework:".NETFramework,Version=v4.6"`. In Visual Studio 2017 Update 5 the desired framework is automatically detected.
 
 ## See also
-[Unit Testing with dotnet test and xUnit](unit-testing-with-dotnet-test.md)  
-[Unit Testing with dotnet test and NUnit](unit-testing-with-nunit.md)  
-[Unit Testing with dotnet test and MSTest](unit-testing-with-mstest.md)  
+- [Unit Testing with dotnet test and xUnit](unit-testing-with-dotnet-test.md)
+- [Unit Testing with dotnet test and NUnit](unit-testing-with-nunit.md)
+- [Unit Testing with dotnet test and MSTest](unit-testing-with-mstest.md)

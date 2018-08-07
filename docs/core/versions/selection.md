@@ -9,7 +9,7 @@ ms.date: 06/27/2018
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
-This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end user machines. These policies perform the following:
+This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end-user machines. These policies perform the following actions:
 
 - Easy and efficient deployment of .NET Core, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
@@ -25,11 +25,11 @@ The rest of this document examines those four scenarios.
 
 ## The SDK uses the latest installed version
 
-SDK commands include `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` CLI must choose an SDK version for any command. The .NET Core CLI uses the latest SDK installed on the machine by default. You'll use the .NET Core SDK v2.1.301 when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. Note that this is true for preview versions as well as released versions. You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
+SDK commands include `dotnet new`,  , or `dotnet run`. The `dotnet` CLI must choose an SDK version for any command. The .NET Core CLI uses the latest SDK installed on the machine by default. You'll use the .NET Core SDK v2.1.301 when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. You will use the latest preview versions as well as released versions. You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 
-*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. This is the same as the default behavior, when no *global.json* file is found.
+*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. Roll-forward is the same as the default behavior, when no *global.json* file is found.
 
 The following example shows the *global.json* syntax:
 
@@ -47,7 +47,7 @@ The process for selecting an SDK version is:
 1. `dotnet` uses the SDK specified in the first *global.json* found.
 1. `dotnet` uses the latest installed SDK if no *global.json* is found.
 
-You can learn more about selecting an SDK version in the [Matching rules](../tools/global-json.md#matching-rules) section of the topic on *global.json*.
+You can learn more about selecting an SDK version in the [Matching rules](../tools/global-json.md#matching-rules) section of the article on *global.json*.
 
 ## Target Framework Monikers define build time APIs
 
@@ -103,4 +103,4 @@ Self-contained deployments may require a specific patch version. You can overrid
 <RuntimeFrameworkVersion>2.0.4</RuntimeFrameworkVersion>
 ```
 
-The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.
+The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework-dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.

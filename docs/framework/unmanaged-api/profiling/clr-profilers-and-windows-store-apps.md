@@ -219,7 +219,7 @@ while (appsEnum.GetHasCurrent() != 0)
 {  
     IAppxManifestApplication app = appsEnum.GetCurrent();  
     string appUserModelId = app.GetAppUserModelId();  
-…
+    //...
 }
 ```  
   

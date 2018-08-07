@@ -72,7 +72,7 @@ Pooling of handlers is desirable as each handler typically manages its own under
 The HttpMessageHandler objects in the pool have a lifetime that is the length of time that an HttpMessageHandler instance in the pool can be reused. The default value is two minutes, but it can be overridden per named or typed client basis. To override it, call SetHandlerLifetime() on the IHttpClientBuilder that is returned when creating the client, as shown in the following code.
 
 ```csharp
-//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Basket Typed Client 
+//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client 
 services.AddHttpClient<ICatalogService, CatalogService>()
                  .SetHandlerLifetime(TimeSpan.FromMinutes(5));  
 ```

@@ -23,7 +23,7 @@ The **-checked** option specifies whether an integer arithmetic statement that r
   
  If an integer arithmetic statement that is not in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **-checked+** (or **-checked**) is used in the compilation, that statement causes an exception at run time. If **-checked-** is used in the compilation, that statement does not cause an exception at run time.  
   
- The default value for this option is **-checked-** ; overflow checking is disabled.
+ The default value for this option is **-checked-**; overflow checking is disabled.
  
  Sometimes, automated tools that are used to build large applications set -checked to +. One scenario for using -checked- is to override the tool's global default by specifying -checked-.
  

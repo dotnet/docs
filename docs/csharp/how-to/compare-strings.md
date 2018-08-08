@@ -62,7 +62,7 @@ linguistic comparision, some nonalphanumeric Unicode characters might have
 special weights assigned. For example, the hyphen "-" may have a very small
 weight assigned to it so that "co-op" and "coop" appear next to each other
 in sort order. In addition, some Unicode characters may be equivalent to a
-sequence of alphanumeric characterss. The following example uses the phrase
+sequence of alphanumeric characters. The following example uses the phrase
 "They dance in the street." in German with the "ss" and 'ß'. Linguistically
 (in Windows), "ss" is equal to the German Essetz: 'ß' character in both "en-US"
 and "de-DE" cultures. 

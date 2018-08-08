@@ -219,7 +219,8 @@ while (appsEnum.GetHasCurrent() != 0)
 {  
     IAppxManifestApplication app = appsEnum.GetCurrent();  
     string appUserModelId = app.GetAppUserModelId();  
-…  
+    //...
+}
 ```  
   
  Finally, you now have what you need to launch the Windows Store app:  

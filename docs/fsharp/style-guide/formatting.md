@@ -322,29 +322,21 @@ let pascalsTriangle = [|
 
 ## Formatting if expressions
 
-Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are small, simply write them on one line:
+Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are short, simply write them on one line:
 
 ```fsharp
 if cond then e1 else e2
 ```
 
-If `e1` and `cond` are small, but `e2` is large:
+If either `cond`, `e1` or `e2` are longer, but not multi-line:
 
 ```fsharp
-if cond then e1
-else
-    e2
-```
-
-If `e1` and `cond` are large and `e2` is small:
-
-```fsharp
-if cond then
-    e1
+if cond
+then e1
 else e2
 ```
 
-If all the expressions are large:
+If any of the expressions are multi-line:
 
 ```fsharp
 if cond then

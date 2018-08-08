@@ -8,7 +8,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides aggregate f
   
  The following are the SqlClient aggregate functions.  
 
-## `AVG(expression)`
+## AVG(expression)
 
 Returns the average of the values in a collection. Null values are ignored.
 
@@ -25,7 +25,7 @@ The type of `expression`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_avg)]
  [!code-sql[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_avg)]
 
- ## `CHECKSUM_AGG(collection)`
+## CHECKSUM_AGG(collection)
  
  Returns the checksum of the values in a collection. Null values are ignored.
  
@@ -43,7 +43,7 @@ The type of `expression`
  [!code-csharp[DP EntityServices Concepts#SQLSERVER_CHECKSUM](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_checksum)]
  [!code-sql[DP EntityServices Concepts#SQLSERVER_CHECKSUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_checksum)]
    
-## `COUNT(expression)`
+## COUNT(expression)
 
 Returns the number of items in a collection as an `Int32`
 
@@ -65,7 +65,7 @@ An `Int32`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_count)]
  [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)
  
- ## `COUNT_BIG(expression)`
+## COUNT_BIG(expression)
  
  Returns the number of items in a collection as a `bigint`
  
@@ -87,7 +87,7 @@ An `Int64`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNTBIG](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_countbig)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNTBIG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_countbig)]
 
-## `MAX(expression)`
+## MAX(expression)
 
 Returns the maximum value the collection.
 
@@ -109,7 +109,7 @@ The type of `expression`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_MAX](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_max)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_MAX](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_max)]
 
-## `MIN(expression)`
+## MIN(expression)
 
 Returns the minimum value in a collection.
 
@@ -132,7 +132,7 @@ The type of `expression`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_min)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_min)]
 
-## `STDEV(expression)`
+## STDEV(expression)
 
 Returns the statistical standard deviation of all values in the specified expression.
 
@@ -149,7 +149,7 @@ A `Double`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEV](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdev)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_STDEV](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdev)]
 
-## `STDEVP(expression)`
+## STDEVP(expression)
 
 Returns the statistical standard deviation for the population for all values in the specified expression.
 
@@ -166,7 +166,7 @@ A `Double`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEVP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdevp)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_STDEVP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdevp)]
 
-## `SUM(expression)`
+## SUM(expression)
 
 Returns the sum of all the values in the collection.
 
@@ -183,7 +183,7 @@ The type of `expression`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_SUM](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_sum)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_SUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_sum)]
 
-## `VAR(expression)`
+## VAR(expression)
 
 Returns the statistical variance of all values in the specified expression.
 
@@ -200,7 +200,7 @@ A `Double`
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_VAR](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_var)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_VAR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_var)]
 
-## `VARP(expression)`
+## VARP(expression)
 
 Returns the statistical variance for the population for all values in the specified expression.
 

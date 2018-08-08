@@ -18,7 +18,7 @@ An `Int32`, `Int64`, `Double`, and `Decimal`.
 
 **Return Value**
 
-The type of `expression`
+The type of `expression`.
 
 **Example**
 
@@ -31,12 +31,11 @@ The type of `expression`
  
  **Arguments**
  
- A Collection(`Int32`)
- 
+ A Collection(`Int32`).
  
  **Return Value**
  
- An `Int32`
+ An `Int32`.
  
  **Example**
  
@@ -45,7 +44,7 @@ The type of `expression`
    
 ## COUNT(expression)
 
-Returns the number of items in a collection as an `Int32`
+Returns the number of items in a collection as an `Int32`.
 
 **Arguments**
 
@@ -58,16 +57,16 @@ A Collection\<T>, where T is one of the following types:
 
 **Return Value**
 
-An `Int32`
+An `Int32`.
 
 **Example**
 
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_count)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)
+[!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)
  
 ## COUNT_BIG(expression)
  
- Returns the number of items in a collection as a `bigint`
+ Returns the number of items in a collection as a `bigint`.
  
  **Arguments**
  
@@ -80,7 +79,7 @@ An `Int32`
 
 **Return Value**
 
-An `Int64`
+An `Int64`.
 
 **Example**
 
@@ -102,7 +101,7 @@ A Collection(T), where T is one of the following types:
 
 **Return Value**
 
-The type of `expression`
+The type of `expression`.
 
 **Example**
 
@@ -124,10 +123,9 @@ A Collection(T), where T is one of the following types:
 
 **Return Value**
 
-The type of `expression`
+The type of `expression`.
 
 **Example**
-
 
 [!code-csharp[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_min)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_min)]
@@ -138,11 +136,11 @@ Returns the statistical standard deviation of all values in the specified expres
 
 **Arguments**
 
-A Collection(`Double`)
+A Collection(`Double`).
 
 **Return Value**
 
-A `Double`
+A `Double`.
 
 **Example**
 
@@ -155,11 +153,11 @@ Returns the statistical standard deviation for the population for all values in 
 
 **Arguments**
 
-A Collection(`Double`)
+A Collection(`Double`).
 
 **Return Value**
 
-A `Double`
+A `Double`.
 
 **Example**
 
@@ -176,7 +174,7 @@ A Collection(T) where T is one of the following types: `Int32`, `Int64`, `Double
 
 **Return Value**
 
-The type of `expression`
+The type of `expression`.
 
 **Example**
 
@@ -189,11 +187,11 @@ Returns the statistical variance of all values in the specified expression.
 
 **Arguments**
 
-A Collection(`Double`)
+A Collection(`Double`).
 
 **Return Value**
 
-A `Double`
+A `Double`.
 
 **Example**
 
@@ -206,11 +204,11 @@ Returns the statistical variance for the population for all values in the specif
 
 **Arguments**
 
-A Collection(`Double`)
+A Collection(`Double`).
 
 **Return Value**
 
-A `Double`
+A `Double`.
 
 **Example**
 

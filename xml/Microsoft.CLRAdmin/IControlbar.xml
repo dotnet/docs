@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("69FB811E-6C1C-11D0-A2CB-00C04FD909DD")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,7 +67,7 @@
       <Parameters>
         <Parameter Name="nType" Type="Microsoft.CLRAdmin.MMC_CONTROL_TYPE" />
         <Parameter Name="pExtendControlbar" Type="Microsoft.CLRAdmin.IExtendControlbar" />
-        <Parameter Name="ppUnknown" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="ppUnknown" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="nType">To be added.</param>

@@ -13,14 +13,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("B196B286-BAB4-101A-B69C-00AA00341D07")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -57,7 +60,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="sink" Type="System.IntPtr" />
-        <Parameter Name="cookie" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cookie" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="sink">A reference to the sink to receive calls for the outgoing interface managed by this connection point.</param>
@@ -94,7 +97,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="enumC" Type="Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections&amp;" RefType="out" />
+        <Parameter Name="enumC" Type="Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections" RefType="out" />
       </Parameters>
       <Docs>
         <param name="enumC">When this method returns, contains the newly created enumerator. This parameter is passed uninitialized.</param>
@@ -130,7 +133,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="piid" Type="System.Guid&amp;" RefType="out" />
+        <Parameter Name="piid" Type="System.Guid" RefType="out" />
       </Parameters>
       <Docs>
         <param name="piid">When this parameter returns, contains the IID of the outgoing interface managed by this connection point. This parameter is passed uninitialized.</param>
@@ -166,7 +169,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cpc" Type="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer&amp;" RefType="out" />
+        <Parameter Name="cpc" Type="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cpc">When this parameter returns, contains the connectable object's <see langword="IConnectionPointContainer" /> interface. This parameter is passed uninitialized.</param>

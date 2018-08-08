@@ -31,20 +31,26 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItemFilter</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="">
       <AttributeName>System.ComponentModel.ToolboxItemFilter</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.ComponentModel.Design.ActivityDesignerTheme(typeof(System.Workflow.ComponentModel.Design.ActivityDesignerTheme))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.ToolboxItemFilter("Microsoft.Workflow.VSDesigner", System.ComponentModel.ToolboxItemFilterType.Require)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Workflow.ComponentModel.Design.ActivitySet", System.ComponentModel.ToolboxItemFilterType.Custom)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -3259,8 +3265,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent System.ComponentModel.Design.IDesigner.Component" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#ComponentModel#Design#IDesigner#Component" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Component As IComponent Implements IDesigner.Component" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System.ComponentModel.Design.IDesigner.Component { System::ComponentModel::IComponent ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.ComponentModel.Design.IDesigner.Component" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System::ComponentModel::Design::IDesigner::Component { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IDesigner.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -3340,8 +3346,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerbCollection System.ComponentModel.Design.IDesigner.Verbs" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#ComponentModel#Design#IDesigner#Verbs" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Verbs As DesignerVerbCollection Implements IDesigner.Verbs" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::DesignerVerbCollection ^ System.ComponentModel.Design.IDesigner.Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.ComponentModel.Design.IDesigner.Verbs" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::DesignerVerbCollection ^ System::ComponentModel::Design::IDesigner::Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -3540,8 +3546,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.ViewTechnology[] System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#ComponentModel#Design#IRootDesigner#SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedTechnologies As ViewTechnology() Implements IRootDesigner.SupportedTechnologies" />
-      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System.ComponentModel.Design.IRootDesigner.SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
+      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System::ComponentModel::Design::IRootDesigner::SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -3685,8 +3691,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.CompositeActivityDesigner System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#Workflow#ComponentModel#Design#IWorkflowRootDesigner#InvokingDesigner" />
       <MemberSignature Language="VB.NET" Value=" Property InvokingDesigner As CompositeActivityDesigner Implements IWorkflowRootDesigner.InvokingDesigner" />
-      <MemberSignature Language="C++ CLI" Value="property System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner { System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
+      <MemberSignature Language="C++ CLI" Value="property System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ System::Workflow::ComponentModel::Design::IWorkflowRootDesigner::InvokingDesigner { System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner</InterfaceMember>
@@ -3746,8 +3752,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt; System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#Workflow#ComponentModel#Design#IWorkflowRootDesigner#MessageFilters" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property MessageFilters As ReadOnlyCollection(Of WorkflowDesignerMessageFilter) Implements IWorkflowRootDesigner.MessageFilters" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ System::Workflow::ComponentModel::Design::IWorkflowRootDesigner::MessageFilters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters</InterfaceMember>
@@ -3771,8 +3777,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesigner.System#Workflow#ComponentModel#Design#IWorkflowRootDesigner#SupportsLayoutPersistence" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsLayoutPersistence As Boolean Implements IWorkflowRootDesigner.SupportsLayoutPersistence" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.ActivityDesigner.System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Workflow::ComponentModel::Design::IWorkflowRootDesigner::SupportsLayoutPersistence { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence</InterfaceMember>

@@ -377,6 +377,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -480,6 +485,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1051,6 +1061,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1184,6 +1199,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1223,6 +1243,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1607,8 +1632,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowEdit" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#AllowEdit" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowEdit As Boolean Implements IBindingList.AllowEdit" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowEdit { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.AllowEdit" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowEdit { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowEdit" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
@@ -1628,6 +1653,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1650,8 +1680,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowNew" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#AllowNew" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowNew As Boolean Implements IBindingList.AllowNew" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowNew { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.AllowNew" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowNew { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowNew" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.AllowNew</InterfaceMember>
@@ -1671,6 +1701,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1686,8 +1721,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowRemove" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#AllowRemove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowRemove As Boolean Implements IBindingList.AllowRemove" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowRemove { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.AllowRemove" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowRemove { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowRemove" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
@@ -1707,6 +1742,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1742,6 +1782,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1788,6 +1833,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1815,8 +1865,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.IsSorted" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#IsSorted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSorted As Boolean Implements IBindingList.IsSorted" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.IsSorted { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.IsSorted" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::IsSorted { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.IsSorted" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
@@ -1836,6 +1886,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1925,6 +1980,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1946,8 +2006,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.ListSortDirection System.ComponentModel.IBindingList.SortDirection" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#SortDirection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SortDirection As ListSortDirection Implements IBindingList.SortDirection" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDirection System.ComponentModel.IBindingList.SortDirection { System::ComponentModel::ListSortDirection get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDirection System::ComponentModel::IBindingList::SortDirection { System::ComponentModel::ListSortDirection get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SortDirection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
@@ -1967,6 +2027,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
@@ -1988,8 +2053,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.IBindingList.SortProperty" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#SortProperty" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SortProperty As PropertyDescriptor Implements IBindingList.SortProperty" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.IBindingList.SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.SortProperty" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System::ComponentModel::IBindingList::SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SortProperty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
@@ -2009,6 +2074,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
@@ -2030,8 +2100,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#SupportsChangeNotification" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsChangeNotification As Boolean Implements IBindingList.SupportsChangeNotification" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsChangeNotification { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.SupportsChangeNotification" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsChangeNotification { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
@@ -2051,6 +2121,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2073,8 +2148,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#SupportsSearching" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsSearching As Boolean Implements IBindingList.SupportsSearching" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSearching { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.SupportsSearching" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsSearching { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
@@ -2094,6 +2169,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2116,8 +2196,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#SupportsSorting" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsSorting As Boolean Implements IBindingList.SupportsSorting" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSorting { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IBindingList.SupportsSorting" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsSorting { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
@@ -2137,6 +2217,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2159,8 +2244,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindingList`1.System#ComponentModel#IRaiseItemChangedEvents#RaisesItemChangedEvents" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RaisesItemChangedEvents As Boolean Implements IRaiseItemChangedEvents.RaisesItemChangedEvents" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.BindingList&lt;'T&gt;.System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IRaiseItemChangedEvents::RaisesItemChangedEvents { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents</InterfaceMember>

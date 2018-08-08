@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -370,14 +370,14 @@
     <Member MemberName="Dir">
       <MemberSignature Language="C#" Value="public static string Dir (string Pathname, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Dir(string Pathname, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function Dir (Pathname As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (Pathname, Attributes)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (Pathname, Attributes)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -733,7 +733,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Boolean" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -818,7 +818,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Byte" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -903,7 +903,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Char&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Char" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -988,7 +988,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.DateTime&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.DateTime" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1073,7 +1073,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Decimal&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Decimal" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1158,7 +1158,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Double&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Double" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1243,7 +1243,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int16" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1328,7 +1328,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int32" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1413,7 +1413,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int64" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1498,7 +1498,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Single" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1583,7 +1583,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.ValueType&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.ValueType" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -1668,7 +1668,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.String" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
         <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
       </Parameters>
@@ -1755,7 +1755,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Array&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Array" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
         <Parameter Name="ArrayIsDynamic" Type="System.Boolean" />
         <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
@@ -1844,7 +1844,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Object" RefType="ref" />
         <Parameter Name="RecordNumber" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -3110,8 +3110,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This member has been deprecated. Please use FilePutObject to write Object types, or coerce FileNumber and RecordNumber to Integer for writing non-Object types. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Obsolete("Use FilePutObject to write Object types, or coerce FileNumber and RecordNumber to Integer for writing non-Object types")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3657,7 +3660,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -3729,7 +3732,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Byte" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -3801,7 +3804,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Char&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Char" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -3873,7 +3876,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.DateTime&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.DateTime" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -3945,7 +3948,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Decimal&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Decimal" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4017,7 +4020,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Double&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Double" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4089,7 +4092,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int16" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4161,7 +4164,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4233,7 +4236,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4305,7 +4308,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4377,7 +4380,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.Single" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
@@ -4449,7 +4452,7 @@ Result = GetAttr(FName) And vbArchive
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumber" Type="System.Int32" />
-        <Parameter Name="Value" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="Value" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>

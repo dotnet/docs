@@ -235,6 +235,11 @@ End Class
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EntitySetBase&gt;</ReturnType>
       </ReturnValue>
@@ -278,6 +283,11 @@ End Class
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;</ReturnType>
       </ReturnValue>
@@ -358,6 +368,11 @@ End Class
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -380,6 +395,11 @@ End Class
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -409,7 +429,7 @@ End Class
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet&amp;" RefType="out" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the entity set that is searched for.</param>
@@ -441,7 +461,7 @@ End Class
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="relationshipSet" Type="System.Data.Metadata.Edm.RelationshipSet&amp;" RefType="out" />
+        <Parameter Name="relationshipSet" Type="System.Data.Metadata.Edm.RelationshipSet" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the relationship set that is searched for.</param>

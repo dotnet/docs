@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.FlowDocumentReader" />
       </Parameters>
@@ -123,8 +128,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#CurrentView" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CurrentView As Integer Implements IMultipleViewProvider.CurrentView" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IMultipleViewProvider::CurrentView { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView</InterfaceMember>

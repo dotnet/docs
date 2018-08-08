@@ -51,6 +51,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.SessionState.SessionIDManager" /> class.</summary>
@@ -288,7 +293,7 @@
       <MemberSignature Language="F#" Value="abstract member InitializeRequest : System.Web.HttpContext * bool *  -&gt; bool&#xA;override this.InitializeRequest : System.Web.HttpContext * bool *  -&gt; bool" Usage="sessionIDManager.InitializeRequest (context, suppressAutoDetectRedirect, supportSessionIDReissue)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,7 +306,7 @@
       <Parameters>
         <Parameter Name="context" Type="System.Web.HttpContext" />
         <Parameter Name="suppressAutoDetectRedirect" Type="System.Boolean" />
-        <Parameter Name="supportSessionIDReissue" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="supportSessionIDReissue" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.Web.HttpContext" /> object that contains information about the current request.</param>
@@ -369,7 +374,7 @@
       <MemberSignature Language="F#" Value="abstract member SaveSessionID : System.Web.HttpContext * string *  *  -&gt; unit&#xA;override this.SaveSessionID : System.Web.HttpContext * string *  *  -&gt; unit" Usage="sessionIDManager.SaveSessionID (context, id, redirected, cookieAdded)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean@,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,8 +387,8 @@
       <Parameters>
         <Parameter Name="context" Type="System.Web.HttpContext" />
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="redirected" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="cookieAdded" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="redirected" Type="System.Boolean" RefType="out" />
+        <Parameter Name="cookieAdded" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The current <see cref="T:System.Web.HttpContext" /> object that references server objects used to process HTTP requests (for example, the <see cref="P:System.Web.HttpContext.Request" /> and <see cref="P:System.Web.HttpContext.Response" /> properties).</param>

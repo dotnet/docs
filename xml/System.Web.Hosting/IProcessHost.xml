@@ -12,11 +12,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0ccd465e-3114-4ca3-ad50-cea561307e93")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,7 +52,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum&amp;" RefType="out" />
+        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appDomainInfoEnum">The <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</param>
@@ -133,7 +136,7 @@
       <Parameters>
         <Parameter Name="appId" Type="System.String" />
         <Parameter Name="appPath" Type="System.String" />
-        <Parameter Name="runtimeInterface" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="runtimeInterface" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appId">The unique application ID.</param>

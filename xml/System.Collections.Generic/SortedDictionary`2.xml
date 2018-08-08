@@ -50,10 +50,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_DictionaryDebugView`2))</AttributeName>
     </Attribute>
   </Attributes>
@@ -147,6 +147,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedDictionary`2" /> class that is empty and uses the default <see cref="T:System.Collections.Generic.IComparer`1" /> implementation for the key type.</summary>
@@ -259,6 +264,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" />
       </Parameters>
@@ -1084,8 +1094,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey,TValue&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1161,8 +1171,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TKey&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -1184,6 +1194,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TKey&gt;</ReturnType>
       </ReturnValue>
@@ -1198,8 +1213,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TValue&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -1221,6 +1236,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TValue&gt;</ReturnType>
       </ReturnValue>
@@ -1272,8 +1292,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TKey&gt; System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As IEnumerable(Of TKey) Implements IReadOnlyDictionary(Of TKey, TValue).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System::Collections::Generic::IReadOnlyDictionary&lt;TKey,TValue&gt;::Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Keys</InterfaceMember>
@@ -1307,8 +1327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TValue&gt; System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As IEnumerable(Of TValue) Implements IReadOnlyDictionary(Of TKey, TValue).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System::Collections::Generic::IReadOnlyDictionary&lt;TKey,TValue&gt;::Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Values</InterfaceMember>
@@ -1411,8 +1431,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1463,8 +1483,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1759,8 +1779,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1808,8 +1828,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1857,8 +1877,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionary::Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1937,8 +1957,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1960,6 +1980,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
@@ -2062,8 +2087,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -2085,6 +2110,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
@@ -2192,8 +2222,8 @@ finally
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="sortedDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
-        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2217,7 +2247,7 @@ finally
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

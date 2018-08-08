@@ -113,10 +113,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinios-10.8">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(System.Net.Http.CFNetworkHandler/&lt;SendAsync&gt;c__async0))</AttributeName>
         </Attribute>
       </Attributes>

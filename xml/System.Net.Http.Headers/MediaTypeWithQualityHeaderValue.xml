@@ -230,7 +230,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&amp;" RefType="out" />
+        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The string to validate.</param>

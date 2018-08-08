@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("d8013ff1-730b-45e2-ba24-874b7242c425")</AttributeName>
     </Attribute>
   </Attributes>
@@ -155,7 +155,7 @@
       <MemberSignature Language="F#" Value="abstract member GenerateSigned : string * string * bool *  -&gt; string&#xA;override this.GenerateSigned : string * string * bool *  -&gt; string" Usage="generateMetadata.GenerateSigned (strSrcTypeLib, outPath, InstallGac, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -170,7 +170,7 @@
         <Parameter Name="strSrcTypeLib" Type="System.String" />
         <Parameter Name="outPath" Type="System.String" />
         <Parameter Name="InstallGac" Type="System.Boolean" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="strSrcTypeLib">The name of the type library for which to generate an assembly.</param>

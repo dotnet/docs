@@ -266,8 +266,8 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
         <Parameter Name="requestHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
         <Parameter Name="requestStream" Type="System.IO.Stream" />
-        <Parameter Name="responseHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders&amp;" RefType="out" />
-        <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
+        <Parameter Name="responseHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders" RefType="out" />
+        <Parameter Name="responseStream" Type="System.IO.Stream" RefType="out" />
       </Parameters>
       <Docs>
         <param name="msg">The message to process.</param>

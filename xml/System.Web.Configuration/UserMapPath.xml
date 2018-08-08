@@ -34,6 +34,11 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="fileMap" Type="System.Configuration.ConfigurationFileMap" />
       </Parameters>
@@ -83,7 +88,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDefaultSiteNameAndID :  *  -&gt; unit&#xA;override this.GetDefaultSiteNameAndID :  *  -&gt; unit" Usage="userMapPath.GetDefaultSiteNameAndID (siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,8 +98,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="siteName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="siteName" Type="System.String" RefType="out" />
+        <Parameter Name="siteID" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteName">The name of the default site.</param>
@@ -137,7 +142,7 @@
       <MemberSignature Language="F#" Value="abstract member GetPathConfigFilename : string * string *  *  -&gt; unit&#xA;override this.GetPathConfigFilename : string * string *  *  -&gt; unit" Usage="userMapPath.GetPathConfigFilename (siteID, path, directory, baseName)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,8 +154,8 @@
       <Parameters>
         <Parameter Name="siteID" Type="System.String" />
         <Parameter Name="path" Type="System.String" />
-        <Parameter Name="directory" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="baseName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="directory" Type="System.String" RefType="out" />
+        <Parameter Name="baseName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteID">A unique identifier for the site.</param>
@@ -225,7 +230,7 @@
       <MemberSignature Language="F#" Value="abstract member ResolveSiteArgument : string *  *  -&gt; unit&#xA;override this.ResolveSiteArgument : string *  *  -&gt; unit" Usage="userMapPath.ResolveSiteArgument (siteArgument, siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,8 +241,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="siteArgument" Type="System.String" />
-        <Parameter Name="siteName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="siteName" Type="System.String" RefType="out" />
+        <Parameter Name="siteID" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteArgument">The site name or site identifier.</param>

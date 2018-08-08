@@ -18,13 +18,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("5ACF41FF-6F2B-4623-8146-740C89212B21")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
@@ -49,8 +49,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buildSucceededEvent" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="buildFailedEvent" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="buildSucceededEvent" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="buildFailedEvent" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="buildSucceededEvent">[out] the build-succeeded event.</param>

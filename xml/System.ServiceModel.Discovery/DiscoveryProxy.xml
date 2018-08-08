@@ -56,6 +56,11 @@
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="messageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
       </Parameters>
@@ -175,7 +180,7 @@
       <MemberSignature Language="F#" Value="abstract member EndShouldRedirectFind : IAsyncResult *  -&gt; bool&#xA;override this.EndShouldRedirectFind : IAsyncResult *  -&gt; bool" Usage="discoveryProxy.EndShouldRedirectFind (result, redirectionEndpoints)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -186,7 +191,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
+        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the completed asynchronous operation.</param>
@@ -213,7 +218,7 @@
       <MemberSignature Language="F#" Value="abstract member EndShouldRedirectResolve : IAsyncResult *  -&gt; bool&#xA;override this.EndShouldRedirectResolve : IAsyncResult *  -&gt; bool" Usage="discoveryProxy.EndShouldRedirectResolve (result, redirectionEndpoints)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -224,7 +229,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
+        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the completed asynchronous operation.</param>

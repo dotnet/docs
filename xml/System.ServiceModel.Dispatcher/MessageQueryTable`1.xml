@@ -399,6 +399,11 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>TItem</ReturnType>
       </ReturnValue>
@@ -522,6 +527,11 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -552,7 +562,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.ServiceModel.Dispatcher.MessageQuery" />
-        <Parameter Name="value" Type="TItem&amp;" RefType="out" />
+        <Parameter Name="value" Type="TItem" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The query that is used as a key to retrieve the data.</param>

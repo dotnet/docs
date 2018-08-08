@@ -65,7 +65,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="request" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" RefType="ref" />
         <Parameter Name="channel" Type="System.ServiceModel.IClientChannel" />
         <Parameter Name="instanceContext" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
@@ -122,7 +122,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reply" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
+        <Parameter Name="reply" Type="System.ServiceModel.Channels.Message" RefType="ref" />
         <Parameter Name="correlationState" Type="System.Object" />
       </Parameters>
       <Docs>

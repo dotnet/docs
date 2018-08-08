@@ -209,7 +209,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="item" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <param name="item">When this method returns, if the object was removed and returned successfully, <c>item</c> contains the removed object. If no object was available to be removed, the value is unspecified.</param>

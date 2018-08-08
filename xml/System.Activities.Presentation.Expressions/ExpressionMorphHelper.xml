@@ -53,7 +53,7 @@
       <Parameters>
         <Parameter Name="expression" Type="System.Activities.ActivityWithResult" />
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
       </Parameters>
       <Docs>
         <param name="expression">The expression used.</param>
@@ -85,7 +85,7 @@
         <Parameter Name="isLocationExpression" Type="System.Boolean" />
         <Parameter Name="newType" Type="System.Type" />
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
-        <Parameter Name="newExpression" Type="System.Activities.ActivityWithResult&amp;" RefType="out" />
+        <Parameter Name="newExpression" Type="System.Activities.ActivityWithResult" RefType="out" />
       </Parameters>
       <Docs>
         <param name="expression">The expression to morph.</param>

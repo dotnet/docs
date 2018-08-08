@@ -352,7 +352,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
@@ -616,7 +616,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="timeout">The <see cref="T:System.IAsyncResult" /> returned by a call to one of the <see cref="Overload:System.ServiceModel.Channels.IInputChannel.BeginReceive" /> methods.</param>

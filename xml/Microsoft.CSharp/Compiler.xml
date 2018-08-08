@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Obsolete("The recommended alternative is Microsoft.CSharp.CSharpCodeProvider and System.CodeDom.Compiler.ICodeCompiler.  The CSharpCodeProvider and CodeDom ICodeCompiler provide a much richer set of functionality for specifying how to launch the compiler.")</AttributeName>
     </Attribute>
   </Attributes>

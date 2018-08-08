@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("5F9A955F-AA55-4127-A32B-33496AA8A44E")</AttributeName>
     </Attribute>
   </Attributes>
@@ -66,7 +66,7 @@
       <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string *  -&gt; unit&#xA;override this.GetServerBinPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -81,7 +81,7 @@
         <Parameter Name="rootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="binPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="binPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>
@@ -105,7 +105,7 @@
       <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string *  -&gt; unit&#xA;override this.GetServerPhysicalPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -120,7 +120,7 @@
         <Parameter Name="rootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>

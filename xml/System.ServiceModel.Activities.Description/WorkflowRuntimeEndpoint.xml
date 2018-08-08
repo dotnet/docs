@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -168,7 +168,7 @@
         <Parameter Name="inputs" Type="System.Object[]" />
         <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
         <Parameter Name="responseContext" Type="System.ServiceModel.Activities.WorkflowHostingResponseContext" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="inputs">The input objects.</param>

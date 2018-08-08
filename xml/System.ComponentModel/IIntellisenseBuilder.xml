@@ -87,7 +87,7 @@
       <Parameters>
         <Parameter Name="language" Type="System.String" />
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="newValue" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="newValue" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="language">The language service that is calling the builder.</param>

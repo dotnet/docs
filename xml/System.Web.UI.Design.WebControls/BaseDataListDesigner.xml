@@ -68,6 +68,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" /> class.</summary>
@@ -230,6 +235,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceDesigner</ReturnType>
       </ReturnValue>
@@ -407,7 +417,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="dummyDataSource" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="dummyDataSource" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="minimumRows">The minimum number of rows of sample data that the data source should contain.</param>
@@ -450,7 +460,7 @@
       <Parameters>
         <Parameter Name="selectedDataSource" Type="System.Collections.IEnumerable" />
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="dummyDataSource" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="dummyDataSource" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="selectedDataSource">An object implementing an <see cref="T:System.Collections.IEnumerable" /> that is used as a template for the data format.</param>
@@ -568,8 +578,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -695,7 +708,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Use of this method is not recommended because the AutoFormat dialog is launched by the designer host. The list of available AutoFormats is exposed on the ControlDesigner in the AutoFormats property. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -847,6 +860,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -918,6 +936,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1019,8 +1042,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BaseDataListDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataBindingSchemaProvider.CanRefreshSchema" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.BaseDataListDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataBindingSchemaProvider::CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema</InterfaceMember>
@@ -1089,8 +1112,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BaseDataListDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As IDataSourceViewSchema Implements IDataBindingSchemaProvider.Schema" />
-      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System.Web.UI.Design.IDataBindingSchemaProvider.Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.BaseDataListDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System::Web::UI::Design::IDataBindingSchemaProvider::Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema</InterfaceMember>

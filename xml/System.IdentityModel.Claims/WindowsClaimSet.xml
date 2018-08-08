@@ -285,6 +285,14 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.IdentityModel.Claims.WindowsClaimSet/&lt;FindClaims&gt;d__1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.IdentityModel.Claims.WindowsClaimSet/&lt;FindClaims&gt;d__36))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt;</ReturnType>
       </ReturnValue>

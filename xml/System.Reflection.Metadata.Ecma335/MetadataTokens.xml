@@ -1405,7 +1405,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="type" Type="System.Reflection.Metadata.HandleKind" />
-        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.HeapIndex&amp;" RefType="out" />
+        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.HeapIndex" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -1435,7 +1435,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="type" Type="System.Reflection.Metadata.HandleKind" />
-        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.TableIndex&amp;" RefType="out" />
+        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.TableIndex" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>

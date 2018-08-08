@@ -405,7 +405,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -498,7 +498,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -547,7 +547,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -596,7 +596,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -879,7 +879,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -988,7 +988,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1019,7 +1019,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1050,7 +1050,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2889,7 +2889,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2978,7 +2978,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3011,7 +3011,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3044,7 +3044,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3255,7 +3255,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3264,8 +3264,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.Byte&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt16&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt16&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt16&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt16&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3293,8 +3293,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.Int16&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int32&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int32&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int32&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int32&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3322,8 +3322,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int64&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int64&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int64&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int64&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3347,7 +3347,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3356,8 +3356,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.SByte&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int16&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int16&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Int16&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Int16&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3385,8 +3385,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.Single&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Double&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Double&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.Double&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.Double&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3410,7 +3410,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3419,8 +3419,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.UInt16&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt32&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt32&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt32&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt32&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3444,7 +3444,7 @@
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3453,8 +3453,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.Numerics.Vector&lt;System.UInt32&gt;" />
-        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt64&gt;&amp;" RefType="out" />
-        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt64&gt;&amp;" RefType="out" />
+        <Parameter Name="dest1" Type="System.Numerics.Vector&lt;System.UInt64&gt;" RefType="out" />
+        <Parameter Name="dest2" Type="System.Numerics.Vector&lt;System.UInt64&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>

@@ -836,7 +836,7 @@
       <MemberSignature Language="F#" Value="abstract member EndCancel : IAsyncResult *  -&gt; unit&#xA;override this.EndCancel : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndCancel (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -847,7 +847,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
+        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> reference to the outstanding asynchronous send request.</param>
@@ -929,7 +929,7 @@
       <MemberSignature Language="F#" Value="abstract member EndIssue : IAsyncResult *  -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.EndIssue : IAsyncResult *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSTrustChannel.EndIssue (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -940,7 +940,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
+        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the outstanding asynchronous send request.</param>
@@ -1023,7 +1023,7 @@
       <MemberSignature Language="F#" Value="abstract member EndRenew : IAsyncResult *  -&gt; unit&#xA;override this.EndRenew : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndRenew (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1034,7 +1034,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
+        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the outstanding asynchronous send request.</param>
@@ -1089,7 +1089,7 @@
       <MemberSignature Language="F#" Value="abstract member EndValidate : IAsyncResult *  -&gt; unit&#xA;override this.EndValidate : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndValidate (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1100,7 +1100,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
+        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the outstanding asynchronous send request.</param>
@@ -1293,7 +1293,7 @@
       <MemberSignature Language="F#" Value="abstract member Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken *  -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSTrustChannel.Issue (rst, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1304,7 +1304,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="rst" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
-        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
+        <Parameter Name="rstr" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rst">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>

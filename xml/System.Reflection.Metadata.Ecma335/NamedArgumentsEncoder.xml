@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -99,9 +99,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="isField" Type="System.Boolean" />
-        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&amp;" RefType="out" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.Ecma335.NameEncoder&amp;" RefType="out" />
-        <Parameter Name="literal" Type="System.Reflection.Metadata.Ecma335.LiteralEncoder&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder" RefType="out" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.Ecma335.NameEncoder" RefType="out" />
+        <Parameter Name="literal" Type="System.Reflection.Metadata.Ecma335.LiteralEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="isField">To be added.</param>

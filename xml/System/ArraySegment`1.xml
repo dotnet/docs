@@ -47,6 +47,11 @@
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.1">
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of the elements in the array segment.</typeparam>
     <summary>Delimits a section of a one-dimensional array.</summary>
@@ -1104,8 +1109,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;T&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1345,8 +1350,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
-      <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IList&lt;T&gt;.Item[int] { T get(int index); void set(int index, T value); };" />
-      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.IList&lt;T&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IList&lt;T&gt;::Item[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -1450,8 +1455,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As T Implements IReadOnlyList(Of T).Item" />
-      <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item[int] { T get(int index); };" />
-      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IReadOnlyList&lt;T&gt;::Item[int] { T get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>

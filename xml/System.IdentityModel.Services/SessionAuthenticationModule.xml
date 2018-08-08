@@ -881,7 +881,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sessionToken" Type="System.IdentityModel.Tokens.SessionSecurityToken&amp;" RefType="out" />
+        <Parameter Name="sessionToken" Type="System.IdentityModel.Tokens.SessionSecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="sessionToken">When this method returns, contains the session security token that was read from the session cookie.</param>

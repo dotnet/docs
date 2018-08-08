@@ -60,6 +60,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="appVirtualDir" Type="System.String" />
         <Parameter Name="appPhysicalSourceDir" Type="System.String" />
@@ -87,6 +92,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="appVirtualDir" Type="System.String" />
         <Parameter Name="appPhysicalSourceDir" Type="System.String" />
@@ -123,6 +133,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="appVirtualDir" Type="System.String" />
         <Parameter Name="appPhysicalSourceDir" Type="System.String" />
@@ -334,6 +349,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -433,7 +453,7 @@
       <Parameters>
         <Parameter Name="virtualPath" Type="System.String" />
         <Parameter Name="virtualFileString" Type="System.String" />
-        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary" RefType="out" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to the file.</param>
@@ -475,14 +495,19 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
-        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+        <Parameter Name="codeDomProviderType" Type="System.Type" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters" RefType="out" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary" RefType="out" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to the file.</param>
@@ -524,9 +549,9 @@
       <Parameters>
         <Parameter Name="virtualPath" Type="System.String" />
         <Parameter Name="virtualFileString" Type="System.String" />
-        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
-        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+        <Parameter Name="codeDomProviderType" Type="System.Type" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters" RefType="out" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary" RefType="out" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to the file.</param>
@@ -635,9 +660,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="virtualCodeDir" Type="System.String" />
-        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
-        <Parameter Name="generatedFilesDir" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="codeDomProviderType" Type="System.Type" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters" RefType="out" />
+        <Parameter Name="generatedFilesDir" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="virtualCodeDir">The directory about which to retrieve information.</param>
@@ -709,8 +734,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
+        <Parameter Name="codeDomProviderType" Type="System.Type" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters" RefType="out" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to the file.</param>
@@ -969,6 +994,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1005,6 +1035,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

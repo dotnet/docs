@@ -186,7 +186,7 @@
       <Parameters>
         <Parameter Name="publicLocation" Type="System.Activities.LocationReference" />
         <Parameter Name="accessDirection" Type="System.Activities.ArgumentDirection" />
-        <Parameter Name="equivalentLocation" Type="System.Activities.LocationReference&amp;" RefType="out" />
+        <Parameter Name="equivalentLocation" Type="System.Activities.LocationReference" RefType="out" />
       </Parameters>
       <Docs>
         <param name="publicLocation">Public location reference.</param>
@@ -215,7 +215,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="publicReference" Type="System.Activities.LocationReference" />
-        <Parameter Name="equivalentReference" Type="System.Activities.LocationReference&amp;" RefType="out" />
+        <Parameter Name="equivalentReference" Type="System.Activities.LocationReference" RefType="out" />
       </Parameters>
       <Docs>
         <param name="publicReference">Public reference location.</param>

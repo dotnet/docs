@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("A31B6577-71D2-4344-AEDF-ADC1B0DC5347")</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,7 +46,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -62,9 +62,9 @@
         <Parameter Name="secureSockets" Type="System.String" />
         <Parameter Name="authentication" Type="System.String" />
         <Parameter Name="operation" Type="System.String" />
-        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="baseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>
@@ -102,7 +102,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
         </Attribute>
       </Attributes>
@@ -147,7 +147,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
         </Attribute>
       </Attributes>
@@ -158,15 +158,15 @@
         <Parameter Name="rootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="exists" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="secureSockets" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="windowsAuth" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="anonymous" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="homePage" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="discoFile" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="exists" Type="System.String" RefType="out" />
+        <Parameter Name="secureSockets" Type="System.String" RefType="out" />
+        <Parameter Name="windowsAuth" Type="System.String" RefType="out" />
+        <Parameter Name="anonymous" Type="System.String" RefType="out" />
+        <Parameter Name="homePage" Type="System.String" RefType="out" />
+        <Parameter Name="discoFile" Type="System.String" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
+        <Parameter Name="baseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>

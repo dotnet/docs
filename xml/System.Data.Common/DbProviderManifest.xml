@@ -38,6 +38,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbProviderManifest" /> class.</summary>
@@ -405,7 +410,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="escapeCharacter" Type="System.Char&amp;" RefType="out" />
+        <Parameter Name="escapeCharacter" Type="System.Char" RefType="out" />
       </Parameters>
       <Docs>
         <param name="escapeCharacter">If the provider supports escaping, the character that would be used as the escape character.</param>

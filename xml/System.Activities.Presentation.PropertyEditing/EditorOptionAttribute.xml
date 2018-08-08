@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -79,7 +79,7 @@
       <Parameters>
         <Parameter Name="attributes" Type="System.Collections.IEnumerable" />
         <Parameter Name="optionName" Type="System.String" />
-        <Parameter Name="optionValue" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="optionValue" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="attributes">The collection of attributes.</param>

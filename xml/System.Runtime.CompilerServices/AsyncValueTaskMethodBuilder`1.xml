@@ -60,8 +60,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter&amp;" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -89,6 +89,11 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -105,8 +110,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter&amp;" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -258,7 +263,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TStateMachine">To be added.</typeparam>

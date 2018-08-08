@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("5AC4CB7E-F89F-429b-926B-C7F940936BF4")</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,7 +48,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
         </Attribute>
       </Attributes>
@@ -59,7 +59,7 @@
         <Parameter Name="rootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="binPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="binPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>
@@ -88,7 +88,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -99,7 +99,7 @@
         <Parameter Name="rootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server.</param>
@@ -128,7 +128,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
         </Attribute>
       </Attributes>

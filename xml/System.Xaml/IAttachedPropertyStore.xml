@@ -145,7 +145,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="attachableMemberIdentifier" Type="System.Xaml.AttachableMemberIdentifier" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to get.</param>

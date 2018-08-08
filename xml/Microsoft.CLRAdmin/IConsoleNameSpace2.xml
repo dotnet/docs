@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("255F18CC-65DB-11D1-A7DC-00C04FD8D565")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,7 +40,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="a" Type="Microsoft.CLRAdmin.CLSID" />
-        <Parameter Name="b" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="b" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -116,8 +116,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="a" Type="System.UInt32" />
-        <Parameter Name="b" Type="System.UInt32&amp;" RefType="ref" />
-        <Parameter Name="c" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="b" Type="System.UInt32" RefType="ref" />
+        <Parameter Name="c" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -143,7 +143,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -168,8 +168,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="a" Type="System.UInt32" />
-        <Parameter Name="b" Type="System.UInt32&amp;" RefType="ref" />
-        <Parameter Name="c" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="b" Type="System.UInt32" RefType="ref" />
+        <Parameter Name="c" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -196,8 +196,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="a" Type="System.Int32" />
-        <Parameter Name="b" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="c" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="b" Type="System.Int32" RefType="out" />
+        <Parameter Name="c" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -223,7 +223,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -247,7 +247,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="a" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>

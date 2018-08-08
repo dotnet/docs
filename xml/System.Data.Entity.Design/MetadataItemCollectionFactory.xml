@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -51,7 +51,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> that contains the metadata files.</param>
@@ -79,7 +79,7 @@
       <Parameters>
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="readers">An <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" /> that contains the metadata files.</param>
@@ -119,7 +119,7 @@
         <Parameter Name="edmCollection" Type="System.Data.Metadata.Edm.EdmItemCollection" />
         <Parameter Name="storeCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="edmCollection">An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object.</param>
@@ -151,7 +151,7 @@
         <Parameter Name="storeCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="edmCollection">An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object.</param>
@@ -191,7 +191,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="readers">A collection of <see cref="T:System.Xml.XmlReader" /> objects, each of which each reads from a storage model file. The storage model file is written in the store schema definition language (SSDL).</param>
@@ -219,7 +219,7 @@
       <Parameters>
         <Parameter Name="readers" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
-        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;&amp;" RefType="out" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="readers">A collection of <see cref="T:System.Xml.XmlReader" /> objects, each of which each reads from a storage model file. The storage model file is written in the store schema definition language (SSDL).</param>

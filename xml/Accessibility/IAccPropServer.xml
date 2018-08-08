@@ -12,11 +12,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("76C0DBBB-15E0-4E7B-B61B-20EEEA2001E0")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,11 +51,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
         <Parameter Name="dwIDStringLen" Type="System.UInt32" />
         <Parameter Name="idProp" Type="System.Guid" />
-        <Parameter Name="pvarValue" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="pfHasProp" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pvarValue" Type="System.Object" RefType="out" />
+        <Parameter Name="pfHasProp" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pIDString">Contains a string that identifies the property being requested.</param>

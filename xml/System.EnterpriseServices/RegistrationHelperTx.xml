@@ -16,14 +16,17 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.EnterpriseServices.Transaction(System.EnterpriseServices.TransactionOption.RequiresNew)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The RegistrationHelperTx class has been deprecated.")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("c89ac250-e18a-4fc7-abd5-b8897b6a78a5")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Runtime.InteropServices.Guid("9e31421c-2f15-4f35-ad20-66fb9d4cd428")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -138,8 +141,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.String" />
-        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="application" Type="System.String" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String" RefType="ref" />
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
         <Parameter Name="sync" Type="System.Object" />
       </Parameters>
@@ -182,9 +185,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.String" />
-        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="application" Type="System.String" RefType="ref" />
         <Parameter Name="partition" Type="System.String" />
-        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String" RefType="ref" />
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
         <Parameter Name="sync" Type="System.Object" />
       </Parameters>
@@ -227,7 +230,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig" RefType="ref" />
         <Parameter Name="sync" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -386,7 +389,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig" RefType="ref" />
         <Parameter Name="sync" Type="System.Object" />
       </Parameters>
       <Docs>

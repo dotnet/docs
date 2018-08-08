@@ -46,6 +46,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" /> class.</summary>
@@ -186,6 +191,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceDesigner</ReturnType>
       </ReturnValue>
@@ -392,8 +402,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataBindingSchemaProvider.CanRefreshSchema" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataBindingSchemaProvider::CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema</InterfaceMember>
@@ -459,8 +469,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As IDataSourceViewSchema Implements IDataBindingSchemaProvider.Schema" />
-      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System.Web.UI.Design.IDataBindingSchemaProvider.Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System::Web::UI::Design::IDataBindingSchemaProvider::Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema</InterfaceMember>

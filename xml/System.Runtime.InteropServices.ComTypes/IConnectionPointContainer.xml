@@ -27,11 +27,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("B196B284-BAB4-101A-B69C-00AA00341D07")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -80,7 +83,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints&amp;" RefType="out" />
+        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppEnum">When this method returns, contains the interface pointer of the enumerator. This parameter is passed uninitialized.</param>
@@ -127,8 +130,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppCP" Type="System.Runtime.InteropServices.ComTypes.IConnectionPoint&amp;" RefType="out" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppCP" Type="System.Runtime.InteropServices.ComTypes.IConnectionPoint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>

@@ -321,7 +321,7 @@
         <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="terminationException" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
@@ -346,8 +346,8 @@
         <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="outputs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&amp;" RefType="out" />
-        <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="outputs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" RefType="out" />
+        <Parameter Name="terminationException" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="outputs">When this method returns, <c>outputs</c> contains a dictionary of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments of the workflow, keyed by argument name. This parameter is passed uninitialized.</param>

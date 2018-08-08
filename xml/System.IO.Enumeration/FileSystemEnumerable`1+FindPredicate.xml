@@ -16,7 +16,7 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry&amp;" RefType="ref" />
+    <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Boolean</ReturnType>

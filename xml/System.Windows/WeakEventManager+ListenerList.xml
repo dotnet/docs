@@ -291,6 +291,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
       </ReturnValue>
@@ -396,7 +401,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="list" Type="System.Windows.WeakEventManager+ListenerList&amp;" RefType="ref" />
+        <Parameter Name="list" Type="System.Windows.WeakEventManager+ListenerList" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="list">The list to check for use state and potentially copy.</param>

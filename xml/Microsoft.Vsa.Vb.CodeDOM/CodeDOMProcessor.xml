@@ -19,11 +19,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.Guid("99749841-0D55-4cf4-8D0D-F212ECE9409A")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Runtime.InteropServices.Guid("F1058E4D-A3B4-43d8-A5E8-35359FB76D9B")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

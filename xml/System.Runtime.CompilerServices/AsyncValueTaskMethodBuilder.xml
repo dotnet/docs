@@ -46,8 +46,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter&amp;" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -86,8 +86,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter&amp;" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -211,7 +211,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TStateMachine">To be added.</typeparam>

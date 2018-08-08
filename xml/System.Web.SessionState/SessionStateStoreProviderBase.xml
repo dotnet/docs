@@ -83,6 +83,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.SessionState.SessionStateStoreProviderBase" /> class.</summary>
@@ -284,10 +289,10 @@
       <Parameters>
         <Parameter Name="context" Type="System.Web.HttpContext" />
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="locked" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="lockAge" Type="System.TimeSpan&amp;" RefType="out" />
-        <Parameter Name="lockId" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="actions" Type="System.Web.SessionState.SessionStateActions&amp;" RefType="out" />
+        <Parameter Name="locked" Type="System.Boolean" RefType="out" />
+        <Parameter Name="lockAge" Type="System.TimeSpan" RefType="out" />
+        <Parameter Name="lockId" Type="System.Object" RefType="out" />
+        <Parameter Name="actions" Type="System.Web.SessionState.SessionStateActions" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.Web.HttpContext" /> for the current request.</param>
@@ -342,10 +347,10 @@
       <Parameters>
         <Parameter Name="context" Type="System.Web.HttpContext" />
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="locked" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="lockAge" Type="System.TimeSpan&amp;" RefType="out" />
-        <Parameter Name="lockId" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="actions" Type="System.Web.SessionState.SessionStateActions&amp;" RefType="out" />
+        <Parameter Name="locked" Type="System.Boolean" RefType="out" />
+        <Parameter Name="lockAge" Type="System.TimeSpan" RefType="out" />
+        <Parameter Name="lockId" Type="System.Object" RefType="out" />
+        <Parameter Name="actions" Type="System.Web.SessionState.SessionStateActions" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.Web.HttpContext" /> for the current request.</param>

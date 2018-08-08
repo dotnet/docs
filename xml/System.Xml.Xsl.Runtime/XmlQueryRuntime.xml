@@ -19,8 +19,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -398,7 +401,7 @@
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
+        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput" RefType="out" />
       </Parameters>
       <Docs>
         <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
@@ -428,7 +431,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
+        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput" RefType="out" />
       </Parameters>
       <Docs>
         <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
@@ -454,6 +457,11 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryContext</ReturnType>
       </ReturnValue>
@@ -486,7 +494,7 @@
       <Parameters>
         <Parameter Name="context" Type="System.Xml.XPath.XPathNavigator" />
         <Parameter Name="indexId" Type="System.Int32" />
-        <Parameter Name="index" Type="System.Xml.Xsl.Runtime.XmlILIndex&amp;" RefType="out" />
+        <Parameter Name="index" Type="System.Xml.Xsl.Runtime.XmlILIndex" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The context document.</param>
@@ -979,6 +987,11 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
@@ -1036,6 +1049,11 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryOutput</ReturnType>
       </ReturnValue>
@@ -1200,7 +1218,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="baseUri" Type="System.String" />
-        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
+        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput" RefType="out" />
       </Parameters>
       <Docs>
         <param name="baseUri">A value of type <see langword="string" />.</param>
@@ -1230,7 +1248,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
+        <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput" RefType="out" />
       </Parameters>
       <Docs>
         <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>

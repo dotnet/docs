@@ -312,7 +312,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory&amp;" RefType="out" />
+        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" RefType="out" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>

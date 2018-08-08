@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("CAA817CC-0C04-4d22-A05C-2B7E162F4E8F")</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="soapServerVRoot.CreateVirtualRootEx (rootWebServer, inBaseUrl, inVirtualRoot, homePage, discoFile, secureSockets, authentication, operation, baseUrl, virtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -84,9 +84,9 @@
         <Parameter Name="secureSockets" Type="System.String" />
         <Parameter Name="authentication" Type="System.String" />
         <Parameter Name="operation" Type="System.String" />
-        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="baseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="rootWebServer">The root Web server. The default is "IIS://localhost/W3SVC/1/ROOT".</param>
@@ -165,7 +165,7 @@
       <MemberSignature Language="F#" Value="abstract member GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit&#xA;override this.GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit" Usage="soapServerVRoot.GetVirtualRootStatus (RootWebServer, inBaseUrl, inVirtualRoot, Exists, SSL, WindowsAuth, Anonymous, HomePage, DiscoFile, PhysicalPath, BaseUrl, VirtualRoot)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -180,15 +180,15 @@
         <Parameter Name="RootWebServer" Type="System.String" />
         <Parameter Name="inBaseUrl" Type="System.String" />
         <Parameter Name="inVirtualRoot" Type="System.String" />
-        <Parameter Name="Exists" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="SSL" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="WindowsAuth" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Anonymous" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="HomePage" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="DiscoFile" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="PhysicalPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="BaseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="VirtualRoot" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Exists" Type="System.String" RefType="out" />
+        <Parameter Name="SSL" Type="System.String" RefType="out" />
+        <Parameter Name="WindowsAuth" Type="System.String" RefType="out" />
+        <Parameter Name="Anonymous" Type="System.String" RefType="out" />
+        <Parameter Name="HomePage" Type="System.String" RefType="out" />
+        <Parameter Name="DiscoFile" Type="System.String" RefType="out" />
+        <Parameter Name="PhysicalPath" Type="System.String" RefType="out" />
+        <Parameter Name="BaseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="VirtualRoot" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="RootWebServer">The root Web server. The default is "IIS://localhost/W3SVC/1/ROOT".</param>

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,6 +67,11 @@
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="scriptName" Type="System.String" />
       </Parameters>
@@ -79,16 +84,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string scriptResourceName, string typeName);" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string scriptResourceName, string typeName) cil managed" FrameworkAlternate="netframework-3.5" />
-      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, scriptResourceName As String, typeName As String)" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ scriptResourceName, System::String ^ typeName);" FrameworkAlternate="netframework-3.5" />
-      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, scriptResourceName, typeName)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, scriptResourceName, typeName)" FrameworkAlternate="netframework-4.0" />
       <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string stringResourceName, string stringResourceClientTypeName);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string stringResourceName, string stringResourceClientTypeName) cil managed" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, stringResourceName As String, stringResourceClientTypeName As String)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ stringResourceName, System::String ^ stringResourceClientTypeName);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, stringResourceName, stringResourceClientTypeName)" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, stringResourceName, stringResourceClientTypeName)" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -134,6 +139,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -171,8 +181,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This property is obsolete. Use StringResourceName instead.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,6 +223,11 @@
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -231,6 +249,11 @@
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -254,8 +277,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This property is obsolete. Use StringResourceClientTypeName instead.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
+﻿<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
   <TypeSignature Language="C#" Value="public sealed class ScrollChrome : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollChrome extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ScrollChrome" />
@@ -85,6 +85,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Windows.Themes.ScrollChrome" /> class.</summary>

@@ -20,6 +20,11 @@
       <InterfaceName>System.IEquatable&lt;System.Threading.Tasks.Dataflow.DataflowMessageHeader&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Id = {Id}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides a container of data attributes for passing between dataflow blocks.</summary>
     <remarks>

@@ -168,8 +168,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnCount As Integer Implements IGridProvider.ColumnCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.ColumnCount { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.TableAutomationPeer.System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridProvider::ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.ColumnCount</InterfaceMember>
@@ -237,8 +237,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowCount As Integer Implements IGridProvider.RowCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.RowCount { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.TableAutomationPeer.System.Windows.Automation.Provider.IGridProvider.RowCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridProvider::RowCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.RowCount</InterfaceMember>

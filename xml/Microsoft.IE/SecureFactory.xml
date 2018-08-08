@@ -160,7 +160,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="riid" Type="System.Guid" />
-        <Parameter Name="ppvObject" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="ppvObject" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="riid">To be added.</param>

@@ -94,7 +94,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="handle" Type="System.Reflection.Metadata.Handle" />
-        <Parameter Name="generation" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="generation" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>

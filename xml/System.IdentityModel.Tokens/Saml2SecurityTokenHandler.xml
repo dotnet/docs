@@ -2161,7 +2161,7 @@
       <Parameters>
         <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
         <Parameter Name="issuerResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="assertion">The <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> for which the Issuer token is to be resolved.</param>

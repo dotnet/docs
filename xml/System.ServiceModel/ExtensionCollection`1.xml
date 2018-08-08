@@ -314,8 +314,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExtensionCollection`1.System#Collections#Generic#ICollection&lt;System#ServiceModel#IExtension&lt;T&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of IExtension(Of T)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.ExtensionCollection&lt;'T (requires 'T :&gt; System.ServiceModel.IExtensibleObject&lt;'T&gt;)&gt;.System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::ServiceModel::IExtension&lt;T&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>

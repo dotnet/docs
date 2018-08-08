@@ -26,6 +26,14 @@
       <InterfaceName>System.Collections.Immutable.IImmutableStack&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("IsEmpty = {IsEmpty}; Top = {_head}")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableStackDebuggerProxy`1))</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of element on the stack.</typeparam>
     <summary>Represents an immutable stack.  
@@ -166,21 +174,21 @@
       </Docs>
     </Member>
     <Member MemberName="PeekRef">
-      <MemberSignature Language="C#" Value="public System.Collections.Immutable.T&amp; PeekRef ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.T&amp; modreq(System.Runtime.InteropServices.InAttribute) PeekRef() cil managed" />
+      <MemberSignature Language="C#" Value="public T&amp; PeekRef ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) PeekRef() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack`1.PeekRef" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekRef () As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::T&amp; ^ PeekRef();" />
-      <MemberSignature Language="F#" Value="member this.PeekRef : unit -&gt; System.Collections.Immutable.T&amp;" Usage="immutableStack.PeekRef " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ PeekRef();" />
+      <MemberSignature Language="F#" Value="member this.PeekRef : unit -&gt; T&amp;" Usage="immutableStack.PeekRef " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Immutable.T&amp;</ReturnType>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute>
+          <Attribute FrameworkAlternate="netcore-2.1">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
@@ -236,7 +244,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The value to remove from the stack.</param>

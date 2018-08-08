@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -141,8 +141,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder&amp;" RefType="out" />
-        <Parameter Name="scalar" Type="System.Reflection.Metadata.Ecma335.ScalarEncoder&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" RefType="out" />
+        <Parameter Name="scalar" Type="System.Reflection.Metadata.Ecma335.ScalarEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -197,8 +197,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arrayType" Type="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder&amp;" RefType="out" />
-        <Parameter Name="vector" Type="System.Reflection.Metadata.Ecma335.VectorEncoder&amp;" RefType="out" />
+        <Parameter Name="arrayType" Type="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder" RefType="out" />
+        <Parameter Name="vector" Type="System.Reflection.Metadata.Ecma335.VectorEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="arrayType">To be added.</param>

@@ -582,6 +582,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -737,7 +742,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The modification to apply to the DACL.</param>
@@ -782,7 +787,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The modification to apply to the DACL.</param>
@@ -827,7 +832,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The modification to apply to the SACL.</param>
@@ -865,7 +870,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The modification to apply to the SACL.</param>
@@ -936,6 +941,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1017,8 +1027,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1438,6 +1451,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1478,6 +1496,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

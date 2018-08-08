@@ -69,6 +69,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="implementation" Type="System.Object" />
       </Parameters>
@@ -105,6 +110,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
@@ -138,6 +148,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
         <Parameter Name="implementation" Type="System.Object" />
@@ -278,6 +293,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -914,6 +934,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.SynchronizationContext</ReturnType>
       </ReturnValue>
@@ -939,8 +964,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IExtensionCollection`1&lt;class System.ServiceModel.InstanceContext&gt; System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.InstanceContext&gt;.Extensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.InstanceContext.System#ServiceModel#IExtensibleObject&lt;System#ServiceModel#InstanceContext&gt;#Extensions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Extensions As IExtensionCollection(Of InstanceContext) Implements IExtensibleObject(Of InstanceContext).Extensions" />
-      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::InstanceContext ^&gt; ^ System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.InstanceContext&gt;.Extensions { System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::InstanceContext ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.InstanceContext.System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.InstanceContext&gt;.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::InstanceContext ^&gt; ^ System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::InstanceContext&gt;::Extensions { System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::InstanceContext ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.InstanceContext&gt;.Extensions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IExtensibleObject`1.Extensions</InterfaceMember>

@@ -45,6 +45,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" />.</summary>
@@ -349,6 +354,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -689,6 +699,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -786,8 +801,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::ICollection::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -796,6 +811,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -810,8 +830,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -820,6 +840,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -835,8 +860,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -845,6 +870,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -896,6 +926,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -919,6 +954,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -962,8 +1002,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -972,6 +1012,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -987,8 +1032,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -997,6 +1042,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1012,8 +1062,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionary::Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1040,8 +1090,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1097,8 +1147,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Activities.Presentation.Model.ModelItemDictionary.System.Collections.IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1131,8 +1181,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.Presentation.Model.ModelItemDictionary/&lt;System-Collections-IEnumerable-GetEnumerator&gt;d__61))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.Presentation.Model.ModelItemDictionary/&lt;System_Collections_IEnumerable_GetEnumerator&gt;d__1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1171,7 +1224,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Activities.Presentation.Model.ModelItem" />
-        <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key associated with the value to retrieve.</param>
@@ -1200,7 +1253,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Object" />
-        <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key associated with the value to retrieve.</param>

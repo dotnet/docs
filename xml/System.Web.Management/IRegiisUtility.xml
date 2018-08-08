@@ -12,11 +12,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("c84f668a-cc3f-11d7-b79e-505054503030")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -57,7 +60,7 @@
         <Parameter Name="site" Type="System.String" />
         <Parameter Name="cspOrLocation" Type="System.String" />
         <Parameter Name="keySize" Type="System.Int32" />
-        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="actionToPerform">The type of action to perform.</param>
@@ -94,7 +97,7 @@
         <Parameter Name="doReg" Type="System.Int32" />
         <Parameter Name="assemblyName" Type="System.String" />
         <Parameter Name="binaryDirectory" Type="System.String" />
-        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="doReg">A value of 0 indicates that the assembly should be unregistered. A value other than 0 indicates that the assembly should be registered.</param>
@@ -124,7 +127,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="doReg" Type="System.Int32" />
-        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="doReg">A value of 0 indicates that the assembly should be unregistered. A value other than 0 indicates that the assembly should be registered.</param>
@@ -151,7 +154,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exception">An <see cref="T:System.IntPtr" /> that points to the exception thrown by the method.  If no exception is thrown, the value is <see cref="F:System.IntPtr.Zero" />.</param>

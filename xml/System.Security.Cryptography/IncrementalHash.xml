@@ -33,6 +33,11 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netstandard-2.0">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides support for computing a hash or Hash-based Message Authentication Code (HMAC) value incrementally across several segments.</summary>
     <remarks>To be added.</remarks>
@@ -386,7 +391,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>

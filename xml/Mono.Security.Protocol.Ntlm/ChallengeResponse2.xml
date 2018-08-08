@@ -39,8 +39,8 @@
         <Parameter Name="username" Type="System.String" />
         <Parameter Name="password" Type="System.String" />
         <Parameter Name="domain" Type="System.String" />
-        <Parameter Name="lm" Type="System.Byte[]&amp;" RefType="out" />
-        <Parameter Name="ntlm" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="lm" Type="System.Byte[]" RefType="out" />
+        <Parameter Name="ntlm" Type="System.Byte[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type2">To be added.</param>

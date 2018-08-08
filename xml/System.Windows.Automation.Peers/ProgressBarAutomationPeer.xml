@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.ProgressBar" />
       </Parameters>
@@ -121,8 +126,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IRangeValueProvider.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::IRangeValueProvider::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly</InterfaceMember>
@@ -147,8 +152,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#LargeChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LargeChange As Double Implements IRangeValueProvider.LargeChange" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.LargeChange { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::LargeChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange</InterfaceMember>
@@ -199,8 +204,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SmallChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SmallChange As Double Implements IRangeValueProvider.SmallChange" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.SmallChange { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::SmallChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange</InterfaceMember>

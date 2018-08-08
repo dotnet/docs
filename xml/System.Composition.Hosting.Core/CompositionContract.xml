@@ -277,8 +277,8 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="constraintName" Type="System.String" />
-        <Parameter Name="constraintValue" Type="T&amp;" RefType="out" />
-        <Parameter Name="remainingContract" Type="System.Composition.Hosting.Core.CompositionContract&amp;" RefType="out" />
+        <Parameter Name="constraintValue" Type="T" RefType="out" />
+        <Parameter Name="remainingContract" Type="System.Composition.Hosting.Core.CompositionContract" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the metadata constraint value.</typeparam>

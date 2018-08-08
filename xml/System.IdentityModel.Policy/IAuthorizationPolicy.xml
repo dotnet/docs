@@ -52,7 +52,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="evaluationContext" Type="System.IdentityModel.Policy.EvaluationContext" />
-        <Parameter Name="state" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="state" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="evaluationContext">An <see cref="T:System.IdentityModel.Policy.EvaluationContext" /> that contains the claim set that the authorization policy evaluates.</param>

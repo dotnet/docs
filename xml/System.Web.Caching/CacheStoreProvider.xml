@@ -86,7 +86,7 @@
       <Parameters>
         <Parameter Name="key" Type="System.String" />
         <Parameter Name="dependency" Type="System.Web.Caching.CacheDependency" />
-        <Parameter Name="utcLastUpdated" Type="System.DateTime&amp;" RefType="out" />
+        <Parameter Name="utcLastUpdated" Type="System.DateTime" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key.</param>

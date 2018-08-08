@@ -489,10 +489,10 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.Obsolete("HashCode is a mutable struct and should not be compared with other HashCodes.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -523,10 +523,10 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.Obsolete("HashCode is a mutable struct and should not be compared with other HashCodes. Use ToHashCode to retrieve the computed hash code.", true)</AttributeName>
         </Attribute>
       </Attributes>

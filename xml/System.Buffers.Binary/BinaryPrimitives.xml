@@ -189,7 +189,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -220,7 +220,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -251,7 +251,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -282,7 +282,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -313,7 +313,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -344,7 +344,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -479,7 +479,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -510,7 +510,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -541,7 +541,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -572,7 +572,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -607,7 +607,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -635,7 +635,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -663,7 +663,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -691,7 +691,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -719,7 +719,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -747,7 +747,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -771,7 +771,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -780,7 +780,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -804,7 +804,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -813,7 +813,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -837,7 +837,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -846,7 +846,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -870,7 +870,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -879,7 +879,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -903,7 +903,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -912,7 +912,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -936,7 +936,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -945,7 +945,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -1137,7 +1137,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1170,7 +1170,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1203,7 +1203,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1236,7 +1236,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1269,7 +1269,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1302,7 +1302,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1497,7 +1497,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1529,7 +1529,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1561,7 +1561,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1593,7 +1593,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1625,7 +1625,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1657,7 +1657,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>

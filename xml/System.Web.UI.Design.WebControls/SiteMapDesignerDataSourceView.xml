@@ -62,7 +62,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isSampleData" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="minimumRows">The minimum number of rows to retrieve or create.</param>
@@ -86,6 +86,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>

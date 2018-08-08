@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{ItemType}={EvaluatedInclude} #DirectMetadata={DirectMetadataCount})")</AttributeName>
     </Attribute>
   </Attributes>
@@ -68,10 +68,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -201,11 +201,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -402,6 +405,11 @@
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -427,8 +435,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Build.Framework.ITaskItem.ItemSpec" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemInstance.Microsoft#Build#Framework#ITaskItem#ItemSpec" />
       <MemberSignature Language="VB.NET" Value=" Property ItemSpec As String Implements ITaskItem.ItemSpec" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft.Build.Framework.ITaskItem.ItemSpec { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.Build.Execution.ProjectItemInstance.Microsoft.Build.Framework.ITaskItem.ItemSpec" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft::Build::Framework::ITaskItem::ItemSpec { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.Build.Framework.ITaskItem.ItemSpec" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ITaskItem.ItemSpec</InterfaceMember>
@@ -437,6 +445,14 @@
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -473,8 +489,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Microsoft.Build.Framework.ITaskItem.MetadataNames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemInstance.Microsoft#Build#Framework#ITaskItem#MetadataNames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property MetadataNames As ICollection Implements ITaskItem.MetadataNames" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ Microsoft.Build.Framework.ITaskItem.MetadataNames { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.Build.Execution.ProjectItemInstance.Microsoft.Build.Framework.ITaskItem.MetadataNames" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ Microsoft::Build::Framework::ITaskItem::MetadataNames { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.Build.Framework.ITaskItem.MetadataNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ITaskItem.MetadataNames</InterfaceMember>
@@ -549,8 +565,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemInstance.Microsoft#Build#Framework#ITaskItem2#EvaluatedIncludeEscaped" />
       <MemberSignature Language="VB.NET" Value=" Property EvaluatedIncludeEscaped As String Implements ITaskItem2.EvaluatedIncludeEscaped" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.Build.Execution.ProjectItemInstance.Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft::Build::Framework::ITaskItem2::EvaluatedIncludeEscaped { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped</InterfaceMember>
@@ -560,7 +576,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -662,8 +678,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

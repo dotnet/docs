@@ -364,7 +364,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.RangeHeaderValue&amp;" RefType="out" />
+        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.RangeHeaderValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">he string to validate.</param>

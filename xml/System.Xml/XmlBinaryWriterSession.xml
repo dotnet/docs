@@ -136,7 +136,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
-        <Parameter Name="key" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="key" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> to add.</param>

@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,7 +44,7 @@ Unlike some other enumerator structures in .NET, the <xref:System.ReadOnlySpan`1
   <Members>
     <Member MemberName="Current">
       <MemberSignature Language="C#" Value="public T&amp; Current { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.T&amp; modreq(System.Runtime.InteropServices.InAttribute) Current" />
+      <MemberSignature Language="ILAsm" Value=".property instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) Current" />
       <MemberSignature Language="DocId" Value="P:System.ReadOnlySpan`1.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T&amp;" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T&amp; ^ Current { T&amp; ^ get(); };" />
@@ -55,12 +55,12 @@ Unlike some other enumerator structures in .NET, the <xref:System.ReadOnlySpan`1
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>T@</ReturnType>
+        <ReturnType>T&amp;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the item at the current position of the enumerator.</summary>

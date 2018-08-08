@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.RadioButton" />
       </Parameters>
@@ -153,8 +158,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RadioButtonAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RadioButtonAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ISelectionItemProvider::IsSelected { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
@@ -227,8 +232,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RadioButtonAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RadioButtonAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System::Windows::Automation::Provider::ISelectionItemProvider::SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>

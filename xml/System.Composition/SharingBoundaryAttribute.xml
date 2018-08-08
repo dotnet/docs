@@ -15,13 +15,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Parameter | System.AttributeTargets.Property, Inherited=false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0">
       <AttributeName>System.Composition.MetadataAttribute</AttributeName>
     </Attribute>
   </Attributes>

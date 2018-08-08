@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,6 +47,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
@@ -149,6 +154,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;</ReturnType>
       </ReturnValue>
@@ -244,6 +254,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -355,6 +370,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
       </ReturnValue>
@@ -428,7 +448,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
+        <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the entity container.</param>
@@ -458,7 +478,7 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
+        <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the entity container.</param>
@@ -493,6 +513,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -505,7 +530,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="identity" Type="System.String" />
-        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="item" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type returned by the method.</typeparam>
@@ -543,7 +568,7 @@
       <Parameters>
         <Parameter Name="identity" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="item" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type returned by the method.</typeparam>
@@ -579,13 +604,18 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="namespaceName" Type="System.String" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the type.</param>
@@ -617,7 +647,7 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="namespaceName" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the type.</param>

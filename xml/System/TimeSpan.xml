@@ -43,7 +43,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -235,6 +235,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="hours" Type="System.Int32" />
         <Parameter Name="minutes" Type="System.Int32" />
@@ -1480,6 +1485,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -2076,6 +2086,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2134,6 +2149,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2191,6 +2211,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2248,6 +2273,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2305,6 +2335,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2362,6 +2397,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2473,6 +2513,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -4263,6 +4308,11 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -4310,7 +4360,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
@@ -4355,7 +4405,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
       </ReturnValue>
       <Parameters>
         <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">To be added.</param>
@@ -4397,7 +4447,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
       </ReturnValue>
       <Parameters>
         <Parameter Name="s" Type="System.String" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">A string that specifies the time interval to convert.</param>
@@ -4470,7 +4520,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
       <Parameters>
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -4513,7 +4563,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
       <Parameters>
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
@@ -4612,7 +4662,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -4643,7 +4693,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -4688,7 +4738,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
@@ -4764,7 +4814,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
@@ -4829,7 +4879,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.TimeSpanStyles" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -4862,7 +4912,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.TimeSpanStyles" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -4909,7 +4959,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.TimeSpanStyles" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
@@ -4986,7 +5036,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.TimeSpanStyles" />
-        <Parameter Name="result" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>

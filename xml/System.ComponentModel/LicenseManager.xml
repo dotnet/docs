@@ -351,13 +351,18 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="instance" Type="System.Object" />
-        <Parameter Name="license" Type="System.ComponentModel.License&amp;" RefType="out" />
+        <Parameter Name="license" Type="System.ComponentModel.License" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">A <see cref="T:System.Type" /> that represents the type of object that requests the license.</param>

@@ -74,7 +74,7 @@
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.GetIndexBinder" />
         <Parameter Name="indexes" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">The binder provided by the call site.</param>
@@ -119,7 +119,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.GetMemberBinder" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">The binder provided by the call site.</param>
@@ -158,7 +158,7 @@
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.InvokeBinder" />
         <Parameter Name="args" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">The binder provided by the call site.</param>
@@ -198,7 +198,7 @@
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.InvokeMemberBinder" />
         <Parameter Name="args" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">The binder provided by the call site.</param>

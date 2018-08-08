@@ -14,13 +14,13 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.IEnumConnections instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("B196B287-BAB4-101A-B69C-00AA00341D07")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,7 +55,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenum" Type="System.Runtime.InteropServices.UCOMIEnumConnections&amp;" RefType="out" />
+        <Parameter Name="ppenum" Type="System.Runtime.InteropServices.UCOMIEnumConnections" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppenum">On successful return, a reference to the newly created enumerator.</param>
@@ -91,7 +91,7 @@
       <Parameters>
         <Parameter Name="celt" Type="System.Int32" />
         <Parameter Name="rgelt" Type="System.Runtime.InteropServices.CONNECTDATA[]" />
-        <Parameter Name="pceltFetched" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pceltFetched" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="celt">The number of <see cref="T:System.Runtime.InteropServices.CONNECTDATA" /> structures to return in <c>rgelt</c>.</param>

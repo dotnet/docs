@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.Guid("1245208C-A151-11D0-A7D7-00C04FD909DD")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,7 +39,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pName" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="pName" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pName">To be added.</param>
@@ -63,7 +63,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lpDescription" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="lpDescription" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lpDescription">To be added.</param>
@@ -87,7 +87,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="hAppIcon" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="hAppIcon" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAppIcon">To be added.</param>
@@ -111,7 +111,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lpVersion" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="lpVersion" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lpVersion">To be added.</param>
@@ -135,10 +135,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="hSmallImage" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="hSmallImageOpen" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="hLargeImage" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="cMask" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="hSmallImage" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="hSmallImageOpen" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="hLargeImage" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="cMask" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hSmallImage">To be added.</param>

@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("955AB28A-5218-11D0-A985-00C04FD8D565")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -66,7 +66,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppComponent" Type="Microsoft.CLRAdmin.IComponent&amp;" RefType="out" />
+        <Parameter Name="ppComponent" Type="Microsoft.CLRAdmin.IComponent" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppComponent">To be added.</param>
@@ -111,7 +111,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ResultDataItem" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="ResultDataItem" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ResultDataItem">To be added.</param>
@@ -192,7 +192,7 @@
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
         <Parameter Name="type" Type="System.UInt32" />
-        <Parameter Name="ppDataObject" Type="Microsoft.CLRAdmin.IDataObject&amp;" RefType="out" />
+        <Parameter Name="ppDataObject" Type="Microsoft.CLRAdmin.IDataObject" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cookie">To be added.</param>

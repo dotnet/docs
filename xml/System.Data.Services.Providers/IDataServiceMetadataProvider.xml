@@ -213,7 +213,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="resourceSet" Type="System.Data.Services.Providers.ResourceSet&amp;" RefType="out" />
+        <Parameter Name="resourceSet" Type="System.Data.Services.Providers.ResourceSet" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">Name of the <see cref="T:System.Data.Services.Providers.ResourceSet" /> to resolve.</param>
@@ -242,7 +242,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="resourceType" Type="System.Data.Services.Providers.ResourceType&amp;" RefType="out" />
+        <Parameter Name="resourceType" Type="System.Data.Services.Providers.ResourceType" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">Name of the type to resolve.</param>
@@ -271,7 +271,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="serviceOperation" Type="System.Data.Services.Providers.ServiceOperation&amp;" RefType="out" />
+        <Parameter Name="serviceOperation" Type="System.Data.Services.Providers.ServiceOperation" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">Name of the service operation to resolve.</param>

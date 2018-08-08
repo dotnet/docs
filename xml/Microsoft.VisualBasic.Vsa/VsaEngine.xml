@@ -19,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -772,7 +772,7 @@
       <MemberSignature Language="F#" Value="abstract member SaveCompiledState :  *  -&gt; unit&#xA;override this.SaveCompiledState :  *  -&gt; unit" Usage="vsaEngine.SaveCompiledState (PE, PDB)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Vsa</AssemblyName>
@@ -783,8 +783,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="PE" Type="System.Byte[]&amp;" RefType="out" />
-        <Parameter Name="PDB" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="PE" Type="System.Byte[]" RefType="out" />
+        <Parameter Name="PDB" Type="System.Byte[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="PE">To be added.</param>

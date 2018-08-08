@@ -45,9 +45,9 @@
       <Parameters>
         <Parameter Name="filePath" Type="System.String" />
         <Parameter Name="onChangedCallback" Type="System.Runtime.Caching.OnChangedCallback" />
-        <Parameter Name="state" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="lastWriteTime" Type="System.DateTimeOffset&amp;" RefType="out" />
-        <Parameter Name="fileSize" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="state" Type="System.Object" RefType="out" />
+        <Parameter Name="lastWriteTime" Type="System.DateTimeOffset" RefType="out" />
+        <Parameter Name="fileSize" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="filePath">The fully qualified physical path of a directory or file to monitor for changes.</param>

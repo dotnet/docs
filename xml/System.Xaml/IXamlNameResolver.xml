@@ -241,7 +241,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="isFullyInitialized" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isFullyInitialized" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name reference to resolve.</param>

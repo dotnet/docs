@@ -159,8 +159,8 @@
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="declaredType" Type="System.Type" />
         <Parameter Name="knownTypeResolver" Type="System.Runtime.Serialization.DataContractResolver" />
-        <Parameter Name="typeName" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
-        <Parameter Name="typeNamespace" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="typeName" Type="System.Xml.XmlDictionaryString" RefType="out" />
+        <Parameter Name="typeNamespace" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">The type to map.</param>

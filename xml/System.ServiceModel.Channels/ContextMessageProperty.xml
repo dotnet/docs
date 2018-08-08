@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -182,6 +182,11 @@
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -266,7 +271,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="httpCookieHeader" Type="System.String" />
-        <Parameter Name="context" Type="System.ServiceModel.Channels.ContextMessageProperty&amp;" RefType="out" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.ContextMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="httpCookieHeader">The name of the HTTP cookie header from which the <c>context</c> property values are to be initialized.</param>
@@ -308,7 +313,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
-        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.ContextMessageProperty&amp;" RefType="out" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.ContextMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> from which the context message properties are to be retrieved.</param>
@@ -340,7 +345,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
-        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.ContextMessageProperty&amp;" RefType="out" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.ContextMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">The <see cref="T:System.ServiceModel.Channels.MessageProperties" /> from which the context message properties are to be retrieved.</param>

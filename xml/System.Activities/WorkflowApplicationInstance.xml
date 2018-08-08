@@ -179,7 +179,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="updateMap" Type="System.Activities.DynamicUpdate.DynamicUpdateMap" />
-        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp;" RefType="out" />
+        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="updateMap">Updates a map.</param>

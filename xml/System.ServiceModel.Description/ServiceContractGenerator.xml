@@ -54,6 +54,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> class with a new <see cref="T:System.CodeDom.CodeCompileUnit" /> instance.</summary>
@@ -73,6 +78,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="targetCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
@@ -95,6 +105,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="targetConfig" Type="System.Configuration.Configuration" />
       </Parameters>
@@ -141,6 +156,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.Configuration</ReturnType>
       </ReturnValue>
@@ -163,6 +183,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataConversionError&gt;</ReturnType>
       </ReturnValue>
@@ -196,8 +221,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="bindingSectionName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="configurationName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="bindingSectionName" Type="System.String" RefType="out" />
+        <Parameter Name="configurationName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> to use to generate the binding configuration.</param>
@@ -266,7 +291,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
-        <Parameter Name="channelElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement&amp;" RefType="out" />
+        <Parameter Name="channelElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" RefType="out" />
       </Parameters>
       <Docs>
         <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to use to generate the contract type.</param>
@@ -358,6 +383,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.ServiceModel.Description.ContractDescription,System.Type&gt;</ReturnType>
       </ReturnValue>
@@ -387,6 +417,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>

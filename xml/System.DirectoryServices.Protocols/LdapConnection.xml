@@ -176,7 +176,8 @@
         <exception cref="T:System.ObjectDisposedException">The object handle is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> was not returned by the corresponding call to <see cref="Overload:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="asyncResult" /> was not returned by the corresponding call to <see cref="Overload:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest" /></exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
         </permission>

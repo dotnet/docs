@@ -107,7 +107,7 @@
         <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMap</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp;" RefType="out" />
+        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="activitiesBlockingUpdate">The activities blocking update.</param>

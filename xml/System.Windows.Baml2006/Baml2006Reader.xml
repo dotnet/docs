@@ -157,6 +157,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -287,8 +292,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Xaml.IXamlLineInfo.HasLineInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#HasLineInfo" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasLineInfo As Boolean Implements IXamlLineInfo.HasLineInfo" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Xaml.IXamlLineInfo.HasLineInfo { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Baml2006.Baml2006Reader.System.Xaml.IXamlLineInfo.HasLineInfo" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Xaml::IXamlLineInfo::HasLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xaml.IXamlLineInfo.HasLineInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
@@ -312,8 +317,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xaml.IXamlLineInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LineNumber" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IXamlLineInfo.LineNumber" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xaml.IXamlLineInfo.LineNumber { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Baml2006.Baml2006Reader.System.Xaml.IXamlLineInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xaml::IXamlLineInfo::LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xaml.IXamlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
@@ -336,8 +341,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xaml.IXamlLineInfo.LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LinePosition" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LinePosition As Integer Implements IXamlLineInfo.LinePosition" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xaml.IXamlLineInfo.LinePosition { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Baml2006.Baml2006Reader.System.Xaml.IXamlLineInfo.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xaml::IXamlLineInfo::LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xaml.IXamlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>

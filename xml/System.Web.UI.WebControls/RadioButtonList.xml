@@ -26,10 +26,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ValidationProperty("SelectedItem")</AttributeName>
     </Attribute>
   </Attributes>
@@ -195,8 +195,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,8 +246,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -699,10 +705,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -731,8 +737,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -777,8 +786,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -876,8 +888,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -927,6 +942,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -972,6 +992,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1010,6 +1035,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
@@ -1043,8 +1073,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasFooter As Boolean Implements IRepeatInfoUser.HasFooter" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.RadioButtonList.System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::WebControls::IRepeatInfoUser::HasFooter { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasFooter</InterfaceMember>
@@ -1054,6 +1084,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1079,8 +1114,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasHeader As Boolean Implements IRepeatInfoUser.HasHeader" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.RadioButtonList.System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::WebControls::IRepeatInfoUser::HasHeader { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasHeader</InterfaceMember>
@@ -1090,6 +1125,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1115,8 +1155,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasSeparators As Boolean Implements IRepeatInfoUser.HasSeparators" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.RadioButtonList.System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::WebControls::IRepeatInfoUser::HasSeparators { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators</InterfaceMember>
@@ -1126,6 +1166,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1161,6 +1206,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1197,8 +1247,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RepeatedItemCount As Integer Implements IRepeatInfoUser.RepeatedItemCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.RadioButtonList.System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Web::UI::WebControls::IRepeatInfoUser::RepeatedItemCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount</InterfaceMember>
@@ -1208,6 +1258,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1242,8 +1297,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

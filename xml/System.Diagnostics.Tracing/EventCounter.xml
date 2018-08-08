@@ -24,6 +24,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces></Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netstandard-2.0">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides the ability to collect statistics for very frequent events through the  <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
     <remarks>

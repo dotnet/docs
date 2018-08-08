@@ -47,7 +47,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="addValueFactory" Type="System.Func&lt;TKey,TValue&gt;" />
         <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TValue&gt;" />
@@ -87,7 +87,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="addValue" Type="TValue" />
         <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TValue&gt;" />
@@ -126,7 +126,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableQueue&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableQueue&lt;T&gt;" RefType="ref" />
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
@@ -160,7 +160,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="valueFactory" Type="System.Func&lt;TKey,TValue&gt;" />
       </Parameters>
@@ -198,7 +198,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="value" Type="TValue" />
       </Parameters>
@@ -237,7 +237,7 @@
         <TypeParameter Name="TArg" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="valueFactory" Type="System.Func&lt;TKey,TArg,TValue&gt;" />
         <Parameter Name="factoryArgument" Type="TArg" />
@@ -277,7 +277,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="ref" />
         <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
         <Parameter Name="comparand" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
@@ -315,7 +315,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="ref" />
         <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
@@ -351,7 +351,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="ref" />
         <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
@@ -388,7 +388,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableStack&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableStack&lt;T&gt;" RefType="ref" />
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
@@ -422,7 +422,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="value" Type="TValue" />
       </Parameters>
@@ -460,8 +460,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableQueue&lt;T&gt;&amp;" RefType="ref" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableQueue&lt;T&gt;" RefType="ref" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the queue.</typeparam>
@@ -495,8 +495,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableStack&lt;T&gt;&amp;" RefType="ref" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableStack&lt;T&gt;" RefType="ref" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the stack.</typeparam>
@@ -531,9 +531,9 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
@@ -570,7 +570,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;" RefType="ref" />
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="newValue" Type="TValue" />
         <Parameter Name="comparisonValue" Type="TValue" />
@@ -614,7 +614,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="T&amp;" RefType="ref" />
+        <Parameter Name="location" Type="T" RefType="ref" />
         <Parameter Name="transformer" Type="System.Func&lt;T,T&gt;" />
       </Parameters>
       <Docs>
@@ -654,7 +654,7 @@
         <TypeParameter Name="TArg" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location" Type="T&amp;" RefType="ref" />
+        <Parameter Name="location" Type="T" RefType="ref" />
         <Parameter Name="transformer" Type="System.Func&lt;T,TArg,T&gt;" />
         <Parameter Name="transformerArgument" Type="TArg" />
       </Parameters>

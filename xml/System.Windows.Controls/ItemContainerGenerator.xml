@@ -294,6 +294,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
@@ -368,7 +373,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::DependencyObject ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized) = System::Windows::Controls::Primitives::IItemContainerGenerator::GenerateNext;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -379,7 +384,7 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isNewlyRealized" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isNewlyRealized" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="isNewlyRealized">Is true if the returned DependencyObject is newly generated (realized); otherwise, false.</param>
@@ -513,6 +518,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -637,6 +647,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

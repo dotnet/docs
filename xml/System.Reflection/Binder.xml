@@ -26,10 +26,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDual)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -187,11 +187,11 @@
       <Parameters>
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
         <Parameter Name="match" Type="System.Reflection.MethodBase[]" />
-        <Parameter Name="args" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="args" Type="System.Object[]" RefType="ref" />
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
         <Parameter Name="names" Type="System.String[]" />
-        <Parameter Name="state" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="state" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="bindingAttr">A bitwise combination of <see cref="T:System.Reflection.BindingFlags" /> values.</param>
@@ -348,7 +348,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="args" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="args" Type="System.Object[]" RefType="ref" />
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>

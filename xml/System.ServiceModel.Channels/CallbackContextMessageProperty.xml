@@ -50,6 +50,11 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
@@ -250,6 +255,11 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -325,8 +335,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="listenAddress" Type="System.ServiceModel.EndpointAddress&amp;" RefType="out" />
-        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&amp;" RefType="out" />
+        <Parameter Name="listenAddress" Type="System.ServiceModel.EndpointAddress" RefType="out" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="listenAddress">A reference to store the listen address.</param>
@@ -381,7 +391,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
-        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The message to get the callback context message property from.</param>
@@ -409,7 +419,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
-        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">The message properties collection to get the callback context message property from.</param>

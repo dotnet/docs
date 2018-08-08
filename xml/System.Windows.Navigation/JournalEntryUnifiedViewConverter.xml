@@ -1,4 +1,4 @@
-<Type Name="JournalEntryUnifiedViewConverter" FullName="System.Windows.Navigation.JournalEntryUnifiedViewConverter">
+﻿<Type Name="JournalEntryUnifiedViewConverter" FullName="System.Windows.Navigation.JournalEntryUnifiedViewConverter">
   <TypeSignature Language="C#" Value="public sealed class JournalEntryUnifiedViewConverter : System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JournalEntryUnifiedViewConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" />
@@ -74,6 +74,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" /> class.</summary>

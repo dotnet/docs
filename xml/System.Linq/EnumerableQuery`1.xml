@@ -109,6 +109,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
@@ -143,6 +148,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -178,6 +188,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -194,8 +209,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#ElementType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ElementType As Type Implements IQueryable.ElementType" />
-      <MemberSignature Language="C++ CLI" Value="property Type ^ System.Linq.IQueryable.ElementType { Type ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.ElementType" />
+      <MemberSignature Language="C++ CLI" Value="property Type ^ System::Linq::IQueryable::ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.ElementType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
@@ -228,8 +243,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression System.Linq.IQueryable.Expression" />
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Expression" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Expression As Expression Implements IQueryable.Expression" />
-      <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System.Linq.IQueryable.Expression { System::Linq::Expressions::Expression ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.Expression" />
+      <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System::Linq::IQueryable::Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.Expression" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
@@ -262,8 +277,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryProvider System.Linq.IQueryable.Provider" />
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Provider" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Provider As IQueryProvider Implements IQueryable.Provider" />
-      <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System.Linq.IQueryable.Provider { System::Linq::IQueryProvider ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.Provider" />
+      <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System::Linq::IQueryable::Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.Provider" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>

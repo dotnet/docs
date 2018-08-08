@@ -238,7 +238,7 @@
       <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool&#xA;override this.TryLookup : int *  -&gt; bool" Usage="xmlDictionary.TryLookup (key, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -261,7 +261,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Int32" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">Key to look up.</param>
@@ -281,7 +281,7 @@
       <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool&#xA;override this.TryLookup : string *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -304,7 +304,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">String value being checked for.</param>
@@ -326,7 +326,7 @@
       <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool&#xA;override this.TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -349,7 +349,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> being checked for.</param>

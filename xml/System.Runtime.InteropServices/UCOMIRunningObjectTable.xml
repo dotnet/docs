@@ -14,14 +14,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00000010-0000-0000-c000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.InteropServices.Guid("00000010-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.IRunningObjectTable instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -55,7 +61,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker&amp;" RefType="out" />
+        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppenumMoniker">On successful return, the new enumerator for the ROT.</param>
@@ -90,7 +96,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="ppunkObject" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="ppunkObject" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkObjectName">Reference to the moniker to search for in the ROT.</param>
@@ -126,7 +132,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="out" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkObjectName">Reference to the moniker to search for in the ROT.</param>
@@ -196,7 +202,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dwRegister" Type="System.Int32" />
-        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="ref" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="dwRegister">The ROT entry of the changed object.</param>
@@ -234,7 +240,7 @@
         <Parameter Name="grfFlags" Type="System.Int32" />
         <Parameter Name="punkObject" Type="System.Object" />
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="pdwRegister" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pdwRegister" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <c>punkObject</c> is weak or strong, and controls access to the object through its entry in the ROT.</param>

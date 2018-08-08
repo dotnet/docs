@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("F6B6768F-F99E-4152-8ED2-0412F78517FB")</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit&#xA;override this.AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit" Usage="soapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, inBaseUrl, inVirtualRoot, clientActivated, wellKnown, discoFile, operation, strAssemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -87,8 +87,8 @@
         <Parameter Name="wellKnown" Type="System.String" />
         <Parameter Name="discoFile" Type="System.String" />
         <Parameter Name="operation" Type="System.String" />
-        <Parameter Name="strAssemblyName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="typeName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strAssemblyName" Type="System.String" RefType="out" />
+        <Parameter Name="typeName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="progId">The programmatic identifier of the class.</param>

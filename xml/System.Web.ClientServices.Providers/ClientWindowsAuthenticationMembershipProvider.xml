@@ -60,6 +60,11 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" /> class.</summary>
@@ -183,7 +188,7 @@
         <Parameter Name="passwordAnswer" Type="System.String" />
         <Parameter Name="isApproved" Type="System.Boolean" />
         <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" />
       </Parameters>
       <Docs>
         <param name="username">Not used.</param>
@@ -307,7 +312,7 @@
         <Parameter Name="emailToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="emailToMatch">Not used.</param>
@@ -340,7 +345,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="usernameToMatch">Not used.</param>
@@ -372,7 +377,7 @@
       <Parameters>
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pageIndex">Not used.</param>

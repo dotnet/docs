@@ -358,8 +358,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Data.Objects.ObjectParameter&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectParameterCollection.System#Collections#Generic#ICollection&lt;System#Data#Objects#ObjectParameter&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of ObjectParameter).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Data.Objects.ObjectParameter&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectParameterCollection.System.Collections.Generic.ICollection&lt;System.Data.Objects.ObjectParameter&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Data::Objects::ObjectParameter&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Data.Objects.ObjectParameter&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>

@@ -340,8 +340,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.Hosting.SymbolResolver/&lt;GetEnumerator&gt;d__22))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.Hosting.SymbolResolver/&lt;GetEnumerator&gt;d__1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -519,6 +522,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -553,7 +561,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

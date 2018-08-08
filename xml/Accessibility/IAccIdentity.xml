@@ -12,14 +12,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("7852B78D-1CFD-41C1-A615-9C0C85960B5F")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +56,7 @@
       <Parameters>
         <Parameter Name="dwIDChild" Type="System.UInt32" />
         <Parameter Name="ppIDString" Type="System.IntPtr" />
-        <Parameter Name="pdwIDStringLen" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pdwIDStringLen" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="dwIDChild">Specifies which child of the IAccessible object the caller wants to identify.</param>

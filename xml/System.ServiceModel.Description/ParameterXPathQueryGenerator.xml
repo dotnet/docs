@@ -39,7 +39,7 @@
         <Parameter Name="isReply" Type="System.Boolean" />
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="pathToMember" Type="System.Reflection.MemberInfo[]" />
-        <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager&amp;" RefType="out" />
+        <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager" RefType="out" />
       </Parameters>
       <Docs>
         <param name="serviceContractName">The name of the service contract XML element that contains the service contract namespace.</param>

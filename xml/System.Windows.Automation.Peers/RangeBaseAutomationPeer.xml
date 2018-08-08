@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.Primitives.RangeBase" />
       </Parameters>
@@ -75,8 +80,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IRangeValueProvider.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::IRangeValueProvider::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly</InterfaceMember>
@@ -101,8 +106,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#LargeChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LargeChange As Double Implements IRangeValueProvider.LargeChange" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.LargeChange { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::LargeChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange</InterfaceMember>
@@ -126,8 +131,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.Maximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Maximum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Maximum As Double Implements IRangeValueProvider.Maximum" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.Maximum { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::Maximum { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Maximum" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.Maximum</InterfaceMember>
@@ -151,8 +156,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.Minimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Minimum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Minimum As Double Implements IRangeValueProvider.Minimum" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.Minimum { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::Minimum { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Minimum" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.Minimum</InterfaceMember>
@@ -203,8 +208,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SmallChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SmallChange As Double Implements IRangeValueProvider.SmallChange" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.SmallChange { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::SmallChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange</InterfaceMember>
@@ -228,8 +233,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IRangeValueProvider.Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As Double Implements IRangeValueProvider.Value" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.Value { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RangeBaseAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.Value" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IRangeValueProvider::Value { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.Value</InterfaceMember>

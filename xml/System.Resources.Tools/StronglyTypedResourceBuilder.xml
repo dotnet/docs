@@ -65,6 +65,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
@@ -74,7 +79,7 @@
         <Parameter Name="generatedCodeNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resourceList">An <see cref="T:System.Collections.IDictionary" /> collection where each dictionary entry key/value pair is the name of a resource and the value of the resource.</param>
@@ -114,6 +119,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
@@ -123,7 +133,7 @@
         <Parameter Name="generatedCodeNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resxFile">The name of a .resx file used as input.</param>
@@ -172,7 +182,7 @@
         <Parameter Name="resourcesNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resourceList">An <see cref="T:System.Collections.IDictionary" /> collection where each dictionary entry key/value pair is the name of a resource and the value of the resource.</param>
@@ -229,7 +239,7 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
         <Parameter Name="resourcesNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resxFile">The name of a .resx file used as input.</param>
@@ -269,6 +279,11 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

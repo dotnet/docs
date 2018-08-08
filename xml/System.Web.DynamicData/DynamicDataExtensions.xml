@@ -76,8 +76,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Use the EnablePersistedSelection property on a databound control such as GridView or ListView.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -390,6 +393,11 @@
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -693,7 +701,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dataSource" Type="System.Web.UI.IDataSource" RefType="this" />
-        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable&amp;" RefType="out" />
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" />
       </Parameters>
       <Docs>
         <param name="dataSource">The data source that contains the table.</param>
@@ -721,7 +729,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="control" Type="System.Web.UI.INamingContainer" RefType="this" />
-        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable&amp;" RefType="out" />
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" />
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Web.UI.INamingContainer" /> object that contains the table.</param>

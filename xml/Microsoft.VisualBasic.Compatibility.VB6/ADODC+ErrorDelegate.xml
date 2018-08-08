@@ -15,18 +15,18 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
   </Attributes>
   <Parameters>
     <Parameter Name="errorNumber" Type="System.Int32" />
-    <Parameter Name="description" Type="System.String&amp;" RefType="ref" />
+    <Parameter Name="description" Type="System.String" RefType="ref" />
     <Parameter Name="scode" Type="System.Int32" />
     <Parameter Name="source" Type="System.String" />
     <Parameter Name="helpFile" Type="System.String" />
     <Parameter Name="helpContext" Type="System.Int32" />
-    <Parameter Name="cancelDisplay" Type="System.Boolean&amp;" RefType="ref" />
+    <Parameter Name="cancelDisplay" Type="System.Boolean" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

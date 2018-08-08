@@ -31,7 +31,7 @@
       <MemberSignature Language="F#" Value="abstract member DAdvise : nativeint * uint32 * nativeint *  -&gt; int&#xA;override this.DAdvise : nativeint * uint32 * nativeint *  -&gt; int" Usage="cDO.DAdvise (a, b, c, d)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.DAdvise(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.DAdvise(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -44,7 +44,7 @@
         <Parameter Name="a" Type="System.IntPtr" />
         <Parameter Name="b" Type="System.UInt32" />
         <Parameter Name="c" Type="System.IntPtr" />
-        <Parameter Name="d" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="d" Type="System.UInt32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="a">To be added.</param>
@@ -181,7 +181,7 @@
       <MemberSignature Language="F#" Value="abstract member GetData :  *  -&gt; int&#xA;override this.GetData :  *  -&gt; int" Usage="cDO.GetData (pFormat, pMedium)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.GetData(Microsoft.CLRAdmin.FORMATETC@,Microsoft.CLRAdmin.STGMEDIUM@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.GetData(Microsoft.CLRAdmin.FORMATETC,Microsoft.CLRAdmin.STGMEDIUM)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -191,8 +191,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pFormat" Type="Microsoft.CLRAdmin.FORMATETC&amp;" RefType="ref" />
-        <Parameter Name="pMedium" Type="Microsoft.CLRAdmin.STGMEDIUM&amp;" RefType="ref" />
+        <Parameter Name="pFormat" Type="Microsoft.CLRAdmin.FORMATETC" RefType="ref" />
+        <Parameter Name="pMedium" Type="Microsoft.CLRAdmin.STGMEDIUM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="pFormat">To be added.</param>
@@ -211,7 +211,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDataHere :  *  -&gt; int&#xA;override this.GetDataHere :  *  -&gt; int" Usage="cDO.GetDataHere (pFormat, pMedium)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.GetDataHere(Microsoft.CLRAdmin.FORMATETC@,Microsoft.CLRAdmin.STGMEDIUM@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IDataObject.GetDataHere(Microsoft.CLRAdmin.FORMATETC,Microsoft.CLRAdmin.STGMEDIUM)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -221,8 +221,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pFormat" Type="Microsoft.CLRAdmin.FORMATETC&amp;" RefType="ref" />
-        <Parameter Name="pMedium" Type="Microsoft.CLRAdmin.STGMEDIUM&amp;" RefType="ref" />
+        <Parameter Name="pFormat" Type="Microsoft.CLRAdmin.FORMATETC" RefType="ref" />
+        <Parameter Name="pMedium" Type="Microsoft.CLRAdmin.STGMEDIUM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="pFormat">To be added.</param>

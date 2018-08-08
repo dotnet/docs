@@ -22,6 +22,11 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.</summary>
     <remarks>

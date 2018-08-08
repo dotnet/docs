@@ -1444,7 +1444,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1453,9 +1453,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="matrix" Type="System.Numerics.Matrix4x4" />
-        <Parameter Name="scale" Type="System.Numerics.Vector3&amp;" RefType="out" />
-        <Parameter Name="rotation" Type="System.Numerics.Quaternion&amp;" RefType="out" />
-        <Parameter Name="translation" Type="System.Numerics.Vector3&amp;" RefType="out" />
+        <Parameter Name="scale" Type="System.Numerics.Vector3" RefType="out" />
+        <Parameter Name="rotation" Type="System.Numerics.Quaternion" RefType="out" />
+        <Parameter Name="translation" Type="System.Numerics.Vector3" RefType="out" />
       </Parameters>
       <Docs>
         <param name="matrix">The source matrix.</param>
@@ -1695,7 +1695,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="matrix" Type="System.Numerics.Matrix4x4" />
-        <Parameter Name="result" Type="System.Numerics.Matrix4x4&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.Matrix4x4" RefType="out" />
       </Parameters>
       <Docs>
         <param name="matrix">The matrix to invert.</param>

@@ -1441,8 +1441,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="localName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="namespaceUri" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="localName" Type="System.String" RefType="out" />
+        <Parameter Name="namespaceUri" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="localName">The local name.</param>
@@ -1763,7 +1763,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Type" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">Type of the node, if a valid node; otherwise <see langword="null" />.</param>
@@ -3472,8 +3472,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="localName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="namespaceUri" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="localName" Type="System.String" RefType="out" />
+        <Parameter Name="namespaceUri" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="localName">The <see cref="P:System.Xml.XmlReader.LocalName" /> part of the qualified name (<see langword="out" /> parameter).</param>
@@ -3606,7 +3606,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="strings" Type="System.String[]" />
-        <Parameter Name="index" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="index" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="strings">The array of strings to match content against.</param>
@@ -3646,7 +3646,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="strings" Type="System.Xml.XmlDictionaryString[]" />
-        <Parameter Name="index" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="index" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="strings">The array of <see cref="T:System.Xml.XmlDictionaryString" /> objects to match content against.</param>
@@ -5506,7 +5506,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="count" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="count" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="count">Returns 0, unless overridden in a derived class.</param>
@@ -5544,7 +5544,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="length">Returns 0, unless overridden in a derived class.</param>
@@ -5582,7 +5582,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="localName">Returns <see langword="null" />, unless overridden in a derived class. .</param>
@@ -5620,7 +5620,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="namespaceUri">Returns <see langword="null" />, unless overridden in a derived class.</param>
@@ -5658,7 +5658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">Returns <see langword="null" />, unless overridden in a derived class.</param>

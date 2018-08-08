@@ -63,7 +63,7 @@
       <MemberSignature Language="F#" Value="abstract member AddElement : string * string * string * string * string *  -&gt; unit&#xA;override this.AddElement : string * string * string * string * string *  -&gt; unit" Usage="serverWebConfig.AddElement (FilePath, AssemblyName, TypeName, ProgId, WkoMode, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -80,7 +80,7 @@
         <Parameter Name="TypeName" Type="System.String" />
         <Parameter Name="ProgId" Type="System.String" />
         <Parameter Name="WkoMode" Type="System.String" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="FilePath">The path of the existing Web.config file.</param>
@@ -116,7 +116,7 @@
       <MemberSignature Language="F#" Value="abstract member Create : string * string *  -&gt; unit&#xA;override this.Create : string * string *  -&gt; unit" Usage="serverWebConfig.Create (FilePath, FilePrefix, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -130,7 +130,7 @@
       <Parameters>
         <Parameter Name="FilePath" Type="System.String" />
         <Parameter Name="FilePrefix" Type="System.String" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="FilePath">The folder in which the configuration file should be created.</param>

@@ -33,6 +33,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Util.Transactions" /> class.</summary>
@@ -98,7 +103,7 @@
       <Parameters>
         <Parameter Name="callback" Type="System.Web.Util.TransactedCallback" />
         <Parameter Name="mode" Type="System.EnterpriseServices.TransactionOption" />
-        <Parameter Name="transactionAborted" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="transactionAborted" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="callback">The <see cref="T:System.Web.Util.TransactedCallback" /> to be run under the specified transaction support.</param>

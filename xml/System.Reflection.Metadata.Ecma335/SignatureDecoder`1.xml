@@ -59,7 +59,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -84,7 +84,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -109,7 +109,7 @@
         <ReturnType>System.Reflection.Metadata.MethodSignature&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -134,7 +134,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -158,7 +158,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
         <Parameter Name="allowTypeSpecifications" Type="System.Boolean" />
       </Parameters>
       <Docs>

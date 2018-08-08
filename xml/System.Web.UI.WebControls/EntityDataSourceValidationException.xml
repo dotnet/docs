@@ -168,8 +168,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Exception&gt; System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceValidationException.System#Web#DynamicData#IDynamicValidatorException#InnerExceptions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property InnerExceptions As IDictionary(Of String, Exception) Implements IDynamicValidatorException.InnerExceptions" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ System.Web.DynamicData.IDynamicValidatorException.InnerExceptions { System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.EntityDataSourceValidationException.System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ System::Web::DynamicData::IDynamicValidatorException::InnerExceptions { System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions</InterfaceMember>

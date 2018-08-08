@@ -409,7 +409,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Text.Encodings.Web.TextEncoderSettings/&lt;GetAllowedCodePoints&gt;d__15))</AttributeName>
         </Attribute>
       </Attributes>

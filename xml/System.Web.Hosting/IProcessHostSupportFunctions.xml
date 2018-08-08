@@ -12,14 +12,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("35f9c4c1-3800-4d17-99bc-018a62243687")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SuppressUnmanagedCodeSecurity</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -77,10 +80,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="appId" Type="System.String" />
-        <Parameter Name="virtualPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteId" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="virtualPath" Type="System.String" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
+        <Parameter Name="siteName" Type="System.String" RefType="out" />
+        <Parameter Name="siteId" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appId">The ID of the application.</param>
@@ -201,7 +204,7 @@
       <Parameters>
         <Parameter Name="appId" Type="System.String" />
         <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appId">The application ID.</param>

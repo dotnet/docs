@@ -26,10 +26,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.VisualBasic.Collection/CollectionDebugView))</AttributeName>
     </Attribute>
   </Attributes>
@@ -419,8 +419,11 @@ MsgBox(CStr(customers(1)))
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -617,7 +620,7 @@ MsgBox(CStr(customers(1)))
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.ICollection.CopyTo">
+    <Member MemberName="System.Collections.ICollection.CopyTo" ExplicitInterfaceMemberName="ICollectionCopyTo">
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void ICollectionCopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.ICollectionCopyTo(System.Array,System.Int32)" />
@@ -667,13 +670,13 @@ MsgBox(CStr(customers(1)))
         <altmember cref="T:System.Array" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.ICollection.ICollectionCount">
-      <MemberSignature Language="C#" Value="int System.Collections.ICollection.ICollectionCount { get; }" />
+    <Member MemberName="System.Collections.ICollection.Count" ExplicitInterfaceMemberName="ICollectionCount">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ICollectionCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionCount" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionCount As Integer Implements ICollection.ICollectionCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.ICollectionCount { int get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionCount" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionCount As Integer Implements ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::ICollection::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -690,13 +693,13 @@ MsgBox(CStr(customers(1)))
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.ICollection.ICollectionIsSynchronized">
-      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.ICollectionIsSynchronized { get; }" />
+    <Member MemberName="System.Collections.ICollection.IsSynchronized" ExplicitInterfaceMemberName="ICollectionIsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ICollectionIsSynchronized" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionIsSynchronized As Boolean Implements ICollection.ICollectionIsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.ICollectionIsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionIsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -713,13 +716,13 @@ MsgBox(CStr(customers(1)))
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.ICollection.ICollectionSyncRoot">
-      <MemberSignature Language="C#" Value="object System.Collections.ICollection.ICollectionSyncRoot { get; }" />
+    <Member MemberName="System.Collections.ICollection.SyncRoot" ExplicitInterfaceMemberName="ICollectionSyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ICollectionSyncRoot" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionSyncRoot As Object Implements ICollection.ICollectionSyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.ICollectionSyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionSyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -736,7 +739,7 @@ MsgBox(CStr(customers(1)))
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator" ExplicitInterfaceMemberName="ICollectionGetEnumerator">
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance class System.Collections.IEnumerator ICollectionGetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.ICollectionGetEnumerator" />
@@ -749,6 +752,11 @@ MsgBox(CStr(customers(1)))
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -784,15 +792,15 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.Add">
+    <Member MemberName="System.Collections.IList.Add" ExplicitInterfaceMemberName="IListAdd">
       <MemberSignature Language="C#" Value="int IList.Add (object Item);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance int32 IListAdd(object Item) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListAdd(System.Object)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListAdd(System.Object)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="VB.NET" Value="Function IListAdd (Item As Object) As Integer Implements IList.Add" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value=" virtual int IListAdd(System::Object ^ Item) = System::Collections::IList::Add;" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="int IList.Add (object value);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance int32 IListAdd(object value) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListAdd(System.Object)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListAdd(System.Object)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Function IListAdd (value As Object) As Integer Implements IList.Add" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value=" virtual int IListAdd(System::Object ^ value) = System::Collections::IList::Add;" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Method</MemberType>
@@ -833,7 +841,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="P:Microsoft.VisualBasic.Collection.Item(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.Clear">
+    <Member MemberName="System.Collections.IList.Clear" ExplicitInterfaceMemberName="IListClear">
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListClear" />
@@ -846,6 +854,11 @@ MsgBox(CStr(customers(1)))
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -866,7 +879,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.Hashtable.Clear" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.Contains">
+    <Member MemberName="System.Collections.IList.Contains" ExplicitInterfaceMemberName="IListContains">
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance bool IListContains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListContains(System.Object)" />
@@ -902,87 +915,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.IListIsFixedSize">
-      <MemberSignature Language="C#" Value="bool System.Collections.IList.IListIsFixedSize { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IListIsFixedSize" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsFixedSize" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsFixedSize As Boolean Implements IList.IListIsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsFixedSize" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.IList.IListIsReadOnly">
-      <MemberSignature Language="C#" Value="bool System.Collections.IList.IListIsReadOnly { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IListIsReadOnly" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsReadOnly" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsReadOnly As Boolean Implements IList.IListIsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsReadOnly" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.IList.IListItem">
-      <MemberSignature Language="C#" Value="object System.Collections.IList.IListItem[int Index] { get; set; }" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value=" Property IListItem(Index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int Index); void set(int Index, System::Object ^ value); };" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C#" Value="object System.Collections.IList.IListItem[int index] { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" FrameworkAlternate="netframework-2.0" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" FrameworkAlternate="netframework-2.0" />
-      <MemberSignature Language="VB.NET" Value=" Property IListItem(index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-2.0" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="Index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      </Parameters>
-      <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.IList.IndexOf">
+    <Member MemberName="System.Collections.IList.IndexOf" ExplicitInterfaceMemberName="IListIndexOf">
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance int32 IListIndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListIndexOf(System.Object)" />
@@ -1018,7 +951,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.Insert">
+    <Member MemberName="System.Collections.IList.Insert" ExplicitInterfaceMemberName="IListInsert">
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListInsert(System.Int32,System.Object)" />
@@ -1066,7 +999,87 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.Remove">
+    <Member MemberName="System.Collections.IList.IsFixedSize" ExplicitInterfaceMemberName="IListIsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IListIsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly" ExplicitInterfaceMemberName="IListIsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IListIsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item" ExplicitInterfaceMemberName="IListItem">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.IListItem[int Index] { get; set; }" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="VB.NET" Value=" Property IListItem(Index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int Index); void set(int Index, System::Object ^ value); };" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C#" Value="object System.Collections.IList.IListItem[int index] { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="VB.NET" Value=" Property IListItem(index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-2.0" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove" ExplicitInterfaceMemberName="IListRemove">
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListRemove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListRemove(System.Object)" />
@@ -1106,7 +1119,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.IList.RemoveAt">
+    <Member MemberName="System.Collections.IList.RemoveAt" ExplicitInterfaceMemberName="IListRemoveAt">
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListRemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListRemoveAt(System.Int32)" />
@@ -1148,7 +1161,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Collections.IList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
+    <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization" ExplicitInterfaceMemberName="OnDeserialization">
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.OnDeserialization(System.Object)" />
@@ -1185,7 +1198,7 @@ MsgBox(CStr(customers(1)))
         <altmember cref="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData" ExplicitInterfaceMemberName="GetObjectData">
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -1201,7 +1214,7 @@ MsgBox(CStr(customers(1)))
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

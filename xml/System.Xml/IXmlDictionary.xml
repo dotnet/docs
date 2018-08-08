@@ -80,7 +80,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Int32" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">Key to look up.</param>
@@ -120,7 +120,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">String value being checked for.</param>
@@ -160,7 +160,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> being checked for.</param>

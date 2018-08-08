@@ -102,8 +102,8 @@
       <Parameters>
         <Parameter Name="cmd" Type="System.String" />
         <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
-        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="outputName" Type="System.String" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="cmd">The command to execute.</param>
@@ -141,8 +141,8 @@
         <Parameter Name="userToken" Type="System.IntPtr" />
         <Parameter Name="cmd" Type="System.String" />
         <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
-        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="outputName" Type="System.String" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="userToken">The token to start the compiler process with.</param>
@@ -182,6 +182,11 @@
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -189,8 +194,8 @@
         <Parameter Name="cmd" Type="System.String" />
         <Parameter Name="currentDir" Type="System.String" />
         <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
-        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="outputName" Type="System.String" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="cmd">The command to execute.</param>
@@ -231,8 +236,8 @@
         <Parameter Name="cmd" Type="System.String" />
         <Parameter Name="currentDir" Type="System.String" />
         <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
-        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="outputName" Type="System.String" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="userToken">The token to start the compiler process with.</param>

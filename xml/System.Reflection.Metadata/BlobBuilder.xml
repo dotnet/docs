@@ -15,6 +15,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(),nq}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -891,7 +896,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Reflection.Metadata.BlobWriter&amp;" RefType="ref" />
+        <Parameter Name="destination" Type="System.Reflection.Metadata.BlobWriter" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>

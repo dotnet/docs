@@ -36,6 +36,11 @@
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetEditAndContinueLogEntries&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt;</ReturnType>
       </ReturnValue>
@@ -64,6 +69,11 @@
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetEditAndContinueMapEntries&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.EntityHandle&gt;</ReturnType>
       </ReturnValue>
@@ -327,6 +337,11 @@
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetTypesWithEvents&gt;d__13))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
       </ReturnValue>
@@ -355,6 +370,11 @@
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetTypesWithProperties&gt;d__12))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
       </ReturnValue>

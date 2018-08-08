@@ -311,7 +311,7 @@ Note that this constructor is protected; it can only be called by classes derive
       </ReturnValue>
       <Parameters>
         <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
-        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="export" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="contract">The contract to match.</param>
@@ -340,7 +340,7 @@ Note that this constructor is protected; it can only be called by classes derive
       </ReturnValue>
       <Parameters>
         <Parameter Name="exportType" Type="System.Type" />
-        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="export" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exportType">The type to match.</param>
@@ -370,7 +370,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Parameters>
         <Parameter Name="exportType" Type="System.Type" />
         <Parameter Name="contractName" Type="System.String" />
-        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="export" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exportType">The type to match.</param>
@@ -402,7 +402,7 @@ Note that this constructor is protected; it can only be called by classes derive
         <TypeParameter Name="TExport" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+        <Parameter Name="export" Type="TExport" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TExport">The type to match.</typeparam>
@@ -434,7 +434,7 @@ Note that this constructor is protected; it can only be called by classes derive
       </TypeParameters>
       <Parameters>
         <Parameter Name="contractName" Type="System.String" />
-        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+        <Parameter Name="export" Type="TExport" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TExport">The type to match.</typeparam>

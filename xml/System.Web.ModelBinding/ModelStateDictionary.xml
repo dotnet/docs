@@ -651,7 +651,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Web.ModelBinding.ModelState&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Web.ModelBinding.ModelState" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

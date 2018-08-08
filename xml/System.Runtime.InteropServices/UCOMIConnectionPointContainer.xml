@@ -14,14 +14,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("b196b284-bab4-101a-b69c-00aa00341d07")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.InteropServices.Guid("B196B284-BAB4-101A-B69C-00AA00341D07")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.IConnectionPointContainer instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -55,7 +61,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.UCOMIEnumConnectionPoints&amp;" RefType="out" />
+        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.UCOMIEnumConnectionPoints" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppEnum">On successful return, contains the interface pointer of the enumerator.</param>
@@ -89,8 +95,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppCP" Type="System.Runtime.InteropServices.UCOMIConnectionPoint&amp;" RefType="out" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppCP" Type="System.Runtime.InteropServices.UCOMIConnectionPoint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>

@@ -25,10 +25,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("'{_keyName}'= {Value}  -  Children = {_dictionary.Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Speech.Recognition.SemanticValue/SemanticValueDebugDisplay))</AttributeName>
     </Attribute>
   </Attributes>
@@ -295,6 +295,11 @@ newGrammar.SpeechRecognized +=
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
@@ -702,6 +707,11 @@ newGrammar.SpeechRecognized +=
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -945,8 +955,8 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String,System::Speech::Recognition::SemanticValue&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1027,8 +1037,8 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, SemanticValue).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System::Collections::Generic::IDictionary&lt;System::String,System::Speech::Recognition::SemanticValue&gt;::Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -1092,7 +1102,7 @@ newGrammar.SpeechRecognized +=
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Speech.Recognition.SemanticValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Speech.Recognition.SemanticValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
@@ -1107,8 +1117,8 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Speech.Recognition.SemanticValue&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of SemanticValue) Implements IDictionary(Of String, SemanticValue).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values { System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ System::Collections::Generic::IDictionary&lt;System::String,System::Speech::Recognition::SemanticValue&gt;::Values { System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -1190,6 +1200,11 @@ newGrammar.SpeechRecognized +=
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

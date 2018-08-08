@@ -23,6 +23,14 @@
       <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayContent,nq}")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.Tasks.Dataflow.ActionBlock`1/DebugView))</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="TInput">The type of data that this <see cref="T:System.Threading.Tasks.Dataflow.ActionBlock`1" /> operates on.</typeparam>
     <summary>Provides a dataflow block that invokes a provided <see cref="T:System.Action`1" /> delegate for every data element received.</summary>

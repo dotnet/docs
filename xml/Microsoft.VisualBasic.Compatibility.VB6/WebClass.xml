@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
   </Attributes>
@@ -71,32 +71,6 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebClass (string UserWebClassName, string WebClassFileName, object ContainingClass, Type ContainingClassType = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string UserWebClassName, string WebClassFileName, object ContainingClass, class System.Type ContainingClassType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClass.#ctor(System.String,System.String,System.Object,System.Type)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (UserWebClassName As String, WebClassFileName As String, ContainingClass As Object, Optional ContainingClassType As Type = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebClass : string * string * obj * Type -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebClass" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebClass (UserWebClassName, WebClassFileName, ContainingClass, ContainingClassType)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="UserWebClassName" Type="System.String" />
-        <Parameter Name="WebClassFileName" Type="System.String" />
-        <Parameter Name="ContainingClass" Type="System.Object" />
-        <Parameter Name="ContainingClassType" Type="System.Type" />
-      </Parameters>
-      <Docs>
-        <param name="UserWebClassName">To be added.</param>
-        <param name="WebClassFileName">To be added.</param>
-        <param name="ContainingClass">To be added.</param>
-        <param name="ContainingClassType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
@@ -111,6 +85,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -145,6 +124,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.WebItem</ReturnType>
       </ReturnValue>
@@ -214,6 +198,14 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

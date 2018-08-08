@@ -65,8 +65,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
-        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="points" Type="System.Drawing.PointF[]" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]" RefType="ref" />
         <Parameter Name="startIndex" Type="System.Int32" />
         <Parameter Name="endIndex" Type="System.Int32" />
       </Parameters>
@@ -184,8 +184,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
-        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="points" Type="System.Drawing.PointF[]" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="points">Upon return, contains an array of <see cref="T:System.Drawing.PointF" /> structures that represents the points in the path.</param>
@@ -383,8 +383,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="startIndex">[out] The integer reference supplied to this parameter receives the index of the point that starts a subpath.</param>
@@ -442,9 +442,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pathType" Type="System.Byte&amp;" RefType="out" />
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pathType" Type="System.Byte" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathType">[out] Receives the point type shared by all points in the group. Possible types can be retrieved from the <see cref="T:System.Drawing.Drawing2D.PathPointType" /> enumeration.</param>
@@ -510,7 +510,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
-        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isClosed" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that is to have its data points set to match the data points of the retrieved figure (subpath) for this iterator.</param>
@@ -563,9 +563,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="isClosed" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="startIndex">[out] Receives the starting index of the next subpath.</param>

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -181,7 +181,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="workflowInstanceId" Type="System.Guid" />
-        <Parameter Name="workflowInstance" Type="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&amp;" RefType="out" />
+        <Parameter Name="workflowInstance" Type="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workflowInstanceId">The <see cref="T:System.Guid" /> of the workflow instance for which the tracking data is requested.</param>

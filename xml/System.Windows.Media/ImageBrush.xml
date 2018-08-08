@@ -196,7 +196,7 @@ An ImageBrush can paint shapes, controls, text, and more
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contentBounds" Type="System.Windows.Rect&amp;" RefType="out" />
+        <Parameter Name="contentBounds" Type="System.Windows.Rect" RefType="out" />
       </Parameters>
       <Docs>
         <param name="contentBounds">To be added.</param>

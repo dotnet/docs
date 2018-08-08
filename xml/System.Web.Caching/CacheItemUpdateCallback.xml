@@ -16,10 +16,10 @@
   <Parameters>
     <Parameter Name="key" Type="System.String" />
     <Parameter Name="reason" Type="System.Web.Caching.CacheItemUpdateReason" />
-    <Parameter Name="expensiveObject" Type="System.Object&amp;" RefType="out" />
-    <Parameter Name="dependency" Type="System.Web.Caching.CacheDependency&amp;" RefType="out" />
-    <Parameter Name="absoluteExpiration" Type="System.DateTime&amp;" RefType="out" />
-    <Parameter Name="slidingExpiration" Type="System.TimeSpan&amp;" RefType="out" />
+    <Parameter Name="expensiveObject" Type="System.Object" RefType="out" />
+    <Parameter Name="dependency" Type="System.Web.Caching.CacheDependency" RefType="out" />
+    <Parameter Name="absoluteExpiration" Type="System.DateTime" RefType="out" />
+    <Parameter Name="slidingExpiration" Type="System.TimeSpan" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

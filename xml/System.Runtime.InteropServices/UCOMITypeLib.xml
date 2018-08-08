@@ -14,14 +14,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00020402-0000-0000-c000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.InteropServices.Guid("00020402-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.ITypeLib instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,7 +65,7 @@
         <Parameter Name="lHashVal" Type="System.Int32" />
         <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.UCOMITypeInfo[]" />
         <Parameter Name="rgMemId" Type="System.Int32[]" />
-        <Parameter Name="pcFound" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="pcFound" Type="System.Int16" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="szNameBuf">The name to search for.</param>
@@ -102,10 +108,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strName" Type="System.String" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">Index of the type description whose documentation is to be returned.</param>
@@ -143,7 +149,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTLibAttr" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppTLibAttr" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTLibAttr">On successful return, a structure that contains the library's attributes.</param>
@@ -179,7 +185,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.UCOMITypeComp&amp;" RefType="out" />
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.UCOMITypeComp" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTComp">On successful return, an instance of a <see langword="UCOMITypeComp" /> instance for this <see langword="ITypeLib" />.</param>
@@ -214,7 +220,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.UCOMITypeInfo&amp;" RefType="out" />
+        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.UCOMITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">Index of the <see langword="UCOMITypeInfo" /> interface to return.</param>
@@ -281,8 +287,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.UCOMITypeInfo&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.UCOMITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">IID of the interface of CLSID of the class whose type info is requested.</param>
@@ -318,7 +324,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.TYPEKIND&amp;" RefType="out" />
+        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.TYPEKIND" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the type description within the type library.</param>

@@ -1113,7 +1113,7 @@ batchBlock.Complete();
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt;" RefType="this" />
-        <Parameter Name="item" Type="TOutput&amp;" RefType="out" />
+        <Parameter Name="item" Type="TOutput" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>

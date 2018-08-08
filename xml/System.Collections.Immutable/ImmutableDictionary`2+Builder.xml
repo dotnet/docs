@@ -39,6 +39,14 @@
       <InterfaceName>System.Collections.IDictionary</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableDictionaryBuilderDebuggerProxy`2))</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a hash map that mutates with little or no memory allocations and that can produce or build on immutable hash map instances very efficiently.  
   
@@ -457,6 +465,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Immutable.ImmutableDictionary`2/Builder/&lt;get_Keys&gt;d__18))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TKey&gt;</ReturnType>
       </ReturnValue>
@@ -594,8 +607,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey,TValue&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -621,8 +634,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TKey&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -648,8 +661,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TValue&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -739,8 +752,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -752,6 +765,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -766,8 +784,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -779,6 +797,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -904,8 +927,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -931,8 +954,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -958,8 +981,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionary::Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -989,8 +1012,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1052,8 +1075,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder.System.Collections.IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1160,7 +1183,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="equalKey" Type="TKey" />
-        <Parameter Name="actualKey" Type="TKey&amp;" RefType="out" />
+        <Parameter Name="actualKey" Type="TKey" RefType="out" />
       </Parameters>
       <Docs>
         <param name="equalKey">The key to search for.</param>
@@ -1193,8 +1216,8 @@
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="builder.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
-        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1208,7 +1231,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key whose value will be retrieved.</param>
@@ -1263,6 +1286,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Immutable.ImmutableDictionary`2/Builder/&lt;get_Values&gt;d__22))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TValue&gt;</ReturnType>
       </ReturnValue>

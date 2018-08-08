@@ -63,8 +63,8 @@
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesConsumed" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
@@ -119,7 +119,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
@@ -172,7 +172,7 @@
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -201,7 +201,7 @@
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="quality" Type="System.Int32" />
         <Parameter Name="window" Type="System.Int32" />
       </Parameters>

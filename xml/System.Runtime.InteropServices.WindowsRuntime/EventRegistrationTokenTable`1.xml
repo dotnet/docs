@@ -119,7 +119,7 @@
         <ReturnType>System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="refEventTable" Type="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable&lt;T&gt;&amp;" RefType="ref" />
+        <Parameter Name="refEventTable" Type="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable&lt;T&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="refEventTable">An event registration token table, passed by reference.</param>

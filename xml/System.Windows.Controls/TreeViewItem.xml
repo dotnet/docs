@@ -19,13 +19,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.TreeViewItem))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_Header", Type=typeof(System.Windows.FrameworkElement))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="ItemsHost", Type=typeof(System.Windows.Controls.ItemsPresenter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -79,6 +79,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TreeViewItem" /> class.</summary>
@@ -124,7 +129,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
       </Attributes>
@@ -206,7 +211,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
       </Attributes>
@@ -286,6 +291,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -530,13 +540,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -991,7 +1001,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1066,8 +1076,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#Constraints" />
       <MemberSignature Language="VB.NET" Value=" Property Constraints As HierarchicalVirtualizationConstraints Implements IHierarchicalVirtualizationAndScrollInfo.Constraints" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationConstraints System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints</InterfaceMember>
@@ -1097,8 +1107,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#HeaderDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HeaderDesiredSizes As HierarchicalVirtualizationHeaderDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes</InterfaceMember>
@@ -1128,8 +1138,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#InBackgroundLayout" />
       <MemberSignature Language="VB.NET" Value=" Property InBackgroundLayout As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::InBackgroundLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout</InterfaceMember>
@@ -1160,8 +1170,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" Property ItemDesiredSizes As HierarchicalVirtualizationItemDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes</InterfaceMember>
@@ -1191,8 +1201,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Panel System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemsHost" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemsHost As Panel Implements IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::Panel ^ System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::Panel ^ System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost</InterfaceMember>
@@ -1222,8 +1232,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#MustDisableVirtualization" />
       <MemberSignature Language="VB.NET" Value=" Property MustDisableVirtualization As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo::MustDisableVirtualization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization</InterfaceMember>
@@ -1263,7 +1273,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
       </Attributes>

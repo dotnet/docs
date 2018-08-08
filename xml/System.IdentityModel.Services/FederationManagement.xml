@@ -161,8 +161,8 @@
       <Parameters>
         <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
         <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
-        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
-        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader" RefType="out" />
       </Parameters>
       <Docs>
         <param name="metadataReader">An XML reader that contains the metadata document.</param>
@@ -196,8 +196,8 @@
       <Parameters>
         <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
         <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
-        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
-        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader" RefType="out" />
         <Parameter Name="metadataSerializer" Type="System.IdentityModel.Metadata.MetadataSerializer" />
       </Parameters>
       <Docs>

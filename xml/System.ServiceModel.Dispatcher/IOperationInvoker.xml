@@ -73,7 +73,7 @@
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
         <Parameter Name="inputs" Type="System.Object[]" />
-        <Parameter Name="outputs" Type="System.Object[]&amp;" RefType="out" />
+        <Parameter Name="outputs" Type="System.Object[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="instance">The object to be invoked.</param>
@@ -134,7 +134,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
-        <Parameter Name="outputs" Type="System.Object[]&amp;" RefType="out" />
+        <Parameter Name="outputs" Type="System.Object[]" RefType="out" />
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>

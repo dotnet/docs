@@ -77,7 +77,7 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -103,7 +103,7 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.Xml.Serialization.XmlAttribute("name", DataType="NMTOKEN")</AttributeName>
         </Attribute>
       </Attributes>

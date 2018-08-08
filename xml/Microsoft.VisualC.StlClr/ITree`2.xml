@@ -26,7 +26,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1005")</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,7 +63,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -189,7 +189,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -222,7 +222,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&gt;" RefType="ref" />
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>
@@ -375,7 +375,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>
@@ -493,7 +493,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,System.Boolean&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,System.Boolean&gt;" RefType="ref" />
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
@@ -593,7 +593,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>
@@ -628,7 +628,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -661,7 +661,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -756,7 +756,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>

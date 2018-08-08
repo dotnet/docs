@@ -45,6 +45,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.FaultConverter" /> class.</summary>
@@ -116,7 +121,7 @@
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
         <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
-        <Parameter Name="exception" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The fault message.</param>
@@ -167,7 +172,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exception">The SOAP exception.</param>
@@ -210,7 +215,7 @@
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
         <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
-        <Parameter Name="exception" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The fault message.</param>
@@ -249,7 +254,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exception">The SOAP exception.</param>

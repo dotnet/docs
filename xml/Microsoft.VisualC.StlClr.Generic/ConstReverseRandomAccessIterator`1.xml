@@ -351,8 +351,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -397,8 +397,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -420,8 +420,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="_Pos" Type="System.Int32" />
@@ -574,7 +574,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -701,7 +701,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -711,12 +711,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ConstReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
-      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="constReverseRandomAccessIterator.op_Decrement (, A_0)" />
+      <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ConstReverseRandomAccessIterator(Of TValue),  As Integer) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" />
+      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="constReverseRandomAccessIterator.op_Decrement (, )" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -727,7 +727,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="System.Int32" RefType="ref" />
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -872,7 +872,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
@@ -882,12 +882,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ConstReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
-      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="constReverseRandomAccessIterator.op_Increment (, A_0)" />
+      <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ConstReverseRandomAccessIterator(Of TValue),  As Integer) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" />
+      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="constReverseRandomAccessIterator.op_Increment (, )" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -898,7 +898,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="System.Int32" RefType="ref" />
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -1076,7 +1076,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1110,7 +1110,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>

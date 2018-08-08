@@ -23,6 +23,11 @@
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.0">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters>
     <Parameter Name="userData" Type="System.Object" />
   </Parameters>

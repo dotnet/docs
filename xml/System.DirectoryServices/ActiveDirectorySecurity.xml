@@ -381,7 +381,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The type of access control modification to perform.</param>
@@ -414,7 +414,7 @@
       <Parameters>
         <Parameter Name="modification" Type="System.Security.AccessControl.AccessControlModification" />
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
-        <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="modified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="modification">The modification to apply.</param>

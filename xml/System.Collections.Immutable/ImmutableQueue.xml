@@ -185,7 +185,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="queue" Type="System.Collections.Immutable.IImmutableQueue&lt;T&gt;" RefType="this" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of elements in the immutable queue.</typeparam>

@@ -511,7 +511,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
-        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectURI" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="url">The URL from which to extract the URI of the remote well-known object.</param>

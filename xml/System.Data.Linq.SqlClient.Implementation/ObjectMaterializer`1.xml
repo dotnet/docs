@@ -128,6 +128,14 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1/&lt;Convert&gt;d__1`1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1/&lt;Convert&gt;d__15`1))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TOutput&gt;</ReturnType>
       </ReturnValue>

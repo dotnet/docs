@@ -182,8 +182,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#ToggleState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ToggleState As ToggleState Implements IToggleProvider.ToggleState" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState { System::Windows::Automation::ToggleState get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ToggleState System::Windows::Automation::Provider::IToggleProvider::ToggleState { System::Windows::Automation::ToggleState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IToggleProvider.ToggleState</InterfaceMember>

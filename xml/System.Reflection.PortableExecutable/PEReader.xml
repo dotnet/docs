@@ -530,8 +530,8 @@
       <Parameters>
         <Parameter Name="peImagePath" Type="System.String" />
         <Parameter Name="pdbFileStreamProvider" Type="System.Func&lt;System.String,System.IO.Stream&gt;" />
-        <Parameter Name="pdbReaderProvider" Type="System.Reflection.Metadata.MetadataReaderProvider&amp;" RefType="out" />
-        <Parameter Name="pdbPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pdbReaderProvider" Type="System.Reflection.Metadata.MetadataReaderProvider" RefType="out" />
+        <Parameter Name="pdbPath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="peImagePath">To be added.</param>

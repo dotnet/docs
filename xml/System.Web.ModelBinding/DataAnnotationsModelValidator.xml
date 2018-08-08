@@ -178,8 +178,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Web.ModelBinding.DataAnnotationsModelValidator/&lt;Validate&gt;d__11))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Web.ModelBinding.DataAnnotationsModelValidator/&lt;Validate&gt;d__1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Web.ModelBinding.DataAnnotationsModelValidator/&lt;Validate&gt;d__10))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
     </Attribute>
   </Attributes>
@@ -111,6 +111,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -224,7 +229,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="ValueArray" Type="System.Double[]" RefType="ref" />
         <Parameter Name="Guess" Type="System.Double" />
       </Parameters>
       <Docs>
@@ -275,7 +280,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="ValueArray" Type="System.Double[]" RefType="ref" />
         <Parameter Name="FinanceRate" Type="System.Double" />
         <Parameter Name="ReinvestRate" Type="System.Double" />
       </Parameters>
@@ -384,7 +389,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Rate" Type="System.Double" />
-        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="ValueArray" Type="System.Double[]" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Rate">Required. <see langword="Double" /> specifying discount rate over the length of the period, expressed as a decimal.</param>
@@ -434,6 +439,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>

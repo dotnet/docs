@@ -203,7 +203,7 @@
       <Parameters>
         <Parameter Name="identity" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="item" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <param name="identity">The identity of the item to be searched for.</param>

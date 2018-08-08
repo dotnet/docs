@@ -40,6 +40,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of this class.</summary>
@@ -116,7 +121,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="reference" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity&amp;" RefType="out" />
+        <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity" RefType="out" />
       </Parameters>
       <Docs>
         <param name="reference">The <see cref="T:System.ServiceModel.EndpointAddress" /> to use for creating the identity.</param>

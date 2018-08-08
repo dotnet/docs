@@ -16,8 +16,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -155,7 +161,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="obj" Type="System.Object" RefType="ref" />
         <Parameter Name="enumerator" Type="System.Collections.IEnumerator" />
       </Parameters>
       <Docs>
@@ -197,8 +203,8 @@
         <Parameter Name="Start" Type="System.Object" />
         <Parameter Name="Limit" Type="System.Object" />
         <Parameter Name="StepValue" Type="System.Object" />
-        <Parameter Name="LoopForResult" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LoopForResult" Type="System.Object" RefType="ref" />
+        <Parameter Name="CounterResult" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Counter">The loop counter variable.</param>
@@ -281,7 +287,7 @@
       <Parameters>
         <Parameter Name="Counter" Type="System.Object" />
         <Parameter Name="LoopObj" Type="System.Object" />
-        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CounterResult" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Counter">The loop counter variable.</param>

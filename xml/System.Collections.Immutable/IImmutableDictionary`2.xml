@@ -306,7 +306,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="equalKey" Type="TKey" />
-        <Parameter Name="actualKey" Type="TKey&amp;" RefType="out" />
+        <Parameter Name="actualKey" Type="TKey" RefType="out" />
       </Parameters>
       <Docs>
         <param name="equalKey">The key to search for.</param>

@@ -291,7 +291,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="context" Type="System.ServiceModel.Channels.RequestContext&amp;" RefType="out" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.RequestContext" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Channels.IReplyChannel.BeginTryReceiveRequest(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
@@ -490,7 +490,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="context" Type="System.ServiceModel.Channels.RequestContext&amp;" RefType="out" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.RequestContext" RefType="out" />
       </Parameters>
       <Docs>
         <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the receive of a request operation has to complete before timing out and returning <see langword="false" />.</param>

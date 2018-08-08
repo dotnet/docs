@@ -19,17 +19,26 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("9FDB6D2C-90EA-4e42-99E6-38B96E28698E")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ProgId("System.Web.Configuration.RemoteWebConfigurationHostServerV4_32")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDual)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.Guid("8DEC0FA2-CC19-494F-8613-1F6221C0C5AB")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ProgId("System.Web.Configuration.RemoteWebConfigurationHostServer_32")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,6 +60,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Used internally at run time to create a new instance of <see cref="T:System.Web.Configuration.RemoteWebConfigurationHostServer" />.</summary>
@@ -112,7 +126,7 @@
       <MemberSignature Language="F#" Value="abstract member GetData : string * bool *  -&gt; byte[]&#xA;override this.GetData : string * bool *  -&gt; byte[]" Usage="remoteWebConfigurationHostServer.GetData (fileName, getReadTimeOnly, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,7 +139,7 @@
       <Parameters>
         <Parameter Name="fileName" Type="System.String" />
         <Parameter Name="getReadTimeOnly" Type="System.Boolean" />
-        <Parameter Name="readTime" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="readTime" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="fileName">The path to the remote configuration file to be accessed.</param>
@@ -149,7 +163,7 @@
       <MemberSignature Language="F#" Value="abstract member GetFileDetails : string *  *  *  *  -&gt; unit&#xA;override this.GetFileDetails : string *  *  *  *  -&gt; unit" Usage="remoteWebConfigurationHostServer.GetFileDetails (name, exists, size, createDate, lastWriteDate)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean,System.Int64,System.Int64,System.Int64)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,10 +175,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="exists" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="size" Type="System.Int64&amp;" RefType="out" />
-        <Parameter Name="createDate" Type="System.Int64&amp;" RefType="out" />
-        <Parameter Name="lastWriteDate" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="exists" Type="System.Boolean" RefType="out" />
+        <Parameter Name="size" Type="System.Int64" RefType="out" />
+        <Parameter Name="createDate" Type="System.Int64" RefType="out" />
+        <Parameter Name="lastWriteDate" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the file.</param>
@@ -227,7 +241,7 @@
       <MemberSignature Language="F#" Value="abstract member WriteData : string * string * byte[] *  -&gt; unit&#xA;override this.WriteData : string * string * byte[] *  -&gt; unit" Usage="remoteWebConfigurationHostServer.WriteData (fileName, templateFileName, data, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,7 +255,7 @@
         <Parameter Name="fileName" Type="System.String" />
         <Parameter Name="templateFileName" Type="System.String" />
         <Parameter Name="data" Type="System.Byte[]" />
-        <Parameter Name="readTime" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="readTime" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="fileName">The path to the remote configuration file to be accessed.</param>

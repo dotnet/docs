@@ -1,4 +1,4 @@
-<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
+﻿<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class XmlDataSourceDesigner : System.Web.UI.Design.HierarchicalDataSourceDesigner, System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSourceDesigner extends System.Web.UI.Design.HierarchicalDataSourceDesigner implements class System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" />
@@ -43,6 +43,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
@@ -312,8 +317,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanConfigure" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanConfigure As Boolean Implements IDataSourceDesigner.CanConfigure" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataSourceDesigner::CanConfigure { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure</InterfaceMember>
@@ -346,8 +351,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataSourceDesigner.CanRefreshSchema" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataSourceDesigner::CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema</InterfaceMember>

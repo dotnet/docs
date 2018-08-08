@@ -16,6 +16,11 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(),nq}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -1022,7 +1027,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1050,7 +1055,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>

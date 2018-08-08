@@ -54,6 +54,11 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigXmlDocument" /> class.</summary>
@@ -444,8 +449,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.Configuration.Internal.IConfigErrorInfo.Filename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.System#Configuration#Internal#IConfigErrorInfo#Filename" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Filename As String Implements IConfigErrorInfo.Filename" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Configuration.Internal.IConfigErrorInfo.Filename { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Configuration.ConfigXmlDocument.System.Configuration.Internal.IConfigErrorInfo.Filename" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::Configuration::Internal::IConfigErrorInfo::Filename { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Configuration.Internal.IConfigErrorInfo.Filename" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.Filename</InterfaceMember>
@@ -474,8 +479,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Configuration.Internal.IConfigErrorInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigXmlDocument.System#Configuration#Internal#IConfigErrorInfo#LineNumber" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IConfigErrorInfo.LineNumber" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Configuration.Internal.IConfigErrorInfo.LineNumber { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Configuration.ConfigXmlDocument.System.Configuration.Internal.IConfigErrorInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Configuration::Internal::IConfigErrorInfo::LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Configuration.Internal.IConfigErrorInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Configuration.Internal.IConfigErrorInfo.LineNumber</InterfaceMember>

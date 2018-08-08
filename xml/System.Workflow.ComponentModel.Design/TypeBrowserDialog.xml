@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -246,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" />
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
@@ -284,8 +284,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent System.ComponentModel.ISite.Component" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Component As IComponent Implements ISite.Component" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System.ComponentModel.ISite.Component { System::ComponentModel::IComponent ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Component" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System::ComponentModel::ISite::Component { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.ISite.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -315,8 +315,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IContainer System.ComponentModel.ISite.Container" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Container As IContainer Implements ISite.Container" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IContainer ^ System.ComponentModel.ISite.Container { System::ComponentModel::IContainer ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Container" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IContainer ^ System::ComponentModel::ISite::Container { System::ComponentModel::IContainer ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.ISite.Container" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -346,8 +346,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.ISite.DesignMode" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#DesignMode" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DesignMode As Boolean Implements ISite.DesignMode" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.ISite.DesignMode { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.DesignMode" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::ISite::DesignMode { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.ISite.DesignMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -376,8 +376,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.ComponentModel.ISite.Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Name" />
       <MemberSignature Language="VB.NET" Value=" Property Name As String Implements ISite.Name" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.ISite.Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Name" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::ComponentModel::ISite::Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.ISite.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

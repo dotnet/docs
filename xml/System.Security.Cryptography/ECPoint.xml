@@ -24,6 +24,11 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netstandard-2.0">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a (X,Y) coordinate pair for elliptic curve cryptography (ECC) structures.</summary>
     <remarks>To be added.</remarks>

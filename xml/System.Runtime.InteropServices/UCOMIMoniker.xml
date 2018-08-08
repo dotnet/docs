@@ -14,14 +14,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("0000000f-0000-0000-c000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.InteropServices.Guid("0000000f-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.IMoniker instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -57,8 +63,8 @@
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="riidResult" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppvResult" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="riidResult" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppvResult" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used in this binding operation.</param>
@@ -97,8 +103,8 @@
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used during this binding operation.</param>
@@ -136,7 +142,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkOther" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with this for a common prefix.</param>
@@ -173,7 +179,7 @@
       <Parameters>
         <Parameter Name="pmkRight" Type="System.Runtime.InteropServices.UCOMIMoniker" />
         <Parameter Name="fOnlyIfNotGeneric" Type="System.Boolean" />
-        <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on the moniker to compose onto the end of this moniker.</param>
@@ -210,7 +216,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="fForward" Type="System.Boolean" />
-        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker&amp;" RefType="out" />
+        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="fForward">If <see langword="true" />, enumerates the monikers from left to right. If <see langword="false" />, enumerates from right to left.</param>
@@ -245,7 +251,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pClassID" Type="System.Guid&amp;" RefType="out" />
+        <Parameter Name="pClassID" Type="System.Guid" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pClassID">On successful return, contains the CLSID.</param>
@@ -281,7 +287,7 @@
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="ppszDisplayName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="ppszDisplayName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the bind context to use in this operation.</param>
@@ -317,7 +323,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pcbSize" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="pcbSize" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcbSize">On successful return, contains a <see langword="long" /> value indicating the size in bytes of the stream needed to save this object.</param>
@@ -353,7 +359,7 @@
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="pFileTime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="out" />
+        <Parameter Name="pFileTime" Type="System.Runtime.InteropServices.FILETIME" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
@@ -389,7 +395,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pdwHash" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pdwHash" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pdwHash">On successful return, contains the hash value for this moniker.</param>
@@ -423,7 +429,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppmk" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="ppmk" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppmk">On successful return, contains a moniker that is the inverse of this moniker.</param>
@@ -561,7 +567,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pdwMksys" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pdwMksys" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pdwMksys">A pointer to an integer that is one of the values from the <see langword="MKSYS" /> enumeration, and refers to one of the COM moniker classes.</param>
@@ -632,8 +638,8 @@
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" />
         <Parameter Name="pszDisplayName" Type="System.String" />
-        <Parameter Name="pchEaten" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="ppmkOut" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="pchEaten" Type="System.Int32" RefType="out" />
+        <Parameter Name="ppmkOut" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
@@ -673,8 +679,8 @@
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.UCOMIBindCtx" />
         <Parameter Name="dwReduceHowFar" Type="System.Int32" />
-        <Parameter Name="ppmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="ref" />
-        <Parameter Name="ppmkReduced" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="ppmkToLeft" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="ref" />
+        <Parameter Name="ppmkReduced" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context to be used in this binding operation.</param>
@@ -712,7 +718,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkOther" Type="System.Runtime.InteropServices.UCOMIMoniker" />
-        <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.UCOMIMoniker&amp;" RefType="out" />
+        <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.UCOMIMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the moniker to which a relative path should be taken.</param>

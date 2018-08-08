@@ -179,7 +179,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -329,7 +329,7 @@
         <Parameter Name="pathToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -488,7 +488,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -630,7 +630,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
@@ -744,7 +744,7 @@
         <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="scope">The scope of the personalization information to be retrieved.</param>
@@ -812,6 +812,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -925,6 +930,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1222,6 +1232,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

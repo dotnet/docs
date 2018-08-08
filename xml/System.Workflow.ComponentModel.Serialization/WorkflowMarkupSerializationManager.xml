@@ -262,7 +262,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="prefix" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="prefix" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> for which to return the XML-qualified name.</param>
@@ -475,8 +475,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#Properties" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Properties As PropertyDescriptorCollection Implements IDesignerSerializationManager.Properties" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System::ComponentModel::Design::Serialization::IDesignerSerializationManager::Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

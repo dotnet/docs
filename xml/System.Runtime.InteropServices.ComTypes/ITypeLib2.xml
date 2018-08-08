@@ -31,11 +31,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00020411-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member FindName : string * int * System.Runtime.InteropServices.ComTypes.ITypeInfo[] * int[] *  -&gt; unit" Usage="iTypeLib2.FindName (szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -91,7 +94,7 @@
         <Parameter Name="lHashVal" Type="System.Int32" />
         <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo[]" />
         <Parameter Name="rgMemId" Type="System.Int32[]" />
-        <Parameter Name="pcFound" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="pcFound" Type="System.Int16" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="szNameBuf">The name to search for.</param>
@@ -186,8 +189,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">A <see cref="T:System.Guid" /> , passed by reference, that is used to identify the data.</param>
@@ -205,7 +208,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String,System.String,System.Int32,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,10 +235,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strName" Type="System.String" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the type description whose documentation is to be returned.</param>
@@ -283,7 +286,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -292,9 +295,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pbstrHelpString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="pdwHelpStringContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="pbstrHelpStringDll" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pbstrHelpString" Type="System.String" RefType="out" />
+        <Parameter Name="pdwHelpStringContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="pbstrHelpStringDll" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the type description whose documentation is to be returned; if <c>index</c> is -1, the documentation for the library is returned.</param>
@@ -314,7 +317,7 @@
       <MemberSignature Language="F#" Value="abstract member GetLibAttr :  -&gt; unit" Usage="iTypeLib2.GetLibAttr ppTLibAttr" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -340,7 +343,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTLibAttr" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppTLibAttr" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTLibAttr">When this method returns, contains a structure that contains the library's attributes. This parameter is passed uninitialized.</param>
@@ -390,7 +393,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pcUniqueNames" Type="System.IntPtr" />
-        <Parameter Name="pcchUniqueNames" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcchUniqueNames" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcUniqueNames">A pointer to a count of unique names. If the caller does not need this information, set to <see langword="null" />.</param>
@@ -415,7 +418,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeLib2.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -441,7 +444,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp&amp;" RefType="out" />
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTComp">When this method returns, contains an <see langword="ITypeComp" /> instance for this <see langword="ITypeLib" />. This parameter is passed uninitialized.</param>
@@ -465,7 +468,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfo : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfo (index, ppTI)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -492,7 +495,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the <see langword="ITypeInfo" /> interface to return.</param>
@@ -565,7 +568,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoOfGuid :  *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoOfGuid (guid, ppTInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -591,8 +594,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">The <see cref="T:System.Guid" />, passed by reference, that represents the IID of the <see langword="CLSID" /> interface of the class whose type info is requested.</param>
@@ -617,7 +620,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoType : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoType (index, pTKind)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -644,7 +647,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND&amp;" RefType="out" />
+        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the type description within the type library.</param>

@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -643,8 +643,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="position" Type="System.SequencePosition&amp;" RefType="ref" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="position" Type="System.SequencePosition" RefType="ref" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
         <Parameter Name="advance" Type="System.Boolean" />
       </Parameters>
       <Docs>

@@ -36,6 +36,11 @@
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandler" /> class.</summary>
@@ -68,8 +73,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.IHttpHandler.IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System.Web.IHttpHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::IHttpHandler::IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

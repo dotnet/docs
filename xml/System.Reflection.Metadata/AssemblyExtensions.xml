@@ -42,7 +42,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -51,8 +51,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.Reflection.Assembly" RefType="this" />
-        <Parameter Name="blob" Type="System.Byte*&amp;" RefType="out" />
-        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="blob" Type="System.Byte*" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="assembly">To be added.</param>

@@ -1399,8 +1399,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.ComponentModel.IDataErrorInfo.Error" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.System#ComponentModel#IDataErrorInfo#Error" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Error As String Implements IDataErrorInfo.Error" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.IDataErrorInfo.Error { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Data.DataRowView.System.ComponentModel.IDataErrorInfo.Error" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::ComponentModel::IDataErrorInfo::Error { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IDataErrorInfo.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1438,8 +1438,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.ComponentModel.IDataErrorInfo.Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.System#ComponentModel#IDataErrorInfo#Item(System.String)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(colName As String) As String Implements IDataErrorInfo.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.IDataErrorInfo.Item[System::String ^] { System::String ^ get(System::String ^ colName); };" />
-      <MemberSignature Language="F#" Usage="System.Data.DataRowView.System.ComponentModel.IDataErrorInfo.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::ComponentModel::IDataErrorInfo::Item[System::String ^] { System::String ^ get(System::String ^ colName); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IDataErrorInfo.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

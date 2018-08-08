@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -60,7 +60,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="fExists" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the new property.</param>
@@ -100,7 +100,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="fExists" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="position">The index of the new property</param>

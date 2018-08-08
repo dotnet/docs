@@ -219,7 +219,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       </ReturnValue>
       <Parameters>
         <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
-        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="export" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="contract">The contract.</param>

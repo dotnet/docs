@@ -36,7 +36,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="ref">
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="ref">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>

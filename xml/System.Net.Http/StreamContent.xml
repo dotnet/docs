@@ -244,7 +244,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="length">The length in bytes of the stream content.</param>

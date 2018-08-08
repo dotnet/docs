@@ -19,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.ComponentModel.Composition.Hosting.AssemblyCatalogDebuggerProxy))</AttributeName>
     </Attribute>
   </Attributes>
@@ -70,6 +70,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
@@ -98,6 +103,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="codeBase" Type="System.String" />
       </Parameters>
@@ -470,9 +480,9 @@
       <Docs>
         <summary>Gets the part definitions that are contained in the assembly catalog.</summary>
         <value>The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects contained in the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" />.</value>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">
           The <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object has been disposed of.</exception>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName">
@@ -480,8 +490,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.AssemblyCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#DisplayName" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DisplayName As String Implements ICompositionElement.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.Composition.Hosting.AssemblyCatalog.System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::ComponentModel::Composition::Primitives::ICompositionElement::DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName</InterfaceMember>
@@ -491,6 +501,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -512,8 +527,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Composition.Primitives.ICompositionElement System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.AssemblyCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#Origin" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Origin As ICompositionElement Implements ICompositionElement.Origin" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Composition::Primitives::ICompositionElement ^ System.ComponentModel.Composition.Primitives.ICompositionElement.Origin { System::ComponentModel::Composition::Primitives::ICompositionElement ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.Composition.Hosting.AssemblyCatalog.System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Composition::Primitives::ICompositionElement ^ System::ComponentModel::Composition::Primitives::ICompositionElement::Origin { System::ComponentModel::Composition::Primitives::ICompositionElement ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.Composition.Primitives.ICompositionElement.Origin</InterfaceMember>
@@ -552,6 +567,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

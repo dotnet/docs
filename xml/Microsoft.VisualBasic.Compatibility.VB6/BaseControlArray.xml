@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
   </Attributes>
@@ -773,7 +773,7 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit" ExplicitInterfaceMemberName="BeginInit">
       <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BeginInit" />
@@ -805,7 +805,7 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit" ExplicitInterfaceMemberName="EndInit">
       <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.EndInit" />

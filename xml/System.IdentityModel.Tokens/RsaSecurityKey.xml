@@ -133,8 +133,10 @@
       </Parameters>
       <Docs>
         <param name="algorithm">The asymmetric algorithm to create.</param>
-        <param name="requiresPrivateKey"><see langword="true" /> when a private key is required to create the algorithm; otherwise, <see langword="false" />.</param>
-        <param name="privateKey"><see langword="true" /> when a private key is required to create the algorithm; otherwise, <see langword="false" />.</param>
+        <param name="requiresPrivateKey">
+          <see langword="true" /> when a private key is required to create the algorithm; otherwise, <see langword="false" />.</param>
+        <param name="privateKey">
+          <see langword="true" /> when a private key is required to create the algorithm; otherwise, <see langword="false" />.</param>
         <summary>Gets the specified asymmetric cryptographic algorithm.</summary>
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that represents the specified asymmetric cryptographic algorithm.</returns>
         <remarks>To be added.</remarks>

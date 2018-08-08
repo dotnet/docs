@@ -388,7 +388,7 @@
       <MemberSignature Language="F#" Value="abstract member GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit&#xA;override this.GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit" Usage="delegatingConfigHost.GetRestrictedPermissions (configRecord, permissionSet, isHostReady)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -400,8 +400,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="configRecord" Type="System.Configuration.Internal.IInternalConfigRecord" />
-        <Parameter Name="permissionSet" Type="System.Security.PermissionSet&amp;" RefType="out" />
-        <Parameter Name="isHostReady" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="permissionSet" Type="System.Security.PermissionSet" RefType="out" />
+        <Parameter Name="isHostReady" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="configRecord">An <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object.</param>
@@ -635,7 +635,7 @@
       <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit&#xA;override this.InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="delegatingConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String,System.String,System.String,System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -650,9 +650,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="locationSubPath" Type="System.String&amp;" RefType="ref" Index="0" />
-        <Parameter Name="configPath" Type="System.String&amp;" RefType="out" Index="1" />
-        <Parameter Name="locationConfigPath" Type="System.String&amp;" RefType="out" Index="2" />
+        <Parameter Name="locationSubPath" Type="System.String" RefType="ref" Index="0" />
+        <Parameter Name="configPath" Type="System.String" RefType="out" Index="1" />
+        <Parameter Name="locationConfigPath" Type="System.String" RefType="out" Index="2" />
         <Parameter Name="configRoot" Type="System.Configuration.Internal.IInternalConfigRoot" Index="3" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="root" Type="System.Configuration.Internal.IInternalConfigRoot" Index="3" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="hostInitConfigurationParams" Type="System.Object[]" Index="4">
@@ -1123,7 +1123,7 @@
       <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1140,7 +1140,7 @@
       <Parameters>
         <Parameter Name="streamName" Type="System.String" />
         <Parameter Name="templateStreamName" Type="System.String" />
-        <Parameter Name="writeContext" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="writeContext" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="streamName">The name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on a configuration file.</param>
@@ -1161,7 +1161,7 @@
       <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1178,7 +1178,7 @@
       <Parameters>
         <Parameter Name="streamName" Type="System.String" />
         <Parameter Name="templateStreamName" Type="System.String" />
-        <Parameter Name="writeContext" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="writeContext" Type="System.Object" RefType="ref" />
         <Parameter Name="assertPermissions" Type="System.Boolean" />
       </Parameters>
       <Docs>

@@ -448,8 +448,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="clause" Type="TClause&amp;" RefType="out" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
-        <Parameter Name="result" Type="TClause&amp;" RefType="out" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="clause" Type="TClause" RefType="out" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="result" Type="TClause" RefType="out" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the type of key identifier clause to search the collection for.</typeparam>

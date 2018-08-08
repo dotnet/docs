@@ -22,14 +22,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.Guid("A138CF39-2CAE-42C2-ADB3-022658D79F2F")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Runtime.InteropServices.TypeLibType(2)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Runtime.InteropServices.Guid("24800CD0-0F4E-4DF7-9F69-3C6903C89224")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,7 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="Microsoft_VsaVb.VsaEngineClass.Assembly" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="Assembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Assembly</InterfaceMember>
@@ -72,7 +75,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678304)</AttributeName>
         </Attribute>
       </Attributes>
@@ -142,7 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Evidence" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Evidence As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); void set(System::Security::Policy::Evidence ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.Evidence" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence with get, set" Usage="Evidence" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Evidence</InterfaceMember>
@@ -153,7 +156,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678284)</AttributeName>
         </Attribute>
       </Attributes>
@@ -172,7 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.GenerateDebugInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GenerateDebugInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool GenerateDebugInfo { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.GenerateDebugInfo : bool with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.GenerateDebugInfo" />
+      <MemberSignature Language="F#" Value="member this.GenerateDebugInfo : bool with get, set" Usage="GenerateDebugInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.GenerateDebugInfo</InterfaceMember>
@@ -183,7 +186,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678282)</AttributeName>
         </Attribute>
       </Attributes>
@@ -256,7 +259,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.IsCompiled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsCompiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCompiled { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.IsCompiled : bool" Usage="Microsoft_VsaVb.VsaEngineClass.IsCompiled" />
+      <MemberSignature Language="F#" Value="member this.IsCompiled : bool" Usage="IsCompiled" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.IsCompiled</InterfaceMember>
@@ -267,7 +270,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678297)</AttributeName>
         </Attribute>
       </Attributes>
@@ -286,7 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDirty { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="Microsoft_VsaVb.VsaEngineClass.IsDirty" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="IsDirty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.IsDirty</InterfaceMember>
@@ -297,7 +300,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678287)</AttributeName>
         </Attribute>
       </Attributes>
@@ -316,7 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.IsRunning" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsRunning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRunning { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="Microsoft_VsaVb.VsaEngineClass.IsRunning" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="IsRunning" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.IsRunning</InterfaceMember>
@@ -327,7 +330,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678296)</AttributeName>
         </Attribute>
       </Attributes>
@@ -375,7 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As IVsaItems" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Vsa::IVsaItems ^ Items { Microsoft::Vsa::IVsaItems ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Items : Microsoft.Vsa.IVsaItems" Usage="Microsoft_VsaVb.VsaEngineClass.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : Microsoft.Vsa.IVsaItems" Usage="Items" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Items</InterfaceMember>
@@ -386,7 +389,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678286)</AttributeName>
         </Attribute>
       </Attributes>
@@ -405,7 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Language" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Language { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Microsoft_VsaVb.VsaEngineClass.Language" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Language" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Language</InterfaceMember>
@@ -416,7 +419,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678288)</AttributeName>
         </Attribute>
       </Attributes>
@@ -435,7 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.LCID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LCID { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.LCID" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="LCID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.LCID</InterfaceMember>
@@ -446,7 +449,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678280)</AttributeName>
         </Attribute>
       </Attributes>
@@ -493,7 +496,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.Name" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Name</InterfaceMember>
@@ -504,7 +507,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678274)</AttributeName>
         </Attribute>
       </Attributes>
@@ -573,7 +576,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.RootMoniker" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RootMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RootMoniker { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.RootMoniker : string with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.RootMoniker" />
+      <MemberSignature Language="F#" Value="member this.RootMoniker : string with get, set" Usage="RootMoniker" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.RootMoniker</InterfaceMember>
@@ -584,7 +587,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678276)</AttributeName>
         </Attribute>
       </Attributes>
@@ -603,7 +606,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.RootNamespace" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="RootNamespace" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.RootNamespace</InterfaceMember>
@@ -614,7 +617,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678278)</AttributeName>
         </Attribute>
       </Attributes>
@@ -661,7 +664,7 @@
       <MemberSignature Language="F#" Value="abstract member SaveCompiledState :  *  -&gt; unit&#xA;override this.SaveCompiledState :  *  -&gt; unit" Usage="vsaEngineClass.SaveCompiledState (pe, pdb)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft_VsaVb</AssemblyName>
@@ -672,8 +675,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
-        <Parameter Name="pdb" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="pe" Type="System.Byte[]" RefType="out" />
+        <Parameter Name="pdb" Type="System.Byte[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pe">To be added.</param>
@@ -746,7 +749,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Site As IVsaSite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Vsa::IVsaSite ^ Site { Microsoft::Vsa::IVsaSite ^ get(); void set(Microsoft::Vsa::IVsaSite ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Site : Microsoft.Vsa.IVsaSite with get, set" Usage="Microsoft_VsaVb.VsaEngineClass.Site" />
+      <MemberSignature Language="F#" Value="member this.Site : Microsoft.Vsa.IVsaSite with get, set" Usage="Site" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Site</InterfaceMember>
@@ -757,7 +760,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678272)</AttributeName>
         </Attribute>
       </Attributes>
@@ -776,7 +779,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft_VsaVb.VsaEngineClass.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Microsoft_VsaVb.VsaEngineClass.Version" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Version" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Vsa.IVsaEngine.Version</InterfaceMember>
@@ -787,7 +790,7 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.Runtime.InteropServices.DispId(1610678289)</AttributeName>
         </Attribute>
       </Attributes>

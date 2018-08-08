@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -38,6 +38,11 @@
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new site.</summary>
@@ -95,7 +100,7 @@
       <MemberSignature Language="F#" Value="abstract member GetCompiledState :  *  -&gt; unit&#xA;override this.GetCompiledState :  *  -&gt; unit" Usage="baseVsaSite.GetCompiledState (pe, debugInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -105,8 +110,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
-        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="pe" Type="System.Byte[]" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pe">An assembly to be set.</param>

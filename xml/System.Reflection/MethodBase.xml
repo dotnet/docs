@@ -36,13 +36,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._MethodBase))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -342,6 +342,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
       </ReturnValue>
@@ -404,7 +409,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -505,7 +510,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -583,6 +588,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
       </ReturnValue>
@@ -636,8 +646,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -849,7 +862,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -1230,7 +1243,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2338,7 +2351,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_MethodBase::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetIDsOfNames(System.Guid,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2351,7 +2364,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="rgszNames" Type="System.IntPtr" />
         <Parameter Name="cNames" Type="System.UInt32" />
         <Parameter Name="lcid" Type="System.UInt32" />
@@ -2457,7 +2470,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_MethodBase::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetTypeInfoCount(System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2470,7 +2483,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pcTInfo" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
@@ -2494,7 +2507,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_MethodBase::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.UInt32,System.Guid,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2508,7 +2521,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       </ReturnValue>
       <Parameters>
         <Parameter Name="dispIdMember" Type="System.UInt32" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="lcid" Type="System.UInt32" />
         <Parameter Name="wFlags" Type="System.Int16" />
         <Parameter Name="pDispParams" Type="System.IntPtr" />
@@ -2542,8 +2555,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAbstract" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAbstract As Boolean Implements _MethodBase.IsAbstract" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsAbstract { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsAbstract" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsAbstract { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
@@ -2575,8 +2588,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAssembly As Boolean Implements _MethodBase.IsAssembly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsAssembly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
@@ -2608,8 +2621,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsConstructor" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsConstructor As Boolean Implements _MethodBase.IsConstructor" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsConstructor { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsConstructor" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsConstructor { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
@@ -2641,8 +2654,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamily" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamily As Boolean Implements _MethodBase.IsFamily" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamily { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamily" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamily { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
@@ -2674,8 +2687,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyAndAssembly As Boolean Implements _MethodBase.IsFamilyAndAssembly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamilyAndAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
@@ -2707,8 +2720,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyOrAssembly As Boolean Implements _MethodBase.IsFamilyOrAssembly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamilyOrAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
@@ -2740,8 +2753,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFinal" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFinal As Boolean Implements _MethodBase.IsFinal" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFinal { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFinal" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFinal { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
@@ -2773,8 +2786,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsHideBySig" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsHideBySig As Boolean Implements _MethodBase.IsHideBySig" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsHideBySig { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsHideBySig" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsHideBySig { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
@@ -2806,8 +2819,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPrivate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPrivate As Boolean Implements _MethodBase.IsPrivate" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsPrivate { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsPrivate" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsPrivate { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
@@ -2839,8 +2852,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPublic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPublic As Boolean Implements _MethodBase.IsPublic" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsPublic { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsPublic { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
@@ -2872,8 +2885,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsSpecialName" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSpecialName As Boolean Implements _MethodBase.IsSpecialName" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsSpecialName { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsSpecialName { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
@@ -2905,8 +2918,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsStatic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsStatic As Boolean Implements _MethodBase.IsStatic" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsStatic { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsStatic" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsStatic { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
@@ -2938,8 +2951,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsVirtual" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsVirtual As Boolean Implements _MethodBase.IsVirtual" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsVirtual { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsVirtual" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsVirtual { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>

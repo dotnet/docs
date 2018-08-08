@@ -81,7 +81,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -89,9 +89,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="impersonationContext" Type="System.IDisposable&amp;" RefType="out" />
-        <Parameter Name="originalPrincipal" Type="System.Security.Principal.IPrincipal&amp;" RefType="out" />
-        <Parameter Name="isThreadPrincipalSet" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="impersonationContext" Type="System.IDisposable" RefType="out" />
+        <Parameter Name="originalPrincipal" Type="System.Security.Principal.IPrincipal" RefType="out" />
+        <Parameter Name="isThreadPrincipalSet" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="impersonationContext">When this method returns, contains the impersonated context. This parameter is treated as uninitialized.</param>
@@ -114,7 +114,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
-        <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp;" RefType="out" />
+        <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The message from which to extract the property.</param>
@@ -187,7 +187,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
-        <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp;" RefType="out" />
+        <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">The message properties object from which to extract the property.</param>

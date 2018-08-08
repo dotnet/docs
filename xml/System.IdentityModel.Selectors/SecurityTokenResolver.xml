@@ -246,7 +246,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-        <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to retrieve the key for.</param>
@@ -284,7 +284,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-        <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
+        <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to retrieve the key for.</param>
@@ -329,7 +329,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifier">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> to create a security token for.</param>
@@ -367,7 +367,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to create a security token for.</param>
@@ -414,7 +414,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifier">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> to create a security token for.</param>
@@ -450,7 +450,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" RefType="out" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to create a security token for.</param>

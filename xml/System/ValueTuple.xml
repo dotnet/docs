@@ -992,8 +992,8 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="ILAsm" Value=".property instance object System.Runtime.CompilerServices.ITuple.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ValueTuple.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
-      <MemberSignature Language="F#" Usage="System.ValueTuple.System.Runtime.CompilerServices.ITuple.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Runtime::CompilerServices::ITuple::Item[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.ITuple.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
@@ -1026,8 +1026,8 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Runtime.CompilerServices.ITuple.Length" />
       <MemberSignature Language="DocId" Value="P:System.ValueTuple.System#Runtime#CompilerServices#ITuple#Length" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.ValueTuple.System.Runtime.CompilerServices.ITuple.Length" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Runtime::CompilerServices::ITuple::Length { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.ITuple.Length" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>

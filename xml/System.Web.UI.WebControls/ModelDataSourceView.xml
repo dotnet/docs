@@ -461,7 +461,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
-        <Parameter Name="selectResultProcessingOptions" Type="System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions&amp;" RefType="out" />
+        <Parameter Name="selectResultProcessingOptions" Type="System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions" RefType="out" />
       </Parameters>
       <Docs>
         <param name="arguments">The <see cref="T:System.Web.UI.DataSourceSelectArguments" /> for the select operation.</param>
@@ -1022,8 +1022,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ModelDataSourceView.System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::IStateManager::IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>

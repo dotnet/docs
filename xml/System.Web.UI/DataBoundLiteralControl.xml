@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -230,8 +230,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.ITextControl.Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBoundLiteralControl.System#Web#UI#ITextControl#Text" />
       <MemberSignature Language="VB.NET" Value=" Property Text As String Implements ITextControl.Text" />
-      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.ITextControl.Text { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.DataBoundLiteralControl.System.Web.UI.ITextControl.Text" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System::Web::UI::ITextControl::Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.ITextControl.Text" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.ITextControl.Text</InterfaceMember>
@@ -241,6 +241,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

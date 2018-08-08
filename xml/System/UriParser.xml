@@ -60,6 +60,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Constructs a default URI parser.</summary>
@@ -159,7 +164,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="uri" Type="System.Uri" />
-        <Parameter Name="parsingError" Type="System.UriFormatException&amp;" RefType="out" />
+        <Parameter Name="parsingError" Type="System.UriFormatException" RefType="out" />
       </Parameters>
       <Docs>
         <param name="uri">The T:System.Uri to validate.</param>
@@ -467,7 +472,7 @@
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="relativeUri" Type="System.Uri" />
-        <Parameter Name="parsingError" Type="System.UriFormatException&amp;" RefType="out" />
+        <Parameter Name="parsingError" Type="System.UriFormatException" RefType="out" />
       </Parameters>
       <Docs>
         <param name="baseUri">A base URI.</param>

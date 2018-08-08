@@ -40,9 +40,9 @@
         <Parameter Name="namespaces" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="referencedAssemblies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="targetType">The expected expression type.</param>
@@ -80,9 +80,9 @@
         <Parameter Name="namespaces" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="referencedAssemblies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="targetType">The expected expression type.</param>
@@ -138,9 +138,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="visualBasicReference" Type="System.Activities.ActivityWithResult" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="visualBasicReference">The expression to recompile.</param>
@@ -170,9 +170,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="visualBasicValue" Type="System.Activities.ActivityWithResult" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="visualBasicValue">The expression to recompile.</param>

@@ -27,11 +27,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00020401-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -82,7 +85,7 @@
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="invKind" Type="System.Runtime.InteropServices.ComTypes.INVOKEKIND" />
-        <Parameter Name="ppv" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppv" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member ID of the <see langword="static" /> member's address to retrieve.</param>
@@ -132,8 +135,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pUnkOuter" Type="System.Object" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pUnkOuter">The object that acts as the controlling <see langword="IUnknown" />.</param>
@@ -182,8 +185,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTLB" Type="System.Runtime.InteropServices.ComTypes.ITypeLib&amp;" RefType="out" />
-        <Parameter Name="pIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="ppTLB" Type="System.Runtime.InteropServices.ComTypes.ITypeLib" RefType="out" />
+        <Parameter Name="pIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTLB">When this method returns, contains a reference to the containing type library. This parameter is passed uninitialized.</param>
@@ -287,10 +290,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strName" Type="System.String" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The ID of the member whose documentation is to be returned.</param>
@@ -342,7 +345,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppFuncDesc" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppFuncDesc" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the function description to return.</param>
@@ -444,7 +447,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pImplTypeFlags" Type="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS&amp;" RefType="out" />
+        <Parameter Name="pImplTypeFlags" Type="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the implemented interface or base interface.</param>
@@ -493,7 +496,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
-        <Parameter Name="pBstrMops" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pBstrMops" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member ID that indicates which marshaling information is needed.</param>
@@ -544,7 +547,7 @@
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="rgBstrNames" Type="System.String[]" />
         <Parameter Name="cMaxNames" Type="System.Int32" />
-        <Parameter Name="pcNames" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcNames" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The ID of the member whose name (or names) is to be returned.</param>
@@ -595,7 +598,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hRef" Type="System.Int32" />
-        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hRef">A handle to the referenced type description to return.</param>
@@ -644,7 +647,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="href" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="href" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the implemented type whose handle is returned.</param>
@@ -692,7 +695,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTypeAttr" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppTypeAttr" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTypeAttr">When this method returns, contains a reference to the structure that contains the attributes of this type description. This parameter is passed uninitialized.</param>
@@ -741,7 +744,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp&amp;" RefType="out" />
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTComp">When this method returns, contains a reference to the <see langword="ITypeComp" /> interface of the containing type library. This parameter is passed uninitialized.</param>
@@ -789,7 +792,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppVarDesc" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppVarDesc" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the variable description to return.</param>
@@ -842,10 +845,10 @@
         <Parameter Name="pvInstance" Type="System.Object" />
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="wFlags" Type="System.Int16" />
-        <Parameter Name="pDispParams" Type="System.Runtime.InteropServices.ComTypes.DISPPARAMS&amp;" RefType="ref" />
+        <Parameter Name="pDispParams" Type="System.Runtime.InteropServices.ComTypes.DISPPARAMS" RefType="ref" />
         <Parameter Name="pVarResult" Type="System.IntPtr" />
         <Parameter Name="pExcepInfo" Type="System.IntPtr" />
-        <Parameter Name="puArgErr" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="puArgErr" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pvInstance">A reference to the interface described by this type description.</param>

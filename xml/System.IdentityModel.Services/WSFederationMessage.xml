@@ -294,7 +294,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="requestUri" Type="System.Uri" />
-        <Parameter Name="fedMsg" Type="System.IdentityModel.Services.WSFederationMessage&amp;" RefType="out" />
+        <Parameter Name="fedMsg" Type="System.IdentityModel.Services.WSFederationMessage" RefType="out" />
       </Parameters>
       <Docs>
         <param name="requestUri">The URI from which to create the message. Message parameters are specified in the query string. The wa parameter must be present.</param>

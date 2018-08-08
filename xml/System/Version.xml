@@ -43,7 +43,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -1696,7 +1696,7 @@ major.minor[.build[.revision]]
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
@@ -1724,7 +1724,7 @@ major.minor[.build[.revision]]
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
         <Parameter Name="fieldCount" Type="System.Int32" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
@@ -1752,7 +1752,7 @@ major.minor[.build[.revision]]
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="result" Type="System.Version&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Version" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -1793,7 +1793,7 @@ major.minor[.build[.revision]]
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="result" Type="System.Version&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Version" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that contains a version number to convert.</param>

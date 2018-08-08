@@ -34,7 +34,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Ignore)</AttributeName>
     </Attribute>
   </Attributes>
@@ -1293,8 +1293,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1319,8 +1319,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1344,8 +1344,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1355,6 +1355,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1370,8 +1375,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1381,6 +1386,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1425,8 +1435,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionView.CanAddNew" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#CanAddNew" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanAddNew As Boolean Implements IEditableCollectionView.CanAddNew" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionView.CanAddNew { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.CanAddNew" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanAddNew { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanAddNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1455,8 +1465,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionView.CanCancelEdit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#CanCancelEdit" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanCancelEdit As Boolean Implements IEditableCollectionView.CanCancelEdit" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionView.CanCancelEdit { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.CanCancelEdit" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanCancelEdit { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanCancelEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1541,8 +1551,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionView.CanRemove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#CanRemove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRemove As Boolean Implements IEditableCollectionView.CanRemove" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionView.CanRemove { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.CanRemove" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanRemove { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanRemove" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1627,8 +1637,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.ComponentModel.IEditableCollectionView.CurrentAddItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#CurrentAddItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CurrentAddItem As Object Implements IEditableCollectionView.CurrentAddItem" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.ComponentModel.IEditableCollectionView.CurrentAddItem { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.CurrentAddItem" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::ComponentModel::IEditableCollectionView::CurrentAddItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CurrentAddItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1656,8 +1666,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.ComponentModel.IEditableCollectionView.CurrentEditItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#CurrentEditItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CurrentEditItem As Object Implements IEditableCollectionView.CurrentEditItem" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.ComponentModel.IEditableCollectionView.CurrentEditItem { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.CurrentEditItem" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::ComponentModel::IEditableCollectionView::CurrentEditItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CurrentEditItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1716,8 +1726,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionView.IsAddingNew" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#IsAddingNew" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAddingNew As Boolean Implements IEditableCollectionView.IsAddingNew" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionView.IsAddingNew { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.IsAddingNew" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::IsAddingNew { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.IsAddingNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1746,8 +1756,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionView.IsEditingItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#IsEditingItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsEditingItem As Boolean Implements IEditableCollectionView.IsEditingItem" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionView.IsEditingItem { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.IsEditingItem" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::IsEditingItem { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.IsEditingItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1776,8 +1786,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.NewItemPlaceholderPosition System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionView#NewItemPlaceholderPosition" />
       <MemberSignature Language="VB.NET" Value=" Property NewItemPlaceholderPosition As NewItemPlaceholderPosition Implements IEditableCollectionView.NewItemPlaceholderPosition" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::NewItemPlaceholderPosition System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition { System::ComponentModel::NewItemPlaceholderPosition get(); void set(System::ComponentModel::NewItemPlaceholderPosition value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::NewItemPlaceholderPosition System::ComponentModel::IEditableCollectionView::NewItemPlaceholderPosition { System::ComponentModel::NewItemPlaceholderPosition get(); void set(System::ComponentModel::NewItemPlaceholderPosition value); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1904,8 +1914,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IEditableCollectionViewAddNewItem#CanAddNewItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanAddNewItem As Boolean Implements IEditableCollectionViewAddNewItem.CanAddNewItem" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionViewAddNewItem::CanAddNewItem { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1933,8 +1943,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.ItemPropertyInfo&gt; System.ComponentModel.IItemProperties.ItemProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemCollection.System#ComponentModel#IItemProperties#ItemProperties" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemProperties As ReadOnlyCollection(Of ItemPropertyInfo) Implements IItemProperties.ItemProperties" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ System.ComponentModel.IItemProperties.ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Controls.ItemCollection.System.ComponentModel.IItemProperties.ItemProperties" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ System::ComponentModel::IItemProperties::ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IItemProperties.ItemProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

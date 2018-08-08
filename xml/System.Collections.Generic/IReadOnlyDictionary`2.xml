@@ -236,7 +236,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key to locate.</param>

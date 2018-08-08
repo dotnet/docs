@@ -440,7 +440,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="equalValue" Type="T" />
-        <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
+        <Parameter Name="actualValue" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <param name="equalValue">The value to search for.</param>

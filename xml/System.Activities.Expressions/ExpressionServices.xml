@@ -290,7 +290,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       </TypeParameters>
       <Parameters>
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,TResult&gt;&gt;" />
-        <Parameter Name="result" Type="System.Activities.Activity&lt;TResult&gt;&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Activities.Activity&lt;TResult&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type the expression is being converted to.</typeparam>
@@ -329,7 +329,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       </TypeParameters>
       <Parameters>
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,TResult&gt;&gt;" />
-        <Parameter Name="result" Type="System.Activities.Activity&lt;System.Activities.Location&lt;TResult&gt;&gt;&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Activities.Activity&lt;System.Activities.Location&lt;TResult&gt;&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type the expression is being converted to.</typeparam>

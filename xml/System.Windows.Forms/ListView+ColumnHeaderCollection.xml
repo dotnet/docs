@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -285,16 +285,16 @@
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string str, int width, System.Windows.Forms.HorizontalAlignment textAlign);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string str, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (str As String, width As Integer, textAlign As HorizontalAlignment) As ColumnHeader" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ str, int width, System::Windows::Forms::HorizontalAlignment textAlign);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="abstract member Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (str, width, textAlign)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (str, width, textAlign)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string text, int width, System.Windows.Forms.HorizontalAlignment textAlign);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String, width As Integer, textAlign As HorizontalAlignment) As ColumnHeader" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="abstract member Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (text, width, textAlign)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (text, width, textAlign)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -604,7 +604,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -927,16 +927,16 @@
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, string str, int width, System.Windows.Forms.HorizontalAlignment textAlign);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string str, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, str As String, width As Integer, textAlign As HorizontalAlignment)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ str, int width, System::Windows::Forms::HorizontalAlignment textAlign);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.Insert : int * string * int * System.Windows.Forms.HorizontalAlignment -&gt; unit" Usage="columnHeaderCollection.Insert (index, str, width, textAlign)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int * System.Windows.Forms.HorizontalAlignment -&gt; unit" Usage="columnHeaderCollection.Insert (index, str, width, textAlign)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public void Insert (int index, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, text As String, width As Integer, textAlign As HorizontalAlignment)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="member this.Insert : int * string * int * System.Windows.Forms.HorizontalAlignment -&gt; unit" Usage="columnHeaderCollection.Insert (index, text, width, textAlign)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int * System.Windows.Forms.HorizontalAlignment -&gt; unit" Usage="columnHeaderCollection.Insert (index, text, width, textAlign)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1320,8 +1320,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1346,8 +1346,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1493,8 +1493,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1519,8 +1519,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1530,6 +1530,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

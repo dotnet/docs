@@ -81,7 +81,7 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isNewlyRealized" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isNewlyRealized" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="isNewlyRealized">Is <see langword="true" /> if the returned <see cref="T:System.Windows.DependencyObject" /> is newly generated (realized); otherwise, <see langword="false" />.</param>

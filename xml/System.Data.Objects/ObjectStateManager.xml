@@ -56,7 +56,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -470,8 +470,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -538,7 +541,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Data.EntityKey" />
-        <Parameter Name="entry" Type="System.Data.Objects.ObjectStateEntry&amp;" RefType="out" />
+        <Parameter Name="entry" Type="System.Data.Objects.ObjectStateEntry" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The given <see cref="T:System.Data.EntityKey" />.</param>
@@ -589,7 +592,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="entry" Type="System.Data.Objects.ObjectStateEntry&amp;" RefType="out" />
+        <Parameter Name="entry" Type="System.Data.Objects.ObjectStateEntry" RefType="out" />
       </Parameters>
       <Docs>
         <param name="entity">The <see cref="T:System.Object" /> to which the retrieved <see cref="T:System.Data.Objects.ObjectStateEntry" /> belongs.</param>
@@ -623,7 +626,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="relationshipManager" Type="System.Data.Objects.DataClasses.RelationshipManager&amp;" RefType="out" />
+        <Parameter Name="relationshipManager" Type="System.Data.Objects.DataClasses.RelationshipManager" RefType="out" />
       </Parameters>
       <Docs>
         <param name="entity">The object for which to return the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" />.</param>

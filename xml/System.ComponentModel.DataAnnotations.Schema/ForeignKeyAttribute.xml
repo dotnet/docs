@@ -20,8 +20,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -69,7 +72,7 @@ The annotation may be placed on the foreign key property and specify the associa
 If you add the `ForeignKey` attribute to a foreign key property, `name` should specify the name of the associated navigation property. If you add the `ForeignKey` attribute to a navigation property, `name` should specify the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, use commas to separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
   
       ]]></format>
-      </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -104,7 +107,7 @@ If you add the `ForeignKey` attribute to a foreign key property, `name` should s
 If the `ForeignKey` attribute is applied to a foreign key property, the `Name` property specifies the name of the associated navigation property. If the `ForeignKey` attribute is applied to a navigation property, the `Name` property specifies the name of one or more associated foreign keys. If a navigation property has multiple foreign keys, commas separate the list of foreign key names. For more information, see [Code First Data Annotations](https://msdn.microsoft.com/en-us/library/jj591583(v=vs.113).aspx).
   
       ]]></format>
-      </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

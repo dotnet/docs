@@ -300,7 +300,7 @@
       <Parameters>
         <Parameter Name="updatedWorkflowDefinition" Type="System.Activities.Activity" />
         <Parameter Name="disallowUpdateInsideActivities" Type="System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt;" />
-        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp;" RefType="out" />
+        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="updatedWorkflowDefinition">The updated workflow definition.</param>
@@ -354,7 +354,7 @@
       <Parameters>
         <Parameter Name="updatedActivityDefinition" Type="System.Activities.ActivityBuilder" />
         <Parameter Name="disallowUpdateInsideActivities" Type="System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt;" />
-        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp;" RefType="out" />
+        <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="updatedActivityDefinition">The updated activity definition.</param>

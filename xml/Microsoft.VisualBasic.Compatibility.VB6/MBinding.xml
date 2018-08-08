@@ -23,10 +23,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("7619A54D-8919-4f21-BE7D-C8E5ACE5FC0D")</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,7 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property DataChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataChanged { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.DataChanged : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataChanged" />
+      <MemberSignature Language="F#" Value="member this.DataChanged : bool with get, set" Usage="DataChanged" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataChanged</InterfaceMember>
@@ -59,6 +59,14 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -82,7 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataField" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.DataField : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataField" />
+      <MemberSignature Language="F#" Value="member this.DataField : string" Usage="DataField" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataField</InterfaceMember>
@@ -93,6 +101,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -115,7 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFormat As IDataFormatDisp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ DataFormat { Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ get(); void set(Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.DataFormat : Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataFormat" />
+      <MemberSignature Language="F#" Value="member this.DataFormat : Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp with get, set" Usage="DataFormat" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat</InterfaceMember>
@@ -230,7 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Key : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.Key" />
+      <MemberSignature Language="F#" Value="member this.Key : string" Usage="Key" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Key</InterfaceMember>
@@ -241,6 +254,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -263,7 +281,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.Object" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Object" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Object</InterfaceMember>
@@ -274,6 +292,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -296,7 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.PropertyName" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="PropertyName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.PropertyName</InterfaceMember>
@@ -307,6 +330,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

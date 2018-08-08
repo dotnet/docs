@@ -480,7 +480,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Type" />
-        <Parameter Name="value" Type="System.Web.ModelBinding.IModelBinder&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Web.ModelBinding.IModelBinder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

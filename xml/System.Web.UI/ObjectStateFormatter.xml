@@ -69,6 +69,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectStateFormatter" /> class.</summary>
@@ -293,8 +298,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.SerializationBinder System.Runtime.Serialization.IFormatter.Binder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Binder" />
       <MemberSignature Language="VB.NET" Value=" Property Binder As SerializationBinder Implements IFormatter.Binder" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System.Runtime.Serialization.IFormatter.Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Binder" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System::Runtime::Serialization::IFormatter::Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.Binder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,8 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.StreamingContext System.Runtime.Serialization.IFormatter.Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Context" />
       <MemberSignature Language="VB.NET" Value=" Property Context As StreamingContext Implements IFormatter.Context" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System.Runtime.Serialization.IFormatter.Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Context" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System::Runtime::Serialization::IFormatter::Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +363,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -390,6 +400,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -416,8 +431,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ISurrogateSelector System.Runtime.Serialization.IFormatter.SurrogateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value=" Property SurrogateSelector As ISurrogateSelector Implements IFormatter.SurrogateSelector" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System.Runtime.Serialization.IFormatter.SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.SurrogateSelector" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System::Runtime::Serialization::IFormatter::SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.SurrogateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +470,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -490,6 +510,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.Expander" />
       </Parameters>
@@ -223,8 +228,8 @@ The expander should have automation keyboard focus whenever the actual focus is 
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ExpanderAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ExpanderAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System::Windows::Automation::Provider::IExpandCollapseProvider::ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>

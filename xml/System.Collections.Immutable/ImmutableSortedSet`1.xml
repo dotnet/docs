@@ -44,6 +44,14 @@
       <InterfaceName>System.Collections.Immutable.IImmutableSet&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedSetDebuggerProxy`1))</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the set.</typeparam>
     <summary>Represents an immutable sorted set implementation.  
@@ -611,21 +619,21 @@
       </Docs>
     </Member>
     <Member MemberName="ItemRef">
-      <MemberSignature Language="C#" Value="public System.Collections.Immutable.T&amp; ItemRef (int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.T&amp; modreq(System.Runtime.InteropServices.InAttribute) ItemRef(int32 index) cil managed" />
+      <MemberSignature Language="C#" Value="public T&amp; ItemRef (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) ItemRef(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.ItemRef(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::T&amp; ^ ItemRef(int index);" />
-      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; System.Collections.Immutable.T&amp;" Usage="immutableSortedSet.ItemRef index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ ItemRef(int index);" />
+      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; T&amp;" Usage="immutableSortedSet.ItemRef index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Immutable.T&amp;</ReturnType>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute>
+          <Attribute FrameworkAlternate="netcore-2.1">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
@@ -1033,8 +1041,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;T&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1176,8 +1184,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
-      <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IList&lt;T&gt;.Item[int] { T get(int index); void set(int index, T value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.Generic.IList&lt;T&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IList&lt;T&gt;::Item[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -1476,8 +1484,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1489,6 +1497,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1503,8 +1516,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1516,6 +1529,11 @@
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1761,8 +1779,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1788,8 +1806,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1815,8 +1833,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedSet`1.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -2235,7 +2253,7 @@
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'T *  -&gt; bool&#xA;override this.TryGetValue : 'T *  -&gt; bool" Usage="immutableSortedSet.TryGetValue (equalValue, actualValue)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -2249,7 +2267,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="equalValue" Type="T" />
-        <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
+        <Parameter Name="actualValue" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <param name="equalValue">The value to search for.</param>

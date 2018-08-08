@@ -274,7 +274,7 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="url" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="url">The URL of the discovery document to download.</param>
@@ -312,8 +312,8 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="contentType" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="url" Type="System.String" RefType="ref" />
+        <Parameter Name="contentType" Type="System.String" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="url">The URL of the discovery document to download.</param>
@@ -387,10 +387,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("This method will be removed from a future version. The method call is no longer required for resource discovery", false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>

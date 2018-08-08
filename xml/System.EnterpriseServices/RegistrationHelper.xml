@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("89a86e7b-c229-4008-9baa-2f5c8411d7e0")</AttributeName>
     </Attribute>
   </Attributes>
@@ -73,7 +73,7 @@
       <MemberSignature Language="F#" Value="abstract member InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit&#xA;override this.InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit" Usage="registrationHelper.InstallAssembly (assembly, application, tlb, installFlags)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String,System.String,System.EnterpriseServices.InstallationFlags)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -86,8 +86,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.String" />
-        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
-        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="application" Type="System.String" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String" RefType="ref" />
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
       </Parameters>
       <Docs>
@@ -139,9 +139,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.String" />
-        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="application" Type="System.String" RefType="ref" />
         <Parameter Name="partition" Type="System.String" />
-        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String" RefType="ref" />
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
       </Parameters>
       <Docs>
@@ -184,7 +184,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="regConfig">A <see cref="T:System.EnterpriseServices.RegistrationConfig" /> identifying the assembly to install.</param>
@@ -300,7 +300,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="regConfig">A <see cref="T:System.EnterpriseServices.RegistrationConfig" /> identifying the assembly to uninstall.</param>

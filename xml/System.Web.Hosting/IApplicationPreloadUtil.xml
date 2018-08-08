@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("940D8ADD-9E40-4475-9A67-2CDCDF57995C")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,9 +41,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="context" Type="System.String" />
-        <Parameter Name="enabled" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="startupObjType" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="parametersForStartupObj" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="enabled" Type="System.Boolean" RefType="out" />
+        <Parameter Name="startupObjType" Type="System.String" RefType="out" />
+        <Parameter Name="parametersForStartupObj" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The application context.</param>

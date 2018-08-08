@@ -53,6 +53,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
         <Parameter Name="viewName" Type="System.String" />
@@ -287,7 +292,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isSampleData" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="minimumRows">An integer containing the minimum number of rows to retrieve.</param>

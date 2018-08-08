@@ -245,7 +245,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="inPoint" Type="System.Windows.Point" />
-        <Parameter Name="result" Type="System.Windows.Media.Media3D.Point3D&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Windows.Media.Media3D.Point3D" RefType="out" />
       </Parameters>
       <Docs>
         <param name="inPoint">The point to transform.</param>

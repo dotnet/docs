@@ -21,10 +21,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -91,7 +91,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -263,7 +263,7 @@ This method copies all of `source` to `destination` even if `source` and `destin
       </ReturnValue>
       <Parameters>
         <Parameter Name="obj" Type="System.Object" />
-        <Parameter Name="objectData" Type="T&amp;" RefType="ref" />
+        <Parameter Name="objectData" Type="T" RefType="ref" />
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -287,8 +287,8 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -339,10 +339,10 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.Obsolete("Equals() on Span will always throw an exception. Use == instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -444,10 +444,10 @@ Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, 
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
           <AttributeName>System.Obsolete("GetHashCode() on Span will always throw an exception.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -538,8 +538,8 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />

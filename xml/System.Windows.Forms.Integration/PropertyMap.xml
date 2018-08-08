@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -82,22 +82,27 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PropertyMap (object sourceObject);" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sourceObject) cil managed" FrameworkAlternate="netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" FrameworkAlternate="netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceObject As Object)" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyMap(System::Object ^ sourceObject);" FrameworkAlternate="netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMap : obj -&gt; System.Windows.Forms.Integration.PropertyMap" Usage="new System.Windows.Forms.Integration.PropertyMap sourceObject" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMap : obj -&gt; System.Windows.Forms.Integration.PropertyMap" Usage="new System.Windows.Forms.Integration.PropertyMap sourceObject" FrameworkAlternate="netframework-4.0" />
       <MemberSignature Language="C#" Value="public PropertyMap (object source);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object source) cil managed" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As Object)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyMap(System::Object ^ source);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMap : obj -&gt; System.Windows.Forms.Integration.PropertyMap" Usage="new System.Windows.Forms.Integration.PropertyMap source" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMap : obj -&gt; System.Windows.Forms.Integration.PropertyMap" Usage="new System.Windows.Forms.Integration.PropertyMap source" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="sourceObject" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5" />
         <Parameter Name="source" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
@@ -398,6 +403,14 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>add: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>remove: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -551,6 +564,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

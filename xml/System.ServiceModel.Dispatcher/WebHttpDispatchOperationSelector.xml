@@ -170,7 +170,7 @@
       <MemberSignature Language="F#" Value="abstract member SelectOperation :  -&gt; string&#xA;override this.SelectOperation :  -&gt; string" Usage="webHttpDispatchOperationSelector.SelectOperation message" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -181,7 +181,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> object sent to invoke a service operation.</param>
@@ -207,8 +207,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
-        <Parameter Name="uriMatched" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="ref" />
+        <Parameter Name="uriMatched" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> object sent to invoke a service operation.</param>

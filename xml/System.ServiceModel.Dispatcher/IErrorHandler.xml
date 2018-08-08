@@ -150,7 +150,7 @@
         <Parameter Name="error" Type="System.Exception" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="1" />
-        <Parameter Name="fault" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" Index="2" />
+        <Parameter Name="fault" Type="System.ServiceModel.Channels.Message" RefType="ref" Index="2" />
       </Parameters>
       <Docs>
         <param name="error">The <see cref="T:System.Exception" /> object thrown in the course of the service operation.</param>

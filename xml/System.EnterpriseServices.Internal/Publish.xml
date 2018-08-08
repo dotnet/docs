@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("d8013eef-730b-45e2-ba24-874b7242c425")</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateMailBox : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateMailBox : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateMailBox (RootMailServer, MailBox, SmtpName, Domain, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -78,10 +78,10 @@
       <Parameters>
         <Parameter Name="RootMailServer" Type="System.String" />
         <Parameter Name="MailBox" Type="System.String" />
-        <Parameter Name="SmtpName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Domain" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="PhysicalPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="SmtpName" Type="System.String" RefType="out" />
+        <Parameter Name="Domain" Type="System.String" RefType="out" />
+        <Parameter Name="PhysicalPath" Type="System.String" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="RootMailServer">The URL for the root mail server.</param>
@@ -112,7 +112,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateVirtualRoot : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateVirtualRoot : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateVirtualRoot (Operation, FullUrl, BaseUrl, VirtualRoot, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -126,10 +126,10 @@
       <Parameters>
         <Parameter Name="Operation" Type="System.String" />
         <Parameter Name="FullUrl" Type="System.String" />
-        <Parameter Name="BaseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="VirtualRoot" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="PhysicalPath" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="BaseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="VirtualRoot" Type="System.String" RefType="out" />
+        <Parameter Name="PhysicalPath" Type="System.String" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="Operation">The operation to perform.</param>
@@ -189,7 +189,7 @@
       <MemberSignature Language="F#" Value="abstract member DeleteMailBox : string * string *  -&gt; unit&#xA;override this.DeleteMailBox : string * string *  -&gt; unit" Usage="publish.DeleteMailBox (RootMailServer, MailBox, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -203,7 +203,7 @@
       <Parameters>
         <Parameter Name="RootMailServer" Type="System.String" />
         <Parameter Name="MailBox" Type="System.String" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="RootMailServer">The URL for the root mail server.</param>
@@ -231,7 +231,7 @@
       <MemberSignature Language="F#" Value="abstract member DeleteVirtualRoot : string * string *  -&gt; unit&#xA;override this.DeleteVirtualRoot : string * string *  -&gt; unit" Usage="publish.DeleteVirtualRoot (RootWebServer, FullUrl, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -245,7 +245,7 @@
       <Parameters>
         <Parameter Name="RootWebServer" Type="System.String" />
         <Parameter Name="FullUrl" Type="System.String" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="RootWebServer">The root Web server.</param>
@@ -353,7 +353,7 @@
       <MemberSignature Language="F#" Value="abstract member GetAssemblyNameForCache : string *  -&gt; unit&#xA;override this.GetAssemblyNameForCache : string *  -&gt; unit" Usage="publish.GetAssemblyNameForCache (TypeLibPath, CachePath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(System.String,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -366,7 +366,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="TypeLibPath" Type="System.String" />
-        <Parameter Name="CachePath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="CachePath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="TypeLibPath">The path for the file that contains the typelib.</param>
@@ -479,8 +479,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FullUrl" Type="System.String" />
-        <Parameter Name="BaseUrl" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="VirtualRoot" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="BaseUrl" Type="System.String" RefType="out" />
+        <Parameter Name="VirtualRoot" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="FullUrl">The complete URL address for the virtual root.</param>
@@ -525,7 +525,7 @@
       <MemberSignature Language="F#" Value="abstract member ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessClientTlb (ProgId, SrcTlbPath, PhysicalPath, VRoot, BaseUrl, Mode, Transport, AssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -544,9 +544,9 @@
         <Parameter Name="BaseUrl" Type="System.String" />
         <Parameter Name="Mode" Type="System.String" />
         <Parameter Name="Transport" Type="System.String" />
-        <Parameter Name="AssemblyName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="TypeName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="AssemblyName" Type="System.String" RefType="out" />
+        <Parameter Name="TypeName" Type="System.String" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ProgId">The programmatic identifier of the class.</param>
@@ -585,7 +585,7 @@
       <MemberSignature Language="F#" Value="abstract member ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessServerTlb (ProgId, SrcTlbPath, PhysicalPath, Operation, strAssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -601,9 +601,9 @@
         <Parameter Name="SrcTlbPath" Type="System.String" />
         <Parameter Name="PhysicalPath" Type="System.String" />
         <Parameter Name="Operation" Type="System.String" />
-        <Parameter Name="strAssemblyName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="TypeName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strAssemblyName" Type="System.String" RefType="out" />
+        <Parameter Name="TypeName" Type="System.String" RefType="out" />
+        <Parameter Name="Error" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ProgId">The programmatic identifier of the class.</param>

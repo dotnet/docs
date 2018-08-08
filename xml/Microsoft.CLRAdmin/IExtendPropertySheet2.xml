@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("B7A87232-4A51-11D1-A7EA-00C04FD909DD")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -69,10 +69,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="lpIDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
-        <Parameter Name="lphWatermark" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="lphHeader" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="lphPalette" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="bStretch" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="lphWatermark" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="lphHeader" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="lphPalette" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="bStretch" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lpIDataObject">To be added.</param>

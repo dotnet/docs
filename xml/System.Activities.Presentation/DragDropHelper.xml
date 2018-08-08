@@ -114,7 +114,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static IEnumerable&lt;WorkflowViewElement&gt; DoDragMove(IEnumerable&lt;WorkflowViewElement&gt; draggedViewElements, Point referencePoint)" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -219,7 +219,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static UIElement GetCompositeView(WorkflowViewElement workflowViewElement)" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -274,7 +274,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dragging multiple items. Consider using "public static IEnumerable&lt;WorkflowViewElement&gt; GetDragDropMovedViewElements(DataObject data)" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -304,7 +304,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static IEnumerable&lt;ModelItem&gt; GetDraggedModelItems(DragEventArgs e)" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -359,7 +359,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dropping multiple items. Use "public static IEnumerable&lt;object&gt; GetDroppedObjects(DependencyObject dropTarget, DragEventArgs e, EditingContext context)" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -467,7 +467,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This method does not support dragging multiple items. Consider using "public static void SetDragDropMovedViewElements(DragEventArgs e, IEnumerable&lt;WorkflowViewElement&gt; movedViewElements)" instead.")</AttributeName>
         </Attribute>
       </Attributes>

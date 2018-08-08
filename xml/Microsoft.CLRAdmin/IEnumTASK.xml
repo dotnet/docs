@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("338698b1-5a02-11d1-9fec-00600832db4a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,7 +39,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenum" Type="Microsoft.CLRAdmin.IEnumTASK&amp;" RefType="ref" />
+        <Parameter Name="ppenum" Type="Microsoft.CLRAdmin.IEnumTASK" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ppenum">To be added.</param>
@@ -65,8 +65,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="celt" Type="System.UInt32" />
-        <Parameter Name="rgelt" Type="Microsoft.CLRAdmin.MMC_TASK&amp;" RefType="ref" />
-        <Parameter Name="pceltFetched" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="rgelt" Type="Microsoft.CLRAdmin.MMC_TASK" RefType="ref" />
+        <Parameter Name="pceltFetched" Type="System.UInt32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="celt">To be added.</param>

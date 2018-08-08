@@ -84,6 +84,11 @@ Components of a TileBrush with a TileMode of Tile
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Provides initialization for base class values when called by the constructor of a derived class.</summary>
@@ -305,7 +310,7 @@ Components of a TileBrush with a TileMode of Tile
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contentBounds" Type="System.Windows.Rect&amp;" RefType="out" />
+        <Parameter Name="contentBounds" Type="System.Windows.Rect" RefType="out" />
       </Parameters>
       <Docs>
         <param name="contentBounds">The output bounds of the <see cref="T:System.Windows.Media.TileBrush" /> content.</param>

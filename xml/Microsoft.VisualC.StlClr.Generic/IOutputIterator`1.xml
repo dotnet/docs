@@ -37,8 +37,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>

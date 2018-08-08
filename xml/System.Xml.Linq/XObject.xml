@@ -517,6 +517,14 @@ def
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XObject/&lt;Annotations&gt;d__2`1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XObject/&lt;Annotations&gt;d__16`1))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1721,8 +1729,8 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LineNumber" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IXmlLineInfo.LineNumber" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LineNumber { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Xml.Linq.XObject.System.Xml.IXmlLineInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
@@ -1861,8 +1869,8 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LinePosition" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LinePosition As Integer Implements IXmlLineInfo.LinePosition" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LinePosition { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Xml.Linq.XObject.System.Xml.IXmlLineInfo.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>

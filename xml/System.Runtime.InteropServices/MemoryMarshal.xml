@@ -262,7 +262,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reference" Type="T&amp;" RefType="ref" />
+        <Parameter Name="reference" Type="T" RefType="ref" />
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -294,7 +294,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reference" Type="T&amp;" RefType="ref" />
+        <Parameter Name="reference" Type="T" RefType="ref" />
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -316,11 +316,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <TypeParameters>
         <TypeParameter Name="T" />
@@ -346,11 +345,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <TypeParameters>
         <TypeParameter Name="T" />
@@ -453,7 +451,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -490,7 +488,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="manager" Type="TManager&amp;" RefType="out" />
+        <Parameter Name="manager" Type="TManager" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -528,9 +526,9 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="manager" Type="TManager&amp;" RefType="out" />
-        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="manager" Type="TManager" RefType="out" />
+        <Parameter Name="start" Type="System.Int32" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -562,9 +560,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" />
-        <Parameter Name="text" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="text" Type="System.String" RefType="out" />
+        <Parameter Name="start" Type="System.Int32" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memory">To be added.</param>
@@ -603,7 +601,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -641,7 +639,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+        <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -679,7 +677,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+        <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

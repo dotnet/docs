@@ -165,13 +165,18 @@
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
         <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to use a static default attachable property store.</param>
@@ -204,7 +209,7 @@
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
         <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The expected type of the output.</typeparam>

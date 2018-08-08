@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
@@ -62,6 +62,11 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipProvider" /> class.</summary>
@@ -239,7 +244,7 @@
         <Parameter Name="passwordAnswer" Type="System.String" />
         <Parameter Name="isApproved" Type="System.Boolean" />
         <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" />
       </Parameters>
       <Docs>
         <param name="username">The user name for the new user.</param>
@@ -468,6 +473,11 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -547,7 +557,7 @@
         <Parameter Name="emailToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="emailToMatch">The email address to search for.</param>
@@ -596,7 +606,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="usernameToMatch">The user name to search for.</param>
@@ -644,7 +654,7 @@
       <Parameters>
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>

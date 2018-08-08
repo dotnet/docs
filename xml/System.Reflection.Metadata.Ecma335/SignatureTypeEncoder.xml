@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -94,8 +94,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&amp;" RefType="out" />
-        <Parameter Name="arrayShape" Type="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&amp;" RefType="out" />
+        <Parameter Name="elementType" Type="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" RefType="out" />
+        <Parameter Name="arrayShape" Type="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>

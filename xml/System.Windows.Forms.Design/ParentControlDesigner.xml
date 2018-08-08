@@ -84,7 +84,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="snapLines" Type="System.Collections.ArrayList&amp;" RefType="ref" />
+        <Parameter Name="snapLines" Type="System.Collections.ArrayList" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="snapLines">An <see cref="T:System.Collections.ArrayList" /> that contains <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects.</param>
@@ -936,6 +936,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -968,6 +973,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.ToolboxItem</ReturnType>
       </ReturnValue>
@@ -1513,7 +1523,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="m">To be added.</param>

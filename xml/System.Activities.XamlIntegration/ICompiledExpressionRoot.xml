@@ -34,7 +34,7 @@
         <Parameter Name="expressionText" Type="System.String" />
         <Parameter Name="isReference" Type="System.Boolean" />
         <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
-        <Parameter Name="expressionId" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="expressionId" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="expressionText">The expression text used.</param>

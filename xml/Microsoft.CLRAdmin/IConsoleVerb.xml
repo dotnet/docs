@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("E49F7A60-74AF-11D0-A286-00C04FD8FE93")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,7 +39,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="peCmdID" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="peCmdID" Type="System.UInt32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="peCmdID">To be added.</param>
@@ -65,7 +65,7 @@
       <Parameters>
         <Parameter Name="eCmdID" Type="System.UInt32" />
         <Parameter Name="nState" Type="System.UInt32" />
-        <Parameter Name="pState" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="pState" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="eCmdID">To be added.</param>

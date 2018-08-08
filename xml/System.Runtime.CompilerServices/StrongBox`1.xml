@@ -73,6 +73,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new StrongBox which can receive a value when used in a reference call.</summary>
@@ -106,6 +111,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="value" Type="T" />
       </Parameters>
@@ -120,8 +130,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Runtime.CompilerServices.IStrongBox.Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.StrongBox`1.System#Runtime#CompilerServices#IStrongBox#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IStrongBox.Value" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.IStrongBox.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.StrongBox&lt;'T&gt;.System.Runtime.CompilerServices.IStrongBox.Value" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Runtime::CompilerServices::IStrongBox::Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.IStrongBox.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.IStrongBox.Value</InterfaceMember>

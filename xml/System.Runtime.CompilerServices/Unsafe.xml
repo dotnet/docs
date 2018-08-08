@@ -140,8 +140,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T&amp;" RefType="ref" />
-        <Parameter Name="right" Type="T&amp;" RefType="ref" />
+        <Parameter Name="left" Type="T" RefType="ref" />
+        <Parameter Name="right" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -244,7 +244,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+        <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object.</typeparam>
@@ -307,8 +307,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="origin" Type="T&amp;" RefType="ref" />
-        <Parameter Name="target" Type="T&amp;" RefType="ref" />
+        <Parameter Name="origin" Type="T" RefType="ref" />
+        <Parameter Name="target" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -342,7 +342,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="destination" Type="System.Void*" />
-        <Parameter Name="source" Type="T&amp;" RefType="ref" />
+        <Parameter Name="source" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of value to copy.</typeparam>
@@ -374,7 +374,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="T&amp;" RefType="ref" />
+        <Parameter Name="destination" Type="T" RefType="ref" />
         <Parameter Name="source" Type="System.Void*" />
       </Parameters>
       <Docs>
@@ -403,8 +403,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte&amp;" RefType="ref" />
-        <Parameter Name="source" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" />
         <Parameter Name="byteCount" Type="System.UInt32" />
       </Parameters>
       <Docs>
@@ -464,8 +464,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte&amp;" RefType="ref" />
-        <Parameter Name="source" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" />
         <Parameter Name="byteCount" Type="System.UInt32" />
       </Parameters>
       <Docs>
@@ -525,7 +525,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" />
         <Parameter Name="value" Type="System.Byte" />
         <Parameter Name="byteCount" Type="System.UInt32" />
       </Parameters>
@@ -586,7 +586,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" />
         <Parameter Name="value" Type="System.Byte" />
         <Parameter Name="byteCount" Type="System.UInt32" />
       </Parameters>
@@ -682,7 +682,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to read.</typeparam>
@@ -905,7 +905,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>

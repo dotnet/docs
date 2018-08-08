@@ -40,7 +40,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -72,7 +72,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;&amp;" RefType="out" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -104,10 +104,10 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;&amp;" RefType="out" />
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

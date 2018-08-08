@@ -235,7 +235,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memberInfo" Type="System.Reflection.MemberInfo" />
-        <Parameter Name="associationCriteria" Type="System.Linq.Expressions.LambdaExpression&amp;" RefType="out" />
+        <Parameter Name="associationCriteria" Type="System.Linq.Expressions.LambdaExpression" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memberInfo">To be added.</param>

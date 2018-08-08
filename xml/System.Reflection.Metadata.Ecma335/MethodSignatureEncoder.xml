@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -145,8 +145,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="parameterCount" Type="System.Int32" />
-        <Parameter Name="returnType" Type="System.Reflection.Metadata.Ecma335.ReturnTypeEncoder&amp;" RefType="out" />
-        <Parameter Name="parameters" Type="System.Reflection.Metadata.Ecma335.ParametersEncoder&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Reflection.Metadata.Ecma335.ReturnTypeEncoder" RefType="out" />
+        <Parameter Name="parameters" Type="System.Reflection.Metadata.Ecma335.ParametersEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="parameterCount">To be added.</param>

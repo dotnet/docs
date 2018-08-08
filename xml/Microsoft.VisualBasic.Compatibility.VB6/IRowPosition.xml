@@ -13,14 +13,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A94-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -83,9 +86,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="hChapter" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="hRow" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="dbPositionFlags" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="hChapter" Type="System.Int32" RefType="out" />
+        <Parameter Name="hRow" Type="System.Int32" RefType="out" />
+        <Parameter Name="dbPositionFlags" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hChapter">A pointer to memory in which to return the chapter associated with the current row. If the rowset is not chaptered, <c>hChapter</c> is set to <see langword="DB_NULL_HCHAPTER" />. If <c>hChapter</c> is a null pointer on input, no chapter value is returned.</param>
@@ -120,8 +123,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="iid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="rowset" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="iid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="rowset" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="iid">The requested IID for the rowset returned in <c>rowset</c>.</param>

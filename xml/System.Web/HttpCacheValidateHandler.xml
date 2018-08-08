@@ -17,7 +17,7 @@
   <Parameters>
     <Parameter Name="context" Type="System.Web.HttpContext" />
     <Parameter Name="data" Type="System.Object" />
-    <Parameter Name="validationStatus" Type="System.Web.HttpValidationStatus&amp;" RefType="ref" />
+    <Parameter Name="validationStatus" Type="System.Web.HttpValidationStatus" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

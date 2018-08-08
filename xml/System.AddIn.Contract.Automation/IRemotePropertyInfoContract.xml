@@ -160,7 +160,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="target" Type="System.AddIn.Contract.Automation.IRemoteObjectContract" />
-        <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument&amp;" RefType="ref" />
+        <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" RefType="ref" />
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
         <Parameter Name="index" Type="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
         <Parameter Name="localeId" Type="System.Int32" />

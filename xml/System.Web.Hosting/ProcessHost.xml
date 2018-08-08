@@ -52,7 +52,7 @@
       <MemberSignature Language="F#" Value="abstract member EnumerateAppDomains :  -&gt; unit&#xA;override this.EnumerateAppDomains :  -&gt; unit" Usage="processHost.EnumerateAppDomains appDomainInfoEnum" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,7 +63,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum&amp;" RefType="out" />
+        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appDomainInfoEnum">Information about the application domains.</param>
@@ -362,7 +362,7 @@
       <MemberSignature Language="F#" Value="abstract member StartApplication : string * string *  -&gt; unit&#xA;override this.StartApplication : string * string *  -&gt; unit" Usage="processHost.StartApplication (appId, appPath, runtimeInterface)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,7 +375,7 @@
       <Parameters>
         <Parameter Name="appId" Type="System.String" />
         <Parameter Name="appPath" Type="System.String" />
-        <Parameter Name="runtimeInterface" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="runtimeInterface" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appId">The application ID.</param>

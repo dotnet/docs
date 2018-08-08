@@ -916,8 +916,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Runtime.CompilerServices.ITuple.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`7.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
-      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;.System.Runtime.CompilerServices.ITuple.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Runtime::CompilerServices::ITuple::Item[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.ITuple.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
@@ -958,8 +958,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Runtime.CompilerServices.ITuple.Length" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`7.System#Runtime#CompilerServices#ITuple#Length" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;.System.Runtime.CompilerServices.ITuple.Length" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Runtime::CompilerServices::ITuple::Length { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.ITuple.Length" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>

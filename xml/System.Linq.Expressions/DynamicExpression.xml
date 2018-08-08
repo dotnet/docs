@@ -32,7 +32,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Linq.Expressions.Expression/DynamicExpressionProxy))</AttributeName>
     </Attribute>
   </Attributes>
@@ -113,6 +113,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</ReturnType>
       </ReturnValue>
@@ -148,6 +153,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.CallSiteBinder</ReturnType>
       </ReturnValue>
@@ -186,6 +196,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -847,8 +862,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
-      <MemberSignature Language="F#" Usage="System.Linq.Expressions.DynamicExpression.System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Linq::Expressions::IArgumentProvider::ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>

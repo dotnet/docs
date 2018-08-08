@@ -510,6 +510,14 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
@@ -524,8 +532,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportedRequestProtectionLevel" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedRequestProtectionLevel As ProtectionLevel Implements ISecurityCapabilities.SupportedRequestProtectionLevel" />
-      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System::ServiceModel::Channels::ISecurityCapabilities::SupportedRequestProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel</InterfaceMember>
@@ -549,8 +557,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportedResponseProtectionLevel" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedResponseProtectionLevel As ProtectionLevel Implements ISecurityCapabilities.SupportedResponseProtectionLevel" />
-      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System::ServiceModel::Channels::ISecurityCapabilities::SupportedResponseProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel</InterfaceMember>
@@ -574,8 +582,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsClientAuthentication" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsClientAuthentication As Boolean Implements ISecurityCapabilities.SupportsClientAuthentication" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ServiceModel::Channels::ISecurityCapabilities::SupportsClientAuthentication { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication</InterfaceMember>
@@ -599,8 +607,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsClientWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsClientWindowsIdentity As Boolean Implements ISecurityCapabilities.SupportsClientWindowsIdentity" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ServiceModel::Channels::ISecurityCapabilities::SupportsClientWindowsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity</InterfaceMember>
@@ -624,8 +632,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsServerAuthentication" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsServerAuthentication As Boolean Implements ISecurityCapabilities.SupportsServerAuthentication" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ServiceModel::Channels::ISecurityCapabilities::SupportsServerAuthentication { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication</InterfaceMember>

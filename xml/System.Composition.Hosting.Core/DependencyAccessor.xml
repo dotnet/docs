@@ -152,7 +152,7 @@
         <Parameter Name="site" Type="System.Object" />
         <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
         <Parameter Name="isPrerequisite" Type="System.Boolean" />
-        <Parameter Name="dependency" Type="System.Composition.Hosting.Core.CompositionDependency&amp;" RefType="out" />
+        <Parameter Name="dependency" Type="System.Composition.Hosting.Core.CompositionDependency" RefType="out" />
       </Parameters>
       <Docs>
         <param name="site">A tag that describes the dependency site.</param>

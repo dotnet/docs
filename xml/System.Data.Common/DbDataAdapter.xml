@@ -421,11 +421,14 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1339,7 +1342,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.Data.DataSysDescription("DbDataAdapter_FillError")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1918,8 +1921,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       </ReturnValue>
       <Parameters>
         <Parameter Name="commandIdentifier" Type="System.Int32" />
-        <Parameter Name="recordsAffected" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="error" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="recordsAffected" Type="System.Int32" RefType="out" />
+        <Parameter Name="error" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="commandIdentifier">The zero-based column ordinal of the individual command within the batch.</param>
@@ -1965,8 +1968,11 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2048,11 +2054,14 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2219,11 +2228,14 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2250,8 +2262,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.DeleteCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#DeleteCommand" />
       <MemberSignature Language="VB.NET" Value=" Property DeleteCommand As IDbCommand Implements IDbDataAdapter.DeleteCommand" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.DeleteCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.DeleteCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System::Data::IDbDataAdapter::DeleteCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDbDataAdapter.DeleteCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.DeleteCommand</InterfaceMember>
@@ -2294,8 +2306,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.InsertCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#InsertCommand" />
       <MemberSignature Language="VB.NET" Value=" Property InsertCommand As IDbCommand Implements IDbDataAdapter.InsertCommand" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.InsertCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.InsertCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System::Data::IDbDataAdapter::InsertCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDbDataAdapter.InsertCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.InsertCommand</InterfaceMember>
@@ -2338,8 +2350,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.SelectCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#SelectCommand" />
       <MemberSignature Language="VB.NET" Value=" Property SelectCommand As IDbCommand Implements IDbDataAdapter.SelectCommand" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.SelectCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.SelectCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System::Data::IDbDataAdapter::SelectCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDbDataAdapter.SelectCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.SelectCommand</InterfaceMember>
@@ -2382,8 +2394,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.UpdateCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#UpdateCommand" />
       <MemberSignature Language="VB.NET" Value=" Property UpdateCommand As IDbCommand Implements IDbDataAdapter.UpdateCommand" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.UpdateCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.UpdateCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System::Data::IDbDataAdapter::UpdateCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDbDataAdapter.UpdateCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.UpdateCommand</InterfaceMember>
@@ -2447,6 +2459,11 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Obsolete("use 'protected DbDataAdapter(DbDataAdapter)' ctor")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -3066,7 +3083,7 @@ DataSet dataset = new DataSet();
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3134,11 +3151,14 @@ DataSet dataset = new DataSet();
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

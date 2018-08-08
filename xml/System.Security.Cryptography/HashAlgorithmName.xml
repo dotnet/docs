@@ -28,6 +28,11 @@
       <InterfaceName>System.IEquatable&lt;System.Security.Cryptography.HashAlgorithmName&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.1">
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies the name of a cryptographic hash algorithm.</summary>
     <remarks>

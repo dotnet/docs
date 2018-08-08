@@ -162,7 +162,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
-        <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp;" RefType="out" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The message from which the network interface message properties are to be retrieved.</param>
@@ -190,7 +190,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
-        <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp;" RefType="out" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">The MessageProperties from which the network interfaces message properties are to be retrieved.</param>

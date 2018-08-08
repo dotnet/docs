@@ -91,6 +91,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
       </Parameters>
@@ -133,6 +138,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
         <Parameter Name="restrictToAscii" Type="System.Boolean" />
@@ -179,6 +189,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
@@ -224,6 +239,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
         <Parameter Name="passwordChar" Type="System.Char" />
@@ -273,6 +293,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
@@ -322,6 +347,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
@@ -571,8 +601,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.Char" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A <see cref="T:System.Char" /> value to be appended to the formatted string.</param>
@@ -634,8 +664,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A <see cref="T:System.String" /> containing character values to be appended to the formatted string.</param>
@@ -783,6 +813,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -933,7 +968,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resultHint">A <see cref="T:System.ComponentModel.MaskedTextResultHint" /> that succinctly describes the result of the operation. An output parameter.</param>
@@ -1023,6 +1058,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
@@ -1938,8 +1978,8 @@
       <Parameters>
         <Parameter Name="input" Type="System.Char" />
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.Char" /> to be inserted.</param>
@@ -2008,8 +2048,8 @@
       <Parameters>
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.String" /> to be inserted.</param>
@@ -2276,6 +2316,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2327,6 +2372,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2557,6 +2607,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -2695,6 +2750,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
@@ -2742,6 +2802,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
@@ -2854,8 +2919,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="testPosition">The zero-based position in the formatted string where the character was actually removed. An output parameter.</param>
@@ -2915,6 +2980,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3031,8 +3101,8 @@
       <Parameters>
         <Parameter Name="startPosition" Type="System.Int32" />
         <Parameter Name="endPosition" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="startPosition">The zero-based index of the first assigned character to remove.</param>
@@ -3223,8 +3293,8 @@
       <Parameters>
         <Parameter Name="input" Type="System.Char" />
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.Char" /> value that replaces the existing value.</param>
@@ -3288,8 +3358,8 @@
       <Parameters>
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.String" /> value used to replace the existing editable characters.</param>
@@ -3356,8 +3426,8 @@
         <Parameter Name="input" Type="System.Char" />
         <Parameter Name="startPosition" Type="System.Int32" />
         <Parameter Name="endPosition" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.Char" /> value that replaces the existing value.</param>
@@ -3423,8 +3493,8 @@
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="startPosition" Type="System.Int32" />
         <Parameter Name="endPosition" Type="System.Int32" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.String" /> value used to replace the existing editable characters.</param>
@@ -3661,8 +3731,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.String" /> value used to set the formatted string.</param>
@@ -4111,6 +4181,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4258,7 +4333,7 @@
       <Parameters>
         <Parameter Name="input" Type="System.Char" />
         <Parameter Name="position" Type="System.Int32" />
-        <Parameter Name="hint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="hint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.Char" /> value to test.</param>
@@ -4438,8 +4513,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="testPosition" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint&amp;" RefType="out" />
+        <Parameter Name="testPosition" Type="System.Int32" RefType="out" />
+        <Parameter Name="resultHint" Type="System.ComponentModel.MaskedTextResultHint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The <see cref="T:System.String" /> value to test.</param>

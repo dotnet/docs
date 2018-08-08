@@ -35,7 +35,7 @@
         <Parameter Name="localCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
         <Parameter Name="remoteCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
         <Parameter Name="acceptableIssuers" Type="System.String[]" />
-        <Parameter Name="clientCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate&amp;" RefType="out" />
+        <Parameter Name="clientCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" RefType="out" />
       </Parameters>
       <Docs>
         <param name="targetHost">To be added.</param>

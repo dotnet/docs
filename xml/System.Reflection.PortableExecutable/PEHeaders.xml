@@ -458,7 +458,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="directory" Type="System.Reflection.PortableExecutable.DirectoryEntry" />
-        <Parameter Name="offset" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="offset" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="directory">To be added.</param>

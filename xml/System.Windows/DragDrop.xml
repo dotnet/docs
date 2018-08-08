@@ -1,4 +1,4 @@
-<Type Name="DragDrop" FullName="System.Windows.DragDrop">
+﻿<Type Name="DragDrop" FullName="System.Windows.DragDrop">
   <TypeSignature Language="C#" Value="public static class DragDrop" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DragDrop extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DragDrop" />
@@ -518,7 +518,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

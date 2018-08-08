@@ -39,7 +39,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
@@ -80,7 +80,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+        <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
@@ -118,7 +118,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;&amp;" RefType="this">
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>

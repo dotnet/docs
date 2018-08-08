@@ -400,7 +400,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -423,14 +423,14 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator, int demoninator);" FrameworkAlternate="netframework-1.1;netframework-4.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator, int32 demoninator) cil managed" FrameworkAlternate="netframework-1.1;netframework-4.0" />
-      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int demoninator);" FrameworkAlternate="netframework-1.1;netframework-4.0" />
-      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, demoninator)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, demoninator)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator, int denominator);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator, int32 denominator) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int denominator);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, denominator)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, denominator)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -613,6 +613,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -636,6 +641,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
       </ReturnValue>
@@ -659,6 +669,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
       </ReturnValue>

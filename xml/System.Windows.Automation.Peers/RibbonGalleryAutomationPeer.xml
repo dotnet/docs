@@ -185,8 +185,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGalleryAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSelectMultiple As Boolean Implements ISelectionProvider.CanSelectMultiple" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonGalleryAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ISelectionProvider::CanSelectMultiple { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple</InterfaceMember>
@@ -248,8 +248,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGalleryAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelectionRequired As Boolean Implements ISelectionProvider.IsSelectionRequired" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonGalleryAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ISelectionProvider::IsSelectionRequired { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired</InterfaceMember>

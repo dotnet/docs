@@ -24,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("1270e004-f895-42be-8070-df90d60cbb75")</AttributeName>
     </Attribute>
   </Attributes>
@@ -59,7 +59,7 @@
       <MemberSignature Language="F#" Value="abstract member AddMenuItems : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IContextMenuCallback *  -&gt; unit&#xA;override this.AddMenuItems : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IContextMenuCallback *  -&gt; unit" Usage="cData.AddMenuItems (piDataObject, piCallback, pInsertionAllowed)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendContextMenu.AddMenuItems(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IContextMenuCallback,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendContextMenu.AddMenuItems(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IContextMenuCallback,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -71,7 +71,7 @@
       <Parameters>
         <Parameter Name="piDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
         <Parameter Name="piCallback" Type="Microsoft.CLRAdmin.IContextMenuCallback" />
-        <Parameter Name="pInsertionAllowed" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="pInsertionAllowed" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="piDataObject">To be added.</param>
@@ -149,7 +149,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateComponent :  -&gt; unit&#xA;override this.CreateComponent :  -&gt; unit" Usage="cData.CreateComponent ppComponent" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.CreateComponent(Microsoft.CLRAdmin.IComponent@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.CreateComponent(Microsoft.CLRAdmin.IComponent)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -159,7 +159,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppComponent" Type="Microsoft.CLRAdmin.IComponent&amp;" RefType="out" />
+        <Parameter Name="ppComponent" Type="Microsoft.CLRAdmin.IComponent" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppComponent">To be added.</param>
@@ -232,7 +232,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDisplayInfo :  -&gt; unit&#xA;override this.GetDisplayInfo :  -&gt; unit" Usage="cData.GetDisplayInfo sdi" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.GetDisplayInfo(Microsoft.CLRAdmin.SCOPEDATAITEM@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.GetDisplayInfo(Microsoft.CLRAdmin.SCOPEDATAITEM)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -242,7 +242,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sdi" Type="Microsoft.CLRAdmin.SCOPEDATAITEM&amp;" RefType="ref" />
+        <Parameter Name="sdi" Type="Microsoft.CLRAdmin.SCOPEDATAITEM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="sdi">To be added.</param>
@@ -259,7 +259,7 @@
       <MemberSignature Language="F#" Value="abstract member GetWatermarks : Microsoft.CLRAdmin.IDataObject *  *  *  *  -&gt; int&#xA;override this.GetWatermarks : Microsoft.CLRAdmin.IDataObject *  *  *  *  -&gt; int" Usage="cData.GetWatermarks (lpIDataObject, lphWatermark, lphHeader, lphPalette, bStretch)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendPropertySheet2.GetWatermarks(Microsoft.CLRAdmin.IDataObject,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendPropertySheet2.GetWatermarks(Microsoft.CLRAdmin.IDataObject,System.IntPtr,System.IntPtr,System.IntPtr,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -270,10 +270,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="lpIDataObject" Type="Microsoft.CLRAdmin.IDataObject" />
-        <Parameter Name="lphWatermark" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="lphHeader" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="lphPalette" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="bStretch" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="lphWatermark" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="lphHeader" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="lphPalette" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="bStretch" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lpIDataObject">To be added.</param>
@@ -356,7 +356,7 @@
       <MemberSignature Language="F#" Value="abstract member QueryDataObject : int * uint32 *  -&gt; unit&#xA;override this.QueryDataObject : int * uint32 *  -&gt; unit" Usage="cData.QueryDataObject (cookie, type, ppDataObject)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.QueryDataObject(System.Int32,System.UInt32,Microsoft.CLRAdmin.IDataObject@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.QueryDataObject(System.Int32,System.UInt32,Microsoft.CLRAdmin.IDataObject)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -368,7 +368,7 @@
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
         <Parameter Name="type" Type="System.UInt32" />
-        <Parameter Name="ppDataObject" Type="Microsoft.CLRAdmin.IDataObject&amp;" RefType="out" />
+        <Parameter Name="ppDataObject" Type="Microsoft.CLRAdmin.IDataObject" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cookie">To be added.</param>

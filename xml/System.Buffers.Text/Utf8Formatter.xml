@@ -37,7 +37,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Boolean" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -68,7 +68,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Byte" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -99,7 +99,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.DateTime" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -130,7 +130,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.DateTimeOffset" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -161,7 +161,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Decimal" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -192,7 +192,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Double" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -223,7 +223,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Guid" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -254,7 +254,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Int16" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -285,7 +285,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Int32" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -316,7 +316,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Int64" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -342,7 +342,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -352,7 +352,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.SByte" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -383,7 +383,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.Single" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -414,7 +414,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.TimeSpan" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -440,7 +440,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -450,7 +450,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.UInt16" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -476,7 +476,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -486,7 +486,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.UInt32" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
@@ -512,7 +512,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -522,7 +522,7 @@
       <Parameters>
         <Parameter Name="value" Type="System.UInt64" />
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>

@@ -18,7 +18,7 @@
     <Parameter Name="msg" Type="System.Int32" />
     <Parameter Name="wParam" Type="System.IntPtr" />
     <Parameter Name="lParam" Type="System.IntPtr" />
-    <Parameter Name="handled" Type="System.Boolean&amp;" RefType="ref" />
+    <Parameter Name="handled" Type="System.Boolean" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.IntPtr</ReturnType>

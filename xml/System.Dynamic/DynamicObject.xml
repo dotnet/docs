@@ -112,6 +112,11 @@ Dim sampleObject As Object = New SampleDynamicObject()
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Enables derived types to initialize a new instance of the <see cref="T:System.Dynamic.DynamicObject" /> type.</summary>
@@ -264,7 +269,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.BinaryOperationBinder" />
         <Parameter Name="arg" Type="System.Object" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the binary operation. The <c>binder.Operation</c> property returns an <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the <c>sum = first + second</c> statement, where <c>first</c> and <c>second</c> are derived from the <see langword="DynamicObject" /> class, <c>binder.Operation</c> returns <c>ExpressionType.Add</c>.</param>
@@ -368,7 +373,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       </ReturnValue>
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.ConvertBinder" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the conversion operation. The <c>binder.Type</c> property provides the type to which the object must be converted. For example, for the statement <c>(String)sampleObject</c> in C# (<c>CType(sampleObject, Type)</c> in Visual Basic), where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>binder.Type</c> returns the <see cref="T:System.String" /> type. The <c>binder.Explicit</c> property provides information about the kind of conversion that occurs. It returns <see langword="true" /> for explicit conversion and <see langword="false" /> for implicit conversion.</param>
@@ -448,7 +453,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.CreateInstanceBinder" />
         <Parameter Name="args" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the initialization operation.</param>
@@ -601,7 +606,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.GetIndexBinder" />
         <Parameter Name="indexes" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the operation.</param>
@@ -663,7 +668,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </ReturnValue>
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.GetMemberBinder" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the object that called the dynamic operation. The <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the <c>Console.WriteLine(sampleObject.SampleProperty)</c> statement, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>binder.Name</c> returns "SampleProperty". The <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.</param>
@@ -727,7 +732,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.InvokeBinder" />
         <Parameter Name="args" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the invoke operation.</param>
@@ -791,7 +796,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.InvokeMemberBinder" />
         <Parameter Name="args" Type="System.Object[]" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the dynamic operation. The <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the statement <c>sampleObject.SampleMethod(100)</c>, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>binder.Name</c> returns "SampleMethod". The <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.</param>
@@ -983,7 +988,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </ReturnValue>
       <Parameters>
         <Parameter Name="binder" Type="System.Dynamic.UnaryOperationBinder" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the unary operation. The <c>binder.Operation</c> property returns an <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the <c>negativeNumber = -number</c> statement, where <c>number</c> is derived from the <see langword="DynamicObject" /> class, <c>binder.Operation</c> returns "Negate".</param>

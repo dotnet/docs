@@ -27,11 +27,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00000010-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -82,7 +85,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.ComTypes.IEnumMoniker&amp;" RefType="out" />
+        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.ComTypes.IEnumMoniker" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppenumMoniker">When this method returns, contains the new enumerator for the Running Object Table (ROT). This parameter is passed uninitialized.</param>
@@ -130,7 +133,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
-        <Parameter Name="ppunkObject" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="ppunkObject" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkObjectName">A reference to the moniker to search for in the Running Object Table (ROT).</param>
@@ -180,7 +183,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
-        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.ComTypes.FILETIME&amp;" RefType="out" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.ComTypes.FILETIME" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pmkObjectName">A reference to the moniker to search for in the Running Object Table (ROT).</param>
@@ -278,7 +281,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dwRegister" Type="System.Int32" />
-        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.ComTypes.FILETIME&amp;" RefType="ref" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.ComTypes.FILETIME" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="dwRegister">The Running Object Table (ROT) entry of the changed object.</param>

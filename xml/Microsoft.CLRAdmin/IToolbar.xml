@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.Guid("43136EB9-D36C-11CF-ADBC-00AA00A80033")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="nButtons" Type="System.Int32" />
-        <Parameter Name="lpButtons" Type="Microsoft.CLRAdmin.MMCBUTTON&amp;" RefType="ref" />
+        <Parameter Name="lpButtons" Type="Microsoft.CLRAdmin.MMCBUTTON" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="nButtons">To be added.</param>
@@ -123,7 +123,7 @@
       <Parameters>
         <Parameter Name="idCommand" Type="System.Int32" />
         <Parameter Name="nState" Type="Microsoft.CLRAdmin.MMC_BUTTON_STATE" />
-        <Parameter Name="pState" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pState" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="idCommand">To be added.</param>
@@ -150,7 +150,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="nIndex" Type="System.Int32" />
-        <Parameter Name="lpButton" Type="Microsoft.CLRAdmin.MMCBUTTON&amp;" RefType="ref" />
+        <Parameter Name="lpButton" Type="Microsoft.CLRAdmin.MMCBUTTON" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="nIndex">To be added.</param>

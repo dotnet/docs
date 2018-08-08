@@ -363,8 +363,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbConnection System.Data.IDbTransaction.Connection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbTransaction.System#Data#IDbTransaction#Connection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Connection As IDbConnection Implements IDbTransaction.Connection" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbConnection ^ System.Data.IDbTransaction.Connection { System::Data::IDbConnection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Common.DbTransaction.System.Data.IDbTransaction.Connection" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbConnection ^ System::Data::IDbTransaction::Connection { System::Data::IDbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDbTransaction.Connection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbTransaction.Connection</InterfaceMember>

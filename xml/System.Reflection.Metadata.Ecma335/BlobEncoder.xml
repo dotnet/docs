@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -117,8 +117,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fixedArguments" Type="System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&amp;" RefType="out" />
-        <Parameter Name="namedArguments" Type="System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&amp;" RefType="out" />
+        <Parameter Name="fixedArguments" Type="System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder" RefType="out" />
+        <Parameter Name="namedArguments" Type="System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder" RefType="out" />
       </Parameters>
       <Docs>
         <param name="fixedArguments">To be added.</param>

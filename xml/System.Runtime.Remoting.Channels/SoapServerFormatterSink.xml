@@ -188,9 +188,9 @@
         <Parameter Name="requestMsg" Type="System.Runtime.Remoting.Messaging.IMessage" />
         <Parameter Name="requestHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
         <Parameter Name="requestStream" Type="System.IO.Stream" />
-        <Parameter Name="responseMsg" Type="System.Runtime.Remoting.Messaging.IMessage&amp;" RefType="out" />
-        <Parameter Name="responseHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders&amp;" RefType="out" />
-        <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
+        <Parameter Name="responseMsg" Type="System.Runtime.Remoting.Messaging.IMessage" RefType="out" />
+        <Parameter Name="responseHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders" RefType="out" />
+        <Parameter Name="responseStream" Type="System.IO.Stream" RefType="out" />
       </Parameters>
       <Docs>
         <param name="sinkStack">The stack of sinks that transports the message.</param>
@@ -243,7 +243,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>

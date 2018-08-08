@@ -2582,14 +2582,14 @@
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public static DateTimeOffset operator + (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Addition(valuetype System.DateTimeOffset dateTimeOffset, valuetype System.TimeSpan timeSpan) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset operator +(DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member ( + ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeOffset + timeSpan" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member ( + ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeOffset + timeSpan" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public static DateTimeOffset operator + (DateTimeOffset dateTimeTz, TimeSpan timeSpan);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Addition(valuetype System.DateTimeOffset dateTimeTz, valuetype System.TimeSpan timeSpan) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset operator +(DateTimeOffset dateTimeTz, TimeSpan timeSpan);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="F#" Value="static member ( + ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeTz + timeSpan" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="static member ( + ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeTz + timeSpan" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3149,14 +3149,14 @@
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public static DateTimeOffset operator - (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Subtraction(valuetype System.DateTimeOffset dateTimeOffset, valuetype System.TimeSpan timeSpan) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset operator -(DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member ( - ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeOffset - timeSpan" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member ( - ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeOffset - timeSpan" FrameworkAlternate="netframework-2.0" />
       <MemberSignature Language="C#" Value="public static DateTimeOffset operator - (DateTimeOffset dateTimeTz, TimeSpan timeSpan);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Subtraction(valuetype System.DateTimeOffset dateTimeTz, valuetype System.TimeSpan timeSpan) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset operator -(DateTimeOffset dateTimeTz, TimeSpan timeSpan);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
-      <MemberSignature Language="F#" Value="static member ( - ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeTz - timeSpan" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="static member ( - ) : DateTimeOffset * TimeSpan -&gt; DateTimeOffset" Usage="dateTimeTz - timeSpan" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3248,6 +3248,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
@@ -3438,6 +3443,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
@@ -3672,7 +3682,6 @@ The following example parses an array of strings that are expected to conform to
         <summary>Converts a character span that represents a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specified format exactly.</summary>
         <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="format" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
         <remarks>
-
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -3736,7 +3745,6 @@ The <paramref name="styles" /> parameter contains <see cref="T:System.Globalizat
         <summary>Converts a character span that contains the string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified formats, culture-specific format information, and style. The format of the date and time representation must match one of the specified formats exactly.</summary>
         <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="formats" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
         <remarks>
-
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -3773,7 +3781,6 @@ This method parses a character span representing a date that matches any one of 
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
   
  ]]></format>
-        
         </remarks>
         <exception cref="T:System.ArgumentException">The offset is greater than 14 hours or less than -14 hours.  
 -or-  
@@ -4363,7 +4370,7 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -4711,6 +4718,11 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4772,6 +4784,11 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4842,6 +4859,11 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4925,6 +4947,11 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5156,7 +5183,7 @@ Me.ToUtcDateTime().ToFileTime()
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
@@ -5200,7 +5227,7 @@ Me.ToUtcDateTime().ToFileTime()
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -5237,12 +5264,17 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
@@ -5298,7 +5330,7 @@ Me.ToUtcDateTime().ToFileTime()
         <Parameter Name="input" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -5337,6 +5369,11 @@ Me.ToUtcDateTime().ToFileTime()
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -5344,7 +5381,7 @@ Me.ToUtcDateTime().ToFileTime()
         <Parameter Name="input" Type="System.String" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
@@ -5452,18 +5489,18 @@ Me.ToUtcDateTime().ToFileTime()
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A character span that contains the representation of a date and time to convert.</param>
         <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
-        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" /> </param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" /></param>
         <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succedded, or <see cref="F:System.DateTimeOffset.MinValue" /> if the conversion failed. The conversion fails if the </param>
         <summary>Converts the representation of a date and time in a character span to its <see cref="System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specied format exactly.</summary>
-        <returns><see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
         <remarks>
-
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -5497,7 +5534,6 @@ The particular date and time symbols and strings used in `input` are defined by 
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Has no effect, because the <xref:System.DateTimeOffset> structure does not include a `Kind` property.|  
 
  ]]></format>
-        
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="styles" /> includes an undefined <see cref="T:System.Globalization.DateTimeStyles" /> value.  
@@ -5527,7 +5563,7 @@ The particular date and time symbols and strings used in `input` are defined by 
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">To be added.</param>
@@ -5538,7 +5574,6 @@ The particular date and time symbols and strings used in `input` are defined by 
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>
-        
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks
@@ -5619,7 +5654,7 @@ This method parses the string representation of a date that matches any one of t
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
@@ -5733,7 +5768,7 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
         <Parameter Name="formats" Type="System.String[]" />
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
-        <Parameter Name="result" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>

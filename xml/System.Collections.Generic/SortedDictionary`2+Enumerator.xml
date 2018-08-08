@@ -214,8 +214,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry System.Collections.IDictionaryEnumerator.Entry" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Entry As DictionaryEntry Implements IDictionaryEnumerator.Entry" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::DictionaryEntry System.Collections.IDictionaryEnumerator.Entry { System::Collections::DictionaryEntry get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Entry" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::DictionaryEntry System::Collections::IDictionaryEnumerator::Entry { System::Collections::DictionaryEntry get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Entry" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Entry</InterfaceMember>
@@ -271,8 +271,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Key" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Key As Object Implements IDictionaryEnumerator.Key" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Key { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Key" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionaryEnumerator::Key { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Key" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Key</InterfaceMember>
@@ -327,8 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Value" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As Object Implements IDictionaryEnumerator.Value" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Value { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Value" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionaryEnumerator::Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Value</InterfaceMember>
@@ -383,8 +383,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IEnumerator::Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

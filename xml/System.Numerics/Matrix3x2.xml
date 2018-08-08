@@ -873,7 +873,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="matrix" Type="System.Numerics.Matrix3x2" />
-        <Parameter Name="result" Type="System.Numerics.Matrix3x2&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.Matrix3x2" RefType="out" />
       </Parameters>
       <Docs>
         <param name="matrix">The matrix to invert.</param>

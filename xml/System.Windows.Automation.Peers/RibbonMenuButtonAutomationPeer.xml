@@ -296,8 +296,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System::Windows::Automation::Provider::IExpandCollapseProvider::ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
@@ -327,8 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanMove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanMove As Boolean Implements ITransformProvider.CanMove" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanMove { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanMove" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanMove { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanMove" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanMove</InterfaceMember>
@@ -359,8 +359,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanResize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanResize As Boolean Implements ITransformProvider.CanResize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanResize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanResize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanResize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanResize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanResize</InterfaceMember>
@@ -391,8 +391,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRotate As Boolean Implements ITransformProvider.CanRotate" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanRotate { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanRotate { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanRotate</InterfaceMember>

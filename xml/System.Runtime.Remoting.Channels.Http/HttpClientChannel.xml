@@ -269,7 +269,7 @@
       <Parameters>
         <Parameter Name="url" Type="System.String" />
         <Parameter Name="remoteChannelData" Type="System.Object" />
-        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectURI" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="url">The URL to which the new sink will deliver messages. Can be <see langword="null" />.</param>
@@ -412,7 +412,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
-        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectURI" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="url">The URL from which to extract the URI of the remote well-known object.</param>

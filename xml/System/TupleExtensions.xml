@@ -73,7 +73,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -85,7 +85,7 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the single element.</typeparam>
@@ -130,7 +130,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -143,8 +143,8 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -191,7 +191,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -205,9 +205,9 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -256,7 +256,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -271,10 +271,10 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -325,7 +325,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -341,11 +341,11 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -398,7 +398,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -415,12 +415,12 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -475,7 +475,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -493,13 +493,13 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -556,7 +556,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -575,14 +575,14 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -643,7 +643,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -663,15 +663,15 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -734,7 +734,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -755,16 +755,16 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -829,7 +829,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -851,17 +851,17 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -928,7 +928,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -951,18 +951,18 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1031,7 +1031,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1055,19 +1055,19 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1138,7 +1138,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1163,20 +1163,20 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1240,7 +1240,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1266,21 +1266,21 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1355,7 +1355,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1382,22 +1382,22 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1474,7 +1474,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1502,23 +1502,23 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
-        <Parameter Name="item17" Type="T17&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
+        <Parameter Name="item17" Type="T17" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1597,7 +1597,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1626,24 +1626,24 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
-        <Parameter Name="item17" Type="T17&amp;" RefType="out" />
-        <Parameter Name="item18" Type="T18&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
+        <Parameter Name="item17" Type="T17" RefType="out" />
+        <Parameter Name="item18" Type="T18" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1724,7 +1724,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1754,25 +1754,25 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
-        <Parameter Name="item17" Type="T17&amp;" RefType="out" />
-        <Parameter Name="item18" Type="T18&amp;" RefType="out" />
-        <Parameter Name="item19" Type="T19&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
+        <Parameter Name="item17" Type="T17" RefType="out" />
+        <Parameter Name="item18" Type="T18" RefType="out" />
+        <Parameter Name="item19" Type="T19" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1855,7 +1855,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1886,26 +1886,26 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
-        <Parameter Name="item17" Type="T17&amp;" RefType="out" />
-        <Parameter Name="item18" Type="T18&amp;" RefType="out" />
-        <Parameter Name="item19" Type="T19&amp;" RefType="out" />
-        <Parameter Name="item20" Type="T20&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
+        <Parameter Name="item17" Type="T17" RefType="out" />
+        <Parameter Name="item18" Type="T18" RefType="out" />
+        <Parameter Name="item19" Type="T19" RefType="out" />
+        <Parameter Name="item20" Type="T20" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>
@@ -1981,7 +1981,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.1;netcore-2.1;netstandard-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2013,27 +2013,27 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20,T21&gt;&gt;&gt;" RefType="this" />
-        <Parameter Name="item1" Type="T1&amp;" RefType="out" />
-        <Parameter Name="item2" Type="T2&amp;" RefType="out" />
-        <Parameter Name="item3" Type="T3&amp;" RefType="out" />
-        <Parameter Name="item4" Type="T4&amp;" RefType="out" />
-        <Parameter Name="item5" Type="T5&amp;" RefType="out" />
-        <Parameter Name="item6" Type="T6&amp;" RefType="out" />
-        <Parameter Name="item7" Type="T7&amp;" RefType="out" />
-        <Parameter Name="item8" Type="T8&amp;" RefType="out" />
-        <Parameter Name="item9" Type="T9&amp;" RefType="out" />
-        <Parameter Name="item10" Type="T10&amp;" RefType="out" />
-        <Parameter Name="item11" Type="T11&amp;" RefType="out" />
-        <Parameter Name="item12" Type="T12&amp;" RefType="out" />
-        <Parameter Name="item13" Type="T13&amp;" RefType="out" />
-        <Parameter Name="item14" Type="T14&amp;" RefType="out" />
-        <Parameter Name="item15" Type="T15&amp;" RefType="out" />
-        <Parameter Name="item16" Type="T16&amp;" RefType="out" />
-        <Parameter Name="item17" Type="T17&amp;" RefType="out" />
-        <Parameter Name="item18" Type="T18&amp;" RefType="out" />
-        <Parameter Name="item19" Type="T19&amp;" RefType="out" />
-        <Parameter Name="item20" Type="T20&amp;" RefType="out" />
-        <Parameter Name="item21" Type="T21&amp;" RefType="out" />
+        <Parameter Name="item1" Type="T1" RefType="out" />
+        <Parameter Name="item2" Type="T2" RefType="out" />
+        <Parameter Name="item3" Type="T3" RefType="out" />
+        <Parameter Name="item4" Type="T4" RefType="out" />
+        <Parameter Name="item5" Type="T5" RefType="out" />
+        <Parameter Name="item6" Type="T6" RefType="out" />
+        <Parameter Name="item7" Type="T7" RefType="out" />
+        <Parameter Name="item8" Type="T8" RefType="out" />
+        <Parameter Name="item9" Type="T9" RefType="out" />
+        <Parameter Name="item10" Type="T10" RefType="out" />
+        <Parameter Name="item11" Type="T11" RefType="out" />
+        <Parameter Name="item12" Type="T12" RefType="out" />
+        <Parameter Name="item13" Type="T13" RefType="out" />
+        <Parameter Name="item14" Type="T14" RefType="out" />
+        <Parameter Name="item15" Type="T15" RefType="out" />
+        <Parameter Name="item16" Type="T16" RefType="out" />
+        <Parameter Name="item17" Type="T17" RefType="out" />
+        <Parameter Name="item18" Type="T18" RefType="out" />
+        <Parameter Name="item19" Type="T19" RefType="out" />
+        <Parameter Name="item20" Type="T20" RefType="out" />
+        <Parameter Name="item21" Type="T21" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first element.</typeparam>

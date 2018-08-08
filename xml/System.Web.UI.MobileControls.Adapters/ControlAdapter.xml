@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -483,7 +483,7 @@
       <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection * obj *  -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection * obj *  -&gt; bool" Usage="controlAdapter.LoadPostData (key, data, controlPrivateData, dataChanged)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -498,7 +498,7 @@
         <Parameter Name="key" Type="System.String" />
         <Parameter Name="data" Type="System.Collections.Specialized.NameValueCollection" />
         <Parameter Name="controlPrivateData" Type="System.Object" />
-        <Parameter Name="dataChanged" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="dataChanged" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">Identifies the control.</param>

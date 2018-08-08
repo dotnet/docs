@@ -1,4 +1,4 @@
-<Type Name="RibbonTwoLineText" FullName="System.Windows.Controls.Ribbon.RibbonTwoLineText">
+﻿<Type Name="RibbonTwoLineText" FullName="System.Windows.Controls.Ribbon.RibbonTwoLineText">
   <TypeSignature Language="C#" Value="public class RibbonTwoLineText : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonTwoLineText extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" />
@@ -14,13 +14,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_TextBlock1", Type=typeof(System.Windows.Controls.TextBlock))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_TextBlock2", Type=typeof(System.Windows.Controls.TextBlock))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_Path", Type=typeof(System.Windows.Shapes.Path))</AttributeName>
     </Attribute>
   </Attributes>
@@ -218,7 +218,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
         </Attribute>
       </Attributes>

@@ -58,6 +58,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> class.</summary>
@@ -254,7 +259,7 @@
         <Parameter Name="query" Type="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="scope">A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> with the personalization information to be queried. This value cannot be <see langword="null" />.</param>
@@ -380,8 +385,8 @@
         <Parameter Name="webPartManager" Type="System.Web.UI.WebControls.WebParts.WebPartManager" />
         <Parameter Name="path" Type="System.String" />
         <Parameter Name="userName" Type="System.String" />
-        <Parameter Name="sharedDataBlob" Type="System.Byte[]&amp;" RefType="ref" />
-        <Parameter Name="userDataBlob" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="sharedDataBlob" Type="System.Byte[]" RefType="ref" />
+        <Parameter Name="userDataBlob" Type="System.Byte[]" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="webPartManager">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> managing the personalization data.</param>

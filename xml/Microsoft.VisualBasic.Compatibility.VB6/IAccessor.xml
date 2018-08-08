@@ -13,14 +13,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0c733a8c-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,7 +59,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cRefCount" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor for which to increment the reference count.</param>
@@ -96,7 +99,7 @@
         <Parameter Name="cBindings" Type="System.Int32" />
         <Parameter Name="bindings" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[]" />
         <Parameter Name="cbRowSize" Type="System.Int32" />
-        <Parameter Name="hAccessor" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="hAccessor" Type="System.Int32" RefType="out" />
         <Parameter Name="pBindStatus" Type="System.IntPtr" />
       </Parameters>
       <Docs>
@@ -138,9 +141,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="accessorFlags" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="cBindings" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="rgBindings" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="accessorFlags" Type="System.Int32" RefType="out" />
+        <Parameter Name="cBindings" Type="System.Int32" RefType="out" />
+        <Parameter Name="rgBindings" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor for which to return the bindings.</param>
@@ -179,7 +182,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cRefCount" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor to release.</param>

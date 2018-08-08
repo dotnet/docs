@@ -77,8 +77,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="siteName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="siteName" Type="System.String" RefType="out" />
+        <Parameter Name="siteID" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteName">The default site name.</param>
@@ -145,8 +145,8 @@
       <Parameters>
         <Parameter Name="siteID" Type="System.String" />
         <Parameter Name="path" Type="System.String" />
-        <Parameter Name="directory" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="baseName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="directory" Type="System.String" RefType="out" />
+        <Parameter Name="baseName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteID">A unique identifier for the site.</param>
@@ -250,8 +250,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="siteArgument" Type="System.String" />
-        <Parameter Name="siteName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="siteName" Type="System.String" RefType="out" />
+        <Parameter Name="siteID" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="siteArgument">The site name or site identifier.</param>

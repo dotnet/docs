@@ -13,14 +13,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A55-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -57,8 +60,8 @@
       <Parameters>
         <Parameter Name="cPropertyIDSets" Type="System.Int32" />
         <Parameter Name="rgPropertyIDSets" Type="Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[]" />
-        <Parameter Name="cPropertySets" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="prgPropertySets" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="cPropertySets" Type="System.Int32" RefType="out" />
+        <Parameter Name="prgPropertySets" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cPropertyIDSets">The number of <see langword="DBPROPIDSET" /> structures in <c>rgPropertyIDSets</c>.</param>
@@ -98,7 +101,7 @@
       <Parameters>
         <Parameter Name="iOrdinal" Type="System.Int32" />
         <Parameter Name="riid" Type="System.Guid" />
-        <Parameter Name="referencedRowset" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="referencedRowset" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="iOrdinal">The bookmark or chapter column for which to get the related rowset.</param>
@@ -136,7 +139,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="riid" Type="System.Guid" />
-        <Parameter Name="specification" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="specification" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="riid">The IID of the interface on which to return a pointer.</param>

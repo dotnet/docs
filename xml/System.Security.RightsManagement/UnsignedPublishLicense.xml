@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
     </Attribute>
   </Attributes>
@@ -314,7 +314,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="secureEnvironment" Type="System.Security.RightsManagement.SecureEnvironment" />
-        <Parameter Name="authorUseLicense" Type="System.Security.RightsManagement.UseLicense&amp;" RefType="out" />
+        <Parameter Name="authorUseLicense" Type="System.Security.RightsManagement.UseLicense" RefType="out" />
       </Parameters>
       <Docs>
         <param name="secureEnvironment">The secure environment for license activation and binding.</param>

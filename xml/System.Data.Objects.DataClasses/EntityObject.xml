@@ -25,7 +25,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.Serialization.DataContract(IsReference=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -69,11 +69,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,10 +111,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -244,8 +247,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.DataClasses.RelationshipManager System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityObject.System#Data#Objects#DataClasses#IEntityWithRelationships#RelationshipManager" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RelationshipManager As RelationshipManager Implements IEntityWithRelationships.RelationshipManager" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::Objects::DataClasses::RelationshipManager ^ System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager { System::Data::Objects::DataClasses::RelationshipManager ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Data.Objects.DataClasses.EntityObject.System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::Objects::DataClasses::RelationshipManager ^ System::Data::Objects::DataClasses::IEntityWithRelationships::RelationshipManager { System::Data::Objects::DataClasses::RelationshipManager ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager</InterfaceMember>

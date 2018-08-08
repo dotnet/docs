@@ -62,8 +62,8 @@
         <Parameter Name="clientDiffieHellmanKey" Type="System.Security.Cryptography.ECDiffieHellmanCng" />
         <Parameter Name="attestationUrl" Type="System.String" />
         <Parameter Name="servername" Type="System.String" />
-        <Parameter Name="sqlEnclaveSession" Type="System.Data.SqlClient.SqlEnclaveSession&amp;" RefType="out" />
-        <Parameter Name="counter" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="sqlEnclaveSession" Type="System.Data.SqlClient.SqlEnclaveSession" RefType="out" />
+        <Parameter Name="counter" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="enclaveAttestationInfo">The information the provider uses to attest the enclave and generate a symmetric key for the session. The format of this information is specific to the enclave attestation protocol.</param>
@@ -116,8 +116,8 @@
       <Parameters>
         <Parameter Name="serverName" Type="System.String" />
         <Parameter Name="attestationUrl" Type="System.String" />
-        <Parameter Name="sqlEnclaveSession" Type="System.Data.SqlClient.SqlEnclaveSession&amp;" RefType="out" />
-        <Parameter Name="counter" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="sqlEnclaveSession" Type="System.Data.SqlClient.SqlEnclaveSession" RefType="out" />
+        <Parameter Name="counter" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="serverName">The name of the SQL Server instance containing the enclave.</param>

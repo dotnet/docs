@@ -165,7 +165,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="objectReferenceId" Type="System.Guid" />
-        <Parameter Name="obj" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="obj" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="objectReferenceId">The activity reference.</param>

@@ -31,11 +31,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00020412-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,7 +62,7 @@
       <MemberSignature Language="F#" Value="abstract member AddressOfMember : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND *  -&gt; unit" Usage="iTypeInfo2.AddressOfMember (memid, invKind, ppv)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -87,7 +90,7 @@
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="invKind" Type="System.Runtime.InteropServices.ComTypes.INVOKEKIND" />
-        <Parameter Name="ppv" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppv" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member ID of the <see langword="static" /> member's address to retrieve.</param>
@@ -113,7 +116,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateInstance : obj *  *  -&gt; unit" Usage="iTypeInfo2.CreateInstance (pUnkOuter, riid, ppvObj)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -140,8 +143,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pUnkOuter" Type="System.Object" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pUnkOuter">An object that acts as the controlling <see langword="IUnknown" />.</param>
@@ -391,7 +394,7 @@
       <MemberSignature Language="F#" Value="abstract member GetContainingTypeLib :  *  -&gt; unit" Usage="iTypeInfo2.GetContainingTypeLib (ppTLB, pIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -417,8 +420,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTLB" Type="System.Runtime.InteropServices.ComTypes.ITypeLib&amp;" RefType="out" />
-        <Parameter Name="pIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="ppTLB" Type="System.Runtime.InteropServices.ComTypes.ITypeLib" RefType="out" />
+        <Parameter Name="pIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTLB">When this method returns, contains a reference to the containing type library. This parameter is passed uninitialized.</param>
@@ -466,8 +469,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">The GUID used to identify the data.</param>
@@ -550,7 +553,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeInfo2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String,System.String,System.Int32,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -577,10 +580,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strName" Type="System.String" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The ID of the member whose documentation is to be returned.</param>
@@ -628,7 +631,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -637,9 +640,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
-        <Parameter Name="pbstrHelpString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="pdwHelpStringContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="pbstrHelpStringDll" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pbstrHelpString" Type="System.String" RefType="out" />
+        <Parameter Name="pdwHelpStringContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="pbstrHelpStringDll" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member identifier for the type description.</param>
@@ -683,8 +686,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the function to get the custom data for.</param>
@@ -703,7 +706,7 @@
       <MemberSignature Language="F#" Value="abstract member GetFuncDesc : int *  -&gt; unit" Usage="iTypeInfo2.GetFuncDesc (index, ppFuncDesc)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -730,7 +733,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppFuncDesc" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppFuncDesc" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the function description to return.</param>
@@ -782,7 +785,7 @@
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="invKind" Type="System.Runtime.InteropServices.ComTypes.INVOKEKIND" />
-        <Parameter Name="pFuncIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pFuncIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member identifier.</param>
@@ -879,8 +882,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the implementation type for the custom data.</param>
@@ -906,7 +909,7 @@
       <MemberSignature Language="F#" Value="abstract member GetImplTypeFlags : int *  -&gt; unit" Usage="iTypeInfo2.GetImplTypeFlags (index, pImplTypeFlags)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -933,7 +936,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pImplTypeFlags" Type="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS&amp;" RefType="out" />
+        <Parameter Name="pImplTypeFlags" Type="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the implemented interface or base interface.</param>
@@ -958,7 +961,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMops : int *  -&gt; unit" Usage="iTypeInfo2.GetMops (memid, pBstrMops)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -985,7 +988,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
-        <Parameter Name="pBstrMops" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pBstrMops" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member ID that indicates which marshaling information is needed.</param>
@@ -1010,7 +1013,7 @@
       <MemberSignature Language="F#" Value="abstract member GetNames : int * string[] * int *  -&gt; unit" Usage="iTypeInfo2.GetNames (memid, rgBstrNames, cMaxNames, pcNames)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1039,7 +1042,7 @@
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="rgBstrNames" Type="System.String[]" />
         <Parameter Name="cMaxNames" Type="System.Int32" />
-        <Parameter Name="pcNames" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcNames" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The ID of the member whose name (or names) is to be returned.</param>
@@ -1091,8 +1094,8 @@
       <Parameters>
         <Parameter Name="indexFunc" Type="System.Int32" />
         <Parameter Name="indexParam" Type="System.Int32" />
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="indexFunc">The index of the function to get the custom data for.</param>
@@ -1112,7 +1115,7 @@
       <MemberSignature Language="F#" Value="abstract member GetRefTypeInfo : int *  -&gt; unit" Usage="iTypeInfo2.GetRefTypeInfo (hRef, ppTI)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1139,7 +1142,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hRef" Type="System.Int32" />
-        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hRef">A handle to the referenced type description to return.</param>
@@ -1164,7 +1167,7 @@
       <MemberSignature Language="F#" Value="abstract member GetRefTypeOfImplType : int *  -&gt; unit" Usage="iTypeInfo2.GetRefTypeOfImplType (index, href)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeOfImplType(System.Int32,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeOfImplType(System.Int32,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1191,7 +1194,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="href" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="href" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the implemented type whose handle is returned.</param>
@@ -1216,7 +1219,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeAttr :  -&gt; unit" Usage="iTypeInfo2.GetTypeAttr ppTypeAttr" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1242,7 +1245,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTypeAttr" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppTypeAttr" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTypeAttr">When this method returns, contains a reference to the structure that contains the attributes of this type description. This parameter is passed uninitialized.</param>
@@ -1268,7 +1271,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeInfo2.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1294,7 +1297,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp&amp;" RefType="out" />
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTComp">When this method returns, contains a reference to the <see langword="ITypeComp" /> of the containing type library. This parameter is passed uninitialized.</param>
@@ -1341,7 +1344,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pTypeFlags" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pTypeFlags" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pTypeFlags">When this method returns, contains a <see langword="DWORD" /> reference to a <see langword="TYPEFLAG" />. This parameter is passed uninitialized.</param>
@@ -1381,7 +1384,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pTypeKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND&amp;" RefType="out" />
+        <Parameter Name="pTypeKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pTypeKind">When this method returns, contains a reference to a <see langword="TYPEKIND" /> enumeration. This parameter is passed uninitialized.</param>
@@ -1422,8 +1425,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the variable to get the custom data for.</param>
@@ -1449,7 +1452,7 @@
       <MemberSignature Language="F#" Value="abstract member GetVarDesc : int *  -&gt; unit" Usage="iTypeInfo2.GetVarDesc (index, ppVarDesc)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1476,7 +1479,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppVarDesc" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppVarDesc" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the variable description to return.</param>
@@ -1527,7 +1530,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="memid" Type="System.Int32" />
-        <Parameter Name="pVarIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pVarIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memid">The member identifier.</param>
@@ -1545,7 +1548,7 @@
       <MemberSignature Language="F#" Value="abstract member Invoke : obj * int * int16 *  * nativeint * nativeint *  -&gt; unit" Usage="iTypeInfo2.Invoke (pvInstance, memid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS,System.IntPtr,System.IntPtr,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1574,10 +1577,10 @@
         <Parameter Name="pvInstance" Type="System.Object" />
         <Parameter Name="memid" Type="System.Int32" />
         <Parameter Name="wFlags" Type="System.Int16" />
-        <Parameter Name="pDispParams" Type="System.Runtime.InteropServices.ComTypes.DISPPARAMS&amp;" RefType="ref" />
+        <Parameter Name="pDispParams" Type="System.Runtime.InteropServices.ComTypes.DISPPARAMS" RefType="ref" />
         <Parameter Name="pVarResult" Type="System.IntPtr" />
         <Parameter Name="pExcepInfo" Type="System.IntPtr" />
-        <Parameter Name="puArgErr" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="puArgErr" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pvInstance">A reference to the interface described by this type description.</param>

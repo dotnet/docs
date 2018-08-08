@@ -14,8 +14,8 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
-    <Parameter Name="handled" Type="System.Boolean&amp;" RefType="ref" />
+    <Parameter Name="msg" Type="System.Windows.Interop.MSG" RefType="ref" />
+    <Parameter Name="handled" Type="System.Boolean" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

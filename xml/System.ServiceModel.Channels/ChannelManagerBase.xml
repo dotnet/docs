@@ -60,6 +60,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelManagerBase" /> class.</summary>
@@ -143,8 +148,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CloseTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.CloseTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout { TimeSpan get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelManagerBase.System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::CloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout</InterfaceMember>
@@ -182,8 +187,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property OpenTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.OpenTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout { TimeSpan get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelManagerBase.System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::OpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout</InterfaceMember>
@@ -221,8 +226,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.ReceiveTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout { TimeSpan get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelManagerBase.System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::ReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout</InterfaceMember>
@@ -239,6 +244,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -260,8 +270,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SendTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.SendTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout { TimeSpan get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelManagerBase.System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::SendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout</InterfaceMember>
@@ -278,6 +288,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>

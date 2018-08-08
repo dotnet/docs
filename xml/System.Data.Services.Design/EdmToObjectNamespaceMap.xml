@@ -218,7 +218,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="edmNamespace" Type="System.String" />
-        <Parameter Name="objectNamespace" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectNamespace" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="edmNamespace">String value that contains the namespace name.</param>

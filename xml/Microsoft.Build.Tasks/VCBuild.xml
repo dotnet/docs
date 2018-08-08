@@ -284,7 +284,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
         </Attribute>
       </Attributes>

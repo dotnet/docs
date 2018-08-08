@@ -36,6 +36,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.ScrollViewer" />
       </Parameters>
@@ -144,8 +149,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontallyScrollable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontallyScrollable As Boolean Implements IScrollProvider.HorizontallyScrollable" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::IScrollProvider::HorizontallyScrollable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable</InterfaceMember>
@@ -155,6 +160,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -169,8 +179,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontalScrollPercent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontalScrollPercent As Double Implements IScrollProvider.HorizontalScrollPercent" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IScrollProvider::HorizontalScrollPercent { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent</InterfaceMember>
@@ -194,8 +204,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontalViewSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontalViewSize As Double Implements IScrollProvider.HorizontalViewSize" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IScrollProvider::HorizontalViewSize { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize</InterfaceMember>
@@ -277,8 +287,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticallyScrollable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticallyScrollable As Boolean Implements IScrollProvider.VerticallyScrollable" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::IScrollProvider::VerticallyScrollable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable</InterfaceMember>
@@ -288,6 +298,11 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -303,8 +318,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticalScrollPercent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticalScrollPercent As Double Implements IScrollProvider.VerticalScrollPercent" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IScrollProvider::VerticalScrollPercent { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent</InterfaceMember>
@@ -328,8 +343,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticalViewSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticalViewSize As Double Implements IScrollProvider.VerticalViewSize" />
-      <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize { double get(); };" />
-      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
+      <MemberSignature Language="C++ CLI" Value="property double System::Windows::Automation::Provider::IScrollProvider::VerticalViewSize { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize</InterfaceMember>

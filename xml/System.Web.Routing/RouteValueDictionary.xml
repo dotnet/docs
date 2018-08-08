@@ -28,7 +28,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -530,8 +530,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String,System::Object&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -589,8 +589,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, Object).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System::Collections::Generic::IDictionary&lt;System::String,System::Object&gt;::Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -617,8 +617,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;object&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of Object) Implements IDictionary(Of String, Object).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ System::Collections::Generic::IDictionary&lt;System::String,System::Object&gt;::Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -724,7 +724,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,8 +64,8 @@ Unlike some other enumerator structures in .NET, the <xref:System.Span%601.Enume
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the item at the current position of the enumerator.</summary>

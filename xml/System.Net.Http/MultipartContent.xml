@@ -273,11 +273,8 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(System.Net.Http.MultipartContent/&lt;SerializeToStreamAsync&gt;c__async0))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -358,7 +355,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="length">The length in bytes of the HHTP content.</param>

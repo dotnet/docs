@@ -398,7 +398,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="input" Type="System.String" />
-        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.MediaTypeHeaderValue&amp;" RefType="out" />
+        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.MediaTypeHeaderValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="input">The string to validate.</param>

@@ -63,6 +63,7 @@
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
+## [About .NET Core](core/about.md)
 ## [Get started](core/get-started.md)
 ### [Get started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
 ### [Build a C# Hello World app with .NET Core in Visual Studio 2017](core/tutorials/with-visual-studio.md)

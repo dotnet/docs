@@ -5,26 +5,26 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
 ---
-# Unit Testing in .NET Core and .NET Standard
+# Unit testing in .NET Core and .NET Standard
 
 .NET Core has been designed with testability in mind, so that creating unit tests for your applications is easier than ever before. This article briefly introduces unit tests (and how they differ from other kinds of tests). Linked resources demonstrate how to add a test project to your solution and then run unit tests using either the command line or Visual Studio.
 
 .NET Core 2.0 supports [.NET Standard 2.0](../../standard/net-standard.md). The libraries used to demonstrate unit testing in this section rely on .NET Standard and will work in other project types as well.
 
-Beginning with .NET Core 2.0, there are unit test project templates for Visual Basic and F# as well as C#.
+Beginning with .NET Core 2.0, there are unit test project templates for C#, F# and Visual Basic.
 
-## Getting Started with Testing
+## Getting started with testing
 
 Having a suite of automated tests is one of the best ways to ensure a software application does what its authors intended it to do. There are different kinds of tests for software applications, including integration tests, web tests, load tests, and others. Unit tests that test individual software components or methods are the lowest level tests. Unit tests should only test code within the developer’s control, and should not test infrastructure concerns, like databases, file systems, or network resources. Unit tests may be written using [Test Driven Development (TDD)](http://deviq.com/test-driven-development/), or they can be added to existing code to confirm its correctness. In either case, they should be small, well-named, and fast, since ideally you want to be able to run hundreds of them before pushing your changes into the project’s shared code repository.
 
 > [!NOTE]
 > Developers often struggle with coming up with good names for their test classes and methods. As a starting point, the ASP.NET product team follows [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests).
 
-When writing unit tests, be careful you don’t accidentally introduce dependencies on infrastructure. These tend to make tests slower and more brittle, and thus should be reserved for integration tests. You can avoid these hidden dependencies in your application code by following the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection) to request your dependencies from the framework. You can also keep your unit tests in a separate project from your integration tests, and ensure your unit test project doesn’t have references to or dependencies on infrastructure packages.
+When writing unit tests, be careful you don’t accidentally introduce dependencies on infrastructure. These tend to make tests slower and more brittle, and thus should be reserved for integration tests. You can avoid these hidden dependencies in your application code by following the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection) to request your dependencies from the framework. You can also keep your unit tests in a separate project from your integration tests and ensure your unit test project doesn’t have references to or dependencies on infrastructure packages.
 
 Learn more about unit testing in .NET Core projects:
 
-Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io), [NUnit](http://nunit.org) and [MSTest](https://github.com/Microsoft/vstest-docs).
+Unit test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io), [NUnit](http://nunit.org) and [MSTest](https://github.com/Microsoft/vstest-docs).
 
 You can read about those combinations in these walkthroughs:
 

@@ -1,5 +1,5 @@
 ---
-title: "Destroying Threads"
+title: "Destroying threads"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -12,7 +12,7 @@ ms.assetid: df54e648-c5d1-47c9-bd29-8e4438c1db6d
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Destroying Threads
+# Destroying threads
 The <xref:System.Threading.Thread.Abort%2A> method is used to stop a managed thread permanently. When you call <xref:System.Threading.Thread.Abort%2A>, the common language runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]

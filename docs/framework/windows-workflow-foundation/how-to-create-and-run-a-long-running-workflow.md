@@ -44,7 +44,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     > [!NOTE]
     >  Ensure that you have **Create Database** permission on the local server before creating the database.  
   
-2.  Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\4.0.30319\sql\en`  
+2.  Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`  
   
      Select the following two files and click **Open**.  
   

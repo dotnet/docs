@@ -247,7 +247,7 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 |.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
 |.NET Framework 4.7 installed on all OS versions other than Windows 10 Creators Update|460805|
-|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on Windows 10 Anniversary Edition|394802|
+|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on Windows 10 Anniversary Edition<br/><br/>Installed on Windows Server 2016|394802|
 |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all OS versions other than Windows 10 Anniversary Edition|394806|
 |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] installed on Windows 10 November Update|394254|
 |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] installed on all OS versions other than Windows 10 November Update|394271|

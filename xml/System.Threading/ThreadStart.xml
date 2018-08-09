@@ -44,11 +44,8 @@
   
 > [!NOTE]
 >  Visual Basic and C# users can omit the <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate constructor when creating a thread. In Visual Basic, use the `AddressOf` operator when passing your method to the <xref:System.Threading.Thread.%23ctor%2A> constructor; for example, `Dim t As New Thread(AddressOf ThreadProc)`. In C#, simply specify the name of the thread procedure. The compiler selects the correct delegate constructor.  
-  
- [C++]  
-  
-> [!NOTE]
->  In version 2.0 of the .NET Framework, creating a <xref:System.Threading.ThreadStart> delegate for a static method in C++ requires only one parameter: the address of the callback method, qualified by the class name. In earlier versions two parameters were required when creating a delegate for a static method: zero (null) and the method address. For an instance method, all versions require two parameters: the instance variable and the method address.  
+>  
+>  For C++, starting with .NET Framework 2.0, creating a <xref:System.Threading.ThreadStart> delegate for a static method requires only one parameter: the address of the callback method, qualified by the class name. In earlier versions two parameters were required when creating a delegate for a static method: zero (null) and the method address. For an instance method, all versions require two parameters: the instance variable and the method address.  
   
    
   

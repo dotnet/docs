@@ -16,37 +16,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CLR Profilers and Windows Store Apps
+
 This topic discusses what you need to think about when writing diagnostic tools that analyze managed code running inside a Windows Store app.  It also provides guidelines to modify your existing development tools so they continue to work when you run them against Windows Store apps.  To understand this information, it’s best if you're  familiar with the Common Language Runtime Profiling API, you’ve already used this API in a diagnostic tool that runs correctly against Windows desktop applications, and you’re now interested in modifying the tool to run correctly against Windows Store apps.  
   
- This topic consists of the following sections:  
-  
- [Introduction](#Intro)  
- [Architecture and terminology](#Arch)  
- [Windows RT devices](#RT)  
-[Consuming Windows Runtime APIs](#Consuming)  
-[Loading the Profiler DLL](#Loading)  
- [Common considerations for startup and attach loads](#Common)  
- [Startup load](#Startup)  
- [Attach load](#Attach)  
-[Running inside the Windows Store app](#Running)  
- [Stick to the Windows Store app APIs](#APIs)  
- [Reduced permissions](#Permissions)  
- [Inter-process communication](#Interprocess)  
- [No shutdown notifications](#Shutdown)  
-[Windows Runtime metadata files](#Metadata)  
- [Managed and non-managed WinMDs](#WMDs)  
- [WinMD files look like CLR modules](#CLRModules)  
- [Reading metadata from WinMDs](#Reading)  
- [Modifying metadata from WinMDs](#Modifying)  
- [Resolving assembly references with WinMDs](#Resolving)  
-[Memory profilers](#Profilers)  
- [ForceGC creates a managed thread](#ForceGC)  
- [ConditionalWeakTableReferences](#WeakTable)  
-[Conclusion](#Conclusion)  
-[Resources](#Resources)  
-  
-<a name="Intro"></a>   
-## Introduction  
+## Introduction
+
  If you made it past the introductory paragraph, then you’re familiar with the CLR Profiling API.  You’ve already written a diagnostic tool that works well against managed desktop applications.  Now you’re curious what to do so that your tool works with a managed Windows Store app.  Perhaps you’ve already tried to make this work, and have discovered that it’s not a straightforward task.  Indeed, there are a number of considerations that might not be obvious to all tools developers.  For example:  
   
 -   Windows Store apps run in a context with severely reduced permissions.  
@@ -63,42 +37,45 @@ This topic discusses what you need to think about when writing diagnostic tools 
   
  Providing detail about specific Windows APIs and how they should be used is also outside the scope of this topic.  Consider this topic a starting point, and refer to MSDN to learn more about any Windows APIs referenced here.  
   
-<a name="Arch"></a>   
-## Architecture and terminology  
+## Architecture and terminology
+
  Typically, a diagnostic tool has an architecture like the one shown in the following illustration. It uses the term "profiler," but many such tools go well beyond typical performance or memory profiling into areas such as code coverage, mock object frameworks, time-travel debugging, application monitoring, and so on.  For simplicity, this topic will continue to refer to all these tools as profilers.  
   
  The following terminology is used throughout this topic:  
   
- Application  
- This is the application that the profiler is analyzing.  Typically, the developer of this application is now using the profiler to help diagnose issues with the application.  Traditionally, this application would be a Windows desktop application, but in this topic, we’re looking at Windows Store apps.  
+**Application**
+
+This is the application that the profiler is analyzing.  Typically, the developer of this application is now using the profiler to help diagnose issues with the application.  Traditionally, this application would be a Windows desktop application, but in this topic, we’re looking at Windows Store apps.  
   
- Profiler DLL  
- This is the component that loads into the process space of the application being analyzed.  This component, also known as the profiler "agent," implements the [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)[ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)(2,3,etc.) interfaces and consumes the [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)(2,3,etc.) interfaces to collect data about the analyzed application and potentially modify aspects of the application’s behavior.  
+**Profiler DLL**
+
+This is the component that loads into the process space of the application being analyzed.  This component, also known as the profiler "agent," implements the [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)[ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)(2,3,etc.) interfaces and consumes the [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)(2,3,etc.) interfaces to collect data about the analyzed application and potentially modify aspects of the application’s behavior.  
   
- Profiler UI  
- This is a desktop application that the profiler user interacts with.  It’s responsible for displaying application status to the user and giving the user the means to control the behavior of the analyzed application.  This component always runs in its own process space, separate from the process space of the application being profiled.  The Profiler UI can also act as the "attach trigger," which is the process that calls the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md) method, to cause the analyzed application to load the Profiler DLL in those cases where the profiler DLL did not load on startup.  
+**Profiler UI**
+
+This is a desktop application that the profiler user interacts with.  It’s responsible for displaying application status to the user and giving the user the means to control the behavior of the analyzed application.  This component always runs in its own process space, separate from the process space of the application being profiled.  The Profiler UI can also act as the "attach trigger," which is the process that calls the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md) method, to cause the analyzed application to load the Profiler DLL in those cases where the profiler DLL did not load on startup.  
   
 > [!IMPORTANT]
->  Your Profiler UI should remain a Windows desktop application, even when it is used to control and report on a Windows Store app.  Don’t expect to be able to package and ship your diagnostics tool in the Windows Store.  Your tool needs to do things that Windows Store apps cannot do, and many of those things reside inside your Profiler UI.  
+> Your Profiler UI should remain a Windows desktop application, even when it is used to control and report on a Windows Store app.  Don’t expect to be able to package and ship your diagnostics tool in the Windows Store.  Your tool needs to do things that Windows Store apps cannot do, and many of those things reside inside your Profiler UI.  
   
  Throughout this document, the sample code assumes that:  
   
--   Your Profiler DLL is written in C++, because it must be a native DLL, as per the requirements of the CLR Profiling API.  
+- Your Profiler DLL is written in C++, because it must be a native DLL, as per the requirements of the CLR Profiling API.  
   
--   Your Profiler UI is written in C#.  This isn’t necessary, but because there are no requirements on the language for your Profiler UI’s process, why not pick a language that’s concise and simple?  
+- Your Profiler UI is written in C#.  This isn’t necessary, but because there are no requirements on the language for your Profiler UI’s process, why not pick a language that’s concise and simple?  
   
-<a name="RT"></a>   
-### Windows RT devices  
- Windows RT devices are quite locked down.  Third-party profilers simply cannot be loaded on such devices.  This document focuses on Windows 8 PCs.  
+### Windows RT devices
+
+Windows RT devices are quite locked down.  Third-party profilers simply cannot be loaded on such devices.  This document focuses on Windows 8 PCs.  
   
-<a name="Consuming"></a>   
-## Consuming Windows Runtime APIs  
+## Consuming Windows Runtime APIs
+
  In a number of scenarios discussed in the following sections, your Profiler UI desktop application needs to consume some new Windows Runtime APIs.  You’ll want to consult the documentation to understand which Windows Runtime APIs can be used from desktop applications, and whether their behavior is different when called from desktop applications and Windows Store apps.  
   
  If your Profiler UI is written in managed code, there will be a few steps you’ll need to do to make consuming those Windows Runtime APIs easy.  See the [Managed desktop apps and Windows Runtime](http://go.microsoft.com/fwlink/?LinkID=271858) article for more information.  
   
-<a name="Loading"></a>   
-## Loading the Profiler DLL  
+## Loading the Profiler DLL
+
  This section describes how your Profiler UI causes the Windows Store app to load your Profiler DLL.  The code discussed in this section belongs in your Profiler UI desktop app, and therefore involves using Windows APIs that are safe for desktop apps but not necessarily safe for Windows Store apps.  
   
  Your Profiler UI can cause your Profiler DLL to be loaded into the application’s process space in two ways:  
@@ -109,8 +86,8 @@ This topic discusses what you need to think about when writing diagnostic tools 
   
  One of your first roadblocks will be getting startup-load and attach-load of your Profiler DLL to work properly with Windows Store apps.  Both forms of loading share some special considerations in common, so let’s start with them.  
   
-<a name="Common"></a>   
-### Common considerations for startup and attach loads  
+### Common considerations for startup and attach loads
+
  **Signing your Profiler DLL**  
  When Windows attempts to load your Profiler DLL, it verifies that your Profiler DLL is properly signed.  If not, the load fails by default. There are two ways to do this:  
   
@@ -127,8 +104,8 @@ NET Runtime version 4.0.30319.17929 - Loading profiler failed during CoCreateIns
   
  Generally, Windows Store apps are only allowed to access a limited set of locations on the disk.  Each Windows Store app can access its own application data folders, as well as a few other areas in the file system for which all Windows Store apps are granted access.  It's best to install your Profiler DLL and its dependencies somewhere under Program Files or Program Files (x86), because all Windows Store apps have read and execute permissions there by default.  
   
-<a name="Startup"></a>   
-### Startup load  
+### Startup load
+
  Typically, in a desktop app, your Profiler UI prompts a startup load of your Profiler DLL by initializing an environment block that contains the required CLR Profiling API environment variables (i.e., `COR_PROFILER`, `COR_ENABLE_PROFILING`, and `COR_PROFILER_PATH`), and then creating a new process with that environment block.  The same holds true for Windows Store apps, but the mechanisms are different.  
   
  **Don’t run elevated**  
@@ -233,8 +210,8 @@ appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO
  **Remember to call DisableDebugging**  
  When you called [IPackageDebugSettings::EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=VS.85\).aspx), you made a promise that you would clean up after yourself by calling the [IPackageDebugSettings::DisableDebugging](https://msdn.microsoft.com/library/hh438394\(v=vs.85\).aspx) method, so be sure to do that when the profiling session is over.  
   
-<a name="Attach"></a>   
-### Attach load  
+### Attach load
+
  When your Profiler UI wants to attach its Profiler DLL to an application that has already started running, it uses [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md).  The same holds true with Windows Store apps.  But in addition to the common considerations listed earlier, make sure the that the target Windows Store app is not suspended.  
   
  **EnableDebugging**  
@@ -279,12 +256,12 @@ pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,
   
 -   Understand that the API might suddenly break or disappear if called from inside Windows Store apps in future releases of Windows.  This won’t be considered a compatibility concern by Microsoft, and supporting your usage of it will not be a priority.  
   
-<a name="Permissions"></a>   
-### Reduced permissions  
+### Reduced permissions
+
  It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps.  But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources.  The file system is the most common example.  There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)), and your Profiler DLL will be under the same restrictions.  Test your code thoroughly.  
   
-<a name="Interprocess"></a>   
-### Inter-process communication  
+### Inter-process communication
+
  As shown in the diagram at the beginning of this paper, your Profiler DLL (loaded into the Windows Store app process space) will likely need to communicate with your Profiler UI (running in a separate desktop app process space) through your own custom inter-process communication (IPC) channel.  The Profiler UI sends signals to the Profiler DLL to modify its behavior, and the Profiler DLL sends data from the analyzed Windows Store app back to the Profiler UI for post-processing and displaying to the profiler user.  
   
  Most profilers need to work this way, but your choices for IPC mechanisms are more limited when your Profiler DLL is loaded into a Windows Store app.  For example, named pipes are not part of the Windows Store app SDK, so you cannot use them.  
@@ -338,52 +315,52 @@ string acDir;
 GetAppContainerFolderPath(acSid, out acDir);  
 ```  
   
-<a name="Shutdown"></a>   
-### No shutdown notifications  
+### No shutdown notifications
+
  When running inside a Windows Store app, your Profiler DLL should not rely on either [ICorProfilerCallback::Shutdown](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-shutdown-method.md) or even [DllMain](https://msdn.microsoft.com/library/windows/desktop/ms682583\(v=vs.85\).aspx) (with `DLL_PROCESS_DETACH`) being called to notify your Profiler DLL that the Windows Store app is exiting.  In fact, you should expect they will never be called.  Historically, many Profiler DLLs have used those notifications as convenient places to flush caches to disk, close files, send notifications back to the Profiler UI, etc.  But now your Profiler DLL needs to be organized a little differently.  
   
  Your Profiler DLL should be logging information as it goes.  For performance reasons, you may want to batch information in memory and flush it to disk as the batch grows in size past some threshold.  But assume that any information not yet flushed to disk can be lost.  This means you’ll want to pick your threshold wisely, and that your Profiler UI needs to be hardened to deal with incomplete information written by the Profiler DLL.  
   
-<a name="Metadata"></a>   
-## Windows Runtime metadata files  
+## Windows Runtime metadata files
+
  It is outside the scope of this document to go into detail on what Windows Runtime metadata (WinMD) files are.    This section is limited to how the CLR Profiling API reacts when WinMD files are loaded by the Windows Store app your Profiler DLL is analyzing.  
   
-<a name="WMDs"></a>   
-### Managed and non-managed WinMDs  
+### Managed and non-managed WinMDs
+
  If a developer uses Visual Studio to create a new Windows Runtime Component project, a build of that project produces a WinMD file that describes the metadata (the type descriptions of classes, interfaces, etc.) authored by the developer.  If this project is a managed language project written in C# or VB, that same WinMD file also contains the implementation of those types (meaning that it contains all the IL compiled from the developer’s source code).  Such files are known as managed WinMD files.  They're interesting in that they contain both Windows Runtime metadata and the underlying implementation.  
   
  In contrast, if a developer creates a Windows Runtime Component project for C++, a build of that project produces a WinMD file that contains only metadata, and the implementation is compiled into a separate native DLL.  Similarly, the WinMD files that ship in the Windows SDK contain only metadata, with the implementation compiled into separate native DLLs that ship as part of Windows.  
   
  The information below applies to both managed WinMDs, which contain metadata and implementation, and to non-managed WinMDs, which contain only metadata.  
   
-<a name="CLRModules"></a>   
-### WinMD files look like CLR modules  
+### WinMD files look like CLR modules
+
  As far as the CLR is concerned, all WinMD files are modules.  The CLR Profiling API therefore tells your Profiler DLL when WinMD files load and what their ModuleIDs are, in the same way as for other managed modules.  
   
  Your Profiler DLL can distinguish WinMD files from other modules by calling the [ICorProfilerInfo3::GetModuleInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getmoduleinfo2-method.md) method and inspecting the `pdwModuleFlags` output parameter for the [COR_PRF_MODULE_WINDOWS_RUNTIME](../../../../docs/framework/unmanaged-api/profiling/cor-prf-module-flags-enumeration.md) flag.  (It’s set if and only if the ModuleID represents a WinMD.)  
   
-<a name="Reading"></a>   
-### Reading metadata from WinMDs  
+### Reading metadata from WinMDs
+
  WinMD files, like regular modules, contain metadata that can be read via the [Metadata APIs](../../../../docs/framework/unmanaged-api/metadata/index.md).  However, the CLR maps Windows Runtime types to .NET Framework types when it reads WinMD files so that developers who program in managed code and consume the WinMD file can have a more natural programming experience.  For some examples of these mappings, see [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).  
   
  So which view will your profiler get when it uses the metadata APIs: the raw Windows Runtime view, or the mapped .NET Framework view?  The answer: it’s up to you.  
   
  When you call the [ICorProfilerInfo::GetModuleMetaData](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getmodulemetadata-method.md) method on a WinMD to obtain a metadata interface, such as [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md),  you can choose to set [ofNoTransform](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) in the `dwOpenFlags` parameter to turn off this mapping.  Otherwise, by default, the mapping will be enabled.  Typically, a profiler will keep the mapping enabled, so that the strings that the Profiler DLL obtains from the WinMD metadata (for example, names of types) will look familiar and natural to the profiler user.  
   
-<a name="Modifying"></a>   
-### Modifying metadata from WinMDs  
+### Modifying metadata from WinMDs
+
  Modifying metadata in WinMDs is not supported.  If you call the [ICorProfilerInfo::GetModuleMetaData](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getmodulemetadata-method.md) method for a WinMD file and specify [ofWrite](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) in the `dwOpenFlags` parameter or ask for a writeable metadata interface such as [IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md), [GetModuleMetaData](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getmodulemetadata-method.md) will fail.  This is of particular importance to IL-rewriting profilers, which need to modify metadata to support their instrumentation (for example, to add AssemblyRefs or new methods).  So you should check for [COR_PRF_MODULE_WINDOWS_RUNTIME](../../../../docs/framework/unmanaged-api/profiling/cor-prf-module-flags-enumeration.md) first (as discussed in the previous section) and refrain from asking for writeable metadata interfaces on such modules.  
   
-<a name="Resolving"></a>   
-### Resolving assembly references with WinMDs  
+### Resolving assembly references with WinMDs
+
  Many profilers need to resolve metadata references manually to aid with instrumentation or type inspection.  Such profilers need to be aware of how the CLR resolves assembly references that point to WinMDs, because those references are resolved in a completely different way than standard assembly references.  
   
-<a name="Profilers"></a>   
-## Memory profilers  
+## Memory profilers
+
  The garbage collector and managed heap are not fundamentally different in a Windows Store app and a desktop app.  However, there are some subtle differences that profiler authors need to be aware of.  
   
-<a name="ForceGC"></a>   
-### ForceGC creates a managed thread  
+### ForceGC creates a managed thread
+
  When doing memory profiling, your Profiler DLL typically creates a separate thread from which to call the [ForceGC Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-forcegc-method.md) method.  This is nothing new.  But what might be surprising is that the act of doing a garbage collection inside a Windows Store app may transform your thread into a managed thread (for example, a Profiling API ThreadID will be created for that thread).  
   
  To understand the consequences of this, it’s important to understand the differences between synchronous and asynchronous calls as defined by the CLR Profiling API. Note that this is very different from the concept of asynchronous calls in Windows Store apps.  See the blog post [Why we have CORPROF_E_UNSUPPORTED_CALL_SEQUENCE](https://blogs.msdn.microsoft.com/davbr/2008/12/23/why-we-have-corprof_e_unsupported_call_sequence/) for more information.  
@@ -394,18 +371,18 @@ GetAppContainerFolderPath(acSid, out acDir);
   
  Therefore, we recommend that any thread your Profiler DLL creates to call [ForceGC Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-forcegc-method.md) should be used *only* for the purpose of triggering GCs and then responding to the GC callbacks.  It should not call into the Profiling API to perform other tasks like stack sampling or detaching.  
   
-<a name="WeakTable"></a>   
-### ConditionalWeakTableReferences  
+### ConditionalWeakTableReferences
+
  Starting with the .NET Framework 4.5, there is a new GC callback, [ConditionalWeakTableElementReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-conditionalweaktableelementreferences-method.md), which gives the profiler more complete information about *dependent handles*. These handles effectively add a reference from a source object to a target object for the purpose of GC lifetime management.  Dependent handles are nothing new, and developers who program in managed code have been able to create their own dependent handles by using the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602?displayProperty=nameWithType> class even before Windows 8 and the .NET Framework 4.5.  
   
  However, managed XAML Windows Store apps now make heavy use of dependent handles.  In particular, the CLR uses them to aid with managing reference cycles between managed objects and unmanaged Windows Runtime objects.  This means that it’s more important now than ever for memory profilers to be informed of these dependent handles so that they can be visualized along with the rest of the edges in the heap graph.  Your Profiler DLL should use [RootReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md), [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), and [ConditionalWeakTableElementReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-conditionalweaktableelementreferences-method.md) together to form a complete view of the heap graph.  
   
-<a name="Conclusion"></a>   
-## Conclusion  
+## Conclusion
+
  It is possible to use the CLR Profiling API to analyze managed code running inside Windows Store apps.  In fact, you can take an existing profiler that you’re developing and make some specific changes so that it can target Windows Store apps.   Your Profiler UI should use the new APIs for activating the Windows Store app in debugging mode.  Make sure that your Profiler DLL consumes only those APIs applicable for Windows Store apps.  The communication mechanism between your Profiler DLL and Profiler UI should be written with the Windows Store app API restrictions in mind and with awareness of the restricted permissions in place for Windows Store apps.  Your Profiler DLL should be aware of how the CLR treats WinMDs, and how the Garbage Collector’s behavior is different with respect to managed threads.  
   
-<a name="Resources"></a>   
-## Resources  
+## Resources
+
  **The Common Language Runtime**  
  -   [CLR Profiling API Reference](../../../../docs/framework/unmanaged-api/profiling/index.md)  
   
@@ -421,5 +398,6 @@ GetAppContainerFolderPath(acSid, out acDir);
   
 -   [IPackageDebugSettings Interface](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx)  
   
-## See Also  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See Also
+
+[Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)  

@@ -113,7 +113,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 |Yes|Yes|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate; otherwise, the connection attempt fails.|  
 |Yes|Yes|Yes|Yes|Encryption always occurs, but may use a self-signed server certificate.|  
   
- For more information, see [Using Encryption Without Validation](http://go.microsoft.com/fwlink/?LinkId=120500) in SQL Server Books Online.  
+ For more information, see [Using Encryption Without Validation](/sql/relational-databases/native-client/features/using-encryption-without-validation).
   
 ## OleDb Connection Strings  
  The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at run time by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.  

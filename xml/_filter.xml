@@ -41,6 +41,10 @@
       <typeFilter name="DefaultMemberAttribute" expose="false" />
       <typeFilter name="*" expose="true" />
     </namespaceFilter>
+    <namespaceFilter name="System.Runtime">
+      <typeFilter name="TargetedPatchingOptOut" expose="false" />
+      <typeFilter name="*" expose="true" />
+    </namespaceFilter>    
     <!-- Attributes in System.Runtime.CompilerServices control obscure details of compilation. Don't show them. -->
     <namespaceFilter name="System.Runtime.CompilerServices">
       <typeFilter name="ExtensionAttribute" expose="true" />

@@ -44,4 +44,4 @@ There are two options to resolve the display problem:
 
 ## See also
 
-- [Automatic scaling in Windows Forms](../automatic-scaling-in-windows-forms.md)
+- [Automatic scaling in Windows Forms](automatic-scaling-in-windows-forms.md)

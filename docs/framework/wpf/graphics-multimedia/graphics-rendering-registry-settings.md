@@ -72,7 +72,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The required video driver setting takes a string of the following format:  
   
-||  
+| |  
 |-|  
 |*YYYY* `/` *MM* `/` *DD*|  
   

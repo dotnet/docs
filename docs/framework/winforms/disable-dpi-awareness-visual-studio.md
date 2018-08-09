@@ -18,13 +18,13 @@ If an app lacks the manifest or states that it's not DPI-aware, then the operati
 
 The **Windows Forms Designer** in Visual Studio does not currently have scaling support. This can cause display issues when you open Windows Forms apps in Visual Studio on HDPI monitors. For example, the first screenshot that follows shows Windows Forms Designer on a monitor at 100% scaling. The second screenshot shows what the form looks like when it's opened on a high dots per inch (HDPI) monitor:
 
-![Windows Forms Designer scaling at 100%](../media/scaling-100-percent.png)
+![Windows Forms Designer scaling at 100%](media/scaling-100-percent.png)
 
-![Windows Forms Designer on HDPI monitor](../media/win-forms-designer-hdpi.png)
+![Windows Forms Designer on HDPI monitor](media/win-forms-designer-hdpi.png)
 
 In Visual Studio 2017 version 15.8 and later, when you open a Windows Form in the designer on an HDPI monitor, Visual Studio displays a yellow message bar at the top of the designer:
 
-![Scaling on your monitor yellow message bar in Visual Studio](../media/scaling-gold-bar.png)
+![Scaling on your monitor yellow message bar in Visual Studio](media/scaling-gold-bar.png)
 
 The message reads **Scaling on your main display is set to 200%. This might cause rendering problems in the designer window.**
 

@@ -10,13 +10,13 @@ manager: douge
 ---
 # Disable DPI-awareness in Visual Studio
 
-Visual Studio is a dots per inch (DPI) aware application, which means displays scale automatically. Applications declare their DPI-awareness through a manifest&mdash;either in the executable, in an *.exe.manifest* file, or in code.
-
-If an app lacks the manifest or states that it's not DPI-aware, then the operating system scales the application as a bitmap. This behavior is also called DPI virtualization. The application still thinks that is running at 100% scaling, or 96 dpi.
+Visual Studio is a dots per inch (DPI) aware application, which means displays scale automatically. If an application states that it's not DPI-aware, the operating system scales the application as a bitmap. This behavior is also called DPI virtualization. The application still thinks that it's running at 100% scaling, or 96 dpi.
 
 ## Rendering issue
 
-The **Windows Forms Designer** in Visual Studio does not currently have scaling support. This can cause display issues when you open Windows Forms apps in Visual Studio on HDPI monitors. For example, the first screenshot that follows shows Windows Forms Designer on a monitor at 100% scaling. The second screenshot shows what the form looks like when it's opened on a high dots per inch (HDPI) monitor:
+The **Windows Forms Designer** in Visual Studio doesn't currently have scaling support. This can cause display issues when you open Windows Forms apps in Visual Studio on HDPI monitors.
+
+For example, the first screenshot that follows shows **Windows Forms Designer** on a monitor at 100% scaling. The second screenshot shows what the form looks like when it's opened on a high dots per inch (HDPI) monitor:
 
 ![Windows Forms Designer scaling at 100%](media/scaling-100-percent.png)
 
@@ -32,7 +32,9 @@ The message reads **Scaling on your main display is set to 200%. This might caus
 
 There are two options to resolve the display problem:
 
-- Set your display scaling setting to 100%. To do this in Windows 10, type **display settings** in the Cortana search box, and then select **Change display settings**. In the **Settings** window, set **Change the size of text, apps, and other items** to **100%**.
+- Set your display scaling setting to 100%.
+
+   To do this in Windows 10, type **display settings** in the Cortana search box, and then select **Change display settings**. In the **Settings** window, set **Change the size of text, apps, and other items** to **100%**.
 
 - Select the option on the yellow message bar to restart Visual Studio as a DPI-unaware process.
 

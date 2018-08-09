@@ -92,12 +92,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> method is equivalent to the Transact-SQL COMMIT TRANSACTION statement. You cannot roll back a transaction once it has been committed, because all modifications have become a permanent part of the database. For more information, see SQL Server Books Online.  
+ The <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> method is equivalent to the Transact-SQL COMMIT TRANSACTION statement. You cannot roll back a transaction once it has been committed, because all modifications have become a permanent part of the database. For more information, see [COMMIT TRANSACTION (Transact-SQL)
+](/sql/t-sql/language-elements/commit-transaction-transact-sql).
   
 > [!NOTE]
 >  `Try`/`Catch` exception handling should always be used when committing or rolling back a <xref:System.Data.SqlClient.SqlTransaction>. Both `Commit` and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
    
   
@@ -287,7 +288,7 @@
 ## Remarks  
  Parallel transactions are not supported. Therefore, the <xref:System.Data.IsolationLevel> applies to the whole transaction.  
   
- For more information on SQL Server isolation levels, see "Isolation Levels in the Database Engine" in SQL Server Books Online.  
+ For more information on SQL Server isolation levels, see [Transaction Isolation Levels](/sql/t-sql/language-elements/transaction-isolation-levels).
   
  ]]></format>
         </remarks>
@@ -340,14 +341,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see SQL Server Books Online.  
+ The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see [ROLLBACK TRANSACTION (Transact-SQL)
+](/sql/t-sql/language-elements/rollback-transaction-transact-sql).
   
  The transaction can only be rolled back from a pending state (after <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> has been called, but before <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> is called). The transaction is rolled back in the event it is disposed before `Commit` or `Rollback` is called.  
   
 > [!NOTE]
 >  `Try`/`Catch` exception handling should always be used when rolling back a transaction. A `Rollback` generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
    
   
@@ -404,14 +406,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see "Explicit Transactions" and "Transaction Savepoints" in SQL Server Books Online.  
+ The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).  
   
  The transaction can only be rolled back from a pending state (after <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> has been called, but before <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> is called). The transaction is rolled back if it is disposed before `Commit` or `Rollback` is called.  
   
 > [!NOTE]
 >  `Try`/`Catch` exception handling should always be used when rolling back a transaction. A `Rollback` generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
    
   

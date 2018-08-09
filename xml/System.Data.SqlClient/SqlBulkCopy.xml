@@ -511,7 +511,7 @@
   
  If <xref:System.Data.SqlClient.SqlBulkCopy.DestinationTableName%2A> is modified while a <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> operation is running, the change does not affect the current operation. The new <xref:System.Data.SqlClient.SqlBulkCopy.DestinationTableName%2A> value is used the next time a <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> method is called.  
   
- <xref:System.Data.SqlClient.SqlBulkCopy.DestinationTableName%2A> is a three-part name (`<database>.<owningschema>.<name>`). You can qualify the table name with its database and owning schema if you choose. However, if the table name uses an underscore ("_") or any other special characters, you must escape the name using surrounding brackets as in (`[<database>.<owningschema>.<name_01>]`). For more information, see "Identifiers" in SQL Server Books Online.  
+ <xref:System.Data.SqlClient.SqlBulkCopy.DestinationTableName%2A> is a three-part name (`<database>.<owningschema>.<name>`). You can qualify the table name with its database and owning schema if you choose. However, if the table name uses an underscore ("_") or any other special characters, you must escape the name using surrounding brackets as in (`[<database>.<owningschema>.<name_01>]`). For more information, see [Database Identifiers](/sql/relational-databases/databases/database-identifiers).  
   
  You can bulk-copy data to a temporary table by using a value such as `tempdb..#table` or `tempdb.<owner>.#table` for the <xref:System.Data.SqlClient.SqlBulkCopy.DestinationTableName%2A> property.  
   

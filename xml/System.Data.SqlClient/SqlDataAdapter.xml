@@ -81,7 +81,7 @@
  For every column that you propagate to the data source on <xref:System.Data.Common.DbDataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The <xref:System.Data.Common.DbParameter.SourceColumn%2A> property of the <xref:System.Data.Common.DbParameter> object should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
   
 > [!NOTE]
->  An <xref:System.InvalidOperationException> will occur if the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method is called and the table contains a user-defined type that is not available on the client computer. For more information, see [Creating and Using User-Defined Types](http://go.microsoft.com/fwlink/?LinkId=139492) in SQL Server Books Online.  
+>  An <xref:System.InvalidOperationException> will occur if the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method is called and the table contains a user-defined type that is not available on the client computer. For more information, see [CLR User-Defined Types](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types).
   
    
   

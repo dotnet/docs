@@ -1441,7 +1441,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
   
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+ When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
   
    
   
@@ -1529,7 +1529,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
   
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+ When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
   
    
   
@@ -1637,7 +1637,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
   
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+ When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
   
    
   
@@ -1728,7 +1728,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
   
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+ When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
   
  ]]></format>
         </remarks>
@@ -1833,7 +1833,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
 > [!NOTE]
 >  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
   
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+ When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
   
  ]]></format>
         </remarks>

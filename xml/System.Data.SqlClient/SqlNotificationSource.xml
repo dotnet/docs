@@ -22,27 +22,7 @@
 ## Remarks  
  The `SqlNotificationSource` enumeration is referenced by an instance of the <xref:System.Data.SqlClient.SqlNotificationEventArgs> class.  
   
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. For more information, see [SQL Server Service Broker](/sql/database-engine/configure-windows/sql-server-service-broker) and [Working with Query Notifications](/sql/connect/oledb/features/working-with-query-notifications).
   
  ]]></format>
     </remarks>

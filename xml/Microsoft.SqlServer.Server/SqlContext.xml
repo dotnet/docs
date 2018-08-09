@@ -168,7 +168,7 @@
    
   
 ## Examples  
- The following example shows how to get the Windows identity of the calling client and impersonate the client. See "Impersonation Sample" in SQL Server Books Online for an example of impersonation using the <xref:Microsoft.SqlServer.Server.SqlContext.WindowsIdentity%2A> property.  
+ The following example shows how to get the Windows identity of the calling client and impersonate the client.
   
  [!code-csharp[DataWorks SqlContext.WindowsIdentity Sample#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlContext.WindowsIdentity Sample/CS/source.cs#1)]
  [!code-vb[DataWorks SqlContext.WindowsIdentity Sample#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlContext.WindowsIdentity Sample/VB/source.vb#1)]  

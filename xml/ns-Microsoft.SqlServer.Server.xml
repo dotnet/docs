@@ -11,7 +11,7 @@
   
  The <xref:Microsoft.SqlServer.Server.SqlContext> class provides a <xref:Microsoft.SqlServer.Server.SqlPipe> object, through which results are returned to the client from a stored procedure, a <xref:Microsoft.SqlServer.Server.SqlTriggerContext> object, which provides information about the operation that caused a trigger to be fired, and a <xref:System.Security.Principal.WindowsIdentity> object, which can be used to determine the identity of the calling client when the client used integrated security for authentication.  
   
- For more information about SQL Server CLR integration and the APIs in the <xref:Microsoft.SqlServer.Server> namespace, see SQL Server Books Online.  
+ For more information about SQL Server CLR integration and the APIs in the <xref:Microsoft.SqlServer.Server> namespace, see [SQL Server Documentation](/sql/sql-server/).
   
  ]]></format>
     </remarks>

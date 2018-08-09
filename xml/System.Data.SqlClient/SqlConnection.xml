@@ -80,7 +80,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  An application that creates an instance of the <xref:System.Data.SqlClient.SqlConnection> object can require all direct and indirect callers to have sufficient permission to the code by setting declarative or imperative security demands. <xref:System.Data.SqlClient.SqlConnection> makes security demands using the <xref:System.Data.SqlClient.SqlClientPermission> object. Users can verify that their code has sufficient permissions by using the <xref:System.Data.SqlClient.SqlClientPermissionAttribute> object. Users and administrators can also use the [Caspol.exe (Code Access Security Policy Tool)](~/docs/framework/tools/caspol-exe-code-access-security-policy-tool.md) to modify security policy at the machine, user, and enterprise levels. For more information, see [Security in .NET](~/docs//standard/security/index.md). For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   
- For more information about handling warning and informational messages from the server, see [Connection Events](~/docs/framework/data/adonet/connection-events.md). SQL Server engine errors and error messages are documented in SQL Server Books Online.  
+ For more information about handling warning and informational messages from the server, see [Connection Events](~/docs/framework/data/adonet/connection-events.md). For more information about SQL Server engine errors and error messages, see [Database Engine Events and Errors](/sql/relational-databases/errors-events/database-engine-events-and-errors).
   
 > [!CAUTION]
 >  You can force TCP instead of shared memory. You can do that by prefixing tcp: to the server name in the connection string or you can use localhost.  
@@ -370,7 +370,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 > [!CAUTION]
 >  When your query returns a large amount of data and calls `BeginTransaction`, a <xref:System.Data.SqlClient.SqlException> is thrown because SQL Server does not allow parallel transactions when using MARS. To avoid this problem, always associate a transaction with the command, the connection, or both before any readers are open.  
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
    
   
@@ -429,9 +429,9 @@ using (SqlConnection connection = new SqlConnection(connectionString))
  You must explicitly commit or roll back the transaction using the <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> or <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method. To make sure that the .NET Framework Data Provider for SQL Server transaction management model performs correctly, avoid using other transaction management models, such as the one provided by SQL Server.  
   
 > [!NOTE]
->  After a transaction is committed or rolled back, the isolation level of the transaction persists for all subsequent commands that are in autocommit mode (the SQL Server default). This can produce unexpected results, such as an isolation level of REPEATABLE READ persisting and locking other users out of a row. To reset the isolation level to the default (READ COMMITTED), execute the [!INCLUDE[tsql](~/includes/tsql-md.md)] SET TRANSACTION ISOLATION LEVEL READ COMMITTED statement, or call <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A?displayProperty=nameWithType> followed immediately by <xref:System.Data.SqlClient.SqlTransaction.Commit%2A?displayProperty=nameWithType>. For more information on SQL Server isolation levels, see "Isolation Levels in the Database Engine" in SQL Server Books Online.  
+> After a transaction is committed or rolled back, the isolation level of the transaction persists for all subsequent commands that are in autocommit mode (the SQL Server default). This can produce unexpected results, such as an isolation level of REPEATABLE READ persisting and locking other users out of a row. To reset the isolation level to the default (READ COMMITTED), execute the [!INCLUDE[tsql](~/includes/tsql-md.md)] SET TRANSACTION ISOLATION LEVEL READ COMMITTED statement, or call <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A?displayProperty=nameWithType> followed immediately by <xref:System.Data.SqlClient.SqlTransaction.Commit%2A?displayProperty=nameWithType>. For more information on SQL Server isolation levels, see [Transaction Isolation Levels](/sql/t-sql/language-elements/transaction-isolation-levels).
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
 > [!CAUTION]
 >  When your query returns a large amount of data and calls `BeginTransaction`, a <xref:System.Data.SqlClient.SqlException> is thrown because SQL Server does not allow parallel transactions when using MARS. To avoid this problem, always associate a transaction with the command, the connection, or both before any readers are open.  
@@ -496,7 +496,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  You must explicitly commit or roll back the transaction using the <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> or <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method. To make sure that the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for SQL Server transaction management model performs correctly, avoid using other transaction management models, such as the one provided by SQL Server.  
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
 > [!CAUTION]
 >  When your query returns a large amount of data and calls `BeginTransaction`, a <xref:System.Data.SqlClient.SqlException> is thrown because SQL Server does not allow parallel transactions when using MARS. To avoid this problem, always associate a transaction with the command, the connection, or both before any readers are open.  
@@ -562,9 +562,9 @@ using (SqlConnection connection = new SqlConnection(connectionString))
  You must explicitly commit or roll back the transaction using the <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> or <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method. To make sure that the SQL Server transaction management model performs correctly, avoid using other transaction management models, such as the one provided by SQL Server.  
   
 > [!NOTE]
->  After a transaction is committed or rolled back, the isolation level of the transaction persists for all subsequent commands that are in autocommit mode (the SQL Server default). This can produce unexpected results, such as an isolation level of REPEATABLE READ persisting and locking other users out of a row. To reset the isolation level to the default (READ COMMITTED), execute the [!INCLUDE[tsql](~/includes/tsql-md.md)] SET TRANSACTION ISOLATION LEVEL READ COMMITTED statement, or call <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A?displayProperty=nameWithType> followed immediately by <xref:System.Data.SqlClient.SqlTransaction.Commit%2A?displayProperty=nameWithType>. For more information on SQL Server isolation levels, see "Isolation Levels in the Database Engine" in SQL Server Books Online.  
+>  After a transaction is committed or rolled back, the isolation level of the transaction persists for all subsequent commands that are in autocommit mode (the SQL Server default). This can produce unexpected results, such as an isolation level of REPEATABLE READ persisting and locking other users out of a row. To reset the isolation level to the default (READ COMMITTED), execute the [!INCLUDE[tsql](~/includes/tsql-md.md)] SET TRANSACTION ISOLATION LEVEL READ COMMITTED statement, or call <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A?displayProperty=nameWithType> followed immediately by <xref:System.Data.SqlClient.SqlTransaction.Commit%2A?displayProperty=nameWithType>. For more information on SQL Server isolation levels, see [Transaction Isolation Levels](/sql/t-sql/language-elements/transaction-isolation-levels).
   
- For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+ For more information on SQL Server transactions, see [Transactions (Transact-SQL)](/sql/t-sql/language-elements/transactions-transact-sql).
   
 > [!CAUTION]
 >  When your query returns a large amount of data and calls `BeginTransaction`, a <xref:System.Data.SqlClient.SqlException> is thrown because SQL Server does not allow parallel transactions when using MARS. To avoid this problem, always associate a transaction with the command, the connection, or both before any readers are open.  
@@ -1727,7 +1727,7 @@ End Module
 > [!NOTE]
 >  An error with a severity level of 17 or above that causes the server to stop processing the command needs to be handled as an exception. In this case, an exception is thrown regardless of how the error is handled in the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event.  
   
- For more information on working with events, see [Connection Events](~/docs/framework/data/adonet/connection-events.md). For more information on errors generated by the SQL Server engine, see SQL Server Books Online.  
+ For more information on working with events, see [Connection Events](~/docs/framework/data/adonet/connection-events.md). For more information on errors generated by the SQL Server engine, see [Database Engine Errors](/sql/relational-databases/errors-events/database-engine-events-and-errors).
   
  ]]></format>
         </remarks>
@@ -1745,7 +1745,7 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned. For more information on versioned stored procedures, see SQL Server Books Online.  
+ If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned.
   
  ]]></format>
         </remarks>
@@ -2129,7 +2129,7 @@ class Program {
 ## Remarks  
  Clients that want to process warnings or informational messages sent by the server should create an <xref:System.Data.SqlClient.SqlInfoMessageEventHandler> delegate to listen to this event.  
   
- The <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event occurs when a message with a severity of 10 or less is returned by SQL Server. Messages that have a severity between 11 and 20 raise an error and messages that have a severity over 20 causes the connection to close. For more information on SQL Server error levels, see "Database Engine Error Severities" in SQL Server Books Online.  
+ The <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event occurs when a message with a severity of 10 or less is returned by SQL Server. Messages that have a severity between 11 and 20 raise an error and messages that have a severity over 20 causes the connection to close. For more information on SQL Server error levels, see [Database Engine Error Severities](/sql/relational-databases/errors-events/database-engine-error-severities).
   
  For more information and an example, see [Connection Events](~/docs/framework/data/adonet/connection-events.md).  
   
@@ -2305,7 +2305,7 @@ class Program {
   
  <xref:System.Data.SqlClient.SqlConnection.PacketSize%2A> may be a value in the range of 512 and 32767 bytes. An exception is generated if the value is outside this range.  
   
- Setting the default value to a number greater than 8000 will cause the packets to use the MultiPage allocator on the instance of SQL Server instead of the much more efficient SinglePage allocator, reducing the overall scalability of the SQL Server. For more information on how SQL Server uses memory, see [Memory Architecture](http://go.microsoft.com/fwlink/?LinkId=143705) in SQL Server Books Online.  
+ Setting the default value to a number greater than 8000 will cause the packets to use the MultiPage allocator on the instance of SQL Server instead of the much more efficient SinglePage allocator, reducing the overall scalability of the SQL Server. For more information on how SQL Server uses memory, see [Memory Management Architecture Guide](/sql/relational-databases/memory-management-architecture-guide).
   
    
   

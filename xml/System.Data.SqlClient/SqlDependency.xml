@@ -23,37 +23,17 @@
 ## Remarks  
  <xref:System.Data.SqlClient.SqlDependency> is ideal for caching scenarios, where your ASP.NET application or middle-tier service needs to keep certain information cached in memory. <xref:System.Data.SqlClient.SqlDependency> allows you to receive notifications when the original data in the database changes so that the cache can be refreshed.  
   
- To set up a dependency, you need to associate a <xref:System.Data.SqlClient.SqlDependency> object to one or more <xref:System.Data.SqlClient.SqlCommand> objects. To receive notifications, you need to subscribe to the <xref:System.Data.SqlClient.SqlDependency.OnChange> event. For more information about the requirements for creating queries for notifications, see "Creating a Query for Notification" in SQL Server Books Online.  
+ To set up a dependency, you need to associate a <xref:System.Data.SqlClient.SqlDependency> object to one or more <xref:System.Data.SqlClient.SqlCommand> objects. To receive notifications, you need to subscribe to the <xref:System.Data.SqlClient.SqlDependency.OnChange> event. For more information about the requirements for creating queries for notifications, see [Working with Query Notifications](/sql/relational-databases/native-client/features/working-with-query-notifications).
   
 > [!NOTE]
->  <xref:System.Data.SqlClient.SqlDependency> was designed to be used in ASP.NET or middle-tier services where there is a relatively small number of servers having dependencies active against the database. It was not designed for use in client applications, where hundreds or thousands of client computers would have <xref:System.Data.SqlClient.SqlDependency> objects set up for a single database server. If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](http://go.microsoft.com/fwlink/?LinkId=211984) topic in SQL Server Books Online.  
+> <xref:System.Data.SqlClient.SqlDependency> was designed to be used in ASP.NET or middle-tier services where there is a relatively small number of servers having dependencies active against the database. It was not designed for use in client applications, where hundreds or thousands of client computers would have <xref:System.Data.SqlClient.SqlDependency> objects set up for a single database server. If you are developing an application where you need reliable sub-second notifications when data changes, review the sections [Planning an Efficient Query Notifications Strategy](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms187528(v=sql.105)#planning-an-efficient-query-notifications-strategy) and [Alternatives to Query Notifications](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms187528(v=sql.105)#alternatives-to-query-notifications) in the [Planning for Notifications](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms187528(v%3dsql.105)) article.
   
- For more information, see [Query Notifications in SQL Server](~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md) and "Building Notification Solutions" in SQL Server Books Online.  
+ For more information, see [Query Notifications in SQL Server](~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md) and [Building Notification Solutions](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms171065(v%3dsql.90)).  
   
 > [!NOTE]
 >  The <xref:System.Data.SqlClient.SqlDependency.OnChange> event may be generated on a different thread from the thread that initiated command execution.  
   
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. 
   
  ]]></format>
     </remarks>
@@ -91,28 +71,8 @@
 ## Remarks  
  The constructor initializes the <xref:System.Data.SqlClient.SqlDependency> object using the default Service Broker service name and time-out. At some point after construction, you must use the <xref:System.Data.SqlClient.SqlDependency.AddCommandDependency%2A> method to associate one or more commands to this <xref:System.Data.SqlClient.SqlDependency> object.  
   
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. For more information, see [SQL Server Service Broker](/sql/database-engine/configure-windows/sql-server-service-broker) and [Working with Query Notifications](/sql/connect/oledb/features/working-with-query-notifications).
+
  ]]></format>
         </remarks>
       </Docs>
@@ -143,27 +103,7 @@
 ## Remarks  
  Internally, this constructor creates an instance of the <xref:System.Data.Sql.SqlNotificationRequest> class, and binds it to a <xref:System.Data.SqlClient.SqlCommand> object.  
   
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. For more information, see [SQL Server Service Broker](/sql/database-engine/configure-windows/sql-server-service-broker) and [Working with Query Notifications](/sql/connect/oledb/features/working-with-query-notifications).
   
  ]]></format>
         </remarks>
@@ -199,27 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. For more information, see [SQL Server Service Broker](/sql/database-engine/configure-windows/sql-server-service-broker) and [Working with Query Notifications](/sql/connect/oledb/features/working-with-query-notifications).
   
  ]]></format>
         </remarks>
@@ -257,27 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
--   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
--   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
--   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
--   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
--   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
--   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
--   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+ Query notifications are supported only for SELECT statements that meet a list of specific requirements. For more information, see [SQL Server Service Broker](/sql/database-engine/configure-windows/sql-server-service-broker) and [Working with Query Notifications](/sql/connect/oledb/features/working-with-query-notifications).
   
  ]]></format>
         </remarks>

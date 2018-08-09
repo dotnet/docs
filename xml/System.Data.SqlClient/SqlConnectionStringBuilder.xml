@@ -2285,7 +2285,7 @@ Database = AdventureWorks
 ## Remarks  
  When `TrustServerCertificate` is set to `true`, the transport layer will use SSL to encrypt the channel and bypass walking the certificate chain to validate trust. If `TrustServerCertificate` is set to `true` and encryption is turned on, the encryption level specified on the server will be used even if `Encrypt` is set to `false`. The connection will fail otherwise.  
   
- For more information, see "Encryption Hierarchy" and "Using Encryption Without Validation" in SQL Server Books Online.  
+ For more information, see [Encryption Hierarchy](/sql/relational-databases/security/encryption/encryption-hierarchy) and [Using Encryption Without Validation](/sql/relational-databases/native-client/features/using-encryption-without-validation).
   
  ]]></format>
         </remarks>
@@ -2522,7 +2522,7 @@ Unable to retrieve value for null key.
  This property corresponds to the "User Instance" key within the connection string.  
   
 > [!NOTE]
->  This feature is available only with the SQL Server Express Edition. For more information on user instances, see [SQL Server Express User Instances](~/docs/framework/data/adonet/sql/sql-server-express-user-instances.md) and "User Instances for Non-Administrators" in SQL Server Books Online.  
+>  This feature is available only with the SQL Server Express Edition. For more information on user instances, see [SQL Server Express User Instances](~/docs/framework/data/adonet/sql/sql-server-express-user-instances.md).
   
  ]]></format>
         </remarks>

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contextual information provided includes the type of action that caused the trigger to fire, which columns were modified in an UPDATE operation, and, in the case of a data definition language (DDL) trigger, an XML EventData structure (see "Transact-SQL Reference" in SQL Server Books Online) that describes the triggering operation.  
+ The contextual information provided includes the type of action that caused the trigger to fire, which columns were modified in an UPDATE operation, and, in the case of a data definition language (DDL) trigger, an XML EventData structure (see [Transact-SQL Reference](/sql/t-sql/language-reference)) that describes the triggering operation.  
   
  An instance of <xref:Microsoft.SqlServer.Server.SqlTriggerContext> is available from the <xref:Microsoft.SqlServer.Server.SqlContext> class, when the code is running inside a trigger through the <xref:Microsoft.SqlServer.Server.SqlContext.TriggerContext%2A> property.  
   

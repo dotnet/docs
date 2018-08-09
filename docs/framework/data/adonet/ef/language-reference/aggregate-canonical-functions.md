@@ -7,20 +7,179 @@ ms.assetid: 3bcff826-ca90-41b3-a791-04d6ff0e5085
 
 Aggregates are expressions that reduce a series of input values into, for example, a single value. Aggregates are normally used in conjunction with the GROUP BY clause of the SELECT expression, and there are constraints on where they can be used.
 
-The following table shows the aggregate [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.
+## Aggegate Entity SQL canonical functions
 
-| Function | Description |
-| -------- | ----------- |
-| `Avg(expression)` | Returns the average of the non-null values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, and `Decimal`.<br><br>**Return Value**<br><br>The type of `expression`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_AVG](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_avg)] [!code-sql[DP EntityServices Concepts#EDM_AVG](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_avg)] |
-| `BigCount(expression)` | Returns the size of the aggregate including null and duplicate values.<br><br>**Arguments**<br><br>Any type.<br><br>**Return Value**<br><br>An `Int64`.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_BIGCOUNT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_bigcount)] [!code-sql[DP EntityServices Concepts#EDM_BIGCOUNT](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_bigcount)] |
-| `Count(expression)` | Returns the size of the aggregate including null and duplicate values.<br><br>**Arguments**<br><br>Any type.<br><br>**Return Value**<br><br>An `Int32`.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_COUNT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_count)] [!code-sql[DP EntityServices Concepts#EDM_COUNT](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_count)] |
-| `Max(expression)` | Returns the maximum of the non-null values.<br><br>**Arguments**<br><br>A `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary`.<br><br>**Return Value**<br><br>The type of `expression`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_MAX](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_max)] [!code-sql[DP EntityServices Concepts#EDM_MAX](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_max)] |
-| `Min(expression)` | Returns the minimum of the non-null values.<br><br>**Arguments**<br><br>A `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary`.<br><br>**Return Value**<br><br>The type of `expression`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_MIN](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_min)] [!code-sql[DP EntityServices Concepts#EDM_MIN](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_min)] |
-| `StDev(expression)` | Returns the standard deviation of the non-null values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, `Decimal`.<br><br>**Return Value**<br><br>A `Double`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_STDEV](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_stdev)] [!code-sql[DP EntityServices Concepts#EDM_STDEV](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_stdev)] |
-| `StDevP(expression)` | Returns the standard deviation for the population of all values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, `Decimal`.<br><br>**Return Value**<br><br>A `Double`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_STDEVP](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_stdevp)] [!code-sql[DP EntityServices Concepts#EDM_STDEVP](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_stdevp)] |
-| `Sum(expression)` | Returns the sum of the non-null values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, `Decimal`.<br><br>**Return Value**<br><br>A `Double`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_SUM](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_sum)] [!code-sql[DP EntityServices Concepts#EDM_SUM](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_sum)] |
-| `Var(expression)` | Returns the variance of all non-null values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, `Decimal`.<br><br>**Return Value**<br><br>A `Double`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_VAR](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_var)] [!code-sql[DP EntityServices Concepts#EDM_VAR](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_var)] |
-| `VarP(expression)` | Returns the variance for the population of all non-null values.<br><br>**Arguments**<br><br>An `Int32`, `Int64`, `Double`, `Decimal`.<br><br>**Return Value**<br><br>A `Double`. `Null`, if all input values are `null` values.<br><br>**Example**[!code-csharp[DP EntityServices Concepts#EDM_VARP](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_varp)] [!code-sql[DP EntityServices Concepts#EDM_VARP](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_varp)] |
+The following are the aggregate Entity SQL canonical functions.
+
+### Avg(expression)
+
+Returns the average of the non-null values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, and `Decimal`.
+
+**Return Value**
+
+The type of `expression`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_AVG](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_avg)] 
+[!code-sql[DP EntityServices Concepts#EDM_AVG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_avg)]
+
+### BigCount(expression)
+
+Returns the size of the aggregate including null and duplicate values.
+
+**Arguments**
+
+Any type.
+
+**Return Value**
+
+An `Int64`.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_BIGCOUNT](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_bigcount)] 
+[!code-sql[DP EntityServices Concepts#EDM_BIGCOUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_bigcount)]
+
+### Count(expression) 
+
+Returns the size of the aggregate including null and duplicate values.
+
+**Arguments**
+
+Any type.
+
+**Return Value**
+
+An `Int32`.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_COUNT](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_count)]
+[!code-sql[DP EntityServices Concepts#EDM_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_count)]
+
+### Max(expression)
+
+Returns the maximum of the non-null values.
+
+**Arguments**
+
+A `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary`.
+
+**Return Value**
+
+The type of `expression`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_MAX](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_max)]
+[!code-sql[DP EntityServices Concepts#EDM_MAX](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_max)]
+
+### Min(expression)
+
+Returns the minimum of the non-null values.
+
+**Arguments**
+
+A `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary`.
+
+**Return Value**
+
+The type of `expression`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_MIN](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_min)]
+[!code-sql[DP EntityServices Concepts#EDM_MIN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_min)]
+
+### StDev(expression)
+
+Returns the standard deviation of the non-null values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, `Decimal`.
+
+**Return Value**
+
+A `Double`. `Null`, if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_STDEV](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_stdev)]
+[!code-sql[DP EntityServices Concepts#EDM_STDEV](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_stdev)]
+
+### StDevP(expression)
+
+Returns the standard deviation for the population of all values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, `Decimal`.
+
+**Return Value**
+
+A `Double`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_STDEVP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_stdevp)]
+[!code-sql[DP EntityServices Concepts#EDM_STDEVP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_stdevp)]
+
+### Sum(expression)
+
+Returns the sum of the non-null values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, `Decimal`.
+
+**Return Value**
+
+A `Double`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_SUM](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_sum)]
+[!code-sql[DP EntityServices Concepts#EDM_SUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_sum)]
+
+### Var(expression)
+
+Returns the variance of all non-null values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, `Decimal`.
+
+**Return Value**
+
+A `Double`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_VAR](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_var)]
+[!code-sql[DP EntityServices Concepts#EDM_VAR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_var)]
+
+### VarP(expression)
+
+Returns the variance for the population of all non-null values.
+
+**Arguments**
+
+An `Int32`, `Int64`, `Double`, `Decimal`.
+
+**Return Value**
+
+A `Double`, or `null` if all input values are `null` values.
+
+**Example**
+
+[!code-csharp[DP EntityServices Concepts#EDM_VARP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_varp)]
+[!code-sql[DP EntityServices Concepts#EDM_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_varp)] 
 
 Equivalent functionality is available in the Microsoft SQL Client Managed Provider. For more information, see [SqlClient for Entity Framework Functions](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md).
 

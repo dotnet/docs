@@ -141,7 +141,6 @@ End Module
  <xref:System.Threading>  
  <xref:System.Threading.EventWaitHandle.Set%2A>  
  <xref:System.Threading.Monitor>  
- [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)  
  [SyncLock Statement](../../../../visual-basic/language-reference/statements/synclock-statement.md)  
  [Mutexes](../../../../standard/threading/mutexes.md)  
  [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)  

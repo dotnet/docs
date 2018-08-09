@@ -1,5 +1,5 @@
 ---
-title: "Creating Threads and Passing Data at Start Time"
+title: "Creating threads and passing data at start time"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

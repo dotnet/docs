@@ -38,12 +38,12 @@ Introduces the `ImeMode` property, which is used to control the type of input a 
 
 - [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api)
 
-- [How to: Set the Culture and UI Culture for Windows Forms Globalization](https://docs.microsoft.comhttps://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/b28bx3bh(v=vs.100))
+- [How to: Set the Culture and UI Culture for Windows Forms Globalization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/b28bx3bh(v=vs.100))
 
-- [How to: Create Mirrored Windows Forms and Controls](https://docs.microsoft.comhttps://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xwbz5ws0(v=vs.100))
+- [How to: Create Mirrored Windows Forms and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xwbz5ws0(v=vs.100))
 
-- [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](https://docs.microsoft.comhttps://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
+- [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
 
-- [Walkthrough: Localizing Windows Forms](https://docs.microsoft.comhttps://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
+- [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
 
-- [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](https://docs.microsoft.comhttps://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))
+- [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))

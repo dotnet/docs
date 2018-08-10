@@ -10,7 +10,7 @@ ms.assetid: 68fad25b-afbc-44bd-8e1b-966fc43507a4
 
 Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or system font, to be displayed appropriately on another machine with a different display resolution or system font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. The support of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] for automatic scaling and visual styles enables [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] applications to maintain a consistent look and feel when compared to native Windows applications on each user's machine.
 
-For the most part, automatic scaling works as expected in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 and later. However, font scheme changes can be problematic. To see an example of how to resolve this, see [How to: Respond to Font Scheme Changes in a Windows Forms Application](how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md).
+For the most part, automatic scaling works as expected in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 and later. However, font scheme changes can be problematic. For an example of how to resolve this, see [How to: Respond to Font Scheme Changes in a Windows Forms Application](how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md).
 
 ## Need for automatic scaling
 

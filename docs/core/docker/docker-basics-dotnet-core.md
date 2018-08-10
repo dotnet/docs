@@ -10,14 +10,14 @@ ms.custom: mvc
 
 # Learn Docker Basics with .NET Core
 
-This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. During the course of this tutorial, you learn:
+This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
+
+During the course of this tutorial, you learn:
 
 > [!div class="checklist"]
 > * How to create a Dockerfile
 > * How to create a .NET Core app.
 > * How to deploy your app into a Docker container.
-
-The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
 ## .NET Core: Easiest way to get started
 

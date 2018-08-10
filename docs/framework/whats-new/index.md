@@ -598,7 +598,7 @@ In the .NET Framework 4.7, WPF includes the following enhancements:
 
 **Support for a touch/stylus stack based on Windows WM_POINTER messages**
 
-You now have the option of using a touch/stylus stack based on [WM_POINTER messages](/previous-versions/windows/desktop/InputMsg/messages) instead of the Windows Ink Services Platform (WISP). This is an opt-in feature in the .NET Framework. For more information, see [Retargeting Changes in the .NET Framework 4.7](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md).
+You now have the option of using a touch/stylus stack based on [WM_POINTER messages](https://docs.microsoft.com/previous-versions/windows/desktop/InputMsg/messages) instead of the Windows Ink Services Platform (WISP). This is an opt-in feature in the .NET Framework. For more information, see [Retargeting Changes in the .NET Framework 4.7](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md).
 
 **New implementation for WPF printing APIs**
 

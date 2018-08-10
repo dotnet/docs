@@ -141,7 +141,7 @@ Change Targets dialog box in Visual Studio 2012
  ➌ Requires [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) package  
   
 > [!WARNING]
->  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](/previous-versions/windows/apps/dn642084(v=vs.105)).  
+>  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](https://docs.microsoft.com/previous-versions/windows/apps/dn642084(v=vs.105)).  
   
 <a name="members"></a>   
 ## Supported types and members  

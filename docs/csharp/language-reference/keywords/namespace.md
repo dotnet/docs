@@ -15,7 +15,7 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
  [!code-csharp[csrefKeywordsNamespace#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_1.cs)]  
   
 ## Remarks  
- Within a namespace, you can declare one or more of the following types:  
+ Within a namespace, you can declare zero or more of the following types:  
   
 -   another namespace  
   

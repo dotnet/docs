@@ -46,7 +46,13 @@ class Program
 ```  
   
 ## Remarks  
- The scope of a `using` directive is limited to the file in which it appears. It can be declared in any namespace (including the default namespace) but before any namespace member, otherwise compiler error [CS1529](../../misc/cs1529.md) is generated.
+ The scope of a `using` directive is limited to the file in which it appears.
+ 
+ The `using` directive can appear:
+- either at the beginning of a source code file, before any namespace or type definitions;
+- or in any namespace, but before any namespace or type declared in this namespace.
+
+Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
   
  Create a `using` alias to make it easier to qualify an identifier to a namespace or type. No alias can be used in the declaration of a using directive. The fully-qualified namespace or type must always be used regardless of the using directives that come before it.
   

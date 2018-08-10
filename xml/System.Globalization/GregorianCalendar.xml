@@ -1162,12 +1162,18 @@
         <Parameter Name="firstDayOfWeek" Type="System.DayOfWeek" />
       </Parameters>
       <Docs>
-        <param name="time">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="firstDayOfWeek">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="time">The <see cref="T:System.DateTime" /> object to read. </param>
+        <param name="rule">One of the <see cref="T:System.Globalization.CalendarWeekRule" /> values that defines a calendar week. </param>
+      <param name="firstDayOfWeek">One of the <see cref="T:System.DayOfWeek" /> values that represents the first day of the week. </param>
+        <summary>Returns the week of the year that includes the date in the specified <see cref="T:System.DateTime" /> object.</summary>
+        <returns>A 1-based integer that represents the week of the year that includes the date in the <paramref name="time" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="firstDayOfWeek" /> is outside the range supported by the calendar.
+          
+          -or-
+          
+          <paramref name="rule" /> is not a valid <see cref="T:System.Globalization.CalendarWeekRule" /> value. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetYear">

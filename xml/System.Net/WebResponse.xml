@@ -791,8 +791,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, releases all resources used by the <see cref="T:System.Net.WebResponse" />. </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          Any attempt is made to access the method, when the method is not overridden in a descendant class. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

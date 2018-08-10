@@ -585,11 +585,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The period of time the asynchronous open operation has to complete before timing out.</param>
+        <param name="callback">The asynchronous callback delegate that receives notification of the completion of the asynchronous open operation.</param>
+        <param name="state">User-define state data that is associated with the asynchronous open operation.</param>
+        <summary>Begins an asynchronous operation invoked when the workflow service host is opened.</summary>
+        <returns>A reference to the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -667,8 +667,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the asynchronous operation.</param>
+        <summary>Completes an asynchronous operation invoked when the workflow service host is opened.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,8 +691,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The period of time the open operation has to complete before timing out.</param>
+        <summary>Opens the channel dispatchers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

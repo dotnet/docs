@@ -102,9 +102,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether the client accepts cookies and propagates them on future requests. </summary>
+        <value><see langword="true" /> if the client accepts cookies and propagates them on future requests; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+You can use this attribute when you interact with ASMX Web services that use cookies. 
+In this way, you can be sure that the cookies returned from the server are automatically copied to all future client requests for that service.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingElementType">
@@ -151,8 +160,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the attribute that indicates whether to bypass the proxy server for local addresses.</summary>
+        <value>A Boolean value that indicates whether to bypass the proxy server for local addresses.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +187,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
+        <value>The <see cref="T:System.ServiceModel.HostNameComparisonMode" /> value that indicates whether the hostname is used to reach the service when matching on the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +241,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size, in bytes, for a buffer pool that stores messages processed by the binding.</summary>
+        <value>An <see cref="T:System.Int64" /> value that specifies the maximum size (in bytes) for a buffer pool that is processed by the binding. The default value is 512*1024 bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +271,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size, in bytes, for a buffer that stores messages processed by the binding.</summary>
+        <value>The maximum size for a buffer that stores messages processed by the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +301,20 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size, in bytes, for a message that can be received.</summary>
+        <value>The maximum size, in bytes, for a message that can be received by the binding. The default value is 65,536 bytes. </value>
+                <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+
+This limit defines the maximum message size, in bytes, including headers. 
+The sender of a message too large for the receiver receives a SOAP fault. 
+The receiver drops the message and creates an entry of the event in the trace log.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageEncoding">
@@ -392,8 +412,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI address of the HTTP proxy.</summary>
+        <value>A URI that contains the address of the HTTP proxy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,9 +439,18 @@
         <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
+                <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. 
+The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -476,8 +505,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character encoding that is used for the message text.</summary>
+        <value>A valid <see cref="T:System.Text.Encoding" /> value that indicates the character encoding that is used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,8 +532,8 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether messages are buffered or streamed or a request or response.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.TransferMode" /> value that specifies whether messages are buffered or streamed or a request or response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,8 +559,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
+        <value><see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

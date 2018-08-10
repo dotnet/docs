@@ -631,9 +631,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constraint">The maximum size that this element can give to child elements. Infinity can be specified as a value to indicate that the element will size to whatever content is available</param>
+        <summary>Measures the size that is required to lay out child elements.</summary>
+        <returns>The size of the control, up to the maximum specified by <paramref name="constraint" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -981,9 +981,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element that displays the specified item.</param>
+        <param name="item">The item to display.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

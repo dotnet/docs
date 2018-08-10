@@ -134,8 +134,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Documents.Table" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableAutomationPeer" /> is an element that contains data that is presented to the user. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />.</summary>
+        <returns><see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

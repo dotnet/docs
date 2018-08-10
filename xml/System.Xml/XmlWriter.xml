@@ -1293,8 +1293,18 @@ async Task TestWriter(Stream stream)
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.IDisposable.Dispose" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlWriter> instance is cast to an <xref:System.IDisposable> interface.
+
+This member may behave differently when it is used in a Portable Class Library project. For more information, see [API Differences in Portable Class Library](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/gg597392(v=vs.100)).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributes">

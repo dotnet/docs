@@ -232,9 +232,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.TreeViewItem" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" /> object is off the screen. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" />.</summary>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method does not indicate whether the element is visible.
+In some circumstances, the element can be on the screen but still not be visible (for example, an element that is obscured by other elements).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse">

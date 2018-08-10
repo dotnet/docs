@@ -1,4 +1,4 @@
-﻿<Type Name="BasicHttpBinding" FullName="System.ServiceModel.BasicHttpBinding">
+<Type Name="BasicHttpBinding" FullName="System.ServiceModel.BasicHttpBinding">
   <TypeSignature Language="C#" Value="public class BasicHttpBinding : System.ServiceModel.HttpBindingBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpBinding extends System.ServiceModel.HttpBindingBase implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpBinding" />
@@ -203,9 +203,29 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the client accepts cookies and propagates them on future requests.</summary>
+        <returns><see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This property is provided as a convenience for interacting with ASMX Web services that use cookies. 
+When cookies are accepted by the client by setting the property to `true`, cookies returned from the server are automatically copied to all future client requests to that service.
+
+## Examples
+
+The following example sets this property to indicate that all cookies from the server should be copied to future client requests:
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.AllowCookies = true;
+```
+
+The value of this property can also be set in the configuration file.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -265,9 +285,51 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to bypass the proxy server for local addresses.</summary>
+        <value><see langword="true" /> to bypass the proxy server for local addresses; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+An Internet resource is local if it has a local address. A local address is one that is on same computer, the local LAN or intranet and is identified, syntactically, by the lack of a period (\.) as in the URIs `http://webserver/` and `http://localhost/`.
+
+Setting the BypassProxyOnLocal property determines whether endpoints configured with the <xref:System.ServiceModel.BasicHttpBinding> use the proxy server when accessing local resources.
+
+If BypassProxyOnLocal is `true`, requests to local Internet resources do not use the proxy server. Use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine when this property is set to `true`.
+
+When BypassProxyOnLocal is `false`, all Internet requests to non-localhost URIs are made through the proxy server. Requests to URIs with localhost will not use the proxy server regardless of the BypassProxyOnLocal setting.
+  
+## Examples
+
+The following example sets this property to indicate that the proxy should be bypassed for local resources.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.BypassProxyOnLocal = true;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1" 
+                 bypassProxyOnLocal="true">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElements">
@@ -361,9 +423,17 @@
         <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version of SOAP that is used for messages that are processed by this binding.</summary>
+        <value>The value of the <see cref="T:System.ServiceModel.EnvelopeVersion" /> that is used with this binding. The value is always SOAP 1.1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks  
+
+SOAP 1.1 is the only value that can be used with this binding.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostNameComparisonMode">
@@ -388,9 +458,42 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
+        <value>The <see cref="T:System.ServiceModel.HostNameComparisonMode" /> value that indicates whether the hostname is used to reach the service when matching on the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples
+
+The following example sets this property to indicate that an exact match is required.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.HostNameComparisonMode = HostNameComparisonMode.Exact;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1"
+                 hostNameComparisonMode ="Exact">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferPoolSize">
@@ -415,9 +518,53 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum amount of memory, in bytes,  that is allocated for use by the manager of the message buffers that receive messages from the channel.</summary>
+        <value>The maximum amount of memory, in bytes, available for use by the message buffer manager. The default value is 524288 (0x80000) bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. 
+Buffers are required to process messages by the service when they come out of the channel. 
+If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. 
+Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the MaxBufferPoolSize limit.
+
+## Examples
+
+The following example sets this property to twice the default value.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+// Use double the default value
+binding.MaxBufferPoolSize = 0x80000 * 2;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1">
+
+          <!-- set pool size to double default of 0x80000 -->
+          maxBufferPoolSize = 0x100000
+
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -442,9 +589,50 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size, in bytes, for a buffer that receives messages from the channel.</summary>
+        <value>The maximum size, in bytes, of a buffer that stores messages while they are processed for an endpoint configured with this binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If there is not sufficient memory in the buffer to store the message while it is processed, more memory must be allocated from the CLR heap, which increases the garbage collection overhead. 
+Extensive allocation from the CLR garbage heap is an indication that the message buffer size is too small and that performance can be improved with a larger allocation.
+
+The value of the MaxBufferSize property and its significance is different depending on whether the messages are being buffered or streamed on the channel through which they are being received:
+
+For buffered transports, (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Buffered>). 
+This value is always equal to that specified by the <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize>.
+
+For streamed transports, (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Streamed>), only the SOAP headers must be buffered to generate the message. 
+The body can be streamed in on-demand. In this case, MaxBufferSize is less than or equal to <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize>, where <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize> bounds the size of the overall message (headers and body) and MaxBufferSize bounds only the size of the SOAP headers.
+
+The limitations on buffer size set here are for optimizing the performance of message exchanges. 
+If a message exceeds the maximum value set for the buffer, it is not dropped. 
+Instead, more memory is requested from the CLR heap and this incurs more garbage collection overhead than using the buffers.
+
+> [!NOTE]
+> The settings for MaxBufferSize and MaxReceivedMessageSize, are local behavioral settings. 
+> This means that they are not transmitted to other endpoints in metadata. 
+> If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value of 64K. 
+> This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.
+  
+## Examples
+
+
+The following example sets **MaxBufferSize** to 1,000,000 bytes.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+		    
+// set to one million
+binding.MaxBufferSize = 1000000;
+```
+
+The value of this property can also be set in the configuration file.
+
+ ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxReceivedMessageSize">
@@ -469,9 +657,59 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size, in bytes, for a message that can be received on a channel configured with this binding.</summary>
+        <value>The maximum size, in bytes, for a message that is processed by the binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The size of the messages that can be received on the wire by services using the BasicHttpBinding is bounded by the amount of memory allocated for each message. 
+This bound on message size is intended to limit exposure to DoS-style attacks.
+
+There is also a <xref:System.ServiceModel.BasicHttpBinding.MaxBufferSize> property on the <xref:System.ServiceModel.BasicHttpBinding>:
+
+For buffered transports, (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Buffered>). 
+This value is always equal to that specified by the MaxReceivedMessageSize.
+
+For streamed transports (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Streamed>), only the SOAP headers must be buffered to generate the message. 
+The body can be streamed in on-demand. In this case, <xref:System.ServiceModel.BasicHttpBinding.MaxBufferSize> is less than or equal to MaxReceivedMessageSize, 
+where MaxReceivedMessageSize bounds the size of the overall message (headers and body) and <xref:System.ServiceModel.BasicHttpBinding.MaxBufferSize> bounds the size of the SOAP headers.
+
+## Examples
+
+The following example sets MaxReceivedMessageSize to 1,000,000 bytes.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+
+// Use double the default value
+binding.MaxReceivedMessageSize = 65536 * 2;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1"
+                 maxReceivedMessageSize = "1000000">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>        
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="MessageEncoding">
@@ -546,9 +784,50 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URI address of the HTTP proxy.</summary>
+        <value>A <see cref="T:System.Uri" /> that serves as the address of the HTTP proxy. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If the <xref:System.ServiceModel.BasicHttpBinding.UseDefaultWebProxy> is set to `true`, the default address is used and the value of the ProxyAddress set is ignored.
+
+## Examples
+
+The following example sets ProxyAddress to application settings.
+
+```csharp
+// Get base address from app settings in configuration
+Uri baseAddress = new Uri(ConfigurationManager.AppSettings["baseAddress"]);
+
+BasicHttpBinding binding = new BasicHttpBinding();
+
+binding.ProxyAddress = baseAddress;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1"
+                 proxyAddress = "http://myProxy">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReaderQuotas">
@@ -568,9 +847,52 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The complexity constraints provide protection from denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. 
+Other complexity constraints include items such as a maximum element depth and a maximum length for string content within the message.
+
+## Examples
+
+The following example sets ReaderQuotas to application settings.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+XmlDictionaryReaderQuotas readerQuotas = new XmlDictionaryReaderQuotas();
+readerQuotas.MaxArrayLength = 25 * 1024;
+		
+binding.ReaderQuotas = readerQuotas;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1">
+          <readerQuotas maxBytesPerRead ="1000" 
+                        maxDepth="100"/>
+
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -591,9 +913,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI transport scheme for the channels and listeners that are configured with this binding.</summary>
+        <value>"https" if the security mode in the transport binding element is set to <see cref="F:System.ServiceModel.BasicHttpSecurityMode.Transport" /> or <see cref="F:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential" />; "http" otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples
+
+The following example gets the current Scheme.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+string thisScheme = binding.Scheme;
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -694,8 +1029,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns whether the constraint values placed on the complexity of SOAP message structure should be serialized.</summary>
+        <returns><see langword="true" /> if reader quotas should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,8 +1084,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns whether settings for text encoding should be serialized.</summary>
+        <returns><see langword="true" /> if text encoding should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,9 +1109,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples
+
+This example gets the ReceiveSynchronously value.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+IBindingRuntimePreferences s = (binding as IBindingRuntimePreferences);
+bool receiveSynchronously = s.ReceiveSynchronously;
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextEncoding">
@@ -801,9 +1150,42 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the character encoding that is used for the message text.</summary>
+        <value>The <see cref="T:System.Text.Encoding" /> that indicates the character encoding that is used. The default is <see cref="T:System.Text.UTF8Encoding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples
+
+The following example sets TextEncoding to <xref:System.Text.Encoding.Unicode?displayProperty=nameWithType>.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.TextEncoding = System.Text.Encoding.Unicode;
+```
+
+The value of this property can also be set in the configuration file.
+
+```xml
+<configuration>
+  <system.serviceModel>
+
+    <bindings>
+      <basicHttpBinding>
+        <binding name="Binding1"
+          textEncoding = "UnicodeFffeTextEncoding">
+
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+  </system.serviceModel>
+
+</configuration>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransferMode">
@@ -828,9 +1210,24 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether messages are sent buffered or streamed.</summary>
+        <value>The <see cref="T:System.ServiceModel.TransferMode" /> that indicates whether messages are sent buffered or streamed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples
+
+The following example sets TransferMode to <xref:System.ServiceModel.TransferMode.Streamed>.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.TransferMode = TransferMode.Streamed;
+```
+
+The value of this property can also be set in the configuration file.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultWebProxy">
@@ -855,9 +1252,28 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
+        <value><see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+It is an error for this to be `true` and <xref:System.ServiceModel.BasicHttpBinding.ProxyAddress> to be non-null.
+
+## Examples
+
+This example sets the value of UseDefaultWebProxy to `false`.
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.UseDefaultWebProxy = false;
+```
+
+The value of this property can also be set in the configuration file.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

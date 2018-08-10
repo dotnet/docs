@@ -379,10 +379,19 @@
         <Parameter Name="o" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="o">The object from which the attached property value is read.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing" /> attached property.</summary>
+        <returns><see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its content; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The default value of the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing> property is `true`.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemOffsetCore">
@@ -430,9 +439,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The object from which the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> property is read.</param>
+        <summary>Returns the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> attached property for the specified object.</summary>
+        <returns>One of the enumeration values that specifies whether the object uses container recycling.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,8 +520,62 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates that this <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its child collection.</summary>
+        <value>true if this instance of <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its child collection; otherwise false. The default is true.</value>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The standard layout system creates item containers and computes layout for each item associated with a list control. 
+The word "virtualize" refers to a technique by which a subset of UI elements are generated from a larger number of data items based on which items are visible on-screen. 
+Generating many UI elements when only a few elements might be on the screen can adversely affect the performance of your application. 
+The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> 
+(such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create UI elements only for visible items.
+
+## Dependency Property Information
+
+|Identifier field|IsVirtualizingProperty|
+|Metadata properties set to `true`|None|
+
+## Examples
+
+The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element by using XAML. 
+Notice that the IsVirtualizing attached property is explicitly set to `true`.
+
+```xaml
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      WindowTitle="VirtualizingStackPanel Sample" 
+      Height="150"
+      VerticalAlignment="Top">
+    <Page.Resources>
+        <XmlDataProvider x:Key="Leagues" Source="Leagues.xml" XPath="Leagues/League"/>
+
+    <DataTemplate x:Key="NameDataStyle">
+      <TextBlock Text="{Binding XPath=@name}" FontFamily="Arial" FontSize="12" Foreground="Black"/>
+    </DataTemplate>
+
+    </Page.Resources>
+  <Border HorizontalAlignment="Left" 
+          VerticalAlignment="Top" 
+          BorderBrush="Black" 
+          BorderThickness="2">
+       <ScrollViewer>
+      <StackPanel DataContext="{Binding Source={StaticResource Leagues}}">
+          <TextBlock Text="{Binding XPath=@name}" FontFamily="Arial" FontSize="18" Foreground="Black"/>
+              <ListBox VirtualizingStackPanel.IsVirtualizing="True" 
+                       ItemsSource="{Binding XPath=Team}" 
+                       ItemTemplate="{DynamicResource NameDataStyle}"/>      
+      </StackPanel>
+      </ScrollViewer>
+  </Border>    
+</Page>
+```
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVirtualizingProperty">
@@ -974,8 +1037,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The data for the event.</param>
+        <summary>Called when a descendent object of the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> gets focus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1026,8 +1089,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The data for the event.</param>
+        <summary>Called when the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> or any of its descendent objects lose keyboard focus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1415,10 +1478,23 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The object to which the attached property value is set.</param>
+        <param name="value"><see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing; otherwise, <see langword="false" />.</param>
+        <summary>Sets the value of the <see cref="F:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty" /> attached property.</summary>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The standard layout system creates item containers and computes layout for each item associated with a list control. 
+The word "virtualize" refers to a technique by which a subset of UI elements are generated from a larger number of data items based on which items are visible on-screen. 
+Generating many UI elements when only a few elements might be on the screen can adversely affect the performance of your application. 
+The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an ItemsControl 
+(such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create UI elements only for visible items.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetVerticalOffset">
@@ -1470,10 +1546,19 @@
         <Parameter Name="value" Type="System.Windows.Controls.VirtualizationMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> property.</param>
+        <param name="value">One of the enumeration values that specifies whether <paramref name="element" /> uses container recycling.</param>
+        <summary>Sets the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> attached property on the specified object.</summary>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+For more information about the <xref:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode> property, see the <xref:System.Windows.Controls.VirtualizingStackPanel> class.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldItemsChangeAffectLayoutCore">
@@ -1600,7 +1685,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets how a panel in an <see cref="T:System.Windows.Controls.ItemsControl" /> virtualizes its child items.</summary>
+        <value>One of the enumeration values that specifies how a panel in an <see cref="T:System.Windows.Controls.ItemsControl" /> virtualizes its child items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,7 +1707,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="VirtualizingStackPanel.VirtualizationMode" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

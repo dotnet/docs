@@ -157,10 +157,19 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the serialized object data. </param>
+        <param name="context">The contextual information about the source or destination. </param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceValidationException" /> class with serialized data.</summary>
+                <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.
+For more information, see [XML and SOAP Serialization](~/docs/standard/serialization/xml-and-soap-serialization.md).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.DynamicData.IDynamicValidatorException.InnerExceptions">

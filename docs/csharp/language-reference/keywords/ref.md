@@ -15,7 +15,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. See [ref struct declarations](#ref-struct-declarations) for more information.
+- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Reference semantics with value types](../../reference-semantics-with-value-types.md).
 
 ## Passing an argument by reference
 
@@ -74,7 +74,7 @@ A reference return value is defined by using the `ref` keyword:
 - In the method signature. For example, the following method signature indicates that the `GetCurrentPrice` method returns a <xref:System.Decimal> value by reference.
 
 ```csharp
-public ref decimal GetCurrentValue()
+public ref decimal GetCurrentPrice()
 ```
 
 - Between the `return` token and the variable returned in a `return` statement in the method. For example:
@@ -89,7 +89,7 @@ For an example, see [A ref returns and ref locals example](#a-ref-returns-and-re
 
 ## Ref locals
 
-A ref local variable is used to refer to values returned using `return ref`.  A ref local variable must be initialized and assigned to a ref return value. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
+A ref local variable is used to refer to values returned using `return ref`. A ref local variable cannot be initialized to a non-ref return value. In other words, the right hand side of the initialization must be a reference. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
 
 You define a ref local by using the `ref` keyword before the variable declaration, as well as immediately before the call to the method that returns the value by reference.
 
@@ -116,8 +116,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 [!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
-
-## Ref struct declarations
 
 ## C# Language Specification
 

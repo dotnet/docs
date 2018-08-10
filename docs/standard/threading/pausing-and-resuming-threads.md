@@ -1,24 +1,26 @@
 ---
-title: "Pausing and Resuming Threads"
+title: "Pausing and interrupting threads"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "resuming threads"
+  - "interrupting threads"
   - "threading [.NET Framework], pausing"
   - "pausing threads"
 ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Pausing and Resuming Threads
+# Pausing and interrupting threads
+
 The most common ways to synchronize the activities of threads are to block and release threads, or to lock objects or regions of code. For more information on these locking and blocking mechanisms, see [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
   
  You can also have threads put themselves to sleep. When threads are blocked or sleeping, you can use a <xref:System.Threading.ThreadInterruptedException> to break them out of their wait states.  
   
-## The Thread.Sleep Method  
+## The Thread.Sleep method
+
  Calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method causes the current thread to immediately block for the number of milliseconds or the time interval you pass to the method, and yields the remainder of its time slice to another thread. Once that interval elapses, the sleeping thread resumes execution.  
   
  One thread cannot call <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> on another thread.  <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> is a static method that always causes the current thread to sleep.  
@@ -28,7 +30,8 @@ The most common ways to synchronize the activities of threads are to block and r
  [!code-csharp[Conceptual.Threading.Resuming#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.Threading.Resuming/cs/Sleep1.cs#1)]
  [!code-vb[Conceptual.Threading.Resuming#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.Threading.Resuming/vb/Sleep1.vb#1)]  
   
-## Interrupting Threads  
+## Interrupting threads
+
  You can interrupt a waiting thread by calling the <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> method on the blocked thread to throw a <xref:System.Threading.ThreadInterruptedException>, which breaks the thread out of the blocking call. The thread should catch the <xref:System.Threading.ThreadInterruptedException> and do whatever is appropriate to continue working. If the thread ignores the exception, the runtime catches the exception and stops the thread.  
   
 > [!NOTE]

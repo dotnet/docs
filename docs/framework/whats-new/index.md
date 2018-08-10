@@ -30,7 +30,8 @@ This article does not provide comprehensive information about each new feature a
 > [!NOTE]
 > The .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](~/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md). See a [complete list of NuGet packages](https://blogs.msdn.microsoft.com/dotnet/p/nugetpackages/) for the .NET Framework, or subscribe to [our feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).
 
-<a name="v472"></a> 
+<a name="v472" />
+
 ## Introducing the .NET Framework 4.7.2
 
 The .NET Framework 4.7.2 builds on previous versions of the .NET Framework 4.x by adding many new fixes and several new features while remaining a very stable product.
@@ -61,6 +62,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core-472" />
+
 #### Core
 
 The .NET Framework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
@@ -222,6 +224,7 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 ```
 
 <a name="asp-net472" />
+
 #### ASP.NET
 
 **Support for dependency injection in Web Forms**
@@ -269,6 +272,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
 ```
 
 <a name="net472" />
+
 #### Networking
 
 **Implementation of HttpClientHandler properties**
@@ -279,6 +283,7 @@ The .NET Framework 4.7.1 added eight properties to the <xref:System.Net.Http.Htt
 - <xref:System.Net.Http.HttpClientHandler.SslProtocols>
 
 <a name="sql472" />
+
 #### SQLClient
 
 **Support for Azure Active Directory Universal Authentication and Multi-Factor authentication**
@@ -326,6 +331,7 @@ The basic flow of enclave-based Always Encrypted is:
 1. The driver shares encryption keys authorized by the client with the secure enclave for the duration of the SQL connection.
 
 <a name="wpf472" />
+
 #### Windows Presentation Foundation
 
 **Finding ResourceDictionaries by Source**
@@ -393,6 +399,7 @@ public class StaticResourceResolvedEventArgs : EventArgs
 The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
 <a name="clickonce472" />
+
 #### ClickOnce
 
 HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF), and Visual Studio Tools for Office (VSTO) can all be deployed by using ClickOnce. If the following entry is found in the application manifest, deployment will succeed under .NET Framework 4.7.2:
@@ -405,7 +412,8 @@ HDPI-aware applications for Windows Forms, Windows Presentation Foundation (WPF)
 
 For Windows Forms application, the previous workaround of setting DPI awareness in the application configuration file rather than the application manifest is no longer necessary for ClickOnce deployment to succeed.
 
-<a name="v471"></a> 
+<a name="v471" />
+
 ## What's new in the .NET Framework 4.7.1
 
 The .NET Framework 4.7.1 includes new features in the following areas:
@@ -418,6 +426,7 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
+
 #### Core
 
 **Support for .NET Standard 2.0**
@@ -443,6 +452,7 @@ Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=
 The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) blog post. For information on ref return values, see [Ref return values and ref locals (C# Guide)](~/docs/csharp/programming-guide/classes-and-structs/ref-returns.md) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
 
 <a name="clr" />
+
 #### Common language runtime (CLR)
 
 **Garbage collection performance improvements**
@@ -450,6 +460,7 @@ The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOn
 Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) blog post. 
 
 <a name="net471"/>
+
 #### Networking
 
 **SHA-2 support for Message.HashAlgorithm**
@@ -457,6 +468,7 @@ Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall p
 In the .NET Framework 4.7 and earlier versions, the <xref:System.Messaging.Message.HashAlgorithm%2A?displayProperty=nameWithType> property supported values of <xref:System.Messaging.HashAlgorithm.Md5?displayProperty=nameWithType> and <xref:System.Messaging.HashAlgorithm.Sha?displayProperty=nameWithType> only. Starting with the .NET Framework 4.7.1, <xref:System.Messaging.HashAlgorithm.Sha256?displayProperty=nameWithType>, <xref:System.Messaging.HashAlgorithm.Sha384?displayProperty=nameWithType>, and <xref:System.Messaging.HashAlgorithm.Sha512?displayProperty=nameWithType> are also supported. Whether this value is actually used depends on MSMQ, since the <xref:System.Messaging.Message> instance itself does no hashing but simply passes on values to MSMQ. For more information, see the "SHA-2 support for Message.HashAlgorithm" section in the [.NET Framework 4.7.1 ASP.NET and Configuration features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features/) blog post.
 
 <a name="asp-net471" />
+
 #### ASP.NET
 
 **Execution steps in ASP.NET applications**
@@ -483,7 +495,8 @@ In the .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to st
 </system.web>
 ```
 
-<a name="v47"></a> 
+<a name="v47" />
+
 ## What's new in the .NET Framework 4.7
 
 The .NET Framework 4.7 includes new features in the following areas:
@@ -498,6 +511,7 @@ The .NET Framework 4.7 includes new features in the following areas:
 For a list of new APIs added to the .NET Framework 4.7, see [.NET Framework 4.7 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the .NET Framework 4.7, see [.NET Framework 4.7 List of Changes](http://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-changes.md) on GitHub.  For additional information, see [Announcing the .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) in the .NET blog.
 
 <a name="Core47" />
+
 #### Core
 
 The .NET Framework 4.7 improves serialization by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>:
@@ -515,6 +529,7 @@ You can see an [example of .NET Framework 4.7 cryptography improvements](https:/
 In the .NET Framework 4.7, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> serializes control characters in conformity with the ECMAScript 6 standard. This behavior is enabled by default for applications that target the .NET Framework 4.7, and is an opt-in feature for applications that are running under the .NET Framework 4.7 but target a previous version of the .NET Framework. For more information, see [Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md).
 
 <a name="net47" />
+
 #### Networking
 
 The .NET Framework 4.7 adds the following network-related feature:
@@ -524,6 +539,7 @@ The .NET Framework 4.7 adds the following network-related feature:
 The TLS stack, which is used by <xref:System.Net.Security.SslStream?displayProperty=nameWithType> and up-stack components such as HTTP, FTP, and SMTP, allows developers to use the default TLS protocols supported by the operating system. Developers need no longer hard-code a TLS version.
 
 <a name="ASP-NET47" />
+
 #### ASP.NET
 
 In the .NET Framework 4.7, ASP.NET includes the following new features:
@@ -539,6 +555,7 @@ Starting with the .NET Framework 4.7, ASP.NET adds a new set of APIs that allow 
 - **Memory Limit Reactions**. By default, ASP.NET attempts to trim the object cache and periodically call <xref:System.GC.Collect%2A?displayProperty=nameWithType> when the private byte process limit is near. For some applications, the frequency of calls to <xref:System.GC.Collect%2A?displayProperty=nameWithType> or the amount of cache that is trimmed are inefficient. Developers can now replace or supplement the default behavior by subscribing **IObserver** implementations to the application's memory monitor.
 
 <a name="wcf47" />
+
 #### Windows Communication Foundation (WCF)
 
 Windows Communication Foundation (WCF) adds the following features and changes:
@@ -563,6 +580,7 @@ WCF includes a number of code changes that eliminate race conditions, thereby im
 - Improved reliability when removing a waiter by calling the **ChannelSynchronizer.RemoveWaiter** method.
 
 <a name="wf47" />
+
 #### Windows Forms
 
 In the .NET Framework 4.7, Windows Forms improves support for high DPI monitors.
@@ -573,7 +591,7 @@ Starting with applications that target the .NET Framework 4.7, the .NET Framewor
 
 High DPI support is an opt-in feature that you configure by defining a [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) section in your application configuration file. For more information on adding high DPI support and dynamic DPI support to your Windows Forms application, see [High DPI Support in Windows Forms](../winforms/high-dpi-support-in-windows-forms.md).
 
-<a name="WPF47"></a> 
+<a name="WPF47" />
 #### Windows Presentation Foundation (WPF)
 
 In the .NET Framework 4.7, WPF includes the following enhancements:
@@ -586,7 +604,8 @@ You now have the option of using a touch/stylus stack based on [WM_POINTER messa
 
 WPF's printing APIs in the <xref:System.Printing.PrintQueue?displayProperty=nameWithType> class call the Windows [Print Document Package API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx) instead of the deprecated [XPS Print API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx). For the impact of this change on application compatibility, see [Retargeting Changes in the .NET Framework 4.7](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md). 
 
-<a name="v462"></a> 
+<a name="v462" />
+
 ## What's new in the .NET Framework 4.6.2
 
 The [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] includes new features in the following areas:
@@ -613,7 +632,7 @@ The [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] includes new features
 
 For a list of new APIs added to the .NET Framework 4.6.2, see [.NET Framework 4.6.2 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the .NET Framework 4.6.2, see [.NET Framework 4.6.2 List of Changes](http://go.microsoft.com/fwlink/?LinkId=708778) on GitHub.  For additional information, see [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) in the .NET blog.
 
-<a name="ASPNET462"></a> 
+<a name="ASPNET462" />
 ### ASP.NET
  In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], ASP.NET includes the following enhancements:
 
@@ -691,7 +710,8 @@ public interface ISessionStateModule : IHttpModule {
 
 - In the <xref:System.Web.Caching.CacheDependency>, the <xref:System.Web.Caching.CacheDependency.GetFileDependencies%2A> method.
 
-<a name="Strings"></a> 
+<a name="Strings" />
+
 ### Character categories
  Characters in the  [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] are classified based on the [Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], characters were classified based on Unicode 6.3 character categories.
 
@@ -699,7 +719,8 @@ public interface ISessionStateModule : IHttpModule {
 
  For changes in character categories from Unicode 6.0 to Unicode 7.0, see [The Unicode Standard, Version 7.0.0](http://www.unicode.org/versions/Unicode7.0.0/) at The Unicode Consortium website. For changes from Unicode 7.0 to Unicode 8.0, see [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/) at The Unicode Consortium website.
 
-<a name="Crypto462"></a> 
+<a name="Crypto462" />
+
 ### Cryptography
 
  **Support for X509 certificates containing FIPS 186-3 DSA**
@@ -820,8 +841,10 @@ End Function
 
  Any programs that have registered a custom <xref:System.Security.Cryptography.SignatureDescription> handler into <xref:System.Security.Cryptography.CryptoConfig> to add support for these algorithms will continue to function as they did in the past, but since there are now platform defaults, the <xref:System.Security.Cryptography.CryptoConfig> registration is no longer necessary.
 
-<a name="SQLClient"></a> 
+<a name="SQLClient" />
+
 ### SqlClient
+
  .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient?displayProperty=nameWithType>) includes the following new features in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]:
 
  **Connection pooling and timeouts with Azure SQL databases**
@@ -857,7 +880,8 @@ End Function
 
 - Column encryption key entries in the key cache are now evicted after a configurable time interval, set using the <xref:System.Data.SqlClient.SqlConnection.ColumnEncryptionKeyCacheTtl%2A?displayProperty=nameWithType> property.
 
-<a name="WCF"></a> 
+<a name="WCF" />
+
 ### Windows Communication Foundation
  In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], Windows Communication Foundation has been enhanced in the following areas:
 
@@ -930,7 +954,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - The [\<sslStreamSecurity>](../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md) section of the [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) section
 
-<a name="WPF462"></a> 
+<a name="WPF462" />
+
 ### Windows Presentation Foundation (WPF)
  In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], Windows Presentation Foundation has been enhanced in the following areas:
 
@@ -978,7 +1003,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 </runtime>
 ```
 
-<a name="WF462"></a> 
+<a name="WF462" />
+
 ### Windows Workflow Foundation (WF)
  In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], Windows Workflow Foundation has been enhanced in the following area:
 
@@ -1007,17 +1033,20 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - Flowchart Activity Designer or other Workflow Activity Designers may display all objects in their default locations as opposed to attached property values.
 
-<a name="ClickOnce"></a> 
+<a name="ClickOnce" />
+
 ### ClickOnce
  ClickOnce has been updated to support TLS 1.1 and TLS 1.2 in addition to the 1.0 protocol, which it already supports. ClickOnce automatically detects which protocol is required; no extra steps within the ClickOnce application are required to enable TLS 1.1 and 1.2 support.
 
-<a name="UWPConvert"></a> 
+<a name="UWPConvert" />
+
 ### Converting Windows Forms and WPF apps to  UWP apps
  Windows now offers capabilities to bring existing Windows desktop apps, including WPF and Windows Forms apps, to the Universal Windows Platform (UWP). This technology acts as a bridge by enabling you to gradually migrate your existing code base to UWP, thereby bringing your app to all Windows 10 devices.
 
  Converted desktop apps gain an app identity similar to the app identity of UWP apps, which makes UWP APIs accessible to enable features such as Live Tiles and notifications. The app continues to behave as before and runs as a full trust app. Once the app is converted, an app container process can be added to the existing full trust process to add an adaptive user interface. When all functionality is moved to the app container process, the full trust process can be removed and the new UWP app can be made available to all Windows 10 devices.
 
-<a name="Debug462"></a> 
+<a name="Debug462" />
+
 ### Debugging improvements
  The *unmanaged debugging API* has been enhanced in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] to perform additional analysis when a <xref:System.NullReferenceException> is thrown so that it is possible to determine which variable in a single line of source code is `null`.   To support this scenario, the following APIs have been added to the unmanaged debugging API.
 
@@ -1025,7 +1054,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - The [ICorDebugType2::GetTypeID](../../../docs/framework/unmanaged-api/debugging/icordebugtype2-gettypeid-method.md) method provides a mapping for ICorDebugType to [COR_TYPEID](../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md), which allows the debugger to obtain a [COR_TYPEID](../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) without an instance of the ICorDebugType. Existing APIs on [COR_TYPEID](../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) can then be used to determine the class layout of the type.
 
-<a name="v461"></a> 
+<a name="v461" />
+
 ## What's new in the .NET Framework 4.6.1
  The [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] includes new features in the following areas:
 
@@ -1049,7 +1079,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - [The .NET Framework API diff](http://go.microsoft.com/fwlink/?LinkId=622989) (on GitHub)
 
-<a name="Crypto"></a> 
+<a name="Crypto" />
+
 ### Cryptography: Support for X509 certificates containing ECDSA
  The .NET Framework 4.6 added RSACng support for X509 certificates. The [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] adds support for ECDSA (Elliptic Curve Digital Signature Algorithm) X509 certificates.
 
@@ -1065,7 +1096,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
  [!code-csharp[whatsnew.461.crypto#2](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#2)]
  [!code-vb[whatsnew.461.crypto#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code46.vb#2)]
 
-<a name="ADO.NET461"></a> 
+<a name="ADO.NET461" />
+
 ### ADO.NET
  The following have been added to ADO.NET:
 
@@ -1079,7 +1111,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
  
 SqlClient now automatically provides faster connections to an AlwaysOn Availability Group (AG). It transparently detects whether your application is connecting to an AlwaysOn availability group (AG) on a different subnet and quickly discovers the current active server and provides a connection to the server. Prior to this release, an application had to set the connection string to include `"MultisubnetFailover=true"` to indicate that it was connecting to an AlwaysOn Availability Group. Without setting the connection keyword to `true`, an application might experience a timeout while connecting to an AlwaysOn Availability Group. With this release, an application does *not* need to set <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A> to `true` anymore. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).
 
-<a name="WPF461"></a> 
+<a name="WPF461" />
+
 ### Windows Presentation Foundation (WPF)
  Windows Presentation Foundation includes a number of improvements and changes.
 
@@ -1126,7 +1159,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  WPF includes a [NuGet package](http://go.microsoft.com/fwlink/?LinkID=691342) that provides new implementations of <xref:System.Windows.Interop.D3DImage> that make it easy for you to interoperate with DX10 and Dx11 content. The code for this package has been open sourced and is available [on GitHub](https://github.com/Microsoft/WPFDXInterop).
 
-<a name="WWF461"></a> 
+<a name="WWF461" />
+
 ### Windows Workflow Foundation: Transactions
  The <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A?displayProperty=nameWithType> method can now use a distributed transaction manager other than MSDTC to promote the transaction. You do this by specifying a GUID transaction promoter identifier to the  new <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%28System.Transactions.IPromotableSinglePhaseNotification%2CSystem.Guid%29?displayProperty=nameWithType> overload . If this operation is successful, there are limitations placed on the capabilities of the transaction. Once a non-MSDTC transaction promoter is enlisted, the following methods throw a <xref:System.Transactions.TransactionPromotionException> because these methods require promotion to MSDTC:
 
@@ -1142,7 +1176,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  Users of the new <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%28System.Transactions.IPromotableSinglePhaseNotification%2CSystem.Guid%29?displayProperty=nameWithType> overload must follow a specific call sequence in order for the promotion operation to complete successfully. These rules are documented in the method's documentation.
 
-<a name="Profile461"></a> 
+<a name="Profile461" />
+
 ### Profiling
  The unmanaged profiling API has been enhanced follows:
 
@@ -1152,13 +1187,15 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
  Better instrumentation with the ICorProfiler interface
  Profilers that are using the `ICorProfiler` API’s ReJit functionality for dynamic instrumentation can now modify some metadata. Previously such tools could instrument IL at any time, but metadata could only be modified at module load time. Because IL refers to metadata, this limited the kinds of instrumentation that could be done. We have lifted some of those limits by adding the [ICorProfilerInfo7::ApplyMetaData](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-applymetadata-method.md) method to support a subset of metadata edits after the module loads, in particular by adding new `AssemblyRef`, `TypeRef`, `TypeSpec`, `MemberRef`, `MemberSpec`, and `UserString` records. This change makes a much broader range of on-the-fly instrumentation possible.
 
-<a name="NGEN461"></a> 
+<a name="NGEN461" />
+
 ### Native Image Generator (NGEN) PDBs
  Cross-machine event tracing allows customers to profile a program on Machine A and look at the profiling data with source line mapping on Machine B. Using previous versions of the .NET Framework, the user would copy all the modules and native images from the profiled machine to the analysis machine that contains the IL PDB to create the source-to-native mapping. While this process may work well when the files are relatively small, such as for phone applications, the files can be very large on desktop systems and require significant time to copy.
 
  With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping without a dependency on the IL PDB. In our cross-machine event tracing scenario, all that is needed is to copy the native image PDB that is generated by Machine A to Machine B and to use [Debug Interface Access APIs](/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk-reference) to read the IL PDB's source-to-IL mapping and the native image PDB's IL-to-native mapping. Combining both mappings provides a source-to-native mapping. Since the native image PDB is much smaller than all the modules and native images, the process of copying from Machine A to Machine B is much faster.
 
-<a name="v46"></a> 
+<a name="v46" />
+
 ## What's new in .NET 2015
  .NET 2015 introduces the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and .NET Core. Some new features apply to both, and other features are specific to [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] or [!INCLUDE[net_core](../../../includes/net-core-md.md)].
 
@@ -1504,7 +1541,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  [Back to top](#introduction)
 
-<a name="v452"></a> 
+<a name="v452" />
+
 ## What's new in the .NET Framework 4.5.2
 
 - **New APIs for ASP.NET apps.** The new <xref:System.Web.HttpResponse.AddOnSendingHeaders%2A?displayProperty=nameWithType> and <xref:System.Web.HttpResponseBase.AddOnSendingHeaders%2A?displayProperty=nameWithType> methods let you inspect and modify response headers and status code as the response is being flushed to the client app. Consider using these methods instead of the <xref:System.Web.HttpApplication.PreSendRequestHeaders> and <xref:System.Web.HttpApplication.PreSendRequestContent> events; they are more efficient and reliable.
@@ -1576,7 +1614,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  [Back to top](#introduction)
 
-<a name="v451"></a> 
+<a name="v451" />
+
 ## What's new in the .NET Framework 4.5.1
  **April 2014 updates**:
 
@@ -1638,7 +1677,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  [Back to top](#introduction)
 
-<a name="v45"></a> 
+<a name="v45" />
+
 ## What's new in the .NET Framework 4.5
 
 ### Core new features and improvements
@@ -1689,17 +1729,20 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 ### Asynchronous file operations
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], new asynchronous features were added to the C# and Visual Basic languages. These features add a task-based model for performing asynchronous operations. To use this new model, use the asynchronous methods in the I/O classes. See [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md).
 
-<a name="tools"></a> 
+<a name="tools" />
+
 ### Tools
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Resource File Generator (Resgen.exe) enables you to create a .resw file for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps from a .resources file embedded in a .NET Framework assembly. For more information, see [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
 
  Managed Profile Guided Optimization (Mpgo.exe) enables you to improve application startup time, memory utilization (working set size), and throughput by optimizing native image assemblies. The command-line tool generates profile data for native image application assemblies. See [Mpgo.exe (Managed Profile Guided Optimization Tool)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md). Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
 
-<a name="parallel"></a> 
+<a name="parallel" />
+
 ### Parallel computing
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides several new features and improvements for parallel computing. These include improved performance, increased control, improved support for asynchronous programming, a new dataflow library, and improved support for parallel debugging and performance analysis. See the entry [What’s New for Parallelism in .NET 4.5](http://go.microsoft.com/fwlink/?LinkId=235061) in the Parallel Programming with .NET blog.
 
-<a name="web"></a> 
+<a name="web" />
+
 ### Web
  ASP.NET 4.5 and 4.5.1 add model binding for Web Forms, WebSocket support, asynchronous handlers, performance enhancements, and many other features. For more information, see the following resources:
 
@@ -1707,7 +1750,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
 
-<a name="networking"></a> 
+<a name="networking" />
+
 ### Networking
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides a new programming interface for HTTP applications. For more information, see the new <xref:System.Net.Http?displayProperty=nameWithType> and <xref:System.Net.Http.Headers?displayProperty=nameWithType> namespaces.
 
@@ -1725,7 +1769,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Dual-mode socket support. For more information, see the <xref:System.Net.Sockets.Socket> and <xref:System.Net.Sockets.TcpListener> classes.
 
-<a name="client"></a> 
+<a name="client" />
+
 ### Windows Presentation Foundation (WPF)
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Presentation Foundation (WPF) contains changes and improvements in the following areas:
 
@@ -1747,7 +1792,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Improved support for implementing weak event patterns. Also, events can now accept markup extensions.
 
-<a name="windows_communication_foundation"></a> 
+<a name="windows_communication_foundation" />
+
 ### Windows Communication Foundation (WCF)
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the following features have been added to make it simpler to write and maintain Windows Communication Foundation (WCF) applications:
 
@@ -1787,7 +1833,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  For more information, see [What's New in Windows Communication Foundation](http://go.microsoft.com/fwlink/?LinkId=228173).
 
-<a name="windows_workflow_foundation"></a> 
+<a name="windows_workflow_foundation" />
+
 ### Windows Workflow Foundation (WF)
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], several new features were added to Windows Workflow Foundation (WF), including:
 
@@ -1839,11 +1886,11 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  For more information, see [What's New in Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkId=228176).
 
-<a name="tailored"></a> 
+<a name="tailored" />
 ### [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]
  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps are designed for specific form factors and leverage the power of the Windows operating system. A subset of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or 4.5.1 is available for building [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps for Windows by using C# or Visual Basic. This subset is called [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and is discussed in an [overview](http://go.microsoft.com/fwlink/?LinkId=228491) in the Windows Dev Center.
 
-<a name="portable"></a> 
+<a name="portable" />
 ### Portable Class Libraries
  The Portable Class Library project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
 

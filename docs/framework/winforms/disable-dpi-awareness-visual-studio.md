@@ -1,9 +1,9 @@
 ---
 title: Disable DPI-awareness in Visual Studio
+description: Discusses the limitations of Windows Forms Designer on HDPI monitors, and how to run Visual Studio as a DPI-unaware process.
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -16,11 +16,11 @@ Visual Studio is a dots per inch (DPI) aware application, which means the displa
 
 The **Windows Forms Designer** in Visual Studio doesn't have scaling support. This causes display issues when you open some forms in the **Windows Forms Designer** on high dots per inch (HDPI) monitors. For examples, controls can appear to overlap as shown in the following image:
 
-![Windows Forms Designer on HDPI monitor](media/win-forms-designer-hdpi.png)
+![Windows Forms Designer on HDPI monitor](media/disable-dpi-awareness-visual-studio/win-forms-designer-hdpi.png)
 
 In Visual Studio 2017 version 15.8 and later, when you open a form in the **Windows Forms Designer** on an HDPI monitor, Visual Studio displays a yellow informational bar at the top of the designer:
 
-![Informational bar in Visual Studio to restart in DPI-unaware mode](media/scaling-gold-bar.png)
+![Informational bar in Visual Studio to restart in DPI-unaware mode](media/disable-dpi-awareness-visual-studio/scaling-gold-bar.png)
 
 The message reads **Scaling on your main display is set to 200% (192 dpi). This might cause rendering problems in the designer window.**
 
@@ -46,7 +46,7 @@ It's important to restart Visual Studio as a DPI-aware process when you're finis
 
 You can mark Visual Studio as DPI-unaware by modifying the registry. Open **Registry Editor** and add an entry to the **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers** subkey:
 
-**Entry**: %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\devenv.exe
+**Entry**: %ProgramFiles(x86)%\Microsoft Visual Studio\2017\your-edition\Common7\IDE\devenv.exe
 
 **Type**: REG_SZ
 
@@ -57,7 +57,7 @@ You can mark Visual Studio as DPI-unaware by modifying the registry. Open **Regi
 
 ### Set your display scaling setting to 100%
 
-To set your display scaling setting to 100% in Windows 10, type **display settings** in the Cortana search box, and then select **Change display settings**. In the **Settings** window, set **Change the size of text, apps, and other items** to **100%**.
+To set your display scaling setting to 100% in Windows 10, type **display settings** in the task bar search box, and then select **Change display settings**. In the **Settings** window, set **Change the size of text, apps, and other items** to **100%**.
 
 Setting your display scaling to 100% may be undesirable, because it can make the user interface too small to be usable.
 

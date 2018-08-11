@@ -41,7 +41,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or its point releases on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
 
-- If you are referencing a Microsoft [out-of-band package](http://msdn.microsoft.com/library/dn151288\(v=vs.110\).aspx) in your app, the assembly will be included in the app package.
+- If you are referencing a Microsoft [out-of-band package](../get-started/the-net-framework-and-out-of-band-releases.md) in your app, the assembly will be included in the app package.
 
 - You must have administrator privileges to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases.
 

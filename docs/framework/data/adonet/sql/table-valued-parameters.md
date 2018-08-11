@@ -71,7 +71,7 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
 ## Limitations of Table-Valued Parameters  
  There are several limitations to table-valued parameters:  
   
--   You cannot pass table-valued parameters to [CLR user-defined functions](http://msdn.microsoft.com/library/ms131077.aspx).  
+-   You cannot pass table-valued parameters to [CLR user-defined functions](/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-user-defined-functions).  
   
 -   Table-valued parameters can only be indexed to support UNIQUE or PRIMARY KEY constraints. SQL Server does not maintain statistics on table-valued parameters.  
   

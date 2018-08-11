@@ -17,7 +17,7 @@ Docker image containers run natively on Linux and Windows. Windows images run on
 
 You can develop on Windows, Linux, or macOS. The development computer runs a Docker host where Docker images are deployed, including the app and its dependencies. On Linux or macOS, you use a Docker host that is Linux based and can create images only for Linux containers.(On macOS you can edit code or run the Docker CLI, but as of the time of this writing, containers do not run directly on macOS.) On Windows you can create images for either Linux or Windows Containers.
 
-On Windows or macOS, [Docker Community Edition (CE)](https://www.docker.com/community-edition) hosts containers in a development environment and provides additional developer tools. [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications. ~Both products install the necessary VM (the Docker host) to host the containers.~ 
+On Windows or macOS, [Docker Community Edition (CE)](https://www.docker.com/community-edition) hosts containers in a development environment and provides additional developer tools. [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications. Both products install the necessary VM (the Docker host) to host the containers.
 
 [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) work with two types of runtimes:
 

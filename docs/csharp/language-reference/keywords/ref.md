@@ -15,7 +15,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. See [ref struct declarations](#ref-struct-declarations) for more information.
+- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Reference semantics with value types](../../reference-semantics-with-value-types.md).
 
 ## Passing an argument by reference
 
@@ -116,8 +116,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 [!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
-
-## Ref struct declarations
 
 ## C# Language Specification
 

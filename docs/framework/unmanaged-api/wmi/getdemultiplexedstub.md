@@ -35,7 +35,7 @@ HRESULT GetDemultiplexedStub (
 ## Parameters
 
 `pObject`  
-[in] A pointer to the client's in-process implementation of [IWbemObjectSink](https://msdn.microsoft.com/library/aa391787(v=vs.85).aspx).
+[in] A pointer to the client's in-process implementation of [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink).
 
 `isLocal`  
 [in] A flag that indicates whether the event is local (`true`); otherwise, `false`.

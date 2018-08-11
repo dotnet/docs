@@ -9,15 +9,15 @@ Stored procedures are routines that cannot be used in scalar expressions. They c
 > [!NOTE]
 >  Microsoft Visual Basic does not support output parameters in the same way that Microsoft Visual C# does. You must specify to pass the parameter by reference and apply the \<Out()> attribute to represent an output parameter, as in the following:  
   
-```  
+```vb
 Public Shared Sub ExecuteToClient( <Out()> ByRef number As Integer)  
-```  
+```
   
- For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
+For more detailed information, see the version of [SQL Server documentation](/sql) for the version of SQL Server you're using.
   
- **SQL Server Books Online**  
-  
-1.  [CLR Stored Procedures](http://go.microsoft.com/fwlink/?LinkId=115400)  
+ **SQL Server documentation**
+
+1. [CLR Stored Procedures](http://go.microsoft.com/fwlink/?LinkId=115400)  
   
 ## See Also  
  [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  

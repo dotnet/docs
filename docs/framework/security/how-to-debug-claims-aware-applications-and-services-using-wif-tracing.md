@@ -71,7 +71,7 @@ manager: "mbaldwin"
     </system.diagnostics>  
     ```  
   
-3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](http://msdn.microsoft.com/library/ms733025.aspx).  
+3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](../wcf/diagnostics/tracing/configuring-tracing.md).  
   
 ## Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
  In this step, you will use the Trace Viewer Tool (SvcTraceViewer.exe) to analyze WIF trace logs.  
@@ -103,4 +103,4 @@ manager: "mbaldwin"
   
 ## Related Items  
   
--   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](http://msdn.microsoft.com/library/aa751795.aspx)
+-   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

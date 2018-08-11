@@ -42,7 +42,7 @@ ALTER DATABASE Database2 SET DB_CHAINING ON;
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Extending Database Impersonation by Using EXECUTE AS](http://msdn.microsoft.com/library/ms188304\(SQL.105\).aspx) and [Cross DB Ownership Chaining Option](http://msdn.microsoft.com/library/ms188694.aspx)SQL Server Books Online.|Topics describe how to configure cross-database ownership chaining for an instance of SQL Server.|  
+|[Extending Database Impersonation by Using EXECUTE AS](http://msdn.microsoft.com/library/ms188304\(SQL.105\).aspx) and [Cross DB Ownership Chaining Option](/sql/database-engine/configure-windows/cross-db-ownership-chaining-server-configuration-option)SQL Server Books Online.|Topics describe how to configure cross-database ownership chaining for an instance of SQL Server.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

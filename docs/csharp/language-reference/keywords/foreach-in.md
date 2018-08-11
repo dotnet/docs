@@ -41,7 +41,7 @@ Beginning with C# 7.3, if the enumerator's `Current` property returns a [referen
 
 ## See also
 
-[The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)  
+[The foreach statement (C# language specification)](../language-specification/index.md)  
 [Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
 [for](for.md)  
 [Iteration Statements](iteration-statements.md)  

@@ -166,4 +166,4 @@ Continue to iterate by adding more tests, more theories, and more code in the ma
 
 ### Additional resources
 
-[Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)
+- [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)

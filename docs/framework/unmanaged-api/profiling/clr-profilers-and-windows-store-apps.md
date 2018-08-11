@@ -168,7 +168,7 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
      You’ll need to deploy this dummy debugger as part of your diagnostics tool installation, and then specify the path to this debugger in the `debuggerCommandLine` parameter.  
   
  **Launching the Windows Store app**  
- The moment to launch the Windows Store app has finally arrived. If you’ve already already tried doing this yourself, you may have noticed that [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms682425\(v=vs.85\).aspx) is not how you create a Windows Store app process.  Instead, you’ll need to use the [IApplicationActivationManager::ActivateApplication](https://msdn.microsoft.com/library/windows/desktop/Hh706903\(v=vs.85\).aspx) method.  To do that, you’ll need to get the App User Model ID of the Windows Store app that you’re launching.  And that means you’ll need to do a little digging through the manifest.  
+ The moment to launch the Windows Store app has finally arrived. If you’ve already already tried doing this yourself, you may have noticed that [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) is not how you create a Windows Store app process.  Instead, you’ll need to use the [IApplicationActivationManager::ActivateApplication](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication) method.  To do that, you’ll need to get the App User Model ID of the Windows Store app that you’re launching.  And that means you’ll need to do a little digging through the manifest.  
   
  While iterating over your packages (see "Choosing a Windows Store App to Profile" in the [Startup load](#Startup) section earlier), you’ll want to grab the set of applications contained in the current package’s manifest:  
   
@@ -236,9 +236,9 @@ pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,
   
 <a name="APIs"></a>   
 ### Stick to the Windows Store app APIs  
- As you browse the Windows API, you’ll notice that every API is documented as being applicable to desktop apps, Windows Store apps, or both.  For example, the **Requirements** section of the documentation for the [InitializeCriticalSectionAndSpinCount](https://msdn.microsoft.com/library/windows/desktop/ms683476\(v=vs.85\).aspx) function indicates that the function applies to desktop apps only. In contrast, the [InitializeCriticalSectionEx](https://msdn.microsoft.com/library/windows/desktop/ms683477\(v=vs.85\).aspx) function is available for both desktop apps and Windows Store apps.  
+ As you browse the Windows API, you’ll notice that every API is documented as being applicable to desktop apps, Windows Store apps, or both.  For example, the **Requirements** section of the documentation for the [InitializeCriticalSectionAndSpinCount](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount) function indicates that the function applies to desktop apps only. In contrast, the [InitializeCriticalSectionEx](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionex) function is available for both desktop apps and Windows Store apps.  
   
- When developing your Profiler DLL, treat it as if it’s a Windows Store app and only use APIs that are documented as available to Windows Store apps.  Analyze your dependencies (for example, you can run `link /dump /imports` against your Profiler DLL to audit), and then search the docs to see which of your dependencies are ok and which aren’t.  In most cases, your violations can be fixed by simply replacing them with a newer form of the API that is documented as safe (for example, replacing [InitializeCriticalSectionAndSpinCount](https://msdn.microsoft.com/library/windows/desktop/ms683476\(v=vs.85\).aspx) with [InitializeCriticalSectionEx](https://msdn.microsoft.com/library/windows/desktop/ms683477\(v=vs.85\).aspx)).  
+ When developing your Profiler DLL, treat it as if it’s a Windows Store app and only use APIs that are documented as available to Windows Store apps.  Analyze your dependencies (for example, you can run `link /dump /imports` against your Profiler DLL to audit), and then search the docs to see which of your dependencies are ok and which aren’t.  In most cases, your violations can be fixed by simply replacing them with a newer form of the API that is documented as safe (for example, replacing [InitializeCriticalSectionAndSpinCount](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount) with [InitializeCriticalSectionEx](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionex)).  
   
  You might notice that your Profiler DLL calls some APIs that apply to desktop apps only, and yet they seem to work even when your Profiler DLL is loaded inside a Windows Store app.  Be aware that it’s risky to use any API not documented for use with Windows Store apps in your Profiler DLL when loaded into a Windows Store app process:  
   
@@ -287,7 +287,7 @@ tempDir = appData.TemporaryFolder.Path;
  **Communicating via events**  
  If you want simple signaling semantics between your Profiler UI and Profiler DLL, you can use events inside Windows Store apps as well as desktop apps.  
   
- From your Profiler DLL, you can simply call the [CreateEventEx](https://msdn.microsoft.com/library/windows/desktop/ms682400\(v=vs.85\).aspx) function to create a named event with any name you like.  For example:  
+ From your Profiler DLL, you can simply call the [CreateEventEx](/windows/desktop/api/synchapi/nf-synchapi-createeventexa) function to create a named event with any name you like.  For example:  
   
 ```cpp  
 // Profiler DLL in Windows Store app (C++).  
@@ -298,7 +298,7 @@ CreateEventEx(
     EVENT_ALL_ACCESS);  
 ```  
   
- Your Profiler UI then needs to find that named event under the Windows Store app’s namespace.  For example, your Profiler UI could call [CreateEventEx](https://msdn.microsoft.com/library/windows/desktop/ms682400\(v=vs.85\).aspx), specifying the event name as  
+ Your Profiler UI then needs to find that named event under the Windows Store app’s namespace.  For example, your Profiler UI could call [CreateEventEx](/windows/desktop/api/synchapi/nf-synchapi-createeventexa), specifying the event name as  
   
  `AppContainerNamedObjects\<acSid>\MyNamedEvent`  
   
@@ -317,7 +317,7 @@ GetAppContainerFolderPath(acSid, out acDir);
   
 ### No shutdown notifications
 
- When running inside a Windows Store app, your Profiler DLL should not rely on either [ICorProfilerCallback::Shutdown](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-shutdown-method.md) or even [DllMain](https://msdn.microsoft.com/library/windows/desktop/ms682583\(v=vs.85\).aspx) (with `DLL_PROCESS_DETACH`) being called to notify your Profiler DLL that the Windows Store app is exiting.  In fact, you should expect they will never be called.  Historically, many Profiler DLLs have used those notifications as convenient places to flush caches to disk, close files, send notifications back to the Profiler UI, etc.  But now your Profiler DLL needs to be organized a little differently.  
+ When running inside a Windows Store app, your Profiler DLL should not rely on either [ICorProfilerCallback::Shutdown](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-shutdown-method.md) or even [DllMain](/windows/desktop/Dlls/dllmain) (with `DLL_PROCESS_DETACH`) being called to notify your Profiler DLL that the Windows Store app is exiting.  In fact, you should expect they will never be called.  Historically, many Profiler DLLs have used those notifications as convenient places to flush caches to disk, close files, send notifications back to the Profiler UI, etc.  But now your Profiler DLL needs to be organized a little differently.  
   
  Your Profiler DLL should be logging information as it goes.  For performance reasons, you may want to batch information in memory and flush it to disk as the batch grows in size past some threshold.  But assume that any information not yet flushed to disk can be lost.  This means you’ll want to pick your threshold wisely, and that your Profiler UI needs to be hardened to deal with incomplete information written by the Profiler DLL.  
   

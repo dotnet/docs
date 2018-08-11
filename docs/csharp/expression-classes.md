@@ -11,7 +11,7 @@ ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
-list [here](/dotnet/core/api/System.Linq.Expressions).
+list at <xref:System.Linq.Expressions>.
 Rather than run through the full list, let's understand how the framework classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions

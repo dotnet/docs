@@ -200,11 +200,13 @@ For all other types, use the prefix form.
 
 A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
 
-A commonly accepted exception is to omit parentheses in pattern matching of tuples:
+It is commonly accepted to omit parentheses in pattern matching of tuples:
 
 ```fsharp
 let (x, y) = z // Destructuring
+let x, y = z // OK
 
+// OK
 match x, y with
 | 1, _ -> 0
 | x, 1 -> 0
@@ -278,7 +280,7 @@ type PostalAddress =
     }
 ```
 
-Placing the opening token on the same line and the closing token on a new line is also fine, but be aware that you need to use the verbose syntax to define members (the `with` keyword):
+Placing the opening token on the same line and the closing token on a new line is also fine, but be aware that you need to use the [verbose syntax](../language-reference/verbose-syntax.md) to define members (the `with` keyword):
 
 ```fsharp
 //  OK, but verbose syntax required

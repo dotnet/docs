@@ -52,7 +52,7 @@ Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includ
   
 The following describes the behaviors when projecting results into entity and non-entity types:  
 
-** Creating a new projected instance by using initializers**
+**Creating a new projected instance by using initializers**
 
 - Example:
 
@@ -63,7 +63,7 @@ The following describes the behaviors when projecting results into entity and no
 
 - Non-entity type: Supported
 
-** Creating a new projected instance by using constructors**
+**Creating a new projected instance by using constructors**
 
 - Example: 
 
@@ -74,7 +74,7 @@ The following describes the behaviors when projecting results into entity and no
 
 - Non-entity type: Supported
 
-** Using projection to transform a property value**
+**Using projection to transform a property value**
 
 - Example:
 

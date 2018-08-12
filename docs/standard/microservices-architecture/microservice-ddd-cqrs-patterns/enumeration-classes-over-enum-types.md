@@ -23,47 +23,37 @@ public abstract class Enumeration : IComparable
     public string Name { get; }
     public int Id { get; }
 
-    protected Enumeration()
-    {
-    }
-
     protected Enumeration(int id, string name)
     {
         Id = id;
         Name = name;
     }
 
-    public override string ToString()
-    {
-        return Name;
-    }
+    public override string ToString() => Name;
 
-    public static IEnumerable<T> GetAll<T>() where T : Enumeration, new()
+    public static IEnumerable<T> GetAll<T>() where T : Enumeration
     {
         var type = typeof(T);
-        var fields = type.GetTypeInfo().GetFields(BindingFlags.Public |
-            BindingFlags.Static |
-            BindingFlags.DeclaredOnly);
+        var fields = type.GetFields(
+            BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
+
         foreach (var info in fields)
         {
-            var instance = new T();
-            var locatedValue = info.GetValue(instance) as T;
-            if (locatedValue != null)
-            {
+            if (info.GetValue(null) is T locatedValue)
                 yield return locatedValue;
-            }
         }
     }
 
     public override bool Equals(object obj)
     {
         var otherValue = obj as Enumeration;
+
         if (otherValue == null)
-        {
             return false;
-        }
-        var typeMatches = GetType().Equals(obj.GetType());
-        var valueMatches = Id.Equals(otherValue.Id);
+
+        var typeMatches = GetType() == obj.GetType();
+        var valueMatches = Id == otherValue.Id;
+
         return typeMatches && valueMatches;
     }
 
@@ -84,8 +74,6 @@ public class CardType : Enumeration
     public static CardType Amex = new CardType(1, "Amex");
     public static CardType Visa = new CardType(2, "Visa");
     public static CardType MasterCard = new CardType(3, "MasterCard");
-
-    protected CardType() { }
 
     public CardType(int id, string name)
         : base(id, name)

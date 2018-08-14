@@ -196,6 +196,23 @@ F# inherits both the postfix ML style of naming generic types (for example, `int
 
 For all other types, use the prefix form.
 
+## Formatting tuples
+
+A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
+
+It is commonly accepted to omit parentheses in pattern matching of tuples:
+
+```fsharp
+let (x, y) = z // Destructuring
+let x, y = z // OK
+
+// OK
+match x, y with
+| 1, _ -> 0
+| x, 1 -> 0
+| x, y -> 1
+```
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:
@@ -213,6 +230,8 @@ type Volume =
 | USPint of float
 | ImperialPint of float
 ```
+
+## Formatting discriminated unions
 
 Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
@@ -233,19 +252,44 @@ let tree1 =
     )
 ```
 
-## Formatting tuples
+## Formatting record declarations
 
-A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
-
-A commonly accepted exception is to omit parentheses in pattern matching of tuples:
+Indent `{` in type definition by 4 spaces and start the field list on the same line:
 
 ```fsharp
-let (x, y) = z // Destructuring
+// OK
+type PostalAddress =
+    { Address : string
+      City : string
+      Zip : string }
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 
-match x, y with
-| 1, _ -> 0
-| x, 1 -> 0
-| x, y -> 1
+// Not OK
+type PostalAddress =
+  { Address : string
+    City : string
+    Zip : string }
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    
+// Unusual in F#
+type PostalAddress =
+    { 
+        Address : string
+        City : string
+        Zip : string
+    }
+```
+
+Placing the opening token on the same line and the closing token on a new line is also fine, but be aware that you need to use the [verbose syntax](../language-reference/verbose-syntax.md) to define members (the `with` keyword):
+
+```fsharp
+//  OK, but verbose syntax required
+type PostalAddress = { 
+    Address : string
+    City : string
+    Zip : string
+} with
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 ```
 
 ## Formatting records

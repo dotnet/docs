@@ -18,7 +18,7 @@ The `&` operator can function as either a unary or a binary operator.
   
  Binary `&` operators are predefined for the integral types and `bool`. For integral types, & computes the logical bitwise AND of its operands. For `bool` operands, & computes the logical AND of its operands; that is, the result is `true` if and only if both its operands are `true`.  
   
- The binary `&` operator evaluates both operators regardless of the first one's value, in contrast to the [conditional AND operator](../../../csharp/language-reference/operators/conditional-and-operator.md) `&&`. For example:  
+ The binary `&` operator evaluates both operands regardless of the first one's value, in contrast to the [conditional AND operator](../../../csharp/language-reference/operators/conditional-and-operator.md) `&&`. For example:  
   
  [!code-csharp[csRefOperators#37](../../../csharp/language-reference/operators/codesnippet/CSharp/and-operator_1.cs)]  
   

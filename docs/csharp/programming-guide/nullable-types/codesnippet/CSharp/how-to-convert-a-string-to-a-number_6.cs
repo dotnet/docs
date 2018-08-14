@@ -11,7 +11,7 @@
                 else
                     break;
             }
-            if (int.TryParse(sb.ToString(), System.Globalization.NumberStyles.HexNumber, null, out i))
+            if (int.TryParse(sb.ToString(), System.Globalization.NumberStyles.HexNumber, null, out int i))
                 Console.WriteLine(sb.ToString());
 
             str = "   -10FFXXX";
@@ -26,5 +26,5 @@
                 } else
                     break;
             }
-            if (int.TryParse(sb.ToString(), out i))
+            if (int.TryParse(sb.ToString(), out int j))
                 Console.WriteLine(sb.ToString());

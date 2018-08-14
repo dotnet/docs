@@ -733,11 +733,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property replaces all the children with the parsed contents of the given string.  
+
+Setting this property replaces all the children with the parsed contents of the given string, so children nodes are not preserved.
+The only child node after the set operation is a text node.
   
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
+This property is a Microsoft extension to the Document Object Model (DOM).   
   
 ## Examples  
  The following example compares the `InnerText` and <xref:System.Xml.XmlElement.InnerXml%2A> properties.  

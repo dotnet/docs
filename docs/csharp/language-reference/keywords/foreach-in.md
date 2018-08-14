@@ -1,10 +1,10 @@
 ---
 title: "foreach, in (C# Reference)"
 ms.date: 06/29/2018
-f1_keywords: 
+f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "foreach keyword [C#]"
   - "foreach statement [C#]"
   - "in keyword [C#]"
@@ -41,10 +41,10 @@ Beginning with C# 7.3, if the enumerator's `Current` property returns a [referen
 
 ## See also
 
-[The foreach statement (C# language specification)](../language-specification/index.md)  
-[Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
-[for](for.md)  
-[Iteration Statements](iteration-statements.md)  
-[C# Keywords](index.md)  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
+[The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)
+[Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
+[for](for.md)
+[Iteration Statements](iteration-statements.md)
+[C# Keywords](index.md)
+[C# Reference](../index.md)
+[C# Programming Guide](../../programming-guide/index.md)

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
 ---
 # Casting and Type Conversions (C# Programming Guide)
-Because C# is statically-typed at compile time, after a variable is declared, it cannot be declared again or used to store values of another type unless that type is convertible to the variable's type. For example, there is no conversion from any arbitrary string to an integer. Therefore, after you declare `i` as an integer, you cannot assign the string "Hello" to it, as is shown in the following code.  
+Because C# is statically-typed at compile time, after a variable is declared, it cannot be declared again or used to store values of another type unless that type is convertible to the variable's type. For example, there is no conversion from an integer to any arbitrary string. Therefore, after you declare `i` as an integer, you cannot assign the string "Hello" to it, as is shown in the following code.  
   
 ```csharp  
 int i;  

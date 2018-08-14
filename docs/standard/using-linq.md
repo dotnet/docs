@@ -211,7 +211,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
                             let selfValue = property.GetValue(self, null)
                             let toValue = property.GetValue(to, null)
                             where !Equals(selfValue, toValue)
-                            select new { property, selfValue, toValue };
+                            select property;
     return !unequalProperties.Any();
 }
 ```

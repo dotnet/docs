@@ -1,6 +1,6 @@
 ---
 title: "Diagnosing Errors with Managed Debugging Assistants"
-ms.date: "03/30/2017"
+ms.date: 08/14/2018
 f1_keywords:
   - "EHMDA"
 helpviewer_keywords:

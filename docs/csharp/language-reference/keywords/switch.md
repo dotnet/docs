@@ -1,6 +1,6 @@
 ---
-title: "switch keyword (C# Reference)"
-ms.date: 03/07/2017
+title: C# switch statement
+ms.date: 08/14/2018
 f1_keywords:
   - "switch_CSharpKeyword"
   - "switch"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "default keyword [C#]"
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
 ---
-# switch (C# Reference)
+# switch (C# reference)
 
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*.
 
@@ -181,11 +181,11 @@ The following example defines a base `Shape` class, a `Rectangle` class that der
 
 Note that the `when` clause in the example that attempts to test whether a `Shape` object is `null` does not execute. The correct type pattern to test for a `null` is `case null:`.
 
-## C# Language Specification
+## C# language specification
 
 For more information, see [The switch statement](/dotnet/csharp/language-reference/language-specification/statements#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)

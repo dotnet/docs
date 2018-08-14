@@ -1,6 +1,6 @@
 ---
 title: "&lt;compiler&gt; Element"
-ms.date: "03/30/2017"
+ms.date: 08/14/2018
 f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compiler"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom/compilers/compiler"

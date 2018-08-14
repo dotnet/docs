@@ -1,5 +1,5 @@
 ---
-title: "for (C# Reference)"
+title: C# for statement
 ms.date: 06/13/2018
 f1_keywords:
   - "for"
@@ -103,10 +103,10 @@ The following example defines the infinite `for` loop:
 
 ## See also
 
-[The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
-[C# Reference](../index.md)
-[C# Programming Guide](../../programming-guide/index.md)
-[C# Keywords](index.md)
-[foreach, in](foreach-in.md)
-[for Statement (C++)](/cpp/cpp/for-statement-cpp)
-[Iteration Statements](iteration-statements.md)
+- [The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [foreach, in](foreach-in.md)
+- [for Statement (C++)](/cpp/cpp/for-statement-cpp)
+- [Iteration Statements](iteration-statements.md)

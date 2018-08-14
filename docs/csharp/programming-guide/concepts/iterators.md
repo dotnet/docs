@@ -1,6 +1,6 @@
 ---
-title: "Iterators (C#)"
-ms.date: 07/20/2015
+title: Iterate through collections in C#
+ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 ---
 # Iterators (C#)
@@ -39,7 +39,7 @@ You can use a `yield break` statement to end the iteration.
 > [!NOTE]
 > For all examples in this topic except the Simple Iterator example, include [using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections` and `System.Collections.Generic` namespaces.
 
-##  <a name="BKMK_SimpleIterator"></a> Simple Iterator
+## Simple Iterator
 
 The following example has a single `yield return` statement that is inside a [for](../../../csharp/language-reference/keywords/for.md) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.
 
@@ -68,7 +68,7 @@ public static System.Collections.Generic.IEnumerable<int>
 }
 ```
 
-##  <a name="BKMK_CollectionClass"></a> Creating a Collection Class
+## Creating a Collection Class
 
 In the following example, the `DaysOfTheWeek` class implements the <xref:System.Collections.IEnumerable> interface, which requires a <xref:System.Collections.IEnumerable.GetEnumerator%2A> method. The compiler implicitly calls the `GetEnumerator` method, which returns an <xref:System.Collections.IEnumerator>.
 
@@ -198,7 +198,7 @@ public class Zoo : IEnumerable
 }
 ```
 
-##  <a name="BKMK_GenericList"></a> Using Iterators with a Generic List
+## Using Iterators with a Generic List
 
 In the following example, the <xref:System.Collections.Generic.Stack%601> generic class implements the <xref:System.Collections.Generic.IEnumerable%601> generic interface. The <xref:System.Collections.Generic.Stack%601.Push%2A> method assigns values to an array of type `T`. The <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method returns the array values by using the `yield return` statement.
 
@@ -314,7 +314,7 @@ public class Stack<T> : IEnumerable<T>
 }
 ```
 
-##  <a name="BKMK_SyntaxInformation"></a> Syntax Information
+## Syntax Information
 
 An iterator can occur as a method or `get` accessor. An iterator cannot occur in an event, instance constructor, static constructor, or static finalizer.
 
@@ -324,7 +324,7 @@ In C#, an iterator method cannot have any `in`, `ref`, or `out` parameters.
 
 In C#, "yield" is not a reserved word and has special meaning only when it is used before a `return` or `break` keyword.
 
-##  <a name="BKMK_Technical"></a> Technical Implementation
+## Technical Implementation
 
 Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine. This class keeps track of the position of the iterator as long the `foreach` loop in the client code continues.
 
@@ -338,7 +338,7 @@ Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displa
 
 For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).
 
-##  <a name="BKMK_UseOfIterators"></a> Use of Iterators
+## Use of Iterators
 
 Iterators enable you to maintain the simplicity of a `foreach` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:
 
@@ -348,7 +348,7 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.
 
-## See also
+## See Also
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>

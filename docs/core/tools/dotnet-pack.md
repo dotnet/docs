@@ -103,7 +103,7 @@ Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 > [!NOTE]
-> Web projects are not packable by default. To ovverride the default behaviour, add the below property to your `csproj` file
+> Web projects aren't packable by default. To override the default behaviour, add the below property to your `.csproj` file
 ```xml
 <PropertyGroup>
     <IsPackable>true</IsPackable>

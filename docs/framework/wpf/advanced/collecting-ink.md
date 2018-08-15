@@ -1,6 +1,6 @@
 ---
-title: "Collecting Ink"
-ms.date: "03/30/2017"
+title: Collect ink in WPF apps
+ms.date: 08/15/2018
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,7 +22,7 @@ The [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md) p
 
 To use the following examples, you must first install Visual Studio and the [!INCLUDE[TLA2#tla_winfxsdk](../../../../includes/tla2sharptla-winfxsdk-md.md)]. You should also understand how to write applications for the WPF. For more information about getting started with WPF, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
-## Using the InkCanvas Element
+## Use the InkCanvas Element
 
 The <xref:System.Windows.Controls.InkCanvas?displayProperty=fullName> element provides the easiest way to collect ink in WPF. Use an <xref:System.Windows.Controls.InkCanvas> element to receive and display ink input. You commonly input ink through the use of a stylus, which interacts with a digitizer to produce ink strokes. In addition, a mouse can be used in place of a stylus. The created strokes are represented as <xref:System.Windows.Ink.Stroke> objects, and they can be manipulated both programmatically and by user input. The <xref:System.Windows.Controls.InkCanvas> enables users to select, modify, or delete an existing <xref:System.Windows.Ink.Stroke>.
 

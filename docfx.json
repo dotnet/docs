@@ -132,9 +132,6 @@
       },
       "langs": {
         "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
-      },
-      "ROBOTS": {
-        "api/**.yml": "NOINDEX, NOFOLLOW"
       }
     },
     "dest": "_site",

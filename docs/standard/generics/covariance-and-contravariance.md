@@ -27,7 +27,7 @@ ms.author: "mairaw"
   
      Enables you to use a more generic (less derived) type than originally specified.  
   
-     You can assign an instance of `IEnumerable<Base>` (`IEnumerable(Of Base)` in Visual Basic) to a variable of type `IEnumerable<Derived>`.  
+     You can assign an instance of `Action<Base>` (`Action(Of Base)` in Visual Basic) to a variable of type `Action<Derived>`.  
   
 -   `Invariance`  
   

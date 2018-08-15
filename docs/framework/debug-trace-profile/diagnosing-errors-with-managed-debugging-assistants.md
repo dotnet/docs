@@ -34,14 +34,9 @@ ms.author: "mairaw"
 ---
 # Diagnose Errors with Managed Debugging Assistants
 
-Managed debugging assistants (MDAs) are debugging aids that work in conjunction with the common language runtime (CLR) to provide information on runtime state. The assistants generate informational messages about runtime events that you cannot otherwise trap. You can use MDAs to isolate hard-to-find application bugs that occur when transitioning between managed and unmanaged code. You can enable or disable all MDAs by adding a key to the Windows registry or by setting an environment variable. You can enable specific MDAs by using application configuration settings. You can set additional configuration settings for some individual MDAs in the application's configuration file. Because these configuration files are parsed when the runtime is loaded, you must enable the MDA before the managed application starts. You cannot enable it for applications that have already started.
+Managed debugging assistants (MDAs) are debugging aids that work in conjunction with the common language runtime (CLR) to provide information on runtime state. The assistants generate informational messages about runtime events that you cannot otherwise trap. You can use MDAs to isolate hard-to-find application bugs that occur when transitioning between managed and unmanaged code.
 
-> [!NOTE]
-> When an MDA is enabled, it is active even when your code is not executing under a debugger. If an MDA event is raised when a debugger is not present, the event message is presented in an unhandled exception dialog box, although it is not an unhandled exception. To avoid the dialog box, remove the MDA-enabling settings when your code is not executing in a debugging environment.
-
-When your code executes in the Visual Studio integrated development environment (IDE), you can avoid the exception dialog box that appears for specific MDA events. To do that, on the **Debug** menu, choose **Windows** > **Exception Settings**. In the **Exception Settings** window, expand the **Managed Debugging Assistants** list, and then clear the **Break When Thrown** check box for the individual MDA. You can also use this dialog box to *enable* the display of MDA exception dialog boxes.
-
-![Exception Settings window in Visual Studio](media/diagnosing-errors-with-managed-debugging-assistants/exception-settings-mdas.png)
+You can [enable or disable](#enable-and-disable-mdas) all MDAs by adding a key to the Windows registry or by setting an environment variable. You can enable specific MDAs by using application configuration settings. You can set additional configuration settings for some individual MDAs in the application's configuration file. Because these configuration files are parsed when the runtime is loaded, you must enable the MDA before the managed application starts. You cannot enable it for applications that have already started.
 
 The following table lists the MDAs that ship with the .NET Framework:
 
@@ -70,6 +65,8 @@ The following table lists the MDAs that ship with the .NET Framework:
 |[streamWriterBufferedDataLost](../../../docs/framework/debug-trace-profile/streamwriterbuffereddatalost-mda.md)|[virtualCERCall](../../../docs/framework/debug-trace-profile/virtualcercall-mda.md)|
 
 By default, the .NET Framework activates a subset of MDAs for all managed debuggers. You can view the default set in Visual Studio by choosing **Windows** > **Exception Settings** on the **Debug** menu, and then expanding the **Managed Debugging Assistants** list.
+
+![Exception Settings window in Visual Studio](media/diagnosing-errors-with-managed-debugging-assistants/exception-settings-mdas.png)
 
 ## Enable and Disable MDAs
 
@@ -163,7 +160,13 @@ The following example shows how to enable multiple MDAs by using their default s
 > [!IMPORTANT]
 > When you specify more than one assistant in a configuration file, you must list them in alphabetical order. For example, if you want to enable both the virtualCERCall and the invalidCERCall MDAs, you must add the `<invalidCERCall />` entry before the `<virtualCERCall />` entry. If the entries are not in alphabetical order, an unhandled invalid configuration file exception message is displayed.
 
-### MDA Output
+## MDA exceptions
+
+When an MDA is enabled, it's active even when your code is not executing under a debugger. If an MDA event is raised when a debugger is not present, the event message is presented in an unhandled exception dialog box, although it is not an unhandled exception. To avoid the dialog box, remove the MDA-enabling settings when your code is not executing in a debugging environment.
+
+When your code executes in the Visual Studio integrated development environment (IDE), you can avoid the exception dialog box that appears for specific MDA events. To do that, on the **Debug** menu, choose **Windows** > **Exception Settings**. In the **Exception Settings** window, expand the **Managed Debugging Assistants** list, and then clear the **Break When Thrown** check box for the individual MDA. You can also use this dialog box to *enable* the display of MDA exception dialog boxes.
+
+## MDA Output
 
 MDA output is similar to the following example, which shows the output from the PInvokeStackImbalance MDA:
 

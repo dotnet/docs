@@ -270,7 +270,7 @@
 ## Remarks  
  This constructor initializes the encoding to <xref:System.Text.UTF8Encoding>, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -334,7 +334,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -408,7 +408,7 @@
   
  The `path` parameter is not required to be a file stored on disk; it can be any part of a system that supports access using streams.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -473,7 +473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -551,7 +551,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -622,7 +622,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -702,7 +702,7 @@
 ## Remarks  
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -779,7 +779,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
@@ -867,7 +867,7 @@
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  

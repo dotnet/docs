@@ -1,10 +1,6 @@
 ---
 title: Create a LINQ to DataSet project In Visual Studio
-ms.prod: visual-studio-dev15
 ms.date: 08/15/2018
-author: gewarren
-ms.author: gewarren
-manager: douge
 ms.assetid: 49ba6cb0-cdd2-4571-aeaa-25bf0f40e9b3
 ---
 # How to: Create a LINQ to DataSet project In Visual Studio

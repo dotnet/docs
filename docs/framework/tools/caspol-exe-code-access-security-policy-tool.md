@@ -77,24 +77,24 @@ caspol [options]
   
 |Argument|Description|  
 |--------------|-----------------|  
-|**-allcode**|Specifies all code. For more information about this membership condition, see the <xref:System.Security.Policy.AllMembershipCondition>.|  
-|**-appdir**|Specifies the application directory. If you specify **–appdir** as the membership condition, the URL evidence of code is compared with the application directory evidence of that code. If both evidence values are the same, this membership condition is satisfied. For more information about this membership condition, see the <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition>.|  
+|**-allcode**|Specifies all code. For more information about this membership condition, see <xref:System.Security.Policy.AllMembershipCondition?displayProperty=nameWithType>.|  
+|**-appdir**|Specifies the application directory. If you specify **–appdir** as the membership condition, the URL evidence of code is compared with the application directory evidence of that code. If both evidence values are the same, this membership condition is satisfied. For more information about this membership condition, see <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition?displayProperty=nameWithType>.|  
 |**-custom**  *xmlfile*|Adds a custom membership condition. The mandatory *xmlfile* argument specifies the .xml file that contains XML serialization of the custom membership condition.|  
-|**-hash** *hashAlg* {**-hex** *hashValue* &#124; **-file** *assembly_file* }|Specifies code that has the given assembly hash. To use a hash as a code group membership condition, you must specify either the hash value or the assembly file. For more information about this membership condition, see the <xref:System.Security.Policy.HashMembershipCondition>.|  
-|**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* &#124; **-hex**  *hex_string* }|Specifies code that has the given software publisher, as denoted by a certificate file, a signature on a file, or the hexadecimal representation of an X509 certificate. For more information about this membership condition, see the <xref:System.Security.Policy.PublisherMembershipCondition>.|  
-|**-site** *website*|Specifies code that has the given site of origin. For example:<br /><br /> **-site** www.proseware.com<br /><br /> For more information about this membership condition, see the <xref:System.Security.Policy.SiteMembershipCondition>.|  
-|**-strong -file** *file_name* {*name* &#124; **-noname**} {*version* &#124; **-noversion**}|Specifies code that has a specific strong name, as designated by the file name, the assembly name as a string, and the assembly version in the format *major*.*minor*.*build*.*revision*. For example:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> For more information about this membership condition, see the <xref:System.Security.Policy.StrongNameMembershipCondition>.|  
-|**-url** *URL*|Specifies code that originates from the given URL. The URL must include a protocol, such as http:// or ftp://. Additionally, a wildcard character (\*) can be used to specify multiple assemblies from a particular URL. **Note:**  Because a URL can be identified using multiple names, using a URL as a membership condition is not a safe way to ascertain the identity of code. Where possible, use a strong name membership condition, a publisher membership condition, or the hash membership condition. <br /><br /> For more information about this membership condition, see the <xref:System.Security.Policy.UrlMembershipCondition>.|  
+|**-hash** *hashAlg* {**-hex** *hashValue* &#124; **-file** *assembly_file* }|Specifies code that has the given assembly hash. To use a hash as a code group membership condition, you must specify either the hash value or the assembly file. For more information about this membership condition, see <xref:System.Security.Policy.HashMembershipCondition?displayProperty=nameWithType>.|  
+|**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* &#124; **-hex**  *hex_string* }|Specifies code that has the given software publisher, as denoted by a certificate file, a signature on a file, or the hexadecimal representation of an X509 certificate. For more information about this membership condition, see <xref:System.Security.Policy.PublisherMembershipCondition?displayProperty=nameWithType>.|  
+|**-site** *website*|Specifies code that has the given site of origin. For example:<br /><br /> `-site** www.proseware.com`<br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.SiteMembershipCondition?displayProperty=nameWithType>.|  
+|**-strong -file** *file_name* {*name* &#124; **-noname**} {*version* &#124; **-noversion**}|Specifies code that has a specific strong name, as designated by the file name, the assembly name as a string, and the assembly version in the format *major*.*minor*.*build*.*revision*. For example:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=nameWithType>.|  
+|**-url** *URL*|Specifies code that originates from the given URL. The URL must include a protocol, such as http:// or ftp://. Additionally, a wildcard character (\*) can be used to specify multiple assemblies from a particular URL. **Note:**  Because a URL can be identified using multiple names, using a URL as a membership condition is not a safe way to ascertain the identity of code. Where possible, use a strong name membership condition, a publisher membership condition, or the hash membership condition. <br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>.|  
 |**-zone** *zonename*|Specifies code with the given zone of origin. The *zonename* argument can be one of the following values: **MyComputer**, **Intranet**, **Trusted**, **Internet**, or **Untrusted**. For more information about this membership condition, see the <xref:System.Security.Policy.ZoneMembershipCondition> Class.|  
   
  The *flags* argument, which can be used with the **–addgroup** and **–chggroup** options, is specified using one of the following.  
   
 |Argument|Description|  
 |--------------|-----------------|  
-|**-description "** *description* **"**|If used with the **–addgroup** option, specifies the description for a code group to add. If used with the **–chggroup** option, specifies the description for a code group to edit. The *description* argument must be enclosed in double quotes.|  
+|**-description** "*description*"|If used with the **–addgroup** option, specifies the description for a code group to add. If used with the **–chggroup** option, specifies the description for a code group to edit. The *description* argument must be enclosed in double quotes.|  
 |**-exclusive** {**on**&#124;**off**}|When set to **on**, indicates that only the permission set associated with the code group you are adding or modifying is considered when some code fits the membership condition of the code group. When this option is set to **off**, Caspol.exe considers the permission sets of all matching code groups in the policy level.|  
 |**-levelfinal** {**on**&#124;**off**}|When set to **on**, indicates that no policy level below the level in which the added or modified code group occurs is considered. This option is typically used at the machine policy level. For example, if you set this flag for a code group at the machine level and some code matches this code group's membership condition, Caspol.exe does not calculate or apply the user level policy for this code.|  
-|**-name "** *name* **"**|If used with the **–addgroup** option, specifies the scripting name for a code group to add. If used with the **-chggroup** option, specifies the scripting name for a code group to edit. The *name* argument must be enclosed in double quotes. The *name* argument cannot begin with a number, and can only contain A-Z, 0-9, and the underscore character. Code groups can be referred to by this *name* instead of by their numeric label. The *name* is also highly useful for scripting purposes.|  
+|**-name** "*name*"|If used with the **–addgroup** option, specifies the scripting name for a code group to add. If used with the **-chggroup** option, specifies the scripting name for a code group to edit. The *name* argument must be enclosed in double quotes. The *name* argument cannot begin with a number, and can only contain A-Z, 0-9, and the underscore character. Code groups can be referred to by this *name* instead of by their numeric label. The *name* is also highly useful for scripting purposes.|  
   
 ## Remarks  
  Security policy is expressed using three policy levels: machine policy, user policy, and enterprise policy. The set of permissions that an assembly receives is determined by the intersection of the permission sets allowed by these three policy levels. Each policy level is represented by a hierarchical structure of code groups. Every code group has a membership condition that determines which code is a member of that group. A named permission set is also associated with each code group. This permission set specifies the permissions the runtime allows code that satisfies the membership condition to have. A code group hierarchy, along with its associated named permission sets, defines and maintains each level of security policy. You can use the**–user**, **-customuser**, **–machine** and **-enterprise** options to set the level of security policy.  
@@ -126,13 +126,13 @@ caspol [options]
   
  Assume that a permission set containing a custom permission has been added to machine policy. This custom permission is implemented in `MyPerm.exe`, and `MyPerm.exe` references classes in `MyOther.exe`. Both assemblies must be added to the full trust assembly list. The following command adds the `MyPerm.exe` assembly to the full trust list for the machine policy.  
   
-```  
+```console  
 caspol -machine -addfulltrust MyPerm.exe  
 ```  
   
  The following command adds the `MyOther.exe` assembly to the full trust list for the machine policy.  
   
-```  
+```console  
 caspol -machine -addfulltrust MyOther.exe  
 ```  
   
@@ -140,13 +140,13 @@ caspol -machine -addfulltrust MyOther.exe
   
  The following command adds a child code group to the root of the machine policy code group hierarchy. The new code group is a member of the **Internet** zone and is associated with the **Execution** permission set.  
   
-```  
+```console  
 caspol -machine -addgroup 1.  -zone Internet Execution  
 ```  
   
  The following command adds a child code group that gives the share \\\netserver\netshare local intranet permissions.  
   
-```  
+```console  
 caspol -machine -addgroup 1. -url \\netserver\netshare\* LocalIntranet  
 ```  
   
@@ -154,7 +154,7 @@ caspol -machine -addgroup 1. -url \\netserver\netshare\* LocalIntranet
   
  The following command adds the `Mypset` permission set to the user policy.  
   
-```  
+```console  
 caspol -user -addpset Mypset.xml Mypset  
 ```  
   
@@ -162,13 +162,13 @@ caspol -user -addpset Mypset.xml Mypset
   
  The following command changes the permission set in the user policy of the code group labeled 1.2. to the **Execution** permission set.  
   
-```  
+```console  
 caspol -user -chggroup 1.2. Execution  
 ```  
   
  The following command changes the membership condition in the default policy of the code group labeled 1.2.1. and changes the setting of the **exclusive** flag. The membership condition is defined to be code that originates from the **Internet** zone and the **exclusive** flag is switched on.  
   
-```  
+```console  
 caspol -chggroup 1.2.1. -zone Internet -exclusive on  
 ```  
   
@@ -176,7 +176,7 @@ caspol -chggroup 1.2.1. -zone Internet -exclusive on
   
  The following command changes the permission set with name `Mypset` to the permission set contained in `newpset.xml`. Note that the current release does not support changing permission sets that are being used by the code group hierarchy.  
   
-```  
+```console  
 caspol -chgpset Mypset newpset.xml  
 ```  
   
@@ -184,7 +184,7 @@ caspol -chgpset Mypset newpset.xml
   
  The following command causes the user policy's root code group (labeled 1) to be associated with the **Nothing** named permission set. This prevents Caspol.exe from running.  
   
-```  
+```console  
 caspol -force -user -chggroup 1 Nothing  
 ```  
   
@@ -192,7 +192,7 @@ caspol -force -user -chggroup 1 Nothing
   
  The following command recovers the most recently saved machine policy.  
   
-```  
+```console  
 caspol -machine -recover  
 ```  
   
@@ -200,7 +200,7 @@ caspol -machine -recover
   
  The following command removes the code group labeled 1.1. If this code group has any child code groups, those groups are also deleted.  
   
-```  
+```console  
 caspol -remgroup 1.1.  
 ```  
   
@@ -208,13 +208,13 @@ caspol -remgroup 1.1.
   
  The following command removes the **Execution** permission set from the user policy.  
   
-```  
+```console  
 caspol -user -rempset Execution  
 ```  
   
  The following command removes `Mypset` from the user policy level.  
   
-```  
+```console  
 caspol -rempset MyPset  
 ```  
   
@@ -222,13 +222,13 @@ caspol -rempset MyPset
   
  The following command shows all code groups of the machine policy that `myassembly` belongs to.  
   
-```  
+```console  
 caspol -machine -resolvegroup myassembly  
 ```  
   
  The following command shows all code groups of the machine, enterprise, and specified custom user policy that `myassembly` belongs to.  
   
-```  
+```console  
 caspol -customall "c:\config_test\security.config" -resolvegroup myassembly  
 ```  
   
@@ -236,10 +236,10 @@ caspol -customall "c:\config_test\security.config" -resolvegroup myassembly
   
  The following command calculates the permissions for `testassembly` based on the machine and user policy levels.  
   
-```  
+```console  
 caspol -all -resolveperm testassembly  
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+ [Tools](index.md)  
+ [Command Prompts](developer-command-prompt-for-vs.md)

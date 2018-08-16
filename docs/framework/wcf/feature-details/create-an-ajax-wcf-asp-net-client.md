@@ -1,5 +1,5 @@
 ---
-title: Create an AJAX-Enabled WCF Service and an ASP.NET Client
+title: Create an AJAX-Enabled WCF Service and an ASP.NET Client in Visual Studio
 ms.date: 08/17/2018
 ms.assetid: 95012df8-2a66-420d-944a-8afab261013e
 ---
@@ -41,41 +41,41 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 ## Create an AJAX-enabled WCF service
 
-1.  Right-click the SandwichServices project in **Solution Explorer** and select **Add** > **New Item**.
+1. Right-click the SandwichServices project in **Solution Explorer** and select **Add** > **New Item**.
 
 1. In the **Add New Item** dialog, expand the **Installed** > **Visual C#** > **Web** category, and then select the **WCF Service (AJAX-enabled)** template.
 
    ![WCF Service (AJAX-enabled) item template in Visual Studio](../media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 
-2.  Name the service **CostService** and then select **Add**.
+1. Name the service **CostService** and then select **Add**.
 
    *CostService.svc.cs* opens in the editor.
 
-5.  Implement the operation in the service. Add the following method to the CostService class to calculate the cost of a quantity of sandwiches:
+1. Implement the operation in the service. Add the following method to the CostService class to calculate the cost of a quantity of sandwiches:
 
-   ```csharp
-   [OperationContract]
-   public double CostOfSandwiches(int quantity)
-   {
-       return 1.25 * quantity;
-   }
-   ```
+    ```csharp
+    [OperationContract]
+    public double CostOfSandwiches(int quantity)
+    {
+        return 1.25 * quantity;
+    }
+    ```
 
 ## Configure the client to access the service
 
-1.  Open the *WebForm1.aspx* file and select the **Design** view.
+1. Open the *WebForm1.aspx* file and select the **Design** view.
 
-2.  From the **View** menu, select **Toolbox**.
+2. From the **View** menu, select **Toolbox**.
 
-3.  Expand the **AJAX Extensions** node and drag and drop a **ScriptManager** onto the form.
+3. Expand the **AJAX Extensions** node and drag and drop a **ScriptManager** onto the form.
 
-4.  Back in the **Source** view, add the following code between the **\<ScriptManager>** tags to specify the path to the WCF service:
+4. Back in the **Source** view, add the following code between the **\<ScriptManager>** tags to specify the path to the WCF service:
 
-   ```html
-   <Services>
-      <asp:ServiceReference Path="~/CostService.svc" />
-   </Services>
-   ```
+    ```html
+    <Services>
+       <asp:ServiceReference Path="~/CostService.svc" />
+    </Services>
+    ```
 
 1. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
 

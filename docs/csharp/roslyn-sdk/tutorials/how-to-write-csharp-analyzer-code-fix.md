@@ -74,7 +74,7 @@ The template also shows the basic features that are part of any analyzer:
 
 You register actions in your override of <xref:Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)?displayProperty=nameWithType> method. In this tutorial, you'll visit **syntax nodes** looking for local declarations, and see which of those have constant values. If a declaration could be constant, your analyzer will create and report a diagnostic.
 
-The first step is to update the registration constants and `Initialize` method so these indicate your "Make Const" analyzer. Open **MakeConstAnalyzer.cs** in Visual Studio. Change the registered action from one that acts on symbols to one that acts on syntax. In the `MakeConstAnalyzerAnalyzer.Initialize` method, find the line that registers the action on symbols:
+The first step is to update the registration constants and `Initialize` method so these constants indicate your "Make Const" analyzer. Open **MakeConstAnalyzer.cs** in Visual Studio. Change the registered action from one that acts on symbols to one that acts on syntax. In the `MakeConstAnalyzerAnalyzer.Initialize` method, find the line that registers the action on symbols:
 
 ```csharp
 context.RegisterSymbolAction(AnalyzeSymbol, SymbolKind.NamedType);
@@ -86,7 +86,7 @@ Replace it with the following line:
 
 After that change, you can delete the `AnalyzeSymbol` method. This analyzer examines <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.LocalDeclarationStatement?displayProperty=nameWithType>, not <xref:Microsoft.CodeAnalysis.SymbolKind.NamedType?displayProperty=nameWithType> statements. Notice that `AnalyzeNode` has red squiggles under it. The code you just added references an `AnalyzeNode` method that hasn't been declared. Right-click on `AnalyzeNode` and select **Generate new method**. That creates a stub for your `AnalyzeNode` method.
 
-Every analyzer contains string constants that represent the analyzer title, the message format, and the description. The template creates constants that represent the "make upper case" example. You need to change those constants. The template uses string resources for those values, and you should follow that practice for easier localization. Open the **Resources.resx** file for the **MakeConst** analyzer project. This displays the resource editor, as shown in the following figure:
+Every analyzer contains string constants that represent the analyzer title, the message format, and the description. The template creates constants that represent the "make upper case" example. Change those constants. The template uses string resources for those values, and you should follow that practice for easier localization. Open the **Resources.resx** file for the **MakeConst** analyzer project. This displays the resource editor, as shown in the following figure:
 
 ![Update string resources](media/how-to-write-csharp-analyzer-code-fix/update-string-resources.png)
 
@@ -119,7 +119,7 @@ The first step is to find local declarations. Add the following code to `Analyze
 var localDeclaration = (LocalDeclarationStatementSyntax)context.Node;
 ```
 
-This cast always succeeds because your analyzer registered for changes to local declarations, and only local declarations. No other node type triggers a call to your `AnalyzeNode` method. Next, check the declaration for any `const` modifiers. If you find them, return immediately. The follwowing code looks for any `const` modifiers on the local declaration:
+This cast always succeeds because your analyzer registered for changes to local declarations, and only local declarations. No other node type triggers a call to your `AnalyzeNode` method. Next, check the declaration for any `const` modifiers. If you find them, return immediately. The following code looks for any `const` modifiers on the local declaration:
 
 ```csharp
 // make sure the declaration isn't already const:
@@ -129,7 +129,7 @@ if (localDeclaration.Modifiers.Any(SyntaxKind.ConstKeyword))
 }
 ```
 
-Finally, you need to check that the the variable could be `const`. That means making sure it is never assigned after it is initialized.
+Finally, you need to check that the variable could be `const`. That means making sure it is never assigned after it is initialized.
 
 You'll perform some semantic analysis using the <xref:Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>. You use the `context` argument to determine whether the local variable declaration can be made `const`. A <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> represents of all semantic information in a single source file. You can learn more in the article that covers [semantic models](../work-with-semantics.md). You'll use the <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> to perform data flow analysis on the local declaration statement. Then, you use the results of this data flow analysis to ensure that the local variable isn't written with a new value anywhere else. Call the <xref:Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol%2A> extension method to retrieve the <xref:Microsoft.CodeAnalysis.ILocalSymbol> for the variable and check that it isn't contained with the <xref:Microsoft.CodeAnalysis.DataFlowAnalysis.WrittenOutside%2A?displayProperty=nameWithType> collection of the data flow analysis. Add the following code to `AnalyzeNode` after the closing brace of the `foreach` loop:
 
@@ -197,7 +197,7 @@ Next, format the new declaration to match C# formatting rules. Formatting your c
 
 [!code-csharp[Format the new declaration](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
 
-You have to add a new namespace for this code. Click the light bulb and add the suggested `using`. The final step is to make your edit. There are three steps to this process:
+A new namespace is required for this code. Click the light bulb and add the suggested `using`. The final step is to make your edit. There are three steps to this process:
 
 1. Get a handle to the existing document.
 1. Create a new document by replacing the existing declaration with the new declaration.
@@ -215,11 +215,11 @@ Notice that if you type const before each variable, the warnings are automatical
 
 ## Build data driven tests
 
-Your analyzer and code fix work on a simple case of a single declaration that can be made const. There are a lot of possible declaration statements where this implementation makes mistakes. You'll address these by working with the unit test library written by the template. It's much faster than repeatedly opening a second copy of Visual Studio.
+Your analyzer and code fix work on a simple case of a single declaration that can be made const. There are numerous possible declaration statements where this implementation makes mistakes. You'll address these cases by working with the unit test library written by the template. It's much faster than repeatedly opening a second copy of Visual Studio.
 
 Open the **MakeConstUnitTests.cs** file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `Test1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `Test2` shows the pattern for reporting a diagnostic and running the code fix.
 
-The code for almost every test for your analyzer follows one of these two patterns. For the first step, you can rework these test as data driven tests. Then, it will be easy to create new tests by adding new string constants to represent different test inputs.
+The code for almost every test for your analyzer follows one of these two patterns. For the first step, you can rework these tests as data driven tests. Then, it will be easy to create new tests by adding new string constants to represent different test inputs.
 
 For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While your refactoring, rename both methods to better names. Replace `Test1` with this test that ensures no diagnostic is raised:
 
@@ -270,9 +270,9 @@ Run these two tests to make sure they pass. In Visual Studio, open the **Test Ex
 
 ## Create tests for valid declarations
 
-As a general rule, analyzers should exist as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement.  There are a number of tests to add for declarations that should not raise your diagnostic. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those, the case where a variable is assigned after being initialized. Add the following string constant to your tests to represent that case:
+As a general rule, analyzers should exist as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement.  There are a number of tests to add for declarations that should not raise your diagnostic. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following string constant to your tests to represent that case:
 
-[!code-csharp[variable assigned](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being iniitalized won't raise the diagnostic")]
+[!code-csharp[variable assigned](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being initialized won't raise the diagnostic")]
 
 Then, add a data row for this test as shown in the snippet below:
 
@@ -293,9 +293,9 @@ This test passes as well. Next, add constants for conditions you haven't handled
 
    [!code-csharp[declarations that have no initializer](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#NoInitializer "a declaration that has no initializer should not raise the diagnostic")]
 
-* Declarations where the initializer is not a constant, because they can't be compile time constants:
+* Declarations where the initializer is not a constant, because they can't be compile-time constants:
 
-   [!code-csharp[declarations where the initializer isn't const](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#InitializerNotConstant "a declaration where the initializer is not a compile time constant should not raise the diagnostic")]
+   [!code-csharp[declarations where the initializer isn't const](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#InitializerNotConstant "a declaration where the initializer is not a compile-time constant should not raise the diagnostic")]
 
 All of the preceding conditions are complicated a C# rule that allows multiple declarations as part of one statement. Consider the following test case string constant:
 
@@ -318,13 +318,13 @@ Run your tests again, and you'll see these new test cases fail.
 
 ## Update your analyzer to ignore correct declarations
 
-You need to make some enhancements to your analyzer's `AnalyzeNode` method to filter out code that matches these conditions. They are all related conditions, so similar changes will fix all these conditions. You need to make the following changes to `AnalyzeNode`:
+You need some enhancements to your analyzer's `AnalyzeNode` method to filter out code that matches these conditions. They are all related conditions, so similar changes will fix all these conditions. Make the following changes to `AnalyzeNode`:
 
 * Your semantic analysis examined a single variable declaration. This code needs to be in a `foreach` loop that examines all the variables declared in the same statement.
 * Each declared variable needs to have an initializer.
 * Each declared variable's initializer must be a compile-time constant.
 
-In you `AnalyzeNode` method, replace the original semantic analysis:
+In your `AnalyzeNode` method, replace the original semantic analysis:
 
 ```csharp
 // Perform data flow analysis on the local declaration.
@@ -379,7 +379,7 @@ The first `foreach` loop examines each variable declaration using syntactic anal
 
 ## Add the final polish
 
-You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that you're analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant. Add a source string constant for that condition:
+You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant. Add a source string constant for that condition:
 
 [!code-csharp[Mismatched types don't raise diagnostics](~/samples/csharp/roslyn-sdk/Tutorials/MakeConstMakeConst.Test/MakeConstUnitTests.cs#DeclarationIsInvalid "When the variable type and the constant type don't match, there's no diagnostic")]
 
@@ -387,7 +387,7 @@ In addition, reference types are not handled properly. The only constant value a
 
 [!code-csharp[Reference types don't raise diagnostics](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsntString "When the variable type is a reference type other than string, there's no diagnostic")]
 
-To be thorough, you need to add another test to make sure that you can create a constant declaration for a string. Note that the following snippet defines both the code that raises the diagnostic, and the code after the fix has been applied:
+To be thorough, you need to add another test to make sure that you can create a constant declaration for a string. The following snippet defines both the code that raises the diagnostic, and the code after the fix has been applied:
 
 [!code-csharp[string reference types raise diagnostics](~/samples/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#ConstantIsString "When the variable type is string, it can be constant")]
 
@@ -441,7 +441,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 }
 ```
 
-You need to write a bit more code in your code fix provider to replace the var' keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following:
+You must write a bit more code in your code fix provider to replace the var' keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
 
 * Check if the declaration is a `var` declaration, and if it is:
 * Create a new type for the inferred type.

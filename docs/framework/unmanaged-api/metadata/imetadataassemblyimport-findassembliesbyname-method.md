@@ -46,7 +46,7 @@ HRESULT FindAssembliesByName (
   
  `ppIUnk`  
  [in] An array of type [IUnknown](/cpp/atl/iunknown) in which to put the `IMetadataAssemblyImport` interface pointers.  
-  
+  <!-- Link at previous line is wrong displayed in localizate versions -->
  `cMax`  
  [out] The maximum number of interface pointers that can be placed in `ppIUnk`.  
   

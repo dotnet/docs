@@ -20,8 +20,6 @@ The Windows Resource Localization Editor, Winres.exe, is a visual layout tool th
 
 Winres.exe is installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
-At the command prompt, type the following:
-
 ## Syntax
 
 ```
@@ -29,7 +27,7 @@ winres resourceFile
 winres /?
 ```
 
-## Remarks
+## Arguments
 
 |Argument|Description|
 |--------------|-----------------|
@@ -38,6 +36,8 @@ winres /?
 |Option|Description|
 |------------|-----------------|
 |**/?**|Displays command syntax and options for the tool.|
+
+## Remarks
 
 The state of UI elements from a form in a Windows Forms project are typically stored in resource files, which are either XML-based files with the extension .resx or the corresponding compiled, binary versions with the extension .resources. Winres.exe is a tool that enables limited editing of either type of file outside of the Visual Studio design environment. Specifically, it allows the following types of editing operations:
 
@@ -65,7 +65,7 @@ Although Visual Studio provides an integrated development and localization envir
 
 ## Using Winres.exe
 
-To localize using Winres.exe, you must first develop an application using a visual designer like the **Windows Forms Designer** in Visual Studio. When development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the **Localizable** property in the Properties editor) to `true`, and then hand off the .resx file for the default culture to a third-party localizer. This .resx file contains extra information that Winres.exe uses to recreate a design-time version of the original form.
+To localize using Winres.exe, you must first develop an application using a visual designer like the **Windows Forms Designer** in Visual Studio. When development is complete, set the form's <xref:System.ComponentModel.LocalizableAttribute> (the **Localizable** property in the **Properties** editor) to `true`, and then hand off the .resx file for the default culture to a third-party localizer. This .resx file contains extra information that Winres.exe uses to recreate a design-time version of the original form.
 
 > [!NOTE]
 > Winres.exe cannot be used to edit the default resource file. Winres.exe interprets all changed properties as localized properties and saves them to the target culture resource file.

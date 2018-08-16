@@ -4,6 +4,7 @@ ms.date: 08/15/2018
 helpviewer_keywords:
   - "Winres.exe"
   - "Windows Forms Resource Editor"
+  - "Windows Resource Localization Editor"
   - "localization"
   - "Windows Forms, localization"
   - "forms, localizing"

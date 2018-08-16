@@ -200,22 +200,19 @@ var results = DirectionsProcessor.GetDirections(start, end)
 ```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
 {
-    if (self != null && to != null)
+    if (self == null || to == null)
     {
-        var type = typeof(T);
-        var ignoreList = new List<string>(ignore);
-
-        // Selects the properties which have unequal values into a sequence of those properties.
-        var unequalProperties = from pi in type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                                where !ignoreList.Contains(pi.Name)
-                                let selfValue = type.GetProperty(pi.Name).GetValue(self, null)
-                                let toValue = type.GetProperty(pi.Name).GetValue(to, null)
-                                where selfValue != toValue && (selfValue == null || !selfValue.Equals(toValue))
-                                select new { Prop = pi.Name, selfValue, toValue };
-        return !unequalProperties.Any();
+        return self == to;
     }
-
-    return self == to;
+    
+    // Selects the properties which have unequal values into a sequence of those properties.
+    var unequalProperties = from property in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                            where !ignore.Contains(property.Name)
+                            let selfValue = property.GetValue(self, null)
+                            let toValue = property.GetValue(to, null)
+                            where !Equals(selfValue, toValue)
+                            select property;
+    return !unequalProperties.Any();
 }
 ```
 

@@ -15,7 +15,7 @@ ms.date: 09/11/2017
 
 Windows:
 
-`dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture] [-SharedRuntime] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress [-ProxyUseDefaultCredentials]] [--Verbose] [--Help]`
+`dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture] [-SharedRuntime] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress] [-ProxyUseDefaultCredentials] [--Verbose] [--Help]`
 
 macOS/Linux:
 

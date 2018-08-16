@@ -5,9 +5,11 @@ ms.assetid: 49ba6cb0-cdd2-4571-aeaa-25bf0f40e9b3
 ---
 # How to: Create a LINQ to DataSet project In Visual Studio
 
-The different types of LINQ projects require certain assembly references and imported namespaces (Visual Basic) or `using` directives (C#). The minimum requirement for LINQ is a reference to *System.Core.dll* and a `using` directive for <xref:System.Linq>. These are supplied by default if you create a new C# console app project in Visual Studio. Additionally, LINQ to DataSet requires references to *System.Data.dll* and *System.Data.DataSetExtensions.dll*.
+The different types of LINQ projects require certain assembly references and imported namespaces (Visual Basic) or [using](../../../csharp/language-reference/keywords/using-directive.md) directives (C#). The minimum requirement for LINQ is a reference to *System.Core.dll* and a `using` directive for <xref:System.Linq>.
 
-If you're upgrading a project from an earlier version of Visual Studio, you might have to supply these LINQ-related references manually.
+These requirements are supplied by default if you create a new C# console app project in Visual Studio 2017. If you're upgrading a project from an earlier version of Visual Studio, you might have to supply these LINQ-related references manually.
+
+LINQ to DataSet requires two additional references to *System.Data.dll* and *System.Data.DataSetExtensions.dll*.
 
 > [!NOTE]
 > If you're building from a command prompt, you must manually reference the LINQ-related DLLs in *%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.5*.

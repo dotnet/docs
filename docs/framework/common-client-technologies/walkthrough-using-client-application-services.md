@@ -10,9 +10,10 @@ helpviewer_keywords:
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
 ---
 # Walkthrough: Using Client Application Services
+
 This topic describes how to create a Windows application that uses client application services to authenticate users and retrieve user roles and settings.
 
- In this walkthrough, you perform the following tasks:
+In this walkthrough, you perform the following tasks:
 
 -   Create a Windows Forms application and use the Visual Studio project designer to enable and configure client application services.
 
@@ -29,14 +30,15 @@ This topic describes how to create a Windows application that uses client applic
 -   Enable offline mode. You will provide a check box so that users can specify their connection status. You will then use this value to specify whether the client application service providers will use locally cached data instead of accessing their Web services. Finally, you will re-authenticate the current user when the application returns to online mode.
 
 ## Prerequisites
- You need the following component to complete this walkthrough:
+
+You need the following component to complete this walkthrough:
 
 -   Visual Studio 2008.
 
 ## Creating the Client Application
  The first thing that you will do is create a Windows Forms project. This walkthrough uses Windows Forms because more people are familiar with it, but the process is similar for Windows Presentation Foundation (WPF) projects.
 
-#### To create a client application and enable client application services
+### To create a client application and enable client application services
 
 1.  In Visual Studio, select the **File &#124; New &#124; Project** menu option.
 
@@ -67,7 +69,7 @@ This topic describes how to create a Windows application that uses client applic
 
  In the following procedure, you create and configure the AppServices Web service.
 
-#### To create and configure the application services host
+### To create and configure the application services host
 
 1.  In **Solution Explorer**, select the ClientAppServicesDemo solution, and then on the **File** menu, select **Add &#124; New Project**.
 
@@ -80,7 +82,7 @@ This topic describes how to create a Windows application that uses client applic
      A new ASP.NET Web service application project is added to the solution, and the Service1.asmx.vb or Service1.asmx.cs file appears in the editor.
 
     > [!NOTE]
-    >  The Service1.asmx.vb or Service1.asmx.cs file is not used in this example. If you want to keep your work environment uncluttered, you can close it and delete it from **Solution Explorer**.
+    > The Service1.asmx.vb or Service1.asmx.cs file is not used in this example. If you want to keep your work environment uncluttered, you can close it and delete it from **Solution Explorer**.
 
 5.  In **Solution Explorer**, select the AppServices project, and then on the **Project** menu, select **AppServices Properties**.
 
@@ -99,7 +101,7 @@ This topic describes how to create a Windows application that uses client applic
      The `authenticationService`, `profileService`, and `roleService` elements in this markup enable and configure the application services. For testing purposes, the `requireSSL` attribute of the `authenticationService` element is set to "false". The `readAccessProperties` and `writeAccessProperties` attributes of the `profileService` element indicate that the `WebSettingsTestText` property is read/write.
 
     > [!NOTE]
-    >  In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](http://go.microsoft.com/fwlink/?LinkId=91844).
+    > In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](http://go.microsoft.com/fwlink/?LinkId=91844).
 
     ```xml
     <system.web.extensions>
@@ -131,7 +133,7 @@ This topic describes how to create a Windows application that uses client applic
 
  In the following procedure, you use the ASP.NET Web Site Administration tool to complete the service configuration and populate the local database file. You will add two users named `employee` and `manager` belonging to two roles with the same names. The user passwords are `employee!` and `manager!` respectively.
 
-#### To configure membership and roles
+### To configure membership and roles
 
 1.  In **Solution Explorer**, select the AppServices project, and then on the **Project** menu, select **ASP.NET Configuration**.
 
@@ -183,7 +185,7 @@ This topic describes how to create a Windows application that uses client applic
      A success message appears.
 
     > [!NOTE]
-    >  The **Email**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.
+    > The **Email**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.
 
 13. Click **Continue**.
 
@@ -227,7 +229,7 @@ This topic describes how to create a Windows application that uses client applic
 ## Adding Forms Authentication
  In the following procedure, you add code to the main form that attempts to validate the user, and denies access when the user supplies invalid credentials. You use a hard-coded user name and password to test the service.
 
-#### To validate the user in your application code
+### To validate the user in your application code
 
 1.  In **Solution Explorer**, in the ClientAppServicesDemo project, add a reference to the System.Web assembly.
 
@@ -256,7 +258,7 @@ This topic describes how to create a Windows application that uses client applic
  You can now press F5 to run the application, and because you provide a correct user name and password, you will see the form.
 
 > [!NOTE]
->  If you are unable to run the application, try stopping the ASP.NET Development Server. When the server restarts, verify that the port is set to 55555.
+> If you are unable to run the application, try stopping the ASP.NET Development Server. When the server restarts, verify that the port is set to 55555.
 
  To see the error message instead, change the <xref:System.Web.Security.Membership.ValidateUser%2A> parameters. For example, replace the second `"manager!"` parameter with an incorrect password like `"MANAGER"`.
 
@@ -265,7 +267,7 @@ This topic describes how to create a Windows application that uses client applic
 
  In the following procedure, you configure your application to use a credentials provider, and then change your <xref:System.Web.Security.Membership.ValidateUser%2A> method call to pass <xref:System.String.Empty> for both parameters. The empty strings signal the <xref:System.Web.Security.Membership.ValidateUser%2A> method to call the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> method of the configured credentials provider.
 
-#### To configure your application to use a credentials provider
+### To configure your application to use a credentials provider
 
 1.  In **Solution Explorer**, select the ClientAppServicesDemo project, and then on the **Project** menu, select **ClientAppServicesDemo Properties**.
 
@@ -298,7 +300,7 @@ This topic describes how to create a Windows application that uses client applic
 
  Separate procedures are provided for Visual Basic and C# because Visual Basic provides a **Login Form** template. This saves some time and coding effort.
 
-##### To create a login dialog box as a credentials provider in Visual Basic
+#### To create a login dialog box as a credentials provider in Visual Basic
 
 1.  In **Solution Explorer**, select the ClientAppServicesDemo project, and then on the **Project** menu, select **Add New Item**.
 
@@ -328,9 +330,9 @@ This topic describes how to create a Windows application that uses client applic
 
      [!code-vb[ClientApplicationServices#120](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Login.vb#120)]
 
- The following C# procedure provides the entire code listing for a simple login dialog box. The layout for this dialog box is a bit crude, but the important part is the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> implementation.
+The following C# procedure provides the entire code listing for a simple login dialog box. The layout for this dialog box is a bit crude, but the important part is the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> implementation.
 
-##### To create a login dialog box as a credentials provider in C#
+#### To create a login dialog box as a credentials provider in C#
 
 1.  In **Solution Explorer**, select the ClientAppServicesDemo project, and then on the **Project** menu, select **Add Class**.
 
@@ -342,15 +344,15 @@ This topic describes how to create a Windows application that uses client applic
 
      [!code-csharp[ClientApplicationServices#200](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Login.cs#200)]
 
- You can now run the application and see the login dialog box appear. To test this code, try different credentials, both valid and invalid, and confirm that you can access the form only with valid credentials. Valid user names are `employee` and `manager` with passwords `employee!` and `manager!` respectively.
+You can now run the application and see the login dialog box appear. To test this code, try different credentials, both valid and invalid, and confirm that you can access the form only with valid credentials. Valid user names are `employee` and `manager` with passwords `employee!` and `manager!` respectively.
 
 > [!NOTE]
->  Do not select **Remember me** at this point or you will not be able to login as another user until you implement logout later in this walkthrough.
+> Do not select **Remember me** at this point or you will not be able to login as another user until you implement logout later in this walkthrough.
 
 ## Adding Role-Based Functionality
  In the following procedure, you add a button to the form and display it only for users in the manager role.
 
-#### To change the user interface based on user role
+### To change the user interface based on user role
 
 1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the Visual Studio main menu.
 
@@ -378,19 +380,19 @@ This topic describes how to create a Windows application that uses client applic
      If the user is in the "manager" role, the `DisplayButtonForManagerRole` method sets the <xref:System.Windows.Forms.Control.Visible%2A> property of the `managerOnlyButton` to `true`. This method also displays an error message if a <xref:System.Net.WebException> is thrown, which indicates that the roles service is unavailable.
 
     > [!NOTE]
-    >  The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication, as shown in the example code for this walkthrough. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=nameWithType> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).
+    > The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication, as shown in the example code for this walkthrough. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=nameWithType> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).
 
      [!code-csharp[ClientApplicationServices#030](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#030)]
      [!code-vb[ClientApplicationServices#030](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#030)]
 
- If authentication is successful, the client authentication provider sets the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Web.ClientServices.ClientRolePrincipal> class. This class implements the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method so that the work is delegated to the configured role provider. As before, your application code does not require a direct reference to the service provider.
+If authentication is successful, the client authentication provider sets the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Web.ClientServices.ClientRolePrincipal> class. This class implements the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method so that the work is delegated to the configured role provider. As before, your application code does not require a direct reference to the service provider.
 
- You can now run the application and log in as employee to see that the button does not appear, and then log in as manager to see the button.
+You can now run the application and log in as employee to see that the button does not appear, and then log in as manager to see the button.
 
 ## Accessing Web Settings
  In the following procedure, you add a text box to the form and bind it to a Web setting. Like the previous code that uses authentication and roles, your settings code does not access the settings provider directly. Instead, it uses the strongly-typed `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) generated for your project by Visual Studio.
 
-#### To use Web settings in your user interface
+### To use Web settings in your user interface
 
 1.  Make sure that the **ASP.NET Web Development Server** is still running by checking the notification area of the taskbar. If you have stopped the server, restart the application (which starts the server automatically) then close the login dialog box.
 
@@ -427,7 +429,7 @@ This topic describes how to create a Windows application that uses client applic
      [!code-vb[ClientApplicationServices#040](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#040)]
 
     > [!NOTE]
-    >  You will typically use data binding to enable automatic two-way communication between a control and a Web setting. However, you can also access Web settings directly as shown in the following example:
+    > You will typically use data binding to enable automatic two-way communication between a control and a Web setting. However, you can also access Web settings directly as shown in the following example:
 
      [!code-csharp[ClientApplicationServices#322](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#322)]
      [!code-vb[ClientApplicationServices#322](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#322)]
@@ -458,12 +460,12 @@ This topic describes how to create a Windows application that uses client applic
 
      [!code-csharp[ClientApplicationServices#015](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#015)]
 
- To test the application at this point, run it multiple times as both employee and manager, and type different values into the text box. The values will persist across sessions on a per-user basis.
+To test the application at this point, run it multiple times as both employee and manager, and type different values into the text box. The values will persist across sessions on a per-user basis.
 
 ## Implementing Logout
  When the user selects the **Remember me** check box when logging in, the application will automatically authenticate the user on subsequent runs. Automatic authentication will then continue while the application is in offline mode or until the authentication cookie expires. Sometimes, however, multiple users will need access to the application or a single user might occasionally log in with different credentials. To enable this scenario, you must implement logout functionality, as described in the following procedure.
 
-#### To implement logout functionality
+### To implement logout functionality
 
 1.  In the Form1 designer, add a <xref:System.Windows.Forms.Button> control to the form from the **ToolBox**.
 
@@ -482,14 +484,14 @@ This topic describes how to create a Windows application that uses client applic
      [!code-csharp[ClientApplicationServices#070](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#070)]
      [!code-vb[ClientApplicationServices#070](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#070)]
 
- To test the logout functionality, run the application and select **Remember me** on the Login dialog box. Next, close and restart the application to confirm that you no longer have to log in. Finally, restart the application by clicking Log out.
+To test the logout functionality, run the application and select **Remember me** on the Login dialog box. Next, close and restart the application to confirm that you no longer have to log in. Finally, restart the application by clicking Log out.
 
 ## Enabling Offline Mode
  In the following procedure, you add a check box to the form to enable the user to enter offline mode. Your application indicates offline mode by setting the `static` <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A?displayProperty=nameWithType> property to `true`. The offline status is stored on the local hard disk at the location indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> property. This means that the offline status is stored on a per-user, per-application basis.
 
  In offline mode, all client application service requests retrieve data from the local cache instead of trying to access the services. In the default configuration, the local data includes an encrypted form of the user's password. This enables the user to log in while the application is in offline mode. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).
 
-#### To enable offline mode in your application
+### To enable offline mode in your application
 
 1.  In **Solution Explorer**, in the ClientAppServicesDemo project, select Form1 and then select **View &#124; Designer** from the Visual Studio main menu.
 
@@ -506,7 +508,7 @@ This topic describes how to create a Windows application that uses client applic
      This code updates the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> value and silently revalidates the user when they return to online mode. The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A?displayProperty=nameWithType> method uses the cached credentials so that the user does not have to explicitly log in. If the authentication service is unavailable, a warning message appears and the application stays offline.
 
     > [!NOTE]
-    >  The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A> method is for convenience only. Because it does not have a return value, it cannot indicate whether revalidation has failed. Revalidation can fail, for example, if the user credentials have changed on the server. In this case, you might want to include code that explicitly validates users after a service call fails. For more information, see the Accessing Web Settings section earlier in this walkthrough.
+    > The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A> method is for convenience only. Because it does not have a return value, it cannot indicate whether revalidation has failed. Revalidation can fail, for example, if the user credentials have changed on the server. In this case, you might want to include code that explicitly validates users after a service call fails. For more information, see the Accessing Web Settings section earlier in this walkthrough.
 
      After revalidation, this code saves any changes to the local Web settings by calling the `SaveSettings` method that you added previously. It then retrieves any new values on the server by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method of the project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic).
 
@@ -518,7 +520,7 @@ This topic describes how to create a Windows application that uses client applic
      [!code-csharp[ClientApplicationServices#014](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#014)]
      [!code-vb[ClientApplicationServices#014](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#014)]
 
- This completes the example application. To test the offline capability, run the application, log in as either employee or manager, and then select **Work offline**. Modify the value in the text box, and then close the application. Restart the application. Before you log in, right-click the ASP.NET Development Server icon in the notification area of the taskbar and then click **Stop**. Then, log in like normal. Even when the server is not running, you can still log in. Modify the text box value, exit, and restart to see the modified value.
+This completes the example application. To test the offline capability, run the application, log in as either employee or manager, and then select **Work offline**. Modify the value in the text box, and then close the application. Restart the application. Before you log in, right-click the ASP.NET Development Server icon in the notification area of the taskbar and then click **Stop**. Then, log in like normal. Even when the server is not running, you can still log in. Modify the text box value, exit, and restart to see the modified value.
 
 ## Summary
  In this walkthrough, you learned how to enable and use client application services in a Windows Forms application. After setting up a test server, you added code to your application to authenticate users and retrieve user roles and application settings from the server. You also learned how to enable offline mode so that your application uses a local data cache instead of the remote services when connectivity is not available.
@@ -529,9 +531,10 @@ This topic describes how to create a Windows application that uses client applic
  To increase the security of your application, make sure to thoroughly test the application and server before deployment.
 
 ## See Also
- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)
- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)
- [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)
- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)
- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
- [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)
+
+- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)
+- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)
+- [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)
+- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)
+- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
+- [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)

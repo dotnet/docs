@@ -11,6 +11,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Regasm.exe (Assembly Registration Tool)
+
 The Assembly Registration tool reads the metadata within an assembly and adds the necessary entries to the registry, which allows COM clients to create .NET Framework classes transparently. Once a class is registered, any COM client can use it as though the class were a COM class. The class is registered only once, when the assembly is installed. Instances of classes within the assembly cannot be created from COM until they are actually registered.
 
  To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
@@ -43,7 +44,7 @@ regasm assemblyFile [options]
 |**/?** or **/help**|Displays command syntax and options for the tool.|
 
 > [!NOTE]
->  The Regasm.exe command-line options are case insensitive. You only need to provide enough of the option to uniquely identify it. For example, **/n** is equivalent to **/nologo** and **/t:** *outfile.tlb* is equivalent to **/tlb:** *outfile.tlb*.
+> The Regasm.exe command-line options are case insensitive. You only need to provide enough of the option to uniquely identify it. For example, **/n** is equivalent to **/nologo** and **/t:** *outfile.tlb* is equivalent to **/tlb:** *outfile.tlb*.
 
 ## Remarks
  You can use the **/regfile** option to generate a .reg file that contains the registry entries instead of making the changes directly to the registry. You can update the registry on a computer by importing the .reg file with the Registry Editor tool (Regedit.exe). Note that the .reg file does not contain any registry updates that can be made by user-defined register functions.  Note that the **/regfile** option only emits registry entries for managed classes.  This option does not emit entries for `TypeLibID`s or `InterfaceID`s.
@@ -76,8 +77,9 @@ regasm myTest.dll /tlb:myTest.tlb
 ```
 
 ## See Also
- [Tools](../../../docs/framework/tools/index.md)
- [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
- [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+
+- [Tools](../../../docs/framework/tools/index.md)
+- [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)
+- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
+- [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 ---
 # Windows Workflow Foundation Feature Specifics
+
 [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
 
 ## Messaging Activities
@@ -348,7 +349,8 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 4.  Conceptual documentation: [Workflow Tracking and Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 
 ## SQL Workflow Instance Store
- The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL Server-based implementation of an instance store. An instance store stores the state of a running instance together with all data necessary to load and resume that instance. The service host instructs the instance store to save the instance state if the workflow persists, and it instructs the instance store to load the instance state when a message arrives for that instance or a delay activity expires.
+
+The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL Server-based implementation of an instance store. An instance store stores the state of a running instance together with all data necessary to load and resume that instance. The service host instructs the instance store to save the instance state if the workflow persists, and it instructs the instance store to load the instance state when a message arrives for that instance or a delay activity expires.
 
 ### Getting Started
 

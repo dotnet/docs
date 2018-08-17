@@ -9,17 +9,18 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Create COM Wrappers
+
 You can create Component Object Model (COM) wrappers by using Visual Studio 2005 features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
 -   A [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
 
 -   A [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
 
- In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
+In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
 
 ## Wrapping COM Objects in a Managed Application
 
-#### To create a runtime callable wrapper using Visual Studio
+### To create a runtime callable wrapper using Visual Studio
 
 1.  Open the project for your managed application.
 
@@ -34,9 +35,9 @@ You can create Component Object Model (COM) wrappers by using Visual Studio 2005
  You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] or a `Using` statement for [!INCLUDE[csprcslong](../../../includes/csprcslong-md.md)].
 
 > [!NOTE]
->  If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies](http://go.microsoft.com/fwlink/?LinkId=50479) (PIAs) from the Microsoft Download Center. In step 4, select the latest version of the object library available for the Office product you want, such as the **Microsoft Word 11.0 Object Library**.
+> If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies](http://go.microsoft.com/fwlink/?LinkId=50479) (PIAs) from the Microsoft Download Center. In step 4, select the latest version of the object library available for the Office product you want, such as the **Microsoft Word 11.0 Object Library**.
 
-#### To create a runtime callable wrapper using .NET Framework tools
+### To create a runtime callable wrapper using .NET Framework tools
 
 -   Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.
 
@@ -44,7 +45,7 @@ You can create Component Object Model (COM) wrappers by using Visual Studio 2005
 
 ## Wrapping Managed Objects in a Native Application
 
-#### To create a COM callable wrapper using Visual Studio
+### To create a COM callable wrapper using Visual Studio
 
 1.  Create a Class Library project for the managed class that you want to run in native code. The class must have a default constructor.
 
@@ -58,7 +59,7 @@ You can create Component Object Model (COM) wrappers by using Visual Studio 2005
 
  When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio 2005, you can use the assembly by clicking **Add Reference** on the **Project** menu.
 
-#### To create a COM callable wrapper using .NET Framework tools
+### To create a COM callable wrapper using .NET Framework tools
 
 -   Run the [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool.
 
@@ -67,5 +68,6 @@ You can create Component Object Model (COM) wrappers by using Visual Studio 2005
  You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.
 
 ## See Also
- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)
- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)
+
+- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)
+- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)

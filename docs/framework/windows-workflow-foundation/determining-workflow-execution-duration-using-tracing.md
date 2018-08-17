@@ -4,9 +4,10 @@ ms.date: "03/30/2017"
 ms.assetid: f04ad0fd-edc7-4cbc-8979-356f2a1131c4
 ---
 # Determining Workflow Execution Duration Using Tracing
+
 This topic demonstrates how to determine the time it takes for a successfully completed, self-hosted workflow to execute by using workflow tracing.
 
-### To determine workflow application execution duration by using workflow tracing
+## To determine workflow application execution duration by using workflow tracing
 
 1.  Open Visual Studio 2010.  Select **File**, **New**, **Project**.  Under **C#**, select the **Workflow** node.  Select **Workflow Console Application** from the list of templates.  Name the new project `WorkflowDurationTracing` and click **OK**.
 
@@ -27,6 +28,7 @@ This topic demonstrates how to determine the time it takes for a successfully co
  **WorkflowInstance Id: '1bbac57b-3322-498e-9e27-8833fda3a5bf' has completed in the Closed state.**
 
 ## See Also
- [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+
+- [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)
+- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)
+- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

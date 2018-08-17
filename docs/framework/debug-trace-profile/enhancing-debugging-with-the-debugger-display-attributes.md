@@ -17,9 +17,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Enhancing Debugging with the Debugger Display Attributes
+
 Debugger display attributes allow the developer of the type, who specifies and best understands the runtime behavior of that type, to also specify what that type will look like when it is displayed in a debugger. In addition, debugger display attributes that provide a `Target` property can be applied at the assembly level by users without knowledge of the source code. The <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute controls how a type or member is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute determines if and how a field or property is displayed in the debugger variable windows. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute specifies a substitute type, or a proxy, for a type and changes the way the type is displayed in debugger windows. When you view a variable that has a proxy, or substitute type, the proxy stands in for the original type in the debugger display window**.** The debugger variable windowdisplays only the public members of the proxy type. Private members are not displayed.
 
 ## Using the DebuggerDisplayAttribute
+
  The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as an expression. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.
 
 ```csharp
@@ -35,7 +37,8 @@ class MyHashtable
  For example, if a C# object has an overridden `ToString()`, the debugger will call the override and show its result instead of the standard `{<typeName>}.` Thus, if you have overridden `ToString()`, you do not need to use <xref:System.Diagnostics.DebuggerDisplayAttribute>. If you use both, the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute takes precedence over the `ToString()` override.
 
 ## Using the DebuggerBrowsableAttribute
- Apply the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to a field or property to specify how the field or property is to be displayed in the debugger window. The constructor for this attribute takes one of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration values, which specifies one of the following states:
+
+Apply the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to a field or property to specify how the field or property is to be displayed in the debugger window. The constructor for this attribute takes one of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration values, which specifies one of the following states:
 
 -   <xref:System.Diagnostics.DebuggerBrowsableState.Never> indicates that the member is not displayed in the data window.  For example, using this value for the <xref:System.Diagnostics.DebuggerBrowsableAttribute> on a field removes the field from the hierarchy; the field is not displayed when you expand the enclosing type by clicking the plus sign (+) for the type instance.
 
@@ -44,9 +47,9 @@ class MyHashtable
 -   <xref:System.Diagnostics.DebuggerBrowsableState.RootHidden> indicates that the member itself is not shown, but its constituent objects are displayed if it is an array or collection.
 
 > [!NOTE]
->  The <xref:System.Diagnostics.DebuggerBrowsableAttribute> is not supported by Visual Basic in the .NET Framework version 2.0.
+> The <xref:System.Diagnostics.DebuggerBrowsableAttribute> is not supported by Visual Basic in the .NET Framework version 2.0.
 
- The following code example shows the use of the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to prevent the property following it from appearing in the debug window for the class.
+The following code example shows the use of the <xref:System.Diagnostics.DebuggerBrowsableAttribute> to prevent the property following it from appearing in the debug window for the class.
 
 ```csharp
 [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -96,6 +99,7 @@ class MyHashtable : Hashtable
  [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#1)]
 
 ## See Also
- <xref:System.Diagnostics.DebuggerDisplayAttribute>
- <xref:System.Diagnostics.DebuggerBrowsableAttribute>
- <xref:System.Diagnostics.DebuggerTypeProxyAttribute>
+
+- <xref:System.Diagnostics.DebuggerDisplayAttribute>
+- <xref:System.Diagnostics.DebuggerBrowsableAttribute>
+- <xref:System.Diagnostics.DebuggerTypeProxyAttribute>

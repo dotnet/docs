@@ -4,11 +4,12 @@ ms.date: "03/30/2017"
 ms.assetid: 0202d3f1-a50b-427d-a5bb-79208b8f1c22
 ---
 # Web Services IXmlSerializable Technology Sample
+
 [Download Sample](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/IXmlSerializable.zip.exe)
 
- This sample shows how to use <xref:System.Xml.Serialization.IXmlSerializable> to control the serialization of custom types in ASP.NET Web Services.
+This sample shows how to use <xref:System.Xml.Serialization.IXmlSerializable> to control the serialization of custom types in ASP.NET Web Services.
 
-### To build the sample using Visual Studio
+## To build the sample using Visual Studio
 
 1.  Open Visual Studio 2005 and select **New Web Site** from the **File** menu.
 
@@ -37,12 +38,13 @@ ms.assetid: 0202d3f1-a50b-427d-a5bb-79208b8f1c22
 2.  Type **http://localhost/IXmlSerializable/Service.asmx**.
 
 ## See Also
- <xref:System.Xml.Serialization.IXmlSerializable>
- <xref:System.Xml.Serialization>
- <xref:System.Xml.XmlConvert>
- <xref:System.Xml.XmlQualifiedName>
- <xref:System.Xml.XmlReader>
- <xref:System.Xml.Schema.XmlSchema>
- <xref:System.Xml.Schema.XmlSchemaSet>
- <xref:System.Xml.XmlUrlResolver>
- <xref:System.Xml.XmlWriter>
+
+- <xref:System.Xml.Serialization.IXmlSerializable>
+- <xref:System.Xml.Serialization>
+- <xref:System.Xml.XmlConvert>
+- <xref:System.Xml.XmlQualifiedName>
+- <xref:System.Xml.XmlReader>
+- <xref:System.Xml.Schema.XmlSchema>
+- <xref:System.Xml.Schema.XmlSchemaSet>
+- <xref:System.Xml.XmlUrlResolver>
+- <xref:System.Xml.XmlWriter>

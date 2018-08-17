@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8ee7bc16-e609-469a-a3e8-8062952e2676
 ---
 # Activity Localization
+
 When workflow applications and components have the potential to be localized into other cultures and languages, resource strings should be used so that they can be localized without recompiling.
 
 ## Activity Localization
@@ -11,7 +12,7 @@ When workflow applications and components have the potential to be localized int
 
  The following exercise demonstrates how to use a resource file.
 
-#### Using resource files for localized strings
+### Using resource files for localized strings
 
 1.  In Visual Studio 2010, right-click your project in **Solution Explorer** and select **Add…**, **New Item…**.
 

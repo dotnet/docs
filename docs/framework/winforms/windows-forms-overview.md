@@ -7,10 +7,12 @@ helpviewer_keywords:
 ms.assetid: 3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4
 ---
 # Windows Forms Overview
+
 The following overview discusses the advantages of smart client applications, the main features of Windows Forms programming, and how you can use Windows Forms to build smart clients that meet the needs of today's enterprises and end users.
 
 ## Windows Forms and Smart Client Applications
- With Windows Forms you develop smart clients. *Smart clients* are graphically rich applications that are easy to deploy and update, can work when they are connected to or disconnected from the Internet, and can access resources on the local computer in a more secure manner than traditional Windows-based applications.
+
+With Windows Forms you develop smart clients. *Smart clients* are graphically rich applications that are easy to deploy and update, can work when they are connected to or disconnected from the Internet, and can access resources on the local computer in a more secure manner than traditional Windows-based applications.
 
 ### Building Rich, Interactive User Interfaces
  Windows Forms is a smart client technology for the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], a set of managed libraries that simplify common application tasks such as reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network.
@@ -87,10 +89,11 @@ The following overview discusses the advantages of smart client applications, th
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)|
 
 ## See Also
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
- [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)
- [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
- [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)
- [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+
+- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+- [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)
+- [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)
+- [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
+- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

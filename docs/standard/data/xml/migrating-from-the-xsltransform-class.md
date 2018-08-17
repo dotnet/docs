@@ -10,7 +10,8 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Migrating From the XslTransform Class
-The XSLT architecture was redesigned in the Visual Studio 2005 release. The <xref:System.Xml.Xsl.XslTransform> class has been replaced by the <xref:System.Xml.Xsl.XslCompiledTransform> class.
+
+The XSLT architecture was redesigned in the Visual Studio 2005 release. The <xref:System.Xml.Xsl.XslTransform> class was replaced by the <xref:System.Xml.Xsl.XslCompiledTransform> class.
 
  The following sections describe some of the main differences between the <xref:System.Xml.Xsl.XslCompiledTransform> and the <xref:System.Xml.Xsl.XslTransform> classes.
 
@@ -112,5 +113,6 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 -   Schema-related XPath extension functions: These functions are not supported natively by <xref:System.Xml.Xsl.XslCompiledTransform>. However, they can be implemented as extension functions.
 
 ## See Also
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)

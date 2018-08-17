@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 ---
 # Security in Windows Forms Overview
+
 Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], all code running on a user's computer had the same rights or permissions to access resources that a user of the computer had. For example, if the user was allowed to access the file system, the code was allowed to access the file system; if the user was allowed to access a database, the code was allowed to access that database. Although these rights or permissions may be acceptable for code in executables that the user has explicitly installed on the local computer, they may not be acceptable for potentially malicious code coming from the Internet or a local Intranet. This code should not be able to access the user's computer resources without permission.
 
  The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] introduces an infrastructure called Code Access Security that lets you differentiate the permissions, or rights, that code has from the rights that the user has. By default, code coming from the Internet and the Intranet can only run in what is known as partial trust. Partial trust subjects an application to a series of restrictions: among other things, an application is restricted from accessing the local hard disk, and cannot run unmanaged code. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] controls the resources that code is allowed to access based on the identity of that code: where it came from, whether it has a [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md), whether it is signed with a certificate, and so on.
@@ -77,9 +78,10 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  If you have deployed your Windows Forms application by using Visual Studio, you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).
 
 ## See Also
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)
- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)
+
+- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)
+- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)
+- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

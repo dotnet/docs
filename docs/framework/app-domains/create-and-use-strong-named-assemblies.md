@@ -16,6 +16,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Creating and Using Strong-Named Assemblies
+
 <a name="top"></a> A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)
 
 > [!WARNING]
@@ -33,7 +34,8 @@ ms.author: "ronpet"
 
 <a name="strong_name_scenario"></a>
 ## Strong Name Scenario
- The following scenario outlines the process of signing an assembly with a strong name and later referencing it by that name.
+
+The following scenario outlines the process of signing an assembly with a strong name and later referencing it by that name.
 
 1.  Assembly A is created with a strong name using one of the following methods:
 
@@ -48,15 +50,16 @@ ms.author: "ronpet"
 4.  The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at run time, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET Framework security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.
 
 > [!NOTE]
->  This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.
+> This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.
 
  [Back to top](#top)
 
 <a name="bypassing_signature_verification"></a>
 ## Bypassing Signature Verification of Trusted Assemblies
- Starting with the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], strong-name signatures are not validated when an assembly is loaded into a full-trust application domain, such as the default application domain for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies, regardless of their signature. The strong-name bypass feature avoids the unnecessary overhead of strong-name signature verification of full-trust assemblies in this situation, allowing the assemblies to load faster.
 
- The bypass feature applies to any assembly that is signed with a strong name and that has the following characteristics:
+Starting with the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], strong-name signatures are not validated when an assembly is loaded into a full-trust application domain, such as the default application domain for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies, regardless of their signature. The strong-name bypass feature avoids the unnecessary overhead of strong-name signature verification of full-trust assemblies in this situation, allowing the assemblies to load faster.
+
+The bypass feature applies to any assembly that is signed with a strong name and that has the following characteristics:
 
 -   Fully trusted without <xref:System.Security.Policy.StrongName> evidence (for example, has `MyComputer` zone evidence).
 
@@ -66,9 +69,9 @@ ms.author: "ronpet"
 
 -   Not delay-signed.
 
- This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).
+This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).
 
- [Back to top](#top)
+[Back to top](#top)
 
 <a name="related_topics"></a>
 ## Related Topics

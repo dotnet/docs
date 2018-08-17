@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2f3aade6-facc-44ef-9657-a407ef8b9b31
 ---
 # How to: Create a Custom Activity Designer
+
 Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a "drop zone" where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.
 
  Custom activity designers typically inherit from <xref:System.Activities.Presentation.ActivityDesigner> which is the default base activity designer type for any activities without a specific designer. This type provides the design-time experience of interacting with the property grid and configuring basic aspects such as managing colors and icons.
@@ -18,7 +19,7 @@ Custom activity designers are typically implemented so that their associated act
 
 2.  The second procedure describes how to create a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter> that provides the functionality needed to edit of a collection of contained elements. This procedure is based on the [Custom Composite Designers - Workflow Items Presenter](../../../docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter.md) sample.
 
-### To create a custom activity designer with a drop zone using WorkflowItemPresenter
+## To create a custom activity designer with a drop zone using WorkflowItemPresenter
 
 1.  Start Visual Studio 2010.
 
@@ -337,9 +338,10 @@ Custom activity designers are typically implemented so that their associated act
     ```
 
 ## See Also
- <xref:System.Activities.Presentation.ActivityDesigner>
- <xref:System.Activities.Presentation.WorkflowItemPresenter>
- <xref:System.Activities.Presentation.WorkflowItemsPresenter>
- <xref:System.Activities.Presentation.WorkflowViewElement>
- <xref:System.Activities.Presentation.Model.ModelItem>
- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)
+
+- <xref:System.Activities.Presentation.ActivityDesigner>
+- <xref:System.Activities.Presentation.WorkflowItemPresenter>
+- <xref:System.Activities.Presentation.WorkflowItemsPresenter>
+- <xref:System.Activities.Presentation.WorkflowViewElement>
+- <xref:System.Activities.Presentation.Model.ModelItem>
+- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)

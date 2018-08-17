@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
 ---
 # Troubleshooting Setup Issues
+
 This topic describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.
 
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0
@@ -19,7 +20,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
 
 -   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0
 
- The keys are not re-created if you run repair by using the .NET Framework 3.0 installer launched from the **Add/Remove Programs** applet in **Control Panel**. To recreate these keys correctly, the user must uninstall and reinstall the .NET Framework 3.0.
+The keys are not re-created if you run repair by using the .NET Framework 3.0 installer launched from the **Add/Remove Programs** applet in **Control Panel**. To recreate these keys correctly, the user must uninstall and reinstall the .NET Framework 3.0.
 
 ## WMI Service Corruption Blocks Installation of the Windows Communication Foundation WMI provider during installation of .NET Framework 3.0 package
  WMI Service Corruption may block the installation of the Windows Communication Foundation WMI provider. During installation the Windows Communication Foundation installer is unable to register the WCF .mof file using the mofcomp.exe component. The following is a list of symptoms:
@@ -44,11 +45,11 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
 
      File name: 'C:\WINDOWS\system32\wbem\mofcomp.exe
 
- The following steps must be followed to resolve the problem described previously.
+The following steps must be followed to resolve the problem described previously.
 
 1.  Run [the WMI Diagnosis Utility, version 2.0](http://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](http://go.microsoft.com/fwlink/?LinkId=94686) topic.
 
- Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.
+Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.
 
 ## Repairing .NET Framework 3.0 after .NET Framework 3.5 Installation Removes Configuration Elements Introduced by .NET Framework 3.5 in machine.config
  If you do a repair of .NET Framework 3.0 after you installed [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)], configuration elements introduced by [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] in machine.config are removed. However, the web.config remains intact. The workaround is to repair [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] after this via ARP, or use the [WorkFlow Service Registration Tool (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) with the `/c` switch.
@@ -68,4 +69,5 @@ aspnet_regiis.exe -i -enable
 ```
 
 ## See Also
- [Set-Up Instructions](../../../docs/framework/wcf/samples/set-up-instructions.md)
+
+- [Set-Up Instructions](../../../docs/framework/wcf/samples/set-up-instructions.md)

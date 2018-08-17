@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
 ---
 # NativeActivity Base Class
+
 <xref:System.Activities.NativeActivity> is an abstract class with a protected constructor. Like <xref:System.Activities.CodeActivity>, <xref:System.Activities.NativeActivity> is used for writing imperative behavior by implementing an <xref:System.Activities.NativeActivity.Execute%2A> method. Unlike <xref:System.Activities.CodeActivity>, <xref:System.Activities.NativeActivity> has access to all of the exposed features of the workflow runtime through the <xref:System.Activities.NativeActivityContext> object passed to the <xref:System.Activities.NativeActivity.Execute%2A> method.
 
 ## Using NativeActivityContext
@@ -25,7 +26,7 @@ ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
 
 -   Scheduling activity actions and functions using <xref:System.Activities.NativeActivityContext.ScheduleAction%2A> and <xref:System.Activities.NativeActivityContext.ScheduleFunc%2A>.
 
-#### To create a custom activity that inherits from NativeActivity
+### To create a custom activity that inherits from NativeActivity
 
 1.  OpenVisual Studio 2010.
 

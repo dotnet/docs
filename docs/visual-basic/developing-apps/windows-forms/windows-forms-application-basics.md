@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
 ---
 # Windows Forms Application Basics (Visual Basic)
+
 An important part of Visual Basic is the ability to create Windows Forms applications that run locally on users' computers. You can use Visual Studio to create the application and user interface using Windows Forms. A Windows Forms application is built on classes from the <xref:System.Windows.Forms> namespace.
 
 ## Designing Windows Forms Applications
@@ -90,6 +91,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../framework/winforms/security-in-windows-forms-overview.md)|
 
 ## See Also
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
+- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

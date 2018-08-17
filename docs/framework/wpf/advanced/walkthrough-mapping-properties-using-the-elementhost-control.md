@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Mapping Properties Using the ElementHost Control"
-ms.date: "03/30/2017"
+ms.date: 08/18/2018
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,9 +10,10 @@ helpviewer_keywords:
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
 ---
 # Walkthrough: Mapping Properties Using the ElementHost Control
+
 This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to map [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] properties to corresponding properties on a hosted [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element.
 
- Tasks illustrated in this walkthrough include:
+Tasks illustrated in this walkthrough include:
 
 -   Creating the project.
 
@@ -22,22 +23,23 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
 
 -   Extending a default property mapping.
 
- For a complete code listing of the tasks illustrated in this walkthrough, see [Mapping Properties Using the ElementHost Control Sample](http://go.microsoft.com/fwlink/?LinkID=160018).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Mapping Properties Using the ElementHost Control Sample](http://go.microsoft.com/fwlink/?LinkID=160018).
 
- When you are finished, you will be able to map [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] properties to corresponding [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] properties on a hosted element.
+When you are finished, you will be able to map [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] properties to corresponding [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] properties on a hosted element.
 
 ## Prerequisites
- You need the following components to complete this walkthrough:
 
--   Visual Studio 2008.
+You need the following components to complete this walkthrough:
+
+-   Visual Studio 2017
 
 ## Creating the Project
 
-#### To create the project
+### To create the project
 
-1.  Create a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] application project named `PropertyMappingWithElementHost`. For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).
+1.  Create a **Windows Forms App** project named `PropertyMappingWithElementHost`.
 
-2.  In Solution Explorer, add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies.
+2.  In **Solution Explorer**, add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies.
 
     -   PresentationCore
 
@@ -62,9 +64,10 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
      [!code-vb[PropertyMappingWithElementHost#16](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#16)]
 
 ## Defining New Property Mappings
- The <xref:System.Windows.Forms.Integration.ElementHost> control provides several default property mappings. You add a new property mapping by calling the <xref:System.Windows.Forms.Integration.PropertyMap.Add%2A> method on the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A>.
 
-#### To define new property mappings
+The <xref:System.Windows.Forms.Integration.ElementHost> control provides several default property mappings. You add a new property mapping by calling the <xref:System.Windows.Forms.Integration.PropertyMap.Add%2A> method on the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A>.
+
+### To define new property mappings
 
 1.  Copy the following code into the definition for the `Form1` class.
 
@@ -87,9 +90,10 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
      The `Form1_Resize` method handles the form's <xref:System.Windows.Forms.Control.Resize> event and sizes the clipping region to fit the hosted element.
 
 ## Removing a Default Property Mapping
- Remove a default property mapping by calling the <xref:System.Windows.Forms.Integration.PropertyMap.Remove%2A> method on the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A>.
 
-#### To remove a default property mapping
+Remove a default property mapping by calling the <xref:System.Windows.Forms.Integration.PropertyMap.Remove%2A> method on the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A>.
+
+### To remove a default property mapping
 
 -   Copy the following code into the definition for the `Form1` class.
 
@@ -99,9 +103,10 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
      The `RemoveCursorMapping` method deletes the default mapping for the <xref:System.Windows.Forms.Control.Cursor%2A> property.
 
 ## Extending a Default Property Mapping
- You can use a default property mapping and also extend it with your own mapping.
 
-#### To extend a default property mapping
+You can use a default property mapping and also extend it with your own mapping.
+
+### To extend a default property mapping
 
 -   Copy the following code into the definition for the `Form1` class.
 
@@ -112,9 +117,7 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
 
      The `OnBackColorChange` method assigns a specific image to the hosted control's <xref:System.Windows.Controls.Control.Background%2A> property. The `OnBackColorChange` method is called after the default property mapping is applied.
 
-## Initializing Your Property Mappings
-
-#### To initialize your property mappings
+## Initialize your property mappings
 
 1.  Copy the following code into the definition for the `Form1` class.
 
@@ -132,9 +135,10 @@ This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration
 2.  Press F5 to build and run the application.
 
 ## See Also
- <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>
- <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
+
+- <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
+- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

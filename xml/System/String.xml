@@ -659,7 +659,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 |--------|-----------------|  
 |Create a string.|Assignment from a string literal or an existing string ([example](#Ctor1_Example))|  
 |Create a string from an entire character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%29> ([example](#Ctor2_Example))|  
-|Createa string from a portion of a character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
+|Create a string from a portion of a character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
 |Create a string that repeats the same character multiple times.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
 |Create a string from a pointer to a Unicode or wide character array.|<xref:System.String.%23ctor%28System.Char%2A%29>|  
 |Create a string from a portion of a Unicode or wide character array by using its pointer.|<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>|  

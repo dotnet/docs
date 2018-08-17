@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
 ---
 # Debugging LINQ to DataSet Queries
+
 Visual Studio 2012 supports the debugging of [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code. However, there are some differences between debugging [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code and non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] managed code. Most debugging features work with [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] statements, including stepping, setting breakpoints, and viewing results that are shown in debugger windows. However, deferred query execution in has some side effects that you should consider while debugging [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code and there are some limitations to using Edit and Continue. This topic discusses aspects of debugging that are unique to [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] compared to non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] managed code.
 
 ## Viewing Results
@@ -21,5 +22,6 @@ Visual Studio 2012 supports the debugging of [!INCLUDE[linq_dataset](../../../..
  In Visual Basic in Visual Studio, you can use Edit and Continue on non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code, even in a method that contains a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. You can add or remove code before the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] statement, even if the changes affect line number of the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. Your Visual Basic debugging experience for non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code remains the same as it was before [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] was introduced. You cannot change, add, or remove a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query, however, unless you stop debugging to apply the changes.
 
 ## See Also
- [Debugging Managed Code](/visualstudio/debugger/debugging-managed-code)
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+
+- [Debugging Managed Code](/visualstudio/debugger/debugging-managed-code)
+- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

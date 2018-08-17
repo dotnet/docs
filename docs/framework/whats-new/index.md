@@ -11,7 +11,6 @@ ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # What's new in the .NET Framework
 <a name="introduction"></a>This article summarizes key new features and improvements in the following versions of the .NET Framework:
 
@@ -1895,8 +1894,9 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
  The Portable Class Library project in Visual Studio 2012 (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
 
 ## See Also
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
- [ASP.NET](/aspnet)
- [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio)
+
+- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
+- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [ASP.NET](/aspnet)
+- [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

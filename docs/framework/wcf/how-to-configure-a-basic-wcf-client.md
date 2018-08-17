@@ -49,8 +49,9 @@ This is the fifth of six tasks required to create a basic Windows Communication 
 2.  For more information about how to use the generated client with this configuration, see [How to: Use a Client](../../../docs/framework/wcf/how-to-use-a-wcf-client.md).
 
 ## See Also
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)
- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
+
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)
+- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

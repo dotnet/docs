@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
 ---
 # MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)
+
 MageUI.exe supports the same functionality as the command-line tool Mage.exe, but with a Windows-based user interface (UI). With this tool you can create, edit, and sign deployment and application manifests. New manifests that are created with MageUI.exe target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. Previous versions of MageUI.exe should be used to target previous .NET Framework versions. When adding or removing assemblies from a manifest, or re-signing existing manifests, MageUI.exe does not update the manifest to target [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. For more information, see [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).
 
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
@@ -184,6 +185,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Select Manifest**|Allows you to choose the application manifest. All of the other fields on this page will populate when you choose an application manifest.|
 
 ## See Also
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
+- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)

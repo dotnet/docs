@@ -78,6 +78,7 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
  To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.
 
 ## See Also
- <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>
- <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>
- <xref:System.Windows.UIElement.ManipulationInertiaStarting?displayProperty=nameWithType>
+
+- <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>
+- <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>
+- <xref:System.Windows.UIElement.ManipulationInertiaStarting?displayProperty=nameWithType>

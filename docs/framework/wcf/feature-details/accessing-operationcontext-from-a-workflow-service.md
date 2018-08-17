@@ -834,6 +834,7 @@ namespace Microsoft.Samples.AccessingOperationContext.Client
  Optional comments.
 
 ## See Also
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
- [Accessing OperationContext](../../../../docs/framework/windows-workflow-foundation/samples/accessing-operationcontext.md)
- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)
+
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Accessing OperationContext](../../../../docs/framework/windows-workflow-foundation/samples/accessing-operationcontext.md)
+- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)

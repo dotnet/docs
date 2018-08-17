@@ -11,7 +11,6 @@ ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # Install the .NET Framework for developers
 
 .NET is an integral part of many apps running on Windows and provides common functionality for those apps to run. For developers, the .NET Framework provides a comprehensive and consistent programming model for building apps that have visually stunning user experiences and seamless and secure communication.
@@ -229,7 +228,7 @@ The following table lists the supported languages.
 
 ## See also
 
-[Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md)
-[Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)
-[Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md)
-[Troubleshoot Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md)
+- [Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)
+- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md)
+- [Troubleshoot Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

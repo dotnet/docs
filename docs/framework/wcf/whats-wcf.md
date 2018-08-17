@@ -87,11 +87,12 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
  The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use WCF for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for WCF-enabled applications.
 
 ## See Also
- <xref:System.ServiceModel>
- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
- [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
- [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)
- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+
+- <xref:System.ServiceModel>
+- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
+- [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)
+- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+- [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)
+- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)
+- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)

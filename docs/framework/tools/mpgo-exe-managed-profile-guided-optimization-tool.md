@@ -12,6 +12,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Mpgo.exe (Managed Profile Guided Optimization Tool)
+
 The Managed Profile Guided Optimization Tool (Mpgo.exe) is a command-line tool that uses common end-user scenarios to optimize the native image assemblies that are created by the [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). This tool enables you to run training scenarios that generate profile data. The [Native Image Generator (Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) uses this data to optimize its generated native image application assemblies. A training scenario is a trial run of an expected use of your application. Mpgo.exe is available in Visual Studio Ultimate 2012 and later versions. Starting with Visual Studio 2013, you can also use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.
 
  Profile-guided optimization improves application startup time, memory utilization (working set size), and throughput by gathering data from training scenarios and using it to optimize the layout of native images.
@@ -120,7 +121,8 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 ```
 
 ## See Also
- [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
- [Improving Launch Performance for your Desktop Applications](http://go.microsoft.com/fwlink/p/?LinkId=248943)
- [An Overview of Performance Improvements in .NET 4.5](http://go.microsoft.com/fwlink/p/?LinkId=249131)
+
+- [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Improving Launch Performance for your Desktop Applications](http://go.microsoft.com/fwlink/p/?LinkId=248943)
+- [An Overview of Performance Improvements in .NET 4.5](http://go.microsoft.com/fwlink/p/?LinkId=249131)

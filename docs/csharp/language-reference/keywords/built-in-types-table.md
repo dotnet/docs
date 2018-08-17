@@ -40,21 +40,18 @@ int x = 123;
 System.Int32 y = 123;
 ```
 
-Use the [typeof](typeof.md) operator to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the specified type.
-
-Use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the type of the specified object.
-
-The following example shows how to use the [typeof](typeof.md) operator and the <xref:System.Object.GetType%2A> method:
+Use the [typeof](typeof.md) operator to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the specified type:
 
 ```csharp
 Type stringType = typeof(string);
 Console.WriteLine(stringType.FullName);
 
-string a = "Hello, World!";
-Console.WriteLine(a.GetType().FullName);
+Type doubleType = typeof(System.Double);
+Console.WriteLine(doubleType.FullName);
+
 // Output:
 // System.String
-// System.String
+// System.Double
 ```
 
 ## See also

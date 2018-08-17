@@ -3,7 +3,7 @@ title: Use ML.NET to predict New York taxi fares (regression)
 description: Learn how to use ML.NET in a regression scenario.
 author: aditidugar
 ms.author: johalex
-ms.date: 07/02/2018
+ms.date: 08/17/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
@@ -45,7 +45,7 @@ You want to predict the price value, which is a real value, based on the other f
 
 1. Create a directory named *Data* in your project to store the data set and model files:
 
-    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
+    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type *Data* and hit Enter.
 
 1. Install the **Microsoft.ML** NuGet Package:
 

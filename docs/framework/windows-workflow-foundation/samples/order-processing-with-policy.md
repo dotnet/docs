@@ -121,7 +121,7 @@ Another Order? (Y/N): n
 
 ### To set up, build, and run the sample
 
-1.  Open the OrderProcessingPolicy.sln project file in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].
+1.  Open the OrderProcessingPolicy.sln project file in Visual Studio 2010.
 
 2.  There are two different projects in the solution: `OrderErrorLibrary` and `OrderProcessingPolicy`. The `OrderProcessingPolicy` project uses classes and methods defined in the `OrderErrorLibrary`.
 

@@ -331,7 +331,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 
 ### Getting Started
 
-1.  In [!INCLUDE[vs2010](../../../includes/vs2010-md.md)], create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.
+1.  In Visual Studio 2010, create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.
 
 2.  Open the web.config and add an ETW tracking behavior with no profile.
 

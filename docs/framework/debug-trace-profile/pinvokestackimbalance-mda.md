@@ -15,12 +15,12 @@ ms.author: "mairaw"
 ---
 # PInvokeStackImbalance MDA
 
-The PInvokeStackImbalance managed debugging assistant (MDA) is activated when the CLR detects that the stack depth after a platform invoke call does not match the expected stack depth, given the calling convention specified in the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute and the declaration of the parameters in the managed signature.
+The `PInvokeStackImbalance` managed debugging assistant (MDA) is activated when the CLR detects that the stack depth after a platform invoke call does not match the expected stack depth, given the calling convention specified in the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute and the declaration of the parameters in the managed signature.
 
-The PInvokeStackImbalance MDA is implemented only for 32-bit x86 platforms.
+The `PInvokeStackImbalance` MDA is implemented only for 32-bit x86 platforms.
 
 > [!NOTE]
-> The PInvokeStackImbalance MDA is disabled by default. In Visual Studio 2017, The PInvokeStackImbalance MDA appears in the **Managed Debugging Assistants** list in the **Exception Settings** dialog box (which is displayed when you select **Debug** > **Windows** > **Exception Settings**). However, selecting or clearing the **Break When Thrown** check box does not enable or disable the MDA; it only controls whether Visual Studio throws an exception when the MDA is activated.
+> The `PInvokeStackImbalance` MDA is disabled by default. In Visual Studio 2017, The `PInvokeStackImbalance` MDA appears in the **Managed Debugging Assistants** list in the **Exception Settings** dialog box (which is displayed when you select **Debug** > **Windows** > **Exception Settings**). However, selecting or clearing the **Break When Thrown** check box does not enable or disable the MDA; it only controls whether Visual Studio throws an exception when the MDA is activated.
 
 ## Symptoms
 

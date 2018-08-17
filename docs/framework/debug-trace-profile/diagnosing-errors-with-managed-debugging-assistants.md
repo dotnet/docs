@@ -142,7 +142,7 @@ The following example shows how to enable and configure the [marshaling](../../.
 </mdaConfig>
 ```
 
-The Marshaling MDA emits information about the managed type that is being marshaled to an unmanaged type for each managed-to-unmanaged transition in the application. The Marshaling MDA can also filter the names of the method and structure fields supplied in the **methodFilter** and **fieldFilter** child elements, respectively.
+The `Marshaling` MDA emits information about the managed type that is being marshaled to an unmanaged type for each managed-to-unmanaged transition in the application. The `Marshaling` MDA can also filter the names of the method and structure fields supplied in the **methodFilter** and **fieldFilter** child elements, respectively.
 
 The following example shows how to enable multiple MDAs by using their default settings:
 
@@ -158,7 +158,7 @@ The following example shows how to enable multiple MDAs by using their default s
 ```
 
 > [!IMPORTANT]
-> When you specify more than one assistant in a configuration file, you must list them in alphabetical order. For example, if you want to enable both the virtualCERCall and the invalidCERCall MDAs, you must add the `<invalidCERCall />` entry before the `<virtualCERCall />` entry. If the entries are not in alphabetical order, an unhandled invalid configuration file exception message is displayed.
+> When you specify more than one assistant in a configuration file, you must list them in alphabetical order. For example, if you want to enable both the `virtualCERCall` and the `invalidCERCall` MDAs, you must add the `<invalidCERCall />` entry before the `<virtualCERCall />` entry. If the entries are not in alphabetical order, an unhandled invalid configuration file exception message is displayed.
 
 ## MDA exceptions
 
@@ -168,7 +168,7 @@ When your code executes in the Visual Studio integrated development environment 
 
 ## MDA Output
 
-MDA output is similar to the following example, which shows the output from the PInvokeStackImbalance MDA:
+MDA output is similar to the following example, which shows the output from the `PInvokeStackImbalance` MDA:
 
 **A call to PInvoke function 'MDATest!MDATest.Program::StdCall' has unbalanced the stack. This is likely because the managed PInvoke signature does not match the unmanaged target signature. Check that the calling convention and parameters of the PInvoke signature match the target unmanaged signature.**
 

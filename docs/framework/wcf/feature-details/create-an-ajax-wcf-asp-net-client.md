@@ -98,7 +98,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 ## Run the program
 
-Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. It has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press **F5**. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
+Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. The button has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press **F5**. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
 
 ## Example code
 

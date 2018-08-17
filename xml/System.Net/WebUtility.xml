@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  If the `value` parameter is `null`, then the returned decoded string is `null`. If the `value` parameter is an empty string, then the returned decoded string is an empty string.  
   
@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  ]]></format>
         </remarks>
@@ -202,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  If the `value` parameter is `null`, then the returned encoded string is `null`. If the `value` parameter is an empty string, then the returned encoded string is an empty string.  
   
@@ -250,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  ]]></format>
         </remarks>
@@ -294,9 +294,7 @@
       <Docs>
         <param name="encodedValue">A URL-encoded string to decode.</param>
         <summary>Converts a string that has been encoded for transmission in a URL into a decoded string.</summary>
-        <returns>Returns <see cref="T:System.String" />.  
-  
- A decoded string.</returns>
+        <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -347,9 +345,7 @@
         <param name="offset">The offset, in bytes, from the start of the <see cref="T:System.Byte" /> array to decode.</param>
         <param name="count">The count, in bytes, to decode from the <see cref="T:System.Byte" /> array.</param>
         <summary>Converts an encoded byte array that has been encoded for transmission in a URL into a decoded byte array.</summary>
-        <returns>Returns <see cref="T:System.Byte" />.  
-  
- A decoded <see cref="T:System.Byte" /> array.</returns>
+        <returns>A decoded <see cref="T:System.Byte" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -396,9 +392,7 @@
       <Docs>
         <param name="value">The text to URL-encode.</param>
         <summary>Converts a text string into a URL-encoded string.</summary>
-        <returns>Returns <see cref="T:System.String" />.  
-  
- A URL-encoded string.</returns>
+        <returns>A URL-encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -415,7 +409,7 @@
   
 -   `!` (exclamation point)  
   
--   \* (asterisk)  
+-   `*` (asterisk)  
   
 -   `(` and `)` (opening and closing parentheses)  
   
@@ -465,9 +459,7 @@
         <param name="offset">The offset, in bytes, from the start of the <see cref="T:System.Byte" /> array to encode.</param>
         <param name="count">The count, in bytes, to encode from the <see cref="T:System.Byte" /> array.</param>
         <summary>Converts a byte array into a URL-encoded byte array.</summary>
-        <returns>Returns <see cref="T:System.Byte" />.  
-  
- An encoded <see cref="T:System.Byte" /> array.</returns>
+        <returns>An encoded <see cref="T:System.Byte" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -484,7 +476,7 @@
   
 -   `!` (exclamation point)  
   
--   '*' (asterisk)  
+-   `*` (asterisk)  
   
 -   `'` (single quotation mark)  
   

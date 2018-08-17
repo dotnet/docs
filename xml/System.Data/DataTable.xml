@@ -3059,7 +3059,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <Docs>
         <param name="table">The <see langword="DataTable" /> to be merged with the current <see langword="DataTable" />.</param>
         <param name="preserveChanges">
-          <see langword="true" />, to preserve changes in the current <see langword="DataTable" />; otherwise <see langword="false" />.<see langword="" /></param>
+          <see langword="true" />, to preserve changes in the current <see langword="DataTable" />; otherwise <see langword="false" />.</param>
         <summary>Merge the specified <see cref="T:System.Data.DataTable" /> with the current <see langword="DataTable" />, indicating whether to preserve changes in the current <see langword="DataTable" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,11 +1,11 @@
 ---
-title: "new Modifier (C# Reference)"
+title: "new modifier (C# Reference)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new modifier keyword [C#]"
 ms.assetid: a2e20856-33b9-4620-b535-a60dbce8349b
 ---
-# new Modifier (C# Reference)
+# new modifier (C# Reference)
 
 When used as a declaration modifier, the `new` keyword explicitly hides a member that is inherited from a base class. When you hide an inherited member, the derived version of the member replaces the base class version. Although you can hide members without using the `new` modifier, you get a compiler warning. If you use `new` to explicitly hide a member, it suppresses this warning.
 

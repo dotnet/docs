@@ -32,7 +32,7 @@ ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 // pragma_warning.cs  
 using System;  
   
-#pragma warning disable 414, CS3021  
+#pragma warning disable IDE0044, CS3021  
 [CLSCompliant(false)]  
 public class C  
 {  

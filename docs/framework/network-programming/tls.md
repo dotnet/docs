@@ -113,7 +113,7 @@ You must install the latest OS patches. See [Security updates](#security-updates
 
 The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF TCP transport using transport security with certificate credentials](#wcf-tcp-cert).
 
-### For .NET Framework 3.5 - 4.5.1 and not WCF
+### For .NET Framework 3.5 - 4.5.2 and not WCF
 
 We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps. At some point in the future, your application may fail until you upgrade to .NET Framework 4.7 or later versions.
 

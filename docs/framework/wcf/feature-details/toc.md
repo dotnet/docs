@@ -359,8 +359,6 @@
 #### [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](anticipating-adopting-the-wcf-easing-future-integration.md)
 #### [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](anticipating-adopting-wcf-migration.md)
 #### [Adopting Windows Communication Foundation](adopting-wcf.md)
-##### [How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation](migrate-asp-net-web-service-to-wcf.md)
-##### [How to: Migrate ASP.NET Web Service Client Code to the Windows Communication Foundation](migrate-asp-net-web-service-client-to-wcf.md)
 ### [Interoperability with POX Applications](interoperability-with-pox-applications.md)
 ## [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)
 ### [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)

@@ -85,7 +85,7 @@ Allocations on the large object heap impact performance in the following ways.
 
 - Allocation cost.
 
-  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is completely dominated by memory clearing (unless it triggers a GC). If it takes 2 cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memmory of a 16MB object on a 2GHz machine takes approximately 16ms. That's a rather large cost.
+  The CLR makes the guarantee that the memory for every new object it gives out is cleared. This means the allocation cost of a large object is completely dominated by memory clearing (unless it triggers a GC). If it takes 2 cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object. Clearing the memory of a 16MB object on a 2GHz machine takes approximately 16ms. That's a rather large cost.
 
 - Collection cost.
 

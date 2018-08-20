@@ -35,7 +35,7 @@ The following C# code example illustrates how to use platform invoke services to
 4.  Compile and run the code.  
   
 ## .NET Framework Security  
- For more information, see [.NET Framework Security](https://technet.microsoft.com/en-us/security/).  
+ For more information, see [Security in .NET](../../../standard/security/).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

@@ -2626,6 +2626,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ The default value of the `LayoutStyle` property is <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow?displayProperty=nameWithType>.
+ 
  The sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> or <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>, the sizing grip will not be displayed.  
   
    

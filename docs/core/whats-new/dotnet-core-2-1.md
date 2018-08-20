@@ -209,7 +209,7 @@ The sockets implementation introduced in .NET Core 2.1 has a number of advantage
 
 - Consistent behavior across all .NET Core platforms.
 
-<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty="nameWithType"> method:
+<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method:
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);

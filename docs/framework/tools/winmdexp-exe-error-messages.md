@@ -1,7 +1,7 @@
 ---
 title: "Winmdexp.exe Error Messages"
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "WME1095"
   - "WME1110"
   - "WME15"
@@ -152,7 +152,7 @@ f1_keywords:
   - "WME1015"
   - "WME1047"
   - "WME9"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Winmdexp.exe, error messages"
   - "Windows Runtime Metadata Export Tool, error messages"
   - "error messages, Winmdexp.exe"
@@ -161,12 +161,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Winmdexp.exe Error Messages
-The build process calls [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md) when you use the **[!INCLUDE[wrt](../../../includes/wrt-md.md)] Component** template in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], so Winmdexp.exe error messages appear in the **Error List**. Winmdexp.exe operates on a module that is compiled with the `/target:winmdobj` option. Because it requires a compiled module as input, its error messages don't appear unless compilation succeeds.  
-  
- The error messages are designed to contain all the information you need to address the error conditions they report.However, some problems require more information than will fit in the message. You can find additional information in [Diagnosing Windows Runtime component error conditions](http://go.microsoft.com/fwlink/p/?LinkId=251127) in the Windows Dev Center.  
-  
- If your error is not discussed in that article, and you feel that the message doesn't contain sufficient information to address the issue, please use the feedback link in that article and include the error message. Alternatively, you can file a bug at the [Microsoft Connect website](http://go.microsoft.com/fwlink/p/?LinkId=251130). You can also look for more information on the [Microsoft Forums](http://go.microsoft.com/fwlink/p/?LinkId=251129).  
-  
-## See Also  
- [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)  
- [Diagnosing Windows Runtime component error conditions](http://go.microsoft.com/fwlink/p/?LinkId=251127)
+
+The build process calls [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md) when you use the **[!INCLUDE[wrt](../../../includes/wrt-md.md)] Component** template in Visual Studio 2012, so Winmdexp.exe error messages appear in the **Error List**. Winmdexp.exe operates on a module that is compiled with the `/target:winmdobj` option. Because it requires a compiled module as input, its error messages don't appear unless compilation succeeds.
+
+ The error messages are designed to contain all the information you need to address the error conditions they report.However, some problems require more information than will fit in the message. You can find additional information in [Diagnosing Windows Runtime component error conditions](http://go.microsoft.com/fwlink/p/?LinkId=251127) in the Windows Dev Center.
+
+ If your error is not discussed in that article, and you feel that the message doesn't contain sufficient information to address the issue, please use the feedback link in that article and include the error message. Alternatively, you can file a bug at the [Microsoft Connect website](http://go.microsoft.com/fwlink/p/?LinkId=251130). You can also look for more information on the [Microsoft Forums](http://go.microsoft.com/fwlink/p/?LinkId=251129).
+
+## See Also
+
+- [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)
+- [Diagnosing Windows Runtime component error conditions](http://go.microsoft.com/fwlink/p/?LinkId=251127)

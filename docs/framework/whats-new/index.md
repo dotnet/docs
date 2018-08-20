@@ -2,28 +2,27 @@
 title: "What's new in the .NET Framework"
 ms.custom: "updateeachrelease"
 ms.date: "04/10/2018"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "what's new [.NET Framework]"
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # What's new in the .NET Framework
-<a name="introduction"></a>This article summarizes key new features and improvements in the following versions of the .NET Framework:  
- 
-[.NET Framework 4.7.2](#v472)   
-[.NET Framework 4.7.1](#v471)    
-[.NET Framework 4.7](#v47)   
-[.NET Framework 4.6.2](#v462)   
-[.NET Framework 4.6.1](#v461)   
-[.NET 2015 and .NET Framework 4.6](#v46)   
-[.NET Framework 4.5.2](#v452)   
-[.NET Framework 4.5.1](#v451)   
-[.NET Framework 4.5](#v45)   
+<a name="introduction"></a>This article summarizes key new features and improvements in the following versions of the .NET Framework:
+
+[.NET Framework 4.7.2](#v472)
+[.NET Framework 4.7.1](#v471)
+[.NET Framework 4.7](#v47)
+[.NET Framework 4.6.2](#v462)
+[.NET Framework 4.6.1](#v461)
+[.NET 2015 and .NET Framework 4.6](#v46)
+[.NET Framework 4.5.2](#v452)
+[.NET Framework 4.5.1](#v451)
+[.NET Framework 4.5](#v45)
 
 This article does not provide comprehensive information about each new feature and is subject to change. For general information about the .NET Framework, see [Getting Started](../../../docs/framework/get-started/index.md). For supported platforms, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md).
 
@@ -37,7 +36,7 @@ This article does not provide comprehensive information about each new feature a
 The .NET Framework 4.7.2 builds on previous versions of the .NET Framework 4.x by adding many new fixes and several new features while remaining a very stable product.
 
 ### Downloading and installing the .NET Framework 4.7.2
- 
+
 You can download the .NET Framework 4.7.2  from the following locations:
 
 - [.NET Framework 4.7.2 Web Installer](http://go.microsoft.com/fwlink/?LinkId=863262)
@@ -46,7 +45,7 @@ You can download the .NET Framework 4.7.2  from the following locations:
 
 The .NET Framework 4.7.2 can be installed on Windows 10, Windows 8.1, Windows 7 SP1, and the corresponding server platforms starting with Windows Server 2008 R2 SP1. You can install the .NET Framework 4.7.2 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
-You can target the .NET Framework 4.7.2 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=874338). 
+You can target the .NET Framework 4.7.2 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=874338).
 
 ### What's new in the .NET Framework 4.7.2
 
@@ -59,7 +58,7 @@ The .NET Framework 4.7.2 includes new features in the following areas:
 - [WPF](#wpf472)
 - [ClickOnce](#ClickOnce472)
 
-A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
+A continuing focus in the .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in the .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
 <a name="core-472" />
 
@@ -78,7 +77,7 @@ using (RSA rsa = RSA.Create())
    rsa.ImportParameters(rsaParameters);
    // Other code to execute using the RSA instance.
 }
-``` 
+```
 
 ```vb
 ' Before .NET Framework 4.7.2
@@ -86,7 +85,7 @@ Using rsa = RSA.Create()
    rsa.ImportParameters(rsaParameters)
    ' Other code to execute using the rsa instance.
 End Using
-``` 
+```
 with code like this:
 ```csharp
 // Starting with .NET Framework 4.7.2
@@ -94,13 +93,13 @@ using (RSA rsa = RSA.Create(rsaParameters))
 {
    // Other code to execute using the rsa instance.
 }
-``` 
+```
 ```vb
 ' Starting with .NET Framework 4.7.2
 Using rsa = RSA.Create(rsaParameters)
    ' Other code to execute using the rsa instance.
 End Using
-``` 
+```
 
 The <xref:System.Security.Cryptography.DSA.Create(System.Int32)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Create(System.Int32)?displayProperty=nameWithType> methods let you generate new <xref:System.Security.Cryptography.DSA> or <xref:System.Security.Cryptography.RSA> keys with a specific key size. For example:
 
@@ -109,19 +108,19 @@ using (DSA dsa = DSA.Create(2048))
 {
    // Other code to execute using the dsa instance.
 }
-``` 
+```
 ```vb
 Using dsa = DSA.Create(2048)
    ' Other code to execute using the dsa instance.
 End Using
-``` 
+```
 
 **Rfc2898DeriveBytes constructors accept a hash algorithm name**
 
 The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class has three new constructors with a <xref:System.Security.Cryptography.HashAlgorithmName> parameter that identifies the HMAC algorithm to use when deriving keys. Instead of using SHA-1, developers should use a SHA-2-based HMAC like SHA-256, as shown in the following example:
 
 ```csharp
-private static byte[] DeriveKey(string password, out int iterations, out byte[] salt, 
+private static byte[] DeriveKey(string password, out int iterations, out byte[] salt,
                                 out HashAlgorithmName algorithm)
 {
    iterations = 100000;
@@ -130,16 +129,16 @@ private static byte[] DeriveKey(string password, out int iterations, out byte[] 
    const int SaltSize = 32;
    const int DerivedValueSize = 32;
 
-   using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, SaltSize, 
+   using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, SaltSize,
                                                              iterations, algorithm))
    {
       salt = pbkdf2.Salt;
       return pbkdf2.GetBytes(DerivedValueSize);
    }
-} 
+}
 ```
 ```vb
-Private Shared Function DeriveKey(password As String, ByRef iterations As Integer, 
+Private Shared Function DeriveKey(password As String, ByRef iterations As Integer,
                                   ByRef salt AS Byte(), ByRef algorithm As HashAlgorithmName) As Byte()
    iterations = 100000
    algorithm = HashAlgorithmName.SHA256
@@ -151,7 +150,7 @@ Private Shared Function DeriveKey(password As String, ByRef iterations As Intege
       salt = pbkdf2.Salt
       Return pbkdf2.GetBytes(DerivedValueSize)
    End Using
-End Function 
+End Function
 ```
 
 **Support for ephemeral keys**
@@ -187,12 +186,12 @@ Dim cStream = New CryptoStream(stream, transform, mode, leaveOpen:=true)
 
 **Decompression changes in DeflateStream**
 
-Starting with the .NET Framework 4.7.2, the implementation of decompression operations in the <xref:System.IO.Compression.DeflateStream> class has changed to use native Windows APIs by default. Typically, this results in a substantial performance improvement. 
+Starting with the .NET Framework 4.7.2, the implementation of decompression operations in the <xref:System.IO.Compression.DeflateStream> class has changed to use native Windows APIs by default. Typically, this results in a substantial performance improvement.
 
 Support for decompression by using Windows APIs is enabled by default for applications that target .NET Framework 4.7.2. Applications that target earlier versions of .NET Framework but are running under .NET Framework 4.7.2 can opt into this behavior by adding the following [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to the application configuration file:
 
 ```xml
-<AppContextSwitchOverrides value="Switch.System.IO.Compression.DoNotUseNativeZipLibraryForDecompression=false" /> 
+<AppContextSwitchOverrides value="Switch.System.IO.Compression.DoNotUseNativeZipLibraryForDecompression=false" />
 ```
 
 **Additional collection APIs**
@@ -207,7 +206,7 @@ The .NET Framework 4.7.2 adds a number of new APIs to the <xref:System.Collectio
    - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer);](xref:System.Linq.Enumerable.ToHashSet%2A)
 - New <xref:System.Collections.Generic.HashSet%601> constructors that let you set the collection's capacity, which yields a performance benefit when you know the size of the <xref:System.Collections.Generic.HashSet%601> in advance:
    - [public HashSet(int capacity)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32))
-   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))  
+   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))
 
 The <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class includes new overloads of the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> methods to retrieve a value from the dictionary or to add it if it is not found, and to add a value to the dictionary or to update it if it already exists.
 
@@ -235,12 +234,12 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 
 - Use setter-based and interface-based injection in [handlers and modules](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [Page instances](xref:System.Web.UI.Page), and [user controls](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx) of ASP.NET web site projects.
 
-- Plug in different dependency injection frameworks. 
+- Plug in different dependency injection frameworks.
 
 **Support for same-site cookies**
 
 [SameSite](https://tools.ietf.org/html/draft-west-first-party-cookies-07) prevents a browser from sending a cookie along with a cross-site request. The .NET Framework 4.7.2 adds a <xref:System.Web.HttpCookie.SameSite?displayProperty=nameWithType> property whose value is a <xref:System.Web.SameSiteMode?displayProperty=nameWithType> enumeration member. If its value is <xref:System.Web.SameSiteMode.Strict?displayProperty=nameWithType> or <xref:System.Web.SameSiteMode.Lax?displayProperty=nameWithType>, ASP.NET adds the `SameSite` attribute to the set-cookie header. SameSite support applies to <xref:System.Web.HttpCookie> objects, as well as to <xref:System.Web.Security.FormsAuthentication> and <xref:System.Web.SessionState> cookies.
- 
+
 You can set SameSite for an <xref:System.Web.HttpCookie> object as follows:
 
 ```csharp
@@ -300,7 +299,7 @@ NET Framework 4.7.2 adds supports for enclave-based Always Encrypted. The origin
 
 - <xref:System.Data.SqlClient.SqlConnectionStringBuilder.EnclaveAttestationUrl?displayProperty=nameWithType>, which specifies the Uri for enclave-based Always Encrypted.
 
-- <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider>, which is an abstract class from which all enclave providers are derived. 
+- <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider>, which is an abstract class from which all enclave providers are derived.
 
 - <xref:System.Data.SqlClient.SqlEnclaveSession>, which encapsulates the state for a given enclave session.
 
@@ -356,7 +355,7 @@ The method returns an empty enumerable unless <xref:System.Windows.Diagnostics.
 
 **Finding ResourceDictionary owners**
 
-Starting with the .NET Framework 4.7.2, a diagnostic assistant can locate the owners of a given <xref:Windows.UI.Xaml.ResourceDictionary>. (The feature is for use by diagnostic assistants and not by production applications.) Whenever a change is made to a <xref:Windows.UI.Xaml.ResourceDictionary>, WPF automatically finds all [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) references that might be affected by the change. 
+Starting with the .NET Framework 4.7.2, a diagnostic assistant can locate the owners of a given <xref:Windows.UI.Xaml.ResourceDictionary>. (The feature is for use by diagnostic assistants and not by production applications.) Whenever a change is made to a <xref:Windows.UI.Xaml.ResourceDictionary>, WPF automatically finds all [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) references that might be affected by the change.
 
 A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want extend this to handle [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. The first step in this process is to find the owners of the dictionary; that is, to find all the objects whose `Resources` property refers to the dictionary (either directly, or indirectly via the <xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> property). Three new static methods implemented on the <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> class, one for each of the base types that has a `Resources` property, support this step:
 
@@ -370,7 +369,7 @@ These methods return an empty enumerable unless <xref:System.Windows.Diagnostic
 
 **Finding StaticResource references**
 
-A diagnostic assistant can now receive a notification whenever a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference is resolved. (The feature is for use by diagnostic assistants, not by production applications.) A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want to update all uses of a resource when its value in a <xref:Windows.UI.Xaml.ResourceDictionary> changes. WPF does this automatically for [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) references, but it intentionally does not do so for [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. Starting with the .NET Framework 4.7.2, the diagnostic assistant can use these notifications to locate those uses of the static resource. 
+A diagnostic assistant can now receive a notification whenever a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference is resolved. (The feature is for use by diagnostic assistants, not by production applications.) A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility may want to update all uses of a resource when its value in a <xref:Windows.UI.Xaml.ResourceDictionary> changes. WPF does this automatically for [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) references, but it intentionally does not do so for [StaticResource](../wpf/advanced/staticresource-markup-extension.md) references. Starting with the .NET Framework 4.7.2, the diagnostic assistant can use these notifications to locate those uses of the static resource.
 
 The notification is implemented by the new <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.StaticResourceResolved?displayProperty=nameWithType> event:
 
@@ -417,13 +416,13 @@ For Windows Forms application, the previous workaround of setting DPI awareness 
 ## What's new in the .NET Framework 4.7.1
 
 The .NET Framework 4.7.1 includes new features in the following areas:
- 
+
 - [Core](#core471)
 - [Common language runtime (CLR)](#clr)
 - [Networking](#net471)
-- [ASP.NET](#asp-net471) 
+- [ASP.NET](#asp-net471)
 
-In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
 <a name="core471" />
 
@@ -437,7 +436,7 @@ In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility
 
 Configuration builders allow developers to inject and build configuration settings for applications dynamically at run time. Custom configuration builders can be used to modify existing data in a configuration section or to build a configuration section entirely from scratch. Without configuration builders, .config files are static, and their settings are defined some time before an application is launched.
 
-To create a custom configuration builder, you derive your builder from the abstract <xref:System.Configuration.ConfigurationBuilder> class and override its <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> and <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>. You also define your builders in your .config file. For more information, see the "Configuration Builders" section in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post. 
+To create a custom configuration builder, you derive your builder from the abstract <xref:System.Configuration.ConfigurationBuilder> class and override its <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> and <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>. You also define your builders in your .config file. For more information, see the "Configuration Builders" section in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post.
 
 **Run-time feature detection**
 
@@ -457,7 +456,7 @@ The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOn
 
 **Garbage collection performance improvements**
 
-Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) blog post. 
+Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) blog post.
 
 <a name="net471"/>
 
@@ -473,11 +472,11 @@ In the .NET Framework 4.7 and earlier versions, the <xref:System.Messaging.Messa
 
 **Execution steps in ASP.NET applications**
 
-ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP.NET executes each event handler as an execution step. In versions of ASP.NET up to the .NET Framework 4.7, ASP.NET can't flow the execution context due to switching between native and managed threads. Instead, ASP.NET selectively flows only the <xref:System.Web.HttpContext>. Starting with the .NET Framework 4.7.1, the <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> method also allows modules to restore ambient data. This feature is targeted at libraries concerned with tracing, profiling, diagnostics, or transactions, for example, that care about the execution flow of the application. For more information, see the "ASP.NET Execution Step Feature" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post. 
+ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP.NET executes each event handler as an execution step. In versions of ASP.NET up to the .NET Framework 4.7, ASP.NET can't flow the execution context due to switching between native and managed threads. Instead, ASP.NET selectively flows only the <xref:System.Web.HttpContext>. Starting with the .NET Framework 4.7.1, the <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> method also allows modules to restore ambient data. This feature is targeted at libraries concerned with tracing, profiling, diagnostics, or transactions, for example, that care about the execution flow of the application. For more information, see the "ASP.NET Execution Step Feature" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post.
 
 **ASP.NET HttpCookie parsing**
 
-The .NET Framework 4.7.1 includes a new method, <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>, that provides a standardized way to create an <xref:System.Web.HttpCookie> object from a string and accurately assign cookie values such as expiration date and path. For more information, see "ASP.NET HttpCookie parsing" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post. 
+The .NET Framework 4.7.1 includes a new method, <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>, that provides a standardized way to create an <xref:System.Web.HttpCookie> object from a string and accurately assign cookie values such as expiration date and path. For more information, see "ASP.NET HttpCookie parsing" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) blog post.
 
 **SHA-2 hash options for ASP.NET forms authentication credentials**
 
@@ -549,7 +548,7 @@ In the .NET Framework 4.7, ASP.NET includes the following new features:
 Starting with the .NET Framework 4.7, ASP.NET adds a new set of APIs that allow developers to replace the default ASP.NET implementations for in-memory object caching and memory monitoring. Developers can now replace any of the following three components if the ASP.NET implementation is not adequate:
 
 - **Object Cache Store**. By using the new cache providers configuration section, developers can plug in new implementations of an object cache for an ASP.NET application by using the new **ICacheStoreProvider** interface.
- 
+
 - **Memory monitoring**. The default memory monitor in ASP.NET notifies applications when they are running close to the configured private bytes limit for the process, or when the machine is low on total available physical RAM. When these limits are near, notifications are fired. For some applications, notifications are fired too close to the configured limits to allow for useful reactions. Developers can now write their own memory monitors to replace the default by using the <xref:System.Web.Hosting.ApplicationMonitors.MemoryMonitor%2A?displayProperty=nameWithType> property.
 
 - **Memory Limit Reactions**. By default, ASP.NET attempts to trim the object cache and periodically call <xref:System.GC.Collect%2A?displayProperty=nameWithType> when the private byte process limit is near. For some applications, the frequency of calls to <xref:System.GC.Collect%2A?displayProperty=nameWithType> or the amount of cache that is trimmed are inefficient. Developers can now replace or supplement the default behavior by subscribing **IObserver** implementations to the application's memory monitor.
@@ -566,7 +565,7 @@ Starting with the .NET Framework 4.7, WCF allows you to configure TSL 1.1 or TLS
 
 ```xml
 <runtime>
-   <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols=false;Switch.System.Net.DontEnableSchUseStrongCrypto=false" /> 
+   <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols=false;Switch.System.Net.DontEnableSchUseStrongCrypto=false" />
 </runtime>
 ```
 
@@ -602,7 +601,7 @@ You now have the option of using a touch/stylus stack based on [WM_POINTER messa
 
 **New implementation for WPF printing APIs**
 
-WPF's printing APIs in the <xref:System.Printing.PrintQueue?displayProperty=nameWithType> class call the Windows [Print Document Package API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx) instead of the deprecated [XPS Print API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx). For the impact of this change on application compatibility, see [Retargeting Changes in the .NET Framework 4.7](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md). 
+WPF's printing APIs in the <xref:System.Printing.PrintQueue?displayProperty=nameWithType> class call the Windows [Print Document Package API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx) instead of the deprecated [XPS Print API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx). For the impact of this change on application compatibility, see [Retargeting Changes in the .NET Framework 4.7](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md).
 
 <a name="v462" />
 
@@ -741,7 +740,7 @@ public static byte[] SignDataDsaSha384(byte[] data, X509Certificate2 cert)
 }
 ```
 
-```vb 
+```vb
 Public Shared Function SignDataDsaSha384(data As Byte(), cert As X509Certificate2) As Byte()
     Using DSA As DSA = cert.GetDSAPrivateKey()
         Return DSA.SignData(data, HashAlgorithmName.SHA384)
@@ -808,7 +807,7 @@ public static byte[] EncryptDataWithPersistedKey(byte[] data, byte[] iv)
 }
 ```
 
-```vb 
+```vb
 Public Shared Function EncryptDataWithPersistedKey(data As Byte(), iv As Byte()) As Byte()
     Using Aes As Aes = New AesCng("AesDemoKey", CngProvider.MicrosoftSoftwareKeyStorageProvider)
         Aes.IV = iv
@@ -971,9 +970,9 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 ```xaml
 <GroupDescriptions>
-     <PropertyGroupDescription 
-         PropertyName="Age" 
-         CustomSort= 
+     <PropertyGroupDescription
+         PropertyName="Age"
+         CustomSort=
               "{x:Static PropertyGroupDescription.CompareNamesAscending}"/>
      </PropertyGroupDescription>
 </GroupDescriptions>
@@ -1108,7 +1107,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
  Customers need to install the HSM vendor-provided CSP provider or CNG key store providers on the app servers or client computers in order to access Always Encrypted data protected with column master keys stored in a HSM.
 
  **Improved <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A> connection behavior for AlwaysOn**
- 
+
 SqlClient now automatically provides faster connections to an AlwaysOn Availability Group (AG). It transparently detects whether your application is connecting to an AlwaysOn availability group (AG) on a different subnet and quickly discovers the current active server and provides a connection to the server. Prior to this release, an application had to set the connection string to include `"MultisubnetFailover=true"` to indicate that it was connecting to an AlwaysOn Availability Group. Without setting the connection keyword to `true`, an application might experience a timeout while connecting to an AlwaysOn Availability Group. With this release, an application does *not* need to set <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A> to `true` anymore. For more information about SqlClient support for Always On Availability Groups, see [SqlClient Support for High Availability, Disaster Recovery](../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).
 
 <a name="WPF461" />
@@ -1343,16 +1342,16 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
          The library must check if a consumer has declared the value of the switch and then appropriately act on it.
 
         ```csharp
-        if (!AppContext.TryGetSwitch("Switch.AmazingLib.ThrowOnException", out shouldThrow)) 
+        if (!AppContext.TryGetSwitch("Switch.AmazingLib.ThrowOnException", out shouldThrow))
         {
-           // This is the case where the switch value was not set by the application. 
-           // The library can choose to get the value of shouldThrow by other means. 
-           // If no overrides nor default values are specified, the value should be 'false'. 
+           // This is the case where the switch value was not set by the application.
+           // The library can choose to get the value of shouldThrow by other means.
+           // If no overrides nor default values are specified, the value should be 'false'.
            // A false value implies the latest behavior.
         }
 
            // The library can use the value of shouldThrow to throw exceptions or not.
-           if (shouldThrow) 
+           if (shouldThrow)
            {
               // old code
            }
@@ -1474,7 +1473,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
      The default value is 60 seconds. If `value` is set to 0, out-of-order requests are immediately rejected with a fault with text that looks like this:
 
     ```
-    Operation 'Request3|{http://tempuri.org/}IService' on service instance with identifier '2b0667b6-09c8-4093-9d02-f6c67d534292' cannot be performed at this time. Please ensure that the operations are performed in the correct order and that the binding in use provides ordered delivery guarantees. 
+    Operation 'Request3|{http://tempuri.org/}IService' on service instance with identifier '2b0667b6-09c8-4093-9d02-f6c67d534292' cannot be performed at this time. Please ensure that the operations are performed in the correct order and that the binding in use provides ordered delivery guarantees.
     ```
 
      This is the same message that you receive if an out-of-order operation message is received and there are no non-protocol bookmarks.
@@ -1486,7 +1485,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
      You can now include the distributed transaction identifier for the transaction that has caused an exception derived from <xref:System.Transactions.TransactionException> to be thrown. You do this by adding the following key to the `appSettings` section of your app.config file:
 
     ```xml
-    <add key="Transactions:IncludeDistributedTransactionIdInExceptionMessage" value="true"/> 
+    <add key="Transactions:IncludeDistributedTransactionIdInExceptionMessage" value="true"/>
     ```
 
      The default value is `false`.
@@ -1553,11 +1552,11 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - **Resizing in Windows Forms controls.** This feature has been expanded. You can now use the system DPI setting to resize components of the following additional controls (for example, the drop-down arrow in combo boxes):
 
-     <xref:System.Windows.Forms.ComboBox> 
-     <xref:System.Windows.Forms.ToolStripComboBox> 
-     <xref:System.Windows.Forms.ToolStripMenuItem> 
-     <xref:System.Windows.Forms.Cursor> 
-     <xref:System.Windows.Forms.DataGridView> 
+     <xref:System.Windows.Forms.ComboBox>
+     <xref:System.Windows.Forms.ToolStripComboBox>
+     <xref:System.Windows.Forms.ToolStripMenuItem>
+     <xref:System.Windows.Forms.Cursor>
+     <xref:System.Windows.Forms.DataGridView>
      <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
 
      This is an opt-in feature. To enable it, set the `EnableWindowsFormsHighDpiAutoResizing` element to `true` in the application configuration (app.config) file:
@@ -1578,22 +1577,22 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - **Profiling improvements.** The following new unmanaged profiling APIs provide more robust profiling:
 
-     [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md) 
-     [COR_PRF_HIGH_MONITOR Enumeration](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) 
-     [GetAssemblyReferences Method](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md) 
-     [GetEventMask2 Method](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) 
-     [SetEventMask2 Method](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) 
+     [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)
+     [COR_PRF_HIGH_MONITOR Enumeration](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md)
+     [GetAssemblyReferences Method](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)
+     [GetEventMask2 Method](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)
+     [SetEventMask2 Method](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)
      [AddAssemblyReference Method](../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)
 
      Previous `ICorProfiler` implementations supported lazy loading of dependent assemblies. The new profiling APIs require dependent assemblies that are injected by the profiler to be loadable immediately, instead of being loaded after the app is fully initialized. This change doesn't affect users of the existing `ICorProfiler` APIs.
 
 - **Debugging improvements.** The following new unmanaged debugging APIs provide better integration with a profiler. You can now access metadata inserted by the profiler as well as local variables and code produced by compiler ReJIT requests when dump debugging.
 
-     [SetWriteableMetadataUpdateMode Method](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md) 
-     [EnumerateLocalVariablesEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) 
-     [GetLocalVariableEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) 
-     [GetCodeEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) 
-     [GetActiveReJitRequestILCode Method](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md) 
+     [SetWriteableMetadataUpdateMode Method](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md)
+     [EnumerateLocalVariablesEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md)
+     [GetLocalVariableEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md)
+     [GetCodeEx Method](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md)
+     [GetActiveReJitRequestILCode Method](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md)
      [GetInstrumentedILMap Method](../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
 
 - **Event tracing changes.** The .NET Framework 4.5.2 enables out-of-process, Event Tracing for Windows (ETW)-based activity tracing for a larger surface area. This enables Advanced Power Management (APM) vendors to provide lightweight tools that accurately track the costs of individual requests and activities that cross threads.  These events are raised only when ETW controllers enable them; therefore, the changes don't affect previously written ETW code or code that runs with ETW disabled.
@@ -1637,7 +1636,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
  Core new features and enhancements in the .NET Framework 4.5.1 include:
 
-- Automatic binding redirection for assemblies. Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
+- Automatic binding redirection for assemblies. Starting with Visual Studio 2013, when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
 
 - Ability to collect diagnostics information to help developers improve the performance of server and cloud applications. For more information, see the <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> and <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> methods in the <xref:System.Diagnostics.Tracing.EventSource> class.
 
@@ -1649,8 +1648,8 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 - Resizing in Windows Forms controls. You can use the system DPI setting to resize components of controls (for example, the icons that appear in a property grid) by opting in with an entry in the application configuration file (app.config) for your app. This feature is currently supported in the following Windows Forms controls:
 
-     <xref:System.Windows.Forms.PropertyGrid> 
-     <xref:System.Windows.Forms.TreeView> 
+     <xref:System.Windows.Forms.PropertyGrid>
+     <xref:System.Windows.Forms.TreeView>
      Some aspects of the <xref:System.Windows.Forms.DataGridView> (see [new features in 4.5.2](#v452) for additional controls supported)
 
      To enable this feature, add a new \<appSettings> element to the configuration file (app.config) and set the `EnableWindowsFormsHighDpiAutoResizing` element to `true`:
@@ -1661,17 +1660,17 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
     </appSettings>
     ```
 
- Improvements when debugging your .NET Framework apps in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] include:
+ Improvements when debugging your .NET Framework apps in Visual Studio 2013 include:
 
-- Return values in the Visual Studio debugger. When you debug a managed app in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx) in the MSDN Library.
+- Return values in the Visual Studio debugger. When you debug a managed app in Visual Studio 2013, the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx) in the MSDN Library.
 
-- Edit and Continue for 64-bit apps. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] supports the Edit and Continue feature for 64-bit managed apps for desktop, Windows Store, and Windows Phone. The existing limitations remain in effect for both 32-bit and 64-bit apps (see the last section of the [Supported Code Changes (C#)](/visualstudio/debugger/supported-code-changes-csharp) article).
+- Edit and Continue for 64-bit apps. Visual Studio 2013 supports the Edit and Continue feature for 64-bit managed apps for desktop, Windows Store, and Windows Phone. The existing limitations remain in effect for both 32-bit and 64-bit apps (see the last section of the [Supported Code Changes (C#)](/visualstudio/debugger/supported-code-changes-csharp) article).
 
-- Async-aware debugging. To make it easier to debug asynchronous apps in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the call stack hides the infrastructure code provided by compilers to support asynchronous programming, and also chains in logical parent frames so you can follow logical program execution more clearly. A Tasks window replaces the Parallel Tasks window and displays tasks that relate to a particular breakpoint, and also displays any other tasks that are currently active or scheduled in the app. You can read about this feature in the "Async-aware debugging" section of the [.NET Framework 4.5.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/).
+- Async-aware debugging. To make it easier to debug asynchronous apps in Visual Studio 2013, the call stack hides the infrastructure code provided by compilers to support asynchronous programming, and also chains in logical parent frames so you can follow logical program execution more clearly. A Tasks window replaces the Parallel Tasks window and displays tasks that relate to a particular breakpoint, and also displays any other tasks that are currently active or scheduled in the app. You can read about this feature in the "Async-aware debugging" section of the [.NET Framework 4.5.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/).
 
-- Better exception support for Windows Runtime components. In [!INCLUDE[win81](../../../includes/win81-md.md)], exceptions that arise from Windows Store apps preserve information about the error that caused the exception, even across language boundaries. You can read about this feature in the "Windows Store app development" section of the [.NET Framework 4.5.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/). 
+- Better exception support for Windows Runtime components. In [!INCLUDE[win81](../../../includes/win81-md.md)], exceptions that arise from Windows Store apps preserve information about the error that caused the exception, even across language boundaries. You can read about this feature in the "Windows Store app development" section of the [.NET Framework 4.5.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/).
 
- Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can use the [Managed Profile Guided Optimization Tool (Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md) to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
+ Starting with Visual Studio 2013, you can use the [Managed Profile Guided Optimization Tool (Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md) to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
 
  For new features in ASP.NET 4.5.1, see [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
 
@@ -1734,7 +1733,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 ### Tools
  In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Resource File Generator (Resgen.exe) enables you to create a .resw file for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps from a .resources file embedded in a .NET Framework assembly. For more information, see [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
 
- Managed Profile Guided Optimization (Mpgo.exe) enables you to improve application startup time, memory utilization (working set size), and throughput by optimizing native image assemblies. The command-line tool generates profile data for native image application assemblies. See [Mpgo.exe (Managed Profile Guided Optimization Tool)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md). Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], you can use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
+ Managed Profile Guided Optimization (Mpgo.exe) enables you to improve application startup time, memory utilization (working set size), and throughput by optimizing native image assemblies. The command-line tool generates profile data for native image application assemblies. See [Mpgo.exe (Managed Profile Guided Optimization Tool)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md). Starting with Visual Studio 2013, you can use Mpgo.exe to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
 
 <a name="parallel" />
 
@@ -1892,11 +1891,12 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 <a name="portable" />
 ### Portable Class Libraries
- The Portable Class Library project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
+ The Portable Class Library project in Visual Studio 2012 (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
 
 ## See Also
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)   
- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)   
- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)   
- [ASP.NET](/aspnet)   
- [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio) 
+
+- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
+- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [ASP.NET](/aspnet)
+- [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

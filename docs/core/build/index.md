@@ -21,7 +21,7 @@ The build currently depends on the following prerequisites:
 * [Python](https://www.python.org/)
 * a C++ compiler.
 
-After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository.
+After you've installed these prerequisites, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository.
 
 Installing the components differ depending on the operating system (OS). See the build instructions for your specific OS:
 

@@ -16,19 +16,19 @@ The service code includes a service implementation of the service contract, a Wi
 
 ## Construct the service and provide the hosting code
 
-1.  Create a new Visual Studio Console Application project called "Service".
+1.  Create a new Visual Studio **Console app** project called **Service**.
 
 2.  Rename Program.cs to Service.cs.
 
-3.  Change the namespace to Microsoft.ServiceModel.Samples.
+3.  Change the namespace to `Microsoft.ServiceModel.Samples`.
 
-4.  Add references to the following assemblies.
+4.  Add references to the following assemblies:
 
-    -   System.ServiceModel.dll
+    - System.ServiceModel.dll
 
-    -   System.ServiceProcess.dll
+    - System.ServiceProcess.dll
 
-    -   System.Configuration.Install.dll
+    - System.Configuration.Install.dll
 
 5.  Add the following using statements to Service.cs.
 
@@ -112,7 +112,7 @@ The service code includes a service implementation of the service contract, a Wi
 
 1.  Build the solution to create the `Service.exe` executable.
 
-2.  Open the Developer Command Prompt for Visual Studio command prompt and navigate to the project directory. Type `installutil bin\service.exe` at the command prompt to install the Windows service.
+2.  Open Developer Command Prompt for Visual Studio and navigate to the project directory. Type `installutil bin\service.exe` at the command prompt to install the Windows service.
 
      Type `services.msc` at the command prompt to access the Service Control Manager (SCM). The Windows service should appear in Services as "WCFWindowsServiceSample". The WCF service can only respond to clients if the Windows service is running. To start the service, right-click it in the SCM and select "Start", or type **net start WCFWindowsServiceSample** at the command prompt.
 
@@ -120,7 +120,7 @@ The service code includes a service implementation of the service contract, a Wi
 
 ## Example
 
-The following is a complete listing of the code used by this topic.
+The following is a complete listing of the code used by this topic:
 
 [!code-csharp[c_HowTo_HostInNTService#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#8)]
 [!code-vb[c_HowTo_HostInNTService#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#8)]

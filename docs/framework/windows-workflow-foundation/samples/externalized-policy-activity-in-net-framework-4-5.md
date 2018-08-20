@@ -15,7 +15,8 @@ This sample demonstrates how the ExternalizedPolicy4 activity allows executing e
 |DesignerClientSample|Sample client application that configures and runs a workflow using an ExternalPolicy4 application in the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Designer.|**Sequence1.xaml**: Sequential workflow that uses a Policy4 activity to perform rule evaluations.<br /><br /> **Program.cs**: Runs an instance of the workflow defined in Sequence1.xaml.|
 
 ## The ExternalizedPolicy4 Activity
- The ExternalizedPolicy4 activity is a <xref:System.Activities.NativeActivity> that allows executing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> objects within WF 4.5 workflows. The following example is a simplified definition of the public object model of the activity.
+
+The ExternalizedPolicy4 activity is a <xref:System.Activities.NativeActivity> that allows executing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> objects within WF 4.5 workflows. The following example is a simplified definition of the public object model of the activity.
 
 ```
 public class ExternalizedPolicy4Activity<TResult>: CodeActivity
@@ -43,39 +44,44 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 |ValidationError|The list of validation errors returned by the WF 3.5 Rules Engine when validating the <xref:System.Workflow.Activities.Rules.RuleSet> against the target object before execution.|
 
 ## ExternalizedPolicy4 Activity Designer
- The ExternalizedPolicy4 designer allows you to configure an activity to use an existing RuleSet without writing code. Just set the path where the .rules file is located and specify the <xref:System.Workflow.Activities.Rules.RuleSet> name that you want use. It also allows you to modify the <xref:System.Workflow.Activities.Rules.RuleSet>. After building the solution, it can be found in the toolbox in the section Microsoft.Samples.Activities.Rules. The designer allows you to select a .rules file and a <xref:System.Workflow.Activities.Rules.RuleSet>. When the **Edit RuleSet** button is clicked, the WF 3.5 <xref:System.Workflow.Activities.Rules.Design.RuleSetDialog> is displayed. This dialog is the re-hosted WF 3.5 rules editor and it is used to view and edit the rules that the ExternalizedPolicy4 activity executes.
+
+The ExternalizedPolicy4 designer allows you to configure an activity to use an existing RuleSet without writing code. Just set the path where the .rules file is located and specify the <xref:System.Workflow.Activities.Rules.RuleSet> name that you want use. It also allows you to modify the <xref:System.Workflow.Activities.Rules.RuleSet>. After building the solution, it can be found in the toolbox in the section Microsoft.Samples.Activities.Rules. The designer allows you to select a .rules file and a <xref:System.Workflow.Activities.Rules.RuleSet>. When the **Edit RuleSet** button is clicked, the WF 3.5 <xref:System.Workflow.Activities.Rules.Design.RuleSetDialog> is displayed. This dialog is the re-hosted WF 3.5 rules editor and it is used to view and edit the rules that the ExternalizedPolicy4 activity executes.
 
 ## Policy4 and ExternalPolicy4
- The [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md) activity allows you to create and execute a .NET Framework 3.5 RuleSet in a WF 4.5 workflow. The <xref:System.Workflow.Activities.Rules.RuleSet> is serialized inline in the Policy4 activity XAML definition. The ExternalizedPolicy4 sample shows how to use an existing external <xref:System.Workflow.Activities.Rules.RuleSet> (contained in a .rules file).
 
-## Using this sample
- No special set-up is required to run this sample. Open the solution in Visual Studio 2012, and press F5 to run the application.
+The [Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md) activity allows you to create and execute a .NET Framework 3.5 RuleSet in a WF 4.5 workflow. The <xref:System.Workflow.Activities.Rules.RuleSet> is serialized inline in the Policy4 activity XAML definition. The ExternalizedPolicy4 sample shows how to use an existing external <xref:System.Workflow.Activities.Rules.RuleSet> (contained in a .rules file).
 
- This sample contains two client applications: ImperativeCodeClientSample and DesignerClientSample. The ImperativeCodeClientSample client shows how to configure and run the ExternalizedPolicy4 activity using C# imperative code. The DesignerClientSample shows how to configure and run the ExternalizedPolicy4 activity using the designer.
+## Use this sample
 
-#### To run the ImperativeCodeClientSample application
+No special set-up is required to run this sample. Open the solution in Visual Studio, and then press **F5** to run the application.
 
-1.  Using the Visual Studio 2012, open the Policy4sample.sln solution file.
+This sample contains two client applications: ImperativeCodeClientSample and DesignerClientSample. The ImperativeCodeClientSample client shows how to configure and run the ExternalizedPolicy4 activity using C# imperative code. The DesignerClientSample shows how to configure and run the ExternalizedPolicy4 activity using the designer.
+
+### Run the ImperativeCodeClientSample application
+
+1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
 
 2.  In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
 
-3.  To run the project, press CTRL+F5.
+3.  To run the project, press **Ctrl**+**F5**.
 
-#### To run the DesignerClientSample application
+### Run the DesignerClientSample application
 
-1.  Using the Visual Studio 2012, open the Policy4sample.sln solution file.
+1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
 
 2.  In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
 
-3.  Press CTRL+SHIFT+B to compile the project.
+3.  Press **Ctrl**+**Shift**+**B** to compile the project.
 
-4.  Press CTRL+F5 to run the project.
+4.  Press **Ctrl**+**F5** to run the project.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
 >
->  `<InstallDrive>:\WF_WCF_Samples`
+> `<InstallDrive>:\WF_WCF_Samples`
 >
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.
 >
->  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Rules-ExternalizedPolicy4`
+> This sample is located in the following directory:
+>
+> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Rules-ExternalizedPolicy4`

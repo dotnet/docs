@@ -4,10 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
 ---
 # Authorization Policy
+
 This sample demonstrates how to implement a custom claim authorization policy and an associated custom service authorization manager. This is useful when the service makes claim-based access checks to service operations and prior to the access checks, grants the caller certain rights. This sample shows both the process of adding claims as well as the process for doing an access check against the finalized set of claims. All application messages between the client and server are signed and encrypted. By default with the `wsHttpBinding` binding, a username and password supplied by the client are used to logon to a valid Windows NT account. This sample demonstrates how to utilize a custom <!--zz <xref:System.IdentityModel.Selectors.UsernamePasswordValidator>--> `System.IdentityModel.Selectors.UsernamePasswordValidator` to authenticate the client. In addition this sample shows the client authenticating to the service using an X.509 certificate. This sample shows an implementation of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> and <xref:System.ServiceModel.ServiceAuthorizationManager>, which between them grant access to specific methods of the service for specific users. This sample is based on the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md), but demonstrates how to perform a claim transformation prior to the <xref:System.ServiceModel.ServiceAuthorizationManager> being called.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
  In summary, this sample demonstrates how:
 
@@ -23,7 +24,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
 
 -   How to implement <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.
 
- The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. One binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client username authentication. The other binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client certificate authentication. The [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the `SubjectName` property as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. One binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client username authentication. The other binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client certificate authentication. The [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the `SubjectName` property as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
 
 ```xml
 <system.serviceModel>
@@ -110,7 +111,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
 </system.serviceModel>
 ```
 
- Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).
+Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).
 
 ```xml
 <system.serviceModel>
@@ -178,9 +179,9 @@ This sample demonstrates how to implement a custom claim authorization policy an
   </system.serviceModel>
 ```
 
- For the user name-based endpoint, the client implementation sets the user name and password to use.
+For the user name-based endpoint, the client implementation sets the user name and password to use.
 
-```
+```csharp
 // Create a client with Username endpoint configuration
 CalculatorClient client1 = new CalculatorClient("Username");
 
@@ -204,9 +205,9 @@ catch (Exception e)
 client1.Close();
 ```
 
- For the certificate-based endpoint, the client implementation sets the client certificate to use.
+For the certificate-based endpoint, the client implementation sets the client certificate to use.
 
-```
+```csharp
 // Create a client with Certificate endpoint configuration
 CalculatorClient client2 = new CalculatorClient("Certificate");
 
@@ -229,9 +230,9 @@ catch (Exception e)
 client2.Close();
 ```
 
- This sample uses a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>, this custom validator sample implements the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method to accept user name/password pairs where the user name matches the password as shown in the following code.
+This sample uses a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>, this custom validator sample implements the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method to accept user name/password pairs where the user name matches the password as shown in the following code.
 
-```
+```csharp
 public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator
 {
   // This method validates users. It allows in two users,
@@ -254,14 +255,14 @@ public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator
 }
 ```
 
- Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.
+Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code:
 
-```
+```csharp
 Servicehost.Credentials.UserNameAuthentication.UserNamePasswordValidationMode = UserNamePasswordValidationMode.Custom;
 serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator = new MyCustomUserNamePasswordValidatorProvider();
 ```
 
- Or you can do the same thing in configuration.
+Or you can do the same thing in configuration:
 
 ```xml
 <behavior ...>
@@ -275,11 +276,11 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
 </behavior>
 ```
 
- Windows Communication Foundation (WCF) provides a rich claims-based model for performing access checks. The <xref:System.ServiceModel.ServiceAuthorizationManager> object is used to perform the access check and determine whether the claims associated with the client satisfy the requirements necessary to access the service method.
+Windows Communication Foundation (WCF) provides a rich claims-based model for performing access checks. The <xref:System.ServiceModel.ServiceAuthorizationManager> object is used to perform the access check and determine whether the claims associated with the client satisfy the requirements necessary to access the service method.
 
- For the purposes of demonstration, this sample shows an implementation of <xref:System.ServiceModel.ServiceAuthorizationManager> that implements the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method to allow a user's access to methods based on claims of type http://example.com/claims/allowedoperation whose value is the Action URI of the operation that is allowed to be called.
+For the purposes of demonstration, this sample shows an implementation of <xref:System.ServiceModel.ServiceAuthorizationManager> that implements the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method to allow a user's access to methods based on claims of type http://example.com/claims/allowedoperation whose value is the Action URI of the operation that is allowed to be called.
 
-```
+```csharp
 public class MyServiceAuthorizationManager : ServiceAuthorizationManager
 {
   protected override bool CheckAccessCore(OperationContext operationContext)
@@ -303,7 +304,7 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
 }
 ```
 
- Once the custom <xref:System.ServiceModel.ServiceAuthorizationManager> is implemented, the service host must be informed about the <xref:System.ServiceModel.ServiceAuthorizationManager> to use. This is done as shown in the following code.
+Once the custom <xref:System.ServiceModel.ServiceAuthorizationManager> is implemented, the service host must be informed about the <xref:System.ServiceModel.ServiceAuthorizationManager> to use. This is done as shown in the following code.
 
 ```xml
 <behavior ...>
@@ -314,9 +315,9 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
 </behavior>
 ```
 
- The primary <xref:System.IdentityModel.Policy.IAuthorizationPolicy> method to implement is the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method.
+The primary <xref:System.IdentityModel.Policy.IAuthorizationPolicy> method to implement is the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method.
 
-```
+```csharp
 public class MyAuthorizationPolicy : IAuthorizationPolicy
 {
     string id;
@@ -370,9 +371,9 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 }
 ```
 
- The previous code shows how the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method checks that no new claims have been added that affect the processing and adds specific claims. The claims that are allowed are obtained from the `GetAllowedOpList` method, which is implemented to return a specific list of operations that the user is allowed to perform. The authorization policy adds claims for accessing the particular operation. This is later used by the <xref:System.ServiceModel.ServiceAuthorizationManager> to perform access check decisions.
+The previous code shows how the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method checks that no new claims have been added that affect the processing and adds specific claims. The claims that are allowed are obtained from the `GetAllowedOpList` method, which is implemented to return a specific list of operations that the user is allowed to perform. The authorization policy adds claims for accessing the particular operation. This is later used by the <xref:System.ServiceModel.ServiceAuthorizationManager> to perform access check decisions.
 
- Once the custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> is implemented, the service host must be informed about the authorization policies to use.
+Once the custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> is implemented, the service host must be informed about the authorization policies to use.
 
 ```xml
 <serviceAuthorization ...>
@@ -382,12 +383,13 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 </serviceAuthorization>
 ```
 
- When you run the sample, the operation requests and responses are displayed in the client console window. The client successfully calls the Add, Subtract and Multiple methods and gets an "Access is denied" message when trying to call the Divide method. Press ENTER in the client window to shut down the client.
+When you run the sample, the operation requests and responses are displayed in the client console window. The client successfully calls the Add, Subtract and Multiple methods and gets an "Access is denied" message when trying to call the Divide method. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
- The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate-based security.
 
- The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration:
+The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate-based security.
+
+The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration:
 
 -   Creating the server certificate.
 
@@ -432,65 +434,71 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     certmgr.exe -add -r CurrentUser -s My -c -n %CLIENT_NAME% -r LocalMachine -s TrustedPeople
     ```
 
-#### To set up and build the sample
+### To set up and build the sample
 
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-2.  To run the sample in a single- or cross-computer configuration, use the following instructions.
+2. To run the sample in a single- or cross-computer configuration, use the following instructions.
 
 > [!NOTE]
->  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
+> If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
 
-#### To run the sample on the same computer
+### To run the sample on the same computer
 
-1.  Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
+1. Open Developer Command Prompt for Visual Studio with administrator privileges and run *Setup.bat* from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
+    > The Setup.bat batch file is designed to be run from Developer Command Prompt for Visual Studio. The PATH environment variable set within Developer Command Prompt for Visual Studio points to the directory that contains executables required by the *Setup.bat* script.
 
-2.  Run Setup.bat in a Visual Studio command prompt opened with administrator privileges from the sample install folder. This installs all the certificates required for running the sample.
+1. Launch Service.exe from *service\bin*.
 
-3.  Launch Service.exe from service\bin.
+1. Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
 
-4.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
+  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
 
-5.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+### To run the sample across computers
 
-#### To run the sample across computers
+1. Create a directory on the service computer.
 
-1.  Create a directory on the service computer.
+2. Copy the service program files from *\service\bin* to the directory on the service computer. Also copy the Setup.bat, Cleanup.bat, GetComputerName.vbs and ImportClientCert.bat files to the service computer.
 
-2.  Copy the service program files from \service\bin to the directory on the service computer. Also copy the Setup.bat, Cleanup.bat, GetComputerName.vbs and ImportClientCert.bat files to the service computer.
+3. Create a directory on the client computer for the client binaries.
 
-3.  Create a directory on the client computerfor the client binaries.
+4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
 
-4.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
+5. On the server, run `setup.bat service` in Developer Command Prompt for Visual Studio opened with administrator privileges.
 
-5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computerand exports the service certificate to a file named Service.cer.
+   Running `setup.bat` with the `service` argument creates a service certificate with the fully qualified domain name of the computer, and exports the service certificate to a file named *Service.cer*.
 
-6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computername in the \<service>/\<baseAddresses> element from localhost to the fully-qualified name of your service computer.
+6. Edit *Service.exe.config* to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully qualified domain name of the computer. Also change the **computername** in the \<service>/\<baseAddresses> element from localhost to the fully qualified name of your service computer.
 
-7.  Copy the Service.cer file from the service directory to the client directory on the client computer.
+7. Copy the *Service.cer* file from the service directory to the client directory on the client computer.
 
-8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named test1 and exports the client certificate to a file named Client.cer.
+8. On the client, run `setup.bat client` in Developer Command Prompt for Visual Studio opened with administrator privileges.
 
-9. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.
+   Running `setup.bat` with the `client` argument creates a client certificate named **test1** and exports the client certificate to a file named *Client.cer*.
+
+9. In the *Client.exe.config* file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing **localhost** with the fully qualified domain name of the server.
 
 10. Copy the Client.cer file from the client directory to the service directory on the server.
 
-11. On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
+11. On the client, run *ImportServiceCert.bat* in Developer Command Prompt for Visual Studio opened with administrator privileges.
 
-12. On the server, run ImportClientCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.
+   This imports the service certificate from the Service.cer file into the **CurrentUser - TrustedPeople** store.
+
+12. On the server, run *ImportClientCert.bat* in Developer Command Prompt for Visual Studio opened with administrator privileges.
+
+   This imports the client certificate from the Client.cer file into the **LocalMachine - TrustedPeople** store.
 
 13. On the server computer, launch Service.exe from the command prompt window.
 
-14. On the client computer, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+14. On the client computer, launch Client.exe from a command prompt window.
 
-#### To clean up after the sample
+   If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
 
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server and client certificates from the certificate store.
+### Clean up after the sample
+
+To clean up after the sample, run *Cleanup.bat* in the samples folder when you have finished running the sample. This removes the server and client certificates from the certificate store.
 
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across computers. If you have run WCF samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
-
-## See Also
+> This script does not remove service certificates on a client when running this sample across computers. If you have run WCF samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

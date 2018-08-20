@@ -7,15 +7,14 @@ helpviewer_keywords:
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
 ---
 # Mage.exe (Manifest Generation and Editing Tool)
+
 The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, *Mage.exe* can be run from both batch scripts and other Windows-based applications, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.
 
- You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
+You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
- Two versions of *Mage.exe* and *MageUI.exe* are included as a component of the Visual Studio 2010 setup. To see version information, run *MageUI.exe*, select **Help**, and select **About**. This documentation describes version 4.0.x.x of *Mage.exe* and *MageUI.exe*.
-
- At the command prompt, type the following:
+Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To see version information, run *MageUI.exe*, select **Help**, and select **About**. This documentation describes version 4.0.x.x of *Mage.exe* and *MageUI.exe*.
 
 ## Syntax
 
@@ -23,8 +22,9 @@ The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool tha
 Mage [commands] [commandOptions]
 ```
 
-#### Parameters
- The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update Command Options](#NewUpdate) and [Sign Command Options](#Sign).
+### Parameters
+
+The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update Command Options](#NewUpdate) and [Sign Command Options](#Sign).
 
 |Command|Description|
 |-------------|-----------------|
@@ -76,9 +76,10 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
 
 ## Remarks
- All arguments to *Mage.exe* are case-insensitive. Commands and options can be prefixed with a dash (-) or a forward slash (/).
 
- All of the arguments used with the **-Sign** command can be used at any time with the **-New** or **-Update** commands as well. The following commands are equivalent.
+All arguments to *Mage.exe* are case-insensitive. Commands and options can be prefixed with a dash (-) or a forward slash (/).
+
+All of the arguments used with the **-Sign** command can be used at any time with the **-New** or **-Update** commands as well. The following commands are equivalent.
 
 ```
 mage -Sign c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
@@ -86,7 +87,7 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
 ```
 
 > [!NOTE]
->  Beginning with .NET Framework version 4.6.2, CNG certificates are also supported.
+> Beginning with .NET Framework version 4.6.2, CNG certificates are also supported.
 
  Signing is the last task you should perform, because a signed document uses a hash of the file to verify that the signature is valid for the document. If you make any changes to a signed file, you must sign it again. If you sign a document that was previously signed, *Mage.exe* will replace the old signature with the new.
 
@@ -131,57 +132,58 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
 ```
 
 ## Examples
- The following example opens the user interface for Mage (*MageUI.exe*).
+
+The following example opens the user interface for Mage (*MageUI.exe*).
 
 ```
 mage
 ```
 
- The following examples create a default deployment manifest and application manifest. These files are all created in the current working directory and are named deploy.application and application.exe.manifest, respectively.
+The following examples create a default deployment manifest and application manifest. These files are all created in the current working directory and are named deploy.application and application.exe.manifest, respectively.
 
 ```
 mage -New Deployment
 mage -New Application
 ```
 
- The following example creates an application manifest populated with all of the assemblies and resource files from thecurrent directory.
+The following example creates an application manifest populated with all of the assemblies and resource files from thecurrent directory.
 
 ```
 mage -New Application -FromDirectory . -Version 1.0.0.0
 ```
 
- The following example continues the previous example by specifying the deployment name and target microprocessor. It also specifies a URL against which ClickOnce should check for updates.
+The following example continues the previous example by specifying the deployment name and target microprocessor. It also specifies a URL against which ClickOnce should check for updates.
 
 ```
 mage -New Application -FromDirectory . -Name "Hello, World! Application" -Version 1.0.0.0 -Processor "x86" -ProviderUrl http://internalserver/HelloWorld/
 ```
 
- The following example demonstrates how to create a pair of manifests for deploying a WPF application that will be hosted in Internet Explorer.
+The following example demonstrates how to create a pair of manifests for deploying a WPF application that will be hosted in Internet Explorer.
 
 ```
 mage -New Application -FromDirectory . -Version 1.0.0.0 -WPFBrowserApp true
 mage -New Deployment -AppManifest 1.0.0.0\application.manifest -WPFBrowserApp true
 ```
 
- The following example updates a deployment manifest with information from an application manifest, and sets the code base for the location of the application manifest.
+The following example updates a deployment manifest with information from an application manifest, and sets the code base for the location of the application manifest.
 
 ```
 mage -Update HelloWorld.deploy -AppManifest 1.0.0.0\application.manifest -AppCodeBase http://internalserver/HelloWorld.deploy
 ```
 
- The following example edits the deployment manifest to force an update of the user's installed version.
+The following example edits the deployment manifest to force an update of the user's installed version.
 
 ```
 mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -MinVersion 1.1.0.0
 ```
 
- The following example tells the deployment manifest to retrieve the application manifest from another directory.
+The following example tells the deployment manifest to retrieve the application manifest from another directory.
 
 ```
 mage -Update HelloWorld.deploy -AppCodeBase http://anotherserver/HelloWorld/1.1.0.0/
 ```
 
- The following example signs an existing deployment manifest using a digital certificate in the current working directory.
+The following example signs an existing deployment manifest using a digital certificate in the current working directory.
 
 ```
 mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>

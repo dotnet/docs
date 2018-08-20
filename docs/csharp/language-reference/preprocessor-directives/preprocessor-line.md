@@ -8,7 +8,9 @@ helpviewer_keywords:
 ms.assetid: 6439e525-5dd5-4acb-b8ea-efabb32ff95b
 ---
 # #line (C# Reference)
-`#line` lets you modify the compiler's line number and (optionally) the file name output for errors and warnings. This example shows how to report two warnings associated with line numbers. The `#line 200` directive forces the line number to be 200 (although the default is #7) and until the next #line directive, the filename will be reported as "Special". The #line default directive returns the line numbering to its default numbering, which counts the lines that were renumbered by the previous directive.  
+`#line` lets you modify the compiler's line numbering and (optionally) the file name output for errors and warnings.
+
+The following example shows how to report two warnings associated with line numbers. The `#line 200` directive forces the next line's number to be 200 (although the default is #6) and until the next #line directive, the filename will be reported as "Special". The #line default directive returns the line numbering to its default numbering, which counts the lines that were renumbered by the previous directive.  
   
 ```csharp
 class MainClass  
@@ -16,18 +18,28 @@ class MainClass
     static void Main()  
     {  
 #line 200 "Special"  
-        int i;    // CS0168 on line 200  
-        int j;    // CS0168 on line 201  
+        int i;
+        int j;
 #line default  
-        char c;   // CS0168 on line 9  
-        float f;  // CS0168 on line 10  
+        char c;
+        float f;
 #line hidden // numbering not affected  
         string s;   
-        double d; // CS0168 on line 13  
+        double d;
     }  
 }  
 ```  
-  
+Compilation produces the following output:
+
+```console
+Special(200,13): warning CS0168: The variable 'i' is declared but never used
+Special(201,13): warning CS0168: The variable 'j' is declared but never used
+MainClass.cs(9,14): warning CS0168: The variable 'c' is declared but never used
+MainClass.cs(10,15): warning CS0168: The variable 'f' is declared but never used
+MainClass.cs(12,16): warning CS0168: The variable 's' is declared but never used
+MainClass.cs(13,16): warning CS0168: The variable 'd' is declared but never used
+```
+
 ## Remarks  
  The `#line` directive might be used in an automated, intermediate step in the build process. For example, if lines were removed from the original source code file, but you still wanted the compiler to generate output based on the original line numbering in the file, you could remove lines and then simulate the original line numbering with `#line`.  
   

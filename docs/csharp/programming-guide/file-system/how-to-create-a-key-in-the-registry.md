@@ -12,7 +12,7 @@ This example adds the value pair, "Name" and "Isabella", to the current user's r
   
 ## Example  
   
-```  
+```csharp  
 Microsoft.Win32.RegistryKey key;  
 key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("Names");  
 key.SetValue("Name", "Isabella");  

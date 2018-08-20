@@ -55,7 +55,7 @@ dotnet new console
 
 ```xml
 <ItemGroup>
-  <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.0" />
+  <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.2" />
 </ItemGroup>
 ```
 

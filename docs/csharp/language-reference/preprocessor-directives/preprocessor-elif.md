@@ -14,9 +14,9 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 #define VC7  
 //...  
 #if debug  
-    Console.Writeline("Debug build");  
+    Console.WriteLine("Debug build");  
 #elif VC7  
-    Console.Writeline("Visual Studio 7");  
+    Console.WriteLine("Visual Studio 7");  
 #endif  
 ```  
   

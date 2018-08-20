@@ -279,7 +279,7 @@
 using static System.FormattableString;  
 ```  
   
- Within the scope that `import` directive, an interpolated string may be formatted using the conventions of the invariant culture by code such as the following:  
+ Within the scope that `using static` directive, an interpolated string may be formatted using the conventions of the invariant culture by code such as the following:  
   
 ```csharp  
 Invariant($"{{ lat = {latitude}; lon = {longitude} }}")   

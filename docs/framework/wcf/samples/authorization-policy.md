@@ -436,45 +436,45 @@ The following provides a brief overview of the different sections of the batch f
 
 ### To set up and build the sample
 
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-2.  To run the sample in a single- or cross-computer configuration, use the following instructions.
+2. To run the sample in a single- or cross-computer configuration, use the following instructions.
 
 > [!NOTE]
 > If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
 
 ### To run the sample on the same computer
 
-1.  Open Developer Command Prompt for Visual Studio with administrator privileges and run *Setup.bat* from the sample install folder. This installs all the certificates required for running the sample.
+1. Open Developer Command Prompt for Visual Studio with administrator privileges and run *Setup.bat* from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     > The Setup.bat batch file is designed to be run from Developer Command Prompt for Visual Studio. The PATH environment variable set within Developer Command Prompt for Visual Studio points to the directory that contains executables required by the *Setup.bat* script.
 
-3.  Launch Service.exe from *service\bin*.
+1. Launch Service.exe from *service\bin*.
 
-4.  Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
+1. Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
 
   If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
 
 ### To run the sample across computers
 
-1.  Create a directory on the service computer.
+1. Create a directory on the service computer.
 
-2.  Copy the service program files from *\service\bin* to the directory on the service computer. Also copy the Setup.bat, Cleanup.bat, GetComputerName.vbs and ImportClientCert.bat files to the service computer.
+2. Copy the service program files from *\service\bin* to the directory on the service computer. Also copy the Setup.bat, Cleanup.bat, GetComputerName.vbs and ImportClientCert.bat files to the service computer.
 
-3.  Create a directory on the client computer for the client binaries.
+3. Create a directory on the client computer for the client binaries.
 
-4.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
+4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
 
-5.  On the server, run `setup.bat service` in Developer Command Prompt for Visual Studio opened with administrator privileges.
+5. On the server, run `setup.bat service` in Developer Command Prompt for Visual Studio opened with administrator privileges.
 
    Running `setup.bat` with the `service` argument creates a service certificate with the fully qualified domain name of the computer, and exports the service certificate to a file named *Service.cer*.
 
-6.  Edit *Service.exe.config* to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully qualified domain name of the computer. Also change the **computername** in the \<service>/\<baseAddresses> element from localhost to the fully qualified name of your service computer.
+6. Edit *Service.exe.config* to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully qualified domain name of the computer. Also change the **computername** in the \<service>/\<baseAddresses> element from localhost to the fully qualified name of your service computer.
 
-7.  Copy the *Service.cer* file from the service directory to the client directory on the client computer.
+7. Copy the *Service.cer* file from the service directory to the client directory on the client computer.
 
-8.  On the client, run `setup.bat client` in Developer Command Prompt for Visual Studio opened with administrator privileges.
+8. On the client, run `setup.bat client` in Developer Command Prompt for Visual Studio opened with administrator privileges.
 
    Running `setup.bat` with the `client` argument creates a client certificate named **test1** and exports the client certificate to a file named *Client.cer*.
 

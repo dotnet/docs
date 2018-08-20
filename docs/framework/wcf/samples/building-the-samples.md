@@ -12,7 +12,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
 
 ## To build the sample using a command prompt
 
-1.  Open the Developer Command Prompt for Visual Studio and navigate to the language-specific subdirectory under the directory location where you installed the sample.
+1.  Open Developer Command Prompt for Visual Studio and navigate to the language-specific subdirectory under the directory location where you installed the sample.
 
 2.  Type `msbuild` at the command line. The client program files are built to *client\bin* and the service program files are built to *service\bin*. If the service is hosted by Internet Information Services (IIS), the service program files are also copied to the *servicemodelsamples* directory and its *\bin* subdirectory.
 
@@ -21,17 +21,17 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
 
 ## To build the sample using Visual Studio
 
-1.  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, and running Visual Studio 2012, you must run Visual Studio with elevated permission. To do so, right-click the icon on the Start menu and then click **Run as administrator**.
+1. From the **File** menu in Visual Studio, select **Open** > **Project/Solution**. Navigate to the language-specific subdirectory under the directory in which you installed the sample, and double-click the .sln file icon to open the solution in Visual Studio.
 
-2.  From the **File** menu in Visual Studio, click **Open**, then click **Project/Solution**. Navigate to the language-specific subdirectory under the directory in which you installed the sample, and double-click the .sln file icon to open the solution in Visual Studio.
+1. From the **Build** menu, select **Rebuild Solution**.
 
-3.  In the **Build** menu, select **Rebuild Solution**. The client program files are built to client\bin and the service program files are built to service\bin. If the service is hosted in IIS, the service program files are also copied to the servicemodelsamples directory and its \bin subdirectory.
+   The client program files are built to client\bin and the service program files are built to service\bin. If the service is hosted in IIS, the service program files are also copied to the *servicemodelsamples* directory and its *\bin* subdirectory.
 
 > [!NOTE]
 > You must set the ACLs on %systemdrive%\inetpub\wwwroot to grant modify permissions to the account under which you are running. Otherwise some post build events fail. Alternatively, you can leave the ACLs as they are and run the SDK command prompt or Visual Studio as administrator. Some Visual Studio actions (such as attaching a debugger to the ASP.Net worker process) also require administrative privileges.
 
 ## Setup Batch Files and Scripts
- Setup.exe and Cleanup.exe batch files and scripts should be run from a Visual Studio command prompt. Several set up and clean up files perform tasks that require administrative privileges and should be launched with administrator privileges.
+ Setup.exe and Cleanup.exe batch files and scripts should be run from Developer Command Prompt for Visual Studio. Several set up and clean up files perform tasks that require administrative privileges and should be launched with administrator privileges.
 
 ## Important Security Information about Metadata Endpoints
  To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service’s metadata publishing behavior is explicitly enabled in configuration. To make experimenting with the samples easier, almost all samples expose an unsecured metadata publishing endpoint. Such endpoints are potentially available to anonymous unauthenticated consumers and care must be taken before deploying such endpoints to ensure that publicly disclosing a service’s metadata is appropriate. For more information about publishing service metadata, see the [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md) sample. See the [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) sample for a sample securing a metadata endpoint.

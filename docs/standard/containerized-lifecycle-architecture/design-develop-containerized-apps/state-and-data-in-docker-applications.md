@@ -44,6 +44,6 @@ Volume plug-ins like [Flocker](https://clusterhq.com/flocker/) provide data acro
 Remote data sources and caches like SQL Database, DocumentDB, or a remote cache like Redis would be the same as developing without containers. This is one of the preferred, and proven, ways to store business application data.
 
 
->[!div class="step-by-step"]
-[Previous](monolithic-applications.md)
-[Next](soa-applications.md)
+> [!div class="step-by-step"]
+> [Previous](monolithic-applications.md)
+> [Next](soa-applications.md)

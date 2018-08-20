@@ -24,7 +24,7 @@ This section contains code examples that illustrate the use of regular expressio
  Provides an example that replaces dates in the form mm/dd/yy with dates in the form dd-mm-yy.  
   
  [How to: Extract a Protocol and Port Number from a URL](../../../docs/standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md)  
- Provides an example that extracts a protocol and port number from a string that contains a URL. For example, "http://www.contoso.com:8080/letters/readme.html" returns "http:8080".  
+ Provides an example that extracts a protocol and port number from a string that contains a URL. For example, "<http://www.contoso.com:8080/letters/readme.html>" returns "http:8080".  
   
  [How to: Strip Invalid Characters from a String](../../../docs/standard/base-types/how-to-strip-invalid-characters-from-a-string.md)  
  Provides an example that strips invalid non-alphanumeric characters from a string.  

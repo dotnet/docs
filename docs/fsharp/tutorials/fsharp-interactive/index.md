@@ -6,10 +6,10 @@ ms.date: 05/16/2016
 # Interactive Programming with F# #
 
 > [!NOTE]
-This article currently describes the experience for Windows only.  It will be rewritten.
+> This article currently describes the experience for Windows only.  It will be rewritten.
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 F# Interactive (fsi.exe) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 

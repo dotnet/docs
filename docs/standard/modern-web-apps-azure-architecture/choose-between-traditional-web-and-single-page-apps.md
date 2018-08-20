@@ -85,6 +85,6 @@ The following decision table summarizes some of the basic factors to consider wh
 | Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                |
 | Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             |
 
->[!div class="step-by-step"]
-[Previous](modern-web-applications-characteristics.md)
-[Next](architectural-principles.md)
+> [!div class="step-by-step"]
+> [Previous](modern-web-applications-characteristics.md)
+> [Next](architectural-principles.md)

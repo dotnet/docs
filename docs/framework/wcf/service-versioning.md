@@ -93,7 +93,7 @@ After initial deployment, and potentially several times during their lifetime, s
  Similar to data contract versioning, service contract versioning also involves adding, changing, and removing operations.  
   
 ### Specifying Name, Namespace, and Action  
- By default, the name of a service contract is the name of the interface. Its default namespace is "http://tempuri.org", and each operation’s action is "http://tempuri.org/contractname/methodname". It is recommended that you explicitly specify a name and namespace for the service contract, and an action for each operation to avoid using "http://tempuri.org" and to prevent interface and method names from being exposed in the service’s contract.  
+ By default, the name of a service contract is the name of the interface. Its default namespace is "<http://tempuri.org>", and each operation’s action is "<http://tempuri.org/contractname/methodname>". It is recommended that you explicitly specify a name and namespace for the service contract, and an action for each operation to avoid using "<http://tempuri.org>" and to prevent interface and method names from being exposed in the service’s contract.  
   
 ### Adding Parameters and Operations  
  Adding service operations exposed by the service is a nonbreaking change because existing clients need not be concerned about those new operations.  

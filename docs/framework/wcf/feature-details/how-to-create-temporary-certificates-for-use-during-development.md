@@ -11,8 +11,8 @@ When developing a secure service or client using Windows Communication Foundatio
   
 > [!IMPORTANT]
 >  The certificates the Certification Creation tool generates are provided for testing purposes only. When deploying a service or client, be sure to use an appropriate certificate provided by a certification authority. This could either be from a [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] certificate server in your organization or a third party.  
->   
->  By default, the [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d) creates certificates whose root authority is called "Root Agency**."** Because the "Root Agency" is not in the Trusted Root Certification Authorities store, this makes these certificates insecure. Creating a self-signed certificate that is placed in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.  
+> 
+>  By default, the [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d) creates certificates whose root authority is called "Root Agency<strong>."</strong> Because the "Root Agency" is not in the Trusted Root Certification Authorities store, this makes these certificates insecure. Creating a self-signed certificate that is placed in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.  
   
  For more information about creating and using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=88919).  
   

@@ -95,13 +95,13 @@ The constructs that permit a reset of column position are as follows:
 
 
 - Bodies of anonymous functions. In the following code, the print expression starts at a column position that is farther to the left than the `fun` keyword. However, the line must not start at a column to the left of the start of the previous indentation level (that is, to the left of the `L` in `List`).
-[!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet10.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet10.fs)]
 
 - Constructs enclosed by parentheses or by `begin` and `end` in a `then` or `else` block of an `if...then...else` expression, provided the indentation is no less than the column position of the `if` keyword. This exception allows for a coding style in which an opening parenthesis or `begin` is used at the end of a line after `then` or `else`.
 
 
 - Bodies of modules, classes, interfaces, and structures delimited by `begin...end`, `{...}`, `class...end`, or `interface...end`. This allows for a style in which the opening keyword of a type definition can be on the same line as the type name without forcing the whole body to be indented farther than the opening keyword.
-[!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet13.fs)]
+  [!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet13.fs)]
 
 
 ## See Also

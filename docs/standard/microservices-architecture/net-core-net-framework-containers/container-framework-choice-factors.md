@@ -51,6 +51,6 @@ There are several features of your application that affect your decision. You sh
     - Your container platform choice must be *Windows containers* if you use .NET Framework client APIs.
     - If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.
 
->[!div class="step-by-step"]
-[Previous](net-framework-container-scenarios.md)
-[Next](net-container-os-targets.md)
+> [!div class="step-by-step"]
+> [Previous](net-framework-container-scenarios.md)
+> [Next](net-container-os-targets.md)

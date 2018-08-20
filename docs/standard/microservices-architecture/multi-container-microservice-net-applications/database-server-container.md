@@ -194,6 +194,6 @@ Finally, in the docker-compose.override.yml file, the basket.api microservice fo
 ```
 
 
->[!div class="step-by-step"]
-[Previous](multi-container-applications-docker-compose.md)
-[Next](integration-event-based-microservice-communications.md)
+> [!div class="step-by-step"]
+> [Previous](multi-container-applications-docker-compose.md)
+> [Next](integration-event-based-microservice-communications.md)

@@ -23,13 +23,13 @@ Normally when hosting a Windows Communication Foundation (WCF) service under Int
  With this in the Web.config file, you can place the service source code in the App_Code directory of the application or a complied assembly in the Bin directory of the application.  
   
 > [!NOTE]
->  -   When using configuration-based activation, inline code in .svc files is not supported.  
-> -   The `relativeAddress` attribute must be set to a relative address such as "\<sub-directory>/service.svc" or "~/\<sub-directory/service.svc".  
-> -   A configuration exception is thrown if you register a relative address that does not have a known extension associated with WCF.  
-> -   The relative address specified is relative to the root of the virtual application.  
-> -   Due to the hierarchical model of configuration, the registered relative addresses at machine and site level are inherited by virtual applications.  
-> -   Registrations in a configuration file take precedence over settings in a .svc, .xamlx, .xoml, or other file.  
-> -   Any ‘\’ (backslashes) in a URI sent to IIS/WAS are automatically converted to a ‘/’ (forward slash). If a relative address is added that contains a ‘\’ and you send IIS a URI that uses the relative address, the backslash is converted to a forward slash and IIS cannot match it to the relative address. IIS sends out trace information that indicates that there are no matches found.  
+> - When using configuration-based activation, inline code in .svc files is not supported.  
+>   -   The `relativeAddress` attribute must be set to a relative address such as "\<sub-directory>/service.svc" or "~/\<sub-directory/service.svc".  
+>   -   A configuration exception is thrown if you register a relative address that does not have a known extension associated with WCF.  
+>   -   The relative address specified is relative to the root of the virtual application.  
+>   -   Due to the hierarchical model of configuration, the registered relative addresses at machine and site level are inherited by virtual applications.  
+>   -   Registrations in a configuration file take precedence over settings in a .svc, .xamlx, .xoml, or other file.  
+>   -   Any ‘\’ (backslashes) in a URI sent to IIS/WAS are automatically converted to a ‘/’ (forward slash). If a relative address is added that contains a ‘\’ and you send IIS a URI that uses the relative address, the backslash is converted to a forward slash and IIS cannot match it to the relative address. IIS sends out trace information that indicates that there are no matches found.  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>  

@@ -18,7 +18,7 @@ ms.author: "mairaw"
 The Developer Command Prompt for Visual Studio automatically sets the environment variables that enable you to easily use .NET Framework tools.
 
 > [!div class="button"]
-[Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 ## Searching for the command prompt on your machine
 

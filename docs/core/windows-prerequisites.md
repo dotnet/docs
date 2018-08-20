@@ -57,7 +57,7 @@ You can use any editor to develop .NET Core applications using the .NET Core SDK
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
 
-# [.NET Core 2.x](#tab/netcore2x)
+#### [.NET Core 2.x](#tab/netcore2x/)
 
 To develop .NET Core 2.x apps in Visual Studio 2017:
 
@@ -80,7 +80,7 @@ Once the .NET Core 2.x SDK is installed, Visual Studio 2017 uses the .NET Core S
 * Retarget .NET Core 1.x projects to .NET Core 2.x, build, and run.
 * Create new .NET Core 2.x projects.
 
-# [.NET Core 1.x](#tab/netcore1x)
+#### [.NET Core 1.x](#tab/netcore1x/)
 
 To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Studio 2017 RTM (version 15.0.26228.4) or higher](/visualstudio/install/install-visual-studio) with the **".NET Core cross-platform development"** workload (in the **Other Toolsets** section) selected.
 
@@ -92,8 +92,7 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
   > * The projects are project.json-based, which is deprecated.
 >
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
----
-
+* * *
 > [!TIP]
 > To verify your Visual Studio 2017 version:
 >

@@ -43,7 +43,7 @@ XPathMessageFilter xpathFilter = new XPathMessageFilter("/s12:Envelope/s12:Heade
 EndpointNameMessageFilter endpointNameFilter = new EndpointNameMessageFilter("calculatorEndpoint");  
 ```  
   
- The third filter is a <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter>. This matches any message that showed up on an endpoint with an address that matches the address prefix (or the front portion) provided. In this example the address prefix is defined as "http://localhost/routingservice/router/rounding/". This means that any incoming messages that are addressed to "http://localhost/routingservice/router/rounding/*" are matched by this filter. In this case, it is messages that show up on the Rounding Calculator endpoint, which has the address of "http://localhost/routingservice/router/rounding/calculator".  
+ The third filter is a <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter>. This matches any message that showed up on an endpoint with an address that matches the address prefix (or the front portion) provided. In this example the address prefix is defined as "<http://localhost/routingservice/router/rounding/>". This means that any incoming messages that are addressed to "<http://localhost/routingservice/router/rounding/*>" are matched by this filter. In this case, it is messages that show up on the Rounding Calculator endpoint, which has the address of "<http://localhost/routingservice/router/rounding/calculator>".  
   
 ```  
 PrefixEndpointAddressMessageFilter prefixAddressFilter = new PrefixEndpointAddressMessageFilter(new EndpointAddress("http://localhost/routingservice/router/rounding/"));  

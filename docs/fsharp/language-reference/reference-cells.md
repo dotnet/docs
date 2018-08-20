@@ -43,13 +43,15 @@ let ref x = { contents = x }
 
 The following table shows the features that are available on the reference cell.
 
-|Operator, member, or field|Description|Type|Definition|
-|--------------------------|-----------|----|----------|
-|`!` (dereference operator)|Returns the underlying value.|`'a ref -> 'a`|`let (!) r = r.contents`|
-|`:=` (assignment operator)|Changes the underlying value.|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
-|`ref` (operator)|Encapsulates a value into a new reference cell.|`'a -> 'a ref`|`let ref x = { contents = x }`|
-|`Value` (property)|Gets or sets the underlying value.|`unit -> 'a`|`member x.Value = x.contents`|
-|`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
+
+| Operator, member, or field |                   Description                   |          Type          |            Definition            |
+|----------------------------|-------------------------------------------------|------------------------|----------------------------------|
+| `!` (dereference operator) |          Returns the underlying value.          |     `'a ref -> 'a`     |     `let (!) r = r.contents`     |
+| `:=` (assignment operator) |          Changes the underlying value.          | `'a ref -> 'a -> unit` | `let (:=) r x = r.contents <- x` |
+|      `ref` (operator)      | Encapsulates a value into a new reference cell. |     `'a -> 'a ref`     |  `let ref x = { contents = x }`  |
+|     `Value` (property)     |       Gets or sets the underlying value.        |      `unit -> 'a`      |  `member x.Value = x.contents`   |
+| `contents` (record field)  |       Gets or sets the underlying value.        |          `'a`          |  `let ref x = { contents = x }`  |
+
 There are several ways to access the underlying value. The value returned by the dereference operator (`!`) is not an assignable value. Therefore, if you are modifying the underlying value, you must use the assignment operator (`:=`) instead.
 
 Both the `Value` property and the `contents` field are assignable values. Therefore, you can use these to either access or change the underlying value, as shown in the following code.
@@ -73,11 +75,11 @@ The following code illustrates the use of reference cells in parameter passing. 
 
 For more information about how to pass by reference, see [Parameters and Arguments](parameters-and-arguments.md).
 
->[!NOTE]
-C# programmers should know that ref works differently in F# than it does in C#. For example, the use of ref when you pass an argument does not have the same effect in F# as it does in C#.
+> [!NOTE]
+> C# programmers should know that ref works differently in F# than it does in C#. For example, the use of ref when you pass an argument does not have the same effect in F# as it does in C#.
 
->[!NOTE]
-`mutable` variables may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
+> [!NOTE]
+> `mutable` variables may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).
 
 ## Consuming C# `ref` returns
 

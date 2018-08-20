@@ -60,7 +60,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
  [!code-xml[c_SchemaImportExport#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#10)]  
   
- The following example uses the `Namespaces` property to map the "http://schemas.contoso.com/carSchema" namespace to "Contoso.Cars".  
+ The following example uses the `Namespaces` property to map the "<http://schemas.contoso.com/carSchema>" namespace to "Contoso.Cars".  
   
  [!code-csharp[c_SchemaImportExport#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs/source.cs#8)]
  [!code-vb[c_SchemaImportExport#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#8)]  

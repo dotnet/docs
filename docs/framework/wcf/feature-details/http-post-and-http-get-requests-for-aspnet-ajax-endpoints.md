@@ -79,9 +79,9 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 ### To call the service  
   
-1.  You can test your service's GET operations without any client code, by using the browser. For example, if your service is configured at the "http://example.com/service.svc" address, then typing "http://example.com/service.svc/LookUpArtist?album=SomeAlbum" into the browser address bar invokes the service and causes the response to be downloaded or displayed.  
+1. You can test your service's GET operations without any client code, by using the browser. For example, if your service is configured at the "<http://example.com/service.svc>" address, then typing "<http://example.com/service.svc/LookUpArtist?album=SomeAlbum>" into the browser address bar invokes the service and causes the response to be downloaded or displayed.  
   
-2.  You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md).  
+2. You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md).  
   
 ## See Also  
  [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)  

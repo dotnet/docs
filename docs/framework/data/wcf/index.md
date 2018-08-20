@@ -19,85 +19,85 @@ ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
  Depending on your interests, consider getting started with [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] in one of the following topics.  
   
  I want to jump right in…  
- -   [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
   
--   [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
+  -   [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
   
--   [Silverlight Quickstart](http://go.microsoft.com/fwlink/?LinkID=192782)  
+  -   [Silverlight Quickstart](http://go.microsoft.com/fwlink/?LinkID=192782)  
   
--   [Silverlight Quickstart for Windows Phone Development](http://go.microsoft.com/fwlink/?LinkID=214535)  
+  -   [Silverlight Quickstart for Windows Phone Development](http://go.microsoft.com/fwlink/?LinkID=214535)  
   
  Just show me some code…  
- -   [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
   
--   [How to: Execute Data Service Queries](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)  
+  -   [How to: Execute Data Service Queries](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)  
   
--   [How to: Bind Data to Windows Presentation Foundation Elements](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)  
+  -   [How to: Bind Data to Windows Presentation Foundation Elements](../../../../docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md)  
   
  I want to know more about [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]…  
- -   [Whitepaper: Introducing OData](http://go.microsoft.com/fwlink/?LinkId=220867)  
+- [Whitepaper: Introducing OData](http://go.microsoft.com/fwlink/?LinkId=220867)  
   
--   [Open Data Protocol Web site](http://go.microsoft.com/fwlink/?LinkID=184554)  
+  -   [Open Data Protocol Web site](http://go.microsoft.com/fwlink/?LinkID=184554)  
   
--   [OData: SDK](http://go.microsoft.com/fwlink/?LinkID=185248)  
+  -   [OData: SDK](http://go.microsoft.com/fwlink/?LinkID=185248)  
   
--   [OData: Frequently Asked Questions](http://go.microsoft.com/fwlink/?LinkId=185867)  
+  -   [OData: Frequently Asked Questions](http://go.microsoft.com/fwlink/?LinkId=185867)  
   
  I want to watch some videos…  
- -   [Beginner's Guide to WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=220864)  
+- [Beginner's Guide to WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=220864)  
   
--   [WCF Data Services Developer Videos](http://go.microsoft.com/fwlink/?LinkId=220861)  
+  -   [WCF Data Services Developer Videos](http://go.microsoft.com/fwlink/?LinkId=220861)  
   
--   [OData: Developers Web site](http://go.microsoft.com/fwlink/?LinkId=185866)  
+  -   [OData: Developers Web site](http://go.microsoft.com/fwlink/?LinkId=185866)  
   
  I want to see end-to-end samples  
- -   [WCF Data Services Documentation Samples on MSDN Samples Gallery](http://go.microsoft.com/fwlink/?LinkID=220865)  
+- [WCF Data Services Documentation Samples on MSDN Samples Gallery](http://go.microsoft.com/fwlink/?LinkID=220865)  
   
--   [Other WCF Data Services Samples on MSDN Samples Gallery](http://go.microsoft.com/fwlink/?LinkId=220866)  
+  -   [Other WCF Data Services Samples on MSDN Samples Gallery](http://go.microsoft.com/fwlink/?LinkId=220866)  
   
--   [OData: SDK](http://go.microsoft.com/fwlink/?LinkID=185248)  
+  -   [OData: SDK](http://go.microsoft.com/fwlink/?LinkID=185248)  
   
  How does it integrate with Visual Studio?  
- -   [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)  
+- [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)  
   
--   [Creating the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md)  
+  -   [Creating the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md)  
   
--   [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)  
+  -   [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)  
   
  What can I do with it?  
- -   [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)  
+- [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)  
   
--   [Whitepaper: Introducing OData](http://go.microsoft.com/fwlink/?LinkId=220867)  
+  -   [Whitepaper: Introducing OData](http://go.microsoft.com/fwlink/?LinkId=220867)  
   
--   [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
+  -   [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
   
  I want to use Silverlight…  
- -   [Silverlight Quickstart](http://go.microsoft.com/fwlink/?LinkID=192782)  
+- [Silverlight Quickstart](http://go.microsoft.com/fwlink/?LinkID=192782)  
   
--   [WCF Data Services (Silverlight)](http://go.microsoft.com/fwlink/?LinkID=143149)  
+  -   [WCF Data Services (Silverlight)](http://go.microsoft.com/fwlink/?LinkID=143149)  
   
--   [Getting Started with Silverlight](http://go.microsoft.com/fwlink/?LinkId=148366)  
+  -   [Getting Started with Silverlight](http://go.microsoft.com/fwlink/?LinkId=148366)  
   
  I want to create a Windows Phone application…  
- -   [Silverlight Quickstart for Windows Phone Development](http://go.microsoft.com/fwlink/?LinkID=214535)  
+- [Silverlight Quickstart for Windows Phone Development](http://go.microsoft.com/fwlink/?LinkID=214535)  
   
--   [Open Data Protocol (OData) Client for Windows Phone](http://go.microsoft.com/fwlink/?LinkID=208749)  
+  -   [Open Data Protocol (OData) Client for Windows Phone](http://go.microsoft.com/fwlink/?LinkID=208749)  
   
  I want to use LINQ…  
- -   [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
+- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
   
--   [LINQ Considerations](../../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md)  
+  -   [LINQ Considerations](../../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md)  
   
--   [How to: Execute Data Service Queries](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)  
+  -   [How to: Execute Data Service Queries](../../../../docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md)  
   
  I still need some more information…  
- -   [WCF Data Services Team Blog](http://go.microsoft.com/fwlink/?LinkID=150511)  
+- [WCF Data Services Team Blog](http://go.microsoft.com/fwlink/?LinkID=150511)  
   
--   [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)  
+  -   [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)  
   
--   [WCF Data Services Developer Center](http://go.microsoft.com/fwlink/?LinkId=220868)  
+  -   [WCF Data Services Developer Center](http://go.microsoft.com/fwlink/?LinkId=220868)  
   
--   [Open Data Protocol Web site](http://go.microsoft.com/fwlink/?LinkID=184554)  
+  -   [Open Data Protocol Web site](http://go.microsoft.com/fwlink/?LinkID=184554)  
   
 ## In This Section  
  [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)  

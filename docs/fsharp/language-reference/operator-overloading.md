@@ -50,45 +50,46 @@ The following table shows the standard operators and their corresponding generat
 
 
 
-|Operator|Generated name|
-|--------|--------------|
-|`[]`|`op_Nil`|
-|`::`|`op_Cons`|
-|`+`|`op_Addition`|
-|`-`|`op_Subtraction`|
-|`*`|`op_Multiply`|
-|`/`|`op_Division`|
-|`@`|`op_Append`|
-|`^`|`op_Concatenate`|
-|`%`|`op_Modulus`|
-|`&&&`|`op_BitwiseAnd`|
-|<code>&#124;&#124;&#124;</code>|`op_BitwiseOr`|
-|`^^^`|`op_ExclusiveOr`|
-|`<<<`|`op_LeftShift`|
-|`~~~`|`op_LogicalNot`|
-|`>>>`|`op_RightShift`|
-|`~+`|`op_UnaryPlus`|
-|`~-`|`op_UnaryNegation`|
-|`=`|`op_Equality`|
-|`<=`|`op_LessThanOrEqual`|
-|`>=`|`op_GreaterThanOrEqual`|
-|`<`|`op_LessThan`|
-|`>`|`op_GreaterThan`|
-|`?`|`op_Dynamic`|
-|`?<-`|`op_DynamicAssignment`|
-|<code>&#124;></code>|`op_PipeRight`|
-|<code><&#124;</code>|`op_PipeLeft`|
-|`!`|`op_Dereference`|
-|`>>`|`op_ComposeRight`|
-|`<<`|`op_ComposeLeft`|
-|`<@ @>`|`op_Quotation`|
-|`<@@ @@>`|`op_QuotationUntyped`|
-|`+=`|`op_AdditionAssignment`|
-|`-=`|`op_SubtractionAssignment`|
-|`*=`|`op_MultiplyAssignment`|
-|`/=`|`op_DivisionAssignment`|
-|`..`|`op_Range`|
-|`.. ..`|`op_RangeStep`|
+|            Operator             |       Generated name       |
+|---------------------------------|----------------------------|
+|              `[]`               |          `op_Nil`          |
+|              `::`               |         `op_Cons`          |
+|               `+`               |       `op_Addition`        |
+|               `-`               |      `op_Subtraction`      |
+|               `*`               |       `op_Multiply`        |
+|               `/`               |       `op_Division`        |
+|               `@`               |        `op_Append`         |
+|               `^`               |      `op_Concatenate`      |
+|               `%`               |        `op_Modulus`        |
+|              `&&&`              |      `op_BitwiseAnd`       |
+| <code>&#124;&#124;&#124;</code> |       `op_BitwiseOr`       |
+|              `^^^`              |      `op_ExclusiveOr`      |
+|              `<<<`              |       `op_LeftShift`       |
+|              `~~~`              |      `op_LogicalNot`       |
+|              `>>>`              |      `op_RightShift`       |
+|              `~+`               |       `op_UnaryPlus`       |
+|              `~-`               |     `op_UnaryNegation`     |
+|               `=`               |       `op_Equality`        |
+|              `<=`               |    `op_LessThanOrEqual`    |
+|              `>=`               |  `op_GreaterThanOrEqual`   |
+|               `<`               |       `op_LessThan`        |
+|               `>`               |      `op_GreaterThan`      |
+|               `?`               |        `op_Dynamic`        |
+|              `?<-`              |   `op_DynamicAssignment`   |
+|      <code>&#124;></code>       |       `op_PipeRight`       |
+|      <code><&#124;</code>       |       `op_PipeLeft`        |
+|               `!`               |      `op_Dereference`      |
+|              `>>`               |     `op_ComposeRight`      |
+|              `<<`               |      `op_ComposeLeft`      |
+|             `<@ @>`             |       `op_Quotation`       |
+|            `<@@ @@>`            |   `op_QuotationUntyped`    |
+|              `+=`               |  `op_AdditionAssignment`   |
+|              `-=`               | `op_SubtractionAssignment` |
+|              `*=`               |  `op_MultiplyAssignment`   |
+|              `/=`               |  `op_DivisionAssignment`   |
+|              `..`               |         `op_Range`         |
+|             `.. ..`             |       `op_RangeStep`       |
+
 Other combinations of operator characters that are not listed here can be used as operators and have names that are made up by concatenating names for the individual characters from the following table. For example, +! becomes `op_PlusBang`.
 
 

@@ -78,7 +78,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 <endpoint address="anotherEndpoint" .../>  
 ```  
   
- This provides an endpoint that can be reached at "http://localhost/Application1/MyService.svc/anotherEndpoint".  
+ This provides an endpoint that can be reached at "<http://localhost/Application1/MyService.svc/anotherEndpoint>".  
   
  Similarly, the endpoint configuration element that uses an empty string as the relative address provides an endpoint reachable at http://localhost/Application1/MyService.svc, which is the base address.  
   

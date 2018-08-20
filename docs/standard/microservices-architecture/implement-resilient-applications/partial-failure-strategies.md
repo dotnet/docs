@@ -39,6 +39,6 @@ Strategies for dealing with partial failures include the following.
     <https://docs.microsoft.com/azure/architecture/best-practices/transient-faults>
 
 
->[!div class="step-by-step"]
-[Previous](handle-partial-failure.md)
-[Next](implement-retries-exponential-backoff.md)
+> [!div class="step-by-step"]
+> [Previous](handle-partial-failure.md)
+> [Next](implement-retries-exponential-backoff.md)

@@ -21,9 +21,9 @@ ms.author: "ronpet"
 Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created. 
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
+
 ## Syntax  
-  
+
 ```  
 HRESULT QualifierSet_Put (
    [in] int                  vFunc, 
@@ -51,13 +51,14 @@ HRESULT QualifierSet_Put (
 `lFlavor`
 [in] One of the following constants that defines the desired qualifier flavors for this qualifier. The default value is `WBEM_FLAVOR_OVERRIDABLE` (0).
 
-|Constant  |Value  |Description  |
-|---------|---------|---------|
-| `WBEM_FLAVOR_OVERRIDABLE` | 0 | The qualifier can be overridden in a derived class or instance. **This is the default value.** |
-| `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE` | 1 | The qualifier is propagated to instances. |
-| `WBEM_FLAVOR_GLAG_PROPAGATE_TO_DERIVED_CLASS` | 2 | The qualifier is propagated to derived classes. |
-| `WBEM_FLAVOR_NOT_OVERRIDABLE | 0x10 | The qualifier cannot be overridden in a derived class or instance. |
-| `WBEM_FLAVOR_AMENDED | 0x80 | The qualifier is localized. |
+
+|                   Constant                    | Value |                                          Description                                           |
+|-----------------------------------------------|-------|------------------------------------------------------------------------------------------------|
+|           `WBEM_FLAVOR_OVERRIDABLE`           |   0   | The qualifier can be overridden in a derived class or instance. **This is the default value.** |
+|   `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE`    |   1   |                           The qualifier is propagated to instances.                            |
+| `WBEM_FLAVOR_GLAG_PROPAGATE_TO_DERIVED_CLASS` |   2   |                        The qualifier is propagated to derived classes.                         |
+|         \`WBEM_FLAVOR_NOT_OVERRIDABLE         | 0x10  |               The qualifier cannot be overridden in a derived class or instance.               |
+|             \`WBEM_FLAVOR_AMENDED             | 0x80  |                                  The qualifier is localized.                                   |
 
 ## Return value
 
@@ -70,17 +71,17 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_INVALID_QUALIFIER_TYPE` | 0x80041029 | The `pVal` parameter is not of a legal qualifier type. |
 | `WBEM_E_OVERRIDE_NOT_ALLOWED` | 0x8004101a | It is not possible to call the `QualifierSet_Put` method on the qualifier because the owning object does not permit overrides. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemQualifierSet::Put](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-put) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
+
  **Header:** WMINet_Utils.idl  
-  
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+
 ## See also  
 [WMI and Performance Counters (Unmanaged API Reference)](index.md)

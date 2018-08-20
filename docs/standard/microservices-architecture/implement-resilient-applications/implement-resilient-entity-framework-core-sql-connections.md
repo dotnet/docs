@@ -88,6 +88,6 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 -   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
     <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
 
->[!div class="step-by-step"]
-[Previous](implement-retries-exponential-backoff.md)
-[Next](explore-custom-http-call-retries-exponential-backoff.md)
+> [!div class="step-by-step"]
+> [Previous](implement-retries-exponential-backoff.md)
+> [Next](explore-custom-http-call-retries-exponential-backoff.md)

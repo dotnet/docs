@@ -28,6 +28,6 @@ Orchestration is a broad term that refers to container scheduling, cluster manag
 The capabilities provided by orchestrators and schedulers are very complex to develop and create from scratch, and therefore you usually would want to make use of orchestration solutions offered by vendors.
 
 
->[!div class="step-by-step"]
-[Previous](index.md)
-[Next](manage-production-docker-environments.md)
+> [!div class="step-by-step"]
+> [Previous](index.md)
+> [Next](manage-production-docker-environments.md)

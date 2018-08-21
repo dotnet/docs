@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 ---
 # #error (C# Reference)
-`#error` lets you generate an error from a specific location in your code. For example:  
+`#error` lets you generate a [CS1029](../compiler-messages/cs1029.md) user-defined error from a specific location in your code. For example:  
   
 ```csharp
 #error Deprecated code in this method.  

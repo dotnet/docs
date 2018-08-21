@@ -12,7 +12,7 @@ This example reads the contents of a text file, one line at a time, into a strin
   
 ## Example  
   
-```  
+```csharp
 int counter = 0;  
 string line;  
   
@@ -21,7 +21,7 @@ System.IO.StreamReader file =
     new System.IO.StreamReader(@"c:\test.txt");  
 while((line = file.ReadLine()) != null)  
 {  
-    System.Console.WriteLine (line);  
+    System.Console.WriteLine(line);  
     counter++;  
 }  
   

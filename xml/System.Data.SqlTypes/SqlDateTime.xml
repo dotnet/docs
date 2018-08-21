@@ -315,8 +315,8 @@
         <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
-        <param name="bilisecond">An integer value representing the bilisecond (billionth of a second) of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and billisecond of the new structure.</summary>
+        <param name="bilisecond">An integer value representing the microsecond (thousandths of a millisecond) of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and microsecond of the new structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

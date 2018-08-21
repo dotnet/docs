@@ -1,6 +1,6 @@
 ---
 title: "Namespaces (C# Programming Guide)"
-ms.date: 07/20/2015
+ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, namespaces"
   - "namespaces [C#]"
@@ -18,7 +18,7 @@ Namespaces are heavily used in C# programming in two ways. First, the .NET Frame
   
 [!code-csharp[csProgGuide#25](../inside-a-program/codesnippet/CSharp/index_3.cs)]  
   
-For more information, see [using Directive](../../language-reference/keywords/using-directive.md).  
+For more information, see the [using Directive](../../language-reference/keywords/using-directive.md).  
   
 Second, declaring your own namespaces can help you control the scope of class and method names in larger programming projects. Use the [namespace](../../language-reference/keywords/namespace.md) keyword to declare a namespace, as in the following example:  
   
@@ -27,37 +27,6 @@ Second, declaring your own namespaces can help you control the scope of class an
 The name of the namespace must be a valid C# [identifier name](../inside-a-program/identifier-names.md).
 
 ## Namespaces Overview  
-<<<<<<< HEAD
- Namespaces have the following properties:  
-  
--   They organize large code projects.  
-  
--   They are delimited by using the `.` operator.  
-  
--   The `using directive` obviates the requirement to specify the name of the namespace for every class.  
-  
--   The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET Framework namespace `System`.  
-  
-## Related Sections  
- See the following topics for more information about namespaces:  
-  
--   [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)  
-  
--   [How to: Use the Global Namespace Alias](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md)  
-  
--   [How to: Use the My Namespace](../../../csharp/programming-guide/namespaces/how-to-use-the-my-namespace.md)  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See Also
-
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
-- [using Directive](../../../csharp/language-reference/keywords/using-directive.md)  
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
-- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
-=======
 
 Namespaces have the following properties:  
   
@@ -65,14 +34,6 @@ Namespaces have the following properties:
 - They are delimited by using the `.` operator.  
 - The `using directive` obviates the requirement to specify the name of the namespace for every class.  
 - The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET Framework namespace `System`.  
-  
-## Related Sections
-
-See the following topics for more information about namespaces:  
-  
-- [Using Namespaces](using-namespaces.md)  
-- [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)  
-- [How to: Use the My Namespace](how-to-use-the-my-namespace.md)  
 
 ## C# Language Specification
 
@@ -80,6 +41,9 @@ See the following topics for more information about namespaces:
   
 ## See Also
 
+- [Using Namespaces](using-namespaces.md)
+- [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)
+- [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
 - [C# Programming Guide](../index.md)  
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [Namespace Keywords](../../language-reference/keywords/namespace-keywords.md)  

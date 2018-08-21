@@ -1,6 +1,6 @@
 ---
 title: "Interfaces (C# Programming Guide)"
-ms.date: 07/20/2015
+ms.date: 08/21/2018
 helpviewer_keywords: 
   - "interfaces [C#]"
   - "C# language, interfaces"
@@ -12,10 +12,12 @@ An interface contains definitions for a group of related functionalities that a 
   
 By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.  
   
-You define an interface by using the [interface](../../language-reference/keywords/interface.md) keyword, as the following example shows.  
+You define an interface by using the [interface](../../language-reference/keywords/interface.md) keyword. as the following example shows.  
   
 [!code-csharp[csProgGuideInheritance#47](../classes-and-structs/codesnippet/CSharp/interfaces_1.cs)]  
-  
+
+The name of the struct must be a valid C# [identifier name](../inside-a-program/identifier-names.md). By convention, interface names begin with a capital `I`.
+
 Any class or struct that implements the <xref:System.IEquatable%601> interface must contain a definition for an <xref:System.IEquatable%601.Equals%2A> method that matches the signature that the interface specifies. As a result, you can count on a class that implements `IEquatable<T>` to contain an `Equals` method with which an instance of the class can determine whether it's equal to another instance of the same class.  
   
 The definition of `IEquatable<T>` doesn’t provide an implementation for `Equals`. The interface defines only the signature. In that way, an interface in C# is similar to an abstract class in which all the methods are abstract. However, a class or struct can implement multiple interfaces, but a class can inherit only a single class, abstract or not. Therefore, by using interfaces, you can include behavior from multiple sources in a class.  
@@ -38,7 +40,7 @@ Interfaces can implement other interfaces. A class might include an interface mu
   
 A base class can also implement interface members by using virtual members. In that case, a derived class can change the interface behavior by overriding the virtual members. For more information about virtual members, see [Polymorphism](../classes-and-structs/polymorphism.md).  
   
-## Interfaces Summary
+## Interfaces summary
 
 An interface has the following properties:  
 
@@ -48,7 +50,7 @@ An interface has the following properties:
 - Interfaces contain no implementation of methods.
 - A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.
 
-## In This Section
+## In this section
 
 [Explicit Interface Implementation](explicit-interface-implementation.md)  
  Explains how to create a class member that’s specific to an interface.  
@@ -73,12 +75,12 @@ An interface has the following properties:
 - [Events](../events/index.md)  
 - [Indexers](../indexers/index.md)  
   
-## Featured Book Chapter
+## featured book chapter
 
-[Interfaces](http://msdn.microsoft.com/library/orm-9780596521066-01-13.aspx) in [Learning C# 3.0: Master the Fundamentals of C# 3.0](http://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
-  
+[Interfaces](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652489%28v%3Dorm.10%29) in [Learning C# 3.0: Master the Fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v%253dorm.10%29)
+
 ## See Also
 
-- [C# Programming Guide](../index.md)  
+- [C# Programming Guide](../index.md)
 - [Inheritance](../classes-and-structs/inheritance.md)
 - [Identifier names](../inside-a-program/identifier-names.md)

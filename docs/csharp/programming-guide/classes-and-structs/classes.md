@@ -1,7 +1,7 @@
 ---
 title: "Classes (C# Programming Guide)"
 description: Learn about the class types and how to create them
-ms.date: 04/05/2018
+ms.date: 08/21/2018
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
@@ -22,7 +22,8 @@ MyClass mc2 = mc;
 
 When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized and in most scenarios, it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/gc.md).  
   
-## Declaring Classes  
+## Declaring Classes
+
  Classes are declared by using the [class](../../../csharp/language-reference/keywords/class.md) keyword followed by a unique identifier, as shown in the following example:
 
  ```csharp
@@ -35,7 +36,7 @@ When the object is created, enough memory is allocated on the managed heap for t
 
  The `class` keyword is preceded by the access level. Because [public](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../inside-a-program/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   
-## Creating Objects
+## Creating objects
 
 Although they are sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.  
   
@@ -60,7 +61,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
   
  This code creates two object references that both refer to the same object. Therefore, any changes to the object made through `object3` are reflected in subsequent uses of `object4`. Because objects that are based on classes are referred to by reference, classes are known as reference types.  
   
-## Class Inheritance  
+## Class inheritance  
 
 Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../../csharp/language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods.
 

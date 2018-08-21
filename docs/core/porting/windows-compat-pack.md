@@ -13,7 +13,7 @@ in the .NET Framework. The *Windows Compatibility Pack* is about providing many
 of these technologies so that building .NET Core applications as well as .NET
 Standard libraries becomes much more viable for existing code.
 
-This package is a logical [extension of .NET Standard 2.0](../whats-new/index.md#api-changes-and-library-support)
+This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support)
 that significantly increases API set and existing code compiles with almost no
 modifications. But in order to keep the promise of .NET Standard ("it is the set
 of APIs that all .NET implementations provide"), this didn't include

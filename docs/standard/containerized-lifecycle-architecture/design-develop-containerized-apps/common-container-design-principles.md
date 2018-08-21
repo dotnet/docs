@@ -17,5 +17,5 @@ You might find a scenario in which you want multiple processes running in a sing
 
 
 >[!div class="step-by-step"]
-[Previous] (design-docker-applications.md)
-[Next] (monolithic-applications.md)
+[Previous](design-docker-applications.md)
+[Next](monolithic-applications.md)

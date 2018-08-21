@@ -68,7 +68,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
     ![Selecting .NET Core](media/with-visual-studio-code/selectcore.png)
 
-5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9.
+5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
 
     ![Setting a Breakpoint](media/with-visual-studio-code/setbreakpoint.png)
 
@@ -81,6 +81,11 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 > [!TIP] 
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
+
+## FAQ
+
+### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."
+The Visual Studio Code C# extension can generate assets to build and debug for you. Visual Studio Code prompts you to generate these assets when you first open a C# project. If you didn't generate assets then, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this generates the .vscode, launch.json, and tasks.json configuration files that you need.
 
 ## See also
 [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   

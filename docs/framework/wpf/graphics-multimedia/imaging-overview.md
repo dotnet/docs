@@ -48,7 +48,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
  The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
- This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](https://msdn.microsoft.com/library/ee719902.aspx) documentation.  
+ This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  

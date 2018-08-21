@@ -15,19 +15,7 @@ semantics with value types. Use these features wisely to minimize both allocatio
 and copy operations. This article explores those new features.
 
 Much of the sample code in this article demonstrates features added in C# 7.2. In order to
-use those features, you must configure your project to use C# 7.2 or later. 
-You can use Visual Studio to select it. For each project, select **Project** from
-the menu, then **Properties**. Select the **Build** tab and click **Advanced**. From there,
-configure the language version. Choose either "7.2", or "latest".  Or you can
-edit the *csproj* file and add the following node:
-
-```XML
-  <PropertyGroup>
-    <LangVersion>7.2</LangVersion>
-  </PropertyGroup>
-```
-
-You can use either "7.2" or "latest" for the value.
+use those features, you must configure your project to use C# 7.2 or later. For more information on setting the language version see [configure the language version](language-reference/configure-language-version.md).
 
 ## Passing arguments by readonly reference
 
@@ -227,7 +215,7 @@ in a manner that could promote it to the managed heap.
 
 ## `readonly ref struct` type
 
-Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` delcarations. 
+Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations. 
 
 The following example demonstrates the declaration of `readonly ref struct`.
 

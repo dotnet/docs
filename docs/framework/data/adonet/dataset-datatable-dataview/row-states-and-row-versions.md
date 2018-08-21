@@ -1,6 +1,6 @@
 ---
 title: "Row States and Row Versions"
-ms.date: "03/30/2017"
+ms.date: "07/19/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -38,7 +38,7 @@ string custID = custRow["CustomerID", DataRowVersion.Original].ToString();
 |DataRowVersion value|Description|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|The current values for the row. This row version does not exist for rows with a `RowState` of `Deleted`.|  
-|<xref:System.Data.DataRowVersion.Default>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Unchanged` row is `Current`. The default row version for a `Deleted` row is `Original`. The default row version for a `Detached` row is `Proposed`.|  
+|<xref:System.Data.DataRowVersion.Default>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Deleted` row is `Current`. The default row version for a `Detached` row is `Proposed`.|  
 |<xref:System.Data.DataRowVersion.Original>|The original values for the row. This row version does not exist for rows with a `RowState` of `Added`.|  
 |<xref:System.Data.DataRowVersion.Proposed>|The proposed values for the row. This row version exists during an edit operation on a row, or for a row that is not part of a `DataRowCollection`.|  
   

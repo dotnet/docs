@@ -249,7 +249,7 @@ You might need to create a zero-length array under the following circumstances:
   
 -   Without risking a <xref:System.NullReferenceException> exception, your code must access members of the <xref:System.Array> class, such as <xref:System.Array.Length%2A> or <xref:System.Array.Rank%2A>, or call a Visual Basic function such as <xref:Microsoft.VisualBasic.Information.UBound%2A>.  
   
--   You want to keep the your code simple by not having to check for `Nothing` as a special case.  
+-   You want to keep your code simple by not having to check for `Nothing` as a special case.  
   
 -   Your code interacts with an application programming interface (API) that either requires you to pass a zero-length array to one or more procedures or returns a zero-length array from one or more procedures.
 

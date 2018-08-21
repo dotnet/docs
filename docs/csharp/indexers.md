@@ -212,7 +212,7 @@ from any users of this class.
 Another common scenario is when you need to model a dictionary
 or a map. This scenario is when your type stores values based on key,
 typically text keys. This example creates a dictionary that maps command
-line arguments to [lamdba expressions](delegates-overview.md) that manage
+line arguments to [lambda expressions](delegates-overview.md) that manage
 those options. The following example shows two classes: an `ArgsActions`
 class that maps a command line option to an `Action` delegate, and an
 `ArgsProcessor` that uses the `ArgsActions` to execute each `Action` when

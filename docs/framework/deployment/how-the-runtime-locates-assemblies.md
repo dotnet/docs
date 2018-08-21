@@ -231,8 +231,8 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ```xml  
 <dependentAssembly>  
    <assemblyIdentity name="Server" publicKeyToken="c0305c36380ba429" />   
-      <codeBase version="1.0.0.0" href="v1/Server.dll"/>  
-      <codeBase version="2.0.0.0" href="v2/Server.dll"/>  
+   <codeBase version="1.0.0.0" href="v1/Server.dll" />  
+   <codeBase version="2.0.0.0" href="v2/Server.dll" />  
 </dependentAssembly>  
 ```  
   

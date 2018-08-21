@@ -1,5 +1,5 @@
 // Save this file as CRefTest.cs
-// Compile with: csc CRefTest.cs /doc:Results.xml 
+// Compile with: csc CRefTest.cs -doc:Results.xml 
 
 namespace TestNamespace
 {

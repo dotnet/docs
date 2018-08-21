@@ -14,12 +14,11 @@ Specifies settings for a service host.
 ## Syntax  
   
 ```xml  
-<host>  
-      <baseAddresses>  
-         <baseAddress baseAddress="string" />  
-      </baseAddresses>  
-      <timeOuts closeTimeout="TimeSpan"  
-         openTimeout="TimeSpan" >  
+<host>
+    <baseAddresses>  
+        <add baseAddress="string" />  
+    </baseAddresses>  
+    <timeOuts closeTimeout="TimeSpan" openTimeout="TimeSpan">  
 </host>  
 ```  
   

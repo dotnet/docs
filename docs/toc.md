@@ -14,6 +14,7 @@
 ### [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/)
 ### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/containerized-lifecycle-architecture/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
+### [Serverless apps: Architecture, patterns, and Azure implementation](standard/serverless-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md)
@@ -62,6 +63,7 @@
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
+## [About .NET Core](core/about.md)
 ## [Get started](core/get-started.md)
 ### [Get started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
 ### [Build a C# Hello World app with .NET Core in Visual Studio 2017](core/tutorials/with-visual-studio.md)
@@ -72,6 +74,8 @@
 ## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Linux Prerequisites](core/linux-prerequisites.md)
 ## [What's new in .NET Core](core/whats-new/index.md)
+### [What's new in .NET Core 2.1](core/whats-new/dotnet-core-2-1.md)
+### [What's new in .NET Core 2.0](core/whats-new/dotnet-core-2-0.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
@@ -89,6 +93,7 @@
 ### [Dependency management](core/tools/dependencies.md)
 ### [Additions to the csproj format](core/tools/csproj.md)
 ## Migration
+### [.NET Core 2.0 to 2.1](core/migration/20-21.md)
 ### [Migration to csproj format](core/migration/index.md)
 ### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
@@ -96,6 +101,7 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
+### [Self-contained deployment runtime roll forward](core/deploying/runtime-patch-selection.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)
@@ -103,6 +109,7 @@
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](/aspnet/core/publishing/visual-studio-tools-for-docker)
 ## [Unit Testing](core/testing/index.md)
+### [Unit testing best practices](core/testing/unit-testing-best-practices.md)
 ### [C# unit testing with xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [C# unit testing with NUnit](core/testing/unit-testing-with-nunit.md)
 ### [C# unit testing with MSTest](core/testing/unit-testing-with-mstest.md)
@@ -113,29 +120,33 @@
 ### [VB unit testing with NUnit](core/testing/unit-testing-visual-basic-with-nunit.md)
 ### [VB unit testing with MSTest](core/testing/unit-testing-visual-basic-with-mstest.md)
 ### [Running selective unit tests](core/testing/selective-unit-tests.md)
-### [Unit Testing Published Output](core/testing/unit-testing-published-output.md)
+### [Unit testing published output](core/testing/unit-testing-published-output.md)
 ### [Live unit testing .NET Core projects with Visual Studio](/visualstudio/test/live-unit-testing-start)
 ## [Versioning](core/versions/index.md)
-### [.NET Core Support](core/versions/lts-current.md)
-<!--### [🔧 Servicing](core/versions/servicing.md)-->
+### [.NET Core version history](core/versions/version-history.md)
+### [.NET Core version selection](core/versions/selection.md)
+### [Removing outdated runtimes and SDKs](core/versions/remove-runtime-sdk-versions.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
+### [Global Tools](core/tools/global-tools.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
 ### [Custom templates](core/tools/custom-templates.md)
 ### [dotnet](core/tools/dotnet.md)
 ### [dotnet build](core/tools/dotnet-build.md)
+### [dotnet build-server](core/tools/dotnet-build-server.md)
 ### [dotnet clean](core/tools/dotnet-clean.md)
 ### [dotnet help](core/tools/dotnet-help.md)
 ### [dotnet install-script](core/tools/dotnet-install-script.md)
 ### [dotnet migrate](core/tools/dotnet-migrate.md)
 ### [dotnet msbuild](core/tools/dotnet-msbuild.md)
 ### [dotnet new](core/tools/dotnet-new.md)
-### [dotnet nuget delete](core/tools/dotnet-nuget-delete.md)
-### [dotnet nuget locals](core/tools/dotnet-nuget-locals.md)
-### [dotnet nuget push](core/tools/dotnet-nuget-push.md)
+### dotnet nuget
+#### [dotnet nuget delete](core/tools/dotnet-nuget-delete.md)
+#### [dotnet nuget locals](core/tools/dotnet-nuget-locals.md)
+#### [dotnet nuget push](core/tools/dotnet-nuget-push.md)
 ### [dotnet pack](core/tools/dotnet-pack.md)
 ### [dotnet publish](core/tools/dotnet-publish.md)
 ### [dotnet restore](core/tools/dotnet-restore.md)
@@ -143,6 +154,11 @@
 ### [dotnet sln](core/tools/dotnet-sln.md)
 ### [dotnet store](core/tools/dotnet-store.md)
 ### [dotnet test](core/tools/dotnet-test.md)
+### dotnet tool
+#### [dotnet tool install](core/tools/dotnet-tool-install.md)
+#### [dotnet tool list](core/tools/dotnet-tool-list.md)
+#### [dotnet tool uninstall](core/tools/dotnet-tool-uninstall.md)
+#### [dotnet tool update](core/tools/dotnet-tool-update.md)
 ### [dotnet vstest](core/tools/dotnet-vstest.md)
 ### Project modification commands
 #### References
@@ -155,6 +171,7 @@
 ### [global.json](core/tools/global-json.md)
 ## [.NET Core Additional Tools](core/additional-tools/index.md)
 ### [WCF Web Service Reference Provider](core/additional-tools/wcf-web-service-reference-guide.md)
+### [dotnet-svcutil](core/additional-tools/dotnet-svcutil-guide.md)
 ### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [Porting from .NET Framework](core/porting/index.md)
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
@@ -215,10 +232,11 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md)
-### [What's new in C# 7.2](csharp/whats-new/csharp-7-2.md)
-### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
-### [What's new in C# 7.0](csharp/whats-new/csharp-7.md)
-### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [C# 7.3](csharp/whats-new/csharp-7-3.md)
+### [C# 7.2](csharp/whats-new/csharp-7-2.md)
+### [C# 7.1](csharp/whats-new/csharp-7-1.md)
+### [C# 7.0](csharp/whats-new/csharp-7.md)
+### [C# 6](csharp/whats-new/csharp-6.md)
 ### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->
@@ -231,8 +249,8 @@
 ### [Tuples](csharp/tuples.md)
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
-#### [Methods](csharp/methods.md)
-#### [Lambda Expressions](csharp/lambda-expressions.md)
+### [Methods](csharp/methods.md)
+### [Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [Discards](csharp/discards.md)
@@ -279,40 +297,26 @@
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)
 
-## [Tour of F#](fsharp/tour.md)
 ## [Get Started](fsharp/get-started/index.md)
+### [Install F#](fsharp/get-started/install-fsharp.md)
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
 ### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
-<!--## [Tutorials](fsharp/tutorials/index.md)-->
+
+## [What is F#](fsharp/what-is-fsharp.md)
+## [Tour of F#](fsharp/tour.md)
+
 ## Tutorials
-### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
+### Introduction to Functional Programming
+#### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
+### Asynchronous and Concurrent Programming
+#### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
 #### [Create a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
-
-<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
-## Introduction to Functional Programming
-### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
-
-<!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
-### Asynchronous and Concurrent Programming
-#### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-
-<!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->
-### [Visual F# Development Environment Features](fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
-### [Configuring Projects](fsharp/using-fsharp-in-visual-studio/configuring-projects.md)
-### [Targeting Older Versions of .NET](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
-
-## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
-### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
-### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
-### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
-### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
-<!--### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)-->
-### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
+### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)
 ### [Keyword Reference](fsharp/language-reference/keyword-reference.md)
@@ -334,7 +338,7 @@
 ### [Literals](fsharp/language-reference/literals.md)
 ### [F# Types](fsharp/language-reference/fsharp-types.md)
 ### [Type Inference](fsharp/language-reference/type-inference.md)
-### [Primitive Types](fsharp/language-reference/primitive-types.md)
+### [Basic Types](fsharp/language-reference/basic-types.md)
 ### [Unit Type](fsharp/language-reference/unit-type.md)
 ### [Strings](fsharp/language-reference/strings.md)
 ### [Tuples](fsharp/language-reference/tuples.md)
@@ -396,7 +400,7 @@
 ### [Namespaces](fsharp/language-reference/namespaces.md)
 ### [Modules](fsharp/language-reference/modules.md)
 ### [Import Declarations: The open Keyword](fsharp/language-reference/import-declarations-the-open-keyword.md)
-### [Signatures](fsharp/language-reference/signatures.md)
+### [Signature Files](fsharp/language-reference/signature-files.md)
 ### [Units of Measure](fsharp/language-reference/units-of-measure.md)
 ### [XML Documentation](fsharp/language-reference/xml-documentation.md)
 ### [Lazy Computations](fsharp/language-reference/lazy-computations.md)
@@ -412,12 +416,24 @@
 ### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
+
+## [F# style guide](fsharp/style-guide/index.md)
+### [F# code formatting guidelines](fsharp/style-guide/formatting.md)
+### [F# coding conventions](fsharp/style-guide/conventions.md)
+### [F# component design guidelines](fsharp/style-guide/component-design-guidelines.md)
+
+## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
+### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
+### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
+### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
+### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
+### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
 <!-- End F# Content -->
 
 <!-- VB Content -->
 # [Visual Basic Guide](visual-basic/index.md)
+## [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
 ## [Get Started](visual-basic/getting-started/index.md)
-### [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
 ### [Visual Basic Breaking Changes in Visual Studio](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Additional Resources for Visual Basic Programmers](visual-basic/getting-started/additional-resources.md)
 
@@ -544,6 +560,7 @@
 ### [Walkthrough: Implementing Inheritance with COM Objects](visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 
 ## [Language Reference](visual-basic/language-reference/index.md)
+### [Configure language version](visual-basic/language-reference/configure-language-version.md)
 ### [Typographic and Code Conventions](visual-basic/language-reference/typographic-and-code-conventions.md)
 ### [Visual Basic Runtime Library Members](visual-basic/language-reference/runtime-library-members.md)
 ### [Keywords](visual-basic/language-reference/keywords/index.md)
@@ -1112,11 +1129,14 @@
 <!-- ML.NET Content -->
 # [ML.NET Guide](machine-learning/index.md)
 ## [Tutorials](machine-learning/tutorials/index.md)
-### [Sentiment Analysis (Classification)](machine-learning/tutorials/sentiment-analysis.md)
-### [Taxi Fare Predictor (Regression)](machine-learning/tutorials/taxi-fare.md)
+### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
+### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
+### [Iris clustering](machine-learning/tutorials/iris-clustering.md)
 ## [Resources](machine-learning/resources/index.md)
-### [Machine Learning Glossary](machine-learning/resources/glossary.md)
-### [Machine Learning Basics](machine-learning/resources/basics.md)
+### [Machine learning glossary](machine-learning/resources/glossary.md)
+### [Machine learning basics](machine-learning/resources/basics.md)
+### [Machine learning tasks](machine-learning/resources/tasks.md)
+### [Data transforms](machine-learning/resources/transforms.md)
 
 <!-- End ML.NET Content -->
 

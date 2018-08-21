@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: e6fb496d-bb8b-4018-baf6-5b60a0c8902b
 ---
 # #warning (C# Reference)
-`#warning` lets you generate a level one warning from a specific location in your code. For example:  
+`#warning` lets you generate a [CS1030](../../misc/cs1030.md) level one compiler warning from a specific location in your code. For example:  
   
 ```csharp
 #warning Deprecated code in this method.  

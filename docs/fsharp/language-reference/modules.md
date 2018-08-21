@@ -124,8 +124,8 @@ Note that the exception `DontSqueezeTheBananaException` and the class `Banana` b
 
 This capability is also possible in [Namespaces](namespaces.md) with F# 4.1.
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
-[Namespaces](namespaces.md)
-[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)
+[F# Language Reference](index.md)  
+[Namespaces](namespaces.md)  
+[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)  

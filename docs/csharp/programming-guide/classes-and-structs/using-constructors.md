@@ -24,7 +24,7 @@ When a [class](../../../csharp/language-reference/keywords/class.md) or [struct]
   
  Constructors for [struct](../../../csharp/language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit default constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the default values. For more information, see [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). However, this default constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the default constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
   
-```  
+```csharp  
 int i = new int();  
 Console.WriteLine(i);  
 ```  

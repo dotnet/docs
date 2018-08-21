@@ -16,7 +16,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # fatalExecutionEngineError MDA
-The `fatalExecutionEngine``Error` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  
+The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  
   
 ## Symptoms  
  Unexpected process termination. Other symptoms cannot be determined because a CLR failure can occur for a variety of reasons.  

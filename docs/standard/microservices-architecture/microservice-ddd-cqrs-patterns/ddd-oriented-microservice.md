@@ -100,5 +100,5 @@ This layer design should be independent for each microservice. As noted earlier,
 
 
 >[!div class="step-by-step"]
-[Previous] (cqrs-microservice-reads.md)
-[Next] (microservice-domain-model.md)
+[Previous](cqrs-microservice-reads.md)
+[Next](microservice-domain-model.md)

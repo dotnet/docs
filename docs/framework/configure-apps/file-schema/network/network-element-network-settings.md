@@ -92,7 +92,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 <configuration>  
   <system.net>  
     <mailSettings>  
-      <smtp deliveryMethod="network">  
+      <smtp deliveryMethod="Network">  
         <network  
           clientDomain="www.contoso.com"  
           defaultCredentials="true"  

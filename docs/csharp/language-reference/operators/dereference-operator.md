@@ -14,13 +14,13 @@ The `->` operator combines pointer dereferencing and member access.
 ## Remarks  
  An expression of the form,  
   
-```  
+```csharp  
 x->y  
 ```  
   
  (where `x` is a pointer of type `T*` and `y` is a member of `T`) is equivalent to,  
   
-```  
+```csharp  
 (*x).y  
 ```  
   

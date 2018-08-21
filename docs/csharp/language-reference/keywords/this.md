@@ -23,7 +23,7 @@ The `this` keyword refers to the current instance of the class and is also used 
   
 -   To pass an object as a parameter to other methods, for example:  
   
-    ```  
+    ```csharp  
     CalcTax(this);  
     ```  
   

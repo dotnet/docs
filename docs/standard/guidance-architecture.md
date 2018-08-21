@@ -22,4 +22,8 @@ This guide is an introduction to the recommended architecture, design, and deplo
 
 ## [Architecting Container and Microservice Based Applications](microservices-architecture/index.md)
 
-This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
+This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.
+
+## [Serverless apps: Architecture, patterns, and Azure implementation](serverless-architecture/index.md)
+
+This is a guide for building serverless applications with examples using Azure. It discusses various architecture and design approaches, the benefits and challenges that come with serverless, and provides scenarios and use cases for serverless apps.

@@ -38,7 +38,7 @@ In asynchronous programming, it is very common for one asynchronous operation, o
  A continuation is itself a <xref:System.Threading.Tasks.Task> and does not block the thread on which it is started. Call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method to block until the continuation task finishes.  
   
 ## Creating a continuation for a single antecedent  
- You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern, (for clarity, exception handling is omitted). It executes an antecedent task, `taskA`, that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent finishes, the continuation task, `taskB`, is passed the antecedent and displays a string that includes its result.  
+ You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task, `taskA`, that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result.  
   
  [!code-csharp[TPL_Continuations#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/simple1.cs#1)]
  [!code-vb[TPL_Continuations#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/simple1.vb#1)]  

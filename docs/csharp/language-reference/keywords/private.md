@@ -15,7 +15,7 @@ The `private` keyword is a member access modifier.
   
 Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared, as in this example:  
   
-```  
+```csharp  
 class Employee  
 {  
     private int i;  

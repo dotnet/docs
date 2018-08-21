@@ -29,7 +29,6 @@ The best source of the earlier documentation is PDF files:
 You can view the earlier version of the documentation in the repository, but many links won't work and many code snippets are references that aren't expanded.
 
 * [.NET Core - project.json branch in the documentation repository](https://github.com/dotnet/docs/tree/project.json/docs)
-* [ASP.NET Core - project.json branch in the documentation repository](https://github.com/aspnet/Docs/tree/project.json/aspnetcore)
 
 ## Current version of the documentation
 

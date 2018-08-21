@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "memory-mapped files"
-  - "inter-process communiation"
+  - "inter-process communication"
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
 author: "mairaw"
 ms.author: "mairaw"

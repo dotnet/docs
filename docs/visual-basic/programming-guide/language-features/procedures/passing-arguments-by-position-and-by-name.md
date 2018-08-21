@@ -82,6 +82,8 @@ To follow positional arguments with named arguments, you must add the following 
 </PropertyGroup>
 ```
 
+For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
+
 ## Restrictions on Supplying Arguments by Name  
 
 You cannot pass arguments by name to avoid entering required arguments. You can omit only the optional arguments.  

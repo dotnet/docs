@@ -69,7 +69,7 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
 
 where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
 
-The `is` expression is `true` if any of the following is true:
+The `is` expression is `true` if *expr* is not `null`, and any of the following is true:
 
 - *expr* is an instance of the same type as *type*.
 
@@ -79,7 +79,7 @@ The `is` expression is `true` if any of the following is true:
 
 - *expr* is an instance of a type that implements the *type* interface.
 
-If *exp* is `true` and `is` is used with an `if` statement, *varname* is assigned and has local scope within the `if` statement only.
+If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned and has local scope within the `if` statement only.
 
 The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> method.
 

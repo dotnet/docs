@@ -1,6 +1,7 @@
 ---
-title: "Globalizing Windows Forms"
-ms.date: "03/30/2017"
+title: "Globalizing Windows Forms applications"
+description: This topic presents a list of topics related to globalizing Windows Forms applications.
+ms.date: "06/08/2018"
 helpviewer_keywords: 
   - "Windows Forms, globalization"
   - "localization [Windows Forms]"
@@ -9,49 +10,40 @@ helpviewer_keywords:
   - "global applications [Windows Forms], creating Windows Forms"
 ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
 ---
-# Globalizing Windows Forms
-*Globalization* is the process of designing and developing a software product that functions for multiple cultures.  
-  
-## In This Section  
- [Encoding and Windows Forms Globalization](../../../../docs/framework/winforms/advanced/encoding-and-windows-forms-globalization.md)  
- Describes full Unicode support and its implications.  
-  
- [International Fonts in Windows Forms and Controls](../../../../docs/framework/winforms/advanced/international-fonts-in-windows-forms-and-controls.md)  
- Explains when and how to select fonts for display of international characters on Windows Forms.  
-  
- [Display of Asian Characters with the ImeMode Property](../../../../docs/framework/winforms/advanced/display-of-asian-characters-with-the-imemode-property.md)  
- Introduces the `ImeMode` property, which is used to control the type of input a Windows Form or control accepts.  
-  
--   [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))  
-  
--   [Localizing ClickOnce Applications](http://msdn.microsoft.com/library/ms404266\(v=vs.110\))  
-  
--   [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](http://msdn.microsoft.com/library/ms404269\(v=vs.110\))  
-  
--   [How to: Set the Culture and UI Culture for Windows Forms Globalization](http://msdn.microsoft.com/library/b28bx3bh\(v=vs.110\))  
-  
--   [How to: Create Mirrored Windows Forms and Controls](http://msdn.microsoft.com/library/xwbz5ws0\(v=vs.110\))  
-  
--   [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))  
-  
--   [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/library/y99d1cd3\(v=vs.110\))  
-  
--   [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/library/7k9fa71y\(v=vs.110\))  
-  
--   [How to: Create Message Boxes for Bi-Directional Windows Forms](http://msdn.microsoft.com/library/k1689bxh\(v=vs.110\))  
-  
--   [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))  
-  
--   [Localizing ClickOnce Applications](http://msdn.microsoft.com/library/ms404266\(v=vs.120\))  
-  
--   [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](http://msdn.microsoft.com/library/ms404269\(v=vs.120\))  
-  
-## Related Sections  
-  
-1.  [Globalizing and Localizing Applications](http://msdn.microsoft.com/library/1021kkz0\(v=vs.110\))  
-  
-2.  [Globalizing Applications](http://msdn.microsoft.com/library/eaa7b9c0\(v=vs.110\))  
-  
-3.  [Globalizing and Localizing Applications](http://msdn.microsoft.com/library/1021kkz0\(v=vs.120\))  
-  
-4.  [Globalizing Applications](http://msdn.microsoft.com/library/eaa7b9c0\(v=vs.120\))
+# Globalizing Windows Forms applications
+
+*Globalization* is the process of designing and developing a software product that functions for multiple cultures.
+
+## In this section
+
+[Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md)  
+Describes full Unicode support and its implications.
+
+[International Fonts in Windows Forms and Controls](international-fonts-in-windows-forms-and-controls.md)  
+Explains when and how to select fonts for display of international characters on Windows Forms.
+
+[Bi-Directional Support for Windows Forms Applications](bi-directional-support-for-windows-forms-applications.md)  
+Explains how to create Windows-based applications that support bi-directional (right-to-left) languages.
+
+[Display of Asian Characters with the ImeMode Property](display-of-asian-characters-with-the-imemode-property.md)  
+Introduces the `ImeMode` property, which is used to control the type of input a Windows Form or control accepts.
+
+## Related sections
+
+- [Globalizing and localizing .NET applications](../../../standard/globalization-localization/index.md)
+
+- [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)
+
+- [Localizing ClickOnce Applications](/visualstudio/deployment/localizing-clickonce-applications)
+
+- [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api)
+
+- [How to: Set the Culture and UI Culture for Windows Forms Globalization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/b28bx3bh(v=vs.100))
+
+- [How to: Create Mirrored Windows Forms and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xwbz5ws0(v=vs.100))
+
+- [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
+
+- [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
+
+- [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))

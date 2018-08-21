@@ -11,7 +11,7 @@ ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
 # sealed (C# Reference)
 When applied to a class, the `sealed` modifier prevents other classes from inheriting from it. In the following example, class `B` inherits from class `A`, but no class can inherit from class `B`.  
   
-```  
+```csharp  
 class A {}      
 sealed class B : A {}  
 ```  
@@ -44,7 +44,7 @@ sealed class B : A {}
   
  The result is an error message:  
   
- `'MyDerivedC' cannot inherit from sealed class 'SealedClass'.`  
+ `'MyDerivedC': cannot derive from sealed type 'SealedClass'`  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

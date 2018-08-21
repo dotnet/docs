@@ -1,4 +1,4 @@
-// compile with: csc /reference:abstractshape.dll;shapes.dll shapetest.cs
+// compile with: csc -reference:abstractshape.dll;shapes.dll shapetest.cs
 class TestClass
 {
     static void Main()

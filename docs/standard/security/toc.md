@@ -31,3 +31,4 @@
 ### [Security and User Input](security-and-user-input.md)
 ### [Security and Race Conditions](security-and-race-conditions.md)
 ### [Security and On-the-Fly Code Generation](security-and-on-the-fly-code-generation.md)
+### [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)

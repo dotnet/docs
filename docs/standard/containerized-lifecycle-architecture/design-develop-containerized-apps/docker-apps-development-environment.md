@@ -18,7 +18,7 @@ If you prefer a lightweight, cross-platform editor supporting any development la
 > [!NOTE]
 > To download Visual Studio Code, go to <https://code.visualstudio.com/download>.
 
-To download Docker for Mac and Windows, go to <http://www.docker.com/products/docker>.
+To download Docker for Mac and Windows, go to <https://www.docker.com/products/docker>.
 
 ### Visual Studio with Docker Tools
 
@@ -32,20 +32,15 @@ When you're using Visual Studio 2015 you can install the add-on tools "Docker To
 You can develop Docker applications and Microsoft tools with most modern languages. The following is an initial list, but you are not limited to it:
 
 -   .NET Core and ASP.NET Core
-
 -   Node.js
-
 -   Golang
-
 -   Java
-
 -   Ruby
-
 -   Python
 
 Basically, you can use any modern language supported by Docker in Linux or Windows.
 
 
 >[!div class="step-by-step"]
-[Previous] (orchestrate-high-scalability-availability.md)
-[Next] (docker-apps-inner-loop-workflow.md)
+[Previous](orchestrate-high-scalability-availability.md)
+[Next](docker-apps-inner-loop-workflow.md)

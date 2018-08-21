@@ -1,4 +1,4 @@
-    class MainClass6
+    class MainClass
     {
         static void Main()
         {

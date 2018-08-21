@@ -42,7 +42,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <Binding Path="[key]" .../>  
 ```  
   
- `key` must be either the typed index to a dictionary or hash table, or the integer index of an array. Also, the value of the key must be a type that is directly bindable to the property where it is applied. For instance, a hash table that contains string keys and string values can be used this way to bind to Text for a <xref:System.Windows.Controls.TextBox>. Or, if the key points to a collection or subindex, you could use this syntax to bind to a target collection property. Otherwise, you need to reference a specific property, through a syntax such as `<Binding Path="[``key``].``propertyName``" .../>`.  
+ `key` must be either the typed index to a dictionary or hash table, or the integer index of an array. Also, the value of the key must be a type that is directly bindable to the property where it is applied. For instance, a hash table that contains string keys and string values can be used this way to bind to Text for a <xref:System.Windows.Controls.TextBox>. Or, if the key points to a collection or subindex, you could use this syntax to bind to a target collection property. Otherwise, you need to reference a specific property, through a syntax such as `<Binding Path="[key].propertyName" .../>`.  
   
  You can specify the type of the index if necessary. For details on this aspect of an indexed property path, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>.  
   

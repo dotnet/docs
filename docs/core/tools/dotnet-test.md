@@ -3,7 +3,7 @@ title: dotnet test command - .NET Core CLI
 description: The dotnet test command is used to execute unit tests in a given project.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 05/29/2018
 ---
 # dotnet test
 
@@ -15,16 +15,19 @@ ms.date: 08/14/2017
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
-
-
+# [.NET Core 2.1](#tab/netcore21)
 ```
-dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
+dotnet test [<PROJECT>] [-a|--test-adapter-path] [--blame] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
+    [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
 dotnet test [-h|--help]
 ```
-
+# [.NET Core 2.0](#tab/netcore20)
+```
+dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
+    [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
+dotnet test [-h|--help]
+```
 # [.NET Core 1.x](#tab/netcore1x)
-
 ```
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [-o|--output] [-s|--settings] [-t|--list-tests]  [-v|--verbosity]
 dotnet test [-h|--help]
@@ -43,11 +46,77 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 `PROJECT`
 
-Specifies a path to the test project. If omitted, it defaults to current directory.
+Path to the test project. If not specified, it defaults to current directory.
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.1](#tab/netcore21)
+
+`-a|--test-adapter-path <PATH_TO_ADAPTER>`
+
+Use the custom test adapters from the specified path in the test run.
+
+`--blame`
+
+Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
+
+`-c|--configuration {Debug|Release}`
+
+Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+
+`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`
+
+Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+
+Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
+
+`-f|--framework <FRAMEWORK>`
+
+Looks for test binaries for a specific [framework](../../standard/frameworks.md).
+
+`--filter <EXPRESSION>`
+
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`-l|--logger <LoggerUri/FriendlyName>`
+
+Specifies a logger for test results.
+
+`--no-build`
+
+Doesn't build the test project before running it. It also implicit sets the `--no-restore` flag.
+
+`--no-restore`
+
+Doesn't execute an implicit restore when running the command.
+
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Directory in which to find the binaries to run.
+
+`-r|--results-directory <PATH>`
+
+The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
+
+`-s|--settings <SETTINGS_FILE>`
+
+Settings to use when running tests.
+
+`-t|--list-tests`
+
+List all of the discovered tests in the current project.
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+# [.NET Core 2.0](#tab/netcore20)
 
 `-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
@@ -71,7 +140,7 @@ Looks for test binaries for a specific [framework](../../standard/frameworks.md)
 
 `--filter <EXPRESSION>`
 
-Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 `-h|--help`
 
@@ -83,11 +152,11 @@ Specifies a logger for test results.
 
 `--no-build`
 
-Does not build the test project prior to running it.
+Doesn't build the test project before running it. It also implicit sets the `--no-restore` flag.
 
 `--no-restore`
 
-Doesn't perform an implicit restore when running the command.
+Doesn't execute an implicit restore when running the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -95,7 +164,7 @@ Directory in which to find the binaries to run.
 
 `-r|--results-directory <PATH>`
 
-The directory where the test results are going to be placed. The specified directory will be created if it doesn't exist.
+The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
 
 `-s|--settings <SETTINGS_FILE>`
 
@@ -129,7 +198,7 @@ Looks for test binaries for a specific [framework](../../standard/frameworks.md)
 
 `--filter <EXPRESSION>`
 
-Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 `-h|--help`
 
@@ -141,7 +210,7 @@ Specifies a logger for test results.
 
 `--no-build`
 
-Does not build the test project prior to running it.
+Doesn't build the test project before running it.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -180,9 +249,9 @@ Run the tests in the `test1` project:
 `<property>` is an attribute of the `Test Case`. The following are the properties supported by popular unit test frameworks:
 
 | Test Framework | Supported properties                                                                                      |
-| :------------: | --------------------------------------------------------------------------------------------------------- |
+| -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| Xunit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
 
 The `<operator>` describes the relationship between the property and the value:
 
@@ -198,16 +267,16 @@ An expression without an `<operator>` is automatically considered as a `contains
 
 Expressions can be joined with conditional operators:
 
-| Operator | Function |
-| :------: | :------: |
-| <code>&#124;</code>      | OR       |
-| `&`      | AND      |
+| Operator            | Function |
+| ------------------- | -------- |
+| <code>&#124;</code> | OR       |
+| `&`                 | AND      |
 
 You can enclose expressions in parenthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
-For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 ## See also
 
- [Frameworks and Targets](../../standard/frameworks.md)  
- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+[Frameworks and Targets](../../standard/frameworks.md)  
+[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

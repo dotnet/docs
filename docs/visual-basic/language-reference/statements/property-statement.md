@@ -1,6 +1,6 @@
 ---
-title: "Property Statement"
-ms.date: 07/20/2015
+title: "Property Statement (Visual Basic)"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.PropertySet"
   - "vb.Property"
@@ -56,7 +56,9 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md) 
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
@@ -108,7 +110,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `returntype`  
   
-     Required if `Option``Strict` is `On`. Data type of the value returned by this property.  
+     Required if `Option Strict` is `On`. Data type of the value returned by this property.  
   
 -   `Implements`  
   

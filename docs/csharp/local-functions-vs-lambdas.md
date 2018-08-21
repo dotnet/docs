@@ -30,7 +30,7 @@ result in clearer code.
 Local functions have different rules for definite assignment
 than lambda expressions. A local function declaration can be referenced
 from any code location where it is in scope. A lambda expression must be
-assigned to a delegate variable before it can be accessed (or called through the delgate
+assigned to a delegate variable before it can be accessed (or called through the delegate
 referencing the lambda expression.) Notice that the version using the
 lambda expression must declare and initialize the lambda expression,
 `nthFactorial` before defining it. Not doing so results in a compile
@@ -42,7 +42,7 @@ value before they can be re-assigned to a body that references the same
 lambda expression.
 
 Definite assignment rules also affect any variables that are captured
-by the local function or lamdba epression. Both local functions and
+by the local function or lambda expression. Both local functions and
 lambda expression rules demand that any captured variables are definitely
 assigned at the point when the local function or lambda expression is
 converted to a delegate. The difference is that lambda expressions are converted
@@ -68,7 +68,7 @@ int M()
 }
 ```
 
-The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitiely
+The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitely
 assigned at the `return` statement.
 
 The analysis that enables the example analysis enables the fourth difference.

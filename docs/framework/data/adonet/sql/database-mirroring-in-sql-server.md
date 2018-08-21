@@ -51,11 +51,11 @@ string activeServer = connection.DataSource;
 >  Mirroring support on the server is configured on a per-database basis. If data manipulation operations are executed against other databases not included in the principal/mirror set, either by using multipart names or by changing the current database, the changes to these other databases do not propagate in the event of failure. No error is generated when data is modified in a database that is not mirrored. The developer must evaluate the possible impact of such operations.  
   
 ## Database Mirroring Resources  
- For conceptual documentation and information on configuring, deploying and administering mirroring, see the following resources in SQL Server Books Online.  
+ For conceptual documentation and information on configuring, deploying and administering mirroring, see the following resources in SQL Server documentation.  
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Database Mirroring](http://msdn.microsoft.com/library/bb934127.aspx) in SQL Server Books Online|Describes how to set up and configure mirroring in SQL Server.|  
+|[Database Mirroring](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|Describes how to set up and configure mirroring in SQL Server.|  
   
 ## See Also  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

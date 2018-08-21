@@ -11,15 +11,15 @@ Records represent simple aggregates of named values, optionally with members.  S
 
 ```fsharp
 [ attributes ]
-type [accessibility-modifier] typename = {
-	[ mutable ] label1 : type1;
-	[ mutable ] label2 : type2;
-	...
-}
-	[ member-list ]
+type [accessibility-modifier] typename =
+    { [ mutable ] label1 : type1;
+      [ mutable ] label2 : type2;
+      ... }
+    [ member-list ]
 ```
 
 ## Remarks
+
 In the previous syntax, *typename* is the name of the record type, *label1* and *label2* are names of values, referred to as *labels*, and *type1* and *type2* are the types of these values. *member-list* is the optional list of members for the type.  You can use the `[<Struct>]` attribute to create a struct record rather than a record which is a reference type.
 
 Following are some examples.
@@ -43,6 +43,7 @@ The labels of the most recently declared type take precedence over those of the 
 Methods can be defined for record types just as for class types.
 
 ## Creating Records by Using Record Expressions
+
 You can initialize records by using the labels that are defined in the record. An expression that does this is referred to as a *record expression*. Use braces to enclose the record expression and use the semicolon as a delimiter.
 
 The following example shows how to create a record.
@@ -72,20 +73,19 @@ Don't use the DefaultValue attribute with record fields. A better approach is to
 ```fsharp
 // Rather than use [<DefaultValue>], define a default record.
 type MyRecord =
-{
-	field1 : int
-	field2 : int
-}
+    { Field1 : int
+      Field2 : int }
 
-let defaultRecord1 = { field1 = 0; field2 = 0 }
-let defaultRecord2 = { field1 = 1; field2 = 25 }
+let defaultRecord1 = { Field1 = 0; Field2 = 0 }
+let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 
 // Use the with keyword to populate only a few chosen fields
 // and leave the rest with default values.
-let rr3 = { defaultRecord1 with field2 = 42 }
+let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
 
 ## Pattern Matching with Records
+
 Records can be used with pattern matching. You can specify some fields explicitly and provide variables for other fields that will be assigned when a match occurs. The following code example illustrates this.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1910.fs)]
@@ -99,17 +99,25 @@ Point is at (10.000000, 0.000000, -1.000000).
 ```
 
 ## Differences Between Records and Classes
+
 Record fields differ from classes in that they are automatically exposed as properties, and they are used in the creation and copying of records. Record construction also differs from class construction. In a record type, you cannot define a constructor. Instead, the construction syntax described in this topic applies. Classes have no direct relationship between constructor parameters, fields, and properties.
 
 Like union and structure types, records have structural equality semantics. Classes have reference equality semantics. The following code example demonstrates this.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1911.fs)]
 
+The output of this code is as follows:
+
+```
+The records are equal.
+```
+
 If you write the same code with classes, the two class objects would be unequal because the two values would represent two objects on the heap and only the addresses would be compared (unless the class type overrides the `System.Object.Equals` method).
 
 If you need reference equality for records, add the attribute `[<ReferenceEquality>]` above the record.
 
 ## See Also
+
 [F# Types](fsharp-types.md)
 
 [Classes](classes.md)

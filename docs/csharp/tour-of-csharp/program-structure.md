@@ -22,7 +22,7 @@ csc /t:library acme.cs
 compiles the example as a library (code without a `Main` entry point) and produces an assembly named `acme.dll`.
 
 > [!IMPORTANT]
-> The examples above use `csc` as the command line C# compiler. This compiler is a windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/using-with-xplat-cli.md) for a full description of those tools on the platforms supported by .NET Core.
+> The examples above use `csc` as the command line C# compiler. This compiler is a Windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/using-with-xplat-cli.md) for a full description of those tools on the platforms supported by .NET Core.
 
 Assemblies contain executable code in the form of Intermediate Language (IL) instructions, and symbolic information in the form of metadata. Before it is executed, the IL code in an assembly is automatically converted to processor-specific code by the Just-In-Time (JIT) compiler of .NET Common Language Runtime.
 

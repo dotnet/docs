@@ -1,29 +1,13 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-ms.date: 02/13/2017
+ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), if you haven't already.  This article uses the Visual Studio 2017 Community Edition, but you can use F# with the version of your choice.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.
 
-## Installing F# #
-
-If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer. If you already have it installed, click **Modify**.
-
-You'll next see a list of Workloads. You can install F# through any of the following workloads:
-
-|Workload|Action|
-|--------|------|
-| .NET Core cross-platform development | No action - F# is installed by default |
-| ASP.NET and web development | No action - F# is installed by default |
-| Azure development | No action - F# is installed by default |
-| Mobile development with .NET | No action - F# is installed by default |
-| Data science and analytical applications | No action - F# is installed by default |
-| .NET desktop development | Select **F# desktop language support** from the right-hand side |
-| Data storage and processing | Select **F# desktop language support** from the right-hand side |
-
-Next, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
+To begin, ensure that you have [Visual Studio installed with F#](install-fsharp.md#install-f-with-visual-studio).
 
 ## Creating a console application
 
@@ -57,7 +41,7 @@ It is in this function that we call the `square` function with an argument of `1
 
 ## Running your code
 
-You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
+You can run the code and see results by pressing **Ctrl**+**F5**.  This runs the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
@@ -67,65 +51,13 @@ You should now see the following printed to the console window that Visual Studi
 
 Congratulations!  You've created your first F# project in Visual Studio, written an F# function printed the results of calling that function, and run the project to see some results.
 
-## Using F# Interactive
-
-One of the best features of the Visual F# tooling in Visual Studio is the F# Interactive Window.  It allows you to send code over to a process where you can call that code and see the result interactively.
-
-To begin using it, highlight the `square` function defined in your code.  Next, hold the **Alt** key and press **Enter**.  This executes the code in the F# Interactive Window.  You should see the F# Interactive Window appear with the following in it:
-
-```
->
-
-val square : x:int -> int
-
->
-```
-
-This shows the same function signature for the `square` function, which you saw earlier when you hovered over the function.  Because `square` is now defined in the F# Interactive process, you can call it with different values:
-
-```
-> square 12;;
-val it : int = 144
->square 13;;
-val it : int = 169
-```
-
-This executes the function, binds the result to a new name `it`, and displays the type and value of `it`.  Note that you must terminate each line with `;;`.  This is how F# Interactive knows when your function call is finished.  You can also define new functions in F# Interactive:
-
-```
-> let isOdd x = x % 2 <> 0;;
-
-val isOdd : x:int -> bool
-
-> isOdd 12;;
-val it : bool = false
-```
-
-The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd! You can call this function to see what it returns with different inputs.  You can call functions within function calls:
-
-```
-> isOdd (square 15);;
-val it : bool = true
-```
-
-You can also use the [pipe-forward operator](../language-reference/symbol-and-operator-reference/index.md) to pipeline the value into the two functions:
-
-```
-> 15 |> square |> isOdd;;
-val it : bool = true
-```
-
-The pipe-forward operator, and more, are covered in later tutorials.
-
-This is only a glimpse into what you can do with F# Interactive. To learn more, check out [Interactive Programming with F#](../tutorials/fsharp-interactive/index.md).
-
 ## Next steps
 
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
- [Visual F#](index.md)  
- [Tour of F#](../tour.md)  
- [F# language reference](../language-reference/index.md)  
- [Type inference](../language-reference/type-inference.md)  
- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  
+
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

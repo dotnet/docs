@@ -31,7 +31,7 @@ select new { First = student.FirstName, Last = student.LastName };
   
  If you try this in the previous example, then the `Console.WriteLine` statement must also change:  
   
-```  
+```csharp  
 Console.WriteLine(student.First + " " + student.Last);  
 ```  
   

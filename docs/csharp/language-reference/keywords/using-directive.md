@@ -14,7 +14,7 @@ The `using` directive has three uses:
     using System.Text;  
     ```  
   
--   To allow you to access static members of a type without having to qualify the access with the type name. 
+-   To allow you to access static members and nested types of a type without having to qualify the access with the type name. 
   
     ```csharp  
     using static System.Math;  
@@ -46,13 +46,23 @@ class Program
 ```  
   
 ## Remarks  
- The scope of a `using` directive is limited to the file in which it appears.  
+ The scope of a `using` directive is limited to the file in which it appears.
+ 
+ The `using` directive can appear:
+- At the beginning of a source code file, before any namespace or type definitions.
+- In any namespace, but before any namespace or types declared in this namespace.
+
+Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
   
- Create a `using` alias to make it easier to qualify an identifier to a namespace or type. The right side of a using alias directive must always be a fully-qualified type regardless of the using directives that come before it.  
+ Create a `using` alias directive to make it easier to qualify an identifier to a namespace or type. In any `using` directive, the fully-qualified namespace or type must be used regardless of the `using` directives that come before it. No `using` alias can be used in the declaration of a `using` directive. For example, the following generates a compiler error:
+ ```csharp
+ using s = System.Text;
+ using s.RegularExpressions; 
+ ```
   
  Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive does not give you access to any namespaces that are nested in the namespace you specify.  
   
- Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET Framework Class Library Overview](../../../standard/class-library-overview.md).  
+ Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](https://docs.microsoft.com/en-us/dotnet/api/).  
   
  For examples on referencing methods in other assemblies, see [Create and Use Assemblies Using the Command Line](../../programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).  
   

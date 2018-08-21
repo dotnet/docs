@@ -30,7 +30,7 @@ This section contains code examples that illustrate the use of regular expressio
  Provides an example that strips invalid non-alphanumeric characters from a string.  
   
  [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md)  
- Provides an example that you can use to verify that a string is in valid email format.  
+ Provides an example that verifies that a string is in valid email format.  
   
 ## Reference  
  <xref:System.Text.RegularExpressions>  

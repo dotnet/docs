@@ -69,11 +69,11 @@ Operating systems and runtime environments typically provide some form of isolat
   
  There are three options for loading domain-neutral assemblies:  
   
--   <xref:System.LoaderOptimization> loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
-  
--   <xref:System.LoaderOptimization> loads all assemblies as domain-neutral. Use this setting when there are multiple application domains in the process, all of which run the same code.  
-  
--   <xref:System.LoaderOptimization> loads strong-named assemblies as domain-neutral, if they and all their dependencies have been installed in the global assembly cache. Other assemblies are loaded and JIT-compiled separately for each application domain in which they are loaded, and thus can be unloaded from the process. Use this setting when running more than one application in the same process, or if you have a mixture of assemblies that are shared by many application domains and assemblies that need to be unloaded from the process.  
+- <xref:System.LoaderOptimization.SingleDomain?displayProperty=nameWithType> loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.
+
+- <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> loads all assemblies as domain-neutral. Use this setting when there are multiple application domains in the process, all of which run the same code.
+
+- <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType> loads strong-named assemblies as domain-neutral, if they and all their dependencies have been installed in the global assembly cache. Other assemblies are loaded and JIT-compiled separately for each application domain in which they are loaded, and thus can be unloaded from the process. Use this setting when running more than one application in the same process, or if you have a mixture of assemblies that are shared by many application domains and assemblies that need to be unloaded from the process.
   
  JIT-compiled code cannot be shared for assemblies loaded into the load-from context, using the <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class, or loaded from images using overloads of the <xref:System.Reflection.Assembly.Load%2A> method that specify byte arrays.  
   

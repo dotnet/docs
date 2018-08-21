@@ -14,13 +14,13 @@ The conditional-AND operator (`&&`) performs a logical-AND of its `bool` operand
 ## Remarks  
  The operation  
   
-```  
+```csharp  
 x && y  
 ```  
   
  corresponds to the operation  
   
-```  
+```csharp  
 x & y  
 ```  
   

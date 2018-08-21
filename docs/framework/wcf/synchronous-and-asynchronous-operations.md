@@ -131,11 +131,21 @@ Function DoWork(ByVal data As String, ByRef inout As String, _out outonly As out
  To create an asynchronous operation, the two methods would be:  
   
 ```csharp  
-[OperationContract(AsyncPattern=true)]IAsyncResult BeginDoWork(string data,                           ref string inout,                           AsyncCallback callback,                           object state);int EndDoWork(ref string inout, out string outonly, IAsyncResult result);  
+[OperationContract(AsyncPattern=true)]
+IAsyncResult BeginDoWork(string data,
+                         ref string inout,
+                         AsyncCallback callback,
+                         object state);
+int EndDoWork(ref string inout, out string outonly, IAsyncResult result);  
 ```  
   
 ```vb  
-<OperationContract(AsyncPattern := True)>  _Function BeginDoWork(ByVal data As String, _                 ByRef inout As String, _                 ByVal callback As AsyncCallback, _                 ByVal state As Object) _As IAsyncResult Function EndDoWork(ByRef inout As String, _        ByRef outonly As String, _        ByVal result As IAsyncResult) _As Integer  
+<OperationContract(AsyncPattern := True)>
+Function BeginDoWork(ByVal data As String, _
+                     ByRef inout As String, _
+                     ByVal callback As AsyncCallback, _
+                     ByVal state As Object) As IAsyncResult
+Function EndDoWork(ByRef inout As String, ByRef outonly As String, ByVal result As IAsyncResult) As Integer  
 ```  
   
 > [!NOTE]

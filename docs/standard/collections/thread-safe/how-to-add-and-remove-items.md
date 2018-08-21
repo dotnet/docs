@@ -30,15 +30,15 @@ This example shows how to add, retrieve, update, and remove items from a <xref:S
   
  <xref:System.Collections.Concurrent.ConcurrentDictionary%602> is designed for multithreaded scenarios. You do not have to use locks in your code to add or remove items from the collection. However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.  
   
- Also, although all methods of <xref:System.Collections.Concurrent.ConcurrentDictionary%602> are thread-safe, not all methods are atomic, specifically <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock. (This is done to prevent unknown code from blocking all threads.) Therefore it is possible for this sequence of events to occur:  
+ Also, although all methods of <xref:System.Collections.Concurrent.ConcurrentDictionary%602> are thread-safe, not all methods are atomic, specifically <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock (this is done to prevent unknown code from blocking all threads). Therefore, it is possible for this sequence of events to occur:  
   
  1\) threadA calls <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A>, finds no item and creates a new item to Add by invoking the valueFactory delegate.  
   
  2\) threadB calls <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> concurrently, its valueFactory delegate is invoked and it arrives at the internal lock before threadA, and so its new key-value pair is added to the dictionary.  
   
- 3\) threadA's user delegate completes, and the thread arrives at the lock, but now sees that the item exists already  
+ 3\) threadA's user delegate completes, and the thread arrives at the lock, but now sees that the item exists already.  
   
- 4\) threadA performs a "Get", and returns the data that was previously added by threadB.  
+ 4\) threadA performs a "Get" and returns the data that was previously added by threadB.  
   
  Therefore, it is not guaranteed that the data that is returned by <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> is the same data that was created by the thread's valueFactory. A similar sequence of events can occur when <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> is called.  
   

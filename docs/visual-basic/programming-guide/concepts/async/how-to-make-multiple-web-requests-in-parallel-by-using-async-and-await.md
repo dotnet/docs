@@ -34,7 +34,7 @@ Dim result = Await myTask
   
  For another example that starts multiple tasks at the same time, see [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
   
- You can download the code for this example from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=254906).  
+ You can download the code for this example from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e).  
   
 ### To set up the project  
   

@@ -19,5 +19,6 @@ ms.assetid: c60ae399-0dab-4f07-9dea-6dbfb15ec0ae
 The <xref:System.Windows.Forms.Control.ImeMode%2A> property is used by forms and controls to force a specific mode for an input method editor (IME). The IME is an essential component for writing Chinese, Japanese, and Korean scripts, since these writing systems have more characters than can be encoded for a regular keyboard. For example, you may want to allow only ASCII characters in a particular text box. In such a case you can set the <xref:System.Windows.Forms.Control.ImeMode%2A> property to <xref:System.Windows.Forms.ImeMode> and users will only be able to enter ASCII characters for that particular text box. The default value of the <xref:System.Windows.Forms.Control.ImeMode%2A> property is <xref:System.Windows.Forms.ImeMode>, so if you set the property for a form, all controls on the form will inherit that setting. For more information, see <xref:System.Windows.Forms.Control.ImeMode%2A>
 ) and <xref:System.Windows.Forms.ImeMode>.  
   
-## See Also  
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)
+## See also
+
+[Globalizing Windows Forms applications](globalizing-windows-forms.md)

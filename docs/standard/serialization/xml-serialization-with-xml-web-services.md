@@ -63,14 +63,14 @@ using System;
 using System.Web.Services;  
 using System.Web.Services.Protocols;  
 using System.Xml.Serialization;  
-public class Order{  
+public class Order {  
     // Both types of attributes can be applied. Depending on which type  
     // the method used, either one will affect the call.  
     [SoapElement(ElementName = "EncodedOrderID")]  
     [XmlElement(ElementName = "LiteralOrderID")]  
     public String OrderID;  
 }  
-public class MyService{  
+public class MyService {  
     [WebMethod][SoapDocumentMethod]  
     public Order MyLiteralMethod(){  
         Order myOrder = new Order();  
@@ -215,7 +215,7 @@ End Class
 [XmlType("BigBooksService", Namespace = "http://www.cpandl.com")]  
 [SoapType("SoapBookService")]  
 [XmlRoot("BookOrderForm")]  
-public class Order{  
+public class Order {  
     // Both types of attributes can be applied. Depending on which  
     // the method used, either one will affect the call.  
     [SoapElement(ElementName = "EncodedOrderID")]  

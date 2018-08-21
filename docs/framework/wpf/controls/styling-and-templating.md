@@ -23,17 +23,15 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
- In addition, it is important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
-  
- 
-  
+ In addition, it is important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).
+
 <a name="styling_and_templating_sample"></a>   
 ## Styling and Templating Sample  
  The code examples used in this overview are based on a simple photo sample shown in the following illustration:  
   
  ![Styled ListView](../../../../docs/framework/wpf/controls/media/stylingintro-triggers.png "StylingIntro_triggers")  
   
- This simple photo sample uses styling and templating to create a visually compelling user experience. The sample has two <xref:System.Windows.Controls.TextBlock> elements and a <xref:System.Windows.Controls.ListBox> control that is bound to a list of images. For the complete sample, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
+ This simple photo sample uses styling and templating to create a visually compelling user experience. The sample has two <xref:System.Windows.Controls.TextBlock> elements and a <xref:System.Windows.Controls.ListBox> control that is bound to a list of images. For the complete sample, see [Introduction to Styling and Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 <a name="styling_basics"></a>   
 ## Style Basics  
@@ -178,9 +176,9 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  You can define resource dictionaries as individual files that enable you to reuse a theme across multiple applications. You can also create swappable themes by defining multiple resource dictionaries that provide the same types of resources but with different values. Redefining these styles or other resources at the application level is the recommended approach for skinning an application.  
   
- To share a set of resources, including styles and templates, across applications, you can create a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file and define a <xref:System.Windows.ResourceDictionary>. For example, take a look at the following illustration that shows part of the [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041):  
-  
- ![Control Template Examples](../../../../docs/framework/wpf/controls/media/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")  
+ To share a set of resources, including styles and templates, across applications, you can create a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file and define a <xref:System.Windows.ResourceDictionary>. For example, take a look at the following illustration that shows part of the [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating):
+
+![Control Template Examples](../../../../docs/framework/wpf/controls/media/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")  
   
  If you look at the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files in the sample, you will notice that the files all have the following:  
   

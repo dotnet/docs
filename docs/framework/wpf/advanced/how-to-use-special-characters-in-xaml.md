@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a57776d1-f353-4794-afa0-bfa3c712ed1c
 ---
 # How to: Use Special Characters in XAML
-Markup files that are created in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] are automatically saved in the [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] UTF-8 file format, which means that most special characters, such as accent marks, are encoded correctly. However, there is a set of commonly-used special characters that are handled differently. These special characters follow the [!INCLUDE[TLA#tla_w3c](../../../../includes/tlasharptla-w3c-md.md)][!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] standard for encoding.  
+Markup files that are created in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] are automatically saved in the [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] UTF-8 file format, which means that most special characters, such as accent marks, are encoded correctly. However, there is a set of commonly-used special characters that are handled differently. These special characters follow the [!INCLUDE[TLA#tla_w3c](../../../../includes/tlasharptla-w3c-md.md)] [!INCLUDE[TL A#tla_xml](../../../../includes/tlasharptla-xml-md.md)] standard for encoding.  
   
  The following table shows the syntax for encoding this set of special characters:  
   
 |Character|Syntax|Description|  
 |---------------|------------|-----------------|  
-|<|`<`|Less than symbol.|  
-|>|`>`|Greater than sign.|  
-|&|`&`|Ampersand symbol.|  
-|"|`"`|Double quote symbol.|  
+|<|`&lt;`|Less than symbol.|  
+|>|`&gt;`|Greater than sign.|  
+|&|`&amp;`|Ampersand symbol.|  
+|"|`&quot;`|Double quote symbol.|  
   
 > [!NOTE]
 >  If you create a markup file using a text editor, such as [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Notepad, you must save the file in the [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] UTF-8 file format in order to preserve any encoded special characters.  

@@ -50,5 +50,5 @@ classify = (input > 0) ? "positive" : "negative";
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)  
  [if-else](../../../csharp/language-reference/keywords/if-else.md)  
- [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
- [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)
+ [?. and ?[] Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
+ [?? Operator](../../../csharp/language-reference/operators/null-coalescing-operator.md)

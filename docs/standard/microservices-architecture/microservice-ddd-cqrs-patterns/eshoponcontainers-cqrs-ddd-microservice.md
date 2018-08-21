@@ -9,7 +9,7 @@ ms.date: 05/26/2017
 
 The design of the ordering microservice at the eShopOnContainers reference application is based on CQRS principles. However, it uses the simplest approach, which is just separating the queries from the commands and using the same database for both actions.
 
-The essence of those patterns, and the important point here, is that queries are idempotent: no matter how many times you query a system, the state of that system will not change You could even use a different “reads” data model than the transactional logic “writes” domain model, although the ordering microservices is using the same database. Hence this is a simplified CQRS approach.
+The essence of those patterns, and the important point here, is that queries are idempotent: no matter how many times you query a system, the state of that system will not change. You could even use a different “reads” data model than the transactional logic “writes” domain model, although the ordering microservices is using the same database. Hence this is a simplified CQRS approach.
 
 On the other hand, commands, which trigger transactions and data updates, change state in the system. With commands, you need to be careful when dealing with complexity and ever-changing business rules. This is the where you want to apply DDD techniques to have a better modeled system.
 
@@ -58,5 +58,5 @@ There is only one application architecture: the architecture of the system or en
 
 
 >[!div class="step-by-step"]
-[Previous] (apply-simplified-microservice-cqrs-ddd-patterns.md)
-[Next] (cqrs-microservice-reads.md)
+[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)
+[Next](cqrs-microservice-reads.md)

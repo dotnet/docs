@@ -1,5 +1,5 @@
 ---
-title: "Object Data Type"
+title: "Object Data Type (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Object"

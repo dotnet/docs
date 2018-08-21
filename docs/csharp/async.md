@@ -14,7 +14,7 @@ C# has a language-level asynchronous programming model which allows for easily w
 
 ## Basic Overview of the Asynchronous Model
 
-The core of async programming are the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
+The core of async programming is the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
 
 For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>` inside of an `async` method.
 
@@ -113,7 +113,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 ### Extracting Data from a Network
 
-This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
+This snippet downloads the HTML from the homepage at [www.dotnetfoundation.org](https://www.dotnetfoundation.org) and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.DownloadStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }

@@ -52,7 +52,7 @@ HRESULT CLRCreateInstance(
 ## Remarks  
  The following table shows the supported combinations for `clsid` and `riid`.  
   
-|`rclsid`|`riid`|  
+|`clsid`|`riid`|  
 |--------------|------------|  
 |CLSID_CLRMetaHost|IID_ICLRMetaHost|  
 |CLSID_CLRMetaHostPolicy|IID_ICLRMetaHostPolicy|  

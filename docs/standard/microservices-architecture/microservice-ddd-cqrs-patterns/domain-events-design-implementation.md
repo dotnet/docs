@@ -146,7 +146,7 @@ public abstract class Entity
 
 When you want to raise an event, you just add it to the event collection from code at any method of the aggregate-root entity.
 
-The following code, part of the [Order agregate-root at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs), shows an example:
+The following code, part of the [Order aggregate-root at eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs), shows an example:
 
 ```csharp
 var orderStartedDomainEvent = new OrderStartedDomainEvent(this, //Order object
@@ -179,7 +179,7 @@ public class OrderingContext : DbContext, IUnitOfWork
         await _mediator.DispatchDomainEventsAsync(this);
 
         // After this line runs, all the changes (from the Command Handler and Domain
-        // event handlers) performed through the DbContext will be commited
+        // event handlers) performed through the DbContext will be committed
         var result = await base.SaveChangesAsync();
     }
 }
@@ -360,5 +360,5 @@ As stated, use domain events to explicitly implement side effects of changes wit
 
 
 >[!div class="step-by-step"]
-[Previous] (client-side-validation.md)
-[Next] (infrastructure-persistence-layer-design.md)
+[Previous](client-side-validation.md)
+[Next](infrastructure-persistence-layer-design.md)

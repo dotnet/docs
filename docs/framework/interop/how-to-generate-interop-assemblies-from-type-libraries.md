@@ -26,13 +26,13 @@ The [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-ex
  The following command produces the Loanlib.dll assembly in the `Loanlib` namespace.  
   
 ```  
-tlbimp Loanlib.dll  
+tlbimp Loanlib.tlb  
 ```  
   
  The following command produces an interop assembly with an altered name (LOANLib.dll).  
   
 ```  
-tlbimp LoanLib.dll /out: LOANLib.dll  
+tlbimp LoanLib.tlb /out: LOANLib.dll  
 ```  
   
 ## See Also  

@@ -5,11 +5,14 @@ author: "sputier"
 ---
 # private protected (C# Reference)
 The `private protected` keyword combination is a member access modifier. A private protected member is accessible by types derived from the containing class, but only within its containing assembly. For a comparison of `private protected` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 
+
+> [!NOTE]
+> The `private protected` access modifier is valid in C# version 7.2 and later.
    
 ## Example  
  A private protected member of a base class is accessible from derived types in its containing assembly only if the static type of the variable is the derived class type. For example, consider the following code segment:  
   
- ```
+ ```csharp
  // Assembly1.cs  
  // Compile with: /target:library  
  public class BaseClass
@@ -33,7 +36,7 @@ The `private protected` keyword combination is a member access modifier. A priva
  }
 ```  
   
-```  
+```csharp  
  // Assembly2.cs  
  // Compile with: /reference:Assembly1.dll  
  class DerivedClass2 : BaseClass

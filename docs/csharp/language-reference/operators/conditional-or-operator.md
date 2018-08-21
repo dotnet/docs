@@ -15,13 +15,13 @@ The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands.
 ## Remarks  
  The operation  
   
-```  
+```csharp  
 x || y  
 ```  
   
  corresponds to the operation  
   
-```  
+```csharp  
 x | y  
 ```  
   

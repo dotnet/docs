@@ -21,19 +21,19 @@ Local variables can be declared without giving an explicit type. The `var` keywo
   
 -   In a [for](../../../csharp/language-reference/keywords/for.md) initialization statement.  
   
-    ```  
+    ```csharp  
     for(var x = 1; x < 10; x++)  
     ```  
   
 -   In a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) initialization statement.  
   
-    ```  
+    ```csharp  
     foreach(var item in list){...}  
     ```  
   
 -   In a [using](../../../csharp/language-reference/keywords/using-statement.md) statement.  
   
-    ```  
+    ```csharp  
     using (var file = new StreamReader("C:\\myfile.txt")) {...}  
     ```  
   

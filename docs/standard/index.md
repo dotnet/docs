@@ -1,6 +1,6 @@
 ---
-title: .NET Platform Guide
-description: Learn about the .NET Platform.
+title: .NET Guide
+description: Learn about .NET.
 author: cartermp
 ms.author: ronpet
 ms.date: 05/02/2017
@@ -12,6 +12,8 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 The .NET Guide provides a large amount of information about .NET.  Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other sections of the .NET documentation.
 
 ## New to .NET
+
+If you want a high-level overview about .NET, check out [What is .NET?](https://www.microsoft.com/net/learn/what-is-dotnet).
 
 If you're new to .NET, check out the [Get Started](get-started.md) article.
 

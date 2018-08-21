@@ -17,7 +17,7 @@ There are two ways to install a strong-named assembly into the global assembly c
 > [!IMPORTANT]
 >  Only strong-named assemblies can be installed into the GAC. For information about how to create a strong-named assembly, see [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
   
--   Using [Windows Installer](http://msdn.microsoft.com/library/windows/desktop/cc185688.aspx).  
+-   Using [Windows Installer](/windows/desktop/Msi/windows-installer-portal).  
   
      You do this in Visual Studio 2012 and Visual Studio 2013 by creating an InstallShield Limited Edition Project.  
   

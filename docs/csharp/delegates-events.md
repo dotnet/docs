@@ -41,3 +41,4 @@ This topic will be covered under the following articles:
 
     This article discusses how you should distinguish between using events and delegates in your designs.
  
+You can download the [delegates sample](https://github.com/dotnet/samples/tree/master/csharp/delegates-and-events) and the [events sample](https://github.com/dotnet/samples/tree/master/csharp/events) from our GitHub samples repository.

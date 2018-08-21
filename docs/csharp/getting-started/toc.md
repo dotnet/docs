@@ -5,5 +5,5 @@
 ### [Publishing your Hello World application with Visual Studio 2017](../../core/tutorials/publishing-with-visual-studio.md)
 ## [Building a class library with C# and .NET Core in Visual Studio 2017](../../core/tutorials/library-with-visual-studio.md)
 ### [Testing a class library with .NET Core in Visual Studio 2017](../../core/tutorials/testing-library-with-visual-studio.md)
-### [Consuming a class library with .NET Core in Visual Studio 2017](../../core/tutorials/consuming-library-with-visual-studio.md)
+### [Consuming a .NET Standard library in Visual Studio 2017](../../core/tutorials/consuming-library-with-visual-studio.md)
 ## [Getting started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)

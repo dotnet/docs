@@ -2621,11 +2621,13 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating how the <see cref="T:System.Windows.Forms.ToolStrip" /> lays out the items collection.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The possible values are <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.Table" />, <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.Flow" />, <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow" />, <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow" />, and <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow" />.</value>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The default value is <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ The default value of the `LayoutStyle` property is <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow?displayProperty=nameWithType>.
+
  The sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> or <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>, the sizing grip will not be displayed.  
   
    

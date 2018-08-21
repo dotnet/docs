@@ -435,9 +435,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.StatusStrip.LayoutStyle%2A> property to get or set how items are arranged on the <xref:System.Windows.Forms.StatusStrip>.  
-  
-   
+ 
+Use the `LayoutStyle` property to get or set how items are arranged on the <xref:System.Windows.Forms.StatusStrip>. Its default value is <xref:System.Windows.Forms.ToolStripLayoutStyle.Table?displayProperty=nameWithType>.
   
 ## Examples  
  The following code example demonstrates a <xref:System.Windows.Forms.StatusStrip> with various common properties set, including the <xref:System.Windows.Forms.StatusStrip.LayoutStyle%2A> property.  

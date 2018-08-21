@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You control the layout of the <xref:System.Windows.Forms.ToolStrip> class and its derived classes by assigning a member of the <xref:System.Windows.Forms.ToolStripLayoutStyle> enumeration to the control's `LayoutStyle` property, such as the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> or <xref:System.Windows.Forms.StatusStrip> property.  
+ You control the layout of the <xref:System.Windows.Forms.ToolStrip> class and its derived classes by assigning a member of the <xref:System.Windows.Forms.ToolStripLayoutStyle> enumeration to the control's `LayoutStyle` property, such as the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.StatusStrip.LayoutStyle?displayProperty=nameWithType> property.  
   
 #### Stack Layouts  
  Stacking arranges items beside each other at both ends of the tool strip. The following list describes the stack layouts.  

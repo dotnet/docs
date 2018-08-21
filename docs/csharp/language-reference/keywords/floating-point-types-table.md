@@ -1,26 +1,30 @@
 ---
-title: "Floating-Point Types Table (C# Reference)"
-ms.date: 07/20/2015
+title: "Floating-point types table (C# Reference)"
+description: "Overview of the built-in C# floating-point types"
+ms.date: 08/20/2018
 helpviewer_keywords: 
   - "floating-point numbers [C#]"
   - "ranges of floating-point types [C#]"
   - "types [C#], floating-point types"
 ms.assetid: da886cc5-e01e-4f62-b3ec-6428c8f7a102
 ---
-# Floating-Point Types Table (C# Reference)
+# Floating-point types table (C# Reference)
+
 The following table shows the precision and approximate ranges for the floating-point types.  
   
 |Type|Approximate range|Precision|  
 |----------|-----------------------|---------------|  
-|[float](float.md)|±1.5e−45 to ±3.4e38|7 digits|  
-|[double](double.md)|±5.0e−324 to ±1.7e308|15-16 digits|  
+|[float](float.md)|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|7 digits|  
+|[double](double.md)|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|  
+|[decimal](decimal.md)|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Default Values Table](default-values-table.md)  
- [Built-In Types Table](built-in-types-table.md)  
- [Integral Types Table](integral-types-table.md)  
- [Formatting Numeric Results Table](formatting-numeric-results-table.md)  
- [Reference Tables for Types](reference-tables-for-types.md)  
- [decimal](decimal.md)
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Reference tables for types](reference-tables-for-types.md)
+- [Integral types table](integral-types-table.md)
+- [Default values table](default-values-table.md)
+- [Formatting numeric results table](formatting-numeric-results-table.md)
+- [Built-in types table](built-in-types-table.md)

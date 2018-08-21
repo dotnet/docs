@@ -24,8 +24,12 @@ The following table shows the sizes and ranges of the integral types, which cons
 |[uint](uint.md)|0 to 4,294,967,295|Unsigned 32-bit integer|  
 |[long](long.md)|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|  
 |[ulong](ulong.md)|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|  
+
+## Remarks
   
- If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compile error [CS1021](../../misc/cs1021.md) occurs.
+If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
+
+Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> class to represent an arbitrarily large signed integer.
   
 ## See also
 
@@ -37,4 +41,3 @@ The following table shows the sizes and ranges of the integral types, which cons
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)
 - [Built-in types table](built-in-types-table.md)
-- <xref:System.Numerics.BigInteger?displayProperty=nameWithType>

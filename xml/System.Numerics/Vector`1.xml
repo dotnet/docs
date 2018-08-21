@@ -1264,8 +1264,8 @@
       <Docs>
         <param name="left">The first vector.</param>
         <param name="right">The second vector.</param>
-        <summary>Multiplies two vectors together.</summary>
-        <returns>The product vector.</returns>
+        <summary>Returns a new vector whose values are the product of each pair of elements in two specified vectors.</summary>
+        <returns>The element-wise product vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1350,7 +1350,7 @@
       <Docs>
         <param name="factor">The scalar value.</param>
         <param name="value">The source vector.</param>
-        <summary>Multiplies a vector by the given scalar.</summary>
+        <summary>Multiplies a vector by a specified scalar value.</summary>
         <returns>The scaled vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -626,7 +626,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength%2A> property can be any integer, zero or larger. If the length of a query string exceeds the size limit, ASP.NET returns an `HTTP 400` (Bad Request) status code.  
+ The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength%2A> property can be any integer, zero or greater. If the length of a query string exceeds the size limit, ASP.NET returns an `HTTP 400` (Bad Request) status code.  
   
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
@@ -718,7 +718,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> property can be any integer, zero or larger.  
+ The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> property can be any integer, zero or greater.  
   
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
@@ -1053,8 +1053,14 @@
 -   `4.0` The <xref:System.Web.HttpRequest> object internally sets a flag that indicates that request validation should be triggered whenever any HTTP request data is accessed. This guarantees that the request validation is triggered before data such as cookies and URLs are accessed during the request. The request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are ignored.  
   
 -   `2.0`. Request validation is enabled only for pages, not for all HTTP requests. In addition, the request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are used to determine which page requests to validate.  
+
+-   `0.0`. Request validation is disabled for the application. `0.0` is only recognized in ASP.NET 4.6 and later.
   
- The value that you assign to this property is not validated to match a specific version of ASP.NET. Any numeric value smaller than `4.0` (for example, `3.7`, `2.9`, or `2.0`) is interpreted as `2.0`. Any number larger than `4.5` is interpreted as `4.5`.  
+ The value that you assign to this property is not validated to match a specific version of ASP.NET. 
+
+ In ASP.NET 4.5, and earlier any numeric value less than `4.0` (for example, `3.7`, `2.9`, or `2.0`) is interpreted as `2.0`. Any number greater than `4.5` is interpreted as `4.5`.  
+
+ In ASP.NET 4.6, and later any numeric value  greater than  `0.0` and  less than `4.0` (for example, `3.7`, `2.9`, or `1.0`) is interpreted as `2.0`. Any number greater than `4.5` is interpreted as `4.5`
   
  To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   

@@ -143,7 +143,7 @@
   
  The example includes simple methods to add to the cache, delete from the cache, and read from the cache. To demonstrate time-outs, the example includes a method that adds to the cache only if it can do so within a specified time-out.  
   
- To demonstrate upgradeable mode, the example includes a method that retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. It no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade from read access to write access as needed, without the risk of deadlocks.  
+ To demonstrate upgradeable mode, the example includes a method that retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. If no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade from read access to write access as needed, without the risk of deadlocks.  
   
  The example includes a nested enumeration that specifies the return values for the method that demonstrates upgradeable mode.  
   

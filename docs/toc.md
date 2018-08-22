@@ -440,7 +440,7 @@
 ## [Developing Applications](visual-basic/developing-apps/index.md)
 
 ### [Programming in Visual Basic](visual-basic/developing-apps/programming/index.md)
-#### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
+#### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/index.md)
 #### [Logging Information from the Application](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
 #### [Accessing User Data](visual-basic/developing-apps/programming/accessing-user-data.md)
 #### [Accessing Application Forms](visual-basic/developing-apps/programming/accessing-application-forms.md)

@@ -79,5 +79,5 @@
         }
         /* Output:
             10
-            Conversion not yet implemented
+            Conversion to string is not implemented
         */

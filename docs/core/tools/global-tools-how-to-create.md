@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 08/22/2018
 ---
 
-# .NET Core Global Tools overview
+# Create a .NET Core Global Tool
 
 This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to compile and mark a console application as a Global Tool, which others can easily install. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview][global-tool-info].
 
@@ -14,7 +14,7 @@ This article teaches you how to create and package a .NET Core Global Tool. The 
 
 ## Create a project
 
-This article shows uses the .NET Core CLI to create and manage a project. Obviously you could use Visual Studio to do some of these steps, but Visual Studio will not be described in this article. 
+This article uses the .NET Core CLI to create and manage a project. Obviously you could use Visual Studio to do some of these steps, but Visual Studio will not be described in this article.
 
 First, create a new .NET Core 2.1 Console Application.
 
@@ -24,7 +24,7 @@ dotnet new console -o botsay
 
 Enter the `botsay` directory created by the previous command.
 
-In this example we'll create a console application that generates an ascii bot and prints a message. The first thing we'll do is use the same command line parsing system that the .NET Core CLI tool uses.
+In this example we'll create a console application that generates an ascii bot and prints a message. The first thing we'll do is use the same command line parsing system that makes it easy to parse arguments and provides a help system.
 
 Add reference to the `Microsoft.Extensions.CommandLineUtils` NuGet package.
 
@@ -70,7 +70,7 @@ Next, add code to check if the `message` argument was properly passed, and if no
 
 ```csharp
 // Check if a message was provided
-if (string.IsNullOrEmpty(messageArg.Value))
+if (app.IsShowingInformation || string.IsNullOrEmpty(messageArg.Value))
 {
     if (!app.IsShowingInformation)
         app.ShowHelp();
@@ -83,7 +83,7 @@ If the check above succeeds, then the message argument was not passed and the ap
 
 ### Create the bot
 
-Next, add a new method named `ShowBot` that accepts a string parameter. This method will print out the message and the ascii bot.
+Next, add a new method named `ShowBot` that accepts a string parameter. This method will print out the message and the ascii bot. The ascii bot code was taken from the awesome [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
 
 ```csharp
 static void ShowBot(string message)
@@ -104,7 +104,7 @@ static void ShowBot(string message)
              .'....'..'..........'..'.......'.
              .'..................'...   ......
              .  ......'.........         .....
-             .                           ......
+             .    _            __        ......
             ..    #            ##        ......
            ....       .                 .......
            ......  .......          ............
@@ -140,7 +140,7 @@ ShowBot(messageArg.Value);
 
 ### Test the tool
 
-You can run the project and see the output. Try these variations of the command:
+You can run the project and see the output. Try these variations to run our application:
 
 ```csharp
 dotnet run
@@ -148,6 +148,8 @@ dotnet run -- -h
 dotnet run -- -v
 dotnet run -- "Hello from the bot"
 ```
+
+All arguments after the `--` delimiter are passed to our application.
 
 ## Setup the global tool
 

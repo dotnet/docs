@@ -24,8 +24,6 @@ The value types consist of two main categories:
   
     -   [Floating-point types](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
   
-    -   [decimal](../../../csharp/language-reference/keywords/decimal.md)  
-  
 -   [bool](../../../csharp/language-reference/keywords/bool.md)  
   
 -   User defined structs.  

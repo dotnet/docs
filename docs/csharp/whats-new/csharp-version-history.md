@@ -30,6 +30,10 @@ The major features of C# 1.0 included:
 - [Attributes](../programming-guide/concepts/attributes/index.md)
 - Literals
 
+## C# version 1.2
+
+C# version 1.2 shipped with Visual Studio 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
+
 ## C# version 2.0
 
 Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:

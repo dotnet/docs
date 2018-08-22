@@ -15,7 +15,7 @@ The `float` keyword signifies a simple type that stores 32-bit floating-point va
 
 |Type|Approximate range|Precision|.NET type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|-3.4 × 10<sup>38</sup> to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
+|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
 
 ## Literals
 
@@ -31,9 +31,9 @@ If you do not use the suffix in the previous declaration, you will get a compila
 
 You can mix numeric integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
 
-- If one of the floating-point types is [double](double.md), the expression evaluates to [double](double.md) or [bool](bool.md) in relational or Boolean expressions.
+- If one of the floating-point types is [double](double.md), the expression evaluates to [double](double.md), or to [bool](bool.md) in relational comparisons or comparisons for equality.
 
-- If there is no [double](double.md) type in the expression, the expression evaluates to `float` or [bool](bool.md) in relational or Boolean expressions.
+- If there is no [double](double.md) type in the expression, the expression evaluates to `float`, or to [bool](bool.md) in relational comparisons or comparisons for equality.
 
 A floating-point expression can contain the following sets of values:
 

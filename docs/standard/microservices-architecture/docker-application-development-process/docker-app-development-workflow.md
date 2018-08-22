@@ -11,11 +11,11 @@ The application development life cycle starts at each developer’s machine, whe
 
 Each container (an instance of a Docker image) includes the following components:
 
--   An operating system selection (for example, a Linux distribution, Windows Nano Server, or Windows Server Core).
+- An operating system selection (for example, a Linux distribution, Windows Nano Server, or Windows Server Core).
 
--   Files added by the developer (application binaries, etc.).
+- Files added by the developer (application binaries, etc.).
 
--   Configuration information (environment settings and dependencies).
+- Configuration information (environment settings and dependencies).
 
 ## Workflow for developing Docker container-based applications
 
@@ -54,7 +54,6 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 ### Additional resources
 
 - [Get started with Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
-
 - [Download Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![Step 2 - Write Dockerfiles graphic](./media/image4.png)
@@ -105,9 +104,8 @@ You can specify additional configuration settings in the Dockerfile, depending o
 
 ### Additional resources
 
--   [Building Docker Images for .NET Core Applications](../../../core/docker/building-net-docker-images.md)
-
--   [Build your own image](https://docs.docker.com/engine/tutorials/dockerimages/)
+- [Building Docker Images for .NET Core Applications](../../../core/docker/building-net-docker-images.md)
+- [Build your own image](https://docs.docker.com/engine/tutorials/dockerimages/)
 
 ### Using multi-arch image repositories
 
@@ -115,17 +113,17 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
--   **microsoft/aspnetcore:2.0.0-jessie**
+- **microsoft/aspnetcore:2.0.0-jessie**
 
         .NET Core 2.0 runtime-only on Linux
 
--   **microsoft/aspnetcore:2.0.0-nanoserver**
+- **microsoft/aspnetcore:2.0.0-nanoserver**
 
         .NET Core 2.0 runtime-only on Windows Nano Server
 
 But, and this is new since mid-2017, if you specify the same image name, even with the same tag, the new multi-arch images (like the aspnetcore image which supports multi-arch) will use the Linux or Windows version depending on the Docker host OS you are deploying, as shown in the following example:
 
--   **microsoft/aspnetcore:2.0**
+- **microsoft/aspnetcore:2.0**
 
         Multi-arch: .NET Core 2.0 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
 
@@ -137,8 +135,8 @@ You can create your own Docker base image from scratch. This scenario is not rec
 
 ### Additional resources
 
--   [Multi-arch .NET Core images](https://github.com/dotnet/announcements/issues/14)
--   [Create a base image](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
+- [Multi-arch .NET Core images](https://github.com/dotnet/announcements/issues/14)
+- [Create a base image](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
 
 ![Step 3 - Create images graphic](./media/image7.png)
 
@@ -228,13 +226,13 @@ The docker-compose.yml file example defines four services: the webmvc service (a
 
 The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
 
--   Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
+- Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
 
--   Initializes two environment variables (CatalogUrl and OrderingUrl).
+- Initializes two environment variables (CatalogUrl and OrderingUrl).
 
--   Forwards the exposed port 80 on the container to the external port 80 on the host machine.
+- Forwards the exposed port 80 on the container to the external port 80 on the host machine.
 
--   Links the web app to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
+- Links the web app to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
@@ -296,7 +294,7 @@ The important point here is that in Visual Studio 2017 there is an additional **
 
 ### Additional resources
 
--   [Deploy an ASP.NET container to a remote Docker host](/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+- [Deploy an ASP.NET container to a remote Docker host](/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -330,9 +328,8 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 
 ### Additional resources
 
--   [Debugging apps in a local Docker container](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
-
--   [Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
+- [Debugging apps in a local Docker container](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+- [Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
 
 ## Simplified workflow when developing containers with Visual Studio
 
@@ -344,9 +341,8 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
--   [Steve Lasker. .NET Docker Development with Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
-
--   [Jeffrey T. Fritz. Put a .NET Core App in a Container with the new Docker Tools for Visual Studio](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
+- [Steve Lasker. .NET Docker Development with Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
+- [Jeffrey T. Fritz. Put a .NET Core App in a Container with the new Docker Tools for Visual Studio](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 
@@ -370,7 +366,7 @@ RUN powershell add-windowsfeature web-asp-net45
 
 ### Additional resources
 
--   Example Powershell commands to run from dockerfiles to include Windows features -
+- Example Powershell commands to run from dockerfiles to include Windows features -
     [aspnet-docker/Dockerfile](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
 
 >[!div class="step-by-step"]

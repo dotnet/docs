@@ -33,10 +33,6 @@ After you add Docker support to your solution in Visual Studio, you also will se
 
 You could deploy a multicontainer application by using a single *docker-compose.yml* file when you run docker-compose up; however, Visual Studio adds a group of them, so you can override values depending on the environment (development versus production) and the execution type (release versus debug). This capability will be better explained in later chapters.
 
->[!div class="step-by-step"]
-[Previous](docker-apps-inner-loop-workflow.md)
-[Next](set-up-windows-containers-with-powershell.md)
-
 ## Use Docker Tools in Visual Studio 2015
 
 The Visual Studio Tools for Docker for Visual Studio 2015 provides a consistent way to develop and validate locally your Docker containers for Linux in a Linux Docker host or VM, or your Windows Containers directly on Windows.
@@ -44,6 +40,10 @@ The Visual Studio Tools for Docker for Visual Studio 2015 provides a consistent 
 If you're using a single container, the first thing you need to begin is to turn on Docker support into your .NET Core project. To do this, right-click your project file:
 
 ![Add Docker Support in Visual Studio 2015](./media/image31.png)
+
+>[!div class="step-by-step"]
+[Previous](docker-apps-inner-loop-workflow.md)
+[Next](set-up-windows-containers-with-powershell.md)
 
 ## See also
 

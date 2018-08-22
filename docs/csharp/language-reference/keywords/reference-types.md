@@ -37,7 +37,7 @@ There are two kinds of types in C#: reference types and value types. Variables o
         {
             //Value Types
             //What happens with value types is that the
-            //value get copied over to the destination but the origin isn't effected.
+            //value get copied over to the destination but the origin isn't affected.
 
             //Origin
             int x = 50;
@@ -49,14 +49,14 @@ There are two kinds of types in C#: reference types and value types. Variables o
 
 
             //Reference Types
-            //The variable 'Varga' is stored on the stack with a reference to the address
+            //The variable 'Varga' is stored on the stack with a reference to the memory address
             //Where the memory has been allocated for 'new Programmer'.
 
             //    --- Stack ---
             //---------------------
-            //|       Varga       | //Variable Portion
+            //|       Varga       | //Variable portion
             //|-------------------|
-            //| reference to heap | //Data Portion
+            //| reference to heap | //Data portion
             //---------------------
 
             //    --- Heap ---
@@ -69,9 +69,9 @@ There are two kinds of types in C#: reference types and value types. Variables o
             
             //                 --- Stack ---
             //----------------------------------------------
-            //|                   Chris                    | //Variable Portion
+            //|                   Chris                    | //Variable portion
             //|--------------------------------------------|
-            //| Points to the memory allocated for 'Varga' | //Data Portion
+            //| Points to the memory allocated for 'Varga' | //Data portion
             //----------------------------------------------
             Programmer Chris = Varga;
             Chris.Age = 22;

@@ -36,7 +36,7 @@ There are two kinds of types in C#: reference types and value types. Variables o
         static void Main(string[] args)
         {
             //Value Types
-            //What happends with value types is that the
+            //What happens with value types is that the
             //value get copied over to the destination but the origin isn't effected.
 
             //Origin

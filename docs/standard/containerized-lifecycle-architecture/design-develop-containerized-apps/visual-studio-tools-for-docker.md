@@ -3,7 +3,7 @@ title: Visual Studio Tools for Docker on Windows
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 08/22/2018
 ---
 # Use Visual Studio Tools for Docker (Visual Studio on Windows)
 

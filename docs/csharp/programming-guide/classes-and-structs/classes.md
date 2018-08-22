@@ -27,7 +27,7 @@ When the object is created, enough memory is allocated on the managed heap for t
  Classes are declared by using the [class](../../../csharp/language-reference/keywords/class.md) keyword followed by a unique identifier, as shown in the following example:
 
  ```csharp
-[access modifier] - [class] - [identifier]
+//[access modifier] - [class] - [identifier]
  public class Customer
  {
     // Fields, properties, methods and events go here...

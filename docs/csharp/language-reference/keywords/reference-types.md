@@ -27,7 +27,90 @@ There are two kinds of types in C#: reference types and value types. Variables o
 -   [object](../../../csharp/language-reference/keywords/object.md)  
   
 -   [string](../../../csharp/language-reference/keywords/string.md)  
+
   
+## Example
+```csharp
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Value Types
+            //What happends with value types is that the
+            //value get copied over to the destination but the origin isn't effected.
+
+            //Origin
+            int x = 50;
+            //Pass x into the ChangeValue method.
+            ChangeValue(x);
+
+            Console.WriteLine(x);
+            //Output: 50
+
+
+            //Reference Types
+            //The variable 'Varga' is stored on the stack with a reference to the address
+            //Where the memory has been allocated for 'new Programmer'.
+
+            //    --- Stack ---
+            //---------------------
+            //|       Varga       | //Variable Portion
+            //|-------------------|
+            //| reference to heap | //Data Portion
+            //---------------------
+
+            //    --- Heap ---
+            //---------------------
+            //|       Name        |
+            //|       Age         |
+            //---------------------
+            Programmer Varga = new Programmer();
+            Varga.Age = 20;
+            
+            //                 --- Stack ---
+            //----------------------------------------------
+            //|                   Chris                    | //Variable Portion
+            //|--------------------------------------------|
+            //| Points to the memory allocated for 'Varga' | //Data Portion
+            //----------------------------------------------
+            Programmer Chris = Varga;
+            Chris.Age = 22;
+
+
+            //By doing the same Change(); example we can see how these two types react differently.
+            Programmer Carl = new Programmer();
+            Carl.Name = "Carl";
+            Carl.Age = 34;
+            ChangeValue(Carl);
+
+            Console.WriteLine($"Carls name has now changed to {Carl.Name} " +
+                              $"and his age is now {Carl.Age}.");
+            //Output: Carls name has now changed to George and his age is now 20.
+
+            //With reference types you are accessing the same memory location
+            //of where the data to that object is stored
+            //so that you can manipulate that data.
+        }
+
+        public static void ChangeValue(int x)
+        {
+            x = 100;
+        }
+
+        public static void ChangeValue(Programmer p)
+        {
+            p.Name = "George";
+            p.Age = 20;
+        }
+    }
+    
+    public class Programmer
+    {
+        public string Name;
+        public int Age;
+    }
+````
+
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

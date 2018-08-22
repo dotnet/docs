@@ -14,7 +14,7 @@ The remainder operator (`%`) computes the remainder after dividing its first ope
 ## Remarks  
  The formula `a % b` will always return a value on the range `(-b, b)`, exclusive (it can never return `b` or `-b`), keeping the sign of the dividend. For integer division, the remainder operator satisfies the rule `a % b = a - (a / b) * b`.
   
- This is not to be confused with canonical modulus, which satisfies a similar rule but with floored division and returns values on the range `[0, b)`. C# does not have an operator for canonical modulus. However, the behavior is the same for positive dividends.
+ This is not to be confused with canonical modulus, which satisfies a similar rule but with floored division and returns values on the range `(0, b)`. C# does not have an operator for canonical modulus. However, the behavior is the same for positive dividends.
   
  User-defined types can overload the `%` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   

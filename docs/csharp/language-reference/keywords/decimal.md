@@ -14,7 +14,7 @@ The `decimal` keyword indicates a 128-bit data type. Compared to other floating-
 
 |Type|Approximate Range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|
 
 The default value of a `decimal` is 0m.
 

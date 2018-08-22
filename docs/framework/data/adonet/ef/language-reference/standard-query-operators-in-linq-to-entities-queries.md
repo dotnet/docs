@@ -1,6 +1,6 @@
 ---
 title: "Standard Query Operators in LINQ to Entities Queries"
-ms.date: "03/30/2017"
+ms.date: "08/21/2018"
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
 ---
 # Standard Query Operators in LINQ to Entities Queries
@@ -66,9 +66,9 @@ In a query, you specify the information that you want to retrieve from the data 
  `OfType` is supported for entity types. `Convert` is supported for conceptual model primitive types.  The C# `is` and `as` methods are also supported.  
   
 ## Paging Methods  
- Paging operations return a single, specific element from a sequence. The element methods are `ElementAt`, `First`, `FirstOrDefault`, `Last`, `LastOrDefault`, `Single`, `Skip`, `Take`, `TakeWhile`.  
+ Paging operations return a single element or multiple elements from a sequence. The supported paging methods are `First`, `FirstOrDefault`, `Single`, `SingleOrDefault`, `Skip`, and `Take`.  
   
- A number of the paging methods are not supported, due either to the inability to map functions to the data source or to the lack of implicit ordering of sets on the data source. Methods that return a default value are restricted to conceptual model primitive types and reference types with null defaults. Paging methods that are executed on an empty sequence will return null.  
+ A number of paging methods are not supported, due either to the inability to map functions to the data source or to the lack of implicit ordering of sets on the data source. Methods that return a default value are restricted to conceptual model primitive types and reference types with null defaults. Paging methods that are executed on an empty sequence will return null.  
   
 ## See Also  
  [Supported and Unsupported LINQ Methods (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  

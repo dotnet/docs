@@ -44,7 +44,7 @@
  A `TargetException` is thrown when an attempt is made to invoke a non-static method on a null object. This may occur because the caller does not have access to the member, or because the target does not define the member, and so on.  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the , but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.Exception> instead.  
+>  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.Exception> instead.  
   
  ]]></format>
     </remarks>

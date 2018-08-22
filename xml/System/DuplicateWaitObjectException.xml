@@ -43,7 +43,7 @@
  For a list of initial property values for an instance of <xref:System.DuplicateWaitObjectException>, see the <xref:System.DuplicateWaitObjectException.%23ctor%2A> constructors.  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the , but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.ArgumentException> instead.  
+>  This exception is not included in [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.ArgumentException> instead.  
   
  ]]></format>
     </remarks>

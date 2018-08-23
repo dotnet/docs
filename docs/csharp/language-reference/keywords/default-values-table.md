@@ -1,7 +1,7 @@
 ---
 title: "Default values table (C# Reference)"
 description: Learn what are the default values of C# value types.
-ms.date: 08/22/2018
+ms.date: 08/23/2018
 helpviewer_keywords: 
   - "constructors [C#], return values"
   - "keywords [C#], new"
@@ -36,6 +36,8 @@ The following table shows the default values of [value types](value-types.md).
 
 ## Remarks
 
+C# doesn't allow uninitialized variables. You can initialize a variable with the default value of its type. You also can use the default value of a type to specify the default value of a method's [optional argument](../../programming-guide/classes-and-structs/named-and-optional-arguments.md#optional-arguments).
+
 Use [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type as the following example shows:
 
 ```csharp
@@ -48,7 +50,7 @@ Beginning with C# 7.1, you can use the [`default` literal](../../programming-gui
 int a = default;
 ```
 
-You also can use the default constructor to produce the default value of a value type:
+You also can use the default constructor or the implicit default constructor to produce the default value of a value type, as the following example shows. For more information about constructors, see the [Constructors](../../programming-guide/classes-and-structs/constructors.md) article.
 
 ```csharp
 int a = new int();

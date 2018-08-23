@@ -38,4 +38,4 @@ Most .NET Framework methods that perform culture-sensitive string operations by 
 
 ## See also
 
-[Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921)

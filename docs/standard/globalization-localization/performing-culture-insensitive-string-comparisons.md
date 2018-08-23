@@ -35,9 +35,9 @@ By default, the <xref:System.String.Compare%2A?displayProperty=nameWithType> met
 
 You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
 
-## See Also
+## See also
 
- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)
+- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
+- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
+- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

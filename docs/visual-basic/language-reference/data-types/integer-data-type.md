@@ -92,7 +92,7 @@ k = 5.5
 ## See also
 
 <xref:System.Int32?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

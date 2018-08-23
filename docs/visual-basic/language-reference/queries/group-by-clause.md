@@ -65,7 +65,7 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
  [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  

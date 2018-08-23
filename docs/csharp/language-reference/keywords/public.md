@@ -22,9 +22,10 @@ class SampleClass
 See [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility Levels](accessibility-levels.md) for more information.
 
 ## Example
+
 In the following example, two classes are declared, `PointTest` and `MainClass`. The public members `x` and `y` of `PointTest` are accessed directly from `MainClass`.
 
-[!code-csharp[csrefKeywordsModifiers#13](codesnippet/CSharp/public_1.cs)]
+[!code-csharp[csrefKeywordsModifiers#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#13)]
 
 If you change the `public` access level to [private](private.md) or [protected](protected.md), you will get the error message:
 

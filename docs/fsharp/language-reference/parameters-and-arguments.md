@@ -118,11 +118,11 @@ Baud Rate: 300 Duplex: Half Parity: true
 ```
 
 ## Passing by Reference
-Passing an F# value by reference involves, the `byref` keyword, which specifies that the parameter is actually a pointer to the value being passed by reference. Any value passed into a method with a `byref` as the argument must be `mutable`.
+Passing an F# value by reference involves the `byref` keyword, which specifies that the parameter is actually a pointer to the value being passed by reference. Any value passed into a method with a `byref` as the argument must be `mutable`.
 
 Because the parameter is a pointer and the value is mutable, any changes to the value are retained after the execution of the function.
 
-You can accomplish the same thing with [Reference Cells](reference-cells.md), but it is important to note that **reference cells and `byref`s are not the same thing**. A reference cell is a container for a value that you can inspect and change the contents of, but this value lives on the heap and is equivalent to having a record with a mutable value contained within it. A `byref` is an actual pointer, so it is different underlying semantics and usage rules (which can be quite restrictive).
+You can accomplish the same thing with [Reference Cells](reference-cells.md), but it's important to note that **reference cells and `byref`s are not the same thing**. A reference cell is a container for a value that you can inspect and change the contents of, but this value lives on the heap and is equivalent to having a record with a mutable value contained within it. A `byref` is an actual pointer, so it is different underlying semantics and usage rules (which can be quite restrictive).
 
 The following examples illustrate the use of the `byref` keyword. Note that when you use a reference cell as a parameter, you must create a reference cell as a named value and use that as the parameter, not just add the `ref` operator as shown in the first call to `Increment` in the following code. Because creating a reference cell creates a copy of the underlying value, the first call just increments a temporary value.
 

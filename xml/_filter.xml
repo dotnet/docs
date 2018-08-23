@@ -42,7 +42,7 @@
       <typeFilter name="*" expose="true" />
     </namespaceFilter>
     <namespaceFilter name="System.Runtime">
-      <typeFilter name="TargetedPatchingOptOut" expose="false" />
+      <typeFilter name="TargetedPatchingOptOutAttribute" expose="false" />
       <typeFilter name="*" expose="true" />
     </namespaceFilter>    
     <!-- Attributes in System.Runtime.CompilerServices control obscure details of compilation. Don't show them. -->

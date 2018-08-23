@@ -23,7 +23,7 @@ Since buffers can be passed around between APIs, and since buffers can sometimes
 
 - **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it is no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; Component A can relinquish control of the buffer to Component B, at which point Component A may no longer use the buffer, and Component B becomes responsible for destroying the buffer when it is no longer in use.
 
-- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and perhaps writing to it. Buffers have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer is not necessarily the buffer's owner. 
+- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer is not necessarily the buffer's owner.
 
 Consider the following pseudocode, where the Buffer type is a stand-in for an arbitrary buffer type.
 // Writes 'value' as a human-readable string to the output buffer.
@@ -44,6 +44,7 @@ void Main()
         buffer.Destroy();
     }
 }
+
 In this pseudocode, the Main method creates the buffer so becomes its owner, and Main is thus responsible for destroying the buffer when it's no longer in use. The buffer only ever has one consumer at a time (first WriteInt32ToBuffer, then PrintBufferToConsole), and neither of the consumers owns the buffer. Note also that "consumer" in this context does not imply a read-only view of the buffer; consumers can modify buffer contents if given a read+write view of the buffer.
 The third concept is that of a lease. The lease is the window of time that any given component is allowed to be the consumer of the buffer. In the example above, the WriteInt32ToBuffer method has a lease on (can consume) the buffer between the start of the method call and the time the method returns. Similarly, PrintBufferToConsole has a lease on the buffer while it is executing, and the lease is released when the method unwinds. (There is no API for lease management; a "lease" is simply a conceptual matter.)
 Memory<T> and the owner / consumer model
@@ -101,6 +102,7 @@ In this case, the method which initially creates the Memory<T> instance is the i
 Usage guidelines
 Now that we have the basics down, we can go over the rules necessary for successful usage of Memory<T> and related types.
 In the rules below, we'll generally refer just to Memory<T> and Span<T>. The same guidance also applies to ReadOnlyMemory<T> and ReadOnlySpan<T> unless explicitly called out otherwise.
+
 Rule #1: If writing a synchronous API, accept Span<T> instead of Memory<T> as a parameter if possible.
 Span<T> is more versatile than Memory<T> and can represent a wider variety of contigious memory buffers. Span<T> also has better performance characteristics than Memory<T>. Finally, Memory<T> is convertible to Span<T>, but there is no Span<T>-to-Memory<T> conversion possible. So if your callers happen to have Memory<T> instance, they'll be able to call your Span<T>-accepting method anyway.
 Accepting Span<T> instead of Memory<T> also helps you write a correct consuming method implementation, as you'll automatically get compile-time checks to ensure that you're not attempting to access the buffer beyond your method's lease (more on this later).

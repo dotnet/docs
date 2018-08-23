@@ -36,7 +36,7 @@ The following table shows the default values of [value types](value-types.md).
 
 ## Remarks
 
-C# doesn't allow uninitialized variables. You can initialize a variable with the default value of its type. You also can use the default value of a type to specify the default value of a method's [optional argument](../../programming-guide/classes-and-structs/named-and-optional-arguments.md#optional-arguments).
+You cannot use uninitialized variables in C#. You can initialize a variable with the default value of its type. You also can use the default value of a type to specify the default value of a method's [optional argument](../../programming-guide/classes-and-structs/named-and-optional-arguments.md#optional-arguments).
 
 Use [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type as the following example shows:
 

@@ -69,7 +69,7 @@ Dim number = &H_3264S
 ## See also
 
  <xref:System.Int16?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  

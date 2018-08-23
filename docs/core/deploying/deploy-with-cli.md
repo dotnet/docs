@@ -21,7 +21,7 @@ When working from the command line, you can use a program editor of your choice.
 
 ## Framework-dependent deployment
 
-Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. 
+Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process.
 
 1. Create a project directory.
 
@@ -38,7 +38,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
    [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Update the project's dependencies and tools.
- 
+
    Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
 1. Create a Debug build of your app.
@@ -100,7 +100,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
 1. Define the platforms that your app will target.
 
-   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. 
+   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
    For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
@@ -183,8 +183,7 @@ Note that you can only deploy a self-contained deployment with a third-party lib
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-# See also
+## See also
 
-[.NET Core Application Deployment](index.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)   
-
+* [.NET Core Application Deployment](index.md)
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

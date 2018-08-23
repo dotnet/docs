@@ -71,7 +71,7 @@ Note that a framework-dependent deployment with third-party dependencies is only
 
 ## <a name="simpleSelf"></a> Self-contained deployment without third-party dependencies
 
-Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the *csproj* file, building, testing, and publishing the app. A simple example written in C# illustrates the process. 
+Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the *csproj* file, building, testing, and publishing the app. A simple example written in C# illustrates the process.
 
 1. Create the project.
 
@@ -87,7 +87,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
    1. Right-click on your project (not the solution) In **Solution Explorer**, and select **Edit SCD.csproj**.
 
-   1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. 
+   1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
    For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
@@ -96,6 +96,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
 </PropertyGroup>
 ```
+
    Note that the `<RuntimeIdentifiers>` element can go into any `<PropertyGroup>` that you have in your *csproj* file. A complete sample *csproj* file appears later in this section.
 
 1. Create a Debug build of your app.
@@ -110,7 +111,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
       1. Change the solution configuration from **Debug** to **Release** on the toolbar to build a Release (rather than a Debug) version of your app.
 
-      1. Right-click on the project (not the solution) in **Solution Explorer** and select **Publish**. 
+      1. Right-click on the project (not the solution) in **Solution Explorer** and select **Publish**.
 
       1. In the **Publish** tab, select **Publish**. Visual Studio writes the files that comprise your application to the local file system.
 
@@ -175,6 +176,7 @@ When you deploy your application, any third-party dependencies used in your app 
 
 Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment, where the native dependencies won't exist on the target platform unless they were previously installed there.
 
-# See also
-[.NET Core Application Deployment](index.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)   
+## See also
+
+* [.NET Core Application Deployment](index.md)
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

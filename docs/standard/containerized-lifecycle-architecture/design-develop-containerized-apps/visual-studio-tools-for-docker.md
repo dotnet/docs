@@ -13,7 +13,7 @@ The developer workflow when using Visual Studio Tools for Docker is similar to t
 
 With the latest versions of Docker for Windows ([https://docs.docker.com/docker-for-windows/](https://docs.docker.com/docker-for-windows/)), it's easier than ever to develop Docker applications because the setup is straightforward.
 
-Docker support is included in Visual Studio 2017.
+Docker support is included in Visual Studio 2017. Download Visual Studio 2017 here: [https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ## Use Docker Tools in Visual Studio 2017
 

@@ -284,11 +284,11 @@ After the docker-compose up command runs, the application and its related contai
 
 #### Running and debugging a multi-container application with Visual Studio
 
-Running a multi-container application using Visual Studio 2017 cannot get simpler. You can not only run the multi-container application, but you are able to debug all its containers directly from Visual Studio by setting regular breakpoints.
+Running a multi-container application using Visual Studio 2017 is simple. Not only can you run the multi-container application, but you're able to debug all its containers directly from Visual Studio by setting regular breakpoints.
 
 As mentioned before, each time you add Docker solution support to a project within a solution, that project is configured in the global (solution-level) docker-compose.yml file, which lets you run or debug the whole solution at once. Visual Studio will start one container for each project that has Docker solution support enabled, and perform all the internal steps for you (dotnet publish, docker build, etc.).
 
-The important point here is that in Visual Studio 2017 there is an additional **Docker** command for the **F5** key action. This option lets you run or debug a multi-container application by running all the containers that are defined in the docker-compose.yml files at the solution level. The ability to debug multiple-container solutions means that you can set several breakpoints, each breakpoint in a different project (container), and while debugging from Visual Studio you will stop at breakpoints defined in different projects and running on different containers.
+The important point here is that in Visual Studio 2017 there's an additional **Docker** command for the **F5** key action. This option lets you run or debug a multi-container application by running all the containers that are defined in the docker-compose.yml files at the solution level. The ability to debug multiple-container solutions means that you can set several breakpoints, each breakpoint in a different project (container), and while debugging from Visual Studio you will stop at breakpoints defined in different projects and running on different containers.
 
 ![Running multi-container apps in Visual Studio 2017](./media/image16.png)
 
@@ -329,7 +329,7 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 ### Additional resources
 
 - Debugging apps in a local Docker container - [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
-- Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
+- Steve Lasker - Build, Debug, Deploy ASP.NET Core Apps with Docker (Video) - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
 
 ## Simplified workflow when developing containers with Visual Studio
 
@@ -341,8 +341,8 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ### Additional resources
 
-- Steve Lasker. .NET Docker Development with Visual Studio 2017 - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
-- Jeffrey T. Fritz. Put a .NET Core App in a Container with the new Docker Tools for Visual Studio - [https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
+- Steve Lasker - .NET Docker Development with Visual Studio 2017 - [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
+- Jeffrey T. Fritz - Put a .NET Core App in a Container with the new Docker Tools for Visual Studio - [https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers
 

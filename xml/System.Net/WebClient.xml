@@ -41,7 +41,7 @@
  The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  By default, the .NET Framework supports URIs that begin with `http:`, `https:`, ftp:, and `file:` scheme identifiers.  
+>  By default, the .NET Framework supports URIs that begin with `http:`, `https:`, `ftp:`, and `file:` scheme identifiers.  
   
  The following table describes <xref:System.Net.WebClient> methods for uploading data to a resource.  
   

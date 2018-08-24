@@ -37,6 +37,10 @@ if (t != null)
     Console.WriteLine(t);
 else
     Console.WriteLine("The return type is not IEnumerable<T>.");
+/*
+Output:
+System.Collections.Generic.IEnumerable`1[System.Char]
+*/
 ```  
   
 ## Example  

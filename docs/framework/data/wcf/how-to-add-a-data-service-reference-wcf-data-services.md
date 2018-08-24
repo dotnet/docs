@@ -5,7 +5,7 @@ helpviewer_keywords:
   - "WCF Data Services, configuring"
 ms.assetid: 62c6f318-3ee1-433a-b7a3-efa234c3034c
 ---
-# How to: Add a Data Service Reference (WCF Data Services)
+# How to: Add a data service reference (WCF Data Services)
 
 You can use the **Add Service Reference** dialog in Visual Studio to add a reference to [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]. This enables you to more easily access a data service in a client application that you develop in Visual Studio. When you complete this procedure, data classes are generated based on metadata that is obtained from the data service. For more information, see [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md).
 
@@ -24,3 +24,7 @@ You can use the **Add Service Reference** dialog in Visual Studio to add a refer
 4. Select **OK**.
 
      A new code file that contains the data classes that can access and interact with data service resources is added to the project.
+
+## See also
+
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

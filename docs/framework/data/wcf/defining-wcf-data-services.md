@@ -31,6 +31,10 @@ This section describes how to create and configure [!INCLUDE[ssAstoria](../../..
 
  Describes how to define interceptor methods to perform custom business logic on requests to the data service.
 
+ [Developing and Deploying WCF Data Services](../../../../docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md)
+
+ Describes how to develop and deploy a data service by using Visual Studio.
+
  [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)
 
  Describes authentication and authorization for the data service and other security considerations.

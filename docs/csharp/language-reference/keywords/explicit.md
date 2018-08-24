@@ -12,7 +12,7 @@ ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846
 
 The `explicit` keyword declares a user-defined type conversion operator that must be invoked with a cast.
 
-The following example defines the operator that converts from a `Fahrenheit` class to a `Celsius` class (the operator must be defined either inside a `Fahrenheit` class or a `Celsius` class):
+The following example defines the operator that converts from a `Fahrenheit` class to a `Celsius` class. The operator must be defined either inside a `Fahrenheit` class or a `Celsius` class:
 
 [!code-csharp[csrefKeywordsConversion#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsConversion/CS/csrefKeywordsConversion.cs#2)]
 
@@ -44,10 +44,10 @@ The following example defines a struct, `Digit`, that represents a single decima
 
 ## See also
 
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[C# Keywords](index.md)  
-[implicit](implicit.md)  
-[operator (C# Reference)](operator.md)  
-[How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
-[Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [implicit](implicit.md)  
+- [operator (C# Reference)](operator.md)  
+- [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
+- [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)  

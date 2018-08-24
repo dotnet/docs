@@ -39,7 +39,7 @@ Due to the inability to manage data shared between containers that run on separa
 
 Therefore, regular data volumes are a good mechanism to work with trace files, temporal files, or any similar concept that won't affect the business data consistency if or when your containers are moved across multiple hosts.
 
-Volume plug-ins like *Flocker* provide data across all hosts in a cluster. Although not all volume plug-ins are created equally, volume plug-ins typically provide externalized persistent reliable storage from the immutable containers.
+[Volume plug-ins](https://docs.docker.com/engine/extend/plugins_volume/) provide data across all hosts in a cluster. Although not all volume plug-ins are created equally, volume plug-ins typically provide externalized persistent reliable storage from the immutable containers.
 
 Remote data sources and caches like SQL Database, DocumentDB, or a remote cache like Redis would be the same as developing without containers. This is one of the preferred, and proven, ways to store business application data.
 

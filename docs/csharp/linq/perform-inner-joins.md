@@ -60,8 +60,8 @@ The result of `query1` is equivalent to the result set that would have been obta
 
 ## See also
 
-<xref:System.Linq.Enumerable.Join%2A>  
-<xref:System.Linq.Enumerable.GroupJoin%2A>  
-[Perform grouped joins](perform-grouped-joins.md)  
-[Perform left outer joins](perform-left-outer-joins.md)  
-[Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>  
+- <xref:System.Linq.Enumerable.GroupJoin%2A>  
+- [Perform grouped joins](perform-grouped-joins.md)  
+- [Perform left outer joins](perform-left-outer-joins.md)  
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  

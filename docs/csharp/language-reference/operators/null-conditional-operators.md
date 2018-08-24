@@ -73,8 +73,9 @@ PropertyChanged?.Invoke(…)
   
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   
-## See Also  
- [?? (null-coalescing operator)](null-coalescing-operator.md)  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+## See Also
+
+- [?? (null-coalescing operator)](null-coalescing-operator.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)

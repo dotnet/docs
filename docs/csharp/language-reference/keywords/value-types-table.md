@@ -1,38 +1,51 @@
 ---
-title: "Value Types Table (C# Reference)"
-ms.date: 07/20/2015
+title: "Value types table (C# Reference)"
+ms.date: 08/24/2018
 helpviewer_keywords: 
   - "value types [C#], table"
-  - "Visual C#, types"
   - "types [C#], value types"
   - "types [C#], suffixes"
 ms.assetid: 67d8f631-b6e3-4d83-9910-5ec497f8c5f3
 ---
-# Value Types Table (C# Reference)
-The following table lists the C# value types by category.  
+# Value types table (C# Reference)
+
+The following table shows the C# value types.  
   
-|Value type|Category|Type Suffix|  
+|Value type|Category|Type suffix|  
 |----------------|--------------|-----------------|  
-|[bool](../../../csharp/language-reference/keywords/bool.md)|Boolean||  
-|[byte](../../../csharp/language-reference/keywords/byte.md)|Unsigned, numeric, integral||  
-|[char](../../../csharp/language-reference/keywords/char.md)|Unsigned, numeric, integral||  
-|[decimal](../../../csharp/language-reference/keywords/decimal.md)|Numeric, decimal|M or m|  
-|[double](../../../csharp/language-reference/keywords/double.md)|Numeric, floating-point|D or d|  
-|[enum](../../../csharp/language-reference/keywords/enum.md)|Enumeration||  
-|[float](../../../csharp/language-reference/keywords/float.md)|Numeric, floating-point|F or f|  
-|[int](../../../csharp/language-reference/keywords/int.md)|Signed, numeric, integral||  
-|[long](../../../csharp/language-reference/keywords/long.md)|Signed, numeric, integral|L or l|  
-|[sbyte](../../../csharp/language-reference/keywords/sbyte.md)|Signed, numeric, integral||  
-|[short](../../../csharp/language-reference/keywords/short.md)|Signed, numeric, integral||  
-|[struct](../../../csharp/language-reference/keywords/struct.md)|User-defined structure||  
-|[uint](../../../csharp/language-reference/keywords/uint.md)|Unsigned, numeric, integral|U or u|  
-|[ulong](../../../csharp/language-reference/keywords/ulong.md)|Unsigned, numeric, integral|UL or ul|  
-|[ushort](../../../csharp/language-reference/keywords/ushort.md)|Unsigned, numeric, integral||  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)
+|[bool](bool.md)|Boolean||  
+|[byte](byte.md)|Unsigned, numeric, [integral](integral-types-table.md)||  
+|[char](char.md)|Unsigned, numeric, [integral](integral-types-table.md)||  
+|[decimal](decimal.md)|Numeric, [floating-point](floating-point-types-table.md)|M or m|  
+|[double](double.md)|Numeric, [floating-point](floating-point-types-table.md)|D or d|  
+|[enum](enum.md)|Enumeration||  
+|[float](float.md)|Numeric, [floating-point](floating-point-types-table.md)|F or f|  
+|[int](int.md)|Signed, numeric, [integral](integral-types-table.md)||  
+|[long](long.md)|Signed, numeric, [integral](integral-types-table.md)|L or l|  
+|[sbyte](sbyte.md)|Signed, numeric, [integral](integral-types-table.md)||  
+|[short](short.md)|Signed, numeric, [integral](integral-types-table.md)||  
+|[struct](struct.md)|User-defined structure||  
+|[uint](uint.md)|Unsigned, numeric, [integral](integral-types-table.md)|U or u|  
+|[ulong](ulong.md)|Unsigned, numeric, [integral](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|  
+|[ushort](ushort.md)|Unsigned, numeric, [integral](integral-types-table.md)||  
+
+## Remarks
+
+You use a type suffix to specify a type of a numerical literal. For example:
+
+```csharp
+decimal a = 0.1M;
+```
+
+If an [integer numerical literal](/dotnet/csharp/language-reference/language-specification/lexical-structure#integer-literals) has no suffix, it has the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
+
+If a [real numerical literal](/dotnet/csharp/language-reference/language-specification/lexical-structure#real-literals) has no suffix, it's of type `double`.
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [Reference tables for types](reference-tables-for-types.md)
+- [Default values table](default-values-table.md)
+- [Value types](value-types.md)
+- [Formatting numeric results table](formatting-numeric-results-table.md)

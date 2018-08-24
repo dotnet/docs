@@ -28,8 +28,9 @@ The following reference tables summarize the C# types:
   
  For information on formatting the output of numeric types, see [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md).  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+- [Value Types](../../../csharp/language-reference/keywords/value-types.md)

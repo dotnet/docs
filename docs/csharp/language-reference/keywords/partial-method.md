@@ -22,6 +22,7 @@ A partial method has its signature defined in one part of a partial type, and it
   
  For more information, see [Partial Classes and Methods](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

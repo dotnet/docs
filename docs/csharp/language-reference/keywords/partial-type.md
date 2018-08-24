@@ -25,8 +25,9 @@ Partial type definitions allow for the definition of a class, struct, or interfa
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)

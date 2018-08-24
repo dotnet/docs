@@ -86,10 +86,11 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 ## C# Language Specification  
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
-[const](../../../csharp/language-reference/keywords/const.md)  
-[Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+- [const](../../../csharp/language-reference/keywords/const.md)  
+- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)

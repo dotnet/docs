@@ -25,11 +25,14 @@ System.Type type = i.GetType();
   
  The `typeof` operator cannot be overloaded.  
   
- The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. The following example shows how to determine whether the return type of a method is a generic <xref:System.Collections.Generic.IEnumerable%601>. Assume that method is an instance of a MethodInfo type:  
+ The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. The following example shows how to determine whether the return type of a method is a generic <xref:System.Collections.Generic.IEnumerable%601>. `GetInterface` will return null if the return type is not a IEnumerable<> generic type.
   
 ```csharp  
-string s = method.ReturnType.GetInterface  
-    (typeof(System.Collections.Generic.IEnumerable<>).FullName);  
+// using System;
+// using System.Collections.Generic;
+// using System.Reflection;
+MethodInfo method = typeof(string).GetMethod("Copy");
+Type s = method.ReturnType.GetInterface(typeof(IEnumerable<>).Name); 
 ```  
   
 ## Example  

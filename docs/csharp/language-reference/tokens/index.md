@@ -22,7 +22,7 @@ Special characters are predefined, contextual characters that modify the program
 
 - [$](../../../csharp/language-reference/tokens/interpolated.md), the interpolated string character.
 
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
 
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

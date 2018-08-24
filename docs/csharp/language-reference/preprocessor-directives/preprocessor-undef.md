@@ -13,15 +13,15 @@ ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
  A symbol can be defined either with the [#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md) directive or the [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option. The `#undef` directive must appear in the file before you use any statements that are not also directives.  
   
 ## Example  
-  
+
 ```csharp
 // preprocessor_undef.cs  
 // compile with: /d:DEBUG  
 #undef DEBUG  
 using System;  
-class MyClass   
+class MyClass
 {  
-    static void Main()   
+    static void Main()
     {  
 #if DEBUG  
         Console.WriteLine("DEBUG is defined");  
@@ -30,10 +30,12 @@ class MyClass
 #endif  
     }  
 }  
-```  
-  
- **DEBUG is not defined**  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+```
+
+**DEBUG is not defined**
+
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

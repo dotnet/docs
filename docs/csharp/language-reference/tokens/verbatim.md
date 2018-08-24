@@ -68,7 +68,8 @@ The `@` special character serves as a verbatim identifier. It can be used in the
 
    [!code-csharp[verbatim4](../../../../samples/snippets/csharp/language-reference/keywords/verbatim4.cs#1)]
 
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Special Characters](../../../csharp/language-reference/tokens/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Special Characters](../../../csharp/language-reference/tokens/index.md)

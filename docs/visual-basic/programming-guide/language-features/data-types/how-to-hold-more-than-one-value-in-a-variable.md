@@ -36,7 +36,7 @@ A variable holds more than one value if you declare it to be of a *composite dat
 5.  Follow the `As` keyword with the name of the appropriate composite data type.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  

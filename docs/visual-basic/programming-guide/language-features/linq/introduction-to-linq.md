@@ -84,7 +84,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
   
  [!code-vb[VbVbalrIntroToLINQ#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_7.vb)]  
   
- There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
+ There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/index.md).  
   
 ##  <a name="VisualBasicLINQQueryOperators"></a> Visual Basic LINQ Query Operators  
  The classes in the <xref:System.Linq> namespace and the other namespaces that support LINQ queries include methods that you can call to create and refine queries based on the needs of your application. Visual Basic includes keywords for the most common query clauses, as described by the following table.  
@@ -106,7 +106,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
 |[Take Clause](../../../../visual-basic/language-reference/queries/take-clause.md)|Optional. Returns a specified number of contiguous elements from the start of a collection. For example:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#20](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_21.vb)]|  
 |[Take While Clause](../../../../visual-basic/language-reference/queries/take-while-clause.md)|Optional. Includes elements in a collection as long as a specified condition is `true` and bypasses the remaining elements. For example:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#21](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_22.vb)]|  
   
- For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/queries.md).  
+ For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/index.md).  
   
  You can use additional LINQ query features by calling members of the enumerable and queryable types provided by LINQ. You can use these additional capabilities by calling a particular query operator on the result of a query expression. For example, the following code example uses the <xref:System.Linq.Enumerable.Union%2A> method to combine the results of two queries into one query result. It uses the <xref:System.Linq.Enumerable.ToList%2A> method to return the query result as a generic list.  
   
@@ -157,7 +157,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
 |Topic|Description|  
 |---|---|  
 |[XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
-|[Queries](../../../../visual-basic/language-reference/queries/queries.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
+|[Queries](../../../../visual-basic/language-reference/queries/index.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)|Includes general information, programming guidance, and samples for LINQ.|  
 |[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
 |[LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)|Includes general information, programming guidance, and samples for LINQ to Objects.|  

@@ -24,5 +24,5 @@ Visual Basic provides integrated language support that enables it to interact wi
 ## See also  
  <xref:System.Xml.Linq>  
  [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/index.md)  
  [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)

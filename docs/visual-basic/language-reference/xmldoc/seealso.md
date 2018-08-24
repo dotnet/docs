@@ -30,4 +30,4 @@ Specifies a link that appears in the See Also section.
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/seealso_1.vb)]  
   
 ## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+ [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -9,7 +9,7 @@ ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
 ---
 # WCF Data Service Client Utility (DataSvcUtil.exe)
 
-DataSvcUtil.exe is a command-line tool provided by [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] that consumes an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed and generates the client data service classes that are needed to access a data service from a .NET Framework client application. This utility can generate data classes by using the following metadata sources:
+DataSvcUtil.exe is a command-line tool provided by WCF Data Services that consumes an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed and generates the client data service classes that are needed to access a data service from a .NET Framework client application. This utility can generate data classes by using the following metadata sources:
 
 -   The root URI of a data service. The utility requests the service metadata document, which describes the data model exposed by the data service. For more information, see [OData: Service Metadata Document](http://go.microsoft.com/fwlink/?LinkId=186070).
 
@@ -37,8 +37,8 @@ datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/la
 |`/language:`[VB&#124;CSharp]|Specifies the language for the generated source code files. The language defaults to C#.|
 |`/nologo`|Suppresses the copyright message from displaying.|
 |`/out:` *\<file>*|Specifies the name of the source code file that contains the generated client data service classes.|
-|`/uri:` *\<string>*|The URI of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed.|
-|`/version:`[1.0&#124;2.0]|Specifies the highest accepted version of [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. The version is determined based on the `DataServiceVersion` attribute of the DataService element in the returned data service metadata. For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md). When you specify the `/dataservicecollection` parameter, you must also specify `/version:2.0` to enable data binding.|
+|`/uri:` *\<string>*|The URI of the OData feed.|
+|`/version:`[1.0&#124;2.0]|Specifies the highest accepted version of OData. The version is determined based on the `DataServiceVersion` attribute of the DataService element in the returned data service metadata. For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md). When you specify the `/dataservicecollection` parameter, you must also specify `/version:2.0` to enable data binding.|
 
 ## See Also
 

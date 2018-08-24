@@ -36,54 +36,35 @@ dotnet add package Microsoft.Extensions.CommandLineUtils
 
 Open the `Program.cs` file.
 
-The first thing we'll code is support for the command line options the program will use. Add the following `using` directives to the top of the file. This will include the members of the command line package we referenced from NuGet.
+The first thing we'll code is support for the command line options the program will use. Add the following `using` directive to the top of the file, this will help to display the version information of the application.
 
 ```csharp
 using System.Reflection;
-using Microsoft.Extensions.CommandLineUtils;
 ```
 
 Next, move down to the `static void Main(string[] args)` method. Most likely you have a print statement in there. Erase any code inside this method.
 
-Add the following code to process the command line arguments for your application. The `Microsoft.Extensions.CommandLineUtils` NuGet package makes it simple to support command line switches, flags, and it also provides a help system.
+Add the following code to process the command line arguments for your application. This code will first check if any arguments were passed. If no arguments were passed, a little help message will be displayed. If arguments were passed, all of those arguments will be transformed into a string and printed with the bot.
 
 ```csharp
-// Create the command line host
-var app = new CommandLineApplication();
-
-// Set the basics of the command line
-app.Name = "botsay";
-app.Description = "Prints an ascii bot that says something in your terminal.";
-app.VersionOption("-v | --version", Assembly.GetEntryAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion);
-app.HelpOption("-h | --help");
-
-// Add our own command line argument: message
-var messageArg = app.Argument("<message>", "The message to print.");
-
-// Parse the command line.
-app.Execute(args);
-```
-
-The `CommandLineApplication` object defines all of the command line arguments your application uses. Besides the built in `help` and `version` argument options, the code above adds a new argument named `message` that will store the message the user wants to print.
-
-Next, add code to check if the `message` argument was properly passed, and if not, display the help information and quit.
-
-```csharp
-// Check if a message was provided
-if (app.IsShowingInformation || string.IsNullOrEmpty(messageArg.Value))
+static void Main(string[] args)
 {
-    if (!app.IsShowingInformation)
-        app.ShowHelp();
+    if (args.Length == 0)
+    {
+        Console.WriteLine($"botsay v{Assembly.GetEntryAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion}");
+        Console.WriteLine("-------------");
+        Console.WriteLine("\nUsage:");
+        Console.WriteLine("  botsay <message>");
+        return;
+    }
 
-    return;
+    ShowBot(string.Join(' ', args));
 }
 ```
 
-If the check above succeeds, then the message argument was not passed and the application will quit. To help the user know that they need to provide the `message` argument, `app.ShowHelp()` is called. However, the `app.IsShowingInformation` will be set to `true` when the `help` or `version` argument options are passed, so we don't want to display the help information twice. 
-
 ### Create the bot
 
-Next, add a new method named `ShowBot` that accepts a string parameter. This method will print out the message and the ascii bot. The ascii bot code was taken from the awesome [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
+Next, add a new method named `ShowBot` which takes a string parameter. This method will print out the message and the ascii bot. The ascii bot code was taken from the awesome [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
 
 ```csharp
 static void ShowBot(string message)
@@ -132,21 +113,14 @@ static void ShowBot(string message)
 }
 ```
 
-Next, back in the `static void Main(string[] args)` method, add a call `ShowBot` as the last line of the method, passing in the message argument value.
-
-```csharp
-ShowBot(messageArg.Value);
-```
-
 ### Test the tool
 
 You can run the project and see the output. Try these variations to run our application:
 
 ```csharp
 dotnet run
-dotnet run -- -h
-dotnet run -- -v
 dotnet run -- "Hello from the bot"
+dotnet run -- hello from the bot
 ```
 
 All arguments after the `--` delimiter are passed to our application.
@@ -156,10 +130,10 @@ All arguments after the `--` delimiter are passed to our application.
 Before you can pack and distribute the application as a Global Tool, you need to modify the project file. Open the `botsay.csproj` file and add three new XML nodes to the `<Project><PropertyGroup>` node:
 
 - \<PackAsTool>  
-Indicates that the application will be compiled for install as a Global Tool.
+Indicates that the application will be packaged for install as a Global Tool.
 
 - \<ToolCommandName>  
-An alternitive name for the tool. Essentially an alias that you can use to call the tool.
+An alternitive name for the tool, otherwise the tool executable will be named after the project file.
 
 - \<PackageOutputPath>  
 Where the NuGet package will be produced. The NuGet package is what the .NET Core CLI Global Tools uses to install your tool.
@@ -176,10 +150,6 @@ Where the NuGet package will be produced. The NuGet package is what the .NET Cor
     <ToolCommandName>botsay</ToolCommandName>
 
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
-  </ItemGroup>
 
 </Project>
 ```
@@ -198,7 +168,10 @@ Now that you have a package, install the tool from that package:
 dotnet tool install -g --add-source ./nupkg botsay`
 ```
 
-The `--add-source` parameter tells .NET Core to use the `./nupkg` folder (our output folder) as a feed source for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+The `--add-source` parameter tells .NET Core to use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional feed source for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+
+> [!NOTE]
+> If the version (default is 1.0.0) of your application is lower than 1.0.0, say 0.1, you will need to specify the `--version 0.1` parameter on the `dotnet tool install` command.
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 

@@ -43,10 +43,11 @@ string s = method.ReturnType.GetInterface
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.Type?displayProperty=nameWithType>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [is](../../../csharp/language-reference/keywords/is.md)  
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)
+## See Also
+
+- <xref:System.Type?displayProperty=nameWithType>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [is](../../../csharp/language-reference/keywords/is.md)  
+- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

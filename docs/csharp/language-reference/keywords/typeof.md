@@ -32,7 +32,11 @@ System.Type type = i.GetType();
 // using System.Collections.Generic;
 // using System.Reflection;
 MethodInfo method = typeof(string).GetMethod("Copy");
-Type s = method.ReturnType.GetInterface(typeof(IEnumerable<>).Name); 
+Type t = method.ReturnType.GetInterface(typeof(IEnumerable<>).Name);
+if (t != null)
+    Console.WriteLine(t);
+else
+    Console.WriteLine("The return type is not IEnumerable<T>.");
 ```  
   
 ## Example  

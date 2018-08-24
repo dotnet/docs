@@ -24,8 +24,9 @@ The multiplication operator (`*`) computes the product of its operands. All nume
 ## Example  
  [!code-csharp[csRefOperators#51](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_2.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

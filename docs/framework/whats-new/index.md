@@ -592,6 +592,7 @@ Starting with applications that target the .NET Framework 4.7, the .NET Framewor
 High DPI support is an opt-in feature that you configure by defining a [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) section in your application configuration file. For more information on adding high DPI support and dynamic DPI support to your Windows Forms application, see [High DPI Support in Windows Forms](../winforms/high-dpi-support-in-windows-forms.md).
 
 <a name="WPF47" />
+
 #### Windows Presentation Foundation (WPF)
 
 In the .NET Framework 4.7, WPF includes the following enhancements:

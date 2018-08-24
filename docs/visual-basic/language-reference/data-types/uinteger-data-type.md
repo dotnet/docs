@@ -76,7 +76,7 @@ Dim number = &H_0FAC_14D7ui
   
 ## See Also  
  <xref:System.UInt32>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  

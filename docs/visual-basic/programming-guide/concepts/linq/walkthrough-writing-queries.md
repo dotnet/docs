@@ -144,4 +144,4 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)

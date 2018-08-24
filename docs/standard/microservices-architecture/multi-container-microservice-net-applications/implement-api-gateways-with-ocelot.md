@@ -59,6 +59,7 @@ You can see that the Catalog microservice is a typical ASP.NET Core Web API proj
 ```csharp
 [HttpGet]
 [Route("items/{id:int}")]
+[ProducesResponseType((int)HttpStatusCode.BadRequest)]
 [ProducesResponseType((int)HttpStatusCode.NotFound)]
 [ProducesResponseType(typeof(CatalogItem),(int)HttpStatusCode.OK)]
 public async Task<IActionResult> GetItemById(int id)
@@ -540,7 +541,7 @@ When you deploy eShopOnContainers into Kuberentes, it exposes just a few service
 
 -	`/` for the client SPA web application
 -	`/webmvc` for the client MVC web application
--	`/webstatus` for the client web app showing the status/healchecks
+-	`/webstatus` for the client web app showing the status/healthchecks
 -	`/webshoppingapigw` for the web BFF and shopping business processes
 -	`/webmarketingapigw` for the web BFF and marketing business processes
 -	`/mobileshoppingapigw` for the mobile BFF and shopping business processes

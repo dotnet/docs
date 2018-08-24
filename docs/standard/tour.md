@@ -73,7 +73,7 @@ Type safety is also used to help enforce encapsulation by guaranteeing the fidel
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
-C#, VB, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` and `cat` are rewritten to introduce type inference, and the remainder of the example is unchanged:
+C#, VB, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` is rewritten to introduce type inference, and the remainder of the example is unchanged:
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 

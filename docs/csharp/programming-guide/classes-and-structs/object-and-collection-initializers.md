@@ -38,9 +38,6 @@ foreach(var p in productInfos){...}
 select new {p.ProductName, Price = p.UnitPrice};  
 ```  
   
-## Object initializers with nullable types  
- It is a compile-time error to use an object initializer with a nullable struct.  
-  
 ## Collection initializers  
  Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression or an object initializer. By using a collection initializer you do not have to specify multiple calls to the `Add` method of the class in your source code; the compiler adds the calls.  
   

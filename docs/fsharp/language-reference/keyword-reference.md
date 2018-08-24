@@ -48,6 +48,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`let`|[`let` Bindings](functions/let-bindings.md)|Used to associate, or bind, a name to a value or function.|
 |`let!`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in asynchronous workflows to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
 |`match`|[Match Expressions](match-expressions.md)|Used to branch by comparing a value to a pattern.|
+|`match!`|[Computation Expressions](computation-expressions.md#match)|Used to inline a call to a computation expression and pattern match on its result.|
 |`member`|[Members](members/index.md)|Used to declare a property or method in an object type.|
 |`module`|[Modules](modules.md)|Used to associate a name with a group of related types, values, and functions, to logically separate it from other code.|
 |`mutable`|[let Bindings](functions/let-bindings.md)|Used to declare a variable, that is, a value that can be changed.|

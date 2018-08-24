@@ -50,7 +50,7 @@ When you create database objects, you must explicitly grant permissions to make 
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Permissions](http://msdn.microsoft.com/library/ms191291.aspx) in SQL Server Books Online|Contains topics describing permissions hierarchy, catalog views, and permissions of fixed server and database roles.|  
+|[Permissions](/sql/relational-databases/security/permissions-database-engine)|Contains topics describing permissions hierarchy, catalog views, and permissions of fixed server and database roles.|
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

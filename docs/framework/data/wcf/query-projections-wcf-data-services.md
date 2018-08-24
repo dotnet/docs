@@ -41,8 +41,8 @@ Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includ
 ### Creating Projected Types  
  The following example uses an anonymous LINQ query that projects the address-related properties of the `Customers` type into a new `CustomerAddress` type, which is defined on the client and is attributed as an entity type:  
   
- [!code-csharp[Astoria Northwind Client#SelectCustomerAddressSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#selectcustomeraddressspecific)]
- [!code-vb[Astoria Northwind Client#SelectCustomerAddressSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#selectcustomeraddressspecific)]  
+ [!code-csharp[Astoria Northwind Client#SelectCustomerAddressSpecific](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#selectcustomeraddressspecific)]
+ [!code-vb[Astoria Northwind Client#SelectCustomerAddressSpecific](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#selectcustomeraddressspecific)]  
   
  In this example, the object initializer pattern is used to create a new instance of the `CustmerAddress` type instead of calling a constructor. Constructors are not supported when projecting into entity types, but they can be used when projecting into non-entity and anonymous types. Because `CustomerAddress` is an entity type, changes can be made and sent back to the data service.  
   
@@ -50,16 +50,40 @@ Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includ
   
  The <xref:System.Data.Services.Client.MergeOption> settings of the <xref:System.Data.Services.Client.DataServiceContext> are used for identity resolution during query projection. This means that if an instance of the `Customer` type already exists in the <xref:System.Data.Services.Client.DataServiceContext>, an instance of `CustomerAddress` with the same identity will follow the identity resolution rules set by the <xref:System.Data.Services.Client.MergeOption>  
   
- The following table describes the behaviors when projecting results into entity and non-entity types:  
-  
-|Action|Entity Type|Non-Entity Type|  
-|------------|-----------------|----------------------|  
-|Creating a new projected instance by using initializers, as in the following example:<br /><br /> [!code-csharp[Astoria Northwind Client#ProjectWithInitializer](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithinitializer)]
- [!code-vb[Astoria Northwind Client#ProjectWithInitializer](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithinitializer)]|Supported|Supported|  
-|Creating a new projected instance by using constructors, as in the following example:<br /><br /> [!code-csharp[Astoria Northwind Client#ProjectWithConstructor](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithconstructor)]
- [!code-vb[Astoria Northwind Client#ProjectWithConstructor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithconstructor)]|A <xref:System.NotSupportedException> is raised.|Supported|  
-|Using projection to transform a property value, as in the following example:<br /><br /> [!code-csharp[Astoria Northwind Client#ProjectWithTransform](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithtransform)]
- [!code-vb[Astoria Northwind Client#ProjectWithTransform](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithtransform)]<br /><br /> This transformation is not supported for entity types because it can lead to confusion and potentially overwriting the data in the data source that belongs to another entity.|A <xref:System.NotSupportedException> is raised.|Supported|  
+The following describes the behaviors when projecting results into entity and non-entity types:  
+
+**Creating a new projected instance by using initializers**
+
+- Example:
+
+   [!code-csharp[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithinitializer)]
+   [!code-vb[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithinitializer)]
+
+- Entity type: Supported
+
+- Non-entity type: Supported
+
+**Creating a new projected instance by using constructors**
+
+- Example: 
+
+   [!code-csharp[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithconstructor)]
+   [!code-vb[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithconstructor)]
+
+- Entity type: A <xref:System.NotSupportedException> is raised.
+
+- Non-entity type: Supported
+
+**Using projection to transform a property value**
+
+- Example:
+
+   [!code-csharp[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithtransform)]
+   [!code-vb[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithtransform)]
+   
+- Entity type: This transformation is not supported for entity types because it can lead to confusion and potentially overwriting the data in the data source that belongs to another entity. A <xref:System.NotSupportedException> is raised.
+
+- Non-entity type: Supported  
   
 <a name="considerations"></a>   
 ## Projection Considerations  

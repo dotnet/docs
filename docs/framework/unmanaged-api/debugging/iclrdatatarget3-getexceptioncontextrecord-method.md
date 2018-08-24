@@ -16,7 +16,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ICLRDataTarget3::GetExceptionContextRecord Method
-Called by the common language runtime (CLR) data access services to retrieve the context record associated with the target process. For example, for a dump target, this would be equivalent to the context record passed in via the `ExceptionParam` argument to the [MiniDumpWriteDump](http://msdn.microsoft.com/library/windows/desktop/ms680360\(v=vs.85\).aspx) function in the Windows Debug Help Library (DbgHelp).  
+Called by the common language runtime (CLR) data access services to retrieve the context record associated with the target process. For example, for a dump target, this would be equivalent to the context record passed in via the `ExceptionParam` argument to the [MiniDumpWriteDump](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) function in the Windows Debug Help Library (DbgHelp).  
   
 ## Syntax  
   
@@ -36,7 +36,7 @@ HRESULT GetExceptionContextRecord(
  [out] A pointer to a `ULONG32` type that receives the number of bytes actually written to the buffer.  
   
  `buffer`  
- [out] A pointer to a memory buffer that receives a copy of the context record. The exception record is returned as a [CONTEXT](http://msdn.microsoft.com/library/windows/desktop/ms679284\(v=vs.85\).aspx) type.  
+ [out] A pointer to a memory buffer that receives a copy of the context record. The exception record is returned as a [CONTEXT](/windows/desktop/api/winnt/ns-winnt-_arm64_nt_context) type.  
   
 ## Return Value  
  The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes can include but are not limited to the following:  
@@ -48,7 +48,7 @@ HRESULT GetExceptionContextRecord(
 |`HRESULT_FROM_WIN32(ERROR_BAD_LENGTH)`|The input buffer size is not large enough to accommodate the context record.|  
   
 ## Remarks  
- [CONTEXT](http://msdn.microsoft.com/library/windows/desktop/ms679284\(v=vs.85\).aspx) is a platform-specific structure defined in headers provided by the Windows SDK.  
+ [CONTEXT](/windows/desktop/api/winnt/ns-winnt-_arm64_nt_context) is a platform-specific structure defined in headers provided by the Windows SDK.  
   
  This method is implemented by the writer of the debugging application.  
   

@@ -13,7 +13,7 @@ ms.author: "mairaw"
 
 # Additional class libraries and APIs
 
-The .NET Framework is constantly evolving and in order to improve cross-platform development or to introduce new functionality early to our customers, we release new features out of band (OOB). This topic lists the OOB projects that we provide documentation for.  
+The .NET Framework is constantly evolving. To improve cross-platform development and introduce new functionality early, new features are released out of band (OOB). This topic lists the OOB projects that we provide documentation for.  
   
 In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the <xref:System.Text.CodePagesEncodingProvider> class makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
   

@@ -14,8 +14,8 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
   
     > [!NOTE]
     >  If you press F5, the Calculator Client automatically starts. If you press CTRL+SHIFT+B (build), you must start following applications yourself.  
-    >   
-    >  1.  Calculator client (./CalculatorClient/bin/client.exe  
+    >  
+    > 1.  Calculator client (./CalculatorClient/bin/client.exe  
     > 2.  Calculator service (./CalculatorService/bin/service.exe)  
     > 3.  Routing service (./RoutingService/bin/RoutingService.exe)  
   

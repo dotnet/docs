@@ -7,7 +7,7 @@ ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
 Windows Communication Foundation (WCF) exposes inspection data of a service at runtime through a WCF Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
- WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582.aspx). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
+ WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
   
  A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
   

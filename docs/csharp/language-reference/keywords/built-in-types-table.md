@@ -1,56 +1,66 @@
 ---
-title: "Built-In Types Table (C# Reference)"
-ms.date: 07/20/2015
+title: "Built-in types table (C# Reference)"
+description: "Keywords for built-in C# types"
+ms.date: 08/17/2018
 helpviewer_keywords: 
   - "types [C#], built-in"
   - "built-in C# types"
 ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
 ---
-# Built-In Types Table (C# Reference)
+# Built-in types table (C# Reference)
+
 The following table shows the keywords for built-in C# types, which are aliases of predefined types in the <xref:System> namespace.  
   
-|C# Type|.NET Framework Type|  
+|C# type|.NET type|  
 |--------------|-------------------------|  
-|[bool](../../../csharp/language-reference/keywords/bool.md)|`System.Boolean`|  
-|[byte](../../../csharp/language-reference/keywords/byte.md)|`System.Byte`|  
-|[sbyte](../../../csharp/language-reference/keywords/sbyte.md)|`System.SByte`|  
-|[char](../../../csharp/language-reference/keywords/char.md)|`System.Char`|  
-|[decimal](../../../csharp/language-reference/keywords/decimal.md)|`System.Decimal`|  
-|[double](../../../csharp/language-reference/keywords/double.md)|`System.Double`|  
-|[float](../../../csharp/language-reference/keywords/float.md)|`System.Single`|  
-|[int](../../../csharp/language-reference/keywords/int.md)|`System.Int32`|  
-|[uint](../../../csharp/language-reference/keywords/uint.md)|`System.UInt32`|  
-|[long](../../../csharp/language-reference/keywords/long.md)|`System.Int64`|  
-|[ulong](../../../csharp/language-reference/keywords/ulong.md)|`System.UInt64`|  
-|[object](../../../csharp/language-reference/keywords/object.md)|`System.Object`|  
-|[short](../../../csharp/language-reference/keywords/short.md)|`System.Int16`|  
-|[ushort](../../../csharp/language-reference/keywords/ushort.md)|`System.UInt16`|  
-|[string](../../../csharp/language-reference/keywords/string.md)|`System.String`|  
+|[bool](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
+|[byte](byte.md)|<xref:System.Byte?displayProperty=nameWithType>|  
+|[sbyte](sbyte.md)|<xref:System.SByte?displayProperty=nameWithType>|  
+|[char](char.md)|<xref:System.Char?displayProperty=nameWithType>|  
+|[decimal](decimal.md)|<xref:System.Decimal?displayProperty=nameWithType>|  
+|[double](double.md)|<xref:System.Double?displayProperty=nameWithType>|  
+|[float](float.md)|<xref:System.Single?displayProperty=nameWithType>|  
+|[int](int.md)|<xref:System.Int32?displayProperty=nameWithType>|  
+|[uint](uint.md)|<xref:System.UInt32?displayProperty=nameWithType>|  
+|[long](long.md)|<xref:System.Int64?displayProperty=nameWithType>|  
+|[ulong](ulong.md)|<xref:System.UInt64?displayProperty=nameWithType>|  
+|[object](object.md)|<xref:System.Object?displayProperty=nameWithType>|  
+|[short](short.md)|<xref:System.Int16?displayProperty=nameWithType>|  
+|[ushort](ushort.md)|<xref:System.UInt16?displayProperty=nameWithType>|  
+|[string](string.md)|<xref:System.String?displayProperty=nameWithType>|  
   
-## Remarks  
- All of the types in the table, except `object` and `string`, are referred to as simple types.  
+## Remarks
+
+All of the types in the table, except `object` and `string`, are referred to as simple types.  
   
- The C# type keywords and their aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
-  
-```csharp  
-int x = 123;  
-System.Int32 x = 123;  
-```  
-  
- To display the actual type for any C# type, use the system method `GetType()`. For example, the following statement displays the system alias that represents the type of `myVariable`:  
-  
-```csharp  
-Console.WriteLine(myVariable.GetType());  
-```  
-  
- You can also use the [typeof](../../../csharp/language-reference/keywords/typeof.md) operator.  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)
+The C# type keywords and their aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
+
+```csharp
+int x = 123;
+System.Int32 y = 123;
+```
+
+Use the [typeof](typeof.md) operator to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the specified type:
+
+```csharp
+Type stringType = typeof(string);
+Console.WriteLine(stringType.FullName);
+
+Type doubleType = typeof(System.Double);
+Console.WriteLine(doubleType.FullName);
+
+// Output:
+// System.String
+// System.Double
+```
+
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Reference tables for types](reference-tables-for-types.md)
+- [Value types](value-types.md)
+- [Reference types](reference-types.md)
+- [Default values table](default-values-table.md)
+- [dynamic](dynamic.md)

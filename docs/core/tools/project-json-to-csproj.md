@@ -32,6 +32,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 ## Common top-level properties
 
 ### name
+
 ```json
 {
   "name": "MyProjectName"
@@ -106,6 +107,7 @@ And it's really great!</Description>
 ## frameworks
 
 ### One target framework
+
 ```json
 {
   "frameworks": {
@@ -180,6 +182,7 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 Note that the `<RuntimeFrameworkVersion>` value in the migrated project is determined by the version of the SDK you have installed.
 
 ### Top-level dependencies
+
 ```json
 {
   "dependencies": {
@@ -195,6 +198,7 @@ Note that the `<RuntimeFrameworkVersion>` value in the migrated project is deter
 ```
 
 ### Per-framework dependencies
+
 ```json
 {
   "framework": {
@@ -252,6 +256,7 @@ Note that the `<RuntimeFrameworkVersion>` value in the migrated project is deter
 ### dependency type
 
 #### type: project
+
 ```json
 {
   "dependencies": {
@@ -276,6 +281,7 @@ dependency version of a project reference.
 
 
 #### type: build
+
 ```json
 {
   "dependencies": {
@@ -294,6 +300,7 @@ dependency version of a project reference.
 ```
 
 #### type: platform
+
 ```json
 {
   "dependencies": {
@@ -308,6 +315,7 @@ dependency version of a project reference.
 There is no equivalent in csproj. 
 
 ## runtimes
+
 ```json
 {
   "runtimes": {
@@ -325,6 +333,7 @@ There is no equivalent in csproj.
 ```
 
 ### Standalone apps (self-contained deployment)
+
 In project.json, defining a `runtimes` section means the app was standalone during
 build and publish.
 In MSBuild, all projects are *portable* during build, but can be published as
@@ -335,6 +344,7 @@ standalone.
 For more information, see [Self-contained deployments (SCD)](../deploying/index.md#self-contained-deployments-scd).
 
 ## tools
+
 ```json
 {
   "tools": {
@@ -508,7 +518,6 @@ Their equivalent in MSBuild are [targets](/visualstudio/msbuild/msbuild-targets)
 </Target>
 ```
 
-
 ## runtimeOptions
 
 ```json
@@ -558,6 +567,7 @@ However, you can set all those values in the csproj as well as MSBuild propertie
 ```
 
 ## shared
+
 ```json
 {
   "shared": "shared/**/*.cs"

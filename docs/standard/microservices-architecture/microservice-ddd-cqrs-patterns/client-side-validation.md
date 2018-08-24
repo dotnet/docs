@@ -17,7 +17,7 @@ Even when using client-side validation, you should always validate your commands
 
 Therefore, in client-side code you typically validate the ViewModels. You could also validate the client output DTOs or commands before you send them to the services.
 
-The implementation of client-side validation depends on what kind of client application you are building. It will be different if you are validating data in a web MVC web application with most of the code in .NET, an SPA web application with that validation being coded in JavaScript or TypeScript, or a mobile app coded with Xamarin and C\#.
+The implementation of client-side validation depends on what kind of client application you are building. It will be different if you are validating data in a web MVC web application with most of the code in .NET, an SPA web application with that validation being coded in JavaScript or TypeScript, or a mobile app coded with Xamarin and C#.
 
 ## Additional resources
 
@@ -36,8 +36,8 @@ The implementation of client-side validation depends on what kind of client appl
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
 
--   **Ado Kukic. Angular 2 Form Validation** **
-    **[*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
+-   **Ado Kukic. Angular 2 Form Validation**
+    [*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
 
 -   **Form Validation**
     [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
@@ -47,16 +47,15 @@ The implementation of client-side validation depends on what kind of client appl
 
 In summary, these are the most important concepts in regards to validation:
 
--   Entities and aggregates should enforce their own consistency and be "always valid”. Aggregate roots are responsible for multi-entity consistency within the same aggregate.
+- Entities and aggregates should enforce their own consistency and be "always valid”. Aggregate roots are responsible for multi-entity consistency within the same aggregate.
 
--   If you think that an entity needs to enter an invalid state, consider using a different object model—for example, using a temporary DTO until you create the final domain entity.
+- If you think that an entity needs to enter an invalid state, consider using a different object model—for example, using a temporary DTO until you create the final domain entity.
 
--   If you need to create several related objects, such as an aggregate, and they are only valid once all of them have been created, consider using the Factory pattern.
+- If you need to create several related objects, such as an aggregate, and they are only valid once all of them have been created, consider using the Factory pattern.
 
--   Validation frameworks are best used in specific layers, such as the presentation layer or the application/service layer, but usually not in the domain model layer, because you would need to take a strong dependency on an infrastructure framework.
+- Validation frameworks are best used in specific layers, such as the presentation layer or the application/service layer, but usually not in the domain model layer, because you would need to take a strong dependency on an infrastructure framework.
 
--   In most of the cases, having redundant validation in the client side is good, because the application can be proactive.
-
+- In most of the cases, having redundant validation in the client side is good, because the application can be proactive.
 
 >[!div class="step-by-step"]
 [Previous](domain-model-layer-validations.md)

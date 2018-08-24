@@ -71,7 +71,7 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
 ## See also
 
  <xref:System.SByte?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  

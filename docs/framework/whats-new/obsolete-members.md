@@ -587,7 +587,7 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 |Type|Member|Message|  
 |----------|------------|-------------|  
-|<xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>|<xref:System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> This property is obsolete. To enable Http <xref:System.Net.CookieContainer>, use the <!----zz <xref:System.ServiceModel.BasicHttpBinding.AllowCookies%2A?displayProperty=nameWithType> --> `System.ServiceModel.BasicHttpBinding.AllowCookies` property instead.|  
+|<xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>|<xref:System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> This property is obsolete. To enable Http <xref:System.Net.CookieContainer>, use the <xref:System.ServiceModel.HttpBindingBase.AllowCookies%2A?displayProperty=nameWithType> property instead.|  
 |<xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>|<xref:System.ServiceModel.Configuration.BindingsSection.NetPeerTcpBinding%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> The peer channel feature is obsolete and will be removed in the future.|  
 |<xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase?displayProperty=nameWithType>|<xref:System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
 |<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase?displayProperty=nameWithType>|<xref:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors%2A>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this type generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
@@ -772,7 +772,7 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 |Type|Member|Message|  
 |----------|------------|-------------|  
-|<!--zz <xref:Microsoft.Data.Entity.Build.Tasks.EntityDeploy?displayProperty=nameWithType> --> `Microsoft.Data.Entity.Build.Tasks.EntityDeploy`| <!--zz <xref:Microsoft.Data.Entity.Build.Tasks.EntityDeploy.EntityDataModelEmbeddedResources%2A>  -->`Microsoft.Data.Entity.Build.Tasks.EntityDeploy.EntityDataModelEmbeddedResources`|First deprecated in the .NET Framework 4.5.<br /><br /> Used only for version 3.5 backward compatibility.|  
+|`Microsoft.Data.Entity.Build.Tasks.EntityDeploy`|`EntityDataModelEmbeddedResources`|First deprecated in the .NET Framework 4.5.<br /><br /> Used only for version 3.5 backward compatibility.|  
   
 <a name="visualbasic"></a>   
 ### Assembly: Microsoft.VisualBasic.dll  

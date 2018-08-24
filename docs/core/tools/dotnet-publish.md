@@ -80,7 +80,7 @@ Specifies one or several [target manifests](../deploying/runtime-store.md) to us
 
 `--no-build`
 
-Doesn't build the project before publishing. It also implicit sets the `--no-restore` flag.
+Doesn't build the project before publishing. It also implicitly sets the `--no-restore` flag.
 
 `--no-dependencies`
 

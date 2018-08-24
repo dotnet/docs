@@ -24,8 +24,6 @@ The value types consist of two main categories:
   
     -   [Floating-point types](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
   
-    -   [decimal](../../../csharp/language-reference/keywords/decimal.md)  
-  
 -   [bool](../../../csharp/language-reference/keywords/bool.md)  
   
 -   User defined structs.  
@@ -99,4 +97,5 @@ Point p = new Point(); // Invoke default constructor for the struct.
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Types](../../../csharp/language-reference/keywords/types.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+ [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+ [Nullable types](../../programming-guide/nullable-types/index.md)  

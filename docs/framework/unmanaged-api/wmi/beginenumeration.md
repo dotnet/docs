@@ -38,7 +38,7 @@ HRESULT BeginEnumeration (
 [in] This parameter is unused.
 
 `ptr`
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `lEnumFlags`  
 [in] A bitwise combination of the flags or values described in the [Remarks](#remarks) section that controls the properties included in the enumeration.
@@ -56,7 +56,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::BeginEnumeration](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) method.
+This function wraps a call to the [IWbemClassObject::BeginEnumeration](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) method.
 
 The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
 

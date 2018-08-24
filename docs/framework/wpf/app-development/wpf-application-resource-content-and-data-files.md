@@ -170,7 +170,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ## Site of Origin Files  
  Resource files have an explicit relationship with the assemblies that they are distributed alongside, as defined by the <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute>. But, there are times when you may want to establish either an implicit or non-existent relationship between an assembly and an application data file, including when:  
   
--   A file doesn't exist when at compile time.  
+-   A file doesn't exist at compile time.  
   
 -   You don't know what files your assembly will require until run time.  
   

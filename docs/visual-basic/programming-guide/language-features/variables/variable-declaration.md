@@ -74,7 +74,7 @@ Dim l, m As Long, x, y As Single
 ## See Also  
  [How to: Create a New Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
  [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)  
  [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
  [Static](../../../../visual-basic/language-reference/modifiers/static.md)  

@@ -57,4 +57,3 @@ Many components provide you with the option of performing their work asynchronou
 ## See Also  
  [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
  [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
- [Multithreading in Visual Basic](../../../docs/visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)

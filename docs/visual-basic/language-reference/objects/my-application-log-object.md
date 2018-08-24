@@ -11,7 +11,7 @@ Provides a property and methods to write event and exception information to the 
 ## Remarks  
  For information about the methods and properties of the `My.Application.Log` object, see <xref:Microsoft.VisualBasic.Logging.Log>.  
   
- For more information, see [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md).  
+ For more information, see [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/index.md).  
   
 > [!NOTE]
 >  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](../../../framework/debug-trace-profile/tracing-and-instrumenting-applications.md).  

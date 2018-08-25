@@ -27,7 +27,7 @@ This is the final task of the WCF Data Services quickstart. In this task, you wi
 
 ## To add a data service reference to the project
 
-1.  Right-click the NorthwindClient project, click **Add** > **Service Reference**, and then click **Discover**.
+1.  In **Solution Explorer**, right-click the NorthwindClient project, click **Add** > **Service Reference**, and then click **Discover**.
 
      This displays the Northwind data service that you created in the first task.
 
@@ -39,7 +39,9 @@ This is the final task of the WCF Data Services quickstart. In this task, you wi
 
 1.  In **Solution Explorer** under **NorthwindClient**, right-click the project and click **Add Reference**.
 
-2.  In the Add Reference dialog box, click the **.NET** tab, select the System.Data.Services.Client.dll assembly, and then click **OK**. In **Solution Explorer** under **NorthwindClient**, open the code page for the MainWindow.xaml file, and add the following `using` statement (`Imports` in Visual Basic).
+2.  In the **Add Reference** dialog box, click the **.NET** tab, select the System.Data.Services.Client.dll assembly, and then click **OK**.
+
+3. In **Solution Explorer** under **NorthwindClient**, open the code page for the MainWindow.xaml file, and add the following `using` statement (`Imports` in Visual Basic).
 
      [!code-csharp[Astoria Quickstart Client#Using](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria quickstart client/cs/window1.xaml.cs#using)]
      [!code-vb[Astoria Quickstart Client#Using](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart client/vb/window1.xaml.vb#using)]

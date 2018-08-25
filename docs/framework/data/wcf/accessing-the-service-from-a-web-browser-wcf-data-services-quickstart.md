@@ -5,7 +5,7 @@ ms.assetid: 5a6fa180-3094-4e6e-ba2b-8c80975d18d1
 ---
 # Accessing the Service from a Web Browser (WCF Data Services Quickstart)
 
-In this task, you start the WCF Data Services from Visual Studio and optionally disable feed reading in the Web browser. You then retrieve the service definition document as well as access data service resources by submitting HTTP GET requests through a Web browser to the exposed resources.
+This is the second task of the WCF Data Services quickstart. In this task, you start the WCF Data Services from Visual Studio and optionally disable feed reading in the Web browser. You then retrieve the service definition document as well as access data service resources by submitting HTTP GET requests through a Web browser to the exposed resources.
 
 > [!NOTE]
 > By default, Visual Studio auto-assigns a port number to the `localhost` URI on your computer. This task uses the port number `12345` in the URI examples. For more information about how to set a specific port number in your Visual Studio project see [Creating the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md).

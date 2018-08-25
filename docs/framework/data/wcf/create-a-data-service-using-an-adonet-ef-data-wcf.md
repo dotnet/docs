@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
-ms.date: "03/30/2017"
+ms.date: 08/24/2018
 helpviewer_keywords:
   - "WCF Data Services, providers"
   - "WCF Data Services, Entity Framework"
@@ -14,11 +14,11 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 ## To add an Entity Framework model that is based on an existing database to an existing Web application
 
-1. On the **Project** menu, click **Add new item**.
+1. On the **Project** menu, click **Add** > **New Item**.
 
 2. In the **Templates** pane, click the **Data** category, and then select **ADO.NET Entity Data Model**.
 
-3. Type the model name and then click **Add**.
+3. Enter the model name and then click **Add**.
 
      The first page of the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] Wizard is displayed.
 

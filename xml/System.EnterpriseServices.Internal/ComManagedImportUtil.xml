@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member GetComponentInfo : string *  *  -&gt; unit&#xA;override this.GetComponentInfo : string *  *  -&gt; unit" Usage="comManagedImportUtil.GetComponentInfo (assemblyPath, numComponents, componentInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

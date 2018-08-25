@@ -1311,7 +1311,7 @@
       <MemberSignature Language="F#" Value="abstract member PreFilterMessage :  -&gt; bool&#xA;override this.PreFilterMessage :  -&gt; bool" Usage="splitter.PreFilterMessage m" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message)</InterfaceMember>
+        <InterfaceMember>M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

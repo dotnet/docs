@@ -52,7 +52,7 @@
       <MemberSignature Language="F#" Value="abstract member EnumerateAppDomains :  -&gt; unit&#xA;override this.EnumerateAppDomains :  -&gt; unit" Usage="processHost.EnumerateAppDomains appDomainInfoEnum" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -362,7 +362,7 @@
       <MemberSignature Language="F#" Value="abstract member StartApplication : string * string *  -&gt; unit&#xA;override this.StartApplication : string * string *  -&gt; unit" Usage="processHost.StartApplication (appId, appPath, runtimeInterface)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

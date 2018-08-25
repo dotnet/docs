@@ -72,7 +72,7 @@
       <MemberSignature Language="F#" Value="abstract member Create : string * string * string *  -&gt; unit&#xA;override this.Create : string * string * string *  -&gt; unit" Usage="iISVirtualRoot.Create (RootWeb, inPhysicalDirectory, VirtualDirectory, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -115,7 +115,7 @@
       <MemberSignature Language="F#" Value="abstract member Delete : string * string * string *  -&gt; unit&#xA;override this.Delete : string * string * string *  -&gt; unit" Usage="iISVirtualRoot.Delete (RootWeb, PhysicalDirectory, VirtualDirectory, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

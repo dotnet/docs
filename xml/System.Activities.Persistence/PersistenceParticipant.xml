@@ -92,7 +92,7 @@
       <MemberSignature Language="F#" Value="abstract member CollectValues :  *  -&gt; unit&#xA;override this.CollectValues :  *  -&gt; unit" Usage="persistenceParticipant.CollectValues (readWriteValues, writeOnlyValues)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

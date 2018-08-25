@@ -18,6 +18,11 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Defines the set of values that form a peer name record object. This record includes items such as the peer name and the collection of endpoints with which it communicates. Peer name records are used to define the individual peer nodes within a <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
     <remarks>

@@ -1,4 +1,4 @@
-<Type Name="BasicHttpBinding" FullName="System.ServiceModel.BasicHttpBinding">
+﻿<Type Name="BasicHttpBinding" FullName="System.ServiceModel.BasicHttpBinding">
   <TypeSignature Language="C#" Value="public class BasicHttpBinding : System.ServiceModel.HttpBindingBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpBinding extends System.ServiceModel.HttpBindingBase implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpBinding" />
@@ -204,7 +204,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the client accepts cookies and propagates them on future requests.</summary>
-        <returns><see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <value>
+          <see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -286,7 +287,8 @@ The value of this property can also be set in the configuration file.
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to bypass the proxy server for local addresses.</summary>
-        <value><see langword="true" /> to bypass the proxy server for local addresses; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to bypass the proxy server for local addresses; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -631,7 +633,7 @@ binding.MaxBufferSize = 1000000;
 
 The value of this property can also be set in the configuration file.
 
- ]]></format>        
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -707,7 +709,7 @@ The value of this property can also be set in the configuration file.
 </configuration>
 ```
 
- ]]></format>        
+ ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
       </Docs>
@@ -891,7 +893,7 @@ The value of this property can also be set in the configuration file.
 </configuration>
 ```
 
- ]]></format>        
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1030,7 +1032,8 @@ string thisScheme = binding.Scheme;
       <Parameters />
       <Docs>
         <summary>Returns whether the constraint values placed on the complexity of SOAP message structure should be serialized.</summary>
-        <returns><see langword="true" /> if reader quotas should be serialized; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if reader quotas should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1085,7 +1088,8 @@ string thisScheme = binding.Scheme;
       <Parameters />
       <Docs>
         <summary>Returns whether settings for text encoding should be serialized.</summary>
-        <returns><see langword="true" /> if text encoding should be serialized; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if text encoding should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1253,7 +1257,8 @@ The value of this property can also be set in the configuration file.
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
-        <value><see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 

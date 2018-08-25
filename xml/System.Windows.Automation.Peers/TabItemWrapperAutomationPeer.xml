@@ -71,7 +71,8 @@
       <Parameters />
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.TabItem" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.TabItemWrapperAutomationPeer" /> object is off the screen. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" />.</summary>
-        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

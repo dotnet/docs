@@ -155,7 +155,7 @@
       <MemberSignature Language="F#" Value="abstract member GenerateSigned : string * string * bool *  -&gt; string&#xA;override this.GenerateSigned : string * string * bool *  -&gt; string" Usage="generateMetadata.GenerateSigned (strSrcTypeLib, outPath, InstallGac, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

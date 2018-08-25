@@ -553,7 +553,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMatchingFilter : System.ServiceModel.Channels.Message *  -&gt; bool&#xA;override this.GetMatchingFilter : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="messageFilterTable.GetMatchingFilter (message, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.Message,System.ServiceModel.Dispatcher.MessageFilter)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.Message,System.ServiceModel.Dispatcher.MessageFilter@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -601,7 +601,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMatchingFilter : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool&#xA;override this.GetMatchingFilter : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool" Usage="messageFilterTable.GetMatchingFilter (buffer, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.MessageBuffer,System.ServiceModel.Dispatcher.MessageFilter)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.MessageBuffer,System.ServiceModel.Dispatcher.MessageFilter@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -776,7 +776,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMatchingValue : System.ServiceModel.Channels.Message *  -&gt; bool&#xA;override this.GetMatchingValue : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="messageFilterTable.GetMatchingValue (message, data)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.Message,`0)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.Message,`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -819,7 +819,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMatchingValue : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool&#xA;override this.GetMatchingValue : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool" Usage="messageFilterTable.GetMatchingValue (buffer, data)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.MessageBuffer,`0)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.MessageBuffer,`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

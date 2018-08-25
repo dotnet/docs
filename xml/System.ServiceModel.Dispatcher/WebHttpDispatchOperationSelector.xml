@@ -170,7 +170,7 @@
       <MemberSignature Language="F#" Value="abstract member SelectOperation :  -&gt; string&#xA;override this.SelectOperation :  -&gt; string" Usage="webHttpDispatchOperationSelector.SelectOperation message" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

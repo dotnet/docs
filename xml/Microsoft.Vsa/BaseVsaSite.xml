@@ -99,7 +99,7 @@
       <MemberSignature Language="F#" Value="abstract member GetCompiledState :  *  -&gt; unit&#xA;override this.GetCompiledState :  *  -&gt; unit" Usage="baseVsaSite.GetCompiledState (pe, debugInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

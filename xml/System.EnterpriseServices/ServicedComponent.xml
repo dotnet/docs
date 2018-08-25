@@ -25,6 +25,11 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the base class of all classes using COM+ services.</summary>
     <remarks>
@@ -426,7 +431,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="C++ CLI" Value=" virtual void System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(int % infoMask, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % infoArray) = System::EnterpriseServices::IServicedComponentInfo::GetComponentInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32,System.String[])</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32@,System.String[]@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

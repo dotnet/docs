@@ -664,7 +664,7 @@
       <MemberSignature Language="F#" Value="abstract member SaveCompiledState :  *  -&gt; unit&#xA;override this.SaveCompiledState :  *  -&gt; unit" Usage="vsaEngineClass.SaveCompiledState (pe, pdb)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Vsa.IVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft_VsaVb</AssemblyName>

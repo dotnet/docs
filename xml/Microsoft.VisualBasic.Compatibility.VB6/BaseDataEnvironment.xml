@@ -415,7 +415,7 @@
       <MemberSignature Language="F#" Value="abstract member getDataMember : string *  -&gt; obj&#xA;override this.getDataMember : string *  -&gt; obj" Usage="baseDataEnvironment.getDataMember (strDataMember, Id)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:msdatasrc.DataSource.getDataMember(System.String,System.Guid)</InterfaceMember>
+        <InterfaceMember>M:msdatasrc.DataSource.getDataMember(System.String,System.Guid@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

@@ -124,7 +124,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Diagnostics.ICollectData.CollectData(int callIdx, IntPtr valueNamePtr, IntPtr dataPtr, int totalBytes, [Runtime::InteropServices::Out] IntPtr % res) = System::Diagnostics::ICollectData::CollectData;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Diagnostics.ICollectData.CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Diagnostics.ICollectData.CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

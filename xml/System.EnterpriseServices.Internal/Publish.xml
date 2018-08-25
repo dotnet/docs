@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateMailBox : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateMailBox : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateMailBox (RootMailServer, MailBox, SmtpName, Domain, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -112,7 +112,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateVirtualRoot : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateVirtualRoot : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateVirtualRoot (Operation, FullUrl, BaseUrl, VirtualRoot, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -189,7 +189,7 @@
       <MemberSignature Language="F#" Value="abstract member DeleteMailBox : string * string *  -&gt; unit&#xA;override this.DeleteMailBox : string * string *  -&gt; unit" Usage="publish.DeleteMailBox (RootMailServer, MailBox, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -231,7 +231,7 @@
       <MemberSignature Language="F#" Value="abstract member DeleteVirtualRoot : string * string *  -&gt; unit&#xA;override this.DeleteVirtualRoot : string * string *  -&gt; unit" Usage="publish.DeleteVirtualRoot (RootWebServer, FullUrl, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -353,7 +353,7 @@
       <MemberSignature Language="F#" Value="abstract member GetAssemblyNameForCache : string *  -&gt; unit&#xA;override this.GetAssemblyNameForCache : string *  -&gt; unit" Usage="publish.GetAssemblyNameForCache (TypeLibPath, CachePath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -525,7 +525,7 @@
       <MemberSignature Language="F#" Value="abstract member ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessClientTlb (ProgId, SrcTlbPath, PhysicalPath, VRoot, BaseUrl, Mode, Transport, AssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -585,7 +585,7 @@
       <MemberSignature Language="F#" Value="abstract member ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessServerTlb (ProgId, SrcTlbPath, PhysicalPath, Operation, strAssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

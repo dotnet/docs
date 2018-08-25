@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit&#xA;override this.AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit" Usage="soapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, inBaseUrl, inVirtualRoot, clientActivated, wellKnown, discoFile, operation, strAssemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

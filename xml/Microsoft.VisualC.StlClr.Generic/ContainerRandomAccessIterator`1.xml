@@ -62,22 +62,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ContainerRandomAccessIterator (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public ContainerRandomAccessIterator (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ContainerRandomAccessIterator)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainerRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ContainerRandomAccessIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainerRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; _Right" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to be copied to the current container.</param>
-        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,26 +163,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="distance">
-      <MemberSignature Language="C#" Value="public int distance (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 distance(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public int distance (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 distance(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Function distance (_Right As ContainerRandomAccessIterator) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int distance(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Function distance (_Right As ContainerRandomAccessIterator(Of TValue)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int distance(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.distance : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="containerRandomAccessIterator.distance _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">A valid iterator that points to the same container as the current iterator.</param>
-        <summary>Determines the distance between the element that the current iterator is pointing to and the element that the given iterator is pointing to.</summary>
-        <returns>The distance, in number of elements, between the element that the current iterator is pointing to and the element that <paramref name="_Right" /> is pointing to. This number will be negative if <paramref name="_Right" /> points to an element that is before the element that the current iterator points to.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,27 +227,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="equal_to">
-      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.equal_to : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.equal_to _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</param>
-        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> objects are the same object; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,27 +407,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="less_than">
-      <MemberSignature Language="C#" Value="public bool less_than (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool less_than(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool less_than (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool less_than(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Function less_than (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool less_than(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Function less_than (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool less_than(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.less_than : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.less_than _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">A valid iterator pointing to the same container as the current iterator.</param>
-        <summary>Determines whether the current iterator is pointing to an element in the container that is before the element that the given iterator points to.</summary>
-        <returns>
-          <see langword="true" /> if the current iterator is pointing to an element that comes before the element that <paramref name="_Right" /> is pointing to; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,18 +551,20 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static void operator + (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public static void operator + (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.void op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (ByRef  As ContainerRandomAccessIterator(Of TValue), _Left As Integer, _Right As ContainerRandomAccessIterator) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ^ operator +(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (ByRef  As ContainerRandomAccessIterator(Of TValue), _Left As Integer, _Right As ContainerRandomAccessIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ^ operator +(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="static member ( + ) :  * int * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; unit" Usage=" + _Left _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
       </Attributes>
@@ -564,40 +572,42 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
         <Parameter Name="_Left" Type="System.Int32" />
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Left">The number of elements to increment.</param>
-        <param name="_Right">The iterator to increment.</param>
-        <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the left side of the addition operator.</summary>
-        <returns>An iterator.</returns>
+        <param name="_Left">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Assign">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator op_Assign (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; op_Assign (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; op_Assign(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ContainerRandomAccessIterator) As ContainerRandomAccessIterator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ContainerRandomAccessIterator(Of TValue)) As ContainerRandomAccessIterator(Of TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;" Usage="containerRandomAccessIterator.op_Assign _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator</ReturnType>
+        <ReturnType>Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to assign to the current object.</param>
-        <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to the current object.</summary>
-        <returns>The current object (<c>*this</c>).</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,18 +684,20 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -693,13 +705,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</param>
-        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -745,18 +756,20 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public bool operator &gt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator &gt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThan(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator &gt; (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator &gt; (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &gt; ) : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&gt; _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -764,32 +777,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the left-side iterator is greater than the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool operator &gt; (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThan(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0},Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (_Left As IRandomAccessIterator(Of TValue), _Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (_Left As IRandomAccessIterator(Of TValue), _Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="_Left &gt; _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -798,14 +812,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">The iterator to compare with the right-side iterator.</param>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the given left-side iterator is greater than the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the given left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Left">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,27 +832,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public bool operator &gt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator &gt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThanOrEqual(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator &gt;= (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator &gt;= (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &gt;= ) : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&gt;= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the left-side iterator is greater than or equal to the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -966,27 +980,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.op_Inequality _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</param>
-        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,18 +1042,20 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public bool operator &lt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator &lt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThan(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator &lt; (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator &lt; (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &lt; ) : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&lt; _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1046,13 +1063,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the left-side iterator is less than the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1098,43 +1114,46 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThanOrEqual(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator &lt;= (_Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator &lt;= (_Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;=(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &lt;= ) : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&lt;= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the left-side iterator is less than or equal to the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThanOrEqual(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0},Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (_Left As IRandomAccessIterator(Of TValue), _Right As ContainerRandomAccessIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (_Left As IRandomAccessIterator(Of TValue), _Right As ContainerRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Left, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="_Left &lt;= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1143,78 +1162,81 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">The iterator to compare with the right-side iterator.</param>
-        <param name="_Right">The iterator to compare with the left-side iterator.</param>
-        <summary>Determines whether the position of the given left-side iterator is less than the position of the given right-side iterator.</summary>
-        <returns>
-          <see langword="true" /> if the given left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
+        <param name="_Left">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
-      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Left);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ContainerRandomAccessIterator) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Left);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ContainerRandomAccessIterator(Of TValue)) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Left);" />
+      <MemberSignature Language="F#" Value="static member op_MemberSelection : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;.op_MemberSelection _Left" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">The iterator that the operator is applied to.</param>
-        <summary>Returns the element that the iterator is currently pointing to.</summary>
-        <returns>The element that the iterator is currently pointing to.</returns>
+        <param name="_Left">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_PointerDereference">
-      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Left);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ContainerRandomAccessIterator) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Left);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ContainerRandomAccessIterator(Of TValue)) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ _Left);" />
+      <MemberSignature Language="F#" Value="static member op_PointerDereference : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;.op_PointerDereference _Left" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">The iterator that the operator is applied to.</param>
-        <summary>Returns the element that the iterator is currently pointing to.</summary>
-        <returns>The element that the iterator is currently pointing to.</returns>
+        <param name="_Left">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

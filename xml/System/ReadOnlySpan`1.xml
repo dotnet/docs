@@ -386,7 +386,7 @@ This reference is used for pinning and must never be dereferenced.]]></format>
     </Member>
     <Member MemberName="GetPinnableReference">
       <MemberSignature Language="C#" Value="public T&amp; GetPinnableReference ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.T&amp; modreq(System.Runtime.InteropServices.InAttribute) GetPinnableReference() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) GetPinnableReference() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.GetPinnableReference" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPinnableReference () As T&amp;" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ GetPinnableReference();" />
@@ -397,27 +397,23 @@ This reference is used for pinning and must never be dereferenced.]]></format>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute>
+          <Attribute FrameworkAlternate="netcore-2.1">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a reference to the element of the <see cref="T:System.ReadOnlySpan`1" /> at index zero. If the read-only span is empty, returns <see langword="null" />.</summary>
-        <returns>A reference to the element of the <see cref="T:System.ReadOnlySpan`1" /> at index zero, or <see langword="null" /> if <see cref="M:System.ReadOnlySpan`1.IsEmpty" /> is  <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type). It can be used for pinning a <xref:System.ReadOnlySpan%601> in memory. It is required to support the use of a <xref:System.ReadOnlySpan%601> within a [fixed](~/docs/csharp/language-reference/keywords/fixed-statement.md) statement.
-
-This reference is used for pinning and must never be dereferenced.]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">

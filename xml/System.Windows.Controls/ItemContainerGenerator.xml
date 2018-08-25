@@ -373,7 +373,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::DependencyObject ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized) = System::Windows::Controls::Primitives::IItemContainerGenerator::GenerateNext;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

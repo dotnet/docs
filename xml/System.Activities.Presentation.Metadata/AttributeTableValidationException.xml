@@ -13,6 +13,11 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides the functionality to throw an exception from the <see cref="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable" /> method if the metadata provided in the table does not match properties, methods, and events on real types.</summary>
     <remarks>

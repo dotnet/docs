@@ -73,7 +73,7 @@
       <MemberSignature Language="F#" Value="abstract member InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit&#xA;override this.InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit" Usage="registrationHelper.InstallAssembly (assembly, application, tlb, installFlags)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String,System.String,System.EnterpriseServices.InstallationFlags)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

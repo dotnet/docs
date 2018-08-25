@@ -59,7 +59,7 @@
       <MemberSignature Language="F#" Value="abstract member AddMenuItems : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IContextMenuCallback *  -&gt; unit&#xA;override this.AddMenuItems : Microsoft.CLRAdmin.IDataObject * Microsoft.CLRAdmin.IContextMenuCallback *  -&gt; unit" Usage="cData.AddMenuItems (piDataObject, piCallback, pInsertionAllowed)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendContextMenu.AddMenuItems(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IContextMenuCallback,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendContextMenu.AddMenuItems(Microsoft.CLRAdmin.IDataObject,Microsoft.CLRAdmin.IContextMenuCallback,System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -149,7 +149,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateComponent :  -&gt; unit&#xA;override this.CreateComponent :  -&gt; unit" Usage="cData.CreateComponent ppComponent" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.CreateComponent(Microsoft.CLRAdmin.IComponent)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.CreateComponent(Microsoft.CLRAdmin.IComponent@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -232,7 +232,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDisplayInfo :  -&gt; unit&#xA;override this.GetDisplayInfo :  -&gt; unit" Usage="cData.GetDisplayInfo sdi" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.GetDisplayInfo(Microsoft.CLRAdmin.SCOPEDATAITEM)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.GetDisplayInfo(Microsoft.CLRAdmin.SCOPEDATAITEM@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -259,7 +259,7 @@
       <MemberSignature Language="F#" Value="abstract member GetWatermarks : Microsoft.CLRAdmin.IDataObject *  *  *  *  -&gt; int&#xA;override this.GetWatermarks : Microsoft.CLRAdmin.IDataObject *  *  *  *  -&gt; int" Usage="cData.GetWatermarks (lpIDataObject, lphWatermark, lphHeader, lphPalette, bStretch)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendPropertySheet2.GetWatermarks(Microsoft.CLRAdmin.IDataObject,System.IntPtr,System.IntPtr,System.IntPtr,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IExtendPropertySheet2.GetWatermarks(Microsoft.CLRAdmin.IDataObject,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -356,7 +356,7 @@
       <MemberSignature Language="F#" Value="abstract member QueryDataObject : int * uint32 *  -&gt; unit&#xA;override this.QueryDataObject : int * uint32 *  -&gt; unit" Usage="cData.QueryDataObject (cookie, type, ppDataObject)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.QueryDataObject(System.Int32,System.UInt32,Microsoft.CLRAdmin.IDataObject)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IComponentData.QueryDataObject(System.Int32,System.UInt32,Microsoft.CLRAdmin.IDataObject@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>

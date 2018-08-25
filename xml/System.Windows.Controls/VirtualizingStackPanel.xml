@@ -381,8 +381,10 @@
       <Docs>
         <param name="o">The object from which the attached property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing" /> attached property.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its content; otherwise, <see langword="false" />.</returns>
-        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its content; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -521,8 +523,6 @@ The default value of the <xref:System.Windows.Controls.VirtualizingStackPanel.Is
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets a value that indicates that this <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its child collection.</summary>
-        <value>true if this instance of <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing its child collection; otherwise false. The default is true.</value>
-        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1479,9 +1479,9 @@ Notice that the IsVirtualizing attached property is explicitly set to `true`.
       </Parameters>
       <Docs>
         <param name="element">The object to which the attached property value is set.</param>
-        <param name="value"><see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing; otherwise, <see langword="false" />.</param>
+        <param name="value">
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is virtualizing; otherwise, <see langword="false" />.</param>
         <summary>Sets the value of the <see cref="F:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty" /> attached property.</summary>
-        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1549,7 +1549,6 @@ The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number 
         <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> property.</param>
         <param name="value">One of the enumeration values that specifies whether <paramref name="element" /> uses container recycling.</param>
         <summary>Sets the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> attached property on the specified object.</summary>
-        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1686,7 +1685,6 @@ For more information about the <xref:System.Windows.Controls.VirtualizingStackPa
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets how a panel in an <see cref="T:System.Windows.Controls.ItemsControl" /> virtualizes its child items.</summary>
-        <value>One of the enumeration values that specifies how a panel in an <see cref="T:System.Windows.Controls.ItemsControl" /> virtualizes its child items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

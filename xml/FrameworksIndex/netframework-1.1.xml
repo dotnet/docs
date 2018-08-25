@@ -416,12 +416,31 @@
     <Type Name="Microsoft.CLRAdmin.STGMEDIUM" Id="T:Microsoft.CLRAdmin.STGMEDIUM" />
   </Namespace>
   <Namespace Name="Microsoft.CSharp">
+    <Type Name="Microsoft.CSharp.Compiler" Id="T:Microsoft.CSharp.Compiler">
+      <Member Id="M:Microsoft.CSharp.Compiler.Compile(System.String[],System.String[],System.String,System.String[],System.Collections.IDictionary)" />
+    </Type>
+    <Type Name="Microsoft.CSharp.CompilerError" Id="T:Microsoft.CSharp.CompilerError">
+      <Member Id="F:Microsoft.CSharp.CompilerError.ErrorLevel" />
+      <Member Id="F:Microsoft.CSharp.CompilerError.ErrorMessage" />
+      <Member Id="F:Microsoft.CSharp.CompilerError.ErrorNumber" />
+      <Member Id="F:Microsoft.CSharp.CompilerError.SourceColumn" />
+      <Member Id="F:Microsoft.CSharp.CompilerError.SourceFile" />
+      <Member Id="F:Microsoft.CSharp.CompilerError.SourceLine" />
+      <Member Id="M:Microsoft.CSharp.CompilerError.#ctor" />
+      <Member Id="M:Microsoft.CSharp.CompilerError.ToString" />
+    </Type>
     <Type Name="Microsoft.CSharp.CSharpCodeProvider" Id="T:Microsoft.CSharp.CSharpCodeProvider">
       <Member Id="M:Microsoft.CSharp.CSharpCodeProvider.#ctor" />
       <Member Id="M:Microsoft.CSharp.CSharpCodeProvider.CreateCompiler" />
       <Member Id="M:Microsoft.CSharp.CSharpCodeProvider.CreateGenerator" />
       <Member Id="M:Microsoft.CSharp.CSharpCodeProvider.GetConverter(System.Type)" />
       <Member Id="P:Microsoft.CSharp.CSharpCodeProvider.FileExtension" />
+    </Type>
+    <Type Name="Microsoft.CSharp.ErrorLevel" Id="T:Microsoft.CSharp.ErrorLevel">
+      <Member Id="F:Microsoft.CSharp.ErrorLevel.Error" />
+      <Member Id="F:Microsoft.CSharp.ErrorLevel.FatalError" />
+      <Member Id="F:Microsoft.CSharp.ErrorLevel.None" />
+      <Member Id="F:Microsoft.CSharp.ErrorLevel.Warning" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.IE">

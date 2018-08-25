@@ -357,71 +357,61 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="erase">
-      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
+      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where);" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where);" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iList.erase (, _Where)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">The position of the element to erase.</param>
-        <summary>Removes the single element of the controlled sequence pointed to by the given iterator.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
-      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last_iter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
+      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Last_iter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Last_iter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _First_iter As ContainerBidirectionalIterator, _Last_iter As ContainerBidirectionalIterator) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Last_iter);" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _First_iter As ContainerBidirectionalIterator(Of TValue), _Last_iter As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Last_iter);" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iList.erase (, _First_iter, _Last_iter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
-        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">The beginning position of the range of elements to erase.</param>
-        <param name="_Last_iter">The first position beyond the range of elements to erase.</param>
-        <summary>Removes the elements of the controlled sequence in the range <c>[</c><paramref name="_First_iter" /><c>,</c><paramref name="_Last_iter" /><c>)</c>.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
-  
- ]]></format>
-        </remarks>
+        <param name="_First_iter">To be added.</param>
+        <param name="_Last_iter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="front">
@@ -501,138 +491,118 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="insert">
-      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where_iter, System.Collections.IEnumerable _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where_iter, System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where_iter As ContainerBidirectionalIterator, _Right As IEnumerable)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where_iter, System::Collections::IEnumerable ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where_iter As ContainerBidirectionalIterator(Of TValue), _Right As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where_iter, System::Collections::IEnumerable ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * System.Collections.IEnumerable -&gt; unit" Usage="iList.insert (_Where_iter, _Right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Where_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Where_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="_Where_iter">The position in the container to insert before.</param>
-        <param name="_Right">The enumeration whose elements are to be inserted into the container.</param>
-        <summary>Inserts the elements of the specified enumerator into the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where_iter">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
-      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator, _First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
-        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
-        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="_Where">The position in the container immediately following the newly inserted elements.</param>
-        <param name="_First">The beginning position of the range of elements to insert into the container.</param>
-        <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
-        <summary>Inserts the sequence [<paramref name="_First" /><c>,</c><paramref name="_Last" />) into the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="insert">
-      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, int _Count, TValue _Val);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, int32 _Count, !TValue _Val) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator, _Count As Integer, _Val As TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, int _Count, TValue _Val);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
-        <Parameter Name="_Count" Type="System.Int32" />
-        <Parameter Name="_Val" Type="TValue" />
-      </Parameters>
-      <Docs>
-        <param name="_Where">The position in the container immediately following the newly inserted elements.</param>
-        <param name="_Count">The number of elements to insert into the container.</param>
-        <param name="_Val">The value of the elements to insert into the container.</param>
-        <summary>Inserts the specified number of elements of the given value into the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="insert">
-      <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, TValue _Val);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
+      <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
-      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator, _Val As TValue) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, TValue _Val);" />
+      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator(Of TValue), _Val As TValue) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, TValue _Val);" />
+      <MemberSignature Language="F#" Value="abstract member insert :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * 'Value -&gt; unit" Usage="iList.insert (, _Where, _Val)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">The position in the container immediately following the newly inserted elements.</param>
-        <param name="_Val">The value of the element to insert into the container.</param>
-        <summary>Inserts an element of the given value into the container.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator(Of TValue), _First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iList.insert (_Where, _First, _Last)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_First">To be added.</param>
+        <param name="_Last">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, int _Count, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, int32 _Count, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator(Of TValue), _Count As Integer, _Val As TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, int _Count, TValue _Val);" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * int * 'Value -&gt; unit" Usage="iList.insert (_Where, _Count, _Val)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
+        <Parameter Name="_Count" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Count">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="merge">
@@ -1114,105 +1084,90 @@ For more information, see [list::remove_if (STL/CLR)](/cpp/dotnet/list-stl-clr#r
       </Docs>
     </MemberGroup>
     <Member MemberName="splice">
-      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator(Of TValue), _Right As IList(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; -&gt; unit" Usage="iList.splice (_Where, _Right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">The position in the container before which to splice.</param>
-        <param name="_Right">The container to splice from. All elements will be removed from this container after the splice operation.</param>
-        <summary>Inserts the given sequence into the container before the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="splice">
-      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First) cil managed" />
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _First);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _First) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue), _First As ContainerBidirectionalIterator)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator(Of TValue), _Right As IList(Of TValue), _First As ContainerBidirectionalIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _First);" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iList.splice (_Where, _Right, _First)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
-        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">The position in the container before which to splice.</param>
-        <param name="_Right">The container to splice from.</param>
-        <param name="_First">The position of the element to splice.</param>
-        <summary>Removes the element from the given container pointed to by <paramref name="_First" /> and inserts it before the element in the controlled sequence pointed to by <paramref name="_Where" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <param name="_First">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="splice">
-      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last) cil managed" />
+      <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue), _First As ContainerBidirectionalIterator, _Last As ContainerBidirectionalIterator)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Last);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator(Of TValue), _Right As IList(Of TValue), _First As ContainerBidirectionalIterator(Of TValue), _Last As ContainerBidirectionalIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Last);" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iList.splice (_Where, _Right, _First, _Last)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
-        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
-        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">The position in the container before which to splice.</param>
-        <param name="_Right">The container to splice from.</param>
-        <param name="_First">The beginning position of the range of elements to splice.</param>
-        <param name="_Last">The first position beyond the range of elements to splice.</param>
-        <summary>Removes the range of elements [<paramref name="_First" />, <paramref name="_Last" />) from the given container and inserts it before the element in the controlled sequence pointed to by <paramref name="_Where" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <param name="_First">To be added.</param>
+        <param name="_Last">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="swap">

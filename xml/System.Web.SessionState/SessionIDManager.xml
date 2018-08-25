@@ -293,7 +293,7 @@
       <MemberSignature Language="F#" Value="abstract member InitializeRequest : System.Web.HttpContext * bool *  -&gt; bool&#xA;override this.InitializeRequest : System.Web.HttpContext * bool *  -&gt; bool" Usage="sessionIDManager.InitializeRequest (context, suppressAutoDetectRedirect, supportSessionIDReissue)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -374,7 +374,7 @@
       <MemberSignature Language="F#" Value="abstract member SaveSessionID : System.Web.HttpContext * string *  *  -&gt; unit&#xA;override this.SaveSessionID : System.Web.HttpContext * string *  *  -&gt; unit" Usage="sessionIDManager.SaveSessionID (context, id, redirected, cookieAdded)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean,System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Web.SessionState.ISessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean@,System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

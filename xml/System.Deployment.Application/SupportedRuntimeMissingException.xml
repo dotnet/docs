@@ -13,6 +13,11 @@
     <BaseTypeName>System.Deployment.Application.DependentPlatformMissingException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>This exception is thrown when a runtime version that is compatible with this application cannot be found.</summary>
     <remarks>To be added.</remarks>

@@ -44,7 +44,7 @@
       <MemberSignature Language="F#" Value="abstract member Run :  -&gt; Microsoft.Build.Execution.NodeEngineShutdownReason&#xA;override this.Run :  -&gt; Microsoft.Build.Execution.NodeEngineShutdownReason" Usage="outOfProcNode.Run shutdownException" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Build.BackEnd.INode.Run(System.Exception)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Build.BackEnd.INode.Run(System.Exception@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

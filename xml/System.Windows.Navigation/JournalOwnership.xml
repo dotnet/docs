@@ -13,6 +13,11 @@
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal. <see cref="T:System.Windows.Navigation.JournalOwnership" /> is used by the <see cref="P:System.Windows.Controls.Frame.JournalOwnership" /> property.</summary>
     <remarks>

@@ -321,71 +321,61 @@
       </Docs>
     </Member>
     <Member MemberName="erase">
-      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
+      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where);" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where);" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iHash.erase (, _Where)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">An iterator that points to the element to erase.</param>
-        <summary>Removes from the container the element that is specified by the given iterator.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
-      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last_iter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
+      <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Last_iter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Last_iter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue)" />
-      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _First_iter As ContainerBidirectionalIterator, _Last_iter As ContainerBidirectionalIterator) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Last_iter);" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _First_iter As ContainerBidirectionalIterator(Of TValue), _Last_iter As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Last_iter);" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; unit" Usage="iHash.erase (, _First_iter, _Last_iter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
-        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">An iterator that points to the beginning of the range to erase.</param>
-        <param name="_Last_iter">An iterator that points to the position that immediately follows the range to erase.</param>
-        <summary>Removes from the container the elements between the specified iterators.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
-  
- ]]></format>
-        </remarks>
+        <param name="_First_iter">To be added.</param>
+        <param name="_Last_iter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="find">
@@ -572,38 +562,33 @@
       </Docs>
     </Member>
     <Member MemberName="insert">
-      <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, TValue _Val);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
+      <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Where, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Where, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue,`1)" />
-      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator, _Val As TValue) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, TValue _Val);" />
+      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator(Of TValue), _Val As TValue) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Where, TValue _Val);" />
+      <MemberSignature Language="F#" Value="abstract member insert :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; * 'Value -&gt; unit" Usage="iHash.insert (, _Where, _Val)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
-        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">An iterator that specifies where in the container to insert the element. This is a hint only and is used to improve performance. The element might not be inserted at this location.</param>
-        <param name="_Val">The key value to insert into the container.</param>
-        <summary>Adds the given element to the container.</summary>
-        <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
-  
- ]]></format>
-        </remarks>
+        <param name="_Where">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="key_comp">

@@ -63,7 +63,7 @@
       <MemberSignature Language="F#" Value="abstract member AddElement : string * string * string * string * string *  -&gt; unit&#xA;override this.AddElement : string * string * string * string * string *  -&gt; unit" Usage="serverWebConfig.AddElement (FilePath, AssemblyName, TypeName, ProgId, WkoMode, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -116,7 +116,7 @@
       <MemberSignature Language="F#" Value="abstract member Create : string * string *  -&gt; unit&#xA;override this.Create : string * string *  -&gt; unit" Usage="serverWebConfig.Create (FilePath, FilePrefix, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

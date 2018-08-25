@@ -49,6 +49,11 @@
       <InterfaceName>System.IEquatable&lt;System.ValueTuple&lt;T1,T2,T3,T4&gt;&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T1">The type of the value tuple's first element.</typeparam>
     <typeparam name="T2">The type of the value tuple's second element.</typeparam>

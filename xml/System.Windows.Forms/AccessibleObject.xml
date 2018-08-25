@@ -253,7 +253,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void Accessibility.IAccessible.accLocation([Runtime::InteropServices::Out] int % pxLeft, [Runtime::InteropServices::Out] int % pyTop, [Runtime::InteropServices::Out] int % pcxWidth, [Runtime::InteropServices::Out] int % pcyHeight, System::Object ^ childID) = Accessibility::IAccessible::accLocation;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Accessibility.IAccessible.accLocation(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)</InterfaceMember>
+        <InterfaceMember>M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -579,7 +579,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual int Accessibility.IAccessible.get_accHelpTopic([Runtime::InteropServices::Out] System::String ^ % pszHelpFile, System::Object ^ childID) = Accessibility::IAccessible::get_accHelpTopic;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Accessibility.IAccessible.get_accHelpTopic(System.String,System.Object)</InterfaceMember>
+        <InterfaceMember>M:Accessibility.IAccessible.get_accHelpTopic(System.String@,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

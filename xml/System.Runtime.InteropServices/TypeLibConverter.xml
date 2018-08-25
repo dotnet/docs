@@ -319,7 +319,7 @@
       <MemberSignature Language="F#" Value="abstract member GetPrimaryInteropAssembly : Guid * int * int * int *  *  -&gt; bool&#xA;override this.GetPrimaryInteropAssembly : Guid * int * int * int *  *  -&gt; bool" Usage="typeLibConverter.GetPrimaryInteropAssembly (g, major, minor, lcid, asmName, asmCodeBase)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

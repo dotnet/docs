@@ -31,7 +31,7 @@
       <MemberSignature Language="F#" Value="abstract member AddImages :  -&gt; unit&#xA;override this.AddImages :  -&gt; unit" Usage="cNode.AddImages il" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.AddImages(Microsoft.CLRAdmin.IImageList)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IColumnResultView.AddImages(Microsoft.CLRAdmin.IImageList@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -83,7 +83,7 @@
       <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; int&#xA;override this.Clone :  -&gt; int" Usage="cNode.Clone ppenum" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Clone(Microsoft.CLRAdmin.IEnumTASK)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Clone(Microsoft.CLRAdmin.IEnumTASK@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>
@@ -715,7 +715,7 @@
       <MemberSignature Language="F#" Value="abstract member Next : uint32 *  *  -&gt; int&#xA;override this.Next : uint32 *  *  -&gt; int" Usage="cNode.Next (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Next(System.UInt32,Microsoft.CLRAdmin.MMC_TASK,System.UInt32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.CLRAdmin.IEnumTASK.Next(System.UInt32,Microsoft.CLRAdmin.MMC_TASK@,System.UInt32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorcfg</AssemblyName>

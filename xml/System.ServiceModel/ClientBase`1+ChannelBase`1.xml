@@ -715,6 +715,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.Channels.IOutputChannel.RemoteAddress">
+      <MemberSignature Language="C#" Value="System.ServiceModel.EndpointAddress System.ServiceModel.Channels.IOutputChannel.RemoteAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress System.ServiceModel.Channels.IOutputChannel.RemoteAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#RemoteAddress" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RemoteAddress As EndpointAddress Implements IOutputChannel.RemoteAddress" />
+      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::EndpointAddress ^ System::ServiceModel::Channels::IOutputChannel::RemoteAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.IOutputChannel.RemoteAddress" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IOutputChannel.RemoteAddress</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="System.ServiceModel.Channels.IOutputChannel.Send">
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -788,6 +818,36 @@
         <param name="message">The message being sent on the output channel.</param>
         <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
         <summary>Sends a message on the current output channel within a specified interval of time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IOutputChannel.Via">
+      <MemberSignature Language="C#" Value="Uri System.ServiceModel.Channels.IOutputChannel.Via { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.ServiceModel.Channels.IOutputChannel.Via" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#Via" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Via As Uri Implements IOutputChannel.Via" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System::ServiceModel::Channels::IOutputChannel::Via { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.IOutputChannel.Via" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IOutputChannel.Via</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,36 +1002,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ServiceModel.Channels.IRequestChannel.RemoteAddress" ToDelete="true">
-      <MemberSignature Language="C#" Value="System.ServiceModel.EndpointAddress System.ServiceModel.IContextChannel.RemoteAddress { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress System.ServiceModel.IContextChannel.RemoteAddress" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#RemoteAddress" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RemoteAddress As EndpointAddress Implements IContextChannel.RemoteAddress" />
-      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::EndpointAddress ^ System::ServiceModel::IContextChannel::RemoteAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.ServiceModel.IContextChannel.RemoteAddress" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ServiceModel.IContextChannel.RemoteAddress</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the remote address associated with the channel.</summary>
-        <value>The remote <see cref="T:System.ServiceModel.EndpointAddress" /> for the channel.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <MemberGroup MemberName="System.ServiceModel.Channels.IRequestChannel.Request">
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1050,7 +1080,7 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ServiceModel.Channels.IRequestChannel.Via" ToDelete="true">
+    <Member MemberName="System.ServiceModel.Channels.IRequestChannel.Via">
       <MemberSignature Language="C#" Value="Uri System.ServiceModel.Channels.IRequestChannel.Via { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.ServiceModel.Channels.IRequestChannel.Via" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#Via" />
@@ -1263,6 +1293,36 @@
       </ReturnValue>
       <Docs>
         <summary>The event handler that is invoked when the ClientBase object receives an unknown message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.IClientChannel.Via">
+      <MemberSignature Language="C#" Value="Uri System.ServiceModel.IClientChannel.Via { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.ServiceModel.IClientChannel.Via" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#Via" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Via As Uri Implements IClientChannel.Via" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System::ServiceModel::IClientChannel::Via { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IClientChannel.Via" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IClientChannel.Via</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1995,6 +2055,36 @@
       <Docs>
         <summary>Gets the output session associated with the channel, if any.</summary>
         <value>A <see cref="T:System.ServiceModel.Channels.IOutputSession" /> implementation if an input session exists; otherwise, null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.IContextChannel.RemoteAddress">
+      <MemberSignature Language="C#" Value="System.ServiceModel.EndpointAddress System.ServiceModel.IContextChannel.RemoteAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress System.ServiceModel.IContextChannel.RemoteAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#RemoteAddress" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RemoteAddress As EndpointAddress Implements IContextChannel.RemoteAddress" />
+      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::EndpointAddress ^ System::ServiceModel::IContextChannel::RemoteAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IContextChannel.RemoteAddress" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IContextChannel.RemoteAddress</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

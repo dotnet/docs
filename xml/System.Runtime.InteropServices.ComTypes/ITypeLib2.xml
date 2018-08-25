@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member FindName : string * int * System.Runtime.InteropServices.ComTypes.ITypeInfo[] * int[] *  -&gt; unit" Usage="iTypeLib2.FindName (szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -208,7 +208,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String,System.String,System.Int32,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -317,7 +317,7 @@
       <MemberSignature Language="F#" Value="abstract member GetLibAttr :  -&gt; unit" Usage="iTypeLib2.GetLibAttr ppTLibAttr" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -418,7 +418,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeLib2.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -468,7 +468,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfo : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfo (index, ppTI)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -568,7 +568,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoOfGuid :  *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoOfGuid (guid, ppTInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -620,7 +620,7 @@
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoType : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoType (index, pTKind)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -88,7 +88,7 @@
       <MemberSignature Language="F#" Value="abstract member GetDefaultSiteNameAndID :  *  -&gt; unit&#xA;override this.GetDefaultSiteNameAndID :  *  -&gt; unit" Usage="userMapPath.GetDefaultSiteNameAndID (siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,7 +142,7 @@
       <MemberSignature Language="F#" Value="abstract member GetPathConfigFilename : string * string *  *  -&gt; unit&#xA;override this.GetPathConfigFilename : string * string *  *  -&gt; unit" Usage="userMapPath.GetPathConfigFilename (siteID, path, directory, baseName)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,7 +230,7 @@
       <MemberSignature Language="F#" Value="abstract member ResolveSiteArgument : string *  *  -&gt; unit&#xA;override this.ResolveSiteArgument : string *  *  -&gt; unit" Usage="userMapPath.ResolveSiteArgument (siteArgument, siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

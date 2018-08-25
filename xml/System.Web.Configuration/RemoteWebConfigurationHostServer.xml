@@ -126,7 +126,7 @@
       <MemberSignature Language="F#" Value="abstract member GetData : string * bool *  -&gt; byte[]&#xA;override this.GetData : string * bool *  -&gt; byte[]" Usage="remoteWebConfigurationHostServer.GetData (fileName, getReadTimeOnly, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,7 +163,7 @@
       <MemberSignature Language="F#" Value="abstract member GetFileDetails : string *  *  *  *  -&gt; unit&#xA;override this.GetFileDetails : string *  *  *  *  -&gt; unit" Usage="remoteWebConfigurationHostServer.GetFileDetails (name, exists, size, createDate, lastWriteDate)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean,System.Int64,System.Int64,System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,7 +241,7 @@
       <MemberSignature Language="F#" Value="abstract member WriteData : string * string * byte[] *  -&gt; unit&#xA;override this.WriteData : string * string * byte[] *  -&gt; unit" Usage="remoteWebConfigurationHostServer.WriteData (fileName, templateFileName, data, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

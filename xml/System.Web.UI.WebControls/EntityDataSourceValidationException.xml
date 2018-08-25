@@ -18,6 +18,11 @@
       <InterfaceName>System.Web.DynamicData.IDynamicValidatorException</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents errors that occur when validating properties of a dynamic data source.</summary>
     <remarks>To be added.</remarks>
@@ -160,7 +165,7 @@
         <param name="info">The object that holds the serialized object data. </param>
         <param name="context">The contextual information about the source or destination. </param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceValidationException" /> class with serialized data.</summary>
-                <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  

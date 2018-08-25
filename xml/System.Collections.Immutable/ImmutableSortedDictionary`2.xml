@@ -1571,7 +1571,7 @@
       <MemberSignature Language="F#" Value="abstract member TryGetKey : 'Key *  -&gt; bool&#xA;override this.TryGetKey : 'Key *  -&gt; bool" Usage="immutableSortedDictionary.TryGetKey (equalKey, actualKey)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Immutable.IImmutableDictionary`2.TryGetKey(`0,`0)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Immutable.IImmutableDictionary`2.TryGetKey(`0,`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1618,8 +1618,8 @@
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="immutableSortedDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
-        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1665,36 +1665,6 @@
       <Docs>
         <summary>Gets the value comparer used to determine whether values are equal.</summary>
         <value>The value comparer used to determine whether values are equal.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValueRef">
-      <MemberSignature Language="C#" Value="public TValue&amp; ValueRef (TKey key);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance TValue&amp; modreq(System.Runtime.InteropServices.InAttribute) ValueRef(!TKey key) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ValueRef(`0)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
-      <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; TValue&amp;" Usage="immutableSortedDictionary.ValueRef key" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Immutable</AssemblyName>
-        <AssemblyVersion>1.2.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue RefType="Readonly">
-        <ReturnType>TValue</ReturnType>
-        <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
-          </Attribute>
-        </Attributes>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="key" Type="TKey" />
-      </Parameters>
-      <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

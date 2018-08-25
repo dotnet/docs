@@ -64,7 +64,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="soapServerVRoot.CreateVirtualRootEx (rootWebServer, inBaseUrl, inVirtualRoot, homePage, discoFile, secureSockets, authentication, operation, baseUrl, virtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -165,7 +165,7 @@
       <MemberSignature Language="F#" Value="abstract member GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit&#xA;override this.GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit" Usage="soapServerVRoot.GetVirtualRootStatus (RootWebServer, inBaseUrl, inVirtualRoot, Exists, SSL, WindowsAuth, Anonymous, HomePage, DiscoFile, PhysicalPath, BaseUrl, VirtualRoot)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

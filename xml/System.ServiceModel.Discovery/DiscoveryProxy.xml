@@ -180,7 +180,7 @@
       <MemberSignature Language="F#" Value="abstract member EndShouldRedirectFind : IAsyncResult *  -&gt; bool&#xA;override this.EndShouldRedirectFind : IAsyncResult *  -&gt; bool" Usage="discoveryProxy.EndShouldRedirectFind (result, redirectionEndpoints)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata})</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -218,7 +218,7 @@
       <MemberSignature Language="F#" Value="abstract member EndShouldRedirectResolve : IAsyncResult *  -&gt; bool&#xA;override this.EndShouldRedirectResolve : IAsyncResult *  -&gt; bool" Usage="discoveryProxy.EndShouldRedirectResolve (result, redirectionEndpoints)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata})</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Discovery.IMulticastSuppressionImplementation.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

@@ -2287,7 +2287,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Forms.IMessageFilter.PreFilterMessage(System::Windows::Forms::Message % m) = System::Windows::Forms::IMessageFilter::PreFilterMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message)</InterfaceMember>
+        <InterfaceMember>M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -388,7 +388,7 @@
       <MemberSignature Language="F#" Value="abstract member GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit&#xA;override this.GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit" Usage="delegatingConfigHost.GetRestrictedPermissions (configRecord, permissionSet, isHostReady)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet,System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -635,7 +635,7 @@
       <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit&#xA;override this.InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="delegatingConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String,System.String,System.String,System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1123,7 +1123,7 @@
       <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1161,7 +1161,7 @@
       <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream&#xA;override this.OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream" Usage="delegatingConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object,System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

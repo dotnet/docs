@@ -15,6 +15,11 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class exception is thrown when an Active Directory Domain Services object is created and that object already exists in the underlying directory store.</summary>
     <remarks>To be added.</remarks>

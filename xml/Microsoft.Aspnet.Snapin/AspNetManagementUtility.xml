@@ -62,7 +62,7 @@
       <MemberSignature Language="F#" Value="abstract member AcquireVersionList :  * int -&gt; unit&#xA;override this.AcquireVersionList :  * int -&gt; unit" Usage="aspNetManagementUtility.AcquireVersionList (versionList, versionFirst)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.AcquireVersionList(System.String,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.AcquireVersionList(System.String@,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>
@@ -122,7 +122,7 @@
       <MemberSignature Language="F#" Value="abstract member DisplayAspNetConfigSettings : string * string * string * string * string * int *  -&gt; unit&#xA;override this.DisplayAspNetConfigSettings : string * string * string * string * string * int *  -&gt; unit" Usage="aspNetManagementUtility.DisplayAspNetConfigSettings (machineName, site, virtualDirectory, siteName, location, processID, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.DisplayAspNetConfigSettings(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.DisplayAspNetConfigSettings(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>
@@ -183,7 +183,7 @@
       <MemberSignature Language="F#" Value="abstract member IsRemoteConfigured :  -&gt; unit&#xA;override this.IsRemoteConfigured :  -&gt; unit" Usage="aspNetManagementUtility.IsRemoteConfigured isRemoteConfigured" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.IsRemoteConfigured(System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.IsRemoteConfigured(System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>
@@ -241,7 +241,7 @@
       <MemberSignature Language="F#" Value="abstract member PathIsDirectory : string *  -&gt; unit&#xA;override this.PathIsDirectory : string *  -&gt; unit" Usage="aspNetManagementUtility.PathIsDirectory (filename, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.PathIsDirectory(System.String,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.PathIsDirectory(System.String,System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>
@@ -270,7 +270,7 @@
       <MemberSignature Language="F#" Value="abstract member ReadFileDates : string *  *  *  -&gt; unit&#xA;override this.ReadFileDates : string *  *  *  -&gt; unit" Usage="aspNetManagementUtility.ReadFileDates (filename, creationDate, modifiedDate, lastAccessDate)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.ReadFileDates(System.String,System.String,System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.ReadFileDates(System.String,System.String@,System.String@,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>
@@ -303,7 +303,7 @@
       <MemberSignature Language="F#" Value="abstract member RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit&#xA;override this.RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit" Usage="aspNetManagementUtility.RegisterAsnetMmcAssembly (doReg, typeName, binaryDirectory, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Aspnet.Snapin.IAspNetManagementUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>AspNetMMCExt</AssemblyName>

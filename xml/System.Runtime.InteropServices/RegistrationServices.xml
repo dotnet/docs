@@ -262,7 +262,7 @@
       <MemberSignature Language="F#" Value="abstract member RegisterTypeForComClients : Type *  -&gt; unit&#xA;override this.RegisterTypeForComClients : Type *  -&gt; unit" Usage="registrationServices.RegisterTypeForComClients (type, g)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.IRegistrationServices.RegisterTypeForComClients(System.Type,System.Guid)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.IRegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

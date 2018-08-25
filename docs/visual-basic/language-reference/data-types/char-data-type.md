@@ -57,7 +57,7 @@ charVar = "Z"C
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
  <xref:Microsoft.VisualBasic.Strings.Chr%2A>  
  <xref:Microsoft.VisualBasic.Strings.ChrW%2A>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  

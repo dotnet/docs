@@ -40,7 +40,7 @@
 
             public Employee()  // constructor
             {
-                counter = ++counter + numberOfEmployees;
+                counter = ++numberOfEmployees;
             }
         }
 

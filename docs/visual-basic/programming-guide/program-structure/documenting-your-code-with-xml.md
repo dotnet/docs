@@ -32,7 +32,7 @@ In Visual Basic, you can document your code using XML
   
 -   [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)  
   
--   [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)  
+-   [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)  
   
 -   [Processing the XML File](../../../visual-basic/programming-guide/program-structure/processing-the-xml-file.md)  
   

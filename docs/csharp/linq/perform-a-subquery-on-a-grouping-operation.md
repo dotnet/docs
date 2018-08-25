@@ -21,4 +21,4 @@ For more information about continuations, see [into](../language-reference/keywo
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)
+- [Language Integrated Query (LINQ)](index.md)

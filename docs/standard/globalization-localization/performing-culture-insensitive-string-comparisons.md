@@ -1,6 +1,6 @@
 ---
 title: "Performing Culture-Insensitive String Comparisons"
-ms.date: "03/30/2017"
+ms.date: "08/22/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -32,9 +32,12 @@ By default, the <xref:System.String.Compare%2A?displayProperty=nameWithType> met
   
  [!code-csharp[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/cs/cultureinsensitive1.cs#1)]
  [!code-vb[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/vb/cultureinsensitive1.vb#1)]  
-  
-## See Also  
- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)
+
+You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+
+## See also
+
+- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
+- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
+- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

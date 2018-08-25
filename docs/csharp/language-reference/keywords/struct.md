@@ -35,14 +35,15 @@ public struct Book
 ## C# Language Specification  
  For examples, see [Using Structs](../../../csharp/programming-guide/classes-and-structs/using-structs.md).  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
- [class](../../../csharp/language-reference/keywords/class.md)  
- [interface](../../../csharp/language-reference/keywords/interface.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+- [class](../../../csharp/language-reference/keywords/class.md)  
+- [interface](../../../csharp/language-reference/keywords/interface.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

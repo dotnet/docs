@@ -49,5 +49,5 @@ For more information about join operations that use multiple `from` clauses, see
 
 ## See also
 
-[Query Keywords (LINQ)](query-keywords.md)  
-[Language Integrated Query (LINQ)](../../linq/index.md)  
+- [Query Keywords (LINQ)](query-keywords.md)  
+- [Language Integrated Query (LINQ)](../../linq/index.md)  

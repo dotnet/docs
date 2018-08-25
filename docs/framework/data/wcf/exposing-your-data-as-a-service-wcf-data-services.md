@@ -7,11 +7,11 @@ helpviewer_keywords:
   - "WCF Data Services, getting started"
 ms.assetid: df0bbcee-f66f-4a88-abb4-4e73c8b9c908
 ---
-# Exposing Your Data as a Service (WCF Data Services)
+# Expose Your Data as a Service (WCF Data Services)
 
 WCF Data Services integrates with Visual Studio to enable you to more easily define services to expose your data as [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. Creating a data service that exposes an OData feed involves the following basic steps:
 
-1.  **Define** **the data model**. WCF Data Services natively supports data models that are based on the [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md). For more information, see [How to: Create a Data Service Using an ADO.NET Entity Framework Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md).
+1.  **Define the data model.** WCF Data Services natively supports data models that are based on the [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md). For more information, see [How to: Create a Data Service Using an ADO.NET Entity Framework Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md).
 
      WCF Data Services also supports data models that are based on common language runtime (CLR) objects that return an instance of the <xref:System.Linq.IQueryable%601> interface. This enables you to deploy data services that are based on lists, arrays, and collections in the .NET Framework. To enable create, update, and delete operations over these data structures, you must also implement the <xref:System.Data.Services.IUpdatable> interface. For more information, see [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md).
 

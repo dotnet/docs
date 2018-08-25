@@ -19,7 +19,7 @@ Represents the boolean value false.
 
 ## See also
 
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[C# Keywords](index.md)  
-[true](true.md)  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [true](true.md)  

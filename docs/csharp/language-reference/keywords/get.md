@@ -28,8 +28,9 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

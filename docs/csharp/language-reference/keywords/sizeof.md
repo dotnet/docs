@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
 ---
 # sizeof (C# Reference)
-Used to obtain the size in bytes for an unmanaged type. Unmanaged types include the built-in types that are listed in the table that follows, and also the following:  
+Used to obtain the size in bytes for an unmanaged type. Unmanaged types include the simple types that are listed in the table that follows, and also the following:  
   
 -   Enum types  
   
@@ -25,9 +25,9 @@ int intSize = sizeof(int);
 ```  
   
 ## Remarks  
- Starting with version 2.0 of C#, applying `sizeof` to built-in types no longer requires that [unsafe](../../../csharp/language-reference/keywords/unsafe.md) mode be used.  
+ Starting with version 2.0 of C#, applying `sizeof` to simple or enum types no longer requires that [unsafe](../../../csharp/language-reference/keywords/unsafe.md) mode be used.  
   
- The `sizeof` operator cannot be overloaded. The values returned by the `sizeof` operator are of type `int`. The following table shows the constant values that are substituted for `sizeof` expressions that have certain built-in types as operands.  
+ The `sizeof` operator cannot be overloaded. The values returned by the `sizeof` operator are of type `int`. The following table shows the constant values that are substituted for `sizeof` expressions that have certain simple types as operands.  
   
 |Expression|Constant value|  
 |----------------|--------------------|  

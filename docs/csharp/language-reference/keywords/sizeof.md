@@ -53,12 +53,13 @@ int intSize = sizeof(int);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)  
- [enum](../../../csharp/language-reference/keywords/enum.md)  
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
- [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)  
+- [enum](../../../csharp/language-reference/keywords/enum.md)  
+- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)

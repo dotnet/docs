@@ -24,8 +24,8 @@ In this example, a counter is initialized to count from 1 to 10. By using the `c
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[break Statement](/cpp/cpp/break-statement-cpp)  
-[Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [break Statement](/cpp/cpp/break-statement-cpp)  
+- [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

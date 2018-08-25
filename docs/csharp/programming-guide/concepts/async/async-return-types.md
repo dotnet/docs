@@ -56,7 +56,7 @@ The caller of a void-returning async method can't catch exceptions that are thro
   
 For more information about how to catch exceptions in async methods, see the [Exceptions in Async Methods](../../../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../../../language-reference/keywords/try-catch.md) topic.  
   
-The following eample defines an async event handler.  
+The following example shows how an async event handler is treated. Note that in the example code an async event handler must let the main thread know when it finishes. Then, the main thread can wait for an async event handler to complete before exiting the program.
  
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns3.cs)]  
  

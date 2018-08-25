@@ -17,9 +17,8 @@ The namespace alias qualifier (`::`) is used to look up identifiers. It is alway
 The `::` operator can also be used with a *using alias directive*:
 
 ```csharp
-// using alias=System;
-alias::Console.WriteLine("Hello World");
-alias.Console.WriteLine("Hello World"); // This is valid too.
+// using Col=System.Collections.Generic;
+var numbers = new Col::List<int> { 1, 2, 3 };
 ```
 
 ## Remarks  

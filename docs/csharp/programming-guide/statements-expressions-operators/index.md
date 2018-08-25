@@ -15,27 +15,25 @@ The C# code that comprises an application consists of statements made up of keyw
   
  For more information, see:  
   
--   [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
+-   [Statements](statements.md)  
   
--   [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
+-   [Expressions](expressions.md)  
   
     -   [Expression-bodied members](expression-bodied-members.md)
  
--   [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+-   [Operators](operators.md)  
   
--   [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)  
+-   [Anonymous Functions](anonymous-functions.md)  
   
--   [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)  
+-   [Overloadable Operators](overloadable-operators.md)  
   
--   [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+-   [Conversion Operators](conversion-operators.md)  
   
-    -   [Using Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md)  
+    -   [Using Conversion Operators](using-conversion-operators.md)  
   
-    -   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
+    -   [How to: Implement User-Defined Conversions Between Structs](how-to-implement-user-defined-conversions-between-structs.md)  
   
--   [How to: Use Operator Overloading to Create a Complex Number Class](../../../csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md)  
-  
--   [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
+-   [Equality Comparisons](equality-comparisons.md)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

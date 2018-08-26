@@ -15,7 +15,7 @@ Used to obtain the size in bytes for an unmanaged type. Unmanaged types include 
   
 -   Pointer types  
   
--   User-defined structs that do not contain any fields or auto-implemented properties that are reference types  
+-   User-defined structs that do not contain any instance fields or instance auto-implemented properties that are reference types  
   
  The following example shows how to retrieve the size of an `int`:  
   

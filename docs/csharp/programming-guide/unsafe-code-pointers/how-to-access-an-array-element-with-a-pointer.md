@@ -8,8 +8,8 @@ ms.assetid: 6c46f2af-a730-4855-8638-f136d9abaa12
 # How to: Access an Array Element with a Pointer (C# Programming Guide)
 In an unsafe context, you can access an element in memory by using pointer element access, as shown in the following example:  
   
-```  
- char* charPointer = stackalloc char[123];  
+```csharp  
+char* charPointer = stackalloc char[123];  
 for (int i = 65; i < 123; i++)  
 {  
     charPointer[i] = (char)i; //access array elements  

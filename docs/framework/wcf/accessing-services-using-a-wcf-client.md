@@ -50,7 +50,7 @@ Svcutil.exe <file1 [,file2]>
 
 ## Add Service Reference in Visual Studio
 
- With the service running, right click the project that will contain the WCF client proxy and select **Add** > **Service Reference**. In the **Add Service Reference Dialog** type in the URL to the service you want to call and click the **Go** button. The dialog will display a list of services available at the address you specify. Double click the service to see the contracts and operations available, specify a namespace for the generated code and click the **OK** button.
+ With the service running, right click the project that will contain the WCF client proxy and select **Add** > **Service Reference**. In the **Add Service Reference Dialog**, type in the URL to the service you want to call and click the **Go** button. The dialog will display a list of services available at the address you specify. Double click the service to see the contracts and operations available, specify a namespace for the generated code, and click the **OK** button.
 
 ## Example
  The following code example shows a service contract created for a service.

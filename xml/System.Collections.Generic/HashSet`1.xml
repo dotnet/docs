@@ -79,7 +79,7 @@
   
  <xref:System.Collections.Generic.HashSet%601> provides many mathematical set operations, such as set addition (unions) and set subtraction. The following table lists the provided <xref:System.Collections.Generic.HashSet%601> operations and their mathematical equivalents.  
   
-|HashSet(Of T) operation|Mathematical equivalent|  
+|HashSet operation|Mathematical equivalent|  
 |-------------------------------|-----------------------------|  
 |<xref:System.Collections.Generic.HashSet%601.UnionWith%2A>|Union or set addition|  
 |<xref:System.Collections.Generic.HashSet%601.IntersectWith%2A>|Intersection|  
@@ -101,7 +101,7 @@
   
  The following table shows the <xref:System.Collections.Generic.HashSet%601> operations and their equivalent LINQ set operations.  
   
-|HashSet(Of T) operation|LINQ equivalent|  
+|HashSet operation|LINQ equivalent|  
 |-------------------------------|---------------------|  
 |<xref:System.Collections.Generic.HashSet%601.UnionWith%2A>|<xref:System.Linq.Enumerable.Union%2A>|  
 |<xref:System.Collections.Generic.HashSet%601.IntersectWith%2A>|<xref:System.Linq.Enumerable.Intersect%2A>|  

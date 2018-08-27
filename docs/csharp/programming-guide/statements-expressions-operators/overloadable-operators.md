@@ -24,7 +24,7 @@ C# allows user-defined types to overload operators by defining static member fun
 > [!NOTE]
 > The comparison operators, if overloaded, must be overloaded in pairs; that is, if `==` is overloaded, `!=` must also be overloaded. The reverse is also true, where overloading `!=` requires an overload for `==`. The same is true for comparison operators `<` and `>` and for `<=` and `>=`.
 
-For the information about how to overload an operator, see the [operator](../../language-reference/keywords/operator.md) keyword article.
+For information about how to overload an operator, see the [operator](../../language-reference/keywords/operator.md) keyword article.
 
 ## See also
 

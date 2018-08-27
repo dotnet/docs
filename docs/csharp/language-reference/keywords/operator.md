@@ -19,9 +19,9 @@ To overload an operator on a custom class or struct, you create an operator decl
 - It includes `operator X` where `X` is the name or symbol of the operator being overloaded.
 - Unary operators have one parameter, and binary operators have two parameters. In each case, at least one parameter must be the same type as the class or struct that declares the operator.
 
-For the information about how to define conversion operators, see the [explicit](explicit.md) and [implicit](implicit.md) keyword articles.
+For information about how to define conversion operators, see the [explicit](explicit.md) and [implicit](implicit.md) keyword articles.
 
-For the overview of the C# operators that can be overloaded, see the [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md) article.
+For an overview of the C# operators that can be overloaded, see the [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md) article.
 
 ## Example
 

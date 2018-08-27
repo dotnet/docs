@@ -38,15 +38,7 @@ namespace Prime.Services
 
 Change the directory back to the *unit-testing-using-nunit* directory. Run [`dotnet sln add PrimeService/PrimeService.csproj`](../tools/dotnet-sln.md) to add the class library project to the solution.
 
-## Install the NUnit project template
-
-The NUnit test project templates need to be installed before creating a test project. This only needs to be done once on each developer machine where you'll create new NUnit projects. Run [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md) to install the NUnit templates.
-
-```
-dotnet new -i NUnit3.DotNetNew.Template
-```
-
-### Creating the test project
+## Creating the test project
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
@@ -59,13 +51,13 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new nunit`](../tools/dotnet-new.md). The dotnet new command creates a test project that uses NUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new nunit`](../tools/dotnet-new.md). The dotnet new command creates a test project that uses NUnit as the test library. The generated template configures the test runner in the *PrimeService.Tests.csproj* file:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-  <PackageReference Include="NUnit" Version="3.9.0" />
-  <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
+  <PackageReference Include="NUnit" Version="3.10.1" />
+  <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
 </ItemGroup>
 ```
 
@@ -87,7 +79,7 @@ The following outline shows the final solution layout:
         PrimeService.csproj
     /PrimeService.Tests
         Test Source Files
-        PrimeServiceTests.csproj
+        PrimeService.Tests.csproj
 ```
 
 Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-dotnet-test* directory.

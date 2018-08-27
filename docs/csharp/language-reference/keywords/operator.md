@@ -40,4 +40,5 @@ The following example defines a `Fraction` type that represents fractional numbe
 - [C# Keywords](index.md)
 - [implicit](implicit.md)
 - [explicit](explicit.md)
+- [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
 - [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

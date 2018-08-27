@@ -201,11 +201,11 @@ C# provides many operators, which are symbols that specify which operations (mat
 -   Floating-point arithmetic overflow or division by zero never throws an exception, because floating-point types are based on IEEE 754 and so have provisions for representing infinity and NaN (Not a Number).  
   
 -   [Decimal](../../../csharp/language-reference/keywords/decimal.md) arithmetic overflow always throws an <xref:System.OverflowException>. Decimal division by zero always throws a <xref:System.DivideByZeroException>.  
-  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C#](../../../csharp/index.md)
- [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C#](../../../csharp/index.md)
+- [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)

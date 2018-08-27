@@ -168,7 +168,7 @@ You can put comments after implicit line continuations, inside initializer expre
  [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)  
  For more readability of your code, you can now use `TypeOf` with `IsNot`.  
   
- [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/directives.md)  
+ [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/index.md)  
  You can disable and enable specific warnings for regions within a source file.  
   
  **XML doc comment improvements**  

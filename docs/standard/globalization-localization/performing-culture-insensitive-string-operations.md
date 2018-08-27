@@ -1,6 +1,6 @@
 ---
 title: "Performing Culture-Insensitive String Operations"
-ms.date: "03/30/2017"
+ms.date: "08/22/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "case mappings"
@@ -14,12 +14,12 @@ ms.assetid: 579ef891-1f83-4c63-9ebd-2f40406b5b91
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Performing Culture-Insensitive String Operations
+# Performing culture-insensitive string operations
 Most .NET Framework methods that perform culture-sensitive string operations by default provide method overloads that allow you to explicitly specify the culture to use by passing a <xref:System.Globalization.CultureInfo> parameter. These overloads allow you to eliminate cultural variations in case mappings and sorting rules and guarantee culture-insensitive results.  
   
  This section provides the following topics to demonstrate how to perform culture-insensitive string operations using .NET Framework methods that are culture-sensitive by default.  
   
-## In This Section  
+## In this section  
  [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md)  
  Describes how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to perform culture-insensitive string comparisons.  
   
@@ -32,6 +32,10 @@ Most .NET Framework methods that perform culture-sensitive string operations by 
  [Performing Culture-Insensitive String Operations in Arrays](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md)  
  Describes how to use the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> methods to perform culture-insensitive operations in arrays.  
   
-## Related Sections  
+## Related sections  
  [Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/culture-insensitive-string-operations.md)  
  Describes why you should be aware of culture when performing operations on strings and provides guidelines for when to perform culture-sensitive operations and when to perform culture-insensitive operations.
+
+## See also
+
+- [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921)

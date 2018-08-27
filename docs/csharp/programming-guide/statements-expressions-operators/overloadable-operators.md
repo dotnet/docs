@@ -40,7 +40,7 @@ public static Complex operator +(Complex c1, Complex c2) =>
         new Complex(c1.real + c2.real, c1.imaginary + c2.imaginary);
   
 // Override ToString() to display a complex number in the traditional format:
-public override string ToString() => $"{this.real} + {this.imaginary}";
+public override string ToString() => $"{this.real} + {this.imaginary}i";
 ```
 
 For more information, see [How to: Use Operator Overloading to Create a Complex Number Class](../../../csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md).

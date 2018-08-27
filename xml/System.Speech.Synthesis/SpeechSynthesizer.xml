@@ -2228,7 +2228,7 @@ namespace SampleSynthesis
       str += "<say-as type=\"date:mdy\"> 1/29/2009 </say-as>";  
       str += "</speak>";  
   
-      // Speak the contents of the prompt asynchronously.  
+      // Speak the contents of the prompt synchronously.
       synth.SpeakSsml(str);  
   
       Console.WriteLine("Press any key to exit...");  
@@ -2298,7 +2298,7 @@ namespace SampleSynthesis
   
 ## Examples  
   
-```  
+```csharp  
 using System;  
 using System.Speech.Synthesis;  
   

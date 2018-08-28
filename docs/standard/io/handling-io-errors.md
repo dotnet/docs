@@ -27,7 +27,9 @@ The method in turn translates `ERROR_FILE_NOT_FOUND` to a <xref:System.IO.FileNo
 
 Because of this reliance on the operating system, identical exception conditions (such as the directory not found error in our example) can result in an I/O method throwing one of a class of exceptions. In this case, exception handling code should be prepared to handle each exception in the class. This applies particularly to <xref:System.IO.DirectoryNotFoundException> and <xref:System.IO.FileNotFoundException>.
 
-For example, the following `GetTextContents` method returns a block of memory that contains the contents of a text file. 
+For example, the following `IOLibrary.CountSubdirectories` method returns the number of subdirectories in a particular directory. Note that even though the method works with a directory, it handles both a <xref:System.IO.DirectoryNotFoundException> and a <xref:System.IO.FileNotFoundException>, since the runtime can throw either exception if a directory does not exist.
+
+
 
 
 

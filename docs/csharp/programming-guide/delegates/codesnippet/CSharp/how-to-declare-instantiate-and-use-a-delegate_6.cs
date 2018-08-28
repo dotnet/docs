@@ -73,7 +73,7 @@
             }
 
             // Class to test the book database:
-            class TestBookDB
+            class Test
             {
                 // Print the title of the book.
                 static void PrintTitle(Book b)
@@ -93,7 +93,7 @@
                     System.Console.WriteLine("Paperback Book Titles:");
 
                     // Create a new delegate object associated with the static 
-                    // method TestBookDB.PrintTitle:
+                    // method Test.PrintTitle:
                     bookDB.ProcessPaperbackBooks(PrintTitle);
 
                     // Get the average price of a paperback by using

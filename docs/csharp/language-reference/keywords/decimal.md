@@ -90,12 +90,12 @@ In this example, the output is formatted by using the currency format string. No
 
 ## See also
 
-<xref:System.Decimal>  
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
-[Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-[Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
+- <xref:System.Decimal>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

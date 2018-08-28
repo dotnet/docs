@@ -84,13 +84,13 @@ After a release goes out, the release branches generally stop producing daily bu
 
 ## Relationship to .NET Standard versions
 
-.NET Standard consists of a .NET reference assembly. There are multiple implementations specific to each platform. The reference assembly contains the definition of .NET all the versions of .NET Standard. Each implementation fulfills the .NET Standard contract on the specific platform. .NET Standard usually refers to the reference library. You can learn more about .NET Standard in the article on [.NET Standard](../../standard/net-standard.md) in the .NET Guide.
+.NET Standard consists of a .NET reference assembly. There are multiple implementations specific to each platform. The reference assembly contains the definition of .NET APIs which are part of a given .NET Standard version. Each implementation fulfills the .NET Standard contract on the specific platform. You can learn more about .NET Standard in the article on [.NET Standard](../../standard/net-standard.md) in the .NET Guide.
 
-The .NET Standard reference implementation uses a `MAJOR.MINOR` versioning scheme. `PATCH` level isn't useful for .NET Standard because if exposes only an API (no implementation) and by definition any change to the API would represent a change in the feature set, and thus a new `MINOR` version.
+The .NET Standard reference assembly uses a `MAJOR.MINOR` versioning scheme. `PATCH` level isn't useful for .NET Standard because it exposes only an API specification (no implementation) and by definition any change to the API would represent a change in the feature set, and thus a new `MINOR` version.
 
-The implementations on each runtime may be updated, typically as part of the runtime release, and thus not evident to the programmers using .NET Standard on that platform.
+The implementations on each platform may be updated, typically as part of the platform release, and thus not evident to the programmers using .NET Standard on that platform.
 
-Each version of .NET Core implements a version of .NET standard. Implementing a version of .NET Standard implies support for previous versions of .NET Standard. .NET Standard and .NET Core version independently. It's a coincidence that .NET Core 2.0 implements .NET Standard 2.0. .NET Core 2.1 also implements .NET Standard 2.0. .NET Core will support future versions of .NET Standard as they become available.
+Each version of .NET Core implements a version of .NET Standard. Implementing a version of .NET Standard implies support for previous versions of .NET Standard. .NET Standard and .NET Core version independently. It's a coincidence that .NET Core 2.0 implements .NET Standard 2.0. .NET Core 2.1 also implements .NET Standard 2.0. .NET Core will support future versions of .NET Standard as they become available.
 
 | .NET Core | .NET Standard |
 |-----------|---------------|

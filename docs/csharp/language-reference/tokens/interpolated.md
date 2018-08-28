@@ -82,12 +82,13 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 If you are new to string interpolation, see the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
 
-## See also  
- <xref:System.String.Format%2A?displayProperty=nameWithType>  
- <xref:System.FormattableString?displayProperty=nameWithType>  
- <xref:System.IFormattable?displayProperty=nameWithType>  
- [Composite formatting](../../../standard/base-types/composite-formatting.md)  
- [Strings](../../programming-guide/strings/index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Special Characters](index.md)  
- [C# Reference](../index.md)  
+## See also
+
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- [Composite formatting](../../../standard/base-types/composite-formatting.md)
+- [Strings](../../programming-guide/strings/index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Special Characters](index.md)
+- [C# Reference](../index.md)

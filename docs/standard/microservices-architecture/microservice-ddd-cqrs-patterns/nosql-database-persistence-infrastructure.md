@@ -216,7 +216,7 @@ public class Locations
 
 You can see there are a few attributes and types coming from the MongoDB NuGet packages.
 
-NoSQL databases are usually very well suited for working with non-relational hierarchical data. In this example, we are using MongoDB types expecially made for geo-locations, like `GeoJson2DGeographicCoordinates`.
+NoSQL databases are usually very well suited for working with non-relational hierarchical data. In this example, we are using MongoDB types especially made for geo-locations, like `GeoJson2DGeographicCoordinates`.
 
 #### Retrieve the database and the collection
 

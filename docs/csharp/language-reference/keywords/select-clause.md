@@ -28,11 +28,12 @@ In a query expression, the `select` clause specifies the type of values that wil
 ## Remarks  
  At compile time, the `select` clause is translated to a method call to the <xref:System.Linq.Enumerable.Select%2A> standard query operator.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
- [from clause](../../../csharp/language-reference/keywords/from-clause.md)  
- [partial (Method) (C# Reference)](../../../csharp/language-reference/keywords/partial-method.md)  
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+- [from clause](../../../csharp/language-reference/keywords/from-clause.md)  
+- [partial (Method) (C# Reference)](../../../csharp/language-reference/keywords/partial-method.md)  
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

@@ -64,5 +64,5 @@ In some cases, you don't know until run time how many predicates you have to app
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)  
-[where clause](../language-reference/keywords/where-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [where clause](../language-reference/keywords/where-clause.md)

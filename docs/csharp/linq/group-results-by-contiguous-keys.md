@@ -45,4 +45,4 @@ To use the extension method in your project, copy the `MyExtensions` static clas
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)
+- [Language Integrated Query (LINQ)](index.md)

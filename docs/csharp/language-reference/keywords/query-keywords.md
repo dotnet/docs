@@ -28,8 +28,9 @@ This section contains the contextual keywords used in query expressions.
 |[ascending](../../../csharp/language-reference/keywords/ascending.md)|Contextual keyword in an [orderby](../../../csharp/language-reference/keywords/orderby-clause.md) clause.|  
 |[descending](../../../csharp/language-reference/keywords/descending.md)|Contextual keyword in an [orderby](../../../csharp/language-reference/keywords/orderby-clause.md) clause.|  
   
-## See Also  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## See Also
+
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

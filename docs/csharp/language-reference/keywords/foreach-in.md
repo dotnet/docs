@@ -1,16 +1,16 @@
 ---
-title: "foreach, in (C# Reference)"
+title: C# foreach statement
 ms.date: 06/29/2018
-f1_keywords: 
+f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "foreach keyword [C#]"
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
 ---
-# foreach, in (C# Reference)
+# foreach, in (C# reference)
 
 The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is not limited to those types and can be applied to an instance of any type that satisfies the following conditions:
 
@@ -41,10 +41,10 @@ Beginning with C# 7.3, if the enumerator's `Current` property returns a [referen
 
 ## See also
 
-[The foreach statement (C# language specification)](../language-specification/index.md)  
-[Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
-[for](for.md)  
-[Iteration Statements](iteration-statements.md)  
-[C# Keywords](index.md)  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
+- [The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)
+- [Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
+- [for](for.md)
+- [Iteration Statements](iteration-statements.md)
+- [C# Keywords](index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)

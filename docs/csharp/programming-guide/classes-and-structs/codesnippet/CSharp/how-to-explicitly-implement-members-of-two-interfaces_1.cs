@@ -19,33 +19,21 @@
         float lengthInches;
         float widthInches;
 
-        public Box(float length, float width)
+        public Box(float lengthInches, float widthInches)
         {
-            lengthInches = length;
-            widthInches = width;
+            this.lengthInches = lengthInches;
+            this.widthInches = widthInches;
         }
 
         // Explicitly implement the members of IEnglishDimensions:
-        float IEnglishDimensions.Length()
-        {
-            return lengthInches;
-        }
+        float IEnglishDimensions.Length() => lengthInches;
 
-        float IEnglishDimensions.Width()
-        {
-            return widthInches;
-        }
+        float IEnglishDimensions.Width() => widthInches;
 
         // Explicitly implement the members of IMetricDimensions:
-        float IMetricDimensions.Length()
-        {
-            return lengthInches * 2.54f;
-        }
+        float IMetricDimensions.Length() => lengthInches * 2.54f;
 
-        float IMetricDimensions.Width()
-        {
-            return widthInches * 2.54f;
-        }
+        float IMetricDimensions.Width() => widthInches * 2.54f;
 
         static void Main()
         {
@@ -53,10 +41,10 @@
             Box box1 = new Box(30.0f, 20.0f);
 
             // Declare an instance of the English units interface:
-            IEnglishDimensions eDimensions = (IEnglishDimensions)box1;
+            IEnglishDimensions eDimensions = box1;
 
             // Declare an instance of the metric units interface:
-            IMetricDimensions mDimensions = (IMetricDimensions)box1;
+            IMetricDimensions mDimensions = box1;
 
             // Print dimensions in English units:
             System.Console.WriteLine("Length(in): {0}", eDimensions.Length());

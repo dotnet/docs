@@ -39,11 +39,11 @@ The delegate must be instantiated with a method or lambda expression that has a 
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
-[Delegates](../../../csharp/programming-guide/delegates/index.md)  
-[Events](../../../csharp/programming-guide/events/index.md)  
-[Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
-[Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
+- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)

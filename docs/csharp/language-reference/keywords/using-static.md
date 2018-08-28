@@ -47,9 +47,9 @@ In the example, the `using static` directive could also have been applied to the
 
 ## See also
 
-[using directive](using-directive.md)   
-[C# Reference](../../../csharp/language-reference/index.md)   
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)   
-[Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)   
-[Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
-[Namespaces](../../../csharp/programming-guide/namespaces/index.md)   
+- [using directive](using-directive.md)
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)

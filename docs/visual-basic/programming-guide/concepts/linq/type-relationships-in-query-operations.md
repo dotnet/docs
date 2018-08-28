@@ -117,4 +117,4 @@ Next
  [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)

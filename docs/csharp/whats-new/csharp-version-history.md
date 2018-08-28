@@ -30,6 +30,10 @@ The major features of C# 1.0 included:
 - [Attributes](../programming-guide/concepts/attributes/index.md)
 - Literals
 
+## C# version 1.2
+
+C# version 1.2 shipped with Visual Studio 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
+
 ## C# version 2.0
 
 Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
@@ -100,7 +104,11 @@ Dynamic binding gives you the potential for errors but also great power within t
 C# version 5.0 was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming .  Here is the major features list:
 
 - [Asynchronous members](../async.md)
-- [Caller info attributes](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
+- [Caller info attributes](../programming-guide/concepts/caller-information.md)
+
+### See Also
+
+* [Code Project: Caller Info Attributes in C# 5.0](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 The caller info attribute lets you easily retrieve information about the context in which you're running without resorting to a ton of boilerplate reflection code. It has many uses in diagnostics and logging tasks.
 

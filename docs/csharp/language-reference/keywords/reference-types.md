@@ -28,9 +28,10 @@ There are two kinds of types in C#: reference types and value types. Variables o
   
 -   [string](../../../csharp/language-reference/keywords/string.md)  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [Value Types](../../../csharp/language-reference/keywords/value-types.md)

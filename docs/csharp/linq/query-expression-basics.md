@@ -168,7 +168,7 @@ For more information, see [How to: perform a subquery on a grouping operation](p
 
 ## See also
 
-[C# programming guide](../programming-guide/index.md)  
-[Language Integrated Query (LINQ)](index.md)  
-[Query keywords (LINQ)](../language-reference/keywords/query-keywords.md)  
-[Standard query operators overview](../programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- [C# programming guide](../programming-guide/index.md)  
+- [Language Integrated Query (LINQ)](index.md)  
+- [Query keywords (LINQ)](../language-reference/keywords/query-keywords.md)  
+- [Standard query operators overview](../programming-guide/concepts/linq/standard-query-operators-overview.md)  

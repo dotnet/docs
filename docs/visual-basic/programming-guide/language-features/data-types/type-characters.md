@@ -144,4 +144,4 @@ Dim number As Integer = &H_C305_F860
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)

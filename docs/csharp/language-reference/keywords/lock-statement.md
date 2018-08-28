@@ -13,7 +13,7 @@ ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 
 The `lock` statement obtains the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock.
 
-The `lock` statement of the form
+The `lock` statement is of the form
 
 ```csharp
 lock (x)
@@ -22,7 +22,7 @@ lock (x)
 }
 ```
 
-where `x` is an expression of a [reference type](reference-types.md) is precisely equivalent to
+where `x` is an expression of a [reference type](reference-types.md). It's precisely equivalent to
 
 ```csharp
 bool __lockWasTaken = false;
@@ -53,13 +53,13 @@ Avoid locking on publicly accessible instances, as it might result in lock conte
 
 - `lock(typeof(MyType))` is a problem if `MyType` is publicly accessible.
 
-- `lock("myLock")` is a problem because any other code in the process using the same string, would share the same lock.
+- `lock("myLock")` is a problem because any other code in the process using the same string shares the same lock.
 
-Instead, lock on a privately accessible object that uniquely identifies the shared resource, when you synchronize thread access to that resource.
+Instead, lock on a privately accessible object that uniquely identifies the shared resource when you synchronize thread access to that resource.
 
 ## Example
 
-The following example defines an `Account` class that synchronizes access to its private `balance` field by locking on a dedicated `balanceLock` instance. Using the same instance for locking ensures that the `balance` field cannot be updated simultaneously by both the `Debit` and `Credit` methods.
+The following example defines an `Account` class that synchronizes access to its private `balance` field by locking on a dedicated `balanceLock` instance. Using the same instance for locking ensures that the `balance` field cannot be updated simultaneously by two threads attempting to call the `Debit` or `Credit` methods simultaneously.
 
 [!code-csharp[lock-statement-example](~/samples/snippets/csharp/keywords/LockStatementExample.cs)]
 

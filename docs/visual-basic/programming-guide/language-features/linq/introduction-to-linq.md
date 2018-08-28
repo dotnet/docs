@@ -186,7 +186,7 @@ You can use additional LINQ query features by calling members of the enumerable 
   
  [!code-vb[VbVbalrIntroToLINQ#22](codesnippet/VisualBasic/introduction-to-linq_23.vb)]  
   
- For details about additional LINQ capabilities, see [Standard Query Operators Overview](standard-query-operators-overview.md).  
+ For details about additional LINQ capabilities, see [Standard Query Operators Overview](../../concepts/linq/standard-query-operators-overview.md).  
   
 ##  <a name="ConnectingToADatabase"></a> Connect to a database by using LINQ to SQL  
  In Visual Basic, you identify the SQL Server database objects, such as tables, views, and stored procedures, that you want to access by using a LINQ to SQL file. A LINQ to SQL file has an extension of .dbml.  
@@ -224,7 +224,7 @@ You can use additional LINQ query features by calling members of the enumerable 
   
  [!code-vb[VbXmlSamples#8](../../../language-reference/operators/codesnippet/VisualBasic/introduction-to-linq_24.vb)]  
   
- For more information, see [XML](../../../programming-guide/language-features/xml/index.md).  
+ For more information, see [XML](../xml/index.md).  
   
 ##  <a name="RelatedResources"></a> Related resources  
   

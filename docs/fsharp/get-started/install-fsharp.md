@@ -28,7 +28,7 @@ You must have [git installed](https://git-scm.com/download) and available on you
 
 ### [macOS](#tab/macos)
 
-[Mono](http://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
+[Mono](http://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
 ```console
 brew install mono
@@ -38,7 +38,7 @@ Also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
 ### [Linux](#tab/linux)
 
-[Mono](https://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive.md) support. If you're on Debian or Ubuntu, you can use the following:
+[Mono](https://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. If you're on Debian or Ubuntu, you can use the following:
 
 ```console
 sudo apt-get update

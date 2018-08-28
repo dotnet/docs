@@ -11,7 +11,7 @@ ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 ---
 # lock statement (C# Reference)
 
-The `lock` statement obtains the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock.
+The `lock` statement obtains the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again obtain and release the lock. Any other thread is blocked from obtaining the lock and waits until the lock is released.
 
 The `lock` statement is of the form
 
@@ -39,8 +39,6 @@ finally
 ```
 
 Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
-
-While a lock is held, the same thread can again obtain and release the lock. However, any other thread is blocked from obtaining the lock and waits until the lock is released.
 
 You can't use the [await](await.md) keyword in the body of a `lock` statement.
 

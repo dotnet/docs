@@ -34,7 +34,7 @@ ms.author: "ronpet"
  Locks give control of a resource to one thread at a time, or to a specified number of threads. A thread that requests an exclusive lock when the lock is in use blocks until the lock becomes available.  
   
 ### Exclusive Locks  
- The simplest form of locking is the `lock` statement in C# and the `SyncLock` statement in Visual Basic, which controls access to a block of code. Such a block is frequently referred to as a critical section. The `lock` statement is implemented by using the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> methods, and it uses `try…catch…finally` block to ensure that the lock is released.  
+ The simplest form of locking is the `lock` statement in C# and the `SyncLock` statement in Visual Basic, which controls access to a block of code. Such a block is frequently referred to as a critical section. The `lock` statement is implemented by using the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> methods, and it uses a `try…finally` block to ensure that the lock is released.  
   
  In general, using the `lock` or `SyncLock` statement to protect small blocks of code, never spanning more than a single method, is the best way to use the <xref:System.Threading.Monitor> class. Although powerful, the <xref:System.Threading.Monitor> class is prone to orphan locks and deadlocks.  
   

@@ -158,7 +158,7 @@ foreach (Guid id in ids)
  Once dynamic update has been applied, the workflow instance may be resumed. Note that the new updated definition and <xref:System.Activities.WorkflowIdentity> must be used.  
   
 > [!NOTE]
->  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see[Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
+>  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
   
  In the following example, the `MortgageWorkflow_v1.1.xaml` workflow from the previous example has been compiled, and is loaded and resumed using the updated workflow definition.  
   

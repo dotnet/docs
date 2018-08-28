@@ -19,11 +19,11 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
 ```  
   
 ## Parts  
- `procedureName`  
- Required. Name of the procedure to call.  
-  
- `argumentList`  
- Optional. List of variables or expressions representing arguments that are passed to the procedure when it is called. Multiple arguments are separated by commas. If you include `argumentList`, you must enclose it in parentheses.  
+|||
+|---|---|
+|`procedureName`|Required. Name of the procedure to call.|
+|`argumentList`|Optional. List of variables or expressions representing arguments that are passed to the procedure when it is called. Multiple arguments are separated by commas. If you include `argumentList`, you must enclose it in parentheses.|
+|||
   
 ## Remarks  
  You can use the `Call` keyword when you call a procedure. For most procedure calls, you aren’t required to use this  keyword.  

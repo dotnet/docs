@@ -12,7 +12,7 @@ ms.assetid: 1a7dbaae-b7a0-4111-872a-c88a6d3981ac
 
 The `ushort` keyword indicates an integral data type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=nameWithType>|  
   
@@ -97,12 +97,13 @@ ushort y = (ushort)3.0;
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.UInt16>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+## See Also
+
+- <xref:System.UInt16>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

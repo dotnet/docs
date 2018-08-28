@@ -35,7 +35,7 @@ HRESULT ValidatorInit (
  [in] A value of the [CorValidatorModuleType](../../../../docs/framework/unmanaged-api/metadata/corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.  
   
  `pUnk`  
- [in] A pointer to an <<!--zzxref:IUnknown --> `IUnknown`> instance that serves as a function callback for validation errors.  
+ [in] A pointer to an [IUnknown](/cpp/atl/iunknown) instance that serves as a function callback for validation errors.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

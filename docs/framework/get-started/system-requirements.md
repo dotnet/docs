@@ -75,6 +75,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows Server, version 1803 | 64-bit | .NET Framework 4.7.2 | -- |
 | Windows Server, version 1709 | 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2 | 
 | Windows Server 2016 | 64-bit | [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] | .NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |
 | Windows Server 2012 R2 | 64-bit | [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] | [!INCLUDE[net_v452](../../../includes/net-v452-md.md)]<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]<br /><br /> [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]<br /><br />.NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |

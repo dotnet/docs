@@ -12,7 +12,7 @@ ms.assetid: f2ece624-837a-40cf-92c5-343e7f33397c
 
 The `ulong` keyword denotes an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=nameWithType>|  
   
@@ -89,12 +89,13 @@ ulong y = (ulong)3.0;
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.UInt64>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+## See Also
+
+- <xref:System.UInt64>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

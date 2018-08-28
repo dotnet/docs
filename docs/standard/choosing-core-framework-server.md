@@ -3,7 +3,7 @@ title: Choose between .NET Core and .NET Framework for server apps
 description: A guide on which implementation of .NET you should consider when building a server app in .NET.
 author: cartermp
 ms.author: mairaw
-ms.date: 03/15/2018
+ms.date: 06/19/2018
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 
@@ -83,8 +83,6 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 
 * ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. ASP.NET Core [Razor Pages](/aspnet/core/mvc/razor-pages/) have many similarities with Web Pages.
 
-* ASP.NET SignalR server/client implementation. Currently, [ASP.NET SignalR](https://github.com/aspnet/SignalR) is available in preview mode with ASP.NET Core 2.1.
-
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
 * Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in the .NET Framework.  There are no plans to bring WF/WCF+WF/WCF Data Services to .NET Core.
@@ -98,7 +96,9 @@ In addition to the official roadmap, there are other frameworks to be ported to 
 Some Microsoft or third-party platforms don’t support .NET Core. For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework. Some other services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can always use the equivalent REST API instead of the client SDK.
 
 ## See also
- [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)  
+
+ [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
+ [Target frameworks](frameworks.md)
  [.NET Core Guide](../core/index.md)  
  [Porting from .NET Framework to .NET Core](../core/porting/index.md)  
  [.NET Framework on Docker Guide](../framework/docker/index.md)  

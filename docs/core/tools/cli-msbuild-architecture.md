@@ -61,5 +61,5 @@ This command is publishing an application into a `pub` folder using the "Release
 
 The notable exception to this rule are `new` and `run` commands, as they have not been implemented as MSBuild targets.
 
-<a name="dotnet-restore-note"></a>
- [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+<a name="dotnet-restore-note"></a>  
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

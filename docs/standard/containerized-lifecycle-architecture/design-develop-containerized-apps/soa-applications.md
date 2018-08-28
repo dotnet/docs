@@ -15,5 +15,5 @@ At the end of the day, the container clustering solutions are useful for both a 
 
 
 >[!div class="step-by-step"]
-[Previous] (state-and-data-in-docker-applications.md)
-[Next] (orchestrate-high-scalability-availability.md)
+[Previous](state-and-data-in-docker-applications.md)
+[Next](orchestrate-high-scalability-availability.md)

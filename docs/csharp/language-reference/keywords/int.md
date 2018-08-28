@@ -12,9 +12,9 @@ ms.assetid: 212447b4-5d2a-41aa-88ab-84fe710bdb52
 
 `int` denotes an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|Default Value|  
-|----------|-----------|----------|-------------------------|-------------------|  
-|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|0|  
+|Type|Range|Size|.NET type|  
+|----------|-----------|----------|-------------------------|  
+|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|  
   
 ## Literals  
  
@@ -72,12 +72,13 @@ int y = (int)3.0;    // OK: explicit conversion.
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.Int32>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+## See Also
+
+- <xref:System.Int32>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

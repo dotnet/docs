@@ -49,7 +49,7 @@ Properties are not variables and therefore cannot be passed as `out` parameters.
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 
- The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md) involves returning a `bool` to indicate whether an operation succeeded and failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) method, use this pattern.
+ The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md) involves returning a `bool` to indicate whether an operation succeeded or failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) method, use this pattern.
    
 ## Calling a method with an `out` argument
 
@@ -68,8 +68,9 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
 ## C# Language Specification  
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)

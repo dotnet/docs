@@ -3,7 +3,7 @@ title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 description: Learn how to install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8.
 author: rlander
 ms.author: mairaw
-ms.date: 03/30/2018
+ms.date: 07/16/2018
 ---
 # Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 
@@ -36,3 +36,6 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
 During installation, you may encounter error 0x800f0906, 0x800f0907, 0x800f081f, or 0x800F0922, in which case refer to [.NET Framework 3.5 installation error: 0x800f0906, 0x800f0907, or 0x800f081f](https://support.microsoft.com/help/2734782/net-framework-3-5-installation-error-0x800f0906--0x800f081f--0x800f09) to see how to resolve these issues.
 
 If you still can't resolve your installation issue or you don't have an Internet connection, you can try installing it using your Windows installation media. For more information, see [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism). If you don't have the installation media, see [Create installation media for Windows](https://support.microsoft.com/help/15088/windows-create-installation-media).
+
+> [!WARNING]
+> If you're not relying on Windows Update as the source for installing the .NET Framework 3.5, you must ensure to strictly use sources from the same corresponding Windows operating system version. Using a source path that doesn't correspond to the same version of Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed. However, this will cause the system to be in an unsupported and unserviceable state.

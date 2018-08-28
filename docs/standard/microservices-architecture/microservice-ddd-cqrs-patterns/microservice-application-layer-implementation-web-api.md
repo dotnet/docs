@@ -661,7 +661,7 @@ public class CreateOrderCommandHandler
 
 That is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler&lt;T&gt;, and MediatR makes sure it is invoked with the correct payload.
 
-## Applying cross-cutting concerns when processing commands with the Behaviors in MeadiatR
+## Applying cross-cutting concerns when processing commands with the Behaviors in MediatR
 
 There is one more thing: being able to apply cross-cutting concerns to the mediator pipeline. You can also see at the end of the Autofac registration module code how it registers a behavior type, specifically, a custom LoggingBehavior class and a ValidatorBehavior class. But you could add other custom behaviours, too.
 
@@ -861,5 +861,5 @@ In a similar way, you could implement other behaviors for additional aspects or 
     [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]
-[Previous] (microservice-application-layer-web-api-design.md)
-[Next] (../implement-resilient-applications/index.md)
+[Previous](microservice-application-layer-web-api-design.md)
+[Next](../implement-resilient-applications/index.md)

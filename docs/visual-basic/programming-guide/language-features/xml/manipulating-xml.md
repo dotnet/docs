@@ -21,7 +21,7 @@ You can use *XML literals* to load XML from an external source such as a string,
  Demonstrates how to modify the elements, attributes, and values in an XML literal.  
   
 ## Related Sections  
- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/index.md)  
  Provides links to sections that describe the various XML access properties.  
   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  

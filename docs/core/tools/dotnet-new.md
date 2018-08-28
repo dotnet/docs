@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/29/2018
+ms.date: 07/31/2018
 ---
 # dotnet new
 
@@ -145,8 +145,8 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
-    > [!NOTE]
-    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+> [!NOTE]
+> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 `-n|--name <OUTPUT_NAME>`
 
@@ -196,8 +196,8 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
-    > [!NOTE]
-    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+> [!NOTE]
+> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 `-n|--name <OUTPUT_NAME>`
 
@@ -237,8 +237,8 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
-    > [!NOTE]
-    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+> [!NOTE]
+> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 `-n|--name <OUTPUT_NAME>`
 
@@ -311,6 +311,8 @@ Each project template may have additional options available. The core templates 
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+
 **mvc, razor**
 
 `-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
@@ -349,6 +351,8 @@ Each project template may have additional options available. The core templates 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
+
+`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
 **page**
 
@@ -496,13 +500,13 @@ Create a .NET Standard class library project in the specified directory (availab
 
 `dotnet new classlib -lang VB -o MyLibrary`
 
-Create a new ASP.NET Core C# MVC application project in the current directory with no authentication targeting .NET Core 2.0:
+Create a new ASP.NET Core C# MVC application project in the current directory with no authentication:
 
-`dotnet new mvc -au None -f netcoreapp2.0`
+`dotnet new mvc -au None`
 
-Create a new xUnit application targeting .NET Core 2.0:
+Create a new xUnit application:
 
-`dotnet new xunit --framework netcoreapp2.0`
+`dotnet new xunit`
 
 List all templates available for MVC:
 

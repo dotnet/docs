@@ -104,7 +104,7 @@ End Class
 ```csharp  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name="FullTrust")]  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name="FullTrust")]  
-public abstract class CannotCreateInstanceOfMe_CanCastToMe{}  
+public abstract class CannotCreateInstanceOfMe_CanCastToMe {}  
 ```  
   
  For public virtual functions:  
@@ -139,7 +139,7 @@ End Class 'Base2
 ```  
   
 ```csharp  
-abstract class Base2{  
+abstract class Base2 {  
 [System.Security.Permissions.PermissionSetAttribute(  
 System.Security.Permissions.SecurityAction.InheritanceDemand, Name = "FullTrust")]  
 [System.Security.Permissions.PermissionSetAttribute(  

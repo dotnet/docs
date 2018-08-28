@@ -63,7 +63,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
   
- The query expression contains three clauses: `From`, `Where`, and `Select`. The specific function and purpose of each query expression clause is discussed in [Basic Query Operations (Visual Basic)](basic-query-operations.md). For more information, see [Queries](../../../../visual-basic/language-reference/queries/queries.md). Note that in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], a query definition often is stored in a variable and executed later. The query variable, such as `evensQuery` in the previous example, must be a queryable type. The type of `evensQuery` is `IEnumerable(Of Integer)`, assigned by the compiler using local type inference.  
+ The query expression contains three clauses: `From`, `Where`, and `Select`. The specific function and purpose of each query expression clause is discussed in [Basic Query Operations (Visual Basic)](basic-query-operations.md). For more information, see [Queries](../../../../visual-basic/language-reference/queries/index.md). Note that in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], a query definition often is stored in a variable and executed later. The query variable, such as `evensQuery` in the previous example, must be a queryable type. The type of `evensQuery` is `IEnumerable(Of Integer)`, assigned by the compiler using local type inference.  
   
  It is important to remember that the query variable itself takes no action and returns no data. It only stores the query definition. In the previous example, it is the `For Each` loop that executes the query.  
   
@@ -118,4 +118,4 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)

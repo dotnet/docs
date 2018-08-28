@@ -25,7 +25,7 @@ Windows Forms contains many features that you can use to enhance your Windows-ba
  [Networking in Windows Forms Applications](../../../../docs/framework/winforms/advanced/networking-in-windows-forms-applications.md)  
  Contains links to topics that describe and show how to use networking in Windows Forms.  
   
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
+ [Globalizing Windows Forms applications](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
  Contains links to topics that show how to globalize Windows Forms applications.  
   
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  

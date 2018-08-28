@@ -1,4 +1,4 @@
-    // compile with: /doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml 
 
     /// comment for class
     public class TestClass

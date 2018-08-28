@@ -9,7 +9,7 @@
 
             //string concatenation
             string s = "Hello";
-            s += " world.";
+            s += " world";
             Console.WriteLine(s);
         }
     }

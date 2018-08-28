@@ -9,15 +9,15 @@ ms.author: "ronpet"
 ---
 # using static Directive (C# Reference)
 
-The `using static` directive designates a type whose static members you can access without specifying a type name. Its syntax is:
+The `using static` directive designates a type whose static members and nested types you can access without specifying a type name. Its syntax is:
 
 ```csharp
-using static <fully-qualified-type-name>
+using static <fully-qualified-type-name>;
 ```
 
-where *fully-qualified-type-name* is the name of the type whose static members can be referenced without specifying a type name. If you do not provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error CS0246: "The type or namespace name '<type-name>' could not be found."
+where *fully-qualified-type-name* is the name of the type whose static members and nested types can be referenced without specifying a type name. If you do not provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/cs0246.md): "The type or namespace name 'type/namespace' could not be found (are you missing a using directive or an assembly reference?)".
 
-The `using static` directive applies to any type that has static members, even if it also has instance members. However, instance members can only be invoked through the type instance.
+The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, instance members can only be invoked through the type instance.
 
 The `using static` directive was introduced in C# 6.
 
@@ -47,9 +47,9 @@ In the example, the `using static` directive could also have been applied to the
 
 ## See also
 
-[using directive](using-directive.md)   
-[C# Reference](../../../csharp/language-reference/index.md)   
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)   
-[Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)   
-[Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
-[Namespaces](../../../csharp/programming-guide/namespaces/index.md)   
+- [using directive](using-directive.md)
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)

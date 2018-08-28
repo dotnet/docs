@@ -1,6 +1,6 @@
 ---
 title: "#if preprocessor directive (C# Reference)"
-ms.date: "02/13/2017"
+ms.date: 06/30/2018
 f1_keywords: 
   - "#if"
 helpviewer_keywords: 
@@ -27,9 +27,9 @@ A conditional directive beginning with a `#if` directive must explicitly be term
 
 `#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
 
-You can also define a symbol with the [/define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
+You can also define a symbol with the [-define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
 
-A symbol that you define with `/define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
+A symbol that you define with `-define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 
@@ -82,7 +82,7 @@ public class MyClass
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Preprocessor Directives](index.md)  
-[How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](index.md)  
+- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).

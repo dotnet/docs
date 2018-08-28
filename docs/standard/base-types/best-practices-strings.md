@@ -1,6 +1,6 @@
 ---
 title: "Best Practices for Using Strings in .NET"
-ms.date: "03/30/2017"
+ms.date: "08/22/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -115,7 +115,10 @@ ms.author: "ronpet"
 <a name="the_details_of_string_comparison"></a>   
 ## The Details of String Comparison  
  String comparison is the heart of many string-related operations, particularly sorting and testing for equality. Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string". Additionally, comparison implicitly defines equality. The comparison operation returns zero for strings it deems equal. A good interpretation is that neither string is less than the other. Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.  
-  
+
+> [!NOTE]
+> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+
  However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.  
   
 <a name="current_culture"></a>   

@@ -269,7 +269,7 @@ ms.author: "ronpet"
   
 -   White space within a character class is always interpreted literally. For example, the regular expression pattern `[ .,;:]` matches any single white-space character, period, comma, semicolon, or colon.  
   
--   White space isn't allowed within a bracketed quantifier, such as `{`*n*`}`, `{`*n*`,}`, and `{`*n*`,`*m*`}`. For example, the regular expression pattern `\d{1. 3}` fails to match any sequences of digits from one to three digits because it contains a white-space character.  
+-   White space isn't allowed within a bracketed quantifier, such as `{`*n*`}`, `{`*n*`,}`, and `{`*n*`,`*m*`}`. For example, the regular expression pattern `\d{1, 3}` fails to match any sequences of digits from one to three digits because it contains a white-space character.  
   
 -   White space isn't allowed within a character sequence that introduces a language element. For example:  
   

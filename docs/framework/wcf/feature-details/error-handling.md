@@ -55,11 +55,11 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
 ### URI template errors when using WebGetAttribute and WebInvokeAttribute  
  The WebGet and WebInvoke attributes allow you to specify a URI template that maps components of the request address to operation parameters. For example, the URI template "weather/{state}/{city}" maps the request address into literal tokens, a parameter named state, and a parameter named city. These parameters might then be bound by name to some of the formal parameters of the operation.  
   
- The template parameters appear in the form of strings within the URI while the formal parameters of a typed contract might be of non-string types. Therefore, a conversion needs to take place before the operation can be invoked. A [table of conversion formats](http://msdn.microsoft.com/library/bb412172.aspx) is available.  
+ The template parameters appear in the form of strings within the URI while the formal parameters of a typed contract might be of non-string types. Therefore, a conversion needs to take place before the operation can be invoked. A [table of conversion formats](wcf-web-http-programming-model-overview.md) is available.  
   
  However, if the conversion fails, then there's no way to let the operation know that something has gone wrong. The type conversion instead surfaces in the form of a dispatch failure.  
   
  A type conversion dispatch failure can be inspected the same as with many other types of dispatch failures by installing an error handler. The IErrorHandler extensibility point is called to handle service-level exceptions. From there, the response to be sent back to the caller – as well as perform any custom tasks and reporting – may be chosen.  
   
 ## See Also  
- [Basic WCF Error Handling](http://msdn.microsoft.com/library/gg281715.aspx)
+ [Basic WCF Programming](../basic-wcf-programming.md)

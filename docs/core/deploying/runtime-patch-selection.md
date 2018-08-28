@@ -7,7 +7,7 @@ ms.date: 05/31/2018
 ---
 # Self-contained deployment runtime roll forward
 
-.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core SDK 2.1.300 (.NET Core 2.1), a self-contained application deployment [now publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default,[`dotnet publish`](../tools/dotnet-publish.md) for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `-r <RID>` on `dotnet publish` command or by specifying the [runtime identifier (RID)](../rid-catalog.md) in the project file (csproj / vbproj) or on the command line.
+.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core SDK 2.1.300 (.NET Core 2.1), a self-contained application deployment [publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default, [`dotnet publish`](../tools/dotnet-publish.md) for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `-r <RID>` on `dotnet publish` command or by specifying the [runtime identifier (RID)](../rid-catalog.md) in the project file (csproj / vbproj) or on the command line.
 
 ## Patch version roll forward overview
 
@@ -22,15 +22,15 @@ ms.date: 05/31/2018
 
 Running `restore` as part of the `publish` operation may be undesirable for your scenario. To avoid `restore` during `publish` while creating self-contained applications, do the following:
 
-* Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published
-* Set the `TargetLatestRuntimePatch` property to `true`
+* Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published.
+* Set the `TargetLatestRuntimePatch` property to `true`.
 
 ## No-restore argument with dotnet publish options
 
 If you want to create both self-contained applications and [framework-dependent applications](index.md) with the same project file, and you want to use the `--no-restore` argument with `dotnet publish`, then choose one of the following:
 
-1. Prefer the framework-dependent behavior. If the application is framework-dependent, this is the default behavior. If the application is self-contained, and can use an unpatched 2.1.0 local runtime, set the `TargetLatestRuntimePatch` to `false` in the project file (csproj / vbproj).
+1. Prefer the framework-dependent behavior. If the application is framework-dependent, this is the default behavior. If the application is self-contained, and can use an unpatched 2.1.0 local runtime, set the `TargetLatestRuntimePatch` to `false` in the project file.
 
-2. Prefer the self-contained behavior. If the application is self-contained, this is the default behavior. If the application is framework-dependent, and requires the latest patch installed, set `TargetLatestRuntimePatch` to `true` in the project file (csproj / vbproj).
+2. Prefer the self-contained behavior. If the application is self-contained, this is the default behavior. If the application is framework-dependent, and requires the latest patch installed, set `TargetLatestRuntimePatch` to `true` in the project file.
 
-3. Take explicit control of the runtime framework version by setting `RuntimeFrameworkVersion` to the specific patch version in the project file (csproj / vbproj).
+3. Take explicit control of the runtime framework version by setting `RuntimeFrameworkVersion` to the specific patch version in the project file.

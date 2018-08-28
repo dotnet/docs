@@ -98,7 +98,7 @@ The elements of the list are specified as type DbModificationClause, which speci
 ## Generating an Insert SQL Command  
  For a given DbInsertCommandTree in the sample provider, the generated insert command follows one of the two insert templates below.  
   
- The first template has a command to perform the insert given the values in the list of SetClauses, and a SELECT statement to return the properties specified in the Returning property for the inserted row if the Returning property was not null. The predicate element "@@ROWCOUNT > 0" is true if a row was inserted. The predicate element "keyMemberI =  keyValueI &#124; scope_identity()" takes the shape  "keyMemberI =  scope_identity()" only if keyMemeberI is a store-generated key, because scope_identity() returns the last identity value inserted into an identity (store-generated) column.  
+ The first template has a command to perform the insert given the values in the list of SetClauses, and a SELECT statement to return the properties specified in the Returning property for the inserted row if the Returning property was not null. The predicate element "\@@ROWCOUNT > 0" is true if a row was inserted. The predicate element "keyMemberI =  keyValueI &#124; scope_identity()" takes the shape  "keyMemberI =  scope_identity()" only if keyMemeberI is a store-generated key, because scope_identity() returns the last identity value inserted into an identity (store-generated) column.  
   
 ```  
 -- first insert Template  

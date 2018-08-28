@@ -25,5 +25,5 @@ You might find a scenario where you want multiple processes running in a single 
 
 
 >[!div class="step-by-step"]
-[Previous] (../net-core-net-framework-containers/official-net-docker-images.md)
-[Next] (containerize-monolithic-applications.md)
+[Previous](../net-core-net-framework-containers/official-net-docker-images.md)
+[Next](containerize-monolithic-applications.md)

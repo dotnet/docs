@@ -162,7 +162,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |-------------|-----------------|  
 |`\D+`|Match one or more non-decimal digit characters.|  
 |`(?<digit>\d+)`|Match one or more decimal digit characters. Assign the match to the `digit` named group.|  
-|\D+|Match one or more non-decimal digit characters.|  
+|`\D+`|Match one or more non-decimal digit characters.|  
 |`(?<digit>\d+)?`|Match zero or one occurrence of one or more decimal digit characters. Assign the match to the `digit` named group.|  
   
 <a name="balancing_group_definition"></a>   

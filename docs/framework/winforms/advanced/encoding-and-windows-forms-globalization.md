@@ -30,5 +30,6 @@ Windows Forms applications are entirely Unicode-enabled, meaning that each chara
   
  For Unicode-aware alternatives to the <xref:System.Windows.Forms.ToolBar> and <xref:System.Windows.Forms.StatusBar> controls, use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.StatusStrip> controls, which replace these older controls. To maintain a similar look and feel between visual elements in your application, use the <xref:System.Windows.Forms.MenuStrip> control for rendering menus instead of <xref:System.Windows.Forms.MainMenu>. Like <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.StatusStrip>, <xref:System.Windows.Forms.MenuStrip> can also process and display Unicode characters.  
   
-## See Also  
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)
+## See also
+
+[Globalizing Windows Forms applications](globalizing-windows-forms.md)

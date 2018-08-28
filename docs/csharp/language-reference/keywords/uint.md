@@ -12,7 +12,7 @@ ms.assetid: e93e42c6-ec72-4b0b-89df-2fd8d36f7a7b
 
 The `uint` keyword signifies an integral type that stores values according to the size and range shown in the following table.  
   
-|Type|Range|Size|.NET Framework type|  
+|Type|Range|Size|.NET type|  
 |----------|-----------|----------|-------------------------|  
 |`uint`|0 to 4,294,967,295|Unsigned 32-bit integer|<xref:System.UInt32?displayProperty=nameWithType>|  
   
@@ -81,12 +81,13 @@ uint y = (uint)3.0;
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- <xref:System.UInt32>  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+## See Also
+
+- <xref:System.UInt32>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

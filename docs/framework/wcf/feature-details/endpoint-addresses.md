@@ -15,7 +15,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 -   Scheme: http:  
   
--   Machine: www.fabrikam.com  
+-   Machine: `www.fabrikam.com`  
   
 -   (optional) Port: 322  
   

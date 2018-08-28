@@ -1,16 +1,16 @@
 ---
-title: "foreach, in (C# Reference)"
-ms.date: 05/24/2018
-f1_keywords: 
+title: C# foreach statement
+ms.date: 06/29/2018
+f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "foreach keyword [C#]"
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
 ---
-# foreach, in (C# Reference)
+# foreach, in (C# reference)
 
 The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is not limited to those types and can be applied to an instance of any type that satisfies the following conditions:
 
@@ -31,16 +31,20 @@ The next example uses the `foreach` statement with an instance of the <xref:Syst
 
 [!code-csharp-interactive[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
 
+Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](../../programming-guide/classes-and-structs/ref-returns.md) (`ref T` where `T` is the type of the collection element), you can declare the iteration variable with the `ref` or `ref readonly` modifier. The following example uses a `ref` iteration variable to set the value of each item in a stackalloc array. The `ref readonly` version iterates the collection to print all the values. The `readonly` declaration uses an implicit local variable declaration. Implicit variable declarations can be used with either `ref` or `ref readonly` declarations, as can explicitly typed variable declarations.
+
+[!code-csharp-interactive[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#RefSpan)]
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 
-[The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)  
-[Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)  
-[for](for.md)  
-[Iteration Statements](iteration-statements.md)  
-[C# Keywords](index.md)  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
+- [The foreach statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-foreach-statement)
+- [Using foreach with Arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
+- [for](for.md)
+- [Iteration Statements](iteration-statements.md)
+- [C# Keywords](index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)

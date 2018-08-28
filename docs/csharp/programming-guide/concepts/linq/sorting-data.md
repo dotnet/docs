@@ -50,7 +50,7 @@ foreach (string str in query)
 ```  
   
 #### Primary Descending Sort  
- The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
+ The next example demonstrates how to use the `orderby descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
   
 ```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
@@ -98,7 +98,7 @@ foreach (string str in query)
 ```  
   
 #### Secondary Descending Sort  
- The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
+ The next example demonstrates how to use the `orderby descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
   
 ```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  

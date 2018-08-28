@@ -1,6 +1,6 @@
 ---
 title: "Default Marshaling Behavior"
-ms.date: "03/30/2017"
+ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -107,7 +107,9 @@ interface DelegateTest : IDispatch {
 ```  
   
  A function pointer can be dereferenced, just as any other unmanaged function pointer can be dereferenced.  
-  
+
+In this example, when the two delegates are marshaled as <xref:System.Runtime.InteropServices.UnmanagedType.FunctionPtr?displayProperty=nameWithType>, the result is an `int` and a pointer to an `int`. Because delegate types are being marshaled, `int` here represents a pointer to a void (`void*`), which is the address of the delegate in memory. In other words, this result is specific to 32-bit Windows systems, since `int` here represents the size of the function pointer.
+
 > [!NOTE]
 >  A reference to the function pointer to a managed delegate held by unmanaged code does not prevent the common language runtime from performing garbage collection on the managed object.  
   

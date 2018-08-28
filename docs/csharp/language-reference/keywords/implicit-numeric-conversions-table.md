@@ -38,9 +38,10 @@ The following table shows the predefined implicit numeric conversions. Implicit 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)

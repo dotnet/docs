@@ -1,1 +1,0 @@
-            var testInstance = new ExampleClass(d);

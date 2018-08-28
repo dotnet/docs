@@ -54,4 +54,4 @@ Refers to another file that describes the types and members in your source code.
 ```  
   
 ## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+ [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

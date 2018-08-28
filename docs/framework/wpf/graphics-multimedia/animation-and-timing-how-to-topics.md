@@ -25,7 +25,6 @@ The following topics demonstrate how to use the [!INCLUDE[TLA#tla_winclient](../
  [Control an Animation using From, To, and By](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-an-animation-using-from-to-and-by.md)  
  [Define a Name Scope](../../../../docs/framework/wpf/graphics-multimedia/how-to-define-a-name-scope.md)  
  [Receive Notification When a Clock's State Changes](../../../../docs/framework/wpf/graphics-multimedia/how-to-receive-notification-when-clock-state-changes.md)  
- [How to: Remove a Storyboard](http://msdn.microsoft.com/library/7fe39531-de2f-46a0-a69f-b783d04235ee)  
  [Repeat an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-repeat-an-animation.md)  
  [Seek a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-seek-a-storyboard.md)  
  [Seek a Storyboard Synchronously](../../../../docs/framework/wpf/graphics-multimedia/how-to-seek-a-storyboard-synchronously.md)  

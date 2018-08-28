@@ -1,5 +1,5 @@
 ---
-title: "AddHandler Statement"
+title: "AddHandler Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AddHandlerMethod"
@@ -19,11 +19,11 @@ AddHandler event, AddressOf eventhandler
 ```  
   
 ## Parts  
- `event`  
- The name of the event to handle.  
-  
- `eventhandler`  
- The name of a procedure that handles the event.  
+|||
+|---|---|
+|event|The name of the event to handle.|  
+|`eventhandler`|The name of a procedure that handles the event.|
+|||
   
 ## Remarks  
  The `AddHandler` and `RemoveHandler` statements allow you to start and stop event handling at any time during program execution.  

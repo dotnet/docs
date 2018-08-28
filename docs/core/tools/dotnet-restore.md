@@ -49,7 +49,7 @@ Starting with .NET Core 2.0, `dotnet restore` is run implicitly if necessary whe
 
 - [`dotnet new`](dotnet-new.md)
 - [`dotnet build`](dotnet-build.md)
-- [`dotnet build server`](dotnet-build-server.md)
+- [`dotnet build-server`](dotnet-build-server.md)
 - [`dotnet run`](dotnet-run.md)
 - [`dotnet test`](dotnet-test.md)
 - [`dotnet publish`](dotnet-publish.md)

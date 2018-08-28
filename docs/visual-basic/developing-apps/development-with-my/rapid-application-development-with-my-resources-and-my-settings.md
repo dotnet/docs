@@ -23,4 +23,4 @@ The `My.Resources` object provides access to the application's resources and all
 ## See Also  
  [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md)  
  [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md)  
- [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)
+ [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/index.md)

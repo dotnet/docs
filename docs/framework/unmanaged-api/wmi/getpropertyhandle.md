@@ -40,7 +40,7 @@ HRESULT GetPropertyHandle (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemObjectAccess](https://msdn.microsoft.com/library/aa391770(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.
 
 `wszPropertyName`  
 [in] A null-terminated string of UTF16-encoded characaters that contains the property name.   
@@ -64,9 +64,9 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetPropertyHandle](https://msdn.microsoft.com/library/aa391771(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetPropertyHandle](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle) method.
 
-You can use this handle to identify properties when using  [IWbemObjectAccess](https://msdn.microsoft.com/library/aa391770(v=vs.85).aspx) methods to read or write property values.
+You can use this handle to identify properties when using  [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) methods to read or write property values.
 
 Handles can be retrieved for properties of all data types other than `CIM_OBJECT` and `CIM_ARRAY`. Returned handles work across all instances of a class.
 

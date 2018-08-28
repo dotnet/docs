@@ -22,42 +22,48 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
   
 ## XAML Values  
   
-|||  
+| | |  
 |-|-|  
 |`prefix`|Optional. A prefix that refers to a mapped, non-default XAML namespace. `prefix` is shown explicitly in the usage because you rarely reference static properties that come from a default XAML namespace. See Remarks.|  
 |`typeName`|Required. The name of the type that defines the desired static member.|  
 |`staticMemberName`|Required. The name of the desired static value member (a constant, a static property, a field, or an enumeration value).|  
   
 ## Remarks  
- The code entity that is referenced must be one of the following:  
+
+The code entity that is referenced must be one of the following:  
   
 -   A constant  
-  
 -   A static property  
-  
 -   A field  
-  
--   An enumeration value  
-  
- Specifying any other code entity, such as a nonstatic property, causes a compile-time error if the XAML is markup compiled, or a XAML load-time parse exception.  
-  
- You can make `x:Static` references to static fields or properties that are not in the default XAML namespace for the current XAML document; however, this requires a prefix mapping. XAML namespaces are almost always defined on the root element of the XAML document.  
-  
- The lookup operations for static properties can be performed by .NET Framework XAML Services and its XAML readers and XAML writers, when they are running with the default XAML schema context. This XAML schema context can use CLR reflection to provide the necessary static values for object graph construction. The `typeName` you specify is actually a XAML type name, not a CLR type name, although these are essentially the same name when using the default XAML schema context or when using all existing CLR-based XAML-implementing frameworks.  
-  
- Use caution when you make `x:Static` references that are not directly the type of a property's value. In the XAML processing sequence, provided values from a markup extension do not invoke additional value conversion. This is true even if your `x:Static` reference creates a text string, and a value conversion for attribute values based on text string typically occurs either for that specific member or for any member values of the return type.  
-  
- Attribute syntax is the most common syntax used with this markup extension. The string token provided after the `x:Static` identifier string is assigned as the <xref:System.Windows.Markup.StaticExtension.Member%2A> value of the underlying <xref:System.Windows.Markup.StaticExtension> extension class.  
-  
- There are two other XAML usages that are technically possible. However, these usages are less common because they are unnecessarily verbose:  
-  
- **Object element syntax:** `<x:Static Member="` `prefix` `:` `typeName` `.` `staticMemberName` `" .../>`  
-  
- **Attribute syntax with explicit Member property for initialization string:** `<` `object` `` `property` `="{x:Static Member=` `prefix` `:` `typeName` `.` `staticMemberName` `}" .../>`  
-  
- In the .NET Framework XAML Services implementation, the handling for this markup extension is defined by the <xref:System.Windows.Markup.StaticExtension> class.  
-  
- `x:Static` is a markup extension. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must provide a value. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+-   An enumeration value
+
+Specifying any other code entity, such as a nonstatic property, causes a compile-time error if the XAML is markup compiled, or a XAML load-time parse exception.  
+
+You can make `x:Static` references to static fields or properties that are not in the default XAML namespace for the current XAML document; however, this requires a prefix mapping. XAML namespaces are almost always defined on the root element of the XAML document.  
+
+The lookup operations for static properties can be performed by .NET Framework XAML Services and its XAML readers and XAML writers, when they are running with the default XAML schema context. This XAML schema context can use CLR reflection to provide the necessary static values for object graph construction. The `typeName` you specify is actually a XAML type name, not a CLR type name, although these are essentially the same name when using the default XAML schema context or when using all existing CLR-based XAML-implementing frameworks.  
+
+Use caution when you make `x:Static` references that are not directly the type of a property's value. In the XAML processing sequence, provided values from a markup extension do not invoke additional value conversion. This is true even if your `x:Static` reference creates a text string, and a value conversion for attribute values based on text string typically occurs either for that specific member or for any member values of the return type.  
+
+Attribute syntax is the most common syntax used with this markup extension. The string token provided after the `x:Static` identifier string is assigned as the <xref:System.Windows.Markup.StaticExtension.Member%2A> value of the underlying <xref:System.Windows.Markup.StaticExtension> extension class.  
+
+There are two other XAML usages that are technically possible. However, these usages are less common because they are unnecessarily verbose:  
+
+1.  Object element syntax.
+
+    ```xaml
+    <x:Static Member="prefix:typeName.staticMemberName" ... />
+    ```
+
+2.  Attribute syntax with explicit Member property for initialization string.
+
+    ```xaml
+    <object property="{x:Static Member=prefix:typeName.staticMemberName}" ... />
+    ```
+
+In the .NET Framework XAML Services implementation, the handling for this markup extension is defined by the <xref:System.Windows.Markup.StaticExtension> class.  
+
+`x:Static` is a markup extension. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must provide a value. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
   
 ## WPF Usage Notes  
  The default XAML namespace you use for WPF programming does not contain many useful static properties, and most of the useful static properties have support such as type converters that facilitate the usage without requiring `{x:Static}` . For static properties, you must map a prefix for a XAML namespace if one of the following is true:  

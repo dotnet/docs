@@ -47,5 +47,5 @@ There are several benefits to not sharing the same user entity with the same num
 
 
 >[!div class="step-by-step"]
-[Previous] (distributed-data-management.md)
-[Next] (direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
+[Previous](distributed-data-management.md)
+[Next](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)

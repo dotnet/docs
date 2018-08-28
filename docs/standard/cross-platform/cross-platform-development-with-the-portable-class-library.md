@@ -1,6 +1,6 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
-ms.date: "03/30/2017"
+ms.date: "07/18/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "Portable Class Library [.NET Framework]"
@@ -12,7 +12,9 @@ ms.author: "mairaw"
 ---
 # Cross-Platform Development with the Portable Class Library
 The .NET Framework Portable Class Library project type in Visual Studio helps you build cross-platform apps and libraries for Microsoft platforms quickly and easily.  
-  
+
+[!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
+
  Portable class libraries can help you reduce the time and costs of developing and testing code. Use this project type to write and build portable .NET Framework assemblies, and then reference those assemblies from apps that target multiple platforms such as Windows and Windows Phone.  
   
  Even after you create a Portable Class Library project in Visual Studio and start developing it, you can change the target platforms. Visual Studio will compile your library with the new assemblies, which helps you identify the changes you need to make in your code.  
@@ -45,8 +47,8 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
 |Visual Studio Express 2010 versions|No.|  
 |Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.0 support, install the [Windows Phone SDK 8.0](https://www.microsoft.com/download/details.aspx?id=35471).|  
 |Visual Studio Express 2012 versions|No.|  
-|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install the [latest version of Visual Studio 2013](https://www.visualstudio.com/vs/older-downloads/).|  
-|Visual Studio Community 2013 for Windows|Yes, when you install the [latest version of Visual Studio Community 2013](https://www.visualstudio.com/vs/older-downloads/), which includes Update 2.|  
+|Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install the [latest version of Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/).|  
+|Visual Studio Community 2013 for Windows|Yes, when you install the [latest version of Visual Studio Community 2013](https://visualstudio.microsoft.com/vs/older-downloads/), which includes Update 2.|  
   
 <a name="create_pcl"></a>   
 ## Creating a Portable Class Library project  
@@ -139,7 +141,7 @@ Change Targets dialog box in Visual Studio 2012
  ➌ Requires [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) package  
   
 > [!WARNING]
->  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](/previous-versions/windows/apps/dn642084(v=vs.105)).  
+>  You may encounter errors when you reference the [Microsoft Compression](https://www.nuget.org/packages/Microsoft.Bcl.Compression) and [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http) packages from a portable library used by a Windows Phone Silverlight 8.1 app. For more information, see [Platform compatibility and breaking changes for Windows Phone Silverlight 8.1 apps](https://docs.microsoft.com/previous-versions/windows/apps/dn642084(v=vs.105)).  
   
 <a name="members"></a>   
 ## Supported types and members  

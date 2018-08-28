@@ -13,20 +13,20 @@ The accessibility domain of a member specifies in which program sections a membe
 ## Example  
  This example contains a top-level type, `T1`, and two nested classes, `M1` and `M2`. The classes contain fields that have different declared accessibilities. In the `Main` method, a comment follows each statement to indicate the accessibility domain of each member. Notice that the statements that try to reference the inaccessible members are commented out. If you want to see the compiler errors caused by referencing an inaccessible member, remove the comments one at a time.  
   
- [!code-csharp[csrefKeywordsModifiers#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/accessibility-domain_1.cs)]  
+[!code-csharp[csrefKeywordsModifiers#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#4)]
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)  
- [internal](../../../csharp/language-reference/keywords/internal.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [public](../../../csharp/language-reference/keywords/public.md)  
+- [private](../../../csharp/language-reference/keywords/private.md)  
+- [protected](../../../csharp/language-reference/keywords/protected.md)  
+- [internal](../../../csharp/language-reference/keywords/internal.md)

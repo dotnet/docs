@@ -76,7 +76,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  **Example 2 - A text range that partially spans an embedded text hyperlink**  
   
- The URL http://{[www]} is embedded in text.  
+ The URL `http://{[www]}` is embedded in text.  
   
 |Method called|Result|  
 |-------------------|------------|  

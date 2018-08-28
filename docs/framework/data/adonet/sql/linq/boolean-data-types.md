@@ -15,7 +15,7 @@ Boolean operators work as expected in the common language runtime (CLR), except 
 |[Or Operator](~/docs/visual-basic/language-reference/operators/or-operator.md)|[&#124; Operator](~/docs/csharp/language-reference/operators/or-operator.md)|  
 |[OrElse Operator](~/docs/visual-basic/language-reference/operators/orelse-operator.md)|[&#124;&#124; Operator](~/docs/csharp/language-reference/operators/conditional-or-operator.md)|  
 |[Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md)|[^ Operator](~/docs/csharp/language-reference/operators/xor-operator.md)|  
-|[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
+|[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[\! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
   
 ## See Also  
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

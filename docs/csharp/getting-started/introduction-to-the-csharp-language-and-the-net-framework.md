@@ -8,27 +8,29 @@ helpviewer_keywords:
 ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
 ---
 # Introduction to the C# Language and the .NET Framework
+
 C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
 > [!NOTE]
 > The Visual C# documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore Visual C# Express, which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
   
-## C# Language  
+## C# Language
+
  C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions make the strongly-typed query a first-class language construct.  
   
  As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. All variables and methods, including the `Main` method, the application's entry point, are encapsulated within class definitions. A class may inherit directly from one parent class, but it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it is a stack-allocated type that can implement interfaces but does not support inheritance.  
   
  In addition to these basic object-oriented principles, C# makes it easy to develop software components through several innovative language constructs, including the following:  
   
--   Encapsulated method signatures called *delegates*, which enable type-safe event notifications.  
+- Encapsulated method signatures called *delegates*, which enable type-safe event notifications.  
   
--   Properties, which serve as accessors for private member variables.  
+- Properties, which serve as accessors for private member variables.  
   
--   Attributes, which provide declarative metadata about types at run time.  
+- Attributes, which provide declarative metadata about types at run time.  
   
--   Inline XML documentation comments.  
+- Inline XML documentation comments.  
   
--   [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] which provides built-in query capabilities across a variety of data sources.  
+- [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] which provides built-in query capabilities across a variety of data sources.  
   
  If you have to interact with other Windows software such as COM objects or native Win32 DLLs, you can do this in C# through a process called "Interop." Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is absolutely critical.  
   
@@ -36,13 +38,14 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  The following are additional C# resources:  
   
--   For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
+- For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
   
--   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
+- For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
--   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
+- For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
 
-## .NET Framework Platform Architecture  
+## .NET Framework Platform Architecture
+
  C# programs run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  
   
  Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, culture, and security requirements.  
@@ -58,5 +61,6 @@ C# is an elegant and type-safe object-oriented language that enables developers 
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](../../framework/get-started/overview.md).  
   
 ## See Also  
- [C#](../../csharp/index.md)
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+
+- [C#](../../csharp/index.md)
+- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

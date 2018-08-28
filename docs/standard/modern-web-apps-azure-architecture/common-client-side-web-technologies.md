@@ -3,14 +3,12 @@ title: Common client side web technologies
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
 author: ardalis
 ms.author: wiwagn
-ms.date: 10/07/2017
+ms.date: 6/28/2018
 ---
-# Common Client Side Web Technologies
+# Common client side web technologies
 
 > "Websites should look good from the inside and out."  
 > _- Paul Cookson_
-
-## Summary
 
 ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.
 
@@ -30,9 +28,9 @@ CSS (Cascading Style Sheets) is used to control the look and layout of HTML elem
 
 It's best to keep styles in their own separate stylesheet files, and to use selection-based cascading to implement consistent and reusable styles within the application. Placing style rules within HTML should be avoided, and applying styles to specific individual elements (rather than whole classes of elements, or elements that have had a particular CSS class applied to them) should be the exception, not the rule.
 
-### CSS Preprocessors
+### CSS preprocessors
 
-CSS stylesheets lack support for conditional logic, variables, and other programming language features. Thus, large stylesheets often include a lot of repetition, as the same color, font, or other setting is applied to many different variations of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow the [DRY principle](http://deviq.com/don-t-repeat-yourself/) by adding support for variables and logic.
+CSS stylesheets lack support for conditional logic, variables, and other programming language features. Thus, large stylesheets often include a lot of repetition, as the same color, font, or other setting is applied to many different variations of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow the [DRY principle](https://deviq.com/don-t-repeat-yourself/) by adding support for variables and logic.
 
 The most popular CSS preprocessors are Sass and LESS. Both extend CSS and are backward compatible with it, meaning that a plain CSS file is a valid Sass or LESS file. Sass is Ruby-based and LESS is JavaScript based, and both typically run as part of your local development process. Both have command line tools available, as well as built-in support in Visual Studio for running them using Gulp or Grunt tasks.
 
@@ -42,17 +40,17 @@ JavaScript is a dynamic, interpreted programming language that has been standard
 
 When working with JavaScript in your web application, there are a few tasks that you'll commonly need to perform:
 
--   Selecting an HTML element and retrieving and/or updating its value
+- Selecting an HTML element and retrieving and/or updating its value.
 
--   Querying a Web API for data
+- Querying a Web API for data.
 
--   Sending a command to a Web API (and responding to a callback with its result)
+- Sending a command to a Web API (and responding to a callback with its result).
 
--   Performing validation
+- Performing validation.
 
 You can perform all of these tasks with JavaScript alone, but many libraries exist to make these tasks easier. One of the first and most successful of these libraries is jQuery, which continues to be a popular choice for simplifying these tasks on web pages. For Single Page Applications (SPAs), jQuery doesn't provide many of the desired features that Angular and React offer.
 
-### Legacy Web Apps with jQuery
+### Legacy web apps with jQuery
 
 Although ancient by JavaScript framework standards, jQuery continues to be a very commonly used library for working with HTML/CSS and building applications that make AJAX calls to web APIs. However, jQuery operates at the level of the browser document object model (DOM), and by default offers only an imperative, rather than declarative, model.
 
@@ -94,9 +92,9 @@ Components are defined using the @Component decorator function, which takes in m
 
 By working with components and templates, instead of DOM elements, Angular apps can operate at a higher level of abstraction and with less overall code than apps written using just JavaScript (also called "vanilla JS") or with jQuery. Angular also imposes some order on how you organize your client-side script files. By convention, Angular apps use a common folder structure, with module and component script files located in an app folder. Angular scripts concerned with building, deploying, and testing the app are typically located in a higher-level folder.
 
-Angular also makes great use of command line interface (CLI) tooling. Getting started with Angular development locally (assuming you already have git and npm installed) consists of simply cloning a repo from GitHub and running \`npm install\` and \`npm start\`. Beyond this, Angular ships its own CLI tool which can create projects, add files, and assist with testing, bundling, and deployment tasks. This CLI tooling friendliness makes Angular especially compatible with ASP.NET Core, which also features great CLI support.
+Angular also makes great use of command line interface (CLI) tooling. Getting started with Angular development locally (assuming you already have git and npm installed) consists of simply cloning a repo from GitHub and running `npm install` and `npm start`. Beyond this, Angular ships its own CLI tool which can create projects, add files, and assist with testing, bundling, and deployment tasks. This CLI tooling friendliness makes Angular especially compatible with ASP.NET Core, which also features great CLI support.
 
-Microsoft has developed a reference application, [eShopOnContainers](http://aka.ms/MicroservicesArchitecture), which includes an Angular SPA implementation. This app includes Angular modules to manage the online store's shopping basket, load and display items from its catalog, and handling order creation. You can view and download the sample application from [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
+Microsoft has developed a reference application, [eShopOnContainers](https://aka.ms/MicroservicesArchitecture), which includes an Angular SPA implementation. This app includes Angular modules to manage the online store's shopping basket, load and display items from its catalog, and handling order creation. You can view and download the sample application from [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
 
 ### React
 
@@ -122,17 +120,17 @@ Because React isn't a full framework, you'll typically want other libraries to h
 
 When considering which JavaScript framework will work best to support your SPA, keep in mind the following considerations:
 
--   Is your team familiar with the framework and its dependencies (including TypeScript in some cases)?
+- Is your team familiar with the framework and its dependencies (including TypeScript in some cases)?
 
--   How opinionated is the framework, and do you agree with its default way of doing things?
+- How opinionated is the framework, and do you agree with its default way of doing things?
 
--   Does it (or a companion library) include all of the features your app requires?
+- Does it (or a companion library) include all of the features your app requires?
 
--   Is it well-documented?
+- Is it well-documented?
 
--   How active is its community? Are new projects building built with it?
+- How active is its community? Are new projects building built with it?
 
--   How active is its core team? Are issues being resolved and new versions shipped regularly?
+- How active is its core team? Are issues being resolved and new versions shipped regularly?
 
 JavaScript frameworks continue to evolve with breakneck speed. Use the considerations listed above to help mitigate the risk of choosing a framework you'll later regret being dependent upon. If you're particularly risk-averse, consider a framework that offers commercial support and/or is being developed by a large enterprise.
 
@@ -161,5 +159,5 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282>
 
 >[!div class="step-by-step"]
-[Previous] (common-web-application-architectures.md)
-[Next] (develop-asp-net-core-mvc-apps.md)
+[Previous](common-web-application-architectures.md)
+[Next](develop-asp-net-core-mvc-apps.md)

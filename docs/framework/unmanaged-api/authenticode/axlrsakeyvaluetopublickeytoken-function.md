@@ -1,5 +1,5 @@
 ---
-title: "_AxlRSAKeyValueToPublicKeyToken Function"
+title: "_AxlRSAKeyValueToPublicKeyToken function"
 ms.date: "03/30/2017"
 api_name: 
   - "_AxlRSAKeyValueToPublicKeyToken"
@@ -11,7 +11,8 @@ ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _AxlRSAKeyValueToPublicKeyToken Function
+# \_AxlRSAKeyValueToPublicKeyToken function
+
 Converts a Modulus and Exponent to a strong name public key token.  
   
 ## Syntax  
@@ -24,12 +25,12 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  `pModulusBlob`  
- [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) structure.  
+ [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   
  `pExponentBlob`  
- [in] The base64-encoded Exponent blob (from the \<Exponent> element). See the [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) structure.  
+ [in] The base64-encoded Exponent blob (from the \<Exponent> element). See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   
  `ppwszPublicKeyToken`  
  [out] A pointer to WCHAR * to receive the hex-encoded public key token.  

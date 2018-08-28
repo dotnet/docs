@@ -12,7 +12,8 @@ This example shows how to return a query from a method as the return value and a
 ## Example  
  In the following example, the first method returns a query as a return value, and the second method returns a query as an `out` parameter. Note that in both cases it is a query that is  returned, not query results.  
   
- [!code-csharp[csProgGuideLINQ#80](../../../samples/snippets/csharp/concepts/linq/how-to-return-a-query-from-a-method_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#80](~/samples/snippets/csharp/concepts/linq/how-to-return-a-query-from-a-method_1.cs)]  
 
-## See Also  
- [LINQ Query Expressions](index.md)
+## See Also
+
+- [Language Integrated Query (LINQ)](index.md)

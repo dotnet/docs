@@ -28,10 +28,10 @@ If you are already familiar with Windows Communication Foundation (WCF), you kno
 > [!TIP]
 >  What is the difference between ActAs and OnBehalfOf?  
 >   
->  From the WS-Trust procotol standpoint:  
+>  From the WS-Trust protocol standpoint:  
 >   
->  1.  An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
-> 2.  An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
+> 1. An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
+> 2. An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
 >   
 >  The ActAs feature is typically used in scenarios that require composite delegation, where the final recipient of the issued token can inspect the entire delegation chain and see not just the client, but all intermediaries. This lets it perform access control, auditing and other related activities based on the entire identity delegation chain. The ActAs feature is commonly used in multi-tiered systems to authenticate and pass information about identities between the tiers without having to pass this information at the application/business logic layer.  
 >   

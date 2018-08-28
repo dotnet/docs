@@ -42,5 +42,5 @@ Basically, you can use any modern language supported by Docker in Linux or Windo
 
 
 >[!div class="step-by-step"]
-[Previous] (orchestrate-high-scalability-availability.md)
-[Next] (docker-apps-inner-loop-workflow.md)
+[Previous](orchestrate-high-scalability-availability.md)
+[Next](docker-apps-inner-loop-workflow.md)

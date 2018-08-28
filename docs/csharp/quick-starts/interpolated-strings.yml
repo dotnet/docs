@@ -5,7 +5,8 @@ metadata:
   description: In this tutorial, you use your browser to explore the C# string interpolation feature interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   ms.custom: mvc
-  ms.topic: get-started-article
+  ms.date: 08/24/2018
+  ms.topic: quickstart
   level: Beginner
   displayType: two-column
   interactive: csharp
@@ -18,7 +19,7 @@ items:
 - title: Create an interpolated string
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the code in the interactive window (replace `\<name>` with your name) and select **Run**:
+    Run the following code in the interactive window. To do that, type the code in the interactive window (replace `<name>` with your name) and select **Run**:
 
     ```csharp
     var name = "<name>";
@@ -55,7 +56,7 @@ items:
        public override string ToString() => Name;
     }
 
-    public enum Unit { item, pound, ounce, dozen };
+    public enum Unit { item, kilogram, gram, dozen };
 
     var item = new Vegetable("eggplant");
     var date = DateTime.Now;

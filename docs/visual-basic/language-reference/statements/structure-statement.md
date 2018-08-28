@@ -1,5 +1,5 @@
 ---
-title: "Structure Statement"
+title: "Structure Statement (Visual Basic)"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Structure"

@@ -12,8 +12,10 @@ ms.assetid: 109e0ac5-2a9c-48b4-ac68-9b6219cdbccf
 An *expression tree* is a data structure that represents some code.
 It is not compiled and executable code. If you want to execute
 the .NET code that is represented by an expression tree, you must
-convert it into executable IL instructions. 
+convert it into executable IL instructions.
+
 ## Lambda Expressions to Functions
+
 You can convert any LambdaExpression, or any type derived from
 LambdaExpression into executable IL. Other expression types
 cannot be directly converted into code. This restriction has
@@ -21,7 +23,7 @@ little effect in practice. Lambda expressions are the only
 types of expressions that you would want to execute by converting
 to executable intermediate language (IL). (Think about what it would mean
 to directly execute a `ConstantExpression`. Would it mean
-anything useful?) Any expression tree that is a `LamdbaExpression`,
+anything useful?) Any expression tree that is a `LambdaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
 The expression type `Expression<TDelegate>`
 is the only concrete example in the .NET Core libraries. It's used
@@ -35,15 +37,14 @@ and its corresponding delegate. For example, an expression tree that
 is represented by `Expression<Func<int>>` would be converted to a delegate
 of the type `Func<int>`. For a lambda expression with any return type
 and argument list, there exists a delegate type that is the target type
-for the executable code represented by that lamdba expression.
+for the executable code represented by that lambda expression.
 
-The `LamdbaExpression` type contains `Compile` and `CompileToMethod`
+The `LambdaExpression` type contains `Compile` and `CompileToMethod`
 members that you would use to convert an expression tree to executable
 code. The `Compile` method creates a delegate. The `CompileToMethod`
 method updates a `MethodBuilder` object with the IL that represents
 the compiled output of the expression tree. Note that `CompileToMethod`
-is only available on the full desktop framework, not on the 
-.NET Core framework.
+is only available in the full desktop framework, not in the .NET Core.
 
 Optionally, you can also provide a `DebugInfoGenerator` that will
 receive the symbol debugging information for the generated delegate
@@ -65,13 +66,13 @@ Notice that the delegate type is based on the expression type. You must
 know the return type and the argument list if you want to use the
 delegate object in a strongly typed manner. The `LambdaExpression.Compile()`
 method returns the `Delegate` type. You will have to cast it to the correct
-delegate type to have any compile-time tools check the argument list of
+delegate type to have any compile-time tools check the argument list or
 return type.
 
 ## Execution and Lifetimes
 
 You execute the code by invoking the delegate created when
-you called `LamdbaExpression.Compile()`. You can see this above where
+you called `LambdaExpression.Compile()`. You can see this above where
 `add.Compile()` returns a delegate. Invoking that delegate, by calling
 `func()` executes the code.
 

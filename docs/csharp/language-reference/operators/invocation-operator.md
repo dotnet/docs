@@ -27,14 +27,13 @@ In addition to being used to specify the order of operations in an expression, p
   
  For more information, see [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md).  
   
- A cast expression could lead to ambiguous syntax. For example, the expression `(x)–y` could be either interpreted as a cast expression (a cast of –y to type x) or as an additive expression combined with a parenthesized expression, which computes the value x – y.  
-  
  For more information about method invocation, see [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

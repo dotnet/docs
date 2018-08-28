@@ -19,13 +19,14 @@ The multiplication operator (`*`) computes the product of its operands. All nume
  User-defined types can overload the binary `*` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-csharp[csRefOperators#50](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_1.cs)]  
+ [!code-csharp-interactive[csRefOperators#50](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_1.cs)]  
   
 ## Example  
  [!code-csharp[csRefOperators#51](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_2.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

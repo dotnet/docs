@@ -8,7 +8,7 @@ ms.assetid: 7d494566-bf75-4ee8-979f-0f964209437e
 ---
 # Iteration Statements (C# Reference)
 
-You can create loops by using the iteration statements. Iteration statements cause embedded statements to be executed a number of times, subject to the loop-termination criteria. These statements are executed in order, except when a [jump statement](../../../csharp/language-reference/keywords/jump-statements.md) is encountered.
+You can create loops by using the iteration statements. Iteration statements cause embedded statements to be executed a number of times, subject to the loop-termination criteria. These statements are executed in order, except when a [jump statement](jump-statements.md) is encountered.
 
 The following keywords are used in iteration statements:
 
@@ -21,7 +21,8 @@ The following keywords are used in iteration statements:
 - [while](while.md)
 
 ## See also
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
- [Statement Keywords](statement-keywords.md)
+
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [Statement Keywords](statement-keywords.md)

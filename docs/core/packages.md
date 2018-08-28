@@ -7,7 +7,7 @@ ms.date: 06/20/2016
 ---
 # Packages, metapackages and frameworks
 
-.NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from coarse-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and then described in coarser chunks with a package type informally called a "metapackage".
+.NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from coarse-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and in coarser chunks with a package type informally called a [metapackage](#metapackages).
 
 Each of the .NET Core packages support being run on multiple .NET implementations, represented as
 frameworks. Some of those frameworks are traditional frameworks, like `net46`, representing the .NET Framework. Another set is new frameworks that can be thought of as "package-based frameworks", which establish a new model for defining frameworks. These package-based frameworks are entirely formed and defined as packages, forming a strong relationship between packages and frameworks.
@@ -34,7 +34,7 @@ The following is a list of the key NuGet packages for .NET Core:
 - [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including `Enumerable` and <xref:System.Linq.ILookup%602>.
 - [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting, and activating types, including <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> and <xref:System.Reflection.MethodInfo>.
 
-Typically, rather than including packages in your projects on a package-by-package basis, it is far easier to include a *metapackage*, which is a set of packages that are often used together. (For more information on metapackages, see the following section.) However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
+Typically, rather than including each package, it's easier and more robust to include a [metapackage](#metapackages). However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

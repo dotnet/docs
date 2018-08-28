@@ -25,19 +25,18 @@ lock (x)
 where `x` is an expression of a [reference type](reference-types.md). It's precisely equivalent to
 
 ```csharp
+object __lockObj = x;
 bool __lockWasTaken = false;
 try
 {
-    System.Threading.Monitor.Enter(x, ref __lockWasTaken);
+    System.Threading.Monitor.Enter(__lockObj, ref __lockWasTaken);
     // Your code...
 }
 finally
 {
-    if (__lockWasTaken) System.Threading.Monitor.Exit(x);
+    if (__lockWasTaken) System.Threading.Monitor.Exit(__lockObj);
 }
 ```
-
-except that `x` is only evaluated once.
 
 Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
 
@@ -47,15 +46,13 @@ You can't use the [await](await.md) keyword in the body of a `lock` statement.
 
 ## Remarks
 
-Avoid locking on publicly accessible instances, as it might result in lock contention or deadlock. Consider the following constructs:
+When you synchronize thread access to shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using
 
-- `lock(this)` is a problem if the instance referenced by `this` can be accessed publicly.
+- `this` (might be used by the callers as a lock),
+- <xref:System.Type> instances (might be obtained by the [typeof](typeof.md) operator or reflection),
+- string instances, including string literals,
 
-- `lock(typeof(MyType))` is a problem if `MyType` is publicly accessible.
-
-- `lock("myLock")` is a problem because any other code in the process using the same string shares the same lock.
-
-Instead, lock on a privately accessible object that uniquely identifies the shared resource when you synchronize thread access to that resource.
+as lock objects.
 
 ## Example
 

@@ -1,5 +1,5 @@
 ---
-title: "Reference Tables for Types (C# Reference)"
+title: "Reference tables for types (C# Reference)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.referencetables"
@@ -9,28 +9,29 @@ helpviewer_keywords:
   - "C# language, data types"
 ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
 ---
-# Reference Tables for Types (C# Reference)
-The following reference tables summarize the C# types:  
-  
- [Built-in Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-  
- [Integral types](../../../csharp/language-reference/keywords/integral-types-table.md)  
-  
- [Floating-point types](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
-  
- [Default values](../../../csharp/language-reference/keywords/default-values-table.md)  
-  
- [Value types](../../../csharp/language-reference/keywords/value-types-table.md)  
-  
- [Implicit numeric conversions](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-  
- For information on formatting the output of numeric types, see [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md).  
-  
-## See Also
+# Reference tables for types (C# Reference)
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
-- [Value Types](../../../csharp/language-reference/keywords/value-types.md)
+The following reference tables summarize the C# types:
+
+- [Built-in Types Table](built-in-types-table.md)
+
+- [Integral types](integral-types-table.md)
+
+- [Floating-point types](floating-point-types-table.md)
+
+- [Default values](default-values-table.md)
+
+- [Value types](value-types-table.md)
+
+- [Implicit numeric conversions](implicit-numeric-conversions-table.md)
+
+- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)
+
+For information on formatting the output of numeric types, see [Formatting Numeric Results Table](formatting-numeric-results-table.md).
+
+## See also
+
+- [C# Reference](../../language-reference/index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [Reference Types](reference-types.md)
+- [Value Types](value-types.md)

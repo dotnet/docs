@@ -38,7 +38,7 @@ The first step is to create the [!INCLUDE[TLA#tla_winforms](../../../../includes
 
 ### To create the host project
 
-1.  Create a **WPF App** project named `LocalizingWpfInWf`. For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).
+1.  Create a **WPF App** project named `LocalizingWpfInWf`.  (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **WPF Application**).
 
 2.  Add a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]<xref:System.Windows.Controls.UserControl> element called `SimpleControl` to the project.
 
@@ -172,4 +172,4 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
 - [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
-- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

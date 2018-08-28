@@ -16,7 +16,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 >  For the test container to load your <xref:System.Windows.Forms.UserControl>, the control must have at least one public constructor.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 > [!NOTE]
 >  A Visual C++ control cannot be tested using the **UserControl Test Container**.  

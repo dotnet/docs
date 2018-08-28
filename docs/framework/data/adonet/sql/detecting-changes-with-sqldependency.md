@@ -88,7 +88,7 @@ void SomeMethod()
   
         // Create a dependency and associate it with the SqlCommand.  
         SqlDependency dependency=new SqlDependency(command);  
-        // Maintain the refence in a class member.  
+        // Maintain the reference in a class member.  
   
         // Subscribe to the SqlDependency event.  
         dependency.OnChange+=new  

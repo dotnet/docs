@@ -13,7 +13,14 @@ ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
 The namespace alias qualifier (`::`) is used to look up identifiers. It is always positioned between two identifiers, as in this example:  
   
  [!code-csharp[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
-  
+
+The `::` operator can also be used with a *using alias directive*:
+
+```csharp
+// using Col=System.Collections.Generic;
+var numbers = new Col::List<int> { 1, 2, 3 };
+```
+
 ## Remarks  
  The namespace alias qualifier can be `global`. This invokes a lookup in the global namespace, rather than an aliased namespace.  
   

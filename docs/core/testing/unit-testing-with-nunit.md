@@ -55,9 +55,9 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
   <PackageReference Include="NUnit" Version="3.10.1" />
   <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
 </ItemGroup>
 ```
 

@@ -93,7 +93,7 @@
                     System.Console.WriteLine("Paperback Book Titles:");
 
                     // Create a new delegate object associated with the static 
-                    // method Test.PrintTitle:
+                    // method TestBookDB.PrintTitle:
                     bookDB.ProcessPaperbackBooks(PrintTitle);
 
                     // Get the average price of a paperback by using

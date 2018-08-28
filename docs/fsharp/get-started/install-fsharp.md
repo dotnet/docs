@@ -24,11 +24,11 @@ After the install completes, choose "Start Visual Studio". You can also launch i
 
 ## Install F# with Visual Studio Code
 
-You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide. You can verify that it is installed correctly by typing `git --version` at a command prompt and pressing **Enter**.
+You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates. You can verify that it is installed correctly by typing `git --version` at a command prompt and pressing **Enter**.
 
 ### [macOS](#tab/macos)
 
-Ionide uses [Mono](http://www.mono-project.com). The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
+[Mono](http://www.mono-project.com) is used for [F# Interactive](https://docs.microsoft.com/dotnet/fsharp/tutorials/fsharp-interactive/) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
 ```console
 brew install mono
@@ -38,7 +38,7 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 ### [Linux](#tab/linux)
 
-On Linux, Ionide also uses [Mono](https://www.mono-project.com). If you're on Debian or Ubuntu, you can use the following:
+[Mono](https://www.mono-project.com) is used for [F# Interactive](https://docs.microsoft.com/dotnet/fsharp/tutorials/fsharp-interactive/) support. If you're on Debian or Ubuntu, you can use the following:
 
 ```console
 sudo apt-get update
@@ -49,7 +49,7 @@ You must also install the [.NET Core SDK](https://www.microsoft.com/net/download
 
 ### [Windows](#tab/windows)
 
-If you're on Windows, you must [install Visual Studio with F# support](#install-f-with-visual-studio). This installs all the necessary components to write, compile, and execute F# code.
+[Install Visual Studio with F# support](#install-f-with-visual-studio) if you're on Windows. This installs all the necessary components to write, compile, and execute F# code.
 
 You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
 

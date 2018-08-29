@@ -11,7 +11,7 @@ ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
 # Walkthrough: Arranging Controls on Windows Forms Using Snaplines
 Precise placement of controls on your form is a high priority for many applications. The Windows Forms Designer gives you many layout tools to accomplish this. One of the most important is the <xref:System.Windows.Forms.Design.Behavior.SnapLine> feature.  
   
- Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the Windows User Interface Guidelines. For details, see [User Interface Design and Development](http://go.microsoft.com/FWLink/?LinkId=83878).  
+ Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the Windows User Interface Guidelines. For details, see [User Interface Design and Development](https://go.microsoft.com/FWLink/?LinkId=83878).  
   
  Snaplines make it easy to align your controls, for crisp, professional appearance and behavior (look and feel).  
   
@@ -216,7 +216,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To disable snaplines in the design environment  
   
-1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834).  
+1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834).  
   
 2.  Select the **General** node. In the **Layout Mode** section, change the selection from **SnapLines** to **SnapToGrid**.  
   

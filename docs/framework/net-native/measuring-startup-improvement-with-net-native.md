@@ -48,10 +48,10 @@ ms.author: "ronpet"
  When the app is instrumented, you’re ready to gather events.  
   
 ## Gathering events with PerfView  
- PerfView uses ETW events to help you do all sorts of performance investigations on your app. It also includes a configuration GUI that lets you turn logging for different types of events on or off. PerfView is a free tool and can be downloaded from the [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=28567). For more information, watch the [PerfView tutorial videos](http://channel9.msdn.com/Series/PerfView-Tutorial).  
+ PerfView uses ETW events to help you do all sorts of performance investigations on your app. It also includes a configuration GUI that lets you turn logging for different types of events on or off. PerfView is a free tool and can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=28567). For more information, watch the [PerfView tutorial videos](http://channel9.msdn.com/Series/PerfView-Tutorial).  
   
 > [!NOTE]
->  PerfView cannot be used to collect events on ARM systems. To collect events on ARM systems, use Windows Performance Recorder (WPR). For more information, see [Vance Morrison's blog post](http://blogs.msdn.com/b/vancem/archive/2012/12/19/collecting-etw-perfview-data-on-an-windows-rt-winrt-arm-surface-device.aspx).  
+>  PerfView cannot be used to collect events on ARM systems. To collect events on ARM systems, use Windows Performance Recorder (WPR). For more information, see [Vance Morrison's blog post](https://blogs.msdn.com/b/vancem/archive/2012/12/19/collecting-etw-perfview-data-on-an-windows-rt-winrt-arm-surface-device.aspx).  
   
  You can also invoke PerfView from the command line. To log only the events from your provider, open the Command Prompt window and enter the command:  
   
@@ -89,7 +89,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  Select all the events listed in the left pane (Ctrl-A) and choose the **Enter** key. Now, you should be able to see the timestamps from each event. These timestamps are relative to the start of the trace, so you have to subtract the time of each event from the start time of the process to identify the elapsed time since startup. If you use Ctrl+Click to select two timestamps, you'll see the difference between them displayed in the status bar at the bottom of the page. This makes it easy to see the elapsed time between any two events in the display (including process start). You can open the shortcut menu for the view and select from a number of useful options, like exporting to CSV files or opening Microsoft Excel to save or process the data.  
   
- By repeating the procedure for both your original app and the version you built by using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, you can compare the difference in performance.   [!INCLUDE[net_native](../../../includes/net-native-md.md)] apps generally start faster than non-[!INCLUDE[net_native](../../../includes/net-native-md.md)] apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](http://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx).  
+ By repeating the procedure for both your original app and the version you built by using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, you can compare the difference in performance.   [!INCLUDE[net_native](../../../includes/net-native-md.md)] apps generally start faster than non-[!INCLUDE[net_native](../../../includes/net-native-md.md)] apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx).  
   
 ## See Also  
  <xref:System.Diagnostics.Tracing.EventSource>

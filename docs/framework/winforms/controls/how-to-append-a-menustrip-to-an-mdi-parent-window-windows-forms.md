@@ -15,7 +15,7 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
   
  The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to append the MDI child menu to the MDI parent menu. Closing the MDI child window removes the appended menu from the MDI parent.  
   
- Also see [Multiple-Document Interface (MDI) Applications](http://msdn.microsoft.com/library/xyhh2e7e\(v=vs.110\)).  
+ Also see [Multiple-Document Interface (MDI) Applications](https://msdn.microsoft.com/library/xyhh2e7e\(v=vs.110\)).  
   
 ### To append a menu item to an MDI parent  
   

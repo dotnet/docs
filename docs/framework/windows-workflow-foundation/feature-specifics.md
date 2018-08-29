@@ -21,9 +21,9 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
     -   Scenarios: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
   
--   [Conceptual documentation](http://go.microsoft.com/fwlink/?LinkId=204801)  
+-   [Conceptual documentation](https://go.microsoft.com/fwlink/?LinkId=204801)  
   
--   [Messaging activities designer documentation](http://go.microsoft.com/fwlink/?LinkId=204802)  
+-   [Messaging activities designer documentation](https://go.microsoft.com/fwlink/?LinkId=204802)  
   
 ### Messaging Activities Example Scenario  
  A `BestPriceFinder` service calls out to multiple airline services to find the best ticket price for a particular route.  Implementing this scenario would require you to use the message activities to receive the price request, retrieve the prices from the back-end services, and reply to the price request with the best price.  It would also require you to use other out-of-box activities to create the business logic for calculating the best price.  
@@ -49,7 +49,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
     -   Application: [Suspended Instance Management](../../../docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md)  
   
--   [WorkflowServiceHost Conceptual Documentation](http://go.microsoft.com/fwlink/?LinkId=204807)  
+-   [WorkflowServiceHost Conceptual Documentation](https://go.microsoft.com/fwlink/?LinkId=204807)  
   
 ### WorkflowServiceHost Scenario  
  A BestPriceFinder service calls out to multiple airline services to find the best ticket price for a particular route.  Implementing this scenario would require you to host the workflow in <xref:System.ServiceModel.WorkflowServiceHost>.  It would also use the message activities to receive the price request, retrieve the prices from the back-end services, and reply to the price request with the best price.  
@@ -81,7 +81,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
     -   Scenarios: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
   
-    -   [Correlation Conceptual Documentation](http://go.microsoft.com/fwlink/?LinkId=204939)  
+    -   [Correlation Conceptual Documentation](https://go.microsoft.com/fwlink/?LinkId=204939)  
   
 ### Correlation Scenario  
  An order-processing workflow is used to handle new order creation and updating existing orders that are in process.  Implementing this scenario would require you to host the workflow in <xref:System.ServiceModel.WorkflowServiceHost> and use the messaging activities.  It would also require correlation based on the `orderId` to ensure that updates are made to the correct workflow.  
@@ -99,15 +99,15 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   [A Developer's Guide to WCF 4.0](http://go.microsoft.com/fwlink/?LinkId=204940)  
+-   [A Developer's Guide to WCF 4.0](https://go.microsoft.com/fwlink/?LinkId=204940)  
   
--   [Configuration Channel Factory](http://go.microsoft.com/fwlink/?LinkId=204941)  
+-   [Configuration Channel Factory](https://go.microsoft.com/fwlink/?LinkId=204941)  
   
--   [Standard Endpoint Element](http://go.microsoft.com/fwlink/?LinkId=204942)  
+-   [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)  
   
--   [Service configuration improvements in .Net Framework 4](http://go.microsoft.com/fwlink/?LinkId=204943)  
+-   [Service configuration improvements in .Net Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)  
   
--   [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](http://go.microsoft.com/fwlink/?LinkId=204944)  
+-   [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)  
   
 ### Simplified Configuration Scenarios  
   
@@ -128,9 +128,9 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   [Data Contract Resolver API documentation](http://go.microsoft.com/fwlink/?LinkId=204946)  
+-   [Data Contract Resolver API documentation](https://go.microsoft.com/fwlink/?LinkId=204946)  
   
--   [Introducing the Data Contract Resolver](http://go.microsoft.com/fwlink/?LinkId=204947)  
+-   [Introducing the Data Contract Resolver](https://go.microsoft.com/fwlink/?LinkId=204947)  
   
 -   Samples:  
   
@@ -291,7 +291,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 2.  Samples: [Routing Services &#91;WCF Samples&#93;](../../../docs/framework/wcf/samples/routing-services.md)  
   
-3.  Blog: [Routing Rules!](http://go.microsoft.com/fwlink/?LinkId=204956)  
+3.  Blog: [Routing Rules!](https://go.microsoft.com/fwlink/?LinkId=204956)  
   
 ### Routing Scenarios  
  The routing service is useful in the following scenarios:  

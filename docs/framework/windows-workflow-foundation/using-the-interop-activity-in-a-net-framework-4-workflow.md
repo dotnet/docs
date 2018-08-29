@@ -353,11 +353,11 @@ Rule3: IF this.DiscountPercent > 0
   
 |Rules Feature|Documentation|  
 |-------------------|-------------------|  
-|Rules Overview|[Introduction to the Windows Workflow Foundation Rules Engine](http://go.microsoft.com/fwlink/?LinkID=152836)|  
-|RuleSet|[Using RuleSets in Workflows](http://go.microsoft.com/fwlink/?LinkId=178516) and <xref:System.Workflow.Activities.Rules.RuleSet>|  
-|Evaluation of Rules|[Rules Evaluation in RuleSets](http://go.microsoft.com/fwlink/?LinkId=178517)|  
-|Rules Chaining|[Forward Chaining Control](http://go.microsoft.com/fwlink/?LinkId=178518) and [Forward Chaining of Rules](http://go.microsoft.com/fwlink/?LinkId=178519)|  
-|Processing Collections in Rules|[Processing Collections in Rules](http://go.microsoft.com/fwlink/?LinkId=178520)|  
-|Using the PolicyActivity|[Using the PolicyActivity Activity](http://go.microsoft.com/fwlink/?LinkId=178521) and <xref:System.Workflow.Activities.PolicyActivity>|  
+|Rules Overview|[Introduction to the Windows Workflow Foundation Rules Engine](https://go.microsoft.com/fwlink/?LinkID=152836)|  
+|RuleSet|[Using RuleSets in Workflows](https://go.microsoft.com/fwlink/?LinkId=178516) and <xref:System.Workflow.Activities.Rules.RuleSet>|  
+|Evaluation of Rules|[Rules Evaluation in RuleSets](https://go.microsoft.com/fwlink/?LinkId=178517)|  
+|Rules Chaining|[Forward Chaining Control](https://go.microsoft.com/fwlink/?LinkId=178518) and [Forward Chaining of Rules](https://go.microsoft.com/fwlink/?LinkId=178519)|  
+|Processing Collections in Rules|[Processing Collections in Rules](https://go.microsoft.com/fwlink/?LinkId=178520)|  
+|Using the PolicyActivity|[Using the PolicyActivity Activity](https://go.microsoft.com/fwlink/?LinkId=178521) and <xref:System.Workflow.Activities.PolicyActivity>|  
   
  Workflows created in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] do not use all of the rules features provided by [!INCLUDE[wf1](../../../includes/wf1-md.md)], such as declarative activity conditions and conditional activities such as the <xref:System.Workflow.Activities.ConditionedActivityGroup> and <xref:System.Workflow.Activities.ReplicatorActivity>. If required, this functionality is available for workflows created using [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)] and [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. For more information, see [Migration Guidance](../../../docs/framework/windows-workflow-foundation/migration-guidance.md).

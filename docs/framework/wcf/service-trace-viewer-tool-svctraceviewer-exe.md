@@ -446,4 +446,4 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 ## See Also  
  [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
  [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Activity Tracing and Propagation for End-To-End Trace Correlation](http://msdn.microsoft.com/library/2c11a905-64f8-47b5-bae5-a74fc666137e)
+ [Activity Tracing and Propagation for End-To-End Trace Correlation](https://msdn.microsoft.com/library/2c11a905-64f8-47b5-bae5-a74fc666137e)

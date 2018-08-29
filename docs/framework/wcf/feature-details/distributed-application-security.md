@@ -61,8 +61,8 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 |Setting|Description|  
 |-------------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Specifies basic authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88313)."|  
-|Digest|Specifies digest authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88313)."|  
+|Basic|Specifies basic authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
+|Digest|Specifies digest authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
 |Ntlm|Specifies Windows authentication using SSPI negotiation on a Windows domain.<br /><br /> SSPI negotiation results in using either the Kerberos protocol or NT LanMan (NTLM).|  
 |Windows|Specifies Windows authentication using SSPI on a Windows domain. SSPI picks from either the Kerberos protocol or NTLM as authentication service.<br /><br /> SSPI tries Kerberos protocol first; if that fails, it then uses NTLM.|  
 |Certificate|Performs client authentication using a certificate, typically X.509.|  
@@ -94,4 +94,4 @@ Windows Communication Foundation (WCF) security is broken into three major funct
  [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -52,7 +52,7 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
   
 -   RFC 2374, An IPv6 Aggregatable Global Unicast Address Format.  
   
- You can also find IPv6-related information on the [IPv6 area on Technet](http://go.microsoft.com/fwlink/?LinkID=179658).  
+ You can also find IPv6-related information on the [IPv6 area on Technet](https://go.microsoft.com/fwlink/?LinkID=179658).  
   
 ## See Also  
  [IPv6 Sockets Sample](https://msdn.microsoft.com/library/ms180981(v=vs.85).aspx)  

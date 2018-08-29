@@ -177,7 +177,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
   
  [!code-xaml[keyframes_ovw_snippet#SplinedInterpolationExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#splinedinterpolationexample)]  
   
- Splined interpolation can be difficult to understand; experimenting with different settings can help. The [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011) enables you to change key spline values and see the result it has on an animation.  
+ Splined interpolation can be difficult to understand; experimenting with different settings can help. The [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011) enables you to change key spline values and see the result it has on an animation.  
   
 <a name="combininginterpolationmethods"></a>   
 ### Combining Interpolation Methods  
@@ -281,8 +281,8 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
  <xref:System.Windows.Media.Animation.KeyTime>  
  <xref:System.Windows.Media.Animation.KeySpline>  
  <xref:System.Windows.Media.Animation.Timeline>  
- [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011)  
- [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012)  
+ [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011)  
+ [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)  

@@ -576,7 +576,7 @@ private static IEnumerable<int> EvenSequence(
  [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
  [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
  [Collections and Data Structures](../../../standard/collections/index.md)  
- [Creating and Manipulating Collections](http://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
+ [Creating and Manipulating Collections](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
  [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)  
  [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
  [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)  

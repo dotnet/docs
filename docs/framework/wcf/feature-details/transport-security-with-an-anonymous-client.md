@@ -114,4 +114,4 @@ This Windows Communication Foundation (WCF) scenario uses transport security (HT
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [WS Transport Security](../../../../docs/framework/wcf/samples/ws-transport-security.md)  
  [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

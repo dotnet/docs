@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b8f24694-49db-4339-92ec-014e3d4ae63b
 ---
 # Regular Expression Activities
-This sample demonstrates how to create a set of activities that expose the regular expression functionality of the <xref:System.Text.RegularExpressions> namespace. These custom activities can be used within a workflow application. For more information about regular expressions, see [N:System.Text.RegularExpressions](http://go.microsoft.com/fwlink/?LinkId=150434) Namespace.  
+This sample demonstrates how to create a set of activities that expose the regular expression functionality of the <xref:System.Text.RegularExpressions> namespace. These custom activities can be used within a workflow application. For more information about regular expressions, see [N:System.Text.RegularExpressions](https://go.microsoft.com/fwlink/?LinkId=150434) Namespace.  
   
  The following table details the custom activities in this sample.  
   
@@ -23,7 +23,7 @@ This sample demonstrates how to create a set of activities that expose the regul
 |------------------------------|-----------------|  
 |Pattern (required)|The regular expression to search with.|  
 |Input (required)|The input string to search.|  
-|RegexOptions|Bitwise OR combination of [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
+|RegexOptions|Bitwise OR combination of [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
 |Return value|`true` if the input finds a match in the provided pattern; otherwise `false`.|  
   
  The following code example demonstrates how to use the `IsMatch` custom activity.  
@@ -45,7 +45,7 @@ new IsMatch
 |------------------------------|-----------------|  
 |Pattern (required)|The regular expression to search with.|  
 |Input (required)|The input string to search.|  
-|RegexOptions|Bitwise OR combination of [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
+|RegexOptions|Bitwise OR combination of [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
 |Return Value|A <xref:System.Text.RegularExpressions.MatchCollection> that contains the collection of successful matches.|  
   
  The following code example demonstrates how to use the `Matches` custom activity.  
@@ -69,7 +69,7 @@ new Matches
 |Input (required)|The input string to search.|  
 |Replacement|The replacement string.<br /><br /> If a `Replacement` is specified, then the `MatchEvaluator` property is ignored. Either the `Replacement` or `MatchEvaluator` property must be set.|  
 |MatchEvaluator|A custom method that examines each match and returns either the original matched string or a replacement string.<br /><br /> If a `Replacement` is specified, then the `MatchEvaluator` property is ignored. Either the `Replacement` or `MatchEvaluator` property must be set.|  
-|RegexOptions|Bitwise OR combination of [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
+|RegexOptions|Bitwise OR combination of [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) enumeration values.|  
 |Return Value|A <xref:System.Text.RegularExpressions.MatchCollection> that contains the collection of successful matches.|  
   
  The following code example demonstrates how to use the `Replace` custom activity.  
@@ -105,6 +105,6 @@ new Replace
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Regex`

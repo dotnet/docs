@@ -27,7 +27,7 @@ The Windows Forms `SplitContainer` control can be thought of as a composite; it 
  [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  Creates a multi-pane user interface that is similar to the one used in Microsoft Outlook.  
   
- Also see [How to: Split a Window Horizontally Using the Designer](http://msdn.microsoft.com/library/ms233667\(v=vs.110\)), [How to: Create a Windows Explorer–Style Interface on a Windows Form](http://msdn.microsoft.com/library/zh2fe5a5\(v=vs.110\)), [How to: Create a Multipane User Interface with Windows Forms Using the Designer](http://msdn.microsoft.com/library/ms233661\(v=vs.110\)).  
+ Also see [How to: Split a Window Horizontally Using the Designer](https://msdn.microsoft.com/library/ms233667\(v=vs.110\)), [How to: Create a Windows Explorer–Style Interface on a Windows Form](https://msdn.microsoft.com/library/zh2fe5a5\(v=vs.110\)), [How to: Create a Multipane User Interface with Windows Forms Using the Designer](https://msdn.microsoft.com/library/ms233661\(v=vs.110\)).  
   
 ## Reference  
  <xref:System.Windows.Forms.SplitContainer> class  

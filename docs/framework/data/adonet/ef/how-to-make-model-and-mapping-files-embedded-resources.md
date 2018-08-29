@@ -28,7 +28,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
      For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).  
   
 ## Example  
- The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This connection string is stored in the project's App.config file.  
+ The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This connection string is stored in the project's App.config file.  
   
   
   
@@ -36,4 +36,4 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
  [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)  
  [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)  
  [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+ [ADO.NET Entity Data Model  Tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)

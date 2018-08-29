@@ -16,7 +16,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
  This topic provides an introduction to [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting. It focuses on client implementation and use of the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting engine.  
   
 > [!NOTE]
->  All code examples within this document can be found in the [Advanced Text Formatting Sample](http://go.microsoft.com/fwlink/?LinkID=159965).  
+>  All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
   
 
   

@@ -341,7 +341,7 @@ GO
  The code listing follows:  
   
 > [!IMPORTANT]
->  The code listing refers to an Access database file called MySchool.mdb. You can download MySchool.mdb (as part of the full C# or Visual Basic sample project) from either the [Visual Studio 2012 sample](http://code.msdn.microsoft.com/How-to-retrieve-the-95b4ee43) or the [Visual Studio 2013 sample](http://code.msdn.microsoft.com/How-to-Retrieve-the-511acece).  
+>  The code listing refers to an Access database file called MySchool.mdb. You can download MySchool.mdb (as part of the full C# or Visual Basic sample project) from either the [Visual Studio 2012 sample](https://code.msdn.microsoft.com/How-to-retrieve-the-95b4ee43) or the [Visual Studio 2013 sample](https://code.msdn.microsoft.com/How-to-Retrieve-the-511acece).  
   
 ```  
 using System;  
@@ -530,4 +530,4 @@ class Program {
  [AcceptChanges and RejectChanges](../../../../docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)  
  [Merging DataSet Contents](../../../../docs/framework/data/adonet/dataset-datatable-dataview/merging-dataset-contents.md)  
  [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -32,13 +32,13 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
  [How to: Create a Resizable Windows Form for Data Entry](../../../../docs/framework/winforms/controls/how-to-create-a-resizable-windows-form-for-data-entry.md)  
  Demonstrates using a <xref:System.Windows.Forms.TableLayoutPanel> control to build a form that responds well to resizing.  
   
-1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
+1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
   
-2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
+2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
   
-3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
+3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
   
-4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](http://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
+4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](https://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
   
 ## Reference  
  <xref:System.Windows.Forms.TableLayoutPanel>  
@@ -54,4 +54,4 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
  [Localization](../../../../docs/standard/globalization-localization/localization.md)  
  Provides an overview of topics relating to localization.  
   
- Also see [Localizing Applications](http://msdn.microsoft.com/library/z68135h5\(v=vs.110\)) or [Localizing Applications](http://msdn.microsoft.com/library/z68135h5\(v=vs.120\))
+ Also see [Localizing Applications](https://msdn.microsoft.com/library/z68135h5\(v=vs.110\)) or [Localizing Applications](https://msdn.microsoft.com/library/z68135h5\(v=vs.120\))

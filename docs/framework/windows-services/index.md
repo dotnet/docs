@@ -42,5 +42,5 @@ Using Microsoft Visual Studio or the Microsoft [!INCLUDE[dnprdnshort](../../../i
  <xref:System.ServiceProcess.ServiceInstaller>  
  Describes the features of the <xref:System.ServiceProcess.ServiceInstaller> class, which is used along with the <xref:System.ServiceProcess.ServiceProcessInstaller> class to install and uninstall your service.  
   
- [NIB Creating Projects from Templates](http://msdn.microsoft.com/library/7c36d86a-6b79-4480-8228-0f925f1204b2)  
+ [NIB Creating Projects from Templates](https://msdn.microsoft.com/library/7c36d86a-6b79-4480-8228-0f925f1204b2)  
  Describes the projects types used in this chapter and how to choose between them.

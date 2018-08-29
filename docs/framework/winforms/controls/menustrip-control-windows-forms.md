@@ -49,19 +49,19 @@ This control groups application commands and makes them easily accessible.
  [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  Describes how to merge menu items automatically at run time.  
   
--   [MenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+-   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
   
--   [How to: Copy ToolStripMenuItems](http://msdn.microsoft.com/library/ms171653\(v=vs.110\))  
+-   [How to: Copy ToolStripMenuItems](https://msdn.microsoft.com/library/ms171653\(v=vs.110\))  
   
--   [How to: Hide ToolStripMenuItems Using the Designer](http://msdn.microsoft.com/library/ms171658\(v=vs.110\))  
+-   [How to: Hide ToolStripMenuItems Using the Designer](https://msdn.microsoft.com/library/ms171658\(v=vs.110\))  
   
--   [How to: Disable ToolStripMenuItems Using the Designer](http://msdn.microsoft.com/library/ms171656\(v=vs.110\))  
+-   [How to: Disable ToolStripMenuItems Using the Designer](https://msdn.microsoft.com/library/ms171656\(v=vs.110\))  
   
--   [How to: Move ToolStripMenuItems](http://msdn.microsoft.com/library/ms171660\(v=vs.110\))  
+-   [How to: Move ToolStripMenuItems](https://msdn.microsoft.com/library/ms171660\(v=vs.110\))  
   
--   [Walkthrough: Providing Standard Menu Items to a Form](http://msdn.microsoft.com/library/ms233662\(v=vs.110\))  
+-   [Walkthrough: Providing Standard Menu Items to a Form](https://msdn.microsoft.com/library/ms233662\(v=vs.110\))  
   
--   [MenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+-   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

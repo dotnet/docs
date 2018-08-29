@@ -496,6 +496,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
  The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> initializes an RSA object using key information in an XML string that was generated using the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method.  The <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method accepts either an XML string containing a public key or an XML string containing a public and private key.  
   
  Use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method to conveniently initialize <xref:System.Security.Cryptography.RSA> key information.  
@@ -507,6 +508,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="xmlString" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The format of the <paramref name="xmlString" /> parameter is not valid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="HashData">
@@ -966,6 +968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
  The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method creates an XML string that contains either the public and private key of the current <xref:System.Security.Cryptography.RSA> object or contains only the public key of the current <xref:System.Security.Cryptography.RSA> object.  
   
  Use the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method whenever you need to conveniently persist RSA key information.  To initialize an <xref:System.Security.Cryptography.RSA> object with the key in an XML string, use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method.  
@@ -999,6 +1002,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryDecrypt">

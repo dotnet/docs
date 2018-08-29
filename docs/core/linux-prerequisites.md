@@ -94,7 +94,7 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libunwind8
 * libuuid1
 
-### CentOS
+### CentOS and Fedora
 
 CentOS distributions require the following libraries installed:
 
@@ -104,6 +104,8 @@ CentOS distributions require the following libraries installed:
 * krb5-libs
 * libicu
 * zlib
+
+Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.
 
 For versions earlier than .NET Core 2.1, following dependencies are also required:
 

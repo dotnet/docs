@@ -16,7 +16,7 @@ You can create two types of deployments for .NET Core applications:
 
 ## Framework-dependent deployments (FDD)
 
-For an FDD, you deploy only your app and any third-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core apps.
+For an FDD, you deploy only your app and third-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core and ASP.NET Core apps that target .NET Core.
 
 ### Why create a framework-dependent deployment?
 
@@ -65,9 +65,9 @@ For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deplo
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
 
-# See also
+## See also
 
-[Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)   
-[Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)   
-[Packages, Metapackages and Frameworks](../packages.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+* [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
+* [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
+* [Packages, Metapackages and Frameworks](../packages.md)
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

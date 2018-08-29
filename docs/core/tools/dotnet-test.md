@@ -16,22 +16,28 @@ ms.date: 05/29/2018
 ## Synopsis
 
 # [.NET Core 2.1](#tab/netcore21)
-```
+
+```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [--blame] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
     [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
 dotnet test [-h|--help]
 ```
+
 # [.NET Core 2.0](#tab/netcore20)
-```
+
+```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
     [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
 dotnet test [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
-```
+
+```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [-o|--output] [-s|--settings] [-t|--list-tests]  [-v|--verbosity]
 dotnet test [-h|--help]
 ```
+
 ---
 
 ## Description
@@ -278,5 +284,5 @@ For more information and examples on how to use selective unit test filtering, s
 
 ## See also
 
-[Frameworks and Targets](../../standard/frameworks.md)  
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+* [Frameworks and Targets](../../standard/frameworks.md)  
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

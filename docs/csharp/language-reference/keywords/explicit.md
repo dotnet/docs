@@ -1,6 +1,6 @@
 ---
 title: "explicit keyword (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 08/24/2018
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "explicit"
@@ -10,11 +10,13 @@ ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846
 ---
 # explicit (C# Reference)
 
-The `explicit` keyword declares a user-defined type conversion operator that must be invoked with a cast. For example, this operator converts from a class called Fahrenheit to a class called Celsius:
+The `explicit` keyword declares a user-defined type conversion operator that must be invoked with a cast.
+
+The following example defines the operator that converts from a `Fahrenheit` class to a `Celsius` class. The operator must be defined either inside a `Fahrenheit` class or a `Celsius` class:
 
 [!code-csharp[csrefKeywordsConversion#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsConversion/CS/csrefKeywordsConversion.cs#2)]
 
-This conversion operator can be invoked like this:
+You invoke the defined conversion operator with a cast, as the following example shows:
 
 [!code-csharp[csrefKeywordsConversion#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsConversion/CS/csrefKeywordsConversion.cs#3)]
 

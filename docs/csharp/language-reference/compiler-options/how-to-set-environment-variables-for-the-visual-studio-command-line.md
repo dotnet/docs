@@ -37,4 +37,5 @@ If the current version of Visual Studio is installed on a computer that also has
     >  VsDevCmd.bat can vary from computer to computer. Do not replace a missing or damaged VsDevCmd.bat file with a VsDevCmd.bat from another computer. Instead, rerun setup to replace the missing file.  
   
 ## See Also  
- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

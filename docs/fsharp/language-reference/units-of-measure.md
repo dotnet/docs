@@ -104,8 +104,8 @@ To convert a unitless value to a value that has units, you can multiply by a 1 o
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6906.fs)]
     
-## Units of Measure in the F# Power Pack
-A unit library is available in the F# PowerPack. The unit library includes SI units and physical constants.
+## Units of Measure in the F# Core library
+A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` sub-namespace, and their full name (like `meter` for meter) in the `UnitNames` sub-namespace.
 
 
 ## See Also

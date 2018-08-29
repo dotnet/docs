@@ -15,7 +15,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```
+```console
 dotnet tool install <PACKAGE_NAME> <-g|--global> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
 dotnet tool install <PACKAGE_NAME> <--tool-path> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
 dotnet tool install <-h|--help>
@@ -92,4 +92,4 @@ Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnets
 
 ## See also
 
-[.NET Core Global Tools](global-tools.md)
+* [.NET Core Global Tools](global-tools.md)

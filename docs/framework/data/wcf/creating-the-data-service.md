@@ -46,7 +46,7 @@ In this topic, you create a sample data service that uses WCF Data Services to e
 
 5. Connect the data model to the database by doing one of the following steps, and then click **Next**:
 
-    -   If you don't have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). This SQL Server instance must have the Northwind sample database attached.
+    -   If you don't have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). This SQL Server instance must have the Northwind sample database attached.
 
          \- or -
 

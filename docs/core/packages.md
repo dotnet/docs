@@ -105,7 +105,7 @@ The two primary package-based frameworks used with .NET Core are:
 
 ### .NET Standard
 
-The .NET Standard ([Target Framework Moniker](/dotnet/standard/frameworks): `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement.
+The .NET Standard ([Target Framework Moniker](../standard/frameworks.md): `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement.
 
 The `netstandard` framework implicitly references the [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library) metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the [`NETStandard.Library` version 1.6](https://www.nuget.org/packages/NETStandard.Library/1.6.0) metapackage.
 
@@ -134,7 +134,7 @@ The reverse would not be valid: targeting `netstandard1.6` with the 1.3.0 versio
 
 ### .NET Core application
 
-The .NET Core Application ([Target Framework Moniker](/dotnet/standard/frameworks): `netcoreapp`) framework represents the packages and associated APIs that come with the .NET Core distribution and the console application model that it provides. .NET Core apps must use this framework, due to targeting the console application model, as should libraries that intended to run only on .NET Core. Using this framework restricts apps and libraries to running only on .NET Core. 
+The .NET Core Application ([Target Framework Moniker](../standard/frameworks.md): `netcoreapp`) framework represents the packages and associated APIs that come with the .NET Core distribution and the console application model that it provides. .NET Core apps must use this framework, due to targeting the console application model, as should libraries that intended to run only on .NET Core. Using this framework restricts apps and libraries to running only on .NET Core. 
 
 The `Microsoft.NETCore.App` metapackage targets the `netcoreapp` framework. It provides access to ~60 libraries, ~40 provided by the `NETStandard.Library` package and ~20 more in addition. You can reference additional libraries that target `netcoreapp` or compatible frameworks, such as `netstandard`, to get access to additional APIs. 
 

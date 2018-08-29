@@ -34,7 +34,7 @@ The following is a list of the key NuGet packages for .NET Core:
 - [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including `Enumerable` and <xref:System.Linq.ILookup%602>.
 - [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting, and activating types, including <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> and <xref:System.Reflection.MethodInfo>.
 
-Typically, rather than including each package, it's easier and more robust to include a [metapackage](#metapackages). However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
+Typically, rather than including each package, it's easier and more robust to include a [metapackage](#metapackages). However, when you need a single package, you can include it as in the following example, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -67,7 +67,7 @@ The .NET Standard metapackage is:
 The key .NET Core metapackages are:
 
 - [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) - Describes the libraries that are part of the .NET Core distribution. Establishes the [`.NETCoreApp` framework](https://github.com/dotnet/core-setup/blob/release/1.1.0/pkg/projects/Microsoft.NETCore.App/Microsoft.NETCore.App.pkgproj). Depends on the smaller `NETStandard.Library`.
-- - [Microsoft.AspNetCore.App](https://www.nuget.org/packages/Microsoft.AspNetCore.App) - See [Microsoft.AspNetCore.App metapackage for ASP.NET Core](/aspnet/core/fundamentals/metapackage) for more information.
+- [Microsoft.AspNetCore.App](https://www.nuget.org/packages/Microsoft.AspNetCore.App) - Includes all the supported packages from ASP.NET Core and Entity Framework Core except those that contain third-party dependencies. See [Microsoft.AspNetCore.App metapackage for ASP.NET Core](/aspnet/core/fundamentals/metapackage) for more information.
 - [Microsoft.AspNetCore.All](https://www.nuget.org/packages/Microsoft.AspNetCore.All) - Includes all the supported packages from ASP.NET Core, Entity Framework Core, and internal and third-party dependencies used by ASP.NET Core and Entity Framework Core. See [Microsoft.AspNetCore.All metapackage for ASP.NET Core 2.x](/aspnet/core/fundamentals/metapackage) for more information.
 - [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) - A set of compatibility facades that enable mscorlib-based Portable Class Libraries (PCLs) to run on .NET Core.
 

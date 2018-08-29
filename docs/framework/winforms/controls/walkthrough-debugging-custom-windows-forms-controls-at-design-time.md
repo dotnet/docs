@@ -38,14 +38,14 @@ When you create a custom control, you will often find it necessary to debug its 
  When you are finished, you will have an understanding of the tasks necessary for debugging the design-time behavior of a custom control.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the application project. You will use this project to build the application that hosts the custom control.  
   
 #### To create the project  
   
--   Create a Windows Application project called "DebuggingExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+-   Create a Windows Application project called "DebuggingExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 ## Creating a Control Library Project  
  The next step is to create the control library project and set up the custom control.  

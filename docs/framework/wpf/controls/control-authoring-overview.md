@@ -166,7 +166,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  For more information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
 ### Design for Designers  
- To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26).  
+ To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
   
 #### Dependency Properties  
  Be sure to implement [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] `get` and `set` accessors as described earlier, in "Use Dependency Properties." Designers may use the wrapper to detect the presence of a dependency property, but they, like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and clients of the control, are not required to call the accessors when getting or setting the property.  
@@ -263,6 +263,6 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
 ## See Also  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
  [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

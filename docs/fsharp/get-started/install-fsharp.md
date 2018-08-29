@@ -1,7 +1,7 @@
 ---
 title: Install F#
 description: Learn how to install F# based on your environment.
-ms.date: 07/03/2018
+ms.date: 08/28/2018
 ---
 
 # Install F# #
@@ -28,30 +28,30 @@ You must have [git installed](https://git-scm.com/download) and available on you
 
 ### [macOS](#tab/macos)
 
-[Mono](http://www.mono-project.com) is used for [F# Interactive](https://docs.microsoft.com/dotnet/fsharp/tutorials/fsharp-interactive/) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
+[Mono](http://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. The easiest way to install Mono on macOS is via Homebrew. Simply type the following into your terminal:
 
 ```console
 brew install mono
 ```
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
+Also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
 ### [Linux](#tab/linux)
 
-[Mono](https://www.mono-project.com) is used for [F# Interactive](https://docs.microsoft.com/dotnet/fsharp/tutorials/fsharp-interactive/) support. If you're on Debian or Ubuntu, you can use the following:
+[Mono](https://www.mono-project.com) is used for [F# Interactive](../tutorials/fsharp-interactive/index.md) support. If you're on Debian or Ubuntu, you can use the following:
 
 ```console
 sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
+Also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
 ### [Windows](#tab/windows)
 
-[Install Visual Studio with F# support](#install-f-with-visual-studio) if you're on Windows. This installs all the necessary components to write, compile, and execute F# code.
+Install [Visual Studio with F# support](#install-f-with-visual-studio). This installs all the necessary components to write, compile, and execute F# code.
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
+Also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
 
 ---
 

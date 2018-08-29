@@ -15,21 +15,21 @@ Unmanaged types include:
 
 -   The simple types that are listed in the following table:
   
-|Expression|Constant value|  
-|----------------|--------------------|  
-|`sizeof(sbyte)`|1|  
-|`sizeof(byte)`|1|  
-|`sizeof(short)`|2|  
-|`sizeof(ushort)`|2|  
-|`sizeof(int)`|4|  
-|`sizeof(uint)`|4|  
-|`sizeof(long)`|8|  
-|`sizeof(ulong)`|8|  
-|`sizeof(char)`|2 (Unicode)|  
-|`sizeof(float)`|4|  
-|`sizeof(double)`|8|  
-|`sizeof(decimal)`|16|  
-|`sizeof(bool)`|1|  
+   |Expression|Constant value|  
+   |----------------|--------------------|  
+   |`sizeof(sbyte)`|1|  
+   |`sizeof(byte)`|1|  
+   |`sizeof(short)`|2|  
+   |`sizeof(ushort)`|2|  
+   |`sizeof(int)`|4|  
+   |`sizeof(uint)`|4|  
+   |`sizeof(long)`|8|  
+   |`sizeof(ulong)`|8|  
+   |`sizeof(char)`|2 (Unicode)|  
+   |`sizeof(float)`|4|  
+   |`sizeof(double)`|8|  
+   |`sizeof(decimal)`|16|  
+   |`sizeof(bool)`|1| 
   
 -   Enum types.
   

@@ -484,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Content-Length` header expresses the length, in bytes, of the response's body data. When using a format that is not send the data chunked or raw, you must set the <xref:System.Net.HttpListenerResponse.ContentLength64%2A> property. If you do not, the <xref:System.Net.HttpListener> does not send the response data.  
+ The `Content-Length` header expresses the length, in bytes, of the response's body data. When using a format that does not send the data chunked or raw, you must set the <xref:System.Net.HttpListenerResponse.ContentLength64%2A> property. If you do not, the <xref:System.Net.HttpListener> does not send the response data.  
   
  For a complete list of response headers, see the <xref:System.Net.HttpResponseHeader> enumeration.  
   

@@ -73,7 +73,7 @@ ms.author: "ronpet"
  [!code-csharp[TPLDataflow_Overview#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_overview/cs/program.cs#11)]
  [!code-vb[TPLDataflow_Overview#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#11)]  
   
- You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md), and [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
+ You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), and [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  [[go to top](#top)]  
   

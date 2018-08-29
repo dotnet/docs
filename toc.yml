@@ -24,7 +24,10 @@
         topicHref: /dotnet/standard/modernize-with-azure-and-containers/index
       - name: .NET Microservices - DevOps e-book
         tocHref: /dotnet/standard/containerized-lifecycle-architecture/
-        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index        
+        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index 
+      - name: Serverless apps e-book
+        tocHref: /dotnet/standard/serverless-architecture/
+        topicHref: /dotnet/standard/serverless-architecture/index      
       - name: Asynchronous Programming Patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
@@ -216,7 +219,7 @@
         topicHref: /dotnet/framework/performance/index
       - name: Dynamic Programming in the .NET Framework
         tocHref: /dotnet/framework/reflection-and-codedom/
-        topicHref: /dotnet/framework/framework/reflection-and-codedom/index
+        topicHref: /dotnet/framework/reflection-and-codedom/index
       - name: Resources in Desktop Apps
         tocHref: /dotnet/framework/resources/
         topicHref: /dotnet/framework/resources/index
@@ -593,3 +596,13 @@
       - name: Reference
         tocHref: /dotnet/visual-basic/reference/
         topicHref: /dotnet/visual-basic/reference/index
+    - name: ML.NET Guide
+      tocHref: /dotnet/machine-learning/
+      topicHref: /dotnet/machine-learning/index
+      items:
+      - name: Resources
+        tocHref: /dotnet/machine-learning/resources/
+        topicHref: /dotnet/machine-learning/resources/index
+      - name: Tutorials
+        tocHref: /dotnet/machine-learning/tutorials/
+        topicHref: /dotnet/machine-learning/tutorials/index

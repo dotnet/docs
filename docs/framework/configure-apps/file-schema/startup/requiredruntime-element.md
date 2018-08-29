@@ -1,14 +1,6 @@
 ---
 title: "&lt;requiredRuntime&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requiredRuntime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/requiredRuntime"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "<requiredRuntime> element"
   - "container tags, <requiredRuntime> element"
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;requiredRuntime&gt; Element
 Specifies that the application supports only version 1.0 of the common language runtime. This element is deprecated and should no longer be used. The [`supportedRuntime`](supportedruntime-element.md) element should be used instead.

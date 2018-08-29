@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugCode::GetAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugCode.GetAddress"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: cc507cb0-df2e-49c2-b32e-0c3271a8df9a
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugCode::GetAddress Method
 Gets the relative virtual address (RVA) of the code segment that this "ICorDebugCode" interface represents.  

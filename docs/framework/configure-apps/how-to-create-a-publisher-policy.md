@@ -1,26 +1,15 @@
 ---
 title: "How to: Create a Publisher Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "publisher policy assembly"
   - "publisher policy files"
   - "GAC (global assembly cache), publisher policy assembly"
   - "global assembly cache, publisher policy assembly"
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Publisher Policy
 Vendors of assemblies can state that applications should use a newer version of an assembly by including a publisher policy file with the upgraded assembly. The publisher policy file specifies assembly redirection and code base settings, and uses the same format as an application configuration file. The publisher policy file is compiled into an assembly and placed in the global assembly cache.  

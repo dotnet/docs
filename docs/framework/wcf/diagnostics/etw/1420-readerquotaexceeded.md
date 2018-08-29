@@ -1,21 +1,7 @@
 ---
 title: "1420 - ReaderQuotaExceeded"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d2e8cd7e-f7aa-476c-9857-1e04c4b52dc0
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1420 - ReaderQuotaExceeded
 ## Properties  

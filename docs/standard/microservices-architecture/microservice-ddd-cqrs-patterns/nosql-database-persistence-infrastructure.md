@@ -1,16 +1,9 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | Using NoSQL databases as a persistence infrastructure
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/12/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using NoSQL databases as a persistence infrastructure
 
@@ -223,7 +216,7 @@ public class Locations
 
 You can see there are a few attributes and types coming from the MongoDB NuGet packages.
 
-NoSQL databases are usually very well suited for working with non-relational hierarchical data. In this example, we are using MongoDB types expecially made for geo-locations, like `GeoJson2DGeographicCoordinates`.
+NoSQL databases are usually very well suited for working with non-relational hierarchical data. In this example, we are using MongoDB types especially made for geo-locations, like `GeoJson2DGeographicCoordinates`.
 
 #### Retrieve the database and the collection
 
@@ -335,5 +328,5 @@ If the `ESHOP_AZURE_COSMOSDB` global variable is empty, meaning that it is comme
 
 
 >[!div class="step-by-step"]
-[Previous] (infrastructure-persistence-layer-implemenation-entity-framework-core.md)
-[Next] (microservice-application-layer-web-api-design.md)
+[Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+[Next](microservice-application-layer-web-api-design.md)

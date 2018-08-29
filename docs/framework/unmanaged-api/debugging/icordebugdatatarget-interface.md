@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugDataTarget Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugDataTarget"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: df5f05be-bed7-4f3c-bc89-dbb435d79a0b
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDataTarget Interface
 Provides a callback interface that provides access to a particular target process.  

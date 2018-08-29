@@ -1,13 +1,6 @@
 ---
 title: "Inheritance Basics (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "derived classes [Visual Basic], inheritance"
   - "MyClass keyword [Visual Basic], using"
@@ -27,21 +20,18 @@ helpviewer_keywords:
   - "abstract classes [Visual Basic], inheritance"
   - "overriding, Overrides keyword"
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Inheritance Basics (Visual Basic)
 The `Inherits` statement is used to declare a new class, called a *derived class*, based on an existing class, known as a *base class*. Derived classes inherit, and can extend, the properties, methods, events, fields, and constants defined in the base class. The following section describes some of the rules for inheritance, and the modifiers you can use to change the way classes inherit or are inherited:  
   
 -   By default, all classes are inheritable unless marked with the `NotInheritable` keyword. Classes can inherit from other classes in your project or from classes in other assemblies that your project references.  
   
--   Unlike languages that allow multiple inheritance, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] allows only single inheritance in classes; that is, derived classes can have only one base class. Although multiple inheritance is not allowed in classes, classes can implement multiple interfaces, which can effectively accomplish the same ends.  
+-   Unlike languages that allow multiple inheritance, Visual Basic allows only single inheritance in classes; that is, derived classes can have only one base class. Although multiple inheritance is not allowed in classes, classes can implement multiple interfaces, which can effectively accomplish the same ends.  
   
 -   To prevent exposing restricted items in a base class, the access type of a derived class must be equal to or more restrictive than its base class. For example, a `Public` class cannot inherit a `Friend` or a `Private` class, and a `Friend` class cannot inherit a `Private` class.  
   
 ## Inheritance Modifiers  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] introduces the following class-level statements and modifiers to support inheritance:  
+ Visual Basic introduces the following class-level statements and modifiers to support inheritance:  
   
 -   `Inherits` statement — Specifies the base class.  
   

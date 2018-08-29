@@ -1,14 +1,6 @@
 ---
 title: "PreCloseAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.PreCloseAssembly"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PreCloseAssembly Method
 Closes the assembly file. Call this method after closing all other files, but before closing the assembly file. Do not call this method for unbound modules.  

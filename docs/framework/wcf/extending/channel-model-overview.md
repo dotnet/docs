@@ -1,29 +1,15 @@
 ---
 title: "Channel Model Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "channel model [WCF]"
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Channel Model Overview
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel stack is a layered communication stack with one or more channels that process messages. At the bottom of the stack is a transport channel that is responsible for adapting the channel stack to the underlying transport (for example, TCP, HTTP, SMTP and other types of transport.). Channels provide a low-level programming model for sending and receiving messages. This programming model relies on several interfaces and other types collectively known as the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel model. This topic discusses channel shapes, the construction of a basic channel listener (on the service) and channel factory (on the client).  
+The Windows Communication Foundation (WCF) channel stack is a layered communication stack with one or more channels that process messages. At the bottom of the stack is a transport channel that is responsible for adapting the channel stack to the underlying transport (for example, TCP, HTTP, SMTP and other types of transport.). Channels provide a low-level programming model for sending and receiving messages. This programming model relies on several interfaces and other types collectively known as the WCF channel model. This topic discusses channel shapes, the construction of a basic channel listener (on the service) and channel factory (on the client).  
   
 ## Channel Stack  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoints communicate with the world using a communication stack called the channel stack. The following diagram compares the channel stack with other communication stacks, for example TCP/IP.  
+ WCF endpoints communicate with the world using a communication stack called the channel stack. The following diagram compares the channel stack with other communication stacks, for example TCP/IP.  
   
  ![Channel Model](../../../../docs/framework/wcf/extending/media/wcfc-channelstackhighlevelc.gif "wcfc_ChannelStackHighLevelc")  
   

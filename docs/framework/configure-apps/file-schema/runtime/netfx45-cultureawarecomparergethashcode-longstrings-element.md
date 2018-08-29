@@ -1,26 +1,14 @@
 ---
 title: "&lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "NetFx45_CultureAwareComparerGetHashCode_LongStrings element"
   - "<NetFx45_CultureAwareComparerGetHashCode_LongStrings> element"
   - "GetHashCode method"
   - "hash codes, calculating"
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element
 Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.  

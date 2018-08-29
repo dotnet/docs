@@ -1,27 +1,15 @@
 ---
 title: "Message Security with an Anonymous Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-caps.latest.revision: 15
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Security with an Anonymous Client
-The following scenario shows a client and service secured by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] message security. A design goal is to use message security rather than transport security, so that in the future it can support a richer claims-based model. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using rich claims for authorization, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
+The following scenario shows a client and service secured by Windows Communication Foundation (WCF) message security. A design goal is to use message security rather than transport security, so that in the future it can support a richer claims-based model. For more information about using rich claims for authorization, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
  For a sample application, see [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md).  
   
@@ -30,7 +18,7 @@ The following scenario shows a client and service secured by [!INCLUDE[indigo1](
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only|  
+|Interoperability|WCF only|  
 |Authentication (Server)|Initial negotiation requires server authentication, but not client authentication|  
 |Authentication (Client)|None|  
 |Integrity|Yes, using shared security context|  

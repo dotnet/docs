@@ -1,19 +1,7 @@
 ---
 title: "110 - CustomTrackingRecordWarning"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3bc093de-be47-4ed0-983f-05b4246446fc
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 110 - CustomTrackingRecordWarning
 ## Properties  

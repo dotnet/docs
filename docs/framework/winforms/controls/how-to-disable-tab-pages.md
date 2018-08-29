@@ -1,14 +1,6 @@
 ---
 title: "How to: Disable Tab Pages"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "tab pages [Windows Forms], hiding in forms"
   - "TabControl control [Windows Forms], disabling pages"
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Disable Tab Pages
 On some occasions, you will want to restrict access to data that is available within your Windows Forms application. One example of this might be when you have data displayed in the tab pages of a tab control; administrators could have information on a tab page that you would want to restrict from guest or lower-level users.  

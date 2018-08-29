@@ -1,17 +1,8 @@
 ---
 title: let Bindings (F#)
 description: Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: bee69edc-d5ae-46bd-8b56-f02d97725d0d 
 ---
-
 # let Bindings
 
 A *binding* associates an identifier with a value or function. You use the `let` keyword to bind a name to a value or function.

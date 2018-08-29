@@ -1,26 +1,12 @@
 ---
 title: "DateTimePicker Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DateTimePicker"
 helpviewer_keywords: 
   - "DateTimePicker control [Windows Forms], about"
   - "date and time picker controls"
 ms.assetid: 501af106-e9fc-4efc-b9b3-c9d8dcaf8c5c
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DateTimePicker Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control allows the user to select a single item from a list of dates or times. When used to represent a date, it appears in two parts: a drop-down list with a date represented in text, and a grid that appears when you click on the down-arrow next to the list. The grid looks like the <xref:System.Windows.Forms.MonthCalendar> control, which can be used for selecting multiple dates. For more information on the <xref:System.Windows.Forms.MonthCalendar> control, see [MonthCalendar Control Overview](../../../../docs/framework/winforms/controls/monthcalendar-control-overview-windows-forms.md).  

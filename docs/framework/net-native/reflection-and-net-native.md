@@ -1,21 +1,9 @@
 ---
 title: "Reflection and .NET Native"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 91c9eae4-c641-476c-a06e-d7ce39709763
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Reflection and .NET Native
 In the .NET Framework, managed development supports metaprogramming through the reflection API. Reflection allows you to inspect objects in an app, call methods on objects discovered through inspection, generate new types at run time, and supports many other dynamic code scenarios. It also supports serialization and deserialization, which allows an object's field values to be persisted and later restored. These scenarios all require the .NET Framework just-in-time (JIT) compiler to generate native code based on available metadata.  

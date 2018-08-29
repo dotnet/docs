@@ -1,17 +1,7 @@
 ---
 title: "Generation Operations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Generation Operations (C#)
 Generation refers to creating a new sequence of values.  

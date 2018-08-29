@@ -1,19 +1,12 @@
 ---
 title: "unchecked (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "unchecked_CSharpKeyword"
   - "unchecked"
 helpviewer_keywords: 
   - "unchecked keyword [C#]"
 ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # unchecked (C# Reference)
 The `unchecked` keyword is used to suppress overflow-checking for integral-type arithmetic operations and conversions.  
@@ -36,9 +29,10 @@ The `unchecked` keyword is used to suppress overflow-checking for integral-type 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
- [checked](../../../csharp/language-reference/keywords/checked.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
+- [checked](../../../csharp/language-reference/keywords/checked.md)

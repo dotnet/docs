@@ -1,14 +1,6 @@
 ---
 title: "Accessing Frames in the Managed HTML Document Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "HTML [Windows Forms], dOM"
   - "managed HTML DOM"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "frames [Windows Forms], accessing"
   - "DOM [Windows Forms], accessing frames in managed HTML"
 ms.assetid: cdeeaa22-0be4-4bbf-9a75-4ddc79199f8d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Accessing Frames in the Managed HTML Document Object Model
 Some HTML documents are composed out of *frames*, or windows that can hold their own distinct HTML documents. Using frames makes it easy to create HTML pages in which one or more pieces of the page remain static, such as a navigation bar, while other frames constantly change their content.  
@@ -46,7 +32,7 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
  This rule also applies to windows that you open using the <xref:System.Windows.Forms.HtmlWindow.Open%2A> and <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods. If the window you open is in a different domain from the page hosted in the <xref:System.Windows.Forms.WebBrowser> control, you will not be able to move that window or examine its contents. These restrictions are also enforced if you use the <xref:System.Windows.Forms.WebBrowser> control to display a Web site that is different from the Web site used to deploy your Windows Forms-based application. If you use [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] deployment technology to install your application from Web site A, and you use the <xref:System.Windows.Forms.WebBrowser> to display Web site B, you will not be able to access Web site B's data.  
   
- For more information about cross-site scripting, see[About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).  
+ For more information about cross-site scripting, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).  
   
 ## See Also  
  [FRAME Element &#124; frame Object](http://msdn.microsoft.com/library/ms535250.aspx)  

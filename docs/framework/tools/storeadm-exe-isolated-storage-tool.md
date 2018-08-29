@@ -1,14 +1,6 @@
 ---
 title: "Storeadm.exe (Isolated Storage Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Storeadm.exe"
   - "listing stores for current user"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "stores, current user"
   - "removing stores"
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Storeadm.exe (Isolated Storage Tool)
 The Isolated Storage tool lists or removes all existing stores for the current user.  

@@ -1,23 +1,9 @@
 ---
 title: "Configuring Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tracing [WCF]"
 ms.assetid: 82922010-e8b3-40eb-98c4-10fc05c6d65d
-caps.latest.revision: 53
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Tracing
 This topic describes how you can enable tracing, configure trace sources to emit traces and set trace levels, set activity tracing and propagation to support end-to-end trace correlation, and set trace listeners to access traces.  
@@ -28,17 +14,17 @@ This topic describes how you can enable tracing, configure trace sources to emit
 >  On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
   
 ## Enabling Tracing  
- [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] outputs the following data for diagnostic tracing:  
+ Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  
   
 -   Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events.  
   
 -   Windows error events when the tracing feature malfunctions. See [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
   
- [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] tracing is built on top of <xref:System.Diagnostics>. To use tracing, you should define trace sources in the configuration file or in code. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] defines a trace source for each [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] assembly. The `System.ServiceModel` trace source is the most general [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] trace source, and records processing milestones across the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] communication stack, from entering/leaving transport to entering/leaving user code. The `System.ServiceModel.MessageLogging` trace source records all messages that flow through the system.  
+ WCF tracing is built on top of <xref:System.Diagnostics>. To use tracing, you should define trace sources in the configuration file or in code. WCF defines a trace source for each WCF assembly. The `System.ServiceModel` trace source is the most general WCF trace source, and records processing milestones across the WCF communication stack, from entering/leaving transport to entering/leaving user code. The `System.ServiceModel.MessageLogging` trace source records all messages that flow through the system.  
   
- Tracing is not enabled by default. To activate tracing, you must create a trace listener and set a trace level other than "Off" for the selected trace source in configuration; otherwise, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] does not generate any traces. If you do not specify a listener, tracing is automatically disabled. If a listener is defined, but no level is specified, the level is set to "Off" by default, which means that no trace is emitted.  
+ Tracing is not enabled by default. To activate tracing, you must create a trace listener and set a trace level other than "Off" for the selected trace source in configuration; otherwise, WCF does not generate any traces. If you do not specify a listener, tracing is automatically disabled. If a listener is defined, but no level is specified, the level is set to "Off" by default, which means that no trace is emitted.  
   
- If you use [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] extensibility points such as custom operation invokers, you should emit your own traces. This is because if you implement an extensibility point, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] can no longer emit the standard traces in the default path. If you do not implement manual tracing support by emitting traces, you may not see the traces you expect.  
+ If you use WCF extensibility points such as custom operation invokers, you should emit your own traces. This is because if you implement an extensibility point, WCF can no longer emit the standard traces in the default path. If you do not implement manual tracing support by emitting traces, you may not see the traces you expect.  
   
  You can configure tracing by editing the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted applications. The following is an example of such edit. For more information on these settings, see the "Configuring Trace Listeners to Consume Traces" section.  
   
@@ -61,12 +47,12 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ```  
   
 > [!NOTE]
->  To edit the configuration file of a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service project in [!INCLUDE[vs_current_short](../../../../../includes/vs-current-short-md.md)], right click the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services using a graphical user interface.  
+>  To edit the configuration file of a WCF service project in Visual Studio, right click the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for WCF services using a graphical user interface.  
   
 ## Configuring Trace Sources to Emit Traces  
- [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] defines a trace source for each assembly. Traces generated within an assembly are accessed by the listeners defined for that source. The following trace sources are defined:  
+ WCF defines a trace source for each assembly. Traces generated within an assembly are accessed by the listeners defined for that source. The following trace sources are defined:  
   
--   System.ServiceModel: Logs all stages of [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] processing, whenever configuration is read, a message is processed in transport, security processing, a message is dispatched in user code, and so on.  
+-   System.ServiceModel: Logs all stages of WCF processing, whenever configuration is read, a message is processed in transport, security processing, a message is dispatched in user code, and so on.  
   
 -   System.ServiceModel.MessageLogging: Logs all messages that flow through the system.  
   
@@ -141,16 +127,16 @@ This topic describes how you can enable tracing, configure trace sources to emit
 </system.diagnostics>  
 ```  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] creating user-defined trace sources, see [Extending Tracing](../../../../../docs/framework/wcf/samples/extending-tracing.md).  
+ For more information about creating user-defined trace sources, see [Extending Tracing](../../../../../docs/framework/wcf/samples/extending-tracing.md).  
   
 ## Configuring Trace Listeners to Consume Traces  
- At runtime, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] feeds trace data to the listeners which process the data. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
+ At runtime, WCF feeds trace data to the listeners which process the data. WCF provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
   
  You can use `add` to specify the name and type of the trace listener you want to use. In our example configuration, we named the Listener `traceListener` and added the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type we want to use. You can add any number of trace listeners for each source. If the trace listener emits the trace to a file, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the file for that listener. If you do not specify a file name, a random file name is generated based on the listener type used. If <xref:System.Diagnostics.XmlWriterTraceListener> is used, a file name with no extension is generated. If you implement a custom listener, you can also use this attribute to receive initialization data other than a filename. For example, you can specify a database identifier for this attribute.  
   
  You can configure a custom trace listener to send traces on the wire, for example, to a remote database. As an application deployer, you should enforce proper access control on the trace logs in the remote machine.  
   
- You can also configure a trace listener programmatically. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
+ You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
 >  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
@@ -178,13 +164,13 @@ This topic describes how you can enable tracing, configure trace sources to emit
  The `activityTracing` value specified for the `switchValue` attribute is used to enable activity tracing, which emits traces for activity boundaries and transfers within endpoints.  
   
 > [!NOTE]
->  When you use certain extensibility features in [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)], you might get a <xref:System.NullReferenceException> when activity tracing is enabled. To fix this problem, check your application's configuration file and ensure that the `switchValue` attribute for your trace source is not set to `activityTracing`.  
+>  When you use certain extensibility features in WCF, you might get a <xref:System.NullReferenceException> when activity tracing is enabled. To fix this problem, check your application's configuration file and ensure that the `switchValue` attribute for your trace source is not set to `activityTracing`.  
   
  The `propagateActivity` attribute indicates whether the activity should be propagated to other endpoints that participate in the message exchange. By setting this value to `true`, you can take trace files generated by any two endpoints and observe how a set of traces on one endpoint flowed to a set of traces on another endpoint.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] activity tracing and propagation, see [Propagation](../../../../../docs/framework/wcf/diagnostics/tracing/propagation.md).  
+ For more information about activity tracing and propagation, see [Propagation](../../../../../docs/framework/wcf/diagnostics/tracing/propagation.md).  
   
- Both `propagateActivity` and `ActivityTracing` Boolean values apply to the System.ServiceModel TraceSource. The `ActivityTracing` value also applies to any trace source, including [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] or user-defined ones.  
+ Both `propagateActivity` and `ActivityTracing` Boolean values apply to the System.ServiceModel TraceSource. The `ActivityTracing` value also applies to any trace source, including WCF or user-defined ones.  
   
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   

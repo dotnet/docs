@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugNativeFrame::GetLocalMemoryValue Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame.GetLocalMemoryValue"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugNativeFrame::GetLocalMemoryValue Method
 Gets the value of an argument or local variable that is stored in the specified memory location for this native frame.  

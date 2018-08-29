@@ -1,22 +1,10 @@
 ---
 title: "Tracking"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: afdcd9bd-b462-4b2a-aac7-bebf9c80be81
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking
-This section contains samples that demonstrate workflow tracking in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate workflow tracking in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Custom Tracking](../../../../docs/framework/windows-workflow-foundation/samples/custom-tracking.md)  

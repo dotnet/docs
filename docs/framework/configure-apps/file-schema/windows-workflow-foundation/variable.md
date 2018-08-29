@@ -1,19 +1,8 @@
 ---
 title: "&lt;variable&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 46cc8cbc-10ec-4625-8813-3f5cd6c6afde
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;variable&gt;
 Represents a collection of variables associated with this activity query.  

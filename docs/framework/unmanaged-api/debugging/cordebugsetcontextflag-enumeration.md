@@ -1,14 +1,6 @@
 ---
 title: "CorDebugSetContextFlag Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugSetContextFlag"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b30280bb-fe75-44ed-8589-bcff081fae44
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugSetContextFlag Enumeration
 Indicates whether the context is from the active (or leaf) frame on the stack or has been computed by unwinding from another frame.  

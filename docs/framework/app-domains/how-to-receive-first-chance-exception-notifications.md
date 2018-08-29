@@ -1,14 +1,6 @@
 ---
 title: "How to: Receive First-Chance Exception Notifications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "first-chance exception notifications"
   - "exceptions, first chance notifications"
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Receive First-Chance Exception Notifications
 The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDomain> class lets you receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.  

@@ -1,19 +1,11 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
 author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Glossary
 
 The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation without definitions.

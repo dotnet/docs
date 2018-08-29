@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugLoadedModule::GetSize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: aaa0e5c0-be9d-4fe1-8418-5295b9b184d6
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugLoadedModule::GetSize Method
 Gets the size in bytes of the loaded module.  

@@ -1,14 +1,6 @@
 ---
 title: "ICLRTaskManager::SetUILocale Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRTaskManager.SetUILocale"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 03adaa9a-2beb-49b3-b2c4-6b4fc3f10715
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRTaskManager::SetUILocale Method
 Notifies the common language runtime (CLR) that the host has modified the user interface (UI) locale, or culture, on the currently executing task.  

@@ -2,9 +2,7 @@
 title: "How to: convert strings to DateTime"
 description: "Learn techniques to parse strings that represent dates and times to create a DateTime from the date and time string."
 ms.date: "02/15/2018"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +16,7 @@ helpviewer_keywords:
   - "time strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Parsing Date and Time Strings in .NET
 
 Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:

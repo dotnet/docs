@@ -1,14 +1,6 @@
 ---
 title: "How to: Build a Multifile Assembly"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -25,12 +17,8 @@ helpviewer_keywords:
   - "code modules"
   - "multifile assemblies"
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Build a Multifile Assembly
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.  

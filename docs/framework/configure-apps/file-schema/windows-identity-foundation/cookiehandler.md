@@ -1,21 +1,9 @@
 ---
 title: "&lt;cookieHandler&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;cookieHandler&gt;
 Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.  

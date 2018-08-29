@@ -1,41 +1,27 @@
 ---
 title: "What&#39;s New in ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
-caps.latest.revision: 25
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # What&#39;s New in ADO.NET
 The following features are new in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].  
   
 ## SqlClient Data Provider  
- The following features are new in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]:  
+ The following features are new in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]:  
   
 -   The ConnectRetryCount and ConnectRetryInterval connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.  
   
--   Streaming support from [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] to an application supports scenarios where data on the server is unstructured.  See [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md) for more information.  
+-   Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured.  See [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md) for more information.  
   
 -   Support has been added for asynchronous programming.  See [Asynchronous Programming](../../../../docs/framework/data/adonet/asynchronous-programming.md) for more information.  
   
 -   Connection failures will now be logged in the extended events log. For more information, see [Data Tracing in ADO.NET](../../../../docs/framework/data/adonet/data-tracing.md).  
   
--   SqlClient now has support for [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]'s high availability, disaster recovery feature, AlwaysOn. For more information, see [SqlClient Support for High Availability, Disaster Recovery](../../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).  
+-   SqlClient now has support for SQL Server's high availability, disaster recovery feature, AlwaysOn. For more information, see [SqlClient Support for High Availability, Disaster Recovery](../../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).  
   
--   A password can be passed as a <xref:System.Security.SecureString> when using [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] Authentication. See <xref:System.Data.SqlClient.SqlCredential> for more information.  
+-   A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. See <xref:System.Data.SqlClient.SqlCredential> for more information.  
   
--   When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
+-   When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
      If this change causes an existing application to no longer connect, you can fix the application using one of the following:  
   

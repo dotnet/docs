@@ -1,14 +1,6 @@
 ---
 title: "More Secure File and Data Access in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "file access [Windows Forms]"
   - "security [Windows Forms], data access"
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # More Secure File and Data Access in Windows Forms
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] uses permissions to help protect resources and data. Where your application can read or write data depends on the permissions granted to the application. When your application runs in a partial trust environment, you might not have access to your data or you might have to change the way you access the data.  
@@ -34,7 +20,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] uses permission
  When you encounter a security restriction, you have two options: assert the permission (assuming it has been granted to your application), or use a version of the feature written to work in partial trust. The following sections discuss how to work with file, database, and registry access from applications that are running in a partial trust environment.  
   
 > [!NOTE]
->  By default, tools that generate [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments default these deployments to requesting Full Trust from the computers on which they run. If you decide you want the added security benefits of running in partial trust, you must change this default in either [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or one of the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] tools (Mage.exe or MageUI.exe). For more information about Windows Forms security, and on how to determine the appropriate trust level for your application, see [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md).  
+>  By default, tools that generate [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments default these deployments to requesting Full Trust from the computers on which they run. If you decide you want the added security benefits of running in partial trust, you must change this default in either Visual Studio or one of the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] tools (Mage.exe or MageUI.exe). For more information about Windows Forms security, and on how to determine the appropriate trust level for your application, see [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md).  
   
 ## File Access  
  The <xref:System.Security.Permissions.FileIOPermission> class controls file and folder access in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By default, the security system does not grant the <xref:System.Security.Permissions.FileIOPermission> to partial trust environments such as the local intranet and Internet zones. However, an application that requires file access can still function in these environments if you modify the design of your application or use different methods to access files. By default, the local intranet zone is granted the right to have same site access and same directory access, to connect back to the site of its origin, and to read from its installation directory. By default, the Internet zone, is only granted the right to connect back to the site of its origin.  
@@ -141,7 +127,7 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ```  
   
 > [!NOTE]
->  In [!INCLUDE[csprcs](../../../includes/csprcs-md.md)], ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
+>  In Visual C#, ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
   
 ### Other Files  
  Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](../../../docs/standard/io/isolated-storage.md).  

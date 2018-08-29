@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugAppDomain4::GetObjectForCCW Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAppDomain4::GetObjectForCCW Method
 Gets a managed object from a COM callable wrapper (CCW) pointer.  

@@ -1,14 +1,6 @@
 ---
 title: "ICLRPolicyManager::SetActionOnTimeout Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRPolicyManager.SetActionOnTimeout"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRPolicyManager::SetActionOnTimeout Method
 Specifies the policy action the common language runtime (CLR) should take when the specified operation times out.  

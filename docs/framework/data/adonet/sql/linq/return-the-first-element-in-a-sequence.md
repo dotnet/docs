@@ -1,24 +1,10 @@
 ---
 title: "Return the First Element in a Sequence"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ccdc3777-b2c2-44e3-a627-abef8d79a555
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Return the First Element in a Sequence
 Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first element in a sequence. Queries that use <xref:System.Linq.Enumerable.First%2A> are executed immediately.  

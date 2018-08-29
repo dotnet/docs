@@ -1,14 +1,6 @@
 ---
 title: "Brushes and Filled Shapes in GDI+"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "gradient brushes"
   - "brushes [Windows Forms], gradient"
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Brushes and Filled Shapes in GDI+
 A closed shape, such as a rectangle or an ellipse, consists of an outline and an interior. The outline is drawn with a pen and the interior is filled with a brush. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides several brush classes for filling the interiors of closed shapes: <xref:System.Drawing.SolidBrush>, <xref:System.Drawing.Drawing2D.HatchBrush>, <xref:System.Drawing.TextureBrush>, <xref:System.Drawing.Drawing2D.LinearGradientBrush>, and <xref:System.Drawing.Drawing2D.PathGradientBrush>. All of these classes inherit from the <xref:System.Drawing.Brush> class. The following illustration shows a rectangle filled with a solid brush and an ellipse filled with a hatch brush.  

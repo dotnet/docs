@@ -1,21 +1,7 @@
 ---
 title: "711 - DispatchMessageBeforeAuthorization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ea7f7228-e642-441d-9470-6609a9fe08f0
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 711 - DispatchMessageBeforeAuthorization
 ## Properties  

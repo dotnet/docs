@@ -1,14 +1,6 @@
 ---
 title: "Lines, Curves, and Shapes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "shapes [Windows Forms], filling"
   - "splines [Windows Forms], drawing"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "lines [Windows Forms], drawing"
   - "curves [Windows Forms], drawing"
 ms.assetid: ace6e8d4-4e94-486b-9681-758a6667dc7f
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Lines, Curves, and Shapes
 The vector graphics portion of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is used to draw lines, draw curves, and to draw and fill shapes.  

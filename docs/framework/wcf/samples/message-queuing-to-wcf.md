@@ -1,32 +1,18 @@
 ---
 title: "Message Queuing to Windows Communication Foundation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
-caps.latest.revision: 34
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Queuing to Windows Communication Foundation
-This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
+This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
   
  The service contract is `IOrderProcessor`, which defines a one-way service that is suitable for use with queues. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract. If you want to define more than one operation contract for the service, the application must provide information as to which header in the MSMQ message (for example, the label or correlationID) can be used to decide which operation contract to dispatch. This is demonstrated in the [Custom Demux](../../../../docs/framework/wcf/samples/custom-demux.md).  
   
  The MSMQ message does not contain information as to which headers are mapped to the different parameters of the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`), which contains the underlying MSMQ message. The type "T" in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`) class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.  
   
  The following sample code shows the service contract of the order processing service.  
-  
-```  
+
+```csharp
 // Define a service contract.  
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 [ServiceKnownType(typeof(PurchaseOrder))]  
@@ -35,11 +21,11 @@ public interface IOrderProcessor
     [OperationContract(IsOneWay = true, Action = "*")]  
     void SubmitPurchaseOrder(MsmqMessage<PurchaseOrder> msg);  
 }  
-```  
-  
+```
+
  The service is self hosted. When using MSMQ, the queue used must be created in advance. This can be done manually or through code. In this sample, the service checks for the existence of the queue and creates it if required. The queue name is read from the configuration file.  
-  
-```  
+
+```csharp
 public static void Main()  
 {  
     // Get the MSMQ queue name from the application settings in   
@@ -50,11 +36,11 @@ public static void Main()
         MessageQueue.Create(queueName, true);  
     …  
 }  
-```  
-  
+```
+
  The service creates and opens a <xref:System.ServiceModel.ServiceHost> for the `OrderProcessorService`, as shown in the following sample code.  
-  
-```  
+
+```csharp
 using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))  
 {  
     serviceHost.Open();  
@@ -63,12 +49,12 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
     Console.ReadLine();  
     serviceHost.Close();  
 }  
-```  
-  
+```
+
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
   
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.  
+>  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.  
   
 ```xml  
 <appSettings>  
@@ -77,8 +63,8 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 ```  
   
  The client application is an MSMQ application that uses the <xref:System.Messaging.MessageQueue.Send%2A> method to send a durable and transactional message to the queue, as shown in the following sample code.  
-  
-```  
+
+```csharp
 //Connect to the queue.  
 MessageQueue orderQueue = new MessageQueue(ConfigurationManager.AppSettings["orderQueueName"]);  
   
@@ -116,8 +102,8 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Requ
 Console.WriteLine("Placed the order:{0}", po);  
 Console.WriteLine("Press <ENTER> to terminate client.");  
 Console.ReadLine();  
-```  
-  
+```
+
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. For example, you could run the client, shut it down, and then start up the service and it would still receive its messages.  
   
 ### To setup, build, and run the sample  
@@ -157,7 +143,7 @@ Console.ReadLine();
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
   

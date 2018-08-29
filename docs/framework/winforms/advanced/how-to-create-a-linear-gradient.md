@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Linear Gradient"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "colors [Windows Forms], creating linear gradients"
   - "gradients"
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Linear Gradient
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides horizontal, vertical, and diagonal linear gradients. By default, the color in a linear gradient changes uniformly. However, you can customize a linear gradient so that the color changes in a non-uniform fashion.  

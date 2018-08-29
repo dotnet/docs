@@ -1,13 +1,7 @@
 ---
 title: "Garbage Collection Notifications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,8 @@ dev_langs:
 helpviewer_keywords: 
   - "garbage collection, notifications"
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
-caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Garbage Collection Notifications
 There are situations in which a full garbage collection (that is, a generation 2 collection) by the common language runtime may adversely affect performance. This can be an issue particularly with servers that process large volumes of requests; in this case, a long garbage collection can cause a request time-out. To prevent a full collection from occurring during a critical period, you can be notified that a full garbage collection is approaching and then take action to redirect the workload to another server instance. You can also induce a collection yourself, provided that the current server instance does not need to process requests.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFunctionBreakpoint Interface1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFunctionBreakpoint"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 9c149303-14b1-4138-83d7-e8c3e0fcd332
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFunctionBreakpoint Interface1
 Extends the ICorDebugBreakpoint interface to support breakpoints within functions.  

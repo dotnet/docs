@@ -1,14 +1,7 @@
 ---
 title: "LINQ to XML for XPath Users (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 91774511-1dca-4f06-ac0b-913746f104fe
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML for XPath Users (C#)
 This set of topics show a number of XPath expressions and their [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] equivalents.  

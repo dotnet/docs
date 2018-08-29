@@ -1,24 +1,10 @@
 ---
 title: "XAML Security Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [XAML Services], .NET XAML services"
   - "XAML security [XAML Services]"
 ms.assetid: 544296d4-f38e-4498-af49-c9f4dad28964
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XAML Security Considerations
 This topic describes best practices for security in applications when you use XAML and .NET Framework XAML Services API.  
@@ -26,7 +12,7 @@ This topic describes best practices for security in applications when you use XA
 ## Untrusted XAML in Applications  
  In the most general sense, untrusted XAML is any XAML source that your application did not specifically include or emit.  
   
- XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other IO. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
+ XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other I/O. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
   
  For untrusted XAML, you should treat it generally the same as if it were untrusted code. Use sandboxing or other metaphors to prevent possibly untrusted XAML from accessing your trusted code.  
   

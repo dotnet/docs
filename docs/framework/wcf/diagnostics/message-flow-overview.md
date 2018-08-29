@@ -1,21 +1,7 @@
 ---
 title: "Message Flow Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Flow Overview
 In a distributed system containing interconnected services, it is necessary to determine causal relationships between the services. It is important to understand the various components that were part of a request flow to support critical scenarios such as health monitoring, troubleshooting, and root cause analysis. To enable the correlation of traces between various services, in the .NET Framework 4 we added support through the following features:  
@@ -34,7 +20,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 2.  If you haven’t enabled analytic tracing, expand **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Select **View**, **Show Analytic and Debug Logs**. Right-click **Analytic** and select **Enable Log**. Leave Event Viewer open so that traces can be viewed.  
   
-3.  Open the sample created in the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md) in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. Note that you must run [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] as an administrator so that the service can be created. If you have the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples installed, you can open the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
+3.  Open the sample created in the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md) in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. Note that you must run [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] as an administrator so that the service can be created. If you have the WCF samples installed, you can open the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
   
 4.  Right-click the **Service** project and select **Add**, **New Item**. Select **Application Configuration File** and click **OK**.  
   

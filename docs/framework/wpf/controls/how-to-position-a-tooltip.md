@@ -1,14 +1,6 @@
 ---
 title: "How to: Position a ToolTip"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ToolTip control [WPF], positioning"
   - "positioning ToolTip controls [WPF]"
 ms.assetid: cddf3757-9e5f-4ce3-a6eb-44489cf3804a
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Position a ToolTip
 This example shows how to specify the position of a tooltip on the screen.  

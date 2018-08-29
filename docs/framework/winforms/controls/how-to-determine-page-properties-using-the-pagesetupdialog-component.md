@@ -1,14 +1,6 @@
 ---
 title: "How to: Determine Page Properties Using the PageSetupDialog Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "page setup"
   - "PageSetupDialog component"
 ms.assetid: 6dae05bc-c0fd-4357-bb93-841a1631d98f
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Determine Page Properties Using the PageSetupDialog Component
 The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md) component presents layout, paper size, and other page layout choices to the user for a document.  
@@ -84,7 +70,7 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  

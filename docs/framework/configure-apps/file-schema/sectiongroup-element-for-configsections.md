@@ -1,10 +1,6 @@
 ---
 title: "&lt;sectionGroup&gt; element for &lt;configSections&gt;"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<sectionGroup> element for \<configSections>

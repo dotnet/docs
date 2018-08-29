@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySessionCloseResponseSent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 501defc3-d110-46ea-86d7-3563c35830f0
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionCloseResponseSent
 System.ServiceModel.Security.SecuritySessionCloseResponseSent  

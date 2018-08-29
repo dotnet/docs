@@ -1,24 +1,10 @@
 ---
 title: "Configuration Channel Factory"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuration Channel Factory
-This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.  
+This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of WCF client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.  
   
 ## Demonstrates  
  <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>  
@@ -56,6 +42,6 @@ ICalculatorChannel client1 = factory1.CreateChannel();
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigurationChannelFactory`

@@ -1,19 +1,7 @@
 ---
 title: "Creating Asynchronous Activities in WF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating Asynchronous Activities in WF
 <xref:System.Activities.AsyncCodeActivity> provides activity authors a base class to use that enables derived activities to implement asynchronous execution logic. This is useful for custom activities that must perform asynchronous work without holding the workflow scheduler thread and blocking any activities that may be able to run in parallel. This topic provides an overview of how to create custom asynchronous activities using <xref:System.Activities.AsyncCodeActivity>.  

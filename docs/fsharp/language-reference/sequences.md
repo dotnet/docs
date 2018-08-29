@@ -1,17 +1,8 @@
 ---
 title: Sequences (F#)
 description: Learn how to use F# sequences, when you have a large, ordered collection of data but don't necessarily expect to use all of the elements.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 23dc7d75-cd26-4df2-9be3-9d1aba5c4443 
 ---
-
 # Sequences
 
 > [!NOTE]

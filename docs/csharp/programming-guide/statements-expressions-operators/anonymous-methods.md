@@ -1,18 +1,11 @@
 ---
 title: "Anonymous Methods (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "anonymous methods [C#]"
   - "methods [C#], anonymous"
   - "delegates [C#], anonymous methods"
 ms.assetid: a62441fa-f0a3-4acb-9aa6-93762a635275
-caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Anonymous Methods (C# Programming Guide)
 In versions of C# before 2.0, the only way to declare a [delegate](../../../csharp/language-reference/keywords/delegate.md) was to use [named methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md). C# 2.0 introduced anonymous methods and in C# 3.0 and later, lambda expressions supersede anonymous methods as the preferred way to write inline code. However, the information about anonymous methods in this topic also applies to lambda expressions. There is one case in which an anonymous method provides functionality not found in lambda expressions. Anonymous methods enable you to omit the parameter list. This means that an anonymous method can be converted to delegates with a variety of signatures. This is not possible with lambda expressions. For more information specifically about lambda expressions, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  

@@ -1,14 +1,6 @@
 ---
 title: "Troubleshooting Hybrid Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "overlapping controls [WPF]"
   - "Windows Forms [WPF], interoperability with"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "message loops [WPF]"
 ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Troubleshooting Hybrid Applications
 <a name="introduction"></a> This topic lists some common problems that can occur when authoring hybrid applications, which use both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] technologies.  

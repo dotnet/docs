@@ -1,11 +1,6 @@
 ---
 title: "Ansi (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Ansi"
 helpviewer_keywords: 
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "ANSI, Visual Basic"
   - "ANSI"
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Ansi (Visual Basic)
 Specifies that Visual Basic should marshal all strings to American National Standards Institute (ANSI) values regardless of the name of the external procedure being declared.  

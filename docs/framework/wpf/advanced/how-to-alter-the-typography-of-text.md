@@ -1,14 +1,6 @@
 ---
 title: "How-to: Alter the Typography of Text"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "setting Typography attributes [WPF]"
   - "Typography attribute [WPF], setting"
 ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How-to: Alter the Typography of Text
 The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  

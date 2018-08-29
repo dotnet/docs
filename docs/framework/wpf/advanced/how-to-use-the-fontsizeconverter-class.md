@@ -1,24 +1,10 @@
 ---
 title: "How to: Use the FontSizeConverter Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "FontSizeConverter objects [WPF]"
   - "typography [WPF], FontSizeConverter objects"
 ms.assetid: 3b0592bd-7223-4860-a108-a5d72f3a9178
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use the FontSizeConverter Class
 ## Example  

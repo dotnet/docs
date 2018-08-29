@@ -1,16 +1,9 @@
 ---
 title: Docker terminology
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker terminology
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker terminology
 
@@ -48,5 +41,5 @@ This section lists terms and definitions you should be familiar with before gett
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-defined.md)
-[Next] (docker-containers-images-registries.md)
+[Previous](docker-defined.md)
+[Next](docker-containers-images-registries.md)

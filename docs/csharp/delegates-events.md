@@ -1,14 +1,7 @@
 ---
 title: Delegates & events
 description: See where to find information on delegates and events in the .NET Core documentation.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
 ---
 
@@ -48,3 +41,4 @@ This topic will be covered under the following articles:
 
     This article discusses how you should distinguish between using events and delegates in your designs.
  
+You can download the [delegates sample](https://github.com/dotnet/samples/tree/master/csharp/delegates-and-events) and the [events sample](https://github.com/dotnet/samples/tree/master/csharp/events) from our GitHub samples repository.

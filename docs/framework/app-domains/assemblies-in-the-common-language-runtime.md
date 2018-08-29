@@ -1,14 +1,6 @@
 ---
 title: "Assemblies in the Common Language Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dynamic assemblies"
   - "security [.NET Framework], boundaries"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "version boundaries"
   - "type boundaries"
 ms.assetid: 2cfebe19-7436-49f1-bd99-3c4019f0b676
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Assemblies in the Common Language Runtime
 Assemblies are the building blocks of .NET Framework applications; they form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. An assembly provides the common language runtime with the information it needs to be aware of type implementations. To the runtime, a type does not exist outside the context of an assembly.  

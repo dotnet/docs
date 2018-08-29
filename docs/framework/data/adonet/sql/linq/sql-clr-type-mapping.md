@@ -1,21 +1,7 @@
 ---
 title: "SQL-CLR Type Mapping"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "07/23/2018"
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL-CLR Type Mapping
 In LINQ to SQL, the data model of a relational database maps to an object model that is expressed in the programming language of your choice. When the application runs, LINQ to SQL translates the language-integrated queries in the object model into SQL and sends them to the database for execution. When the database returns the results, LINQ to SQL translates the results back to objects that you can work with in your own programming language.  
@@ -51,7 +37,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 <a name="BehaviorMatrix"></a>   
 ## Type Mapping Run-time Behavior Matrix  
  The following diagram shows the expected run-time behavior of specific type mappings when data is retrieved from or saved to the database. With the exception of serialization, LINQ to SQL does not support mapping between any CLR or SQL Server data types that are not specified in this matrix. For more information on serialization support, see [Binary Serialization](#BinarySerialization).  
-  
+ 
+![SQL Server to SQL CLR data type mapping table](media/sql-clr-type-mapping.png)
+
 > [!NOTE]
 >  Some type mappings may result in overflow or data loss exceptions while translating to or from the database.  
   

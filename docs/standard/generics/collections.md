@@ -1,13 +1,7 @@
 ---
 title: "Generic Collections in .NET"
-ms.custom: ""
 ms.date: "02/15/2018"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,6 @@ helpviewer_keywords:
 ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Collections in .NET
 

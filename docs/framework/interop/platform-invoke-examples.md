@@ -1,14 +1,6 @@
 ---
 title: "Platform Invoke Examples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "DLL functions"
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Platform Invoke Examples
 The following examples demonstrate how to define and call the **MessageBox** function in User32.dll, passing a simple string as an argument. In the examples, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field is set to **Auto** to let the target platform determine the character width and string marshaling.  

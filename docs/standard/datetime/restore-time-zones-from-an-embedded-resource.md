@@ -1,13 +1,7 @@
 ---
 title: "How to: Restore time zones from an embedded resource"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,15 +9,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], deserializing"
   - "time zones [.NET Framework], restoring"
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Restore time zones from an embedded resource
 
 This topic describes how to restore time zones that have been saved in a resource file. For information and instructions about saving time zones, see [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md).

@@ -1,14 +1,6 @@
 ---
 title: "Embedded Expressions in XML (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlEmbeddedExpression"
 helpviewer_keywords: 
@@ -16,9 +8,6 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], embedded expressions"
   - "XML literals [Visual Basic], embedded expressions"
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Embedded Expressions in XML (Visual Basic)
 Embedded expressions enable you to create XML literals that contain expressions that are evaluated at run time. The syntax for an embedded expression is `<%=` `expression` `%>`, which is the same as the syntax used in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].  
@@ -78,7 +67,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
  For more information about using an embedded expression in a particular type of literal, see [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md), [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
 ## Scoping Rules  
- The compiler converts each XML literal into a constructor call for the appropriate literal type. The literal content and embedded expressions in an XML literal are passed as arguments to the constructor. This means that all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programming elements available to an XML literal are also available to its embedded expressions.  
+ The compiler converts each XML literal into a constructor call for the appropriate literal type. The literal content and embedded expressions in an XML literal are passed as arguments to the constructor. This means that all Visual Basic programming elements available to an XML literal are also available to its embedded expressions.  
   
  Within an XML literal, you can access the XML namespace prefixes declared with the `Imports` statement. You can declare a new XML namespace prefix, or shadow an existing XML namespace prefix, in an element by using the `xmlns` attribute. The new namespace is available to the child nodes of that element, but not to XML literals in embedded expressions.  
   

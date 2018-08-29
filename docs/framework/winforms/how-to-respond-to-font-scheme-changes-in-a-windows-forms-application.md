@@ -1,26 +1,12 @@
 ---
 title: "How to: Respond to Font Scheme Changes in a Windows Forms Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Windows Forms, font scheme changes"
 ms.assetid: 4db27702-22e7-43bf-a07d-9a004549853c
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Respond to Font Scheme Changes in a Windows Forms Application
 In the Windows operating systems, a user can change the system-wide font settings to make the default font appear larger or smaller. Changing these font settings is critical for users who are visually impaired and require larger type to read the text on their screens. You can adjust your Windows Forms application to react to these changes by increasing or decreasing the size of the form and all contained text whenever the font scheme changes. If you want your form to accommodate changes in font sizes dynamically, you can add code to your form.  
@@ -48,13 +34,13 @@ In the Windows operating systems, a user can change the system-wide font setting
   
 5.  Finally, implement a handler for the <xref:System.Windows.Forms.Form.FormClosing> event that detaches the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event handler.  
   
-> [!IMPORTANT]
->  Failure to include this code will cause your application to leak memory.  
+     > [!IMPORTANT]
+     > Failure to include this code will cause your application to leak memory.  
   
- [!code-csharp[WinFormsAutoScaling#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/WinFormsAutoScaling/CS/Form1.cs#5)]
- [!code-vb[WinFormsAutoScaling#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsAutoScaling/VB/Form1.vb#5)]  
+     [!code-csharp[WinFormsAutoScaling#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/WinFormsAutoScaling/CS/Form1.cs#5)]
+     [!code-vb[WinFormsAutoScaling#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsAutoScaling/VB/Form1.vb#5)]  
   
-1.  Compile and run the code.  
+6.  Compile and run the code.  
   
 ### To manually change the font scheme in Windows XP  
   
@@ -64,7 +50,7 @@ In the Windows operating systems, a user can change the system-wide font setting
   
 3.  From the **Font Size** drop-down list box, select a new font size.  
   
-     You will notice that the form now reacts to run time changes in the desktop font scheme. When the user changes between **Normal**, **Large Fonts**, and **Extra Large Fonts**, the form changes font and scales correctly.  
+     You'll notice that the form now reacts to run-time changes in the desktop font scheme. When the user changes between **Normal**, **Large Fonts**, and **Extra Large Fonts**, the form changes font and scales correctly.  
   
 ## Example  
  [!code-csharp[WinFormsAutoScaling#1](../../../samples/snippets/csharp/VS_Snippets_Winforms/WinFormsAutoScaling/CS/Form1.cs#1)]

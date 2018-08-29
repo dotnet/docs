@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedSymbolSearchInfo::GetSearchPath Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedSymbolSearchInfo.GetSearchPath"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b588d470-53c2-4492-be8c-957323eaca0b
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetSearchPath Method
 Gets the search path.  

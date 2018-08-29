@@ -1,19 +1,12 @@
 ---
 title: "Creating and Throwing Exceptions (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "catching exceptions [C#]"
   - "throwing exceptions [C#]"
   - "exceptions [C#], creating"
   - "exceptions [C#], throwing"
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Creating and Throwing Exceptions (C# Programming Guide)
 Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [throw](../../../csharp/language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.  

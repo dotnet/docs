@@ -1,21 +1,7 @@
 ---
 title: "&lt;workflow&gt; of WCF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c0443eba-d3b4-4fae-886e-9878daf77691
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;workflow&gt; of WCF
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  

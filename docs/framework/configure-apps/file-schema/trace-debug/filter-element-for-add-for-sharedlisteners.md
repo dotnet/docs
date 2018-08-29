@@ -1,14 +1,6 @@
 ---
 title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;sharedListeners&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter"
 helpviewer_keywords: 
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "filters, trace listeners"
   - "trace listeners, filters"
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;sharedListeners&gt;
 Adds a filter to a listener in the `sharedListeners` collection.  

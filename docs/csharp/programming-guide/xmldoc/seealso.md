@@ -1,10 +1,6 @@
 ---
 title: "&lt;seealso&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cref"
   - "<seealso>"
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;seealso&gt; (C# Programming Guide)
 ## Syntax  

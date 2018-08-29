@@ -1,14 +1,6 @@
 ---
 title: "IHostIoCompletionManager::GetMinThreads Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostIoCompletionManager.GetMinThreads"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d7a7f733-677d-481c-b3d5-444fcc502b8e
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostIoCompletionManager::GetMinThreads Method
 Gets the minimum number of threads that the host provides for processing I/O requests.  

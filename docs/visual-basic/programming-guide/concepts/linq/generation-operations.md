@@ -1,18 +1,7 @@
 ---
 title: "Generation Operations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Generation Operations (Visual Basic)
 Generation refers to creating a new sequence of values.  

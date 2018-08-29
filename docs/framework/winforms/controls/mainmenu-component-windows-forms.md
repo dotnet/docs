@@ -1,23 +1,9 @@
 ---
 title: "MainMenu Component (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms]"
 ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # MainMenu Component (Windows Forms)
 > [!NOTE]

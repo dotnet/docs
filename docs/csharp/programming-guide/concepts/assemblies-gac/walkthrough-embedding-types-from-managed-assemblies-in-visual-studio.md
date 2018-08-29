@@ -1,17 +1,7 @@
 ---
 title: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)
 If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence. That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.  

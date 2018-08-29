@@ -1,14 +1,6 @@
 ---
 title: "PFN_CLRDataCreateInstance Function Pointer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "PFN_CLRDataCreateInstance"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 5c66ac57-d751-4de5-af9f-26ceb949af8b
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PFN_CLRDataCreateInstance Function Pointer
 Points to a function that creates an interface object for the specified target item.  

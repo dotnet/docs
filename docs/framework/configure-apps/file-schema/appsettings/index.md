@@ -1,10 +1,6 @@
 ---
 title: "App Settings schema"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "schema app settings"
   - "app settings, schema [Windows Forms]"
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # App Settings schema

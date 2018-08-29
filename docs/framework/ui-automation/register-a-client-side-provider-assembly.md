@@ -1,14 +1,6 @@
 ---
 title: "Register a Client-Side Provider Assembly"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "UI Automation, registering provider assemblies"
   - "provider assemblies, registering"
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
-caps.latest.revision: 8
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Register a Client-Side Provider Assembly
 > [!NOTE]

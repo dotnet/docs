@@ -1,19 +1,7 @@
 ---
 title: "Querying XML Trees (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 0913d81b-541a-4fd4-9cbf-7ec89fd817ea
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Querying XML Trees (C#)
 This section provides examples of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  

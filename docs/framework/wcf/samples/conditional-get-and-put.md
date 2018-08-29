@@ -1,21 +1,7 @@
 ---
 title: "Conditional Get and Put"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d22067f-57b8-4e0f-a571-a694512187ae
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Conditional Get and Put
 This sample demonstrates how to use the new conditional retrieve and update APIs for the WCF REST programming model. Because conditional retrieve and update are most appropriate for resource-oriented and REST services, this sample extends the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample. This sample focuses on adding support for conditional retrieve and update to the [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample using the new APIs introduced in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)].  
@@ -51,6 +37,6 @@ This sample demonstrates how to use the new conditional retrieve and update APIs
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\ConditionalGetAndPut`

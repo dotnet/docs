@@ -1,14 +1,6 @@
 ---
 title: "Event Handlers Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "event handling [Windows Forms], Windows Forms"
   - "event handlers [Windows Forms], about event handlers"
 ms.assetid: 228112e1-1711-42ee-8ffa-ff3555bffe66
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Event Handlers Overview (Windows Forms)
 An event handler is a method that is bound to an event. When the event is raised, the code within the event handler is executed. Each event handler provides two parameters that allow you to handle the event properly. The following example shows an event handler for a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event.  

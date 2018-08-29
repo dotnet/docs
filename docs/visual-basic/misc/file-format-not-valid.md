@@ -1,16 +1,9 @@
 ---
 title: "File format not valid"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID321"
 ms.assetid: d41e6286-6e4a-463b-87fa-e140723e5c7e
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # File format not valid
 Either you tried to load a file into a component, but the format of the data in the file was incompatible with the component, or you tried to save component data to a file, but the format of the data was incompatible with the format of the file.  

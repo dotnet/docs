@@ -1,33 +1,41 @@
 ---
 title: "Default value expressions (C# Programming Guide)"
 description: "Default value expressions produce the default value for any reference type or value type"
-ms.date: 08/23/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 04/25/2018
 helpviewer_keywords: 
   - "generics [C#], default keyword"
   - "default keyword [C#], generic programming"
-ms.assetid: b9daf449-4e64-496e-8592-6ed2c8875a98
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # default value expressions (C# programming guide)
 
-A default value expression produces the default value for a type. Default value expressions are particularly useful in generic classes and methods. One issue that arises using generics is how to assign a default value to a parameterized type `T` when you do not know the following in advance:
+A default value expression `default(T)` produces the default value of a type `T`. The following table shows which values are produced for various types:
+
+|Type|Default value|
+|---------|---------|
+|Any reference type|`null`|
+|Numeric value type|Zero|
+|[bool](../../language-reference/keywords/bool.md)|`false`|
+|[char](../../language-reference/keywords/char.md)|`'\0'`|
+|[enum](../../language-reference/keywords/enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
+|[struct](../../language-reference/keywords/struct.md)|The value produced by setting all value type fields to their default value and all reference type fields to `null`.|
+|Nullable type|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined.|
+
+Default value expressions are particularly useful in generic classes and methods. One issue that arises using generics is how to assign a default value of a parameterized type `T` when you don't know the following in advance:
 
 - Whether `T` is a reference type or a value type.
-- If `T` is a value type, whether is a numeric value or a user-defined struct.
+- If `T` is a value type, whether it's a numeric value or a struct.
 
- Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type. The assignment `t = 0` only works for numeric value types but not for structs. The solution is to use a default value expression, which returns `null` for reference types (class types and interface types) and zero for numeric value types. For user-defined structs, it returns the struct initialized to the zero bit pattern, which produces 0 or `null` for each member depending on whether that member is a value or reference type. For nullable value types, `default` returns a <xref:System.Nullable%601?displayProperty=nameWithType>, which is initialized like any struct.
+ Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type. The assignment `t = 0` only works for numeric value types but not for structs. To solve that, use a default value expression:
+
+```csharp
+T t = default(T);
+```
 
 The `default(T)` expression is not limited to generic classes and methods. Default value expressions can be used with any managed type. Any of these expressions are valid:
 
  [!code-csharp[csProgGuideGenerics#1](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-value-expressions.cs)]
 
- The following example from the `GenericList<T>` class shows how to use the `default(T)` operator in a generic class. For more information, see [Generics Overview](../generics/introduction-to-generics.md).
+ The following example from the `GenericList<T>` class shows how to use the `default(T)` operator in a generic class. For more information, see [Introduction to Generics](../generics/introduction-to-generics.md).
 
  [!code-csharp[csProgGuideGenerics#2](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#Snippet41)]
 
@@ -47,8 +55,9 @@ The following example shows many usages of the `default` literal in a default va
 
 ## See also
 
- <xref:System.Collections.Generic>
+ <xref:System.Collections.Generic>  
  [C# Programming Guide](../index.md)  
- [Generics](../generics/index.md)  
+ [Generics (C# Programming Guide)](../generics/index.md)  
  [Generic Methods](../generics/generic-methods.md)  
- [Generics](~/docs/standard/generics/index.md)  
+ [Generics in .NET](~/docs/standard/generics/index.md)  
+ [Default values table](../../language-reference/keywords/default-values-table.md)

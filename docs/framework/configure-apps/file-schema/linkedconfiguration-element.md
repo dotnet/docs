@@ -1,14 +1,6 @@
 ---
 title: "&lt;linkedConfiguration&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/assemblyBinding/linkedConfiguration"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#linkedConfiguration"
@@ -19,12 +11,9 @@ helpviewer_keywords:
   - "linked configuration files"
   - "linkedConfiguration Element"
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<linkedConfiguration> element

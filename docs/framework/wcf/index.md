@@ -1,20 +1,10 @@
 ---
 title: "Windows Communication Foundation"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF]"
   - "WCF [WCF]"
 ms.assetid: 149348a6-bf82-4ccc-9604-fa7cc88c0749
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Developing Service-Oriented Applications with WCF
 This section of the documentation provides information about Windows Communication Foundation (WCF), which is a unified programming model for building service-oriented applications. It enables developers to build secure, reliable, transacted solutions that integrate across platforms and interoperate with existing investments.
@@ -39,7 +29,7 @@ This section of the documentation provides information about Windows Communicati
  Describes the fundamentals for creating Windows Communication Foundation applications.  
   
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)  
- Shows topics that let you choose which [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] feature or features you need to employ.  
+ Shows topics that let you choose which WCF feature or features you need to employ.  
   
  [Extending WCF](../../../docs/framework/wcf/extending/index.md)  
  Describes how to modify and extend WCF runtime components  
@@ -72,7 +62,7 @@ This section of the documentation provides information about Windows Communicati
  Samples that provide instruction on various aspects of Windows Communication Foundation  
   
  [Windows Communication Foundation Glossary](../../../docs/framework/wcf/glossary.md)  
- Shows a list of terms specific to [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]  
+ Shows a list of terms specific to WCF  
   
  [General Reference](../../../docs/framework/wcf/general-reference.md)  
  The section describes the elements that are used to configure Windows Communication Foundation clients and services.  

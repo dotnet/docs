@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReaderSymbolSearchInfo.GetSymbolSearchInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo Method
 Gets symbol search information.  

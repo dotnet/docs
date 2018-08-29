@@ -1,14 +1,6 @@
 ---
 title: "ICLRTask::NeedsPriorityScheduling Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRTask.NeedsPriorityScheduling"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9c9db3f3-26bf-4317-88de-5eb926a22a1d
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRTask::NeedsPriorityScheduling Method
 Gets a value that indicates whether the current task, which is being switched out, needs to be marked as a high priority for rescheduling.  

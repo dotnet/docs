@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.MessageQueueUnregisterSucceeded"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c2e344a4-3b10-430b-bdf3-b065777861bb
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.MessageQueueUnregisterSucceeded
 System.ServiceModel.Activation.MessageQueueUnregisterSucceeded  

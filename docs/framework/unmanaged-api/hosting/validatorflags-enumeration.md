@@ -1,14 +1,6 @@
 ---
 title: "ValidatorFlags Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ValidatorFlags"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ValidatorFlags Enumeration
 Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-validate-method.md) method.  

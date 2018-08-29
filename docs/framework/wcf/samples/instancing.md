@@ -1,24 +1,10 @@
 ---
 title: "Instancing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "service behaviors, instancing sample"
   - "Instancing Sample [Windows Communication Foundation]"
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
-caps.latest.revision: 40
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Instancing
 The Instancing sample demonstrates the instancing behavior setting, which controls how instances of a service class are created in response to client requests. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. This sample defines a new contract, `ICalculatorInstance`, which inherits from `ICalculator`. The contract specified by `ICalculatorInstance` provides three additional operations for inspecting the state of the service instance. By altering the instancing setting, you can observe the change in behavior by running the client.  
@@ -143,7 +129,7 @@ static void Main()
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Instancing`  
   

@@ -1,14 +1,6 @@
 ---
 title: "How to: Apply a Transform to an Element When an Event Occurs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "properties [WPF], RenderTransform"
   - "LayoutTransform property [WPF]"
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Apply a Transform to an Element When an Event Occurs
 This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> when an event occurs. The concept that is shown here is the same that you use for applying other types of transformations. For more information about the available types of transformations, see the <xref:System.Windows.Media.Transform> class or [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).  

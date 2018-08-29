@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;scopedCertificates&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;scopedCertificates&gt; Element
 Adds an X.509 certificate to the collection of scoped certificates.  

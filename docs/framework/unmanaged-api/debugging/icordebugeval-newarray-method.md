@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEval::NewArray Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval.NewArray"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: cc79a67d-5368-434d-a943-209db90491b9
 topic_type: 
   - "apiref"
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEval::NewArray Method
 Allocates a new array of the specified element type and dimensions.  

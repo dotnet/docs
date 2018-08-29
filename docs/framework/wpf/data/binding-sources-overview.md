@@ -1,25 +1,11 @@
 ---
 title: "Binding Sources Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding data [WPF], binding sources"
   - "data binding [WPF], binding source"
   - "binding sources [WPF]"
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  
@@ -52,7 +38,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics  
  The following list provides other important points to note:  
   
--   If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)], the default constructor might be created for you.  
+-   If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the default constructor might be created for you.  
   
 -   The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
   

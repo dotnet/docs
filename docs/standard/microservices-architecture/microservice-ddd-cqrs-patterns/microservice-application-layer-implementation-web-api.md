@@ -1,16 +1,9 @@
 ---
 title: Implementing the microservice application layer using the Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the microservice application layer using the Web API
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/12/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing the microservice application layer using the Web API
 
@@ -153,7 +146,7 @@ public class ApplicationModule : Autofac.Module
 }
 ```
 
-The registration process and concepts are very similar to the way you can register types with the built-in ASP.NET Core iOS container, but the syntax when using Autofac is a bit different.
+The registration process and concepts are very similar to the way you can register types with the built-in ASP.NET Core IoC container, but the syntax when using Autofac is a bit different.
 
 In the example code, the abstraction IOrderRepository is registered along with the implementation class OrderRepository. This means that whenever a constructor is declaring a dependency through the IOrderRepository abstraction or interface, the IoC container will inject an instance of the OrderRepository class.
 
@@ -668,7 +661,7 @@ public class CreateOrderCommandHandler
 
 That is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler&lt;T&gt;, and MediatR makes sure it is invoked with the correct payload.
 
-## Applying cross-cutting concerns when processing commands with the Behaviors in MeadiatR
+## Applying cross-cutting concerns when processing commands with the Behaviors in MediatR
 
 There is one more thing: being able to apply cross-cutting concerns to the mediator pipeline. You can also see at the end of the Autofac registration module code how it registers a behavior type, specifically, a custom LoggingBehavior class and a ValidatorBehavior class. But you could add other custom behaviours, too.
 
@@ -868,5 +861,5 @@ In a similar way, you could implement other behaviors for additional aspects or 
     [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]
-[Previous] (microservice-application-layer-web-api-design.md)
-[Next] (../implement-resilient-applications/index.md)
+[Previous](microservice-application-layer-web-api-design.md)
+[Next](../implement-resilient-applications/index.md)

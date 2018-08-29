@@ -1,14 +1,6 @@
 ---
 title: "&lt;publisherPolicy&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/publisherPolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/publisherPolicy"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "container tags, <publisherPolicy> element"
   - "<publisherPolicy> element"
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;publisherPolicy&gt; Element
 Specifies whether the runtime applies publisher policy.  

@@ -1,19 +1,7 @@
 ---
 title: "Introduction to Pure Functional Transformations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 8495c9d9-2d02-4aa0-8a10-9e8794b985fe
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Introduction to Pure Functional Transformations (C#)
 This section introduces functional transformations, including the underlying concepts and supporting language constructs. It contrasts the object-oriented and functional transformation approaches to programming, including advice on how to transition to the latter. Although functional transformations can be used in many programming scenarios, XML transformation is used here as a concrete example.  

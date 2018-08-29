@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugVariableSymbol::GetName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: c922b7d4-44e5-45e4-aef3-cc9c35a0be80
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVariableSymbol::GetName Method
 Gets the name of a variable.  

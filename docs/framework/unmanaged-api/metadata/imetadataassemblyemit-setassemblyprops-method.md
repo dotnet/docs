@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyEmit::SetAssemblyProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyEmit.SetAssemblyProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 91b633d7-9e75-43c3-a8d2-2144984e5f9e
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::SetAssemblyProps Method
 Modifies the specified `Assembly` metadata structure.  

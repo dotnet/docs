@@ -1,14 +1,6 @@
 ---
 title: "Table Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "documents [WPF], tables"
   - "tables [WPF]"
 ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Table Overview
 <xref:System.Windows.Documents.Table> is a block level element that supports grid-based presentation of Flow document content. The flexibility of this element makes it very useful, but also makes it more complicated to understand and use correctly.  

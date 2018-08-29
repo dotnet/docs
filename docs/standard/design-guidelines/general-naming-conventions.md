@@ -1,13 +1,7 @@
 ---
 title: "General Naming Conventions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
   - "type names, conflicts"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
 ms.assetid: d3a77ea1-75d2-4969-a8c3-3e1e3e1aaedc
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # General Naming Conventions
 This section describes general naming conventions that relate to word choice, guidelines on using abbreviations and acronyms, and recommendations on how to avoid using language-specific names.  
@@ -90,7 +79,7 @@ This section describes general naming conventions that relate to word choice, gu
   
  **✓ DO** prefer adding a suffix rather than a prefix to indicate a new version of an existing API.  
   
- This will assist discovery when browsing documentation, or using Intellisense. The old version of the API will be organized close to the new APIs, because most browsers and Intellisense show identifiers in alphabetical order.  
+ This will assist discovery when browsing documentation, or using IntelliSense. The old version of the API will be organized close to the new APIs, because most browsers and IntelliSense show identifiers in alphabetical order.  
   
  **✓ CONSIDER** using a brand new, but meaningful identifier, instead of adding a suffix or a prefix.  
   

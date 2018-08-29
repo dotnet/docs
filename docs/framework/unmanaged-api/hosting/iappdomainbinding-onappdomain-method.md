@@ -1,14 +1,6 @@
 ---
 title: "IAppDomainBinding::OnAppDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAppDomainBinding.OnAppDomain"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAppDomainBinding::OnAppDomain Method
 Called by the common language runtime (CLR) to notify the host that an application domain has been created.  

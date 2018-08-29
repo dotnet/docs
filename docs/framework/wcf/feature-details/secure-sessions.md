@@ -1,27 +1,15 @@
 ---
 title: "Secure Sessions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
-caps.latest.revision: 14
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Secure Sessions
-A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
+A feature of Windows Communication Foundation (WCF) is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. For more information about reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
 > [!NOTE]
->  When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+>  When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ## In This Section  
   

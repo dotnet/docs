@@ -1,21 +1,10 @@
 ---
 title: "How to: Access Members of an Object (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "members [Visual Basic], accessing"
   - "object variables [Visual Basic], accessing members"
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Access Members of an Object (Visual Basic)
 When you have an object variable that refers to an object, you often want to work with the members of that object, such as its methods, properties, fields, and events. For example, once you have created a new <xref:System.Windows.Forms.Form> object, you might want to set its <xref:System.Windows.Forms.Control.Text%2A> property or call its <xref:System.Windows.Forms.Control.Focus%2A> method.  

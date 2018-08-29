@@ -1,22 +1,12 @@
 ---
 title: "How to: Sort An Array in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "Array.Sort"
 helpviewer_keywords: 
   - "arrays [Visual Basic], sorting"
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Sort An Array in Visual Basic
 This example declares an array of `String` objects named `zooAnimals`, populates it, and then sorts it alphabetically.  

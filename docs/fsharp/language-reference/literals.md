@@ -1,17 +1,8 @@
 ---
 title: Literals (F#)
 description: Learn about the literal types in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 4b1d6e9d-f933-4cd4-966d-d643152c27e4 
 ---
-
 # Literals
 
 > [!NOTE]

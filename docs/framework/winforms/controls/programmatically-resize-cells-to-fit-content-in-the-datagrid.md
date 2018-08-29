@@ -1,14 +1,6 @@
 ---
 title: "How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], resizing cells"
   - "grids [Windows Forms], resizing cells to fit content"
 ms.assetid: 63d770dc-b3f5-462b-901a-3125b2753792
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control
 You can use the <xref:System.Windows.Forms.DataGridView> control methods to resize rows, columns, and headers so that they display their entire values without truncation. You can use these methods to resize <xref:System.Windows.Forms.DataGridView> elements at times of your choosing. Alternately, you can configure the control to resize these elements automatically whenever content changes. This can be inefficient, however, when you are working with large data sets or when your data changes frequently. For more information, see [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
@@ -43,7 +29,7 @@ You can use the <xref:System.Windows.Forms.DataGridView> control methods to resi
   
 -   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
- For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+ For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>  

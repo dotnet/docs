@@ -1,21 +1,7 @@
 ---
 title: "MSMQ Activation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MSMQ Activation
 This sample demonstrates how to host applications in Windows Process Activation Service (WAS) that are read from a message queue. This sample uses the `netMsmqBinding` and is based on the [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) sample. The service in this case is a Web-hosted application and the client is self-hosted and outputs to the console to observe the status of purchase orders submitted.  
@@ -28,11 +14,11 @@ This sample demonstrates how to host applications in Windows Process Activation 
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
->  If this directory does not exist, go to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank"  and [!INCLUDE[wf](../../../../includes/wf-md.md)] Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to Windows Communication Foundation (WCF) HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank"  and Windows Workflow Foundation (WF) Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
- Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.  
+ Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. Windows Communication Foundation (WCF) uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.  
   
  The Net.Msmq Listener Adapter service (NetMsmqActivator) activates queued applications based on messages in the queue.  
   
@@ -92,7 +78,7 @@ public class OrderProcessorService : IOrderProcessor
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the System.serviceModel section of the configuration file.  
   
 > [!NOTE]
->  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
+>  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
   
  A .svc file with the name of the class is used to host the service code in WAS.  
   
@@ -224,7 +210,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 1.  Ensure that [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is installed, as it is required for WAS activation.  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md). In addition, you must install the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] non-HTTP activation components:  
+2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md). In addition, you must install the WCF non-HTTP activation components:  
   
     1.  From the **Start** menu, choose **Control Panel**.  
   

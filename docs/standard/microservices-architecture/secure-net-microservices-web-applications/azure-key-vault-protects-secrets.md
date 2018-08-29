@@ -1,16 +1,9 @@
 ---
 title: Using Azure Key Vault to protect secrets at production time
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Key Vault to protect secrets at production time
-keywords: Docker, Microservices, ASP.NET, Container
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Azure Key Vault to protect secrets at production time
 
@@ -20,7 +13,7 @@ The Microsoft.Extensions.Configuration.AzureKeyVault package allows an ASP.NET C
 
 First, register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.
 
-Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/powershell/resourcemanager/azurerm.resources/v3.3.0/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
+Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/powershell/module/azurerm.resources/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
 
 Second, give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
 
@@ -76,5 +69,5 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
     [*https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets*](https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets)
 
 >[!div class="step-by-step"]
-[Previous] (developer-app-secrets-storage.md)
-[Next] (../key-takeaways.md)
+[Previous](developer-app-secrets-storage.md)
+[Next](../key-takeaways.md)

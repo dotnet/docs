@@ -1,19 +1,11 @@
 ---
 title: "Input and Output Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "input, Visual Basic functions"
   - "output, Visual Basic functions"
   - "I/O [Visual Basic], functions"
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Input and Output Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

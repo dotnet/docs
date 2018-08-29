@@ -1,31 +1,17 @@
 ---
 title: "Durable Issued Token Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Durable Issued Token Provider
 This sample demonstrates how to implement a custom client issued token provider.  
   
 ## Discussion  
- A token provider in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ships with a [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
+ A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
   
 -   If you have a credential store that the built-in token provider cannot operate with.  
   
--   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client uses the credentials.  
+-   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client uses the credentials.  
   
 -   If you are building a custom token.  
   
@@ -35,7 +21,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 -   How a client can be configured with a custom token provider.  
   
--   How issued tokens can be cached and provided to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client.  
+-   How issued tokens can be cached and provided to the WCF client.  
   
 -   How the server is authenticated by the client using the server's X.509 certificate.  
   
@@ -118,7 +104,7 @@ This sample demonstrates how to implement a custom client issued token provider.
  The Security Token Service exposes a single endpoint using the standard wsHttpBinding. The Security Token Service responds to request from clients for tokens and, provided the client authenticates using a Windows account, issues a token that contains the client's user name as a claim in the issued token. As part of creating the token, the Security Token Service signs the token using the private key associated with the CN=STS certificate. In addition, it creates a symmetric key and encrypts it using the public key associated with the CN=localhost certificate. In returning the token to the client, the Security Token Service also returns the symmetric key. The client presents the issued token to the Calculator service, and proves that it knows the symmetric key by signing the message with that key.  
   
 ## Custom Client Credentials and Token Provider  
- The following steps show how to develop a custom token provider that caches issued tokens and integrate it with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]: security.  
+ The following steps show how to develop a custom token provider that caches issued tokens and integrate it with WCF: security.  
   
 #### To develop a custom token provider  
   
@@ -258,7 +244,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\DurableIssuedTokenProvider`  
   

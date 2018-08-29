@@ -1,14 +1,6 @@
 ---
 title: "x:TypeArguments Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:TypeArguments"
   - "xTypeArguments"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "TypeArguments attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:TypeArguments attribute"
 ms.assetid: 86561058-d393-4a44-b5c3-993a4513ea74
-caps.latest.revision: 18
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:TypeArguments Directive
 Passes constraining type arguments of a generic to the constructor of the generic type.  

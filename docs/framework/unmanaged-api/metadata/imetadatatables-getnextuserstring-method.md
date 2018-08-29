@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataTables::GetNextUserString Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataTables.GetNextUserString"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b7cb40ee-67b7-4f4e-8dcc-ee7ac8bc986b
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataTables::GetNextUserString Method
 Gets the index of the row that contains the next hard-coded string in the current table column.  

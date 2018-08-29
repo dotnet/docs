@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEditAndContinueErrorInfo Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEditAndContinueErrorInfo"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 6ae0204c-6bb2-4bda-b13e-94507203bc68
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo Interface
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.  

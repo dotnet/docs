@@ -1,14 +1,6 @@
 ---
 title: "HelpProvider Component Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "HelpProvider"
 helpviewer_keywords: 
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "dialog boxes [Windows Forms], context-sensitive Help"
   - "Windows Forms, context-sensitive Help"
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # HelpProvider Component Overview (Windows Forms)
 The Windows Forms [HelpProvider](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md) component is used to associate an HTML Help 1.x Help file (either a .chm file, produced with the HTML Help Workshop, or an .htm file) with your Windows application. You can provide help in a variety of ways:  

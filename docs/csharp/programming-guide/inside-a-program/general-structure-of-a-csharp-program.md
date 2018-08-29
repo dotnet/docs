@@ -1,16 +1,9 @@
 ---
 title: "General Structure of a C# Program (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, program structure"
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # General Structure of a C# Program (C# Programming Guide)
 C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.  

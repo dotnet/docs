@@ -1,14 +1,6 @@
 ---
 title: "How to: Create and Use a Canvas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Canvas control [WPF], creating"
   - "Canvas control [WPF], using"
 ms.assetid: 420b9487-9a15-477c-9489-a22a4dec7779
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create and Use a Canvas
 This example shows how to create and use an instance of <xref:System.Windows.Controls.Canvas>.  

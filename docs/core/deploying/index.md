@@ -1,16 +1,9 @@
 ---
 title: .NET Core Application Deployment
 description: Deploying a .NET Core application.
-keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
-ms.workload: 
-  - dotnetcore
 ---
 
 # .NET Core application deployment
@@ -23,7 +16,7 @@ You can create two types of deployments for .NET Core applications:
 
 ## Framework-dependent deployments (FDD)
 
-For an FDD, you deploy only your app and any third-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core apps.
+For an FDD, you deploy only your app and third-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core and ASP.NET Core apps that target .NET Core.
 
 ### Why create a framework-dependent deployment?
 
@@ -43,7 +36,7 @@ There are also a few disadvantages:
 
 ## Self-contained deployments (SCD)
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs.
+For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs. For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md)
 
 FDD and SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
 
@@ -72,9 +65,9 @@ For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deplo
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
 
-# See also
+## See also
 
-[Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)   
-[Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)   
-[Packages, Metapackages and Frameworks](../packages.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+* [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
+* [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
+* [Packages, Metapackages and Frameworks](../packages.md)
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

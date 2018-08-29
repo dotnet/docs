@@ -1,22 +1,12 @@
 ---
 title: "How to: Write Text to Files in the My Documents Directory in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "files [Visual Basic], writing to"
   - "text, writing to files"
   - "examples [Visual Basic], text files"
   - "writing to files [Visual Basic], in My Documents"
 ms.assetid: 1c726124-781d-4976-9baa-ed46814ff3fe
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Write Text to Files in the My Documents Directory in Visual Basic
 The `My.Computer.FileSystem.SpecialDirectories` object allows you to access special directories, such as the **MyDocuments** directory.  

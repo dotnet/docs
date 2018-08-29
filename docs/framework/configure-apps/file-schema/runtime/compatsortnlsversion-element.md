@@ -1,14 +1,6 @@
 ---
 title: "&lt;CompatSortNLSVersion&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "<CompatSortNLSVersion> element"
   - "CompatSortNLSVersion element"
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;CompatSortNLSVersion&gt; Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  

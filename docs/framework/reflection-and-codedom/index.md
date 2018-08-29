@@ -1,24 +1,12 @@
 ---
 title: "Dynamic Programming in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, dynamic programming"
   - "dynamic programming [.NET Framework]"
 ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dynamic Programming in the .NET Framework
 This section of the documentation provides information about dynamic programming in the .NET Framework.  

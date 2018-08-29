@@ -1,14 +1,6 @@
 ---
 title: "WPF Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "properties [WPF], attached"
   - "attached properties [WPF]"
@@ -24,15 +16,9 @@ helpviewer_keywords:
   - "data templates [WPF]"
   - "thread [WPF], affinity"
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Architecture
-This topic provides a guided tour of the [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] class hierarchy. It covers most of the major subsystems of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], and describes how they interact. It also details some of the choices made by the architects of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  
+This topic provides a guided tour of the Windows Presentation Foundation (WPF) class hierarchy. It covers most of the major subsystems of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], and describes how they interact. It also details some of the choices made by the architects of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  
   
   
 <a name="System_Object"></a>   
@@ -59,7 +45,7 @@ This topic provides a guided tour of the [!INCLUDE[TLA#tla_wpf](../../../../incl
 ## System.Windows.DependencyObject  
  One of the primary architectural philosophies used in building [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] was a preference for properties over methods or events. Properties are declarative and allow you to more easily specify intent instead of action. This also supported a model driven, or data driven, system for displaying user interface content. This philosophy had the intended effect of creating more properties that you could bind to, in order to better control the behavior of an application.  
   
- In order to have more of the system driven by properties, a richer property system than what the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] provides was needed. A simple example of this richness is change notifications. In order to enable two way binding, you need both sides of the bind to support change notification. In order to have behavior tied to property values, you need to be notified when the property value changes. The [!INCLUDE[TLA#tla_netframewk](../../../../includes/tlasharptla-netframewk-md.md)] has an interface, **INotifyPropertyChange**, which allows an object to publish change notifications, however it is optional.  
+ In order to have more of the system driven by properties, a richer property system than what the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] provides was needed. A simple example of this richness is change notifications. In order to enable two way binding, you need both sides of the bind to support change notification. In order to have behavior tied to property values, you need to be notified when the property value changes. The Microsoft .NET Framework has an interface, **INotifyPropertyChange**, which allows an object to publish change notifications, however it is optional.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides a richer property system, derived from the <xref:System.Windows.DependencyObject> type. The property system is truly a "dependency" property system in that it tracks dependencies between property expressions and automatically revalidates property values when dependencies change. For example, if you have a property that inherits (like <xref:System.Windows.Controls.Control.FontSize%2A>), the system is automatically updated if the property changes on a parent of an element that inherits the value.  
   

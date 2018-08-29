@@ -1,14 +1,6 @@
 ---
 title: "FunctionTailcall2 Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "FunctionTailcall2"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 249f9892-b5a9-41e1-b329-28a925904df6
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FunctionTailcall2 Function
 Notifies the profiler that the currently executing function is about to perform a tail call to another function and provides information about the stack frame.  

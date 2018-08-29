@@ -1,27 +1,13 @@
 ---
 title: "How to: Configure a Custom WS-Metadata Exchange Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WS-Metadata Exchange [WCF]"
   - "WS-Metadata Exchange [WCF], configuring a custom binding"
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
-This topic will explain how to configure a custom WS-Metadata exchange binding. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+This topic will explain how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 ### Using a configuration file  
   

@@ -1,24 +1,10 @@
 ---
 title: "Comparison Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ec7637a9-01d5-4a95-8bb0-478311cd263b
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Comparison Expressions
 A comparison expression checks whether a constant value, property value, or method result is equal, not equal, greater than, or less than another value. If a particular comparison is not valid for [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], an exception will be thrown. All comparisons, both implicit and explicit, require that all components are comparable in the data source. Comparison expressions are frequently used in `Where` clauses for restricting the query results.  

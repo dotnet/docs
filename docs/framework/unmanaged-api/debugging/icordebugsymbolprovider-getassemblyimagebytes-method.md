@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugSymbolProvider::GetAssemblyImageBytes Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 3db215aa-e180-4f70-8d23-6d5a0ffbc8e5
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugSymbolProvider::GetAssemblyImageBytes Method
 Reads data from a merged assembly given a relative virtual address (RVA) in the merged assembly.  

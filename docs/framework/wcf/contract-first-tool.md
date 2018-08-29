@@ -1,21 +1,7 @@
 ---
 title: "Contract-First Tool"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0a880690-f460-4475-a5f4-9f91ce08fcc6
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Contract-First Tool
 Service contracts often need to be created from existing services. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], data contract classes can be created automatically from existing services using the contract-first tool. To use the contract-first tool, the XML schema definition file (XSD) must be downloaded locally; the tool cannot import remote data contracts via HTTP.  
@@ -67,7 +53,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
  To add the above service contract to the project, right-click the project and select **Add New…**. Select Schema Definition from the WCF pane of the Templates dialog, and name the new file SampleContract.xsd. Copy and paste the above code into the code view of the new file.  
   
 ## Configuring contract-first options  
- Contract-first options can be configured in the Properties menu of a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] project. To enable contract-first development, select the **Enable XSD as Type Definition Language** check box in the WCF page of the project properties window.  
+ Contract-first options can be configured in the Properties menu of a WCF project. To enable contract-first development, select the **Enable XSD as Type Definition Language** check box in the WCF page of the project properties window.  
   
  ![WCF Project Options showing contract&#45;first](../../../docs/framework/wcf/media/contractfirstoptions.png "ContractFirstOptions")  
   

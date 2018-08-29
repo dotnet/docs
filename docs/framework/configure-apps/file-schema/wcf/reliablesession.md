@@ -1,21 +1,7 @@
 ---
 title: "&lt;reliableSession&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 129b4a59-37f0-4030-b664-03795d257d29
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;reliableSession&gt;
 Defines setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances.  

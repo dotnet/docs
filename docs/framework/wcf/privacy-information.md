@@ -1,48 +1,34 @@
 ---
 title: "Windows Communication Foundation Privacy Information"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation, privacy information"
   - "WCF, privacy information"
   - "privacy information [WCF]"
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-caps.latest.revision: 34
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Privacy Information
-Microsoft is committed to protecting end-users' privacy. When you build an application using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
+Microsoft is committed to protecting end-users' privacy. When you build an application using Windows Communication Foundation (WCF), version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. WCF does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
   
 ## WCF in Brief  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is a distributed messaging framework using the Microsoft .NET Framework that allows developers to build distributed applications. Messages communicated between two applications contain header and body information.  
+ WCF is a distributed messaging framework using the Microsoft .NET Framework that allows developers to build distributed applications. Messages communicated between two applications contain header and body information.  
   
- Headers may contain message routing, security information, transactions, and more depending on the services used by the application. Messages are typically encrypted by default. The one exception is when using the `BasicHttpBinding`, which was designed for use with non-secured, legacy Web services. As the application designer, you are responsible for the final design. Messages in the SOAP body contain application-specific data; however, this data, such as application-defined personal information, can be secured by using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] encryption or confidentiality features. The following sections describe the features that potentially impact privacy.  
+ Headers may contain message routing, security information, transactions, and more depending on the services used by the application. Messages are typically encrypted by default. The one exception is when using the `BasicHttpBinding`, which was designed for use with non-secured, legacy Web services. As the application designer, you are responsible for the final design. Messages in the SOAP body contain application-specific data; however, this data, such as application-defined personal information, can be secured by using WCF encryption or confidentiality features. The following sections describe the features that potentially impact privacy.  
   
 ## Messaging  
- Each [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] message has an address header that specifies the message destination and where the reply should go.  
+ Each WCF message has an address header that specifies the message destination and where the reply should go.  
   
  The address component of an endpoint address is a Uniform Resource Identifier (URI) that identifies the endpoint. The address can be a network address or a logical address. The address may include machine name (hostname, fully qualified domain name) and an IP address. The endpoint address may also contain a globally unique identifier (GUID), or a collection of GUIDs for temporary addressing used to discern each address. Each message contains a message ID that is a GUID. This feature follows the WS-Addressing reference standard.  
   
- The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
+ The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
   
 ## Hosting  
- The hosting feature in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] allows applications to start on demand or to enable port sharing between multiple applications. An [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] application can be hosted in Internet Information Services (IIS), similar to [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)].  
+ The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)].  
   
  Hosting does not expose any specific information on the network and it does not keep data on the machine.  
   
 ## Message Security  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] security provides the security capabilities for messaging applications. The security functions provided include authentication and authorization.  
+ WCF security provides the security capabilities for messaging applications. The security functions provided include authentication and authorization.  
   
  Authentication is performed by passing credentials between the clients and services. Authentication can be either through transport-level security or through SOAP message-level security, as follows:  
   
@@ -65,7 +51,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], a record is logged in the security event log.  
   
 ## Transactions  
- The transactions feature provides transactional services to a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] application.  
+ The transactions feature provides transactional services to a WCF application.  
   
  Transaction headers used in transaction propagation may contain Transaction IDs or Enlistment IDs, which are GUIDs.  
   
@@ -74,34 +60,34 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The Transactions feature implements the WS-Coordination and WS-Atomic Transaction standards.  
   
 ## Reliable Sessions  
- Reliable sessions in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provide the transfer of messages when transport or intermediary failures occur. They provide an exactly-once transfer of messages even when the underlying transport disconnects (for example, a TCP connection on a wireless network) or loses a message (an HTTP proxy dropping an outgoing or incoming message). Reliable sessions also recover message reordering (as may happen in the case of multipath routing), preserving the order in which the messages were sent.  
+ Reliable sessions in WCF provide the transfer of messages when transport or intermediary failures occur. They provide an exactly-once transfer of messages even when the underlying transport disconnects (for example, a TCP connection on a wireless network) or loses a message (an HTTP proxy dropping an outgoing or incoming message). Reliable sessions also recover message reordering (as may happen in the case of multipath routing), preserving the order in which the messages were sent.  
   
  Reliable sessions are implemented using the WS-ReliableMessaging (WS-RM) protocol. They add WS-RM headers that contain session information, which is used to identify all messages associated with a particular reliable session. Each WS-RM session has an identifier, which is a GUID.  
   
  No personal information is retained on the end-user's machine.  
   
 ## Queued Channels  
- Queues store messages from a sending application on behalf of a receiving application and later forward these messages to the receiving application. They help ensure the transfer of messages from sending applications to receiving applications when, for example, the receiving application is transient. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides support for queuing by using Microsoft Message Queuing (MSMQ) as a transport.  
+ Queues store messages from a sending application on behalf of a receiving application and later forward these messages to the receiving application. They help ensure the transfer of messages from sending applications to receiving applications when, for example, the receiving application is transient. WCF provides support for queuing by using Microsoft Message Queuing (MSMQ) as a transport.  
   
  The queued channels feature does not add headers to a message. Instead it creates a Message Queuing message with appropriate Message Queuing message properties set, and invokes Message Queuing methods to put the message in the Message Queuing queue. Message Queuing is an optional component that ships with Windows.  
   
  No information is retained on the end-user's machine by the queued channels feature, because it uses Message Queuing as the queuing infrastructure.  
   
 ## COM+ Integration  
- This feature wraps existing COM and COM+ functionality to create services that are compatible with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services. This feature does not use specific headers and it does not retain data on the end-user's machine.  
+ This feature wraps existing COM and COM+ functionality to create services that are compatible with WCF services. This feature does not use specific headers and it does not retain data on the end-user's machine.  
   
 ## COM Service Moniker  
- This provides an unmanaged wrapper to a standard [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client. This feature does not have specific headers on the wire nor does it persist data on the machine.  
+ This provides an unmanaged wrapper to a standard WCF client. This feature does not have specific headers on the wire nor does it persist data on the machine.  
   
 ## Peer Channel  
- A peer channel enables development of multiparty applications using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]. Multiparty messaging occurs in the context of a mesh. Meshes are identified by a name that nodes can join. Each node in the peer channel creates a TCP listener at a user-specified port and establishes connections with other nodes in the mesh to ensure resiliency. To connect to other nodes in the mesh, nodes also exchange some data, including the listener address and the machine's IP addresses, with other nodes in the mesh. Messages sent around in the mesh can contain security information that pertains to the sender to prevent message spoofing and tampering.  
+ A peer channel enables development of multiparty applications using WCF. Multiparty messaging occurs in the context of a mesh. Meshes are identified by a name that nodes can join. Each node in the peer channel creates a TCP listener at a user-specified port and establishes connections with other nodes in the mesh to ensure resiliency. To connect to other nodes in the mesh, nodes also exchange some data, including the listener address and the machine's IP addresses, with other nodes in the mesh. Messages sent around in the mesh can contain security information that pertains to the sender to prevent message spoofing and tampering.  
   
  No personal information is stored on the end-user's machine.  
   
 ## IT Professional Experience  
   
 ### Tracing  
- The diagnostics feature of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] infrastructure logs messages that pass through the transport and service model layers, and the activities and events associated with these messages. This feature is turned off by default. It is enabled using the application’s configuration file and the tracing behavior may be modified using the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] WMI provider at run time. When enabled, the tracing infrastructure emits a diagnostic trace that contains messages, activities, and processing events to configured listeners. The format and location of the output are determined by the administrator’s listener configuration choices, but is typically an XML formatted file. The administrator is responsible for setting the access control list (ACL) on the trace files. In particular, when hosted by Windows Activation System (WAS), the administrator should make sure the files are not served from the public virtual root directory if that is not desired.  
+ The diagnostics feature of the WCF infrastructure logs messages that pass through the transport and service model layers, and the activities and events associated with these messages. This feature is turned off by default. It is enabled using the application’s configuration file and the tracing behavior may be modified using the WCF WMI provider at run time. When enabled, the tracing infrastructure emits a diagnostic trace that contains messages, activities, and processing events to configured listeners. The format and location of the output are determined by the administrator’s listener configuration choices, but is typically an XML formatted file. The administrator is responsible for setting the access control list (ACL) on the trace files. In particular, when hosted by Windows Activation System (WAS), the administrator should make sure the files are not served from the public virtual root directory if that is not desired.  
   
  There are two types of tracing: Message logging and Service Model diagnostic tracing, described in the following section. Each type is configured through its own trace source: <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> and <xref:System.ServiceModel>. Both of these logging trace sources capture data that is local to the application.  
   
@@ -124,14 +110,14 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  Messages logged at this level are decrypted even if they were secured and encrypted on the wire.  
   
  Malformed Message Logging  
- Logs messages that the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] infrastructure cannot understand or process.  
+ Logs messages that the WCF infrastructure cannot understand or process.  
   
  Messages are logged as-is, that is, encrypted or not  
   
- When messages are logged in decrypted or unencrypted form, by default [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] removes security keys and potentially personal information from the messages before logging them. The next sections describe what information is removed, and when. The machine administrator and application deployer must both take certain configuration actions to change the default behavior to log keys and potentially personal information.  
+ When messages are logged in decrypted or unencrypted form, by default WCF removes security keys and potentially personal information from the messages before logging them. The next sections describe what information is removed, and when. The machine administrator and application deployer must both take certain configuration actions to change the default behavior to log keys and potentially personal information.  
   
 #### Information Removed from Message Headers When Logging Decrypted/Unencrypted Messages  
- When messages are logged in decrypted/unencrypted form, security keys and potentially personal information are removed by default from message headers and message bodies before they are logged. The following list shows what [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] considers keys and potentially personal information.  
+ When messages are logged in decrypted/unencrypted form, security keys and potentially personal information are removed by default from message headers and message bodies before they are logged. The following list shows what WCF considers keys and potentially personal information.  
   
  Keys that are removed:  
   
@@ -308,7 +294,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  \</Assertion>  
   
 #### Information Removed from Message Bodies When Logging Decrypted/Unencrypted Messages  
- As previously described, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] removes keys and known potentially personal information from message headers for logged decrypted/unencrypted messages. In addition, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] removes keys and known potentially personal information from message bodies for the body elements and actions in the following list, which describe security messages involved in key exchange.  
+ As previously described, WCF removes keys and known potentially personal information from message headers for logged decrypted/unencrypted messages. In addition, WCF removes keys and known potentially personal information from message bodies for the body elements and actions in the following list, which describe security messages involved in key exchange.  
   
  For the following namespaces:  
   
@@ -365,7 +351,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT-Amend  
   
 #### No Information Is Removed from Application-specific Headers and Body Data  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not track personal information in application-specific headers (for example, query strings) or body data (for example, credit card number).  
+ WCF does not track personal information in application-specific headers (for example, query strings) or body data (for example, credit card number).  
   
  When message logging is on, personal information in application-specific headers and body information may be visible in the logs. Again, the application deployer is responsible for setting the ACLs on the configuration and log files. He also can turn off logging if he does not want this information to be visible, or he may filter out this information from the log files after it is logged.  
   
@@ -380,26 +366,26 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  For both message logging and tracing, a custom trace listener can be configured, which can send traces and messages on the wire (for example, to a remote database). The application deployer is responsible for configuring custom listeners or enabling users to do so. He is also responsible for any personal information exposed at the remote location, and for properly applying ACLs to this location.  
   
 ### Other features for IT Professionals  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] has a WMI provider that exposes the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] infrastructure configuration information through WMI (shipped with Windows). By default, the WMI interface is available to administrators.  
+ WCF has a WMI provider that exposes the WCF infrastructure configuration information through WMI (shipped with Windows). By default, the WMI interface is available to administrators.  
   
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] configuration uses the .NET Framework configuration mechanism. The configuration files are stored on the machine. The application developer and the administrator create the configuration files and ACL for each of the application's requirements. A configuration file can contain endpoint addresses and links to certificates in the certificate store. The certificates can be used to provide application data to configure various properties of the features used by the application.  
+ WCF configuration uses the .NET Framework configuration mechanism. The configuration files are stored on the machine. The application developer and the administrator create the configuration files and ACL for each of the application's requirements. A configuration file can contain endpoint addresses and links to certificates in the certificate store. The certificates can be used to provide application data to configure various properties of the features used by the application.  
   
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] also uses the .NET Framework process dump functionality by calling the <xref:System.Environment.FailFast%2A> method.  
+ WCF also uses the .NET Framework process dump functionality by calling the <xref:System.Environment.FailFast%2A> method.  
   
 ### IT Pro Tools  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] also provides the following IT professional tools, which ship in the Windows SDK.  
+ WCF also provides the following IT professional tools, which ship in the Windows SDK.  
   
 #### SvcTraceViewer.exe  
- The viewer displays [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] trace files. The viewer shows whatever information is contained in the traces.  
+ The viewer displays WCF trace files. The viewer shows whatever information is contained in the traces.  
   
 #### SvcConfigEditor.exe  
- The editor allows the user to create and edit [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] configuration files. The editor shows whatever information is contained in the configuration files. The same task can be accomplished with a text editor.  
+ The editor allows the user to create and edit WCF configuration files. The editor shows whatever information is contained in the configuration files. The same task can be accomplished with a text editor.  
   
 #### ServiceModel_Reg  
- This tool allows the user to manage ServiceModel installs on a machine. The tool displays status messages in a console window when it runs and, in the process, may display information about the configuration of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] installation.  
+ This tool allows the user to manage ServiceModel installs on a machine. The tool displays status messages in a console window when it runs and, in the process, may display information about the configuration of the WCF installation.  
   
 #### WSATConfig.exe and WSATUI.dll  
- These tools allow IT Professionals to configure interoperable WS-AtomicTransaction network support in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]. The tools display and allow the user to change the values of the most commonly used WS-AtomicTransaction settings stored in the registry.  
+ These tools allow IT Professionals to configure interoperable WS-AtomicTransaction network support in WCF. The tools display and allow the user to change the values of the most commonly used WS-AtomicTransaction settings stored in the registry.  
   
 ## Cross-cutting Features  
  The following features are cross-cutting. That is, they can be composed with any of the preceding features.  

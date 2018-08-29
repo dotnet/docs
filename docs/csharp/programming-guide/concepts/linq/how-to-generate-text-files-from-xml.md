@@ -1,19 +1,7 @@
 ---
 title: "How to: Generate Text Files from XML (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 9ad283f7-7cac-42ff-bf32-92aa866e6883
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Generate Text Files from XML (C#)
 This example shows how to generate a comma-separated values (CSV) file from an XML file.  

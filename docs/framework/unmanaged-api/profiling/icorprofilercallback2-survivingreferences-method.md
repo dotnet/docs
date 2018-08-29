@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback2::SurvivingReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback2.SurvivingReferences"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f165200e-3a91-47f7-88fc-13ff10c8babc
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback2::SurvivingReferences Method
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection.  

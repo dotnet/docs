@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyReferenceList Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyReferenceList"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyReferenceList Interface
 Manages a list of assemblies that are loaded by the common language runtime (CLR) and not by the host.  

@@ -1,19 +1,7 @@
 ---
 title: "Code-Bodied"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5bfb2d95-9092-4551-9c59-bd8f0a37225e
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Code-Bodied
 This section contains custom activity samples created declaratively in code.  
@@ -35,7 +23,7 @@ This section contains custom activity samples created declaratively in code.
  This sample demonstrates how to develop a custom <xref:System.Activities.CodeActivity> that uses <xref:System.Activities.AsyncCodeActivityContext> to perform work asynchronously outside of the workflow. 
   
  [Hello World Custom Activity](../../../../docs/framework/windows-workflow-foundation/samples/hello-world-custom-activity.md)  
- This sample demonstrates several key features of [!INCLUDE[wf](../../../../includes/wf-md.md)], including how to create a simple custom activity.  
+ This sample demonstrates several key features of Windows Workflow Foundation (WF), including how to create a simple custom activity.  
   
  [Dynamic Arguments](../../../../docs/framework/windows-workflow-foundation/samples/dynamic-arguments.md)  
  This sample demonstrates how to implement an activity for which the arguments are defined by the activity consumer rather than the activity author.

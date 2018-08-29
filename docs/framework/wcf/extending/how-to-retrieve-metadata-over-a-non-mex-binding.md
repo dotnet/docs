@@ -1,28 +1,14 @@
 ---
 title: "How to: Retrieve Metadata Over a non-MEX Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Retrieve Metadata Over a non-MEX Binding
 This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) sample.  
   
 ### To retrieve metadata over a non-MEX binding  
   
-1.  Determine the binding used by the MEX endpoint. For [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
+1.  Determine the binding used by the MEX endpoint. For Windows Communication Foundation (WCF) services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
   
     ```xml  
     <services>  
@@ -129,7 +115,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  
   
-5.  At this point, you have a collection of service endpoints. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
+5.  At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
 ## See Also  
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

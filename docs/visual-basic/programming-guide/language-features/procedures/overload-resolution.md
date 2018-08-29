@@ -1,13 +1,6 @@
 ---
 title: "Overload Resolution (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "overload resolution"
@@ -17,12 +10,9 @@ helpviewer_keywords:
   - "signatures [Visual Basic], procedure"
   - "overloads [Visual Basic], resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Overload Resolution (Visual Basic)
-When the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
+When the Visual Basic compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
   
 1.  **Accessibility.** It eliminates any overload with an access level that prevents the calling code from calling it.  
   

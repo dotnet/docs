@@ -1,11 +1,6 @@
 ---
 title: "-define (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-d compiler option [Visual Basic]"
   - "/d compiler option [Visual Basic]"

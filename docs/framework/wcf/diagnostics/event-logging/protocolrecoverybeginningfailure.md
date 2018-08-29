@@ -1,21 +1,7 @@
 ---
 title: "ProtocolRecoveryBeginningFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4b6ddabf-3861-4c40-b9a2-b153cf1e4d35
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ProtocolRecoveryBeginningFailure
 Id: 144  

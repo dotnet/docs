@@ -1,14 +1,6 @@
 ---
 title: "ICLRHostBindingPolicyManager::EvaluatePolicy Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRHostBindingPolicyManager.EvaluatePolicy"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRHostBindingPolicyManager::EvaluatePolicy Method
 Evaluates binding policy on behalf of the host.  

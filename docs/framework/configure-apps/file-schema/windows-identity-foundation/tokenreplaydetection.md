@@ -1,21 +1,9 @@
 ---
 title: "&lt;tokenReplayDetection&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ac3f588e-5f75-4275-b969-2d492ecc3b47
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;tokenReplayDetection&gt;
 Enables token replay detection and specifies the expiration time for tokens.  

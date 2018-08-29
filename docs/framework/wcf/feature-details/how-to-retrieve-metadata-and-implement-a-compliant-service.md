@@ -1,26 +1,12 @@
 ---
 title: "How to: Retrieve Metadata and Implement a Compliant Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f6f3a2b9-c8aa-4b0b-832c-ec2927bf1163
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Retrieve Metadata and Implement a Compliant Service
-Often, the same person does not design and implement services. In environments where interoperating applications are important, contracts can be designed or described in Web Services Description Language (WSDL) and a developer must implement a service that complies with the provided contract. You may also want to migrate an existing service to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] but preserve the wire format. In addition, duplex contracts require callers to implement a callback contract as well.  
+Often, the same person does not design and implement services. In environments where interoperating applications are important, contracts can be designed or described in Web Services Description Language (WSDL) and a developer must implement a service that complies with the provided contract. You may also want to migrate an existing service to Windows Communication Foundation (WCF) but preserve the wire format. In addition, duplex contracts require callers to implement a callback contract as well.  
   
- In these cases, you must use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) (or an equivalent tool) to generate a service contract interface in a managed language that you can implement to fulfill the requirements of the contract. Typically the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) is used to acquire a service contract that is used with a channel factory or a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client type as well as with a client configuration file that sets up the correct binding and address. To use the generated configuration file, you must change it into a service configuration file. You may also need to modify the service contract.  
+ In these cases, you must use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) (or an equivalent tool) to generate a service contract interface in a managed language that you can implement to fulfill the requirements of the contract. Typically the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) is used to acquire a service contract that is used with a channel factory or a WCF client type as well as with a client configuration file that sets up the correct binding and address. To use the generated configuration file, you must change it into a service configuration file. You may also need to modify the service contract.  
   
 ### To retrieve data and implement a compliant service  
   

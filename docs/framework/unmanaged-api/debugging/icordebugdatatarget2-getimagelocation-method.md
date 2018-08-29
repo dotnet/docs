@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugDataTarget2::GetImageLocation Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 696afe71-5852-478d-a33f-b2d2dbc4b91f
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDataTarget2::GetImageLocation Method
 Returns the path of a module from the module's base address.  

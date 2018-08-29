@@ -1,19 +1,7 @@
 ---
 title: "Optimization using Single Phase Commit and Promotable Single Phase Notification"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 57beaf1a-fb4d-441a-ab1d-bc0c14ce7899
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Optimization using Single Phase Commit and Promotable Single Phase Notification
 This topic describes the mechanisms provided by the <xref:System.Transactions> infrastructure to optimize performance.  

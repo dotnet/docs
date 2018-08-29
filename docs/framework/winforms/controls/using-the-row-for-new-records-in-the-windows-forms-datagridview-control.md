@@ -1,25 +1,11 @@
 ---
 title: "Using the Row for New Records in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], adding rows for new records"
   - "rows [Windows Forms], new records"
   - "DataGridView control [Windows Forms], data entry"
 ms.assetid: 6110f1ea-9794-442c-a98a-f104a1feeaf4
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using the Row for New Records in the Windows Forms DataGridView Control
 When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your application, you will often want to give your users the ability to add new rows of data to the data store. The <xref:System.Windows.Forms.DataGridView> control supports this functionality by providing a row for new records, which is always shown as the last row. It is marked with an asterisk (*) symbol in its row header. The following sections discuss some of the things you should consider when you program with the row for new records enabled.  

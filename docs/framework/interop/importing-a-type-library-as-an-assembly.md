@@ -1,14 +1,6 @@
 ---
 title: "Importing a Type Library as an Assembly"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "importing type library"
   - "type metadata"
@@ -23,12 +15,8 @@ helpviewer_keywords:
   - "COM interop, importing type library"
   - "COM interop, exposing COM components"
 ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Importing a Type Library as an Assembly
 COM type definitions usually reside in a type library. In contrast, CLS-compliant compilers produce type metadata in an assembly. The two sources of type information are quite different. This topic describes techniques for generating metadata from a type library. The resulting assembly is called an interop assembly, and the type information it contains enables .NET Framework applications to use COM types.  

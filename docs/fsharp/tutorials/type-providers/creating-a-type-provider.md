@@ -1,17 +1,8 @@
 ---
 title: "Tutorial: Create a Type Provider (F#)"
 description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 82bec076-19d4-470c-979f-6c3a14b7c70a 
 ---
-
 # Tutorial: Create a Type Provider
 
 The type provider mechanism in F# is a significant part of its support for information rich programming. This tutorial explains how to create your own type providers by walking you through the development of several simple type providers to illustrate the basic concepts. For more information about the type provider mechanism in F#, see [Type Providers](index.md).
@@ -79,7 +70,6 @@ type Type1 =
     /// This is an instance method.
     member InstanceMethod : x:int -> char
 
-    /// This is an instance property.
     nested type NestedType = 
         /// This is StaticProperty1 on NestedType.
         static member StaticProperty1 : string
@@ -1079,7 +1069,7 @@ Providers must often cache access to schema information. The cached data should 
 
 When you compile a `.dll` or `.exe` file, the backing .dll file for generated types is statically linked into the resulting assembly. This link is created by copying the Intermediate Language (IL) type definitions and any managed resources from the backing assembly into the final assembly. When you use F# Interactive, the backing .dll file isn't copied and is instead loaded directly into the F# Interactive process.
 
-### Exceptions and Diagnostics from Type Providers
+### Exceptions and Diagnostics from Type Providers
 
 All uses of all members from provided types may throw exceptions. In all cases, if a type provider throws an exception, the host compiler attributes the error to a specific type provider.
 
@@ -1107,11 +1097,9 @@ The ProvidedTypes-0.2 helper code that is part of the F# 3.0 release has only li
 
 - The provider must have an assembly that has an actual backing .NET .dll file with a matching .dll file on disk.
 
-
 ## Rules and Limitations
 
 When you write type providers, keep the following rules and limitations in mind.
-
 
 ### Provided types must be reachable
 

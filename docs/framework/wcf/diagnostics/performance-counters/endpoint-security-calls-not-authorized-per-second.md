@@ -1,21 +1,9 @@
 ---
 title: "Endpoint: Security Calls Not Authorized Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c8a1547b-986b-45c1-b302-dea0cd4b516d
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Endpoint: Security Calls Not Authorized Per Second
 Counter Name: Security Calls Not Authorized Per Second.  

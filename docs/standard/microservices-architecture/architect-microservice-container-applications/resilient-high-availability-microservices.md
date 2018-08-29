@@ -1,16 +1,9 @@
 ---
 title: Resiliency and high availability in microservices
 description: .NET Microservices Architecture for Containerized .NET Applications | Resiliency and high availability in microservices
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Resiliency and high availability in microservices
 
@@ -80,5 +73,5 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 
 >[!div class="step-by-step"]
-[Previous] (microservice-based-composite-ui-shape-layout.md)
-[Next] (scalable-available-multi-container-microservice-applications.md)
+[Previous](microservice-based-composite-ui-shape-layout.md)
+[Next](scalable-available-multi-container-microservice-applications.md)

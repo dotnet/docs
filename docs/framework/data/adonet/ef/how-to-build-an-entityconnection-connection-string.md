@@ -1,24 +1,10 @@
 ---
 title: "How to: Build an EntityConnection Connection String"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 5bd1a748-3df7-4d0a-a607-14f25e3175e9
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Build an EntityConnection Connection String
 This topic provides an example of how to build an <xref:System.Data.EntityClient.EntityConnection>.  

@@ -1,24 +1,10 @@
 ---
 title: "Developing Custom Windows Forms Controls with the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], developing using code"
   - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Developing Custom Windows Forms Controls with the .NET Framework
 Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. This section provides background information and samples to help you develop Windows Forms controls.  

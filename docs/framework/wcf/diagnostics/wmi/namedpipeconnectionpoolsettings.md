@@ -1,21 +1,7 @@
 ---
 title: "NamedPipeConnectionPoolSettings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 079bccb8-54b5-4436-a43d-5567763f72ce
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # NamedPipeConnectionPoolSettings
 NamedPipeConnectionPoolSettings  

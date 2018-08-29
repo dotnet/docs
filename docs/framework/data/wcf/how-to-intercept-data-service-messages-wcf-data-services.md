@@ -1,14 +1,6 @@
 ---
 title: "How to: Intercept Data Service Messages (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF Data Services, customizing"
   - "query interceptors [WCF Data Services]"
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Intercept Data Service Messages (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can intercept request messages so that you can add custom logic to an operation. To intercept a message, you use specially attributed methods in the data service. For more information, see [Interceptors](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md).  

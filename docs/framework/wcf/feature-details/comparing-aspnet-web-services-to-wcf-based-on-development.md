@@ -1,24 +1,10 @@
 ---
 title: "Comparing ASP.NET Web Services to WCF Based on Development"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Comparing ASP.NET Web Services to WCF Based on Development
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] has an ASP.NET compatibility mode option to enable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications to be programmed and configured like ASP.NET Web services, and mimic their behavior. The following sections compare ASP.NET Web services and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] based on what is required to develop applications using both technologies.  
+Windows Communication Foundation (WCF) has an ASP.NET compatibility mode option to enable WCF applications to be programmed and configured like ASP.NET Web services, and mimic their behavior. The following sections compare ASP.NET Web services and WCF based on what is required to develop applications using both technologies.  
   
 ## Data Representation  
  The development of a Web service with ASP.NET typically begins with defining any complex data types the service is to use. ASP.NET relies on the <xref:System.Xml.Serialization.XmlSerializer> to translate data represented by .NET Framework types to XML for transmission to or from a service and to translate data received as XML into .NET Framework objects. Defining the complex data types that an ASP.NET service is to use requires the definition of .NET Framework classes that the <xref:System.Xml.Serialization.XmlSerializer> can serialize to and from XML. Such classes can be written manually, or generated from definitions of the types in XML Schema using the command-line XML Schemas/Data Types Support Utility, xsd.exe.  
@@ -33,9 +19,9 @@ ms.workload:
   
 -   The great many attribute types in the <xref:System.Xml.Serialization> namespace can be added to a .NET Framework class and its members to control how instances of the class are represented in XML.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application development usually also begins with the definition of complex types. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can be made to use the same .NET Framework types as ASP.NET Web services.  
+ WCF application development usually also begins with the definition of complex types. WCF can be made to use the same .NET Framework types as ASP.NET Web services.  
   
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]<xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> can be added to .NET Framework types to indicate that instances of the type are to be serialized into XML, and which particular fields or properties of the type are to be serialized, as shown in the following sample code.  
+ The WCF<xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> can be added to .NET Framework types to indicate that instances of the type are to be serialized into XML, and which particular fields or properties of the type are to be serialized, as shown in the following sample code.  
   
 ```  
 //Example One:   
@@ -151,7 +137,7 @@ public class LineItem
 }  
 ```  
   
- The <xref:System.Runtime.Serialization.DataContractAttribute> signifies that zero or more of a type’s fields or properties are to be serialized, while the <xref:System.Runtime.Serialization.DataMemberAttribute> indicates that a particular field or property is to be serialized. The <xref:System.Runtime.Serialization.DataContractAttribute> can be applied to a class or structure. The <xref:System.Runtime.Serialization.DataMemberAttribute> can be applied to a field or a property, and the fields and properties to which the attribute is applied can be either public or private. Instances of types that have the <xref:System.Runtime.Serialization.DataContractAttribute> applied to them are referred to as data contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. They are serialized into XML using <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ The <xref:System.Runtime.Serialization.DataContractAttribute> signifies that zero or more of a type’s fields or properties are to be serialized, while the <xref:System.Runtime.Serialization.DataMemberAttribute> indicates that a particular field or property is to be serialized. The <xref:System.Runtime.Serialization.DataContractAttribute> can be applied to a class or structure. The <xref:System.Runtime.Serialization.DataMemberAttribute> can be applied to a field or a property, and the fields and properties to which the attribute is applied can be either public or private. Instances of types that have the <xref:System.Runtime.Serialization.DataContractAttribute> applied to them are referred to as data contracts in WCF. They are serialized into XML using <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  The following is a list of the important differences between using the <xref:System.Runtime.Serialization.DataContractSerializer> and using the <xref:System.Xml.Serialization.XmlSerializer> and the various attributes of the <xref:System.Xml.Serialization> namespace.  
   
@@ -210,7 +196,7 @@ public class LineItem
  The Windows software development kit (SDK) includes a command-line tool called the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). Like the xsd.exe tool used with ASP.NET Web services, Svcutil.exe can generate definitions of .NET data types from XML Schema. The types are data contracts if the <xref:System.Runtime.Serialization.DataContractSerializer> can emit XML in the format defined by the XML Schema; otherwise, they are intended for serialization using the <xref:System.Xml.Serialization.XmlSerializer>. Svcutil.exe can also generate an XML schema from data contracts by using its `dataContractOnly` switch.  
   
 > [!NOTE]
->  Although ASP.NET Web services use the <xref:System.Xml.Serialization.XmlSerializer>, and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ASP.NET compatibility mode makes [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services mimic the behavior of ASP.NET Web services, the ASP.NET compatibility option does not restrict one to using the <xref:System.Xml.Serialization.XmlSerializer>. One can still use the <xref:System.Runtime.Serialization.DataContractSerializer> with services running in the ASP.NET compatibility mode.  
+>  Although ASP.NET Web services use the <xref:System.Xml.Serialization.XmlSerializer>, and WCF ASP.NET compatibility mode makes WCF services mimic the behavior of ASP.NET Web services, the ASP.NET compatibility option does not restrict one to using the <xref:System.Xml.Serialization.XmlSerializer>. One can still use the <xref:System.Runtime.Serialization.DataContractSerializer> with services running in the ASP.NET compatibility mode.  
   
 ## Service Development  
  To develop a service using ASP.NET, it has been customary to add the <xref:System.Web.Services.WebService> attribute to a class, and the <xref:System.Web.Services.WebMethodAttribute> to any of that class’ methods that are to be operations of the service:  
@@ -249,7 +235,7 @@ public class Service : IEcho
   
  Using this option is to be preferred, because the interface with the <xref:System.Web.Services.WebService> attribute constitutes a contract for the operations performed by the service that can be reused with various classes that might implement that same contract in different ways.  
   
- A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is provided by defining one or more [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoints. An endpoint is defined by an address, a binding and a service contract. The address defines where the service is located. The binding specifies how to communicate with the service. The service contract defines the operations that the service can perform.  
+ A WCF service is provided by defining one or more WCF endpoints. An endpoint is defined by an address, a binding and a service contract. The address defines where the service is located. The binding specifies how to communicate with the service. The service contract defines the operations that the service can perform.  
   
  The service contract is usually defined first, by adding <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> to an interface:  
   
@@ -262,7 +248,7 @@ public interface IEcho
 }  
 ```  
   
- The <xref:System.ServiceModel.ServiceContractAttribute> specifies that the interface defines a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service contract, and the <xref:System.ServiceModel.OperationContractAttribute> indicates which, if any, of the methods of the interface define operations of the service contract.  
+ The <xref:System.ServiceModel.ServiceContractAttribute> specifies that the interface defines a WCF service contract, and the <xref:System.ServiceModel.OperationContractAttribute> indicates which, if any, of the methods of the interface define operations of the service contract.  
   
  Once a service contract has been defined, it is implemented in a class, by having the class implement the interface by which the service contract is defined:  
   
@@ -276,9 +262,9 @@ public class Service : IEcho
 }  
 ```  
   
- A class that implements a service contract is referred to as a service type in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ A class that implements a service contract is referred to as a service type in WCF.  
   
- The next step is to associate an address and a binding with a service type. That is typically done in a configuration file, either by editing the file directly, or by using a configuration editor provided with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Here is an example of a configuration file.  
+ The next step is to associate an address and a binding with a service type. That is typically done in a configuration file, either by editing the file directly, or by using a configuration editor provided with WCF. Here is an example of a configuration file.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -304,15 +290,15 @@ public class Service : IEcho
 |WSHttpBinding|Interoperability with Web services and clients that support the WS-* protocols over HTTP.|  
 |WSDualHttpBinding|Duplex HTTP communication, by which the receiver of an initial message does not reply directly to the initial sender, but may transmit any number of responses over a period of time by using HTTP in conformity with WS-* protocols.|  
 |WSFederationBinding|HTTP communication, in which access to the resources of a service can be controlled based on credentials issued by an explicitly-identified credential provider.|  
-|NetTcpBinding|Secure, reliable, high-performance communication between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] software entities across a network.|  
-|NetNamedPipeBinding|Secure, reliable, high-performance communication between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] software entities on the same machine.|  
-|NetMsmqBinding|Communication between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] software entities by using MSMQ.|  
-|MsmqIntegrationBinding|Communication between a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] software entity and another software entity by using MSMQ.|  
-|NetPeerTcpBinding|Communication between [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] software entities by using Windows Peer-to-Peer Networking.|  
+|NetTcpBinding|Secure, reliable, high-performance communication between WCF software entities across a network.|  
+|NetNamedPipeBinding|Secure, reliable, high-performance communication between WCF software entities on the same machine.|  
+|NetMsmqBinding|Communication between WCF software entities by using MSMQ.|  
+|MsmqIntegrationBinding|Communication between a WCF software entity and another software entity by using MSMQ.|  
+|NetPeerTcpBinding|Communication between WCF software entities by using Windows Peer-to-Peer Networking.|  
   
  The system-provided binding, <xref:System.ServiceModel.BasicHttpBinding>, incorporates the set of protocols supported by ASP.NET Web services.  
   
- Custom bindings for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications are easily defined as collections of the binding element classes that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses to implement individual protocols. New binding elements can be written to represent additional protocols.  
+ Custom bindings for WCF applications are easily defined as collections of the binding element classes that WCF uses to implement individual protocols. New binding elements can be written to represent additional protocols.  
   
  The internal behavior of service types can be adjusted using the properties of a family of classes called behaviors. Here, the <xref:System.ServiceModel.ServiceBehaviorAttribute> class is used to specify that the service type is to be multithreaded.  
   
@@ -334,7 +320,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
   
  The service file is copied into an ASP.NET application root in Internet Information Services (IIS), and the assembly is copied into the \bin subdirectory of that application root. The application is then accessible by using the uniform resource locator (URL) of the service file in the application root.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services can readily be hosted within IIS 5.1 or 6.0, the Windows Process Activation Service (WAS) that is provided as part of IIS 7.0, and within any .NET application. To host a service in IIS 5.1 or 6.0, the service must use HTTP as the communications transport protocol.  
+ WCF services can readily be hosted within IIS 5.1 or 6.0, the Windows Process Activation Service (WAS) that is provided as part of IIS 7.0, and within any .NET application. To host a service in IIS 5.1 or 6.0, the service must use HTTP as the communications transport protocol.  
   
  To host a service within IIS 5.1, 6.0 or within WAS, use the follows steps:  
   
@@ -352,7 +338,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
   
  The application is then accessible by using the URL of the service file in the application root.  
   
- To host a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service within a .NET application, compile the service type into a class library assembly referenced by the application, and program the application to host the service using the <xref:System.ServiceModel.ServiceHost> class. The following is an example of the basic programming required:  
+ To host a WCF service within a .NET application, compile the service type into a class library assembly referenced by the application, and program the application to host the service using the <xref:System.ServiceModel.ServiceHost> class. The following is an example of the basic programming required:  
   
 ```  
 string httpBaseAddress = "http://www.contoso.com:8000/";  
@@ -377,9 +363,9 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
   
  This example shows how addresses for one or more transport protocols are specified in the construction of a <xref:System.ServiceModel.ServiceHost>. These addresses are referred to as base addresses.  
   
- The address provided for any endpoint of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is an address relative to a base address of the endpoint’s host. The host can have one base address for each communication transport protocol. In the sample configuration in the preceding configuration file, the <xref:System.ServiceModel.BasicHttpBinding> selected for the endpoint uses HTTP as the transport protocol, so the address of the endpoint, `EchoService`, is relative to the host’s HTTP base address. In the case of the host in the preceding example, the HTTP base address is http://www.contoso.com:8000/. For a service hosted within IIS or WAS, the base address is the URL of the service’s service file.  
+ The address provided for any endpoint of a WCF service is an address relative to a base address of the endpoint’s host. The host can have one base address for each communication transport protocol. In the sample configuration in the preceding configuration file, the <xref:System.ServiceModel.BasicHttpBinding> selected for the endpoint uses HTTP as the transport protocol, so the address of the endpoint, `EchoService`, is relative to the host’s HTTP base address. In the case of the host in the preceding example, the HTTP base address is http://www.contoso.com:8000/. For a service hosted within IIS or WAS, the base address is the URL of the service’s service file.  
   
- Only services hosted in IIS or WAS, and which are configured with HTTP as the transport protocol exclusively, can be made to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ASP.NET compatibility mode option. Turning that option on requires the following steps.  
+ Only services hosted in IIS or WAS, and which are configured with HTTP as the transport protocol exclusively, can be made to use WCF ASP.NET compatibility mode option. Turning that option on requires the following steps.  
   
 1.  The programmer must add the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> attribute to the service type and specify that ASP.NET compatibility mode is either allowed or required.  
   
@@ -402,7 +388,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
     </configuration>  
     ```  
   
-     [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can also be configured to use .asmx as the extension for their service files rather than .svc.  
+     WCF applications can also be configured to use .asmx as the extension for their service files rather than .svc.  
   
     ```xml  
     <system.web>  
@@ -422,14 +408,14 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
     </system.web>  
     ```  
   
-     That option can save you from having to modify clients that are configured to use the URLs of .asmx service files when modifying a service to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+     That option can save you from having to modify clients that are configured to use the URLs of .asmx service files when modifying a service to use WCF.  
   
 ## Client Development  
- Clients for ASP.NET Web services are generated using the command-line tool, WSDL.exe, which provides the URL of the .asmx file as input. The corresponding tool provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). It generates a code module with the definition of the service contract and the definition of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class. It also generates a configuration file with the address and binding of the service.  
+ Clients for ASP.NET Web services are generated using the command-line tool, WSDL.exe, which provides the URL of the .asmx file as input. The corresponding tool provided by WCF is [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). It generates a code module with the definition of the service contract and the definition of a WCF client class. It also generates a configuration file with the address and binding of the service.  
   
  In programming a client of a remote service it is generally advisable to program according to an asynchronous pattern. The code generated by the WSDL.exe tool always provides for both a synchronous and an asynchronous pattern by default. The code generated by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) can provide for either pattern. It provides for the synchronous pattern by default. If the tool is executed with the `/async` switch, then the generated code provides for the asynchronous pattern.  
   
- There is no guarantee that names in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client classes generated by ASP.NET’s WSDL.exe tool, by default, match the names in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client classes generated by the Svcutil.exe tool. In particular, the names of the properties of classes that have to be serialized using the <xref:System.Xml.Serialization.XmlSerializer> are, by default, given the suffix Property in the code generated by the Svcutil.exe tool, which is not the case with the WSDL.exe tool.  
+ There is no guarantee that names in the WCF client classes generated by ASP.NET’s WSDL.exe tool, by default, match the names in WCF client classes generated by the Svcutil.exe tool. In particular, the names of the properties of classes that have to be serialized using the <xref:System.Xml.Serialization.XmlSerializer> are, by default, given the suffix Property in the code generated by the Svcutil.exe tool, which is not the case with the WSDL.exe tool.  
   
 ## Message Representation  
  The headers of the SOAP messages sent and received by ASP.NET Web services can be customized. A class is derived from <xref:System.Web.Services.Protocols.SoapHeader> to define the structure of the header, and then the <xref:System.Web.Services.Protocols.SoapHeaderAttribute> is used to indicate the presence of the header.  
@@ -479,7 +465,7 @@ public class Service: WebService, IEcho
 }  
 ```  
   
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides the attributes, <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> to describe the structure of the SOAP messages sent and received by a service.  
+ The WCF provides the attributes, <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> to describe the structure of the SOAP messages sent and received by a service.  
   
 ```  
 [DataContract]  
@@ -519,7 +505,7 @@ public interface IItemService
 }  
 ```  
   
- This syntax yields an explicit representation of the structure of the messages, whereas the structure of messages is implied by the code of an ASP.NET Web service. Also, in the ASP.NET syntax, message headers are represented as properties of the service, such as the `ProtocolHeader` property in the previous example, whereas in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syntax, they are more accurately represented as properties of messages. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows message headers to be added to the configuration of endpoints.  
+ This syntax yields an explicit representation of the structure of the messages, whereas the structure of messages is implied by the code of an ASP.NET Web service. Also, in the ASP.NET syntax, message headers are represented as properties of the service, such as the `ProtocolHeader` property in the previous example, whereas in WCF syntax, they are more accurately represented as properties of messages. Also, WCF allows message headers to be added to the configuration of endpoints.  
   
 ```xml  
 <service name="Service ">  
@@ -554,11 +540,11 @@ public interface IEcho
   
  The WSDL that ASP.NET generates for a service can be customized. Customizations are made by creating a derived class of <xref:System.Web.Services.Description.ServiceDescriptionFormatExtension> to add items to the WSDL.  
   
- Issuing an HTTP GET request with the query WSDL for the .svc file of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service with an HTTP endpoint hosted within IIS 51, 6.0 or WAS causes [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to respond with WSDL to describe the service. Issuing an HTTP GET request with the query WSDL to the HTTP base address of a service hosted within a .NET application has the same effect if httpGetEnabled is set to true.  
+ Issuing an HTTP GET request with the query WSDL for the .svc file of a WCF service with an HTTP endpoint hosted within IIS 51, 6.0 or WAS causes WCF to respond with WSDL to describe the service. Issuing an HTTP GET request with the query WSDL to the HTTP base address of a service hosted within a .NET application has the same effect if httpGetEnabled is set to true.  
   
- However, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also responds to WS-MetadataExchange requests with WSDL that it generates to describe a service. ASP.NET Web services do not have built-in support for WS-MetadataExchange requests.  
+ However, WCF also responds to WS-MetadataExchange requests with WSDL that it generates to describe a service. ASP.NET Web services do not have built-in support for WS-MetadataExchange requests.  
   
- The WSDL that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates can be extensively customized. The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class provides some facilities for customizing the WSDL. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can also be configured to not generate WSDL, but rather to use a static WSDL file at a given URL.  
+ The WSDL that WCF generates can be extensively customized. The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class provides some facilities for customizing the WSDL. The WCF can also be configured to not generate WSDL, but rather to use a static WSDL file at a given URL.  
   
 ```xml  
 <behaviors>  
@@ -576,7 +562,7 @@ public interface IEcho
 ## Exception Handling  
  In ASP.NET Web services, unhandled exceptions are returned to clients as SOAP faults. You can also explicitly throw instances of the <xref:System.Web.Services.Protocols.SoapException> class and have more control over the content of the SOAP fault that gets transmitted to the client.  
   
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services, unhandled exceptions are not returned to clients as SOAP faults to prevent sensitive information being inadvertently exposed through the exceptions. A configuration setting is provided to have unhandled exceptions returned to clients for the purpose of debugging.  
+ In WCF services, unhandled exceptions are not returned to clients as SOAP faults to prevent sensitive information being inadvertently exposed through the exceptions. A configuration setting is provided to have unhandled exceptions returned to clients for the purpose of debugging.  
   
  To return SOAP faults to clients, you can throw instances of the generic type, <xref:System.ServiceModel.FaultException%601>, using the data contract type as the generic type. You can also add <xref:System.ServiceModel.FaultContractAttribute> attributes to operations to specify the faults that an operation might yield.  
   
@@ -633,9 +619,9 @@ public class Service : WebService, IEcho
   
  ASP.NET provides considerable control over where the session state information accessed by using the Session property of the <xref:System.Web.HttpContext> is actually stored. It may be stored in cookies, in a database, in the memory of the current server, or in the memory of a designated server. The choice is made in the service’s configuration file.  
   
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides extensible objects for state management. Extensible objects are objects that implement <xref:System.ServiceModel.IExtensibleObject%601>. The most important extensible objects are <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.InstanceContext>. `ServiceHostBase` allows you to maintain state that all of the instances of all of the service types on the same host can access, while `InstanceContext` allows you to maintain state that can be accessed by any code running within the same instance of a service type.  
+ The WCF provides extensible objects for state management. Extensible objects are objects that implement <xref:System.ServiceModel.IExtensibleObject%601>. The most important extensible objects are <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.InstanceContext>. `ServiceHostBase` allows you to maintain state that all of the instances of all of the service types on the same host can access, while `InstanceContext` allows you to maintain state that can be accessed by any code running within the same instance of a service type.  
   
- Here, the service type, `TradingSystem`, has a <xref:System.ServiceModel.ServiceBehaviorAttribute> that specifies that all calls from the same [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client instance are routed to the same instance of the service type.  
+ Here, the service type, `TradingSystem`, has a <xref:System.ServiceModel.ServiceBehaviorAttribute> that specifies that all calls from the same WCF client instance are routed to the same instance of the service type.  
   
 ```  
 [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
@@ -674,18 +660,18 @@ void ITradingService.AddTrade(Trade trade)
 }  
 ```  
   
- Whereas ASP.NET provides control over where state information in the <xref:System.Web.HttpContext> class is actually stored, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], at least in its initial version, provides no control over where extensible objects are stored. That constitutes the very best reason for selecting the ASP.NET compatibility mode for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. If configurable state management is imperative, then opting for the ASP.NET compatibility mode allows you to use the facilities of the <xref:System.Web.HttpContext> class exactly as they are used in ASP.NET, and also to configure where state information managed by using the <xref:System.Web.HttpContext> class is stored.  
+ Whereas ASP.NET provides control over where state information in the <xref:System.Web.HttpContext> class is actually stored, WCF, at least in its initial version, provides no control over where extensible objects are stored. That constitutes the very best reason for selecting the ASP.NET compatibility mode for a WCF service. If configurable state management is imperative, then opting for the ASP.NET compatibility mode allows you to use the facilities of the <xref:System.Web.HttpContext> class exactly as they are used in ASP.NET, and also to configure where state information managed by using the <xref:System.Web.HttpContext> class is stored.  
   
 ## Security  
- The options for securing ASP.NET Web services are those for securing any IIS application. Because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can be hosted not only within IIS but also within any .NET executable, the options for securing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications must be made independent from the facilities of IIS. However, the facilities provided for ASP.NET Web services are also available for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services running in ASP.NET compatibility mode.  
+ The options for securing ASP.NET Web services are those for securing any IIS application. Because WCF applications can be hosted not only within IIS but also within any .NET executable, the options for securing WCF applications must be made independent from the facilities of IIS. However, the facilities provided for ASP.NET Web services are also available for WCF services running in ASP.NET compatibility mode.  
   
 ### Security: Authentication  
- IIS provides facilities for controlling access to applications by which you can select either anonymous access or a variety of modes of authentication: Windows Authentication, Digest Authentication, Basic Authentication, and .NET Passport Authentication. The Windows Authentication option can be used to control access to ASP.NET Web services. However, when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications are hosted within IIS, IIS must be configured to permit anonymous access to the application, so that authentication can be managed by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] itself, which does support Windows authentication among various other options. The other options that are built-in include username tokens, X.509 certificates, SAML tokens, and CardSpace card, but custom authentication mechanisms can also be defined.  
+ IIS provides facilities for controlling access to applications by which you can select either anonymous access or a variety of modes of authentication: Windows Authentication, Digest Authentication, Basic Authentication, and .NET Passport Authentication. The Windows Authentication option can be used to control access to ASP.NET Web services. However, when WCF applications are hosted within IIS, IIS must be configured to permit anonymous access to the application, so that authentication can be managed by WCF itself, which does support Windows authentication among various other options. The other options that are built-in include username tokens, X.509 certificates, SAML tokens, and CardSpace card, but custom authentication mechanisms can also be defined.  
   
 ### Security: Impersonation  
- ASP.NET provides an identity element by which an ASP.NET Web service can be made to impersonate a particular user or whichever user’s credentials are provided with the current request. That element can be used to configure impersonation in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications running in ASP.NET compatibility mode.  
+ ASP.NET provides an identity element by which an ASP.NET Web service can be made to impersonate a particular user or whichever user’s credentials are provided with the current request. That element can be used to configure impersonation in WCF applications running in ASP.NET compatibility mode.  
   
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration system provides its own identity element for designating a particular user to impersonate. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services can be independently configured for impersonation. Clients can be configured to impersonate the current user when they transmit requests.  
+ The WCF configuration system provides its own identity element for designating a particular user to impersonate. Also, WCF clients and services can be independently configured for impersonation. Clients can be configured to impersonate the current user when they transmit requests.  
   
 ```xml  
 <behaviors>  
@@ -705,14 +691,14 @@ public void Receive(Message input)
 ```  
   
 ### Security: Authorization using Access Control Lists  
- Access Control Lists (ACLs) can be used to restrict access to .asmx files. However, ACLs on [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] .svc files are ignored except in ASP.NET compatibility mode.  
+ Access Control Lists (ACLs) can be used to restrict access to .asmx files. However, ACLs on WCF .svc files are ignored except in ASP.NET compatibility mode.  
   
 ### Security: Role-based Authorization  
  The IIS Windows Authentication option can be used in conjunction with the authorization element provided by the ASP.NET configuration language to facilitate role-based authorization for ASP.NET Web services based on the Windows groups to which users are assigned. ASP.NET 2.0 introduced a more general role-based authorization mechanism: role providers.  
   
  Role providers are classes that all implement a basic interface for enquiring about the roles to which a user is assigned, but each role provider knows how to retrieve that information from a different source. ASP.NET 2.0 provides a role provider that can retrieve role assignments from a Microsoft SQL Server database, and another that can retrieve role assignments from the Windows Server 2003 Authorization Manager.  
   
- The role provider mechanism can actually be used independently of ASP.NET in any .NET application, including a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. The following sample configuration for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application shows how the use of an ASP.NET role provider is an option selected by means of the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
+ The role provider mechanism can actually be used independently of ASP.NET in any .NET application, including a WCF application. The following sample configuration for a WCF application shows how the use of an ASP.NET role provider is an option selected by means of the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
 ```xml  
 <system.serviceModel>  
@@ -734,9 +720,9 @@ public void Receive(Message input)
 ```  
   
 ### Security: Claims-based Authorization  
- One of the most important innovations of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is its thorough support for authorizing access to protected resources based on claims. Claims consist of a type, a right and a value, a drivers’ license, for example. It makes a set of claims about the bearer, one of which is the bearer’s date of birth. The type of that claim is date of birth, while the value of the claim is the driver’s birth date. The right that a claim confers on the bearer specifies what the bearer can do with the claim’s value. In the case of the claim of the driver’s date of birth, the right is possession: the driver possesses that date of birth but cannot, for example, alter it. Claims-based authorization encloses role-based authorization, because roles are a type of claim.  
+ One of the most important innovations of WCF is its thorough support for authorizing access to protected resources based on claims. Claims consist of a type, a right and a value, a drivers’ license, for example. It makes a set of claims about the bearer, one of which is the bearer’s date of birth. The type of that claim is date of birth, while the value of the claim is the driver’s birth date. The right that a claim confers on the bearer specifies what the bearer can do with the claim’s value. In the case of the claim of the driver’s date of birth, the right is possession: the driver possesses that date of birth but cannot, for example, alter it. Claims-based authorization encloses role-based authorization, because roles are a type of claim.  
   
- Authorization based on claims is accomplished by comparing a set of claims to the access requirements of the operation and, depending on the outcome of that comparison, granting or denying access to the operation. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you can specify a class to use to run claims-based authorization, once again by assigning a value to the `ServiceAuthorizationManager` property of <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
+ Authorization based on claims is accomplished by comparing a set of claims to the access requirements of the operation and, depending on the outcome of that comparison, granting or denying access to the operation. In WCF, you can specify a class to use to run claims-based authorization, once again by assigning a value to the `ServiceAuthorizationManager` property of <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
 ```xml  
 <behaviors>  
@@ -748,15 +734,15 @@ public void Receive(Message input)
 </behaviors>  
 ```  
   
- Classes used to run claims-based authorization must derive from <xref:System.ServiceModel.ServiceAuthorizationManager>, which has just one method to override, `AccessCheck()`. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] calls that method whenever an operation of the service is invoked and provides a <xref:System.ServiceModel.OperationContext> object, which has the claims for the user in its `ServiceSecurityContext.AuthorizationContext` property. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does the work of assembling claims about the user from whatever security token the user provided for authentication, which leaves the of task of evaluating whether those claims suffice for the operation in question.  
+ Classes used to run claims-based authorization must derive from <xref:System.ServiceModel.ServiceAuthorizationManager>, which has just one method to override, `AccessCheck()`. WCF calls that method whenever an operation of the service is invoked and provides a <xref:System.ServiceModel.OperationContext> object, which has the claims for the user in its `ServiceSecurityContext.AuthorizationContext` property. WCF does the work of assembling claims about the user from whatever security token the user provided for authentication, which leaves the of task of evaluating whether those claims suffice for the operation in question.  
   
- That [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically assembles claims from any kind of security token is a highly significant innovation, because it makes the code for authorization based on the claims entirely independent of the authentication mechanism. By contrast, authorization using ACLs or roles in ASP.NET is closely tied to Windows authentication.  
+ That WCF automatically assembles claims from any kind of security token is a highly significant innovation, because it makes the code for authorization based on the claims entirely independent of the authentication mechanism. By contrast, authorization using ACLs or roles in ASP.NET is closely tied to Windows authentication.  
   
 ### Security: Confidentiality  
- The confidentiality of messages exchanged with ASP.NET Web services can be ensured at the transport level by configuring the application within IIS to use the Secure Hypertext Transfer Protocol (HTTPS). The same can be done for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications hosted within IIS. However, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications hosted outside of IIS can also be configured to use a secure transport protocol. More important, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can also be configured to secure the messages before they are transported, using the WS-Security protocol. Securing just the body of a message using WS-Security allows it to be transmitted confidentially across intermediaries before reaching its final destination.  
+ The confidentiality of messages exchanged with ASP.NET Web services can be ensured at the transport level by configuring the application within IIS to use the Secure Hypertext Transfer Protocol (HTTPS). The same can be done for WCF applications hosted within IIS. However, WCF applications hosted outside of IIS can also be configured to use a secure transport protocol. More important, WCF applications can also be configured to secure the messages before they are transported, using the WS-Security protocol. Securing just the body of a message using WS-Security allows it to be transmitted confidentially across intermediaries before reaching its final destination.  
   
 ## Globalization  
- The ASP.NET configuration language allows you to specify the culture for individual services. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not support that configuration setting except in ASP.NET compatibility mode. To localize a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that does not use ASP.NET compatibility mode, compile the service type into culture-specific assemblies, and have separate culture-specific endpoints for each culture-specific assembly.  
+ The ASP.NET configuration language allows you to specify the culture for individual services. The WCF does not support that configuration setting except in ASP.NET compatibility mode. To localize a WCF service that does not use ASP.NET compatibility mode, compile the service type into culture-specific assemblies, and have separate culture-specific endpoints for each culture-specific assembly.  
   
 ## See Also  
  [Comparing ASP.NET Web Services to WCF Based on Purpose and Standards Used](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)

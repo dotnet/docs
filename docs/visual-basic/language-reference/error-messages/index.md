@@ -1,21 +1,12 @@
 ---
 title: "Error Messages (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic]"
   - "error messages"
   - "trappable errors"
   - "errors [Visual Basic], trappable"
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Error Messages (Visual Basic)
 When you write, compile, or run a Visual Basic application, the following types of errors can occur:  
@@ -29,7 +20,7 @@ When you write, compile, or run a Visual Basic application, the following types 
  For information about how to troubleshoot a specific error, see [Additional Resources for Visual Basic Programmers](../../../visual-basic/getting-started/additional-resources.md).  
   
 ## Run Time Errors  
- If a Visual Basic application tries to perform an action that the system can't execute, a run-time error occurs, and [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] throws an `Exception` object. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] can generate custom errors of any data type, including `Exception` objects, by using the `Throw` statement. An application can identify the error by displaying the error number and message of a caught exception. If an error isn't caught, the application ends.  
+ If a Visual Basic application tries to perform an action that the system can't execute, a run-time error occurs, and Visual Basic throws an `Exception` object. Visual Basic can generate custom errors of any data type, including `Exception` objects, by using the `Throw` statement. An application can identify the error by displaying the error number and message of a caught exception. If an error isn't caught, the application ends.  
   
  The code can trap and examine run-time errors. If you enclose the code that produces the error in a `Try` block, you can catch any thrown error within a matching `Catch` block. For information about how to trap errors at run time and respond to them in your code, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
   

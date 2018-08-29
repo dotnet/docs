@@ -1,14 +1,6 @@
 ---
 title: "NavigationWindow Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "states [WPF], NavigationWindow"
   - "NavigationWindow [WPF], styles and templates"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "styles [WPF], NavigationWindow"
   - "templates [WPF], NavigationWindow"
 ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # NavigationWindow Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
@@ -53,7 +39,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Navig
  [!code-xaml[ControlTemplateExamples#ResizeGrip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/resizegrip.xaml#resizegrip)]  
 [!code-xaml[ControlTemplateExamples#Resources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
+ For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See Also  
  <xref:System.Windows.FrameworkElement.Style%2A>  

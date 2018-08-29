@@ -1,14 +1,6 @@
 ---
 title: "Invoke a Control Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "UI Automation, invoking controls"
   - "controls, invoking"
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
-caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Invoke a Control Using UI Automation
 > [!NOTE]

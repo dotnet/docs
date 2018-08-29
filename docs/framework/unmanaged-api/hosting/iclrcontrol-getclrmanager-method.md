@@ -1,14 +1,6 @@
 ---
 title: "ICLRControl::GetCLRManager Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRControl.GetCLRManager"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRControl::GetCLRManager Method
 Gets an interface pointer to an instance of any of the manager types the host can use to configure the common language runtime (CLR).  

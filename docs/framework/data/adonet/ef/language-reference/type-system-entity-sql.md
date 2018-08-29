@@ -1,21 +1,7 @@
 ---
 title: "Type System (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Type System (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a number of types:  

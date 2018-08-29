@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerNodeOpenFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fd908a42-30d1-4301-bc33-35b503896634
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNodeOpenFailed
 An attempt to open a neighbor connection failed.  

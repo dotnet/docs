@@ -1,26 +1,15 @@
 ---
 title: "Generic Interfaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "generic interfaces [.NET Framework]"
   - "equality comparisons [.NET Framework]"
   - "generics [.NET Framework], interfaces"
   - "ordering comparisons [.NET Framework]"
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Interfaces
 This topic provides an overview of generic interfaces that provide common functionality across families of generic types.  

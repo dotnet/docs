@@ -1,26 +1,12 @@
 ---
 title: "User Input in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], using in Windows Forms"
   - "Windows Forms, user input"
   - "mouse input [Windows Forms], using in Windows Forms"
   - "keyboards [Windows Forms], keyboard input"
 ms.assetid: 1486075f-1e06-4c9e-82c6-f948331db6d6
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # User Input in Windows Forms
 Windows Forms includes a user input model based on events that are raised while processing related Windows messages. The topics in this section provide information on mouse and keyboard user input, including code examples that demonstrate how to perform specific tasks.  

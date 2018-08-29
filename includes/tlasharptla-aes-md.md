@@ -1,1 +1,0 @@
-Advanced Encryption Standard (AES)

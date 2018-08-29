@@ -1,24 +1,12 @@
 ---
 title: "Security ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security events [.NET Framework]"
   - "ETW, security events (CLR)"
 ms.assetid: 0ed69f73-5c01-4514-bd63-979c6e38d41d
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security ETW Events
 <a name="top"></a> Security events are raised during strong name verification and Authenticode verification.  

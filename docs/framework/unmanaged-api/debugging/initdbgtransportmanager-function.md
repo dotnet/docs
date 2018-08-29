@@ -1,14 +1,6 @@
 ---
 title: "InitDbgTransportManager Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "InitDbgTransportManager"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # InitDbgTransportManager Function
 Initializes the transport manager to connect to a remote target for process and runtime enumeration.  

@@ -1,26 +1,12 @@
 ---
 title: "RelativeSource MarkupExtension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "RelativeSource"
 helpviewer_keywords: 
   - "RelativeSource markup extensions [WPF]"
   - "XAML [WPF], RelativeSource markup extension"
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # RelativeSource MarkupExtension
 Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding source, to be used within a [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md), or when setting the <xref:System.Windows.Data.Binding.RelativeSource%2A> property of a <xref:System.Windows.Data.Binding> element established in XAML.  

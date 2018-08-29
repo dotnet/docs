@@ -1,10 +1,6 @@
 ---
 title: "Implementing the Task-based Asynchronous Pattern"
 ms.date: "06/14/2017"
-ms.prod: ".net"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +11,8 @@ helpviewer_keywords:
   - "Task-based Asynchronous Pattern, .NET Framework support for"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing the Task-based Asynchronous Pattern
 You can implement the Task-based Asynchronous Pattern (TAP) in three ways: by using the C# and Visual Basic compilers in Visual Studio, manually, or through a combination of the compiler and manual methods. The following sections discuss each method in detail. You can use the TAP pattern to implement both compute-bound and I/O-bound asynchronous operations. The [Workloads](#workloads) section discusses each type of operation.
@@ -46,7 +37,7 @@ You may implement the TAP pattern manually for better control over implementatio
  Another case where such delegation is useful is when you're implementing fast-path optimization and want to return a cached task.
 
 ## Workloads
-You may implement both compute-bound and I/O-bound asynchronous operations as TAP methods. However, when TAP methods are exposed publicly from a library, they should be provided only for workloads that involve I/O-bound operations (they may also involve computation, but should not be purely computational). If a method is purely compute-bound, it should be exposed only as a synchronous implementation. The code that consumes it may then choose whether to wrap an invocation of that synchronous method into a task to offload the work to another thread or to achieve parallelism. And if a method is IO-bound, it should be exposed only as an asynchronous implementation.
+You may implement both compute-bound and I/O-bound asynchronous operations as TAP methods. However, when TAP methods are exposed publicly from a library, they should be provided only for workloads that involve I/O-bound operations (they may also involve computation, but should not be purely computational). If a method is purely compute-bound, it should be exposed only as a synchronous implementation. The code that consumes it may then choose whether to wrap an invocation of that synchronous method into a task to offload the work to another thread or to achieve parallelism. And if a method is I/O-bound, it should be exposed only as an asynchronous implementation.
 
 ### Compute-bound tasks
 The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is ideally suited for representing computationally intensive operations. By default, it takes advantage of special support within the <xref:System.Threading.ThreadPool> class to provide efficient execution, and it also provides significant control over when, where, and how asynchronous computations execute.

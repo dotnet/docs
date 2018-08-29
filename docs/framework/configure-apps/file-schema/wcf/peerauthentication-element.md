@@ -1,26 +1,12 @@
 ---
 title: "&lt;peerAuthentication&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;peerAuthentication&gt; Element
 Specifies authentication options for peer-to-peer clients.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
   
  \<system.ServiceModel>  
 \<behaviors>  

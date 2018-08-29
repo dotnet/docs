@@ -1,12 +1,7 @@
 ---
 title: How to articles (C# Guide)
 description: A collection of quick tips and short, focused code samples
-author: billwagner
-ms.author: wiwagn
 ms.date: 12/20/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 
 # How to (C#)
@@ -24,7 +19,7 @@ There are several tips and tricks that are common C# developer practices.
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [How to use lambda expressions](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).
 - [Resolve type name conflicts by using the global namespace alias](../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md).
-- [Use operator overloading](../programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md).
+- [Use operator overloading](../language-reference/keywords/operator.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
 - Even C# programmers may want to [use the `My` namespace from VB](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
@@ -47,9 +42,8 @@ You create classes and structs to implement your program. These techniques are c
 These articles help you work with collections of data.
 
 - [Initialize a dictionary with a collection initializer](../programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md).
-- [Access all the elements in a collection using `foreach`](../programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).
 
-## strings
+## Working with strings
 
 Strings are the fundamental data type used to display or manipulate text. These articles demonstrate common practices with strings.
 
@@ -72,7 +66,7 @@ You may need to convert an object to a different type.
 - [Use `as` and `is` to safely cast to a different type](../programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).
 - [Define conversion operators for `struct` types](../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md).
 - [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
-- [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md).
+- [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-type-to-an-underlying-type).
 
 ## Equality and ordering comparisons
 
@@ -137,7 +131,7 @@ to use these techniques.
 
 - [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
 - [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
-- [Use a thread pool](../programming-guide/concepts/threading/how-to-use-a-thread-pool.md).
+- [Use a thread pool](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## Command line args to your program
 

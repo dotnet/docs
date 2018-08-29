@@ -1,19 +1,11 @@
 ---
 title: "Iterator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Iterator"
 helpviewer_keywords: 
   - "Iterator keyword [Visual Basic]"
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Iterator (Visual Basic)
 Specifies that a function or `Get` accessor is an iterator.  

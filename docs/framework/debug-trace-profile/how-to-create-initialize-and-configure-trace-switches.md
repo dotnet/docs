@@ -1,14 +1,6 @@
 ---
 title: "How to: Create, Initialize and Configure Trace Switches"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "tracing [.NET Framework], enabling or disabling"
   - "Web.config configuration file, trace switches"
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create, Initialize and Configure Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output.  

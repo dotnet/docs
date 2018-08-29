@@ -1,13 +1,7 @@
 ---
 title: "How to: Write a Simple Parallel.For Loop"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "for loop, parallel construction in .NET"
   - "parallel for loops, how to use"
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Write a Simple Parallel.For Loop
 This topic contains two examples that illustrate the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. The first uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int64%2CSystem.Int64%2CSystem.Action%7BSystem.Int64%7D%29?displayProperty=nameWithType> method overload, and the second uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int32%2CSystem.Int32%2CSystem.Action%7BSystem.Int32%7D%29?displayProperty=nameWithType> overload, the two simplest overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. You can use these two overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method when you do not need to cancel the loop, break out of the loop iterations, or maintain any thread-local state.  

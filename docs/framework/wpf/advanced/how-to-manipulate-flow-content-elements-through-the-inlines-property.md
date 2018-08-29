@@ -1,14 +1,6 @@
 ---
 title: "How to: Manipulate Flow Content Elements through the Inlines Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "Inlines property [WPF], manipulating flow Content elements"
   - "properties [WPF], Inlines [WPF], manipulating flow Content elements"
 ms.assetid: 510780d2-3da1-4360-8763-7054bda22ea3
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Manipulate Flow Content Elements through the Inlines Property
 These examples demonstrate some of the more common operations that can be performed on inline flow content elements (and containers of such elements, such as <xref:System.Windows.Controls.TextBlock>) through the **Inlines** property. This property is used to add and remove items from <xref:System.Windows.Documents.InlineCollection>. Flow content elements that feature an **Inlines** property include:  

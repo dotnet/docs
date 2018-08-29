@@ -1,21 +1,9 @@
 ---
 title: "Building My First Claims-Aware WCF Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e0e6d091-9a97-4888-8f2c-cbcee42d90ee
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Building My First Claims-Aware WCF Service
 ## Applies To  

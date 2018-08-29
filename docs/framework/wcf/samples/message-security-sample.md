@@ -1,21 +1,9 @@
 ---
 title: "Message Security Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
-caps.latest.revision: 33
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Security Sample
 This sample demonstrates how to implement an application that uses the `basicHttpBinding` and message security. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
@@ -102,11 +90,11 @@ This sample demonstrates how to implement an application that uses the `basicHtt
  The same binding and security details are specified in the client configuration file.  
   
  The identity of the caller is displayed in the service console window by using the following code:  
-  
-```  
+
+```csharp
 Console.WriteLine("Called by {0}", ServiceSecurityContext.Current.PrimaryIdentity.Name);  
-```  
-  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
@@ -175,14 +163,14 @@ Press <ENTER> to terminate client.
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across machines. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`  
+    >  This script does not remove service certificates on a client when running this sample across machines. If you have run Windows Communication Foundation (WCF) samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity`  
   

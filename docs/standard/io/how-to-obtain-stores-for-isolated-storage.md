@@ -1,13 +1,7 @@
 ---
 title: "How to: Obtain Stores for Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "data stores, obtaining"
   - "data storage using isolated storage, obtaining stores"
 ms.assetid: fcb6b178-d526-47c4-b029-e946f880f9db
-caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Obtain Stores for Isolated Storage
 An isolated store exposes a virtual file system within a data compartment. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies a number of methods for interacting with an isolated store. To create and retrieve stores, <xref:System.IO.IsolatedStorage.IsolatedStorageFile> provides three static methods:  

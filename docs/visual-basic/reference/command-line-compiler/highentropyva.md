@@ -1,11 +1,6 @@
 ---
 title: "-highentropyva (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "highentropyva compiler option (Visual Basic)"
   - "/highentropyva compiler option (Visual Basic)"

@@ -1,14 +1,6 @@
 ---
 title: "How to: Create an MDI Window List with MenuStrip (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "MDI [Windows Forms], creating window lists"
   - "MenuStrip control [Windows Forms], creating window lists"
 ms.assetid: 04fb414b-811f-4a83-aab6-b4a24646dec5
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create an MDI Window List with MenuStrip (Windows Forms)
 Use the multiple-document interface (MDI) to create applications that can open several documents at the same time and copy and paste content from one document to the other.  

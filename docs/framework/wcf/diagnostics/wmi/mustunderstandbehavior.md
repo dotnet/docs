@@ -1,21 +1,7 @@
 ---
 title: "MustUnderstandBehavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 911ed04a-c4b8-4c72-a5c3-fc7b4e3b4348
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MustUnderstandBehavior
 MustUnderstandBehavior  

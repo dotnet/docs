@@ -1,13 +1,7 @@
 ---
 title: "Observer Design Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "IObservable(Of T) interface"
   - "observer design pattern [.NET Framework]"
 ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Observer Design Pattern
 The observer design pattern enables a subscriber to register with and receive notifications from a provider. It is suitable for any scenario that requires push-based notification. The pattern defines a *provider* (also known as a *subject* or an *observable*) and zero, one, or more *observers*. Observers register with the provider, and whenever a predefined condition, event, or state change occurs, the provider automatically notifies all observers by calling one of their methods. In this method call, the provider can also provide current state information to observers. In the .NET Framework, the observer design pattern is applied by implementing the generic <xref:System.IObservable%601?displayProperty=nameWithType> and <xref:System.IObserver%601?displayProperty=nameWithType> interfaces. The generic type parameter represents the type that provides notification information.  

@@ -1,4 +1,4 @@
-    // compile with: /doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml 
 
     // the following cref shows how to specify the reference, such that,
     // the compiler will resolve the reference

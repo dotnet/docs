@@ -1,17 +1,10 @@
 ---
 title: "How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.  

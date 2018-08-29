@@ -1,17 +1,7 @@
 ---
 title: "How to: Create Unsigned Friend Assemblies (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 78cbc4f0-b021-4141-a4ff-eb4edbd814ca
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create Unsigned Friend Assemblies (C#)
 This example shows how to use friend assemblies with assemblies that are unsigned.  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;channelPoolSettings&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;channelPoolSettings&gt;
 Specifies the channel pool settings for a custom binding.  

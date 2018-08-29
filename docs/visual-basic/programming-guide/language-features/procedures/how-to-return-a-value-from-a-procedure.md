@@ -1,21 +1,11 @@
 ---
 title: "How to: Return a Value from a Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], returning from"
   - "procedures [Visual Basic], returning a value"
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Return a Value from a Procedure (Visual Basic)
 A `Function` procedure returns a value to the calling code either by executing a `Return` statement or by encountering an `Exit Function` or `End Function` statement.  
@@ -40,7 +30,7 @@ A `Function` procedure returns a value to the calling code either by executing a
   
 1.  In at least one place in the `Function` procedure, assign a value to the procedure's name.  
   
-2.  When you execute an `Exit Function` or `End Function` statement, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] returns the value most recently assigned to the procedure's name.  
+2.  When you execute an `Exit Function` or `End Function` statement, Visual Basic returns the value most recently assigned to the procedure's name.  
   
 3.  You can have more than one `Exit Function` statement in the same procedure, and you can mix `Return` and `Exit Function` statements in the same procedure.  
   

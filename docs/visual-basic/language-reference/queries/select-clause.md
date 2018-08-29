@@ -1,12 +1,6 @@
 ---
 title: "Select Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySelect"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "Select clause [Visual Basic]"
   - "queries [Visual Basic], Select"
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Select Clause (Visual Basic)
 Defines the result of a query.  
@@ -56,7 +47,7 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
  [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
  [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  

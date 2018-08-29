@@ -1,12 +1,6 @@
 ---
 title: "= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Assign"
   - "vb.="
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "= operator [Visual Basic]"
   - "= assignment statements [Visual Basic]"
 ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # = Operator (Visual Basic)
 Assigns a value to a variable or property.  

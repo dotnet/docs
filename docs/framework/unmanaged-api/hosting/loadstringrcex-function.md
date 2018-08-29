@@ -1,14 +1,6 @@
 ---
 title: "LoadStringRCEx Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "LoadStringRCEx"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::RuntimeSuspendFinished Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.RuntimeSuspendFinished"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b7723f58-c55c-4399-9972-1bbf3b866694
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeSuspendFinished Method
 Notifies the profiler that the runtime has completed suspension of all runtime threads.  

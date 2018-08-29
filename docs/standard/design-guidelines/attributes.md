@@ -1,24 +1,13 @@
 ---
 title: "Attributes1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "attributes [.NET Framework], about"
   - "class library design guidelines [.NET Framework], attributes"
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Attributes
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.  

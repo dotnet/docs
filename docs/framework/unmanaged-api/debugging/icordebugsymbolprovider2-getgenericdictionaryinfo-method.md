@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method
 Retrieves a generic dictionary map.  

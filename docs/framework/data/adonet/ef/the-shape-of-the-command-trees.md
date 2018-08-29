@@ -1,21 +1,7 @@
 ---
 title: "The Shape of the Command Trees"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2215585e-ca47-45f8-98d4-8cb982f8c1d3
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # The Shape of the Command Trees
 The SQL generation module is responsible for generating a backend specific SQL query based on a given input query command tree expression. This section discusses the characteristics, properties, and structure of the query command trees.  

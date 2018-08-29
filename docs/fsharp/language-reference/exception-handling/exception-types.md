@@ -1,17 +1,8 @@
 ---
 title: Exception Types (F#)
 description: Learn how to define and use F# exception types.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: e850205a-b8da-459e-8f6d-cb3510f8f173 
 ---
-
 # Exception Types
 
 There are two categories of exceptions in F#: .NET exception types and F# exception types. This topic describes how to define and use F# exception types.

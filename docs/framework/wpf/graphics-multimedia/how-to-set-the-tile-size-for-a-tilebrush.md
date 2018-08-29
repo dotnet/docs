@@ -1,24 +1,10 @@
 ---
 title: "How to: Set the Tile Size for a TileBrush"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TileBrush [WPF], size of tilepropertys"
   - "Viewport property of TileBrush [WPF]"
 ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Tile Size for a TileBrush
 This example shows how to set the tile size for a <xref:System.Windows.Media.TileBrush>. By default, a <xref:System.Windows.Media.TileBrush> produces a single tile that completely fills the area that you are painting. You can override this behavior by setting the <xref:System.Windows.Media.TileBrush.Viewport%2A> and <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> properties.  

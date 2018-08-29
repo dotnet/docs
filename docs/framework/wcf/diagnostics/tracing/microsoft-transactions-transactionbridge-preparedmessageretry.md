@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.PreparedMessageRetry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2194292d-bf5f-4aef-9336-cd3c4795cb71
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.PreparedMessageRetry
 A prepared message retry was sent to an unresponsive coordinator.  

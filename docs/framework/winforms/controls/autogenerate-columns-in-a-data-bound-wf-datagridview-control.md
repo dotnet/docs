@@ -1,14 +1,6 @@
 ---
 title: "How to: Autogenerate Columns in a Data-Bound Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "columns [Windows Forms], autogenerating"
   - "DataGridView control [Windows Forms], data-bound columns"
 ms.assetid: 699f6f9e-6aa5-4811-902b-6a2c57dec7d6
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Autogenerate Columns in a Data-Bound Windows Forms DataGridView Control
 The following code example demonstrates how to display columns from a bound data source in a <xref:System.Windows.Forms.DataGridView> control. When the <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> property value is `true` (the default), a <xref:System.Windows.Forms.DataGridViewColumn> is created for each column in the data source table.  

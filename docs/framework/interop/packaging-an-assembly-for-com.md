@@ -1,10 +1,6 @@
 ---
 title: "Packaging an Assembly for COM"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
   - "COM interop, packaging assemblies"
@@ -22,9 +18,6 @@ helpviewer_keywords:
 ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Packaging an Assembly for COM
 COM developers can benefit from the following information about the managed types they plan to incorporate in their application:  

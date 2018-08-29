@@ -1,19 +1,7 @@
 ---
 title: "Performance of Chained Queries (LINQ to XML) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Performance of Chained Queries (LINQ to XML) (Visual Basic)
 One of the most important benefits of LINQ (and LINQ to XML) is that chained queries can perform as well as a single larger, more complicated query.  

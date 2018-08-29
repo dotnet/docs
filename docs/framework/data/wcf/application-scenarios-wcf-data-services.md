@@ -1,24 +1,10 @@
 ---
 title: "Application Scenarios (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, learn more"
   - "WCF Data Services, scenarios"
 ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Application Scenarios (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports a core set of scenarios for exposing and consuming data as [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. This topic points you to the topics relevant to these scenarios.  

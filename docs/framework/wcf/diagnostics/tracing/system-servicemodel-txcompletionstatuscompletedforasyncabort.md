@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.TxCompletionStatusCompletedForAsyncAbort"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 155c3203-2e17-4709-b896-2254e22da45e
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.TxCompletionStatusCompletedForAsyncAbort
 The specified transaction for the specified operation was completed due to asynchronous abort.  

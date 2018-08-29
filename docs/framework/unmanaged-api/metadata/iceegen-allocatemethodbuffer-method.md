@@ -1,14 +1,6 @@
 ---
 title: "ICeeGen::AllocateMethodBuffer Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICeeGen.AllocateMethodBuffer"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 845ab77e-9639-47f5-99fb-f3b619e3e779
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICeeGen::AllocateMethodBuffer Method
 Creates a buffer of the specified size for a method, and gets the relative virtual address of the method.  

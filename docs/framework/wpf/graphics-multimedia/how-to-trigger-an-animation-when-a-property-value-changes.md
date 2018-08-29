@@ -1,25 +1,11 @@
 ---
 title: "How to: Trigger an Animation When a Property Value Changes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], starting when property values change"
   - "triggering animation [WPF]"
   - "Storyboards [WPF], starting when property values change"
 ms.assetid: 12399c21-0300-4f4f-9e3a-d92d9907e5f5
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Trigger an Animation When a Property Value Changes
 This example shows how to use a <xref:System.Windows.Trigger> to start a <xref:System.Windows.Media.Animation.Storyboard> when a property value changes. You can use a <xref:System.Windows.Trigger> inside a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate>, or <xref:System.Windows.DataTemplate>.  

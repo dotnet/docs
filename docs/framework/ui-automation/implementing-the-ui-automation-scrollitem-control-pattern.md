@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation ScrollItem Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, Scroll Item"
   - "UI Automation, Scroll Item control pattern"
   - "Scroll Item control pattern"
 ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation ScrollItem Control Pattern
 > [!NOTE]

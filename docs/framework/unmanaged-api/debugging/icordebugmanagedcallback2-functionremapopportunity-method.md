@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugManagedCallback2::FunctionRemapOpportunity Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugManagedCallback2.FunctionRemapOpportunity"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0d6471bc-ad9b-4b1d-a307-c10443918863
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugManagedCallback2::FunctionRemapOpportunity Method
 Notifies the debugger that code execution has reached a sequence point in an older version of an edited function.  

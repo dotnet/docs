@@ -1,29 +1,15 @@
 ---
 title: "Durable Instance Context"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Durable Instance Context
-This sample demonstrates how to customize the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] runtime to enable durable instance contexts. It uses SQL Server 2005 as its backing store (SQL Server 2005 Express in this case). However, it also provides a way to access custom storage mechanisms.  
+This sample demonstrates how to customize the Windows Communication Foundation (WCF) runtime to enable durable instance contexts. It uses SQL Server 2005 as its backing store (SQL Server 2005 Express in this case). However, it also provides a way to access custom storage mechanisms.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- This sample involves extending both the channel layer and the service model layer of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Therefore it is necessary to understand the underlying concepts before going into the implementation details.  
+ This sample involves extending both the channel layer and the service model layer of the WCF. Therefore it is necessary to understand the underlying concepts before going into the implementation details.  
   
  Durable instance contexts can be found in the real world scenarios quite often. A shopping cart application for example, has the ability to pause shopping halfway through and continue it on another day. So that when we visit the shopping cart the next day, our original context is restored. It is important to note that the shopping cart application (on the server) does not maintain the shopping cart instance while we are disconnected. Instead, it persists its state into a durable storage media and uses it when constructing a new instance for the restored context. Therefore the service instance that may service for the same context is not the same as the previous instance (that is, it does not have the same memory address).  
   
@@ -128,7 +114,7 @@ if (isFirstMessage)
 }  
 ```  
   
- These channel implementations are then added to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel runtime by the `DurableInstanceContextBindingElement` class and `DurableInstanceContextBindingElementSection` class appropriately. See the [HttpCookieSession](../../../../docs/framework/wcf/samples/httpcookiesession.md) channel sample documentation for more details about binding elements and binding element sections.  
+ These channel implementations are then added to the WCF channel runtime by the `DurableInstanceContextBindingElement` class and `DurableInstanceContextBindingElementSection` class appropriately. See the [HttpCookieSession](../../../../docs/framework/wcf/samples/httpcookiesession.md) channel sample documentation for more details about binding elements and binding element sections.  
   
 ## Service Model Layer Extensions  
  Now that the context ID has traveled through the channel layer, the service behavior can be implemented to customize the instantiation. In this sample, a storage manager is used to load and save state from or to the persistent store. As explained previously, this sample provides a storage manager that uses SQL Server 2005 as its backing store. However, it is also possible to add custom storage mechanisms to this extension. To do that a public interface is declared, which must be implemented by all storage managers.  
@@ -237,9 +223,9 @@ else
   
  The necessary infrastructure to read and write instances from the persistent storage is implemented. Now the necessary steps to change the service behavior have to be taken.  
   
- As the first step of this process we have to save the context ID, which came through the channel layer to the current InstanceContext. InstanceContext is a runtime component that acts as the link between the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] dispatcher and the service instance. It can be used to provide additional state and behavior to the service instance. This is essential because in sessionful communication the context ID is sent only with the first message.  
+ As the first step of this process we have to save the context ID, which came through the channel layer to the current InstanceContext. InstanceContext is a runtime component that acts as the link between the WCF dispatcher and the service instance. It can be used to provide additional state and behavior to the service instance. This is essential because in sessionful communication the context ID is sent only with the first message.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows extending its InstanceContext runtime component by adding a new state and behavior using its extensible object pattern. The extensible object pattern is used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to either extend existing runtime classes with new functionality or to add new state features to an object. There are three interfaces in the extensible object pattern - IExtensibleObject\<T>, IExtension\<T>, and IExtensionCollection\<T>:  
+ WCF allows extending its InstanceContext runtime component by adding a new state and behavior using its extensible object pattern. The extensible object pattern is used in WCF to either extend existing runtime classes with new functionality or to add new state features to an object. There are three interfaces in the extensible object pattern - IExtensibleObject\<T>, IExtension\<T>, and IExtensionCollection\<T>:  
   
 -   The IExtensibleObject\<T> interface is implemented by objects that allow extensions that customize their functionality.  
   
@@ -287,7 +273,7 @@ public void Initialize(InstanceContext instanceContext, Message message)
   
  As described earlier the context ID is read from the `Properties` collection of the `Message` class and passed to the constructor of the extension class. This demonstrates how information can be exchanged between the layers in a consistent manner.  
   
- The next important step is overriding the service instance creation process. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows implementing custom instantiation behaviors and hooking them up to the runtime using the IInstanceProvider interface. The new `InstanceProvider` class is implemented to do that job. In the constructor the service type expected from the instance provider is accepted. Later this is used to create new instances. In the `GetInstance` implementation an instance of a storage manager is created looking for a persisted instance. If it returns `null` then a new instance of the service type is instantiated and returned to the caller.  
+ The next important step is overriding the service instance creation process. WCF allows implementing custom instantiation behaviors and hooking them up to the runtime using the IInstanceProvider interface. The new `InstanceProvider` class is implemented to do that job. In the constructor the service type expected from the instance provider is accepted. Later this is used to create new instances. In the `GetInstance` implementation an instance of a storage manager is created looking for a persisted instance. If it returns `null` then a new instance of the service type is instantiated and returned to the caller.  
   
 ```  
 public object GetInstance(InstanceContext instanceContext, Message message)  
@@ -358,9 +344,9 @@ foreach (ChannelDispatcherBase cdb in serviceHostBase.ChannelDispatchers)
   
  In summary so far, this sample has produced a channel that enabled the custom wire protocol for custom context ID exchange and it also overwrites the default instancing behavior to load the instances from the persistent storage.  
   
- What is left is a way to save the service instance to the persistent storage. As discussed previously, there is already the required functionality to save the state in an `IStorageManager` implementation. We now must integrate this with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime. Another attribute is required that is applicable to the methods in the service implementation class. This attribute is supposed to be applied to the methods that change the state of the service instance.  
+ What is left is a way to save the service instance to the persistent storage. As discussed previously, there is already the required functionality to save the state in an `IStorageManager` implementation. We now must integrate this with the WCF runtime. Another attribute is required that is applicable to the methods in the service implementation class. This attribute is supposed to be applied to the methods that change the state of the service instance.  
   
- The `SaveStateAttribute` class implements this functionality. It also implements `IOperationBehavior` class to modify the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime for each operation. When a method is marked with this attribute, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime invokes the `ApplyBehavior` method while the appropriate `DispatchOperation` is being constructed. In this method implementation there is single line of code:  
+ The `SaveStateAttribute` class implements this functionality. It also implements `IOperationBehavior` class to modify the WCF runtime for each operation. When a method is marked with this attribute, the WCF runtime invokes the `ApplyBehavior` method while the appropriate `DispatchOperation` is being constructed. In this method implementation there is single line of code:  
   
 ```  
 dispatch.Invoker = new OperationInvoker(dispatch.Invoker);  
@@ -382,7 +368,7 @@ return result;
 ```  
   
 ## Using the Extension  
- Both the channel layer and service model layer extensions are done and they can now be used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. Services have to add the channel into the channel stack using a custom binding and then mark the service implementation classes with the appropriate attributes.  
+ Both the channel layer and service model layer extensions are done and they can now be used in WCF applications. Services have to add the channel into the channel stack using a custom binding and then mark the service implementation classes with the appropriate attributes.  
   
 ```  
 [DurableInstanceContext]  
@@ -464,7 +450,7 @@ Press ENTER to shut down client
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`  
   

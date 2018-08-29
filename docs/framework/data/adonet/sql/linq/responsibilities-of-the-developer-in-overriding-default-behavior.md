@@ -1,21 +1,7 @@
 ---
 title: "Responsibilities of the Developer In Overriding Default Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Responsibilities of the Developer In Overriding Default Behavior
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not enforce the following requirements, but behavior is undefined if these requirements are not satisfied.  

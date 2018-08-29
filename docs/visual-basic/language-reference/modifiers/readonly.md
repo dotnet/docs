@@ -1,11 +1,6 @@
 ---
 title: "ReadOnly (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ReadOnly"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], read-only"
   - "read-only variables"
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # ReadOnly (Visual Basic)
 Specifies that a variable or property can be read but not written.  

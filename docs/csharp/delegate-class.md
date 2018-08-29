@@ -1,14 +1,7 @@
 ---
 title: System.Delegate and the `delegate` keyword
 description: Learn about the classes in the .NET Framework that support delegates and how those map to the 'delegate' keyword.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 ---
 
@@ -116,10 +109,8 @@ Suppose you wanted to sort a list of strings by their length. Your
 comparison function might be the following:
 
 ```csharp
-private static int CompareLength(string left, string right)
-{
-    return left.Length.CompareTo(right.Length);
-}
+private static int CompareLength(string left, string right) =>
+    left.Length.CompareTo(right.Length);
 ```
 
 The method is declared as a private method. That's fine. You may not

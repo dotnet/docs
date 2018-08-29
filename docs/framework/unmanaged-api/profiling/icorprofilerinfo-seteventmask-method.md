@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::SetEventMask Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.SetEventMask"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 44bc0f56-32fa-491e-a62d-52fc96d48125
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::SetEventMask Method
 Sets a value that specifies the types of events for which the profiler wants to receive notification from the common language runtime (CLR).  

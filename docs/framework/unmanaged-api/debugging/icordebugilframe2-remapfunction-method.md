@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILFrame2::RemapFunction Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugILFrame2.RemapFunction"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dd639ba0-f77b-426d-9ff6-f92706840348
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILFrame2::RemapFunction Method
 Remaps an edited function by specifying the new Microsoft intermediate language (MSIL) offset  

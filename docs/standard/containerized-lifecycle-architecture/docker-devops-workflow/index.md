@@ -1,14 +1,9 @@
 ---
 title: Docker application devops workflow with Microsoft tools
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Toolsdevops workflow with Microsoft tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Docker application DevOps workflow with Microsoft tools
@@ -35,5 +30,5 @@ The complexity of containerized application development increases steadily depen
 
 
 >[!div class="step-by-step"]
-[Previous] (../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
-[Next] (docker-application-outer-loop-devops-workflow.md)
+[Previous](../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
+[Next](docker-application-outer-loop-devops-workflow.md)

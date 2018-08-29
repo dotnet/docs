@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess::IsTransitionStub Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess.IsTransitionStub"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess::IsTransitionStub Method
 Gets a value that indicates whether an address is inside a stub that will cause a transition to managed code.  

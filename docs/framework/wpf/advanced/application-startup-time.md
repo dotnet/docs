@@ -1,14 +1,6 @@
 ---
 title: "Application Startup Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "splash screen [WPF], startup time"
   - "WPF [WPF], startup time"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "application startup [WPF]"
   - "performance [WPF], startup time"
 ms.assetid: f0ec58d8-626f-4d8a-9873-c20f95e08b96
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Startup Time
 The amount of time that is required for a WPF application to start can vary greatly. This topic describes various techniques for reducing the perceived and actual startup time for a Windows Presentation Foundation (WPF) application.  

@@ -1,24 +1,10 @@
 ---
 title: "Behaviors"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b0885b65-4e74-4bc9-bbf0-eb7ebe566da1
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Behaviors
-This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service behaviors.  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) service behaviors.  
   
 ## In This Section  
  [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)  

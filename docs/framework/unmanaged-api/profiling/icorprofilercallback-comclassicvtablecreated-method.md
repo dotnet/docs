@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::COMClassicVTableCreated Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.COMClassicVTableCreated"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6e1834ab-c359-498a-b10b-984ae23cdda4
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::COMClassicVTableCreated Method
 Notifies the profiler that a COM interop vtable for the specified IID and class has been created.  

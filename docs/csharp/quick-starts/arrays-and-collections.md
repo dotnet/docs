@@ -1,13 +1,7 @@
 ---
 title: Collections tutorial - C# local quickstarts
 description: Learn C# by exploring the List collection in this tutorial.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/13/2017
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # C# Quickstart: Collections

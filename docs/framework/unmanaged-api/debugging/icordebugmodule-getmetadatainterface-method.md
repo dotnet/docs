@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugModule::GetMetaDataInterface Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugModule.GetMetaDataInterface"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 30d906f2-cf35-4fa9-9d4c-0c31b58c9f3a
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugModule::GetMetaDataInterface Method
 Gets a metadata interface object that can be used to examine the metadata for the module.  

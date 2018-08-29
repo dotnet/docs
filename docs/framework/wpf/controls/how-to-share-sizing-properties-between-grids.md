@@ -1,14 +1,6 @@
 ---
 title: "How to: Share Sizing Properties Between Grids"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "sizing data in Grid controls [WPF]"
   - "Grid control [WPF], sharing sizing data of rows"
 ms.assetid: a0535a6f-ff04-4b25-9912-7dd856e11044
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Share Sizing Properties Between Grids
 This example shows how to share the sizing data of columns and rows between <xref:System.Windows.Controls.Grid> elements in order to keep sizing consistent.  

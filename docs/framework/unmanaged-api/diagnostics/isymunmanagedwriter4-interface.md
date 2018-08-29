@@ -1,21 +1,9 @@
 ---
 title: "ISymUnmanagedWriter4 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 4af5e8c0-987d-405e-b934-8b9e70fcae6e
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter4 Interface
 ISymUnmanagedWriter4 interface.  

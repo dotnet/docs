@@ -1,14 +1,6 @@
 ---
 title: "LPTHREAD_START_ROUTINE Function Pointer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "LPTHREAD_START_ROUTINE"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 7b9b93b0-fe92-42ba-8693-701168a29dde
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LPTHREAD_START_ROUTINE Function Pointer
 Points to a function that notifies the host that a thread has started to execute.  

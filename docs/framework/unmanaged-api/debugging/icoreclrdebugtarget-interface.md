@@ -1,14 +1,6 @@
 ---
 title: "ICoreClrDebugTarget Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICoreClrDebugTarget"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICoreClrDebugTarget Interface
 Provides methods that control reference counts, enumerate processes, and free the memory associated with a debugger that is attached to a remote Macintosh Silverlight target.  

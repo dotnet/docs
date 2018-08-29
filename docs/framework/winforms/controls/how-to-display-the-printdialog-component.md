@@ -1,25 +1,11 @@
 ---
 title: "How to: Display the PrintDialog Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Print dialog box [Windows Forms], displaying"
   - "PrintDialog component [Windows Forms], displaying"
   - "printing [Windows Forms], displaying print dialog box"
 ms.assetid: 745a8db7-0526-4b21-b09d-18e13ed32014
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Display the PrintDialog Component
 The <xref:System.Windows.Forms.PrintDialog> component is the standard Windows print dialog box that many of your users will be familiar with. Because your users will be immediately comfortable with it, it would be beneficial for you to use the <xref:System.Windows.Forms.PrintDialog> component.  

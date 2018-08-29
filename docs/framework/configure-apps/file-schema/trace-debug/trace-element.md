@@ -1,14 +1,6 @@
 ---
 title: "&lt;trace&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#trace"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "trace element"
   - "trace listener, <trace> element"
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;trace&gt; Element
 Contains listeners that collect, store, and route tracing messages.  

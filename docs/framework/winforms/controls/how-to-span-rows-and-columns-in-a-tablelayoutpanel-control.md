@@ -1,14 +1,6 @@
 ---
 title: "How to: Span Rows and Columns in a TableLayoutPanel Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor.TLP.SpanRowsColumns"
 helpviewer_keywords: 
@@ -18,18 +10,12 @@ helpviewer_keywords:
   - "rows [Windows Forms], spanning"
   - "cells [Windows Forms], merging"
 ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Span Rows and Columns in a TableLayoutPanel Control
 Controls in a <xref:System.Windows.Forms.TableLayoutPanel> control can span adjacent rows and columns.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To span columns and rows  
   

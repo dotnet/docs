@@ -1,18 +1,11 @@
 ---
 title: "How to: Use the Global Namespace Alias (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "aliases [C#]"
   - "namespaces [C#], global namespace qualifier"
   - "global namespace [C#]"
 ms.assetid: 98a1d89b-3c5a-44f7-8400-c4a3c0ec22a9
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use the Global Namespace Alias (C# Programming Guide)
 The ability to access a member in the global [namespace](../../../csharp/language-reference/keywords/namespace.md) is useful when the member might be hidden by another entity of the same name.  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;security&gt; of &lt;netHttpBinding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netHttpBinding
 Defines the security capabilities of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
@@ -57,7 +43,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 |Transport|Security is provided using HTTPS transport. The SOAP messages are secured using HTTPS. The service is authenticated to the client using the service's X.509 certificate. The client is authenticated using the ClientCredentialType supplied.|  
 |Message|Security is provided using SOAP message security. By default, the body is encrypted and signed. For this binding, the system requires that the server certificate be provided to the client out of band. The only valid `ClientCredentialType` for this binding is `Certificate`.|  
 |TransportWithMessageCredential|Integrity, confidentiality and server authentication are provided by transport security. Client authentication is provided by means of SOAP message security. This mode is relevant when the user is authenticating using username/password and there is an existing HTTP deployment for securing message transfer.|  
-|TransportCredentialOnly|This mode does not provide message integrity and confidentiality. It provides http-based client authentication. This mode should be used with caution. It should be used in environments where the transport security is being provided by other means (such as IPSec) and only client authentication is provided by the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] infrastructure.|  
+|TransportCredentialOnly|This mode does not provide message integrity and confidentiality. It provides http-based client authentication. This mode should be used with caution. It should be used in environments where the transport security is being provided by other means (such as IPSec) and only client authentication is provided by the WCF infrastructure.|  
   
 ### Child Elements  
   

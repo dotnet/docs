@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Columns to the Windows Forms ListView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "columns [Windows Forms], adding to ListView controls"
   - "list views [Windows Forms], adding columns"
 ms.assetid: 79174274-12ee-4a5d-80db-6ec02976d010
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Columns to the Windows Forms ListView Control
 In the Details view, the <xref:System.Windows.Forms.ListView> control can display multiple columns for each list item. You can use the columns to display to the user several types of information about each list item. For example, a list of files could display the file name, file type, size, and date the file was last modified. For information about populating the columns after they are created, see [How to: Display Subitems in Columns with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md).  

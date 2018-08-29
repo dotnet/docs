@@ -1,11 +1,6 @@
 ---
 title: "Partial (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Partial"
   - "partial"
@@ -19,9 +14,6 @@ helpviewer_keywords:
   - "Partial keyword [Visual Basic]"
   - "type promotion"
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Partial (Visual Basic)
 Indicates that a type declaration is a partial definition of the type.  

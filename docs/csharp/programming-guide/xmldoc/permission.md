@@ -1,10 +1,6 @@
 ---
 title: "&lt;permission&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "permission"
   - "<permission>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<permission> C# XML tag"
   - "permission C# XML tag"
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;permission&gt; (C# Programming Guide)
 ## Syntax  

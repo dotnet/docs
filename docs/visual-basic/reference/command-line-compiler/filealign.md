@@ -1,11 +1,6 @@
 ---
 title: "-filealign"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "sections compiler option [Visual Basic]"
   - "alignment compiler option [Visual Basic]"

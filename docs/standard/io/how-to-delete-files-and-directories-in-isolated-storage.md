@@ -1,13 +1,7 @@
 ---
 title: "How to: Delete Files and Directories in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,13 +17,8 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting files and directories"
   - "deleting directories within isolated stage file"
 ms.assetid: 8fcc0dea-435b-4d40-ba4d-ba056265c202
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Delete Files and Directories in Isolated Storage
 You can delete directories and files within an isolated storage file. Within a store, file and directory names are operating-system dependent and are specified as relative to the root of the virtual file system. They are not case-sensitive on Windows operating systems.  

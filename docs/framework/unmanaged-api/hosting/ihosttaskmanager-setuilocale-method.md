@@ -1,14 +1,6 @@
 ---
 title: "IHostTaskManager::SetUILocale Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostTaskManager.SetUILocale"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d0c87a9c-ea81-4237-a16b-c22b36ec9dc8
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostTaskManager::SetUILocale Method
 Notifies the host that the common language runtime (CLR) has changed the user interface (UI) locale, or culture, on the currently executing task.  

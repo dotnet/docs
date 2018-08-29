@@ -1,21 +1,7 @@
 ---
 title: "Configuring Timeout Values on a Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b5c825a2-b48f-444a-8659-61751ff11d34
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Timeout Values on a Binding
 There are a number of timeout settings available in WCF bindings. Setting these timeout settings correctly can improve not only your service’s performance but also play a role in the usability and security of your service. The following timeouts are available on WCF bindings:  

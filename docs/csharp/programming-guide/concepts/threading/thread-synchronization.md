@@ -1,17 +1,7 @@
 ---
 title: "Thread Synchronization (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Thread Synchronization (C#)
 The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.  
@@ -164,7 +154,6 @@ class ThreadingExample
  <xref:System.Threading>  
  <xref:System.Threading.EventWaitHandle.Set%2A>  
  <xref:System.Threading.Monitor>  
- [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
  [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
  [Mutexes](../../../../standard/threading/mutexes.md)  
  [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)  

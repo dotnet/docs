@@ -1,19 +1,7 @@
 ---
 title: "Support for Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 093c22f5-3294-4642-857a-5252233d6796
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Support for Queries
 The SQL Workflow Instance Store records a set of well-known properties in the store. Users can query for instances based on these properties. The following list contains some of these well-known properties:  

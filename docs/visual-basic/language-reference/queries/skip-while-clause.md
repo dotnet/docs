@@ -1,12 +1,6 @@
 ---
 title: "Skip While Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySkipWhile"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "Skip While clause [Visual Basic]"
   - "queries [Visual Basic], Skip While"
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Skip While Clause (Visual Basic)
 Bypasses elements in a collection as long as a specified condition is `true` and then returns the remaining elements.  
@@ -47,7 +38,7 @@ Skip While expression
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
  [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)  

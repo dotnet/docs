@@ -1,14 +1,6 @@
 ---
 title: "ComboBox Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ComboBox"
 helpviewer_keywords: 
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "drop-down lists [Windows Forms], ComboBox control"
   - "combo boxes [Windows Forms], about combo boxes"
 ms.assetid: a58b393f-a614-45d1-8961-857a024b5acd
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ComboBox Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ComboBox> control is used to display data in a drop-down combo box. By default, the <xref:System.Windows.Forms.ComboBox> control appears in two parts: the top part is a text box that allows the user to type a list item. The second part is a list box that displays a list of items from which the user can select one. For more information on other styles of combo box, see [When to Use a Windows Forms ComboBox Instead of a ListBox](../../../../docs/framework/winforms/controls/when-to-use-a-windows-forms-combobox-instead-of-a-listbox.md).  

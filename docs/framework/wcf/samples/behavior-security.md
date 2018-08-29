@@ -1,21 +1,9 @@
 ---
 title: "Behavior Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Behavior Security
 This section includes samples that demonstrate configuring security for service behaviors.  

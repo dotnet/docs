@@ -1,19 +1,7 @@
 ---
 title: "116 - WorkflowInstanceSuspendedRecordWithId"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 38232c03-6139-4494-a020-79bc83eb9dce
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 116 - WorkflowInstanceSuspendedRecordWithId
 ## Properties  

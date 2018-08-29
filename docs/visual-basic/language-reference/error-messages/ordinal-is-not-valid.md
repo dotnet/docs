@@ -1,18 +1,9 @@
 ---
 title: "Ordinal is not valid"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID452"
 ms.assetid: 7459562b-cd4f-4590-95e0-6126ae3589a5
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Ordinal is not valid
 Your call to a dynamic-link library (DLL) indicated to use a number instead of a procedure name, using the `#num` syntax. This error has the following possible causes:  

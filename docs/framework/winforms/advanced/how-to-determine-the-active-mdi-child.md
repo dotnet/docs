@@ -1,14 +1,6 @@
 ---
 title: "How to: Determine the Active MDI Child"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "MDI [Windows Forms], activating forms"
   - "MDI [Windows Forms], locating focus"
 ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Determine the Active MDI Child
 On occasion, you will want to provide a command that operates on the control that has focus on the currently active child form. For example, suppose you want to copy selected text from the child form's text box to the Clipboard. You would create a procedure that copies selected text to the Clipboard using the <xref:System.Windows.Forms.Control.Click> event of the Copy menu item on the standard Edit menu.  

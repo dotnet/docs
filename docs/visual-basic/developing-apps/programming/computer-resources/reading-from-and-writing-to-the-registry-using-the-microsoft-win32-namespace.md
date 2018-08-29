@@ -1,19 +1,9 @@
 ---
 title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "registry [Visual Basic]"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)
 Although `My.Computer.Registry` should cover your basic needs when programming against the registry, you can also use the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes in the <xref:Microsoft.Win32> namespace of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  

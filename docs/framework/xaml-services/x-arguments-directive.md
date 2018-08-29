@@ -1,25 +1,11 @@
 ---
 title: "x:Arguments Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "x:Arguments directive [XAML Services]"
   - "Arguments directive in XAML [XAML Services]"
   - "XAML [XAML Services], x:Arguments directive"
 ms.assetid: 87cc10b0-b610-4025-b6b0-ab27ca27c92e
-caps.latest.revision: 12
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Arguments Directive
 Packages construction arguments for a non-default constructor object element declaration in XAML, or for a factory method object declaration.  

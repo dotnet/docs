@@ -1,17 +1,10 @@
 ---
 title: "Using Exceptions (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"
   - "exceptions [C#], about exceptions"
 ms.assetid: 71472c62-320a-470a-97d2-67995180389d
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Exceptions (C# Programming Guide)
 In C#, errors in the program at run time are propagated through the program by using a mechanism called exceptions. Exceptions are thrown by code that encounters an error and caught by code that can correct the error. Exceptions can be thrown by the .NET Framework common language runtime (CLR) or by code in a program. Once an exception is thrown, it propagates up the call stack until a `catch` statement for the exception is found. Uncaught exceptions are handled by a generic exception handler provided by the system that displays a dialog box.  

@@ -1,24 +1,12 @@
 ---
 title: "&lt;shadowCopyVerifyByTimestamp&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<shadowCopyTimeStampVerification> element"
   - "shadowCopyTimeStampVerification element"
 ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;shadowCopyVerifyByTimestamp&gt; Element
 Specifies whether shadow copying uses the default startup behavior introduced in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], or reverts to the startup behavior of earlier versions of the .NET Framework.  

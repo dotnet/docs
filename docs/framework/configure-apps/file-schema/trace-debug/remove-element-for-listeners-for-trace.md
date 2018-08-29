@@ -1,26 +1,15 @@
 ---
 title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/remove"
 helpviewer_keywords: 
   - "remove element"
   - "<remove> element"
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Removes a listener from the **Listeners** collection.  

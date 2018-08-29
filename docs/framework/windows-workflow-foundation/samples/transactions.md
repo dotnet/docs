@@ -1,22 +1,10 @@
 ---
 title: "Transactions2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 51212219-a39e-448e-bff3-10064ff5de64
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transactions
-This section contains samples that demonstrate workflow transactions in [!INCLUDE[wf](../../../../includes/wf-md.md)].  
+This section contains samples that demonstrate workflow transactions in Windows Workflow Foundation (WF).  
   
 ## In This Section  
  [Basic TransactionScope](../../../../docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md)  

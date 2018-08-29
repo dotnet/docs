@@ -1,24 +1,10 @@
 ---
 title: "Modifying Data with a DbDataAdapter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e35c7f9e-648b-4fcc-9361-d365c3e42c9a
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modifying Data with a DbDataAdapter
 The <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> method of a <xref:System.Data.Common.DbProviderFactory> object gives you a <xref:System.Data.Common.DbDataAdapter> object that is strongly typed to the underlying data provider specified at the time you create the factory. You can then use a <xref:System.Data.Common.DbCommandBuilder> to create commands to insert, update, and delete data from a <xref:System.Data.DataSet> to a data source.  

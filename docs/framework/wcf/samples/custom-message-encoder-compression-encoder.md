@@ -1,31 +1,17 @@
 ---
 title: "Custom Message Encoder: Compression Encoder"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 57450b6c-89fe-4b8a-8376-3d794857bfd7
-caps.latest.revision: 37
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Message Encoder: Compression Encoder
-This sample demonstrates how to implement a custom encoder using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] platform.  
+This sample demonstrates how to implement a custom encoder using the Windows Communication Foundation (WCF) platform.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Compression`  
   
@@ -33,9 +19,9 @@ This sample demonstrates how to implement a custom encoder using the [!INCLUDE[i
  This sample consists of a client console program (.exe), a self-hosted service console program (.exe) and a compression message encoder library (.dll). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ISampleServer` interface, which exposes basic string echoing operations (`Echo` and `BigEcho`). The client makes synchronous requests to a given operation and the service replies by repeating the message back to the client. Client and service activity is visible in the console windows. The intent of this sample is to show how to write a custom encoder and demonstrate the impact of compression of a message on the wire. You can add instrumentation to the compression message encoder to calculate message size, processing time, or both.  
   
 > [!NOTE]
->  In the .NET Framework 4, automatic decompression has been enabled on a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client if the server is sending a compressed response (created with an algorithm such as GZip or Deflate). If the service is Web-hosted in Internet Information Server (IIS), then IIS can be configured for the service to send a compressed response. This sample can be used if the requirement is to do compression and decompression on both the client and the service or if the service is self-hosted.  
+>  In the .NET Framework 4, automatic decompression has been enabled on a WCF client if the server is sending a compressed response (created with an algorithm such as GZip or Deflate). If the service is Web-hosted in Internet Information Server (IIS), then IIS can be configured for the service to send a compressed response. This sample can be used if the requirement is to do compression and decompression on both the client and the service or if the service is self-hosted.  
   
- The sample demonstrates how to build and integrate a custom message encoder into a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. The library GZipEncoder.dll is deployed with both the client and the service. This sample also demonstrates the impact of compressing messages. The code in GZipEncoder.dll demonstrates the following:  
+ The sample demonstrates how to build and integrate a custom message encoder into a WCF application. The library GZipEncoder.dll is deployed with both the client and the service. This sample also demonstrates the impact of compressing messages. The code in GZipEncoder.dll demonstrates the following:  
   
 -   Building a custom encoder and encoder factory.  
   
@@ -65,13 +51,13 @@ This sample demonstrates how to implement a custom encoder using the [!INCLUDE[i
   
 5.  The encoder layer is implemented as a class factory. Only the encoder class factory must be publicly exposed for the custom encoder. The factory object is returned by the binding element when the <xref:System.ServiceModel.ServiceHost> or <xref:System.ServiceModel.ChannelFactory%601> object is created. Message encoders can operate in a buffered or streaming mode. This sample demonstrates both buffered mode and streaming mode.  
   
- For each mode there is an accompanying `ReadMessage` and `WriteMessage` method on the abstract `MessageEncoder` class. A majority of the encoding work takes place in these methods. The sample wraps the existing text and binary message encoders. This allows the sample to delegate the reading and writing of the wire representation of messages to the inner encoder and allows the compression encoder to compress or decompress the results. Because there is no pipeline for message encoding, this is the only model for using multiple encoders in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Once the message has been decompressed, the resulting message is passed up the stack for the channel stack to handle. During compression, the resulting compressed message is written directly to the stream provided.  
+ For each mode there is an accompanying `ReadMessage` and `WriteMessage` method on the abstract `MessageEncoder` class. A majority of the encoding work takes place in these methods. The sample wraps the existing text and binary message encoders. This allows the sample to delegate the reading and writing of the wire representation of messages to the inner encoder and allows the compression encoder to compress or decompress the results. Because there is no pipeline for message encoding, this is the only model for using multiple encoders in WCF. Once the message has been decompressed, the resulting message is passed up the stack for the channel stack to handle. During compression, the resulting compressed message is written directly to the stream provided.  
   
  This sample uses helper methods (`CompressBuffer` and `DecompressBuffer`) to perform conversion from buffers to streams to use the `GZipStream` class.  
   
  The buffered `ReadMessage` and `WriteMessage` classes make use of the `BufferManager` class. The encoder is accessible only through the encoder factory. The abstract `MessageEncoderFactory` class provides a property named `Encoder` for accessing the current encoder and a method named `CreateSessionEncoder` for creating an encoder that supports sessions. Such an encoder can be used in the scenario where the channel supports sessions, is ordered and is reliable. This scenario allows for optimization in each session of the data written to the wire. If this is not desired, the base method should not be overloaded. The `Encoder` property provides a mechanism for accessing the session-less encoder and the default implementation of the `CreateSessionEncoder` method returns the value of the property. Because the sample wraps an existing encoder to provide compression, the `MessageEncoderFactory` implementation accepts a `MessageEncoderFactory` that represents the inner encoder factory.  
   
- Now that the encoder and encoder factory are defined, they can be used with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client and service. However, these encoders must be added to the channel stack. You can derive classes from the <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.ChannelFactory%601> classes and override the `OnInitialize` methods to add this encoder factory manually. You can also expose the encoder factory through a custom binding element.  
+ Now that the encoder and encoder factory are defined, they can be used with a WCF client and service. However, these encoders must be added to the channel stack. You can derive classes from the <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.ChannelFactory%601> classes and override the `OnInitialize` methods to add this encoder factory manually. You can also expose the encoder factory through a custom binding element.  
   
  To create a new custom binding element, derive a class from the <xref:System.ServiceModel.Channels.BindingElement> class. There are, however, several types of binding elements. To ensure that the custom binding element is recognized as a message encoding binding element, you also must implement the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>. The <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> exposes a method for creating a new message encoder factory (`CreateMessageEncoderFactory`), which is implemented to return an instance of the matching message encoder factory. Additionally, the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> has a property to indicate the addressing version. Because this sample wraps the existing encoders, the sample implementation also wraps the existing encoder binding elements and takes an inner encoder binding element as a parameter to the constructor and exposes it through a property. The following sample code shows the implementation of the `GZipMessageEncodingBindingElement` class.  
   
@@ -359,7 +345,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Compression`  
   

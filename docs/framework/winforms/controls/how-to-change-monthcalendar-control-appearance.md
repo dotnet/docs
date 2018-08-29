@@ -1,14 +1,6 @@
 ---
 title: "How to: Change the Windows Forms MonthCalendar Control&#39;s Appearance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], calendar controls"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Change the Windows Forms MonthCalendar Control&#39;s Appearance
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you to customize the calendar's appearance in many ways. For example, you can set the color scheme and choose to display or hide week numbers and the current date.  
@@ -82,7 +68,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.DoubleClick += new System.EventHandler(this.Form1_DoubleClick);  

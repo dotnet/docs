@@ -1,14 +1,6 @@
 ---
 title: "IHostThreadPoolManager::SetMaxThreads Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostThreadPoolManager.SetMaxThreads"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 77cfd347-95c2-4425-b807-4ecc2a8d4578
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostThreadPoolManager::SetMaxThreads Method
 Sets the maximum number of threads that the host can maintain in the thread pool.  

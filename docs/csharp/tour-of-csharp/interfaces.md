@@ -1,14 +1,7 @@
 ---
 title: C# Interfaces - A tour of the C# language
 description: Interfaces define contracts implemented by types in C#
-keywords: .NET, csharp, interfaces, multiple inheritance, polymorphism
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: a9bf82f4-efd1-4216-bd34-4ef0fa48c968
 ---
 

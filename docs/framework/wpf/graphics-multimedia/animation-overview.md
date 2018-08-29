@@ -1,14 +1,6 @@
 ---
 title: "Animation Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Storyboards [WPF], animations"
   - "animations [WPF], overview"
 ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
-caps.latest.revision: 73
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Animation Overview
 <a name="introduction"></a>

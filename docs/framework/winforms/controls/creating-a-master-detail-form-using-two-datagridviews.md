@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Creating a Master-Detail Form Using Two Windows Forms DataGridView Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "master-details lists [Windows Forms], displaying on Windows Forms"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: c5fa29e8-47f7-4691-829b-0e697a691f36
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls
 One of the most common scenarios for using the <xref:System.Windows.Forms.DataGridView> control is the *master/detail* form, in which a parent/child relationship between two database tables is displayed. Selecting rows in the master table causes the detail table to update with the corresponding child data.  
@@ -41,7 +27,7 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
   
 #### To create a master/detail form  
   
-1.  Create a class that derives from <xref:System.Windows.Forms.Form> and contains two <xref:System.Windows.Forms.DataGridView> controls and two <xref:System.Windows.Forms.BindingSource> components. The following code provides basic form initialization and includes a `Main` method. If you use the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] designer to create your form, you can use the designer generated code instead of this code, but be sure to use the names shown in the variable declarations here.  
+1.  Create a class that derives from <xref:System.Windows.Forms.Form> and contains two <xref:System.Windows.Forms.DataGridView> controls and two <xref:System.Windows.Forms.BindingSource> components. The following code provides basic form initialization and includes a `Main` method. If you use the Visual Studio designer to create your form, you can use the designer generated code instead of this code, but be sure to use the names shown in the variable declarations here.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMasterDetails#01](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/CS/masterdetails.cs#01)]
      [!code-vb[System.Windows.Forms.DataGridViewMasterDetails#01](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/VB/masterdetails.vb#01)]  

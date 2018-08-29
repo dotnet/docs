@@ -1,25 +1,11 @@
 ---
 title: "How to: Use mailto: to Send Mail From a Page"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "sending mail from pages with mailto:"
   - "mailto:, sending mail from pages"
   - "mail [WPF], sending from pages"
 ms.assetid: b64b9518-df17-4232-94f2-455a4f77ee48
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use mailto: to Send Mail From a Page
 This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conjunction with a **mailto:**[!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)].  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;mexHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e50b2e1f-9668-41a5-8077-dee7abff9f0f
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;mexHttpBinding&gt;
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over HTTP.  

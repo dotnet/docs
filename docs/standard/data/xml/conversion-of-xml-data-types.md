@@ -1,24 +1,13 @@
 ---
 title: "Conversion of XML Data Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Conversion of XML Data Types
 The majority of the methods found in an **XmlConvert** class are used to convert data between strings and strongly-typed formats. Methods are locale independent. This means that they do not take into account any locale settings when doing conversion.  

@@ -1,28 +1,18 @@
 ---
 title: "Events (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [Visual Basic], about events"
   - "events [Visual Basic]"
 ms.assetid: 8fb0353a-e41b-4e23-b78f-da65db832f70
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Events (Visual Basic)
-While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project as a series of procedures that execute in a sequence, in reality, most programs are event driven—meaning the flow of execution is determined by external occurrences called *events*.  
+While you might visualize a Visual Studio project as a series of procedures that execute in a sequence, in reality, most programs are event driven—meaning the flow of execution is determined by external occurrences called *events*.  
   
  An event is a signal that informs an application that something important has occurred. For example, when a user clicks a control on a form, the form can raise a `Click` event and call a procedure that handles the event. Events also allow separate tasks to communicate. Say, for example, that your application performs a sort task separately from the main application. If a user cancels the sort, your application can send a cancel event instructing the sort process to stop.  
   
 ## Event Terms and Concepts  
- This section describes the terms and concepts used with events in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ This section describes the terms and concepts used with events in Visual Basic.  
   
 ### Declaring Events  
  You declare events within classes, structures, modules, and interfaces using the `Event` keyword, as in the following example:  
@@ -30,7 +20,7 @@ While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project 
  [!code-vb[VbVbalrEvents#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_1.vb)]  
   
 ### Raising Events  
- An event is like a message announcing that something important has occurred. The act of broadcasting the message is called *raising* the event. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you raise events with the `RaiseEvent` statement, as in the following example:  
+ An event is like a message announcing that something important has occurred. The act of broadcasting the message is called *raising* the event. In Visual Basic, you raise events with the `RaiseEvent` statement, as in the following example:  
   
  [!code-vb[VbVbalrEvents#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_2.vb)]  
   
@@ -42,7 +32,7 @@ While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project 
 ### Event Handlers  
  *Event handlers* are procedures that are called when a corresponding event occurs. You can use any valid subroutine with a matching signature as an event handler. You cannot use a function as an event handler, however, because it cannot return a value to the event source.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses a standard naming convention for event handlers that combines the name of the event sender, an underscore, and the name of the event. For example, the `Click` event of a button named `button1` would be named `Sub button1_Click`.  
+ Visual Basic uses a standard naming convention for event handlers that combines the name of the event sender, an underscore, and the name of the event. For example, the `Click` event of a button named `button1` would be named `Sub button1_Click`.  
   
 > [!NOTE]
 >  We recommend that you use this naming convention when defining event handlers for your own events, but it is not required; you can use any valid subroutine name.  
@@ -67,7 +57,7 @@ While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project 
   
  Although the `Handles` clause is the standard way of associating an event with an event handler, it is limited to associating events with event handlers at compile time.  
   
- In some cases, such as with events associated with forms or controls, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] automatically stubs out an empty event handler and associates it with an event. For example, when you double-click a command button on a form in design mode, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] creates an empty event handler and a `WithEvents` variable for the command button, as in the following code:  
+ In some cases, such as with events associated with forms or controls, Visual Basic automatically stubs out an empty event handler and associates it with an event. For example, when you double-click a command button on a form in design mode, Visual Basic creates an empty event handler and a `WithEvents` variable for the command button, as in the following code:  
   
  [!code-vb[VbVbalrEvents#26](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_4.vb)]  
   

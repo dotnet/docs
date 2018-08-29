@@ -1,21 +1,10 @@
 ---
 title: "XML Type Support Implementation Notes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Type Support Implementation Notes
 This topic describes some implementation details that you want to be aware of.  

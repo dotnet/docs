@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Caching Application Data in a WPF Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "caching [.NET Framework]"
   - "caching [WPF]"
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Caching Application Data in a WPF Application
 Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.  
@@ -64,7 +50,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 #### To create a WPF application  
   
-1.  Start [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+1.  Start Visual Studio.  
   
 2.  In the **File** menu, click **New**, and then click **New Project**.  
   
@@ -83,7 +69,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 7.  Click **OK**.  
   
-     The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.  
+     The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. Visual Studio creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.  
   
 ## Targeting the .NET Framework and Adding a Reference to the Caching Assemblies  
  By default, WPF applications target the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] (not the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]) and must include a reference to the namespace.  

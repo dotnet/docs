@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Group Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Group control type"
   - "Group control type"
   - "control types, Group"
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
-caps.latest.revision: 27
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Group Control Type
 > [!NOTE]

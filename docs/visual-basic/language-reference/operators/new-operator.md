@@ -1,12 +1,6 @@
 ---
 title: "New Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.new"
   - "vb.NewConstraint"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "New constraint"
   - "New keyword [Visual Basic]"
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # New Operator (Visual Basic)
 Introduces a `New` clause to create a new object instance, specifies a constructor constraint on a type parameter, or identifies a `Sub` procedure as a class constructor.  

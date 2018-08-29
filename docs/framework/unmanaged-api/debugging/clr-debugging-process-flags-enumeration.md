@@ -1,14 +1,6 @@
 ---
 title: "CLR_DEBUGGING_PROCESS_FLAGS Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CLR_DEBUGGING_PROCESS_FLAGS"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
 topic_type: 
   - "apiref"
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR_DEBUGGING_PROCESS_FLAGS Enumeration
 Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md) method.  

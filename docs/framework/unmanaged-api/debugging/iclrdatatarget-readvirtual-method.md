@@ -1,14 +1,6 @@
 ---
 title: "ICLRDataTarget::ReadVirtual Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDataTarget.ReadVirtual"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDataTarget::ReadVirtual Method
 Reads data from the specified virtual memory address into the specified buffer.  

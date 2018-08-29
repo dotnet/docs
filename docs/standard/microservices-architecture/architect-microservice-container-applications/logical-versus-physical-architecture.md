@@ -1,16 +1,9 @@
 ---
 title: Logical architecture versus physical architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Logical architecture versus physical architecture
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Logical architecture versus physical architecture
 
@@ -32,11 +25,11 @@ As Figure 4-8 shows, the catalog business microservice could be composed of seve
 
 **Figure 4-8**. Business microservice with several physical services
 
-The services in the example share the same data model because the Web API service targets the same data as the Search service. So, in the physical implementation of the business microservice, you are splitting that functionality so you can scale each of those internal services up or down as needed. Maybe the Web API service usually needs more instances than the Search service, or vice versa.)
+The services in the example share the same data model because the Web API service targets the same data as the Search service. So, in the physical implementation of the business microservice, you are splitting that functionality so you can scale each of those internal services up or down as needed. Maybe the Web API service usually needs more instances than the Search service, or vice versa.
 
 In short, the logical architecture of microservices does not always have to coincide with the physical deployment architecture. In this guide, whenever we mention a microservice, we mean a business or logical microservice that could map to one or more services. In most cases, this will be a single service, but it might be more.
 
 
 >[!div class="step-by-step"]
-[Previous] (data-sovereignty-per-microservice.md)
-[Next] (distributed-data-management.md)
+[Previous](data-sovereignty-per-microservice.md)
+[Next](distributed-data-management.md)

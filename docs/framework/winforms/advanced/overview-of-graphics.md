@@ -1,24 +1,10 @@
 ---
 title: "Overview of Graphics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [Windows Forms], using managed interface"
   - "graphics [Windows Forms], about graphics"
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Overview of Graphics
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is responsible for displaying information on screens and printers. As its name suggests, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the successor to [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)], the Graphics Device Interface included with earlier versions of Windows.  

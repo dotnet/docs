@@ -1,26 +1,12 @@
 ---
 title: "How to: Determine the Number of Entities Returned by a Query (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, row count"
 ms.assetid: 03d41a82-df95-40ac-8439-a6c327d37ba8
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Determine the Number of Entities Returned by a Query (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can determine the number of entities that are in the entity set specified by a query URI. This count can be included either along with the query result or as an integer value. For more information, see [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md).  

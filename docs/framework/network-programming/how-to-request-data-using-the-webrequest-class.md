@@ -1,12 +1,6 @@
 ---
 title: "How to: Request Data Using the WebRequest Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +11,9 @@ helpviewer_keywords:
   - "receiving data, using WebRequest class"
   - "Internet, requesting data"
 ms.assetid: 368b8d0f-dc5e-4469-a8b8-b2adbf5dd800
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Request Data Using the WebRequest Class
 The following procedure describes the steps used to request a resource from a server, for example, a Web page or file. The resource must be identified by a URI.  

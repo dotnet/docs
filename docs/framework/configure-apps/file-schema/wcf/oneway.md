@@ -1,21 +1,7 @@
 ---
 title: "&lt;oneWay&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;oneWay&gt;
 Enables packet routing and the use of one-way methods for a custom binding.  

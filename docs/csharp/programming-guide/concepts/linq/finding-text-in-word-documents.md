@@ -1,19 +1,7 @@
 ---
 title: "Finding Text in Word Documents (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Finding Text in Word Documents (C#)
 This topic extends the previous queries to do something useful: find all occurrences of a string in the document.  

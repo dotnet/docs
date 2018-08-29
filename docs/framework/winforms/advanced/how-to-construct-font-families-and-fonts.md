@@ -1,14 +1,6 @@
 ---
 title: "How to: Construct Font Families and Fonts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "font families [Windows Forms], constructing"
   - "fonts [Windows Forms], constructing"
 ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Construct Font Families and Fonts
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] groups fonts with the same typeface but different styles into font families. For example, the Arial font family contains the following fonts:  

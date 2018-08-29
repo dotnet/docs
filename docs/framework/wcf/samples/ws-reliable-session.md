@@ -1,23 +1,9 @@
 ---
 title: "WS Reliable Session"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Reliable session"
 ms.assetid: 86e914f2-060b-432b-bd17-333695317745
-caps.latest.revision: 30
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS Reliable Session
 This sample demonstrates the use of reliable sessions. Reliable sessions provide support for reliable messaging and sessions. Reliable messaging retries communication on failure and allows delivery assurances to be specified, such as in-order arrival of messages. Sessions maintain state for clients between calls. The sample implements sessions for maintaining client state and specifies in-order delivery assurances.  
@@ -27,7 +13,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\wsReliableSession`  
   
@@ -60,13 +46,13 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 ```  
   
  The service implementation class implements <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
-  
-```  
+
+```csharp
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)] public class CalculatorService : ICalculator  
 {  
     ...  
 }  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   

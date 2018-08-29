@@ -1,19 +1,10 @@
 ---
 title: "&lt;c&gt; (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "c XML tag"
   - "<c> XML tag"
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;c&gt; (Visual Basic)
 Indicates that text within a description is code.  
@@ -41,4 +32,4 @@ Indicates that text within a description is code.
  [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/c_1.vb)]  
   
 ## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+ [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

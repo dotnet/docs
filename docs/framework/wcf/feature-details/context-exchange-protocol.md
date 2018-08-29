@@ -1,24 +1,10 @@
 ---
 title: "Context Exchange Protocol"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Context Exchange Protocol
-This section describes the context exchange protocol introduced in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)][!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] release. This protocol allows the client channel to accept a context supplied by a service and apply it to all subsequent requests to that service sent over the same client channel instance. The implementation of the context exchange protocol can use one of the following two mechanisms to propagate the context between the server and the client: HTTP cookies or a SOAP header.  
+This section describes the context exchange protocol introduced in Windows Communication Foundation (WCF) release .NET Framework version 3.5. This protocol allows the client channel to accept a context supplied by a service and apply it to all subsequent requests to that service sent over the same client channel instance. The implementation of the context exchange protocol can use one of the following two mechanisms to propagate the context between the server and the client: HTTP cookies or a SOAP header.  
   
  The context exchange protocol is implemented in a custom channel layer. The channel communicates the context to and from the application layer using a <xref:System.ServiceModel.Channels.ContextMessageProperty> property. For transmission between endpoints, the value of the context is either serialized as a SOAP header at the channel layer, or converted to or from the message properties that represent a HTTP request and response. In the latter case, it is expected that one of the underlying channel layers converts the HTTP request and response message properties to and from HTTP cookies, respectively. The choice of the mechanism used to exchange the context is done using the <xref:System.ServiceModel.Channels.ContextExchangeMechanism> property on the <xref:System.ServiceModel.Channels.ContextBindingElement>. Valid values are `HttpCookie` or `SoapHeader`.  
   

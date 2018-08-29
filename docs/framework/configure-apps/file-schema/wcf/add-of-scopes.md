@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;scopes&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;scopes&gt;
 Adds a custom scope Uri that can be used to filter service endpoints during query.  

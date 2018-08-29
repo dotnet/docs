@@ -1,14 +1,6 @@
 ---
 title: "HScrollBar and VScrollBar Controls (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "scroll bars"
   - "VScrollBar control [Windows Forms]"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "HScrollBar control [Windows Forms]"
   - "Scroll Bar control [Windows Forms]"
 ms.assetid: f5e9cda7-d8f3-406b-b0e6-bdb4375d6eb0
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # HScrollBar and VScrollBar Controls (Windows Forms)
 Windows Forms scroll bar controls are used to provide easy navigation through a long list of items or a large amount of information by scrolling either horizontally or vertically within an application or control. Scroll bars are a common element of the Windows interface.  

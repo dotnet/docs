@@ -1,17 +1,10 @@
 ---
 title: "How to: Define Constants in C#"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, constants"
   - "constants [C#]"
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
-caps.latest.revision: 7
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Define Constants in C#
 Constants are fields whose values are set at compile time and can never be changed. Use constants to provide meaningful names instead of numeric literals ("magic numbers") for special values.  

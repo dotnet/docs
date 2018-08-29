@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugType Interface1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugType"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugType Interface1
 Represents a type, either basic or complex (that is, user-defined). If the type is generic, `ICorDebugType` represents the instantiated generic type.  

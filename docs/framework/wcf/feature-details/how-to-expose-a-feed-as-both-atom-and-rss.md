@@ -1,31 +1,17 @@
 ---
 title: "How to: Expose a Feed as Both Atom and RSS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: fe374932-67f5-487d-9325-f868812b92e4
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Expose a Feed as Both Atom and RSS
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the different [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting options, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
+Windows Communication Foundation (WCF) allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. For more information about the different WCF hosting options, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
   
 ### To create a basic syndication service  
   
-1.  Define a service contract using an interface marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute. Each operation that is exposed as a syndication feed returns a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> object. Note the parameters for the <xref:System.ServiceModel.Web.WebGetAttribute>. `UriTemplate` specifies the URL used to invoke this service operation. The string for this parameter contains literals and a variable in braces ({*format*}). This variable corresponds to the service operation's `format` parameter. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.UriTemplate>. `BodyStyle` affects how the messages that this service operation sends and receives are written. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> specifies that the data sent to and from this service operation are not wrapped by infrastructure-defined XML elements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+1.  Define a service contract using an interface marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute. Each operation that is exposed as a syndication feed returns a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> object. Note the parameters for the <xref:System.ServiceModel.Web.WebGetAttribute>. `UriTemplate` specifies the URL used to invoke this service operation. The string for this parameter contains literals and a variable in braces ({*format*}). This variable corresponds to the service operation's `format` parameter. For more information, see <xref:System.UriTemplate>. `BodyStyle` affects how the messages that this service operation sends and receives are written. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> specifies that the data sent to and from this service operation are not wrapped by infrastructure-defined XML elements. For more information, see <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
   
      [!code-csharp[htAtomRss#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatomrss/cs/program.cs#0)]
      [!code-vb[htAtomRss#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatomrss/vb/program.vb#0)]  

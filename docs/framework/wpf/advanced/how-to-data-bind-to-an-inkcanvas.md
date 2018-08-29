@@ -1,24 +1,10 @@
 ---
 title: "How to: Data Bind to an InkCanvas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "InkCanvas [WPF], binding data to"
   - "binding data [WPF], to InkCanvas"
 ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Data Bind to an InkCanvas
 ## Example  

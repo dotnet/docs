@@ -1,14 +1,6 @@
 ---
 title: "OSINFO Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "OSINFO"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # OSINFO Structure
 Contains details about the operating system for an assembly or module.  

@@ -29,7 +29,7 @@
 ### [<system.xml.serialization> Element](system-xml-serialization-element.md)
 ### [<dateTimeSerialization> Element](datetimeserialization-element.md)
 ### [<schemaImporterExtensions> Element](schemaimporterextensions-element.md)
-### [<add> Element for <xmlSchemaImporterExtensions>](add-element-for-xmlschemaimporterextensions.md)
+### [<add> Element for <schemaImporterExtensions>](add-element-for-schemaimporterextensions.md)
 ### [<xmlSerializer> Element](xmlserializer-element.md)
 ## [Serialization Tools](serialization-tools.md)
 ### [XML Serializer Generator Tool (Sgen.exe)](xml-serializer-generator-tool-sgen-exe.md)

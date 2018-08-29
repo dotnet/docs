@@ -1,16 +1,11 @@
 ---
 title: The .NET Security Analyzers - .NET
 description: Learn how to use the .NET Security Analyzers in the .NET Framework Analyzers package to find and address security risks
-keywords: .NET, .NET Core
 author: billwagner
 ms.author: billwagner
 ms.date: 01/25/2018
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ---
-
 # The .NET Framework Analyzer
 
 You can use the .NET Framework Analyzer to find potential issues in your .NET Framework-based application code. This analyzer finds potential issues and suggests

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEnum Interface1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEnum"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 80be7efe-2c32-4b9f-8c52-40c6f6268219
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEnum Interface1
 Serves as the abstract base interface for the enumerators that are used by a debugging application.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugAppDomain::GetModuleFromMetaDataInterface Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugAppDomain.GetModuleFromMetaDataInterface"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f35225b3-5dda-4d5a-913d-b3373e9ab81e
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAppDomain::GetModuleFromMetaDataInterface Method
 Gets the module that corresponds to the given metadata interface.  

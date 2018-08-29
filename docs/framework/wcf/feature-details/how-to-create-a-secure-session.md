@@ -1,37 +1,25 @@
 ---
 title: "How to: Create a Secure Session"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "security [WCF], creating a session"
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
-caps.latest.revision: 10
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Secure Session
-With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, the system-provided bindings in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] automatically use secure sessions when message security is enabled.  
+With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, the system-provided bindings in Windows Communication Foundation (WCF) automatically use secure sessions when message security is enabled.  
   
- By default, secure sessions do not survive a Web server that is recycled. When a secure session is established, the client and the service cache the key that is associated with the secure session. As the messages are exchanged, only an identifier to the cached key is exchanged. If the Web server is recycled, the cache is also recycled, such that the Web server cannot retrieve the cached key for the identifier. If this happens, an exception is thrown back to the client. Secure sessions that use a stateful security context token (SCT) can survive a Web server being recycled. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using a stateful SCT in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+ By default, secure sessions do not survive a Web server that is recycled. When a secure session is established, the client and the service cache the key that is associated with the secure session. As the messages are exchanged, only an identifier to the cached key is exchanged. If the Web server is recycled, the cache is also recycled, such that the Web server cannot retrieve the cached key for the identifier. If this happens, an exception is thrown back to the client. Secure sessions that use a stateful security context token (SCT) can survive a Web server being recycled. For more information about using a stateful SCT in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 ### To specify that a service uses secure sessions by using one of the system-provided bindings  
   
 -   Configure a service to use a system-provided binding that supports message security.  
   
-     With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, when the system-provided bindings are configured to use message security, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] automatically uses secure sessions. The following table lists the system-provided bindings that support message security and whether message security is the default security mechanism.  
+     With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, when the system-provided bindings are configured to use message security, WCF automatically uses secure sessions. The following table lists the system-provided bindings that support message security and whether message security is the default security mechanism.  
   
     |System-provided binding|Configuration element|Message security on by default|  
     |------------------------------|---------------------------|------------------------------------|  
@@ -68,7 +56,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
 -   Create a custom binding that specifies that SOAP messages are protected by a secure session.  
   
-     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating a custom binding, see [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).  
+     For more information about creating a custom binding, see [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).  
   
      The following code example uses configuration to specify a custom binding that messages using a secure session.  
   

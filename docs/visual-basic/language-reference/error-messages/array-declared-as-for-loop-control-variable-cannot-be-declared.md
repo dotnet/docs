@@ -1,20 +1,12 @@
 ---
 title: "Array declared as for loop control variable cannot be declared with an initial size"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc32039"
   - "bc32039"
 helpviewer_keywords: 
   - "BC32039"
 ms.assetid: 1d8b6560-c9eb-4b71-a038-24c6f5a5ce46
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Array declared as for loop control variable cannot be declared with an initial size
 A `For Each` loop uses an array as its *element* iteration variable but initializes that array.  

@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName Interface
 Provides basic global static functions for signing assemblies with strong names. All `ICLRStrongName` methods return standard COM HRESULTs.  

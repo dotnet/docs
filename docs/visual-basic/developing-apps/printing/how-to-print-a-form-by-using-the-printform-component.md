@@ -1,17 +1,9 @@
 ---
 title: "How to: Print a Form by Using the PrintForm Component (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Form [Visual Basic], printing"
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Print a Form by Using the PrintForm Component (Visual Basic)
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to quickly print an image of a form exactly as it appears on screen without using a <xref:System.Drawing.Printing.PrintDocument> component. The following procedures show how to print a form to a printer, to a print preview window, and to an Encapsulated PostScript file.  

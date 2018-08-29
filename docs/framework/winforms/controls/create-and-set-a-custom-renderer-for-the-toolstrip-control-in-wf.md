@@ -1,14 +1,6 @@
 ---
 title: "How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolStrip control [Windows Forms], rendering"
 ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms
 <xref:System.Windows.Forms.ToolStrip> controls give easy support to themes and styles. You can achieve completely custom appearance and behavior (look and feel) by setting either the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=nameWithType> property or the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=nameWithType> property to a custom renderer.  

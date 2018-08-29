@@ -1,14 +1,6 @@
 ---
 title: "_CorValidateImage Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "_CorValidateImage"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
 topic_type: 
   - "apiref"
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # _CorValidateImage Function
 Validates managed module images, and notifies the operating system loader after they have been loaded.  

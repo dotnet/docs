@@ -1,24 +1,10 @@
 ---
 title: "SplitContainer Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "splitter windows"
   - "SplitContainer control [Windows Forms]"
 ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # SplitContainer Control (Windows Forms)
 The Windows Forms `SplitContainer` control can be thought of as a composite; it is two panels separated by a movable bar. When the mouse pointer is over the bar, the pointer changes shape to show that the bar is movable.  

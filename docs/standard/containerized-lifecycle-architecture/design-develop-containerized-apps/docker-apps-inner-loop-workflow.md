@@ -1,14 +1,9 @@
 ---
 title: Inner-loop development workflow for Docker apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Inner-loop development workflow for Docker apps
 
@@ -260,5 +255,5 @@ user\_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-ric
 
 
 >[!div class="step-by-step"]
-[Previous] (docker-apps-development-environment.md)
-[Next] (visual-studio-tools-for-docker.md)
+[Previous](docker-apps-development-environment.md)
+[Next](visual-studio-tools-for-docker.md)

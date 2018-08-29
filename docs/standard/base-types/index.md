@@ -1,25 +1,14 @@
 ---
 title: "Working with Base Types in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "types, base"
   - "base types"
   - "type system, base types"
 ms.assetid: 028d0ce8-ebc2-4a88-a16f-17508f6d0bd6
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Working with Base Types in .NET
 This section describes .NET base type operations, including formatting, conversion, and common operations.  

@@ -2,10 +2,6 @@
 title: FormatFromRawValue function (Unmanaged API Reference)
 description: The FormatFromRawValue function converts raw performance data to a specified format.
 ms.date: "11/21/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "FormatFromRawValue"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FormatFromRawValue function
 Converts one raw performance data value to the specified format, or two raw performance data values if the format conversion is time-based.   
@@ -45,7 +38,7 @@ int FormatFromRawValue (
 ## Parameters
 
 `dwCounterType`  
-[in] The counter type. For a list of counter types, see [WMI Performance Counter Types](https://msdn.microsoft.com/library/aa394569(v=vs.85).aspx). `dwCounterType` can be any counter type except for `PERF_LARGE_RAW_FRACTION` and `PERF_LARGE_RAW_BASE`. 
+[in] The counter type. For a list of counter types, see [WMI Performance Counter Types](/windows/desktop/WmiSdk/wmi-performance-counter-types). `dwCounterType` can be any counter type except for `PERF_LARGE_RAW_FRACTION` and `PERF_LARGE_RAW_BASE`. 
 
 `dwFormat`  
 [in] The format to which to convert the raw performance data. It can be one of the following values:

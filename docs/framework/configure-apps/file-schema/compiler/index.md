@@ -1,14 +1,6 @@
 ---
 title: "Compiler and Language Provider Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuration settings [.NET Framework], compilers"
   - "compiler configuration elements, schema"
@@ -19,12 +11,9 @@ helpviewer_keywords:
   - "language providers, settings schema"
   - "compiler configuration settings"
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Compiler and Language Provider Settings Schema
 Compiler and language provider settings specify compiler configuration elements for available language providers. Each compiler configuration element specifies the code provider type name, compiler parameters, supported language names, and supported file extensions.  

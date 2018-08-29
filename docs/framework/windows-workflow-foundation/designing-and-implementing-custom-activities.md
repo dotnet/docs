@@ -1,25 +1,13 @@
 ---
 title: "Designing and Implementing Custom Activities"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4e30e63d-6e33-4842-a7a4-ce807cef1fad
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Designing and Implementing Custom Activities
 Custom activities in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] are created by either assembling system-provided activities into composite activities or by creating new types that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, or <xref:System.Activities.NativeActivity>. This section describes how to create custom activities with either method.  
   
 > [!IMPORTANT]
->  Custom activities by default display within the workflow designer as a simple rectangle with the activity’s name. To provide a custom visual representation of your activity in the workflow designer you must also create a custom designer. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Using Custom Activity Designers and Templates](../../../docs/framework/windows-workflow-foundation/using-custom-activity-designers-and-templates.md).  
+>  Custom activities by default display within the workflow designer as a simple rectangle with the activity’s name. To provide a custom visual representation of your activity in the workflow designer you must also create a custom designer. For more information, see [Using Custom Activity Designers and Templates](../../../docs/framework/windows-workflow-foundation/using-custom-activity-designers-and-templates.md).  
   
 ## In This Section  
  [Activity Authoring Options](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md)  

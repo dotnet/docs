@@ -1,14 +1,6 @@
 ---
 title: "How to: Manually Manage Buffered Graphics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "flicker [Windows Forms], reducing by manually managing graphics"
   - "graphics [Windows Forms], managing buffered"
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Manually Manage Buffered Graphics
 For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes to implement your own double-buffering logic. The class responsible for allocating and managing individual graphics buffers is the <xref:System.Drawing.BufferedGraphicsContext> class. Every application has its own default <xref:System.Drawing.BufferedGraphicsContext> that manages all of the default double buffering for that application. You can retrieve a reference to this instance by calling the <xref:System.Drawing.BufferedGraphicsManager.Current%2A>.  

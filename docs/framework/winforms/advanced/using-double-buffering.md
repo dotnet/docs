@@ -1,26 +1,12 @@
 ---
 title: "Using Double Buffering"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [Windows Forms], double buffering"
   - "double buffering"
   - "flicker [Windows Forms], reducing in Windows Forms"
   - "buffering [Windows Forms], double buffering"
 ms.assetid: dc484e33-7101-4e4b-ada5-d3c96155fbcd
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using Double Buffering
 You can use double-buffered graphics to reduce flicker in your applications that contain complex painting operations. The .NET Framework contains built-in support for double-buffering or you can manage and render graphics manually.  

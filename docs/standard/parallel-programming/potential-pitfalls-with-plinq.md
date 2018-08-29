@@ -1,26 +1,15 @@
 ---
 title: "Potential Pitfalls with PLINQ"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "PLINQ queries, pitfalls"
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Potential Pitfalls with PLINQ
 In many cases, PLINQ can provide significant performance improvements over sequential LINQ to Objects queries. However, the work of parallelizing the query execution introduces complexity that can lead to problems that, in sequential code, are not as common or are not encountered at all. This topic lists some practices to avoid when you write PLINQ queries.  

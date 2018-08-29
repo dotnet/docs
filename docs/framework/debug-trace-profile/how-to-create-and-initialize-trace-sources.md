@@ -1,14 +1,6 @@
 ---
 title: "How to: Create and Initialize Trace Sources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "initializing trace sources"
   - "configuration files [.NET Framework], trace sources"
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create and Initialize Trace Sources
 The <xref:System.Diagnostics.TraceSource> class is used by applications to produce traces that can be associated with the application. <xref:System.Diagnostics.TraceSource> provides tracing methods that allow you to easily trace events, trace data, and issue informational traces. Trace output from <xref:System.Diagnostics.TraceSource> can be created and initialized with or without the use of configuration files. This topic provides instructions for both options. However, we recommend that you use configuration files to facilitate the reconfiguration of the traces produced by trace sources at run time.  

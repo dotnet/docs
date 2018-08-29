@@ -1,21 +1,9 @@
 ---
 title: "&lt;security&gt; of &lt;wsDualHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-caps.latest.revision: 15
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;wsDualHttpBinding&gt;
 Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  

@@ -1,19 +1,7 @@
 ---
 title: "How to: Find an Element with a Specific Attribute (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find an Element with a Specific Attribute (C#)
 This topic shows how to find an element that has an attribute that has a specific value.  

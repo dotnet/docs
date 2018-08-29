@@ -1,15 +1,7 @@
 ---
 title: "Loops: for...to Expression (F#)"
 description: See how the F# for...to expression is used to iterate in a loop over a range of values of a loop variable.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: e14c38d9-b1ef-4b7f-be9a-fb6ef6708e02 
 ---
 
 # Loops: for...to Expression

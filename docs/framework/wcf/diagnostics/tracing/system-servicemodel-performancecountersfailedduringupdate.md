@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.PerformanceCountersFailedDuringUpdate"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a89ab9b8-4429-4df0-ab62-7db4c58684cc
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.PerformanceCountersFailedDuringUpdate
 System.ServiceModel.PerformanceCountersFailedDuringUpdate  

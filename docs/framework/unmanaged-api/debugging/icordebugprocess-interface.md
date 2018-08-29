@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess Interface1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: be86f4b5-418a-4c5c-a67c-97148c65ed8c
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess Interface1
 Represents a process that is executing managed code. This interface is a subclass of ICorDebugController.  

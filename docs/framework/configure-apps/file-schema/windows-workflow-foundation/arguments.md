@@ -1,19 +1,8 @@
 ---
 title: "&lt;arguments&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0f327196-f468-4be3-b6c4-68ba981a1bd6
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;arguments&gt;
 Represents a collection of arguments associated with an activity state query.  

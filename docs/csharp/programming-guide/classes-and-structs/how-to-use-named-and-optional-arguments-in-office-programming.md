@@ -1,18 +1,11 @@
 ---
 title: "How to: Use Named and Optional Arguments in Office Programming (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "named and optional arguments [C#], Office programming"
   - "optional arguments [C#], Office programming"
   - "named arguments [C#], Office programming"
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
-caps.latest.revision: 34
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use Named and Optional Arguments in Office Programming (C# Programming Guide)
 Named arguments and optional arguments, introduced in [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)], enhance convenience, flexibility, and readability in C# programming. In addition, these features greatly facilitate access to COM interfaces such as the Microsoft Office automation APIs.  

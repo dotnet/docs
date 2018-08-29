@@ -1,19 +1,7 @@
 ---
 title: "Introduction to Pure Functional Transformations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Introduction to Pure Functional Transformations (Visual Basic)
 This section introduces functional transformations, including the underlying concepts and supporting language constructs. It contrasts the object-oriented and functional transformation approaches to programming, including advice on how to transition to the latter. Although functional transformations can be used in many programming scenarios, XML transformation is used here as a concrete example.  

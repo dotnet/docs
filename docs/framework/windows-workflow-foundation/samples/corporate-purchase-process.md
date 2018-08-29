@@ -1,19 +1,7 @@
 ---
 title: "Corporate Purchase Process"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Corporate Purchase Process
 This sample shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.  
@@ -49,12 +37,12 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
 ## Description of the Process  
- This sample shows an implementation of a [!INCLUDE[wf](../../../../includes/wf-md.md)] program to gather proposals from vendors for a generic company.  
+ This sample shows an implementation of a Windows Workflow Foundation (WF) program to gather proposals from vendors for a generic company.  
   
 1.  An employee of Company X creates a Request for Proposal (RFP).  
   

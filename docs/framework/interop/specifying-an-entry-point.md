@@ -1,25 +1,13 @@
 ---
 title: "Specifying an Entry Point"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "EntryPoint field"
   - "platform invoke, attribute fields"
   - "attribute fields in platform invoke, EntryPoint"
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying an Entry Point
 An entry point identifies the location of a function in a DLL. Within a managed project, the original name or ordinal entry point of a target function identifies that function across the interoperation boundary. Further, you can map the entry point to a different name, effectively renaming the function.  

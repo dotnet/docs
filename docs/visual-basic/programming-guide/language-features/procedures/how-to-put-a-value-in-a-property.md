@@ -1,13 +1,6 @@
 ---
 title: "How to: Put a Value in a Property (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
@@ -15,20 +8,17 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Put a Value in a Property (Visual Basic)
 You store a value in a property by putting the property name on the left side of an assignment statement.  
   
- The property's `Set` procedure stores a value, but you do not explicitly call it by name. You use the property just as you would use a variable. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes the calls to the property's procedures.  
+ The property's `Set` procedure stores a value, but you do not explicitly call it by name. You use the property just as you would use a variable. Visual Basic makes the calls to the property's procedures.  
   
 ### To store a value in a property  
   
 1.  Use the property name on the left side of an assignment statement.  
   
-     The following example sets the value of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] `TimeOfDay` property to noon, implicitly calling its `Set` procedure.  
+     The following example sets the value of the Visual Basic `TimeOfDay` property to noon, implicitly calling its `Set` procedure.  
   
      [!code-vb[VbVbcnProcedures#11](./codesnippet/VisualBasic/how-to-put-a-value-in-a-property_1.vb)]  
   

@@ -1,14 +1,6 @@
 ---
 title: "How to: Discover Whether a Print Job Can Be Printed At This Time of Day"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,19 +10,13 @@ helpviewer_keywords:
   - "printers [WPF], availability"
   - "print jobs [WPF], timing"
 ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Discover Whether a Print Job Can Be Printed At This Time of Day
 Print queues are not always available for 24 hours a day. They have start and end time properties that can be set to make them unavailable at certain times of day. This feature can be used, for example, to reserve a printer for the exclusive use of a certain department after 5 P.M.. That department would have a different queue servicing the printer than other departments use. The queue for the other departments would be set to be unavailable after 5 P.M., while queue for the favored department could be set to be available at all times.  
   
  Moreover, print jobs themselves can be set to be printable only within a specified span of time.  
   
- The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
+ The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
   
 ## Example  
  The example below is a sample that can diagnose problems with a print job.  
@@ -76,7 +62,7 @@ Print queues are not always available for 24 hours a day. They have start and en
  [!code-csharp[DiagnoseProblematicPrintJob#PrintQueueStartUntil](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#printqueuestartuntil)]
  [!code-vb[DiagnoseProblematicPrintJob#PrintQueueStartUntil](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#printqueuestartuntil)]  
   
- The **TimeConverter.ConvertToLocalHumanReadableTime** method (presented in the code example below) does not use any methods introduced with [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], so the discussion is brief. The method has a double conversion task: it must take an integer expressing minutes-after-midnight and convert it to a human-readable time and it must convert this to the local time. It accomplishes this by first creating a <xref:System.DateTime> object that is set to midnight UTC and then it uses the <xref:System.DateTime.AddMinutes%2A> method to add the minutes that were passed to the method. This returns a new <xref:System.DateTime> expressing the original time that was passed to the method. The <xref:System.DateTime.ToLocalTime%2A> method then converts this to local time.  
+ The **TimeConverter.ConvertToLocalHumanReadableTime** method (presented in the code example below) does not use any methods introduced with Microsoft .NET Framework, so the discussion is brief. The method has a double conversion task: it must take an integer expressing minutes-after-midnight and convert it to a human-readable time and it must convert this to the local time. It accomplishes this by first creating a <xref:System.DateTime> object that is set to midnight UTC and then it uses the <xref:System.DateTime.AddMinutes%2A> method to add the minutes that were passed to the method. This returns a new <xref:System.DateTime> expressing the original time that was passed to the method. The <xref:System.DateTime.ToLocalTime%2A> method then converts this to local time.  
   
  [!code-cpp[DiagnoseProblematicPrintJob#TimeConverter](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#timeconverter)]
  [!code-csharp[DiagnoseProblematicPrintJob#TimeConverter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#timeconverter)]

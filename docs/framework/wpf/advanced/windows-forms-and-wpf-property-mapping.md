@@ -1,14 +1,6 @@
 ---
 title: "Windows Forms and WPF Property Mapping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "property mapping [WPF interoperability]"
   - "Windows Forms [WPF], interoperability with"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "WindowsFormsHost element property mapping [WPF]"
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms and WPF Property Mapping
 The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures and provides the following capabilities:  

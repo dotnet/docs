@@ -1,26 +1,12 @@
 ---
 title: "How to: Define and Reference a Resource"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "resources [WPF], defining"
   - "defining resources [WPF]"
   - "resources [WPF], referencing"
   - "referencing resources [WPF]"
 ms.assetid: b86b876b-0a10-489b-9a5d-581ea9b32406
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Define and Reference a Resource
 This example shows how to define a resource and reference it by using an attribute in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  

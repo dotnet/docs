@@ -1,39 +1,27 @@
 ---
 title: "Securing Messages Using Message Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-caps.latest.revision: 16
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Messages Using Message Security
-This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
+This section discusses WCF message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
   
 > [!NOTE]
 >  Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
   
- The following illustration provides a conceptual model of queued communication using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. This illustration and terminology are used to explain  
+ The following illustration provides a conceptual model of queued communication using WCF. This illustration and terminology are used to explain  
   
  transport security concepts.  
   
  ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
- When sending queued messages using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message is attached as a body of the Message Queuing (MSMQ) message. While transport security secures the entire MSMQ message, message (or SOAP) security only secures the body of the MSMQ message.  
+ When sending queued messages using WCF, the WCF message is attached as a body of the Message Queuing (MSMQ) message. While transport security secures the entire MSMQ message, message (or SOAP) security only secures the body of the MSMQ message.  
   
- The key concept of message security is that the client secures the message for the receiving application (service), unlike transport security where the client secures the message for the Target Queue. As such, MSMQ plays no part when securing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message using message security.  
+ The key concept of message security is that the client secures the message for the receiving application (service), unlike transport security where the client secures the message for the Target Queue. As such, MSMQ plays no part when securing the WCF message using message security.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security adds security headers to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message that integrate with existing security infrastructures, such as a certificate or the Kerberos protocol.  
+ WCF message security adds security headers to the WCF message that integrate with existing security infrastructures, such as a certificate or the Kerberos protocol.  
   
 ## Message Credential Type  
  Using message security, the service and client can present credentials to authenticate each another. You can select message security by setting the <xref:System.ServiceModel.NetMsmqBinding.Security%2A> mode to `Message` or `Both` (that is, use both transport security and message security).  
@@ -49,7 +37,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
   
  Given the disconnected nature of queues, the client and the service may not be online at the same time. As such, the client and service have to exchange certificates out-of-band. In particular, the client, by virtue of holding the service's certificate (which can be chained to a certification authority) in its trusted store, must trust that it is communicating with the correct service. For authenticating the client, the service uses the X.509 certificate attached with the message to matches it with the certificate in its store to verify the authenticity of the client. Again, the certificate must be chained to a certification authority.  
   
- On a computer running Windows, certificates are held in several kinds of stores. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the different stores, see [Certificate stores](http://go.microsoft.com/fwlink/?LinkId=87787).  
+ On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](http://go.microsoft.com/fwlink/?LinkId=87787).  
   
 ### Windows  
  Windows message credential type uses the Kerberos protocol.  
@@ -60,7 +48,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
   
  Note that when using this credential type, the service must be running under the SERVICE account.  
   
- The Kerberos protocol is used by default when choosing message credential. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
+ The Kerberos protocol is used by default when choosing message credential. For more information, see [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
   
 ### Username Password  
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  

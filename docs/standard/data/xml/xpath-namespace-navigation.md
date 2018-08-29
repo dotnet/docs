@@ -1,21 +1,10 @@
 ---
 title: "XPath Namespace Navigation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XPath Namespace Navigation
 To use XPath queries with XML documents, you have to correctly address XML namespaces and the elements contained by namespaces. Namespaces prevent ambiguities that can occur when names are used in more than one context; for example, the name `ID` may refer to more than one identifier associated with different elements of an XML document. Namespace syntax specifies URIs, names, and prefixes that distinguish the elements of an XML document.  

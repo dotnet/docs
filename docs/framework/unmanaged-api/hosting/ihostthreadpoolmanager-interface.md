@@ -1,14 +1,6 @@
 ---
 title: "IHostThreadPoolManager Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostThreadPoolManager"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostThreadPoolManager Interface
 Provides methods that enable the common language runtime (CLR) to configure the thread pool and to queue work items to the thread pool.  

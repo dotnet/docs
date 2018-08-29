@@ -1,14 +1,6 @@
 ---
 title: "&lt;ThrowUnobservedTaskExceptions&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "ThrowUnobservedTaskExceptions element"
   - "<ThrowUnobservedTaskExceptions> element"
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;ThrowUnobservedTaskExceptions&gt; Element
 Specifies whether unhandled task exceptions should terminate a running process.  

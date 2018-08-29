@@ -1,19 +1,7 @@
 ---
 title: "Bookmarks1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9b51a346-09ae-455c-a70a-e2264ddeb9e2
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Bookmarks
 Bookmarks are the mechanism that enables an activity to passively wait for input without holding onto a workflow thread. When an activity signals that it is waiting for stimulus, it can create a bookmark. This indicates to the runtime that the activity’s execution should not be considered complete even when the currently executing method (which created the <xref:System.Activities.Bookmark>) returns.  

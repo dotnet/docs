@@ -1,19 +1,12 @@
 ---
 title: "Abstract and Sealed Classes and Class Members (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "abstract classes [C#]"
   - "sealed classes [C#]"
   - "C# language, abstract classes"
   - "C# language, sealed"
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Abstract and Sealed Classes and Class Members (C# Programming Guide)
 The [abstract](../../../csharp/language-reference/keywords/abstract.md) keyword enables you to create classes and [class](../../../csharp/language-reference/keywords/class.md) members that are incomplete and must be implemented in a derived class.  

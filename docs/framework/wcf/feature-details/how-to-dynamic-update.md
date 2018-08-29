@@ -1,21 +1,7 @@
 ---
 title: "How To: Dynamic Update"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
-caps.latest.revision: 4
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Dynamic Update
 This topic outlines the basic steps required to create and dynamically update the routing configuration. In this example, the initial routing configuration is obtained from the configuration file and routes all messages to the regularCalc calculator service; however, it is subsequently updated programmatically in order to change the destination endpoint the roundingCalc service.  

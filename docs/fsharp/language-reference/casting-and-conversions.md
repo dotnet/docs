@@ -1,17 +1,8 @@
 ---
 title: Casting and Conversions (F#)
 description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: db30db67-da21-4206-bf0c-9211bd3cb22f 
 ---
-
 # Casting and Conversions (F#)
 
 This topic describes support for type conversions in F#.

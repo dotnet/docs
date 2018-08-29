@@ -1,14 +1,6 @@
 ---
 title: "How to: Test Point4D structures for equality and inequality"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inequality [WPF], testing Point4D structures for"
   - "equality [WPF], testing Point4D structures for"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "testing [WPF], Point4D structures for inequality"
   - "Point4D structures [WPF], testing for equality"
 ms.assetid: e004a67e-db7f-4af8-a31f-e6b2a44ccf34
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Test Point4D structures for equality and inequality
 This example shows how to test <xref:System.Windows.Media.Media3D.Point4D> structures for equality and inequality.  

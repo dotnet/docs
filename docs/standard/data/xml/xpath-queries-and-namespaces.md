@@ -1,24 +1,13 @@
 ---
 title: "XPath Queries and Namespaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XPath Queries and Namespaces
 XPath queries are aware of namespaces in an XML document and can use namespace prefixes to qualify element and attribute names. Qualifying element and attribute names with a namespace prefix limits the nodes returned by an XPath query to only those nodes that belong to a specific namespace.  

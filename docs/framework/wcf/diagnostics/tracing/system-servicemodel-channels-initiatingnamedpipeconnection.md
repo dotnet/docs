@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.InitiatingNamedPipeConnection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 23bd5f35-4a9c-4ccb-a153-f3f6f6594199
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.InitiatingNamedPipeConnection
 System.ServiceModel.Channels.InitiatingNamedPipeConnection  

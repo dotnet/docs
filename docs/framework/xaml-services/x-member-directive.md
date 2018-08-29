@@ -1,21 +1,7 @@
 ---
 title: "x:Member Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4d8394ef-644c-4331-b6c5-be855d392980
-caps.latest.revision: 5
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Member Directive
 Declares a XAML member in markup.  

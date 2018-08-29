@@ -1,25 +1,11 @@
 ---
 title: "Draw Text Using Glyphs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "text [WPF], drawing with Glyphs objects"
   - "Glyphs objects [WPF], drawing text"
   - "typography [WPF], Glyphs objects"
 ms.assetid: 587ab17e-a419-4ad5-b6da-8933a8e83d97
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Draw Text Using Glyphs
 This topic explains how to use the low-level <xref:System.Windows.Documents.Glyphs> object to display text in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  

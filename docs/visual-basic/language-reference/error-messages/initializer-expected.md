@@ -1,21 +1,12 @@
 ---
 title: "Initializer expected"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30996"
   - "bc30996"
 helpviewer_keywords: 
   - "BC30996"
 ms.assetid: 6e183fe0-8888-43ed-a062-01571079455f
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Initializer expected
 You have tried to declare an instance of a class by using an object initializer in which the initialization list is empty, as shown in the following example.  

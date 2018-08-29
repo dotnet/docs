@@ -1,19 +1,7 @@
 ---
 title: "How to: Transform the Shape of an XML Tree (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 93c5d426-dea2-4709-a991-60204de42e8f
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Transform the Shape of an XML Tree (C#)
 The *shape* of an XML document refers to its element names, attribute names, and the characteristics of its hierarchy.  

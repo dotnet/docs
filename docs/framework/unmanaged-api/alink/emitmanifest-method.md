@@ -1,14 +1,6 @@
 ---
 title: "EmitManifest Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EmitManifest"
   - "IALink.EmitManifest"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fdebc1f3-b62e-4d9e-b775-8ccaa8ecb250
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EmitManifest Method
 Emits the final manifest. Call this method after importing all other files and setting all options. Do not call this method for unbound modules.  

@@ -1,14 +1,6 @@
 ---
 title: "ListView Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "lists"
   - "checked list items [Windows Forms], Windows Forms controls"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms]"
   - "list controls [Windows Forms], List view"
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ListView Control (Windows Forms)
 The Windows Forms `ListView` control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer.  

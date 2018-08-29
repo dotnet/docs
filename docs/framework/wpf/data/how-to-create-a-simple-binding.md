@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Simple Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "simple binding [WPF], creating"
   - "data binding [WPF], creating simple bindings"
   - "binding data [WPF], creating"
 ms.assetid: 69b80f72-6259-44cb-8294-5bdcebca1e08
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Simple Binding
 This example shows you how to create a simple <xref:System.Windows.Data.Binding>.  

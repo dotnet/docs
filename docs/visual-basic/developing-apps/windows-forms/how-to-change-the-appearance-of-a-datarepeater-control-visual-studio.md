@@ -1,11 +1,6 @@
 ---
 title: "How to: Change the Appearance of a DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "DataRepeater, customizing"
   - "DataRepeater, changing run time appearance"
 ms.assetid: 2af6dfce-760b-489e-b863-8da967f315c3
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Change the Appearance of a DataRepeater Control (Visual Studio)
 You can change the appearance of a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control at design time by setting properties or at run time by handling the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem> event.  

@@ -1,21 +1,12 @@
 ---
 title: "&#39;&lt;elementname&gt;&#39; is obsolete (Visual Basic Warning)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc40008"
   - "bc40008"
 helpviewer_keywords: 
   - "BC40008"
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &#39;&lt;elementname&gt;&#39; is obsolete (Visual Basic Warning)
 A statement attempts to access a programming element which has been marked with the <xref:System.ObsoleteAttribute> attribute and the directive to treat it as a warning.  

@@ -1,16 +1,9 @@
 ---
 title: Development Process for Docker Based Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Development Process for Docker Based Applications
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Development Process for Docker-Based Applications
 
@@ -47,5 +40,5 @@ As mentioned in earlier sections of this guide, you can use .NET Framework, .NET
 
 
 >[!div class="step-by-step"]
-[Previous] (../architect-microservice-container-applications/using-azure-service-fabric.md)
-[Next] (docker-app-development-workflow.md)
+[Previous](../architect-microservice-container-applications/using-azure-service-fabric.md)
+[Next](docker-app-development-workflow.md)

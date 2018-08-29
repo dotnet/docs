@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Vertical Text"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "strings [Windows Forms], drawing vertical"
   - "vertical text [Windows Forms], drawing"
 ms.assetid: 50c69046-4188-47d9-b949-cc2610ffd337
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Vertical Text
 You can use a <xref:System.Drawing.StringFormat> object to specify that text be drawn vertically rather than horizontally.  

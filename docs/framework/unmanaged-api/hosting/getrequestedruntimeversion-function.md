@@ -1,14 +1,6 @@
 ---
 title: "GetRequestedRuntimeVersion Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetRequestedRuntimeVersion"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetRequestedRuntimeVersion Function
 Gets the version number of the common language runtime (CLR) requested by the specified application. If that version is not installed, gets the most recent version that is installed before the requested version.  

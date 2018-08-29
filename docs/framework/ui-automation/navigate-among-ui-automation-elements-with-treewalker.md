@@ -1,14 +1,6 @@
 ---
 title: "Navigate Among UI Automation Elements with TreeWalker"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "elements, navigating among"
   - "UI Automation, navigating among elements"
 ms.assetid: afcd21dc-2ffa-48c9-9332-51269f44b7e9
-caps.latest.revision: 8
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Navigate Among UI Automation Elements with TreeWalker
 > [!NOTE]

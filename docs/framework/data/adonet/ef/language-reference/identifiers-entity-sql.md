@@ -1,21 +1,7 @@
 ---
 title: "Identifiers (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d58a5edd-7b5c-48e1-b5d7-a326ff426aa4
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Identifiers (Entity SQL)
 Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to represent query expression aliases, variable references, properties of objects, functions, and so on. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides two kinds of identifiers: simple identifiers and quoted identifiers.  
@@ -24,7 +10,7 @@ Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 
  A simple identifier in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is a sequence of alphanumeric and underscore characters. The first character of the identifier must be an alphabetical character (a-z or A-Z).  
   
 ## Quoted Identifiers  
- A quoted identifier is any sequence of characters enclosed in square brackets ([]). Quoted identifiers let you specify identifiers with characters that are not valid in identifiers. All characters between the square brackets become part of the identifier, including all whitespace.  
+ A quoted identifier is any sequence of characters enclosed in square brackets ([]). Quoted identifiers let you specify identifiers with characters that are not valid in identifiers. All characters between the square brackets become part of the identifier, including all white space.  
   
  A quoted identifier cannot include the following characters:  
   

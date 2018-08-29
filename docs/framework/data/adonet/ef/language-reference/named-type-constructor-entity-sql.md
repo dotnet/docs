@@ -1,21 +1,7 @@
 ---
 title: "Named Type Constructor (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 549dea04-d93d-4c87-a292-f81b1598dbfd
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Named Type Constructor (Entity SQL)
 Used to create instances of conceptual model nominal types such as Entity or Complex types.  

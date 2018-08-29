@@ -1,14 +1,6 @@
 ---
 title: "Profiling Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "managed code, profiling API support"
   - "unmanaged code, combining with managed code in profiling"
@@ -35,12 +27,8 @@ helpviewer_keywords:
   - "security, profiling API considerations"
   - "stack depth [.NET Framework profiling]"
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
-caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Profiling Overview
 <a name="top"></a> A profiler is a tool that monitors the execution of another application. A common language runtime (CLR) profiler is a dynamic link library (DLL) that consists of functions that receive messages from, and send messages to, the CLR by using the profiling API. The profiler DLL is loaded by the CLR at run time.  
@@ -204,7 +192,7 @@ Profiling architecture
   
 <a name="com"></a>   
 ## Using COM  
- Although the profiling interfaces are defined as COM interfaces, the common language runtime (CLR) does not actually initialize COM to use these interfaces. The reason is to avoid having to set the threading model by using the [CoInitialize](http://msdn.microsoft.com/library/windows/desktop/ms678543\(v=vs.85\).aspx) function before the managed application has had a chance to specify its desired threading model. Similarly, the profiler itself should not call `CoInitialize`, because it may pick a threading model that is incompatible with the application being profiled and may cause the application to fail.  
+ Although the profiling interfaces are defined as COM interfaces, the common language runtime (CLR) does not actually initialize COM to use these interfaces. The reason is to avoid having to set the threading model by using the [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize) function before the managed application has had a chance to specify its desired threading model. Similarly, the profiler itself should not call `CoInitialize`, because it may pick a threading model that is incompatible with the application being profiled and may cause the application to fail.  
   
  [Back to top](#top)  
   

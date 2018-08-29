@@ -1,21 +1,7 @@
 ---
 title: "&lt;transport&gt; of &lt;netPeerTcpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;netPeerTcpBinding&gt;
 Specifies settings for transport level security when using the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).  

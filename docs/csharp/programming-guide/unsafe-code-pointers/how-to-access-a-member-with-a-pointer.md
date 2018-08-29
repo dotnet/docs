@@ -1,16 +1,9 @@
 ---
 title: "How to: Access a Member with a Pointer (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "pointers [C#], member access"
 ms.assetid: 1e998498-8c85-4a78-8ce2-4d8c20f08342
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Access a Member with a Pointer (C# Programming Guide)
 To access a member of a struct that is declared in an unsafe context, you can use the member access operator as shown in the following example in which `p` is a pointer to a [struct](../../../csharp/language-reference/keywords/struct.md) that contains a member `x`.  

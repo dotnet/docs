@@ -1,21 +1,7 @@
 ---
 title: "Security (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6116b2b8-75f4-4d8b-aea6-c13e55cda50b
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Security (LINQ to DataSet)
 This topic discusses security issues in [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)].  

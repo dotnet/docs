@@ -1,16 +1,9 @@
 ---
 title: "Locale ID &#39;&lt;name&gt;&#39; is not supported on this system"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_LCIDNotSupported1"
 ms.assetid: 62701434-0ac2-45b8-8b40-a9adc09ae6df
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Locale ID &#39;&lt;name&gt;&#39; is not supported on this system
 You are attempting to use `VbStrConv`, but your system does not support the specified locale.  

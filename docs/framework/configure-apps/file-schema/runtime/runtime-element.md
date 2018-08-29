@@ -1,14 +1,6 @@
 ---
 title: "&lt;runtime&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#runtime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "runtime element"
   - "container tags, <runtime> element"
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-caps.latest.revision: 70
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;runtime&gt; Element
 Provides information used by the common language runtime to configure applications.  

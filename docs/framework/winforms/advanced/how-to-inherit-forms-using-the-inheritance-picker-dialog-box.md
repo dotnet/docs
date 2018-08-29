@@ -1,25 +1,11 @@
 ---
 title: "How to: Inherit Forms Using the Inheritance Picker Dialog Box"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inheritance [Windows Forms], forms"
   - "Inheritance Picker dialog box"
   - "inherited forms [Windows Forms], creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Inherit Forms Using the Inheritance Picker Dialog Box
 The easiest way to inherit a form or other object is to use the **Inheritance Picker** dialog box. With it, you can take advantage of code or user interfaces (UI) you have already created in other solutions.  
@@ -27,7 +13,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
 > [!NOTE]
 >  In order to inherit from a form with the **Inheritance Picker** dialog box, the project containing that form must have been built into an executable file or DLL. To build the project, choose **Build Solution** from the **Build** menu.  
 >   
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To create a Windows Form inherited from an existing form by using the Inheritance Picker  
   

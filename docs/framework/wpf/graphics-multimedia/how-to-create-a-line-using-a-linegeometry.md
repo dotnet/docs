@@ -1,26 +1,12 @@
 ---
 title: "How to: Create a Line Using a LineGeometry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "graphics [WPF], lines"
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Line Using a LineGeometry
 This example shows how to use the <xref:System.Windows.Media.LineGeometry> class to describe a line. A <xref:System.Windows.Media.LineGeometry> is defined by its start and end points.  

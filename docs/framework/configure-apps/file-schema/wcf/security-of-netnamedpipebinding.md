@@ -1,21 +1,9 @@
 ---
 title: "&lt;security&gt; of &lt;netNamedPipeBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb3cb022-637e-49fd-92e8-6766038affa7
-caps.latest.revision: 11
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netNamedPipeBinding&gt;
 Defines the security settings for a binding.  

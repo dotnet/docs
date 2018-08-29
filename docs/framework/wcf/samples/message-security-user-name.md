@@ -1,23 +1,11 @@
 ---
 title: "Message Security User Name"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: c63cfc87-6b20-4949-93b3-bcd4b732b0a2
-caps.latest.revision: 57
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Security User Name
 This sample demonstrates how to implement an application that uses WS-Security with username authentication for the client and requires server authentication using the server's X.509v3 certificate. All application messages between the client and server are signed and encrypted. By default, the username and password supplied by the client are used to logon to a valid Windows account. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md). This sample consists of a client console program (Client.exe) and a service library (Service.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.  
@@ -124,8 +112,8 @@ This sample demonstrates how to implement an application that uses WS-Security w
 ```  
   
  The client implementation sets the user name and password to use.  
-  
-```  
+
+```csharp
 // Create a client.  
 CalculatorClient client = new CalculatorClient();  
   
@@ -138,8 +126,8 @@ Console.WriteLine(client.GetCallerIdentity());
 ...  
 //Closing the client gracefully closes the connection and cleans up resources.  
 client.Close();  
-```  
-  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
@@ -159,7 +147,7 @@ Press <ENTER> to terminate client.
   
      The following lines from the Setup.bat batch file create the server certificate to be used.  
   
-    ```  
+    ```bat
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  
@@ -183,7 +171,7 @@ Press <ENTER> to terminate client.
   
      The following lines in the Setup.bat batch file make the server certificate stored in the LocalMachine store accessible to the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account.  
   
-    ```  
+    ```bat
     echo ************  
     echo setting privileges on server certificates  
     echo ************  
@@ -245,6 +233,6 @@ Press <ENTER> to terminate client.
 -   Run Cleanup.bat in the samples folder after you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also

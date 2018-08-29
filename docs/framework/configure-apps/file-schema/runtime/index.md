@@ -1,14 +1,6 @@
 ---
 title: "Runtime Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "schema runtime settings"
   - "configuration schema [.NET Framework], runtime settings"
@@ -16,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Runtime Settings Schema
 Runtime settings are used by the common language runtime to configure applications that target the .NET Framework.  

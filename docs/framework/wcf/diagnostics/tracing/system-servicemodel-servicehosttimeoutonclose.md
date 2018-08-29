@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.ServiceHostTimeoutOnClose"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 89f360d2-5bed-4677-ab55-26d9bd12695a
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.ServiceHostTimeoutOnClose
 System.ServiceModel.ServiceHostTimeoutOnClose  

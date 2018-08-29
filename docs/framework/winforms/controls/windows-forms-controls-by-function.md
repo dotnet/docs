@@ -1,25 +1,11 @@
 ---
 title: "Windows Forms Controls by Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], by function"
   - "Windows Forms, controls by function"
   - "Windows Forms controls, list of"
 ms.assetid: 5e65a6c3-5d6f-480d-beb8-b28f865f07e3
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms Controls by Function
 Windows Forms offers controls and components that perform a number of functions. The following table lists the Windows Forms controls and components according to general function. In addition, where multiple controls exist that serve the same function, the recommended control is listed with a note regarding the control it superseded. In a separate subsequent table, the superseded controls are listed with their recommended replacements.  

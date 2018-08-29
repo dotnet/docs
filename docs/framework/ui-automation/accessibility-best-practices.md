@@ -1,24 +1,13 @@
 ---
 title: "Accessibility Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Accessibility Best Practices
 > [!NOTE]

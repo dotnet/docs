@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.MessageQueueRegisterSucceeded"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a75ea3ab-b0b8-4458-be9a-5e068a74af0f
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.MessageQueueRegisterSucceeded
 System.ServiceModel.Activation.MessageQueueRegisterSucceeded  

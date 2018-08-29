@@ -1,13 +1,7 @@
 ---
 title: "Finding the time zones defined on a local system"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time zones [.NET Framework], local"
   - "time zones [.NET Framework], finding local system time zones"
@@ -17,15 +11,9 @@ helpviewer_keywords:
   - "UTC times, finding local system time zones"
   - "time zones [.NET Framework], UTC"
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Finding the time zones defined on a local system
 
 The <xref:System.TimeZoneInfo> class does not expose a public constructor. As a result, the `new` keyword cannot be used to create a new <xref:System.TimeZoneInfo> object. Instead, <xref:System.TimeZoneInfo> objects are instantiated either by retrieving information on predefined time zones from the registry or by creating a custom time zone. This topic discusses instantiating a time zone from data stored in the registry. In addition, `static` (`shared` in Visual Basic) properties of the <xref:System.TimeZoneInfo> class provide access to Coordinated Universal Time (UTC) and the local time zone.

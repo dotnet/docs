@@ -1,19 +1,10 @@
 ---
 title: Organizing and testing projects with the .NET Core command line
 description: This tutorial explains how to organize and test .NET Core projects from the command line.
-keywords: .NET, .NET Core, unit testing, .NET Core CLI, xUnit
 author: cartermp
 ms.author: mairaw
 ms.date: 05/16/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
-ms.workload: 
-  - dotnetcore
 ---
-
 # Organizing and testing projects with the .NET Core command line
 
 This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
@@ -165,7 +156,7 @@ public class PetTests
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
 > [!NOTE]
-> Although you expect that the `expected` and `actual` values are equal, the initial assertions with the `Assert.NotEqual` checks specify that they are *not equal*. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
+> Although you expect that the `expected` and `actual` values are equal, an initial assertion with the `Assert.NotEqual` check specifies that these values are *not equal*. Always initially create a test to fail in order to check the logic of the test. After you confirm that the test fails, adjust the assertion to allow the test to pass.
 
 The following shows the complete project structure:
 

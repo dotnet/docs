@@ -47,7 +47,6 @@
 ## [Object and Collection Initializers](object-and-collection-initializers.md)
 ### [How to: Initialize Objects by Using an Object Initializer](how-to-initialize-objects-by-using-an-object-initializer.md)
 ### [How to: Initialize a Dictionary with a Collection Initializer](how-to-initialize-a-dictionary-with-a-collection-initializer.md)
-## [How to: Access a Collection Class with foreach](how-to-access-a-collection-class-with-foreach.md)
 ## [Nested Types](nested-types.md)
 ## [Partial Classes and Methods](partial-classes-and-methods.md)
 ## [Anonymous Types](anonymous-types.md)

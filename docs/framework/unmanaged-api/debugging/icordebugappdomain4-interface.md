@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugAppDomain4 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: c536b9dc-148e-4924-bde1-1daa98d49d90
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAppDomain4 Interface
 Logically extends the ICorDebugAppDomain interface to get a managed object from a COM callable wrapper.  

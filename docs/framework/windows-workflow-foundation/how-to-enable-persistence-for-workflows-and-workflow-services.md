@@ -1,19 +1,7 @@
 ---
 title: "How to: Enable Persistence for Workflows and Workflow Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2b1c8bf3-9866-45a4-b06d-ee562393e503
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Enable Persistence for Workflows and Workflow Services
 This topic describes how to enable persistence for workflows and workflow services.  

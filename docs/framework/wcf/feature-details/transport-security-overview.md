@@ -1,30 +1,18 @@
 ---
 title: "Transport Security Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
-caps.latest.revision: 23
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Security Overview
-Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] system-provided bindings.  
+Transport security mechanisms in Windows Communication Foundation (WCF) depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the WCF system-provided bindings.  
   
 > [!NOTE]
->  When SSL security is used with .NET Framework 3.5 and later an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
+>  When SSL security is used with .NET Framework 3.5 and later an WCF client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
   
 > [!WARNING]
 >  When transport security is used, the <!--zz <xref:System.Treading.Thread.CurrentPrincipal%2A> --> `CurrentPrincipal` property may be overwritten. To prevent this from happening set the <!--zz <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermission%2A> --> `PrincipalPermission` to None. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> is a service behavior that can be set on the service description.  
@@ -55,22 +43,22 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
  The following sections discuss other client credential types.  
   
 #### Basic  
- This corresponds to the Basic authentication method in IIS. When using this mode, the IIS server must be configured with Windows user accounts and appropriate NTFS file system permissions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Basic Authentication and Configuring the Realm Name](http://go.microsoft.com/fwlink/?LinkId=88592). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Basic Authentication](http://go.microsoft.com/fwlink/?LinkId=88593).  
+ This corresponds to the Basic authentication method in IIS. When using this mode, the IIS server must be configured with Windows user accounts and appropriate NTFS file system permissions. For more information about [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Basic Authentication and Configuring the Realm Name](http://go.microsoft.com/fwlink/?LinkId=88592). For more information about [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Basic Authentication](http://go.microsoft.com/fwlink/?LinkId=88593).  
   
 #### Certificate  
- IIS has an option to require clients to log on with a certificate. The feature also enables IIS to map a client certificate to a Windows account. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Client Certificates in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88594). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
+ IIS has an option to require clients to log on with a certificate. The feature also enables IIS to map a client certificate to a Windows account. For more information about [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Client Certificates in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88594). For more information about [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
   
 #### Digest  
- Digest authentication is similar to Basic authentication, but offers the advantage of sending the credentials as a hash, instead of in clear text. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkID=88443). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88596).  
+ Digest authentication is similar to Basic authentication, but offers the advantage of sending the credentials as a hash, instead of in clear text. For more information about [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkID=88443). For more information about [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88596).  
   
 #### Windows  
- This corresponds to integrated Windows authentication in IIS. When set to this value, the server is also expected to exist on a Windows domain that uses the Kerberos protocol as its domain controller. If the server is not on a Kerberos-backed domain, or if the Kerberos system fails, you can use the NT LAN Manager (NTLM) value described in the next section. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Integrated Windows Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88597). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
+ This corresponds to integrated Windows authentication in IIS. When set to this value, the server is also expected to exist on a Windows domain that uses the Kerberos protocol as its domain controller. If the server is not on a Kerberos-backed domain, or if the Kerberos system fails, you can use the NT LAN Manager (NTLM) value described in the next section. For more information about [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Integrated Windows Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88597). For more information about [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
   
 #### NTLM  
- This enables the server to use NTLM for authentication if the Kerberos protocol fails. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] configuring IIS in [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Forcing NTLM Authentication](http://go.microsoft.com/fwlink/?LinkId=88598). For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the Windows authentication includes NTLM authentication. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkID=88595).  
+ This enables the server to use NTLM for authentication if the Kerberos protocol fails. For more information about configuring IIS in [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Forcing NTLM Authentication](http://go.microsoft.com/fwlink/?LinkId=88598). For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the Windows authentication includes NTLM authentication. For more information, see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkID=88595).  
   
 ## WsHttpBinding  
- The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an WCF application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the WCF application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  For client authentication, set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to one of the <xref:System.ServiceModel.HttpClientCredentialType> enumeration values. The enumeration values are identical to the client credential types for <xref:System.ServiceModel.BasicHttpBinding> and are designed to be hosted with IIS services.  
   
@@ -96,7 +84,7 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
 > [!NOTE]
 >  If you are using Windows security, a certificate is not required.  
   
- The following code uses the thumbprint of the certificate, which uniquely identifies it. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ The following code uses the thumbprint of the certificate, which uniquely identifies it. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
  [!code-csharp[c_ProgrammingSecurity#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
  [!code-vb[c_ProgrammingSecurity#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
@@ -120,10 +108,10 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
  The <xref:System.ServiceModel.NetNamedPipeBinding> class is designed for efficient intra-machine communication; that is, for processes running on the same computer, although named pipe channels can be created between two computers on the same network. This binding provides only transport-level security. When creating applications using this binding, the endpoint addresses must include "net.pipe" as the protocol of the endpoint address.  
   
 ## WSFederationHttpBinding  
- When using transport security, this binding uses SSL over HTTP, known as HTTPS with an issued token (<xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential>). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] federation applications, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ When using transport security, this binding uses SSL over HTTP, known as HTTPS with an issued token (<xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential>). For more information about federation applications, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## NetPeerTcpBinding  
- The <xref:System.ServiceModel.NetPeerTcpBinding> class is a secure transport that is designed for efficient communication using the peer-to-peer networking feature. As indicated by the name of the class and binding, TCP is the protocol. When the security mode is set to Transport, the binding implements TLS over TCP. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the peer-to-peer feature, see [Peer-to-Peer Networking](../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
+ The <xref:System.ServiceModel.NetPeerTcpBinding> class is a secure transport that is designed for efficient communication using the peer-to-peer networking feature. As indicated by the name of the class and binding, TCP is the protocol. When the security mode is set to Transport, the binding implements TLS over TCP. For more information about the peer-to-peer feature, see [Peer-to-Peer Networking](../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
   
 ## MsmqIntegrationBinding and NetMsmqBinding  
  For a complete discussion of transport security with Message Queuing (previously called MSMQ), see [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md).  

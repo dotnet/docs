@@ -1,17 +1,7 @@
 ---
 title: "How to: Create and Use Assemblies Using the Command Line (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 408ddce3-89e3-4e12-8353-34a49beeb72b
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create and Use Assemblies Using the Command Line (C#)
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  

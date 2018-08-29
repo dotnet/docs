@@ -1,24 +1,10 @@
 ---
 title: "DataGridView Control Technology Summary (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], about DataGridView control"
   - "data grids [Windows Forms], about data grids"
 ms.assetid: 094498c3-a126-4a3f-83fe-f69e96c7717b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGridView Control Technology Summary (Windows Forms)
 This topic summarizes information about the `DataGridView` control and the classes that support its use.  

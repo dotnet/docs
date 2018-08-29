@@ -1,21 +1,7 @@
 ---
 title: "&lt;byteStreamMessageEncoding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;byteStreamMessageEncoding&gt;
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  

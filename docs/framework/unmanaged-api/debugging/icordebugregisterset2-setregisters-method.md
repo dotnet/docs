@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRegisterSet2::SetRegisters Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugRegisterSet2.SetRegisters"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fe0ac7e7-c9e1-4ec1-9f4e-1c56d63d73ac
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRegisterSet2::SetRegisters Method
 `SetRegisters` is not implemented in the .NET Framework version 2.0. Do not call this method.  

@@ -1,21 +1,7 @@
 ---
 title: "Constructing Types (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Constructing Types (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, named type constructors, and collection constructors.  

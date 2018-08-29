@@ -1,19 +1,10 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime.
-keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/11/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
-ms.workload: 
-  - dotnetcore
 ---
-
 # dotnet-install scripts reference
 
 ## Name
@@ -39,11 +30,11 @@ We recommend that you use the stable version that is hosted on [.NET Core main w
 * https://dot.net/v1/dotnet-install.sh (bash, UNIX)
 * https://dot.net/v1/dotnet-install.ps1 (Powershell, Windows)
 
-The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: One is a PowerShell script that works on Windows. The other script is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems. 
+The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: One is a PowerShell script that works on Windows. The other script is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
 
-The installation scripts download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`. By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `--shared-runtime` argument. 
+The installation scripts download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`. By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `--shared-runtime` argument.
 
-By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `--no-path` argument. 
+By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `--no-path` argument.
 
 Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
@@ -144,7 +135,7 @@ Obtain script and install .NET Core CLI one-liner examples:
 
 Windows:
 
-`@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional install-script args>"`
+`@powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional install-script args>"`
 
 macOS/Linux:
 
@@ -152,5 +143,5 @@ macOS/Linux:
 
 ## See also
 
-[.NET Core releases](https://github.com/dotnet/core/releases)   
-[.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+* [.NET Core releases](https://github.com/dotnet/core/releases)
+* [.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)

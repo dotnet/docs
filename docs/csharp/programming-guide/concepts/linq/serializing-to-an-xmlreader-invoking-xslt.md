@@ -1,17 +1,7 @@
 ---
 title: "Serializing to an XmlReader (Invoking XSLT) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 4cc3ee03-ef4c-429b-a408-fedd10b728cd
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Serializing to an XmlReader (Invoking XSLT) (C#)
 When you use the <xref:System.Xml?displayProperty=nameWithType> interoperability capabilities of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you can use <xref:System.Xml.Linq.XNode.CreateReader%2A> to create an <xref:System.Xml.XmlReader>. The module that reads from this <xref:System.Xml.XmlReader> reads the nodes from the XML tree and processes them accordingly.  

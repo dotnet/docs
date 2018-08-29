@@ -10,6 +10,5 @@
 ## [Generic Delegates](generic-delegates.md)
 ## [Differences Between C++ Templates and C# Generics](differences-between-cpp-templates-and-csharp-generics.md)
 ## [Generics in the Run Time](generics-in-the-run-time.md)
-## [Generics in the .NET Framework Class Library](generics-in-the-net-framework-class-library.md)
 ## [Generics and Reflection](generics-and-reflection.md)
 ## [Generics and Attributes](generics-and-attributes.md)

@@ -1,21 +1,9 @@
 ---
 title: "Example: Troubleshooting Dynamic Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Example: Troubleshooting Dynamic Programming
 > [!NOTE]

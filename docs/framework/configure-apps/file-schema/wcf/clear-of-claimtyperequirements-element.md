@@ -1,21 +1,7 @@
 ---
 title: "&lt;clear&gt; of &lt;claimTypeRequirements&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;clear&gt; of &lt;claimTypeRequirements&gt; element
 Specifies that all the claim types to be removed in the federated credential. This ensures that the collection starts empty.  

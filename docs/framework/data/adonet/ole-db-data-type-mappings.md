@@ -1,21 +1,7 @@
 ---
 title: "OLE DB Data Type Mappings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 04bcb259-59d3-4fd7-894d-4f0dd0c68069
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # OLE DB Data Type Mappings
 The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type for data types from the .NET Framework Data Provider for ADO and OLE DB (<xref:System.Data.OleDb>). The typed accessor methods for the <xref:System.Data.OleDb.OleDbDataReader> are also listed.  

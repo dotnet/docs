@@ -1,26 +1,12 @@
 ---
 title: "Double Buffered Graphics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "double buffering"
   - "graphics [Windows Forms], double-buffered"
   - "flicker [Windows Forms], reducing with double buffering"
   - "examples [Windows Forms], double-buffered graphics"
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Double Buffered Graphics
 Flicker is a common problem when programming graphics. Graphics operations that require multiple complex painting operations can cause the rendered images to appear to flicker or have an otherwise unacceptable appearance. To address these problems, the .NET Framework provides access to double buffering.  

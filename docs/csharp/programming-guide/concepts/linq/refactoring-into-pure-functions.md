@@ -1,14 +1,7 @@
 ---
 title: "Refactoring Into Pure Functions (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Refactoring Into Pure Functions (C#)
 

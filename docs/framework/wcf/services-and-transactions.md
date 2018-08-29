@@ -1,28 +1,14 @@
 ---
 title: "Services and Transactions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "service contracts [WCF], designing services and transactions"
 ms.assetid: 864813ff-2709-4376-912d-f5c8d318c460
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Services and Transactions
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications can initiate a transaction from within a client and coordinate the transaction within the service operation. Clients can initiate a transaction and invoke several service operations and ensure that the service operations are either committed or rolled back as a single unit.  
+Windows Communication Foundation (WCF) applications can initiate a transaction from within a client and coordinate the transaction within the service operation. Clients can initiate a transaction and invoke several service operations and ensure that the service operations are either committed or rolled back as a single unit.  
   
- You can enable the transaction behavior in the service contract by specifying a <xref:System.ServiceModel.ServiceBehaviorAttribute> and setting its <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> and <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> properties for service operations that require client transactions. The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> parameter specifies whether the transaction in which the method executes is automatically completed if no unhandled exceptions are thrown. [!INCLUDE[crabout](../../../includes/crabout-md.md)] these attributes, see [ServiceModel Transaction Attributes](../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md).  
+ You can enable the transaction behavior in the service contract by specifying a <xref:System.ServiceModel.ServiceBehaviorAttribute> and setting its <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> and <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> properties for service operations that require client transactions. The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> parameter specifies whether the transaction in which the method executes is automatically completed if no unhandled exceptions are thrown. For more information about these attributes, see [ServiceModel Transaction Attributes](../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md).  
   
  The work that is performed in the service operations and managed by a resource manager, such as logging database updates, is part of the client’s transaction.  
   

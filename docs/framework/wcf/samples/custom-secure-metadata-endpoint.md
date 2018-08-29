@@ -1,21 +1,9 @@
 ---
 title: "Custom Secure Metadata Endpoint"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9e369e99-ea4a-49ff-aed2-9fdf61091a48
-caps.latest.revision: 19
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Secure Metadata Endpoint
 This sample demonstrates how to implement a service with a secure metadata endpoint that uses one of the non-metadata exchange bindings, and how to configure [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) or clients to fetch the metadata from such a metadata endpoint. There are two system-provided bindings available for exposing metadata endpoints: mexHttpBinding and mexHttpsBinding. mexHttpBinding is used to expose a metadata endpoint over HTTP in a non-secure manner. mexHttpsBinding is used to expose a metadata endpoint over HTTPS in a secure manner. This sample illustrates how to expose a secure metadata endpoint using the <xref:System.ServiceModel.WSHttpBinding>. You would want to do this when you want to change the security settings on the binding, but you do not want to use HTTPS. If you use the mexHttpsBinding your metadata endpoint will be secure, but there is no way to modify the binding settings.  
@@ -183,14 +171,14 @@ ChannelFactory<ICalculator> cf = new    ChannelFactory<ICalculator>(endpoint.Bin
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across machines. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>`. For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    >  This script does not remove service certificates on a client when running this sample across machines. If you have run Windows Communication Foundation (WCF) samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>`. For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\CustomMexEndpoint`  
   

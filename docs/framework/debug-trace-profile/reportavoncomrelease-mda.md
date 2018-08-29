@@ -1,14 +1,6 @@
 ---
 title: "reportAvOnComRelease MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), reference counting errors"
   - "exceptions, reference counting errors"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "report access violation on Com release"
   - "reference counting errors"
 ms.assetid: a2b86b63-08b2-4943-b344-3c2cf46ccd31
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # reportAvOnComRelease MDA
 The `reportAvOnComRelease` managed debugging assistant (MDA) is activated when exceptions are thrown due to user reference counting errors while performing COM interop and using the <xref:System.Runtime.InteropServices.Marshal.Release%2A> or <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method combined with raw COM calls.  

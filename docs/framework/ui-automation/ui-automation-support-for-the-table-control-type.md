@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Table Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TableControl type"
   - "control types, Table"
   - "UI Automation, Table control type"
 ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
-caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Table Control Type
 > [!NOTE]

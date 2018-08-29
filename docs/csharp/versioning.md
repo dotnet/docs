@@ -1,14 +1,7 @@
 ---
 title: C# Versioning - C# Guide
 description: Understand how versioning works in C# and .NET
-keywords: .NET, .NET Core, C#
-author: BillWagner
-manager: wpickett
 ms.date: 01/08/2017
-ms.topic: article
-ms.prod: visual-studio-dev-14
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
 ---
 

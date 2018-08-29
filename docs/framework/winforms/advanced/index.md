@@ -1,24 +1,10 @@
 ---
 title: "Enhancing Windows Forms Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, enhancing"
   - "Windows Forms, adding features"
 ms.assetid: 733d1219-d6ad-4256-a55b-9eccf47f5a06
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Enhancing Windows Forms Applications
 Windows Forms contains many features that you can use to enhance your Windows-based applications to meet the specific needs of your users. The following topics describe these features and how to use them.  
@@ -39,7 +25,7 @@ Windows Forms contains many features that you can use to enhance your Windows-ba
  [Networking in Windows Forms Applications](../../../../docs/framework/winforms/advanced/networking-in-windows-forms-applications.md)  
  Contains links to topics that describe and show how to use networking in Windows Forms.  
   
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
+ [Globalizing Windows Forms applications](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
  Contains links to topics that show how to globalize Windows Forms applications.  
   
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  

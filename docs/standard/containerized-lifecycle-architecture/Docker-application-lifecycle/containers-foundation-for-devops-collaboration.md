@@ -1,14 +1,9 @@
 ---
 title: Containers as the foundation for DevOps collaboration
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Containers as the foundation for DevOps collaboration
 
@@ -67,5 +62,5 @@ Here are some of the most important benefits provided by a solid DevOps workflow
 -   Plug and play well with many of your existing DevOps investments, including investments in open source
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (../Microsoft-platform-tools-containerized-apps/index.md)
+[Previous](index.md)
+[Next](../Microsoft-platform-tools-containerized-apps/index.md)

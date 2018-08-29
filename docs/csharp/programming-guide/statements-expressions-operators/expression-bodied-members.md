@@ -1,10 +1,6 @@
 ---
 title: "Expression-bodied members (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
   - "C# language, expresion-bodied members"
@@ -20,22 +16,22 @@ member => expression;
 
 where *expression* is a valid expression. 
 
-Support for expression body definitions was introduced for methods and property get accessors in C# 6 and was expanded in C# 7. Expression body definitions can be used with the type members listed in the following table: 
+Support for expression body definitions was introduced for methods and property get accessors in C# 6 and was expanded in C# 7.0. Expression body definitions can be used with the type members listed in the following table: 
 
 |Member  |Supported as of... |
 |---------|---------|
 |[Method](#methods)  |C# 6 |
-|[Constructor](#constructors)   |C# 7 |
-|[Finalizer](#finalizers)     |C# 7 |
+|[Constructor](#constructors)   |C# 7.0 |
+|[Finalizer](#finalizers)     |C# 7.0 |
 |[Property Get](#property-get-statements)  |C# 6 |
-|[Property Set](#property-set-statements)  |C# 7 |
-|[Indexer](#indexers)       |C# 7 |
+|[Property Set](#property-set-statements)  |C# 7.0 |
+|[Indexer](#indexers)       |C# 7.0 |
 
 ## Methods
 
 An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A> method typically include a single expression that returns the string representation of the current object. 
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
 
 [!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
 

@@ -1,13 +1,6 @@
 ---
 title: "How to: Match a String against a Pattern (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "comparison operators [Visual Basic], comparing strings"
   - "pattern matching"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "pattern matching, empty strings"
   - "operators [Visual Basic], comparison"
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Match a String against a Pattern (Visual Basic)
 If you want to find out if an expression of the [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md) satisfies a pattern, then you can use the [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).  

@@ -1,14 +1,6 @@
 ---
 title: "Version-Tolerant Serialization Callbacks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "serialization [WCF], setting default values"
   - "OnSerializedAttribute [WCF]"
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Version-Tolerant Serialization Callbacks
 The data contract programming model fully supports the version-tolerant serialization callback methods that the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes support.  

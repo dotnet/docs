@@ -1,17 +1,7 @@
 ---
 title: "Serializing with an XML Declaration (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: c237fa4a-a042-40fd-886f-17b54c66bb75
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Serializing with an XML Declaration (C#)
 This topic describes how to control whether serialization generates an XML declaration.  

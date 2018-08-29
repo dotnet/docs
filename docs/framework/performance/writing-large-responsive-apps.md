@@ -1,21 +1,9 @@
 ---
 title: "Writing Large, Responsive .NET Framework Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
-caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
-ms.workload: 
-  - "wiwagn"
 ---
 # Writing Large, Responsive .NET Framework Apps
 This article provides tips for improving the performance of large .NET Framework apps, or apps that process a large amount of data such as files or databases. These tips come from rewriting the C# and Visual Basic compilers in managed code, and this article includes several real examples from the C# compiler.  
@@ -202,7 +190,7 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 // etc...  
 ```  
   
- The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-whitespace character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
+ The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-white-space character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
   
  **Example 4: StringBuilder**  
   
@@ -283,7 +271,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
  This simple caching strategy adheres to good cache design because it has a size cap.  However, there is more code now than in the original, which means more maintenance costs.  You should adopt the caching strategy only if you’ve found a performance problem, and PerfView has shown that <xref:System.Text.StringBuilder> allocations are a significant contributor.  
   
 ### LINQ and lambdas  
- Using Language-Integrated Query (LINQ) and lambda expressions is a great example of using productive features that you might later find you need to rewrite if the code becomes a significant impact on performance.  
+Language-Integrated Query (LINQ), in conjunction with lambda expressions, is an example of a productivity feature. However, its use may have a significant impact on performance over time, and you might find you need to rewrite your code.
   
  **Example 5: Lambdas, List\<T>, and IEnumerable\<T>**  
   
@@ -311,7 +299,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)`s => s.Name == name`[closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
+ In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -440,7 +428,7 @@ class Compilation { /*...*/
 }  
 ```  
   
- This code changes the type of `cachedResult` to `Task<SyntaxTree>` and employs an `async` helper function that holds the original code from `GetSyntaxTreeAsync()`.  `GetSyntaxTreeAsync()` now uses the [null coalescing operator](~/docs/csharp/language-reference/operators/null-conditional-operator.md) to return `cachedResult` if it isn't null.  If `cachedResult` is null, then `GetSyntaxTreeAsync()` calls `GetSyntaxTreeUncachedAsync()` and caches the result.  Notice that `GetSyntaxTreeAsync()` doesn’t await the call to `GetSyntaxTreeUncachedAsync()` as the code would normally.  Not using await means that when `GetSyntaxTreeUncachedAsync()` returns its <xref:System.Threading.Tasks.Task> object, `GetSyntaxTreeAsync()` immediately returns the <xref:System.Threading.Tasks.Task>.  Now, the cached result is a <xref:System.Threading.Tasks.Task>, so there are no allocations to return the cached result.  
+ This code changes the type of `cachedResult` to `Task<SyntaxTree>` and employs an `async` helper function that holds the original code from `GetSyntaxTreeAsync()`.  `GetSyntaxTreeAsync()` now uses the [null coalescing operator](../../csharp/language-reference/operators/null-coalescing-operator.md) to return `cachedResult` if it isn't null.  If `cachedResult` is null, then `GetSyntaxTreeAsync()` calls `GetSyntaxTreeUncachedAsync()` and caches the result.  Notice that `GetSyntaxTreeAsync()` doesn’t await the call to `GetSyntaxTreeUncachedAsync()` as the code would normally.  Not using await means that when `GetSyntaxTreeUncachedAsync()` returns its <xref:System.Threading.Tasks.Task> object, `GetSyntaxTreeAsync()` immediately returns the <xref:System.Threading.Tasks.Task>.  Now, the cached result is a <xref:System.Threading.Tasks.Task>, so there are no allocations to return the cached result.  
   
 ### Additional considerations  
  Here are a few more points about potential problems in large apps or apps that process a lot of data.  

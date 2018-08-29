@@ -1,26 +1,12 @@
 ---
 title: "Timer Component Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Timer"
 helpviewer_keywords: 
   - "Timer component [Windows Forms], about Timer components"
   - "timers [Windows Forms], about timers"
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Timer Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises an event at regular intervals. This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  

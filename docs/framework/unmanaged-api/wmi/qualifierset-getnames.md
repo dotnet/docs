@@ -2,10 +2,6 @@
 title: QualifierSet_GetNames function (Unmanaged API Reference)
 description: The QualifierSet_GetNames function retrieves the names of qualifiers from an object or property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_GetNames"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_GetNames function
 Retrieves the names of all the qualifiers or of certain qualifiers that are available from the current object or property. 
@@ -46,7 +39,7 @@ HRESULT QualifierSet_GetNames (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 `lFlags`   
 [in] One of the following flags or values that specifies which names to include in the enumeration.
@@ -72,7 +65,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::GetNames](https://msdn.microsoft.com/library/aa391868(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::GetNames](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-getnames) method.
 
 Once you've retrieved the qualifier names, you can access each qualifier by name by calling the [QualifierSet_Get](qualifierset-get.md) function. 
 

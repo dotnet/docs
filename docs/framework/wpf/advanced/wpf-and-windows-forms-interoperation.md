@@ -1,14 +1,6 @@
 ---
 title: "WPF and Windows Forms Interoperation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "nester interoperation [WPF]"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "hybrid control [WPF interoperability]"
 ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF and Windows Forms Interoperation
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] present two different architectures for creating application interfaces. The <xref:System.Windows.Forms.Integration?displayProperty=nameWithType> namespace provides classes that enable common interoperation scenarios. The two key classes that implement interoperation capabilities are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost>. This topic describes which interoperation scenarios are supported and which scenarios are not supported.  
@@ -32,7 +18,7 @@ ms.workload:
   
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting Windows Forms Controls in WPF  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control:  
+ The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a Windows Forms control:  
   
 -   The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control may host one or more [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls using XAML.  
   
@@ -90,7 +76,7 @@ ms.workload:
   
 <a name="Windows_Forms_Application_Hosting_Windows"></a>   
 ## Hosting WPF Controls in Windows Forms  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
+ The following interoperation scenarios are supported when a Windows Forms control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   
 -   Hosting one or more [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls using code.  
   

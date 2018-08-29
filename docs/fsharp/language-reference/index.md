@@ -1,17 +1,8 @@
 ---
 title: F# Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: b1707be1-7b7c-4fdd-a717-d9c190bc5fb5 
 ---
-
 # F# Language Reference
 
 This section is a reference to the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented and imperative programming models.
@@ -66,7 +57,7 @@ The following table shows reference topics available that describe types support
 |Title|Description|
 |-----|-----------|
 |[values](values/index.md)|Describes values, which are immutable quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.|
-|[Primitive Types](primitive-types.md)|Describes the fundamental primitive types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
+|[Basic Types](basic-types.md)|Describes the fundamental basic types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
 |[Unit Type](unit-type.md)|Describes the `unit` type, which is a type that indicates the absence of a specific value; the `unit` type has only a single value, which acts as a placeholder when no other value exists or is needed.|
 |[Strings](strings.md)|Describes strings in F#. The `string` type represents immutable text, as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.|
 |[Tuples](tuples.md)|Describes tuples, which are groupings of unnamed but ordered values of possibly different types.|

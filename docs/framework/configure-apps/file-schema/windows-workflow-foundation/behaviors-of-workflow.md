@@ -1,19 +1,8 @@
 ---
 title: "&lt;behaviors&gt; of workflow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 3c6017b6-0c4f-4192-bd67-9515f5d1ec82
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;behaviors&gt; of workflow
 This element contains the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by workflow services. Each behavior element is identified by its unique **name** attribute.  

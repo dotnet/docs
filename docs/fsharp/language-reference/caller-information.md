@@ -1,17 +1,8 @@
 ---
 title: Caller information (F#)
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/25/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: a3dcc335-433b-4672-ac2d-ae6b11b816f3 
 ---
-
 # Caller information
 
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.

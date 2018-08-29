@@ -1,14 +1,6 @@
 ---
 title: "&lt;system.diagnostics&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.diagnostics"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "<system.diagnostics> element"
   - "system.diagnostics element"
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.diagnostics&gt; Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  

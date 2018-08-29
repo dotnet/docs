@@ -1,14 +1,6 @@
 ---
 title: "&lt;compilers&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compilers"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom/compilers"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "<compilers> element"
   - "compilers element"
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;compilers&gt; Element
 Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.  

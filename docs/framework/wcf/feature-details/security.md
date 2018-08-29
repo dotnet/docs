@@ -1,40 +1,28 @@
 ---
 title: "Windows Communication Foundation Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Communication Foundation, programming"
   - "security [WCF]"
   - "Windows Communication Foundation, security"
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-caps.latest.revision: 21
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Security
-The topics in this section describe [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security features and how to use them to help secure messages.  
+The topics in this section describe Windows Communication Foundation (WCF) security features and how to use them to help secure messages.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows Server AppFabric and security, see [Security Model for Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
+ For more information about Windows Server AppFabric and security, see [Security Model for Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
   
 ## In This Section  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- Describes the security features in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes the security features in WCF.  
   
  [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- Describes the basic terminology and concepts used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security.  
+ Describes the basic terminology and concepts used in WCF security.  
   
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- Describes scenarios and topologies you can configure with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes scenarios and topologies you can configure with WCF.  
   
  [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  Provides an overview of WCF behaviors that affect security, such as setting credentials.  
@@ -43,7 +31,7 @@ The topics in this section describe [!INCLUDE[indigo1](../../../../includes/indi
  A security-oriented view of the bindings, including topics that demonstrate how to create custom security bindings.  
   
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- Describes how to secure messages using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security features.  
+ Describes how to secure messages using WCF security features.  
   
  [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
  Demonstrates common authentication tasks.  
@@ -55,13 +43,13 @@ The topics in this section describe [!INCLUDE[indigo1](../../../../includes/indi
  Describes the basics of federation and how to create clients that communicate with federated servers.  
   
  [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)  
- Describes how to run partially-trusted scenarios and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] limitations when running partially trusted.  
+ Describes how to run partially-trusted scenarios and WCF limitations when running partially trusted.  
   
  [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
  Describes how to audit security events.  
   
  [Security Guidance and Best Practices](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
- Guidelines for creating secure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications.  
+ Guidelines for creating secure WCF applications.  
   
 ## Reference  
  <xref:System.ServiceModel>  

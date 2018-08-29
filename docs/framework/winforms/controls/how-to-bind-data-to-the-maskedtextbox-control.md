@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind Data to the MaskedTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "data binding [Windows Forms], MaskedTextBox control [Windows Forms]"
   - "MaskedTextBox control [Windows Forms], binding data"
 ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind Data to the MaskedTextBox Control
 You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as you can to any other Windows Forms control. However, if the format of your data in the database does not match the format expected by your mask definition, you will need to reformat the data. The following procedure demonstrates how to do this using the <xref:System.Windows.Forms.Binding.Format> and <xref:System.Windows.Forms.Binding.Parse> events of the <xref:System.Windows.Forms.Binding> class to display separate phone number and phone extension database fields as a single editable field.  
@@ -247,7 +233,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
   
 ## Compiling the Code  
   
--   Create a [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] or [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] project.  
+-   Create a Visual C# or Visual Basic project.  
   
 -   Add the <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.MaskedTextBox> controls to the form, as described in the previous procedure.  
   

@@ -1,19 +1,7 @@
 ---
 title: "How to: Display Validation Errors in a Rehosted Designer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5aa8fb53-8f75-433b-bc06-7c7d33583d5d
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Display Validation Errors in a Rehosted Designer
 This topic describes how to retrieve and publish validation errors in a rehosted [!INCLUDE[wfd1](../../../includes/wfd1-md.md)]. This provides us with a procedure to confirm that a workflow in a rehosted designer is valid.  

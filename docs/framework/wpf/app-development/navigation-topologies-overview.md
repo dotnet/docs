@@ -1,14 +1,6 @@
 ---
 title: "Navigation Topologies Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "linear topology [WPF]"
   - "fixed hierarchical topology [WPF]"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "navigation topologies [WPF]"
   - "dynamically-generated topology"
 ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Navigation Topologies Overview
 <a name="introduction"></a> This overview provides an introduction to navigation topologies in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Three common navigation topologies, with samples, are subsequently discussed.  

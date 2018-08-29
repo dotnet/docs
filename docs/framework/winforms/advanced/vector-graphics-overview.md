@@ -1,14 +1,6 @@
 ---
 title: "Vector Graphics Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "coordinate systems"
   - "graphics [Windows Forms], vector graphics"
 ms.assetid: 0195df81-66be-452d-bb53-5a582ebfdc09
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Vector Graphics Overview
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] draws lines, rectangles, and other shapes on a coordinate system. You can choose from a variety of coordinate systems, but the default coordinate system has the origin in the upper-left corner with the x-axis pointing to the right and the y-axis pointing down. The unit of measure in the default coordinate system is the pixel.  

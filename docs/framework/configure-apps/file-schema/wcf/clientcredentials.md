@@ -1,21 +1,7 @@
 ---
 title: "&lt;clientCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;clientCredentials&gt;
 Specifies the credentials used to authenticate the client to a service.  

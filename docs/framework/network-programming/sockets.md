@@ -1,12 +1,6 @@
 ---
 title: "Sockets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -21,12 +15,9 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "Internet, sockets"
 ms.assetid: 10d22735-bd37-42c1-a2be-c1932f979a7d
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Sockets
 The <xref:System.Net.Sockets> namespace contains a managed implementation of the Windows Sockets interface. All other network-access classes in the <xref:System.Net> namespace are built on top of this implementation of sockets.  

@@ -1,14 +1,6 @@
 ---
 title: "Technology Regions Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "window regions [WPF]"
   - "Win32 code [WPF], WPF interoperation"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "interoperability [WPF], airspace"
   - "Win32 code [WPF], window regions"
 ms.assetid: b7cc350f-b9e2-48b1-be14-60f3d853222e
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Technology Regions Overview
 If multiple presentation technologies are used in an application, such as WPF, Win32, or DirectX, they must share the rendering areas within a common top-level window. This topic describes issues that might influence the presentation and input for your WPF interoperation application.  

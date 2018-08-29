@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport2::GetMethodSpecProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport2.GetMethodSpecProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9544b711-e669-4eaf-8630-ee862e5e4489
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport2::GetMethodSpecProps Method
 Gets the metadata signature of the method referenced by the specified MethodSpec token.  

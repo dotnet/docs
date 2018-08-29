@@ -1,17 +1,8 @@
 ---
 title: "Conditional Expressions: if... then...else (F#)"
 description: Learn how to write conditional expressions in F# to execute different branches of code.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 16e1871c-4d4d-4691-9ab2-bd2c6f65589a 
 ---
-
 # Conditional Expressions: `if...then...else`
 
 The `if...then...else` expression runs different branches of code and also evaluates to a different value depending on the Boolean expression given.

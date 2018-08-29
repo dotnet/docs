@@ -1,25 +1,11 @@
 ---
 title: "ErrorProvider Component (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "error messages [Windows Forms], displaying"
   - "errors [Windows Forms]"
   - "ErrorProvider component [Windows Forms]"
 ms.assetid: c0f2e231-c5c9-413d-a507-75af2db499b6
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ErrorProvider Component (Windows Forms)
 The Windows Forms `ErrorProvider` component is used to show the user in a non-intrusive way that something is wrong. It is typically used in conjunction with validating user input on a form, or displaying errors within a dataset.  

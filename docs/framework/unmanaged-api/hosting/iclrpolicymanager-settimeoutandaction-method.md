@@ -1,14 +1,6 @@
 ---
 title: "ICLRPolicyManager::SetTimeoutAndAction Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRPolicyManager.SetTimeoutAndAction"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRPolicyManager::SetTimeoutAndAction Method
 Sets a timeout value for the specified operation, and specifies the policy action the common language runtime (CLR) should take when the operation occurs.  

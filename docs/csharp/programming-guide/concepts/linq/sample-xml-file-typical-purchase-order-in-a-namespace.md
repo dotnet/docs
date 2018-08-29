@@ -1,17 +1,7 @@
 ---
 title: "Sample XML File: Typical Purchase Order in a Namespace1"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Sample XML File: Typical Purchase Order in a Namespace
 The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file is a typical purchase order. The XML is in a namespace.  

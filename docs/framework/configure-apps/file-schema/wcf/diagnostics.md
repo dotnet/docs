@@ -1,21 +1,7 @@
 ---
 title: "&lt;diagnostics&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;diagnostics&gt;
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  

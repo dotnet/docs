@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugMergedAssemblyRecord::GetCulture Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMergedAssemblyRecord::GetCulture Method
 Gets the culture name string of the assembly.  

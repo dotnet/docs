@@ -1,14 +1,6 @@
 ---
 title: "How to: Compare Claims"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +8,9 @@ helpviewer_keywords:
   - "claims [WCF], comparing"
   - "claims [WCF]"
 ms.assetid: 0c4ec84d-53df-408f-8953-9bc437f56c28
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Compare Claims
-The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is used to perform authorization checking. As such, a common task is to compare claims in the authorization context to the claims required to perform the requested action or access the requested resource. This topic describes how to compare claims, including built-in and custom claim types. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Identity Model infrastructure, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
+The Identity Model infrastructure in Windows Communication Foundation (WCF) is used to perform authorization checking. As such, a common task is to compare claims in the authorization context to the claims required to perform the requested action or access the requested resource. This topic describes how to compare claims, including built-in and custom claim types. For more information about the Identity Model infrastructure, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
  Claim comparison involves comparing the three parts of a claim (type, right, and resource) against the same parts in another claim to see if they are equal. See the following example.  
   

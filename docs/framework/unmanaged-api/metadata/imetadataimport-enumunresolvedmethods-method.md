@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::EnumUnresolvedMethods Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.EnumUnresolvedMethods"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: eb3187d7-74cf-44b1-aeeb-7a8d2b60e3b7
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::EnumUnresolvedMethods Method
 Enumerates MemberDef tokens representing the unresolved methods in the current metadata scope.  

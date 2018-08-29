@@ -1,24 +1,13 @@
 ---
 title: "Event Handling in an XML Document Using the XmlNodeChangedEventArgs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Event Handling in an XML Document Using the XmlNodeChangedEventArgs
 The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event handlers registered on the **XmlDocument** object for handling events. The events and a description of when they are fired is given in the following table.  

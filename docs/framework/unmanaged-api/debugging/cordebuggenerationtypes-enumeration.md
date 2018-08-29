@@ -1,14 +1,6 @@
 ---
 title: "CorDebugGenerationTypes Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugGenerationTypes"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugGenerationTypes Enumeration
 Specifies the generation of a region of memory on the managed heap.  

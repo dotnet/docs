@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Binding in Code"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "binding data [WPF], creating"
   - "data binding [WPF], creating"
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Binding in Code
 This example shows how to create and set a <xref:System.Windows.Data.Binding> in code.  

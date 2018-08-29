@@ -1,12 +1,6 @@
 ---
 title: "Examples of XML Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,6 @@ helpviewer_keywords:
   - "DataSet class, serializing"
   - "XML Schema, serializing"
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Examples of XML Serialization
 XML serialization can take more than one form, from simple to complex. For example, you can serialize a class that simply consists of public fields and properties, as shown in [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md). The following code examples address various advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to a specific XML Schema (XSD) document.  
@@ -303,7 +290,7 @@ using System.IO;
 using System.Collections;  
 using System.Xml.Serialization;  
   
-public class Test{  
+public class Test {  
     static void Main(){  
         Test t = new Test();  
         t.SerializeCollection("coll.xml");  
@@ -321,7 +308,7 @@ public class Test{
         x.Serialize(writer, Emps);  
     }  
 }  
-public class Employees:ICollection{  
+public class Employees:ICollection {  
     public string CollectionName;  
     private ArrayList empArray = new ArrayList();   
   
@@ -350,7 +337,7 @@ public class Employees:ICollection{
     }  
 }  
   
-public class Employee{  
+public class Employee {  
     public string EmpName;  
     public string EmpID;  
     public Employee(){}  

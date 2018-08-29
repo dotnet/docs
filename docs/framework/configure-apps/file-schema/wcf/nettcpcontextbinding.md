@@ -1,21 +1,7 @@
 ---
 title: "&lt;netTcpContextBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;netTcpContextBinding&gt;
 Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requires that the protection level be signed. The contextExchangeMechanism for NetTcpContextBinding is SOAPHeader.  

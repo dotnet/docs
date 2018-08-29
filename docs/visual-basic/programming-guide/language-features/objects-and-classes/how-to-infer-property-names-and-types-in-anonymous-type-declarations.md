@@ -1,21 +1,11 @@
 ---
 title: "How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "inferring property names [Visual Basic]"
   - "anonymous types [Visual Basic], inferring property names and types"
   - "inferring property types [Visual Basic]"
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)
 Anonymous types provide no mechanism for directly specifying the data types of properties. Types of all properties are inferred. In the following example, the types of `Name` and `Price` are inferred directly from the values that are used to initialize them.  

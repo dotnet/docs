@@ -1,12 +1,6 @@
 ---
 title: "Visual Basic Compiler Options Listed Alphabetically"
-ms.date: 03/09/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e
@@ -14,7 +8,7 @@ author: rpetrusha
 ms.author: ronpet
 ---
 # Visual Basic compiler options listed alphabetically
-The Visual Basic command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
+The Visual Basic command-line compiler is provided as an alternative to compiling programs from the Visual Studio integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
 
 [!INCLUDE[compiler-options](~/includes/compiler-options.md)]
   
@@ -32,6 +26,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-debug](../../../visual-basic/reference/command-line-compiler/debug.md)|Produces debugging information.|  
 |[-define](../../../visual-basic/reference/command-line-compiler/define.md)|Defines symbols for conditional compilation.|  
 |[-delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md)|Specifies whether the assembly will be fully or partially signed.|  
+|[-deterministic](../../../visual-basic/reference/command-line-compiler/deterministic.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Processes documentation comments to an XML file.|  
 |[-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the Visual Basic compiler should report internal compiler errors.|  
 |[-filealign](../../../visual-basic/reference/command-line-compiler/filealign.md)|Specifies where to align the sections of the output file.|  

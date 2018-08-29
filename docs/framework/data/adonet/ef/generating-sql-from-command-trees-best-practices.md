@@ -1,21 +1,7 @@
 ---
 title: "Generating SQL from Command Trees - Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 71ef6a24-4c4f-4254-af3a-ffc0d855b0a8
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Generating SQL from Command Trees - Best Practices
 Output query command trees closely model queries expressible in SQL. However, there are certain common challenges for provider writers when generating SQL from an output command tree. This topic discusses these challenges. In the next topic, the sample provider shows how to address these challenges.  
@@ -144,7 +130,7 @@ ON b.y = d.z
  Expressions may be reused in the query command tree passed by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Do not assume that each expression appears only once in the query command tree.  
   
 ## Mapping Primitive Types  
- When mapping conceptual (EDM) types to provider types, you should map to the widest type (Int32) so that all possible values fit. Also, avoid mapping to types that cannot be used for many operations, like BLOB types (for example, `ntext` in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)]).  
+ When mapping conceptual (EDM) types to provider types, you should map to the widest type (Int32) so that all possible values fit. Also, avoid mapping to types that cannot be used for many operations, like BLOB types (for example, `ntext` in SQL Server).  
   
 ## See Also  
  [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

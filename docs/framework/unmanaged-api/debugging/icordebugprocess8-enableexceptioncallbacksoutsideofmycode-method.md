@@ -1,23 +1,11 @@
 ---
 title: "ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method
 [Supported in the [!INCLUDE[net_v46](../../../../includes/net-v46-md.md)] and later versions]  

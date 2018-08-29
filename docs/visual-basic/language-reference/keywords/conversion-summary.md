@@ -1,23 +1,15 @@
 ---
 title: "Conversion Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data type conversion [Visual Basic], keywords"
   - "reference, type conversions"
   - "conversions [Visual Basic], Visual Basic"
   - "type conversion [Visual Basic], keywords"
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Conversion Summary (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
+Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

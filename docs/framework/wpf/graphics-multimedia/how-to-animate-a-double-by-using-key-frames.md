@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate a Double by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "animation [WPF], Doubles with key frames"
   - "key frames [WPF], animating Doubles with"
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Double by Using Key Frames
 This example shows how to animate the value of a property that takes a <xref:System.Double> by using key frames.  

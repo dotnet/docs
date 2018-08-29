@@ -1,14 +1,6 @@
 ---
 title: "Setting Up a Profiling Environment"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "environment variables, profiling API"
   - "profiling API [.NET Framework], setting up environment"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "COR_ENABLE_PROFILING environment variable"
   - "profiling API [.NET Framework], enabling"
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]

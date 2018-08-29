@@ -1,18 +1,11 @@
 ---
 title: "Operators (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operators [C#]"
   - "C# language, operators"
   - "operators [C#], about operators"
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
-caps.latest.revision: 42
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Operators (C# Programming Guide)
 In C#, an *operator* is a program element that is applied to one or more *operands* in an expression or statement. Operators that take one operand, such as the increment operator (`++`) or `new`, are referred to as *unary* operators. Operators that take two operands, such as arithmetic operators (`+`,`-`,`*`,`/`), are referred to as *binary* operators. One operator, the conditional operator (`?:`), takes three operands and is the sole ternary operator in C#.  
@@ -116,7 +109,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Logical OR|x [&#124;](../../../csharp/language-reference/operators/or-operator.md) y|Integer bitwise OR, boolean logical OR|  
 |Conditional AND|x [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) y|Evaluates y only if x is true|  
 |Conditional OR|x [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) y|Evaluates y only if x is false|  
-|Null coalescing|x [??](../../../csharp/language-reference/operators/null-conditional-operator.md) y|Evaluates to y if x is null, to x otherwise|  
+|Null coalescing|x [??](../../../csharp/language-reference/operators/null-coalescing-operator.md) y|Evaluates to y if x is null, to x otherwise|  
 |Conditional|x [?](../../../csharp/language-reference/operators/conditional-operator.md) y : z|Evaluates to y if x is true, z if x is false|  
   
  **Assignment and Anonymous Operators**  
@@ -124,7 +117,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |[=](../../../csharp/language-reference/operators/assignment-operator.md)|Assignment|  
-|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [!=](../../../csharp/language-reference/operators/not-equal-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
+|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|Anonymous function (lambda expression)|  
   
 ## Associativity  

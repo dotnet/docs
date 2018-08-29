@@ -1,14 +1,6 @@
 ---
 title: "How to: Use the Image Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Image control [WPF]"
   - "rendering images [WPF]"
 ms.assetid: 5b92e74b-1b56-4756-ac64-d5e9e08d9854
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use the Image Element
 This example shows how to include images in an application by using the <xref:System.Windows.Controls.Image> element.  

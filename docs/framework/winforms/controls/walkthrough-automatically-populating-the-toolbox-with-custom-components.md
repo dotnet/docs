@@ -1,25 +1,11 @@
 ---
 title: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "IToolboxService interface"
   - "Toolbox [Windows Forms], populating"
   - "custom components [Windows Forms], adding to Toolbox"
 ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Automatically Populating the Toolbox with Custom Components
 If your components are defined by a project in the currently open solution, they will automatically appear in the **Toolbox**, with no action required by you. You can also manually populate the **Toolbox** with your custom components by using the [Choose Toolbox Items Dialog Box (Visual Studio)](http://msdn.microsoft.com/library/bd07835f-18a8-433e-bccc-7141f65263bb), but the **Toolbox** takes account of items in your solution's build outputs with all the following characteristics:  
@@ -46,16 +32,14 @@ If your components are defined by a project in the currently open solution, they
  When you are finished, you will see that the **Toolbox** is populated with a component that you have created.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the project and to set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called `ToolboxExample`.  
-  
-     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called `ToolboxExample` (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  Add a new component to the project. Call it `DemoComponent`.  
   

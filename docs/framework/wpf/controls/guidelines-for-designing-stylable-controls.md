@@ -1,24 +1,10 @@
 ---
 title: "Guidelines for Designing Stylable Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "style design for controls [WPF]"
   - "controls [WPF], style design"
 ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Guidelines for Designing Stylable Controls
 This document summarizes a set of best practices to consider when designing a control which you intend to be easily stylable and templatable. We came to this set of best practices through a lot of trial and error while working on the theme control styles for the built-in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control set. We learned that successful styling is as much a function of a well-designed object model as it is of the style itself. The intended audience for this document is the control author, not the style author.  

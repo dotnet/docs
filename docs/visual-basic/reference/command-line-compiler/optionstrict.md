@@ -1,12 +1,6 @@
 ---
 title: "-optionstrict"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "-optionstrict"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "optionstrict compiler option [Visual Basic]"
   - "/optionstrict compiler option [Visual Basic]"
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -optionstrict
 Enforces strict type semantics to restrict implicit type conversions.  

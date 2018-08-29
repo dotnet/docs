@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugInternalFrame2::IsCloserToLeaf Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugInternalFrame2.IsCloserToLeaf Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugInternalFrame2::IsCloserToLeaf Method
 Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.  

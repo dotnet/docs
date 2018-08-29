@@ -1,14 +1,6 @@
 ---
 title: "PreBindAssemblyEx Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "PreBindAssemblyEx"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PreBindAssemblyEx Function
 Gets the post-policy display name for an assembly.  

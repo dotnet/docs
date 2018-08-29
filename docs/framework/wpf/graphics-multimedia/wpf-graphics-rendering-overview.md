@@ -1,14 +1,6 @@
 ---
 title: "WPF Graphics Rendering Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "graphics [WPF], rendering"
   - "rendering graphics [WPF]"
 ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
-caps.latest.revision: 51
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Graphics Rendering Overview
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual layer. It focuses on the role of the <xref:System.Windows.Media.Visual> class for rendering support in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model.  
@@ -213,7 +199,7 @@ Diagram of Win32 rendering sequence
 Diagram of WPF rendering sequence  
   
 #### Intelligent Redrawing  
- One of the biggest benefits in using retained mode graphics is that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can efficiently optimize what needs to be redrawn in the application. Even if you have a complex scene with varying levels of opacity, you generally do not need to write special-purpose code to optimize redrawing. Compare this with Win32 programming in which you can spend a great deal of effort in optimizing your application by minimizing the amount of redrawing in the update region. See [Redrawing in the Update Region](https://msdn.microsoft.com/library/dd162909.aspx) for an example of the type of complexity involved in optimizing redrawing in Win32 applications.  
+ One of the biggest benefits in using retained mode graphics is that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can efficiently optimize what needs to be redrawn in the application. Even if you have a complex scene with varying levels of opacity, you generally do not need to write special-purpose code to optimize redrawing. Compare this with Win32 programming in which you can spend a great deal of effort in optimizing your application by minimizing the amount of redrawing in the update region. See [Redrawing in the Update Region](/windows/desktop/gdi/redrawing-in-the-update-region) for an example of the type of complexity involved in optimizing redrawing in Win32 applications.  
   
 ### Vector Graphics  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses **vector graphics** as its rendering data format. Vector graphics—which include Scalable Vector Graphics (SVG), Windows metafiles (.wmf), and TrueType fonts—store rendering data and transmit it as a list of instructions that describe how to recreate an image using graphics primitives. For example, TrueType fonts are outline fonts that describe a set of lines, curves, and commands, rather than an array of pixels. One of the key benefits of vector graphics is the ability to scale to any size and resolution.  

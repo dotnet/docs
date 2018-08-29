@@ -1,14 +1,6 @@
 ---
 title: "Debugging Windows Authentication Errors"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,26 +8,20 @@ helpviewer_keywords:
   - "WCF, authentication"
   - "WCF, Windows authentication"
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Debugging Windows Authentication Errors
-When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This topic provides a framework and set of questions to help diagnose the errors.  
+When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
  For an overview of the Kerberos protocol, see [Kerberos Explained](http://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](http://go.microsoft.com/fwlink/?LinkId=88941).  
   
- For Windows authentication, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] falls back to NT LAN Manager (NTLM). However, you can configure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to use restricted forms of the Kerberos protocol.  
+ For Windows authentication, WCF typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default WCF falls back to NT LAN Manager (NTLM). However, you can configure WCF to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure WCF to use restricted forms of the Kerberos protocol.  
   
 ## Debugging Methodology  
  The basic method is as follows:  
   
 1.  Determine whether you are using Windows authentication. If you are using any other scheme, this topic does not apply.  
   
-2.  If you are sure you are using Windows authentication, determine whether your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration uses Kerberos direct or Negotiate.  
+2.  If you are sure you are using Windows authentication, determine whether your WCF configuration uses Kerberos direct or Negotiate.  
   
 3.  Once you have determined whether your configuration is using the Kerberos protocol or NTLM, you can understand error messages in the correct context.  
   
@@ -70,11 +56,11 @@ When using Windows authentication as a security mechanism, the Security Support 
 ### Kerberos Protocol  
   
 #### SPN/UPN Problems with the Kerberos Protocol  
- When using Windows authentication, and the Kerberos protocol is used or negotiated by SSPI, the URL the client endpoint uses must include the fully qualified domain name of the service's host inside the service URL. This assumes that the account under which the service is running has access to the machine (default) service principal name (SPN) key that is created when the computer is added to the Active Directory domain, which is most commonly done by running the service under the Network Service account. If the service does not have access to the machine SPN key, you must supply the correct SPN or user principal name (UPN) of the account under which the service is running in the client's endpoint identity. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] works with SPN and UPN, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ When using Windows authentication, and the Kerberos protocol is used or negotiated by SSPI, the URL the client endpoint uses must include the fully qualified domain name of the service's host inside the service URL. This assumes that the account under which the service is running has access to the machine (default) service principal name (SPN) key that is created when the computer is added to the Active Directory domain, which is most commonly done by running the service under the Network Service account. If the service does not have access to the machine SPN key, you must supply the correct SPN or user principal name (UPN) of the account under which the service is running in the client's endpoint identity. For more information about how WCF works with SPN and UPN, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
  In load-balancing scenarios, such as Web farms or Web gardens, a common practice is to define a unique account for each application, assign an SPN to that account, and ensure that all of the application's services run in that account.  
   
- To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
+ To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
   
 #### Kerberos Protocol Direct Requires the Service to Run Under a Domain Machine Account  
  This occurs when the `ClientCredentialType` property is set to `Windows` and the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property is set to `false`, as shown in the following code.  
@@ -106,7 +92,7 @@ When using Windows authentication as a security mechanism, the Security Support 
 ### NTLM Protocol  
   
 #### Negotiate SSP Falls Back to NTLM, but NTLM Is Disabled  
- The <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property is set to `false`, which causes [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+ The <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property is set to `false`, which causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
   
  The following shows how to disable fallback to NTLM.  
   
@@ -129,7 +115,7 @@ When using Windows authentication as a security mechanism, the Security Support 
  [!code-csharp[C_DebuggingWindowsAuth#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_debuggingwindowsauth/cs/source.cs#6)]
  [!code-vb[C_DebuggingWindowsAuth#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_debuggingwindowsauth/vb/source.vb#6)]  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] impersonation, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ For more information about impersonation, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
  Alternatively, the client is running as a Windows service, using the built-in account SYSTEM.  
   

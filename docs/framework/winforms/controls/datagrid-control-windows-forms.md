@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "datasets [Windows Forms], user interface"
   - "DataGrid control [Windows Forms]"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "displaying data [Windows Forms], on forms"
   - "data [Windows Forms], displaying on Windows Forms"
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Control (Windows Forms)
 > [!NOTE]

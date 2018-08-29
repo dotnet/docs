@@ -1,14 +1,6 @@
 ---
 title: "NotifyIcon Component (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application icons [Windows Forms], background processes"
   - "context menus [Windows Forms], for background processes"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "NotifyIcon component"
   - "SysTray icons"
 ms.assetid: 20312268-1d67-494a-8601-5c43b7f1b513
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # NotifyIcon Component (Windows Forms)
 The Windows Forms `NotifyIcon` component displays icons in the status notification area of the taskbar for processes that run in the background and would not otherwise have user interfaces. An example would be a virus protection program that can be accessed by clicking an icon in the status notification area of the taskbar.  

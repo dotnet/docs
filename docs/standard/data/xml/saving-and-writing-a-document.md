@@ -1,24 +1,13 @@
 ---
 title: "Saving and Writing a Document"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Saving and Writing a Document
 When you load and save an <xref:System.Xml.XmlDocument>, the saved document may differ from the original in the following ways:  

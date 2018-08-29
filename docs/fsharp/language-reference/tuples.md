@@ -1,17 +1,8 @@
 ---
 title: Tuples (F#)
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 35069073-9a82-410f-8dea-912e2a152e6d 
 ---
-
 # Tuples
 
 A *tuple* is a grouping of unnamed but ordered values, possibly of different types.  Tuples can either be reference types or structs.
@@ -85,7 +76,7 @@ int * float * string
 
 ## Interoperation with C# Tuples
 
-C# 7 introduced tuples to the language.  Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.
+C# 7.0 introduced tuples to the language.  Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.
 
 This is easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 
@@ -126,7 +117,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 ### Compiled Form of Struct Tuples
 
-Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and [Visual Basic 2017 Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
+Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7.0 Tuples](../../csharp/tuples.md) and [Visual Basic 2017 Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
 
 ## See Also
 [F# Language Reference](index.md)

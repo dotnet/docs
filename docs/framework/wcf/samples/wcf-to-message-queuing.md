@@ -1,28 +1,14 @@
 ---
 title: "Windows Communication Foundation to Message Queuing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
-caps.latest.revision: 32
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation to Message Queuing
-This sample demonstrates how a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application can send a message to a Message Queuing (MSMQ) application. The service is a self-hosted console application to enable you to observe the service receiving queued messages. The service and client do not have to be running at the same time.  
+This sample demonstrates how a Windows Communication Foundation (WCF) application can send a message to a Message Queuing (MSMQ) application. The service is a self-hosted console application to enable you to observe the service receiving queued messages. The service and client do not have to be running at the same time.  
   
  The service receives messages from the queue and processes orders. The service creates a transactional queue and sets up a message received message handler, as shown in the following sample code.  
-  
-```  
+
+```csharp
 static void Main(string[] args)  
 {  
     if (!MessageQueue.Exists(  
@@ -38,11 +24,11 @@ static void Main(string[] args)
     Console.WriteLine("Order Service is running");  
     Console.ReadLine();  
 }  
-```  
-  
+```
+
  When a message is received in the queue, the message handler `ProcessOrder` is invoked.  
-  
-```  
+
+```csharp
 public static void ProcessOrder(Object source,  
     ReceiveCompletedEventArgs asyncResult)  
 {  
@@ -67,8 +53,8 @@ public static void ProcessOrder(Object source,
     }  
   
 }  
-```  
-  
+```
+
  The service extracts the `ProcessOrder` from the MSMQ message body, and processes the order.  
   
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
@@ -83,8 +69,8 @@ public static void ProcessOrder(Object source,
 >  The queue name uses a dot (.) for the local computer and backslash separators in its path.  
   
  The client creates a purchase order and submits the purchase order within the scope of a transaction, as shown in the following sample code.  
-  
-```  
+
+```csharp
 // Create the purchase order  
 PurchaseOrder po = new PurchaseOrder();  
 // Fill in the details  
@@ -102,13 +88,13 @@ Console.WriteLine("Order has been submitted:{0}", po);
   
 //Closing the client gracefully closes the connection and cleans up resources  
 client.Close();  
-```  
+```
+
+ The client uses a custom client in-order to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a WCF application, there is no implicit service contract between the two applications. So, we cannot create a proxy using the Svcutil.exe tool in this scenario.  
   
- The client uses a custom client in-order to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, there is no implicit service contract between the two applications. So, we cannot create a proxy using the Svcutil.exe tool in this scenario.  
-  
- The custom client is essentially the same for all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications that use the `MsmqIntegration` binding to send messages. Unlike other clients, it does not include a range of service operations. It is a submit message operation only.  
-  
-```  
+ The custom client is essentially the same for all WCF applications that use the `MsmqIntegration` binding to send messages. Unlike other clients, it does not include a range of service operations. It is a submit message operation only.  
+
+```csharp
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderProcessor  
 {  
@@ -133,8 +119,8 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
         base.Channel.SubmitPurchaseOrder(msg);  
     }  
 }  
-```  
-  
+```
+
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. For example, you could run the client, shut it down, and then start up the service and it would still receive its messages.  
   
 > [!NOTE]
@@ -177,7 +163,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`  
   

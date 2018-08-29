@@ -1,14 +1,6 @@
 ---
 title: "Graphics Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, graphics"
   - "Windows Forms, GDI+"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "GDI+, Windows Forms"
   - "graphics"
 ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Graphics Overview (Windows Forms)
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is a Graphics Device Interface that enables programmers to write device-independent applications. The services of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] are exposed through a set of managed classes.  

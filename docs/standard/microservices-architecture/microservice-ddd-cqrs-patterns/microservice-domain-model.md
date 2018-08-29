@@ -1,16 +1,9 @@
 ---
 title: Designing a microservice domain model
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a microservice domain model
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/09/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Designing a microservice domain model
 
@@ -155,5 +148,5 @@ Identifying and working with aggregates requires research and experience. For mo
 
 
 >[!div class="step-by-step"]
-[Previous] (ddd-oriented-microservice.md)
-[Next] (net-core-microservice-domain-model.md)
+[Previous](ddd-oriented-microservice.md)
+[Next](net-core-microservice-domain-model.md)

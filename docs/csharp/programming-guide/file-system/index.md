@@ -1,18 +1,11 @@
 ---
 title: "File System and the Registry (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "file system [C#]"
   - "registry [C#]"
   - "files [C#]"
 ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # File System and the Registry (C# Programming Guide)
 The following topics show how to use C# and the .NET Framework to perform various basic operations on files, folders, and the Registry.  

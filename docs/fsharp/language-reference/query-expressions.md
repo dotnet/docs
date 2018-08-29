@@ -1,17 +1,8 @@
 ---
 title: Query Expressions (F#)
 description: Learn about query expression support for LINQ in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 35df2d80-e6d2-4873-b2de-9b45b9e9e650
 ---
-
 # Query Expressions
 
 > [!NOTE]
@@ -127,7 +118,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 <pre><code class="lang-fsharp">query {
     for number in data do
-    where (number < 0)
+    where (number &lt; 0)
     lastOrDefault
 }
 </code></pre>
@@ -421,7 +412,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 <pre><code class="lang-fsharp">query {
     for number in data do
-    skipWhile (number < 3)
+    skipWhile (number &lt; 3)
     select student
 }
 </code></pre>
@@ -450,7 +441,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 <pre><code class="lang-fsharp">query {
     for number in data do
-    takeWhile (number < 10)
+    takeWhile (number &lt; 10)
 }
 </code></pre>
 
@@ -884,7 +875,7 @@ WHERE Student.Age BETWEEN 10 AND 15
 <pre><code class="lang-fsharp">// Selecting students with ages between 10 and 15.
 query {
     for student in db.Student do
-    where (student.Age ?>= 10 && student.Age ?< 15)
+    where (student.Age ?>= 10 && student.Age ?&lt; 15)
     select student
 }
 </code></pre>

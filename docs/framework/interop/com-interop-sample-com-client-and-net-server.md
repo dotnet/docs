@@ -1,14 +1,6 @@
 ---
 title: "COM Interop Sample: COM Client and .NET Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COM Interop Sample: COM Client and .NET Server
 This sample demonstrates the interoperation of a [COM Client](#cpconcominteropsamplecomclientnetserveranchor1) and a [.NET Server](#cpconcominteropsamplecomclientnetserveranchor2) that performs mortgage calculations. In this example, the client creates and calls an instance of the managed `Loan` class, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations. Code examples from this sample appear throughout this section.  

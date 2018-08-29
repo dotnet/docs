@@ -1,26 +1,15 @@
 ---
 title: "How to: Synchronize Concurrent Operations with a Barrier"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Barrier, how to use"
 ms.assetid: e1a253ff-e0fb-4df8-95ff-d01a90d4cb19
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Synchronize Concurrent Operations with a Barrier
 The following example shows how to synchronize concurrent tasks with a <xref:System.Threading.Barrier>.  

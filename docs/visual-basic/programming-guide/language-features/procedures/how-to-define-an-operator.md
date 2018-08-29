@@ -1,13 +1,6 @@
 ---
 title: "How to: Define an Operator (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Define an Operator (Visual Basic)
 If you have defined a class or structure, you can define the behavior of a standard operator (such as `*`, `<>`, or `And`) when one or both of the operands is of the type of your class or structure.  
@@ -40,7 +30,7 @@ If you have defined a class or structure, you can define the behavior of a stand
   
  [!code-vb[VbVbcnProcedures#26](./codesnippet/VisualBasic/how-to-define-an-operator_2.vb)]  
   
- For more information and examples, see [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703).  
+ For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
 ## See Also  
  [Operator Procedures](./operator-procedures.md)  

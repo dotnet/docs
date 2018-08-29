@@ -1,25 +1,11 @@
 ---
 title: "How to: Animate a String by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], strings with key frames"
   - "strings [WPF], animating with key frames"
   - "key frames [WPF], animating strings with"
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a String by Using Key Frames
 This example shows how to animate a string, which in this example is the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.Button> control, by using key frames.  

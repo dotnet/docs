@@ -1,35 +1,21 @@
 ---
 title: "Extending Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "proxy extensions [WCF]"
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extending Clients
 In a calling application, the service model layer is responsible for translating method invocations in application code into outbound messages, pushing them to the underlying channels, translating results back into return values and out parameters in application code, and returning the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
   
- This topic describes how to use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation> classes in a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client application to modify the default execution behavior of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about extending the service runtime, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md). For more information about the behaviors that modify and insert customization objects into the client runtime, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
+ This topic describes how to use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation> classes in a Windows Communication Foundation (WCF) client application to modify the default execution behavior of a WCF client or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about extending the service runtime, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md). For more information about the behaviors that modify and insert customization objects into the client runtime, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## Clients  
- On a client, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client object or client channel converts method invocations into outgoing messages and incoming messages to operation results that are returned to the calling application. (For more information about client types, see [WCF Client Architecture](../../../../docs/framework/wcf/feature-details/client-architecture.md).)  
+ On a client, a WCF client object or client channel converts method invocations into outgoing messages and incoming messages to operation results that are returned to the calling application. (For more information about client types, see [WCF Client Architecture](../../../../docs/framework/wcf/feature-details/client-architecture.md).)  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client types have runtime types that handle this endpoint- and operation-level functionality. When an application calls an operation, the <xref:System.ServiceModel.Dispatcher.ClientOperation> translates the outbound objects into a message, processes interceptors, confirms that the outbound call conforms to the target contract, and hands the outbound message to the <xref:System.ServiceModel.Dispatcher.ClientRuntime>, which is responsible for creating and managing outbound channels (and inbound channels in the case of duplex services), handling extra outbound message processing (such as header modification), processing message interceptors in both directions, and routing inbound duplex calls to the appropriate client-side <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object. Both the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.ClientRuntime> provide similar services when messages (including faults) are returned to the client.  
+ WCF client types have runtime types that handle this endpoint- and operation-level functionality. When an application calls an operation, the <xref:System.ServiceModel.Dispatcher.ClientOperation> translates the outbound objects into a message, processes interceptors, confirms that the outbound call conforms to the target contract, and hands the outbound message to the <xref:System.ServiceModel.Dispatcher.ClientRuntime>, which is responsible for creating and managing outbound channels (and inbound channels in the case of duplex services), handling extra outbound message processing (such as header modification), processing message interceptors in both directions, and routing inbound duplex calls to the appropriate client-side <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object. Both the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.ClientRuntime> provide similar services when messages (including faults) are returned to the client.  
   
- These two runtime classes are the main extension to customize the processing of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client objects and channels. The <xref:System.ServiceModel.Dispatcher.ClientRuntime> class allows users to intercept and extend client execution across all messages in the contract. The <xref:System.ServiceModel.Dispatcher.ClientOperation> class allows users to intercept and extend client execution for all messages in a given operation.  
+ These two runtime classes are the main extension to customize the processing of WCF client objects and channels. The <xref:System.ServiceModel.Dispatcher.ClientRuntime> class allows users to intercept and extend client execution across all messages in the contract. The <xref:System.ServiceModel.Dispatcher.ClientOperation> class allows users to intercept and extend client execution for all messages in a given operation.  
   
  Modifying the properties or inserting customizations are done by using contract, endpoint, and operation behaviors. For more information about how to use these types of behaviors to perform client runtime customizations, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
@@ -42,7 +28,7 @@ In a calling application, the service model layer is responsible for translating
   
 -   Custom Message Transformations. Rather than modifying application code, the user may want to apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.  
   
--   Custom Data Model. A user may want to have a data or serialization model other than those supported by default in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=nameWithType> property.  
+-   Custom Data Model. A user may want to have a data or serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=nameWithType> property.  
   
 -   Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md) or [Client Validation](../../../../docs/framework/wcf/samples/client-validation.md).  
   
@@ -61,7 +47,7 @@ In a calling application, the service model layer is responsible for translating
   
 -   The <xref:System.ServiceModel.Dispatcher.ClientRuntime.Via%2A> property sets the value of the destination of the message at the transport level to support intermediaries and other scenarios.  
   
--   The <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property gets a collection of <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> objects to which you can add custom message interceptors for all messages traveling through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client.  
+-   The <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property gets a collection of <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> objects to which you can add custom message interceptors for all messages traveling through a WCF client.  
   
  In addition, there are a number of other properties that retrieve the contract information:  
   
@@ -71,22 +57,22 @@ In a calling application, the service model layer is responsible for translating
   
 -   <xref:System.ServiceModel.Dispatcher.ClientRuntime.ContractClientType%2A>  
   
- If the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client is a duplex [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, the following properties also retrieve the callback [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client information:  
+ If the WCF client is a duplex WCF client, the following properties also retrieve the callback WCF client information:  
   
 -   <xref:System.ServiceModel.Dispatcher.ClientRuntime.CallbackClientType%2A>  
   
 -   <xref:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime%2A>  
   
- To extend [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client execution across an entire [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, review the properties available on the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class to see whether modifying a property or implementing an interface and adding it to a property creates the functionality you are seeking. Once you have chosen a particular extension to build, insert your extension into the appropriate <xref:System.ServiceModel.Dispatcher.ClientRuntime> property by implementing a client behavior that provides access to the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class when invoked.  
+ To extend WCF client execution across an entire WCF client, review the properties available on the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class to see whether modifying a property or implementing an interface and adding it to a property creates the functionality you are seeking. Once you have chosen a particular extension to build, insert your extension into the appropriate <xref:System.ServiceModel.Dispatcher.ClientRuntime> property by implementing a client behavior that provides access to the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class when invoked.  
   
  You can insert custom extension objects into a collection using an operation behavior (an object that implements <xref:System.ServiceModel.Description.IOperationBehavior>), a contract behavior (an object that implements <xref:System.ServiceModel.Description.IContractBehavior>), or an endpoint behavior (an object that implements <xref:System.ServiceModel.Description.IEndpointBehavior>). The installing behavior object is added to the appropriate collection of behaviors either programmatically, declaratively (by implementing a custom attribute), or by implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> object to enable the behavior to be inserted using an application configuration file. For details, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
- For examples that demonstrate interception across a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, see [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md).  
+ For examples that demonstrate interception across a WCF client, see [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md).  
   
 ### Using the ClientOperation Class  
  The <xref:System.ServiceModel.Dispatcher.ClientOperation> class is the location for client run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify client run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class.)  
   
- Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation. The following properties enable you to insert custom objects into the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client system:  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation. The following properties enable you to insert custom objects into the WCF client system:  
   
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter.  
   
@@ -100,7 +86,7 @@ In a calling application, the service model layer is responsible for translating
   
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Action%2A> property to control the WS-Addressing action of the request message.  
   
--   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod%2A> to specify which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client methods are associated with an asynchronous operation.  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod%2A> to specify which WCF client methods are associated with an asynchronous operation.  
   
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection that contains the types that can appear in SOAP faults as the detail type.  
   
@@ -114,13 +100,13 @@ In a calling application, the service model layer is responsible for translating
   
 -   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SyncMethod%2A> property to control which method is mapped to the operation.  
   
- To extend [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client execution across only one service operation, review the properties available on the <xref:System.ServiceModel.Dispatcher.ClientOperation> class to see whether modifying a property or implementing an interface and adding it to a property creates the functionality you are seeking. Once you have chosen a particular extension to build, insert your extension into the appropriate <xref:System.ServiceModel.Dispatcher.ClientOperation> property by implementing a client behavior that provides access to the <xref:System.ServiceModel.Dispatcher.ClientOperation> class when invoked. Inside that behavior you can then modify the <xref:System.ServiceModel.Dispatcher.ClientRuntime> property to fit your requirements.  
+ To extend WCF client execution across only one service operation, review the properties available on the <xref:System.ServiceModel.Dispatcher.ClientOperation> class to see whether modifying a property or implementing an interface and adding it to a property creates the functionality you are seeking. Once you have chosen a particular extension to build, insert your extension into the appropriate <xref:System.ServiceModel.Dispatcher.ClientOperation> property by implementing a client behavior that provides access to the <xref:System.ServiceModel.Dispatcher.ClientOperation> class when invoked. Inside that behavior you can then modify the <xref:System.ServiceModel.Dispatcher.ClientRuntime> property to fit your requirements.  
   
  Typically, implementing an operation behavior (an object that implements the <xref:System.ServiceModel.Description.IOperationBehavior> interface) suffices, but you can also use endpoint behaviors and contract behaviors to accomplish the same thing by locating the <xref:System.ServiceModel.Description.OperationDescription> for a particular operation and attaching the behavior there. For details, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
  To use your custom behavior from configuration, install your behavior using a custom behavior configuration section handler. You can also install your behavior by creating a custom attribute.  
   
- For examples that demonstrate interception across a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md).  
+ For examples that demonstrate interception across a WCF client, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md).  
   
 ## See Also  
  <xref:System.ServiceModel.Dispatcher.ClientRuntime>  

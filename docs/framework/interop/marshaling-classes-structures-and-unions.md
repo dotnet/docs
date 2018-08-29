@@ -1,10 +1,6 @@
 ---
 title: "Marshaling Classes, Structures, and Unions"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,9 +20,6 @@ helpviewer_keywords:
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Marshaling Classes, Structures, and Unions
 Classes and structures are similar in the .NET Framework. Both can have fields, properties, and events. They can also have static and nonstatic methods. One notable difference is that structures are value types and classes are reference types.  

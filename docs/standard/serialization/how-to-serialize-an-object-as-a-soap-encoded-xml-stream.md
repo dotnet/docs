@@ -1,12 +1,6 @@
 ---
 title: "How to: Serialize an Object as a SOAP-Encoded XML Stream"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,6 @@ helpviewer_keywords:
   - "XML serialization, SOAP"
   - "serialization, SOAP"
 ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Serialize an Object as a SOAP-Encoded XML Stream
   

@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Text Decoration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,12 +16,6 @@ helpviewer_keywords:
   - "typography [WPF], text decorations"
   - "baseline type [WPF]"
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Text Decoration
 A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline. The following example shows the locations of the text decorations relative to the text.  

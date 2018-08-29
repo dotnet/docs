@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation RangeValue Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, Range Value"
   - "Range Value control pattern"
   - "UI Automation, Range Value control pattern"
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
-caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation RangeValue Control Pattern
 > [!NOTE]

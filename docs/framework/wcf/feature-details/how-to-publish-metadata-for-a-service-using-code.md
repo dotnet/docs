@@ -1,32 +1,18 @@
 ---
 title: "How to: Publish Metadata for a Service Using Code"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 51407e6d-4d87-42d5-be7c-9887b8652006
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Publish Metadata for a Service Using Code
-This is one of two how-to topics that discuss publishing metadata for a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a code.  
+This is one of two how-to topics that discuss publishing metadata for a Windows Communication Foundation (WCF) service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a code.  
   
 > [!CAUTION]
 >  This topic shows how to publish metadata in an unsecure manner. Any client can retrieve the metadata from the service. If you require your service to publish metadata in a secure manner. see [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] publishing metadata in a configuration file, see [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md). Publishing metadata allows clients to retrieve the metadata using a WS-Transfer GET request or an HTTP/GET request using the `?wsdl` query string. To be sure that the code is working you must create a basic WCF service. A basic self-hosted service is provided in the following code.  
+ For more information about publishing metadata in a configuration file, see [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md). Publishing metadata allows clients to retrieve the metadata using a WS-Transfer GET request or an HTTP/GET request using the `?wsdl` query string. To be sure that the code is working you must create a basic WCF service. A basic self-hosted service is provided in the following code.  
   
  [!code-csharp[htPublishMetadataCode#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/htpublishmetadatacode/cs/program.cs#0)]
  [!code-vb[htPublishMetadataCode#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htpublishmetadatacode/vb/program.vb#0)]  
@@ -77,7 +63,7 @@ This is one of two how-to topics that discuss publishing metadata for a [!INCLUD
      [!code-vb[htPublishMetadataCode#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htpublishmetadatacode/vb/program.vb#9)]  
   
     > [!NOTE]
-    >  If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, the service has publishing metadata enabled. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] default endpoints, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+    >  If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, the service has publishing metadata enabled. For more information about default endpoints, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 9. Open the service host and wait for incoming calls. When the user presses ENTER, close the service host.  
   
@@ -89,7 +75,7 @@ This is one of two how-to topics that discuss publishing metadata for a [!INCLUD
 11. Use Internet Explorer to browse to the base address of the service (http://localhost:8001/MetadataSample in this sample) and verify that the metadata publishing is turned on. You should see a Web page displayed that says "Simple Service" at the top and immediately below "You have created a service." If not, a message at the top of the resulting page displays: "Metadata publishing for this service is currently disabled."  
   
 ## Example  
- The following code example shows the implementation of a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that publishes metadata for the service in code.  
+ The following code example shows the implementation of a basic WCF service that publishes metadata for the service in code.  
   
  [!code-csharp[htPublishMetadataCode#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/htpublishmetadatacode/cs/program.cs#11)]
  [!code-vb[htPublishMetadataCode#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htpublishmetadatacode/vb/program.vb#11)]  

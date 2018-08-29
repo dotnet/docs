@@ -1,21 +1,9 @@
 ---
 title: "Service: Security Calls Not Authorized Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1eeade5a-ea62-4757-b1f9-1b1b1746abd1
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Service: Security Calls Not Authorized Per Second
 Counter name: Security Calls Not Authorized Per Second  

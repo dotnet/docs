@@ -1,14 +1,6 @@
 ---
 title: "How to: Enable Drag-and-Drop Operations with the Windows Forms RichTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "text boxes [Windows Forms], drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enable Drag-and-Drop Operations with the Windows Forms RichTextBox Control
 Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichTextBox> control are done by handling the <xref:System.Windows.Forms.RichTextBox.DragEnter> and <xref:System.Windows.Forms.RichTextBox.DragDrop> events. Thus, drag-and-drop operations are extremely simple with the <xref:System.Windows.Forms.RichTextBox> control.  
@@ -70,7 +56,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.richTextBox1.DragEnter += new  
@@ -146,7 +132,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.richTextBox1.DragDrop += new  

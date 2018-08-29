@@ -1,14 +1,6 @@
 ---
 title: "Deploying the .NET Framework and Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], packaging"
   - "deploying applications [.NET Framework]"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - ".NET Framework application deployment"
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
-caps.latest.revision: 56
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Deploying the .NET Framework and Applications
 This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework](~/docs/framework/install/index.md).  

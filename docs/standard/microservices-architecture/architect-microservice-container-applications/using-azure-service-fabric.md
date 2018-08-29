@@ -1,16 +1,9 @@
 ---
 title: Using Azure Service Fabric
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Service Fabric
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Azure Service Fabric
 
@@ -90,5 +83,5 @@ Other microservice frameworks that allow stateful services, that support the Act
 Note that Docker containers are themselves stateless. If you want to implement a stateful service, you need one of the additional prescriptive and higher-level frameworks noted earlier. 
 
 >[!div class="step-by-step"]
-[Previous] (scalable-available-multi-container-microservice-applications.md)
-[Next] (../docker-application-development-process/index.md)
+[Previous](scalable-available-multi-container-microservice-applications.md)
+[Next](../docker-application-development-process/index.md)

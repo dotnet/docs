@@ -1,14 +1,6 @@
 ---
 title: "Configuration file schema for the .NET Framework"
-ms.custom: ""
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework application configuration, configuration schema"
   - "machine configuration files"
@@ -29,12 +21,9 @@ helpviewer_keywords:
   - "configuration settings [.NET Framework], applications"
   - "configuration file reference [.NET Framework]"
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Configuration file schema for the .NET Framework

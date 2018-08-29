@@ -1,26 +1,12 @@
 ---
 title: "How to: Author Composite Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UserControl class [Windows Forms], creating composite controls"
   - "user controls [Windows Forms], creating"
   - "user controls [Windows Forms], inheriting from"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Author Composite Controls
 Composite controls can be employed in many ways. You can author them as part of a Windows desktop application project, and use them only on forms in the project. Or you can author them in a Windows Control Library project, compile the project into an assembly, and use the controls in other projects. You can even inherit from them, and use visual inheritance to customize them quickly for special purposes.  
@@ -28,7 +14,7 @@ Composite controls can be employed in many ways. You can author them as part of 
 > [!NOTE]
 >  If you want to author a composite control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
 >   
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To author a composite control  
   

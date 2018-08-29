@@ -1,25 +1,11 @@
 ---
 title: "Asynchronous Operations (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, asynchronous operations"
   - "asynchronous operations [WCF Data Services]"
   - "WCF Data Services, client library"
 ms.assetid: 679644c7-e3fc-422c-b14a-b44b683900d0
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Asynchronous Operations (WCF Data Services)
 Web applications must accommodate higher latency between client and server than applications that run inside internal networks. To optimize the performance and user experience of your application, we recommend using the asynchronous methods of the <xref:System.Data.Services.Client.DataServiceContext> and <xref:System.Data.Services.Client.DataServiceQuery%601> classes when accessing [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] servers over the Web.  

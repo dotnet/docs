@@ -1,10 +1,6 @@
 ---
 title: "&lt;supportedRuntime&gt; Element"
-ms.date: "10/17/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+ms.date: "04/10/2018"
 ms.custom: "updateeachrelease"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
@@ -16,8 +12,6 @@ ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;supportedRuntime&gt; Element
 
@@ -67,7 +61,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
 |2.0|"v2.0.50727"|  
 |3.0|"v2.0.50727"|  
 |3.5|"v2.0.50727"|  
-|4.0-4.7.1|"v4.0"|  
+|4.0-4.7.2|"v4.0"|  
 
 <a name="sku"></a>   
 ## "sku id" values
@@ -92,6 +86,7 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 |4.6.2|".NETFramework,Version=v4.6.2"|  
 |4.7|".NETFramework,Version=v4.7"|
 |4.7.1|".NETFramework,Version=v4.7.1"|
+|4.7.2|".NETFramework,Version=v4.7.2"|
 
 ## Example  
  The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets the .NET Framework 4.7.  

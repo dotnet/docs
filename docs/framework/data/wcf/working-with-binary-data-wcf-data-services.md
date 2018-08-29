@@ -1,14 +1,6 @@
 ---
 title: "Working with Binary Data (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "WCF Data Services, binary data"
   - "WCF Data Services, streams"
 ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Working with Binary Data (WCF Data Services)
 The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in one of the following ways:  
@@ -33,7 +19,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] implements the streaming of binary data by using HTTP as defined in the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. In this mechanism, binary data is treated as a media resource that is separate from but related to an entity, which is called a media link entry. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
 > [!TIP]
->  For a step-by-step example of how to create a [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](http://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](http://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.  
+>  For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](http://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](http://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.  
   
 ## Entity Metadata  
  An entity that has a related media resource stream is indicated in the data service metadata by the `HasStream` attribute applied to an entity type that is the media link entry. In the following example, the `PhotoInfo` entity is a media link entry that has a related media resource, indicated by the `HasStream` attribute.  
@@ -46,7 +32,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
  The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library provides methods for accessing binary resource streams from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based data service. When downloading a media resource, you can either use the URI of the media resource or you can get a binary stream that contains the media resource data itself. You can also upload media resource data as a binary stream.  
   
 > [!TIP]
->  For a step-by-step example of how to create a [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](http://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](http://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.  
+>  For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](http://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](http://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.  
   
 ### Getting the URI of the Binary Stream  
  When retrieving certain types of media resources, such as images and other media files, it is often easier to use the URI of the media resource in your application than handling the binary data stream itself. To get the URI of a resource stream associated with a give media link entry, you must call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the entity. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> method to get the URI of a media resource stream that is used to create a new image on the client:  

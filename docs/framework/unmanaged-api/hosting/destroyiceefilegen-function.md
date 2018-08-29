@@ -1,14 +1,6 @@
 ---
 title: "DestroyICeeFileGen Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "DestroyICeeFileGen"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # DestroyICeeFileGen Function
 Destroys an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  

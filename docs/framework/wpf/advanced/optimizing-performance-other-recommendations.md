@@ -1,14 +1,6 @@
 ---
 title: "Optimizing Performance: Other Recommendations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "ScrollBarVisibility enumeration [WPF]"
   - "brushes [WPF], performance"
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Optimizing Performance: Other Recommendations
 <a name="introduction"></a> This topic provides performance recommendations in addition to the ones covered by the topics in the [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md) section.  
@@ -78,7 +64,7 @@ ms.workload:
   
 <a name="FontCache"></a>   
 ## Configure Font Cache Service to Reduce Start-up Time  
- The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
+ The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
 ## See Also  
  [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  

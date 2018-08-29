@@ -1,20 +1,12 @@
 ---
 title: Get Started with .NET
 description: Lists various articles for getting started with .NET, both from a language and platform perspective.
-keywords: .NET, Getting Started, C#, F#, Visual Basic
 author: cartermp
 ms.author: mairaw
 ms.date: 05/01/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Get Started
 
 There are a number of ways to get started with .NET.  Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.

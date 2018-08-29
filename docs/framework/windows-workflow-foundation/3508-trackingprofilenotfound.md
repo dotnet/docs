@@ -1,19 +1,7 @@
 ---
 title: "3508 - TrackingProfileNotFound"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4cee3c4a-0490-4c94-aa19-ef7ce7287c02
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3508 - TrackingProfileNotFound
 ## Properties  

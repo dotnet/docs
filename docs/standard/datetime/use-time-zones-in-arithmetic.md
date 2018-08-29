@@ -1,13 +1,7 @@
 ---
 title: "How to: Use time zones in date and time arithmetic"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,15 +10,9 @@ helpviewer_keywords:
   - "arithmetic operations [.NET Framework], dates and times"
   - "dates [.NET Framework], adding and subtracting"
 ms.assetid: 83dd898d-1338-415d-8cd6-445377ab7871
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Use time zones in date and time arithmetic
 
 Ordinarily, when you perform date and time arithmetic using <xref:System.DateTime> or <xref:System.DateTimeOffset> values, the result does not reflect any time zone adjustment rules. This is true even when the time zone of the date and time value is clearly identifiable (for example, when the <xref:System.DateTime.Kind%2A> property is set to <xref:System.DateTimeKind.Local>). This topic shows how to perform arithmetic operations on date and time values that belong to a particular time zone. The results of the arithmetic operations will reflect the time zone's adjustment rules.

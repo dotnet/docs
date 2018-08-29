@@ -1,14 +1,6 @@
 ---
 title: "ICLRControl Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRControl"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRControl Interface
 Provides methods that allow a host to get references to, and configure aspects of, the common language runtime (CLR).  

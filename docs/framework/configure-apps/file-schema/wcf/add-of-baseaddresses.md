@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;baseAddresses&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1bd7426f-5f4f-43fc-b8e9-de842219aa32
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;baseAddresses&gt;
 Represents a configuration element that specifies the base addresses used by the service host.  

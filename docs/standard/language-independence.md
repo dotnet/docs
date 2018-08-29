@@ -1,23 +1,13 @@
 ---
 title: Language independence and language-independent components
 description: Learn how you can develop in one of many supported languages in .NET, such as C#, C++/CLI, F#, IronPython, VB, Visual COBOL, and PowerShell.
-keywords: .NET, .NET Core
-author: dotnet-bot
-ms.author: dotnetcontent
 ms.date: 07/22/2016
-ms.topic: article
 dev_langs: 
   - "csharp"
   - "vb"
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Language independence and language-independent components
 
 .NET is language independent. This means that, as a developer, you can develop in one of the many languages that target .NET implementations, such as C#, F#, and Visual Basic. You can access the types and members of class libraries developed for .NET implementations without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET app regardless of its language.

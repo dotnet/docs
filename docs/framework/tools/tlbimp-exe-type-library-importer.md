@@ -1,10 +1,6 @@
 ---
 title: "Tlbimp.exe (Type Library Importer)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "type libraries [.NET Framework], importing"
   - "importing type library"
@@ -16,9 +12,6 @@ helpviewer_keywords:
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tlbimp.exe (Type Library Importer)
 The Type Library Importer converts the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly. The output of Tlbimp.exe is a binary file (an assembly) that contains runtime metadata for the types defined within the original type library. You can examine this file with tools such as [Ildasm.exe](ildasm-exe-il-disassembler.md).  

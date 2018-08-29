@@ -1,14 +1,6 @@
 ---
 title: "Focus Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "applications [WPF], focus"
   - "focus in applications [WPF]"
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Focus Overview
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  

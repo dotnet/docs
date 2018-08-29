@@ -1,16 +1,9 @@
 ---
 title: "How to: Access Command-Line Arguments Using foreach (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "command-line arguments [C#]"
 ms.assetid: 89c3e335-3f5b-4e24-8c5a-b8036561fe8a
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Access Command-Line Arguments Using foreach (C# Programming Guide)
 Another approach to iterating over the array is to use the [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement as shown in this example. The `foreach` statement can be used to iterate over an array, a .NET Framework collection class, or any class or struct that implements the <xref:System.Collections.IEnumerable> interface.  

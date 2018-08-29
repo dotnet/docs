@@ -1,21 +1,9 @@
 ---
 title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0efb76bc-9f7b-4afe-be1c-2a57c917010b
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF
 ## Applies To  

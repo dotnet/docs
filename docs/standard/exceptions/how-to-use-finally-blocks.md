@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Finally Blocks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "finally blocks"
   - "ArgumentOutOfRangeException class"
 ms.assetid: 4b9c0137-04af-4468-91d1-b9014df8ddd2
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to use finally blocks
 

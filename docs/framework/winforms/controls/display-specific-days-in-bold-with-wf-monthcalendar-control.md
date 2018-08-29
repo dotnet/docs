@@ -1,14 +1,6 @@
 ---
 title: "How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "GetDayBold event"
   - "MonthCalendar control [Windows Forms], dates displayed in bold"
 ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display days in bold type, either as singular dates or on a repeating basis. You might do this to draw attention to special dates, such as holidays and weekends.  

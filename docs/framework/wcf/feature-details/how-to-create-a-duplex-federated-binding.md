@@ -1,21 +1,7 @@
 ---
 title: "How to: Create a Duplex Federated Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4331d2bc-5455-492a-9189-634a82597726
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Duplex Federated Binding
 <xref:System.ServiceModel.WSFederationHttpBinding> only supports the datagram and request/reply message exchange contracts. To use the duplex message exchange contract, you must create a custom binding. The following procedures show how to do this in configuration, using Message mode security for the HTTP and TCP transports, and using mixed mode security for the TCP transport. Sample code showing all 3 bindings is at the end of this topic.  

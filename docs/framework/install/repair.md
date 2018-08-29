@@ -3,13 +3,7 @@ title: Repair the .NET Framework
 description: Learn how to repair the .NET Framework
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
 ms.date: 08/03/2017
-ms.topic: article
-ms.prod: .net-framework
-ms.devlang: dotnet
-ms.workload: 
-  - dotnet
 ---
 
 # Repair the .NET Framework

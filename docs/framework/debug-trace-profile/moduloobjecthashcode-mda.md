@@ -1,14 +1,6 @@
 ---
 title: "moduloObjectHashcode MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), hashcode modulus"
   - "Modulo object hash code"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "modulus of hashcodes"
 ms.assetid: b45366ff-2a7a-4b8e-ab01-537b72e9de68
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # moduloObjectHashcode MDA
 The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavior of the <xref:System.Object> class to perform a modulo operation on the hash code returned by the <xref:System.Object.GetHashCode%2A> method. The default modulus for this MDA is 1, which causes <xref:System.Object.GetHashCode%2A> to return 0 for all objects.  

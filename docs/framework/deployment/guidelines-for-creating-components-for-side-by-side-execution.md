@@ -1,24 +1,12 @@
 ---
 title: "Guidelines for Creating Components for Side-by-Side Execution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "side-by-side execution, multiple application versions"
   - "side-by-side execution, multiple component versions"
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  

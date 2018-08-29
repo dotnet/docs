@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerNodeAuthenticationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0b50f782-ca06-4a82-aa7f-71f78ddc5177
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNodeAuthenticationFailure
 The security handshake with a potential neighbor was not successful.  

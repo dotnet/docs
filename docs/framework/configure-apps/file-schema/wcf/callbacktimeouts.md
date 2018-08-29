@@ -1,21 +1,7 @@
 ---
 title: "&lt;callbackTimeouts&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;callbackTimeouts&gt;
 Specifies the timeout value when flowing transactions from server to client.in a duplex callback contract scenario.  

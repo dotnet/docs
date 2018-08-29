@@ -1,14 +1,6 @@
 ---
 title: "Order of Events in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [Windows Forms], order of"
   - "focus event order"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "validation events [Windows Forms], order of"
   - "application startup event order"
 ms.assetid: e81db09b-4453-437f-b78a-62d7cd5c9829
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Order of Events in Windows Forms
 The order in which events are raised in Windows Forms applications is of particular interest to developers concerned with handling each of these events in turn. When a situation calls for meticulous handling of events, such as when you are redrawing parts of the form, an awareness of the precise order in which events are raised at run time is necessary. This topic provides some details on the order of events during several important stages in the lifetime of applications and controls. For specific details about the order of mouse input events, see [Mouse Events in Windows Forms](../../../docs/framework/winforms/mouse-events-in-windows-forms.md). For an overview of events in Windows Forms, see [Events Overview](../../../docs/framework/winforms/events-overview-windows-forms.md). For details about the makeup of event handlers, see [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md).  

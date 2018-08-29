@@ -1,24 +1,12 @@
 ---
 title: "Migrating from the .NET Framework 1.1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework 4.5, migrating from 1.1"
   - ".NET Framework 1.1, migrating to .NET Framework 4.5"
 ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Migrating from the .NET Framework 1.1
 [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system do not support the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)]. As a result, applications that target the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] will not run without modification on [!INCLUDE[win7](../../../includes/win7-md.md)] or later operating system versions. This topic discusses the steps required to run an application that targets the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] under [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system. For more information about the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)] and [!INCLUDE[win8](../../../includes/win8-md.md)], see [Running .NET Framework 1.1 Apps on Windows 8 and later versions](../../../docs/framework/install/run-net-framework-1-1-apps.md).  

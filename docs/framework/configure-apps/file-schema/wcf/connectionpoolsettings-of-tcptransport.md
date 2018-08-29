@@ -1,21 +1,7 @@
 ---
 title: "&lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2fbc3aa7-fcc9-4193-99a3-85d31d60d3f7
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;
 Specifies additional connection pool settings for a TCP transport.  

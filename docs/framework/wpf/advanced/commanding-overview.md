@@ -1,14 +1,6 @@
 ---
 title: "Commanding Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "commanding [WPF]"
   - "CommandManager [WPF]"
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
-caps.latest.revision: 35
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Commanding Overview
 <a name="introduction"></a> Commanding is an input mechanism in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] which provides input handling at a more semantic level than device input. Examples of commands are the **Copy**, **Cut**, and **Paste** operations found on many applications.  
@@ -189,7 +175,7 @@ ms.workload:
 ## Creating Custom Commands  
  If the commands in the command library classes do not meet your needs, then you can create your own commands.  There are two ways to create a custom command.  The first is to start from the ground up and implement the <xref:System.Windows.Input.ICommand> interface.  The other way, and the more common approach, is to create a <xref:System.Windows.Input.RoutedCommand> or a <xref:System.Windows.Input.RoutedUICommand>.  
   
- For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980).  
+ For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand).  
   
 ## See Also  
  <xref:System.Windows.Input.RoutedCommand>  
@@ -200,4 +186,4 @@ ms.workload:
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
  [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)  
- [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980)
+ [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand)

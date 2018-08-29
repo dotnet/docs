@@ -1,21 +1,7 @@
 ---
 title: "x:Property Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 618555a8-c893-455c-810f-ac54cd24ef10
-caps.latest.revision: 6
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Property Directive
 Declares a XAML property in markup.  

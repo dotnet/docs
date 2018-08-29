@@ -1,16 +1,9 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
 description: .NET Microservices Architecture for Containerized .NET Applications | Defining your multi-container application with docker-compose.yml
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/30/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Defining your multi-container application with docker-compose.yml 
 
@@ -113,7 +106,7 @@ Focusing on a single container, the catalog.api container-microservice has a str
   catalog.api:
     image: eshop/catalog.api
     environment:
-      - ConnectionString=Server=catalog.data;Initial Catalog=CatalogData;User Id=sa;Password=your@password
+      - ConnectionString=Server=sql.data;Initial Catalog=CatalogData;User Id=sa;Password=your@password
     expose:
       - "80"
     ports:
@@ -555,5 +548,5 @@ The overall takeway here is that you are able to build your application the same
 
 
 >[!div class="step-by-step"]
-[Previous] (data-driven-crud-microservice.md)
-[Next] (database-server-container.md)
+[Previous](data-driven-crud-microservice.md)
+[Next](database-server-container.md)

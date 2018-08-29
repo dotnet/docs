@@ -1,19 +1,12 @@
 ---
 title: "How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "hexadecimal strings [C#], converting to numeric type"
   - "conversions [C#], hexidecimal strings"
   - "strings [C#], converting hexadecimal strings"
   - "hexadecimal strings [C#]"
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)
 These examples show you how to perform the following tasks:  
@@ -44,7 +37,7 @@ These examples show you how to perform the following tasks:
  [!code-csharp[csProgGuideTypes#32](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_3.cs)]  
   
 ## Example  
- The following example shows how to convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md) by using the <xref:System.BitConverter?displayProperty=nameWithType> class and the <xref:System.Int32.Parse%2A?displayProperty=nameWithType> method.  
+ The following example shows how to convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md) by using the <xref:System.BitConverter?displayProperty=nameWithType> class and the <xref:System.UInt32.Parse%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[csProgGuideTypes#39](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_4.cs)]  
   

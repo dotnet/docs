@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyCache::InstallAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyCache.InstallAssembly"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 33c1d269-c85e-4cb1-b0e6-1c510c8fb5fa
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyCache::InstallAssembly Method
 Installs the specified assembly in the global assembly cache.  

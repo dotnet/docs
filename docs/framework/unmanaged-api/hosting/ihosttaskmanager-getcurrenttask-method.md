@@ -1,14 +1,6 @@
 ---
 title: "IHostTaskManager::GetCurrentTask Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostTaskManager.GetCurrentTask"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f17bca49-90bd-4dee-a5e1-b9a57ea46f85
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostTaskManager::GetCurrentTask Method
 Gets an interface pointer to the task that is currently executing on the operating system thread from which this call is made.  

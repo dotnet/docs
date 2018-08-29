@@ -1,14 +1,6 @@
 ---
 title: "How to: Install and Uninstall Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, deploying"
   - "services, uninstalling"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "uninstalling Windows Services"
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
-caps.latest.revision: 19
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Install and Uninstall Services
 If you’re developing a Windows Service by using the .NET Framework, you can quickly install your service application by using a command-line utility called InstallUtil.exe. If you’re a developer who wants to release a Windows Service that users can install and uninstall  you should use InstallShield. See [Windows Installer Deployment](http://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).  

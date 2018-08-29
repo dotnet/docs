@@ -1,24 +1,10 @@
 ---
 title: "Using Performance Counters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-caps.latest.revision: 31
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Performance Counters
-This sample demonstrates how to access [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] performance counters and how to create user-defined performance counters. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+This sample demonstrates how to access Windows Communication Foundation (WCF) performance counters and how to create user-defined performance counters. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -37,7 +23,7 @@ This sample demonstrates how to access [!INCLUDE[indigo1](../../../../includes/i
   
  This task can also be done using the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md).  
   
- When performance counters are enabled, the entire suite of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] performance counters is enabled for the service. The .NET Framework automatically maintains performance data at three levels: `ServiceModelService`, `ServiceModelEndpoint` and `ServiceModelOperation`. Each of these levels has performance counters such as "Calls", "Calls per Second", and "Security Calls Not Authorized".  
+ When performance counters are enabled, the entire suite of WCF performance counters is enabled for the service. The .NET Framework automatically maintains performance data at three levels: `ServiceModelService`, `ServiceModelEndpoint` and `ServiceModelOperation`. Each of these levels has performance counters such as "Calls", "Calls per Second", and "Security Calls Not Authorized".  
   
 ### To set up, build, and run the sample  
   
@@ -56,10 +42,10 @@ This sample demonstrates how to access [!INCLUDE[indigo1](../../../../includes/i
   
 2.  Remove the performance counters that are listed by selecting them and pressing the Delete key.  
   
-3.  Add [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] counters by right-clicking the graph pane and selecting **Add Counters**. In the **Add Counters** dialog box, select **ServiceModelOperation 3.0.0.0, ServiceModelEndpoint 3.0.0.0, or ServiceModelService 3.0.0.0** in the Performance object drop down list box. Select the counters you want to view from the list.  
+3.  Add WCF counters by right-clicking the graph pane and selecting **Add Counters**. In the **Add Counters** dialog box, select **ServiceModelOperation 3.0.0.0, ServiceModelEndpoint 3.0.0.0, or ServiceModelService 3.0.0.0** in the Performance object drop down list box. Select the counters you want to view from the list.  
   
     > [!NOTE]
-    >  There are no [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] performance counters for a service if there are no [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services running on the computer.  
+    >  There are no WCF performance counters for a service if there are no WCF services running on the computer.  
   
 ### To use the Configuration Editor to enable counters  
   
@@ -80,7 +66,7 @@ This sample demonstrates how to access [!INCLUDE[indigo1](../../../../includes/i
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   

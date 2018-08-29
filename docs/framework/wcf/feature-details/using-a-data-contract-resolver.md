@@ -1,24 +1,10 @@
 ---
 title: "Using a Data Contract Resolver"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using a Data Contract Resolver
-A data contract resolver allows you to configure known types dynamically. Known types are required when serializing or deserializing a type not expected by a data contract. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md). Known types are normally specified statically. This means you would have to know all the possible types an operation may receive while implementing the operation. There are scenarios in which this is not true and being able to specify known types dynamically is important.  
+A data contract resolver allows you to configure known types dynamically. Known types are required when serializing or deserializing a type not expected by a data contract. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md). Known types are normally specified statically. This means you would have to know all the possible types an operation may receive while implementing the operation. There are scenarios in which this is not true and being able to specify known types dynamically is important.  
   
 ## Creating a Data Contract Resolver  
  Creating a data contract resolver involves implementing two methods, <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> and <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A>. These two methods implement callbacks that are used during serialization and deserialization, respectively. The <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> method is invoked during serialization and takes a data contract type and maps it to an `xsi:type` name and namespace. The <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> method is invoked during deserialization and takes an `xsi:type` name and namespace and resolves it to a data contract type. Both of these methods have a `knownTypeResolver` parameter that can be used to use the default known type resolver in your implementation.  
@@ -93,7 +79,7 @@ if (serializerBehavior == null)
 SerializerBehavior.DataContractResolver = new MyCustomerResolver();  
 ```  
   
- You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  
+ You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  For more information, see the [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  
   
 ## See Also  
  [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  

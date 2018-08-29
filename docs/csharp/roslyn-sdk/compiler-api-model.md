@@ -1,12 +1,7 @@
 ---
 title: .NET Compiler Platform SDK concepts and object model
 description: This overview provides the background you need to work effectively with the .NET compiler SDK. You'll learn the API layers, the major types involved, and the overall object model.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/10/2017
-ms.topic: conceptual
-ms.prod: .net
-ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 # Understand the .NET Compiler Platform SDK model

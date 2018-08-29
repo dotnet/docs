@@ -1,23 +1,9 @@
 ---
 title: "Virtual Mode in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], virtual mode"
 ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Virtual Mode in the Windows Forms DataGridView Control
 With virtual mode, you can manage the interaction between the <xref:System.Windows.Forms.DataGridView> control and a custom data cache. To implement virtual mode, set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handle one or more of the events described in this topic. You will typically handle at least the `CellValueNeeded` event, which enables the control look up values in the data cache.  

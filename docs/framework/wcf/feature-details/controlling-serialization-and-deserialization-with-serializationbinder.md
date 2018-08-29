@@ -1,24 +1,10 @@
 ---
 title: "Controlling Serialization and Deserialization with SerializationBinder"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Controlling Serialization and Deserialization with SerializationBinder
-During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. By default, deserialization uses this information to create an instance of an identical object. Some users may need to control which class to serialize and deserialize, either because the original class may not exist on the machine performing deserialization, the original class has moved between assemblies, or a different version of the class is required on the server and client. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Usage of Serialization Binder](../../../../docs/framework/wcf/samples/usage-of-serialization-binder.md).  
+During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. By default, deserialization uses this information to create an instance of an identical object. Some users may need to control which class to serialize and deserialize, either because the original class may not exist on the machine performing deserialization, the original class has moved between assemblies, or a different version of the class is required on the server and client. For more information, see [Usage of Serialization Binder](../../../../docs/framework/wcf/samples/usage-of-serialization-binder.md).  
   
 > [!WARNING]
 >  This functionality is only available when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> or the <xref:System.Runtime.Serialization.NetDataContractSerializer>.  

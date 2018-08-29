@@ -1,18 +1,9 @@
 ---
 title: "Sub or Function not defined (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID35"
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sub or Function not defined (Visual Basic)
 A `Sub` or `Function` must be defined in order to be called. Possible causes of this error include:  

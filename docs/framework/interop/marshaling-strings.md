@@ -1,10 +1,6 @@
 ---
 title: "Marshaling Strings"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "marshaling, samples"
   - "platform invoke, marshaling data"
@@ -15,12 +11,8 @@ helpviewer_keywords:
   - "marshaling, platform invoke"
   - "sample applications [.NET Framework], marshaling strings"
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Marshaling Strings
 Platform invoke copies string parameters, converting them from the .NET Framework format (Unicode) to the unmanaged format (ANSI), if needed. Because managed strings are immutable, platform invoke does not copy them back from unmanaged memory to managed memory when the function returns.  

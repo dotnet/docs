@@ -1,29 +1,15 @@
 ---
 title: "Walkthrough: Create a Button by Using XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "buttons [WPF]"
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Create a Button by Using XAML
-The objective of this walkthrough is to learn how to create an animated button for use in a [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
+The objective of this walkthrough is to learn how to create an animated button for use in a Windows Presentation Foundation (WPF) application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
 > [!IMPORTANT]
->  This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Microsoft [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. If you would prefer to learn how to use a design tool (Microsoft Expression Blend) to create the same application, see [Create a Button by Using Microsoft Expression Blend](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md).  
+>  This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Microsoft Visual Studio. If you would prefer to learn how to use a design tool (Microsoft Expression Blend) to create the same application, see [Create a Button by Using Microsoft Expression Blend](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md).  
   
  The following figure shows the finished buttons.  
   
@@ -34,7 +20,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 #### To create a new WPF project and add buttons to the window  
   
-1.  Start[!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+1.  Start Visual Studio.  
   
 2.  **Create a new WPF project:** On the **File** menu, point to **New**, and then click **Project**. Find the **Windows Application (WPF)** template and name the project "AnimatedButton". This will create the skeleton for the application.  
   
@@ -45,8 +31,13 @@ The objective of this walkthrough is to learn how to create an animated button f
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
       Title="AnimatedButton" Height="300" Width="300"   
-      Background="Black">   <!-- Buttons arranged vertically inside a StackPanel. -->   <StackPanel HorizontalAlignment="Left">     <Button>Button 1</Button>     <Button>Button 2</Button>     <Button>Button 3</Button>   </StackPanel>  
-  
+      Background="Black">
+      <!-- Buttons arranged vertically inside a StackPanel. -->
+      <StackPanel HorizontalAlignment="Left">
+          <Button>Button 1</Button>
+          <Button>Button 2</Button>
+          <Button>Button 3</Button>
+      </StackPanel>  
     </Window>  
     ```  
   
@@ -174,7 +165,17 @@ The objective of this walkthrough is to learn how to create an animated button f
   
     ```xaml  
     <Application.Resources>  
-      <GradientStopCollection x:Key="MyGlassGradientStopsResource">     <GradientStop Color="WhiteSmoke" Offset="0.2" />     <GradientStop Color="Transparent" Offset="0.4" />     <GradientStop Color="WhiteSmoke" Offset="0.5" />     <GradientStop Color="Transparent" Offset="0.75" />     <GradientStop Color="WhiteSmoke" Offset="0.9" />     <GradientStop Color="Transparent" Offset="1" />   </GradientStopCollection>   <LinearGradientBrush x:Key="MyGlassBrushResource"     StartPoint="0,0" EndPoint="1,1" Opacity="0.75"     GradientStops="{StaticResource MyGlassGradientStopsResource}" />  
+      <GradientStopCollection x:Key="MyGlassGradientStopsResource">
+        <GradientStop Color="WhiteSmoke" Offset="0.2" />     
+        <GradientStop Color="Transparent" Offset="0.4" />    
+        <GradientStop Color="WhiteSmoke" Offset="0.5" />     
+        <GradientStop Color="Transparent" Offset="0.75" />     
+        <GradientStop Color="WhiteSmoke" Offset="0.9" />     
+        <GradientStop Color="Transparent" Offset="1" />   
+      </GradientStopCollection>   
+      <LinearGradientBrush x:Key="MyGlassBrushResource"    
+        StartPoint="0,0" EndPoint="1,1" Opacity="0.75"
+        GradientStops="{StaticResource MyGlassGradientStopsResource}" />  
     <!-- Styles and other resources below here. -->  
     ```  
   
@@ -184,7 +185,7 @@ The objective of this walkthrough is to learn how to create an animated button f
     <Setter.Value>  
       <ControlTemplate TargetType="{x:Type Button}">  
         <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"  
-    ClipToBounds="True">  
+          ClipToBounds="True">  
   
         <!-- Outer Rectangle with rounded corners. -->  
         <Rectangle x:Name="outerRectangle" HorizontalAlignment="Stretch"   
@@ -196,7 +197,34 @@ The objective of this walkthrough is to learn how to create an animated button f
           VerticalAlignment="Stretch" Stroke="Transparent" StrokeThickness="20"   
           Fill="{TemplateBinding Background}" RadiusX="20" RadiusY="20" />  
   
-        <!-- Glass Rectangle -->     <Rectangle x:Name="glassCube" HorizontalAlignment="Stretch"       VerticalAlignment="Stretch"       StrokeThickness="2" RadiusX="10" RadiusY="10" Opacity="0"       Fill="{StaticResource MyGlassBrushResource}"       RenderTransformOrigin="0.5,0.5">       <Rectangle.Stroke>         <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">           <LinearGradientBrush.GradientStops>             <GradientStop Offset="0.0" Color="LightBlue" />             <GradientStop Offset="1.0" Color="Gray" />           </LinearGradientBrush.GradientStops>         </LinearGradientBrush>       </Rectangle.Stroke>       <!-- These transforms have no effect as they are declared here.             The reason the transforms are included is to be targets             for animation (see later). -->       <Rectangle.RenderTransform>         <TransformGroup>           <ScaleTransform />           <RotateTransform />         </TransformGroup>       </Rectangle.RenderTransform>       <!-- A BevelBitmapEffect is applied to give the button a             "Beveled" look. -->       <Rectangle.BitmapEffect>         <BevelBitmapEffect />       </Rectangle.BitmapEffect>     </Rectangle>  
+        <!-- Glass Rectangle -->     
+        <Rectangle x:Name="glassCube" HorizontalAlignment="Stretch"       
+          VerticalAlignment="Stretch"       
+          StrokeThickness="2" RadiusX="10" RadiusY="10" Opacity="0"       
+          Fill="{StaticResource MyGlassBrushResource}"       
+          RenderTransformOrigin="0.5,0.5">
+          <Rectangle.Stroke>         
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0.0" Color="LightBlue" />
+                <GradientStop Offset="1.0" Color="Gray" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>       
+          </Rectangle.Stroke>       
+          <!-- These transforms have no effect as they are declared here.
+          The reason the transforms are included is to be targets
+          for animation (see later). -->       
+          <Rectangle.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform />
+              <RotateTransform />
+            </TransformGroup>
+          </Rectangle.RenderTransform>
+          <!-- A BevelBitmapEffect is applied to give the button a "Beveled" look. -->
+          <Rectangle.BitmapEffect>
+            <BevelBitmapEffect />
+          </Rectangle.BitmapEffect>
+        </Rectangle>  
   
         <!-- Present Text of the button. -->  
         <DockPanel Name="myContentPresenterDockPanel">  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;net.tcp&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;net.tcp&gt;
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  
@@ -60,17 +46,17 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`listenBacklog`|An integer that specifies the maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] services. The default is 10.|  
+|`listenBacklog`|An integer that specifies the maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to Windows Communication Foundation (WCF) services. The default is 10.|  
 |`maxPendingAccepts`|An integer that specifies the maximum outstanding concurrent accepting threads on the listening endpoint for the sharing service. The default is 2.|  
 |`MaxPendingConnections`|The maximum number of connections that the listener can have waiting to be accepted by the application. When this quota value is exceeded, new incoming connections are dropped rather than waiting to be accepted. Connection features such as message security can cause a client to open more than one connection. Service administrators should account for these additional connections when setting this quota value. The default is 10.|  
 |`receiveTimeout`|A `TimeSpan` that specifies the timeout for reading the framing data and performing connection dispatching from the underlining connections. The default is "00:00:10".|  
-|`teredoEnabled`|A Boolean value that indicates whether the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services. The default is `false`.|  
+|`teredoEnabled`|A Boolean value that indicates whether the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of WCF services. The default is `false`.|  
   
 ### Child Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services, and are granted connection access to the sharing service.|  
+|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host WCF services, and are granted connection access to the sharing service.|  
   
 ### Parent Elements  
   

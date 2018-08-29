@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Menu Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Menu"
   - "UI Automation, Menu control type"
   - "Menu control type"
 ms.assetid: 016323cb-f800-4938-b77b-2eb25d646090
-caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Menu Control Type
 > [!NOTE]

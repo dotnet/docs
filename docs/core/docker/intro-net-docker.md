@@ -1,19 +1,10 @@
 ---
 title: Introduction to .NET and Docker
 description: Understanding Docker and .NET Core
-keywords: .NET, .NET Core, Docker
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.devlang: dotnet
-ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
-manager: wpickett
 ms.custom: mvc
-ms.workload: 
-  - dotnetcore
 ---
 # Introduction to .NET and Docker
 
@@ -100,15 +91,15 @@ This repo contain samples that demonstrate various .NET Framework Docker configu
 
 **.NET Framework 4.7**
 
-The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](../../framework/whats-new/index.md#v47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
+The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](../../framework/whats-new/index.md#v47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/master/dotnetapp-4.7/Dockerfile).
 
 **.NET Framework 4.6.2**
 
-The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](../../framework/whats-new/index.md#v462). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image](https://github.com/Microsoft/dotnet-framework-docker/tree/master/4.6.2).
+The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](../../framework/whats-new/index.md#v462). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/master/dotnetapp-4.6.2/Dockerfile).
 
 **.NET Framework 3.5**
 
- The [dotnet-framework:3.5 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-3.5) demonstrates basic "hello world" usage of [.NET Framework 3.5](https://github.com/Microsoft/dotnet-framework-docker/tree/master/3.5). It shows you how you can build and deploy a project relying on .NET Framework 3.5 in Docker.
+ The [dotnet-framework:3.5 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-3.5) demonstrates basic "hello world" usage of [.NET Framework 3.5](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/master/dotnetapp-3.5/dotnetapp-3.5/Dockerfile). It shows you how you can build and deploy a project relying on .NET Framework 3.5 in Docker.
 
 #### ASP.NET Core
 
@@ -128,7 +119,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Windows Communication Framework (WCF) images on DockerHub](https://hub.docker.com/r/microsoft/wcf/)
 
-* [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/iis-docker)
+* [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/wcf-docker)
 
 * [Windows Communication Framework (WCF) Docker samples using .NET Full Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
 
@@ -136,7 +127,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Internet Information Server (IIS) images on DockerHub](https://hub.docker.com/r/microsoft/iis/)
 
-* [Internet Information Server (IIS) images on GitHub](https://github.com/microsoft/wcf-docker)
+* [Internet Information Server (IIS) images on GitHub](https://github.com/microsoft/iis-docker)
 
 ### Interact with other Microsoft stack container images
 
@@ -144,9 +135,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Run the Microsoft SQL Server for Linux 2017 container image with Docker Quickstart](https://docs.microsoft.com/sql/linux/quickstart-install-connect-docker)
 
-* [Microsoft SQL Server for Linux images on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows/)
-
-* [Microsoft SQL Server for Windows Containers images on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows/)
+* [Microsoft SQL Server for Linux images on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-linux/)
 
 * [Microsoft SQL Server Express Edition images for Windows Containers on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows-express/)
 
@@ -160,9 +149,9 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Operations Management Suite (OMS) Linux agent
 
-* [Operations Management Suite (OMS) Linux agent overview](https://github.com/Microsoft/OMS-Agent-for-Linux/blob/master/docs/Docker-Instructions.md#overview)
+* [Operations Management Suite (OMS) Linux agent overview](https://github.com/Microsoft/OMS-Agent-for-Linux/blob/master/docs/Docker-Instructions.md)
 
-* [Operations Management Suite (OMS) images on DockerHub](https://hub.docker.com/r/microsoft/vsts-agent/)
+* [Operations Management Suite (OMS) images on DockerHub](https://hub.docker.com/r/microsoft/oms/)
 
 * [Operations Management Suite (OMS) images on GitHub](https://github.com/Microsoft/OMS-docker)
 
@@ -170,7 +159,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Microsoft Azure Command Line Interface (CLI) images on DockerHub](https://hub.docker.com/r/microsoft/azure-cli/) 
 
-* [Microsoft Azure Command-Line Interface (CLI) images on GitHub](https://github.com/Microsoft/OMS-docker)
+* [Microsoft Azure Command-Line Interface (CLI) images on GitHub](https://github.com/Azure/azure-cli#Docker)
 
 > [!NOTE]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.

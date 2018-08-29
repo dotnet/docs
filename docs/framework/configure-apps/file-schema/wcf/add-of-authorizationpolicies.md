@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;authorizationPolicies&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 613a03d8-4384-4556-bce2-8c23286c0bb0
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;authorizationPolicies&gt;
 Specifies an authorization policy for claim transformation.  
@@ -45,7 +31,7 @@ Specifies an authorization policy for claim transformation.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`policyType`|A required String attribute.<br /><br /> The [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] access control model supports provisioning a set of authorization policies as types. This attribute specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that.|  
+|`policyType`|A required String attribute.<br /><br /> The Windows Communication Foundation (WCF) access control model supports provisioning a set of authorization policies as types. This attribute specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that.|  
   
 ### Child Elements  
  None.  

@@ -1,14 +1,6 @@
 ---
 title: "Web Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Web.config configuration file [ASP.NET]"
   - "ASP.NET configuration system, Web settings schema"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "configuration files [ASP.NET]"
   - "configuration schema [.NET Framework], Web settings"
 ms.assetid: ae1ac356-267d-4753-8d7a-7a04eb45a9be
-caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Web Settings Schema
 Web settings specify CPU and execution-level ASP.NET settings that apply to process-wide behavior managed by the ASP.NET hosting layer. These settings differ from application domain-type settings that are specified in the Web.config file of an ASP.NET application.  

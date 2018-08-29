@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind to XDocument, XElement, or LINQ for XML Query Results"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "data binding [WPF], binding to XDocument"
   - "data binding [WPF], binding to XElement"
 ms.assetid: 6a629a49-fe1c-465d-b76a-3dcbf4307b64
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to XDocument, XElement, or LINQ for XML Query Results
 This example demonstrates how to bind XML data to an <xref:System.Windows.Controls.ItemsControl> using <xref:System.Xml.Linq.XDocument>.  

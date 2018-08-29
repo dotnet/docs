@@ -1,19 +1,10 @@
 ---
 title: "PNRP Caches"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 270068d9-1b6b-4eb9-9e14-e02326bb88df
-caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # PNRP Caches
 Peer Name Resolution Protocol (PNRP) caches are local collections of algorithmically selected peer endpoints maintained on the peer.  

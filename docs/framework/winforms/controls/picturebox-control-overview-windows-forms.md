@@ -1,14 +1,6 @@
 ---
 title: "PictureBox Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "PictureBox"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "picture controls [Windows Forms], about picture controls"
   - "image controls [Windows Forms], about image controls"
 ms.assetid: e5befee7-dc29-4888-a7c4-3b177e394112
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # PictureBox Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.PictureBox> control is used to display graphics in bitmap, GIF, JPEG, metafile, or icon format.  

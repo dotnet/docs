@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedBinder Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedBinder"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedBinder Interface
 Represents a symbol binder for unmanaged code.  

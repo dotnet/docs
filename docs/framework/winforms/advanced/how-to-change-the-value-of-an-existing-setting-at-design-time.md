@@ -1,24 +1,10 @@
 ---
 title: "How To: Change the Value of an Existing Setting at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application settings [Windows Forms], design time"
   - "application settings [Windows Forms], changing"
 ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How To: Change the Value of an Existing Setting at Design Time
 You can use Visual Studio to edit the values of existing settings in your project.  

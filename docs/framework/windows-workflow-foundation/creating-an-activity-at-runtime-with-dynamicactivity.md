@@ -1,19 +1,7 @@
 ---
 title: "Creating an Activity at Runtime with DynamicActivity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating an Activity at Runtime with DynamicActivity
 <xref:System.Activities.DynamicActivity> is a concrete, sealed class with a public constructor. <xref:System.Activities.DynamicActivity> can be used to assemble activity functionality at runtime using an activity DOM.  

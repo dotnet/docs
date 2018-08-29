@@ -1,26 +1,12 @@
 ---
 title: "x:Uid Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], localizable content attribute"
   - "XAML [XAML Services], x:Uid attribute"
   - "x:Uid attribute [XAML Services]"
   - "Uid attribute [XAML Services]"
 ms.assetid: 81defade-483b-4a89-b76d-9b25bba34010
-caps.latest.revision: 12
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Uid Directive
 Provides a unique identifier for markup elements. In many scenarios, this unique identifier is used by XAML localization processes and tools.  

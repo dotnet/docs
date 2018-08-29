@@ -1,23 +1,9 @@
 ---
 title: "Walkthrough: Using Only Stored Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Walkthrough: Using Only Stored Procedures (Visual Basic)
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by using stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  
@@ -25,9 +11,9 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 > [!NOTE]
 >  You can also use stored procedures in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications to override default behavior, especially for `Create`, `Update`, and `Delete` processes. For more information, see [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md).  
   
- For purposes of this walkthrough, you will use two methods that have been mapped to stored procedures in the Northwind sample database: CustOrdersDetail and CustOrderHist. The mapping occurs when you run the SqlMetal command-line tool to generate a [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] file. For more information, see the Prerequisites section later in this walkthrough.  
+ For purposes of this walkthrough, you will use two methods that have been mapped to stored procedures in the Northwind sample database: CustOrdersDetail and CustOrderHist. The mapping occurs when you run the SqlMetal command-line tool to generate a Visual Basic file. For more information, see the Prerequisites section later in this walkthrough.  
   
- This walkthrough does not rely on the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. Developers using [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] can also use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
+ This walkthrough does not rely on the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
   
@@ -42,7 +28,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
      If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest3 folder.  
   
--   A [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] code file generated from the Northwind database.  
+-   A Visual Basic code file generated from the Northwind database.  
   
      This walkthrough was written by using the SqlMetal tool with the following command line:  
   
@@ -53,7 +39,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Overview  
  This walkthrough consists of six main tasks:  
   
--   Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)].  
+-   Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
   
 -   Adding the System.Data.Linq assembly to the project.  
   
@@ -66,11 +52,11 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 -   Running and testing the application.  
   
 ## Creating a LINQ to SQL Solution  
- In this first task, you create a [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
+ In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
   
 #### To create a LINQ to SQL solution  
   
-1.  On the [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] **File** menu, click **New Project**.  
+1.  On the Visual Studio **File** menu, click **New Project**.  
   
 2.  In the **Project types** pane in the **New Project** dialog box, expand **Visual Basic**, and then click **Windows**.  
   

@@ -1,14 +1,6 @@
 ---
 title: "Type Converters and Markup Extensions for XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converter services"
   - "XAML [XAML Services], value converters"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "value converters for XAML [XAML Services]"
   - "XAML [XAML Services], service context"
 ms.assetid: db07a952-05ce-4aa4-b6f9-aac7397d0326
-caps.latest.revision: 13
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Type Converters and Markup Extensions for XAML
 Type converters and markup extensions are two techniques that XAML type systems and XAML writers use to generate object graph components. Although they share some characteristics, type converters and markup extensions are represented differently in a XAML node stream. In this documentation set, type converters, markup extensions, and similar constructs are sometimes collectively referred to as value converters.  
@@ -40,7 +26,7 @@ Type converters and markup extensions are two techniques that XAML type systems 
   
 <a name="type_converters"></a>   
 ## Type Converters  
- In the .NET Framework XAML Services definition, type converters are classes that derive from the CLR <xref:System.ComponentModel.TypeConverter> class. <xref:System.ComponentModel.TypeConverter> is a class that was in the [!INCLUDE[TLA#tla_netframewk](../../../includes/tlasharptla-netframewk-md.md)] before XAML existed. Its original purpose was to support property windows and similar text-based editing metaphors for [!INCLUDE[TLA2#tla_ide](../../../includes/tla2sharptla-ide-md.md)] properties. The introduction of XAML to .NET Framework uses <xref:System.ComponentModel.TypeConverter> to convert a text syntax (as found in an attribute value or a XAML value node) into an object. <xref:System.ComponentModel.TypeConverter> can also be used to serialize an object value to text syntax. <xref:System.ComponentModel.TypeConverter> was also used in previous framework-specific XAML implementations in [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] and [!INCLUDE[vsindigo](../../../includes/vsindigo-md.md)]. For more information about the <xref:System.ComponentModel.TypeConverter> in XAML, see [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md).  
+ In the .NET Framework XAML Services definition, type converters are classes that derive from the CLR <xref:System.ComponentModel.TypeConverter> class. <xref:System.ComponentModel.TypeConverter> is a class that was in the Microsoft .NET Framework before XAML existed. Its original purpose was to support property windows and similar text-based editing metaphors for [!INCLUDE[TLA2#tla_ide](../../../includes/tla2sharptla-ide-md.md)] properties. The introduction of XAML to .NET Framework uses <xref:System.ComponentModel.TypeConverter> to convert a text syntax (as found in an attribute value or a XAML value node) into an object. <xref:System.ComponentModel.TypeConverter> can also be used to serialize an object value to text syntax. <xref:System.ComponentModel.TypeConverter> was also used in previous framework-specific XAML implementations in Windows Presentation Foundation (WPF) and Windows Communication Foundation (WCF). For more information about the <xref:System.ComponentModel.TypeConverter> in XAML, see [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md).  
   
 <a name="markup_extensions"></a>   
 ## Markup Extensions  
@@ -53,7 +39,7 @@ Type converters and markup extensions are two techniques that XAML type systems 
  For more information about the markup extension implementation pattern for XAML, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
   
 > [!NOTE]
->  The <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> types are both in the <xref:System.Windows.Markup> namespace and not in the <xref:System.Xaml> namespace. This does not imply that these types are specific to either the WPF or [!INCLUDE[TLA2#tla_winforms](../../../includes/tla2sharptla-winforms-md.md)] technologies that otherwise populate CLR namespaces that contain the string `Windows`. <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> are in the System.Xaml assembly and have no specific framework dependency. These types existed in the CLR namespace for [!INCLUDE[net_v30_short](../../../includes/net-v30-short-md.md)] and remain in the CLR namespace in [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] to avoid breaking references in existing WPF projects. For more information, see [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+>  The <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> types are both in the <xref:System.Windows.Markup> namespace and not in the <xref:System.Xaml> namespace. This does not imply that these types are specific to either the WPF or Windows Forms technologies that otherwise populate CLR namespaces that contain the string `Windows`. <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> are in the System.Xaml assembly and have no specific framework dependency. These types existed in the CLR namespace for [!INCLUDE[net_v30_short](../../../includes/net-v30-short-md.md)] and remain in the CLR namespace in [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] to avoid breaking references in existing WPF projects. For more information, see [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 <a name="value_serializers"></a>   
 ## Value Serializers  

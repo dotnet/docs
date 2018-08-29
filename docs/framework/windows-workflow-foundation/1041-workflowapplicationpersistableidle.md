@@ -1,19 +1,7 @@
 ---
 title: "1041 - WorkflowApplicationPersistableIdle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 966adf2f-e21d-44df-a3ec-a8e285e0a316
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1041 - WorkflowApplicationPersistableIdle
 ## Properties  

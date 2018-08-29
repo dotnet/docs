@@ -1,12 +1,6 @@
 ---
 title: "Walkthrough: Arranging Windows Forms Controls in WPF"
-ms.custom: ""
 ms.date: "04/03/2018"
-ms.prod: ".net-framework"
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,11 +8,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls [WPF]"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
 This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in a hybrid application.  
@@ -267,7 +256,7 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
 ## See Also  
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
  [Layout Considerations for the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md)  
  [Arranging Windows Forms Controls in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159971)  
  [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  

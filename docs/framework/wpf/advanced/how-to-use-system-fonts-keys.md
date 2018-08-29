@@ -1,23 +1,9 @@
 ---
 title: "How to: Use System Fonts Keys"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "resource keys [WPF], SystemFonts class"
 ms.assetid: 036ebea7-5677-4f60-8ba4-56c9f9d9b8bd
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use System Fonts Keys
 System resources expose a number of system metrics as resources to help developers create visuals that are consistent with system settings. <xref:System.Windows.SystemFonts> is a class that contains both system font values and system font resources that bind to the values—for example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A>.  

@@ -1,17 +1,7 @@
 ---
 title: "LINQ to XML Security (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: ef2c0dc9-ecf9-4c17-b24e-144184ab725f
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML Security (C#)
 This topic describes security issues associated with LINQ to XML. In addition, it provides some guidance for mitigating security exposure.  

@@ -1,13 +1,7 @@
 ---
 title: "Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,15 +13,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], type options"
   - "DateTime structure"
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
 
 .NET applications that use date and time information are very diverse and can use that information in several ways. The more common uses of date and time information include one or more of the following:

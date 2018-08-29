@@ -1,19 +1,7 @@
 ---
 title: "Removing the View State the Designer Adds to an XAML File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Removing the View State the Designer Adds to an XAML File
 This sample demonstrates how to create a class that derives from <xref:System.Windows.Markup.XamlWriter> and removes view state from a XAML file. [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)] writes information into the XAML document, which is known as view state. View state refers to the information that is required at design time, such as layout positioning, that is not required at runtime. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)] inserts this information into the XAML document as it is edited. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)] writes the view state into the XAML file with the `mc:Ignorable` attribute, so this information is not loaded when the runtime loads the XAML file. This sample demonstrates how to create a class that removes that view state information while processing XAML nodes.  
@@ -125,6 +113,6 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ViewStateCleaningWriter`

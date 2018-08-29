@@ -1,14 +1,6 @@
 ---
 title: "EInitializeNewDomainFlags Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EInitializeNewDomainFlags"
 api_location: 
@@ -20,12 +12,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "EInitializeNewDomainFlags enumeration [.NET Framework hosting]"
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EInitializeNewDomainFlags Enumeration
 Enables the host to provide the runtime with information about the initialization of an application domain.  

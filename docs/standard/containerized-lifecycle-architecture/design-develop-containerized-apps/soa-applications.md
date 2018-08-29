@@ -1,14 +1,9 @@
 ---
 title: SOA applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # SOA applications
 
@@ -20,5 +15,5 @@ At the end of the day, the container clustering solutions are useful for both a 
 
 
 >[!div class="step-by-step"]
-[Previous] (state-and-data-in-docker-applications.md)
-[Next] (orchestrate-high-scalability-availability.md)
+[Previous](state-and-data-in-docker-applications.md)
+[Next](orchestrate-high-scalability-availability.md)

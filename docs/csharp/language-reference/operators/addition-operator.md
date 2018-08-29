@@ -1,10 +1,6 @@
 ---
 title: "+ Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "+_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "concatenation operator [C#]"
   - "addition operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # + Operator (C# Reference)
 The `+` operator can function as either a unary or a binary operator.  
@@ -34,8 +27,9 @@ The `+` operator can function as either a unary or a binary operator.
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)  
- [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)  
+- [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)

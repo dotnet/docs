@@ -1,15 +1,9 @@
 ---
 title: "Windows Workflow Foundation (WF) Migration Guidance"
 ms.date: "06/19/2017"
-ms.prod: ".net-framework"
-ms.topic: "article"
 ms.assetid: 1da7f5ff-5a67-44ba-b165-f3e5de008e4a
-caps.latest.revision: 7
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Windows Workflow Foundation (WF) Migration Guidance

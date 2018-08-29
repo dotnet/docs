@@ -1,13 +1,7 @@
 ---
 title: "Saving and restoring time zones"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,15 +17,9 @@ helpviewer_keywords:
   - "time zone objects [.NET Framework], serializing"
   - "time zone objects [.NET Framework], saving"
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Saving and restoring time zones
 
 The <xref:System.TimeZoneInfo> class relies on the registry to retrieve predefined time zone data. However, the registry is a dynamic structure. Additionally, the time zone information that the registry contains is used by the operating system primarily to handle time adjustments and conversions for the current year. This has two major implications for applications that rely on accurate time zone data:

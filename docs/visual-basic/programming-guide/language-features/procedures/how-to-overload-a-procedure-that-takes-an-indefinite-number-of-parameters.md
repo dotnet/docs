@@ -1,13 +1,6 @@
 ---
 title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], parameters"
   - "procedure overloading [Visual Basic], indefinite number of parameters"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "procedures [Visual Basic], overloading"
   - "procedures [Visual Basic], multiple versions"
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)
 If a procedure has a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter, you cannot define an overloaded version taking a one-dimensional array for the parameter array. For more information, see "Implicit Overloads for a ParamArray Parameter" in [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
@@ -49,7 +39,7 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
   
  [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_3.vb)]  
   
- The code in the overloaded versions does not have to test whether the calling code supplied one or more values for the `ParamArray` parameter, or if so, how many. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] passes control to the version matching the calling argument list.  
+ The code in the overloaded versions does not have to test whether the calling code supplied one or more values for the `ParamArray` parameter, or if so, how many. Visual Basic passes control to the version matching the calling argument list.  
   
 ## Compiling the Code  
  Because a procedure with a `ParamArray` parameter is equivalent to a set of overloaded versions, you cannot overload such a procedure with a parameter list corresponding to any of these implicit overloads. For more information, see [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  

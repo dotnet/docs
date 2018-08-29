@@ -1,13 +1,6 @@
 ---
 title: "Data Types in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], declaring"
   - "typing"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "Visual Basic code, data types"
   - "data types [Visual Basic], improving speed with"
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Data Types in Visual Basic
 The *data type* of a programming element refers to what kind of data it can hold and how it stores that data. Data types apply to all values that can be stored in computer memory or participate in the evaluation of an expression. Every variable, literal, constant, enumeration, property, procedure parameter, procedure argument, and procedure return value has a data type.  
@@ -36,7 +26,7 @@ The *data type* of a programming element refers to what kind of data it can hold
 |Procedure argument|In the calling code; each argument is a programming element that has already been declared, or an expression containing declared elements<br /><br /> `subString = Left(`  `inputString`  `,`   `5`  `)`|  
 |Procedure return value|In a [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md) or [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)<br /><br /> `Function convert(ByVal b As Byte)`   `As String`|  
   
- For a list of Visual Basic data types, see [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md).  
+ For a list of Visual Basic data types, see [Data Types](../../../../visual-basic/language-reference/data-types/index.md).  
   
 ## See Also  
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
@@ -48,5 +38,5 @@ The *data type* of a programming element refers to what kind of data it can hold
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Tuples](tuples.md)     
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

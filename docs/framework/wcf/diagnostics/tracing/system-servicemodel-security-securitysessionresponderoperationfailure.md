@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySessionResponderOperationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9ab20767-dac5-49fc-8bff-108bb7b84c87
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionResponderOperationFailure
 System.ServiceModel.Security.SecuritySessionResponderOperationFailure  

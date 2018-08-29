@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the ToolBar Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Toolbar"
   - "UI Automation, Toolbar control type"
   - "ToolBar control type"
 ms.assetid: 85152efd-f4c5-430c-8878-3371cc598616
-caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the ToolBar Control Type
 > [!NOTE]

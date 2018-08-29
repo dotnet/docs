@@ -1,25 +1,11 @@
 ---
 title: "Recoloring Images"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "images [Windows Forms], recoloring"
   - "recoloring images"
   - "examples [Windows Forms], recoloring images"
 ms.assetid: f28c54fd-9c80-4f6f-b242-55f7ffcda84b
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Recoloring Images
 Recoloring is the process of adjusting image colors. Some examples of recoloring are changing one color to another, adjusting a color's intensity relative to another color, adjusting the brightness or contrast of all colors, and converting colors to shades of gray.  

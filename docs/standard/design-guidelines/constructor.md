@@ -1,13 +1,7 @@
 ---
 title: "Constructor Design"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "member design guidelines, constructors"
   - "constructors, design guidelines"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "default constructors"
   - "static constructors"
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Constructor Design
 There are two kinds of constructors: type constructors and instance constructors.  

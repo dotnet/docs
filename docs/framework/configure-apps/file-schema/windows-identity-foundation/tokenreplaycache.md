@@ -1,21 +1,9 @@
 ---
 title: "&lt;tokenReplayCache&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1572ab23-6933-41b5-bfb4-0c4548145500
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;tokenReplayCache&gt;
 Registers a token replay cache with a service or a security token handler collection.  

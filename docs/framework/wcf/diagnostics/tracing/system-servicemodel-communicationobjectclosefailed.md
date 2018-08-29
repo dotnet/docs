@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.CommunicationObjectCloseFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 60270eab-6f57-4136-bec5-62d3edd23880
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.CommunicationObjectCloseFailed
 A communication object failed to close.  

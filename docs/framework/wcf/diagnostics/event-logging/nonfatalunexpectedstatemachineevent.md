@@ -1,21 +1,7 @@
 ---
 title: "NonFatalUnexpectedStateMachineEvent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bfa37c10-cf1b-4325-b756-6ef200606510
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # NonFatalUnexpectedStateMachineEvent
 Id: 148  

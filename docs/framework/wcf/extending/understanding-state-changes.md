@@ -1,21 +1,7 @@
 ---
 title: "Understanding State Changes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a79ed2aa-e49a-47a8-845a-c9f436ec9987
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding State Changes
 This topic discusses the states and transitions that channels have, the types used to structure channel states, and how to implement them.  
@@ -39,7 +25,7 @@ This topic discusses the states and transitions that channels have, the types us
  ![Channel state transitition](../../../../docs/framework/wcf/extending/media/channelstatetranitionshighleveldiagram.gif "ChannelStateTranitionsHighLevelDiagram")  
 Figure 1. The ICommunicationObject State Machine.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides an abstract base class named <xref:System.ServiceModel.Channels.CommunicationObject> that implements <xref:System.ServiceModel.ICommunicationObject> and the channel state machine. The following graphic is a modified state diagram that is specific to <xref:System.ServiceModel.Channels.CommunicationObject>. In addition to the <xref:System.ServiceModel.ICommunicationObject> state machine, it shows the timing when additional <xref:System.ServiceModel.Channels.CommunicationObject> methods are invoked.  
+ Windows Communication Foundation (WCF) provides an abstract base class named <xref:System.ServiceModel.Channels.CommunicationObject> that implements <xref:System.ServiceModel.ICommunicationObject> and the channel state machine. The following graphic is a modified state diagram that is specific to <xref:System.ServiceModel.Channels.CommunicationObject>. In addition to the <xref:System.ServiceModel.ICommunicationObject> state machine, it shows the timing when additional <xref:System.ServiceModel.Channels.CommunicationObject> methods are invoked.  
   
  ![State changes](../../../../docs/framework/wcf/extending/media/wcfc-wcfchannelsigure5statetransitionsdetailsc.gif "wcfc_WCFChannelsigure5StateTransitionsDetailsc")  
 Figure 2. The CommunicationObject implementation of the ICommunicationObject state machine including calls to events and protected methods.  

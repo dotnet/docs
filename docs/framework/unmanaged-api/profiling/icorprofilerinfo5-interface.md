@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo5 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo5"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: 7bd48c34-37ed-4230-9eec-39a17280f05d
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo5 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

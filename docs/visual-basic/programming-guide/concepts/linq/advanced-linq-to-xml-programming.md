@@ -1,19 +1,7 @@
 ---
 title: "Advanced LINQ to XML Programming (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 36018532-a55c-4538-8a27-98f475ea3415
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Advanced LINQ to XML Programming (Visual Basic)
 This section provides information that will only be applicable to advanced developers in certain [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] scenarios.  

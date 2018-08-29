@@ -1,14 +1,6 @@
 ---
 title: "Drawing Formatted Text"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "formatted text [WPF]"
   - "drawing [WPF], formatted text"
 ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Drawing Formatted Text
 This topic provides an overview of the features of the <xref:System.Windows.Media.FormattedText> object. This object provides low-level control for drawing text in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  

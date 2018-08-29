@@ -1,17 +1,7 @@
 ---
 title: "How to: Split a File Into Many Files by Using Groups (LINQ) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 8179b91c-d778-4e57-884f-77fe5a8e4e40
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Split a File Into Many Files by Using Groups (LINQ) (C#)
 This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.  

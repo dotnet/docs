@@ -1,14 +1,6 @@
 ---
 title: "XAML Syntax In Detail"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [WPF], namespaces"
   - "XAML [WPF], parsing of attributes"
@@ -37,12 +29,6 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
   - "XAML [WPF], property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Syntax In Detail
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
@@ -154,11 +140,11 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  [!code-xaml[XAMLOvwSupport#ContextMenu](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#contextmenu)]  
   
- The value within a property element can also be given as inner text, in cases where the property type being specified is a primitive value type, such as <xref:System.String>, or an enumeration where a name is specified. These two usages are somewhat uncommon, because each of these cases could also use a simpler attribute syntax. One scenario for filling a property element with a string is for properties that are not the XAML content property but still are used for representation of UI text, and particular whitespace elements such as linefeeds are required to appear in that UI text. Attribute syntax cannot preserve linefeeds, but property element syntax can, so long as significant whitespace preservation is active (for details, see [Whitespace Processing in XAML](../../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)). Another scenario is so that [x:Uid Directive](../../../../docs/framework/xaml-services/x-uid-directive.md) can be applied to the property element and thus mark the value within as a value that should be localized in the WPF output BAML or by other techniques.  
+ The value within a property element can also be given as inner text, in cases where the property type being specified is a primitive value type, such as <xref:System.String>, or an enumeration where a name is specified. These two usages are somewhat uncommon, because each of these cases could also use a simpler attribute syntax. One scenario for filling a property element with a string is for properties that are not the XAML content property but still are used for representation of UI text, and particular white-space elements such as linefeeds are required to appear in that UI text. Attribute syntax cannot preserve linefeeds, but property element syntax can, so long as significant white-space preservation is active (for details, see [White space processing in XAML](../../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)). Another scenario is so that [x:Uid Directive](../../../../docs/framework/xaml-services/x-uid-directive.md) can be applied to the property element and thus mark the value within as a value that should be localized in the WPF output BAML or by other techniques.  
   
  A property element is not represented in the WPF logical tree. A property element is just a particular syntax for setting a property, and is not an element that has an instance or object backing it. (For details on the logical tree concept, see [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md).)  
   
- For properties where both attribute and property element syntax are supported, the two syntaxes generally have the same result, although subtleties such as whitespace handling can vary slightly between syntaxes.  
+ For properties where both attribute and property element syntax are supported, the two syntaxes generally have the same result, although subtleties such as white-space handling can vary slightly between syntaxes.  
   
 <a name="collection_syntax"></a>   
 ## Collection Syntax  
@@ -248,7 +234,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  You can have a child object element as the first immediate markup within an object element. Then you can introduce property elements. Or, you can specify one or more property elements, then content, then more property elements. But once a property element follows content, you cannot introduce any further content, you can only add property elements.  
   
- This content / property element order requirement does not apply to inner text used as content. However, it is still a good markup style to keep inner text contiguous, because significant whitespace will be difficult to detect visually in the markup if property elements are interspersed with inner text.  
+ This content / property element order requirement does not apply to inner text used as content. However, it is still a good markup style to keep inner text contiguous, because significant white space will be difficult to detect visually in the markup if property elements are interspersed with inner text.  
   
 <a name="xaml_namespaces"></a>   
 ## XAML Namespaces  

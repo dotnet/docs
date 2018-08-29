@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugInstanceFieldSymbol::GetName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: d9c12b1f-9c1d-4943-8e9e-93b55faf085f
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugInstanceFieldSymbol::GetName Method
 Gets the name of the instance field.  

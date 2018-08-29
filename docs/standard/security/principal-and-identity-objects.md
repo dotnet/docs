@@ -1,13 +1,7 @@
 ---
 title: "Principal and Identity Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WindowsIdentity objects"
   - "GenericIdentity objects"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "security [.NET Framework], principals"
   - "WindowsPrincipal objects"
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Principal and Identity Objects
 Managed code can discover the identity or the role of a principal through a <xref:System.Security.Principal.IPrincipal> object, which contains a reference to an <xref:System.Security.Principal.IIdentity> object. It might be helpful to compare identity and principal objects to familiar concepts like user and group accounts. In most network environments, user accounts represent people or programs, while group accounts represent certain categories of users and the rights they possess. Similarly, .NET Framework identity objects represent users, while roles represent memberships and security contexts. In the .NET Framework, the principal object encapsulates both an identity object and a role. .NET Framework applications grant rights to the principal based on its identity or, more commonly, its role membership.  

@@ -1,14 +1,6 @@
 ---
 title: "Layout Considerations for the WindowsFormsHost Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "Windows Forms [WPF], WPF interoperation"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "dynamic layout [WPF interoperability]"
   - "device-independent pixels"
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Layout Considerations for the WindowsFormsHost Element
 This topic describes how the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element interacts with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout system.  
@@ -71,7 +57,7 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
   
  All other cases require coordinate system scaling. The hosted control is not resized. Instead, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to scale the hosted control and all of its child controls. Because [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] does not fully support scaling, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element scales to the degree supported by particular controls.  
   
- Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control.  
+ Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted Windows Forms control.  
   
  In addition to scaling, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles rounding and overflow cases as described in the following table.  
   

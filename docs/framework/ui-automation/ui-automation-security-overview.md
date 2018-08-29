@@ -1,24 +1,13 @@
 ---
 title: "UI Automation Security Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, security model"
   - "security model, UI Automation"
 ms.assetid: 1d853695-973c-48ae-b382-4132ae702805
-caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Security Overview
 > [!NOTE]

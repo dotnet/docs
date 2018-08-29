@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugModule2::ApplyChanges Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugModule2.ApplyChanges"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugModule2::ApplyChanges Method
 Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.  

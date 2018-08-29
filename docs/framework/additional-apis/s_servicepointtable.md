@@ -1,9 +1,6 @@
 ---
 title: "ServicePointManager.s_ServicePointTable Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # ServicePointManager.s\_ServicePointTable Field

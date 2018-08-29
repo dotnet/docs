@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Rollover Effect Using Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "rollover effect [WPF]"
   - "element colors [WPF], changing"
 ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Rollover Effect Using Events
 This example shows how to change the color of an element as the mouse pointer enters and leaves the area occupied by the element.  

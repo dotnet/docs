@@ -1,13 +1,7 @@
 ---
 title: "How to: Read Characters from a String"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "reading data, strings"
   - "streams, reading characters from string"
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Read Characters from a String
 The following code examples show how to read characters synchronously and asynchronously from a string.  
@@ -53,4 +42,4 @@ The following code examples show how to read characters synchronously and asynch
  [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
  [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
  [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

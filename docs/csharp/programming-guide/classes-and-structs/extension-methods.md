@@ -1,18 +1,11 @@
 ---
 title: "Extension Methods (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
   - "methods [C#], extension"
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-caps.latest.revision: 35
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Extension Methods (C# Programming Guide)
 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there is no apparent difference between calling an extension method and the methods that are actually defined in a type.  
@@ -31,13 +24,13 @@ Extension methods enable you to "add" methods to existing types without creating
   
  The `WordCount` extension method can be brought into scope with this `using` directive:  
   
-```  
+```csharp  
 using ExtensionMethods;  
 ```  
   
  And it can be called from an application by using this syntax:  
   
-```  
+```csharp  
 string s = "Hello Extension Methods";  
 int i = s.WordCount();  
 ```  
@@ -48,7 +41,7 @@ int i = s.WordCount();
   
  In general, you will probably be calling extension methods far more often than implementing your own. Because extension methods are called by using instance method syntax, no special knowledge is required to use them from client code. To enable extension methods for a particular type, just add a `using` directive for the namespace in which the methods are defined. For example, to use the standard query operators, add this `using` directive to your code:  
   
-```  
+```csharp  
 using System.Linq;  
 ```  
   

@@ -1,16 +1,9 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating a simple data-driven CRUD microservice
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Creating a simple data-driven CRUD microservice
 
@@ -255,11 +248,11 @@ catalog.api:
     - "5101:80"
 ```
 
-The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from VSTS Docker deployment tasks. 
+The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from VSTS Docker deployment tasks. 
 
 Finally, you can get that value from your code by using Configuration\["ConnectionString"\], as shown in the ConfigureServices method in an earlier code example.
 
-However, for production environments, you might want to explorer additional ways on how to store secrets like the connection strings. Usually that will be managed by your chosen orchestrator, like you can do with [Docker Swarm secrets management](https://docs.docker.com/engine/swarm/secrets/).
+However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. Usually that will be managed by your chosen orchestrator, like you can do with [Docker Swarm secrets management](https://docs.docker.com/engine/swarm/secrets/).
 
 ### Implementing versioning in ASP.NET Web APIs
 
@@ -343,7 +336,7 @@ This means you can complement your API with a nice discovery UI to help develope
 
 The API explorer is not the most important thing here. Once you have a Web API that can describe itself in Swagger metadata, your API can be used seamlessly from Swagger-based tools, including client proxy-class code generators that can target many platforms. For example, as mentioned, [AutoRest](https://github.com/Azure/AutoRest) automatically generates .NET client classes. But additional tools like [swagger-codegen](https://github.com/swagger-api/swagger-codegen) are also available, which allow code generation of API client libraries, server stubs, and documentation automatically.
 
-Currently, Swashbuckle consists of two several internal NuGet packages under the high-level meta- package [Swashbuckle.Swashbuckle.AspNetCoreSwaggerGen](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) version 1.0.0 or later for ASP.NET Core applications.
+Currently, Swashbuckle consists of several internal NuGet packages under the high-level meta-package [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) version 1.0.0 or later for ASP.NET Core applications.
 
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following code:
 
@@ -417,5 +410,5 @@ It is that simple. And because it is automatically generated, the Swagger metada
 
 
 >[!div class="step-by-step"]
-[Previous] (microservice-application-design.md)
-[Next] (multi-container-applications-docker-compose.md)
+[Previous](microservice-application-design.md)
+[Next](multi-container-applications-docker-compose.md)

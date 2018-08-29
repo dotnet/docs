@@ -1,14 +1,9 @@
 ---
 title: Lambda Expressions
-description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
-keywords: .NET, .NET Core, lambda expressions, lambdas, delegates 
-ms-author: ronpet
+description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments.
+ms.author: ronpet
 author: rpetrusha
 ms.date: 11/22/2016
-ms.topic: article 
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 
@@ -78,7 +73,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples ##
 
-Starting with C# 7.0, the C# language provides built-in support for tuples. You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components. 
+Starting with C# 7.0, the C# language provides built-in support for tuples. You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with 5 components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with 5 components that contains the result of the multiplications.
 
@@ -154,6 +149,6 @@ Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guid
 
 ## See also ##
 
-[LINQ (Language-Integrated Query)](../standard/using-linq.md)   
-[Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)   
-[Expression trees](expression-trees.md)
+- [LINQ (Language-Integrated Query)](../standard/using-linq.md)
+- [Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [Expression trees](expression-trees.md)

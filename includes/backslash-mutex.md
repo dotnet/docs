@@ -1,1 +1,0 @@
-The backslash (\\) is a reserved character in a mutex name. Don't use a backslash (\\) in a mutex name except as specified in the note on using mutexes in terminal server sessions. Otherwise, a <xref:System.IO.DirectoryNotFoundException> may be thrown, even though the name of the mutex represents an existing file.

@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecurityPendingServerSessionAdded"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 15d15f57-1482-419b-b841-fff7318b69d8
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecurityPendingServerSessionAdded
 System.ServiceModel.Security.SecurityPendingServerSessionAdded  

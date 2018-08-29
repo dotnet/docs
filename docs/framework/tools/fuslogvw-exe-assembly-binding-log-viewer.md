@@ -1,14 +1,6 @@
 ---
 title: "Fuslogvw.exe (Assembly Binding Log Viewer)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "failed assembly binds"
   - "Fuslogvw.exe"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "Assembly Binding Log Viewer"
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fuslogvw.exe (Assembly Binding Log Viewer)
 The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.  

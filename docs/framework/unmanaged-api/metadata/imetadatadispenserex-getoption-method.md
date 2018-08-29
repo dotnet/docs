@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataDispenserEx::GetOption Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataDispenserEx.GetOption"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d7f794e5-8e25-4d65-850a-7c34fbfce87d
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataDispenserEx::GetOption Method
 Gets the value of the specified option for the current metadata scope. The option controls how calls to the current metadata scope are handled.  

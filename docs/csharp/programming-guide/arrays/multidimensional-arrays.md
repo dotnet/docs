@@ -1,17 +1,10 @@
 ---
 title: "Multidimensional Arrays (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [C#], multidimensional"
   - "multidimensional arrays [C#]"
 ms.assetid: 020ce02e-7dff-4273-8e53-bf0b33747232
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Multidimensional Arrays (C# Programming Guide)
 Arrays can have more than one dimension. For example, the following declaration creates a two-dimensional array of four rows and two columns.  

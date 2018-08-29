@@ -1,27 +1,13 @@
 ---
 title: "Visual Basic and WPF Event Handling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic [WPF], event handlers"
   - "event handlers [WPF], Visual Basic"
 ms.assetid: ad4eb9aa-3afc-4a71-8cf6-add3fbea54a1
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Visual Basic and WPF Event Handling
-For the [!INCLUDE[TLA#tla_visualbnet](../../../../includes/tlasharptla-visualbnet-md.md)] language specifically, you can use the language-specific `Handles` keyword to associate event handlers with instances, instead of attaching event handlers with attributes or using the <xref:System.Windows.UIElement.AddHandler%2A> method. However, the `Handles` technique for attaching handlers to instances does have some limitations, because the `Handles` syntax cannot support some of the specific routed event features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system.  
+For the Microsoft Visual Basic .NET language specifically, you can use the language-specific `Handles` keyword to associate event handlers with instances, instead of attaching event handlers with attributes or using the <xref:System.Windows.UIElement.AddHandler%2A> method. However, the `Handles` technique for attaching handlers to instances does have some limitations, because the `Handles` syntax cannot support some of the specific routed event features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system.  
   
 ## Using "Handles" in a WPF Application  
  The event handlers that are connected to instances and events with `Handles` must all be defined within the partial class declaration of the instance, which is also a requirement for event handlers that are assigned through attribute values on elements. You can only specify `Handles` for an element on the page that has a <xref:System.Windows.FrameworkContentElement.Name%2A> property value (or [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md) declared). This is because the <xref:System.Windows.FrameworkContentElement.Name%2A> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] creates the instance reference that is necessary to support the *Instance.Event* reference format required by the `Handles` syntax. The only element that can be used for `Handles` without a <xref:System.Windows.FrameworkContentElement.Name%2A> reference is the root-element instance that defines the partial class.  
@@ -42,7 +28,7 @@ For the [!INCLUDE[TLA#tla_visualbnet](../../../../includes/tlasharptla-visualbne
  `Handles` cannot attach handlers that are invoked for events that are already marked handled. Instead, you must use code and call the `handledEventsToo` overload of <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29>.  
   
 > [!NOTE]
->  Do not use the `Handles` syntax in [!INCLUDE[vb_current_short](../../../../includes/vb-current-short-md.md)] code when you specify an event handler for the same event in XAML. In this case, the event handler is called twice.  
+>  Do not use the `Handles` syntax in Visual Basic code when you specify an event handler for the same event in XAML. In this case, the event handler is called twice.  
   
 ## How WPF Implements "Handles" Functionality  
  When a [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] page is compiled, the intermediate file declares `Friend` `WithEvents` references to every element on the page that has a <xref:System.Windows.FrameworkContentElement.Name%2A> property set (or [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md) declared). Each named instance is potentially an element that can be assigned to a handler through `Handles`.  

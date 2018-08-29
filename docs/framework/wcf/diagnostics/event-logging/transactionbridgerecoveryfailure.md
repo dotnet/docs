@@ -1,21 +1,7 @@
 ---
 title: "TransactionBridgeRecoveryFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a53891d9-67ea-4ead-8d38-3193cb57cd37
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # TransactionBridgeRecoveryFailure
 Id: 146  

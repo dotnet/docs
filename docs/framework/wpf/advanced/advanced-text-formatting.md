@@ -1,14 +1,6 @@
 ---
 title: "Advanced Text Formatting"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,15 +9,9 @@ helpviewer_keywords:
   - "text [WPF]"
   - "typography [WPF], text formatting"
 ms.assetid: f0a7986e-f5b2-485c-a27d-f8e922022212
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Advanced Text Formatting
-The [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] provides a robust set of [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] for including text in your application. Layout and [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)][!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Controls.TextBlock>, provide the most common and general use elements for text presentation. Drawing [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Media.GlyphRunDrawing> and <xref:System.Windows.Media.FormattedText>, provide a means for including formatted text in drawings. At the most advanced level, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides an extensible text formatting engine to control every aspect of text presentation, such as text store management, text run formatting management, and embedded object management.  
+The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] for including text in your application. Layout and [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)][!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Controls.TextBlock>, provide the most common and general use elements for text presentation. Drawing [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Media.GlyphRunDrawing> and <xref:System.Windows.Media.FormattedText>, provide a means for including formatted text in drawings. At the most advanced level, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides an extensible text formatting engine to control every aspect of text presentation, such as text store management, text run formatting management, and embedded object management.  
   
  This topic provides an introduction to [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting. It focuses on client implementation and use of the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting engine.  
   

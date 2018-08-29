@@ -1,21 +1,7 @@
 ---
 title: "Standard Query Operators in LINQ to Entities Queries"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/21/2018"
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Standard Query Operators in LINQ to Entities Queries
 In a query, you specify the information that you want to retrieve from the data source. A query can also specify how that information should be sorted, grouped, and shaped before it is returned. LINQ provides a set of standard query methods that you can use in a query. Most of these methods operate on sequences; in this context, a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators query functionality includes filtering, projection, aggregation, sorting, grouping, paging, and more. Some of the more frequently used standard query operators have dedicated keyword syntax so that they can be called by using query expression syntax. A query expression is a different, more readable way to express a query than the method-based equivalent. Query expression clauses are translated into calls to the query methods at compile time. For a list of standard query operators that have equivalent query expression clauses, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
@@ -80,9 +66,9 @@ In a query, you specify the information that you want to retrieve from the data 
  `OfType` is supported for entity types. `Convert` is supported for conceptual model primitive types.  The C# `is` and `as` methods are also supported.  
   
 ## Paging Methods  
- Paging operations return a single, specific element from a sequence. The element methods are `ElementAt`, `First`, `FirstOrDefault`, `Last`, `LastOrDefault`, `Single`, `Skip`, `Take`, `TakeWhile`.  
+ Paging operations return a single element or multiple elements from a sequence. The supported paging methods are `First`, `FirstOrDefault`, `Single`, `SingleOrDefault`, `Skip`, and `Take`.  
   
- A number of the paging methods are not supported, due either to the inability to map functions to the data source or to the lack of implicit ordering of sets on the data source. Methods that return a default value are restricted to conceptual model primitive types and reference types with null defaults. Paging methods that are executed on an empty sequence will return null.  
+ A number of paging methods are not supported, due either to the inability to map functions to the data source or to the lack of implicit ordering of sets on the data source. Methods that return a default value are restricted to conceptual model primitive types and reference types with null defaults. Paging methods that are executed on an empty sequence will return null.  
   
 ## See Also  
  [Supported and Unsupported LINQ Methods (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  

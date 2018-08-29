@@ -1,21 +1,7 @@
 ---
 title: "Configuration Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuration Sample
 This sample demonstrates the use of a configuration file to make a service discoverable.  
@@ -28,7 +14,7 @@ This sample demonstrates the use of a configuration file to make a service disco
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
@@ -95,7 +81,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
         </endpointBehaviors>  
 ```  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
+ For more information about scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
   
  You can also control specific details of the discovery endpoint. This is done through the <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. In this sample, the version of the protocol used is modified as well as adding a `maxResponseDelay` attribute as shown in the following code example.  
   

@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the SplitButton Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Split Button control type"
   - "control types, Split Button"
   - "UI Automation, Split Button control type"
 ms.assetid: 14b05ccf-bcd8-4045-9bae-f7679cd98711
-caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the SplitButton Control Type
 > [!NOTE]

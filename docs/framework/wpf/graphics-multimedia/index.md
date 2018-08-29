@@ -1,14 +1,6 @@
 ---
 title: "Graphics and Multimedia"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "graphics features [WPF]"
   - "transition effects [WPF]"
 ms.assetid: 1817d9dc-3d6c-46cb-afc8-63b0bae35e37
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Graphics and Multimedia
 <a name="introduction"></a>

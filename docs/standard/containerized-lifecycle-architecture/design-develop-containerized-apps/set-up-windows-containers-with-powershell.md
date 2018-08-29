@@ -1,14 +1,9 @@
 ---
 title: Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 
@@ -32,5 +27,5 @@ RUN powershell add-windowsfeature web-asp-net45
 ```
 
 >[!div class="step-by-step"]
-[Previous] (visual-studio-tools-for-docker.md)
-[Next] (../docker-devops-workflow/index.md)
+[Previous](visual-studio-tools-for-docker.md)
+[Next](../docker-devops-workflow/index.md)

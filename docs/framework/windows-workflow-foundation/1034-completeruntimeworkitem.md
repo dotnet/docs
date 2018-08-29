@@ -1,19 +1,7 @@
 ---
 title: "1034 - CompleteRuntimeWorkItem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1034 - CompleteRuntimeWorkItem
 ## Properties  

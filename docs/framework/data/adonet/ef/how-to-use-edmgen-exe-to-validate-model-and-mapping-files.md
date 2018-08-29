@@ -1,21 +1,7 @@
 ---
 title: "How to: Use EdmGen.exe to Validate Model and Mapping Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2641906a-971a-4d0b-8aee-13fabc02a1cc
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use EdmGen.exe to Validate Model and Mapping Files
 This topic shows how to use the [EDM Generator (EdmGen.exe)](../../../../../docs/framework/data/adonet/ef/edm-generator-edmgen-exe.md) tool to validate the model and mapping files. For more information, see [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md).  

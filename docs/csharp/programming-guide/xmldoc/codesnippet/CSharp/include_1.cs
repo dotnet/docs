@@ -1,4 +1,4 @@
-    // compile with: /doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml 
 
     /// <include file='xml_include_tag.doc' path='MyDocs/MyMembers[@name="test"]/*' />
     class Test

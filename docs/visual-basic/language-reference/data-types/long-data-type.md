@@ -1,11 +1,6 @@
 ---
 title: "Long Data Type (Visual Basic)"
 ms.date: 01/31/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Long"
 helpviewer_keywords: 
@@ -80,7 +75,7 @@ Dim number = &H_0FAC_0326_1489_D68CL
 ## See also
 
 <xref:System.Int64>
-[Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+[Data Types](../../../visual-basic/language-reference/data-types/index.md)   
 [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
 [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
 [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   

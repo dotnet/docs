@@ -1,21 +1,9 @@
 ---
 title: "&lt;Event&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Event&gt; Element (.NET Native)
 Applies runtime reflection policy to an event.  

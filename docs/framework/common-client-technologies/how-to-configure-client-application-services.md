@@ -1,26 +1,12 @@
 ---
 title: "How to: Configure Client Application Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "client application services, configuring"
 ms.assetid: 34a8688a-a32c-40d3-94be-c8e610c6a4e8
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Configure Client Application Services
-This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
+This topic describes how to use the Visual Studio **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
   
  You can enable and configure client application services on the **Services** page of the **Project Designer**. The **Services** page updates values in your project's App.config file. To access the **Project Designer**, use the **Properties** command on the **Project** menu. For more information about the **Services** page, see [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109).  
   
@@ -95,7 +81,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
      The default value of `Data Source = |SQL/CE|` appears in the text box.  
   
-3.  To generate and use a SQL Server Compact database, keep the default connection string value. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] will generate a database file and put it in the directory indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> property.  
+3.  To generate and use a SQL Server Compact database, keep the default connection string value. Visual Studio will generate a database file and put it in the directory indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> property.  
   
 4.  To generate and use an encrypted [!INCLUDE[ssEW](../../../includes/ssew-md.md)] database, add `password` and `encrypt database` values to the connection string as shown in the following example.  
   
@@ -106,7 +92,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
     Data Source = |SQL/CE|;password=<password>;encrypt database=true  
     ```  
   
-5.  To use your own [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] database, specify your own connection string. For information about valid connection string formats, see the [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] documentation. This database is not generated automatically. The connection string must refer to an existing database that you can create using the following SQL statements.  
+5.  To use your own SQL Server database, specify your own connection string. For information about valid connection string formats, see the SQL Server documentation. This database is not generated automatically. The connection string must refer to an existing database that you can create using the following SQL statements.  
   
     ```  
     CREATE TABLE ApplicationProperties (PropertyName nvarchar(256),  
@@ -122,7 +108,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
 ## Using Custom Providers  
  By default, the client application services feature uses the providers in the <xref:System.Web.ClientServices.Providers?displayProperty=nameWithType> namespace. When you configure your application by using the **Services** page of the **Project Designer**, references to these providers are added to your App.config file. These default providers access corresponding providers on the server. Web services are often configured to access user data through providers such as <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider>.  
   
- If you want to use custom service providers, you will typically change the providers on the server side so that they affect all client applications that access the server. However, you do have the option of using non-default providers on the client side. You can specify custom authentication or roles providers in your project's App.config file, as shown in the following procedure. For information about how to create custom authentication and role providers, see [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) and [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d). You can also use a custom settings provider by modifying your project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]). For more information, see [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md).  
+ If you want to use custom service providers, you will typically change the providers on the server side so that they affect all client applications that access the server. However, you do have the option of using non-default providers on the client side. You can specify custom authentication or roles providers in your project's App.config file, as shown in the following procedure. For information about how to create custom authentication and role providers, see [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) and [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d). You can also use a custom settings provider by modifying your project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic). For more information, see [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md).  
   
 #### To configure client application services to use non-default providers  
   

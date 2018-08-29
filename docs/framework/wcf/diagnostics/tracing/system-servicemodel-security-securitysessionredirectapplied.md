@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySessionRedirectApplied"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b22736bc-61a3-47c7-8c13-e02e9f6848ef
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionRedirectApplied
 System.ServiceModel.Security.SecuritySessionRedirectApplied  

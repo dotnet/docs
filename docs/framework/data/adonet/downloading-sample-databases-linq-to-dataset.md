@@ -1,21 +1,7 @@
 ---
 title: "Downloading Sample Databases (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eb42a7af-d410-4b7f-b4a8-13c72ce6fd09
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Downloading Sample Databases (LINQ to DataSet)
 The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] documentation use the AdventureWorks sample database. You can download this product free of charge from the Microsoft download site. The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] documentation use SQL Server as the data store. SQL Server Express Edition, which is available without charge, can also be used as the data store instead of SQL Server.  
@@ -71,7 +57,7 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
      If you have installed these files to a different drive or directory, you must revise the paths appropriately before you execute the `sp_attach_db` stored procedure.  
   
 ## Downloading SQL Server Express Edition  
- The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] section use SQL Server 2005 as the data store but can be modified to use SQL Server Express Edition, instead. SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)], SQL Server Express Edition is included in the Pro and higher editions.  
+ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] section use SQL Server 2005 as the data store but can be modified to use SQL Server Express Edition, instead. SQL Server Express Edition is available without charge, and you can redistribute it with applications. If you are using Visual Studio, SQL Server Express Edition is included in the Pro and higher editions.  
   
 #### To download and install SQL Server Express Edition  
   

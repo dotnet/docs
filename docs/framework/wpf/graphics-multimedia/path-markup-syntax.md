@@ -1,26 +1,12 @@
 ---
 title: "Path Markup Syntax"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "attribute usage in XAML [WPF]"
   - "XAML [WPF], attribute usage"
   - "graphics [WPF], PathGeometry class"
   - "XAML [WPF], object element usage"
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Path Markup Syntax
 Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
@@ -48,7 +34,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../do
 ### A Note about White Space  
  For brevity, a single space is shown in the syntax sections that follow, but multiple spaces are also acceptable wherever a single space is shown.  
   
- Two numbers don’t actually have to be separated by a comma or whitespace, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
+ Two numbers don’t actually have to be separated by a comma or white space, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
   
 ### Syntax  
  The [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  

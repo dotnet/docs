@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.WarnHelpPageEnabledNoBaseAddress"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1a0f22f1-1b08-4b10-ac08-b109209eda8b
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.WarnHelpPageEnabledNoBaseAddress
 System.ServiceModel.WarnHelpPageEnabledNoBaseAddress  

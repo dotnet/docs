@@ -1,14 +1,6 @@
 ---
 title: "Object Variable Assignment (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Nothing keyword [Visual Basic], object variable assignment"
   - "object variables [Visual Basic], initializing"
@@ -21,9 +13,6 @@ helpviewer_keywords:
   - "assignment statements [Visual Basic], object variable assignment"
   - "Me keyword [Visual Basic], as object variable"
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Variable Assignment (Visual Basic)
 You use a normal assignment statement to assign an object to an object variable. You can assign an object expression or the [Nothing](../../../../visual-basic/language-reference/nothing.md) keyword, as the following example illustrates.  

@@ -1,9 +1,6 @@
 ---
 title: "Connection.m_WriteList Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Connection.m\_WriteList Field

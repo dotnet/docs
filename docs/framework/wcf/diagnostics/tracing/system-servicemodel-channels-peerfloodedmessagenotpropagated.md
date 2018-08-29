@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerFloodedMessageNotPropagated"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a99275b9-4975-4899-8e21-594ba552f981
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerFloodedMessageNotPropagated
 A message was received by the PeerNode, but not propagated to neighbors.  

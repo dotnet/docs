@@ -1,26 +1,12 @@
 ---
 title: "WS Transport With Message Credential"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0d092f3a-b309-439b-920b-66d8f46a0e3c
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS Transport With Message Credential
 This sample demonstrates the use of SSL transport security in combination with client credential being carried in the message. This sample uses the `wsHttpBinding` binding.  
   
- By default, the `wsHttpBinding` binding provides HTTP communication. When configured for transport security, the binding supports HTTPS communication. HTTPS provides confidentiality and integrity protection for the messages that are transmitted over the wire. However the set of authentication mechanisms that can be used to authenticate the client to the service is limited to what the HTTPS transport supports. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] offers a `TransportWithMessageCredential` security mode that is designed to overcome this limitation. When this security mode is configured, the transport security is used to provide confidentiality and integrity for the transmitted messages and to perform the service authentication. However, the client authentication is performed by putting the client credential directly in the message. This allows you to use any credential type that is supported by the message security mode for the client authentication while keeping the performance benefit of transport security mode.  
+ By default, the `wsHttpBinding` binding provides HTTP communication. When configured for transport security, the binding supports HTTPS communication. HTTPS provides confidentiality and integrity protection for the messages that are transmitted over the wire. However the set of authentication mechanisms that can be used to authenticate the client to the service is limited to what the HTTPS transport supports. Windows Communication Foundation (WCF) offers a `TransportWithMessageCredential` security mode that is designed to overcome this limitation. When this security mode is configured, the transport security is used to provide confidentiality and integrity for the transmitted messages and to perform the service authentication. However, the client authentication is performed by putting the client credential directly in the message. This allows you to use any credential type that is supported by the message security mode for the client authentication while keeping the performance benefit of transport security mode.  
   
  In this sample, a `UserName` credential type is used to authenticate the client to the service.  
   
@@ -30,15 +16,15 @@ This sample demonstrates the use of SSL transport security in combination with c
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The program code in the sample is almost identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. There is one additional operation provided by the service contract - `GetCallerIdentity`. This operation returns the name of the caller's identity to the caller.  
-  
-```  
+
+```csharp
 public string GetCallerIdentity()  
 {  
     // Use ServiceSecurityContext.WindowsIdentity to get the name of the caller.  
     return ServiceSecurityContext.Current.WindowsIdentity.Name;  
 }  
-```  
-  
+```
+
  You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable `TransportWithMessageCredential` security mode, as shown in the following sample configuration for the client.  
   
 ```xml  
@@ -69,13 +55,13 @@ public string GetCallerIdentity()
   
  The address specified uses the https:// scheme. The binding configuration sets the security mode to `TransportWithMessageCredential`. The same security mode must be specified in the service's Web.config file.  
   
- Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as https://localhost/servicemodelsamples/service.svc, from your browser. To allow the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
-  
-```  
+ Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as https://localhost/servicemodelsamples/service.svc, from your browser. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
+
+```csharp
 // WARNING: This code is only needed for test certificates such as those created by makecert. It is   
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
-```  
+```
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetThreadStaticAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetThreadStaticAddress"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 8e7dbf14-98a2-4384-a950-58a7640e59df
 topic_type: 
   - "apiref"
-caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetThreadStaticAddress Method
 Gets the address of the specified thread-static field that is in the scope of the specified thread.  

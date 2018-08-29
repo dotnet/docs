@@ -1,26 +1,12 @@
 ---
 title: "ServiceModel Transaction Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], ServiceModel attributes"
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceModel Transaction Attributes
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides properties on three standard <xref:System.ServiceModel> attributes that enable you to configure the behavior of transactions for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service:  
+Windows Communication Foundation (WCF) provides properties on three standard <xref:System.ServiceModel> attributes that enable you to configure the behavior of transactions for a WCF service:  
   
 -   <xref:System.ServiceModel.TransactionFlowAttribute>  
   
@@ -45,7 +31,7 @@ ms.workload:
 -   <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> specifies the time period within which a new transaction created at the service must complete. If this time is reached and the transaction has not been completed, it will abort. The <xref:System.TimeSpan> is used as the <xref:System.Transactions.TransactionScope> time-out for any operations that have <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> set to `true` and for which a new transaction was created. The time-out is the maximum allowed duration from the creation of the transaction to the completion of phase 1 in the two-phase commit protocol. The time-out value used is always the lower value between the <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> property and the `transactionTimeout` configuration setting.  
   
 ## OperationBehaviorAttribute  
- The <xref:System.ServiceModel.OperationBehaviorAttribute> attribute specifies the behaviors of the methods in the service implementation. You can use it to indicate the operation's specific execution behavior. Properties of this attribute do not affect the Web Service Description Language (WSDL) description of the service contract, and are purely elements of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] programming model that enable common features that developers otherwise have to implement themselves.  
+ The <xref:System.ServiceModel.OperationBehaviorAttribute> attribute specifies the behaviors of the methods in the service implementation. You can use it to indicate the operation's specific execution behavior. Properties of this attribute do not affect the Web Service Description Language (WSDL) description of the service contract, and are purely elements of the WCF programming model that enable common features that developers otherwise have to implement themselves.  
   
  This attribute has the following transaction-specific properties:  
   

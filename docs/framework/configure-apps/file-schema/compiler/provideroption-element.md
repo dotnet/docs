@@ -1,14 +1,6 @@
 ---
 title: "&lt;providerOption&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "provideroption"
 helpviewer_keywords: 
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "providerOptions"
   - "provideroption element"
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
-caps.latest.revision: 22
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;providerOption&gt; Element
 Specifies the compiler version attributes for a language provider.  

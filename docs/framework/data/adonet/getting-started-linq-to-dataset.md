@@ -1,21 +1,7 @@
 ---
 title: "Getting Started (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 97522119-f6a3-434c-a1ec-17396b74a556
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Getting Started (LINQ to DataSet)
 This section provides introductory information about programming with [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)].  

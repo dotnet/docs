@@ -1,14 +1,6 @@
 ---
 title: "CoInitializeEE Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CoInitializeEE"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 7e42a928-5068-4ba6-b8c3-806551a01fa8
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CoInitializeEE Function
 Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Use the [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method instead.  

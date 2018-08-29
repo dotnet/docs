@@ -1,14 +1,6 @@
 ---
 title: "Windows Forms and Unmanaged Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ActiveX controls [Windows Forms]"
   - "COM interop [Windows Forms], Windows Forms"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, unmanaged"
   - "Windows Forms, interop"
 ms.assetid: 81bc100c-fa49-4614-85a6-0f7ab59eac8a
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms and Unmanaged Applications
 Windows Forms applications and controls can interoperate with unmanaged applications, with some caveats. The following sections describe the scenarios and configurations that Windows Forms applications and controls support and those that they do not support.  

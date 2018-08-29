@@ -1,14 +1,6 @@
 ---
 title: "Label Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Label"
 helpviewer_keywords: 
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "labels"
   - "Label control [Windows Forms], about Label control"
 ms.assetid: dcad7f44-11b7-4c55-b0c0-d984ade43d7d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Label Control Overview (Windows Forms)
 Windows Forms <xref:System.Windows.Forms.Label> controls are used to display text or images that cannot be edited by the user. They are used to identify objects on a form — to provide a description of what a certain control will do if clicked, for example, or to display information in response to a run-time event or process in your application. For example, you can use labels to add descriptive captions to text boxes, list boxes, combo boxes, and so on. You can also write code that changes the text displayed by a label in response to events at run time. For example, if your application takes a few minutes to process a change, you can display a processing-status message in a label.  

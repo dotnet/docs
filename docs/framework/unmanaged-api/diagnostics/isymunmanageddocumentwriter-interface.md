@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedDocumentWriter Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedDocumentWriter"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedDocumentWriter Interface
 Provides methods for writing to a document referenced by a symbol store.  

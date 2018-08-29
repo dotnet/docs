@@ -1,14 +1,7 @@
 ---
 title: Framework Types Supporting Expression Trees
 description: Learn about framework types supporting expression trees, creating expression trees, and techniques for working with expression tree APIs.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 ---
 
@@ -18,12 +11,12 @@ ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
-list [here](/dotnet/core/api/System.Linq.Expressions).
+list at <xref:System.Linq.Expressions>.
 Rather than run through the full list, let's understand how the framework classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions
 may be very simple: the constant expression `1` returns the constant value of 1. They may be more
-complicated: The expression `(-B + Math.Sqrt(B*B + 4 * A * C)) / (2 * A)` returns one root for a
+complicated: The expression `(-B + Math.Sqrt(B*B - 4 * A * C)) / (2 * A)` returns one root for a
 quadratic equation (in the case where the equation has a solution).  
 
 ## It all starts with System.Linq.Expression

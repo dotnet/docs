@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 99ebe70b-8980-447f-b785-ecfcbdbaea72
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata
 The endpoint reference found in a coordinator recovery log entry contained invalid or incompatible metadata.  

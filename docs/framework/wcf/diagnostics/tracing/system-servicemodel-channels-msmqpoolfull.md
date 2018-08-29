@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.MsmqPoolFull"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f1fb0cfe-cddd-4bed-aea5-c9fa60ccce76
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.MsmqPoolFull
 System.ServiceModel.Channels.MsmqPoolFull  

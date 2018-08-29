@@ -1,13 +1,7 @@
 ---
 title: "Struct Design"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], structures"
   - "deallocating structures"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "type design guidelines, structures"
   - "structures [.NET Framework], design guidelines"
 ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Struct Design
 The general-purpose value type is most often referred to as a struct, its C# keyword. This section provides guidelines for general struct design.  

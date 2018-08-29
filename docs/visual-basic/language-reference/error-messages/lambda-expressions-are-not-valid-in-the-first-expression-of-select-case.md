@@ -1,21 +1,12 @@
 ---
 title: "Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc36635"
   - "vbc36635"
 helpviewer_keywords: 
   - "BC36635"
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement
 You cannot use a lambda expression for the test expression in a `Select Case` statement. Lambda expression definitions return functions, and the test expression of a `Select Case` statement must be an elementary data type.  

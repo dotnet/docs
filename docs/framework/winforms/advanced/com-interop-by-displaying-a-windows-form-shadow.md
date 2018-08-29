@@ -1,14 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], COM interop"
   - "Windows Forms, interop"
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method
 You can resolve Component Object Model (COM) interoperability problems by displaying your Windows Form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  

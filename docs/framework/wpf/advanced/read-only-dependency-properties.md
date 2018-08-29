@@ -1,24 +1,10 @@
 ---
 title: "Read-Only Dependency Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dependency properties [WPF], read-only"
   - "read-only dependency properties [WPF]"
 ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Read-Only Dependency Properties
 This topic describes read-only dependency properties, including existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.  

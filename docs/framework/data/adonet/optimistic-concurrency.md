@@ -1,24 +1,10 @@
 ---
 title: "Optimistic Concurrency"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Optimistic Concurrency
 In a multiuser environment, there are two models for updating data in a database: optimistic concurrency and pessimistic concurrency. The <xref:System.Data.DataSet> object is designed to encourage the use of optimistic concurrency for long-running activities, such as remoting data and interacting with data.  
@@ -174,7 +160,7 @@ SqlDataAdapter adapter = new SqlDataAdapter(
 // The Update command checks for optimistic concurrency violations  
 // in the WHERE clause.  
 adapter.UpdateCommand = new SqlCommand("UPDATE Customers Set CustomerID = @CustomerID, CompanyName = @CompanyName " +  
-   "WHERE CustomerID = @oldCustomerID AND CompanyName = @oldCompanyName, connection);  
+   "WHERE CustomerID = @oldCustomerID AND CompanyName = @oldCompanyName", connection);  
 adapter.UpdateCommand.Parameters.Add(  
   "@CustomerID", SqlDbType.NChar, 5, "CustomerID");  
 adapter.UpdateCommand.Parameters.Add(  

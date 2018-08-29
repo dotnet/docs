@@ -1,21 +1,9 @@
 ---
 title: "SecurityNegotiationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2060a678-f97b-4491-acd9-6c57c732afd7
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # SecurityNegotiationFailure
 Id: 172  

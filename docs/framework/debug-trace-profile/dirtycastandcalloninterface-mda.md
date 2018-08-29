@@ -1,14 +1,6 @@
 ---
 title: "dirtyCastAndCallOnInterface MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), early bound calls AutoDispatch"
   - "dispatch-only mode"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), early bound calls AutoDispatch"
   - "EarlyBoundCallOnAutorDispatchClassInteface MDA"
 ms.assetid: aa388ed3-7e3d-48ea-a0b5-c47ae19cec38
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # dirtyCastAndCallOnInterface MDA
 The `dirtyCastAndCallOnInterface` managed debugging assistant (MDA) is activated when an early-bound call through a vtable is attempted on a class interface that has been marked late-bound only.  

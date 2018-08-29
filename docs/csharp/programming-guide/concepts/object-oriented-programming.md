@@ -1,14 +1,7 @@
 ---
 title: "Object-Oriented Programming (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Object-Oriented Programming (C#)
 C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.  
@@ -308,7 +301,7 @@ var sampleObject =
  To inherit from a base class:  
   
 ```csharp  
-class DerivedClass:BaseClass{}  
+class DerivedClass:BaseClass {}  
 ```  
   
  By default all classes can be inherited. However, you can specify whether a class must not be used as a base class, or create a class that can be used as a base class only.  

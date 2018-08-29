@@ -1,14 +1,6 @@
 ---
 title: "Runtime Profiling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "performance counters"
   - "common language runtime, profiling"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "profiling applications"
   - "Performance Console"
 ms.assetid: ccd68284-f3a8-47b8-bc3f-92e5fe3a1640
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Runtime Profiling
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  

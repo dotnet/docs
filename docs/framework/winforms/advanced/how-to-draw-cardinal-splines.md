@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw Cardinal Splines"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "drawing [Windows Forms], cardinal splines"
   - "graphics [Windows Forms], cardinal splines"
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw Cardinal Splines
 A cardinal spline is a curve that passes smoothly through a given set of points. To draw a cardinal spline, create a <xref:System.Drawing.Graphics> object and pass the address of an array of points to the <xref:System.Drawing.Graphics.DrawCurve%2A> method.  

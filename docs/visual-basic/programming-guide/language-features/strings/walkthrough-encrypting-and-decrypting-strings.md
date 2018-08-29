@@ -1,23 +1,12 @@
 ---
 title: "Encrypting and Decrypting Strings in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "encryption [Visual Basic], strings"
   - "strings [Visual Basic], encrypting"
   - "decryption [Visual Basic], strings"
   - "strings [Visual Basic], decrypting"
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Encrypting and Decrypting Strings in Visual Basic
 This walkthrough shows you how to use the <xref:System.Security.Cryptography.DESCryptoServiceProvider> class to encrypt and decrypt strings using the cryptographic service provider (CSP) version of the Triple Data Encryption Standard (<xref:System.Security.Cryptography.TripleDES>) algorithm. The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string. Then, that wrapper is used to securely store private user data in a publicly accessible text file.  

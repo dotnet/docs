@@ -1,14 +1,6 @@
 ---
 title: "Retrieving Setup Information from an Application Domain"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "retrieving setup information"
   - "application domains, retrieving setup information"
 ms.assetid: 5cdb12ae-1e37-4a62-8ec7-93d6dcc6e8d9
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving Setup Information from an Application Domain
 Each instance of an application domain consists of both properties and <xref:System.AppDomainSetup> information. You can retrieve setup information from an application domain using the <xref:System.AppDomain?displayProperty=nameWithType> class. This class provides several members that retrieve configuration information about an application domain.  

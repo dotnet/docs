@@ -1,13 +1,6 @@
 ---
 title: "How to: Define a Conversion Operator (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
   - "operators [Visual Basic], defining"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: 54203dfa-c24b-463f-9942-d5153e89e762
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Define a Conversion Operator (Visual Basic)
 If you have defined a class or structure, you can define a type conversion operator between the type of your class or structure and another data type (such as `Integer`, `Double`, or `String`).  

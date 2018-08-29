@@ -1,14 +1,6 @@
 ---
 title: "CreateInstallReferenceEnum Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CreateInstallReferenceEnum"
 api_location: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CreateInstallReferenceEnum Function
 Gets a pointer to an [IInstallReferenceEnum](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md) instance that represents a list of an application's references to the specified assembly.  

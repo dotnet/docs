@@ -1,12 +1,6 @@
 ---
 title: "How to: Set the Default Time-Based Cache Policy for an Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,12 +9,9 @@ helpviewer_keywords:
   - "cache [.NET Framework], time-based policies"
   - "default time-based cache policy"
 ms.assetid: 6bfce066-a2e7-4add-a05e-85c12ec9f07f
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Set the Default Time-Based Cache Policy for an Application
 The default time-based cache policy allows an application to have its cache behavior defined by the headers sent with the cached resource and the cache behavior defined in sections 13 and 14 of RFC 2616, available at [http://www.ietf.org](http://www.ietf.org/). This is the appropriate cache behavior for most applications.  

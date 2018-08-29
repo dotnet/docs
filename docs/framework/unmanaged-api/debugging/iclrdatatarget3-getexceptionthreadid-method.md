@@ -1,14 +1,6 @@
 ---
 title: "ICLRDataTarget3::GetExceptionThreadID Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDataTarget3::GetExceptionThreadID Method
 Called by the common language runtime (CLR) data access services to get the ID of the thread that threw the exception.  

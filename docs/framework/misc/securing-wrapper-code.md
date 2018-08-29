@@ -1,26 +1,14 @@
 ---
 title: "Securing Wrapper Code"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [.NET Framework], wrapper code"
   - "wrapper code, securing"
   - "secure coding, wrapper code"
   - "code security, wrapper code"
 ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Wrapper Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

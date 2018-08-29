@@ -1,14 +1,6 @@
 ---
 title: "How to: Respond to Clicks in the Windows Forms DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], click events"
 ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Respond to Clicks in the Windows Forms DataGrid Control
 > [!NOTE]

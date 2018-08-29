@@ -1,21 +1,7 @@
 ---
 title: "&lt;transportConfigurationTypes&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;transportConfigurationTypes&gt;
 Represents a collection of configuration elements that identify the type of a particular transport. This can be used to add custom WAS protocols.  

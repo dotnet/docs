@@ -1,29 +1,15 @@
 ---
 title: "Exporting Custom Metadata for a WCF Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53c93882-f8ba-4192-965b-787b5e3f09c0
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Exporting Custom Metadata for a WCF Extension
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Custom metadata consists of XML elements that the system-provided metadata exporters cannot export. Typically, this includes custom WSDL elements for user-defined behaviors and binding elements and policy assertions about the capabilities and requirements of bindings and contracts.  
+In Windows Communication Foundation (WCF), metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Custom metadata consists of XML elements that the system-provided metadata exporters cannot export. Typically, this includes custom WSDL elements for user-defined behaviors and binding elements and policy assertions about the capabilities and requirements of bindings and contracts.  
   
  This section describes exporting custom WSDL or policy assertions, and does not focus on the exporting process itself. For more information about how to use the types that export and import metadata regardless of whether the metadata is custom or system-constructed, see [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md).  
   
 ## Overview  
- When metadata is published using the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType>, the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> is examined and XSD and WSDL -- including policy assertions -- are generated for all contracts and bindings that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can support using system-provided attributes and bindings. However, custom behavior attributes or binding elements require support before they can be exported properly.  
+ When metadata is published using the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType>, the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> is examined and XSD and WSDL -- including policy assertions -- are generated for all contracts and bindings that WCF can support using system-provided attributes and bindings. However, custom behavior attributes or binding elements require support before they can be exported properly.  
   
  This section describes:  
   

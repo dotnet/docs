@@ -1,21 +1,7 @@
 ---
 title: "&lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;
 Specifies the settings of a Windows service credential.  

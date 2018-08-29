@@ -1,21 +1,7 @@
 ---
 title: "MTOM Encoding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 820e316f-4ee1-4eb5-ae38-b6a536e8a14f
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MTOM Encoding
 This sample demonstrates the use of the Message Transmission Optimization Mechanism (MTOM) message encoding with a WSHttpBinding. MTOM is a mechanism for transmitting large binary attachments with SOAP messages as raw bytes, allowing for smaller messages.  
@@ -25,7 +11,7 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\MTOM`  
   
@@ -38,15 +24,15 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
 ```  
   
  The MTOM encoder can optimize arrays of bytes and streams. In this sample, the operation uses a `Stream` parameter and can therefore be optimized.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
   public interface IUpload  
   {  
       [OperationContract]  
       int Upload(Stream data);  
   }  
-```  
+```
   
  The contract chosen for this sample transmits binary data to the service and receives the number of bytes uploaded as the return value. When the service is installed and the client is run, it prints out the number 1000, which indicates that all 1000 bytes were received. The remainder of the output lists optimized and non-optimized message sizes for various payloads.  
   

@@ -1,12 +1,6 @@
 ---
 title: "How to: Specify an Alternate Element Name for an XML Stream"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,6 @@ helpviewer_keywords:
   - "classes, overriding"
   - "overriding classes"
 ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
 [Code Example](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  

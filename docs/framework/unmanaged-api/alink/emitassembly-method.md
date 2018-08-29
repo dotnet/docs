@@ -1,14 +1,6 @@
 ---
 title: "EmitAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink2.EmitAssembly"
   - "EmitAssembly"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 605ff39e-e5cc-4bff-8196-e8d68a9715b9
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EmitAssembly Method
 Creates the assembly. Call this method after all other files are closed except for the assembly file. Do not call this method when producing unbound modules.  

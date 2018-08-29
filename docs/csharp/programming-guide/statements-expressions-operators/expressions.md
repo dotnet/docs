@@ -1,17 +1,10 @@
 ---
 title: "Expressions (C# Programming Guide)"
 ms.date: 05/11/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "expressions [C#]"
   - "C# language, expressions"
 ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Expressions (C# Programming Guide)
 An *expression* is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace. Expressions can consist of a literal value, a method invocation, an operator and its operands, or a *simple name*. Simple names can be the name of a variable, type member, method parameter, namespace or type.  
@@ -62,8 +55,9 @@ DoWork();
 ## Lambda expressions  
  Lambda expressions represent "inline methods" that have no name but can have input parameters and multiple statements. They are used extensively in LINQ to pass arguments to methods. Lambda expressions are compiled to either delegates or expression trees depending on the context in which they are used. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
-## Expression trees  
- Expression trees enable expressions to be represented as data structures. They are used extensively by LINQ providers to translate query expressions into code that is meaningful in some other context, such as a SQL database. For more information, see [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b).  
+## Expression trees
+
+Expression trees enable expressions to be represented as data structures. They are used extensively by LINQ providers to translate query expressions into code that is meaningful in some other context, such as a SQL database. For more information, see [Expression Trees (C#)](../concepts/expression-trees/index.md).
   
 ## Expression body definitions
 

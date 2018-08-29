@@ -1,21 +1,10 @@
 ---
 title: "Resolving External XSLT Style Sheets and Documents"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Resolving External XSLT Style Sheets and Documents
 There are several times during a transformation when you may need to resolve external resources.  

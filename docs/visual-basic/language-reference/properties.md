@@ -1,16 +1,9 @@
 ---
 title: "Properties (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "properties [Visual Basic]"
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Properties (Visual Basic)
 This page lists the properties that are members of Visual Basic modules. Other properties that are members of specific Visual Basic objects are listed in [Objects](../../visual-basic/language-reference/objects/index.md).  

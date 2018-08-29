@@ -1,26 +1,15 @@
 ---
-title: "Common I-O Tasks"
-ms.custom: ""
+title: "Common I/O Tasks"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "I/O, common tasks"
 ms.assetid: bf00c380-706a-4e38-b829-454a480629fc
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Common I/O Tasks
-The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I-O](../../../docs/standard/io/index.md).  
+The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I/O](../../../docs/standard/io/index.md).  
   
 ## Common File Tasks  
   
@@ -59,6 +48,6 @@ The <xref:System.IO> namespace provides several classes that allow for various a
 |Determine whether a directory exists|<xref:System.IO.Directory.Exists%2A?displayProperty=nameWithType> method|  
   
 ## See Also  
- [File and Stream I-O](../../../docs/standard/io/index.md)  
+ [File and Stream I/O](../../../docs/standard/io/index.md)  
  [Composing Streams](../../../docs/standard/io/composing-streams.md)  
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

@@ -1,10 +1,6 @@
 ---
 title: "Default Marshaling Behavior"
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Default Marshaling Behavior
 Interop marshaling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshaling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaler provides performance optimizations.  
@@ -114,7 +107,9 @@ interface DelegateTest : IDispatch {
 ```  
   
  A function pointer can be dereferenced, just as any other unmanaged function pointer can be dereferenced.  
-  
+
+In this example, when the two delegates are marshaled as <xref:System.Runtime.InteropServices.UnmanagedType.FunctionPtr?displayProperty=nameWithType>, the result is an `int` and a pointer to an `int`. Because delegate types are being marshaled, `int` here represents a pointer to a void (`void*`), which is the address of the delegate in memory. In other words, this result is specific to 32-bit Windows systems, since `int` here represents the size of the function pointer.
+
 > [!NOTE]
 >  A reference to the function pointer to a managed delegate held by unmanaged code does not prevent the common language runtime from performing garbage collection on the managed object.  
   
@@ -347,7 +342,7 @@ interface _Graphics {
 }  
 ```  
   
- The same rules used to marshal values and references to platform invoke calls are used when marshaling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaler does not support higher levels of indirection (**Point \*\***) in either direction.  
+ The same rules used to marshal values and references to platform invoke calls are used when marshaling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaler does not support higher levels of indirection (**Point** \*\*) in either direction.  
   
 > [!NOTE]
 >  Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  

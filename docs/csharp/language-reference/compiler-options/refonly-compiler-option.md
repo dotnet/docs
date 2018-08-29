@@ -1,18 +1,12 @@
 ---
 title: "-refonly (C# Compiler Options)"
 ms.date: 07/08/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/refonly"
 helpviewer_keywords: 
   - "/refonly compiler option [C#]"
   - "-refonly compiler option [C#]"
   - "refonly compiler option [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 
 # -refonly (C# Compiler Options)
@@ -42,5 +36,6 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 The `-refonly` and [`-refout`](refout-compiler-option.md) options are mutually exclusive.
 
 ## See also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

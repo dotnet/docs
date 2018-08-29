@@ -1,24 +1,10 @@
 ---
 title: "Provider Statistics for SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 429c9d09-92ac-46ec-829a-fbff0a9575a2
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Provider Statistics for SQL Server
 Starting with the .NET Framework version 2.0, the .NET Framework Data Provider for SQL Server supports run-time statistics. You must enable statistics by setting the <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> property of the <xref:System.Data.SqlClient.SqlConnection> object to `True` after you have a valid connection object created. After statistics are enabled, you can review them as a "snapshot in time" by retrieving an <xref:System.Collections.IDictionary> reference via the <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> method of the <xref:System.Data.SqlClient.SqlConnection> object. You enumerate through the list as a set of name/value pair dictionary entries. These name/value pairs are unordered. At any time, you can call the <xref:System.Data.SqlClient.SqlConnection.ResetStatistics%2A> method of the <xref:System.Data.SqlClient.SqlConnection> object to reset the counters. If statistic gathering has not been enabled, an exception is not generated. In addition, if <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> is called without <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> having been called first, the values retrieved are the initial values for each entry. If you enable statistics, run your application for a while, and then disable statistics, the values retrieved will reflect the values collected up to the point where statistics were disabled. All statistical values gathered are on a per-connection basis.  
@@ -56,7 +42,7 @@ Starting with the .NET Framework version 2.0, the .NET Framework Data Provider f
  The following console application shows how to enable statistics on a connection, retrieve four individual statistic values, and write them out to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)]. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+>  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  
@@ -212,7 +198,7 @@ namespace CS_Stats_Console_GetValue
  The following console application shows how to enable statistics on a connection, retrieve all available statistic values using the enumerator, and write them to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)]. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+>  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  

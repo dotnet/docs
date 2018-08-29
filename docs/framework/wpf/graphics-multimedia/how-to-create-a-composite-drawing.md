@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Composite Drawing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "drawings [WPF], composite"
   - "composite drawings [WPF]"
   - "graphics [WPF], composite drawings"
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Composite Drawing
 This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to create complex drawings by combining multiple <xref:System.Windows.Media.Drawing> objects into a single composite drawing.  

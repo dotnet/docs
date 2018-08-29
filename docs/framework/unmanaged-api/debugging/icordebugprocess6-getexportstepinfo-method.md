@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugProcess6::GetExportStepInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess6::GetExportStepInfo Method
 Provides information on runtime exported functions to help step through managed code.  

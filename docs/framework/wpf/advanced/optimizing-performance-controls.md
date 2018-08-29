@@ -1,25 +1,11 @@
 ---
 title: "Optimizing Performance: Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], improving performance"
   - "container recycling [WPF]"
   - "user interface virtualization [WPF]"
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Optimizing Performance: Controls
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] includes many of the common user-interface (UI) components that are used in most Windows applications. This topic contains techniques for improving the performance of your UI.  

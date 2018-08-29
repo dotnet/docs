@@ -1,10 +1,6 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"
   - "application manifests [.NET Framework]"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure .NET Framework-Based COM Components for Registration-Free Activation
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:  
@@ -38,7 +31,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
   
-     For information about manifest elements and their attributes, see [Application Manifests](https://msdn.microsoft.com/library/windows/desktop/aa374191.aspx).  
+     For information about manifest elements and their attributes, see [Application Manifests](/windows/desktop/SbsCs/application-manifests).  
   
 3.  Identify the owner of the manifest. In the following example, `myComApp` version 1 owns the manifest file.  
   
@@ -78,7 +71,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 5.  Save and name the manifest file. The name of an application manifest is the name of the assembly executable followed by the .manifest extension. For example, the application manifest file name for myComApp.exe is myComApp.exe.manifest.  
   
- You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](https://msdn.microsoft.com/library/windows/desktop/ff951640.aspx).  
+ You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
   
 #### To create a component manifest  
   

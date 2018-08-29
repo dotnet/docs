@@ -1,1 +1,0 @@
-International Color Consortium (ICC)

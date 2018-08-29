@@ -1,16 +1,9 @@
 ---
 title: "Using Delegates (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Delegates (C# Programming Guide)
 A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Del` that can encapsulate a method that takes a [string](../../../csharp/language-reference/keywords/string.md) as an argument and returns [void](../../../csharp/language-reference/keywords/void.md):  

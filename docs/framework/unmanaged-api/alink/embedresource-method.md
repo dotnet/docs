@@ -1,14 +1,6 @@
 ---
 title: "EmbedResource Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.EmbedResource"
   - "EmbedResource"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EmbedResource Method
 Declares an embedded resource. This method does not actually embed the resource.  

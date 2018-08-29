@@ -1,26 +1,14 @@
 ---
 title: "How to: Perform Lazy Initialization of Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "lazy initialization in .NET, how to perform"
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Perform Lazy Initialization of Objects
 The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  

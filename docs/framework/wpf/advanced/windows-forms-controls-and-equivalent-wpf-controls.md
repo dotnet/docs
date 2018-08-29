@@ -1,25 +1,11 @@
 ---
 title: "Windows Forms Controls and Equivalent WPF Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms Controls and Equivalent WPF Controls
 Many [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have equivalent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls, but some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have no equivalents in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This topic compares control types provided by the two technologies.  

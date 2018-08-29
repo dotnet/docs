@@ -1,12 +1,6 @@
 ---
 title: "* Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.*"
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "multiplication operator [Visual Basic], syntax"
   - "math operators [Visual Basic]"
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # * Operator (Visual Basic)
 Multiplies two numbers.  

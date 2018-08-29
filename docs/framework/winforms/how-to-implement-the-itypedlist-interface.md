@@ -1,14 +1,6 @@
 ---
 title: "How to: Implement the ITypedList Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "data binding [Windows Forms], implementing"
   - "IBindingList interface"
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Implement the ITypedList Interface
 Implement the <xref:System.ComponentModel.ITypedList> interface to enable discovery of the schema for a bindable list.  

@@ -1,13 +1,7 @@
 ---
 title: What's new in C# 7.2
 description: An overview of new features in C# 7.2.
-keywords: C# language design, 7.2, Visual Studio 2017, 
-author: billwagner
-ms.author: wiwagn
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 # What's new in C# 7.2
 
@@ -17,7 +11,7 @@ avoiding unnecessary copies or allocations.
 
 The remaining features are small, nice-to-have features.
 
-C# 7.2 uses the [language version selection](csharp-7-1.md#language-version-selection)
+C# 7.2 uses the [language version selection](../language-reference/configure-language-version.md)
 configuration element to select the compiler language version.
 
 The new language features in this release are:

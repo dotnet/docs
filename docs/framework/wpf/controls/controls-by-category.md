@@ -1,26 +1,12 @@
 ---
 title: "Controls by Category"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], listed by category"
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Controls by Category
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] controls can be logically grouped into several categories. These categories can be used to select the appropriate control for your scenario by helping you see which controls have similar usage patterns or functionality.  
+Windows Presentation Foundation (WPF) controls can be logically grouped into several categories. These categories can be used to select the appropriate control for your scenario by helping you see which controls have similar usage patterns or functionality.  
   
 ## Layout  
  Layout controls are used to manage the size, dimensions, position, and arrangement of child elements.  

@@ -1,10 +1,6 @@
 ---
 title: "Special Characters (C# Reference)"
 ms.date: 02/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.special characters"
 helpviewer_keywords: 
@@ -14,7 +10,6 @@ helpviewer_keywords:
   - "@ character (C#)"
   - "$ character (C#)"
 ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -27,7 +22,7 @@ Special characters are predefined, contextual characters that modify the program
 
 - [$](../../../csharp/language-reference/tokens/interpolated.md), the interpolated string character.
 
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
 
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

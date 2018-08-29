@@ -1,21 +1,12 @@
 ---
 title: "Basic serialization"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.topic: "article"
 helpviewer_keywords: 
   - "binary serialization, basic serialization"
   - "serialization, basic serialization"
 ms.assetid: d899d43c-335a-433e-a589-cd187192984f
 dev_langs: 
   - "CSharp"
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Basic serialization
 

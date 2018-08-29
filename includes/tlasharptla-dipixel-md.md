@@ -1,1 +1,0 @@
-device-independent unit (1/96th inch)

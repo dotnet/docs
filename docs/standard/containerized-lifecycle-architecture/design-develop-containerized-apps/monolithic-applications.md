@@ -1,14 +1,9 @@
 ---
 title: Monolithic applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Monolithic applications
 
@@ -70,5 +65,5 @@ Figure 4-4 also shows that the publish flow pushes an image through a Container 
 
 
 >[!div class="step-by-step"]
-[Previous] (common-container-design-principles.md)
-[Next] (state-and-data-in-docker-applications.md)
+[Previous](common-container-design-principles.md)
+[Next](state-and-data-in-docker-applications.md)

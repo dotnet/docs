@@ -1,21 +1,7 @@
 ---
 title: "Retrieving and Modifying Data in ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving and Modifying Data in ADO.NET
 A primary function of any database application is connecting to a data source and retrieving the data that it contains. The .NET Framework data providers of ADO.NET serve as a bridge between an application and a data source, allowing you to execute commands as well as to retrieve data by using a **DataReader** or a **DataAdapter**. A key function of any database application is the ability to update the data that is stored in the database. In ADO.NET, updating data involves using the **DataAdapter** and <xref:System.Data.DataSet>, and **Command** objects; and it may also involve using transactions.  
@@ -40,7 +26,7 @@ A primary function of any database application is connecting to a data source an
  Contains topics describing how to perform local transactions, distributed transactions, and work with optimistic concurrency.  
   
  [Retrieving Identity or Autonumber Values](../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md)  
- Provides an example of mapping the values generated for an **identity** column in a [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] table or for an **Autonumber** field in a Microsoft Access table, to a column of an inserted row in a table. Discusses merging identity values in a `DataTable`.  
+ Provides an example of mapping the values generated for an **identity** column in a SQL Server table or for an **Autonumber** field in a Microsoft Access table, to a column of an inserted row in a table. Discusses merging identity values in a `DataTable`.  
   
  [Retrieving Binary Data](../../../../docs/framework/data/adonet/retrieving-binary-data.md)  
  Describes how to retrieve binary data or large data structures using `CommandBehavior`.`SequentialAccess` to modify the default behavior of a `DataReader`.  
@@ -64,7 +50,7 @@ A primary function of any database application is connecting to a data source an
  Describes [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] support for asynchronous programming.  
   
  [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)  
- Discusses how to write applications that stream data from [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] without having it fully loaded in memory.  
+ Discusses how to write applications that stream data from SQL Server without having it fully loaded in memory.  
   
 ## See Also  
  [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  

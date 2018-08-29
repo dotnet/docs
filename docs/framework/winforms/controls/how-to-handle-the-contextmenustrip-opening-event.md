@@ -1,14 +1,6 @@
 ---
 title: "How to: Handle the ContextMenuStrip Opening Event"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "event handling [Windows Forms], context menus"
   - "shortcut menus [Windows Forms], event handling"
 ms.assetid: b661b3dd-7815-4cc2-a1aa-a9a391ab3427
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Handle the ContextMenuStrip Opening Event
 You can customize the behavior of your <xref:System.Windows.Forms.ContextMenuStrip> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  

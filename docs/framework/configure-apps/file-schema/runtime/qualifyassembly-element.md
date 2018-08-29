@@ -1,14 +1,6 @@
 ---
 title: "&lt;qualifyAssembly&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#qualifyAssembly"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/qualifyAssembly"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "<qualifyAssembly> element"
   - "qualifyAssembly element"
 ms.assetid: ad6442f6-1a9d-43b6-b733-04ac1b7f9b82
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;qualifyAssembly&gt; Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  

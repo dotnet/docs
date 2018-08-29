@@ -1,18 +1,11 @@
 ---
 title: "Anonymous Functions (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "lambda expressions [C#], as anonymus functions"
   - "anonymous functions [C#]"
   - "anonymous methods [C#]"
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Anonymous Functions (C# Programming Guide)
 An anonymous function is an "inline" statement or expression that can be used wherever a delegate type is expected. You can use it to initialize a named delegate or pass it instead of a named delegate type as a method parameter.  
@@ -36,8 +29,9 @@ An anonymous function is an "inline" statement or expression that can be used wh
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
+## See also
+
+[Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
+[Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+[Delegates](../../../csharp/programming-guide/delegates/index.md)  
+[Expression Trees (C#)](../concepts/expression-trees/index.md)  

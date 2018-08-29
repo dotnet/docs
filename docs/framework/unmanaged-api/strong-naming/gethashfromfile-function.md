@@ -1,14 +1,6 @@
 ---
 title: "GetHashFromFile Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetHashFromFile"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b3c526a4-8fb4-4ad6-b6af-42ce9c06492e
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetHashFromFile Function
 Generates a hash over the contents of the specified file.  

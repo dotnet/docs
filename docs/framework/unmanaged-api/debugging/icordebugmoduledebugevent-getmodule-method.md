@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugModuleDebugEvent::GetModule Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: b1141c35-4253-4e34-b3e4-ed406a9dea4f
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugModuleDebugEvent::GetModule Method
 Gets the merged module that was just loaded or unloaded.  

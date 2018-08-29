@@ -1,4 +1,4 @@
-    // compile with: /target:library
+    // compile with: -target:library
     public class D
     {
         public virtual void DoWork(int i)

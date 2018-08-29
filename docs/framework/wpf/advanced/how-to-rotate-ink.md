@@ -1,14 +1,6 @@
 ---
 title: "How to: Rotate Ink"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ink [WPF], rotating"
   - "rotating ink [WPF]"
 ms.assetid: fac36cc9-dd01-41ca-9bde-9d33e3790bbe
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Rotate Ink
 ## Example  

@@ -5,13 +5,12 @@ metadata:
   description: In this quickstart about branches and loops, you'll use your browser to learn C# interactively. You'll write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
+  ms.topic: quickstart
   ms.custom: mvc
-  ms.prod: .net
-  ms.technology: devlang-csharp
-  ms.topic: get-started-article
+  ms.date: 08/24/2018
   displayType: two-column
   interactive: csharp
-  nextTutorialHref: interpolated-strings
+  nextTutorialHref: interpolated-strings.yml
   nextTutorialTitle: String interpolation in C#
 items:
 - durationInMinutes: 1
@@ -270,6 +269,7 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
+- title: Congratulations!
   content: |
     You've completed the "branches and loops" quickstart. 
     

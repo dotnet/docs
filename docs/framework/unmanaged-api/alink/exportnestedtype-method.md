@@ -1,14 +1,6 @@
 ---
 title: "ExportNestedType Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.ExportNestedType"
   - "ExportNestedType"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dec7df60-4d30-47c8-99db-72e0419e5f76
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ExportNestedType Method
 Specifies nested types as exportable. The [ExportType Method](../../../../docs/framework/unmanaged-api/alink/exporttype-method.md) can also export nested types, but this method is faster.  

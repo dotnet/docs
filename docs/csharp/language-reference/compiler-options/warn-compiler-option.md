@@ -1,10 +1,6 @@
 ---
 title: "-warn (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/warn"
 helpviewer_keywords: 
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "w compiler option [C#]"
   - "warn compiler option [C#]"
 ms.assetid: 5f80ff59-4991-4382-9f9a-77da18446e71
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -warn (C# Compiler Options)
 The **-warn** option specifies the warning level for the compiler to display.  
@@ -66,5 +59,6 @@ csc -warn:1 in.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,22 +1,12 @@
 ---
 title: "Extension Methods (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
 helpviewer_keywords: 
   - "extending data types [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
-caps.latest.revision: 41
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Extension Methods (Visual Basic)
 Extension methods enable developers to add custom functionality to data types that are already defined without creating a new derived type. Extension methods make it possible to write a method that can be called as if it were an instance method of the existing type.  

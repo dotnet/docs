@@ -1,24 +1,12 @@
 ---
 title: "&lt;GCCpuGroup&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "GCCpuGroup element"
   - "<GCCpuGroup> element"
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;GCCpuGroup&gt; Element
 Specifies whether garbage collection supports multiple CPU groups.  

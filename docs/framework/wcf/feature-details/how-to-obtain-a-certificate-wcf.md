@@ -1,26 +1,12 @@
 ---
 title: "How to: Obtain a Certificate (WCF)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], obtaining"
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Obtain a Certificate (WCF)
-To use any of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features of that use X.509 certificates, you just first obtain certificates.  
+To use any of the Windows Communication Foundation (WCF) features of that use X.509 certificates, you just first obtain certificates.  
   
 ### To obtain an X.509 certificate  
   

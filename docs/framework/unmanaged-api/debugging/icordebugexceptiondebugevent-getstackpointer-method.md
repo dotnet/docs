@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugExceptionDebugEvent::GetStackPointer Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugExceptionDebugEvent::GetStackPointer Method
 Gets the stack pointer for this exception debug event.  

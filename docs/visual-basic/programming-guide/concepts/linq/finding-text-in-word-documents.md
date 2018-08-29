@@ -1,19 +1,7 @@
 ---
 title: "Finding Text in Word Documents (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eea9819b-a78a-4552-bf13-8837fc0e7a37
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Finding Text in Word Documents (Visual Basic)
 This topic extends the previous queries to do something useful: find all occurrences of a string in the document.  

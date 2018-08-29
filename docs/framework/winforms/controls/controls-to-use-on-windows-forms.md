@@ -1,30 +1,16 @@
 ---
 title: "Controls to Use on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms]"
   - "Windows Forms controls, list of"
 ms.assetid: dec51976-eae0-4398-a537-20bca7974722
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Controls to Use on Windows Forms
 The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md).  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] controls are based on classes provided by the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
+>  Visual Basic controls are based on classes provided by the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
 ## In This Section  
  [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)  

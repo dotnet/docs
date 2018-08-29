@@ -1,21 +1,11 @@
 ---
 title: "LINQ and Generic Types (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ [C#], generic types"
   - "generic types [LINQ]"
   - "generics [LINQ]"
 ms.assetid: 660e3799-25ca-462c-8c4a-8bce04fbb031
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ and Generic Types (C#)
 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries are based on generic types, which were introduced in version 2.0 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You do not need an in-depth knowledge of generics before you can start writing queries. However, you may want to understand two basic concepts:  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILFrame::GetIP Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugILFrame.GetIP"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILFrame::GetIP Method
 Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.  

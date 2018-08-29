@@ -1,16 +1,7 @@
 ---
 title: "Find Private Key Tool (FindPrivateKey.exe)"
 ms.date: "09/11/2017"
-ms.prod: ".net-framework"
-ms.technology: "dotnet-clr"
-ms.topic: "article"
 ms.assetid: b8846a95-3fcc-4e8c-b9c0-128d975a6307
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Find Private Key Tool (FindPrivateKey.exe)
 

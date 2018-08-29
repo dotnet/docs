@@ -1,14 +1,6 @@
 ---
 title: "How to: Produce a Value Based on a List of Bound Items"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "data binding [WPF], MultiBinding"
   - "Multibinding [WPF]"
 ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Produce a Value Based on a List of Bound Items
 <xref:System.Windows.Data.MultiBinding> allows you to bind a binding target property to a list of source properties and then apply logic to produce a value with the given inputs. This example demonstrates how to use <xref:System.Windows.Data.MultiBinding>.  

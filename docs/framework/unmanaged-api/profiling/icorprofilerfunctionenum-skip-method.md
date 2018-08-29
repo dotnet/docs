@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerFunctionEnum::Skip Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerFunctionEnum.Skip Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerFunctionEnum::Skip Method
 Advances the enumerator's cursor from its current position so that the specified number of elements are skipped.  

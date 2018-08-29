@@ -1,14 +1,6 @@
 ---
 title: "3-D Transformations Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "3-D transformations"
   - "transformations [WPF], 3-D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # 3-D Transformations Overview
 This topic describes how to apply transformations to 3-D models in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] graphics system. Transformations allow the developer to reposition, resize, and reorient models without changing the base values that define them.  

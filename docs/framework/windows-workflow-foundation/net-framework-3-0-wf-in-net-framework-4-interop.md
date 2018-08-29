@@ -1,19 +1,7 @@
 ---
 title: "Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity
 The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] (WF 4.5) activity that wraps a [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] (WF 3.5) activity within a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow. The WF 3 activity can be a single leaf activity or an entire tree of activities. The execution (including cancellation and exception handling) and the persistence of the [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] activity occur within the context of the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow instance that is executing.  

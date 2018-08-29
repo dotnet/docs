@@ -1,21 +1,7 @@
 ---
 title: "Internet Information Service Hosting Instructions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 959a21c8-9d9d-4757-b255-4e57793ae9d6
-caps.latest.revision: 30
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Internet Information Service Hosting Instructions
 To run the samples that are hosted by Internet Information Services (IIS), you must make sure that IIS is properly installed and is running.  

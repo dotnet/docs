@@ -1,21 +1,12 @@
 ---
 title: "Expression of type &lt;type&gt; is not queryable"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc36593"
   - "vbc36593"
 helpviewer_keywords: 
   - "BC36593"
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Expression of type &lt;type&gt; is not queryable
 Expression of type \<type> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  

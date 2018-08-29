@@ -1,25 +1,11 @@
 ---
 title: "Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Presentation Foundation [WPF], performance"
   - "performance [WPF]"
   - "WPF [WPF], performance"
 ms.assetid: c649a20f-8b7e-4a38-9b80-74839298d406
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Performance
 Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application development. The topics in this section provide additional information on building high performance [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  

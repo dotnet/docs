@@ -1,17 +1,8 @@
 ---
 title: Unit Type (F#)
 description: Learn how the F# 'unit' type is often used to hold the place where a value is required by the language syntax when no value is needed or desired.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: eabbb6d7-80f3-4fa5-80b4-0f48982466a7 
 ---
-
 # Unit Type
 
 The `unit` type is a type that indicates the absence of a specific value; the `unit` type has only a single value, which acts as a placeholder when no other value exists or is needed.

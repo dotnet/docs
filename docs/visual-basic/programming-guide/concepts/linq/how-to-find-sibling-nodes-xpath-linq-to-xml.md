@@ -1,19 +1,7 @@
 ---
 title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)
 You might want to find all siblings of a node that have a specific name. The resulting collection might include the context node if the context node also has the specific name.  

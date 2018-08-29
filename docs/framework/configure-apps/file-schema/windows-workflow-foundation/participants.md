@@ -1,19 +1,8 @@
 ---
 title: "&lt;participants&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 560dd0bb-f9fb-423c-8857-2101a3654b06
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;participants&gt;
 Configure a list of tracking participants that listen to the tracking records being emitted from the runtime directly and process them in whatever way they are configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  

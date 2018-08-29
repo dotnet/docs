@@ -1,24 +1,11 @@
 ---
 title: "&lt;xmlSerializer&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<xmlSerializer> element"
   - "XML serialization, configuration"
   - "xmlSerializer element"
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # &lt;xmlSerializer&gt; Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  

@@ -1,14 +1,6 @@
 ---
 title: "ICLRDataEnumMemoryRegions::EnumMemoryRegions Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDataEnumMemoryRegions.EnumMemoryRegions"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDataEnumMemoryRegions::EnumMemoryRegions Method
 Enumerates specified areas of memory.  

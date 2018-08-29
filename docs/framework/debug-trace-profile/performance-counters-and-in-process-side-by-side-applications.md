@@ -1,14 +1,6 @@
 ---
 title: "Performance Counters and In-Process Side-By-Side Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "performance,.NET Framework applications"
   - "performance monitoring,counters"
 ms.assetid: 6888f9be-c65b-4b03-a07b-df7ebdee2436
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Performance Counters and In-Process Side-By-Side Applications
 Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the performance counters on a per-runtime basis. This topic describes the registry change needed to enable this functionality.  

@@ -1,14 +1,6 @@
 ---
 title: "LoggingLevelEnum Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "LoggingLevelEnum"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LoggingLevelEnum Enumeration
 Indicates the severity level of a descriptive message that is written to the event log when a managed thread logs an event.  

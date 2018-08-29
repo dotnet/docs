@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.TxFailedToNegotiateOleTx"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3f0f0b4b-a1ad-4704-8329-455daf54892d
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.TxFailedToNegotiateOleTx
 The OleTransactions protocol negotiation failed to complete for the specified coordination context.  

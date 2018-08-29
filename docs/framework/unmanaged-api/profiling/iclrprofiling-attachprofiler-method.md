@@ -1,14 +1,6 @@
 ---
 title: "ICLRProfiling::AttachProfiler Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IClrProfiling.AttachProfiler Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRProfiling::AttachProfiler Method
 Attaches the specified profiler to the specified process.  

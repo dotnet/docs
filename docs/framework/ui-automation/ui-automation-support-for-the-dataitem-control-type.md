@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the DataItem Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Data Item control type"
   - "Data Item control type"
   - "control types, Data Item"
 ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
-caps.latest.revision: 36
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the DataItem Control Type
 > [!NOTE]

@@ -1,21 +1,7 @@
 ---
 title: "3819 - RoutingServiceMovedToBackup"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bf4086de-efd4-413c-9bc3-32a85b6b6722
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3819 - RoutingServiceMovedToBackup
 ## Properties  

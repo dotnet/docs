@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation Value Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, Value"
   - "UI Automation, Value control pattern"
   - "Value control pattern"
 ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
-caps.latest.revision: 25
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation Value Control Pattern
 > [!NOTE]

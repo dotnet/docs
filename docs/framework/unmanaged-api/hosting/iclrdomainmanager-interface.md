@@ -1,14 +1,6 @@
 ---
 title: "ICLRDomainManager Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDomainManager"
 api_location: 
@@ -20,12 +12,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "ICLRDomainManager interface [.NET Framework hosting]"
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDomainManager Interface
 Enables the host to specify the application domain manager that will be used to initialize the default application domain, and to specify initialization properties.  

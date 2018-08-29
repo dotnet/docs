@@ -1,13 +1,6 @@
 ---
 title: "Calling a Property or Method Using a String Name (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "passing operators [Visual Basic]"
   - "strings [Visual Basic], passing new operators as"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], setting at run time"
   - "CallByName function"
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Calling a Property or Method Using a String Name (Visual Basic)
 In most cases, you can discover the properties and methods of an object at design time, and write code to handle them. However, in some cases you may not know about an object's properties and methods in advance, or you may just want the flexibility of enabling an end user to specify properties or execute methods at run time.  

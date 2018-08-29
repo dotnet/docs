@@ -1,17 +1,8 @@
 ---
 title: Troubleshooting Type Providers
 description: Discover potential solutions for the problems that you are most likely to encounter when you use type providers in F#.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 44533045-9862-43c5-81d9-3e05157e975a 
 ---
-
 # Troubleshooting Type Providers
 
 This topic describes and provides potential solutions for the problems that you are most likely to encounter when you use type providers.

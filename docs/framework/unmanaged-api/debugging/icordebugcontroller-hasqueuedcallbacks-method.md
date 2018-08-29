@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugController::HasQueuedCallbacks Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugController.HasQueuedCallbacks"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugController::HasQueuedCallbacks Method
 Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.  

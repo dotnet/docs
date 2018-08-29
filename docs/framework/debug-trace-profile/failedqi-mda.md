@@ -1,14 +1,6 @@
 ---
 title: "failedQI MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "failed QueryInterface"
   - "FailedQI MDA"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), failed QueryInterface"
   - "managed debugging assistants (MDAs), failed QueryInterface"
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # failedQI MDA
 The `failedQI` managed debugging assistant (MDA) is activated when the runtime calls `QueryInterface` on a COM interface pointer on behalf of a runtime callable wrapper (RCW), and the `QueryInterface` call fails.  

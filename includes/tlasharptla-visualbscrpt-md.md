@@ -1,1 +1,0 @@
-Microsoft Visual Basic Scripting Edition (VBScript)

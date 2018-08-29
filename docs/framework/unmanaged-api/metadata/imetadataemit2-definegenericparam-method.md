@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit2::DefineGenericParam Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit2.DefineGenericParam"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 47b2a3b6-907d-43dc-858d-1ae7dca1316a
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit2::DefineGenericParam Method
 Creates a definition for a generic type parameter, and gets a token to that generic type parameter.  

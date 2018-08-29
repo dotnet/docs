@@ -1,14 +1,6 @@
 ---
 title: "WPF Add-Ins Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "add-ins and XAML browser applications [WPF]"
   - "add-ins overview [WPF]"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "add-ins [WPF], architecture"
   - "add-ins [WPF], limitations"
 ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Add-Ins Overview
 <a name="Introduction"></a> The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] includes an add-in model that developers can use to create applications that support add-in extensibility. This add-in model allows the creation of add-ins that integrate with and extend application functionality. In some scenarios, applications also need to display [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] that are provided by add-ins. This topic shows how [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] augments the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to enable these scenarios, the architecture behind it, its benefits, and its limitations.  

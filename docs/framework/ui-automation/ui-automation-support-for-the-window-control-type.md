@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Window Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Window control type"
   - "Window control type"
   - "control types, Window"
 ms.assetid: 53be78a6-cdcc-4af3-a464-5927d19c54e8
-caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Window Control Type
 > [!NOTE]

@@ -1,14 +1,6 @@
 ---
 title: "Brush Transformation Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "properties [WPF], transformation"
   - "transformation properties of brushes [WPF]"
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Brush Transformation Overview
 The Brush class provides two transformation properties: <xref:System.Windows.Media.Brush.Transform%2A> and <xref:System.Windows.Media.Brush.RelativeTransform%2A>. The properties enable you to rotate, scale, skew, and translate a brush's contents. This topic describes the differences between these two properties and provides examples of their usage.  

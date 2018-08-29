@@ -1,21 +1,9 @@
 ---
 title: "Security Concerns and Useful Tips for Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-caps.latest.revision: 11
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Concerns and Useful Tips for Tracing
 This topic describes how you can protect sensitive information from being exposed, as well as useful tips when using WebHost.  

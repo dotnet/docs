@@ -1,26 +1,15 @@
 ---
 title: "Exceptions in Managed Threads"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "unhandled exceptions,in managed threads"
   - "threading [.NET Framework],unhandled exceptions"
   - "threading [.NET Framework],exceptions in managed threads"
   - "managed threading"
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Exceptions in Managed Threads
 Starting with the .NET Framework version 2.0, the common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases this means that the unhandled exception causes the application to terminate.  

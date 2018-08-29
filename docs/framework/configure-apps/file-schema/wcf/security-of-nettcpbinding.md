@@ -1,21 +1,9 @@
 ---
 title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-caps.latest.revision: 18
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netTcpBinding&gt;
 Defines the security settings for a binding.  

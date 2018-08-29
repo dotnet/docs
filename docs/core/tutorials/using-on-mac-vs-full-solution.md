@@ -1,23 +1,15 @@
 ---
 title: Building a complete .NET Core solution on macOS using Visual Studio for Mac
 description: This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
-keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
-ms.workload: 
-  - dotnetcore
 ---
-
 # Building a complete .NET Core solution on macOS using Visual Studio for Mac
 
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
 
-This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/samples/blob/master/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to unit testing concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/samples/blob/master/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -28,7 +20,7 @@ This tutorial shows you how to create an application that accepts a search word 
 
 - OpenSSL (if running .NET Core 1.1): See the [Prerequisites for .NET Core on Mac](../macos-prerequisites.md) topic.
 - [.NET Core SDK 1.1 or later](https://www.microsoft.com/net/core#macos)
-- [Visual Studio 2017 for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+- [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 
 For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-mac).
 
@@ -97,7 +89,7 @@ Unit tests provide automated software testing during your development and publis
            public void IgnoreCasing()
            {
                var wordCount = WordCount.GetWordCount("Jack", "Jack jack");
-   
+
                Assert.NotEqual(2, wordCount);
            }
        }
@@ -108,18 +100,18 @@ Unit tests provide automated software testing during your development and publis
 
    ![Initial unit test to check GetWordCount in the IDE main window](./media/using-on-mac-vs-full-solution/vsmacfull08.png)
 
-   Using TDD, it's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
+   It's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
 
 1. Open the **Unit Tests** panel on the right side of the screen.
 
-![Unit Tests panel](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanel.png)
+   ![Unit Tests panel](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanel.png)
 
 1. Click the **Dock** icon to keep the panel open.
 
-![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
+   ![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
 
 1. Click the **Run All** button.
-   
+
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good.
 
    ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
@@ -137,8 +129,8 @@ Unit tests provide automated software testing during your development and publis
    [InlineData(0, "Ting", "Does not appear in the string.")]
    [InlineData(1, "Ting", "Ting appears once.")]
    [InlineData(2, "Ting", "Ting appears twice with Ting.")]
-   public void CountInstancesCorrectly(int count, 
-                                       string searchWord, 
+   public void CountInstancesCorrectly(int count,
+                                       string searchWord,
                                        string inputString)
    {
        Assert.NotEqual(count, WordCount.GetWordCount(searchWord,
@@ -147,7 +139,7 @@ Unit tests provide automated software testing during your development and publis
    ```
 
    The `CountInstancesCorrectly` checks that the `GetWordCount` method counts correctly. The `InlineData` provides a count, a search word, and an input string to check. The test method runs once for each line of data. Note once again that you're asserting a failure first by using `Assert.NotEqual`, even when you know that the counts in the data are correct and that the values match the counts returned by the `GetWordCount` method. Performing the step of failing the test on purpose might seem like a waste of time at first, but checking the logic of the test by failing it first is an important check on the logic of your tests. When you come across a test method that passes when you expect it to fail, you've found a bug in the logic of the test. It's worth the effort to take this step every time you create a test method.
-   
+
 1. Save the file and run the tests again. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
 
    ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
@@ -194,4 +186,4 @@ Unit tests provide automated software testing during your development and publis
 
 ## See also
 
-[Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)
+* [Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)

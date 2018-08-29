@@ -1,14 +1,6 @@
 ---
 title: "Find and Highlight Text Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,9 @@ helpviewer_keywords:
   - "UI automation, finding text"
   - "highlighting text"
 ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
-caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Find and Highlight Text Using UI Automation
 > [!NOTE]

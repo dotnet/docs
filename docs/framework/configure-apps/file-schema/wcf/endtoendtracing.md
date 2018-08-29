@@ -1,21 +1,7 @@
 ---
 title: "&lt;endToEndTracing&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;endToEndTracing&gt;
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  

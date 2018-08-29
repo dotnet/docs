@@ -1,12 +1,6 @@
 ---
 title: "-quiet"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "-quiet"
   - "quiet"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "/quiet compiler option [Visual Basic]"
   - "quiet compiler option [Visual Basic]"
 ms.assetid: 5d77fa23-4c50-4708-8535-649912b098e8
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -quiet
 Prevents the compiler from displaying code for syntax-related errors and warnings.  

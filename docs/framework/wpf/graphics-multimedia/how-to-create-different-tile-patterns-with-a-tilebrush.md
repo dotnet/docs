@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Different Tile Patterns with a TileBrush"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "tile patterns [WPF], creating"
   - "creating [WPF], tile patterns with TileBrush"
 ms.assetid: 5aa46632-3527-4668-9d8d-0375c8af28aa
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Different Tile Patterns with a TileBrush
 This example shows how to use the <xref:System.Windows.Media.TileBrush.TileMode%2A> property of a <xref:System.Windows.Media.TileBrush> to create a pattern.  

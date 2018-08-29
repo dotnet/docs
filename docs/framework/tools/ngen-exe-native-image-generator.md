@@ -1,14 +1,6 @@
 ---
 title: "Ngen.exe (Native Image Generator)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,12 +18,8 @@ helpviewer_keywords:
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-caps.latest.revision: 57
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Ngen.exe (Native Image Generator)
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.  
@@ -54,7 +42,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
   
 -   Some causes of image invalidation have been eliminated.  
   
- On Windows 8, see [Native Image Task](http://msdn.microsoft.com/library/9b1f7590-4e0d-4737-90ef-eaf696932afb).  
+ On Windows 8, see [Native Image Task](#native-image-task).  
   
  For additional information on using Ngen.exe and the native image service, see [Native Image Service][Native Image Service].  
   

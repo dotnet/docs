@@ -1,19 +1,12 @@
 ---
 title: "- Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "-_CSharpKeyword"
 helpviewer_keywords: 
   - "- operator [C#]"
   - "subtraction operator (-) [C#]"
 ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # - Operator (C# Reference)
 The `-` operator can function as either a unary or a binary operator.  
@@ -30,7 +23,8 @@ The `-` operator can function as either a unary or a binary operator.
 ## Example  
  [!code-csharp[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-operator_1.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

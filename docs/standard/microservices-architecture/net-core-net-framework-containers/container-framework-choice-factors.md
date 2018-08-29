@@ -1,16 +1,9 @@
 ---
 title: Decision table. .NET frameworks to use for Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Decision table, .NET frameworks to use for Docker
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Decision table: .NET frameworks to use for Docker
 
@@ -59,5 +52,5 @@ There are several features of your application that affect your decision. You sh
     - If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.
 
 >[!div class="step-by-step"]
-[Previous] (net-framework-container-scenarios.md)
-[Next] (net-container-os-targets.md)
+[Previous](net-framework-container-scenarios.md)
+[Next](net-container-os-targets.md)

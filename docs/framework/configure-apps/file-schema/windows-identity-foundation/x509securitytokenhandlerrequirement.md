@@ -1,21 +1,9 @@
 ---
 title: "&lt;x509SecurityTokenHandlerRequirement&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
-caps.latest.revision: 3
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;x509SecurityTokenHandlerRequirement&gt;
 Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> class or derived classes.  

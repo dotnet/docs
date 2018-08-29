@@ -1,14 +1,6 @@
 ---
 title: "Dangerous Permissions and Policy Administration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "permissions [.NET Framework], policy administration"
   - "security [.NET Framework], dangerous permissions"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "secure coding, dangerous permissions"
   - "permissions [.NET Framework], dangerous"
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dangerous Permissions and Policy Administration
 Several of the protected operations for which the .NET Framework provides permissions can potentially allow the security system to be circumvented. These dangerous permissions should be given only to trustworthy code, and then only as necessary. There is usually no defense against malicious code if it is granted these permissions.  

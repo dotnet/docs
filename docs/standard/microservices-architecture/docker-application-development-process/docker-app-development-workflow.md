@@ -1,16 +1,9 @@
 ---
 title: Development workflow for Docker apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Development workflow for Docker apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Development workflow for Docker apps
 
@@ -68,7 +61,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
     [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
 
 -   **Visual Studio 2017**
-    [*https://www.visualstudio.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+    [*https://visualstudio.microsoft.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![](./media/image4.png)
 
@@ -249,7 +242,7 @@ services:
 
 Note that this docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which always applies, plus configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how you can split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
 
-The docker-compose.yml file example defines five services: the webmvc service (a web application), two microservices (catalog.api and ordering.api), and one data source container, sql.data, based on SQL Server for Linux running as a container. Each service is deployed as a container, so a Docker image is required for each.
+The docker-compose.yml file example defines four services: the webmvc service (a web application), two microservices (catalog.api and ordering.api), and one data source container, sql.data, based on SQL Server for Linux running as a container. Each service is deployed as a container, so a Docker image is required for each.
 
 The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
 
@@ -422,5 +415,5 @@ RUN powershell add-windowsfeature web-asp-net45
     [*https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.6.2/Dockerfile)
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (../net-core-single-containers-linux-windows-server-hosts/index.md)
+[Previous](index.md)
+[Next](../net-core-single-containers-linux-windows-server-hosts/index.md)

@@ -1,27 +1,13 @@
 ---
 title: "Service Channel-Level Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8d8dcd85-0a05-4c44-8861-4a0b3b90cca9
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Channel-Level Programming
-This topic describes how to write a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
+This topic describes how to write a Windows Communication Foundation (WCF) service application without using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> and its associated object model.  
   
 ## Receiving Messages  
  To be ready to receive and process messages, the following steps are required:  
@@ -37,7 +23,7 @@ This topic describes how to write a [!INCLUDE[indigo1](../../../../includes/indi
 5.  Close all channel objects.  
   
 #### Creating a Binding  
- The first step in listening for and receiving messages is creating a binding. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  
+ The first step in listening for and receiving messages is creating a binding. WCF ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  
   
  The code example below creates an instance of <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> and adds an <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType> to its Elements collection which is a collection of binding elements that are used to build the channel stack. In this example, because the elements collection has only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement>, the resulting channel stack has only the HTTP transport channel.  
   

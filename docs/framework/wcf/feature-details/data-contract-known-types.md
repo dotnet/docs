@@ -1,14 +1,6 @@
 ---
 title: "Data Contract Known Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,19 +9,13 @@ helpviewer_keywords:
   - "KnownTypeAttribute [WCF]"
   - "KnownTypes [WCF]"
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
-caps.latest.revision: 42
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Contract Known Types
 The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../../../../docs/framework/wcf/samples/known-types.md) example.  
   
  Normally, when passing parameters and return values between a client and a service, both endpoints share all of the data contracts of the data to be transmitted. However, this is not the case in the following circumstances:  
   
--   The sent data contract is derived from the expected data contract. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
+-   The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
   
 -   The declared type for the information to be transmitted is an interface, as opposed to a class, structure, or enumeration. Therefore, it cannot be known in advance which type that implements the interface is actually sent and therefore, the receiving endpoint cannot determine in advance the data contract for the transmitted data.  
   
@@ -38,7 +24,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
 -   Some types, which include [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types, have members that are in one of the preceding three categories. For example, <xref:System.Collections.Hashtable> uses <xref:System.Object> to store the actual objects in the hash table. When serializing these types, the receiving side cannot determine in advance the data contract for these members.  
   
 ## The KnownTypeAttribute Class  
- When data arrives at a receiving endpoint, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime attempts to deserialize the data into an instance of a common language runtime (CLR) type. The type that is instantiated for deserialization is chosen by first inspecting the incoming message to determine the data contract to which the contents of the message conform. The deserialization engine then attempts to find a CLR type that implements a data contract compatible with the message contents. The set of candidate types that the deserialization engine allows for during this process is referred to as the deserializer's set of "known types."  
+ When data arrives at a receiving endpoint, the WCF runtime attempts to deserialize the data into an instance of a common language runtime (CLR) type. The type that is instantiated for deserialization is chosen by first inspecting the incoming message to determine the data contract to which the contents of the message conform. The deserialization engine then attempts to find a CLR type that implements a data contract compatible with the message contents. The set of candidate types that the deserialization engine allows for during this process is referred to as the deserializer's set of "known types."  
   
  One way to let the deserialization engine know about a type is by using the <xref:System.Runtime.Serialization.KnownTypeAttribute>. The attribute cannot be applied to individual data members, only to whole data contract types. The attribute is applied to an *outer type* that can be a class or a structure. In its most basic usage, applying the attribute specifies a type as a "known type." This causes the known type to be a part of the set of known types whenever an object of the outer type or any object referred to through its members is being deserialized. More than one <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute can be applied to the same type.  
   
@@ -139,7 +125,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  [!code-vb[C_KnownTypeAttribute#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#10)]  
   
 ## Additional Ways to Add Known Types  
- Additionally, known types can be added through a configuration file. This is useful when you do not control the type that requires known types for proper deserialization, such as when using third-party type libraries with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+ Additionally, known types can be added through a configuration file. This is useful when you do not control the type that requires known types for proper deserialization, such as when using third-party type libraries with Windows Communication Foundation (WCF).  
   
  The following configuration file shows how to specify a known type in a configuration file.  
   

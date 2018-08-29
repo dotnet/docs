@@ -1,31 +1,17 @@
 ---
 title: "Weak Event Patterns"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "weak event pattern implementation [WPF]"
   - "event handlers [WPF], weak event pattern"
   - "IWeakEventListener interface [WPF]"
 ms.assetid: e7c62920-4812-4811-94d8-050a65c856f6
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Weak Event Patterns
 In applications, it is possible that handlers that are attached to event sources will not be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] introduces a design pattern that can be used to address this issue, by providing a dedicated manager class for particular events and implementing an interface on listeners for that event. This design pattern is known as the *weak event pattern*.  
   
 ## Why Implement the Weak Event Pattern?  
- Listening for events can lead to memory leaks. The typical technique for listening to an event is to use the language-specific syntax that attaches a handler to an event on a source. For example, in [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)], that syntax is: `source.SomeEvent += new SomeEventHandler(MyEventHandler)`.  
+ Listening for events can lead to memory leaks. The typical technique for listening to an event is to use the language-specific syntax that attaches a handler to an event on a source. For example, in C#, that syntax is: `source.SomeEvent += new SomeEventHandler(MyEventHandler)`.  
   
  This technique creates a strong reference from the event source to the event listener. Ordinarily, attaching an event handler for a listener causes the listener to have an object lifetime that is influenced by the object lifetime of the source (unless the event handler is explicitly removed). But in certain circumstances, you might want the object lifetime of the listener to be controlled by other factors, such as whether it currently belongs to the visual tree of the application, and not by the lifetime of the source. Whenever the source object lifetime extends beyond the object lifetime of the listener, the normal event pattern leads to a memory leak: the listener is kept alive longer than intended.  
   

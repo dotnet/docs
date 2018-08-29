@@ -1,21 +1,7 @@
 ---
 title: "&lt;policyImporter&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;policyImporter&gt;
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  

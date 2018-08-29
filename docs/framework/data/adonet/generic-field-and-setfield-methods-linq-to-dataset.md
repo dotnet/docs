@@ -1,24 +1,10 @@
 ---
 title: "Generic Field and SetField Methods (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Generic Field and SetField Methods (LINQ to DataSet)
 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] provides extension methods to the <xref:System.Data.DataRow> class for accessing column values: the <xref:System.Data.DataRowExtensions.Field%2A> method and the <xref:System.Data.DataRowExtensions.SetField%2A> method. These methods provide easier access to column values for developers, especially regarding null values. The <xref:System.Data.DataSet> uses <xref:System.DBNull.Value> to represent null values, whereas [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] uses the nullable type support introduced in the [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)]. Using the pre-existing column accessor in <xref:System.Data.DataRow> requires you to cast the return object to the appropriate type. If a particular field in a <xref:System.Data.DataRow> can be null, you must explicitly check for a null value because returning <xref:System.DBNull.Value> and implicitly casting it to another type throws an <xref:System.InvalidCastException>. In the following example, if the <xref:System.Data.DataRow.IsNull%2A> method was not used to check for a null value, an exception would be thrown if the indexer returned <xref:System.DBNull.Value> and tried to cast it to a <xref:System.String>.  

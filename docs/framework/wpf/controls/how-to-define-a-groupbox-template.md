@@ -1,24 +1,10 @@
 ---
 title: "How to: Define a GroupBox Template"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], GroupBox"
   - "GroupBox control [WPF], creating templates"
 ms.assetid: 85a4d1a7-4753-4f4a-b26d-14fa10c1ddb5
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Define a GroupBox Template
 This example shows how to create a template for a <xref:System.Windows.Controls.GroupBox> control.  

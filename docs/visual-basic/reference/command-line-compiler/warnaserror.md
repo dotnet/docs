@@ -1,11 +1,6 @@
 ---
 title: "-warnaserror (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "warnaserror compiler option [Visual Basic]"
   - "/warnaserror compiler option [Visual Basic]"

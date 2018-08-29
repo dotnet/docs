@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyIdentityManager.GetBindingIdentityFromFile"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7797562d-7b4c-4bd9-8b93-f35e0e2869e4
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::GetBindingIdentityFromFile Method
 Gets the assembly identity binding data for the assembly at the specified file path.  

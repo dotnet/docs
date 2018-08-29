@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerAssemblyReferenceProvider Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerAssemblyReferenceProvider"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: 17205116-66e1-4acc-8f01-532fb3867028
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerAssemblyReferenceProvider Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

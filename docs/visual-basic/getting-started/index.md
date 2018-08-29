@@ -1,17 +1,10 @@
 ---
 title: "Get started with Visual Basic"
 ms.date: 08/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "get started, Visual Basic"
   - "Visual Basic, get started"
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Get started with Visual Basic
 This section of the documentation helps you get started with Visual Basic application development.  
@@ -50,22 +43,22 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   
  [Samples](../../visual-basic/sample-applications.md)  
- Provides links to sample code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Provides links to sample code in Visual Basic.  
   
  [Walkthroughs](../../visual-basic/walkthroughs.md)  
- Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
+ Provides a list of Help pages that demonstrate aspects of the Visual Basic language.  
   
  [Talk to Us](/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  
   
  [Visual Studio](/visualstudio/)  
- Provides links into the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] documentation.  
+ Provides links into the Visual Studio documentation.  
   
  [C#](../../csharp/index.md)
- Provides links into the documentation on application development with [!INCLUDE[csprcs](~/includes/csprcs-md.md)].  
+ Provides links into the documentation on application development with Visual C#.  
   
  [Visual C++](/cpp/)  
  Provides links into the Visual C++ documentation.  
   
  [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  
- Provides information about using Microsoft Office and [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] as part of a business application.
+ Provides information about using Microsoft Office and Visual Studio as part of a business application.

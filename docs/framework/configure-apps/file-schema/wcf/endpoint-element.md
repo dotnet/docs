@@ -1,21 +1,7 @@
 ---
 title: "&lt;endpoint&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
-caps.latest.revision: 23
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;endpoint&gt; element
 Specifies binding, contract, and address properties for a service endpoint, which is used to expose services.  

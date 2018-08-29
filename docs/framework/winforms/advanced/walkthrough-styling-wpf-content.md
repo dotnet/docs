@@ -1,25 +1,11 @@
 ---
 title: "Walkthrough: Styling WPF Content"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Styling WPF Content
 This walkthrough show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  
@@ -33,7 +19,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 -   Apply a style to the WPF control.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -162,6 +148,6 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
  [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
  [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

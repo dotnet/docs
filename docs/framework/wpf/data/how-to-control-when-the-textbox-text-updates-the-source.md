@@ -1,14 +1,6 @@
 ---
 title: "How to: Control When the TextBox Text Updates the Source"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "data binding [WPF], timing of source updates"
   - "timing of source updates [WPF]"
 ms.assetid: ffb7b96a-351d-4c68-81e7-054033781c64
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Control When the TextBox Text Updates the Source
 This topic describes how to use the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to control the timing of binding source updates. The topic uses the <xref:System.Windows.Controls.TextBox> control as an example.  

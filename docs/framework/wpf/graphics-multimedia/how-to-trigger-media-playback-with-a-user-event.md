@@ -1,26 +1,12 @@
 ---
 title: "How to: Trigger Media Playback with a User Event"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "synchronizing media playback with events [WPF]"
   - "playback of media [WPF], synchronizing with events"
   - "media [WPF], synchronizing playback with events"
   - "multimedia [WPF], synchronizing media playback with events"
 ms.assetid: c4dbe632-6e7f-4d7f-9df5-98737a758bc3
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Trigger Media Playback with a User Event
 This example shows how to synchronize media playback with an event.  

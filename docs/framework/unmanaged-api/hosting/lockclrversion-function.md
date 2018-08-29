@@ -1,14 +1,6 @@
 ---
 title: "LockClrVersion Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "LockClrVersion"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LockClrVersion Function
 Allows the host to determine which version of the common language runtime (CLR) will be used within the process before explicitly initializing the CLR.  

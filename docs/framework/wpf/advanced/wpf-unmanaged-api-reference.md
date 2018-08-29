@@ -1,21 +1,7 @@
 ---
 title: "WPF Unmanaged API Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2a2e8274-6556-46a2-80d3-a1812903cbcf
-caps.latest.revision: 2
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Unmanaged API Reference
 Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only. They should not be called from user code.  

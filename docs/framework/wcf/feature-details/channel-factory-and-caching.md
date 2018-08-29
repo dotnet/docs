@@ -1,21 +1,7 @@
 ---
 title: "Channel Factory and Caching"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Channel Factory and Caching
 WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:  

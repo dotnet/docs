@@ -1,10 +1,6 @@
 ---
 title: "C# Keywords"
 ms.date: 03/07/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "Visual C#, keywords"
   - "@ keyword"
 ms.assetid: e929b0f2-4b92-4d37-8060-23d323b098ad
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Keywords
 Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` is not because `if` is a keyword.  
@@ -60,6 +53,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[value](../../../csharp/language-reference/keywords/value.md)|[var](../../../csharp/language-reference/keywords/var.md)|[when (filter condition)](when.md)|   
 |[where (generic type constraint)](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|[where (query clause)](../../../csharp/language-reference/keywords/where-clause.md)|[yield](../../../csharp/language-reference/keywords/yield.md)|  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugDebugEvent::GetThread Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDebugEvent::GetThread Method
 Gets the thread on which the event occurred.  

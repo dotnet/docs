@@ -1,14 +1,6 @@
 ---
 title: "StrongNameSignatureVerification Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "StrongNameSignatureVerification"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 933758dd-231e-4382-8819-242c0a13a4b7
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # StrongNameSignatureVerification Function
 Gets a value indicating whether the assembly manifest at the supplied path contains a strong name signature, which is verified according to the specified flags.  

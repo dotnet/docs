@@ -1,14 +1,6 @@
 ---
 title: "Code Access Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "named permission sets, code access security"
   - "call stacks"
@@ -23,12 +15,8 @@ helpviewer_keywords:
   - "user authentication, code access security"
   - "code access security"
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
-caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Code Access Security
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

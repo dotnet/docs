@@ -1,14 +1,6 @@
 ---
 title: "Matrix Representation of Transformations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,12 +16,6 @@ helpviewer_keywords:
   - "transformations [Windows Forms], translation"
   - "affine transformations"
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Matrix Representation of Transformations
 An m×n matrix is a set of numbers arranged in m rows and n columns. The following illustration shows several matrices.  

@@ -1,14 +1,6 @@
 ---
 title: "Using Nested Graphics Containers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "graphics [Windows Forms], clipping"
   - "graphics [Windows Forms], transformations in nested objects"
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using Nested Graphics Containers
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides containers that you can use to temporarily replace or augment part of the state in a <xref:System.Drawing.Graphics> object. You create a container by calling the <xref:System.Drawing.Graphics.BeginContainer%2A> method of a <xref:System.Drawing.Graphics> object. You can call <xref:System.Drawing.Graphics.BeginContainer%2A> repeatedly to form nested containers. Each call to <xref:System.Drawing.Graphics.BeginContainer%2A> must be paired with a call to <xref:System.Drawing.Graphics.EndContainer%2A>.  

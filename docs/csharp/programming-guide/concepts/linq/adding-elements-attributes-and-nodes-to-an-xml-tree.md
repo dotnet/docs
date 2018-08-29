@@ -1,19 +1,7 @@
 ---
 title: "Adding Elements, Attributes, and Nodes to an XML Tree (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: db911e4f-40aa-499a-9500-a9763bb6df56
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Adding Elements, Attributes, and Nodes to an XML Tree (C#)
 You can add content (elements, attributes, comments, processing instructions, text, and CDATA) to an existing XML tree.  

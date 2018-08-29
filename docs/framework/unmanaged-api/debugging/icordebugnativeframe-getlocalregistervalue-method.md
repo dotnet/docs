@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugNativeFrame::GetLocalRegisterValue Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame.GetLocalRegisterValue"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5ccb74f3-f891-430c-b70a-e370624edde2
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugNativeFrame::GetLocalRegisterValue Method
 Gets the value of an argument or local variable that is stored in the specified register for this native frame.  

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugInstanceFieldSymbol Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: a4a8f259-b83a-4425-ae8b-72b067dbc0d9
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugInstanceFieldSymbol Interface
 Represents the debug symbol information for an instance field.  

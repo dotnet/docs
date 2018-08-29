@@ -1,21 +1,7 @@
 ---
 title: "Creating a Long-running Workflow Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating a Long-running Workflow Service
 This topic describes how to create a long-running workflow service. Long running workflow services may run for long periods of time. At some point the workflow may go idle waiting for some additional information. When this occurs the workflow is persisted to a SQL database and is removed from memory. When the additional information becomes available the workflow instance is loaded back into memory and continues executing.  In this scenario you are implementing a very simplified ordering system.  The client sends an initial message to the workflow service to start the order. It returns an order ID to the client. At this point the workflow service is waiting for another message from the client and goes into the idle state and is persisted to a SQL Server database.  When the client sends the next message to order an item, the workflow service is loaded back into memory and finishes processing the order. In the code sample it returns a string stating the item has been added to the order. The code sample is not meant to be a real world application of the technology, but rather a simple sample that illustrates long running workflow services. This topic assumes you know how to create [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] projects and solutions.  
@@ -47,7 +33,7 @@ This topic describes how to create a long-running workflow service. Long running
   
 1.  Create an empty [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] solution, name it `OrderProcessing`.  
   
-2.  Add a new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Workflow Service Application project called `OrderService` to the solution.  
+2.  Add a new WCF Workflow Service Application project called `OrderService` to the solution.  
   
 3.  In the project properties dialog, select the **Web** tab.  
   
@@ -79,7 +65,7 @@ This topic describes how to create a long-running workflow service. Long running
   
          ![Set Receive Activity Properties](../../../../docs/framework/wcf/feature-details/media/setreceiveproperties.png "SetReceiveProperties")  
   
-         The DisplayName property sets the name displayed for the Receive activity in the designer. The ServiceContractName and OperationName properties specify the name of the service contract and operation that are implemented by the Receive activity. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how contracts are used in Workflow services see [Using Contracts in Workflow](../../../../docs/framework/wcf/feature-details/using-contracts-in-workflow.md).  
+         The DisplayName property sets the name displayed for the Receive activity in the designer. The ServiceContractName and OperationName properties specify the name of the service contract and operation that are implemented by the Receive activity. For more information about how contracts are used in Workflow services see [Using Contracts in Workflow](../../../../docs/framework/wcf/feature-details/using-contracts-in-workflow.md).  
   
     2.  Click the **Define...** link in the **ReceiveStartOrder** activity and set the properties shown in the following illustration.  Notice that the **Parameters** radio button is selected, a parameter named `p_customerName` is bound to the `customerName` variable. This configures the **Receive** activity to receive some data and bind that data to local variables.  
   
@@ -117,7 +103,7 @@ This topic describes how to create a long-running workflow service. Long running
   
          ![Specifying parameters for the second receive](../../../../docs/framework/wcf/feature-details/media/addreceive2parameters.png "AddReceive2Parameters")  
   
-    4.  Click the **CorrelateOn** ellipsis button and enter `orderIdHandle`. Under **XPath Queries**, click the drop down arrow and select `p_orderId`. This configures the correlation on the second receive activity. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] correlation see [Correlation](../../../../docs/framework/wcf/feature-details/correlation.md).  
+    4.  Click the **CorrelateOn** ellipsis button and enter `orderIdHandle`. Under **XPath Queries**, click the drop down arrow and select `p_orderId`. This configures the correlation on the second receive activity. For more information about correlation see [Correlation](../../../../docs/framework/wcf/feature-details/correlation.md).  
   
          ![Setting the CorrelatesOn property](../../../../docs/framework/wcf/feature-details/media/correlateson.png "CorrelatesOn")  
   

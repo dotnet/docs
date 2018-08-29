@@ -1,14 +1,6 @@
 ---
 title: "Applying Interop Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "design-time attributes"
   - ".NET Framework, exposing components to COM"
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "COM interop, exposing COM components"
   - "COM interop, applying attributes"
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Applying Interop Attributes
 The <xref:System.Runtime.InteropServices> namespace provides three categories of interop-specific attributes: those applied by you at design time, those applied by COM interop tools and APIs during the conversion process, and those applied either by you or COM interop.  

@@ -1,24 +1,12 @@
 ---
 title: "Security Protocols version 1.0"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Protocols version 1.0
-The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] version 1.0 details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
+The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) version 1.0 details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
   
 |Specification/Document|Link|  
 |-|-|  
@@ -38,7 +26,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 |Application Note:<br /><br /> Web Services Addressing Endpoint References And Identity|To be published|  
 |WS-SecurityPolicy 1.1<br /><br /> (2005/07)|http://msdn.microsoft.com/ws/2005/07/ws-security-policy/<br /><br /> as amended by errata submitted to OASIS WS-SX Technical Committee http://www.oasis-open.org/archives/ws-sx/200512/msg00017.html|  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
+ WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
 -   Credentials used to authenticate client and service.  
   
@@ -68,9 +56,9 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  Endpoints using such authentication modes can express their security requirements using WS-SecurityPolicy (WS-SP). This document describes the structure of security header and infrastructure messages for each authentication mode and provides examples of policies and messages.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] leverages WS-SecureConversation to provide secure sessions support to protect multi-message exchanges between applications.  See "Secure Sessions" below for implementation details.  
+ WCF leverages WS-SecureConversation to provide secure sessions support to protect multi-message exchanges between applications.  See "Secure Sessions" below for implementation details.  
   
- In addition to authentication modes, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides settings to control common protection mechanisms that apply to most message security-based authentication modes, for example: order of signature versus encryption operations, algorithm suites, key derivation, and signature confirmation.  
+ In addition to authentication modes, WCF provides settings to control common protection mechanisms that apply to most message security-based authentication modes, for example: order of signature versus encryption operations, algorithm suites, key derivation, and signature confirmation.  
   
  The following prefixes and namespaces are used in this document.  
   
@@ -90,18 +78,18 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 |mssp|http://schemas.microsoft.com/ws/2005/07/securitypolicy|  
   
 ## 1. Token Profiles  
- Web Services Security specifications represent credential as security tokens. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports the following token types:  
+ Web Services Security specifications represent credential as security tokens. WCF supports the following token types:  
   
 ### 1.1 UsernameToken  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] follows UsernameToken10 and UsernameToken11 profiles with the following constraints:  
+ WCF follows UsernameToken10 and UsernameToken11 profiles with the following constraints:  
   
  R1101 PasswordType attribute on UsernameToken\Password element MUST be either omitted or have value #PasswordText (default).  
   
- One can implement the #PasswordDigest using extensibility. It has been observed that #PasswordDigest was often mistaken to be a secure enough password protection mechanism. But #PasswordDigest cannot serve as a substitute for encryption of the UsernameToken. The primary goal of #PasswordDigest is protection against replay attacks. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] authentication modes, replay attack threats are mitigated by using message signatures.  
+ One can implement the #PasswordDigest using extensibility. It has been observed that #PasswordDigest was often mistaken to be a secure enough password protection mechanism. But #PasswordDigest cannot serve as a substitute for encryption of the UsernameToken. The primary goal of #PasswordDigest is protection against replay attacks. In WCF authentication modes, replay attack threats are mitigated by using message signatures.  
   
- B1102 [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] never emits Nonce and Created sub-elements of the UsernameToken.  
+ B1102 WCF never emits Nonce and Created sub-elements of the UsernameToken.  
   
- These sub-elements are intended to help replay detection. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses message signatures instead.  
+ These sub-elements are intended to help replay detection. WCF uses message signatures instead.  
   
  OASIS WSS SOAP Message Security UsernameToken Profile 1.1 (UsernameToken11) introduced key derivation from password feature.  
   
@@ -110,11 +98,11 @@ The Web Services Security Protocols provide Web services security mechanisms tha
  Rationale: passwords are generally considered too weak to be used for cryptographic operations.  
   
 ### 1.2 X509 Token  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports X509v3 certificates as a credential type and follows X509TokenProfile1.0 and X509TokenProfile1.1 with the following constraints:  
+ WCF supports X509v3 certificates as a credential type and follows X509TokenProfile1.0 and X509TokenProfile1.1 with the following constraints:  
   
  R1201 The ValueType attribute on the BinarySecurityToken element must have value #X509v3 when it contains an X509v3 certificate.  
   
- WSS X509 Token Profile 1.0 and 1.1 define also #X509PKIPathv1 and #PKCS7 as value types. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not support these types.  
+ WSS X509 Token Profile 1.0 and 1.1 define also #X509PKIPathv1 and #PKCS7 as value types. WCF does not support these types.  
   
  R1202 If a SubjectKeyIdentifier (SKI) extension is present in an X509 certificate, wsse:KeyIdentifier should be used for external references to the token, with the ValueType attribute as #X509SubjectKeyIdentifier and its content the base64-encoded value of certificate's SKI extension.  
   
@@ -124,37 +112,37 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  R1204 If X509TokenProfile1.1 is in use, an external reference to X509 Security Token SHOULD use the thumbprint introduced by WS-Security 1.1.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports X509IssuerSerial. However There are interoperability issues with X509IssuerSerial: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses a string to compare two values of X509IssuerSerial. Therefore if one reorders components of the Subject Name and sends to an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service a reference to a certificate, it may not be found.  
+ WCF supports X509IssuerSerial. However There are interoperability issues with X509IssuerSerial: WCF uses a string to compare two values of X509IssuerSerial. Therefore if one reorders components of the Subject Name and sends to an WCF service a reference to a certificate, it may not be found.  
   
 ### 1.3 Kerberos Token  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports KerberosTokenProfile1.1 for the purpose of Windows authentication with the following constraints:  
+ WCF supports KerberosTokenProfile1.1 for the purpose of Windows authentication with the following constraints:  
   
  R1301 A Kerberos Token must carry the value of a GSS wrapped Kerberos v4 AP_REQ as defined in GSS_API and the Kerberos specification, and must have the ValueType attribute with the value #GSS_Kerberosv5_AP_REQ.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses GSS wrapped Kerberos AP-REQ, not a bare AP-REQ. This is a security best practice.  
+ WCF uses GSS wrapped Kerberos AP-REQ, not a bare AP-REQ. This is a security best practice.  
   
 ### 1.4 SAML v1.1 Token  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports WSS SAML Token profiles 1.0 and 1.1 for SAML v1.1 tokens. It is possible to implement other versions of SAML token formats.  
+ WCF supports WSS SAML Token profiles 1.0 and 1.1 for SAML v1.1 tokens. It is possible to implement other versions of SAML token formats.  
   
 ### 1.5 Security Context Token  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports the Security Context Token (SCT) introduced in WS-SecureCoversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
+ WCF supports the Security Context Token (SCT) introduced in WS-SecureCoversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
   
 ## 2. Common Message Security Parameters  
   
 ### 2.1 TimeStamp  
- Timestamp presence is controlled using the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] always serializes wsse:TimeStamp with wsse:Created and wsse:Expires fields. The wsse:TimeStamp is always signed when signing is used.  
+ Timestamp presence is controlled using the <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. WCF always serializes wsse:TimeStamp with wsse:Created and wsse:Expires fields. The wsse:TimeStamp is always signed when signing is used.  
   
 ### 2.2 Protection Order  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports the message protection order "Sign Before Encrypt" and "Encrypt Before Sign" (Security Policy 1.1). "Sign Before Encrypt" is recommended for reasons including: messages protected with Encrypt Before Sign are open to signature substitution attacks unless the WS-Security 1.1 SignatureConfirmation mechanism is used, and a signature over encrypted content makes auditing harder.  
+ WCF supports the message protection order "Sign Before Encrypt" and "Encrypt Before Sign" (Security Policy 1.1). "Sign Before Encrypt" is recommended for reasons including: messages protected with Encrypt Before Sign are open to signature substitution attacks unless the WS-Security 1.1 SignatureConfirmation mechanism is used, and a signature over encrypted content makes auditing harder.  
   
 ### 2.3 Signature Protection  
  When Encrypt Before Sign is used, it is recommended to protect the signature to prevent brute force attacks for guessing the encrypted content or the signing key (especially when a custom token is used with weak key material).  
   
 ### 2.4 Algorithm Suite  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports all algorithm suites listed in Security Policy 1.1.  
+ WCF supports all algorithm suites listed in Security Policy 1.1.  
   
 ### 2.5 Key Derivation  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses "Key Derivation for symmetric keys" as described in WS-SecureConversation.  
+ WCF uses "Key Derivation for symmetric keys" as described in WS-SecureConversation.  
   
 ### 2.6 Signature Confirmation  
  Signature confirmation can be as protection from middle man attacks to protect the set of signatures.  
@@ -169,13 +157,13 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 |LaxTimestampFirst|Same as Lax except that the first item in the security header must be a wsse:Timestamp|  
 |LaxTimestampLast|Same as lax except that the last item in the security header must be a wsse:Timestamp|  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports all four modes for security header layout. Security header structure and message examples for authentication modes below follow the "Strict" mode.  
+ WCF supports all four modes for security header layout. Security header structure and message examples for authentication modes below follow the "Strict" mode.  
   
 ## 2. Common Message Security Parameters  
  This section provides example policies for each authentication mode along with examples showing security header structure in messages exchanged by client and service.  
   
 ### 6.1 Transport Protection  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides five authentication modes that use secure transport to protect messages; UserNameOverTransport, CertificateOverTransport, KerberosOverTransport, IssuedTokenOverTransport and SspiNegotiatedOverTransport.  
+ WCF provides five authentication modes that use secure transport to protect messages; UserNameOverTransport, CertificateOverTransport, KerberosOverTransport, IssuedTokenOverTransport and SspiNegotiatedOverTransport.  
   
  These authentication modes are constructed using the transport binding described in SecurityPolicy. For the UserNameOverTransport authentication mode the UsernameToken is a signed supporting token. For the other authentication modes the token appears as a signed endorsing token. Appendix C.1.2 and C.1.3 of SecurityPolicy describe the security header layout in detail. The following example security headers show the Strict layout for a given authentication mode.  
   
@@ -557,7 +545,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
 ```  
   
 #### 6.1.5 SspiNegotiatedOverTransport  
- With this mode a negotiation protocol is used to perform client and server authentication. Kerberos is used if possible, otherwise NTLM. The resulting SCT appears at the SOAP layer as an endorsing supporting token that is always sent from initiator to recipient. The service is additionally authenticated at the transport layer by an X.509 certificate. The binding used is a transport binding. "SPNEGO" (negotiation) describes how [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses SSPI binary negotiation protocol with WS-Trust. Security header examples in this section are after the SCT has been established through the SPNEGO handshake.  
+ With this mode a negotiation protocol is used to perform client and server authentication. Kerberos is used if possible, otherwise NTLM. The resulting SCT appears at the SOAP layer as an endorsing supporting token that is always sent from initiator to recipient. The service is additionally authenticated at the transport layer by an X.509 certificate. The binding used is a transport binding. "SPNEGO" (negotiation) describes how WCF uses SSPI binary negotiation protocol with WS-Trust. Security header examples in this section are after the SCT has been established through the SPNEGO handshake.  
   
  Policy  
   

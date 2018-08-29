@@ -1,24 +1,10 @@
 ---
 title: "Compiled Queries  (LINQ to Entities)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8025ba1d-29c7-4407-841b-d5a3bed40b7a
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Compiled Queries  (LINQ to Entities)
 When you have an application that executes structurally similar queries many times in the Entity Framework, you can frequently increase performance by compiling the query one time and executing it several times with different parameters. For example, an application might have to retrieve all the customers in a particular city; the city is specified at runtime by the user in a form. LINQ to Entities supports using compiled queries for this purpose.  

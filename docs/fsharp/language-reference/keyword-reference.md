@@ -1,17 +1,8 @@
 ---
 title: Keyword Reference (F#)
 description: Find links to information about all of the F# language keywords.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 5795ce1f-11bf-4798-9f1f-6e44ffa1477e 
 ---
-
 # Keyword Reference
 
 This topic contains links to information about all F# language keywords.
@@ -57,6 +48,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`let`|[`let` Bindings](functions/let-bindings.md)|Used to associate, or bind, a name to a value or function.|
 |`let!`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in asynchronous workflows to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
 |`match`|[Match Expressions](match-expressions.md)|Used to branch by comparing a value to a pattern.|
+|`match!`|[Computation Expressions](computation-expressions.md#match)|Used to inline a call to a computation expression and pattern match on its result.|
 |`member`|[Members](members/index.md)|Used to declare a property or method in an object type.|
 |`module`|[Modules](modules.md)|Used to associate a name with a group of related types, values, and functions, to logically separate it from other code.|
 |`mutable`|[let Bindings](functions/let-bindings.md)|Used to declare a variable, that is, a value that can be changed.|
@@ -118,7 +110,6 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 * `eager`
 * `event`
 * `external`
-* `fixed`
 * `functor`
 * `include`
 * `method`

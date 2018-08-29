@@ -1,24 +1,10 @@
 ---
 title: "Planning for Application Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "applications [WPF], optimizing"
   - "WPF application [WPF], optimizing"
 ms.assetid: c91bd0c5-a193-46ff-9da1-eb7a3a76a3b3
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Planning for Application Performance
 The success of achieving your performance goals depends on how well you develop your performance strategy. Planning is the first stage in developing any product. This topic describes a few very simple rules for developing a good performance strategy.  
@@ -33,7 +19,7 @@ The success of achieving your performance goals depends on how well you develop 
  Always maintain the cycle of measuring, investigating, refining/correcting during your application development cycle. From the beginning to the end of the development cycle, you need to measure your application's performance in a reliable, stable environment. You should avoid variability caused by external factors. For example, when testing performance, you should disable anti-virus or any automatic update such as SMS, in order not to impact performance test results. Once you have measured your application's performance, you need to identify the changes that will result in the biggest improvements. Once you have modified your application, start the cycle again.  
   
 ## Make Performance Tuning an Iterative Process  
- You should know the relative cost of each feature you will use. For example, the use of reflection in [!INCLUDE[TLA#tla_avalonwinfx](../../../../includes/tlasharptla-avalonwinfx-md.md)] is generally performance intensive in terms of computing resources, so you would want to use it judiciously. This does not mean to avoid the use of reflection, only that you should be careful to balance the performance requirements of your application with the performance demands of the features you use.  
+ You should know the relative cost of each feature you will use. For example, the use of reflection in Microsoft .NET Framework is generally performance intensive in terms of computing resources, so you would want to use it judiciously. This does not mean to avoid the use of reflection, only that you should be careful to balance the performance requirements of your application with the performance demands of the features you use.  
   
 ## Build Towards Graphical Richness  
  A key technique for creating a scalable approach towards achieving [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application performance is to build towards graphical richness and complexity. Always start with using the least performance intensive resources to achieve your scenario goals. Once you achieve these goals, build towards graphic richness by using more performance intensive features, always keeping your scenario goals in mind. Remember, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is a very rich platform and provides very rich graphic features. Using performance intensive features without thinking can negatively impact your overall application performance.  

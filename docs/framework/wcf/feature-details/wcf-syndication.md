@@ -1,30 +1,16 @@
 ---
 title: "WCF Syndication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "syndication [WCF]"
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Syndication
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
+Windows Communication Foundation (WCF) provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
   
 ## In This Section  
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
- Provides an overview of syndication support provided by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Provides an overview of syndication support provided by WCF.  
   
  [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)  
  Describes the classes in the object model and the extensibility of syndication.  

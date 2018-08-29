@@ -1,13 +1,7 @@
 ---
 title: "Garbage Collection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "memory, garbage collection"
   - "garbage collection, automatic memory management"
@@ -24,13 +18,8 @@ helpviewer_keywords:
   - "runtime, garbage collection"
   - "garbage collection, about"
 ms.assetid: 22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9
-caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Garbage Collection
 .NET's garbage collector manages the allocation and release of memory for your application. Each time you create a new object, the common language runtime allocates memory for the object from the managed heap. As long as address space is available in the managed heap, the runtime continues to allocate space for new objects. However, memory is not infinite. Eventually the garbage collector must perform a collection in order to free some memory. The garbage collector's optimizing engine determines the best time to perform a collection, based upon the allocations being made. When the garbage collector performs a collection, it checks for objects in the managed heap that are no longer being used by the application and performs the necessary operations to reclaim their memory.  

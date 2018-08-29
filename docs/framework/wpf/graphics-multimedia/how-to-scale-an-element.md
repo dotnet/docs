@@ -1,24 +1,10 @@
 ---
 title: "How to: Scale an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "scaling [WPF], elements"
   - "graphics [WPF], scaling elements"
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Scale an Element
 This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to scale an element.  

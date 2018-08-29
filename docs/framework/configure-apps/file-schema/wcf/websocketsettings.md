@@ -1,21 +1,7 @@
 ---
 title: "&lt;webSocketSettings&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;webSocketSettings&gt;
 A configuration element used to specify Web Socket settings.  

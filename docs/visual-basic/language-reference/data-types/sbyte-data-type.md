@@ -1,11 +1,6 @@
 ---
 title: "SByte Data Type (Visual Basic)"
 ms.date: 04/20/2017
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.sbyte"
 helpviewer_keywords: 
@@ -19,7 +14,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -77,7 +71,7 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
 ## See also
 
  <xref:System.SByte?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Position a Custom Context Menu in a RichTextBox"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "RichTextBox control [WPF], positioning custom context menus"
   - "context menus [WPF], positioning"
 ms.assetid: bf77c930-a546-4573-9a56-9af345ba189a
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Position a Custom Context Menu in a RichTextBox
 This example shows how to position a custom context menu for a <xref:System.Windows.Controls.RichTextBox>.  

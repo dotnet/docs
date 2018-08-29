@@ -1,26 +1,12 @@
 ---
 title: "BindingSource Component Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, data binding"
   - "controls [Windows Forms], binding to data"
   - "BindingSource component [Windows Forms], about BindingSource component"
   - "data binding [Windows Forms], BindingSource component"
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # BindingSource Component Overview
 The <xref:System.Windows.Forms.BindingSource> component is designed to simplify the process of binding controls to an underlying data source. The <xref:System.Windows.Forms.BindingSource> component acts as both a conduit and a data source for other controls to bind to. It provides an abstraction of your form's data connection while passing through commands to the underlying list of data. Additionally, you can add data directly to it, so that the component itself functions as a data source.  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;localServiceSettings&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;localServiceSettings&gt; element
 Specifies the security settings of a local service for this binding.  

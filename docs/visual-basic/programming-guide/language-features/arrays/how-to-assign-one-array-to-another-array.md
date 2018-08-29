@@ -1,21 +1,11 @@
 ---
 title: "How to: Assign One Array to Another Array (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "covariance, arrays"
   - "arrays [Visual Basic], assigning"
   - "arrays [Visual Basic], covariance"
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Assign One Array to Another Array (Visual Basic)
 Because arrays are objects, you can use them in assignment statements like other object types. An array variable holds a pointer to the data constituting the array elements and the rank and length information, and an assignment copies only this pointer.  

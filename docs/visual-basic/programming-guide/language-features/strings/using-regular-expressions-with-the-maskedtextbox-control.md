@@ -1,27 +1,16 @@
 ---
 title: "Using Regular Expressions with the MaskedTextBox Control in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "strings [Visual Basic], regular expressions"
   - "strings [Visual Basic], masked edit"
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Using Regular Expressions with the MaskedTextBox Control in Visual Basic
 This example demonstrates how to convert simple regular expressions to work with the <xref:System.Windows.Forms.MaskedTextBox> control.  
   
 ## Description of the Masking Language  
- The standard <xref:System.Windows.Forms.MaskedTextBox> masking language is based on the one used by the `Masked Edit` control in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0 and should be familiar to users migrating from that platform.  
+ The standard <xref:System.Windows.Forms.MaskedTextBox> masking language is based on the one used by the `Masked Edit` control in Visual Basic 6.0 and should be familiar to users migrating from that platform.  
   
  The <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property of the <xref:System.Windows.Forms.MaskedTextBox> control specifies what input mask to use. The mask must be a string composed of one or more of the masking elements from the following table.  
   

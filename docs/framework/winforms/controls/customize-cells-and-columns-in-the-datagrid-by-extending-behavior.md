@@ -1,14 +1,6 @@
 ---
 title: "How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "columns [Windows Forms], customizing in DataGridView control"
   - "cells [Windows Forms], customizing in DataGridView control"
 ms.assetid: 9b7dc7b6-5ce6-4566-9949-902f74f17a81
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance
 The <xref:System.Windows.Forms.DataGridView> control provides a number of ways to customize its appearance and behavior using properties, events, and companion classes. Occasionally, you may have requirements for your cells that go beyond what these features can provide. You can create your own custom <xref:System.Windows.Forms.DataGridViewCell> class to provide extended functionality.  
@@ -76,7 +62,7 @@ The <xref:System.Windows.Forms.DataGridView> control provides a number of ways t
   
 -   References to the System, System.Windows.Forms, and System.Drawing assemblies.  
   
- For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+ For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>  

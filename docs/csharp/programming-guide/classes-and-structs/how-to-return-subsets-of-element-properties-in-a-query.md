@@ -1,16 +1,9 @@
 ---
 title: "How to: Return Subsets of Element Properties in a Query (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Return Subsets of Element Properties in a Query (C# Programming Guide)
 Use an anonymous type in a query expression when both of these conditions apply:  
@@ -38,13 +31,13 @@ select new { First = student.FirstName, Last = student.LastName };
   
  If you try this in the previous example, then the `Console.WriteLine` statement must also change:  
   
-```  
+```csharp  
 Console.WriteLine(student.First + " " + student.Last);  
 ```  
   
 ## Compiling the Code  
   
--   To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
+-   To run this code, copy and paste the class into a Visual C# console application project that has been created in Visual Studio. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

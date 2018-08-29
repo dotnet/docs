@@ -1,14 +1,6 @@
 ---
 title: "CorDebugRecordFormat Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugRecordFormat"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: d680c1c0-16ab-4ccc-9444-39cf8e0e05ee
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugRecordFormat Enumeration
 Describes the format of the data in a byte array that contains information about a native exception debug event.  

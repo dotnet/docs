@@ -1,28 +1,14 @@
 ---
 title: "How to: Deploy a COM+ Integration Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Deploy a COM+ Integration Application
 Once you have written a COM+ integration application, you may want to deploy it on another machine. This topic describes how to move a COM+ integration application from one machine to another.  
   
 ### Moving a COM+ hosted Integration App  
   
-1.  Ensure that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is installed on both machines.  
+1.  Ensure that WCF is installed on both machines.  
   
 2.  Export the application from machine A.  
   
@@ -36,7 +22,7 @@ Once you have written a COM+ integration application, you may want to deploy it 
   
 ### Moving a Web-hosted integration application  
   
-1.  Ensure that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is installed on both machines.  
+1.  Ensure that WCF is installed on both machines.  
   
 2.  Export the application from machine A.  
   

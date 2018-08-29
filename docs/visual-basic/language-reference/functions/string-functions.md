@@ -1,17 +1,9 @@
 ---
 title: "String Functions (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "string functions"
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # String Functions (Visual Basic)
 The following table lists the functions that Visual Basic provides to search and manipulate strings.  

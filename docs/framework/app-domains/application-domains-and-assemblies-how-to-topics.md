@@ -1,24 +1,12 @@
 ---
 title: "Application Domains and Assemblies How-to Topics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], how-tos"
   - "application domains, how-tos"
 ms.assetid: 2264054e-712e-47e4-8657-1aa1cfec3e3d
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Application Domains and Assemblies How-to Topics
 The following sections contain links to all How-to topics found in the conceptual documentation for programming with application domains and assemblies.  

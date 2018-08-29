@@ -1,14 +1,6 @@
 ---
 title: "How to: Use Hit Testing with a Region"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "hit tests [Windows Forms], using regions"
   - "regions [Windows Forms], hit testing"
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Hit Testing with a Region
 The purpose of hit testing is to determine whether the cursor is over a given object, such as an icon or a button.  

@@ -1,17 +1,7 @@
 ---
 title: "Converting Data Types (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Converting Data Types (C#)
 Conversion methods change the type of input objects.  

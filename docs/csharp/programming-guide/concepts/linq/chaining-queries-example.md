@@ -1,19 +1,7 @@
 ---
 title: "Chaining Queries Example (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: abbca162-d95e-43af-b92c-e46e6aa2540e
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Chaining Queries Example (C#)
 This example builds on the previous example and shows what happens when you chain together two queries that both use deferred execution and lazy evaluation.  

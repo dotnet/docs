@@ -1,24 +1,10 @@
 ---
 title: "WPF Globalization and Localization Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "globalization [WPF], about globalization"
   - "localization [WPF], about localization"
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
-caps.latest.revision: 39
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Globalization and Localization Overview
 When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world’s 6.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.  

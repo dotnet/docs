@@ -1,14 +1,6 @@
 ---
 title: "Documents in WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "documents [WPF], packaging"
   - "documents [WPF], text layout"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "documents [WPF], types of"
   - "documents [WPF], browser-viewable"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Documents in WPF
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
@@ -39,7 +25,7 @@ ms.workload:
   
 <a name="document_viewer"></a>   
 ## Document Controls and Text Layout  
- The [!INCLUDE[TLA2#tla_avalonwinfx](../../../../includes/tla2sharptla-avalonwinfx-md.md)] provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
+ The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
   
 ### Fixed Document Control - DocumentViewer  
  The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  

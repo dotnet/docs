@@ -1,21 +1,7 @@
 ---
 title: "Downloading the Validating Issuer Name Registry Package"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ff8b0014-c5d4-4614-90f0-13fcc0ba777a
-caps.latest.revision: 3
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Downloading the Validating Issuer Name Registry Package
 This topic discusses how to download and use the Validating Issuer Name Registry (VINR) in your project.  

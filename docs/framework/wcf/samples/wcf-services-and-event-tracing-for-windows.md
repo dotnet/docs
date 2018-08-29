@@ -1,28 +1,14 @@
 ---
 title: "WCF Services and Event Tracing for Windows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Services and Event Tracing for Windows
-This sample demonstrates how to use the analytic tracing in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to emit events in Event Tracing for Windows (ETW). The analytic traces are events emitted at key points in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] stack that allow troubleshooting of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services in production environment.  
+This sample demonstrates how to use the analytic tracing in Windows Communication Foundation (WCF) to emit events in Event Tracing for Windows (ETW). The analytic traces are events emitted at key points in the WCF stack that allow troubleshooting of WCF services in production environment.  
   
- Analytic trace in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services is tracing that can be turned on in a production environment with minimal impact on performance. These traces are emitted as events to an ETW session.  
+ Analytic trace in WCF services is tracing that can be turned on in a production environment with minimal impact on performance. These traces are emitted as events to an ETW session.  
   
- This sample includes a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in which events are emitted from the service to the event log, which can be viewed using Event Viewer. It is also possible to start a dedicated ETW session that listens for events from the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. The sample includes a script to create a dedicated ETW session that stores events in a binary file that can be read using Event Viewer.  
+ This sample includes a basic WCF service in which events are emitted from the service to the event log, which can be viewed using Event Viewer. It is also possible to start a dedicated ETW session that listens for events from the WCF service. The sample includes a script to create a dedicated ETW session that stores events in a binary file that can be read using Event Viewer.  
   
 #### To use this sample  
   
@@ -36,17 +22,17 @@ This sample demonstrates how to use the analytic tracing in [!INCLUDE[indigo1](.
   
      By default, the service starts listening for requests on port 1378 (http://localhost:1378/Calculator.svc).  
   
-4.  Run the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] test client (WcfTestClient.exe).  
+4.  Run the WCF test client (WcfTestClient.exe).  
   
-     The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] test client (WcfTestClient.exe) is located in the \<[!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Install Dir>\Common7\IDE\ WcfTestClient.exe (default [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] install dir is C:\Program Files\Microsoft Visual Studio 10.0).  
+     The WCF test client (WcfTestClient.exe) is located in the \<[!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Install Dir>\Common7\IDE\ WcfTestClient.exe (default [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] install dir is C:\Program Files\Microsoft Visual Studio 10.0).  
   
-5.  Within the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] test client, add the service by selecting **File**, and then **Add Service**.  
+5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.  
   
      Add the endpoint address in the input box. The default is http://localhost:1378/Calculator.svc.  
   
 6.  Open the Event Viewer application.  
   
-     Before invoking the service, start Event Viewer and ensure that the event log is listening for tracking events emitted from the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+     Before invoking the service, start Event Viewer and ensure that the event log is listening for tracking events emitted from the WCF service.  
   
 7.  From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**.  Enable the **Analytic** and **Debug** logs.  
   
@@ -60,7 +46,7 @@ This sample demonstrates how to use the analytic tracing in [!INCLUDE[indigo1](.
   
 #### To test the service  
   
-1.  Switch back to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] test client and double-click `Divide` and keep the default values, which specify a denominator of 0.  
+1.  Switch back to WCF test client and double-click `Divide` and keep the default values, which specify a denominator of 0.  
   
      If the denominator is 0, then the service throws a fault.  
   
@@ -91,7 +77,7 @@ This sample demonstrates how to use the analytic tracing in [!INCLUDE[indigo1](.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
   

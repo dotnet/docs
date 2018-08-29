@@ -1,17 +1,7 @@
 ---
 title: "Iterators (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Iterators (Visual Basic)
 An *iterator* can be used to step through collections such as lists and arrays.  

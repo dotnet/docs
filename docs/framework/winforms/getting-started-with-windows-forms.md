@@ -1,14 +1,6 @@
 ---
 title: "Getting Started with Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Designer_System.Windows.Forms.Design.FormDocumentDesigner"
   - "vb.wfc.formdesigner"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, getting started"
   - "getting started [Windows Forms], Windows Forms"
 ms.assetid: a031aa58-5027-4082-b590-df7c12c77dec
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Getting Started with Windows Forms
 With Windows Forms, you can create powerful Windows-based applications. The following topics describe in-depth how to harness the power of Windows Forms to display data, handle user input, and deploy your applications easily and with enhanced security.  

@@ -1,20 +1,12 @@
 ---
 title: LINQ (Language Integrated Query)
 description: Learn how LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # LINQ (Language Integrated Query)
 
 ## What is it?
@@ -32,7 +24,7 @@ var linqExperts = from p in programmers
 Same example using the `IEnumerable<T>` API:
 
 ```csharp
-var linqExperts = programmers.Where(p => IsNewToLINQ)
+var linqExperts = programmers.Where(p => p.IsNewToLINQ)
                              .Select(p => new LINQExpert(p));
 ```
 
@@ -176,7 +168,7 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
     public int GetHashCode(Dog d)
     {
         // default hashcode is enough here, as these are simple objects.
-        return b.GetHashCode();
+        return d.GetHashCode();
     }
 }
 
@@ -208,22 +200,19 @@ var results = DirectionsProcessor.GetDirections(start, end)
 ```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
 {
-    if (self != null && to != null)
+    if (self == null || to == null)
     {
-        var type = typeof(T);
-        var ignoreList = new List<string>(ignore);
-
-        // Selects the properties which have unequal values into a sequence of those properties.
-        var unequalProperties = from pi in type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                                where !ignoreList.Contains(pi.Name)
-                                let selfValue = type.GetProperty(pi.Name).GetValue(self, null)
-                                let toValue = type.GetProperty(pi.Name).GetValue(to, null)
-                                where selfValue != toValue && (selfValue == null || !selfValue.Equals(toValue))
-                                select new { Prop = pi.Name, selfValue, toValue };
-        return !unequalProperties.Any();
+        return self == to;
     }
-
-    return self == to;
+    
+    // Selects the properties which have unequal values into a sequence of those properties.
+    var unequalProperties = from property in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                            where !ignore.Contains(property.Name)
+                            let selfValue = property.GetValue(self, null)
+                            let toValue = property.GetValue(to, null)
+                            where !Equals(selfValue, toValue)
+                            select property;
+    return !unequalProperties.Any();
 }
 ```
 

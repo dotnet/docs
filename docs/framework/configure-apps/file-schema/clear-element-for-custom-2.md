@@ -1,10 +1,6 @@
 ---
 title: "&lt;clear&gt; element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<clear> element for NameValueSectionHandler and DictionarySectionHandler

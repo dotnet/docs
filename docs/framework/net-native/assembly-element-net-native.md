@@ -1,21 +1,9 @@
 ---
 title: "&lt;Assembly&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Assembly&gt; Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified assembly.  

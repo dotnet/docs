@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReader2::GetMethodsInDocument Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReader2.GetMethodsInDocument"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReader2::GetMethodsInDocument Method
 Gets every method that has line information in the provided document.  

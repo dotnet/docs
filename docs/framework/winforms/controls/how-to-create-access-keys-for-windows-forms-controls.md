@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Access Keys for Windows Forms Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "access keys [Windows Forms], Windows Forms"
   - "ALT key"
 ms.assetid: 4faa0991-28ec-4eca-91db-51dc2cd6a7ac
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Access Keys for Windows Forms Controls
 An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. With an access key, the user can "click" a button by pressing the ALT key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing ALT+P. You cannot have an access key for a control that cannot receive focus.  

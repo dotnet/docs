@@ -1,25 +1,13 @@
 ---
 title: "Getting Started Tutorial2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WF [WF], getting started"
   - "Windows Workflow Foundation [WF], getting started"
 ms.assetid: c2d3585f-6b1a-4d4f-9865-bd7cd31c5d42
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Getting Started Tutorial
-This section contains a set of walkthrough topics that introduce you to programming [!INCLUDE[wf](../../../includes/wf-md.md)] applications. By following the procedures in these topics, you will build an application that is a number guessing game. The first topic in the tutorial leads you through the steps to create the custom activities required for the workflow. In the second topic, these activities are assembled along with built-in workflow activities into a flowchart workflow. In the third topic, the host application is configured to run the workflow, and in the final topic persistence is introduced. Each step in this process depends on the previous steps, so we recommend that you complete them in order.  
+This section contains a set of walkthrough topics that introduce you to programming Windows Workflow Foundation (WF) applications. By following the procedures in these topics, you will build an application that is a number guessing game. The first topic in the tutorial leads you through the steps to create the custom activities required for the workflow. In the second topic, these activities are assembled along with built-in workflow activities into a flowchart workflow. In the third topic, the host application is configured to run the workflow, and in the final topic persistence is introduced. Each step in this process depends on the previous steps, so we recommend that you complete them in order.  
   
 ## In This Section  
  [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)  

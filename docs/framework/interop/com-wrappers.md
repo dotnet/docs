@@ -1,10 +1,6 @@
 ---
 title: "COM Wrappers"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "wrapper classes"
   - "COM interop, COM wrappers"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: e56c485b-6b67-4345-8e66-fd21835a6092
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COM Wrappers
 COM differs from the .NET Framework object model in several important ways:  

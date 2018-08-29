@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeInfo::GetRuntimeDirectory Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeInfo.GetRuntimeDirectory"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4401546e-4d48-453f-a1fb-b2ebda54df5c
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeInfo::GetRuntimeDirectory Method
 Gets the installation directory of the common language runtime (CLR) associated with this interface.  

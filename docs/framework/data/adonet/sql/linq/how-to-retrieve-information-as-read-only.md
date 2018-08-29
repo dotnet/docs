@@ -1,24 +1,10 @@
 ---
 title: "How to: Retrieve Information As Read-Only"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: fb09e298-0b53-47e5-97fb-ab318bcd4fad
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Retrieve Information As Read-Only
 When you do not intend to change the data, you can increase the performance of queries by seeking read-only results.  

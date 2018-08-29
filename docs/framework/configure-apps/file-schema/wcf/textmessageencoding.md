@@ -1,21 +1,7 @@
 ---
 title: "&lt;textMessageEncoding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;textMessageEncoding&gt;
 Specifies the character encoding and message versioning used for text-based XML messages.  

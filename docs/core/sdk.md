@@ -1,19 +1,11 @@
 ---
 title: .NET Core SDK Overview
 description: Find out about the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
-keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
-ms.workload: 
-  - dotnetcore
 ---
-
 # .NET Core SDK Overview 
 
 ## Introduction

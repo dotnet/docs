@@ -1,22 +1,12 @@
 ---
 title: "Getting Started with LINQ in C#"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ [C#]"
   - "queries [LINQ in C#]"
   - "LINQ, C#"
   - "queries [LINQ], LINQ in C#"
 ms.assetid: b8700c1f-05c9-4380-b6eb-e34c4da38e54
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Getting Started with LINQ in C#
 This section contains basic background information that will help you understand the rest of the LINQ documentation and samples.  

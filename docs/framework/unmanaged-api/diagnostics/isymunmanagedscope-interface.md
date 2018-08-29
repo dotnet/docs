@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedScope Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedScope"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 3db7a220-cfe9-4810-8ca8-a094bb8e0f5b
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedScope Interface
 Represents a lexical scope within a method.  

@@ -1,14 +1,6 @@
 ---
 title: "GetRealProcAddress Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetRealProcAddress"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetRealProcAddress Function
 Gets the address of the specified function that is exported from the latest installed version of the common language runtime (CLR).  

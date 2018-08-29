@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Calendar Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Calendar control type"
   - "Calendar control type"
   - "control types, Calendar"
 ms.assetid: e91a7393-a7f9-4838-a1a6-857438b24bc9
-caps.latest.revision: 26
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Calendar Control Type
 > [!NOTE]

@@ -1,14 +1,7 @@
 ---
 title: "Source folder and target folder are the same"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: d4e6f996-8bbe-45f2-b662-f26b4474f44d
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Source folder and target folder are the same
 An attempt has been made to copy or move a file, but the specified source directory and target directory are the same. This may be a result of incorrectly parsing a file path.  

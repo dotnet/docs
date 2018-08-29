@@ -1,21 +1,7 @@
 ---
 title: "LINQ to SQL Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # LINQ to SQL Queries
 You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries by using the same syntax as you would in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)]. The only difference is that the objects referenced in your queries are mapped to elements in a database. For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
@@ -30,7 +16,7 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 |Item|LINQ Query|[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] Query|  
 |----------|----------------|----------------------------------------------------------------------|  
 |Return type of the local variable that holds the query (for queries that return sequences)|Generic `IEnumerable`|Generic `IQueryable`|  
-|Specifying the data source|Uses the `From` ([!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) or `from` (C#) clause|Same|  
+|Specifying the data source|Uses the `From` (Visual Basic) or `from` (C#) clause|Same|  
 |Filtering|Uses the `Where`/`where` clause|Same|  
 |Grouping|Uses the `Group…By`/`groupby` clause|Same|  
 |Selecting (Projecting)|Uses the `Select`/`select` clause|Same|  

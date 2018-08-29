@@ -1,13 +1,6 @@
 ---
 title: "Basics of .NET Framework File I/O and the File System (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "file access, file I/O in Visual Basic"
   - "file attributes, determining"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "streams"
   - "streams, definition"
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Basics of .NET Framework File I/O and the File System (Visual Basic)
 Classes in the <xref:System.IO> namespace are used to work with drives, files, and directories.  
@@ -26,7 +16,7 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
  The <xref:System.IO> namespace contains the <xref:System.IO.File> and <xref:System.IO.Directory> classes, which provide the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] functionality that manipulates files and directories. Because the methods of these objects are static or shared members, you can use them directly without creating an instance of the class first. Associated with these classes are the <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> classes, which will be familiar to users of the `My` feature. To use these classes, you must fully qualify the names or import the appropriate namespaces by including the `Imports` statement(s) at the beginning of the affected code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 > [!NOTE]
->  Other topics in this section use the `My.Computer.FileSystem` object instead of `System.IO` classes to work with drives, files, and directories. The `My.Computer.FileSystem` object is intended primarily for use in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programs. `System.IO` classes are intended for use by any language that supports the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], including [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+>  Other topics in this section use the `My.Computer.FileSystem` object instead of `System.IO` classes to work with drives, files, and directories. The `My.Computer.FileSystem` object is intended primarily for use in Visual Basic programs. `System.IO` classes are intended for use by any language that supports the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], including Visual Basic.  
   
 ## Definition of a Stream  
  The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] uses streams to support reading from and writing to files. You can think of a stream as a one-dimensional set of contiguous data, which has a beginning and an end, and where the cursor indicates the current position in the stream.  

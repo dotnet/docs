@@ -1,25 +1,11 @@
 ---
 title: "Using a Brush to Fill Shapes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "examples [Windows Forms], brushes"
   - "shapes [Windows Forms], filling"
   - "brushes"
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using a Brush to Fill Shapes
 A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Brush> object is used to fill the interior of a closed shape. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several fill styles: solid color, hatch pattern, image texture, and color gradient.  

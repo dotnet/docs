@@ -1,14 +1,6 @@
 ---
 title: "EMemoryAvailable Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EMemoryAvailable"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 38e72a06-dbed-473b-a59b-7e0b3ea4f2af
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EMemoryAvailable Enumeration
 Contains values that indicate the amount of free physical memory on the computer. These values logically map to the events for high and low memory returned from the `CreateMemoryResourceNotification` function in the Win32 API.  

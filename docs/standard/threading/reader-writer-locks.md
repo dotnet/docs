@@ -1,24 +1,13 @@
 ---
 title: "Reader-Writer Locks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ReaderWriterLock class, about ReaderWriterLock class"
   - "threading [.NET Framework], ReaderWriterLock class"
 ms.assetid: 8c71acf2-2c18-4f4d-8cdb-0728639265fd
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Reader-Writer Locks
 The <xref:System.Threading.ReaderWriterLockSlim> class enables multiple threads to read a resource concurrently, but requires a thread to wait for an exclusive lock in order to write to the resource.  

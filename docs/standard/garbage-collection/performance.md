@@ -1,24 +1,13 @@
 ---
 title: "Garbage Collection and Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, troubleshooting"
   - "garbage collection, performance"
 ms.assetid: c203467b-e95c-4ccf-b30b-953eb3463134
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Garbage Collection and Performance
 <a name="top"></a> This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.  
@@ -43,9 +32,9 @@ ms.workload:
   
 <a name="sos"></a>   
 ### Debugging with SOS  
- You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.  
-  
- To install WinDbg, install Debugging Tools for Windows from the [WDK and Developer Tools Web site](http://go.microsoft.com/fwlink/?LinkID=103787).  
+ You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.
+ 
+ To install WinDbg, install Debugging Tools for Windows from the [Download Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools) page.
   
 <a name="etw"></a>   
 ### Garbage Collection ETW Events  

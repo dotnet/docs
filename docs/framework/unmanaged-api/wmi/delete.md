@@ -2,10 +2,6 @@
 title: Delete function (Unmanaged API Reference)
 description: The Delete function deletes the specified property and all of its qualifiers from a CIM class definition.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "Delete"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Delete function
 Deletes the specified property and all of its qualifiers from a CIM class definition.
@@ -45,7 +38,7 @@ HRESULT Delete (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszName`  
 [in] The name of the property to delete. `wszName` must be a pointer to a valid `LPCWSTR`.
@@ -68,7 +61,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::Delete](https://msdn.microsoft.com/library/aa391438(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

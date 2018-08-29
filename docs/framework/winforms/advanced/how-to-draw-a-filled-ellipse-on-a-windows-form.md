@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw a Filled Ellipse on a Windows Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "shapes [Windows Forms], drawing"
   - "forms [Windows Forms], drawing ellipses"
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Filled Ellipse on a Windows Form
 This example draws a filled ellipse on a form.  

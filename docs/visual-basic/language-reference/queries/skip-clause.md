@@ -1,12 +1,6 @@
 ---
 title: "Skip Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySkip"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "Skip statement [Visual Basic]"
   - "Skip clause [Visual Basic]"
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Skip Clause (Visual Basic)
 Bypasses a specified number of elements in a collection and then returns the remaining elements.  
@@ -47,7 +38,7 @@ Skip count
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
  [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  

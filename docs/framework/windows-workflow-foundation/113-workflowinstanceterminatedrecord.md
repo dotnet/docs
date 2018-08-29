@@ -1,19 +1,7 @@
 ---
 title: "113 - WorkflowInstanceTerminatedRecord"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f53204ee-4ea2-45e1-8859-e86d07305efd
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 113 - WorkflowInstanceTerminatedRecord
 ## Properties  

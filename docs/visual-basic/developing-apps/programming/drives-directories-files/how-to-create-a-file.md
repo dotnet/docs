@@ -1,20 +1,10 @@
 ---
 title: "How to: Create a File in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "text files [Visual Basic], creating"
   - "files [Visual Basic], creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a File in Visual Basic
 This example creates an empty text file at the specified path using the <xref:System.IO.File.Create%2A> method in the <xref:System.IO.File> class.  

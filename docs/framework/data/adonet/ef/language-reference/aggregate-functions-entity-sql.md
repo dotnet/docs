@@ -1,21 +1,7 @@
 ---
 title: "Aggregate Functions (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: acfd3149-f519-4c6e-8fe1-b21d243a0e58
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Aggregate Functions (Entity SQL)
 An aggregate is a language construct that condenses a collection into a scalar as a part of a group operation. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] aggregates come in two forms:  

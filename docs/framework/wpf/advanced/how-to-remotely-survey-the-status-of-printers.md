@@ -1,14 +1,6 @@
 ---
 title: "How to: Remotely Survey the Status of Printers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,15 +11,9 @@ helpviewer_keywords:
   - "remotely surveying printer status [WPF]"
   - "status [WPF], printers [WPF], surveying remotely"
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Remotely Survey the Status of Printers
-At any given time at medium and large companies there may be multiple printers that are not working due to a paper jam or being out of paper or some other problematic situation. The rich set of printer properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provide a means for performing a rapid survey of the states of printers.  
+At any given time at medium and large companies there may be multiple printers that are not working due to a paper jam or being out of paper or some other problematic situation. The rich set of printer properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for performing a rapid survey of the states of printers.  
   
 ## Example  
  The major steps for creating this kind of utility are as follows.  

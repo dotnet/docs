@@ -1,13 +1,7 @@
 ---
 title: "Using Portable Class Library with Model-View-View Model"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "07/18/2018"
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,17 +9,14 @@ helpviewer_keywords:
   - "Portable Class Library [.NET Framework], and MVVM"
   - "MVVM, and Portable Class Library"
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using Portable Class Library with Model-View-View Model
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) to implement the Model-View-View Model (MVVM) pattern and share assemblies across multiple platforms.  
-  
+
+[!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
+
  MVVM is an application pattern that isolates the user interface from the underlying business logic. You can implement the model and view model classes in a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], and then create views that are customized for different platforms. This approach enables you to write the data model and business logic only once, and use that code from .NET Framework, Silverlight, Windows Phone, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, as shown in the following illustration.  
   
  ![Portable with MVVM diagram](../../../docs/standard/cross-platform/media/portablemvvmdiagram.png "PortableMVVMdiagram")  

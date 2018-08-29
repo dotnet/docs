@@ -1,26 +1,14 @@
 ---
 title: "Securing Workflow Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53f84ad5-1ed1-4114-8d0d-b12e8a021c6e
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Workflow Services
 The Secured Workflow Service sample shows the following procedures:  
   
 -   Creating a basic workflow service using the <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> activities.  
   
--   Using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] configuration to define secure endpoints for use by the workflow service.  
+-   Using Windows Communication Foundation (WCF) configuration to define secure endpoints for use by the workflow service.  
   
 -   Creating claims inside a custom policy and using the <xref:System.ServiceModel.ServiceAuthorizationManager> to validate claims.  
   
@@ -28,7 +16,7 @@ The Secured Workflow Service sample shows the following procedures:
  Using WCF security to secure communication between client and Workflow service, Claims based authorization  
   
 ## Discussion  
- This sample demonstrates the use of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security infrastructure to secure a workflow service just like you would with a normal [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. Specifically, it uses a custom claim for authorization. In this case, it uses <xref:System.ServiceModel.WSHttpBinding> and message mode security with Windows credentials.  
+ This sample demonstrates the use of WCF security infrastructure to secure a workflow service just like you would with a normal WCF service. Specifically, it uses a custom claim for authorization. In this case, it uses <xref:System.ServiceModel.WSHttpBinding> and message mode security with Windows credentials.  
   
  The custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> (`CustomNameCheckerPolicy`) checks the client's Windows username and for a specific character. If that character is present, it creates and adds the claim to the <xref:System.IdentityModel.Policy.EvaluationContext>. By doing this, the custom policy is making the statement that the client has this character in the username. This claim can be queried throughout the lifetime of the call. You can find that character in `Constants.cs`.  
   
@@ -55,6 +43,6 @@ The Secured Workflow Service sample shows the following procedures:
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\Services\SecuringWorkflowServices`

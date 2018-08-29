@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.ImportSecurityChannelBindingExit"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a174db12-23e4-49ec-b8b3-40ca7b2c1ba1
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.ImportSecurityChannelBindingExit
 System.ServiceModel.Security.ImportSecurityChannelBindingExit  

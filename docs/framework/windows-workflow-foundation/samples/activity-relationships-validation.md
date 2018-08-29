@@ -1,19 +1,7 @@
 ---
 title: "Activity Relationships Validation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6f11a34e-ed67-4bce-88ce-7e96bbb4d052
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Activity Relationships Validation
 This sample consists of three activities, `CreateCity`, `CreateState`, and `CreateCountry`. `CreateCity` must be inside a `CreateState` activity, and `CreateState` must be inside a `CreateCountry` activity. For the purpose of this sample, the validation logic is in code for the `CreateState` activity, and in XAML for the `CreateCity` activity. Both constraints have the same behavior.  
@@ -44,6 +32,6 @@ This sample consists of three activities, `CreateCity`, `CreateState`, and `Crea
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Validation\ActivityRelationships`

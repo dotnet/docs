@@ -1,24 +1,10 @@
 ---
 title: "How to: Accumulate Animation Values During Repeat Cycles"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "accumulating animation values across repeating cycles [WPF]"
   - "animation [WPF], accumulating values across repeating cycles"
 ms.assetid: 548df369-c7cc-4dab-b569-08b95ced2e7e
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Accumulate Animation Values During Repeat Cycles
 This example shows how to use the <xref:System.Windows.Media.Animation.DoubleAnimation.IsCumulative%2A> property to accumulate animation values across repeating cycles.  

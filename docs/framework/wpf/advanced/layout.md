@@ -1,14 +1,6 @@
 ---
 title: "Layout"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "controls [WPF], layout system"
   - "layout system [WPF]"
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
-caps.latest.revision: 31
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Layout
 This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] layout system. Understanding how and when layout calculations occur is essential for creating user interfaces in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  

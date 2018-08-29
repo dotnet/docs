@@ -1,14 +1,6 @@
 ---
 title: "ITypeNameBuilder::AddArray Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ITypeNameBuilder.AddArray"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0a21ae28-54bc-4f6e-aaa6-960a22c5f530
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ITypeNameBuilder::AddArray Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

@@ -1,14 +1,6 @@
 ---
 title: "IDebuggerThreadControl::StartBlockingForDebugger Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IDebuggerThreadControl.StartBlockingForDebugger"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IDebuggerThreadControl::StartBlockingForDebugger Method
 Notifies the host that the debugging services are about to start blocking all threads.  

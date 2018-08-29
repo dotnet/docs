@@ -1,21 +1,9 @@
 ---
 title: "System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 33093589-731c-4ca0-8d79-cc4628794e62
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess
 System.ServiceModel.Security.SecuritySessionRequestorOperationSuccess  

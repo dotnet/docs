@@ -1,14 +1,6 @@
 ---
 title: "ASSEMBLYMETADATA Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ASSEMBLYMETADATA"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ASSEMBLYMETADATA Structure
 Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.  

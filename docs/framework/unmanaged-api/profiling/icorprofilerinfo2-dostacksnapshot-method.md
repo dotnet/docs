@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::DoStackSnapshot Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.DoStackSnapshot"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 287b11e9-7c52-4a13-ba97-751203fa97f4
 topic_type: 
   - "apiref"
-caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::DoStackSnapshot Method
 Walks the managed frames on the stack for the specified thread, and sends information to the profiler through a callback.  

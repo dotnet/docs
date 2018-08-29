@@ -1,19 +1,7 @@
 ---
 title: "4210 - SqlExceptionCaught"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f0ce8af3-eb4c-48c8-b3d9-dd2f94b5574b
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 4210 - SqlExceptionCaught
 ## Properties  

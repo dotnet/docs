@@ -1,21 +1,7 @@
 ---
 title: "Manipulations and Inertia Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dd31b89b-eab6-45a1-8d0b-11e0eb84b234
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Manipulations and Inertia Overview
 *Manipulations* enable users to move, rotate, and resize user interface (UI) elements by using *manipulators*. A manipulator represents a mouse or (in a touch-enabled scenario) a stylus or a finger.  
@@ -37,7 +23,7 @@ ms.workload:
   
  A manipulation processor does not have information about the particular element that is being manipulated. An application separately applies the changes to an application-specific element. For example, an application applies transformations to an image or redraws it to display it at its new location or with a new size or orientation.  
   
- Manipulations are designed for two-dimensional (2-D) [affine transformations](http://msdn.microsoft.com/library/ms533810\(VS.85\).aspx). These transformations include translate, rotate, and scale.  
+ Manipulations are designed for two-dimensional (2-D) [affine transformations](/windows/desktop/gdiplus/-gdiplus-transformations-use). These transformations include translate, rotate, and scale.  
   
 ### Parts of a Manipulation  
  A manipulation is a collection of <xref:System.Windows.Input.Manipulations.Manipulator2D> objects. This aggregate manipulation is represented by an origin point and an ellipse. The origin point is the average position of all manipulators that are manipulating an element. The ellipse has a radius that is the average distance from the origin to each of the <xref:System.Windows.Input.Manipulations.Manipulator2D> objects.  

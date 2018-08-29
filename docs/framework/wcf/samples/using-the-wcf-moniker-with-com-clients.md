@@ -1,24 +1,10 @@
 ---
 title: "Using the WCF Moniker with COM Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
-caps.latest.revision: 34
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the WCF Moniker with COM Clients
-This sample demonstrates how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service moniker to integrate Web services into COM-based development environments, such as Microsoft Office Visual Basic for Applications (Office VBA) or Visual Basic 6.0. This sample consists of a Windows Script Host client (.vbs), a supporting client library (.dll), and a service library (.dll) hosted by Internet Information Services (IIS). The service is a calculator service and the COM client calls math operations—Add, Subtract, Multiply, and Divide—on the service. Client activity is visible in the message box windows.  
+This sample demonstrates how to use the Windows Communication Foundation (WCF) service moniker to integrate Web services into COM-based development environments, such as Microsoft Office Visual Basic for Applications (Office VBA) or Visual Basic 6.0. This sample consists of a Windows Script Host client (.vbs), a supporting client library (.dll), and a service library (.dll) hosted by Internet Information Services (IIS). The service is a calculator service and the COM client calls math operations—Add, Subtract, Multiply, and Divide—on the service. Client activity is visible in the message box windows.  
   
 > [!NOTE]
 >  The set-up procedure and build instructions for this sample are located at the end of this topic.  
@@ -28,7 +14,7 @@ This sample demonstrates how to use the [!INCLUDE[indigo1](../../../../includes/
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\COM`  
   
@@ -108,7 +94,7 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
 WScript.Echo "Typed service moniker: 100 + 15.99 = " & typedServiceMoniker.Add(100, 15.99)  
 ```  
   
- When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the typed moniker to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. Despite the use of COM in the client application, the communication with the service consists only of Web service calls.  
+ When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the typed moniker to communicate with a WCF service. Despite the use of COM in the client application, the communication with the service consists only of Web service calls.  
   
 ## WSDL Contract  
  To use the moniker with a WSDL contract, no client library registration is required but the WSDL contract for the service must be retrieved through an out-of-band mechanism such as using a browser to access the WSDL endpoint for the service. The moniker can then access that contract at execution time.  
@@ -144,7 +130,7 @@ Set wsdlServiceMoniker = GetObject(wsdlMonikerString)
 -   The name and namespace of the contract. This identification is required because the WSDL may contain more than one contract.  
   
     > [!NOTE]
-    >  By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services generate separate WSDL files for each namespace that the use. These are linked with the use of the WSDL import construct. Because the moniker expects a single WSDL definition, the service must either use a single namespace as demonstrated in this sample or the separate files must be manually merged.  
+    >  By default, WCF services generate separate WSDL files for each namespace that the use. These are linked with the use of the WSDL import construct. Because the moniker expects a single WSDL definition, the service must either use a single namespace as demonstrated in this sample or the separate files must be manually merged.  
   
  Having constructed the proxy instance with the service moniker, the client application can call methods on the proxy, which results in the service moniker infrastructure calling the corresponding service operations.  
   
@@ -153,7 +139,7 @@ Set wsdlServiceMoniker = GetObject(wsdlMonikerString)
 WScript.Echo "WSDL service moniker: 145 - 76.54 = " & wsdlServiceMoniker.Subtract(145, 76.54)  
 ```  
   
- When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a WSDL contract to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a WSDL contract to communicate with a WCF service.  
   
 ## Metadata Exchange Contract  
  To use the moniker with a MEX contract, as with the WSDL contract, no client registration is required. The contract for the service is retrieved at execution time through the internal use of Metadata Exchange.  
@@ -188,7 +174,7 @@ Set mexServiceMoniker = GetObject(mexMonikerString)
 WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9, 81.25)  
 ```  
   
- When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a MEX contract to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
+ When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a MEX contract to communicate with a WCF service.  
   
 #### To set up and build the sample  
   
@@ -196,7 +182,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  From a [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] command prompt, open the \client\bin folder, under the language-specific folder.  
+3.  From a Visual Studio command prompt, open the \client\bin folder, under the language-specific folder.  
   
     > [!NOTE]
     >  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  

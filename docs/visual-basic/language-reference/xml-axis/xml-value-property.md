@@ -1,12 +1,6 @@
 ---
 title: "XML Value Property (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionValue"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], Value"
   - "XML Value property [Visual Basic]"
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Value Property (Visual Basic)
 Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  
@@ -41,7 +32,7 @@ object.Value
  The <xref:System.Xml.Linq.XElement.Value%2A> property makes it easy to access the value of the first element in a collection of <xref:System.Xml.Linq.XElement> objects. This property first checks whether the collection contains at least one object. If the collection is empty, this property returns `Nothing`. Otherwise, this property returns the value of the <xref:System.Xml.Linq.XElement.Value%2A> property of the first element in the collection.  
   
 > [!NOTE]
->  When you access the value of an XML attribute using the '@' identifier, the attribute value is returned as a `String` and you do not need to explicitly specify the <xref:System.Xml.Linq.XAttribute.Value%2A> property.  
+>  When you access the value of an XML attribute using the '\@' identifier, the attribute value is returned as a `String` and you do not need to explicitly specify the <xref:System.Xml.Linq.XAttribute.Value%2A> property.  
   
  To access other elements in a collection, you can use the XML extension indexer property. For more information, see [Extension Indexer Property](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md).  
   
@@ -73,7 +64,7 @@ object.Value
 ## See Also  
  <xref:System.Xml.Linq.XElement>  
  <xref:System.Collections.Generic.IEnumerable%601>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)  

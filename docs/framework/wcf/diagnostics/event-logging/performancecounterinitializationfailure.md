@@ -1,21 +1,7 @@
 ---
 title: "PerformanceCounterInitializationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 85050ac6-7f7b-4dd3-8e5e-f5116d7c9906
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PerformanceCounterInitializationFailure
 Id: 149  

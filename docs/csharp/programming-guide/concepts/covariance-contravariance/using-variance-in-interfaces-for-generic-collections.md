@@ -1,17 +1,7 @@
 ---
 title: "Using Variance in Interfaces for Generic Collections (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: a44f0708-10fa-4c76-82cd-daa6e6b31e8e
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Variance in Interfaces for Generic Collections (C#)
 A covariant interface allows its methods to return more derived types than those specified in the interface. A contravariant interface allows its methods to accept parameters of less derived types than those specified in the interface.  

@@ -1,19 +1,7 @@
 ---
 title: "Performing Recovery"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6dd17bf6-ba42-460a-a44b-8046f52b10d0
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Performing Recovery
 A resource manager facilitates resolution of durable enlistments in a transaction by reenlisting the transaction participant after resource failure.  

@@ -1,19 +1,12 @@
 ---
 title: "&lt;value&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "<value>"
 helpviewer_keywords: 
   - "<value> C# XML tag"
   - "value C# XML tag"
 ms.assetid: 08dbadaf-9ab6-43d9-9493-98e43bed199a
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;value&gt; (C# Programming Guide)
 ## Syntax  

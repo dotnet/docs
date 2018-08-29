@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback4::GetReJITParameters Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback4.GetReJITParameters"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0e9bfe07-9f20-498c-b568-9017c8f6056c
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback4::GetReJITParameters Method
 Allows the code profiler to set alternate code generation flags for a new recompiled method body.  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRuntimeUnwindableFrame Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugUnwindableFrame"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: cd6a3982-6ed3-4909-808d-a66055e813e0
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRuntimeUnwindableFrame Interface
 Provides support for unmanaged methods that require the common language runtime (CLR) to unwind a frame.  

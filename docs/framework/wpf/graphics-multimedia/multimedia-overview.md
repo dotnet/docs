@@ -1,24 +1,10 @@
 ---
 title: "Multimedia Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "multimedia [WPF]"
   - "media [WPF]"
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Multimedia Overview
 The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  

@@ -1,13 +1,7 @@
 ---
 title: "Performing Formatting Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "date formatting [.NET Framework]"
   - "formatting [.NET Framework], how-to topics"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "formatting strings [.NET Framework], how-to topics"
   - "strings [.NET Framework], formatting"
 ms.assetid: 36e7e096-4e6c-4cf2-9ab6-68073026ea0e
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Performing Formatting Operations
 The following topics provide step-by-step instructions for performing specific formatting operations.  

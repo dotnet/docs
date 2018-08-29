@@ -1,14 +1,7 @@
 ---
 title: "This operation can only be done when the File is closed"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: 79fe95ae-4aff-469f-beda-d5a85c91d421
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # This operation can only be done when the File is closed
 When a file is open, an attempt has been made to perform an operation that can only be performed when the file is closed.  

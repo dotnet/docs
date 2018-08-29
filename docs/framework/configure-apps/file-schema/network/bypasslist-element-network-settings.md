@@ -1,14 +1,6 @@
 ---
 title: "&lt;bypasslist&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#bypasslist"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "bypasslist element"
   - "<bypasslist> element"
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;bypasslist&gt; Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  

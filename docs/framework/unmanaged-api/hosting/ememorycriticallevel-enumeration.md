@@ -1,14 +1,6 @@
 ---
 title: "EMemoryCriticalLevel Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EMemoryCriticalLevel"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EMemoryCriticalLevel Enumeration
 Contains values that indicate the impact of a failure when a specific memory allocation has been requested but cannot be satisfied.  

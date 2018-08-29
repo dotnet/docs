@@ -1,21 +1,7 @@
 ---
 title: "Endpoint: Reliable Messaging Messages Dropped Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ea3c4fc0-1e0f-4863-8879-57bc6c113018
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Endpoint: Reliable Messaging Messages Dropped Per Second
 Counter Name: Reliable Messaging Sessions Dropped Per Second.  

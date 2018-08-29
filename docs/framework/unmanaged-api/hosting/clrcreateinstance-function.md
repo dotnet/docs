@@ -1,14 +1,6 @@
 ---
 title: "CLRCreateInstance Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CLRCreateInstance"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLRCreateInstance Function
 Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
@@ -64,7 +52,7 @@ HRESULT CLRCreateInstance(
 ## Remarks  
  The following table shows the supported combinations for `clsid` and `riid`.  
   
-|`rclsid`|`riid`|  
+|`clsid`|`riid`|  
 |--------------|------------|  
 |CLSID_CLRMetaHost|IID_ICLRMetaHost|  
 |CLSID_CLRMetaHostPolicy|IID_ICLRMetaHostPolicy|  

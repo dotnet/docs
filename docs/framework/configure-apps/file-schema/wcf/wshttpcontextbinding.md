@@ -1,21 +1,7 @@
 ---
 title: "&lt;wsHttpContextBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;wsHttpContextBinding&gt;
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  

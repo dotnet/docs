@@ -1,19 +1,7 @@
 ---
 title: "Nesting of TransactionScope within a service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e7e1ba64-1384-4eba-add8-415636e2d6d0
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Nesting of TransactionScope within a service
 This sample consists of two scenarios that run showing how to handle <xref:System.Activities.Statements.TransactionScope> activity instances within a service. First the transaction is initiated using the <xref:System.Activities.Statements.TransactionScope> activity to create a new transaction on the client and <xref:System.ServiceModel.Activities.TransactedReceiveScope> to receive and scope the lifetime of the transaction on the server. The first scenario within the service runs a secondary <xref:System.Activities.Statements.TransactionScope> activity to demonstrate the nesting of the <xref:System.Activities.Statements.TransactionScope> activities within the service. The second scenario shows how time-outs are respected within the nested <xref:System.Activities.Statements.TransactionScope> activities.  
@@ -39,6 +27,6 @@ This sample consists of two scenarios that run showing how to handle <xref:Syste
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Transactions\TRSComposability`

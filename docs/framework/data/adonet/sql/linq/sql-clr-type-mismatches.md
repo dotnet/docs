@@ -1,24 +1,10 @@
 ---
 title: "SQL-CLR Type Mismatches"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL-CLR Type Mismatches
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automates much of the translation between the object model and SQL Server. Nevertheless, some situations prevent exact translation. These key mismatches between the common language runtime (CLR) types and the SQL Server database types are summarized in the following sections. You can find more details about specific type mappings and function translation at [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) and [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md).  
@@ -115,7 +101,7 @@ or col1 != col2
   
  In the previous case, you can get equivalent behavior in generating SQL, but the translation might not accurately reflect your intention.  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not impose C# `null` or [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] `nothing` comparison semantics on SQL. Comparison operators are syntactically translated to their SQL equivalents. The semantics reflect SQL semantics as defined by server or connection settings. Two null values are considered unequal under default SQL Server settings (although you can change the settings to change the semantics). Regardless, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not consider server settings in query translation.  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not impose C# `null` or Visual Basic `nothing` comparison semantics on SQL. Comparison operators are syntactically translated to their SQL equivalents. The semantics reflect SQL semantics as defined by server or connection settings. Two null values are considered unequal under default SQL Server settings (although you can change the settings to change the semantics). Regardless, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not consider server settings in query translation.  
   
  A comparison with the literal `null` (`nothing`) is translated to the appropriate SQL version (`is null` or `is not null`).  
   
@@ -176,7 +162,7 @@ Where Col1 = Col2
     > [!NOTE]
     >  This `Like` operator behavior applies to C# only; the Visual Basic `Like` keyword is unchanged.  
   
--   Overflow is always checked in SQL but it has to be explicitly specified in C# (not in [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) to avoid wraparound. Given integer columns C1, C2 and C3, if C1+C2 is stored in C3 (Update T Set C3 = C1 + C2).  
+-   Overflow is always checked in SQL but it has to be explicitly specified in C# (not in Visual Basic) to avoid wraparound. Given integer columns C1, C2 and C3, if C1+C2 is stored in C3 (Update T Set C3 = C1 + C2).  
   
     ```  
     create table T3 (  
@@ -194,7 +180,7 @@ Where Col1 = Col2
   
 -   SQL performs symmetric arithmetic rounding while [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] uses banker’s rounding. See Knowledgebase article 196652 for additional details.  
   
--   By default, for common locales, character-string comparisons are case-insensitive in SQL. In Visual Basic and in C#, they are case-sensitive. For example, `s == "Food"` (`s = "Food"` in [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) and `s == "Food"` can yield different results if `s` is `food`.  
+-   By default, for common locales, character-string comparisons are case-insensitive in SQL. In Visual Basic and in C#, they are case-sensitive. For example, `s == "Food"` (`s = "Food"` in Visual Basic) and `s == "Food"` can yield different results if `s` is `food`.  
   
     ```  
     -- Assume default US-English locale (case insensitive).  

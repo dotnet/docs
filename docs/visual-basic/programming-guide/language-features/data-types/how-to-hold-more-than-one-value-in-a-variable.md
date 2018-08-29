@@ -1,13 +1,6 @@
 ---
 title: "How to: Hold More Than One Value in a Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
   - "composite types [Visual Basic]"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "arrays [Visual Basic], compilation errors"
   - "types [Visual Basic], composite"
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Hold More Than One Value in a Variable (Visual Basic)
 A variable holds more than one value if you declare it to be of a *composite data type*.  
@@ -46,7 +36,7 @@ A variable holds more than one value if you declare it to be of a *composite dat
 5.  Follow the `As` keyword with the name of the appropriate composite data type.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  

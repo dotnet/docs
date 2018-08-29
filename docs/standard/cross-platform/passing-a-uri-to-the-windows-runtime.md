@@ -1,13 +1,7 @@
 ---
 title: "Passing a URI to the Windows Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,16 +9,11 @@ helpviewer_keywords:
   - "Windows Runtime, .NET Framework support for"
   - "Windows Runtime, passing a URI to"
 ms.assetid: 3eb5ce6f-f304-4f87-8e81-0f25092f5ad4
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Passing a URI to the Windows Runtime
-Windows Runtime methods accept only absolute URIs. If you pass a relative URI to a [!INCLUDE[wrt](../../../includes/wrt-md.md)] method, an <xref:System.ArgumentException> exception is thrown. Here's why: When you use the [!INCLUDE[wrt](../../../includes/wrt-md.md)] in .NET Framework code, the [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) class appears as <xref:System.Uri?displayProperty=nameWithType> in Intellisense. The <xref:System.Uri?displayProperty=nameWithType> class allows relative URIs, but the [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) class does not. This is also true for methods you expose in [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components. If your component exposes a method that takes a URI, the signature in your code includes <xref:System.Uri?displayProperty=nameWithType>. However, to users of your component, the signature includes [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376). A URI that is passed to your component must be an absolute URI.  
+Windows Runtime methods accept only absolute URIs. If you pass a relative URI to a [!INCLUDE[wrt](../../../includes/wrt-md.md)] method, an <xref:System.ArgumentException> exception is thrown. Here's why: When you use the [!INCLUDE[wrt](../../../includes/wrt-md.md)] in .NET Framework code, the <xref:Windows.Foundation.Uri?displayProperty=nameWithType> class appears as <xref:System.Uri?displayProperty=nameWithType> in Intellisense. The <xref:System.Uri?displayProperty=nameWithType> class allows relative URIs, but the <xref:Windows.Foundation.Uri?displayProperty=nameWithType> class does not. This is also true for methods you expose in [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components. If your component exposes a method that takes a URI, the signature in your code includes <xref:System.Uri?displayProperty=nameWithType>. However, to users of your component, the signature includes <xref:Windows.Foundation.Uri?displayProperty=nameWithType>. A URI that is passed to your component must be an absolute URI.  
   
  This topic shows how to detect an absolute URI and how to create one when referring to a resource in the app package.  
   

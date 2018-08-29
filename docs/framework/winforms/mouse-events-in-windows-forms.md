@@ -1,14 +1,6 @@
 ---
 title: "Mouse Events in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MouseLeave event [Windows Forms]"
   - "events [Windows Forms], mouse"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "mouse [Windows Forms], events"
   - "MouseUp event"
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Mouse Events in Windows Forms
 When you handle mouse input, you usually want to know the location of the mouse pointer and the state of the mouse buttons. This topic provides details on how to get this information from mouse events, and explains the order in which mouse click events are raised in Windows Forms controls. For a list and description of all of the mouse events, see [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  Also see [Event Handlers Overview (Windows Forms)](http://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](http://msdn.microsoft.com/library/1h12f09z\(v=vs.110\))  

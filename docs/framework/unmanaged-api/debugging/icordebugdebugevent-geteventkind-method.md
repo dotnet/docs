@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugDebugEvent::GetEventKind Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: c37aaceb-c948-46bd-a943-08be4cbb76f4
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugDebugEvent::GetEventKind Method
 Indicates what kind of event this `ICorDebugDebugEvent` object represents.  

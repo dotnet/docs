@@ -1,14 +1,9 @@
 ---
 title: Design Docker applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Design Docker applications
 
@@ -18,5 +13,5 @@ However, before we get into the application life cycle and DevOps, it is importa
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
-[Next] (common-container-design-principles.md)
+[Previous](index.md)
+[Next](common-container-design-principles.md)

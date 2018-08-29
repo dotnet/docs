@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation Toggle Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Toggle control pattern"
   - "control patterns, Toggle"
   - "UI Automation, Toggle control pattern"
 ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
-caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation Toggle Control Pattern
 > [!NOTE]

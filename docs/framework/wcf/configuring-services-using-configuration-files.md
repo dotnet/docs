@@ -1,42 +1,28 @@
 ---
 title: "Configuring Services Using Configuration Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuring services [WCF]"
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Services Using Configuration Files
-Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with a configuration file gives you the flexibility of providing endpoint and service behavior data at the point of deployment instead of at design time. This topic outlines the primary techniques available.  
+Configuring a Windows Communication Foundation (WCF) service with a configuration file gives you the flexibility of providing endpoint and service behavior data at the point of deployment instead of at design time. This topic outlines the primary techniques available.  
   
- A [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service is configurable using the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] comes with a new default configuration model that simplifies [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] configuration requirements. If you do not provide any [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications.  
+ A WCF service is configurable using the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
   
- [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). [!INCLUDE[crlist](../../../includes/crlist-md.md)] of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 > [!IMPORTANT]
 >  When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
   
 ## System.Configuration: Web.config and App.config  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] uses the System.Configuration configuration system of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
+ WCF uses the System.Configuration configuration system of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
   
- When configuring a service in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], use either a Web.config file or an App.config file to specify the settings. The choice of the configuration file name is determined by the hosting environment you choose for the service. If you are using IIS to host your service, use a Web.config file. If you are using any other hosting environment, use an App.config file.  
+ When configuring a service in Visual Studio, use either a Web.config file or an App.config file to specify the settings. The choice of the configuration file name is determined by the hosting environment you choose for the service. If you are using IIS to host your service, use a Web.config file. If you are using any other hosting environment, use an App.config file.  
   
- In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], the file named App.config is used to create the final configuration file. The final name actually used for the configuration depends on the assembly name. For example, an assembly named "Cohowinery.exe" has a final configuration file name of "Cohowinery.exe.config". However, you only need to modify the App.config file. Changes made to that file are automatically made to the final application configuration file at compile time.  
+ In Visual Studio, the file named App.config is used to create the final configuration file. The final name actually used for the configuration depends on the assembly name. For example, an assembly named "Cohowinery.exe" has a final configuration file name of "Cohowinery.exe.config". However, you only need to modify the App.config file. Changes made to that file are automatically made to the final application configuration file at compile time.  
   
- In using an App.config, file the configuration system merges the App.config file with content of the Machine.config file when the application starts and the configuration is applied. This mechanism allows machine-wide settings to be defined in the Machine.config file. The App.config file can be used to override the settings of the Machine.config file; you can also lock in the settings in Machine.config file so that they get used. In the Web.config case, the configuration system merges the Web.config files in all directories leading up to the application directory into the configuration that gets applied. [!INCLUDE[crabout](../../../includes/crabout-md.md)] configuration and the setting priorities, see topics in the <xref:System.Configuration> namespace.  
+ In using an App.config, file the configuration system merges the App.config file with content of the Machine.config file when the application starts and the configuration is applied. This mechanism allows machine-wide settings to be defined in the Machine.config file. The App.config file can be used to override the settings of the Machine.config file; you can also lock in the settings in Machine.config file so that they get used. In the Web.config case, the configuration system merges the Web.config files in all directories leading up to the application directory into the configuration that gets applied. For more information about configuration and the setting priorities, see topics in the <xref:System.Configuration> namespace.  
   
 ## Major Sections of the Configuration File  
  The main sections in the configuration file include the following elements.  
@@ -109,7 +95,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- [!INCLUDE[crabout](../../../includes/crabout-md.md)] configuring services and clients, see [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+ For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -124,7 +110,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
  [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
   
 ## How to Use Binding and Behavior Configurations  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] makes it easy to share configurations between endpoints using a reference system in configuration. Rather than directly assigning configuration values to an endpoint, binding-related configuration values are grouped in `bindingConfiguration` elements in the `<binding>` section. A binding configuration is a named group of settings on a binding. Endpoints can then reference the `bindingConfiguration` by name.  
+ WCF makes it easy to share configurations between endpoints using a reference system in configuration. Rather than directly assigning configuration values to an endpoint, binding-related configuration values are grouped in `bindingConfiguration` elements in the `<binding>` section. A binding configuration is a named group of settings on a binding. Endpoints can then reference the `bindingConfiguration` by name.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

@@ -1,24 +1,10 @@
 ---
 title: "How to: Specify HandoffBehavior Between Storyboard Animations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Storyboards [WPF], handoff behavior between animations"
   - "animation [WPF], handoff behavior between"
 ms.assetid: 97bd6842-929b-49d9-813e-46553ae46472
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Specify HandoffBehavior Between Storyboard Animations
 This example shows how to specify handoff behavior between storyboard animations. The <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> property of <xref:System.Windows.Media.Animation.BeginStoryboard> specifies how new animations interact with any existing ones that are already applied to a property.  

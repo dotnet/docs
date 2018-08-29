@@ -1,26 +1,15 @@
 ---
 title: "Custom Partitioners for PLINQ and TPL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, partitioners"
 ms.assetid: 96153688-9a01-47c4-8430-909cee9a2887
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Custom Partitioners for PLINQ and TPL
 To parallelize an operation on a data source, one of the essential steps is to *partition* the source into multiple sections that can be accessed concurrently by multiple threads. PLINQ and the Task Parallel Library (TPL) provide default partitioners that work transparently when you write a parallel query or <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop. For more advanced scenarios, you can plug in your own partitioner.  

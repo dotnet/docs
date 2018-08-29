@@ -1,14 +1,6 @@
 ---
 title: "How to: Convert an Image to Greyscale"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "converting [WPF], images to grayscale"
   - "grayscale [WPF], converting images to"
 ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Convert an Image to Greyscale
 This example shows how to convert an image to grayscale using <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>.  

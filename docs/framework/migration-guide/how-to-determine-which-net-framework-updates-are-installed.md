@@ -2,10 +2,6 @@
 title: "How to: Determine which .NET Framework security updates and hotfixes are installed"
 description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
 ms.date: "11/27/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Determine which .NET Framework security updates and hotfixes are installed
 

@@ -1,26 +1,15 @@
 ---
 title: "Application Domain Resource Monitoring"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "monitoring managed memory use by application domain"
   - "application domains, memory use"
   - "memory use, monitoring"
   - "application domains, resource monitoring"
 ms.assetid: 318bedf8-7f35-4f00-b34a-2b7b8e3fa315
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Application Domain Resource Monitoring
 Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. This is useful for hosts such as ASP.NET that use many application domains in a long-running process. The host can unload the application domain of an application that is adversely affecting the performance of the entire process, but only if it can identify the problematic application. ARM provides information that can be used to assist in making such decisions.  

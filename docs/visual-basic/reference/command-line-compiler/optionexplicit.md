@@ -1,11 +1,6 @@
 ---
 title: "-optionexplicit"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "/optionexplicit"
   - "-optionexplicit"
@@ -14,8 +9,6 @@ helpviewer_keywords:
   - "optionexplicit compiler option [Visual Basic]"
   - "-optionexplicit compiler option [Visual Basic]"
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -optionexplicit
 Causes the compiler to report errors if variables are not declared before they are used.  

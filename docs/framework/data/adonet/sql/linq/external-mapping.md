@@ -1,21 +1,7 @@
 ---
 title: "External Mapping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # External Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports *external mapping*, a process by which you use a separate XML file to specify mapping between the data model of the database and your object model. Advantages of using an external mapping file include the following:  
@@ -43,7 +29,7 @@ ms.workload:
  Distinguish this schema definition file from the schema definition file that is used to validate a DBML file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)).  
   
 > [!NOTE]
->  [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
+>  Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```  
 ?<?xml version="1.0" encoding="utf-16"?>  

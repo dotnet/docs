@@ -1,21 +1,7 @@
 ---
 title: "Calling Functions in LINQ to Entities Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 12a525a9-727c-4464-a0c7-71a0ef541792
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Calling Functions in LINQ to Entities Queries
 The topics in this section describe how to call functions in LINQ to Entities queries.  

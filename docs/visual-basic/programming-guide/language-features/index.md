@@ -1,27 +1,17 @@
 ---
 title: "Visual Basic Language Features"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, elements of"
   - "Visual Basic code"
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Language Features
-The following topics introduce and discuss the essential components of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], an object-oriented programming language. After creating the user interface for your application using forms and controls, you need to write the code that defines the application's behavior. As with any modern programming language, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports a number of common programming constructs and language elements.  
+The following topics introduce and discuss the essential components of Visual Basic, an object-oriented programming language. After creating the user interface for your application using forms and controls, you need to write the code that defines the application's behavior. As with any modern programming language, Visual Basic supports a number of common programming constructs and language elements.  
   
- If you have programmed in other languages, much of the material covered in this section might seem familiar. While most of the constructs are similar to those in other languages, the event-driven nature of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] introduces some subtle differences.  
+ If you have programmed in other languages, much of the material covered in this section might seem familiar. While most of the constructs are similar to those in other languages, the event-driven nature of Visual Basic introduces some subtle differences.  
   
- If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using Visual Basic.  
   
 ## In This Section  
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
@@ -86,4 +76,4 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  Describes some of the types of collections that are provided by the .NET Framework. Demonstrates how to use simple collections and collections of key/value pairs.  
   
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
- Provides reference information on various aspects of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programming.
+ Provides reference information on various aspects of Visual Basic programming.

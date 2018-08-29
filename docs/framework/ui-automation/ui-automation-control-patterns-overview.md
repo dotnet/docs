@@ -1,24 +1,13 @@
 ---
 title: "UI Automation Control Patterns Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns"
   - "UI Automation, control patterns"
 ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
-caps.latest.revision: 34
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Control Patterns Overview
 > [!NOTE]

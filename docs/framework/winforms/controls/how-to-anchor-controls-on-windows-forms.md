@@ -1,14 +1,6 @@
 ---
 title: "How to: Anchor Controls on Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Anchor property [Windows Forms], enabling resizable forms"
   - "Windows Forms controls, screen resolutions"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "Windows Forms, resizing"
   - "controls [Windows Forms], positioning"
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Anchor Controls on Windows Forms
 If you are designing a form that the user can resize at run time, the controls on your form should resize and reposition properly. To resize controls dynamically with the form, you can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of Windows Forms controls. The <xref:System.Windows.Forms.Control.Anchor%2A> property defines an anchor position for the control. When a control is anchored to a form and the form is resized, the control maintains the distance between the control and the anchor positions. For example, if you have a <xref:System.Windows.Forms.TextBox> control that is anchored to the left, right, and bottom edges of the form, as the form is resized, the <xref:System.Windows.Forms.TextBox> control resizes horizontally so that it maintains the same distance from the right and left sides of the form. In addition, the control positions itself vertically so that its location is always the same distance from the bottom edge of the form. If a control is not anchored and the form is resized, the position of the control relative to the edges of the form is changed.  
@@ -33,7 +19,7 @@ If you are designing a form that the user can resize at run time, the controls o
  The <xref:System.Windows.Forms.Control.Anchor%2A> property interacts with the <xref:System.Windows.Forms.Control.AutoSize%2A> property. For more information, see [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To anchor a control on a form  
   

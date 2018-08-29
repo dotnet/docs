@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFunction3::GetActiveReJitRequestILCode Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFunction3::GetActiveReJitRequestILCode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

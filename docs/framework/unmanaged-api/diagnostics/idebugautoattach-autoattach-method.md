@@ -1,14 +1,6 @@
 ---
 title: "IDebugAutoAttach::AutoAttach Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IDebugAutoAttach.AutoAttach"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IDebugAutoAttach::AutoAttach Method
 Performs server-invoked debugger auto attach.  

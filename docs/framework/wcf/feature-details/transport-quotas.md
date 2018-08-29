@@ -1,31 +1,17 @@
 ---
 title: "Transport Quotas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transport quotas [WCF]"
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Quotas
 Transport quotas are a policy mechanism for deciding when a connection is consuming excessive resources. A quota is a hard limit that prevents the use of additional resources once the quota value is exceeded. Transport quotas prevent either malicious or unintentional denial of service attacks.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports have default quota values that are based on a conservative allocation of resources. These default values are suitable for development environments and small installation scenarios. Service administrators should review transport quotas and tune individual quota values if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
+ Windows Communication Foundation (WCF) transports have default quota values that are based on a conservative allocation of resources. These default values are suitable for development environments and small installation scenarios. Service administrators should review transport quotas and tune individual quota values if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
   
 ## Types of Transport Quotas  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transports have three types of quotas:  
+ WCF transports have three types of quotas:  
   
 -   *Timeouts* mitigate denial of service attacks that rely on tying up resources for an extended period of time.  
   
@@ -34,7 +20,7 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
 -   *Collection size limits* bound the consumption of resources that indirectly allocate memory or are in limited supply.  
   
 ## Transport Quota Descriptions  
- This section describes the transport quotas available for the standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transports: HTTP(S), TCP/IP, and named pipes. Custom transports can expose their own configurable quotas not included in this list. Consult the documentation for a custom transport to find out about its quotas.  
+ This section describes the transport quotas available for the standard WCF transports: HTTP(S), TCP/IP, and named pipes. Custom transports can expose their own configurable quotas not included in this list. Consult the documentation for a custom transport to find out about its quotas.  
   
  Each quota setting has a type, minimum value, and default value. The maximum value of a quota is limited by its type. Due to machine limitations, it is not always possible to set a quota to its maximum value.  
   

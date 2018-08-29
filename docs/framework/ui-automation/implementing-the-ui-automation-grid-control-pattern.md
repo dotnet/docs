@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation Grid Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, grid"
   - "grid control pattern"
   - "UI Automation, grid control pattern"
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
-caps.latest.revision: 27
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation Grid Control Pattern
 > [!NOTE]

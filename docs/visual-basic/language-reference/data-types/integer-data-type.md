@@ -1,11 +1,6 @@
 ---
 title: "Integer Data Type (Visual Basic)"
 ms.date: 01/31/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Integer"
   - "Integer"
@@ -97,7 +92,7 @@ k = 5.5
 ## See also
 
 <xref:System.Int32?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

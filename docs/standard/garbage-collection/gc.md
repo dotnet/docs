@@ -1,18 +1,9 @@
 ---
 title: Automatic memory management and garbage collection
 description: Learn how automatic memory management is one of the services that the Common Language Runtime provides during managed execution.
-keywords: .NET, .NET Core
-author: dotnet-bot
-ms.author: dotnetcontent
 ms.date: 07/22/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Automatic memory management and garbage collection

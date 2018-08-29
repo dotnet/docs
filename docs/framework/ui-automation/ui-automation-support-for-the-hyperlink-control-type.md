@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the Hyperlink Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Hyperlink control type"
   - "UI Automation, Hyperlink control type"
   - "control types, Hyperlink"
 ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
-caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Hyperlink Control Type
 > [!NOTE]
@@ -65,7 +54,7 @@ ms.workload:
 |---------------------------------------|--------------------|-----------|  
 |<xref:System.Windows.Automation.Provider.IInvokeProvider>|Yes|All hyperlink controls must support the Invoke pattern.|  
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Hyperlink controls should support the Value control pattern when the link contains information that is usable and meaningful to the user.|  
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|For example, "http://www...."|A URL for an Internet or Intranet address is an example of a hyperlink that contains information that is meaningful to the user. A programmatic link, however, is meaningful only to an application and is not recommended for the Value property.|  
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|For example, `"http://www...."`|A URL for an Internet or Intranet address is an example of a hyperlink that contains information that is meaningful to the user. A programmatic link, however, is meaningful only to an application and is not recommended for the Value property.|  
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  

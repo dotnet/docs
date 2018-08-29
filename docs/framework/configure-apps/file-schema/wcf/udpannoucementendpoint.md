@@ -1,21 +1,7 @@
 ---
 title: "&lt;udpAnnoucementEndpoint&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5b3fa9c5-f372-4df9-a9d6-1e426063b721
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;udpAnnoucementEndpoint&gt;
 This configuration element defines a standard endpoint that is used by services to send announcement messages over a UDP binding. It has a fixed contract and supports two discovery versions. In addition it has a fixed UDP binding and a default address value as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery version 1.1). You can specify the multicast address to use for sending and receiving the announcement messages.  

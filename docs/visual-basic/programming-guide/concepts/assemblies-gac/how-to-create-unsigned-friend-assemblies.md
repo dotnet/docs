@@ -1,13 +1,6 @@
 ---
 title: "How to: Create Unsigned Friend Assemblies (Visual Basic)"
-ms.custom: ""
 ms.date: 03/14/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
 author: rpetrusha
 ms.author: ronpet

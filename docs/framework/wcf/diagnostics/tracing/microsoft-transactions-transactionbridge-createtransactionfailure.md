@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.CreateTransactionFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c3468e23-49a9-4a84-972d-a79a658851b3
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.CreateTransactionFailure
 A transaction could not be created.  

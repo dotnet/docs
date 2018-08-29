@@ -1,14 +1,6 @@
 ---
 title: "AddImport Method1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "AddImport"
   - "IALink.AddImport"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AddImport Method1
 Adds imports to the assembly.  

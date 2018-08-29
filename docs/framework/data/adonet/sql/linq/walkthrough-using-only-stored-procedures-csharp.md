@@ -1,21 +1,7 @@
 ---
 title: "Walkthrough: Using Only Stored Procedures (C#)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Walkthrough: Using Only Stored Procedures (C#)
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by executing stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  
@@ -25,7 +11,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
  For purposes of this walkthrough, you will use two methods that have been mapped to stored procedures in the Northwind sample database: CustOrdersDetail and CustOrderHist. The mapping occurs when you run the SqlMetal command-line tool to generate a C# file. For more information, see the Prerequisites section later in this walkthrough.  
   
- This walkthrough does not rely on the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. Developers using [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] can also use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
+ This walkthrough does not rely on the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
   
@@ -51,7 +37,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Overview  
  This walkthrough consists of six main tasks:  
   
--   Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)].  
+-   Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
   
 -   Adding the System.Data.Linq assembly to the project.  
   
@@ -64,11 +50,11 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 -   Running and testing the application.  
   
 ## Creating a LINQ to SQL Solution  
- In this first task, you create a [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
+ In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
   
 #### To create a LINQ to SQL solution  
   
-1.  On the [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)] **File** menu, point to **New**, and then click **Project**.  
+1.  On the Visual Studio **File** menu, point to **New**, and then click **Project**.  
   
 2.  In the **Project types** pane in the **New Project** dialog box, click **Visual C#**.  
   

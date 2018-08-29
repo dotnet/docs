@@ -1,18 +1,11 @@
 ---
 title: "Implicitly Typed Arrays (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [C#], implicity-typed"
   - "implicitly-typed arrays [C#]"
   - "C# language, implicitly typed arrays"
 ms.assetid: e05be95c-6732-403d-ae42-b35f057cbbea
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Implicitly Typed Arrays (C# Programming Guide)
 You can create an implicitly-typed array in which the type of the array instance is inferred from the elements specified in the array initializer. The rules for any implicitly-typed variable also apply to implicitly-typed arrays. For more information, see [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  

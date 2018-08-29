@@ -1,17 +1,7 @@
 ---
 title: "Sorting Data (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: d93fa055-2f19-46d2-9898-e2aed628f1c9
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Sorting Data (C#)
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
@@ -60,7 +50,7 @@ foreach (string str in query)
 ```  
   
 #### Primary Descending Sort  
- The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
+ The next example demonstrates how to use the `orderby descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
   
 ```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
@@ -108,7 +98,7 @@ foreach (string str in query)
 ```  
   
 #### Secondary Descending Sort  
- The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
+ The next example demonstrates how to use the `orderby descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
   
 ```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  

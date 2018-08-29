@@ -1,17 +1,10 @@
 ---
 title: "Access Modifiers (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Access Modifiers (C# Programming Guide)
 All types and type members have an accessibility level, which controls whether they can be used from other code in your assembly or other assemblies. You can use the following access modifiers to specify the accessibility of a type or member when you declare it:  
@@ -46,7 +39,7 @@ All types and type members have an accessibility level, which controls whether t
   
  Derived classes cannot have greater accessibility than their base types. In other words, you cannot have a public class `B` that derives from an internal class `A`. If this were allowed, it would have the effect of making `A` public, because all protected or internal members of `A` are accessible from the derived class.  
   
- You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](../concepts/assemblies-gac/friend-assemblies.md).  
   
 ## Class and Struct Member Accessibility  
  Class members (including nested classes and structs) can be declared with any of the six types of access. Struct members cannot be declared as protected because structs do not support inheritance.  

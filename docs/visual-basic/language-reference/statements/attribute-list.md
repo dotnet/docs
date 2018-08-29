@@ -1,19 +1,10 @@
 ---
 title: "Attribute List (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "attribute list"
   - "attributes [Visual Basic], applying"
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Attribute List (Visual Basic)
 Specifies the attributes to be applied to a declared programming element. Multiple attributes are separated by commas. Following is the syntax for one attribute.  
@@ -25,17 +16,12 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ```  
   
 ## Parts  
- `attributemodifier`  
- Required for attributes applied at the beginning of a source file. Can be [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md) or [Module](../../../visual-basic/language-reference/modifiers/module-keyword.md).  
-  
- `attributename`  
- Required. Name of the attribute.  
-  
- `attributearguments`  
- Optional. List of positional arguments for this attribute. Multiple arguments are separated by commas.  
-  
- `attributeinitializer`  
- Optional. List of variable or property initializers for this attribute. Multiple initializers are separated by commas.  
+|||
+|---|---|
+|`attributemodifier`|Required for attributes applied at the beginning of a source file. Can be [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md) or [Module](../../../visual-basic/language-reference/modifiers/module-keyword.md).|
+|`attributename`| Required. Name of the attribute.|
+|`attributearguments`|Optional. List of positional arguments for this attribute. Multiple arguments are separated by commas.|
+|`attributeinitializer`|Optional. List of variable or property initializers for this attribute. Multiple initializers are separated by commas.|
   
 ## Remarks  
  You can apply one or more attributes to nearly any programming element (types, procedures, properties, and so forth). Attributes appear in your assembly's metadata, and they can help you annotate your code or specify how to use a particular programming element. You can apply attributes defined by Visual Basic and the .NET Framework, and you can define your own attributes.  

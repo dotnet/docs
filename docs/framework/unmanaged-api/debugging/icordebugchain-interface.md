@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugChain Interface1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugChain"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: f671f519-1cb3-4ae5-b9f1-abc5e783459f
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugChain Interface1
 Represents a segment of a physical or logical call stack.  

@@ -1,25 +1,14 @@
 ---
 title: "Specifying an Assembly&#39;s Location"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "configuration [.NET Framework], applications"
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], specifying location"
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying an Assembly&#39;s Location
 There are two ways to specify an assembly's location:  

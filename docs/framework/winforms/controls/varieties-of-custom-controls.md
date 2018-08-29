@@ -1,14 +1,6 @@
 ---
 title: "Varieties of Custom Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms]"
   - "controls [Windows Forms], composite"
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Varieties of Custom Controls
 With the .NET Framework, you can develop and implement new controls. You can extend the functionality of the familiar user control as well as existing controls through inheritance. You can also write custom controls that perform their own painting.  

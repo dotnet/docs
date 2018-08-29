@@ -1,21 +1,10 @@
 ---
 title: "How to: Move Data Into and Out of a Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], retrieving values"
   - "variables [Visual Basic], storing data"
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Move Data Into and Out of a Variable (Visual Basic)
 You store a value in a variable by putting the variable name on the left side of an assignment statement.  

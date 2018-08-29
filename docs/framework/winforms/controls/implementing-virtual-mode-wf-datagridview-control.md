@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], large data sets"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 74eb5276-5ab8-4ce0-8005-dae751d85f7c
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control
 When you want to display very large quantities of tabular data in a <xref:System.Windows.Forms.DataGridView> control, you can set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and explicitly manage the control's interaction with its data store. This lets you fine-tune the performance of the control in this situation.  

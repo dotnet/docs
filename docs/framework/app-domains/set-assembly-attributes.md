@@ -1,14 +1,6 @@
 ---
 title: "Setting Assembly Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "assembly binding, attributes"
   - "assembly manifest, attributes"
 ms.assetid: 36a98a81-b5b5-4c19-912a-11f91eff7f4e
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Setting Assembly Attributes
 Assembly attributes are values that provide information about an assembly. The attributes are divided into the following sets of information:  

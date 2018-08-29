@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], manipulating"
   - "BindingNavigator control [Windows Forms], adding buttons"
 ms.assetid: faa33042-186e-4bb2-8798-17ceb987ec62
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control
 The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <xref:System.Windows.Forms.ToolStrip> control that is intended for navigating and manipulating controls on your form that are bound to data.  

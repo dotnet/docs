@@ -1,14 +1,6 @@
 ---
 title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "printing [Windows Forms], choosing printers"
   - "printers [Windows Forms], choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms
 Often, users want to choose a printer other than the default printer to print to. You can enable users to choose a printer from among those currently installed by using the <xref:System.Windows.Forms.PrintDialog> component. Through the <xref:System.Windows.Forms.PrintDialog> component, the <xref:System.Windows.Forms.DialogResult> of the <xref:System.Windows.Forms.PrintDialog> component is captured and used to select the printer.  
@@ -97,7 +83,7 @@ Often, users want to choose a printer other than the default printer to print to
        }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  

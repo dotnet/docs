@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DataGrid"
 helpviewer_keywords: 
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "parent table navigation in DataGrid"
   - "child tables [Windows Forms], dataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Control Overview (Windows Forms)
 > [!NOTE]
@@ -132,7 +118,7 @@ The following illustration shows the objects included in the DataGrid control.
   
  Column styles are related to columns in a dataset just like table styles are related to data tables. Just as each table may only have one table style defined for it at a time, so too can each column only have one column style defined for it, in a particular table style. This relationship is defined in the column's <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> property.  
   
- If you have created a table style without column styles added to it, [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] will add default column styles when the form and grid are created at run time. However, if you have created a table style and added any column styles to it, [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] will not create any column styles. Also, you will need to define column styles and assign them with the mapping name to have the columns that you want appear in the grid.  
+ If you have created a table style without column styles added to it, Visual Studio will add default column styles when the form and grid are created at run time. However, if you have created a table style and added any column styles to it, Visual Studio will not create any column styles. Also, you will need to define column styles and assign them with the mapping name to have the columns that you want appear in the grid.  
   
  Because you specify which columns are included in the data grid by assigning them a column style and no column style has been assigned to the columns, you can include columns of data in the dataset that are not displayed in the grid. However, because the data column is included in the dataset, you can programmatically edit the data that is not displayed.  
   

@@ -1,14 +1,6 @@
 ---
 title: "CorBindToRuntime Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorBindToRuntime"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorBindToRuntime Function
 Enables unmanaged hosts to load the common language runtime (CLR) into a process.  

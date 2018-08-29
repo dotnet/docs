@@ -1,10 +1,6 @@
 ---
 title: "&lt;returns&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "returns"
   - "<returns>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<returns> C# XML tag"
   - "returns C# XML tag"
 ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;returns&gt; (C# Programming Guide)
 ## Syntax  

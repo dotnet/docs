@@ -1,14 +1,9 @@
 ---
 title: Docker containers, images, and registries
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker containers, images, and registries
 
@@ -33,5 +28,5 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 -   You want to have minimum network latency between your images and your chosen deployment environment. For example, if your production environment is Azure, you probably want to store your images in Azure Container Registry so that network latency will be minimal. In a similar way, if your production environment is on-premises, you might want to have an on-premises Docker Trusted Registry available within the same local network.
 
 >[!div class="step-by-step"]
-[Previous] (docker-terminology.md)
-[Next] (Docker-application-lifecycle/index.md)
+[Previous](docker-terminology.md)
+[Next](Docker-application-lifecycle/index.md)

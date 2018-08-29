@@ -1,11 +1,6 @@
 ---
 title: "-link (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
   - "EmbedInteropTypes"
@@ -16,8 +11,6 @@ helpviewer_keywords:
   - "-l compiler option [Visual Basic]"
   - "/l compiler option [Visual Basic]"
 ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -link (Visual Basic)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  
@@ -46,7 +39,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
 > [!NOTE]
 >  When you create an instance of an embedded COM type in your code, you must create the instance by using the appropriate interface. Attempting to create an instance of an embedded COM type by using the CoClass causes an error.  
   
- To set the `-link` option in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**.  
+ To set the `-link` option in Visual Studio, add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**.  
   
  If you link to a COM assembly (Assembly A) which itself references another COM assembly (Assembly B), you also have to link to Assembly B if either of the following is true:  
   

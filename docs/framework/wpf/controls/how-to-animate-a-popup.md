@@ -1,24 +1,10 @@
 ---
 title: "How to: Animate a Popup"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Popup control [WPF], animating"
   - "animation [WPF], Popup controls"
 ms.assetid: acaa2a0a-6137-4efd-9cd1-75ece222e390
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Popup
 This example shows two ways to animate a <xref:System.Windows.Controls.Primitives.Popup> control.  

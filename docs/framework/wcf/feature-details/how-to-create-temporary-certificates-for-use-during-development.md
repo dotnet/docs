@@ -14,7 +14,7 @@ When developing a secure service or client using Windows Communication Foundatio
 >   
 >  By default, the [New-SelfSignedCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) creates certificates whose root authority is called "Root Agency**."** Because the "Root Agency" is not in the Trusted Root Certification Authorities store, this makes these certificates insecure. Creating a self-signed certificate that is placed in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating and using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using a certificate as a credential, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=88919).  
+ For more information about creating and using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=88919).  
   
 ### To create a self-signed root authority certificate and export the private key  
   
@@ -51,7 +51,7 @@ PS Export-Certificate -Cert $testCertPath -FilePath testcert.crt
   
 #### To install a self-signed certificate in the Trusted Root Certification Authorities  
   
-1.  Open the certificate snap-in. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
+1.  Open the certificate snap-in. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
 2.  Open the folder to store the certificate, either the **Local Computer** or the **Current User**.  
   

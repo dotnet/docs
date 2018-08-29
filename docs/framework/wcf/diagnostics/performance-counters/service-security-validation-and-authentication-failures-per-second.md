@@ -1,21 +1,9 @@
 ---
 title: "Service: Security Validation and Authentication Failures Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Service: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second.  

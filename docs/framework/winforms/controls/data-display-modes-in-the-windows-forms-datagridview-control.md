@@ -1,25 +1,11 @@
 ---
 title: "Data Display Modes in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], display modes"
   - "data grids [Windows Forms], display modes"
   - "DataGridView control [Windows Forms], display modes"
 ms.assetid: 9755a030-3f3f-4705-a661-ba5a48a81875
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data Display Modes in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control can display data in three distinct modes: bound, unbound, and virtual. Choose the most suitable mode based on your requirements.  

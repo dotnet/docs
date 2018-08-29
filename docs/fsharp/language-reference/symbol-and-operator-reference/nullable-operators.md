@@ -1,17 +1,8 @@
 ---
 title: Nullable Operators (F#)
 description: Learn about the nullable operators that are available in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 3108c4ac-9e13-464d-a829-084a6eba038f
 ---
-
 # Nullable Operators
 
 Nullable operators are binary arithmetic or comparison operators that work with nullable arithmetic types on one or both sides. Nullable types arise frequently when you work with data from sources such as databases that allow nulls in place of actual values. Nullable operators are used frequently in query expressions. In addition to nullable operators for arithmetic and comparison, conversion operators can be used to convert between nullable types. There are also nullable versions of certain query operators.

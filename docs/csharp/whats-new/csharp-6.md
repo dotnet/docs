@@ -1,13 +1,7 @@
 ---
 title: What's New in C# 6 - C# Guide
-description: Learn the new features in C# Version 6    
-keywords: .NET, .NET Core
-author: BillWagner
+description: Learn the new features in C# Version 6
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 ---
 
@@ -40,6 +34,8 @@ productivity for developers. Features in this release include:
     - Collection initializers can rely on accessible extension methods, in addition to member methods.
 * [Improved overload resolution](#improved-overload-resolution):
     - Some constructs that previously generated ambiguous method calls now resolve correctly.
+* [`deterministic` compiler option](#deterministic-compiler-output):
+    - The deterministic compiler option ensures that subsequent compilations of the same source generate the same binary output.
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
@@ -514,12 +510,12 @@ if any, is lost.
 ## Index Initializers
 
 *Index Initializers* is one of two features that make collection
-initializers more consistent. In earlier releases of C#, you could use
-*collection initializers* only with sequence style collections:
+initializers more consistent with index usage. In earlier releases of C#, you could use
+*collection initializers* only with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> by adding braces around key and value pairs:
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
-Now, you can also use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types:
+Now, you can use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types. The new syntax supports assignment using an index into the collection:
 
 [!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 
@@ -527,7 +523,7 @@ This feature means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several
 versions.
 
-### Extension `Add` methods in collection initializers
+## Extension `Add` methods in collection initializers
 
 Another feature that makes collection initialization easier is the ability
 to use an *extension method* for the `Add` method. This feature was
@@ -553,10 +549,7 @@ Now you can, but only if you create an extension method that maps `Add` to
 
 What you are doing with this feature is to map whatever method adds
 items to a collection to a method named `Add` by creating an
-extension method: 
-
-[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionAddSample](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
+extension method.
 
 ## Improved overload resolution
 
@@ -579,3 +572,12 @@ a lambda expression as an argument:
 
 The C# 6 compiler correctly determines that `Task.Run(Func<Task>())` is
 a better choice.
+
+### Deterministic compiler output
+
+The `-deterministic` option instructs the compiler to produce a byte-for-byte identical output assembly for successive compilations of the same source files.
+
+By default, every compilation produces unique output on each compilation. The compiler adds a timestamp, and a GUID generated from random numbers. You use this option if you want to compare the byte-for-byte output to ensure consistency across builds.
+
+For more information, see the [-deterministic compiler option](../language-reference/compiler-options/deterministic-compiler-option.md) article.
+

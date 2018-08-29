@@ -1,14 +1,6 @@
 ---
 title: "Federation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,20 +8,14 @@ helpviewer_keywords:
   - "WCF, federation"
   - "federation [WCF]"
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Federation
-This topic provides a brief overview of the concept of federated security. It also describes [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] support for deploying federated security architectures. For a sample application that demonstrates federation, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
+This topic provides a brief overview of the concept of federated security. It also describes Windows Communication Foundation (WCF) support for deploying federated security architectures. For a sample application that demonstrates federation, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
 ## Definition of Federated Security  
  Federated security allows for clean separation between the service a client is accessing and the associated authentication and authorization procedures. Federated security also enables collaboration across multiple systems, networks, and organizations in different trust realms.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for building and deploying distributed systems that employ federated security.  
+ WCF provides support for building and deploying distributed systems that employ federated security.  
   
 ### Elements of a Federated Security Architecture  
  The federated security architecture has three key elements, as described in the following table.  
@@ -68,14 +54,14 @@ This topic provides a brief overview of the concept of federated security. It al
   
  In a federated security architecture, users from organization A know that if they want to access the Web service in organization B that they must present a valid security token from the STS at organization B, which authenticates and authorizes their access to the specific service.  
   
- On contacting the STS B, the users receive another level of indirection from the policy associated with the STS. They must present a valid security token from the STS A (that is, the client trust realm) before the STS B can issue them a security token. This is a corollary of the trust relationship established between the two organizations and implies that organization B does not have to manage identities for users from organization A. In practice, STS B typically has a null `issuerAddress` and `issuerMetadataAddress`. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md). In that case, the client consults a local policy to locate STS A. This configuration is called *home realm federation* and it scales better because STS B does not have to maintain information about STS A.  
+ On contacting the STS B, the users receive another level of indirection from the policy associated with the STS. They must present a valid security token from the STS A (that is, the client trust realm) before the STS B can issue them a security token. This is a corollary of the trust relationship established between the two organizations and implies that organization B does not have to manage identities for users from organization A. In practice, STS B typically has a null `issuerAddress` and `issuerMetadataAddress`. For more information, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md). In that case, the client consults a local policy to locate STS A. This configuration is called *home realm federation* and it scales better because STS B does not have to maintain information about STS A.  
   
  The users then contact the STS at organization A and obtain a security token by presenting authentication credentials that they normally use to gain access to any other resource within organization A. This also alleviates the problem of users having to maintain multiple sets of credentials or using the same set of credentials at multiple service sites.  
   
  Once the users obtain a security token from the STS A, they present the token to the STS B. Organization B proceeds to perform authorization of the users' requests and issues a security token to the users from its own set of security tokens. The users can then present their token to the resource at organization B and access the service.  
   
 ## Support for Federated Security in WCF  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides turnkey support for deploying federated security architectures through the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+ WCF provides turnkey support for deploying federated security architectures through the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
  The [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) element provides for a secure, reliable, interoperable binding that entails the use of HTTP as the underlying transport mechanism for request-reply communication style, employing text and XML as the wire format for encoding.  
   
@@ -93,10 +79,10 @@ This topic provides a brief overview of the concept of federated security. It al
 -   Present the token to the service to access the service.  
   
 ### Phase 2: Run-Time Phase  
- During the run-time phase, the client instantiates an object of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client class and makes a call using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client. The underlying framework of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] handles the previously mentioned steps in the federated security communication pattern and enables the client to seamlessly consume the service.  
+ During the run-time phase, the client instantiates an object of the WCF client class and makes a call using the WCF client. The underlying framework of WCF handles the previously mentioned steps in the federated security communication pattern and enables the client to seamlessly consume the service.  
   
 ## Sample Implementation Using WCF  
- The following illustration shows a sample implementation for a federated security architecture using native support from [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ The following illustration shows a sample implementation for a federated security architecture using native support from WCF.  
   
  ![Federation security in WCF](../../../../docs/framework/wcf/feature-details/media/federatedsecurityinwcf.gif "FederatedSecurityInWCF")  
   
@@ -295,7 +281,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
  ![Federation](../../../../docs/framework/wcf/feature-details/media/federationclienta.gif "FederationClientA")  
   
 ## Summary  
- Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides native support for implementing federated security.  
+ Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, WCF provides native support for implementing federated security.  
   
 ## See Also  
  [Security](../../../../docs/framework/wcf/feature-details/security.md)

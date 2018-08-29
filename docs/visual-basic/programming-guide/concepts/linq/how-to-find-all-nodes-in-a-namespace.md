@@ -1,19 +1,7 @@
 ---
 title: "How to: Find All Nodes in a Namespace (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Find All Nodes in a Namespace (Visual Basic)
 You can filter on the namespace of each element or attribute to find all nodes in that particular namespace.  

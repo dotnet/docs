@@ -1,22 +1,12 @@
 ---
 title: "How to: Copy Files with a Specific Pattern to a Directory in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]"
   - "files [Visual Basic], copying"
   - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: f205d2ad-bbe5-4d55-8a40-acda21aa82dd
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Copy Files with a Specific Pattern to a Directory in Visual Basic
 The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method returns a read-only collection of strings representing the path names for the files. You can use the `wildCards` parameter to specify a specific pattern.  

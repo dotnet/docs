@@ -1,26 +1,15 @@
 ---
 title: "Weak References"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "weak references, short"
   - "weak references, using"
   - "weak references, long"
   - "garbage collection, weak references"
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Weak References
 The garbage collector cannot collect an object in use by an application while the application's code can reach that object. The application is said to have a strong reference to the object.  

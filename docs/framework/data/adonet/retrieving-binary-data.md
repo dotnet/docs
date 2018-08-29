@@ -1,24 +1,10 @@
 ---
 title: "Retrieving Binary Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 56c5a9e3-31f1-482f-bce0-ff1c41a658d0
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving Binary Data
 By default, the **DataReader** loads incoming data as a row as soon as an entire row of data is available. Binary large objects (BLOBs) need different treatment, however, because they can contain gigabytes of data that cannot be contained in a single row. The **Command.ExecuteReader** method has an overload that will take a <xref:System.Data.CommandBehavior> argument to modify the default behavior of the **DataReader**. You can pass <xref:System.Data.CommandBehavior.SequentialAccess> to the **ExecuteReader** method to modify the default behavior of the **DataReader** so that instead of loading rows of data, it will load data sequentially as it is received. This is ideal for loading BLOBs or other large data structures. Note that this behavior may depend on your data source. For example, returning a BLOB from Microsoft Access will load the entire BLOB being loaded into memory, rather than sequentially as it is received.  

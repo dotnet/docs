@@ -1,25 +1,11 @@
 ---
 title: "How to: Create a Complex Grid"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "calendar [WPF], creating"
   - "monthly calendar [WPF], creating"
   - "Grid control [WPF], creating [WPF], complex grid"
 ms.assetid: 4ce3040a-a156-4364-9596-98ca1eca5550
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Complex Grid
 This example shows how to use a <xref:System.Windows.Controls.Grid> to create layout that looks like a monthly calendar.  

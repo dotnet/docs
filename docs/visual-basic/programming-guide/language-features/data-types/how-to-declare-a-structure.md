@@ -1,22 +1,12 @@
 ---
 title: "How to: Declare a Structure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declarations [Visual Basic], structures"
   - "structure statements [Visual Basic]"
   - "statements [Visual Basic], structure"
   - "structures [Visual Basic], declaring"
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Declare a Structure (Visual Basic)
 You begin a structure declaration with the [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md), and you end it with the `End` `Structure` statement. Between these two statements you must declare at least one *element*. The elements can be of any data type, but at least one must be either a nonshared variable or a nonshared, noncustom event.  

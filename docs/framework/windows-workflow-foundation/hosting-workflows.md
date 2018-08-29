@@ -1,21 +1,9 @@
 ---
 title: "Hosting Workflows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "programming [WF], hosting workflows"
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Hosting Workflows
 The topics in this section discuss hosting workflows.  

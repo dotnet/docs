@@ -1,18 +1,7 @@
 ---
 title: "Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)
 You can write asynchronous programs more easily and intuitively by using async/await features. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.  
@@ -21,7 +10,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
  This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.  
   
- If you don't want to build the applications yourself, you can download "Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)" from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191).  
+ If you don't want to build the applications yourself, you can download "Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)" from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).  
   
  In this walkthrough, you complete the following tasks:  
   
@@ -679,7 +668,7 @@ End Class
 ```  
   
 ## See Also  
- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=255191)  
+ [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)  
  [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
  [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
  [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  

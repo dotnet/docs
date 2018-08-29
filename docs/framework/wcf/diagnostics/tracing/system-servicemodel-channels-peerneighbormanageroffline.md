@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerNeighborManagerOffline"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 15b19e0f-cee5-49ff-8498-f404c39b712f
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerNeighborManagerOffline
 The PeerNode is now offline, indicating that there are no currently connected neighbors.  

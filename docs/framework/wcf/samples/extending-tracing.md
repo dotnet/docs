@@ -1,24 +1,10 @@
 ---
 title: "Extending Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Extending Tracing
-This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] tracing feature by writing user-defined activity traces in client and service code. This allows the user to create trace activities and group traces into logical units of work. It is also possible to correlate activities through transfers (within the same endpoint) and propagation (across endpoints). In this sample, tracing is enabled for both the client and the service. For more information about how to enable tracing in client and service configuration files, see [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
+This sample demonstrates how to extend the Windows Communication Foundation (WCF) tracing feature by writing user-defined activity traces in client and service code. This allows the user to create trace activities and group traces into logical units of work. It is also possible to correlate activities through transfers (within the same endpoint) and propagation (across endpoints). In this sample, tracing is enabled for both the client and the service. For more information about how to enable tracing in client and service configuration files, see [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
   
  This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
@@ -30,12 +16,12 @@ This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includ
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ExtendingTracing`  
   
 ## Tracing and Activity Propagation  
- User-defined activity tracing allows the user to create their own trace activities to group traces into logical units of work, correlate activities through transfers and propagation, and lessen the performance cost of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing (for example, the disk space cost of a log file).  
+ User-defined activity tracing allows the user to create their own trace activities to group traces into logical units of work, correlate activities through transfers and propagation, and lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
 ### Adding Custom Sources  
  User-defined traces can be added to both client and service code. Adding trace sources to the client or service configuration files allow for these custom traces to be recorded and displayed in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). The following code shows how to add a user-defined trace source named `ServerCalculatorTraceSource` to the configuration file.  
@@ -76,7 +62,7 @@ This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includ
 ```  
   
 ### Correlating Activities  
- To correlate activities directly across endpoints, the `propagateActivity` attribute must be set to `true` in the `System.ServiceModel` trace source. Also, to propagate traces without going through [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] activities, ServiceModel Activity Tracing must be turned off. This can be seen in the following code example.  
+ To correlate activities directly across endpoints, the `propagateActivity` attribute must be set to `true` in the `System.ServiceModel` trace source. Also, to propagate traces without going through WCF activities, ServiceModel Activity Tracing must be turned off. This can be seen in the following code example.  
   
 > [!NOTE]
 >  Turning off ServiceModel Activity Tracing is not the same as having the trace level, denoted by the `switchValue` property, set to off.  
@@ -94,7 +80,7 @@ This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includ
 ```  
   
 ### Lessening Performance Cost  
- Setting `ActivityTracing` to off in the `System.ServiceModel` trace source generates a trace file that contains only user-defined activity traces, without any of the ServiceModel activity traces included. This results in a log file of much smaller size. However, the opportunity to correlate [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] processing traces is lost.  
+ Setting `ActivityTracing` to off in the `System.ServiceModel` trace source generates a trace file that contains only user-defined activity traces, without any of the ServiceModel activity traces included. This results in a log file of much smaller size. However, the opportunity to correlate WCF processing traces is lost.  
   
 ##### To set up, build, and run the sample  
   

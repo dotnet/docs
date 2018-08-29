@@ -1,13 +1,7 @@
 ---
 title: "Implementing a Dispose method"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - "Dispose method"
   - "garbage collection, Dispose method"
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
-caps.latest.revision: 44
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Implementing a Dispose method

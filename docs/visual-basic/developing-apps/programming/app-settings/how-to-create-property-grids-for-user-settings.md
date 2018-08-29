@@ -1,22 +1,12 @@
 ---
 title: "How to: Create Property Grids for User Settings in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Settings object [Visual Basic], creating property grids for user settings"
   - "user settings [Visual Basic], creating property grids"
   - "property grids [Visual Basic], creating for user settings"
   - "property grids"
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create Property Grids for User Settings in Visual Basic
 You can create a property grid for user settings by populating a <xref:System.Windows.Forms.PropertyGrid> control with the user setting properties of the `My.Settings` object.  

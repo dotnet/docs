@@ -1,14 +1,6 @@
 ---
 title: "How to: Enumerate a Subset of Print Queues"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "enumerating [WPF], subset of print queues"
   - "print queues [WPF], enumerating subset of"
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enumerate a Subset of Print Queues
 A common situation faced by information technology (IT) professionals managing a company-wide set of printers is to generate a list of printers having certain characteristics. This functionality is provided by the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method of a <xref:System.Printing.PrintServer> object and the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration.  

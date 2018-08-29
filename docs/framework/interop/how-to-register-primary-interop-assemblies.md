@@ -1,24 +1,12 @@
 ---
 title: "How to: Register Primary Interop Assemblies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "registering primary interop assemblies"
   - "primary interop assemblies, registering"
 ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Register Primary Interop Assemblies
 Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md).  

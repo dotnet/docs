@@ -1,19 +1,7 @@
 ---
 title: "Dynamic Update"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dynamic Update
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. This can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This topic provides an overview of the dynamic update functionality introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  
@@ -170,7 +158,7 @@ foreach (Guid id in ids)
  Once dynamic update has been applied, the workflow instance may be resumed. Note that the new updated definition and <xref:System.Activities.WorkflowIdentity> must be used.  
   
 > [!NOTE]
->  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see[Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
+>  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
   
  In the following example, the `MortgageWorkflow_v1.1.xaml` workflow from the previous example has been compiled, and is loaded and resumed using the updated workflow definition.  
   

@@ -1,17 +1,8 @@
 ---
 title: Arrays (F#)
 description: Learn how to create and use arrays in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 61fa9084-abdc-4cf5-8213-91ec1211866b 
 ---
-
 # Arrays
 
 > [!NOTE]

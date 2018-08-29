@@ -1,12 +1,6 @@
 ---
 title: "And Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.And"
 helpviewer_keywords: 
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], conjunction"
   - "bitwise comparison [Visual Basic]"
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # And Operator (Visual Basic)
 Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjunction on two numeric expressions.  

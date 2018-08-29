@@ -1,24 +1,10 @@
 ---
 title: "How To: Change the Value of a Setting Between Application Sessions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application settings [Windows Forms], changing"
   - "application settings [Windows Forms], between application sessions"
 ms.assetid: 1a85911f-97b2-476c-930b-83379edd890c
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How To: Change the Value of a Setting Between Application Sessions
 At times, you might want to change the value of a setting between application sessions after the application has been compiled and deployed. For example, you might want to change a connection string to point to the correct database location. Since design-time tools are not available after the application has been compiled and deployed, you must change the setting value manually in the file.  

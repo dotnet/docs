@@ -1,14 +1,6 @@
 ---
 title: "How to: Define a Generic Method with Reflection Emit"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "reflection emit, generic methods"
   - "generics [.NET Framework], dynamic types"
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Define a Generic Method with Reflection Emit
 The first procedure shows how to create a simple generic method with two type parameters, and how to apply class constraints, interface constraints, and special constraints to the type parameters.  

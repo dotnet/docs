@@ -1,14 +1,6 @@
 ---
 title: "CorDebugStateChange Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugStateChange"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: 1d4424ab-5143-4e50-a84a-ceeb4ddf3bba
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugStateChange Enumeration
 Describes the amount of cached data that must be discarded based on changes to the process.  

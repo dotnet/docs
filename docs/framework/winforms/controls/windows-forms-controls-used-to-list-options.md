@@ -1,24 +1,10 @@
 ---
 title: "Windows Forms Controls Used to List Options"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms controls, listing options"
   - "option lists in Windows Forms"
 ms.assetid: 5bc064c7-bc1f-4b62-8f4b-252f864b118e
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms Controls Used to List Options
 You can add a variety of controls to a Windows Form if you want to provide users with a list of options to choose from. Depending on how much you want to restrict your users' input, you can add a <xref:System.Windows.Forms.ListBox> control, a <xref:System.Windows.Forms.ComboBox> control, or a <xref:System.Windows.Forms.CheckedListBox> control. Use the following links to determine which control best suits your needs.  

@@ -1,19 +1,7 @@
 ---
 title: "Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 31998eed-b95e-47fb-a865-9de1f337d1fb
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)
 Query and axis operations are often implemented to use deferred execution. This topic explains the requirements and advantages of deferred execution, and some implementation considerations.  

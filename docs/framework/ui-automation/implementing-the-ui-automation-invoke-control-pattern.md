@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation Invoke Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, Invoke control pattern"
   - "control patterns, Invoke"
   - "Invoke control pattern"
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
-caps.latest.revision: 31
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation Invoke Control Pattern
 > [!NOTE]

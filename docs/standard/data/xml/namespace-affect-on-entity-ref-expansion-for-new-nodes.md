@@ -1,21 +1,10 @@
 ---
 title: "Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes
 Because the content of an entity declaration can contain almost anything, there is a possibility that the content could contain an element like `<!ENTITY aname "<elem>test</elem>">`.  

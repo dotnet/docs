@@ -1,25 +1,11 @@
 ---
 title: "How to: Animate a 3-D Rotation Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], 3-D translations [WPF], with key frames (Rotation3DAnimation)"
   - "key frames [WPF], Rotation3DAnimation"
   - "3-D translations [WPF], animating [WPF], with key frames (Rotation3DAnimation)"
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a 3-D Rotation Using Key Frames
 In the following example, <xref:System.Windows.Media.Animation.Rotation3DAnimationUsingKeyFrames> is used to make a 3D object rotate while its axis of rotation animates resulting in a "wobble". This animation uses the following key frames:  

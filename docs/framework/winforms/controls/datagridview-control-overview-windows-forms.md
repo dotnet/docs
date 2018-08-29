@@ -1,14 +1,6 @@
 ---
 title: "DataGridView Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DataGridView"
 helpviewer_keywords: 
@@ -27,12 +19,6 @@ helpviewer_keywords:
   - "data sources [Windows Forms], binding to DataGridView control"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGridView Control Overview (Windows Forms)
 > [!NOTE]

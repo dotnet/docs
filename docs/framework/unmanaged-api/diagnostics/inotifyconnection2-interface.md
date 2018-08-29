@@ -1,14 +1,6 @@
 ---
 title: "INotifyConnection2 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "INotifyConnection2"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 9868cfb3-dd51-4812-bca9-171d7829afe9
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # INotifyConnection2 Interface
 Declares methods for registering and unregistering a connection notification source.  

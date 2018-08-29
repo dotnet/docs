@@ -1,14 +1,7 @@
 ---
 title: "Programming Concepts (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Programming Concepts (C#)
 This section explains programming concepts in the C# language.  
@@ -35,4 +28,4 @@ This section explains programming concepts in the C# language.
   
 |||  
 |---|---|  
-|[Performance Tips](https://msdn.microsoft.com/library/ms173196(VS.110).aspx) | Discusses several basic rules that may help you increase the performance of your application.|
+|[Performance Tips](../../../../docs/framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application.|

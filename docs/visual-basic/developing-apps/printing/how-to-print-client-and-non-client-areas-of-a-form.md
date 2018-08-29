@@ -1,11 +1,6 @@
 ---
 title: "How to: Print Client and Non-Client Areas of a Form (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "title bar [Visual Basic], printing"
   - "printing"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "entire form"
   - "non-client area [Visual Basic], printing"
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Print Client and Non-Client Areas of a Form (Visual Basic)
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to quickly print an image of a form exactly as it appears on screen without using a <xref:System.Drawing.Printing.PrintDocument> component. The following procedure shows how to print a form, including both the client area and the non-client area. The non-client area includes the title bar, borders, and scroll bars.  

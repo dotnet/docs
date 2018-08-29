@@ -1,23 +1,9 @@
 ---
 title: "WCF Data Services Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, learn more"
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Data Services Resources
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  

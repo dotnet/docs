@@ -1,25 +1,13 @@
 ---
 title: "Garbage Collection ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "GC events"
   - "garbage collection events [.NET Framework]"
   - "ETW, garbage collection events (CLR)"
 ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
-caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Garbage Collection ETW Events
 <a name="top"></a> These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, and so on.  

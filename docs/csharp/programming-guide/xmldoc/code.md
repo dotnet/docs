@@ -1,10 +1,6 @@
 ---
 title: "&lt;code&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "code"
   - "<code>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "code XML tag"
   - "<code> C# XML tag"
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;code&gt; (C# Programming Guide)
 ## Syntax  

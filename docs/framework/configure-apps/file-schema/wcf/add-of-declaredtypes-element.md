@@ -1,26 +1,12 @@
 ---
 title: "&lt;add&gt; of &lt;declaredTypes&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts"
   - "dataContractSerializer element"
   - "DataContractSerializer"
   - "DataContractAttribute"
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;declaredTypes&gt; Element
 Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. Each declared type includes the known types that will be returned as a field or property of the declared type.  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Test the Run-Time Behavior of a UserControl"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UserControl class [Windows Forms], testing"
   - "user controls [Windows Forms], testing"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "UserControl Test Container"
   - "UserControl class [Windows Forms], run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Test the Run-Time Behavior of a UserControl
 When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its run-time behavior. You can create a separate Windows-based application project and place your control on a test form, but this procedure is inconvenient. A faster and easier way is to use the **UserControl Test Container** provided by Visual Studio. This test container starts directly from your Windows control library project.  
@@ -30,7 +16,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 >  For the test container to load your <xref:System.Windows.Forms.UserControl>, the control must have at least one public constructor.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 > [!NOTE]
 >  A Visual C++ control cannot be tested using the **UserControl Test Container**.  

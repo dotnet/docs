@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::GetHashFromAssemblyFileW Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.GetHashFromAssemblyFileW"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5d0b44a2-5a14-44a2-9a0e-e8682fd4e106
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::GetHashFromAssemblyFileW Method
 Generates a hash over the contents of the file specified by a Unicode string.  

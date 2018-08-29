@@ -1,17 +1,8 @@
 ---
 title: Null Values (F#)
 description: Learn how the null value is used in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 68ebd261-51cf-4582-b2dc-44c84d1c2500
 ---
-
 # Null Values
 
 This topic describes how the null value is used in F#.

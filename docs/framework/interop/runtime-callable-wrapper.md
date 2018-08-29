@@ -1,10 +1,6 @@
 ---
 title: "Runtime Callable Wrapper"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop, COM wrappers"
   - "RCW"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 7e542583-1e31-4e10-b523-8cf2f29cb4a4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Runtime Callable Wrapper
 The common language runtime exposes COM objects through a proxy called the runtime callable wrapper (RCW). Although the RCW appears to be an ordinary object to .NET clients, its primary function is to marshal calls between a .NET client and a COM object.  

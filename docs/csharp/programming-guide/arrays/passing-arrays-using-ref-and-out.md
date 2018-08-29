@@ -1,16 +1,9 @@
 ---
 title: "Passing Arrays Using ref and out (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [C#], passing using ref and out"
 ms.assetid: 6a2b261e-a1cc-49a6-b4f0-6cacae385a1e
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Passing Arrays Using ref and out (C# Programming Guide)
 Like all [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters, an `out` parameter of an array type must be assigned before it is used; that is, it must be assigned by the callee. For example:  

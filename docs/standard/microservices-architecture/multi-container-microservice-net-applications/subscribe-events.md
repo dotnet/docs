@@ -1,16 +1,9 @@
 ---
 title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Subscribing to events
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Subscribing to events
 
@@ -382,5 +375,5 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 
 >[!div class="step-by-step"]
-[Previous] (rabbitmq-event-bus-development-test-environment.md)
-[Next] (test-aspnet-core-services-web-apps.md)
+[Previous](rabbitmq-event-bus-development-test-environment.md)
+[Next](test-aspnet-core-services-web-apps.md)

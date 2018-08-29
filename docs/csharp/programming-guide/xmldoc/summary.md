@@ -1,10 +1,6 @@
 ---
 title: "&lt;summary&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "<summary>"
   - "summary"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<summary> C# XML tag"
   - "summary C# XML tag"
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;summary&gt; (C# Programming Guide)
 ## Syntax  

@@ -1,17 +1,7 @@
 ---
 title: "Cancel Remaining Async Tasks after One Is Complete (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: d3cebc74-c392-497b-b1e6-62a262eabe05
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Cancel Remaining Async Tasks after One Is Complete (C#)
 By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> method together with a <xref:System.Threading.CancellationToken>, you can cancel all remaining tasks when one task is complete. The `WhenAny` method takes an argument that’s a collection of tasks. The method starts all the tasks and returns a single task. The single task is complete when any task in the collection is complete.  

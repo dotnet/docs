@@ -1,10 +1,6 @@
 ---
 title: "&lt;paramref&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "paramref"
   - "<paramref>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<paramref> C# XML tag"
   - "paramref C# XML tag"
 ms.assetid: 756c24c1-f591-40e8-a838-559761539b0b
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;paramref&gt; (C# Programming Guide)
 ## Syntax  

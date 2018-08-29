@@ -1,24 +1,10 @@
 ---
 title: "Calling Service Operations (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Calling Service Operations (WCF Data Services)
 The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines service operations for a data service. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to define such operations as methods on the data service. Like other data service resources, these service operations are addressed by using URIs. A service operation can return collections of entity types, single entity type instances, and primitive types, such as integer and string. A service operation can also return `null` (`Nothing` in Visual Basic). The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library can be used to access service operations that support HTTP GET requests. These kinds of service operations are defined as methods that have the <xref:System.ServiceModel.Web.WebGetAttribute> applied. For more information, see [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md).  

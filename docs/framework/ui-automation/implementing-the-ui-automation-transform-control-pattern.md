@@ -1,25 +1,14 @@
 ---
 title: "Implementing the UI Automation Transform Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, Transform"
   - "Transform control pattern"
   - "UI Automation, Transform control pattern"
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
-caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing the UI Automation Transform Control Pattern
 > [!NOTE]

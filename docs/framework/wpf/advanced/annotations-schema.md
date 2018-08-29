@@ -1,25 +1,11 @@
 ---
 title: "Annotations Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML schema definition (XSD)"
   - "Microsoft Annotations Framework [WPF]"
   - "documents [WPF], annotations"
 ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Annotations Schema
 This topic describes the XML schema definition (XSD) used by the Microsoft Annotations Framework to save and retrieve user annotation data.  
@@ -34,7 +20,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
   
  The Core Schema defines the primary XML structure of an <xref:System.Windows.Annotations.Annotation>.  The majority of XML elements defined in the Core Schema correspond to types in the <xref:System.Windows.Annotations> namespace.  The Core Schema exposes three extension points where applications can add their own XML data.  These extension points include the <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, and "Content".  (Content elements are provided in the form of an <xref:System.Xml.XmlElement> list.)  
   
- The Base Schema described in this topic defines the extensions for the <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, and Content types included with the initial [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] release.  
+ The Base Schema described in this topic defines the extensions for the <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, and Content types included with the initial Windows Presentation Foundation (WPF) release.  
   
 <a name="CoreSchema"></a>   
 ## Annotations XML Core Schema  

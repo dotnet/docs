@@ -1,14 +1,6 @@
 ---
 title: "Initialization for Object Elements Not in an Object Tree"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "elements [WPF], initializing"
   - "initializing elements [WPF]"
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Initialization for Object Elements Not in an Object Tree
 Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] initialization are deferred to processes that typically rely on that element being connected to either the logical tree or visual tree. This topic describes the steps that may be necessary in order to initialize an element that is not connected to either tree.  

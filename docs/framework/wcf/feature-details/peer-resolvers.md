@@ -1,21 +1,7 @@
 ---
 title: "Peer Resolvers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Peer Resolvers
 In order to connect to a mesh, a peer node requires the IP addresses of other nodes. IP addresses are obtained by contacting a resolver service, which takes the mesh ID and returns a list of addresses corresponding to nodes registered with that particular mesh ID. The resolver keeps a list of registered addresses, which it creates by having each node in the mesh register with the service.  
@@ -25,7 +11,7 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
 ## Supported Peer Resolvers  
  Peer Channel supports two types of resolvers: Peer Name Resolution Protocol (PNRP), and custom resolver services.  
   
- By default, Peer Channel uses the PNRP peer resolver service for discovery of peers and neighbors in the mesh. For situations/platforms where PNRP is not available or feasible, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides an alternative, server-based discovery service - the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>. You can also explicitly define a custom resolver service by writing a class that implements the <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract> interface.  
+ By default, Peer Channel uses the PNRP peer resolver service for discovery of peers and neighbors in the mesh. For situations/platforms where PNRP is not available or feasible, Windows Communication Foundation (WCF) provides an alternative, server-based discovery service - the <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>. You can also explicitly define a custom resolver service by writing a class that implements the <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract> interface.  
   
 ### Peer Name Resolution Protocol (PNRP)  
  PNRP, the default resolver for [!INCLUDE[wv](../../../../includes/wv-md.md)], is a distributed, serverless name resolver service. PNRP can also be used on [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] by installing the Advanced Networking Pack. Any two clients running the same version of PNRP can locate each other using this protocol, provided they meet certain conditions (such as the lack of an intervening corporate firewall). Note that the version of PNRP that ships with [!INCLUDE[wv](../../../../includes/wv-md.md)] is newer than the version included in the Advanced Networking Pack. Check the Microsoft Download Center for updates to PNRP for [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)].  

@@ -1,21 +1,7 @@
 ---
 title: "How To: Use Filters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
-caps.latest.revision: 12
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Use Filters
 This topic outlines the basic steps required to create a routing configuration that uses multiple filters. In this example, messages are routed to two implementations of a calculator service, regularCalc and roundingCalc. Both implementations support the same operations; however one service rounds all calculations to the nearest integer value before returning. A client application must be able to indicate whether to  use the rounding version of the service; if no service preference is expressed then the message is load balanced between the two services. The operations exposed by both services are:  
@@ -145,9 +131,9 @@ This topic outlines the basic steps required to create a routing configuration t
     > [!NOTE]
     >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
     >   
-    >  -   localhost  
+    > -   localhost  
     > -   127.0.0.1  
-    > -   www.contoso.com  
+    > -   `www.contoso.com`  
     > -   ContosoWeb01  
   
 4.  The final filter must support the routing of messages that arrive at the general endpoint without the custom header. For this scenario, the messages should alternate between the regularCalc and roundingCalc services. To support the "round robin" routing of these messages,  use a custom filter that allows one filter instance to match for each message processed.  The following defines two instances of a RoundRobinMessageFilter, which are grouped together to indicate that they should alternate between each other.  

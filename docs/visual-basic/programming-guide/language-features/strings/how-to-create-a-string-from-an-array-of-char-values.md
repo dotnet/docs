@@ -1,20 +1,10 @@
 ---
 title: "How to: Create a String from An Array of Char Values (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "examples [Visual Basic], arrays"
   - "examples [Visual Basic], Char data type"
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a String from An Array of Char Values (Visual Basic)
 This example creates the string "abcd" from individual characters.  

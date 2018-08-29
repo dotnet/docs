@@ -1,21 +1,7 @@
 ---
 title: "&lt;issuedTokenParameters&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;issuedTokenParameters&gt;
 Specifies the parameters for a security token issued in a Federated security scenario.  

@@ -1,21 +1,9 @@
 ---
 title: "Getting Started with .NET Native"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
-caps.latest.revision: 29
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Getting Started with .NET Native
 Whether you are writing a new Windows app for Windows 10 or you are migrating an existing Windows Store app, you can follow the same set of procedures. To create a [!INCLUDE[net_native](../../../includes/net-native-md.md)] app, follow these steps:  

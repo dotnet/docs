@@ -1,11 +1,7 @@
 ---
 title: "Version Compatibility in the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "10/17/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+ms.date: "04/10/2018"
 helpviewer_keywords: 
   - ".NET Framework, version compatibility"
   - ".NET Framework 4.5, compatibility with earlier versions"
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Version Compatibility in the .NET Framework
 Backward compatibility means that an app that was developed for a particular version of a platform will run on later versions of that platform. The .NET Framework tries to maximize backward compatibility: Source code written for one version of the .NET Framework should compile on later versions of the .NET Framework, and binaries that run on one version of the .NET Framework should behave identically on later versions of the .NET Framework.  
@@ -47,7 +40,7 @@ Backward compatibility means that an app that was developed for a particular ver
   
  In practice, this compatibility can be broken by seemingly inconsequential changes in the .NET Framework and changes in programming techniques. For example, performance improvements in the .NET Framework 4.5 can expose a race condition that did not occur on earlier versions. Similarly, using a hard-coded path to .NET Framework assemblies, performing an equality comparison with a particular version of the .NET Framework, and getting the value of a private field by using reflection are not backward-compatible practices. In addition, each version of the .NET Framework includes bug fixes and security-related changes that can affect the compatibility of some apps and components.  
   
- If your app or component does not work as expected on the .NET Framework 4.5 (including its point releases, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1, use the following checklists:  
+ If your app or component does not work as expected on the .NET Framework 4.5 (including its point releases, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2, use the following checklists:  
   
 -  If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application Compatibility in the .NET Framework](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.  
 
@@ -61,7 +54,7 @@ Backward compatibility means that an app that was developed for a particular ver
   
 -   If you determine that a change in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] has broken your app, check the [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md) to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.  
   
--   If you encounter an issue that is not documented, file a [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=154815) bug and contact [netfxcf@microsoft.com](mailto:netfxcf@microsoft.com) with the bug number.  
+-   If you encounter an issue that is not documented, open a problem on the [Developer Community site for .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
   
 ## Compatibility and side-by-side execution  
  If you cannot find a suitable workaround for your issue, remember that the .NET Framework 4.5 (or one of its point releases) runs side by side with versions 1.1, 2.0, and 3.5, and is an in-place update that replaces version 4. For apps that target versions 1.1, 2.0, and 3.5, you can install the appropriate version of the .NET Framework on the target machine to run the app in its best environment. For more information about side-by-side execution, see [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md).  

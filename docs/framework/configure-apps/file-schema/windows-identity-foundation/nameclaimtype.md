@@ -1,21 +1,9 @@
 ---
 title: "&lt;nameClaimType&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 17514d95-f0f5-4789-8e28-346640dc227c
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;nameClaimType&gt;
 Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity.Name%2A> property. The claim type is used to search for a <xref:System.Security.Claims.Claim> in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method of this token handler. The value of the matching claim is then set as the name of the <xref:System.Security.Principal.IIdentity> generated from this token handler.  

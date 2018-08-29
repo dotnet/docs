@@ -1,21 +1,9 @@
 ---
 title: "SecurityNegotiationSuccess"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 884dc3ae-c2ff-4793-b60c-d01d44712687
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # SecurityNegotiationSuccess
 Id: 171  

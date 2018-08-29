@@ -1,28 +1,14 @@
 ---
 title: "Federation and Issued Tokens"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, federation"
   - "issued tokens [WCF]"
   - "federation [WCF], issued tokens"
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Federation and Issued Tokens
-With [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you can create clients that communicate securely with services that implement the WS-Federation and WS-Trust specifications. The specifications use XML, SOAP, and Web Services Description Language (WSDL) to provide mechanisms that enable authentication and authorization across different trust realms.  
+With Windows Communication Foundation (WCF), you can create clients that communicate securely with services that implement the WS-Federation and WS-Trust specifications. The specifications use XML, SOAP, and Web Services Description Language (WSDL) to provide mechanisms that enable authentication and authorization across different trust realms.  
   
 ## In This Section  
  [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
@@ -32,7 +18,7 @@ With [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you can create cli
  Lists the design issues to be aware of when creating federated services or clients.  
   
  [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- Describes the basics of creating a federated client with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Describes the basics of creating a federated client with WCF.  
   
  [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
  Describes the steps of creating a federated service.  

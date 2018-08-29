@@ -1,14 +1,6 @@
 ---
 title: "ComCallUnmarshal Coclass"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ComCallUnmarshal Coclass"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 2adb5827-2268-4914-a1c6-f62b61880a45
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ComCallUnmarshal Coclass
 Provides interfaces for managing the marshaling of interface pointers.  

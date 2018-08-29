@@ -1,16 +1,9 @@
 ---
 title: "How to: Use Lambda Expressions in a Query (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"
 ms.assetid: 3cac4d25-d11f-4abd-9e7c-0f02e97ae06d
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use Lambda Expressions in a Query (C# Programming Guide)
 You do not use lambda expressions directly in query syntax, but you do use them in method calls, and query expressions can contain method calls. In fact, some query operations can only be expressed in method syntax. For more information about the difference between query syntax and method syntax, see [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).  
@@ -30,6 +23,7 @@ You do not use lambda expressions directly in query syntax, but you do use them 
 ## Compiling the Code  
  To run this code, copy and paste the method into the `StudentClass` that is provided in [How to: Query a Collection of Objects](../../../csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md) and call it from the `Main` method.  
   
-## See Also  
- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
+## See also
+
+[Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+[Expression Trees (C#)](../concepts/expression-trees/index.md)  

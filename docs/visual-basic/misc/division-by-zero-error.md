@@ -1,16 +1,9 @@
 ---
 title: "Division by zero (Visual Basic Error)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID11"
 ms.assetid: 7dc22e29-8baa-4d82-a1a6-2de64ba9b25d
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Division by zero (Visual Basic Error)
 The value of an expression used as a divisor is zero.  

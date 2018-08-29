@@ -1,21 +1,12 @@
 ---
 title: "Friend assembly reference &lt;reference&gt; is invalid"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc31535"
   - "bc31535"
 helpviewer_keywords: 
   - "BC31535"
 ms.assetid: 6540c1d0-bb19-4051-a579-2e4f9094585e
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Friend assembly reference &lt;reference&gt; is invalid
 Friend assembly reference \<reference> is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.  

@@ -1,21 +1,9 @@
 ---
 title: "&lt;AttributeImplies&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;AttributeImplies&gt; Element (.NET Native)
 Defines policy for code elements the containing attribute is applied to.  

@@ -1,14 +1,6 @@
 ---
 title: "Regsvcs.exe (.NET Services Installation Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Regsvcs.exe"
   - ".NET Services Installation tool"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "type libraries"
   - "registering assemblies"
 ms.assetid: 5220fe58-5aaf-4e8e-8bc3-b78c63025804
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Regsvcs.exe (.NET Services Installation Tool)
 The .NET Services Installation tool performs the following actions:  

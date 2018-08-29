@@ -1,14 +1,6 @@
 ---
 title: "StrongNameGetPublicKeyEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName2.StrongNameGetPublicKeyEx"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # StrongNameGetPublicKeyEx Method
 Gets the public key from a public/private key pair, and specifies a hash algorithm and a signature algorithm.  

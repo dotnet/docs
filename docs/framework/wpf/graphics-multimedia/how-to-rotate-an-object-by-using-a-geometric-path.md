@@ -1,14 +1,6 @@
 ---
 title: "How to: Rotate an Object by Using a Geometric Path"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "geometric paths [WPF], rotating objects by"
   - "rotating objects by geometric paths [WPF]"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Rotate an Object by Using a Geometric Path
 This example shows how to rotate (pivot) an object along a geometric path that is defined by a <xref:System.Windows.Media.PathGeometry> object.  

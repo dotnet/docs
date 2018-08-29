@@ -1,14 +1,6 @@
 ---
 title: "How to: Enumerate Installed Fonts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "fonts [Windows Forms], enumerating installed"
   - "examples [Windows Forms], fonts"
 ms.assetid: 26d74ef5-0f39-4eeb-8d20-00e66e014abe
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enumerate Installed Fonts
 The <xref:System.Drawing.Text.InstalledFontCollection> class inherits from the <xref:System.Drawing.Text.FontCollection> abstract base class. You can use an <xref:System.Drawing.Text.InstalledFontCollection> object to enumerate the fonts installed on the computer. The <xref:System.Drawing.Text.FontCollection.Families%2A> property of an <xref:System.Drawing.Text.InstalledFontCollection> object is an array of <xref:System.Drawing.FontFamily> objects.  

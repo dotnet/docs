@@ -1,28 +1,14 @@
 ---
 title: "Client Validation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Client Validation
 Services frequently publish metadata to enable automatic generation and configuration of client proxy types. When the service is not trusted, client applications should validate that the metadata conforms to the client application's policy regarding security, transactions, the type of service contract and so on. The following sample demonstrates how to write a client endpoint behavior that validates the service endpoint to ensure that service endpoint is safe to use.  
   
  The service exposes four service endpoints. The first endpoint uses the WSDualHttpBinding, the second endpoint uses NTLM authentication, the third endpoint enables transaction flow, and the fourth endpoint uses certificate-based authentication.  
   
- The client uses the <xref:System.ServiceModel.Description.MetadataResolver> class to retrieve the metadata for the service. The client enforces a policy of prohibiting duplex bindings, NTLM authentication, and transaction flow using a validating behavior. For each <xref:System.ServiceModel.Description.ServiceEndpoint> instance imported from the service's metadata, the client application adds an instance of the `InternetClientValidatorBehavior` endpoint behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint> before attempting to use a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client to connect to the endpoint. The behavior's `Validate` method runs before any operations on the service are called and enforces the client's policy by throwing `InvalidOperationExceptions`.  
+ The client uses the <xref:System.ServiceModel.Description.MetadataResolver> class to retrieve the metadata for the service. The client enforces a policy of prohibiting duplex bindings, NTLM authentication, and transaction flow using a validating behavior. For each <xref:System.ServiceModel.Description.ServiceEndpoint> instance imported from the service's metadata, the client application adds an instance of the `InternetClientValidatorBehavior` endpoint behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint> before attempting to use a Windows Communication Foundation (WCF) client to connect to the endpoint. The behavior's `Validate` method runs before any operations on the service are called and enforces the client's policy by throwing `InvalidOperationExceptions`.  
   
 ### To build the sample  
   
@@ -69,7 +55,7 @@ Services frequently publish metadata to enable automatic generation and configur
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    >  This script does not remove service certificates on a client when running this sample across computers. If you have run WCF samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also  
  [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)

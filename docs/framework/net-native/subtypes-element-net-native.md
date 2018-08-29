@@ -1,21 +1,9 @@
 ---
 title: "&lt;Subtypes&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Subtypes&gt; Element (.NET Native)
 Applies runtime policy to all classes inherited from the containing type.  

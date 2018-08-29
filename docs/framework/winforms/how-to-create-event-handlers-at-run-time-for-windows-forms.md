@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Event Handlers at Run Time for Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], event handling"
   - "Button control [Windows Forms], event handlers"
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Event Handlers at Run Time for Windows Forms
 In addition to creating events using the Windows Forms Designer, you can also create an event handler at run time. This action allows you to connect event handlers based on conditions in code at run time as opposed to having them connected when the program initially starts.  

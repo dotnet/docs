@@ -1,21 +1,7 @@
 ---
 title: "&lt;userDefinedType&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;userDefinedType&gt;
 Represents a User Defined Type (UDT) that is to be included in the service contract.  

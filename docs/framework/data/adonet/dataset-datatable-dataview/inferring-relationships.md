@@ -1,21 +1,7 @@
 ---
 title: "Inferring Relationships"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Inferring Relationships
 If an element that is inferred as a table has a child element that is also inferred as a table, a <xref:System.Data.DataRelation> will be created between the two tables. A new column with a name of **ParentTableName_Id** will be added to both the table created for the parent element, and the table created for the child element. The **ColumnMapping** property of this identity column will be set to **MappingType.Hidden**. The column will be an auto-incrementing primary key for the parent table, and will be used for the **DataRelation** between the two tables. The data type of the added identity column will be **System.Int32**, unlike the data type of all other inferred columns, which is **System.String**. A <xref:System.Data.ForeignKeyConstraint> with **DeleteRule** = **Cascade** will also be created using the new column in both the parent and child tables.  

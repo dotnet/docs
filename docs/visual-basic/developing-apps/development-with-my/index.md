@@ -1,11 +1,6 @@
 ---
 title: "Development with My (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "My.MyWpfExtension.Windows"
 helpviewer_keywords: 
@@ -14,9 +9,6 @@ helpviewer_keywords:
   - "My feature"
   - "Visual Basic, programming in"
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Development with My (Visual Basic)
 Visual Basic provides new features for rapid application development that improve productivity and ease of use while delivering power. One of these features, called `My`, provides access to information and default object instances that are related to the application and its run-time environment. This information is organized in a format that is discoverable through IntelliSense and logically delineated according to use.  
@@ -38,7 +30,7 @@ Visual Basic provides new features for rapid application development that improv
  Describes the `My.Resources` and `My.Settings` objects, which provide access to an application's resources and settings.  
   
  [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
- Describes the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model.  
+ Describes the Visual Basic Application Startup/Shutdown model.  
   
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
  Gives details on which `My` features are available in different project types.  

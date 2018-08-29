@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo4::InitializeCurrentThread Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo4::InitializeCurrentThread"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 18a3335c-8c75-476c-b6de-72c0bfedae5d
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo4::InitializeCurrentThread Method
 Initializes the current thread in advance of subsequent profiler API calls on the same thread, so that deadlock can be avoided.  

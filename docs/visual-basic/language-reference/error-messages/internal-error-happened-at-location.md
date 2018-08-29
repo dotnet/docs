@@ -1,16 +1,7 @@
 ---
 title: "Internal error happened at &lt;location&gt;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: 0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Internal error happened at &lt;location&gt;
 An internal error has occurred. The line at which it occurred is contained in the error message.  

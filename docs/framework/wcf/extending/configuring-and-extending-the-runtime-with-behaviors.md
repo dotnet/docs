@@ -1,29 +1,15 @@
 ---
 title: "Configuring and Extending the Runtime with Behaviors"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "attaching extensions using behaviors [WCF]"
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring and Extending the Runtime with Behaviors
-Behaviors enable you to modify default behavior and add custom extensions that inspect and validate service configuration or modify runtime behavior in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service applications. This topic describes the behavior interfaces, how to implement them, and how to add them to the service description (in a service application) or endpoint (in a client application) programmatically or in a configuration file. For more information about using system-provided behaviors, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md) and [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md).  
+Behaviors enable you to modify default behavior and add custom extensions that inspect and validate service configuration or modify runtime behavior in Windows Communication Foundation (WCF) client and service applications. This topic describes the behavior interfaces, how to implement them, and how to add them to the service description (in a service application) or endpoint (in a client application) programmatically or in a configuration file. For more information about using system-provided behaviors, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md) and [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md).  
   
 ## Behaviors  
- Behavior types are added to the service or service endpoint description objects (on the service or client, respectively) before those objects are used by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to create a runtime that executes a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service or a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client. When these behaviors are called during the runtime construction process they are then able to access runtime properties and methods that modify the runtime constructed by the contract, bindings, and addresses.  
+ Behavior types are added to the service or service endpoint description objects (on the service or client, respectively) before those objects are used by Windows Communication Foundation (WCF) to create a runtime that executes a WCF service or a WCF client. When these behaviors are called during the runtime construction process they are then able to access runtime properties and methods that modify the runtime constructed by the contract, bindings, and addresses.  
   
 ### Behavior Methods  
  All behaviors have an `AddBindingParameters` method, an `ApplyDispatchBehavior` method, a `Validate` method, and an `ApplyClientBehavior` method with one exception: Because <xref:System.ServiceModel.Description.IServiceBehavior> cannot execute in a client, it does not implement `ApplyClientBehavior`.  
@@ -42,9 +28,9 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 > [!NOTE]
 >  For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a client, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a service dispatcher, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md).  
   
- Most [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] users do not interact with the runtime directly; instead they use core programming model constructs like endpoints, contracts, bindings, addresses, and behavior attributes on classes or behaviors in configuration files. These constructs make up the *description tree*, which is the complete specification for constructing a runtime to support a service or client described by the description tree.  
+ Most WCF users do not interact with the runtime directly; instead they use core programming model constructs like endpoints, contracts, bindings, addresses, and behavior attributes on classes or behaviors in configuration files. These constructs make up the *description tree*, which is the complete specification for constructing a runtime to support a service or client described by the description tree.  
   
- There are four kinds of behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]:  
+ There are four kinds of behaviors in WCF:  
   
 -   Service behaviors (<xref:System.ServiceModel.Description.IServiceBehavior> types) enable the customization of the entire service runtime including <xref:System.ServiceModel.ServiceHostBase>.  
   
@@ -73,24 +59,24 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
 3.  Implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration. This enables the use of the service behavior from application configuration files.  
   
- Examples of service behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>, and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
+ Examples of service behaviors in WCF include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>, and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
   
 #### Contract Behaviors  
  Contract behaviors, which implement the <xref:System.ServiceModel.Description.IContractBehavior> interface, are used to extend both the client and service runtime across a contract.  
   
- There are two mechanisms for adding contract behaviors to a contract.  The first mechanism is to create a custom attribute to be used on the contract interface. When a contract interface is passed to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] examines the attributes on the interface. If any attributes are implementations of <xref:System.ServiceModel.Description.IContractBehavior>, those are added to the behaviors collection on the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> created for that interface.  
+ There are two mechanisms for adding contract behaviors to a contract.  The first mechanism is to create a custom attribute to be used on the contract interface. When a contract interface is passed to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>, WCF examines the attributes on the interface. If any attributes are implementations of <xref:System.ServiceModel.Description.IContractBehavior>, those are added to the behaviors collection on the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> created for that interface.  
   
  You can also implement the <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=nameWithType> on the custom contract behavior attribute. In this case, the behavior is as follows when applied to:  
   
- •A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
+ •A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and WCF ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
  •A service class. In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property.  
   
- •A callback class. In this case, the behavior is applied to the duplex client's endpoint and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property.  
+ •A callback class. In this case, the behavior is applied to the duplex client's endpoint and WCF ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property.  
   
  The second mechanism is to add the behavior to the behaviors collection on a <xref:System.ServiceModel.Description.ContractDescription>.  
   
- Examples of contract behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include the <xref:System.ServiceModel.DeliveryRequirementsAttribute?displayProperty=nameWithType> attribute. For more information and an example, see the reference topic.  
+ Examples of contract behaviors in WCF include the <xref:System.ServiceModel.DeliveryRequirementsAttribute?displayProperty=nameWithType> attribute. For more information and an example, see the reference topic.  
   
 #### Endpoint Behaviors  
  Endpoint behaviors, which implement <xref:System.ServiceModel.Description.IEndpointBehavior>, are the primary mechanism by which you modify the entire service or client run time for a specific endpoint.  
@@ -106,11 +92,11 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 #### Operation Behaviors  
  Operation behaviors, which implement the <xref:System.ServiceModel.Description.IOperationBehavior> interface, are used to extend both the client and service runtime for each operation.  
   
- There are two mechanisms for adding operation behaviors to an operation. The first mechanism is to create a custom attribute to be used on the method that models the operation. When an operation is added to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory>, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] adds any  <xref:System.ServiceModel.Description.IOperationBehavior> attributes to the behaviors collection on the <xref:System.ServiceModel.Description.OperationDescription> created for that operation.  
+ There are two mechanisms for adding operation behaviors to an operation. The first mechanism is to create a custom attribute to be used on the method that models the operation. When an operation is added to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory>, WCF adds any  <xref:System.ServiceModel.Description.IOperationBehavior> attributes to the behaviors collection on the <xref:System.ServiceModel.Description.OperationDescription> created for that operation.  
   
  The second mechanism is by directly adding the behavior to the behaviors collection on a constructed <xref:System.ServiceModel.Description.OperationDescription>.  
   
- Examples of operation behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include the <xref:System.ServiceModel.OperationBehaviorAttribute> and the <xref:System.ServiceModel.TransactionFlowAttribute>.  
+ Examples of operation behaviors in WCF include the <xref:System.ServiceModel.OperationBehaviorAttribute> and the <xref:System.ServiceModel.TransactionFlowAttribute>.  
   
  For more information and an example, see the reference topic.  
   

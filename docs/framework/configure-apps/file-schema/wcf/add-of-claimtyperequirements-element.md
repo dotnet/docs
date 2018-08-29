@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;claimTypeRequirements&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;claimTypeRequirements&gt; element
 Specifies the types of required and optional claims expected to appear in the federated credential. For example, services state the requirements on incoming credentials, which must possess a certain set of claim types.  

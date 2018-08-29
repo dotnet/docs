@@ -1,16 +1,9 @@
 ---
 title: "Line &lt;number&gt; cannot be parsed using the current Delimiters"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedDelimitedLine"
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Line &lt;number&gt; cannot be parsed using the current Delimiters
 The specified line cannot be parsed because it uses delimiters other than those specified.  

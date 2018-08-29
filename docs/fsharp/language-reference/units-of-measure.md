@@ -1,17 +1,8 @@
 ---
 title: Units of Measure (F#)
 description: Learn how floating point and signed integer values in F# can have associated units of measure, which are typically used to indicate length, volume, and mass.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: cb2eb658-df6c-422e-afad-97422609c773 
 ---
-
 # Units of Measure
 
 Floating point and signed integer values in F# can have associated units of measure, which are typically used to indicate length, volume, mass, and so on. By using quantities with units, you enable the compiler to verify that arithmetic relationships have the correct units, which helps prevent programming errors.
@@ -113,8 +104,8 @@ To convert a unitless value to a value that has units, you can multiply by a 1 o
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6906.fs)]
     
-## Units of Measure in the F# Power Pack
-A unit library is available in the F# PowerPack. The unit library includes SI units and physical constants.
+## Units of Measure in the F# Core library
+A unit library is available in the `FSharp.Data.UnitSystems.SI` namespace. It includes SI units in both their symbol form (like `m` for meter) in the `UnitSymbols` sub-namespace, and their full name (like `meter` for meter) in the `UnitNames` sub-namespace.
 
 
 ## See Also

@@ -1,29 +1,15 @@
 ---
 title: "Forward-Compatible Data Contracts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], forward compatibility"
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Forward-Compatible Data Contracts
-A feature of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract system is that contracts can evolve over time in nonbreaking ways. That is, a client with an older version of a data contract can communicate with a service with a newer version of the same data contract, or a client with a newer version of a data contract can communicate with an older version of the same data contract. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
+A feature of the Windows Communication Foundation (WCF) data contract system is that contracts can evolve over time in nonbreaking ways. That is, a client with an older version of a data contract can communicate with a service with a newer version of the same data contract, or a client with a newer version of a data contract can communicate with an older version of the same data contract. For more information, see [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
   
  You can apply most of the versioning features on an as-needed basis when new versions of an existing data contract are created. However, one versioning feature, *round-tripping*, must be built into the type from the first version in order to work properly.  
   
@@ -43,7 +29,7 @@ A feature of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data co
  [!code-csharp[C_DataContract#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#8)]
  [!code-vb[C_DataContract#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#8)]  
   
- When the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure encounters data that is not part of the original data contract, the data is stored in the property and preserved. It is not processed in any other way except for temporary storage. If the object is returned back to where it originated, the original (unknown) data is also returned. Therefore, the data has made a round trip to and from the originating endpoint without loss. Note, however, that if the originating endpoint required the data to be processed, that expectation is unmet, and the endpoint must somehow detect and accommodate the change.  
+ When the WCF infrastructure encounters data that is not part of the original data contract, the data is stored in the property and preserved. It is not processed in any other way except for temporary storage. If the object is returned back to where it originated, the original (unknown) data is also returned. Therefore, the data has made a round trip to and from the originating endpoint without loss. Note, however, that if the originating endpoint required the data to be processed, that expectation is unmet, and the endpoint must somehow detect and accommodate the change.  
   
  The <xref:System.Runtime.Serialization.ExtensionDataObject> type contains no public methods or properties. Thus, it is impossible to get direct access to the data stored inside the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property.  
   

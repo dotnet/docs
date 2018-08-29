@@ -1,14 +1,6 @@
 ---
 title: "Peverify.exe (PEVerify Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "portable executable files, PEVerify"
   - "verifying MSIL and metadata"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "PEverify.exe"
   - "PE files, PEVerify"
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Peverify.exe (PEVerify Tool)
 The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers, script engine developers, and so on) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If, as a developer, you are using such a compiler, you may want to verify that you have not compromised the type safety of your code. In this situation, you can run the PEVerify tool on your files to check the MSIL and metadata.  

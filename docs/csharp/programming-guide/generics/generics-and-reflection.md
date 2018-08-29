@@ -1,17 +1,10 @@
 ---
 title: "Generics and Reflection (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], reflection"
   - "reflection [C#], generic types"
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Generics and Reflection (C# Programming Guide)
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  

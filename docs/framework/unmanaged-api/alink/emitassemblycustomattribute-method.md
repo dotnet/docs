@@ -1,14 +1,6 @@
 ---
 title: "EmitAssemblyCustomAttribute Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.EmitAssemblyCustomAttribute"
   - "EmitAssemblyCustomAttribute"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b72f5409-79af-4fa7-90a7-7630eec170f1
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EmitAssemblyCustomAttribute Method
 Call to set assembly-level custom attributes.  

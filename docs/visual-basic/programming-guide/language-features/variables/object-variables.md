@@ -1,23 +1,12 @@
 ---
 title: "Object Variables in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "object variables [Visual Basic], about object variables"
   - "variables [Visual Basic], object"
   - "objects [Visual Basic], accessing"
   - "object variables [Visual Basic]"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Variables in Visual Basic
 In addition to storing values directly, a variable can refer to an object. You assign an object to a variable for the same reasons you assign any value to a variable:  

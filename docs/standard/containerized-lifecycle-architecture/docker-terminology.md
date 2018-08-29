@@ -1,14 +1,9 @@
 ---
 title: Docker terminology
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker terminology
 
@@ -46,5 +41,5 @@ This section lists terms and definitions with which you should become familiar w
 
 
 >[!div class="step-by-step"]
-[Previous] (what-is-docker.md)
-[Next] (docker-containers-images-and-registries.md)
+[Previous](what-is-docker.md)
+[Next](docker-containers-images-and-registries.md)

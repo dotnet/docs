@@ -1,13 +1,6 @@
 ---
 title: "Playing Sounds (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "system sounds, playing"
   - "system sounds"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "sounds, background"
   - "playing sounds"
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Playing Sounds (Visual Basic)
 The `My.Computer.Audio` object provides methods for playing sounds.  

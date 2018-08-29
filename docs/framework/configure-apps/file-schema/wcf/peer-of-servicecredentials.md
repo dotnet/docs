@@ -1,21 +1,7 @@
 ---
 title: "&lt;peer&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;peer&gt; of &lt;serviceCredentials&gt;
 Specifies the current credentials for a peer node.  

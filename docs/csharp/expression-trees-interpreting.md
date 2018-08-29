@@ -1,14 +1,7 @@
 ---
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
@@ -588,7 +581,7 @@ capabilities.
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
 A full implementation is included in the .NET Standard 
-under the name [ExpressionVisitor](/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)
+under the name <xref:System.Linq.Expressions.ExpressionVisitor>
 and can handle all the possible node types.
 
 Finally, the library I used in this article was built for demonstration

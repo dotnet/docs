@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::SetEnterLeaveFunctionHooks Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.SetEnterLeaveFunctionHooks"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 72399636-c219-4ffd-8ac8-39432c9d4641
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::SetEnterLeaveFunctionHooks Method
 Specifies profiler-implemented functions to be called on "enter", "leave", and "tailcall" hooks of managed functions.  

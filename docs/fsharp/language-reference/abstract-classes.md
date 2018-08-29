@@ -1,17 +1,8 @@
 ---
 title: Abstract Classes (F#)
 description: Learn about F# abstract classes, which leave some or all members unimplemented and represent common functionality of a diverse set of object types.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: a3dcc335-433b-4672-ac2d-ae6b11b816f3 
 ---
-
 # Abstract Classes
 
 *Abstract classes* are classes that leave some or all members unimplemented, so that implementations can be provided by derived classes.

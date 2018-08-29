@@ -1,14 +1,6 @@
 ---
 title: "Creating a Class to Hold DLL Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop, DLL functions"
   - "unmanaged functions"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "platform invoke, creating class for functions"
   - "DLL functions"
 ms.assetid: e08e4c34-0223-45f7-aa55-a3d8dd979b0f
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating a Class to Hold DLL Functions
 Wrapping a frequently used DLL function in a managed class is an effective approach to encapsulate platform functionality. Although it is not mandatory to do so in every case, providing a class wrapper is convenient because defining DLL functions can be cumbersome and error-prone. If you are programming in Visual Basic or C#, you must declare DLL functions within a class or Visual Basic module.  

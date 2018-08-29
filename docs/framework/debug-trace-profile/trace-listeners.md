@@ -1,14 +1,6 @@
 ---
 title: "Trace Listeners"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,8 @@ helpviewer_keywords:
   - "tracing [.NET Framework], trace listeners"
   - "logs, trace listeners"
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Trace Listeners
 When using **Trace**, **Debug** and <xref:System.Diagnostics.TraceSource>, you must have a mechanism for collecting and recording the messages that are sent. Trace messages are received by *listeners*. The purpose of a listener is to collect, store, and route tracing messages. Listeners direct the tracing output to an appropriate target, such as a log, window, or text file.  

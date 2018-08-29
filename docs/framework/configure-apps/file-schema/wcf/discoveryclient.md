@@ -1,21 +1,7 @@
 ---
 title: "&lt;discoveryClient&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;discoveryClient&gt;
 A configuration element for creating a custom binding that enables a client application to automatically search for a discoverable service and find its address at runtime.  

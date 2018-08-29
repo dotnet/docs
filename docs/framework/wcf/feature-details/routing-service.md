@@ -1,26 +1,12 @@
 ---
 title: "Routing Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ca7c216a-5141-4132-8193-102c181d2eba
-caps.latest.revision: 13
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Routing Service
 The Routing Service is a generic SOAP intermediary that acts as a message router. The core functionality of the Routing Service is the ability to route messages based on message content, which allows a message to be forwarded to a client endpoint based on a value within the message itself, in either the header or the message body.  
   
- The <xref:System.ServiceModel.Routing.RoutingService> is implemented as a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service in the <xref:System.ServiceModel.Routing> namespace. The Routing Service exposes one or more service endpoints that receive messages and then routes each message to one or more client endpoints based on the message content. The service provides the following features:  
+ The <xref:System.ServiceModel.Routing.RoutingService> is implemented as a Windows Communication Foundation (WCF) service in the <xref:System.ServiceModel.Routing> namespace. The Routing Service exposes one or more service endpoints that receive messages and then routes each message to one or more client endpoints based on the message content. The service provides the following features:  
   
 -   Content-based routing  
   
@@ -42,10 +28,10 @@ The Routing Service is a generic SOAP intermediary that acts as a message router
   
  While it is possible to create an intermediary service that accomplishes one or more of these goals, often such an implementation is tied to a specific scenario or solution and cannot be readily applied to new applications.  
   
- The Routing Service provides a generic, dynamically configurable, pluggable SOAP intermediary that is compatible with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Service and Channel models and allows you to perform content-based routing of SOAP-based messages.  
+ The Routing Service provides a generic, dynamically configurable, pluggable SOAP intermediary that is compatible with the WCF Service and Channel models and allows you to perform content-based routing of SOAP-based messages.  
   
 > [!NOTE]
->  The Routing Service does not currently support routing of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](http://go.microsoft.com/fwlink/?LinkId=164589) (http://go.microsoft.com/fwlink/?LinkId=164589).  
+>  The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](http://go.microsoft.com/fwlink/?LinkId=164589) (http://go.microsoft.com/fwlink/?LinkId=164589).  
   
 ## Content-Based Routing  
  Content-based routing is the ability to route a message based on one or more values contained within the message. The Routing Service inspects each message and routes it to the destination endpoint based on the message contents and the routing logic you create. Content-based routing provides the basis for service aggregation, service versioning, and priority routing.  
@@ -95,12 +81,12 @@ The Routing Service is a generic SOAP intermediary that acts as a message router
   
  If the Routing Service encounters a <xref:System.ServiceModel.CommunicationException> while attempting to send a message, error handling will take place.  These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>.  The error-handling code will also catch and attempt to retry sending when a **TimeoutException** occurs, which is another common exception that is not derived from **CommunicationException**.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] error handling, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).  
+ For more information about error handling, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).  
   
 ## Backup Endpoints  
  In addition to the destination client endpoints associated with each filter definition in the filter table, you can also create a list of backup endpoints that the message will be routed to in the event of a transmission failure. If an error occurs and a backup list is defined for the filter entry, the Routing Service will attempt to send the message to the first endpoint defined in the list. If this transmission attempt fails, the service will try the next endpoint, and continue this process until the transmission attempt succeeds, returns a non-transmission related error, or all endpoints in the backup list have returned a transmission error.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] backup endpoints, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
+ For more information about backup endpoints, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
   
 ## Streaming  
  The routing service can successfully stream messages if you set the binding to support streaming.  However, there are some conditions under which messages may need to buffered:  

@@ -1,21 +1,7 @@
 ---
 title: "&lt;pnrpPeerResolver&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;pnrpPeerResolver&gt;
 Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used as a resolver. This element is optional because PNRP is the default resolver.  

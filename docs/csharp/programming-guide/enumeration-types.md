@@ -1,19 +1,12 @@
 ---
 title: "Enumeration types (C# Programming Guide)"
 ms.date: "09/10/2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [C#]"
   - "enums [C#]"
   - "C# Language, enums"
   - "bit flags [C#]"
 ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Enumeration types (C# Programming Guide)
 
@@ -43,7 +36,7 @@ The following are advantages of using an enum instead of a numeric type:
 
 - You clearly specify for client code which values are valid for the variable.
 
-- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], IntelliSense lists the defined values.
+- In Visual Studio, IntelliSense lists the defined values.
 
 When you do not specify values for the elements in the enumerator list, the values are automatically incremented by 1. In the previous example, `Day.Sunday` has a value of 0, `Day.Monday` has a value of 1, and so on. When you create a new `Day` object, it will have a default value of `Day.Sunday` (0) if you do not explicitly assign it a value. When you create an enum, select the most logical default value and give it a value of zero. That will cause all enums to have that default value if they are not explicitly assigned a value when they are created.
 

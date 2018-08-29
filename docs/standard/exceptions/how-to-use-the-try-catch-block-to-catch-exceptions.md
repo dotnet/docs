@@ -1,13 +1,7 @@
 ---
 title: "How to: Use the Try-Catch Block to Catch Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to use the try/catch block to catch exceptions
 

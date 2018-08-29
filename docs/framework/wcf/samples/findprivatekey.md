@@ -1,18 +1,9 @@
 ---
 title: "FindPrivateKey sample - WCF"
 ms.date: "12/04/2017"
-ms.prod: ".net-framework"
-ms.technology: "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "FindPrivateKey"
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FindPrivateKey sample
 

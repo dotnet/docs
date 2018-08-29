@@ -1,16 +1,9 @@
 ---
 title: Creating, evolving, and versioning microservice APIs and contracts
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating, evolving, and versioning microservice APIs and contracts
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Creating, evolving, and versioning microservice APIs and contracts
 
@@ -39,5 +32,5 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 
 
 >[!div class="step-by-step"]
-[Previous] (asynchronous-message-based-communication.md)
-[Next] (microservices-addressability-service-registry.md)
+[Previous](asynchronous-message-based-communication.md)
+[Next](microservices-addressability-service-registry.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Get the Return Value of a Page Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "return values of page functions [WPF]"
   - "getting [WPF], return values of page functions"
 ms.assetid: 75470af6-256c-4c46-87e7-705080723a1c
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Get the Return Value of a Page Function
 This example shows how to get the result that is returned by a page function.  

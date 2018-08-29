@@ -1,26 +1,12 @@
 ---
 title: "ToolBar Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ToolBar"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], about toolbars"
   - "ToolBar control [Windows Forms], about ToolBar controls"
 ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolBar Control Overview (Windows Forms)
 > [!NOTE]

@@ -1,18 +1,10 @@
 ---
 title: "How to: Display Bound Data in a DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataRepeater, data-binding"
   - "DataRepeater, displaying bound controls"
 ms.assetid: 56a15326-1334-4275-af4e-075cad79e6f7
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Display Bound Data in a DataRepeater Control (Visual Studio)
 The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is to display bound data from a database or other data source.  

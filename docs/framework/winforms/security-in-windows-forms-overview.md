@@ -1,14 +1,6 @@
 ---
 title: "Security in Windows Forms Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "code access security [Windows Forms], Windows Forms"
   - "permissions [Windows Forms], Windows Forms"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "security [Windows Forms], about security"
   - "access control [Windows Forms], Windows Forms"
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Security in Windows Forms Overview
 Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], all code running on a user's computer had the same rights or permissions to access resources that a user of the computer had. For example, if the user was allowed to access the file system, the code was allowed to access the file system; if the user was allowed to access a database, the code was allowed to access that database. Although these rights or permissions may be acceptable for code in executables that the user has explicitly installed on the local computer, they may not be acceptable for potentially malicious code coming from the Internet or a local Intranet. This code should not be able to access the user's computer resources without permission.  
@@ -57,7 +43,7 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
   
  When you request optional permissions, you must handle security exceptions that will be generated if your application performs an action that requires permissions not granted to it. Appropriate handling of the <xref:System.Security.SecurityException> will ensure that your application can continue to operate. Your application can use the exception to determine whether a feature should become disabled for the user. For example, an application can disable the **Save** menu option if the required file permission is not granted.  
   
- Sometimes, it is difficult to know if you have asserted all the appropriate permissions. A method call which looks innocuous on the surface, for example, may access the file system at some point during its execution. If you do not deploy your application with all the required permissions, it may test fine when you debug it on your desktop, but fail when deployed. Both the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK and [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] contain tools for calculating the permissions an application needs: the MT.exe command line tool and the Calculate Permissions feature of [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], respectively.  
+ Sometimes, it is difficult to know if you have asserted all the appropriate permissions. A method call which looks innocuous on the surface, for example, may access the file system at some point during its execution. If you do not deploy your application with all the required permissions, it may test fine when you debug it on your desktop, but fail when deployed. Both the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK and [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] contain tools for calculating the permissions an application needs: the MT.exe command line tool and the Calculate Permissions feature of Visual Studio, respectively.  
   
  The following topics describe additional Windows Forms security features.  
   
@@ -83,12 +69,12 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
   
  Which technology you choose will depend on your deployment environment. For more information, see [Choosing a ClickOnce Deployment Strategy](/visualstudio/deployment/choosing-a-clickonce-deployment-strategy).  
   
- By default, [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] applications deployed using either [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tools (Mage.exe and MageUI.exe) are configured to run on a client computer that has Full Trust. If you are deploying your application by using partial trust or by using only some additional permissions, you will have to change this default. You can do this with either [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tool MageUI.exe when you configure your deployment. For more information about how to use MageUI.exe, see Walkthrough: Deploying a ClickOnce Application from the Command Line.  Also see [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.110\)) or [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.120\)).  
+ By default, [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] applications deployed using either Visual Studio or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tools (Mage.exe and MageUI.exe) are configured to run on a client computer that has Full Trust. If you are deploying your application by using partial trust or by using only some additional permissions, you will have to change this default. You can do this with either Visual Studio or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tool MageUI.exe when you configure your deployment. For more information about how to use MageUI.exe, see Walkthrough: Deploying a ClickOnce Application from the Command Line.  Also see [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.110\)) or [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.120\)).  
   
  For more information about the security aspects of [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] and Permission Elevation, see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications). For more information about Trusted Application Deployment, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).  
   
 ### Testing the Application  
- If you have deployed your Windows Forms application by using [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
+ If you have deployed your Windows Forms application by using Visual Studio, you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
   
 ## See Also  
  [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  

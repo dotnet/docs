@@ -1,21 +1,7 @@
 ---
 title: "ConnectionOrientedTransportBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c1308313-f0e2-49e6-977d-6b4ce9ad35d1
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ConnectionOrientedTransportBindingElement
 ConnectionOrientedTransportBindingElement  

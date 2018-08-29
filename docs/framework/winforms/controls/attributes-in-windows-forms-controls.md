@@ -1,26 +1,12 @@
 ---
 title: "Attributes in Windows Forms Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "attributes [Windows Forms]"
   - "attributes [Windows Forms], data binding properties"
   - "attributes [Windows Forms], control properties"
   - "attributes [Windows Forms], classes"
 ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Attributes in Windows Forms Controls
 The .NET Framework provides a variety of attributes you can apply to the members of your custom controls and components. Some of these attributes affect the run-time behavior of a class, and others affect the design-time behavior.  
@@ -35,7 +21,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
 |<xref:System.ComponentModel.CategoryAttribute>|Specifies the name of the category in which to group the property or event when displayed in a <xref:System.Windows.Forms.PropertyGrid> control set to <xref:System.Windows.Forms.PropertySort.Categorized> mode.|  
 |<xref:System.ComponentModel.DefaultValueAttribute>|Specifies the default value for a property.|  
 |<xref:System.ComponentModel.DescriptionAttribute>|Specifies a description for a property or event.|  
-|<xref:System.ComponentModel.DisplayNameAttribute>|Specifies the display name for a property, event, or `public``void` method that takes no arguments.|  
+|<xref:System.ComponentModel.DisplayNameAttribute>|Specifies the display name for a property, event, or `public void` method that takes no arguments.|  
 |<xref:System.ComponentModel.EditorAttribute>|Specifies the editor to use to change a property.|  
 |<xref:System.ComponentModel.EditorBrowsableAttribute>|Specifies that a property or method is viewable in an editor.|  
 |<xref:System.ComponentModel.Design.HelpKeywordAttribute>|Specifies the context keyword for a class or member.|  

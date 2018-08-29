@@ -1,21 +1,10 @@
 ---
 title: "Extending XSLT Style Sheets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: df4ba2bf-a99e-4d22-bbf3-04fc67669dbc
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Extending XSLT Style Sheets
 This section describes the different methods of extending the XSLT functionality. You can add extension objects or parameters using the <xref:System.Xml.Xsl.XsltArgumentList> class. The extension objects or parameters can then be called from the style sheet. In addition, you can also embed script blocks into the style sheet by using the `msxsl:script` element.  

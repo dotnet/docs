@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyCacheItem::CreateStream Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyCacheItem.CreateStream"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 697ab0f4-470c-4baa-a415-4a975c42d0d5
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyCacheItem::CreateStream Method
 Creates a stream with the specified name and format.  
@@ -60,7 +48,7 @@ HRESULT CreateStream (
  [in] Format-specific flags defined in Fusion.idl.  
   
  `ppIStream`  
- [out] A pointer to the address of the returned [IStream](https://msdn.microsoft.com/library/aa380034.aspx) instance.  
+ [out] A pointer to the address of the returned [IStream](/windows/desktop/api/objidl/nn-objidl-istream) instance.  
   
  `puliMaxSize`  
  [in, optional] The maximum size of the stream referenced by `ppIStream`.  

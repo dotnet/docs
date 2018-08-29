@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.ReplayMessageRetry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e5b820ae-504d-405a-926a-9effa41d2369
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.ReplayMessageRetry
 A replay message retry was sent to an unresponsive coordinator.  

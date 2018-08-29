@@ -1,13 +1,6 @@
 ---
 title: "How to: Define Multiple Versions of a Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "procedures [Visual Basic], multiple versions"
   - "procedure overloading [Visual Basic], multiple versions"
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Define Multiple Versions of a Procedure (Visual Basic)
 You can define a procedure in multiple versions by *overloading* it, using the same name but a different parameter list for each version. The purpose of overloading is to define several closely related versions of a procedure without having to differentiate them by name.  
@@ -30,7 +20,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
   
 2.  Precede the `Sub` or `Function` keyword in each declaration with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword. You can optionally omit `Overloads` in the declarations, but if you include it in any of the declarations, you must include it in every declaration.  
   
-3.  Following each declaration statement, write procedure code to handle the specific case where the calling code supplies arguments matching that version's parameter list. You do not have to test for which parameters the calling code has supplied. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] passes control to the matching version of your procedure.  
+3.  Following each declaration statement, write procedure code to handle the specific case where the calling code supplies arguments matching that version's parameter list. You do not have to test for which parameters the calling code has supplied. Visual Basic passes control to the matching version of your procedure.  
   
 4.  Terminate each version of the procedure with the `End Sub` or `End Function` statement as appropriate.  
   

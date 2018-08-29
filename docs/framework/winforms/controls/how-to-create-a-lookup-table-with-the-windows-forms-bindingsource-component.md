@@ -1,26 +1,12 @@
 ---
 title: "How to: Create a Lookup Table with the Windows Forms BindingSource Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "lookup tables"
   - "tables [Windows Forms], creating lookup tables"
   - "BindingSource component [Windows Forms], creating a lookup table"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 622fce80-879d-44be-abbf-8350ec22ca2b
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Lookup Table with the Windows Forms BindingSource Component
 A lookup table is a table of data that has a column that displays data from records in a related table. In the following procedures, a <xref:System.Windows.Forms.ComboBox> control is used to display the field with the foreign-key relationship from the parent to the child table.  

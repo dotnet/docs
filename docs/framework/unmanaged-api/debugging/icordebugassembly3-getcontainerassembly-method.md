@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugAssembly3::GetContainerAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: f5fddeb6-b82e-4ebb-b432-849ce8513c77
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAssembly3::GetContainerAssembly Method
 Returns the container assembly of this `ICorDebugAssembly3` object.  

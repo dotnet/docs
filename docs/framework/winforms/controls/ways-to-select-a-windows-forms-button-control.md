@@ -1,23 +1,9 @@
 ---
 title: "Ways to Select a Windows Forms Button Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Ways to Select a Windows Forms Button Control
 A Windows Forms button can be selected in the following ways:  

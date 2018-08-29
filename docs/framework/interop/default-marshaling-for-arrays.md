@@ -1,10 +1,6 @@
 ---
 title: "Default Marshaling for Arrays"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,12 +8,8 @@ helpviewer_keywords:
   - "interop marshaling, arrays"
   - "arrays, interop marshaling"
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Default Marshaling for Arrays
 In an application consisting entirely of managed code, the common language runtime passes array types as In/Out parameters. In contrast, the interop marshaler passes an array as In parameters by default.  

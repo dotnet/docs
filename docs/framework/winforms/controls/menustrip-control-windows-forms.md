@@ -1,24 +1,10 @@
 ---
 title: "MenuStrip Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms]"
   - "menus"
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # MenuStrip Control (Windows Forms)
 This control groups application commands and makes them easily accessible.  

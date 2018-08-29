@@ -1,16 +1,9 @@
 ---
 title: Securing .NET Microservices and Web Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Securing .NET Microservices and Web Applications
-keywords: Docker, Microservices, ASP.NET, Container
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Securing .NET Microservices and Web Applications
 
@@ -44,7 +37,7 @@ services.AddDbContext<ApplicationDbContext>(options =>
 
 Once ASP.NET Core Identity is configured, you enable it by calling app.UseIdentity in the service’s Startup.Configure method.
 
-Using ASP.NET Code Identity enables several scenarios:
+Using ASP.NET Core Identity enables several scenarios:
 
 -   Create new user information using the UserManager type (userManager.CreateAsync).
 
@@ -251,5 +244,5 @@ The JWT bearer authentication middleware can also support more advanced scenario
 
 
 >[!div class="step-by-step"]
-[Previous] (../implement-resilient-applications/monitor-app-health.md)
-[Next] (authorization-net-microservices-web-applications.md)
+[Previous](../implement-resilient-applications/monitor-app-health.md)
+[Next](authorization-net-microservices-web-applications.md)

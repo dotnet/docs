@@ -1,21 +1,7 @@
 ---
 title: "208 - MessageInspectorAfterReceiveInvoked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dfb5f7b0-4346-4949-8104-351726b1f502
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 208 - MessageInspectorAfterReceiveInvoked
 ## Properties  

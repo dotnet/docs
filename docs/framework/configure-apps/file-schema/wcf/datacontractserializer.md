@@ -1,21 +1,7 @@
 ---
 title: "dataContractSerializer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # dataContractSerializer
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  

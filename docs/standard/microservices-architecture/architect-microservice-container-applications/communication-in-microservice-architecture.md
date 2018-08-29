@@ -1,16 +1,9 @@
 ---
 title: Communication in a microservice architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Communication in a microservice architecture architectures
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Communication in a microservice architecture
 
@@ -110,5 +103,5 @@ Since communication is in real time, client apps show the changes almost instant
 
 
 >[!div class="step-by-step"]
-[Previous] (direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
-[Next] (asynchronous-message-based-communication.md)
+[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
+[Next](asynchronous-message-based-communication.md)

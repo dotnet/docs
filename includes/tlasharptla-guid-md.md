@@ -1,1 +1,0 @@
-globally unique identifier (GUID)

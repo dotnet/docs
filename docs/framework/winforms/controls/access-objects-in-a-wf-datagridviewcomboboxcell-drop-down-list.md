@@ -1,14 +1,6 @@
 ---
 title: "How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "combo boxes [Windows Forms], in DataGridView control"
   - "combo boxes [Windows Forms], accessing objects in DataGridViewComboBoxCell drop-down lists"
 ms.assetid: bcbe794a-d1fa-47f8-b5a3-5f085b32097d
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List
 Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> and <xref:System.Windows.Forms.DataGridViewComboBoxCell> types enable you to add arbitrary objects to their drop-down lists. With this feature, you can represent complex states in a drop-down list without having to store corresponding objects in a separate collection.  

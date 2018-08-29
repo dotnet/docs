@@ -1,21 +1,12 @@
 ---
 title: "Using the iteration variable in a lambda expression may have unexpected results"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc42324"
   - "bc42324"
 helpviewer_keywords: 
   - "BC42324"
 ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Using the iteration variable in a lambda expression may have unexpected results
 Using the iteration variable in a lambda expression may have unexpected results. Instead, create a local variable within the loop and assign it the value of the iteration variable.  

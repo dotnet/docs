@@ -1,26 +1,12 @@
 ---
 title: "Walkthrough: Changing Properties of a Hosted WPF Element at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], changing properties at design time"
   - "Windows Forms, changing properties of WPF content at design time"
   - "WPF content [Windows Forms], hosting in Windows Forms"
   - "interoperability [WPF]"
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Changing Properties of a Hosted WPF Element at Design Time
 This walkthrough shows you how to change property values of a Windows Presentation Foundation (WPF) control hosted on a Windows Form.  
@@ -36,7 +22,7 @@ This walkthrough shows you how to change property values of a Windows Presentati
 -   Use the WPF Designer for Visual Studio to change property values.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -95,4 +81,4 @@ This walkthrough shows you how to change property values of a Windows Presentati
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
  [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

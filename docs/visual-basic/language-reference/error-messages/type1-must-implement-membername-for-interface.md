@@ -1,21 +1,12 @@
 ---
 title: "&lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;membername&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30154"
   - "bc30154"
 helpviewer_keywords: 
   - "BC30154"
 ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;membername&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;
 '\<typename>' must implement '\<membername>' for interface '\<interfacename>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  

@@ -1,24 +1,10 @@
 ---
 title: "How to: Make a TextBox Control Read-Only"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "read-only TextBox controls [WPF]"
   - "TextBox control read-only"
 ms.assetid: e707ec59-8b22-473e-b77c-3060a237517a
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Make a TextBox Control Read-Only
 This example shows how to configure a <xref:System.Windows.Controls.TextBox> control to not allow user input or modification.  

@@ -1,24 +1,12 @@
 ---
 title: "&lt;generatePublisherEvidence&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "generatePublisherEvidence element"
   - "<generatePublisherEvidence> element"
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;generatePublisherEvidence&gt; Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  

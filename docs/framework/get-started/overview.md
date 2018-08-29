@@ -1,26 +1,14 @@
 ---
 title: "Overview of the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application development [.NET Framework]"
   - "common language runtime"
   - "common language runtime, about"
   - "common language runtime, overview"
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
-caps.latest.revision: 34
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Overview of the .NET Framework

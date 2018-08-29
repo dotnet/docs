@@ -1,21 +1,12 @@
 ---
 title: "Selective serialization"
 ms.date: "08/07/2017"
-ms.prod: ".net"
-ms.topic: "article"
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
   - "serialization, selective serialization"
   - "binary serialization, selective serialization"
 ms.assetid: 39c56635-95d2-4afd-aff1-b022e7649bb3
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Selective serialization
 A class often contains fields that shouldn't be serialized. For example, assume a class stores a thread ID in a member variable. When the class is deserialized, the thread stored the ID for when the class was serialized might no longer be running; so serializing this value doesn't make sense. You can prevent member variables from being serialized by marking them with the [NonSerialized](xref:System.NonSerializedAttribute) attribute as follows.  

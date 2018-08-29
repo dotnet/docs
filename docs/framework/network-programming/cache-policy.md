@@ -1,12 +1,6 @@
 ---
 title: "Cache Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time-based cache policies"
   - "location-based cache policies"
@@ -16,12 +10,9 @@ helpviewer_keywords:
   - "content cache policies"
   - "expired content"
 ms.assetid: 1a7e04ec-7872-41c2-96c6-52566dcb412b
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Cache Policy
 A cache policy defines rules that are used to determine whether a request can be satisfied using a cached copy of the requested resource. Applications specify client cache requirements for freshness, but the effective cache policy is determined by the client cache requirements, the server's content expiration requirements, and the server's revalidation requirements. The interaction of client cache policy and server requirements always results in the most conservative cache policy, to help ensure that the freshest content is returned to the client application.  

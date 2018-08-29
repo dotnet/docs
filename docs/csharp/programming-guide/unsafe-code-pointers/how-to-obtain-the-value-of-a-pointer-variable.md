@@ -1,19 +1,12 @@
 ---
 title: "How to: Obtain the Value of a Pointer Variable (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "pointer expressions [C#], indirection"
   - "pointers [C#], indirection"
   - "variables [C#], pointers"
   - "pointers [C#], * operator"
 ms.assetid: 460a813a-4995-44c1-9de2-213b91dc7668
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Obtain the Value of a Pointer Variable (C# Programming Guide)
 Use the pointer indirection operator to obtain the variable at the location pointed to by a pointer. The expression takes the following form, where `p` is a pointer type:  

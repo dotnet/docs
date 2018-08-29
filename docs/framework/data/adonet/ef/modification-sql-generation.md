@@ -1,21 +1,7 @@
 ---
 title: "Modification SQL Generation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2188a39d-46ed-4a8b-906a-c9f15e6fefd1
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modification SQL Generation
 This section discusses how to develop a modification SQL generation module for your (SQL:1999-compliant database) provider. This module is responsible for translating a modification command tree into the appropriate SQL INSERT, UPDATE or DELETE statements.  
@@ -112,7 +98,7 @@ The elements of the list are specified as type DbModificationClause, which speci
 ## Generating an Insert SQL Command  
  For a given DbInsertCommandTree in the sample provider, the generated insert command follows one of the two insert templates below.  
   
- The first template has a command to perform the insert given the values in the list of SetClauses, and a SELECT statement to return the properties specified in the Returning property for the inserted row if the Returning property was not null. The predicate element "@@ROWCOUNT > 0" is true if a row was inserted. The predicate element "keyMemberI =  keyValueI &#124; scope_identity()" takes the shape  "keyMemberI =  scope_identity()" only if keyMemeberI is a store-generated key, because scope_identity() returns the last identity value inserted into an identity (store-generated) column.  
+ The first template has a command to perform the insert given the values in the list of SetClauses, and a SELECT statement to return the properties specified in the Returning property for the inserted row if the Returning property was not null. The predicate element "\@@ROWCOUNT > 0" is true if a row was inserted. The predicate element "keyMemberI =  keyValueI &#124; scope_identity()" takes the shape  "keyMemberI =  scope_identity()" only if keyMemeberI is a store-generated key, because scope_identity() returns the last identity value inserted into an identity (store-generated) column.  
   
 ```  
 -- first insert Template  

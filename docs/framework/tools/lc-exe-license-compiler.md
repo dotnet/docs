@@ -1,14 +1,6 @@
 ---
 title: "Lc.exe (License Compiler)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Lc.exe"
   - ".licx file"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "Windows Forms, control licenses"
   - "licensed controls [Windows Forms]"
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Lc.exe (License Compiler)
 The License Compiler reads text files that contain licensing information and produces a binary file that can be embedded in a common language runtime executable as a resource.  

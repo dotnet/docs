@@ -1,23 +1,11 @@
 ---
 title: "Controlling .NET Framework Logging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CLR ETW events, logging"
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
-caps.latest.revision: 40
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Controlling .NET Framework Logging
 You can use event tracing for Windows (ETW) to record common language runtime (CLR) events. You can create and view traces by using the following tools:  

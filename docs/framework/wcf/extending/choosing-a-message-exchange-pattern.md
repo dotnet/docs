@@ -1,21 +1,7 @@
 ---
 title: "Choosing a Message Exchange Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Choosing a Message Exchange Pattern
 The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
@@ -56,7 +42,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
 >  For the UDP transport, the only MEP that is supported is datagram, because UDP is inherently a fire and forget protocol.  
   
 ## Sessions and Sessionful Channels  
- In the networking world, there are connection-oriented protocols (for example, TCP) and connection-less protocols (for example, UDP). [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the term session to mean a connection-like logical abstraction. Sessionful WCF protocols are similar to connection-oriented network protocols and sessionless WCF protocols are similar to connection-less network protocols.  
+ In the networking world, there are connection-oriented protocols (for example, TCP) and connection-less protocols (for example, UDP). WCF uses the term session to mean a connection-like logical abstraction. Sessionful WCF protocols are similar to connection-oriented network protocols and sessionless WCF protocols are similar to connection-less network protocols.  
   
  In the channel object model, each logical session manifests as an instance of a sessionful channel. Therefore every new session created by the client, and accepted on the service, corresponds to a new sessionful channel on each side. The following diagram shows, on the top, the structure of sessionless channels, and on the bottom, the structure of sessionful channels.  
   

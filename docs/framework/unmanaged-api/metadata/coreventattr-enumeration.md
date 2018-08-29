@@ -1,14 +1,6 @@
 ---
 title: "CorEventAttr Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorEventAttr"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorEventAttr Enumeration
 Contains values that describe the metadata of an event.  

@@ -1,18 +1,7 @@
 ---
 title: "Working with Global Namespaces (Visual Basic) (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Working with Global Namespaces (Visual Basic) (LINQ to XML)
 One of the key features of XML literals in Visual Basic is the capability to declare XML namespaces by using the `Imports` statement. Using this feature, you can declare an XML namespace that uses a prefix, or you can declare a default XML namespace.  

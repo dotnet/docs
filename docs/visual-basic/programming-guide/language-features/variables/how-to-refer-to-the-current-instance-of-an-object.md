@@ -1,14 +1,6 @@
 ---
 title: "How to: Refer to the Current Instance of an Object (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], object"
   - "objects [Visual Basic], referring to current instance"
@@ -16,9 +8,6 @@ helpviewer_keywords:
   - "current instance"
   - "object variables [Visual Basic]"
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Refer to the Current Instance of an Object (Visual Basic)
 The *current instance* of an object is the instance in which the code is currently executing.  

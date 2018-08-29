@@ -2,10 +2,6 @@
 title: ResetSecurity function (Unmanaged API Reference)
 description: The ResetSecurity function assigns an impersonation token to the current thread.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "ResetSecurity"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ResetSecurity function
 Assigns the supplied impersonation token to the current thread.   

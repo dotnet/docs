@@ -1,26 +1,12 @@
 ---
 title: "ListBox Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ListBox"
 helpviewer_keywords: 
   - "list boxes [Windows Forms], about list boxes"
   - "ListBox control [Windows Forms], about ListBox control"
 ms.assetid: 37ea226b-6fc8-4c70-936a-c6af4e0cad4c
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ListBox Control Overview (Windows Forms)
 A Windows Forms <xref:System.Windows.Forms.ListBox> control displays a list from which the user can select one or more items. If the total number of items exceeds the number that can be displayed, a scroll bar is automatically added to the <xref:System.Windows.Forms.ListBox> control. When the <xref:System.Windows.Forms.ListBox.MultiColumn%2A> property is set to `true`, the list box displays items in multiple columns and a horizontal scroll bar appears. When the <xref:System.Windows.Forms.ListBox.MultiColumn%2A> property is set to `false`, the list box displays items in a single column and a vertical scroll bar appears. When <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> is set to `true`, the scroll bar appears regardless of the number of items. The <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property determines how many list items can be selected at a time.  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Run Partially Trusted Code in a Sandbox"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "partially trusted code"
   - "sandboxing"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "restricted security environment"
   - "code security, sandboxing"
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Run Partially Trusted Code in a Sandbox
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

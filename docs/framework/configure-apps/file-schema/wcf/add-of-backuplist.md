@@ -1,21 +1,7 @@
 ---
 title: "&lt;add&gt; of &lt;backupList&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt; of &lt;backupList&gt;
 Represents a configuration element that defines a backup endpoint element.  

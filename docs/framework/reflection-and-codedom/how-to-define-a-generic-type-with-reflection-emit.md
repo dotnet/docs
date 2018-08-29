@@ -1,14 +1,6 @@
 ---
 title: "How to: Define a Generic Type with Reflection Emit"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "generics [.NET Framework], dynamic types"
   - "reflection emit, generic types"
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Define a Generic Type with Reflection Emit
 This topic shows how to create a simple generic type with two type parameters, how to apply class constraints, interface constraints, and special constraints to the type parameters, and how to create members that use the type parameters of the class as parameter types and return types.  

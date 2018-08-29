@@ -1,21 +1,7 @@
 ---
 title: "Entity Framework Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Entity Framework Resources
 The following external resources provide information and support for creating Entity Framework applications.  

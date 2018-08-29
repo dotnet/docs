@@ -1,12 +1,6 @@
 ---
 title: "Is Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.is"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "TypeOf...Is expression"
   - "Is operator [Visual Basic]"
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Is Operator (Visual Basic)
 Compares two object reference variables.  

@@ -1,14 +1,6 @@
 ---
 title: "How to: Set Default Cell Styles for the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "cells [Windows Forms], styles"
   - "data grids [Windows Forms], cell styles"
 ms.assetid: 1aaaca43-5340-447e-99c0-9177d9776aa1
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Default Cell Styles for the Windows Forms DataGridView Control
 With the <xref:System.Windows.Forms.DataGridView> control, you can specify default cell styles for the entire control and for specific columns and rows. These defaults filter down from the control level to the column level, then to the row level, then to the cell level. If a particular <xref:System.Windows.Forms.DataGridViewCellStyle> property is not set at the cell level, the default property setting at the row level is used. If the property is also not set at the row level, the default column setting is used. Finally, if the property is also not set at the column level, the default <xref:System.Windows.Forms.DataGridView> setting is used. With this setting, you can avoid having to duplicate the property settings at multiple levels. At each level, simply specify the styles that differ from the levels above it. For more information, see [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  

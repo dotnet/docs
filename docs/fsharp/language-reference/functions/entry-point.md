@@ -1,17 +1,8 @@
 ---
 title: Entry Point (F#)
 description: Learn how to set the entry point to an F# program that is compiled as an executable file, where execution formally starts.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 91455443-ff9d-4510-a7e9-1560bdcd0bb0 
 ---
-
 # Entry Point
 
 This topic describes the method that you use to set the entry point to an F# program.

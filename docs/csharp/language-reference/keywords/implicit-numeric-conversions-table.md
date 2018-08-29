@@ -1,19 +1,12 @@
 ---
 title: "Implicit Numeric Conversions Table (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "conversions [C#], implicit numeric"
   - "implicit numeric conversions [C#]"
   - "numeric conversions [C#], implicit"
   - "types [C#], implicit numeric conversions"
 ms.assetid: 72eb5a94-0491-48bf-8032-d7ebfdfeb8d8
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Implicit Numeric Conversions Table (C# Reference)
 The following table shows the predefined implicit numeric conversions. Implicit conversions might occur in many situations, including method invoking and assignment statements.  
@@ -45,9 +38,10 @@ The following table shows the predefined implicit numeric conversions. Implicit 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)

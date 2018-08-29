@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw Text to a Control&#39;s Background"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], drawing text to backgrounds"
   - "text [WPF], drawing to control backgrounds"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "backgrounds [WPF], drawing text to"
   - "typography [WPF], drawing text to control backgrounds"
 ms.assetid: 686d8fba-f61c-4974-a871-c635d67a7f69
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw Text to a Control&#39;s Background
 You can draw text directly to the background of a control by converting a text string to a <xref:System.Windows.Media.FormattedText> object, and then drawing the object to the control's <xref:System.Windows.Media.DrawingContext>. You can also use this technique for drawing to the background of objects derived from <xref:System.Windows.Controls.Panel>, such as <xref:System.Windows.Controls.Canvas> and <xref:System.Windows.Controls.StackPanel>.  

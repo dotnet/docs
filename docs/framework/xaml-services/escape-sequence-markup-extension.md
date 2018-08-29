@@ -1,14 +1,6 @@
 ---
 title: "{} Escape Sequence - Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "{}"
 helpviewer_keywords: 
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "quotation mark (\") [XAML Services]"
   - "escape sequence [XAML Services]"
 ms.assetid: 3ce3e2ad-a868-43f9-9c98-b29561cb146e
-caps.latest.revision: 21
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # {} Escape Sequence / Markup Extension
 Provides the XAML escape sequence for attribute values. The escape sequence allows the subsequent values in the attribute to be interpreted as a literal.  

@@ -1,16 +1,9 @@
 ---
 title: "Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_IllegalDelimiter"
 ms.assetid: ab8a0c3a-b89c-4617-9e31-7e81f5dca433
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True
 The `TextFieldParser` cannot read from the file because a quotation mark (") has been supplied as the delimiter and `EscapeQuotes` is set to `True`.  

@@ -1,17 +1,8 @@
 ---
 title: Constructors (F#)
 description: Learn how to define and use constructors in F# to create and initialize class and structure objects.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: e0da2250-29de-4145-a1be-e5faff080759 
 ---
-
 # Constructors
 
 This topic describes how to define and use constructors to create and initialize class and structure objects.

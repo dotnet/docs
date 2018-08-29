@@ -1,13 +1,7 @@
 ---
 title: "Standard TimeSpan Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,13 +17,8 @@ helpviewer_keywords:
   - "standard TimeSpan format strings"
   - "formatting [.NET Framework], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Standard TimeSpan Format Strings
 <a name="Top"></a> A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  

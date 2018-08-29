@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::MovedReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.MovedReferences"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 996c71ae-0676-4616-a085-84ebf507649d
 topic_type: 
   - "apiref"
-caps.latest.revision: 26
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::MovedReferences Method
 Called to report the new layout of objects in the heap as a result of a compacting garbage collection.  

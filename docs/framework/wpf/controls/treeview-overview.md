@@ -1,25 +1,11 @@
 ---
 title: "TreeView Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "expanding node [WPF]"
   - "TreeView control [WPF], about TreeView control"
   - "Control class [WPF], TreeView"
 ms.assetid: 62212512-5a5c-4864-949e-b6a6a3a52c02
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TreeView Overview
 The <xref:System.Windows.Controls.TreeView> control provides a way to display information in a hierarchical structure by using collapsible nodes. This topic introduces the <xref:System.Windows.Controls.TreeView> and <xref:System.Windows.Controls.TreeViewItem> controls, and provides simple examples of their use.  

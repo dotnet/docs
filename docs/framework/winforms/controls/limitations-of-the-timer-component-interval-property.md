@@ -1,26 +1,12 @@
 ---
 title: "Limitations of the Windows Forms Timer Component&#39;s Interval Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "timers [Windows Forms], event intervals"
   - "Interval property [Windows Forms], limitations"
   - "timers [Windows Forms], Windows-based"
   - "Timer component [Windows Forms], limitations of Interval property"
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Limitations of the Windows Forms Timer Component&#39;s Interval Property
 The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:System.Windows.Forms.Timer.Interval%2A> property that specifies the number of milliseconds that pass between one timer event and the next. Unless the component is disabled, a timer continues to receive the <xref:System.Windows.Forms.Timer.Tick> event at roughly equal intervals of time.  

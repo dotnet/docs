@@ -1,21 +1,7 @@
 ---
 title: "&lt;compositeDuplex&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;compositeDuplex&gt;
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.  

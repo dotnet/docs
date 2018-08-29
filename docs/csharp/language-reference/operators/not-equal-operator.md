@@ -1,10 +1,6 @@
 ---
 title: "!= Operator (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "!=_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "not equals operator (!=) [C#]"
   - "!= operator [C#]"
 ms.assetid: eeff7a4e-ad6f-462d-9f8d-49e9b91c6c97
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # != Operator (C# Reference)
 The inequality operator (`!=`) returns false if its operands are equal, true otherwise. Inequality operators are predefined for all types, including string and object. User-defined types can overload the `!=` operator.  
@@ -27,7 +20,8 @@ The inequality operator (`!=`) returns false if its operands are equal, true oth
 ## Example  
  [!code-csharp[csRefOperators#33](../../../csharp/language-reference/operators/codesnippet/CSharp/not-equal-operator_1.cs)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Class Handling for a Routed Event"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "task_core_add_class_handling_routed_properties [WPF]"
   - "class handlers [WPF], routed events"
 ms.assetid: 15b7b06c-9112-4ee5-b30a-65d10c5c5df6
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Class Handling for a Routed Event
 Routed events can be handled either by class handlers or instance handlers on any given node in the route. Class handlers are invoked first, and can be used by class implementations to suppress events from instance handling or introduce other event specific behaviors on events that are owned by base classes. This example illustrates two closely related techniques for implementing class handlers.  

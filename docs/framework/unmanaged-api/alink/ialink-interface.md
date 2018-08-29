@@ -1,25 +1,13 @@
 ---
 title: "IALink Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 f1_keywords: 
   - "IALink"
 helpviewer_keywords: 
   - "IALink interface"
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IALink Interface
 Helps in constructing .NET Framework assemblies. Among other things, the interface contains methods that assist in writing assembly manifests for multi-module assemblies, signing assemblies with strong names, and creating netmodules.  

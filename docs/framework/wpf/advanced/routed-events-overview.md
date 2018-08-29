@@ -1,14 +1,6 @@
 ---
 title: "Routed Events Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "button set [WPF], grouped"
   - "bubbling [WPF]"
 ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Routed Events Overview
 This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
@@ -138,14 +124,14 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
  [!code-csharp[EventOvwSupport#AddHandlerCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlercode)]
  [!code-vb[EventOvwSupport#AddHandlerCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlercode)]  
   
- The next example shows the [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] operator syntax ([!INCLUDE[TLA2#tla_visualb](../../../../includes/tla2sharptla-visualb-md.md)] has slightly different operator syntax because of its handling of dereferencing):  
+ The next example shows the C# operator syntax (Visual Basic has slightly different operator syntax because of its handling of dereferencing):  
   
  [!code-csharp[EventOvwSupport#AddHandlerPlusEquals](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlerplusequals)]
  [!code-vb[EventOvwSupport#AddHandlerPlusEquals](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlerplusequals)]  
   
  For an example of how to add an event handler in code, see [Add an Event Handler Using Code](../../../../docs/framework/wpf/advanced/how-to-add-an-event-handler-using-code.md).  
   
- If you are using [!INCLUDE[TLA2#tla_visualb](../../../../includes/tla2sharptla-visualb-md.md)], you can also use the `Handles` keyword to add handlers as part of the handler declarations. For more information, see [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
+ If you are using Visual Basic, you can also use the `Handles` keyword to add handlers as part of the handler declarations. For more information, see [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
   
 <a name="concept_handled"></a>   
 ### The Concept of Handled  

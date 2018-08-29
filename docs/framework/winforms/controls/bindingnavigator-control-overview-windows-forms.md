@@ -1,14 +1,6 @@
 ---
 title: "BindingNavigator Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DataNavigator"
 helpviewer_keywords: 
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "data [Windows Forms], navigating"
   - "data navigation"
 ms.assetid: 4423eede-f8d1-4d02-822f-5bf8432680d0
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # BindingNavigator Control Overview (Windows Forms)
 You can use the <xref:System.Windows.Forms.BindingNavigator> control to create a standardized means for users to search and change data on a Windows Form. You frequently use <xref:System.Windows.Forms.BindingNavigator> with the <xref:System.Windows.Forms.BindingSource> component to enable users to move through data records on a form and interact with the records.  

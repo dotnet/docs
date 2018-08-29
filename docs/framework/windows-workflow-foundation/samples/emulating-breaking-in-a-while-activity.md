@@ -1,30 +1,18 @@
 ---
 title: "Emulating breaking in a While activity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ddff715d-d623-4b54-b841-60bacbc3ca21
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Emulating breaking in a While activity
 This sample demonstrates how to break the looping mechanism of the following activities: <xref:System.Activities.Statements.DoWhile>, <xref:System.Activities.Statements.ForEach%601>, <xref:System.Activities.Statements.While>, and <xref:System.Activities.Statements.ParallelForEach%601>.  
   
- This is useful because [!INCLUDE[wf](../../../../includes/wf-md.md)] does not include any activity to break the execution of these loops.  
+ This is useful because Windows Workflow Foundation (WF) does not include any activity to break the execution of these loops.  
   
 ## Scenario  
  The sample finds the first reliable vendor from a list of vendors (instances of the `Vendor` class). Each vendor has an `ID`, a `Name` and a numeric reliability value that determines how dependable the vendor is. The sample creates a custom activity called `FindReliableVendor` that receives two input parameters (a list of vendors and a minimum reliability value) and returns the first vendor of the list that matches the supplied criteria.  
   
 ## Breaking a Loop  
- [!INCLUDE[wf](../../../../includes/wf-md.md)] does not include an activity to break a loop. The code sample accomplishes breaking a loop by using an <xref:System.Activities.Statements.If> activity and several variables. In the sample, the <xref:System.Activities.Statements.While> activity is broken once the `reliableVendor` variable is assigned a value other than `null`.  
+ Windows Workflow Foundation (WF) does not include an activity to break a loop. The code sample accomplishes breaking a loop by using an <xref:System.Activities.Statements.If> activity and several variables. In the sample, the <xref:System.Activities.Statements.While> activity is broken once the `reliableVendor` variable is assigned a value other than `null`.  
   
  The following code example demonstrates how the sample breaks a while loop.  
   
@@ -83,6 +71,6 @@ new While(env => i.Get(env) < this.Vendors.Get(env).Count && reliableVendor.Get(
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\EmulatingBreakInWhile`

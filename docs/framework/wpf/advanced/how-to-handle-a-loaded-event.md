@@ -1,14 +1,6 @@
 ---
 title: "How to: Handle a Loaded Event"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "events [WPF], Loaded"
   - "Loaded events [WPF]"
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Handle a Loaded Event
 This example shows how to handle the <xref:System.Windows.FrameworkElement.Loaded?displayProperty=nameWithType> event, and an appropriate scenario for handling that event. The handler  creates a <xref:System.Windows.Controls.Button> when the page loads.  

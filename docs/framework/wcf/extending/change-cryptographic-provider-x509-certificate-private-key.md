@@ -1,14 +1,6 @@
 ---
 title: "How to: Change the Cryptographic Provider for an X.509 Certificate&#39;s Private Key"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,17 +8,11 @@ helpviewer_keywords:
   - "cryptographic provider [WCF], changing"
   - "cryptographic provider [WCF]"
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Change the Cryptographic Provider for an X.509 Certificate&#39;s Private Key
-This topic shows how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security framework. For more information about using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+This topic shows how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the Windows Communication Foundation (WCF) security framework. For more information about using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
- The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework provides a way to introduce new security token types as described in [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md). It is also possible to use a custom token to replace existing system-provided token types.  
+ The WCF security framework provides a way to introduce new security token types as described in [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md). It is also possible to use a custom token to replace existing system-provided token types.  
   
  In this topic, the system-provided X.509 security token is replaced by a custom X.509 token that provides a different implementation for the certificate private key. This is useful in scenarios where the actual private key is provided by a different cryptographic provider than the default Windows cryptographic provider. One example of an alternative cryptographic provider is a hardware security module that performs all private key related cryptographic operations, and does not store the private keys in memory, thus improving security of the system.  
   
@@ -41,9 +27,9 @@ This topic shows how to change the cryptographic provider used to provide an X.5
   
 2.  Override the <xref:System.IdentityModel.Tokens.SecurityKey.KeySize%2A> read-only property. This property returns the actual key size of the certificate's public/private key pair.  
   
-3.  Override the <xref:System.IdentityModel.Tokens.SecurityKey.DecryptKey%2A> method. This method is called by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework to decrypt a symmetric key with the certificate's private key. (The key was previously encrypted with the certificate's public key.)  
+3.  Override the <xref:System.IdentityModel.Tokens.SecurityKey.DecryptKey%2A> method. This method is called by the WCF security framework to decrypt a symmetric key with the certificate's private key. (The key was previously encrypted with the certificate's public key.)  
   
-4.  Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm%2A> method. This method is called by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework to obtain an instance of the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class that represents the cryptographic provider for either the certificate's private or public key, depending on the parameters passed to the method.  
+4.  Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm%2A> method. This method is called by the WCF security framework to obtain an instance of the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class that represents the cryptographic provider for either the certificate's private or public key, depending on the parameters passed to the method.  
   
 5.  Optional. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetHashAlgorithmForSignature%2A> method. Override this method if a different implementation of the <xref:System.Security.Cryptography.HashAlgorithm> class is required.  
   
@@ -54,7 +40,7 @@ This topic shows how to change the cryptographic provider used to provide an X.5
      [!code-csharp[c_CustomX509Token#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#1)]
      [!code-vb[c_CustomX509Token#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#1)]  
   
- The following procedure shows how to integrate the custom X.509 asymmetric security key implementation created in the preceding procedure with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security framework in order to replace the system-provided X.509 security token.  
+ The following procedure shows how to integrate the custom X.509 asymmetric security key implementation created in the preceding procedure with the WCF security framework in order to replace the system-provided X.509 security token.  
   
 #### To replace the system-provided X.509 security token with a custom X.509 asymmetric security key token  
   

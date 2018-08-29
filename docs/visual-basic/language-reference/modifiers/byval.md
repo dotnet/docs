@@ -1,11 +1,6 @@
 ---
 title: "ByVal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ByVal"
   - "ByVal"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "ByVal keyword [Visual Basic], contexts"
   - "ByVal keyword [Visual Basic]"
 ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # ByVal (Visual Basic)
 Specifies that an argument is passed in such a way that the called procedure or property cannot change the value of a variable underlying the argument in the calling code.  

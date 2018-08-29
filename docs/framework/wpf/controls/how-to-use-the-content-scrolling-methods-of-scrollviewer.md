@@ -1,14 +1,6 @@
 ---
 title: "How to: Use the Content-Scrolling Methods of ScrollViewer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "scrolling methods [WPF]"
   - "ScrollViewer control [WPF], scrolling methods"
 ms.assetid: 4708cc65-6510-45f8-82e6-30b0d3e30045
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use the Content-Scrolling Methods of ScrollViewer
 This example shows how to use the scrolling methods of the <xref:System.Windows.Controls.ScrollViewer> element. These methods provide incremental scrolling of content, either by line or by page, in a <xref:System.Windows.Controls.ScrollViewer>.  

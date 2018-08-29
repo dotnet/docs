@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyReferenceList.IsAssemblyReferenceInList"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 8a570813-21be-407e-92a6-7ae8de3bc728
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method
 Gets a value that indicates whether the supplied pointer refers to an assembly in the list.  

@@ -1,21 +1,14 @@
 ---
 title: "Constants and Enumerations (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
   - "constants [Visual Basic]"
   - "constants [Visual Basic], list of"
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Constants and Enumerations (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies a number of predefined constants and enumerations for developers. Constants store values that remain constant throughout the execution of an application. Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names.  
+Visual Basic supplies a number of predefined constants and enumerations for developers. Constants store values that remain constant throughout the execution of an application. Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names.  
   
 ## Constants  
   
@@ -26,9 +19,9 @@ ms.author: dotnetcontent
 |---|---|  
 |`CONFIG`|A string that corresponds to the current setting of the **Active Solution Configuration** box in the **Configuration Manager**.|  
 |`DEBUG`|A `Boolean` value that can be set in the **Project Properties** dialog box. By default, the Debug configuration for a project defines `DEBUG`. When `DEBUG` is defined, <xref:System.Diagnostics.Debug> class methods generate output to the **Output** window. When it is not defined, <xref:System.Diagnostics.Debug> class methods are not compiled and no Debug output is generated.|  
-|`TARGET`|A string representing the output type for the project or the setting of the command-line **/target** option. The possible values of `TARGET` are:<br /><br /> -   "winexe" for a Windows application.<br />-   "exe" for a console application.<br />-   "library" for a class library.<br />-   "module" for a module.<br />-   The **/target** option may be set in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment. For more information, see [/target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
+|`TARGET`|A string representing the output type for the project or the setting of the command-line **/target** option. The possible values of `TARGET` are:<br /><br /> -   "winexe" for a Windows application.<br />-   "exe" for a console application.<br />-   "library" for a class library.<br />-   "module" for a module.<br />-   The **/target** option may be set in the Visual Studio integrated development environment. For more information, see [/target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
 |`TRACE`|A `Boolean` value that can be set in the **Project Properties** dialog box. By default, all configurations for a project define `TRACE`. When `TRACE` is defined, <xref:System.Diagnostics.Trace> class methods generate output to the **Output** window. When it is not defined, <xref:System.Diagnostics.Trace> class methods are not compiled and no `Trace` output is generated.|  
-|`VBC_VER`|A number representing the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] version, in *major*.*minor* format. The version number for [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] is 8.0.|  
+|`VBC_VER`|A number representing the Visual Basic version, in *major*.*minor* format. The version number for [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] is 8.0.|  
   
 ### Print and Display Constants  
  When you call print and display functions, you can use the following constants in your code in place of the actual values.  
@@ -48,7 +41,7 @@ ms.author: dotnetcontent
 |`vbVerticalTab`|Not useful in Microsoft Windows.|  
   
 ## Enumerations  
- The following table lists and describes the enumerations provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The following table lists and describes the enumerations provided by Visual Basic.  
   
 |Enumeration|Description|  
 |---|---|  

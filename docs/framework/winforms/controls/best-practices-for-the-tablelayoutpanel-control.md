@@ -1,14 +1,6 @@
 ---
 title: "Best Practices for the TableLayoutPanel Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "layout [Windows Forms]"
   - "TableLayoutPanel control [Windows Forms], best practices"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "sizing [Windows Forms], automatic"
   - "automatic sizing"
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Best Practices for the TableLayoutPanel Control
 The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layout features that you should consider carefully before using on your Windows Forms.  

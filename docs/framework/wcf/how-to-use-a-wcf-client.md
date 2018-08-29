@@ -1,30 +1,16 @@
 ---
 title: "How to: Use a Windows Communication Foundation Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF clients [WCF], using"
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
-caps.latest.revision: 38
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use a Windows Communication Foundation Client
-This is the last of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
+This is the last of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
   
- Once a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] proxy has been created and configured, a client instance can be created and the client application can be compiled and used to communicate with the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. This topic describes procedures for instantiating and using a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client. This procedure does three things:  
+ Once a Windows Communication Foundation (WCF) proxy has been created and configured, a client instance can be created and the client application can be compiled and used to communicate with the WCF service. This topic describes procedures for instantiating and using a WCF client. This procedure does three things:  
   
-1.  Instantiates a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client.  
+1.  Instantiates a WCF client.  
   
 2.  Calls the service operations from the generated proxy.  
   

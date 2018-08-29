@@ -1,12 +1,6 @@
 ---
 title: "-= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.-="
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "operator -="
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -= Operator (Visual Basic)
 Subtracts the value of an expression from the value of a variable or property and assigns the result to the variable or property.  

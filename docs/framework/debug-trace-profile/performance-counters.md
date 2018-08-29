@@ -1,25 +1,13 @@
 ---
 title: "Performance Counters in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "performance, .NET Framework applications"
   - "performance counters"
   - "performance monitoring, counters"
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Performance Counters in the .NET Framework
 This topic provides a list of performance counters you can find in the [Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx).  

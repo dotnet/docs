@@ -1,14 +1,6 @@
 ---
 title: "How to: Display a Control in the Choose Toolbox Items Dialog Box"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "global assembly cache [Windows Forms], Choose Toolbox Items dialog box"
   - "AssemblyFoldersEx [Windows Forms], Choose Toolbox Items dialog box"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "assembly folder registration [Windows Forms], Choose Toolbox Items dialog box"
   - "Choose Toolbox Items dialog box [Windows Forms], display control"
 ms.assetid: 01ef6eba-d044-40f0-951d-78eff7ebd9a9
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Display a Control in the Choose Toolbox Items Dialog Box
 As you develop and distribute controls, you may want those controls to appear in the **Choose Toolbox Items** dialog box, which is displayed when you right-click the **Toolbox** and select **Choose Items**. You can enable your control to appear in this dialog box by using the AssemblyFoldersEx registration procedure.  

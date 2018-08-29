@@ -1,14 +1,6 @@
 ---
 title: "IHostGCManager::ThreadIsBlockingForSuspension Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostGCManager.ThreadIsBlockingForSuspension"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2657d45d-26d2-4d0a-8473-32b652e3321d
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostGCManager::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread from which the method call was made is about to block for a garbage collection.  

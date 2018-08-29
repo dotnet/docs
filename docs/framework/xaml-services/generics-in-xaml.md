@@ -1,23 +1,9 @@
 ---
 title: "Generics in XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [XAML Services]"
 ms.assetid: 835bfed7-585c-4216-ae67-b674edab8b92
-caps.latest.revision: 8
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Generics in XAML
 The .NET Framework XAML Services as implemented in System.Xaml provides support for using generic CLR types. This support includes specifying the constraints of generics as a type argument and enforcing the constraint by calling the appropriate `Add` method for generic collection cases. This topic describes aspects of using and referencing generic types in XAML.  
@@ -48,7 +34,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
   
  In WPF and targeting [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you can use XAML 2009 features together with `x:TypeArguments`, but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
   
- Custom workflows in [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)] for [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] do not support generic XAML usage.  
+ Custom workflows in Windows Workflow Foundation for [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] do not support generic XAML usage.  
   
 ## See Also  
  [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md)  

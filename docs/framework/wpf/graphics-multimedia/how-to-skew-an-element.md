@@ -1,25 +1,11 @@
 ---
 title: "How to: Skew an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "skewing elements [WPF]"
   - "graphics [WPF], skewing elements"
   - "classes [WPF], SkewTransform"
 ms.assetid: 56b65f2f-dc6e-4238-923f-ca44ec53c52f
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Skew an Element
 This example shows how to use a <xref:System.Windows.Media.SkewTransform> to skew an element. A skew, which is also known as a shear, is a transformation that stretches the coordinate space in a non-uniform manner. One typical use of a <xref:System.Windows.Media.SkewTransform> is for simulating [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] depth in [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] objects.  

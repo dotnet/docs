@@ -1,14 +1,6 @@
 ---
 title: "How to: Sort Data in a View"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "views [WPF], grouping data"
   - "sorting data in views [WPF]"
 ms.assetid: f4c43578-01b7-4774-a953-acb95a13b94a
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Sort Data in a View
 This example describes how to sort data in a view.  

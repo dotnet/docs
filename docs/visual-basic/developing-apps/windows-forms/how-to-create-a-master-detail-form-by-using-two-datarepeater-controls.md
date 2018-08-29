@@ -1,17 +1,9 @@
 ---
 title: "How to: Create a Master-Detail Form by Using Two DataRepeater Controls (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataRepeater, master/detail tables"
 ms.assetid: eec43ae3-05d8-45a1-8d41-3803c6359dbe
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)
 You can display related data by using two or more <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> controls to create a master/detail form. For example, you might want to display a list of customers in one <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>, and when the user selects a customer, display a list of that customer's orders in a second <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>.  

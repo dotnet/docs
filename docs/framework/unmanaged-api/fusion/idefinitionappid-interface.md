@@ -1,14 +1,6 @@
 ---
 title: "IDefinitionAppId Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IDefinitionAppId"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: e72f2550-bdec-4a20-a2f4-2e14847266c1
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IDefinitionAppId Interface
 Represents a unique identifier for the code that defines the application in the current scope.  

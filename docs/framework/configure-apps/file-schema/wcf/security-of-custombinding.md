@@ -1,21 +1,9 @@
 ---
 title: "&lt;security&gt; of &lt;customBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
-caps.latest.revision: 24
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;security&gt; of &lt;customBinding&gt;
 Specifies the security options for a custom binding.  
@@ -112,7 +100,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] using this element, see [SecurityBindingElement Authentication Modes](../../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md) and [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
+ For more information about using this element, see [SecurityBindingElement Authentication Modes](../../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md) and [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
 ## Example  
  The following example demonstrates how to configure security using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.  

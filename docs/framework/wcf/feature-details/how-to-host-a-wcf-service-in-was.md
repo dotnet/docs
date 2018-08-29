@@ -1,31 +1,17 @@
 ---
 title: "How to: Host a WCF Service in WAS"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
-caps.latest.revision: 25
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Host a WCF Service in WAS
-This topic outlines the basic steps required to create a Windows Process Activation Services (also known as WAS) hosted [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service. WAS is the new process activation service that is a generalization of Internet Information Services (IIS) features that work with non-HTTP transport protocols. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the listener adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], such as TCP, named pipes, and Message Queuing.  
+This topic outlines the basic steps required to create a Windows Process Activation Services (also known as WAS) hosted Windows Communication Foundation (WCF) service. WAS is the new process activation service that is a generalization of Internet Information Services (IIS) features that work with non-HTTP transport protocols. WCF uses the listener adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, named pipes, and Message Queuing.  
   
- This hosting option requires that WAS activation components are properly installed and configured, but it does not require any hosting code to be written as part of the application. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] installing and configuring WAS, see [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md).  
+ This hosting option requires that WAS activation components are properly installed and configured, but it does not require any hosting code to be written as part of the application. For more information about installing and configuring WAS, see [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md).  
   
 > [!WARNING]
 >  WAS activation is not supported if the web server’s request processing pipeline is set to Classic mode. The web server’s request processing pipeline must be set to Integrated mode if WAS activation is to be used.  
   
- When a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is hosted in WAS, the standard bindings are used in the usual way. However, when using the <xref:System.ServiceModel.NetTcpBinding> and the <xref:System.ServiceModel.NetNamedPipeBinding> to configure a WAS-hosted service, a constraint must be satisfied. When different endpoints use the same transport, the binding settings have to match on the following seven properties:  
+ When a WCF service is hosted in WAS, the standard bindings are used in the usual way. However, when using the <xref:System.ServiceModel.NetTcpBinding> and the <xref:System.ServiceModel.NetNamedPipeBinding> to configure a WAS-hosted service, a constraint must be satisfied. When different endpoints use the same transport, the binding settings have to match on the following seven properties:  
   
 -   ConnectionBufferSize  
   

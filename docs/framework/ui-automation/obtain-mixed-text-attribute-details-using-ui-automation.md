@@ -1,24 +1,13 @@
 ---
 title: "Obtain Mixed Text Attribute Details Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: d0e4c005-abd1-42bb-92a4-5faf87097311
-caps.latest.revision: 11
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Obtain Mixed Text Attribute Details Using UI Automation
 > [!NOTE]

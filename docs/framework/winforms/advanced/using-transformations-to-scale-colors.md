@@ -1,14 +1,6 @@
 ---
 title: "Using Transformations to Scale Colors"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "transformations [Windows Forms], for scaling colors"
   - "colors [Windows Forms], scaling"
 ms.assetid: df23c887-7fd6-4b15-ad94-e30b5bd4b849
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using Transformations to Scale Colors
 A scaling transformation multiplies one or more of the four color components by a number. The color matrix entries that represent scaling are given in the following table.  

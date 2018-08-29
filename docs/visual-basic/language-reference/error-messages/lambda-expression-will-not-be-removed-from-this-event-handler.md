@@ -1,21 +1,12 @@
 ---
 title: "Lambda expression will not be removed from this event handler"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc42326"
   - "vbc42326"
 helpviewer_keywords: 
   - "BC42326"
 ms.assetid: 63214dc6-0112-4245-8ebf-7c9e8f5a5782
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Lambda expression will not be removed from this event handler
 Lambda expression will not be removed from this event handler. Assign the lambda expression to a variable and use the variable to add and remove the event.  

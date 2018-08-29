@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReader2::GetSymAttributePreRemap Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReader2.GetSymAttributePreRemap"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReader2::GetSymAttributePreRemap Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these attributes are held in the symbol store.  

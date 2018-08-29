@@ -1,21 +1,7 @@
 ---
 title: "Dead Letter Queues"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
-caps.latest.revision: 35
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dead Letter Queues
 This sample demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
@@ -47,21 +33,21 @@ This sample demonstrates how to handle and process messages that have failed del
  The client application can read the messages in the dead-letter queue and either retry sending the message or correct the error that caused the original message to be placed in the dead-letter queue and send the message. In the sample, the client displays an error message.  
   
  The service contract is `IOrderProcessor`, as shown in the following sample code.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderProcessor  
 {  
     [OperationContract(IsOneWay = true)]  
     void SubmitPurchaseOrder(PurchaseOrder po);  
 }  
-```  
-  
+```
+
  The service code in the sample is that of the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md).  
   
  Communication with the service takes place within the scope of a transaction. The service reads messages from the queue, performs the operation and then displays the results of the operation. The application also creates a dead-letter queue for dead-letter messages.  
-  
-```  
+
+```csharp
 //The service contract is defined in generatedClient.cs, generated from the service by the svcutil tool.  
   
 //Client implementation code.  
@@ -114,8 +100,8 @@ class Client
         Console.ReadLine();  
     }  
 }  
-```  
-  
+```
+
  The client's configuration specifies a short duration for the message to reach the service. If the message cannot be transmitted within the duration specified, the message expires and is moved to the dead-letter queue.  
   
 > [!NOTE]
@@ -160,8 +146,8 @@ class Client
 >  The dead-letter queue is a client queue and is local to the client queue manager.  
   
  The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:  
-  
-```  
+
+```csharp
 public void SubmitPurchaseOrder(PurchaseOrder po)  
 {  
     Console.WriteLine("Submitting purchase order did not succed ", po);  
@@ -173,15 +159,15 @@ public void SubmitPurchaseOrder(PurchaseOrder po)
     Console.WriteLine("Message Delivery Failure: {0}",   
                                                mqProp.DeliveryFailure);  
     Console.WriteLine();  
-    ….  
-}  
-```  
-  
- Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.  
+    …  
+}
+```
+
+ Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the Windows Communication Foundation (WCF) channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.  
   
  In this sample, the dead-letter message service resends the message if the reason for failure is that the message timed out. For all other reasons, it displays the delivery failure, as shown in the following sample code:  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 // Added code to write output to the console window.  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.Single, ConcurrencyMode=ConcurrencyMode.Single, AddressFilterMode=AddressFilterMode.Any)]  
@@ -234,8 +220,8 @@ public class PurchaseOrderDLQService : IOrderProcessor
         }  
     }  
 }   
-```  
-  
+```
+
  The following sample shows the configuration for a dead-letter message:  
   
 ```xml  
@@ -365,7 +351,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
   

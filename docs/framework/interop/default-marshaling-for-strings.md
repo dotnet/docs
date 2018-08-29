@@ -1,10 +1,6 @@
 ---
 title: "Default Marshaling for Strings"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Default Marshaling for Strings
 Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.  

@@ -1,11 +1,6 @@
 ---
 title: "Byte Data Type (Visual Basic)"
 ms.date: 01/31/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Byte"
 helpviewer_keywords: 
@@ -68,7 +63,7 @@ Dim number As Byte = &H_6A
 ## See Also
 
  <xref:System.Byte?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

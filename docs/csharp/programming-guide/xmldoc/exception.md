@@ -1,10 +1,6 @@
 ---
 title: "&lt;exception&gt; (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "exception"
   - "<exception>"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "<exception> C# XML tag"
   - "exception C# XML tag"
 ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # &lt;exception&gt; (C# Programming Guide)
 ## Syntax  

@@ -1,21 +1,9 @@
 ---
 title: "WSTrustChannelFactory and WSTrustChannel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 96cec467-e963-4132-b18b-7d0b3a2e979f
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # WSTrustChannelFactory and WSTrustChannel
 If you are already familiar with Windows Communication Foundation (WCF), you know that a WCF client is already federation aware. By configuring a WCF client with a <xref:System.ServiceModel.WSFederationHttpBinding> or similar custom binding, you can enable federated authentication to a service.  
@@ -40,10 +28,10 @@ If you are already familiar with Windows Communication Foundation (WCF), you kno
 > [!TIP]
 >  What is the difference between ActAs and OnBehalfOf?  
 >   
->  From the WS-Trust procotol standpoint:  
+>  From the WS-Trust protocol standpoint:  
 >   
->  1.  An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
-> 2.  An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
+> 1. An ActAs RST element indicates that the requestor wants a token that contains claims about two distinct entities: the requestor, and an external entity represented by the token in the ActAs element.  
+> 2. An OnBehalfOf RST element indicates that the requestor wants a token that contains claims only about one entity: the external entity represented by the token in the OnBehalfOf element.  
 >   
 >  The ActAs feature is typically used in scenarios that require composite delegation, where the final recipient of the issued token can inspect the entire delegation chain and see not just the client, but all intermediaries. This lets it perform access control, auditing and other related activities based on the entire identity delegation chain. The ActAs feature is commonly used in multi-tiered systems to authenticate and pass information about identities between the tiers without having to pass this information at the application/business logic layer.  
 >   

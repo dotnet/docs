@@ -1,19 +1,7 @@
 ---
 title: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 069622d3-2b58-4919-8903-710a564c0788
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find a Union of Two Location Paths (XPath-LINQ to XML) (C#)
 XPath allows you to find the union of the results of two XPath location paths.  

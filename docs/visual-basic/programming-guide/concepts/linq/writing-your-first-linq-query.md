@@ -1,22 +1,11 @@
 ---
 title: "Writing Your First LINQ Query (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], writing"
   - "LINQ queries [Visual Basic]"
   - "LINQ [Visual Basic], writing queries"
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-caps.latest.revision: 56
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Writing Your First LINQ Query (Visual Basic)
 A *query* is an expression that retrieves data from a data source. Queries are expressed in a dedicated query language. Over time, different languages have been developed for different types of data sources, for example, SQL for relational databases and XQuery for XML. This makes it necessary for the application developer to learn a new query language for each type of data source or data format that is supported.  
@@ -74,7 +63,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
   
- The query expression contains three clauses: `From`, `Where`, and `Select`. The specific function and purpose of each query expression clause is discussed in [Basic Query Operations (Visual Basic)](basic-query-operations.md). For more information, see [Queries](../../../../visual-basic/language-reference/queries/queries.md). Note that in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], a query definition often is stored in a variable and executed later. The query variable, such as `evensQuery` in the previous example, must be a queryable type. The type of `evensQuery` is `IEnumerable(Of Integer)`, assigned by the compiler using local type inference.  
+ The query expression contains three clauses: `From`, `Where`, and `Select`. The specific function and purpose of each query expression clause is discussed in [Basic Query Operations (Visual Basic)](basic-query-operations.md). For more information, see [Queries](../../../../visual-basic/language-reference/queries/index.md). Note that in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], a query definition often is stored in a variable and executed later. The query variable, such as `evensQuery` in the previous example, must be a queryable type. The type of `evensQuery` is `IEnumerable(Of Integer)`, assigned by the compiler using local type inference.  
   
  It is important to remember that the query variable itself takes no action and returns no data. It only stores the query definition. In the previous example, it is the `For Each` loop that executes the query.  
   
@@ -129,4 +118,4 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)

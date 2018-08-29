@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugSymbolProvider::GetMethodLocalSymbols Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugSymbolProvider::GetMethodLocalSymbols Method
 Gets a method's local symbols given the relative virtual address (RVA) of that method.  

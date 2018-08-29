@@ -1,21 +1,7 @@
 ---
 title: "&lt;clientCertificate&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-caps.latest.revision: 19
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;clientCertificate&gt; of &lt;serviceCredentials&gt;
 Defines an X.509 certificate used to sign and encrypt messages to a client form a service in a duplex communication pattern.  

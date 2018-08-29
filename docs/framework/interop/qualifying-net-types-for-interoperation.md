@@ -1,10 +1,6 @@
 ---
 title: "Qualifying .NET Types for Interoperation"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
   - "COM interop, qualifying .NET types"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Qualifying .NET Types for Interoperation
 If you intend to expose types in an assembly to COM applications, consider the requirements of COM interop at design time. Managed types (class, interface, structure, and enumeration) seamlessly integrate with COM types when you adhere to the following guidelines:  

@@ -1,21 +1,9 @@
 ---
 title: "&lt;add&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;add&gt;
 Adds the specified security token handler to the token handler collection.  

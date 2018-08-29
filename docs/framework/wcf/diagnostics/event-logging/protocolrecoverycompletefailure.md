@@ -1,21 +1,7 @@
 ---
 title: "ProtocolRecoveryCompleteFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 369aac88-e66d-48cc-a432-c5f2073b7a1b
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ProtocolRecoveryCompleteFailure
 Id: 145  

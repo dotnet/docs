@@ -1,14 +1,6 @@
 ---
 title: "How to: Examine and Instantiate Generic Types with Reflection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "reflection, generic types"
   - "generics [.NET Framework], reflection"
 ms.assetid: f93b03b0-1778-43fc-bc6d-35983d210e74
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Examine and Instantiate Generic Types with Reflection
 Information about generic types is obtained in the same way as information about other types: by examining a <xref:System.Type> object that represents the generic type. The principle difference is that a generic type has a list of <xref:System.Type> objects representing its generic type parameters. The first procedure in this section examines generic types.  

@@ -1,14 +1,6 @@
 ---
 title: "CLR_DEBUGGING_VERSION Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CLR_DEBUGGING_VERSION"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR_DEBUGGING_VERSION Structure
 Defines the product version of the common language runtime (CLR) for debugging purposes.  

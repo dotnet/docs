@@ -1,24 +1,13 @@
 ---
 title: "UI Automation Threading Issues"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, threading issues"
   - "threading issues with UI Automation"
 ms.assetid: 0ab8d42c-5b8b-481b-b788-2caecc2f0191
-caps.latest.revision: 9
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Threading Issues
 > [!NOTE]

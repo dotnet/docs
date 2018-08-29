@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ExceptionUnwindFunctionLeave Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ExceptionUnwindFunctionLeave"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionLeave Method
 Notifies the profiler that the unwind phase of exception handling has finished unwinding a function.  

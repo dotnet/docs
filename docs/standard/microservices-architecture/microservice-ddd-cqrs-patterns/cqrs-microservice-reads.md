@@ -1,16 +1,9 @@
 ---
 title: Implementing reads/queries in a CQRS microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing reads/queries in a CQRS microservice
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/02/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Implementing reads/queries in a CQRS microservice
 
@@ -200,5 +193,5 @@ You can see in the image above some example values based on the ViewModel types 
     *https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio*
 
 >[!div class="step-by-step"]
-[Previous] (eshoponcontainers-cqrs-ddd-microservice.md)
-[Next] (ddd-oriented-microservice.md)
+[Previous](eshoponcontainers-cqrs-ddd-microservice.md)
+[Next](ddd-oriented-microservice.md)

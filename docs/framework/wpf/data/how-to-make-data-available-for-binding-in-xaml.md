@@ -1,14 +1,6 @@
 ---
 title: "How to: Make Data Available for Binding in XAML"
-ms.custom: ""
 ms.date: "01/29/2018"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "data binding [WPF], making data available for binding"
   - "binding data [WPF], making data available for"
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Make Data Available for Binding in XAML
 This topic discusses the different ways you can make data available for binding in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], depending on the needs of your application.  

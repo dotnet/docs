@@ -1,17 +1,10 @@
 ---
 title: "Generic Interfaces (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, generic interfaces"
   - "generics [C#], interfaces"
 ms.assetid: a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Generic Interfaces (C# Programming Guide)
 It is often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. The preference for generic classes is to use generic interfaces, such as <xref:System.IComparable%601> rather than <xref:System.IComparable>, in order to avoid boxing and unboxing operations on value types. The .NET Framework class library defines several generic interfaces for use with the collection classes in the <xref:System.Collections.Generic> namespace.  

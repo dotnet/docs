@@ -1,20 +1,12 @@
 ---
 title: .NET Assembly File Format
 description: Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Assembly File Format
 
 .NET defines a binary file format - "assembly" - that is used to fully-describe and contain .NET programs. Assemblies are used for the programs themselves as well as any dependent libraries. A .NET program can be executed as one or more assemblies, with no other required artifacts, beyond the appropriate .NET implementation. Native dependencies, including operating system APIs, are a separate concern and are not contained within the .NET assembly format, although are sometimes described with this format (for example, WinRT).

@@ -1,10 +1,6 @@
 ---
 title: "Visual Basic command-line compiler"
 ms.date: 02/20/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "compilers [Visual Basic], Visual Basic options"
   - "Visual Basic compiler"

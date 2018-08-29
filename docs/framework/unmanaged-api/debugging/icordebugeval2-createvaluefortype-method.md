@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEval2::CreateValueForType Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval2.CreateValueForType"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ea38ae20-7e0a-427a-be77-d78fae719d82
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEval2::CreateValueForType Method
 Gets a pointer to a new ICorDebugValue of the specified type, with an initial value of zero or null.  

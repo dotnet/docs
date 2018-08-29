@@ -22,7 +22,7 @@ Optionally, you'll also want the **DGML editor** to display graphs in the visual
 1. Run **Visual Studio Installer** 
 1. Select **Modify** 
 1. Select the **Individual components** tab 
-1. Check the box for **.NET Compiler Platform SDK**. You'll find it last under the **Compilers, build tools ,and runtimes** section.
+1. Check the box for **.NET Compiler Platform SDK**. You'll find it at the top under the **Compilers, build tools, and runtimes** section.
 
 Optionally, you'll also want the **DGML editor** to display graphs in the visualizer:
 

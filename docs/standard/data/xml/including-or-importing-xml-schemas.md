@@ -1,25 +1,14 @@
 ---
 title: "Including or Importing XML Schemas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Including or Importing XML Schemas
 An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine />` elements. These schema elements refer to other XML schemas that can be used to supplement the structure of the schema that includes or imports them. The <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> and <xref:System.Xml.Schema.XmlSchemaRedefine> classes, map to these elements in the Schema Object Model (SOM) API.  

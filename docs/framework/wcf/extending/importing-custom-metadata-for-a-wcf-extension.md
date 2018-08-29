@@ -1,31 +1,17 @@
 ---
 title: "Importing Custom Metadata for a WCF Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Importing Custom Metadata for a WCF Extension
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata import is the process of generating an abstract representation of a service or its component parts from its metadata. For example, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can import <xref:System.ServiceModel.Description.ServiceEndpoint> instances, <xref:System.ServiceModel.Channels.Binding> instances or <xref:System.ServiceModel.Description.ContractDescription> instances from a WSDL document for a service. To import service metadata in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> abstract class. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+In Windows Communication Foundation (WCF), metadata import is the process of generating an abstract representation of a service or its component parts from its metadata. For example, WCF can import <xref:System.ServiceModel.Description.ServiceEndpoint> instances, <xref:System.ServiceModel.Channels.Binding> instances or <xref:System.ServiceModel.Description.ContractDescription> instances from a WSDL document for a service. To import service metadata in WCF, use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> abstract class. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in WCF.  
   
  Custom metadata consists of XML elements that the system-provided metadata importers cannot import. Typically, this includes custom WSDL extensions and custom policy assertions.  
   
  This section describes how to import custom WSDL extensions and policy assertions. It does not focus on the importing process itself. For more information about how to use the types that export and import metadata regardless of whether the metadata is custom or system-supported, see [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md).  
   
 ## Overview  
- The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type is the implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class included with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. The <xref:System.ServiceModel.Description.WsdlImporter> type imports WSDL metadata with attached policies that are bundled in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object. Policy assertions and WSDL extensions that the default importers do not recognize are passed to any registered custom policy and WSDL importers for importing. Typically, importers are implemented to support user-defined binding elements or to modify the imported contract.  
+ The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type is the implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class included with WCF. The <xref:System.ServiceModel.Description.WsdlImporter> type imports WSDL metadata with attached policies that are bundled in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object. Policy assertions and WSDL extensions that the default importers do not recognize are passed to any registered custom policy and WSDL importers for importing. Typically, importers are implemented to support user-defined binding elements or to modify the imported contract.  
   
  This section describes:  
   

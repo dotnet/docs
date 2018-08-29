@@ -1,21 +1,9 @@
 ---
 title: "BasicBinding with Transport Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
-caps.latest.revision: 26
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # BasicBinding with Transport Security
 This sample demonstrates the use of SSL transport security with the basic binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
@@ -25,7 +13,7 @@ This sample demonstrates the use of SSL transport security with the basic bindin
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\TransportSecurity`  
   
@@ -62,15 +50,14 @@ This sample demonstrates the use of SSL transport security with the basic bindin
 </system.serviceModel>  
 ```  
   
- Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an HTTPS: address in your browser, such as https://localhost/servicemodelsamples/service.svc. To allow the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client to work with a test certificate, some additional code is added to the client to suppress the security alert. This code, and the accompanying class, is not necessary when using real certificates.  
-  
-```  
+ Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an HTTPS: address in your browser, such as https://localhost/servicemodelsamples/service.svc. To allow the Windows Communication Foundation (WCF) client to work with a test certificate, some additional code is added to the client to suppress the security alert. This code, and the accompanying class, is not necessary when using real certificates.  
+
+```csharp
 // This code is required only for test certificates such as those   
 // created by Makecert.exe.  
-PermissiveCertificatePolicy.Enact(  
-                           "CN=ServiceModelSamples-HTTPS-Server");  
-```  
-  
+PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  

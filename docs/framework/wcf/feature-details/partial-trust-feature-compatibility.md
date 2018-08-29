@@ -1,33 +1,19 @@
 ---
 title: "Partial Trust Feature Compatibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
-caps.latest.revision: 75
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Partial Trust Feature Compatibility
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a limited subset of functionality when running in a partially-trusted environment. The features supported in partial trust are designed around a specific set of scenarios as described in the [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) topic.  
+Windows Communication Foundation (WCF) supports a limited subset of functionality when running in a partially-trusted environment. The features supported in partial trust are designed around a specific set of scenarios as described in the [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) topic.  
   
 ## Minimum Permission Requirements  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports a subset of features in applications running under either of the following standard named permission sets:  
+ WCF supports a subset of features in applications running under either of the following standard named permission sets:  
   
 -   Medium Trust permissions  
   
 -   Internet Zone permissions  
   
- Attempting to use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.  
+ Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.  
   
 ## Contracts  
  Contracts are subject to the following restrictions when running under partial trust:  
@@ -61,7 +47,7 @@ ms.workload:
  The Message Transmission Optimization Mechanism (MTOM) encoders are not supported.  
   
 ### Security  
- Partially-trusted applications can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]'s transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.  
+ Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.  
   
 ### Unsupported Bindings  
  Bindings that use reliable messaging, transactions, or message-level security are not supported.  
@@ -71,7 +57,7 @@ ms.workload:
   
 -   All serializable `[DataContract]` types must be `public`.  
   
--   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](http://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] in a partially-trusted application.  
+-   All serializable `[DataMember]` fields or properties in a `[DataContract]` type must be public and read/write. The serialization and deserialization of [readonly](http://go.microsoft.com/fwlink/?LinkID=98854) fields is not supported when running WCF in a partially-trusted application.  
   
 -   The `[Serializable]`/ISerializable programming model is not supported in a partial trust environment.  
   
@@ -84,7 +70,7 @@ ms.workload:
 ### Collection Types  
  Some collection types implement both <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection%601>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer> invokes `IEnumerable.GetEnumerator()`.  
   
- For collection types when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running in a partial trust environment, if none of the `GetEnumerator()` implementations are `public`, or none of them are explicit interface implementations, then a security exception is thrown.  
+ For collection types when WCF is running in a partial trust environment, if none of the `GetEnumerator()` implementations are `public`, or none of them are explicit interface implementations, then a security exception is thrown.  
   
 ### NetDataContractSerializer  
  Many .NET Framework collection types such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ArrayList>, <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable> are not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust. These types have the `[Serializable]` attribute set, and as stated previously in the Serialization section, this attribute is not supported in partial trust. The <xref:System.Runtime.Serialization.DataContractSerializer> treats collections in a special way and is thus able to get around this restriction, but the <xref:System.Runtime.Serialization.NetDataContractSerializer> has no such mechanism to circumvent this restriction.  
@@ -100,10 +86,10 @@ ms.workload:
   
 -   Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a partial trust environment. If they can do so, the behavior does not run and no exception is thrown. To ensure this, see the **levelfinal** option using [Caspol.exe (Code Access Security Policy Tool)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md).  
   
- [!INCLUDE[crexample](../../../../includes/crexample-md.md)] a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
+ For an example of a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
   
 ## Configuration  
- With one exception, partially-trusted code can only load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections in the local `app.config` file. To load [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections that reference [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sections in machine.config or in a root web.config file requires ConfigurationPermission(Unrestricted). Without this permission, references to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration sections (behaviors, bindings) outside of the local configuration file results in an exception when the configuration is loaded.  
+ With one exception, partially-trusted code can only load WCF configuration sections in the local `app.config` file. To load WCF configuration sections that reference WCF sections in machine.config or in a root web.config file requires ConfigurationPermission(Unrestricted). Without this permission, references to WCF configuration sections (behaviors, bindings) outside of the local configuration file results in an exception when the configuration is loaded.  
   
  The one exception is known-type configuration for serialization, as described in the Serialization section of this topic.  
   
@@ -116,7 +102,7 @@ ms.workload:
  Limited event logging is supported under partial trust. Only service activation faults and tracing/message logging failures are logged to the Event Log. The maximum number of events that can be logged by a process is 5, to avoid writing excessive messages to the Event Log.  
   
 ### Message Logging  
- Message logging does not work when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is run in a partial trust environment. If enabled under partial trust, it does not fail service activation, but no message is logged.  
+ Message logging does not work when WCF is run in a partial trust environment. If enabled under partial trust, it does not fail service activation, but no message is logged.  
   
 ### Tracing  
  Restricted tracing functionality is available when running in a partial trust environment. In the <`listeners`> element in the configuration file, the only types that you can add are <xref:System.Diagnostics.TextWriterTraceListener> and the new <xref:System.Diagnostics.EventSchemaTraceListener>. Use of the standard <xref:System.Diagnostics.XmlWriterTraceListener> may result in incomplete or incorrect logs.  
@@ -146,13 +132,13 @@ ms.workload:
  When using tracing in a partial trust environment, ensure that the application has sufficient permissions to store the output of the trace listener. For example, when using the <xref:System.Diagnostics.TextWriterTraceListener> to write trace output to a text file, ensure that the application has the necessary FileIOPermission required to successfully write to the trace file.  
   
 > [!NOTE]
->  To avoid flooding the trace files with duplicate errors, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
+>  To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## WCF Service Host  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service host does not support partial trust. If you want to use a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in partial trust, do not use the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Service Library Project template in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to build your service. Instead, create a new Web site in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by choosing the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service Web site template, which can host the service in a Web server on which [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] partial trust is supported.  
+ WCF service host does not support partial trust. If you want to use a WCF service in partial trust, do not use the WCF Service Library Project template in Visual Studio to build your service. Instead, create a new Web site in Visual Studio by choosing the WCF service Web site template, which can host the service in a Web server on which WCF partial trust is supported.  
   
 ## Other Limitations  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is generally limited to the security considerations imposed upon it by the hosting application. For example, if [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](http://go.microsoft.com/fwlink/?LinkId=89138).  
+ WCF is generally limited to the security considerations imposed upon it by the hosting application. For example, if WCF is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](http://go.microsoft.com/fwlink/?LinkId=89138).  
   
  The following additional features are not enabled when running indigo2 in a partial trust environment:  
   
@@ -162,10 +148,10 @@ ms.workload:
   
 -   Performance counters  
   
- Use of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] features that are not supported in a partial trust environment may result in exceptions at runtime.  
+ Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.  
   
 ## Unlisted Features  
- The best way to discover that a piece of information or action is unavailable when running in a partial trust environment is to try to access the resource or do the action inside of a `try` block, and then `catch` the failure. To avoid flooding the trace files with duplicate errors, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
+ The best way to discover that a piece of information or action is unavailable when running in a partial trust environment is to try to access the resource or do the action inside of a `try` block, and then `catch` the failure. To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## See Also  
  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  

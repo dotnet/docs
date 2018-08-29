@@ -1,14 +1,6 @@
 ---
 title: "Using the Assert Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,12 +16,8 @@ helpviewer_keywords:
   - "permissions [.NET Framework], overriding security checks"
   - "permissions [.NET Framework], assertions"
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the Assert Method
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

@@ -1,24 +1,10 @@
 ---
 title: "How to: Use the BetweenShowDelay Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ToolTip control [WPF], BetweenShowDelay time property"
   - "BetweenShowDelay time property [WPF]"
 ms.assetid: 984ea76d-f2a2-4326-a02e-f97ec3d036d6
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use the BetweenShowDelay Property
 This example shows how to use the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> time property so that tooltips appear quickly—with little or no delay—when a user moves the mouse pointer from one tooltip directly to another.  

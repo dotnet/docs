@@ -1,14 +1,6 @@
 ---
 title: "UI Automation and Screen Scaling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,9 @@ helpviewer_keywords:
   - "UI (user interface), automation"
   - "UI Automation"
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation and Screen Scaling
 > [!NOTE]

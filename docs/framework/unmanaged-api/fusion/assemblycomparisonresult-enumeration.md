@@ -1,14 +1,6 @@
 ---
 title: "AssemblyComparisonResult Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "AssemblyComparisonResult"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: bd042f89-10b1-40ca-946e-46da082f5263
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # AssemblyComparisonResult Enumeration
 Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md) function.  

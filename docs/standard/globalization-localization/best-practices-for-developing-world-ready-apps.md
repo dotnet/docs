@@ -1,26 +1,15 @@
 ---
 title: "Best Practices for Developing World-Ready Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "global applications, best practices"
   - "world-ready applications, best practices"
   - "globalization [.NET Framework], best practices"
   - "international applications [.NET Framework], best practices"
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Best Practices for Developing World-Ready Applications
 This section describes the best practices to follow when developing world-ready applications.  

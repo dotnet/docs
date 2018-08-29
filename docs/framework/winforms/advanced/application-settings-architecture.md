@@ -1,26 +1,12 @@
 ---
 title: "Application Settings Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "application settings [Windows Forms], architecture"
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings Architecture
 This topic describes how the Application Settings architecture works, and explores advanced features of the architecture, such as grouped settings and settings keys.  

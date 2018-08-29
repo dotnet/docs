@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Tables and Columns to the Windows Forms DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "tables [Windows Forms], adding to DataGrid control"
   - "DataGrid control [Windows Forms], adding tables and columns"
 ms.assetid: 2fe661b9-aa06-49b9-a314-a0d3cbfdcb4d
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Tables and Columns to the Windows Forms DataGrid Control
 > [!NOTE]

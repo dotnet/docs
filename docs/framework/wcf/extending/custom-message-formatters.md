@@ -1,24 +1,10 @@
 ---
 title: "Custom Message Formatters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c07435f3-5214-4791-8961-2c2b61306d71
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Custom Message Formatters
-The content in a message is often in the form of XML, which is usually not a convenient format for an application. Applications manipulate objects, getting and setting their properties. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the *Data Contract* to convert a <xref:System.ServiceModel.Channels.Message> object into an object easily handled by an application. These processes are called serialization and deserialization. Note that these same terms are used to describe the serialization and deserialization done by the transport layer to and from the message wire format, which is an unrelated process.  
+The content in a message is often in the form of XML, which is usually not a convenient format for an application. Applications manipulate objects, getting and setting their properties. Windows Communication Foundation (WCF) uses the *Data Contract* to convert a <xref:System.ServiceModel.Channels.Message> object into an object easily handled by an application. These processes are called serialization and deserialization. Note that these same terms are used to describe the serialization and deserialization done by the transport layer to and from the message wire format, which is an unrelated process.  
   
  You can use a custom message formatter if you need to implement a specialized conversion between messages and objects that you cannot accomplish by means of a Data Contract. Do this by modifying or extending the execution behavior of a specific contract operation on a client or a service.  
   

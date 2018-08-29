@@ -1,20 +1,10 @@
 ---
 title: "Performing Network Operations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "network operations, performing"
   - "My.Computer.Network object, tasks"
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Performing Network Operations (Visual Basic)
 The following tables list tasks associated with the `My.Computer.Network` object.  

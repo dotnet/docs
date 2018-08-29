@@ -1,13 +1,7 @@
 ---
 title: "How to: Sign XML Documents with Digital Signatures"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "XML signing"
   - "signing XML"
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Sign XML Documents with Digital Signatures
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to sign an XML document or part of an XML document with a digital signature.  XML digital signatures (XMLDSIG) allow you to verify that data was not altered after it was signed.  For more information about the XMLDSIG standard, see the World Wide Web Consortium (W3C) recommendation [XML Signature Syntax and Processing](https://www.w3.org/TR/xmldsig-core/).  

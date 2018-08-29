@@ -1,21 +1,7 @@
 ---
 title: "&lt;ws2007HttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;ws2007HttpBinding&gt;
 Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
@@ -74,7 +60,7 @@ textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
 |`bypassProxyOnLocal`|A value that indicates whether to bypass the proxy server for local addresses. The default is `false`.|  
 |`closeTimeout`|A <xref:System.TimeSpan> value that specifies the time interval for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
 |`hostnameComparisonMode`|Specifies the HTTP hostname comparison mode used to parse Uniform Resource Identifiers (URIs). This attribute is of type <xref:System.ServiceModel.HostNameComparisonMode>, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, which ignores the hostname in the match.|  
-|`maxBufferPoolSize`|The maximum buffer pool size for this binding. The default is 524,288 bytes (512 × 1,024). Many parts of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] use buffers. Creating and destroying buffers each time they are used is expensive, as is garbage collection for buffers. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool when you are done. This avoids the overhead in creating and destroying buffers.|  
+|`maxBufferPoolSize`|The maximum buffer pool size for this binding. The default is 524,288 bytes (512 × 1,024). Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, as is garbage collection for buffers. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool when you are done. This avoids the overhead in creating and destroying buffers.|  
 |`maxReceivedMessageSize`|The maximum message size, in bytes, including headers, which a channel configured with this binding, can receive. The sender of a message exceeding this limit receives a SOAP fault. The receiver drops the message and creates an entry of the event in the trace log. The default is 65536.|  
 |`messageEncoding`|Defines the encoder used to encode the message. Valid values include the following:<br /><br /> -   `Text`: Use a text message encoder.<br />-   `Mtom`: Use a Message Transmission Organization Mechanism 1.0 (MTOM) encoder.<br /><br /> The default is `Text`.<br /><br /> This attribute is of type <xref:System.ServiceModel.WSMessageEncoding>.|  
 |`name`|The configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).|  

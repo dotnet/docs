@@ -1,14 +1,6 @@
 ---
 title: "How to: Apply Stretch Properties to the Contents of a Viewbox"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "controls [WPF], Viewbox"
   - "Viewbox control [WPF]"
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Apply Stretch Properties to the Contents of a Viewbox
 ## Example  

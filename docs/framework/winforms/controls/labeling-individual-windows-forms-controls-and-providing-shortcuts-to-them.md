@@ -1,26 +1,12 @@
 ---
 title: "Labeling Individual Windows Forms Controls and Providing Shortcuts to Them"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], access keys"
   - "shortcuts [Windows Forms], controls"
   - "keyboard shortcuts [Windows Forms], controls"
   - "Windows Forms controls, labels"
 ms.assetid: 6eaf868c-819f-4131-8f59-048e20c286f7
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Labeling Individual Windows Forms Controls and Providing Shortcuts to Them
 Controls added to Windows Forms have properties and methods that are used to further specialize the user experience. Customizing your user interface to suit the needs of the user is extremely important for well-designed Windows applications.  

@@ -1,17 +1,9 @@
 ---
 title: "A property or method call cannot include a reference to a private object, either as an argument or as a return value"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID98"
 ms.assetid: 059b43e1-202d-4fa2-806b-7bad63c1e7ca
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # A property or method call cannot include a reference to a private object, either as an argument or as a return value
 Among the possible causes of this error are:  

@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], assigning at design time"
   - "ElementHost control [Windows Forms], assigning WPF content at design time"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Windows Forms, content assignments"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Assigning WPF Content on Windows Forms at Design Time
 This walkthrough show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.  
@@ -35,7 +21,7 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 -   Select WPF controls.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -109,4 +95,4 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
  [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

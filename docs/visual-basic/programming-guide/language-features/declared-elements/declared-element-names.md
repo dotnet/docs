@@ -1,13 +1,6 @@
 ---
 title: "Declared Element Names (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declared elements [Visual Basic], case sensitivity"
   - "names [Visual Basic], Visual Basic rules"
@@ -30,15 +23,12 @@ helpviewer_keywords:
   - "names [Visual Basic], naming conventions"
   - "identifiers [Visual Basic], elements"
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declared Element Names (Visual Basic)
 Every declared element has a name, also called an *identifier*, which is what the code uses to refer to it.  
   
 ## Rules  
- An element name in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] must observe the following rules:  
+ An element name in Visual Basic must observe the following rules:  
   
 -   It must begin with an alphabetic character or an underscore (`_`).  
   
@@ -75,18 +65,18 @@ Every declared element has a name, also called an *identifier*, which is what th
  On the other hand, your name should not be so short that it does not adequately describe what the element represents and how your code uses it. This is important for the readability of your code. If somebody else is trying to understand it, or if you yourself are looking at it a long time after you wrote it, suitable element names can save a considerable amount of time.  
   
 ## Escaped Names  
- Generally, an element name must not match any of the keywords reserved by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], such as `Case` or `Friend`. However, you can define an *escaped name*, which is enclosed by brackets (`[ ]`). An escaped name can match any [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] keyword, since the brackets remove any ambiguity. You also use the brackets when you refer to the name later in your code.  
+ Generally, an element name must not match any of the keywords reserved by Visual Basic, such as `Case` or `Friend`. However, you can define an *escaped name*, which is enclosed by brackets (`[ ]`). An escaped name can match any Visual Basic keyword, since the brackets remove any ambiguity. You also use the brackets when you refer to the name later in your code.  
   
  In general, you should use escaped names only when:  
   
--   Your code has migrated from a previous version of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that did not reserve the keyword being used as a name; or  
+-   Your code has migrated from a previous version of Visual Basic that did not reserve the keyword being used as a name; or  
   
 -   You are working with code written in another language in which the given keyword is not reserved.  
   
  Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](/visualstudio/vb-ide/refactoring-vb).  
   
 ## Case Sensitivity in Names  
- Element names in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] are case-insensitive. This means that when the compiler compares two names that differ in alphabetic case only, it interprets them as the same name. For example, it considers `ABC` and `abc` to refer to the same declared element.  
+ Element names in Visual Basic are case-insensitive. This means that when the compiler compares two names that differ in alphabetic case only, it interprets them as the same name. For example, it considers `ABC` and `abc` to refer to the same declared element.  
   
  However, the common language runtime (CLR) uses case-sensitive binding. Therefore, when you produce an assembly or a DLL and make it available to other assemblies, your names are no longer case-insensitive. For example, if you define a class with an element called `ABC`, and other assemblies make use of your class through the common language runtime, they must refer to the element as `ABC`. If you subsequently recompile your class and change the element's name to `abc`, the other assemblies using your class could no longer access that element. Therefore, when you release an updated version of an assembly, you should not change the alphabetic case of any public elements.  
   

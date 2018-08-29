@@ -1,14 +1,6 @@
 ---
 title: "ICorConfiguration Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorConfiguration"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorConfiguration Interface
 Provides methods for configuring the common language runtime (CLR).  

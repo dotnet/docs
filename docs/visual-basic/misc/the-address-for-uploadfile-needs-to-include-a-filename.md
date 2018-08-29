@@ -1,16 +1,9 @@
 ---
 title: "The address for UploadFile needs to include a filename"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_UploadAddressNeedsFilename"
 ms.assetid: 0ee11749-0432-4ccb-8c08-1663a4a55ad0
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # The address for UploadFile needs to include a filename
 When uploading files with the `UploadFile` method, you must supply a file name in the destination path.  

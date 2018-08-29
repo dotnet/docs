@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILCode2 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugILCode2"
 api_location: 
@@ -18,12 +10,8 @@ api_type:
 ms.assetid: f9dc2afd-df8a-464d-bdbf-5af0a1d4bf85
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILCode2 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

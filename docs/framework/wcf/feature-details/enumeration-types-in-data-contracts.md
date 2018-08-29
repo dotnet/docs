@@ -1,26 +1,12 @@
 ---
 title: "Enumeration Types in Data Contracts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], enumeration types"
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Enumeration Types in Data Contracts
 Enumerations can be expressed in the data contract model. This topic walks through several examples that explain the programming model.  
@@ -38,7 +24,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  You can use the <xref:System.Runtime.Serialization.DataContractAttribute> properties (<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>) as usual for enumeration data contracts.  
   
 ### Enumeration Member Values  
- Generally the data contract includes enumeration member names, not numerical values. However, when using the data contract model, if the receiving side is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, the exported schema preserves the numerical values. Note that this is not the case when using the [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+ Generally the data contract includes enumeration member names, not numerical values. However, when using the data contract model, if the receiving side is a WCF client, the exported schema preserves the numerical values. Note that this is not the case when using the [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
   
  In the preceding example, if `condition` is set to `Used` and the data is serialized to XML, the resulting XML is `<condition>Used</condition>` and not `<condition>1</condition>`. Therefore, the following data contract is equivalent to the data contract of `CarConditionEnum`.  
   

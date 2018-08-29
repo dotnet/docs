@@ -1,12 +1,6 @@
 ---
 title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc36644"
   - "bc36647"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "BC36644"
   - "BC36647"
 ms.assetid: 0e0050f2-2039-4311-b260-f0ebfde84189
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Data type(s) of the type parameter(s) cannot be inferred from these arguments
 Data type(s) of the type parameter(s) cannot be inferred from these arguments. Specifying the data type(s) explicitly might correct this error.  

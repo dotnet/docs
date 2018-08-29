@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Pen"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "pens [Windows Forms], creating"
   - "Pen object"
 ms.assetid: 7fbea8b7-7ac1-4413-9c17-733a850381e3
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Pen
 This example creates a <xref:System.Drawing.Pen> object.  

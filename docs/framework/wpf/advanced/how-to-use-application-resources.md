@@ -1,24 +1,10 @@
 ---
 title: "How to: Use Application Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application resources [WPF]"
   - "resources [WPF], application resources"
 ms.assetid: 507ea937-5191-406b-8797-0a3d9f94156d
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Application Resources
 This example shows how to use application resources.  

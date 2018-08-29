@@ -1,14 +1,6 @@
 ---
 title: "Managed Extensibility Framework (MEF)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
-caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Managed Extensibility Framework (MEF)
 This topic provides an overview of the Managed Extensibility Framework introduced in the .NET Framework 4.  

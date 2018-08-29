@@ -2,10 +2,6 @@
 title: "Additional resources for Visual Basic programmers"
 description: "Discover resources on the web for you to learn, ask questions and find out more information about Visual Basic."
 ms.date: 02/21/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, additional resources"
   - "resources [Visual Basic], additional"

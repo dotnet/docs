@@ -1,19 +1,7 @@
 ---
 title: "Details of Office Open XML WordprocessingML Documents (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 40c9ed57-b827-4c9e-a3e7-8b2163122106
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Details of Office Open XML WordprocessingML Documents (C#)
 This section provides information about the details of Office Open XML WordprocessingML documents. It shows examples of the document and style parts of an Open XML document.  

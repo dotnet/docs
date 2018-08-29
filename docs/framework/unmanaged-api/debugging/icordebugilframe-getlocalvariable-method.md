@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILFrame::GetLocalVariable Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugILFrame.GetLocalVariable"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c8706356-d50b-4f87-a40c-39c3b7f4fd38
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILFrame::GetLocalVariable Method
 Gets the value of the specified local variable in this Microsoft intermediate language (MSIL) stack frame.  

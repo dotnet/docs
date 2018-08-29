@@ -1,16 +1,9 @@
 ---
 title: Architecting Container and Microservice Based Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Architecting Container and Microservice Based Applications
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Architecting Container- and Microservice-Based Applications
 
@@ -32,5 +25,5 @@ You might find a scenario where you want multiple processes running in a single 
 
 
 >[!div class="step-by-step"]
-[Previous] (../net-core-net-framework-containers/official-net-docker-images.md)
-[Next] (containerize-monolithic-applications.md)
+[Previous](../net-core-net-framework-containers/official-net-docker-images.md)
+[Next](containerize-monolithic-applications.md)

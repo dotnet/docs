@@ -1,24 +1,12 @@
 ---
 title: "In-Process Side-by-Side Execution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "in-process side-by-side execution"
   - "side-by-side execution, in-process"
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
-caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # In-Process Side-by-Side Execution
 Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use in-process side-by-side hosting to run multiple versions of the common language runtime (CLR) in a single process. By default, managed COM components run with the .NET Framework version they were built with, regardless of the .NET Framework version that is loaded for the process.  

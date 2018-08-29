@@ -1,18 +1,11 @@
 ---
 title: "-imports (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/imports compiler option [Visual Basic]"
   - "imports compiler option [Visual Basic]"
   - "-imports compiler option [Visual Basic]"
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -imports (Visual Basic)
 Imports namespaces from a specified assembly.  

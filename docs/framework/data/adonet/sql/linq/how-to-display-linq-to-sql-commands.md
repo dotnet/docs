@@ -1,24 +1,10 @@
 ---
 title: "How to: Display LINQ to SQL Commands"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 1decb05e-37ad-4ed6-ab2f-071eb4c4f628
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Display LINQ to SQL Commands
 Use <xref:System.Data.Linq.DataContext.GetCommand%2A> to display SQL commands and other information.  

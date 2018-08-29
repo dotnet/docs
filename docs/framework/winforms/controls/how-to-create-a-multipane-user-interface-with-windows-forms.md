@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Multipane User Interface with Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], examples"
   - "Splitter control [Windows Forms], examples"
 ms.assetid: e79f6bcc-3740-4d1e-b46a-c5594d9b7327
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Multipane User Interface with Windows Forms
 In the following procedure, you will create a multipane user interface that is similar to the one used in Microsoft Outlook, with a **Folder** list, a **Messages** pane, and a **Preview** pane. This arrangement is achieved chiefly through docking controls with the form.  
@@ -172,7 +158,7 @@ In the following procedure, you will create a multipane user interface that is s
     }  
     ```  
   
-3.  In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], add a call to the procedure you just created in the `New()` procedure. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], add this line of code to the constructor for the form class.  
+3.  In Visual Basic, add a call to the procedure you just created in the `New()` procedure. In Visual C#, add this line of code to the constructor for the form class.  
   
     ```vb  
     ' Add this to the New procedure.  

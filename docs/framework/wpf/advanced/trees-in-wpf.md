@@ -1,25 +1,11 @@
 ---
 title: "Trees in WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "logical tree [WPF]"
   - "element tree [WPF]"
   - "visual tree [WPF]"
 ms.assetid: e83f25e5-d66b-4fc7-92d2-50130c9a6649
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Trees in WPF
 In many technologies, elements and components are organized in a tree structure where developers directly manipulate the object nodes in the tree to affect the rendering or behavior of an application. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also uses several tree structure metaphors to define relationships between program elements. For the most part WPF developers can create an application in code or define portions of the application in XAML while thinking conceptually about the object tree metaphor, but will be calling specific API or using specific markup to do so rather than some general object tree manipulation API such as you might use in XML DOM. WPF exposes two helper classes that provide a tree metaphor view, <xref:System.Windows.LogicalTreeHelper> and <xref:System.Windows.Media.VisualTreeHelper>. The terms visual tree and logical tree are also used in the WPF documentation because these same trees are useful for understanding the behavior of certain key WPF features. This topic defines what the visual tree and logical tree represent, discusses how such trees relate to an overall object tree concept, and introduces <xref:System.Windows.LogicalTreeHelper> and <xref:System.Windows.Media.VisualTreeHelper>s.  

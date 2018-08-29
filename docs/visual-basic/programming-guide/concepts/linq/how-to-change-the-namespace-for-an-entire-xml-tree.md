@@ -1,19 +1,7 @@
 ---
 title: "How to: Change the Namespace for an Entire XML Tree (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1837324b-5cb5-4fa8-95b9-3071efa0f913
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Change the Namespace for an Entire XML Tree (Visual Basic)
 You sometimes have to programmatically change the namespace for an element or an attribute. LINQ to XML makes this easy. The <xref:System.Xml.Linq.XElement.Name%2A?displayProperty=nameWithType> property can be set. The <xref:System.Xml.Linq.XAttribute.Name%2A?displayProperty=nameWithType> property cannot be set, but you can easily copy the attributes into a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, remove the existing attributes, and then add new attributes that are in the new desired namespace.  

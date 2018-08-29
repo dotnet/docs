@@ -1,14 +1,6 @@
 ---
 title: "Security-Transparent Code, Level 1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transparent"
   - "SecurityTreatAsSafeAttribute"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "security-transparent code"
   - "security [.NET Framework], security-transparent code"
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
-caps.latest.revision: 32
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security-Transparent Code, Level 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

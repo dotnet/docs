@@ -1,26 +1,12 @@
 ---
 title: "Using a Pen to Draw Lines and Shapes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "pens"
   - "examples [Windows Forms], drawing lines and shapes"
   - "examples [Windows Forms], pens"
   - "drawing"
 ms.assetid: 8a7542ab-3e9e-443f-8405-2d6053528e20
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using a Pen to Draw Lines and Shapes
 Use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] `Pen` objects to draw line segments, curves, and the outlines of shapes. In this section, *line* refers to any of these, unless specified to mean only a line segment. Set the properties of a pen to control the color, width, alignment, and style of lines drawn with that pen.  

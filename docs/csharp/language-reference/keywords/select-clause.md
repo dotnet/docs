@@ -1,10 +1,6 @@
 ---
 title: "select clause (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "select_CSharpKeyword"
   - "select"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "select keyword [C#]"
   - "select clause [C#]"
 ms.assetid: df01e266-5781-4aaa-80c4-67cf28ea093f
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # select clause (C# Reference)
 In a query expression, the `select` clause specifies the type of values that will be produced when the query is executed. The result is based on the evaluation of all the previous clauses and on any expressions in the `select` clause itself. A query expression must terminate with either a `select` clause or a [group](../../../csharp/language-reference/keywords/group-clause.md) clause.  
@@ -35,11 +28,12 @@ In a query expression, the `select` clause specifies the type of values that wil
 ## Remarks  
  At compile time, the `select` clause is translated to a method call to the <xref:System.Linq.Enumerable.Select%2A> standard query operator.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
- [from clause](../../../csharp/language-reference/keywords/from-clause.md)  
- [partial (Method) (C# Reference)](../../../csharp/language-reference/keywords/partial-method.md)  
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+- [from clause](../../../csharp/language-reference/keywords/from-clause.md)  
+- [partial (Method) (C# Reference)](../../../csharp/language-reference/keywords/partial-method.md)  
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

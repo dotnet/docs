@@ -1,23 +1,9 @@
 ---
 title: "WS Transaction Flow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Transactions"
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
-caps.latest.revision: 43
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS Transaction Flow
 This sample demonstrates the use of a client-coordinated transaction and the client and server options for transaction flow using either the WS-Atomic Transaction or OleTransactions protocol. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service but the operations are attributed to demonstrate the use of the `TransactionFlowAttribute` with the **TransactionFlowOption** enumeration to determine to what degree transaction flow is enabled. Within the scope of the flowed transaction, a log of the requested operations is written to a database and persists until the client coordinated transaction has completed - if the client transaction does not complete, the Web service transaction ensures that the appropriate updates to the database are not committed.  
@@ -26,8 +12,8 @@ This sample demonstrates the use of a client-coordinated transaction and the cli
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  After initiating a connection to the service and a transaction, the client accesses several service operations. The contract for the service is defined as follows with each of the operations demonstrating a different setting for the `TransactionFlowOption`.  
-  
-```  
+
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -43,8 +29,8 @@ public interface ICalculator
     [OperationContract]  
     double Divide(double n1, double n2);   
 }  
-```  
-  
+```
+
  This defines the operations in the order they are to be processed:  
   
 -   An `Add` operation request must include a flowed transaction.  
@@ -72,14 +58,14 @@ public interface ICalculator
 ```  
   
 > [!NOTE]
->  The system-provided netTcpBinding allows specification of the transactionProtocol whereas the system-provided wsHttpBinding uses only the more interoperable WSAtomicTransactionOctober2004 protocol. The OleTransactions protocol is only available for use by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] clients.  
+>  The system-provided netTcpBinding allows specification of the transactionProtocol whereas the system-provided wsHttpBinding uses only the more interoperable WSAtomicTransactionOctober2004 protocol. The OleTransactions protocol is only available for use by Windows Communication Foundation (WCF) clients.  
   
  For the class that implements the `ICalculator` interface, all of the methods are attributed with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property set to `true`. This setting declares that all actions taken within the method occur within the scope of a transaction. In this case, the actions taken include recording to the log database. If the operation request includes a flowed transaction then the actions occur within the scope of the incoming transaction or a new transaction scope is automatically generated.  
   
 > [!NOTE]
 >  The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property defines behavior local to the service method implementations and does not define the client's ability to or requirement for flowing a transaction.  
-  
-```  
+
+```csharp
 // Service class that implements the service contract.  
 [ServiceBehavior(TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable)]  
 public class CalculatorService : ICalculator  
@@ -114,22 +100,22 @@ public class CalculatorService : ICalculator
   
     // Logging method omitted for brevity  
 }  
-```  
-  
+```
+
  On the client, the service's `TransactionFlowOption` settings on the operations are reflected in the client's generated definition of the `ICalculator` interface. Also, the service's `transactionFlow` property settings are reflected in the client's application configuration. The client can select the transport and protocol by selecting the appropriate `endpointConfigurationName`.  
-  
-```  
+
+```csharp
 // Create a client using either wsat or oletx endpoint configurations  
 CalculatorClient client = new CalculatorClient("WSAtomicTransaction_endpoint");  
 // CalculatorClient client = new CalculatorClient("OleTransactions_endpoint");  
-```  
-  
+```
+
 > [!NOTE]
 >  The observed behavior of this sample is the same no matter which protocol or transport is chosen.  
   
  Having initiated the connection to the service, the client creates a new `TransactionScope` around the calls to the service operations.  
-  
-```  
+
+```csharp
 // Start a transaction scope  
 using (TransactionScope tx =  
             new TransactionScope(TransactionScopeOption.RequiresNew))  
@@ -186,8 +172,8 @@ using (TransactionScope tx =
 }  
   
 Console.WriteLine("Transaction committed");  
-```  
-  
+```
+
  The calls to the operations are as follows:  
   
 -   The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  
@@ -240,7 +226,7 @@ Press <ENTER> to terminate the service.
     > [!NOTE]
     >  For cross-machine configuration, enable the Distributed Transaction Coordinator using the instructions below, and use the WsatConfig.exe tool from the Windows SDK to enable WCF Transactions network support. See [Configuring WS-Atomic Transaction Support](http://go.microsoft.com/fwlink/?LinkId=190370) for information on setting up WsatConfig.exe.  
   
- Whether you run the sample on the same computer or on different computers, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transactions network support.  
+ Whether you run the sample on the same computer or on different computers, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable WCF transactions network support.  
   
 ### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample  
   
@@ -293,6 +279,6 @@ Press <ENTER> to terminate the service.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\TransactionFlow`

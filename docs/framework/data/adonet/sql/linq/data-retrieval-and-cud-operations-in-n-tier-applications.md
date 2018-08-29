@@ -1,24 +1,10 @@
 ---
 title: "Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c3133d53-83ed-4a4d-af8b-82edcf3831db
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)
 When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It is also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A?displayProperty=nameWithType>. In addition, if you are using an optimistic concurrency check with original values, then you will also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they have been detached.  

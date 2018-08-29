@@ -1,14 +1,6 @@
 ---
 title: "Storyboards Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "syntax [WPF], Storyboard"
   - "timelines [WPF]"
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
-caps.latest.revision: 31
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Storyboards Overview
 This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> objects to organize and apply animations. It describes how to interactively manipulate <xref:System.Windows.Media.Animation.Storyboard> objects and describes indirect property targeting syntax.  
@@ -142,7 +128,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 ### Indirectly Targeting a Property of a Freezable in XAML  
  To target a property of a freezable in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], use the following syntax.  
   
-||  
+| |  
 |-|  
 |*ElementPropertyName* `.` *FreezablePropertyName*|  
   
@@ -162,7 +148,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  To target a freezable contained in a collection, you use the following path syntax.  
   
-||  
+| |  
 |-|  
 |*ElementPropertyName* `.Children[` *CollectionIndex* `].` *FreezablePropertyName*|  
   
@@ -188,7 +174,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  You also need to specify a <xref:System.Windows.PropertyPath.Path%2A>. A <xref:System.Windows.PropertyPath.Path%2A> is a <xref:System.String> that tells the <xref:System.Windows.PropertyPath.Path%2A> how to interpret its <xref:System.Windows.PropertyPath.PathParameters%2A>. It uses the following syntax.  
   
-||  
+| |  
 |-|  
 |`(` *OwnerPropertyArrayIndex* `).(` *FreezablePropertyArrayIndex* `)`|  
   
@@ -212,7 +198,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  To target a <xref:System.Windows.Freezable> contained in a collection, you use the following path syntax.  
   
-||  
+| |  
 |-|  
 |`(` *OwnerPropertyArrayIndex* `).(` *CollectionChildrenPropertyArrayIndex* `)` `[` *CollectionIndex* `].(` *FreezablePropertyArrayIndex* `)`|  
   

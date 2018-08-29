@@ -1,26 +1,12 @@
 ---
 title: "Additional Security Considerations in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, secure calls to Windows API"
   - "security [Windows Forms]"
   - "security [Windows Forms], calling APIs"
   - "Clipboard [Windows Forms], securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Additional Security Considerations in Windows Forms
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] security settings might cause your application to run differently in a partial trust environment than on your local computer. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] restricts access to such critical local resources as the file system, network, and unmanaged APIs, among other things. The security settings affect the ability to call the Microsoft Win32 API or other APIs that cannot be verified by the security system. Security also affects other aspects of your application, including file and data access, and printing. For more information about file and data access in a partial trust environment, see [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md). For more information about printing in a partial trust environment, see [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md).  

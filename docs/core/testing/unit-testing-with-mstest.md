@@ -1,25 +1,17 @@
 ---
 title: Unit testing C# with MSTest and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
-keywords: MSTest, .NET, .NET Core
 author: ncarandini
 ms.author: wiwagn
 ms.date: 09/08/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
-ms.workload: 
-  - dotnetcore
 ---
-
 # Unit testing C# with MSTest and .NET Core
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Creating the source project
 
-Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
+Open a shell window. Create a directory called *unit-testing-using-mstest* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
 a new solution file for the class library and the test project. Next, create a *PrimeService* directory. The following outline shows the directory and file structure thus far:
 
 ```
@@ -148,7 +140,6 @@ In the *unit-testing-using-mstest* directory, run `dotnet test` again. The `dotn
 Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add new tests with the `[TestMethod]` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests.  A `[DataTestMethod]`attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[DataRow]` attribute to specify values for those inputs.
 
 Instead of creating new tests, apply these two attributes to create a single data driven test. The data driven test is a method that tests several values less than two, which is the lowest prime number:
-:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 

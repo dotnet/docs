@@ -2,10 +2,6 @@
 title: EndEnumeration function (Unmanaged API Reference)
 description: The EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "EndEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EndEnumeration function
 Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).  
@@ -44,7 +37,7 @@ HRESULT EndEnumeration (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 
 ## Return value
@@ -58,7 +51,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::EndEnumeration](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) method.
+This function wraps a call to the [IWbemClassObject::EndEnumeration](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) method.
 
 A call to the `EndEnumeration` function is not required, but it is recommended because it releases resources associated with the enumeration. However, the resoruces are deallocated automatically when the next enumeration is started or the object is released.
 

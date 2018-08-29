@@ -1,21 +1,9 @@
 ---
 title: "How To: Debug Claims-Aware Applications And Services Using WIF Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Debug Claims-Aware Applications And Services Using WIF Tracing
 ## Applies To  
@@ -83,7 +71,7 @@ ms.workload:
     </system.diagnostics>  
     ```  
   
-3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](http://msdn.microsoft.com/library/ms733025.aspx).  
+3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](../wcf/diagnostics/tracing/configuring-tracing.md).  
   
 ## Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
  In this step, you will use the Trace Viewer Tool (SvcTraceViewer.exe) to analyze WIF trace logs.  
@@ -115,4 +103,4 @@ ms.workload:
   
 ## Related Items  
   
--   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](http://msdn.microsoft.com/library/aa751795.aspx)
+-   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

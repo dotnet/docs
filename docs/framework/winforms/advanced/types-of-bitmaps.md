@@ -1,14 +1,6 @@
 ---
 title: "Types of Bitmaps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "jpeg files"
   - "TIFF files"
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], file format"
   - "Exchangeable Image File"
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Types of Bitmaps
 A bitmap is an array of bits that specify the color of each pixel in a rectangular array of pixels. The number of bits devoted to an individual pixel determines the number of colors that can be assigned to that pixel. For example, if each pixel is represented by 4 bits, then a given pixel can be assigned one of 16 different colors (2^4 = 16). The following table shows a few examples of the number of colors that can be assigned to a pixel represented by a given number of bits.  

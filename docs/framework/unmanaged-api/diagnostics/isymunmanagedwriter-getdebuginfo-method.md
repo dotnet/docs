@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedWriter::GetDebugInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedWriter.GetDebugInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dd31c210-6829-45eb-927e-cc53932638b7
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter::GetDebugInfo Method
 Returns the information necessary for a compiler to write the debug directory entry in the portable executable (PE) file header. The symbol writer fills out all fields except for `TimeDateStamp` and `PointerToRawData`. (The compiler is responsible for setting these two fields appropriately.)  

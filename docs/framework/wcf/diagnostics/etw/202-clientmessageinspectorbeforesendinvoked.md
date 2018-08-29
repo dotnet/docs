@@ -1,21 +1,7 @@
 ---
 title: "202 - ClientMessageInspectorBeforeSendInvoked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0b02ca82-8a55-45e3-b2e2-ddfe28a7269c
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 202 - ClientMessageInspectorBeforeSendInvoked
 ## Properties  

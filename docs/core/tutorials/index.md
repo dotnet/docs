@@ -1,18 +1,10 @@
 ---
 title: .NET Core Tutorials
 description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
-ms.workload: 
-  - dotnetcore
 ---
-
 # .NET Core Tutorials
 
 The following tutorials are available for learning about .NET Core.

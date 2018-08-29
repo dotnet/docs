@@ -1,21 +1,7 @@
 ---
 title: "&lt;windows&gt; of &lt;clientCredentials&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;windows&gt; of &lt;clientCredentials&gt; Element
 Specifies the settings for a Windows credential to be used to represent the client.  
@@ -44,7 +30,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
 |Attribute|Description|  
 |---------------|-----------------|  
 |`allowedImpersonationLevel`|Sets the impersonation preference that the client communicates to the server. The impersonation mode that the client selects is not enforced on the server. Valid values include the following:<br /><br /> -   Identification: The server can get the identity and privileges of the client, but cannot impersonate the client.<br />-   Impersonation: The server can impersonate the client's security context on the local system.<br />-   Delegation: The server can impersonate the client's security context on remote systems.<br />-   Anonymous: The server cannot impersonate or identify the client.<br />-   None: An impersonation level is not assigned.<br /><br /> The default is Identification. This attribute is of type <xref:System.Security.Principal.TokenImpersonationLevel>.|  
-|`allowNtlm`|Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.<br /><br /> Setting this property to `false` causes [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.|  
+|`allowNtlm`|Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.<br /><br /> Setting this property to `false` causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.|  
   
 ### Child Elements  
  None.  

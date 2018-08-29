@@ -1,10 +1,6 @@
 ---
 title: "ICLRSyncManager Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "ICLRSyncManager"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "apiref"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRSyncManager Interface
 Defines methods that allow the host to get information about requested tasks and to detect deadlocks in its synchronization implementation.  

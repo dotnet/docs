@@ -1,21 +1,9 @@
 ---
 title: "&lt;securityTokenHandlers&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;securityTokenHandlers&gt;
 Specifies a collection of security token handlers that are registered with the endpoint.  

@@ -1,19 +1,7 @@
 ---
 title: "How to: Join Two Collections (LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 7b817ede-911a-4cff-9dd3-639c3fc228c9
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Join Two Collections (LINQ to XML) (C#)
 An element or attribute in an XML document can sometimes refer to another element or attribute. For example, the [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md) XML document contains a list of customers and a list of orders. Each `Customer` element contains a `CustomerID` attribute. Each `Order` element contains a `CustomerID` element. The `CustomerID` element in each order refers to the `CustomerID` attribute in a customer.  

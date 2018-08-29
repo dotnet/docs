@@ -1,20 +1,12 @@
 ---
 title: "Walkthrough: Displaying Data in a DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "DataRepeater, walkthrough"
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Displaying Data in a DataRepeater Control (Visual Studio)
 This walkthrough provides a basic start-to-finish scenario for displaying bound data in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control.  
@@ -22,7 +14,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
 ## Prerequisite  
  This walkthrough requires the Northwind sample database.  
   
- If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+ If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 ## Overview  
  The first part of this walkthrough consists of four main tasks:  

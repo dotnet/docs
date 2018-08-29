@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate the Color or Opacity of a SolidColorBrush"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "SolidColorBrush [WPF], animating color of"
   - "colors [WPF], animating"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "animation [WPF], opacity of SolidColorBrush"
   - "SolidColorBrush [WPF], animating opacity of"
 ms.assetid: d9154354-843f-4713-bad1-35bb0ba6eaeb
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate the Color or Opacity of a SolidColorBrush
 This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush.Color%2A> and <xref:System.Windows.Media.Brush.Opacity%2A> of a <xref:System.Windows.Media.SolidColorBrush>.  

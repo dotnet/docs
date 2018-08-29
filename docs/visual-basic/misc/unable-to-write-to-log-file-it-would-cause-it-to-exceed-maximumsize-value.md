@@ -1,16 +1,9 @@
 ---
 title: "Unable to write to log file because writing to it would cause it to exceed MaximumSize value"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_FileExceedsMaximumSize"
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Unable to write to log file because writing to it would cause it to exceed MaximumSize value
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not write to the log file because:  

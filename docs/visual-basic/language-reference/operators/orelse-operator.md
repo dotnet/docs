@@ -1,12 +1,6 @@
 ---
 title: "OrElse Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "OrElse"
   - "vb.OrElse"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "short-circuit evaluation"
   - "OrElse operator [Visual Basic]"
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # OrElse Operator (Visual Basic)
 Performs short-circuiting inclusive logical disjunction on two expressions.  

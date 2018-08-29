@@ -1,21 +1,7 @@
 ---
 title: "Service Identity Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Identity Sample
 This service identity sample demonstrates how to set the identity for a service. At design time, a client can retrieve the identity using the service's metadata and then at runtime the client can authenticate the service's identity. The concept of service identity is to allow a client to authenticate a service before calling any of its operations, thereby protecting the client from unauthenticated calls. On a secure connection the service also authenticates a client's credentials before allowing it access, but this is not the focus of this sample. See the samples in [Client](../../../../docs/framework/wcf/samples/client.md) that show server authentication.  
@@ -165,6 +151,6 @@ class CustomIdentityVerifier : IdentityVerifier
 -   Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 ## See Also

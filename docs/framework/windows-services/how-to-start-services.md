@@ -1,24 +1,12 @@
 ---
 title: "How to: Start Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, starting"
   - "services, starting"
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
-caps.latest.revision: 16
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Start Services
 After a service is installed, it must be started. Starting calls the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method on the service class. Usually, the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method defines the useful work the service will perform. After a service starts, it remains active until it is manually paused or stopped.  
@@ -26,7 +14,7 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
  Services can be set up to start automatically or manually. A service that starts automatically will be started when the computer on which it is installed is rebooted or first turned on. A user must start a service that starts manually.  
   
 > [!NOTE]
->  By default, services created with [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] are set to start manually.  
+>  By default, services created with Visual Studio are set to start manually.  
   
  There are several ways you can manually start a service — from **Server Explorer**, from the **Services Control Manager**, or from code using a component called the <xref:System.ServiceProcess.ServiceController>.  
   

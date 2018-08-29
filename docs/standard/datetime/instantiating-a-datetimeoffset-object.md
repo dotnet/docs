@@ -1,13 +1,7 @@
 ---
 title: "Instantiating a DateTimeOffset object"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,15 +11,9 @@ helpviewer_keywords:
   - "DateTimeOffset structure, converting to DateTime"
   - "DateTimeOffset structure, instantiating"
 ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Instantiating a DateTimeOffset object
 
 The <xref:System.DateTimeOffset> structure offers a number of ways to create new <xref:System.DateTimeOffset> values. Many of them correspond directly to the methods available for instantiating new <xref:System.DateTime> values, with enhancements that allow you to specify the date and time value's offset from Coordinated Universal Time (UTC). In particular, you can instantiate a <xref:System.DateTimeOffset> value in the following ways:

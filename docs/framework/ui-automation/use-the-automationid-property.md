@@ -1,14 +1,6 @@
 ---
 title: "Use the AutomationID Property"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,9 @@ helpviewer_keywords:
   - "UI Automation, AutomationId property"
   - "properties, AutomationId"
 ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
-caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Use the AutomationID Property
 > [!NOTE]

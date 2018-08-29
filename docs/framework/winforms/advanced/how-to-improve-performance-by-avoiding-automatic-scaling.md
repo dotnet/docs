@@ -1,14 +1,6 @@
 ---
 title: "How to: Improve Performance by Avoiding Automatic Scaling"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "images [Windows Forms], using without automatic scaling"
   - "performance [Windows Forms], improving image"
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Improve Performance by Avoiding Automatic Scaling
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] may automatically scale an image as you draw it, which would decrease performance. Alternatively, you can control the scaling of the image by passing the dimensions of the destination rectangle to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  

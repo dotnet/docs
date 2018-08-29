@@ -1,13 +1,7 @@
 ---
 title: "How to: Explicitly Throw Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "exceptions, throwing"
   - "implicitly throwing exceptions"
 ms.assetid: 72bdd157-caa9-4478-9ee3-cb4500b84528
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to explicitly throw exceptions
 

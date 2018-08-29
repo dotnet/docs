@@ -1,21 +1,9 @@
 ---
 title: "How To: Build Claims-Aware ASP.NET Application Using Windows Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 11c53d9d-d34a-44b4-8b5e-22e3eaeaee93
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Build Claims-Aware ASP.NET Application Using Windows Authentication
 ## Applies To  

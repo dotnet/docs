@@ -1,18 +1,7 @@
 ---
 title: "Cancel an Async Task or a List of Tasks (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Cancel an Async Task or a List of Tasks (Visual Basic)
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.  
@@ -26,7 +15,7 @@ You can set up a button that you can use to cancel an async application if you d
  The first example associates the **Cancel** button with a single download task. If you choose the button while the application is downloading content, the download is canceled.  
   
 ### Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -144,7 +133,7 @@ You can set up a button that you can use to cancel an async application if you d
  You can extend the previous example to cancel many tasks by associating the same `CancellationTokenSource` instance with each task. If you choose the **Cancel** button, you cancel all tasks that aren’t yet complete.  
   
 ### Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -255,7 +244,7 @@ You can set up a button that you can use to cancel an async application if you d
 ##  <a name="BKMK_CompleteExamples"></a> Complete Examples  
  The following sections contain the code for each of the previous examples. Notice that you must add a reference for <xref:System.Net.Http>.  
   
- You can download the projects from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
+ You can download the projects from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ### Cancel a Task Example  
  The following code is the complete MainWindow.xaml.vb file for the example that cancels a single task.  
@@ -464,4 +453,4 @@ End Class
  <xref:System.Threading.CancellationToken>  
  [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
  [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
+ [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

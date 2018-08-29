@@ -1,21 +1,9 @@
 ---
 title: "&lt;Method&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;Method&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructor or method.  

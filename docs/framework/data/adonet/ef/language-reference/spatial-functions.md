@@ -1,21 +1,7 @@
 ---
 title: "Spatial Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 90cb177d-88a0-45be-97e8-3b306283c6e0
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Spatial Functions
 There is no literal format for spatial types. However, you can use canonical Entity Framework functions that you call using strings in Well-Known Text format. For example, the following function call creates a geometry point:  

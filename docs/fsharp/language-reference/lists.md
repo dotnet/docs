@@ -1,17 +1,8 @@
 ---
 title: Lists (F#)
 description: Learn about F# lists, an ordered, immutable series of elements of the same type.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: a1a6075f-064d-4aee-8222-2b59ff16cc12 
 ---
-
 # Lists
 
 > [!NOTE]

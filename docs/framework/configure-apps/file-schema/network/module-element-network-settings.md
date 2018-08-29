@@ -1,14 +1,6 @@
 ---
 title: "&lt;module&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#module"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/module"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "module element"
   - "<module> element"
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;module&gt; Element (Network Settings)
 Adds a new proxy module to the application.  

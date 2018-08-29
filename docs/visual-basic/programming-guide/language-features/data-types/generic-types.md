@@ -1,10 +1,6 @@
 ---
 title: "Generic Types in Visual Basic (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generic interfaces"
   - "data type arguments [Visual Basic], defining"
@@ -40,9 +36,6 @@ helpviewer_keywords:
   - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-caps.latest.revision: 45
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Generic Types in Visual Basic (Visual Basic)
 A *generic type* is a single programming element that adapts to perform the same functionality for a variety of data types. When you define a generic class or procedure, you do not have to define a separate version for each data type for which you might want to perform that functionality.  
@@ -154,7 +147,7 @@ Screwdriver set as a generic tool
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
  [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  

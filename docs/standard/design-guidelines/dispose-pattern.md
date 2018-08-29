@@ -1,13 +1,7 @@
 ---
 title: "Dispose Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Dispose method"
   - "class library design guidelines [.NET Framework], Dispose method"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - "customizing Dispose method name"
   - "Finalize method"
 ms.assetid: 31a6c13b-d6a2-492b-9a9f-e5238c983bcb
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Dispose Pattern
 All programs acquire one or more system resources, such as memory, system handles, or database connections, during the course of their execution. Developers have to be careful when using such system resources, because they must be released after they have been acquired and used.  
@@ -64,22 +53,22 @@ All programs acquire one or more system resources, such as memory, system handle
   
  The following example shows a simple implementation of the basic pattern:  
   
-```  
+```csharp
 public class DisposableResourceHolder : IDisposable {  
   
     private SafeHandle resource; // handle to a resource  
   
-    public DisposableResourceHolder(){  
+    public DisposableResourceHolder() {  
         this.resource = ... // allocates the resource  
     }  
   
-    public void Dispose(){  
+    public void Dispose() {  
         Dispose(true);  
         GC.SuppressFinalize(this);  
     }  
   
-    protected virtual void Dispose(bool disposing){  
-        if (disposing){  
+    protected virtual void Dispose(bool disposing) {  
+        if (disposing) {  
             if (resource!= null) resource.Dispose();  
         }  
     }  
@@ -94,9 +83,9 @@ public class DisposableResourceHolder : IDisposable {
   
  All resource cleanup should occur in this method. The method is called from both the finalizer and the `IDisposable.Dispose` method. The parameter will be false if being invoked from inside a finalizer. It should be used to ensure any code running during finalization is not accessing other finalizable objects. Details of implementing finalizers are described in the next section.  
   
-```  
-protected virtual void Dispose(bool disposing){  
-    if (disposing){  
+```csharp
+protected virtual void Dispose(bool disposing) {  
+    if (disposing) {  
         if (resource!= null) resource.Dispose();  
     }  
 }  
@@ -106,7 +95,7 @@ protected virtual void Dispose(bool disposing){
   
  The call to `SuppressFinalize` should only occur if `Dispose(true)` executes successfully.  
   
-```  
+```csharp
 public void Dispose(){  
     Dispose(true);  
     GC.SuppressFinalize(this);  
@@ -117,17 +106,17 @@ public void Dispose(){
   
  The `Dispose(bool)` method is the one that should be overridden by subclasses.  
   
-```  
+```csharp
 // bad design  
 public class DisposableResourceHolder : IDisposable {  
-    public virtual void Dispose(){ ... }  
-    protected virtual void Dispose(bool disposing){ ... }  
+    public virtual void Dispose() { ... }  
+    protected virtual void Dispose(bool disposing) { ... }  
 }  
   
 // good design  
 public class DisposableResourceHolder : IDisposable {  
-    public void Dispose(){ ... }  
-    protected virtual void Dispose(bool disposing){ ... }  
+    public void Dispose() { ... }  
+    protected virtual void Dispose(bool disposing) { ... }  
 }  
 ```  
   
@@ -137,13 +126,13 @@ public class DisposableResourceHolder : IDisposable {
   
  **✓ DO** allow the `Dispose(bool)` method to be called more than once. The method might choose to do nothing after the first call.  
   
-```  
+```csharp
 public class DisposableResourceHolder : IDisposable {  
   
     bool disposed = false;  
   
-    protected virtual void Dispose(bool disposing){  
-        if(disposed) return;  
+    protected virtual void Dispose(bool disposing) {  
+        if (disposed) return;  
         // cleanup  
         ...  
         disposed = true;  
@@ -159,18 +148,18 @@ public class DisposableResourceHolder : IDisposable {
   
  **✓ DO** throw an <xref:System.ObjectDisposedException> from any member that cannot be used after the object has been disposed of.  
   
-```  
+```csharp
 public class DisposableResourceHolder : IDisposable {  
     bool disposed = false;  
     SafeHandle resource; // handle to a resource  
   
-    public void DoSomething(){  
-           if(disposed) throw new ObjectDisposedException(...);  
+    public void DoSomething() {  
+        if (disposed) throw new ObjectDisposedException(...);  
         // now call some native methods using the resource   
-            ...  
+        ...  
     }  
-    protected virtual void Dispose(bool disposing){  
-        if(disposed) return;  
+    protected virtual void Dispose(bool disposing) {  
+        if (disposed) return;  
         // cleanup  
         ...  
         disposed = true;  
@@ -182,12 +171,12 @@ public class DisposableResourceHolder : IDisposable {
   
  When doing so, it is important that you make the `Close` implementation identical to `Dispose` and consider implementing the `IDisposable.Dispose` method explicitly.  
   
-```  
+```csharp
 public class Stream : IDisposable {  
-    IDisposable.Dispose(){  
+    IDisposable.Dispose() {  
         Close();  
     }  
-    public void Close(){  
+    public void Close() {  
         Dispose(true);  
         GC.SuppressFinalize(this);  
     }  
@@ -206,29 +195,29 @@ public class Stream : IDisposable {
   
  The following code shows an example of a finalizable type:  
   
-```  
+```csharp
 public class ComplexResourceHolder : IDisposable {  
   
     private IntPtr buffer; // unmanaged memory buffer  
     private SafeHandle resource; // disposable handle to a resource  
   
-    public ComplexResourceHolder(){  
+    public ComplexResourceHolder() {  
         this.buffer = ... // allocates memory  
         this.resource = ... // allocates the resource  
     }  
   
-    protected virtual void Dispose(bool disposing){  
+    protected virtual void Dispose(bool disposing) {  
             ReleaseBuffer(buffer); // release unmanaged memory  
-        if (disposing){ // release other disposable objects  
+        if (disposing) { // release other disposable objects  
             if (resource!= null) resource.Dispose();  
         }  
     }  
   
-    ~ ComplexResourceHolder(){  
+    ~ComplexResourceHolder() {
         Dispose(false);  
     }  
   
-    public void Dispose(){  
+    public void Dispose() {
         Dispose(true);  
         GC.SuppressFinalize(this);  
     }  
@@ -247,14 +236,14 @@ public class ComplexResourceHolder : IDisposable {
   
  When implementing the finalizer, simply call `Dispose(false)` and place all resource cleanup logic inside the `Dispose(bool disposing)` method.  
   
-```  
+```csharp
 public class ComplexResourceHolder : IDisposable {  
   
-    ~ ComplexResourceHolder(){  
+    ~ComplexResourceHolder() {
         Dispose(false);  
     }  
   
-    protected virtual void Dispose(bool disposing){  
+    protected virtual void Dispose(bool disposing) {
         ...  
     }  
 }  

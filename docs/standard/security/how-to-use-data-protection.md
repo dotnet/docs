@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Data Protection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,13 +16,8 @@ helpviewer_keywords:
   - "decryption"
   - "data [.NET Framework], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Use Data Protection
 The .NET Framework provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  

@@ -1,19 +1,7 @@
 ---
 title: "Tracking Records"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 51adbda3-bd8b-4892-a8ea-d343186472d2
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking Records
 The workflow runtime is instrumented to emit tracking records to follow the execution of a workflow instance.  

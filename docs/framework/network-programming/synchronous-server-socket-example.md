@@ -1,12 +1,6 @@
 ---
 title: "Synchronous Server Socket Example"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,12 +9,9 @@ helpviewer_keywords:
   - "sockets, code examples"
   - "sockets, synchronous server sockets"
 ms.assetid: 5916c764-879f-4716-99fb-1d21c6237f1c
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Synchronous Server Socket Example
 The following example program creates a server that receives connection requests from clients. The server is built with a synchronous socket, so execution of the server application is suspended while it waits for a connection from a client. The application receives a string from the client, displays the string on the console, and then echoes the string back to the client. The string from the client must contain the string "\<EOF>" to signal the end of the message.  
@@ -67,7 +58,6 @@ Public Class SynchronousSocketListener
   
             ' An incoming connection needs to be processed.  
             While True  
-                bytes = New Byte(1024) {}  
                 Dim bytesRec As Integer = handler.Receive(bytes)  
                 data += Encoding.ASCII.GetString(bytes, 0, bytesRec)  
                 If data.IndexOf("<EOF>") > -1 Then  
@@ -128,7 +118,6 @@ public class SynchronousSocketListener {
   
                 // An incoming connection needs to be processed.  
                 while (true) {  
-                    bytes = new byte[1024];  
                     int bytesRec = handler.Receive(bytes);  
                     data += Encoding.ASCII.GetString(bytes,0,bytesRec);  
                     if (data.IndexOf("<EOF>") > -1) {  

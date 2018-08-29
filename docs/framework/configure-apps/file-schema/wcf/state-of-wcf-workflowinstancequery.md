@@ -1,21 +1,7 @@
 ---
 title: "&lt;state&gt; of WCF, &lt;workflowInstanceQuery&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;state&gt; of WCF, &lt;workflowInstanceQuery&gt;
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  

@@ -1,14 +1,6 @@
 ---
 title: "exceptionSwallowedOnCallFromCom MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "messages, informational"
   - "informational messages"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), exceptions"
   - "ExceptionSwallowedOnCallFromCOM MDA"
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # exceptionSwallowedOnCallFromCom MDA
 The `exceptionSwallowedOnCallFromCOM` managed debugging assistant (MDA) is activated when an exception is thrown from common language runtime (CLR) code called from COM via a method that does not have an unmanaged HRESULT return type.  

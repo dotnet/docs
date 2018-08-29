@@ -1,8 +1,6 @@
 ---
 title: "Custom serialization"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +17,6 @@ helpviewer_keywords:
   - "OnDeserializedAttribute class, custom serialization"
   - "OnSerializingAttribute class, custom serialization"
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Custom serialization
 Custom serialization is the process of controlling the serialization and deserialization of a type. By controlling serialization, it's possible to ensure serialization compatibility, which is the ability to serialize and deserialize between versions of a type without breaking the core functionality of the type. For example, in the first version of a type, there may be only two fields. In the next version of a type, several more fields are added. Yet the second version of an application must be able to serialize and deserialize both types. The following sections describe how to control serialization.

@@ -1,14 +1,6 @@
 ---
 title: "Dependency Property Callbacks and Validation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "dependency properties [WPF], callbacks"
   - "validation of dependency properties [WPF]"
 ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Dependency Property Callbacks and Validation
 This topic describes how to create dependency properties using alternative custom implementations for property-related features such as validation determination, callbacks that are invoked whenever the property's effective value is changed, and overriding possible outside influences on value determination. This topic also discusses scenarios where expanding on the default property system behaviors by using these techniques is appropriate.  

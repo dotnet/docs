@@ -1,14 +1,6 @@
 ---
 title: "How to: Develop a Simple Windows Forms Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating simple controls using code"
   - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Develop a Simple Windows Forms Control
 This section walks you through the key steps for authoring a custom Windows Forms control. The simple control developed in this walkthrough allows the alignment of its <xref:System.Windows.Forms.Control.Text%2A> property to be changed. It does not raise or handle events.  
@@ -39,7 +25,7 @@ This section walks you through the key steps for authoring a custom Windows Form
     ```  
   
     ```csharp  
-    public class FirstControl:Control{}  
+    public class FirstControl:Control {}  
     ```  
   
 2.  Define properties. (You are not required to define properties, because a control inherits many properties from the <xref:System.Windows.Forms.Control> class, but most custom controls generally do define additional properties.) The following code fragment defines a property named `TextAlignment` that `FirstControl` uses to format the display of the <xref:System.Windows.Forms.Control.Text%2A> property inherited from <xref:System.Windows.Forms.Control>. For more information about defining properties, see [Properties Overview](http://msdn.microsoft.com/library/8f1a1ff1-0f05-40e0-bfdf-80de8fff7d52).  

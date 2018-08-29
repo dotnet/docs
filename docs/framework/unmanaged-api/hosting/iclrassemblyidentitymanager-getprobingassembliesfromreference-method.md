@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyIdentityManager.GetProbingAssembliesFromReference"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: aec05744-e8d4-44c6-b4a8-e583229ac34e
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference Method
 Gets an [ICLRProbingAssemblyEnum](../../../../docs/framework/unmanaged-api/hosting/iclrprobingassemblyenum-interface.md) enumerator for the assembly identities referenced by the assembly with the specified identity type.  

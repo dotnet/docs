@@ -1,3 +1,4 @@
+#region everything
 namespace WrapTwoInterfaceEvents
 {
     using System;
@@ -29,6 +30,7 @@ namespace WrapTwoInterfaceEvents
         // Explicit interface implementation required.
         // Associate IDrawingObject's event with
         // PreDrawEvent
+        #region IDrawingObjectOnDraw
         event EventHandler IDrawingObject.OnDraw
         {
             add
@@ -46,6 +48,8 @@ namespace WrapTwoInterfaceEvents
                 }
             }
         }
+        #endregion
+
         // Explicit interface implementation required.
         // Associate IShape's event with
         // PostDrawEvent
@@ -74,19 +78,12 @@ namespace WrapTwoInterfaceEvents
         public void Draw()
         {
             // Raise IDrawingObject's event before the object is drawn.
-            EventHandler handler = PreDrawEvent;
-            if (handler != null)
-            {
-                handler(this, new EventArgs());
-            }
+            PreDrawEvent?.Invoke(this, EventArgs.Empty);
+
             Console.WriteLine("Drawing a shape.");
 
-            // RaiseIShape's event after the object is drawn.
-            handler = PostDrawEvent;
-            if (handler != null)
-            {
-                handler(this, new EventArgs());
-            }
+            // Raise IShape's event after the object is drawn.
+            PostDrawEvent?.Invoke(this, EventArgs.Empty);
         }
     }
     public class Subscriber1
@@ -95,7 +92,7 @@ namespace WrapTwoInterfaceEvents
         public Subscriber1(Shape shape)
         {
             IDrawingObject d = (IDrawingObject)shape;
-            d.OnDraw += new EventHandler(d_OnDraw);
+            d.OnDraw += d_OnDraw;
         }
 
         void d_OnDraw(object sender, EventArgs e)
@@ -109,7 +106,7 @@ namespace WrapTwoInterfaceEvents
         public Subscriber2(Shape shape)
         {
             IShape d = (IShape)shape;
-            d.OnDraw += new EventHandler(d_OnDraw);
+            d.OnDraw += d_OnDraw;
         }
 
         void d_OnDraw(object sender, EventArgs e)
@@ -140,3 +137,4 @@ namespace WrapTwoInterfaceEvents
     Drawing a shape.
     Sub2 receives the IShape event.
 */
+#endregion

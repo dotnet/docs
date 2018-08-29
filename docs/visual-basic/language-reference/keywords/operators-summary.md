@@ -1,19 +1,11 @@
 ---
 title: "Operators Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], about operators [Visual Basic]"
   - "symbols, operators"
   - "Visual Basic code, operators"
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Operators Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

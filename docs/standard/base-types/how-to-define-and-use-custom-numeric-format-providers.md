@@ -1,13 +1,7 @@
 ---
 title: "How to: Define and Use Custom Numeric Format Providers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,13 +15,8 @@ helpviewer_keywords:
   - "format providers [.NET Framework]"
   - "custom format strings"
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Define and Use Custom Numeric Format Providers
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  
@@ -94,7 +83,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
  In the case of this example, the method that implements <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> is intended to serve as a callback method for the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method. Therefore, it examines the `formatProvider` parameter to determine whether it contains a reference to the current `TelephoneFormatter` object. However, the method can also be called directly from code. In that case, you can use the `formatProvider` parameter to provide a <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> object that supplies culture-specific formatting information.  
   
 ## Compiling the Code  
- Compile the code at the command line using csc.exe or vb.exe. To compile the code in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], put it in a console application project template.  
+ Compile the code at the command line using csc.exe or vb.exe. To compile the code in Visual Studio, put it in a console application project template.  
   
 ## See Also  
  [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)

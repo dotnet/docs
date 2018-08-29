@@ -1,20 +1,14 @@
 ---
-
 title: Get Started - C# Guide
 description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
-keywords: C#, Get Started, Acquisition, Install
 helpviewer_keywords: 
   - "Visual C#, getting started"
   - "getting started, Visual C#"
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
-# Get started with C# #
+# Get started with C\#
 
 This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. You can build either a simple Hello World application or, if you have Visual Studio 2017, a simple class library that can be used by other applications.
 
@@ -44,7 +38,7 @@ The following topics are available:
 
 * [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
 
-    Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.
+    Provides a guide to using the Visual C# integrated development environment.
 
 * [C# Programming Guide](../../csharp/programming-guide/index.md)
 
@@ -63,4 +57,5 @@ The following topics are available:
     Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 
 ## See also
- [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+
+* [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

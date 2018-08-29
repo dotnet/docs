@@ -1,4 +1,4 @@
-    // compile with: /doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml 
 
     /// Comment for class
     public class EClass : System.Exception

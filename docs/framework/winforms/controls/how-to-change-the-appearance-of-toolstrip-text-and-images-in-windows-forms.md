@@ -1,14 +1,6 @@
 ---
 title: "How to: Change the Appearance of ToolStrip Text and Images in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], text"
   - "toolbars [Windows Forms], text"
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Change the Appearance of ToolStrip Text and Images in Windows Forms
 You can control whether text and images are displayed on a <xref:System.Windows.Forms.ToolStripItem> and how they are aligned relative to each other and the <xref:System.Windows.Forms.ToolStrip>.  

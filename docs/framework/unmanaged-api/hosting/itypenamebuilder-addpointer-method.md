@@ -1,14 +1,6 @@
 ---
 title: "ITypeNameBuilder::AddPointer Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ITypeNameBuilder.AddPointer"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b6f1dbd4-1a9f-44dd-b54b-c530ab44eb48
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ITypeNameBuilder::AddPointer Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

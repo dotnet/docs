@@ -1,14 +1,6 @@
 ---
 title: "Sizing Options in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], row sizing"
   - "data grids [Windows Forms], column sizing"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "data grids [Windows Forms], row sizing"
   - "data grids [Windows Forms], sizing options"
 ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Sizing Options in the Windows Forms DataGridView Control
 <xref:System.Windows.Forms.DataGridView> rows, columns, and headers can change size as a result of many different occurrences. The following table shows these occurrences.  

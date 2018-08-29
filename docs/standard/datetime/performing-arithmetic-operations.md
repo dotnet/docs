@@ -1,13 +1,7 @@
 ---
 title: "Performing arithmetic operations with dates and times"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,15 +14,9 @@ helpviewer_keywords:
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Performing arithmetic operations with dates and times
 
 Although both the <xref:System.DateTime> and the <xref:System.DateTimeOffset> structures provide members that perform arithmetic operations on their values, the results of arithmetic operations are very different. This topic examines those differences, relates them to degrees of time zone awareness in date and time data, and discusses how to perform fully time zone aware operations using date and time data.

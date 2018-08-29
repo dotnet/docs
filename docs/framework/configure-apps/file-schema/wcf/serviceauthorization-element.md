@@ -1,21 +1,7 @@
 ---
 title: "&lt;serviceAuthorization&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;serviceAuthorization&gt; element
 Specifies settings that authorize access to service operations  

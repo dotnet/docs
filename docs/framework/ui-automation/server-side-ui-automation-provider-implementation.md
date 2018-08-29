@@ -1,25 +1,14 @@
 ---
 title: "Server-Side UI Automation Provider Implementation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "server-side UI Automation provider implementation"
   - "UI Automation, server-side provider implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-caps.latest.revision: 39
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Server-Side UI Automation Provider Implementation
 > [!NOTE]
@@ -27,7 +16,7 @@ ms.workload:
   
  This section describes how to implement a server-side UI Automation provider for a custom control.  
   
- The implementation for [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] elements and non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support through implementations of provider interfaces.  
+ The implementation for Windows Presentation Foundation (WPF) elements and non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support through implementations of provider interfaces.  
   
 <a name="Security_Considerations"></a>   
 ## Security Considerations  

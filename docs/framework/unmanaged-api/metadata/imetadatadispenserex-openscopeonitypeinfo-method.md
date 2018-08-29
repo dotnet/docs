@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataDispenserEx::OpenScopeOnITypeInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataDispenserEx.OpenScopeOnITypeInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataDispenserEx::OpenScopeOnITypeInfo Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
@@ -46,7 +34,7 @@ HRESULT OpenScopeOnITypeInfo (
   
 #### Parameters  
  `pITI`  
- [in] Pointer to an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) interface that provides the type information on which to open the scope.  
+ [in] Pointer to an [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.  
   
  `dwOpenFlags`  
  [in] The open mode flags.  

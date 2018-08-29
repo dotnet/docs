@@ -1,26 +1,12 @@
 ---
 title: "PageSetupDialog Component Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "PageSetupDialog"
 helpviewer_keywords: 
   - "Page Setup dialog box [Windows Forms], displaying"
   - "PageSetupDialog component"
 ms.assetid: 791caacb-a5ca-4fca-bad9-1a5721ad697c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # PageSetupDialog Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.PageSetupDialog> component is a pre-configured dialog box used to set page details for printing in Windows-based applications. Use it within your Windows-based application as a simple solution for users to set page preferences in lieu of configuring your own dialog box. You can enable users to set border and margin adjustments, headers and footers, and portrait or landscape orientation. By relying on standard Windows dialog boxes, you create applications whose basic functionality is immediately familiar to users.  

@@ -1,24 +1,10 @@
 ---
 title: "Caching Support for WCF Web HTTP Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Caching Support for WCF Web HTTP Services
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] ASP.NET caching, see [ASP.NET Caching Overview](http://go.microsoft.com/fwlink/?LinkId=152534)  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. For more information about ASP.NET caching, see [ASP.NET Caching Overview](http://go.microsoft.com/fwlink/?LinkId=152534)  
   
 ## Basic Web HTTP Service Caching  
  To enable WEB HTTP service caching you must first enable ASP.NET compatibility by applying the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to the service setting <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> or <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>.  
@@ -66,7 +52,7 @@ public class Service
 </system.web>  
 ```  
   
- This is the same configuration element that is available to ASP.NET applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] ASP.NET cache profiles, see <xref:System.Web.Configuration.OutputCacheProfile>. For Web HTTP services, the most important attributes in the cache profile are: `cacheDuration` and `varyByParam`. Both of these attributes are required. `cacheDuration` sets the amount of time a response should be cached in seconds. `varyByParam` allows you to specify a query string parameter that is used to cache responses. All requests made with different query string parameter values are cached separately. For example, once an initial request is made to http://MyServer/MyHttpService/MyOperation?param=10 all subsequent requests made with the same URI would be returned the cached response (so long as the cache duration has not elapsed). Responses for a similar request that is the same but has a different value for the parameter query string parameter are cached separately. If you do not want this separate caching behavior, set `varyByParam` to "none".  
+ This is the same configuration element that is available to ASP.NET applications. For more information about ASP.NET cache profiles, see <xref:System.Web.Configuration.OutputCacheProfile>. For Web HTTP services, the most important attributes in the cache profile are: `cacheDuration` and `varyByParam`. Both of these attributes are required. `cacheDuration` sets the amount of time a response should be cached in seconds. `varyByParam` allows you to specify a query string parameter that is used to cache responses. All requests made with different query string parameter values are cached separately. For example, once an initial request is made to http://MyServer/MyHttpService/MyOperation?param=10 all subsequent requests made with the same URI would be returned the cached response (so long as the cache duration has not elapsed). Responses for a similar request that is the same but has a different value for the parameter query string parameter are cached separately. If you do not want this separate caching behavior, set `varyByParam` to "none".  
   
 ## SQL Cache Dependency  
  Web HTTP service responses can also be cached with a SQL cache dependency. If your WCF Web HTTP service depends on data stored in a SQL database, you may want to cache the service's response and invalidate the cached response when data in the SQL database table changes. This behavior is configured completely within the Web.config file. You must first define a connection string in the <`connectionStrings`> element.  
@@ -130,7 +116,7 @@ public class Service
  Here the cache duration is set to 60 seconds, `varyByParam` is set to none and `sqlDependency` is set to a semicolon delimited list of database name/table pairs separated by colons. When data in `MyTable` is changed the cached response for the service operation is removed and when the operation is invoked a new response is generated (by calling the service operation), cached, and returned to the client.  
   
 > [!IMPORTANT]
->  For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](http://go.microsoft.com/fwlink/?LinkId=152536). In addition you must allow the appropriate user account access to the database and table. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Accessing SQL Server from a Web Application](http://go.microsoft.com/fwlink/?LinkId=178988).  
+>  For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](http://go.microsoft.com/fwlink/?LinkId=152536). In addition you must allow the appropriate user account access to the database and table. For more information, see [Accessing SQL Server from a Web Application](http://go.microsoft.com/fwlink/?LinkId=178988).  
   
 ## Conditional HTTP GET Based Caching  
  In Web HTTP scenarios a conditional HTTP GET is often used by services to implement intelligent HTTP caching as described in the [HTTP Specification](http://go.microsoft.com/fwlink/?LinkId=165800). To do this the service must set the value of the ETag header in the HTTP response. It also must check the If-None-Match header in the HTTP request to see whether any of the ETag specified matches the current ETag.  

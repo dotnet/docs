@@ -1,21 +1,12 @@
 ---
 title: "Handles Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "Handles"
   - "vb.Handles"
 helpviewer_keywords: 
   - "Handles keyword [Visual Basic]"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Handles Clause (Visual Basic)
 Declares that a procedure handles a specified event.  

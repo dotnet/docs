@@ -1,21 +1,7 @@
 ---
 title: "Function Overload Resolution (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9c648054-3808-4a69-9d3e-98e6a4f9c5ca
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Function Overload Resolution (Entity SQL)
 This topic describes how [!INCLUDE[esql](../../../../../../includes/esql-md.md)] functions are resolved.  

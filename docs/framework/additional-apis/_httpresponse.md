@@ -1,9 +1,6 @@
 ---
 title: "HttpWebRequest._HttpResponse Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: eab9b789-beb4-4c28-b2d8-78debc7ba129
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # HttpWebRequest.\_HttpResponse Field

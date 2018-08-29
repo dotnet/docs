@@ -1,13 +1,6 @@
 ---
 title: "Tuples in Visual Basic"
-ms.custom: ""
 ms.date: 04/23/2017
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "tuples [Visual Basic]"
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
@@ -62,6 +55,8 @@ To enable interred tuple element names, you must define the version of the Visua
 ```
 
 The version number can be any version of the Visual Basic compiler starting with 15.3. Rather than hard-coding a specific compiler version, you can also specify "Latest" as the value of `LangVersion` to compile with the most recent version of the Visual Basic compiler installed on your system.
+
+For more information, see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
 
 In some cases, the Visual Basic compiler cannot infer the tuple element name from the candidate name, and the tuple field can only be referenced using its default name, such as `Item1`, `Item2`, etc. These include:
 

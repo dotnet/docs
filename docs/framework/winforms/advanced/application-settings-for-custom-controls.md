@@ -1,24 +1,10 @@
 ---
 title: "Application Settings for Custom Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], application settings"
   - "application settings [Windows Forms], custom controls"
 ms.assetid: f44afb74-76cc-44f2-890a-44b7cdc211a1
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings for Custom Controls
 You must complete certain tasks to give your custom controls the ability to persist application settings when the controls are hosted in third-party applications.  

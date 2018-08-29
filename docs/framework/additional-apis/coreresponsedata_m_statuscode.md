@@ -1,9 +1,6 @@
 ---
 title: "CoreResponseData.m_StatusCode Field"
 ms.date: "01/29/2018"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -13,10 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 author: "stevewhims"
-ms.author: "stwhi"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 
 # CoreResponseData.m\_StatusCode Field

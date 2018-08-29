@@ -1,25 +1,11 @@
 ---
 title: "Performance Tuning in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], performance tuning"
   - "performance [Windows Forms], DataGridView control"
   - "performance tuning [Windows Forms], data grids"
 ms.assetid: 6ccbff28-a0ff-41e4-b601-61b31b61851d
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Performance Tuning in the Windows Forms DataGridView Control
 When working with large amounts of data, the `DataGridView` control can consume a large amount of memory in overhead, unless you use it carefully. On clients with limited memory, you can avoid some of this overhead by avoiding features that have a high memory cost. You can also manage some or all of the data maintenance and retrieval tasks yourself using virtual mode in order to customize the memory usage for your scenario.  

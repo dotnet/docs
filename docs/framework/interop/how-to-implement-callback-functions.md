@@ -1,14 +1,6 @@
 ---
 title: "How to: Implement Callback Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,8 @@ dev_langs:
 helpviewer_keywords: 
   - "callback function, implementing"
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Implement Callback Functions
 The following procedure and example demonstrate how a managed application, using platform invoke, can print the handle value for each window on the local computer. Specifically, the procedure and example use the **EnumWindows** function to step through the list of windows and a managed callback function (named CallBack) to print the value of the window handle.  

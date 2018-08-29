@@ -1,20 +1,11 @@
 ---
 title: "IsNot Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.isnot"
 helpviewer_keywords: 
   - "IsNot operator [Visual Basic]"
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # IsNot Operator (Visual Basic)
 Compares two object reference variables.  

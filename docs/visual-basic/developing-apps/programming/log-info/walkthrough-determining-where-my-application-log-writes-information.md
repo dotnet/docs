@@ -1,13 +1,6 @@
 ---
 title: "Determining Where My.Application.Log Writes Information (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Log object, output location"
   - "output, application log location"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "application event logs, output location"
   - "applications [Visual Basic], output location"
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
-caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Determining Where My.Application.Log Writes Information (Visual Basic)
 The `My.Application.Log` object can write information to several log listeners. The log listeners are configured by the computer's configuration file and can be overridden by an application's configuration file. This topic describes the default settings and how to determine the settings for your application.  
@@ -27,7 +17,7 @@ The `My.Application.Log` object can write information to several log listeners. 
   
 ### To determine the listeners for My.Application.Log  
   
-1.  Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.  
+1.  Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in Visual Studio from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.  
   
     > [!NOTE]
     >  Not every assembly has a configuration file.  

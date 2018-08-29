@@ -1,21 +1,12 @@
 ---
 title: "Expression is a value and therefore cannot be the target of an assignment"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30068"
   - "vbc30068"
 helpviewer_keywords: 
   - "BC30068"
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Expression is a value and therefore cannot be the target of an assignment
 A statement attempts to assign a value to an expression. You can assign a value only to a writable variable, property, or array element at run time. The following example illustrates how this error can occur.  

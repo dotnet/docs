@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFunction2::SetJMCStatus Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFunction2.SetJMCStatus"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 22c27b01-2869-4214-b840-5921f7c874fc
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFunction2::SetJMCStatus Method
 Marks the function represented by this ICorDebugFunction2 for Just My Code stepping.  

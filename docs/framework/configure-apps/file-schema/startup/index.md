@@ -1,25 +1,14 @@
 ---
 title: "Startup Settings Schema"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "startup settings schema"
   - "schema startup settings"
   - "configuration schema [.NET Framework], startup settings"
 ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Startup Settings Schema
 Startup settings specify the version of the common language runtime that should run the application.  

@@ -1,22 +1,17 @@
 ---
-title: Lift and shift existing apps Azure IaaS
+title: Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/26/2017
-ms.prod: .net
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+ms.date: 04/28/2018
 ---
-# Lift and shift existing apps Azure IaaS
+# Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
 
 > Vision: As a first step, to reduce your on-premises investment and total cost of hardware and networking maintenance, simply rehost your existing applications in the cloud.
 
 Before getting into *how* to migrate your existing applications to the Azure infrastructure as a service (IaaS) platform, it's important to analyze the reasons *why* you'd want to migrate directly to IaaS in Azure. The scenario at this modernization maturity level essentially is to start using VMs in the cloud, instead of continuing to use your current, on-premises infrastructure.
 
-Another point to analyze is *why* you might want to migrate to pure IaaS cloud instead of just adding more advanced managed services in Azure. You need to determine what cases might require IaaS in the first place.
+Another point to analyze is *why* you might want to migrate to pure IaaS cloud instead of just adding more advanced managed services in Azure. Determine what cases might require IaaS in the first place.
 
 Figure 2-1 positions Cloud Infrastructure-Ready applications in the modernization maturity levels:
 
@@ -30,17 +25,17 @@ The main reason to migrate to the cloud, even at an initial IaaS level, is to ac
 
 After you make the decision to move your apps to the cloud, the main reason why you might choose IaaS instead of more advanced options like PaaS is simply that the IaaS environment will be more familiar. Moving to an environment that's similar to your current, on-premises environment offers a lower learning curve, which makes it the quickest path to the cloud.
 
-However, taking the quickest path to the cloud doesn't mean that you will gain the most benefit from having your applications running in the cloud. Any organization will gain the most significant benefits from a cloud migration at the already introduced Cloud DevOps-Ready and PaaS (Cloud-Optimized) maturity levels.
+However, taking the quickest path to the cloud doesn't mean that you will gain the most benefit from having your applications running in the cloud. Any organization will gain the most significant benefits from a cloud migration at the already introduced Cloud-Optimized and Cloud-Native maturity levels.
 
-It also has become evident that applications are easier to modernize and re-architect in the future when they are already running in the cloud, even on IaaS. This is true in part because application data migration has already been achieved. Also, your organization will have gained skills required for working in the cloud, and made the shift to operating in a "cloud culture."
+It also has become evident that applications are easier to modernize and rearchitect in the future when they are already running in the cloud, even on IaaS. Application data migration has already been achieved. Also, your organization will have gained skills required for working in the cloud and made the shift to operating in a "cloud culture."
 
 ## When to migrate to IaaS instead of to PaaS
 
-The next sections discuss Cloud DevOps-Ready applications that are mostly based on PaaS platforms and services. These apps give you the most benefits from migrating to the cloud.
+The next sections discuss Cloud-Optimized applications that are mostly based on PaaS platforms and services. These apps give you the most benefits from migrating to the cloud. 
 
-If your goal is simply to move existing applications to the cloud, first, identify existing applications that will require substantial modification to run in Azure App Service. These apps should be the first candidates.
+If your goal is simply to move existing applications to the cloud, first, identify existing applications that would not require substantial modification to run in Azure App Service. These apps should be the first candidates for Cloud-Optimized. 
 
-Then, if you don't want or still cannot move to Windows Containers and or orchestrators like Azure Service Fabric or Kubernetes, yet, then is when you would use plain VMs (IaaS).
+Then, for the apps that still cannot move to Windows Containers and PaaS such as App Service or orchestrators like Azure Service Fabric, migrate those to simple plain VMs (IaaS). 
 
 But, keep in mind that correctly configuring, securing, and maintaining VMs requires much more time and IT expertise compared to using PaaS services in Azure. If you are considering Azure Virtual Machines, make sure that you take into account the ongoing maintenance effort required to patch, update, and manage your VM environment. Azure Virtual Machines is IaaS.
 
@@ -54,7 +49,7 @@ Migrating to the cloud doesn't have to be difficult. But many organizations stru
 
 - Inbuilt dependency mapping for high-confidence discovery of multi-tier applications
 
-- Intelligent rightsizing to Azure virtual machines
+- Intelligent right sizing to Azure virtual machines
 
 - Compatibility reporting with guidelines for remediating potential issues
 

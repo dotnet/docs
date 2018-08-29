@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.WsmexNonCriticalWsdlExportError"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb0e7ab9-2918-49d8-8aee-bb186f457658
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.WsmexNonCriticalWsdlExportError
 System.ServiceModel.WsmexNonCriticalWsdlExportError  

@@ -1,14 +1,6 @@
 ---
 title: "CorAssemblyFlags Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorAssemblyFlags"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorAssemblyFlags Enumeration
 Contains values that describe the metadata applied to an assembly compilation.  

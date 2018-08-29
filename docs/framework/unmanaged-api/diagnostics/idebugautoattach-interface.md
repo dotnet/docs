@@ -1,14 +1,6 @@
 ---
 title: "IDebugAutoAttach Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IDebugAutoAttach"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: d4cc51ac-c1d6-41b9-ab8e-ef0073f13241
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IDebugAutoAttach Interface
 Defines the interface for server-invoked debugger auto attach.  

@@ -1,14 +1,6 @@
 ---
 title: "CorElementType Enumeration1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorElementType"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorElementType Enumeration1
 Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.  

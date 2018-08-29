@@ -1,13 +1,6 @@
 ---
 title: "Passing Arguments by Value and by Reference (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"
   - "Visual Basic code, procedures"
@@ -16,12 +9,9 @@ helpviewer_keywords:
   - "arguments [Visual Basic], passing by value or by reference"
   - "argument passing [Visual Basic], by value or by reference"
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Passing Arguments by Value and by Reference (Visual Basic)
-In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can pass an argument to a procedure *by value* or *by reference*. This is known as the *passing mechanism*, and it determines whether the procedure can modify the programming element underlying the argument in the calling code. The procedure declaration determines the passing mechanism for each parameter by specifying the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword.  
+In Visual Basic, you can pass an argument to a procedure *by value* or *by reference*. This is known as the *passing mechanism*, and it determines whether the procedure can modify the programming element underlying the argument in the calling code. The procedure declaration determines the passing mechanism for each parameter by specifying the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword.  
   
 ## Distinctions  
  When passing an argument to a procedure, be aware of several different distinctions that interact with each other:  
@@ -41,7 +31,7 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can pass an argument to a pr
   
 -   **Protection**. In choosing between the two passing mechanisms, the most important criterion is the exposure of calling variables to change. The advantage of passing an argument `ByRef` is that the procedure can return a value to the calling code through that argument. The advantage of passing an argument `ByVal` is that it protects a variable from being changed by the procedure.  
   
--   **Performance**. Although the passing mechanism can affect the performance of your code, the difference is usually insignificant. One exception to this is a value type passed `ByVal`. In this case, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] copies the entire data contents of the argument. Therefore, for a large value type such as a structure, it can be more efficient to pass it `ByRef`.  
+-   **Performance**. Although the passing mechanism can affect the performance of your code, the difference is usually insignificant. One exception to this is a value type passed `ByVal`. In this case, Visual Basic copies the entire data contents of the argument. Therefore, for a large value type such as a structure, it can be more efficient to pass it `ByRef`.  
   
      For reference types, only the pointer to the data is copied (four bytes on 32-bit platforms, eight bytes on 64-bit platforms). Therefore, you can pass arguments of type `String` or `Object` by value without harming performance.  
   
@@ -50,7 +40,7 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can pass an argument to a pr
   
  If a parameter is declared with `ByRef`, the calling code can force the mechanism to `ByVal` by enclosing the argument name in parentheses in the call. For more information, see [How to: Force an Argument to Be Passed by Value](./how-to-force-an-argument-to-be-passed-by-value.md).  
   
- The default in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is to pass arguments by value.  
+ The default in Visual Basic is to pass arguments by value.  
   
 ## When to Pass an Argument by Value  
   

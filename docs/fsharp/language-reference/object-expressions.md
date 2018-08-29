@@ -1,17 +1,8 @@
 ---
 title: Object Expressions (F#)
 description: Learn how to use F# object expressions when you want to avoid the extra code and overhead required to create a new, named type.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: c6dcf4c9-e7fd-4eee-9e4e-1176f4c27f57
 ---
-
 # Object Expressions
 
 An *object expression* is an expression that creates a new instance of a dynamically created, anonymous object type that is based on an existing base type, interface, or set of interfaces.

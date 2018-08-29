@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeInfo Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeInfo"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 287e5ede-b3a7-4ef8-a756-4fca3f285a82
 topic_type: 
   - "apiref"
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeInfo Interface
 Provides methods that return information about a specific common language runtime (CLR), including version, directory, and load status. This interface also provides runtime-specific functionality without initializing the runtime. It includes the runtime-relative [LoadLibrary](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-loadlibrary-method.md) method, the runtime module-specific [GetProcAddress](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getprocaddress-method.md) method, and runtime-provided interfaces through the [GetInterface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getinterface-method.md) method.  

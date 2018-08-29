@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedMethod::GetSourceStartEnd Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedMethod.GetSourceStartEnd"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2a420900-01f1-4461-8777-3a34a6dc1426
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetSourceStartEnd Method
 Gets the start and end document positions for the source of this method. The first array position is the start, and the second array position is the end.  

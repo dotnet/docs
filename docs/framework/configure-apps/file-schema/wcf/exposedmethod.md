@@ -1,21 +1,7 @@
 ---
 title: "&lt;exposedMethod&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;exposedMethod&gt;
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  

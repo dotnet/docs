@@ -1,12 +1,6 @@
 ---
 title: "From Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryFrom"
   - "vb.QueryFromIn"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "From clause [Visual Basic]"
   - "From statement [Visual Basic]"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # From Clause (Visual Basic)
 Specifies one or more range variables and a collection to query.  
@@ -73,7 +64,7 @@ From element [ As type ] In collection [ _ ]
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
 ## See Also  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  

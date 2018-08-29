@@ -1,16 +1,9 @@
 ---
 title: Docker containers, images, and registries
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker containers, images, and registries
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Docker containers, images, and registries
 
@@ -35,5 +28,5 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 -   You want to have minimum network latency between your images and your chosen deployment environment. For example, if your production environment is Azure cloud, you probably want to store your images in Azure Container Registry so that network latency will be minimal. In a similar way, if your production environment is on-premises, you might want to have an on-premises Docker Trusted Registry available within the same local network.
 
 >[!div class="step-by-step"]
-[Previous] (docker-terminology.md)
-[Next] (../net-core-net-framework-containers/index.md)
+[Previous](docker-terminology.md)
+[Next](../net-core-net-framework-containers/index.md)

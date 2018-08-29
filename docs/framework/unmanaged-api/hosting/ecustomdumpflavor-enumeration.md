@@ -1,14 +1,6 @@
 ---
 title: "ECustomDumpFlavor Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ECustomDumpFlavor"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b39b3320-fac7-41f1-9a03-ab6fb0cd89c7
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ECustomDumpFlavor Enumeration
 Contains values that indicate which items to include in a custom subset of a heap dump when reporting errors.  

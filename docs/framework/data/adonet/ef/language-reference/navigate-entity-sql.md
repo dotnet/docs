@@ -1,21 +1,7 @@
 ---
 title: "NAVIGATE (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f107f29d-005f-4e39-a898-17f163abb1d0
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # NAVIGATE (Entity SQL)
 Navigates over the relationship established between entities.  

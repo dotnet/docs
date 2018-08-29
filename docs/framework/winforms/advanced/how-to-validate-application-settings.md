@@ -1,14 +1,6 @@
 ---
 title: "How to: Validate Application Settings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "application settings [Windows Forms], Windows Forms"
   - "application settings [Windows Forms], validating"
 ms.assetid: 9f145ada-4267-436a-aa4c-c4dcffd0afb7
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Validate Application Settings
 This topic demonstrates how to validate application settings before they are persisted.  

@@ -1,12 +1,6 @@
 ---
 title: "Sub Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Sub"
 helpviewer_keywords: 
@@ -35,9 +29,6 @@ helpviewer_keywords:
   - "ByVal keyword [Visual Basic], Sub statements"
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-caps.latest.revision: 52
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sub Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Sub` procedure.  
@@ -75,7 +66,9 @@ End Sub
   
     -   [Private](../modifiers/private.md)  
   
-    -   `Protected Friend`  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
@@ -209,7 +202,7 @@ End Sub
   
  You can also mark a [Function Statement](function-statement.md) with the `Async` modifier. An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example later in this topic shows an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601>.  
   
- `Async` `Sub` procedures are primarily used for event handlers, where a value can't be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that the `Sub` procedure throws.  
+ `Async` `Sub` procedures are primarily used for event handlers, where a value can't be returned. An `Async` `Sub` procedure can't be awaited, and the caller of an `Async` `Sub` procedure can't catch exceptions that the `Sub` procedure throws.  
   
  An `Async` procedure can't declare any [ByRef](../modifiers/byref.md) parameters.  
   
@@ -221,9 +214,9 @@ End Sub
  [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
   
 ## Example  
- In the following example, `DelayAsync` is an `Async``Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
+ In the following example, `DelayAsync` is an `Async` `Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
   
- The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `Await DoSomethingAsync()`. The `startButton_Click``Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
+ The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `Await DoSomethingAsync()`. The `startButton_Click` `Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   

@@ -1,13 +1,6 @@
 ---
 title: "How to: Create a Copy of a File in the Same Directory in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "File.Copy"
 helpviewer_keywords: 
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a Copy of a File in the Same Directory in Visual Basic
 Use the `My.Computer.FileSystem.CopyFile` method to copy files. The parameters allow you to overwrite existing files, rename the file, show the progress of the operation, and allow the user to cancel the operation.  

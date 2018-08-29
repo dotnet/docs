@@ -1,17 +1,8 @@
 ---
 title: Symbol and Operator Reference (F#)
 description: Learn about the symbols and operators that are used in the F# programming language.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/04/2018
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27 
 ---
-
 # Symbol and Operator Reference
 
 > [!NOTE]
@@ -85,7 +76,7 @@ The following table describes symbols used in the F# language, provides links to
 |`=?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "equal" operation when the right side is a nullable type.<br /></li><ul/>|
 |`==`|Not applicable.|<ul><li>Not used in F#. Use `=` for equality operations.<br /></li><ul/>|
 |`>`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than the right side; otherwise, returns `false`.<br /></li><ul/>|
-|`>?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "greather than" operation when the right side is a nullable type.<br /></li><ul/>|
+|`>?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "greater than" operation when the right side is a nullable type.<br /></li><ul/>|
 |`>>`|[Functions](../functions/index.md)|<ul><li>Composes two functions (forward composition operator).<br /></li><ul/>|
 |`>>>`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Shifts bits in the quantity on the left side to the right by the number of places specified on the right side.<br /></li><ul/>|
 |`>=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than or equal to the right side; otherwise, returns `false`.<br /></li><ul/>|

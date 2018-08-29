@@ -1,14 +1,6 @@
 ---
 title: "WPF Content Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UIElement class [WPF], displaying content"
   - "content model [WPF], controls"
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "arbitrary content classes [WPF], content model"
   - "ContentControl class [WPF], displaying content"
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF Content Model
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is a presentation platform that provides many controls and control-like types whose primary purpose is to display different types of content. To determine which control to use or which control to derive from, you should understand the kinds of objects a particular control can best display.  

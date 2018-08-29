@@ -1,14 +1,6 @@
 ---
 title: "IHostIoCompletionManager::GetAvailableThreads Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostIoCompletionManager.GetAvailableThreads"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bab363d1-b859-47a4-9884-5661c611cce7
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostIoCompletionManager::GetAvailableThreads Method
 Gets the number of I/O completion threads, of the total number of threads managed by the host, that are not currently servicing requests.  

@@ -1,21 +1,7 @@
 ---
 title: "Side-by-Side Execution in ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Side-by-Side Execution in ADO.NET
 Side-by-side execution in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] is the ability to execute an application on a computer that has multiple versions of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../../../docs/framework/deployment/side-by-side-execution.md).  

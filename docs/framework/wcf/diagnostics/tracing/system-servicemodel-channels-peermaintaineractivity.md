@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Channels.PeerMaintainerActivity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef28d086-d7fb-4e81-82e9-45a54647783b
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Channels.PeerMaintainerActivity
 The PeerMaintainer module is performing a specific operation (details contained within the trace message body).  

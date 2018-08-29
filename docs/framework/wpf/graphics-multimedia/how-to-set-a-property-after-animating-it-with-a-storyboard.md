@@ -1,26 +1,12 @@
 ---
 title: "How to: Set a Property After Animating It with a Storyboard"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "animation [WPF], changing property values after"
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set a Property After Animating It with a Storyboard
 In some cases, it might appear that you can't change the value of a property after it has been animated.  

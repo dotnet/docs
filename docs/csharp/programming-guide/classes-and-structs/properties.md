@@ -1,19 +1,12 @@
 ---
 title: "Properties (C# Programming Guide)"
 ms.date: 03/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.properties"
 helpviewer_keywords: 
   - "properties [C#]"
   - "C# language, properties"
 ms.assetid: e295a8a2-b357-4ee7-a12e-385a44146fa8
-caps.latest.revision: 38
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Properties (C# Programming Guide)
 
@@ -46,7 +39,7 @@ The following example illustrates this pattern. In this example, the `TimePeriod
 
  [!code-csharp[Properties#2](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-2.cs)]  
 
- Starting with C# 7, both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. Note that the `return` keyword is not used with the `get` accessor.
+ Starting with C# 7.0, both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. Note that the `return` keyword is not used with the `get` accessor.
  
   [!code-csharp[Properties#3](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-3.cs)]  
 

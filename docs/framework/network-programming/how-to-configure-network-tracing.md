@@ -1,12 +1,6 @@
 ---
 title: "How to: Configure Network Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "formatting [.NET Framework], network tracing"
   - "network tracing, configuring"
@@ -17,12 +11,9 @@ helpviewer_keywords:
   - "application configuration files, network tracing"
   - "sockets, trace output"
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
-caps.latest.revision: 23
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure Network Tracing
 The application or computer configuration file holds the settings that determine the format and content of network traces. Before performing this procedure, be sure tracing is enabled. For information about enabling tracing, see [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md).  

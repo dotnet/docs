@@ -1,12 +1,6 @@
 ---
 title: "Do...Loop Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Do"
   - "vb.Loop"
@@ -26,9 +20,6 @@ helpviewer_keywords:
   - "loops, exiting"
   - "Loop keyword [Visual Basic], Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Do...Loop Statement (Visual Basic)
 Repeats a block of statements while a `Boolean` condition is `True` or until the condition becomes `True`.  

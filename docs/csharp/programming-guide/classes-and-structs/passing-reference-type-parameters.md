@@ -1,17 +1,10 @@
 ---
 title: "Passing Reference-Type Parameters (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "method parameters [C#], reference types"
   - "parameters [C#], reference"
 ms.assetid: 9e6eb65c-942e-48ab-920a-b7ba9df4ea20
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Passing Reference-Type Parameters (C# Programming Guide)
 A variable of a [reference type](../../../csharp/language-reference/keywords/reference-types.md) does not contain its data directly; it contains a reference to its data. When you pass a reference-type parameter by value, it is possible to change the data belonging to the referenced object, such as the value of a class member. However, you cannot change the value of the reference itself; for example, you cannot use the same reference to allocate memory for a new class and have it persist outside the method. To do that, pass the parameter using the [ref](../../../csharp/language-reference/keywords/ref.md) or [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) keyword. For simplicity, the following examples use `ref`.  

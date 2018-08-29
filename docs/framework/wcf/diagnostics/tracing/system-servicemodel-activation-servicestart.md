@@ -1,21 +1,7 @@
 ---
 title: "System.ServiceModel.Activation.ServiceStart"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 29203bbc-db8d-4bb9-a614-351579902ca6
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # System.ServiceModel.Activation.ServiceStart
 System.ServiceModel.Activation.ServiceStart  

@@ -1,24 +1,13 @@
 ---
 title: "Inputs to the XslCompiledTransform Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 834049f1-ab41-449e-9f10-4a1d0701bc48
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Inputs to the XslCompiledTransform Class
 The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three input types for the source document: an object that implements the <xref:System.Xml.XPath.IXPathNavigable> interface, an <xref:System.Xml.XmlReader> object that reads the source document, or a string URI.  

@@ -1,19 +1,7 @@
 ---
 title: "How to: Filter on an Attribute (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 208d6256-1bd7-4237-b2c9-909f26dfd0e2
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Filter on an Attribute (XPath-LINQ to XML) (C#)
 This topic shows how to get the descendant elements with a specified name, and with an attribute with a specified value.  

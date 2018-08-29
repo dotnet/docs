@@ -1,21 +1,7 @@
 ---
 title: "Connection Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Connection Strings
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.  
@@ -104,7 +90,7 @@ Metadata=.\
   
 |Term|Description|  
 |----------|-----------------|  
-|`&#124;DataDirectory&#124;`|Resolves to a relative path to a mapping and metadata files. This is the value that is set through the `AppDomain.SetData("DataDirectory", objValue)` method. The `DataDirectory` substitution string must be surrounded by the pipe characters and there cannot be any whitespace between its name and the pipe characters. The `DataDirectory` name is not case-sensitive.<br /><br /> If a physical directory named "DataDirectory" has to be passed as a member of the list of metadata paths, add whitespace should on either side or both sides of the name, for example: `Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`. An ASP.NET application resolves &#124;DataDirectory&#124; to the "\<application root>/app_data" folder.|  
+|`&#124;DataDirectory&#124;`|Resolves to a relative path to a mapping and metadata files. This is the value that is set through the `AppDomain.SetData("DataDirectory", objValue)` method. The `DataDirectory` substitution string must be surrounded by the pipe characters and there cannot be any white space between its name and the pipe characters. The `DataDirectory` name is not case-sensitive.<br /><br /> If a physical directory named "DataDirectory" has to be passed as a member of the list of metadata paths, add white space to either or both sides of the name. For example: `Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`. An ASP.NET application resolves &#124;DataDirectory&#124; to the "\<application root>/app_data" folder.|  
 |~|Resolves to the Web application root. The ~ character at a leading position is always interpreted as the Web application root operator (~), although it might represent a valid local subdirectory. To refer to such a local subdirectory, the user should explicitly pass `./~`.|  
   
  `DataDirectory` and the ~ operator should be specified only at the beginning of a path, they are not resolved at any other position. The Entity Framework will try to resolve `~/data`, but it will treat `/data/~` as a physical path.  

@@ -1,13 +1,6 @@
 ---
 title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "qualification [Visual Basic], of element names"
   - "declarations [Visual Basic], elements"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], referencing"
   - "declared elements [Visual Basic], about declared elements"
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)
 You can hide a variable by *shadowing* it, that is, by redefining it with a variable of the same name. You can shadow the variable you want to hide in two ways:  

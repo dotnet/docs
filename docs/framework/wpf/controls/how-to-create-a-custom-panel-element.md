@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Custom Panel Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Panel control [WPF]"
   - "custom Panel elements [WPF]"
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Custom Panel Element
 ## Example  

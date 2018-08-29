@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugInternalFrame2::GetFrameAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugInternalFrame2.GetFrameAddress Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4ee8d058-ffc8-4967-9133-a5adfef4e518
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugInternalFrame2::GetFrameAddress Method
 Returns the stack address of the internal frame.  

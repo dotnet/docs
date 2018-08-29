@@ -1,21 +1,9 @@
 ---
 title: "Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7a32fe6e-5f68-4693-9371-19411fa8063c
-caps.latest.revision: 12
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5
 ## Applies To  

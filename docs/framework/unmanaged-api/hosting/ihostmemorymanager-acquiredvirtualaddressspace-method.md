@@ -1,14 +1,6 @@
 ---
 title: "IHostMemoryManager::AcquiredVirtualAddressSpace Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostMemoryManager.AcquiredVirtualAddressSpace"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostMemoryManager::AcquiredVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.  

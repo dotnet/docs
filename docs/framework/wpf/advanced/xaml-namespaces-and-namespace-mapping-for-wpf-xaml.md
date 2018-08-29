@@ -1,14 +1,6 @@
 ---
 title: "XAML Namespaces and Namespace Mapping for WPF XAML"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,12 +14,6 @@ helpviewer_keywords:
   - "classes [WPF], mapping namespaces to"
   - "namespaces [WPF]"
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Namespaces and Namespace Mapping for WPF XAML
 This topic further explains the presence and purpose of the two XAML namespace mappings as often found in the root tag of a WPF XAML file. It also describes how to produce similar mappings for using elements that are defined in your own code, and/or within separate assemblies.  
@@ -60,7 +46,7 @@ This topic further explains the presence and purpose of the two XAML namespace m
   
  `assembly=` The assembly that contains some or all of the referenced [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace. This value is typically just the name of the assembly, not the path, and does not include the extension (such as .dll or .exe). The path to that assembly must be established as a project reference in the project file that contains the XAML you are trying to map. In order to incorporate versioning and strong-name signing, the `assembly` value can be a string as defined by <xref:System.Reflection.AssemblyName>, rather than the simple string name.  
   
- Note that the character separating the `clr-namespace` token from its value is a colon (:) whereas the character separating the `assembly` token from its value is an equals sign (=). The character to use between these two tokens is a semicolon. Also, do not include any whitespace anywhere in the declaration.  
+ Note that the character separating the `clr-namespace` token from its value is a colon (:) whereas the character separating the `assembly` token from its value is an equals sign (=). The character to use between these two tokens is a semicolon. Also, do not include any white space anywhere in the declaration.  
   
 ### A Basic Custom Mapping Example  
  The following code defines an example custom class:  

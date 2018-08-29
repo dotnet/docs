@@ -1,14 +1,6 @@
 ---
 title: "Data and Data Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "DataFormats class [WPF]"
   - "DataObject class [WPF]"
 ms.assetid: 5967d557-1867-420f-a524-ae3af78402da
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data and Data Objects
 Data that is transferred as part of a drag-and-drop operation is stored in a data object.  Conceptually, a data object consists of one or more of the following pairs:  

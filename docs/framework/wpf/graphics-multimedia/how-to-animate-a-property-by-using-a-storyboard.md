@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate a Property by Using a Storyboard"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "animation [WPF], Storyboards"
   - "Storyboards [WPF], animation"
 ms.assetid: f4a314e9-1da2-4367-85fc-1232487efa7a
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Property by Using a Storyboard
 This example shows how to use a <xref:System.Windows.Media.Animation.Storyboard> to animate properties. To animate a property by using a <xref:System.Windows.Media.Animation.Storyboard>, create an animation for each property that you want to animate and also create a <xref:System.Windows.Media.Animation.Storyboard> to contain the animations.  

@@ -1,18 +1,10 @@
 ---
 title: Porting to .NET Core - Libraries
 description: Learn how to port library projects from the .NET Framework to .NET Core.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
 ms.date: 07/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
-ms.workload: 
-  - dotnetcore
 ---
-
 # Porting to .NET Core - Libraries
 
 This article discusses porting library code to .NET Core so that it runs cross-platform.
@@ -74,18 +66,6 @@ Use security boundaries provided by the operating system, such as virtualization
 Similar to CAS, Security Transparency allows separating sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
-
-### global.json
-
-The *global.json* file is an optional file that allows you to set the .NET Core tools version of a project. If you're using nightly builds of .NET Core and wish to specify a specific version of the SDK, specify the version with a *global.json* file. It typically resides in the current working directory or one of its parent directories. 
-
-```json
-{
-  "sdk": {
-    "version": "2.1.0-preview1-006491"
-  }
-}
-```
 
 ## Converting a PCL project
 

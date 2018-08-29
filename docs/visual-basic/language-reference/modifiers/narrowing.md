@@ -1,11 +1,6 @@
 ---
 title: "Narrowing (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.narrowing"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "Narrowing keyword [Visual Basic]"
   - "data type conversion [Visual Basic]"
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Narrowing (Visual Basic)
 Indicates that a conversion operator (`CType`) converts a class or structure to a type that might not be able to hold some of the possible values of the original class or structure.  

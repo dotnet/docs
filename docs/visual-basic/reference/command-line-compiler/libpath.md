@@ -1,11 +1,6 @@
 ---
 title: "-libpath"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "libpath compiler option [Visual Basic]"
   - "/libpath compiler option [Visual Basic]"

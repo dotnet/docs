@@ -1,14 +1,6 @@
 ---
 title: "&lt;requestCaching&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "requestCaching element"
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;requestCaching&gt; Element (Network Settings)
 Controls the caching mechanism for network requests.  

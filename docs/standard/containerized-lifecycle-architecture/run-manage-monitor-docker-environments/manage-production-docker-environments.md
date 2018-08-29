@@ -1,14 +1,9 @@
 ---
 title: Manage production Docker environments
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.prod: ".net"
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Manage production Docker environments
 
@@ -45,5 +40,5 @@ Following are Service Fabric management tools:
 
 
 >[!div class="step-by-step"]
-[Previous] (run-microservices-based-applications-in-production.md)
-[Next] (monitor-containerized-application-services.md)
+[Previous](run-microservices-based-applications-in-production.md)
+[Next](monitor-containerized-application-services.md)

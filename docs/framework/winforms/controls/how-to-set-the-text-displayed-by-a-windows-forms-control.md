@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the Text Displayed by a Windows Forms Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -29,12 +21,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], captions"
   - "forms [Windows Forms], captions"
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Text Displayed by a Windows Forms Control
 Windows Forms controls usually display some text that is related to the primary function of the control. For example, a <xref:System.Windows.Forms.Button> control usually displays a caption indicating what action will be performed when the button is clicked. For all controls, you can set or return the text by using the <xref:System.Windows.Forms.Control.Text%2A> property. You can change the font by using the <xref:System.Windows.Forms.Control.Font%2A> property. You can also set the text using the designer.  Also see [How to: Create Access Keys for Windows Forms Controls Using the Designer](http://msdn.microsoft.com/library/ms233673\(v=vs.110\)), [How to: Set the Text Displayed by a Windows Forms Control Using the Designer](http://msdn.microsoft.com/library/ms233665\(v=vs.110\)), [How to: Set the Image Displayed by a Windows Forms Control Using the Designer](http://msdn.microsoft.com/library/ms233656\(v=vs.110\)).  

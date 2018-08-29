@@ -1,19 +1,8 @@
 ---
 title: "&lt;system.serviceModel&gt; of workflow"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6a8eb2bf-f925-40e1-ba5c-a49b1d3a3ac6
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;system.serviceModel&gt; of workflow
 This configuration section contains all the workflow configuration elements.  

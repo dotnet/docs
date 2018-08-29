@@ -1,22 +1,10 @@
 ---
 title: "How to: Host Multiple Versions of a Workflow Side-by-Side"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Host Multiple Versions of a Workflow Side-by-Side
 `WorkflowIdentity` provides a way for workflow application developers to associate a name and a version with a workflow definition, and for this information to be associated with a persisted workflow instance. This identity information can be used by workflow application developers to enable scenarios such as side-by-side execution of multiple versions of a workflow definition, and provides the cornerstone for other functionality such as dynamic update. This step in the tutorial demonstrates how to use `WorkflowIdentity` to host multiple versions of a workflow at the same time.  

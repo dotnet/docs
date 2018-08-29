@@ -1,24 +1,14 @@
 ---
 title: "High DPI support in Windows Forms"
-ms.custom: ""
 ms.date: "05/16/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "High DPI in Windows Forms"
   - "Dynamic rescaling in Windows Forms"
   - "Windows Forms layout"
   - "Windows Forms dynamic resizing"
 ms.assetid: 075ea4c3-900c-4f8a-9dd2-13ea6804346b
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # High DPI support in Windows Forms
 
@@ -43,7 +33,7 @@ In addition, to configure high DPI support in your Windows Forms application, yo
   To do this, add the following to your manifest file:
 
   ```xml
-  <compatibility xmlns="urn:schemas-microsoft.comn:compatibility.v1">
+  <compatibility xmlns="urn:schemas-microsoft.com:compatibility.v1">
     <application>
       <!-- Windows 10 compatibility -->
       <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />

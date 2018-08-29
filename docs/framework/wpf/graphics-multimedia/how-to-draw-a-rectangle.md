@@ -1,25 +1,11 @@
 ---
 title: "How to: Draw a Rectangle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "drawing [WPF], rectangles"
   - "graphics [WPF], rectangles"
   - "rectangles [WPF], drawing"
 ms.assetid: beeb57ef-fab5-4446-a38a-1588f97b4c2f
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw a Rectangle
 This example shows how to draw a rectangle by using the <xref:System.Windows.Shapes.Rectangle> element.  

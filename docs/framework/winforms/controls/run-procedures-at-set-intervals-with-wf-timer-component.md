@@ -1,14 +1,6 @@
 ---
 title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], initializing"
   - "procedures [Windows Forms], specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Run Procedures at Set Intervals with the Windows Forms Timer Component
 You might sometimes want to create a procedure that runs at specific time intervals until a loop has finished or that runs when a set time interval has elapsed. The <xref:System.Windows.Forms.Timer> component makes such a procedure possible.  
@@ -38,7 +24,7 @@ You might sometimes want to create a procedure that runs at specific time interv
   
 ### To run a procedure at set intervals with the Timer component  
   
-1.  Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](http://msdn.microsoft.com/library/becyw7bz\(v=vs.110\)).  
+1.  Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. Visual Studio also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](http://msdn.microsoft.com/library/becyw7bz\(v=vs.110\)).  
   
 2.  Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   

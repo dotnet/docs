@@ -1,14 +1,6 @@
 ---
 title: "raceOnRCWCleanup MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "RCW"
   - "managed debugging assistants (MDAs), RCWs"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "RaceOnRCWCleanup MDA"
   - "runtime callable wrappers"
 ms.assetid: bee1e9b1-50a8-4c89-9cd9-7dd6b2458187
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # raceOnRCWCleanup MDA
 The `raceOnRCWCleanup` managed debugging assistant (MDA) is activated when the common language runtime (CLR) detects that a [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) (RCW) is in use when a call to release it is made using a command such as the <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType> method.  

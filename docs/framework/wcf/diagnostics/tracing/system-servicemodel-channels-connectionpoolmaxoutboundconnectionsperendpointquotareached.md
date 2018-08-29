@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.EnlistTransactionFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1b9f5139-e122-4716-9ef7-2f38e1813993
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistTransactionFailure
 The WS-AT protocol service failed to enlist on a transaction using the provided coordination context.  

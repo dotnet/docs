@@ -1,13 +1,7 @@
 ---
 title: "Semaphore and SemaphoreSlim"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "counting semaphores"
   - "semaphores"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "SemaphoreSlim class, about SemaphoreSlim class"
   - "threading [.NET Framework], Semaphore class"
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Semaphore and SemaphoreSlim
 The <xref:System.Threading.Semaphore?displayProperty=nameWithType> class represents a named (systemwide) or local semaphore. It is a thin wrapper around the Win32 semaphore object. Win32 semaphores are counting semaphores, which can be used to control access to a pool of resources.  

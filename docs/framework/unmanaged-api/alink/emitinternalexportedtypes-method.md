@@ -1,14 +1,6 @@
 ---
 title: "EmitInternalExportedTypes Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "EmitInternalExportedTypes"
   - "IALink2.EmitInternalExportedTypes"
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EmitInternalExportedTypes Method
 Emits types added to the assembly. Call this method after known internal types have been added.  

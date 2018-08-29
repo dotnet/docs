@@ -1,16 +1,9 @@
 ---
 title: Data sovereignty per microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Data sovereignty per microservice
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Data sovereignty per microservice
 
@@ -26,7 +19,7 @@ On the other hand, the traditional (monolithic data) approach used in many appli
 
 **Figure 4-7**. Data sovereignty comparison: monolithic database versus microservices
 
-The centralized database approach initially looks simpler and seems to enable reuse of entities in different subsystems to make everything consistent. But the reality is you end up with huge tables that serve many different subsystems, and that include attributes and columns that are not needed in most cases. it is like trying to use the same physical map for hiking a short trail, taking a day-long car trip, and learning geography.
+The centralized database approach initially looks simpler and seems to enable reuse of entities in different subsystems to make everything consistent. But the reality is you end up with huge tables that serve many different subsystems, and that include attributes and columns that are not needed in most cases. It is like trying to use the same physical map for hiking a short trail, taking a day-long car trip, and learning geography.
 
 A monolithic application with typically a single relational database has two important benefits: [ACID transactions](https://en.wikipedia.org/wiki/ACID) and the SQL language, both working across all the tables and data related to your application. This approach provides a way to easily write a query that combines data from multiple tables.
 
@@ -64,5 +57,5 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 
 
 >[!div class="step-by-step"]
-[Previous] (microservices-architecture.md)
-[Next] (logical-versus-physical-architecture.md)
+[Previous](microservices-architecture.md)
+[Next](logical-versus-physical-architecture.md)

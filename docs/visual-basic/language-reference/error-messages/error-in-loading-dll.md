@@ -1,18 +1,9 @@
 ---
 title: "Error in loading DLL (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID48"
 ms.assetid: 4226cd1f-028c-477d-88a5-cb57f7e0cdc8
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Error in loading DLL (Visual Basic)
 A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `Declare` statement. Possible causes for this error include:  

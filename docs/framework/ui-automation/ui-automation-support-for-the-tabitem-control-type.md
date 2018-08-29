@@ -1,25 +1,14 @@
 ---
 title: "UI Automation Support for the TabItem Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Tab Item control type"
   - "control types, Tab Item"
   - "UI Automation, Tab Item control type"
 ms.assetid: 9b21160d-e1c2-468b-9275-26e4369ae40d
-caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the TabItem Control Type
 > [!NOTE]

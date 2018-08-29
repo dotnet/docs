@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRegisterSet2::GetRegistersAvailable Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugRegisterSet2.GetRegistersAvailable"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
 Gets an array of bytes that provides a bitmap of the available registers.  

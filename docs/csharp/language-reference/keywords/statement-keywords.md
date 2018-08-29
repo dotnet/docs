@@ -1,17 +1,10 @@
 ---
 title: "Statement Keywords (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], statements"
   - "statements [C#]"
 ms.assetid: fad0c004-e282-4ec8-a127-bca7fd7a0b6f
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Statement Keywords (C# Reference)
 Statements are program instructions. Except as described in the topics referenced in the following table, statements are executed in sequence. The following table lists the C# statement keywords. For more information about statements that are not expressed with any keyword, see [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md).  
@@ -26,7 +19,8 @@ Statements are program instructions. Except as described in the topics reference
 [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)|[fixed](../../../csharp/language-reference/keywords/fixed-statement.md)|  
 |[lock Statement](../../../csharp/language-reference/keywords/lock-statement.md)|[lock](../../../csharp/language-reference/keywords/lock-statement.md)|  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)

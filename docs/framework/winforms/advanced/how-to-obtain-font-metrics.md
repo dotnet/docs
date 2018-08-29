@@ -1,14 +1,6 @@
 ---
 title: "How to: Obtain Font Metrics"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "fonts [Windows Forms], obtaining metrics"
   - "font metrics [Windows Forms], obtaining"
 ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Obtain Font Metrics
 The <xref:System.Drawing.FontFamily> class provides the following methods that retrieve various metrics for a particular family/style combination:  

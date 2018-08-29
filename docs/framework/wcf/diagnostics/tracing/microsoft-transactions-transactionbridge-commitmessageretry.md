@@ -1,21 +1,7 @@
 ---
 title: "Microsoft.Transactions.TransactionBridge.CommitMessageRetry"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4abe01f0-6398-4fba-b2f3-c054b7f7e971
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Microsoft.Transactions.TransactionBridge.CommitMessageRetry
 A commit message retry was sent to an unresponsive participant.  

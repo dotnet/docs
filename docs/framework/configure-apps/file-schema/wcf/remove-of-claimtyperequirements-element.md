@@ -1,21 +1,7 @@
 ---
 title: "&lt;remove&gt; of &lt;claimTypeRequirements&gt; element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;remove&gt; of &lt;claimTypeRequirements&gt; element
 Specifies the types of claims to be removed in the federated credential.  

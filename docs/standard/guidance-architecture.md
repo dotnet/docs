@@ -1,15 +1,10 @@
 ---
 title: .NET Architecture Guidance
 description: Learn about recoommended practices for architecting, designing and building .NET software.
-keywords: Docker, Microservices, ASP.NET, Container, Architecture
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.prod: .net
 ms.technology: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET Architecture Guidance
 
@@ -27,4 +22,8 @@ This guide is an introduction to the recommended architecture, design, and deplo
 
 ## [Architecting Container and Microservice Based Applications](microservices-architecture/index.md)
 
-This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
+This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.
+
+## [Serverless apps: Architecture, patterns, and Azure implementation](serverless-architecture/index.md)
+
+This is a guide for building serverless applications with examples using Azure. It discusses various architecture and design approaches, the benefits and challenges that come with serverless, and provides scenarios and use cases for serverless apps.

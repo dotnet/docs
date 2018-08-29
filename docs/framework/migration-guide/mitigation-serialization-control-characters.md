@@ -1,24 +1,14 @@
 ---
 title: "Mitigation: Serialization of Control Characters with the DataContractJsonSerializer"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework 4.7 retargeting changes"
   - "retargeting changes"
   - "DataContractJsonSerializer changes"
   - "serialization changes"
 ms.assetid: e065d458-a128-44f2-9f17-66af9d5be954
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mitigation: Serialization of Control Characters with the DataContractJsonSerializer
 

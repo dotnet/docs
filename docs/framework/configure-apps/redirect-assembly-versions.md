@@ -1,14 +1,6 @@
 ---
 title: "Redirecting Assembly Versions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"
@@ -16,12 +8,9 @@ helpviewer_keywords:
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
-caps.latest.revision: 26
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Redirecting Assembly Versions
 You can redirect compile-time binding references to .NET Framework assemblies, third-party assemblies, or your own app's assemblies. You can redirect your app to use a different version of an assembly in a number of ways: through publisher policy, through an app configuration file; or through the machine configuration file. This article discusses how assembly binding works in the .NET Framework and how it can be configured.  

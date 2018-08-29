@@ -1,21 +1,7 @@
 ---
 title: "&lt;peer&gt; of &lt;clientCredentials&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;peer&gt; of &lt;clientCredentials&gt; Element
 Specifies credentials used when authenticating peer-to-peer clients.  

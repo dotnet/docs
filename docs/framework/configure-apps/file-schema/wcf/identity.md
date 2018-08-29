@@ -1,24 +1,10 @@
 ---
 title: "&lt;identity&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;identity&gt;
-The identity element allows a client developer to specify at design time the expected identity of the service. In the handshake process between the client and service, the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] infrastructure will ensure that the identity of the expected service matches the values of this element, and thus can be authenticated. For more information, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+The identity element allows a client developer to specify at design time the expected identity of the service. In the handshake process between the client and service, the Windows Communication Foundation (WCF) infrastructure will ensure that the identity of the expected service matches the values of this element, and thus can be authenticated. For more information, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
  \<system.ServiceModel>  
 \<client>  
@@ -56,7 +42,7 @@ The identity element allows a client developer to specify at design time the exp
 |dns|Specifies the DNS of an X.509 certificate used to authenticate a service. This element contains an attribute `value` that is a string, and contains the actual identity.|  
 |rsa|Specifies the value of the RSA field of an X.509 certificate used to authenticate a service to a client. This element contains an attribute `value` that is a string, and contains the actual identity|  
 |servicePrincipalName|Specifies a server principal name (SPN) identity, which is the principal name used by a client to uniquely identify an instance of a service. This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.ServicePrincipalNameElement>.|  
-|userPrincipalName|Specifies a user principal name (UPN) identity, which is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the at symbol (@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.UserPrincipalNameElement>.|  
+|userPrincipalName|Specifies a user principal name (UPN) identity, which is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the at symbol (\@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  This element contains an attribute `value` that is a string, and contains the actual principal name. This element is of type <xref:System.ServiceModel.Configuration.UserPrincipalNameElement>.|  
   
 ### Parent Elements  
   

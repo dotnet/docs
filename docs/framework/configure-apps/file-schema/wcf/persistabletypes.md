@@ -1,21 +1,7 @@
 ---
 title: "&lt;persistableTypes&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4d255097-45f0-4a04-945e-41d9bcfe8c54
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;persistableTypes&gt;
 This section contains a collection of `persistableType` elements.  

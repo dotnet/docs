@@ -1,21 +1,9 @@
 ---
 title: "&lt;TypeParameter&gt; Element (.NET Native)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # &lt;TypeParameter&gt; Element (.NET Native)
 Applies policy to the type represented by a Type argument passed to a method.  

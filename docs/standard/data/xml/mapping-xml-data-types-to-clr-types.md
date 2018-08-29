@@ -1,21 +1,10 @@
 ---
 title: "Mapping XML Data Types to CLR Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Mapping XML Data Types to CLR Types
 The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.  

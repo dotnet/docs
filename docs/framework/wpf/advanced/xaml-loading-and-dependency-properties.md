@@ -1,14 +1,6 @@
 ---
 title: "XAML Loading and Dependency Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "dependency properties [WPF], XAML loading and"
   - "loading XML data [WPF]"
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Loading and Dependency Properties
 The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] implementation of its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor is inherently dependency property aware. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor uses property system methods for dependency properties when loading binary [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and processing attributes that are dependency properties. This effectively bypasses the property wrappers. When you implement custom dependency properties, you must account for this behavior and should avoid placing any other code in your property wrapper other than the property system methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>.  

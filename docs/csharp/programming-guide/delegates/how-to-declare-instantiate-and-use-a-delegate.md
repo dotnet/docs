@@ -1,16 +1,9 @@
 ---
 title: "How to: Declare, Instantiate, and Use a Delegate (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Declare, Instantiate, and Use a Delegate (C# Programming Guide)
 In C# 1.0 and later, delegates can be declared as shown in the following example.  

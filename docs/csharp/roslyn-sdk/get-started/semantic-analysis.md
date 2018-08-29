@@ -1,12 +1,7 @@
 ---
 title: Get started with semantic analysis
 description: This tutorial provides an overview of working with semantic analysis using the .NET Compiler SDK.
-author: billwagner
-ms.author: wiwagn
 ms.date: 02/06/2018
-ms.topic: conceptual
-ms.prod: .net
-ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
@@ -131,7 +126,7 @@ Select only the name property, and only distinct names by removing any overloads
 
 You can also build the full query using the LINQ query syntax, and then display all the method names in  the console:
 
-[!code-csharp[build and display the results of this query.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#12 "Build and display the results of the query.")]
+[!code-csharp[build and display the results of this query.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#13 "Build and display the results of the query.")]
 
 Build and run the program. You should see the following output:
 

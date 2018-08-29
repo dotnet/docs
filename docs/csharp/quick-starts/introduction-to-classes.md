@@ -1,13 +1,7 @@
 ---
 title: Introduction to classes tutorial - C# local quickstarts
 description: Create your first C# program and explore object oriented concepts
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/11/2017
-ms.topic: get-started-article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.custom: mvc
 ---
 # Introduction to classes
@@ -73,7 +67,7 @@ namespace classes
 
 Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This quickstart is relatively small, so you'll put all the code in one namespace. 
 
-`public class BankAccount` defines the class, or type, you are creating. Everything inside the `{` and `}` that follows the class declaration defines the behavior of the class. There are five ***members*** of the `BankAccount` class. The first three are ***properties***. Properties are data elements and can have code that enforces validation or other rules. The last two are ***methods***. Methods are blocks of code that peform a single function. Reading the names of each of the members should provide enough information for you or another developer to understand what the class does.
+`public class BankAccount` defines the class, or type, you are creating. Everything inside the `{` and `}` that follows the class declaration defines the behavior of the class. There are five ***members*** of the `BankAccount` class. The first three are ***properties***. Properties are data elements and can have code that enforces validation or other rules. The last two are ***methods***. Methods are blocks of code that perform a single function. Reading the names of each of the members should provide enough information for you or another developer to understand what the class does.
 
 ## Open a new account
 

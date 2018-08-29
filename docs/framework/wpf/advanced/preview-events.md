@@ -1,26 +1,12 @@
 ---
 title: "Preview Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Preview events [WPF]"
   - "suppressing events [WPF]"
   - "events [WPF], Preview"
   - "events [WPF], suppressing"
 ms.assetid: b5032308-aa9c-4d02-af11-630ecec8df7e
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Preview Events
 Preview events, also known as tunneling events, are routed events where the direction of the route travels from the application root towards the element that raised the event and is reported as the source in event data. Not all event scenarios support or require preview events; this topic describes the situations where preview events exist, how applications or components should handle them, and cases where creating preview events in custom components or classes might be appropriate.  

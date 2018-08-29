@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedWriter::DefineParameter Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedWriter.DefineParameter"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a8e3dd32-6a44-4371-9a74-f417b11998c8
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter::DefineParameter Method
 Defines a single parameter in the current method. The parameter type is taken from the parameter's position (sequence) within the method's signature.  

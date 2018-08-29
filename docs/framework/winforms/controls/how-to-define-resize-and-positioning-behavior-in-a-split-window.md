@@ -1,14 +1,6 @@
 ---
 title: "How to: Define Resize and Positioning Behavior in a Split Window"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "splitter windows [Windows Forms], resizing"
   - "SplitContainer control [Windows Forms], resizing"
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Define Resize and Positioning Behavior in a Split Window
 The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themselves well to being resized and manipulated by users. However, there will be times when you will want to programmatically control the splitter—where it is positioned and to what degree it can be moved.  
@@ -63,7 +49,7 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
     }  
     ```  
   
-     ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.Load += new System.EventHandler(this.Form1_Load);  

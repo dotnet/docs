@@ -1,26 +1,12 @@
 ---
 title: "How to: Lock Down Endpoints in the Enterprise"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Lock Down Endpoints in the Enterprise
-Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  
+Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all Windows Communication Foundation (WCF) client applications installed on computers.  
   
- In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section.  
+ In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. WCF loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. For more information, see the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section.  
   
 > [!IMPORTANT]
 >  Service or endpoint behaviors not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (APTCA) that are added to the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section of a configuration file are not run when the application runs in a partial trust environment, and no exception is thrown when this occurs. To enforce the running of common behaviors such as validators, you must either:  

@@ -1,14 +1,6 @@
 ---
 title: "Tlbexp.exe (Type Library Exporter)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "exporting type library [.NET Framework]"
   - "exporter tool [.NET Framework]"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "Type Library Exporter"
   - "type libraries [.NET Framework], exporting"
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tlbexp.exe (Type Library Exporter)
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  

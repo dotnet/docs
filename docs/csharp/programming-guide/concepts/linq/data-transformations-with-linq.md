@@ -1,13 +1,6 @@
 ---
 title: "Data Transformations with LINQ (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ [C#], data transformations"
   - "source elements [LINQ in C#]"
@@ -17,9 +10,6 @@ helpviewer_keywords:
   - "data sources [LINQ in C#], data transformations"
   - "data transformations [LINQ in C#]"
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Data Transformations with LINQ (C#)
 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] is not only about retrieving data. It is also a powerful tool for transforming data. By using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries is the ability to create new types. This is accomplished in the [select](../../../../csharp/language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  

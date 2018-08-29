@@ -14,7 +14,7 @@ ms.workload:
 ---
 # Handling I/O errors in .NET
 
-In both .NET Core and .NET Framework, I/O methods wrap calls to the underlying operating system. When an I/O error occurs in code executed by the operating system, operating system returns an error code to the .NET I/O method. The method then translates the error information, typically in the form of an error code, into a .NET exception type. In most cases, it does this by directly translating the error code into its corresponding exception type; it does not perform any special mapping of the error based on the context of the method call. 
+Because the file system is an operating system resource, I/O methods in both .NET Core and .NET Framework wrap calls to the underlying operating system. When an I/O error occurs in code executed by the operating system, the operating system returns an error information to the .NET I/O method. The method then translates the error information, typically in the form of an error code, into a .NET exception type. In most cases, it does this by directly translating the error code into its corresponding exception type; it does not perform any special mapping of the error based on the context of the method call. 
 
 For example, on the Windows operating system, a call to a <xref:System.IO.Directory?displayProperty=nameWithType> method such as <xref:System.IO.Directory.SetLastWriteTime%2A> with a directory path that does not exist can return either of two error codes to the method:
 

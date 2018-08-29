@@ -6,29 +6,29 @@ ms.author: adegeo
 ms.date: 08/22/2018
 ---
 
-# Create a .NET Core Global Tool
+# Create a .NET Core Global Tool using the .NET Core CLI
 
-This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to create a console application as a Global Tool, which others can easily install. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to create a console application as a Global Tool, which others can easily install and run. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview][global-tool-info].
 
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 ## Create a project
 
-This article uses the .NET Core CLI to create and manage a project. Obviously you could use Visual Studio to do some of these steps, but Visual Studio will not be described in this article.
+This article uses the .NET Core CLI to create and manage a project.
 
-Our example tool will be a console application that generates an ascii bot and prints a message. First, create a new .NET Core 2.1 Console Application.
+Our example tool will be a console application that generates an ASCII bot and prints a message. First, create a new .NET Core Console Application.
 
 ```console
 dotnet new console -o botsay
 ```
 
-Enter the `botsay` directory created by the previous command.
+Navigate to the `botsay` directory created by the previous command.
 
 ## Add the code
 
 Open the `Program.cs` file with your favorite text editor, such as `vim` or [Visual Studio Code](https://code.visualstudio.com/).
 
-Add the following `using` directive to the top of the file, this will help to display the version information of the application.
+Add the following `using` directive to the top of the file, this will help shorten the code to display the version information of the application.
 
 ```csharp
 using System.Reflection;
@@ -120,19 +120,19 @@ dotnet run -- "Hello from the bot"
 dotnet run -- hello from the bot
 ```
 
-All arguments after the `--` delimiter are passed to our application.
+All arguments after the `--` delimiter are passed to your application.
 
 ## Setup the global tool
 
 Before you can pack and distribute the application as a Global Tool, you need to modify the project file. Open the `botsay.csproj` file and add three new XML nodes to the `<Project><PropertyGroup>` node:
 
-- \<PackAsTool>  
+- `<PackAsTool>`  
 [REQUIRED] Indicates that the application will be packaged for install as a Global Tool.
 
-- \<ToolCommandName>  
+- `<ToolCommandName>`  
 [OPTIONAL] An alternative name for the tool, otherwise the command name for the tool will be named after the project file. You can have multiple tools in a package, choosing a unique and friendly name will help differentiate from other tools in the same package.
 
-- \<PackageOutputPath>  
+- `<PackageOutputPath>`  
 [OPTIONAL] Where the NuGet package will be produced. The NuGet package is what the .NET Core CLI Global Tools uses to install your tool.
 
 ```xml
@@ -159,7 +159,7 @@ Next, create a NuGet package for your application.
 dotnet pack
 ```
 
-The `botsay.1.0.0.nupkg` file will be created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which should be the `./nupkg` folder. This will make it easy for us to install and test. When you want to release a tool publicly, you would upload it to [https://www.nuget.org](https://www.nuget.org).
+The `botsay.1.0.0.nupkg` file will be created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This will make it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org).
 
 Now that you have a package, install the tool from that package: 
 
@@ -167,7 +167,7 @@ Now that you have a package, install the tool from that package:
 dotnet tool install --global --add-source ./nupkg botsay`
 ```
 
-The `--add-source` parameter tells .NET Core to use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional feed source for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional source feed for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 
@@ -179,19 +179,14 @@ Tool 'botsay' (version '1.0.0') was successfully installed.
 You should now be able to type `botsay` and get a response from the tool.
 
 > [!NOTE]
-> If the install was successful, but you cannot use the `botsay` command, you may need to open a new terminal to refresh the your PATH.
+> If the install was successful, but you cannot use the `botsay` command, you may need to open a new terminal to refresh the PATH.
 
 ## Remove the tool
 
-Once you are done experimenting with the tool, remove it.
+Once you're done experimenting with the tool, you can remove it with the following commnand:
 
 ```console
 dotnet tool uninstall -g botsay
 ```
-
-## Next steps
-
-Read more information about how [Global Tools work with .NET Core][global-tool-info].
-
 
 [global-tool-info]: global-tools.md

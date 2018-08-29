@@ -587,7 +587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md),[How to: Write Text to Files with a StreamWriter](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md).  
+ The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md), [How to: Write Text to Files with a StreamWriter](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md).  
   
  If you omit `FileNumbers`, all active files opened by the `FileOpen` function are closed.  
   

@@ -2377,7 +2377,7 @@
   
  <xref:System.InvalidCastException> is thrown if obj cannot be cast to class.  
   
- <xref:System.TypeLoadException> is thrown if class cannot be found. This is typically detected when a Microsoft Intermediate Language (MSIL)instruction is converted to native code rather than at runtime.  
+ <xref:System.TypeLoadException> is thrown if class cannot be found. This is typically detected when a Microsoft Intermediate Language (MSIL) instruction is converted to native code rather than at runtime.  
   
  The following <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method overload can use the `castclass` opcode:  
   

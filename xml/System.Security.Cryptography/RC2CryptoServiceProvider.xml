@@ -155,7 +155,7 @@
       <Docs>
         <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
         <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
-        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.RC2" /> decryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />)and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.RC2" /> decryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
         <returns>A symmetric <see cref="T:System.Security.Cryptography.RC2" /> decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

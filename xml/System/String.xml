@@ -9194,7 +9194,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD)that are defined by the Unicode standard.When two strings are represented in the same normalization form, theycan be compared by using ordinal comparison.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard.When two strings are represented in the same normalization form, theycan be compared by using ordinal comparison.  
   
  To normalize and compare two strings, do the following:  
   
@@ -9269,7 +9269,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  Some Unicode characters have multiple equivalent binary representations consisting of sets of combining and/or composite Unicode characters. The existence of multiple representations for a single character complicates searching, sorting, matching, and other operations.  
   
- The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD)that are defined by the Unicode standard.When two strings are represented in the same normalization form, they can be compared by using ordinal comparison.  
+ The Unicode standard defines a process called normalization that returns one binary representation when given any of the equivalent binary representations of a character. Normalization can be performed with several algorithms, called normalization forms, that obey different rules. The .NET Framework supports the four normalization forms (C, D, KC, and KD) that are defined by the Unicode standard.When two strings are represented in the same normalization form, they can be compared by using ordinal comparison.  
   
  To normalize and compare two strings, do the following:  
   

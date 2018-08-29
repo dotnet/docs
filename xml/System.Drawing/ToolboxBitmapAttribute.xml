@@ -478,7 +478,7 @@
       <Docs>
         <param name="t">This method searches for an embedded bitmap resource in the assembly that defines the type specified by the t parameter. For example, if you pass typeof(ControlA) to the t parameter, then this method searches the assembly that defines ControlA.</param>
         <param name="imageName">The name of the embedded bitmap resource.</param>
-        <param name="large">Specifies whether this method returns a large image (true)or a small image (false). The small image is 16 by 16, and the large image is 32 x 32.</param>
+        <param name="large">Specifies whether this method returns a large image (true) or a small image (false). The small image is 16 by 16, and the large image is 32 x 32.</param>
         <summary>Returns an <see cref="T:System.Drawing.Image" /> object based on a bitmap resource that is embedded in an assembly.</summary>
         <returns>An <see cref="T:System.Drawing.Image" /> object based on the retrieved bitmap.</returns>
         <remarks>

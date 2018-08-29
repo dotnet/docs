@@ -43,7 +43,7 @@
   
  <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> enables you to add arbitrary registration code to accommodate the requirements of COM clients. For example, you can update the registry using registration functions from the <xref:Microsoft.Win32> namespace. If you provide a registration method, you must also apply <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=nameWithType> to an unregistration method, which reverses the operations done in the registration method.  
   
- The common language runtime calls the method with this attribute when its containing assembly is registered (directly or indirectly) with the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md)or through the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly%2A?displayProperty=nameWithType> method.  
+ The common language runtime calls the method with this attribute when its containing assembly is registered (directly or indirectly) with the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) or through the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly%2A?displayProperty=nameWithType> method.  
   
  This attribute can be applied only to methods that have the following characteristics:  
   

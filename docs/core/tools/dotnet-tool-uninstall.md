@@ -15,7 +15,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```
+```console
 dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
 dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
 dotnet tool uninstall <-h|--help>
@@ -61,4 +61,4 @@ Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Too
 
 ## See also
 
-[.NET Core Global Tools](global-tools.md)
+* [.NET Core Global Tools](global-tools.md)

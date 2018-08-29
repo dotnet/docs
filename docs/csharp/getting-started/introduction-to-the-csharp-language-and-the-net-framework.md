@@ -60,7 +60,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](../../framework/get-started/overview.md).  
   
-## See Also  
+## See also
 
 - [C#](../../csharp/index.md)
 - [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

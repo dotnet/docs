@@ -4,7 +4,7 @@ ms.date: 02/26/2018
 helpviewer_keywords: 
   - "strings [C#], modifying"
 ---
-# How to: Modify string contents in C# #
+# How to: Modify string contents in C\#
 
 This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To clearly demonstrate this, the examples all store the result in a new variable. You can then examine both the original `string` and the `string` resulting from the modification when you run each example.
 
@@ -67,5 +67,5 @@ You can try these samples by looking at the code in our [GitHub repository](http
 
 ## See also
 
-[.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)  
- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)  
+- [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)  
+- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)  

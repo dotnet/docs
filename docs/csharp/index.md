@@ -62,6 +62,6 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 
 ## See also
 
-[Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
-[.NET Development](https://msdn.microsoft.com/library/ff361664)  
-[C# Samples](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)  
+* [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
+* [.NET Development](https://msdn.microsoft.com/library/ff361664)  
+* [C# Samples](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)  

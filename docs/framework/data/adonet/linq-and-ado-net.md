@@ -16,7 +16,7 @@ Today, many business developers must use two (or more) programming languages: a 
   
  ![LINQ to ADO.NET overview](../../../../docs/framework/data/adonet/media/dpue-linqtoadonetoverview-bpuedev11.gif "DPUE_LinqToAdoNetOverview_bpuedev11")  
   
- For general information on the LINQ language features, see [Introduction to LINQ](https://msdn.microsoft.com/library/24dddf19-12a0-4707-a4bc-eba4fa7f219e). For information about using LINQ in your applications, see the [NOT IN BUILD: LINQ General Programming Guide](https://msdn.microsoft.com/library/609c7a6b-cbdd-429d-99f3-78d13d3bc049), which contains detailed information about how to use LINQ technologies.  
+ For more information about LINQ, see [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md).
   
  The following sections provide more information about [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], and [!INCLUDE[linq_entities](../../../../includes/linq-entities-md.md)].  
   
@@ -33,9 +33,10 @@ Today, many business developers must use two (or more) programming languages: a 
   
  Through the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)], relational data is exposed as objects in the .NET environment. This makes the object layer an ideal target for [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] support, allowing developers to formulate queries against the database from the language used to build the business logic. This capability is known as [!INCLUDE[linq_entities](../../../../includes/linq-entities-md.md)]. See [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md) for more information.  
   
-## See Also  
- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)  
- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)  
+- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)  
+- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
+- [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -10,7 +10,7 @@ ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 ---
 # enum (C# Reference)
 
-The `enum` keyword is used to declare an enumeration, a distinct type that consists of a set of named constants called the enumerator list.  
+The `enum` keyword is used to declare a const enumeration, a distinct type that consists of a set of named constants called the enumerator list.  
 
 Usually it is best to define an enum directly within a namespace so that all classes in the namespace can access it with equal convenience. However, an enum can also be nested within a class or struct.
 

@@ -73,7 +73,7 @@ In fact, if your internal microservices are communicating by creating chains of 
 
 Therefore, in order to enforce microservice autonomy and have better resiliency, you should minimize the use of chains of request/response communication across microservices. It is recommended that you use only asynchronous interaction for inter-microservice communication, either by using asynchronous message- and event-based communication, or by using HTTP polling independently of the original HTTP request/response cycle.
 
-The use of asynchronous communication is explained with additional details later in this guide in the sections [Asynchronous microservice integration enforces microservice’s autonomy](#asynchronous-microservice-integration-enforce-microservices-autonomy) and [Asynchronous message-based communication](#asynchronous-message-based-communication).
+The use of asynchronous communication is explained with additional details later in this guide in the sections [Asynchronous microservice integration enforces microservice’s autonomy](communication-in-microservice-architecture.md#asynchronous-microservice-integration-enforces-microservices-autonomy) and [Asynchronous message-based communication](asynchronous-message-based-communication.md).
 
 ## Additional resources
 

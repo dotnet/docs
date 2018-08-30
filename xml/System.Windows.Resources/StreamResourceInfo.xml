@@ -10,6 +10,12 @@
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <!-- type forward info -->
+  <AssemblyInfo>
+    <AssemblyName>System.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <!-- end type forward info -->
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -40,6 +46,12 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -63,6 +75,12 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
@@ -119,7 +137,13 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
+      <Attributes>      
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>

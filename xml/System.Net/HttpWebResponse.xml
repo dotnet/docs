@@ -22,6 +22,12 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <!-- type forward info -->
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <!-- end type forward info -->
   <Base>
     <BaseTypeName>System.Net.WebResponse</BaseTypeName>
   </Base>
@@ -63,7 +69,7 @@
 |Last-Modified|<xref:System.Net.HttpWebResponse.LastModified%2A>|  
 |Server|<xref:System.Net.HttpWebResponse.Server%2A>|  
   
- The contents of the response from the Internet resource are returned as a <xref:System.IO.Stream> by calling the <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method.  
+The contents of the response from the Internet resource are returned as a <xref:System.IO.Stream> by calling the <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method.  
   
    
   
@@ -104,6 +110,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -141,6 +153,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("Serialization is obsoleted for this type", false)</AttributeName>
@@ -1103,11 +1121,17 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      </AssemblyInfo>      
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <ReturnValue>
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>

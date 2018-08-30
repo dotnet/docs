@@ -135,6 +135,12 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -160,6 +166,12 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Parameters>
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
@@ -192,6 +204,12 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("Serialization is obsoleted for this type", false)</AttributeName>
@@ -304,6 +322,12 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <!-- type forward info -->
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <!-- end type forward info -->
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>

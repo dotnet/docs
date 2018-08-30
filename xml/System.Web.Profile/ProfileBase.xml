@@ -29,7 +29,7 @@
 ## Examples  
  The following code example shows a Web.config file that specifies a user profile that contains a `ZipCode` property of type `string` and a `RecentSearchList` property of type <xref:System.Collections.Specialized.StringCollection>. The generated <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will have strongly typed accessors for each of the specified properties.  
   
-```  
+```xml  
 <configuration>  
   <system.web>  
     <anonymousIdentification enabled="true" />  
@@ -63,30 +63,10 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic.  
-  
-```  
-&lt;profile inherits="Samples.AspNet.Profile.EmployeeProfile"  
-  defaultProvider="SqlProvider"&gt;  
-  &lt;providers&gt;  
-    &lt;clear /&gt;  
-    &lt;add  
-      name="SqlProvider"  
-      type="System.Web.Profile.SqlProfileProvider"   
-      connectionStringName="SqlServices"   
-      description="SQL Profile Provider for Sample"/&gt;   
-    &lt;add  
-      name="EmployeeInfoProvider"  
-      type="System.Web.Profile.SqlProfileProvider"   
-      connectionStringName="SqlServices"   
-      description="SQL Profile Provider for Employee Info"/&gt;   
-  &lt;/providers&gt;  
-  
-  &lt;properties&gt;  
-    &lt;add name="GarmentSize" /&gt;  
-  &lt;/properties&gt;  
-&lt;/profile&gt;  
-```
+      <para>You can create a custom profile implementation that inherits from the <see cref="T:System.Web.Profile.ProfileBase" /> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the Web.config file with the <see langword="inherits" /> attribute of the  configuration element, as shown in the following example. The code for the <c>EmployeeProfile</c> class is included in the Example section of this topic. 
+
+[!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
+
       </para>
     </block>
   </Docs>
@@ -122,7 +102,7 @@
 ## Examples  
  The following Web.config file specifies a user profile that contains a `ZipCode` property of type `string` and a `RecentSearchList` property of type <xref:System.Collections.Specialized.StringCollection>. The generated <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will have strongly typed accessors for each of the specified properties.  
   
-```  
+```xml  
 <configuration>  
    <connectionStrings>  
        <add name="SqlServices" connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
@@ -369,7 +349,7 @@
 ## Examples  
  The following Web.config file specifies a user profile that contains group of properties with a group name of `Address`. The grouped properties generated for the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will be preceded by the group name. For example, `Profile.Address.Street`.  
   
-```  
+```xml  
 <configuration>  
   <connectionStrings>  
     <add name="SqlServices" connectionString=  

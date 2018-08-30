@@ -18,7 +18,7 @@ When developing a secure service or client using Windows Communication Foundatio
   
 ### To create a self-signed root authority certificate and export the private key  
   
-The following commands creates a self-signed certificate with a subject name of "RootCA" in the user MY store. 
+The following command creates a self-signed certificate with a subject name of "RootCA" in the user MY store. 
 ```
 PS $rootCert = New-SelfSignedCertificate -CertStoreLocation cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("1.3.6.1.4.1.311.21.10={text}1.3.6.1.5.5.7.3.1,1.3.6.1.5.5.7.3.2")
 ```
@@ -41,7 +41,7 @@ PS $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\M
 ```
 Similarly, we save the path to the certificate in a variable and export the certificate.
 ```
-PS [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert .Thumbprint)"
+PS [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
 PS Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword 
 PS Export-Certificate -Cert $testCertPath -FilePath testcert.crt        
 ```

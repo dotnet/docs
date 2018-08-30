@@ -25,7 +25,7 @@ You can create n-tier or multitier applications that use [!INCLUDE[vbtecdlinq](.
   
 -   [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md)  
   
- For more information about n-tier applications that use ADO.NET DataSets, see [Work with datasets in n-tier applications](http://msdn.microsoft.com/library/f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20).  
+ For more information about n-tier applications that use ADO.NET DataSets, see [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).  
   
 ## See Also  
  [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

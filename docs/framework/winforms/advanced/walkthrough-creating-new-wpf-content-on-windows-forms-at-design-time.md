@@ -108,4 +108,4 @@ Windows Forms and WPF are different technologies, but they are designed to inter
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
-- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

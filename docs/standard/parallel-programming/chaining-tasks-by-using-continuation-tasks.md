@@ -139,7 +139,7 @@ In asynchronous programming, it is very common for one asynchronous operation, o
      [!code-csharp[TPL_Continuations#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/exception2.cs#11)]
      [!code-vb[TPL_Continuations#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/exception2.vb#11)]  
   
-     For more information, see [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md) and [NIB: How to: Handle Exceptions Thrown by Tasks](https://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d).  
+     For more information, see [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
 -   If the continuation is an attached child task that was created by using the <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> option, its exceptions will be propagated by the parent back to the calling thread, as is the case in any other attached child. For more information, see [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
   

@@ -75,7 +75,7 @@ Local variables can be declared without giving an explicit type. The `var` keywo
  [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
  [var](../../../csharp/language-reference/keywords/var.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+  [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)  
  [for](../../../csharp/language-reference/keywords/for.md)  
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
  [using Statement](../../../csharp/language-reference/keywords/using-statement.md)

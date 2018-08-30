@@ -41,7 +41,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [How to: Display a Control in the Choose Toolbox Items Dialog Box](https://msdn.microsoft.com/library/9yxtkx75\(v=vs.110\))  
   
--   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://msdn.microsoft.com/library/ms171731\(v=vs.110\))  
+-   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)  
   
 -   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](https://msdn.microsoft.com/library/5h0k2e6x\(v=vs.110\))  
   
@@ -53,7 +53,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [How to: Inherit from the Control Class](https://msdn.microsoft.com/library/skcysbt2\(v=vs.110\))  
   
--   [How to: Test the Run-Time Behavior of a UserControl](https://msdn.microsoft.com/library/ms171738\(v=vs.110\))  
+-   [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md)  
   
 -   [How to: Align a Control to the Edges of Forms at Design Time](https://msdn.microsoft.com/library/1fxyb15b\(v=vs.110\))  
   

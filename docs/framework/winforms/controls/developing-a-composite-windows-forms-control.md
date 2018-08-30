@@ -15,7 +15,7 @@ You can develop a composite Windows Forms control by combining other Windows For
   
 -   [How to: Display a Control in the Choose Toolbox Items Dialog Box](https://msdn.microsoft.com/library/9yxtkx75\(v=vs.110\))  
   
--   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://msdn.microsoft.com/library/ms171731\(v=vs.110\))  
+-   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)  
   
 -   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](https://msdn.microsoft.com/library/09476da0-8d4c-4a4c-b969-649519dfb438))  
   
@@ -27,7 +27,7 @@ You can develop a composite Windows Forms control by combining other Windows For
   
 -   [How to: Inherit from the Control Class](https://msdn.microsoft.com/library/skcysbt2\(v=vs.110\))  
   
--   [How to: Test the Run-Time Behavior of a UserControl](https://msdn.microsoft.com/library/ms171738\(v=vs.110\))  
+-   [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md)  
   
 -   [How to: Align a Control to the Edges of Forms at Design Time](https://msdn.microsoft.com/library/1fxyb15b\(v=vs.110\))  
   

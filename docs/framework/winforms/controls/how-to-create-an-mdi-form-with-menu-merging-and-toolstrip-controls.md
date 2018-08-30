@@ -16,7 +16,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
  There is extensive support for this feature in Visual Studio.  
   
- Also see [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](https://msdn.microsoft.com/library/ms233676\(v=vs.110\)).  
+ Also see [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
 ## Example  
  The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with an MDI form. The form also supports menu merging with child menus.  

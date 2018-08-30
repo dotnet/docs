@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
 ---
 # Debugging Support
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides general debugging support for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] projects.  Also see [Debugging LINQ](https://msdn.microsoft.com/library/Bb385795\(v=vs.110\)) or [Debugging LINQ](https://msdn.microsoft.com/library/Bb385795\(v=vs.120\)).  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides general debugging support for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] projects.  Also see [Debugging LINQ](/visualstudio/debugger/debugging-linq) or [Debugging LINQ](/visualstudio/debugger/debugging-linq).  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] also provides special tools for viewing SQL code. For more information, see the topics in this section.  
   

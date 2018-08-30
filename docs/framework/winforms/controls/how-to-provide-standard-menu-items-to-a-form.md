@@ -15,7 +15,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
   
  There is extensive support for this feature in Visual Studio.  
   
- Also see [Walkthrough: Providing Standard Menu Items to a Form](https://msdn.microsoft.com/library/ms233662\(v=vs.110\)).  
+ Also see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
   
 ## Example  
  The following code example demonstrates how to use a <xref:System.Windows.Forms.MenuStrip> control to create a form with a standard menu. Menu item selections are displayed in a <xref:System.Windows.Forms.StatusStrip> control.  

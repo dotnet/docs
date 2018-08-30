@@ -21,7 +21,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
  There is extensive support for this task in Visual Studio.  
   
- Also see [Walkthrough: Running an Operation in the Background](https://msdn.microsoft.com/library/ms233672\(v=vs.110\)).  
+ Also see [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md).  
   
 ## Example  
  [!code-csharp[System.ComponentModel.BackgroundWorker.Example#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.Example/CS/Form1.cs#1)]

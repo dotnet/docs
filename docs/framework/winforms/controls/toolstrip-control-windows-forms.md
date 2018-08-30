@@ -69,11 +69,11 @@ ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
   
 -   [How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer](https://msdn.microsoft.com/library/571c1z99\(v=vs.110\))  
   
--   [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](https://msdn.microsoft.com/library/ms171701\(v=vs.110\))  
+-   [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)  
   
--   [Walkthrough: Creating a Professionally Styled ToolStrip Control](https://msdn.microsoft.com/library/ms233664\(v=vs.110\))  
+-   [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md)  
   
--   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](https://msdn.microsoft.com/library/ms233676\(v=vs.110\))  
+-   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
   
 -   [ToolStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
   

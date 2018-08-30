@@ -22,13 +22,13 @@ Creating forms that are ready to be localized greatly speeds development for int
  [!code-csharp[System.Windows.Forms.TableLayoutPanel.LocalizableForm#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.LocalizableForm/CS/localizableform.cs#1)]
  [!code-vb[System.Windows.Forms.TableLayoutPanel.LocalizableForm#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.LocalizableForm/VB/localizableform.vb#1)]  
   
-1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
+1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
   
 2.  [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](https://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\))  
   
-3.  [How to: Span Rows and Columns in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
+3.  [How to: Span Rows and Columns in a TableLayoutPanel Control](how-to-span-rows-and-columns-in-a-tablelayoutpanel-control.md)  
   
-4.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
+4.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)  
   
 5.  [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](https://msdn.microsoft.com/library/xhz359sc\(v=vs.110\))  
   

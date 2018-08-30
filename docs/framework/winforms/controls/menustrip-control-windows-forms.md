@@ -51,15 +51,15 @@ This control groups application commands and makes them easily accessible.
   
 -   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
   
--   [How to: Copy ToolStripMenuItems](https://msdn.microsoft.com/library/ms171653\(v=vs.110\))  
+-   [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
   
--   [How to: Hide ToolStripMenuItems Using the Designer](https://msdn.microsoft.com/library/ms171658\(v=vs.110\))  
+-   [How to: Hide ToolStripMenuItems Using the Designer](how-to-hide-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Disable ToolStripMenuItems Using the Designer](https://msdn.microsoft.com/library/ms171656\(v=vs.110\))  
+-   [How to: Disable ToolStripMenuItems Using the Designer](how-to-disable-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Move ToolStripMenuItems](https://msdn.microsoft.com/library/ms171660\(v=vs.110\))  
+-   [How to: Move ToolStripMenuItems](how-to-move-toolstripmenuitems.md)  
   
--   [Walkthrough: Providing Standard Menu Items to a Form](https://msdn.microsoft.com/library/ms233662\(v=vs.110\))  
+-   [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
 -   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
   

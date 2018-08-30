@@ -30,7 +30,7 @@ The Windows Forms `TabControl` displays multiple tabs, like dividers in a notebo
  [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  Explains how to restrict access to a tab page, possibly based on user credentials.  
   
- Also see [How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer](https://msdn.microsoft.com/library/ms233654\(v=vs.110\)), [How to: Add a Control to a Tab Page Using the Designer](https://msdn.microsoft.com/library/ms233668\(v=vs.110\))  
+ Also see [How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer](add-and-remove-tabs-with-wf-tabcontrol-using-the-designer.md), [How to: Add a Control to a Tab Page Using the Designer](how-to-add-a-control-to-a-tab-page-using-the-designer.md)  
   
 ## Reference  
  <xref:System.Windows.Forms.TabControl> class  

@@ -1877,7 +1877,7 @@
         <param name="callback">A delegate to invoke through the dispatcher.</param>
         <param name="priority">The priority that determines in what order the specified callback is invoked relative to the other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" />.</param>
         <param name="cancellationToken">An object that indicates whether to cancel the operation.</param>
-        <summary>Executes the specified <see cref="T:System.Func`1" /> synchronously at the specified priority on the thread the <see cref="T:System.Windows.Threading.Dispatcher" /> is associated with.</summary>
+        <summary>Executes the specified <see cref="T:System.Func`1" /> asynchronously at the specified priority on the thread the <see cref="T:System.Windows.Threading.Dispatcher" /> is associated with.</summary>
         <returns>An object, which is returned immediately after <see cref="M:System.Windows.Threading.Dispatcher.InvokeAsync``1(System.Func{``0},System.Windows.Threading.DispatcherPriority,System.Threading.CancellationToken)" /> is called, that can be used to interact with the delegate as it is pending execution in the event queue.</returns>
         <remarks>To be added.</remarks>
       </Docs>

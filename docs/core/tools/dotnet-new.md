@@ -284,7 +284,7 @@ Each project template may have additional options available. The core templates 
 
 **web**
 
-`--exclude-launch-settings` - Whether to exclude *launchSettings.json* from the generated template.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `--no-restore` - Doesn't execute an implicit restore during project creation.
 
@@ -313,7 +313,7 @@ Each project template may have additional options available. The core templates 
 
 `-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`--exclude-launch-settings` - Whether to exclude *launchSettings.json* from the generated template.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
@@ -352,7 +352,7 @@ Each project template may have additional options available. The core templates 
 
 `-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`--exclude-launch-settings` - Whether to exclude *launchSettings.json* from the generated template.
+`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
 
 `--use-browserlink` - Includes BrowserLink in the project.
 

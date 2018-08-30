@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 15524274-3167-4627-b722-d6cedb9fa8c6
 ---
 # How to: Use Svcutil.exe to Download Metadata Documents
-You can use Svcutil.exe to download metadata from running services and to save the metadata to local files. For HTTP and HTTPS URL schemes, Svcutil.exe attempts to retrieve metadata using WS-MetadataExchange and [XML Web Service Discovery](http://go.microsoft.com/fwlink/?LinkId=94950). For all other URL schemes, Svcutil.exe uses only WS-MetadataExchange.  
+You can use Svcutil.exe to download metadata from running services and to save the metadata to local files. For HTTP and HTTPS URL schemes, Svcutil.exe attempts to retrieve metadata using WS-MetadataExchange and [XML Web Service Discovery](https://go.microsoft.com/fwlink/?LinkId=94950). For all other URL schemes, Svcutil.exe uses only WS-MetadataExchange.  
   
  By default, Svcutil.exe uses the bindings defined in the <xref:System.ServiceModel.Description.MetadataExchangeBindings> class. To configure the binding used for WS-MetadataExchange, you must define a client endpoint in the configuration file for Svcutil.exe (svcutil.exe.config) that uses the `IMetadataExchange` contract and that has the same name as the Uniform Resource Identifier (URI) scheme of the metadata endpoint address.  
   

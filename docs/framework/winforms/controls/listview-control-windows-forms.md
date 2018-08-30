@@ -52,15 +52,15 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  [How to: Add Search Capabilities to a ListView Control](../../../../docs/framework/winforms/controls/how-to-add-search-capabilities-to-a-listview-control.md)  
  Describes how to programmatically find an item using either text search or screen coordinates.  
   
--   [How to: Enable Tile View in a Windows Forms ListView Control Using the Designer](http://msdn.microsoft.com/library/ms233655\(v=vs.110\))  
+-   [How to: Enable Tile View in a Windows Forms ListView Control Using the Designer](https://msdn.microsoft.com/library/ms233655\(v=vs.110\))  
   
--   [How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer](http://msdn.microsoft.com/library/ms233671\(v=vs.110\))  
+-   [How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer](https://msdn.microsoft.com/library/ms233671\(v=vs.110\))  
   
--   [How to: Add Columns to the Windows Forms ListView Control Using the Designer](http://msdn.microsoft.com/library/ms233652\(v=vs.110\))  
+-   [How to: Add Columns to the Windows Forms ListView Control Using the Designer](https://msdn.microsoft.com/library/ms233652\(v=vs.110\))  
   
--   [How to: Group Items in a Windows Forms ListView Control Using the Designer](http://msdn.microsoft.com/library/ms233663\(v=vs.110\))  
+-   [How to: Group Items in a Windows Forms ListView Control Using the Designer](https://msdn.microsoft.com/library/ms233663\(v=vs.110\))  
   
--   [Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer](http://msdn.microsoft.com/library/ms171645\(v=vs.110\))  
+-   [Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer](https://msdn.microsoft.com/library/ms171645\(v=vs.110\))  
   
 ## Reference  
  <xref:System.Windows.Forms.ListView> class  
@@ -76,7 +76,7 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  Gives instructions for laying out a Windows Form with multiple panes.  
   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
+ [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  Explains how to take advantage of Windows XP-specific features that apply to the <xref:System.Windows.Forms.ListView> control.  
   
 ## See Also  

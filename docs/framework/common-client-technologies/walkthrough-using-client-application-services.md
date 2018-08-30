@@ -63,7 +63,7 @@ This topic describes how to create a Windows application that uses client applic
  At this point, the application is configured to access all three services from the same host. In the next section, you will create the host as a simple Web service application, enabling you to test your client configuration.  
   
 ## Creating the Application Services Host  
- In this section, you will create a simple Web service application that accesses user data from a local SQL Server Compact database file. Then, you will populate the database using the [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec). This simple configuration enables you to quickly test your client application. As an alternative, you can configure the Web service host to access user data from a full SQL Server database or through custom <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes. For more information, see [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2).  
+ In this section, you will create a simple Web service application that accesses user data from a local SQL Server Compact database file. Then, you will populate the database using the [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec). This simple configuration enables you to quickly test your client application. As an alternative, you can configure the Web service host to access user data from a full SQL Server database or through custom <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes. For more information, see [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2).  
   
  In the following procedure, you create and configure the AppServices Web service.  
   
@@ -99,7 +99,7 @@ This topic describes how to create a Windows application that uses client applic
      The `authenticationService`, `profileService`, and `roleService` elements in this markup enable and configure the application services. For testing purposes, the `requireSSL` attribute of the `authenticationService` element is set to "false". The `readAccessProperties` and `writeAccessProperties` attributes of the `profileService` element indicate that the `WebSettingsTestText` property is read/write.  
   
     > [!NOTE]
-    >  In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](http://go.microsoft.com/fwlink/?LinkId=91844).  
+    >  In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](https://go.microsoft.com/fwlink/?LinkId=91844).  
   
     ```xml  
     <system.web.extensions>  
@@ -532,6 +532,6 @@ This topic describes how to create a Windows application that uses client applic
  [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
  [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
  [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
- [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)
+ [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
+ [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
+ [Walkthrough: Using ASP.NET Application Services](https://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)

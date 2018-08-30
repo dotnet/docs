@@ -61,4 +61,4 @@ The following Windows Forms controls and components present standard dialog boxe
  [SaveFileDialog Component Overview](../../../../docs/framework/winforms/controls/savefiledialog-component-overview-windows-forms.md)  
  Selects files to save and where to save them.  
   
- Also see [Dialog Boxes in Windows Forms](http://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).
+ Also see [Dialog Boxes in Windows Forms](https://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).

@@ -30,9 +30,9 @@ The topics in this section help you quickly understand [!INCLUDE[ssODataFull](..
  Provides links to [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] resources.  
   
 ## Related Sections  
- [WCF Data Services (Silverlight)](http://go.microsoft.com/fwlink/?LinkID=143149)  
+ [WCF Data Services (Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)  
   
  [Getting Started](../../../../docs/framework/data/adonet/ef/getting-started.md)  
   
 ## See Also  
- [OData SDK](http://go.microsoft.com/fwlink/?LinkID=185248)
+ [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)

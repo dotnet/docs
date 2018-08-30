@@ -60,4 +60,4 @@ This topic describes how to call a workflow service from a workflow console appl
 
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
 - [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)
-- [Consuming a WCF Service from a Workflow in a Web Project](http://go.microsoft.com/fwlink/?LinkId=207725)
+- [Consuming a WCF Service from a Workflow in a Web Project](https://go.microsoft.com/fwlink/?LinkId=207725)

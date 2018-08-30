@@ -38,7 +38,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
 ## Auditing Event Log Can Be Filled  
  If a malicious user understands that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails.  
   
- To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](http://go.microsoft.com/fwlink/?LinkId=186123). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](https://go.microsoft.com/fwlink/?LinkId=186123). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ## Invalid Implementations of IAuthorizationPolicy Can Cause Service Hangs  
  Calling the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method on a faulty implementation of the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface can cause the service to hang.  
@@ -46,7 +46,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  Mitigation: Use only trusted code. That is, use only code that you have written and tested, or that comes from a trusted provider. Do not allow untrusted extensions of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to be plugged into your code without due consideration. This applies to all extensions used in a service implementation. WCF does not make any distinction between application code and foreign code that is plugged in using extensibility points.  
   
 ## Kerberos Maximum Token Size May Need Resizing  
- If a client belongs to a large number of groups (approximately 900, although the actual number varies depending on the groups), a problem may occur when a message header's block exceeds 64 kilobytes. In that case, you can increase the maximum Kerberos token size, as described in the Microsoft Support article "[Internet Explorer Kerberos authentication does not work because of an insufficient buffer connecting to IIS](http://go.microsoft.com/fwlink/?LinkId=89176)." You may also need to increase the maximum WCF message size to accommodate the larger Kerberos token.  
+ If a client belongs to a large number of groups (approximately 900, although the actual number varies depending on the groups), a problem may occur when a message header's block exceeds 64 kilobytes. In that case, you can increase the maximum Kerberos token size, as described in the Microsoft Support article "[Internet Explorer Kerberos authentication does not work because of an insufficient buffer connecting to IIS](https://go.microsoft.com/fwlink/?LinkId=89176)." You may also need to increase the maximum WCF message size to accommodate the larger Kerberos token.  
   
 ## Autoenrollment Results in Multiple Certificates with Same Subject Name for Machine  
  *Autoenrollment* is the capability of [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] to automatically enroll users and computers for certificates. When a machine is on a domain with the feature enabled, an X.509 certificate with the intended purpose of client authentication is automatically created and inserted into the local computer's Personal certificates store whenever a new machine is joined to the network. However, autoenrollment uses the same subject name for all certificates it creates in the cache.  
@@ -55,7 +55,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> option, and specify the certificate by its unique thumbprint (hash).  
   
- For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=95166).  
+ For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](https://go.microsoft.com/fwlink/?LinkId=95166).  
   
 ## Last of Multiple Alternative Subject Names Used for Authorization  
  In the rare case when an X.509 certificate contains multiple alternative subject names, and you authorize using the alternative subject name, authorization may fail.  

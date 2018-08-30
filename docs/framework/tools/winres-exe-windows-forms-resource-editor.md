@@ -47,7 +47,7 @@ The state of UI elements from a form in a Windows Forms project are typically st
 
 - A culture resource file can be saved as another culture resource file. For example, an English (U.S.) resource file could be saved as a Polish resource file. Typically the new file would subsequently be edited to be compatible with the new culture.
 
-Also see [Hierarchical Organization of Resources for Localization](http://msdn.microsoft.com/library/756hydy4\(v=vs.110\)) or [Hierarchical Organization of Resources for Localization](http://msdn.microsoft.com/library/756hydy4\(v=vs.120\)).
+Also see [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.110\)) or [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.120\)).
 
 Winres.exe cannot convert a .resx file into its corresponding .resources file; use the Resgen.exe tool instead. For more information about Resgen.exe, see [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
 

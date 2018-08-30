@@ -35,7 +35,7 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 >  If you are using the .NET Framework 4 Client Profile, you must first register the ETW manifest by running the following command from the .NET Framework 4 directory: `ServiceModelReg.exe –i –c:etw`  
   
 ## Enabling Debug Tracing using System.Diagnostics  
- These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](http://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
+ These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](https://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
   
 ```xml  
 <configuration>  
@@ -64,5 +64,5 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ```  
   
 ## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+ [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)  
+ [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

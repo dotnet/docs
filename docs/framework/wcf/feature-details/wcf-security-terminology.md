@@ -180,4 +180,4 @@ Some of the terminology used when discussing security may be unfamiliar. This to
 ## See Also  
  [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)  
  [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

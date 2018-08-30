@@ -19,7 +19,7 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
  For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
 ## Ensure That IIS, ASP.NET and WCF Are Correctly Installed and Registered  
- WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET and IIS vary depending on the operating system version being used. For more information about installing WCF and the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](http://go.microsoft.com/fwlink/?LinkId=201185). Instructions for installing IIS can be found at [Installing IIS](http://go.microsoft.com/fwlink/?LinkId=201188).  
+ WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]), ASP.NET and IIS vary depending on the operating system version being used. For more information about installing WCF and the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], see [Microsoft .NET Framework 4 Web Installer](https://go.microsoft.com/fwlink/?LinkId=201185). Instructions for installing IIS can be found at [Installing IIS](https://go.microsoft.com/fwlink/?LinkId=201188).  
   
  The installation process for the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] automatically registers WCF with IIS if IIS is already present on the machine. If IIS is installed after the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], an additional step is required to register WCF with IIS and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]. You can do this as follows, depending on your operating system:  
   
@@ -29,12 +29,12 @@ Developing and deploying a Windows Communication Foundation (WCF) service that i
   
 -   Windows 7:  
   
- Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. For more information, see [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
+ Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. For more information, see [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=201186)  
   
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application  
  IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
   
- Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](http://go.microsoft.com/fwlink/?LinkId=109968).  
+ Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](https://go.microsoft.com/fwlink/?LinkId=109968).  
   
 ## Create an .svc File for the WCF Service  
  WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
@@ -62,7 +62,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
 -   As uncompiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the \@ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.  
   
- For more information about the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](http://go.microsoft.com/fwlink/?LinkId=94773).  
+ For more information about the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](https://go.microsoft.com/fwlink/?LinkId=94773).  
   
 ## Configure the WCF Service  
  IIS-hosted WCF services store their configuration in the applications Web.config file. IIS-hosted services use the same configuration elements and syntax as WCF services hosted outside of IIS. However, the following constraints are unique to the IIS hosting environment:  
@@ -99,4 +99,4 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 ## See Also  
  [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
  [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
- [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

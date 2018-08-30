@@ -14,4 +14,4 @@ An error number falls outside the allowable of between 0 and 65535.
   
 ## See Also  
    
- [Number Property (Err Object)](http://msdn.microsoft.com/library/3b1991c4-b349-4ed0-a6ad-b5e2003c9028)
+ [Number Property (Err Object)](https://msdn.microsoft.com/library/3b1991c4-b349-4ed0-a6ad-b5e2003c9028)

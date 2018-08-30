@@ -28,7 +28,7 @@ An event handler is a procedure in your code that determines what actions are pe
  [Order of Events in Windows Forms](../../../docs/framework/winforms/order-of-events-in-windows-forms.md)  
  Describes the order in which events are raised in Windows Forms controls.  
   
- [How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)  
+ [How to: Create Event Handlers Using the Designer](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)  
  Describes how to use the Windows Forms Designer to create event handlers.  
   
 ## Related Sections  

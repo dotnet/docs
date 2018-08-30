@@ -12,7 +12,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
   
 1.  Start Internet Explorer.  
   
-2.  Go to the [Northwind and Pubs Sample Databases](http://go.microsoft.com/fwlink?linkid=64296) Web site.  
+2.  Go to the [Northwind and Pubs Sample Databases](https://go.microsoft.com/fwlink?linkid=64296) Web site.  
   
 3.  Click **Download**.  
   
@@ -29,7 +29,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
   
 1.  Start Internet Explorer.  
   
-2.  Go to the [Microsoft Download Center](http://go.microsoft.com/fwlink?linkid=74602) Web site.  
+2.  Go to the [Microsoft Download Center](https://go.microsoft.com/fwlink?linkid=74602) Web site.  
   
 3.  In the keywords box, type **SQL Server Express**.  
   
@@ -44,7 +44,7 @@ A number of samples and walkthroughs in the [!INCLUDE[vbtecdlinq](../../../../..
   
 #### To download Management Studio Express  
   
--   Follow the instructions at the [SSMSE site](http://go.microsoft.com/fwlink/?LinkId=95933).  
+-   Follow the instructions at the [SSMSE site](https://go.microsoft.com/fwlink/?LinkId=95933).  
   
 ## See Also  
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

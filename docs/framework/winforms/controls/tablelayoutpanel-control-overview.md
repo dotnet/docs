@@ -27,13 +27,13 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
  You can merge cells in the <xref:System.Windows.Forms.TableLayoutPanel> control by setting the `ColumnSpan` or `RowSpan` properties on a child control.  
   
-1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
+1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
   
-2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
+2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
   
-3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
+3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](https://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
   
-4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](http://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
+4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](https://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
   
 ## See Also  
  <xref:System.Windows.Forms.FlowLayoutPanel>  

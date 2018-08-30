@@ -61,7 +61,7 @@ Logical operators test for the truth of a condition. The CASE expression evaluat
 |[\! (Logical NOT)](not-entity-sql.md)|Logical NOT.|
 |[&#124;&#124; (Logical OR)](or-entity-sql.md)|Logical OR.|
 |[CASE](case-entity-sql.md)|Evaluates a set of Boolean expressions to determine the result.|
-|[THEN](then-entity-sql.md)|The result of a [WHEN](http://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|
+|[THEN](then-entity-sql.md)|The result of a [WHEN](https://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|
 
 ## Query operators
 

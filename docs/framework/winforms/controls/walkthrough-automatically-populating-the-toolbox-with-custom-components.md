@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
 ---
 # Walkthrough: Automatically Populating the Toolbox with Custom Components
-If your components are defined by a project in the currently open solution, they will automatically appear in the **Toolbox**, with no action required by you. You can also manually populate the **Toolbox** with your custom components by using the [Choose Toolbox Items Dialog Box (Visual Studio)](http://msdn.microsoft.com/library/bd07835f-18a8-433e-bccc-7141f65263bb), but the **Toolbox** takes account of items in your solution's build outputs with all the following characteristics:  
+If your components are defined by a project in the currently open solution, they will automatically appear in the **Toolbox**, with no action required by you. You can also manually populate the **Toolbox** with your custom components by using the [Choose Toolbox Items Dialog Box (Visual Studio)](https://msdn.microsoft.com/library/bd07835f-18a8-433e-bccc-7141f65263bb), but the **Toolbox** takes account of items in your solution's build outputs with all the following characteristics:  
   
 -   Implements <xref:System.ComponentModel.IComponent>;  
   
@@ -43,7 +43,7 @@ If your components are defined by a project in the currently open solution, they
   
 2.  Add a new component to the project. Call it `DemoComponent`.  
   
-     For more information, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce).  
+     For more information, see [NIB:How to: Add New Project Items](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce).  
   
 3.  Build the project.  
   
@@ -74,7 +74,7 @@ If your components are defined by a project in the currently open solution, they
   
 1.  Unload the project from the solution.  
   
-     For more information about unloading projects, see [NIB:How to: Unload and Reload Projects](http://msdn.microsoft.com/library/abc0155b-8fcb-4ffc-95b6-698518a7100b). If you are prompted to save, choose **Yes**.  
+     For more information about unloading projects, see [NIB:How to: Unload and Reload Projects](https://msdn.microsoft.com/library/abc0155b-8fcb-4ffc-95b6-698518a7100b). If you are prompted to save, choose **Yes**.  
   
 2.  Add a new **Windows Application** project to the solution. Open the form in the **Designer**.  
   
@@ -88,7 +88,7 @@ If your components are defined by a project in the currently open solution, they
  This walkthrough demonstrates that the **Toolbox** takes account of a project's components, but the **Toolbox** is also takes account of controls. Experiment with your own custom controls by adding and removing control projects from your solution.  
   
 ## See Also  
- [General, Windows Forms Designer, Options Dialog Box](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
- [How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/library/21285050-cadd-455a-b1f5-a2289a89c4db)  
- [Choose Toolbox Items Dialog Box (Visual Studio)](http://msdn.microsoft.com/library/bd07835f-18a8-433e-bccc-7141f65263bb)  
+ [General, Windows Forms Designer, Options Dialog Box](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
+ [How to: Manipulate Toolbox Tabs](https://msdn.microsoft.com/library/21285050-cadd-455a-b1f5-a2289a89c4db)  
+ [Choose Toolbox Items Dialog Box (Visual Studio)](https://msdn.microsoft.com/library/bd07835f-18a8-433e-bccc-7141f65263bb)  
  [Putting Controls on Windows Forms](../../../../docs/framework/winforms/controls/putting-controls-on-windows-forms.md)

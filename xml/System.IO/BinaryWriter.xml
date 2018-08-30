@@ -1829,8 +1829,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A byte array containing the data to write.</param>
-        <param name="index">The starting point in <c>buffer</c> at which to begin writing.</param>
-        <param name="count">The number of bytes to write.</param>
+        <param name="index">The index of the first byte to read from <c>buffer</c> and to write to the stream.</param>
+        <param name="count">The number of bytes to read from <c>buffer</c> and to write to the stream.</param>
         <summary>Writes a region of a byte array to the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1897,8 +1897,8 @@
       </Parameters>
       <Docs>
         <param name="chars">A character array containing the data to write.</param>
-        <param name="index">The starting point in <c>chars</c> from which to begin writing.</param>
-        <param name="count">The number of characters to write.</param>
+        <param name="index">The index of the first character to read from <c>chars</c> and to write to the stream.</param>
+        <param name="count">The number of characters to read from <c>chars</c> and to write to the stream.</param>
         <summary>Writes a section of a character array to the current stream, and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and perhaps the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

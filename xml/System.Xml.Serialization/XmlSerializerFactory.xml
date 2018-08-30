@@ -71,7 +71,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializerFactory" /> class that is used to serialize a type.</summary>
+        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is used to serialize a type.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateSerializer">
@@ -109,7 +109,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> to serialize.</param>
-        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializerFactory" /> class that is used to serialize the specified type.</summary>
+        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is used to serialize the specified type.</summary>
         <returns>A derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is specifically created to serialize the specified type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -145,7 +145,7 @@
       </Parameters>
       <Docs>
         <param name="xmlTypeMapping">An <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that maps one type to another.</param>
-        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializerFactory" /> class using an object that maps one type to another.</summary>
+        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class using an object that maps one type to another.</summary>
         <returns>A derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is specifically created to serialize the mapped type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -183,7 +183,7 @@
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> to serialize.</param>
         <param name="defaultNamespace">The default namespace to use for all the XML elements.</param>
-        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializerFactory" /> class that is used to serialize the specified type and namespace.</summary>
+        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is used to serialize the specified type and namespace.</summary>
         <returns>A derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is specifically created to serialize the specified type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -226,7 +226,7 @@
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> to serialize.</param>
         <param name="extraTypes">A <see cref="T:System.Type" /> array of additional object types to serialize.</param>
-        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializerFactory" /> class that is used to serialize the specified type. If a property or field returns an array, the <paramref name="extraTypes" /> parameter specifies objects that can be inserted into the array.</summary>
+        <summary>Returns a derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class that is used to serialize the specified type. If a property or field returns an array, the <paramref name="extraTypes" /> parameter specifies objects that can be inserted into the array.</summary>
         <returns>A derivation of the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

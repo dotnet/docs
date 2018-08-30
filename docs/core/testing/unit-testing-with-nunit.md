@@ -40,6 +40,8 @@ Change the directory back to the *unit-testing-using-nunit* directory. Run [`dot
 
 ## Creating the test project
 
+This section applies to: ✓ .NET SDK 2.1.400 and later versions.
+
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
 ```

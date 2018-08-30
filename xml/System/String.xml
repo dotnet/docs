@@ -262,7 +262,9 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
   
 > [!TIP]
 >  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
-  
+
+You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+
 <a name="casing"></a>   
 ### Casing  
  Casing rules determine how to change the capitalization of a Unicode character; for example, from lowercase to uppercase. Often, a casing operation is performed before a string comparison. For example, a string might be converted to uppercase so that it can be compared with another uppercase string. You can convert the characters in a string to lowercase by calling the <xref:System.String.ToLower%2A> or <xref:System.String.ToLowerInvariant%2A> method, and you can convert them to uppercase by calling the <xref:System.String.ToUpper%2A> or <xref:System.String.ToUpperInvariant%2A> method. In addition, you can use the <xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType> method to convert a string to title case.  
@@ -533,9 +535,10 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  In Unicode, a single character can have multiple code points. Normalization converts these equivalent characters into the same binary representation. The <xref:System.String.Normalize%2A?displayProperty=nameWithType> method performs the normalization, and the <xref:System.String.IsNormalized%2A?displayProperty=nameWithType> method determines whether a string is normalized.  
   
  For more information and an example, see the [Normalization](#Normalization) section earlier in this topic.  
-  
+
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related> 
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.IComparable" />
     <altmember cref="T:System.ICloneable" />

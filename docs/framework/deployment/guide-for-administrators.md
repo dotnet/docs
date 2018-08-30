@@ -242,7 +242,7 @@ This step-by-step article describes how a system administrator can deploy the [!
 <a name="additional_error_codes"></a>   
 ### Download error codes  
   
--   [Background Intelligent Transfer Service (BITS) error codes](https://msdn.microsoft.com/library/aa362823.aspx)  
+-   [Background Intelligent Transfer Service (BITS) error codes](/windows/desktop/Bits/bits-return-values)  
   
 -   [URL moniker error codes](https://msdn.microsoft.com/library/ms775145.aspx)  
   

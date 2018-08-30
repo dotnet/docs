@@ -56,6 +56,9 @@ Because of this reliance on the operating system, identical exception conditions
 
 As the base class for exceptions in the <xref:System.IO> namespace, <xref:System.IO.IOException> is also thrown for any error code that does not map to a predefined exception type. This means that it can be thrown by any I/O operation.
 
+> [!IMPORTANT]
+> Because <xref:System.IO.IOException> is the base class of the other exception types in the <xref:System.IO> namespace, you should handle in a `catch` block after you've handled the other I/O-related exceptions.
+
 In addition, starting with .NET Core 2.1, validation checks for path correctness (for example, to ensure that invalid characters are not present in a path) have been removed, and the runtime throws an exception mapped from an operating system error code rather than from its own validation code. The most likely exception to be thrown in this case is an <xref:System.IO.IOException>, although any other exception type could also be thrown.
 
 ## See also

@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default concurrency level is the default concurrency multiplier (DEFAULT_CONCURRENCY_MULTIPLIER) times the number of CPUs. The higher the default concurrency multiplier is, the more concurrent write operations can take place without interference and blocking. Higher multiplier values also cause operations that require all locks (for example, table resizing, `ToArray` and `Count`) to become more expensive. The default concurrency multiplier is 4. The default capacity (DEFAULT_CAPACITY), which represents the initial number of buckets, is a trade-off between the size of a very small dictionary and the number of resizes when constructing a large dictionary. Also, the capacity should not be divisible by a small prime number. The default capacity is 31.  
+ The default concurrency level is equal to the number of CPUs. The higher the concurrency level is, the more concurrent write operations can take place without interference and blocking. Higher concurrency level values also cause operations that require all locks (for example, table resizing, `ToArray` and `Count`) to become more expensive. The default capacity (DEFAULT_CAPACITY), which represents the initial number of buckets, is a trade-off between the size of a very small dictionary and the number of resizes when constructing a large dictionary. Also, the capacity should not be divisible by a small prime number. The default capacity is 31.  
   
  ]]></format>
         </remarks>

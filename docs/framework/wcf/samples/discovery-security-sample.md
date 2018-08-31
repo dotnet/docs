@@ -6,7 +6,7 @@ author: "BrucePerlerMS"
 manager: "mbaldwin"
 ---
 # Discovery Security Sample
-The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](http://go.microsoft.com/fwlink/?LinkId=177912) and the [1.1 version](http://go.microsoft.com/fwlink/?LinkId=179677).  
+The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](https://go.microsoft.com/fwlink/?LinkId=177912) and the [1.1 version](https://go.microsoft.com/fwlink/?LinkId=179677).  
   
  The custom channel is applied on top of the existing channel stack for Discovery and Announcement endpoints. This way, a signature header is applied for every message sent. The signature is verified on received messages and when it does not match or when the messages do not have a signature, the messages are dropped. To sign and verify messages, the sample uses certificates.  
   
@@ -67,7 +67,7 @@ The Discovery specification does not require that endpoints that participate in 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  
   

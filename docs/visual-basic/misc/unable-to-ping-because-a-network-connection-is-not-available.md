@@ -15,5 +15,5 @@ The operation cannot be performed because no network connection is available.
 ## See Also  
  [My.Computer.Network.Ping](xref:Microsoft.VisualBasic.Devices.Network.Ping%2A)  
  [My.Computer.Network.IsAvailable](xref:Microsoft.VisualBasic.Devices.Network.IsAvailable)  
- [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/library/c5379021-44ef-4d6a-acf5-e951fdcab6b2)  
+ [Network Operations in the .NET Framework with Visual Basic](https://msdn.microsoft.com/library/c5379021-44ef-4d6a-acf5-e951fdcab6b2)  
  [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network)

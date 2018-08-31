@@ -19,7 +19,7 @@ wsatConfig [Options]
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\wsatConfig.exe  
   
- If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Commerce Server 2007 (KB912817)](http://go.microsoft.com/fwlink/?LinkId=95340) and [Availability of Windows XP COM+ Hotfix Rollup Package 13](http://go.microsoft.com/fwlink/?LinkId=95341).  
+ If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Commerce Server 2007 (KB912817)](https://go.microsoft.com/fwlink/?LinkId=95340) and [Availability of Windows XP COM+ Hotfix Rollup Package 13](https://go.microsoft.com/fwlink/?LinkId=95341).  
   
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   

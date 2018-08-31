@@ -19,7 +19,7 @@ This sample demonstrates how to control several security-related features of a W
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
@@ -43,7 +43,7 @@ This sample demonstrates how to control several security-related features of a W
   
 3.  Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
   
- More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](http://go.microsoft.com/fwlink/?LinkId=95137)) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](http://go.microsoft.com/fwlink/?LinkId=95138)).  
+ More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)).  
   
 ## Locking configuration file elements  
  In Web-hosted scenarios, it is possible to have services in subdirectories of services. In these situations, configuration values for the service in the subdirectory are calculated by examining values in Machine.config and successively merging with any Web.config files in parent directories moving down the directory tree and finally merging the Web.config file in the directory that contains the service. The default behavior for most configuration elements is to allow configuration files in subdirectories to override the values set in parent directories. In certain situations it may be desirable to prevent configuration files in subdirectories from overriding values set in parent directory configuration.  
@@ -120,9 +120,9 @@ This sample demonstrates how to control several security-related features of a W
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   
--   [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](http://go.microsoft.com/fwlink/?LinkId=95137)  
+-   [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
   
--   [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](http://go.microsoft.com/fwlink/?LinkId=95138)  
+-   [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
   
 #### To set up, build and run the sample  
   
@@ -139,4 +139,4 @@ This sample demonstrates how to control several security-related features of a W
 1.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
   
 ## See Also  
- [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

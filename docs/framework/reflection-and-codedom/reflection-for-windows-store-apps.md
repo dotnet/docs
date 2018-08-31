@@ -12,7 +12,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Reflection in the .NET Framework for Windows Store Apps
-Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET Framework includes a set of reflection types and members for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. These types and members are available in the full .NET Framework as well as in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=225700). This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
+Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET Framework includes a set of reflection types and members for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. These types and members are available in the full .NET Framework as well as in the [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=225700). This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
   
  If you are creating a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, you must use the reflection types and members in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]. These types and members are also available, but not required, for use in desktop apps, so you can use the same code for both types of apps.  
   
@@ -30,11 +30,11 @@ Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET
  In a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, access to some .NET Framework types and members is restricted. For example, you cannot call .NET Framework methods that are not included in [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], by using a <xref:System.Reflection.MethodInfo> object. In addition, certain types and members that are not considered safe within the context of a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app are blocked, as are <xref:System.Runtime.InteropServices.Marshal> and <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal> members. This restriction affects only .NET Framework types and members; you can call your code or third-party code as you normally would.  
   
 ## Example  
- This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] page that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1` in a project named Reflection. If you paste this code inside a project with a different name, just make sure you change the namespace name to match your project.  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] page that contains a [Windows.UI.Xaml.Controls.Textblock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1` in a project named Reflection. If you paste this code inside a project with a different name, just make sure you change the namespace name to match your project.  
   
  [!code-csharp[System.ReflectionWinStoreApp#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
  [!code-vb[System.ReflectionWinStoreApp#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
   
 ## See Also  
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
- [.NET for Windows Store apps – supported APIs](http://go.microsoft.com/fwlink/?LinkID=225700)
+ [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/?LinkID=225700)

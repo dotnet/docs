@@ -59,4 +59,4 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
  Explains best practices for using WCF queued communication.  
   
 ## See Also  
- [Message Queuing](http://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)
+ [Message Queuing](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)

@@ -94,7 +94,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 -   Has the <xref:System.SerializableAttribute> attribute applied.  
   
 > [!NOTE]
->  For more information regarding the creation of remotable [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects, see [Making Objects Remotable](http://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a).  
+>  For more information regarding the creation of remotable [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects, see [Making Objects Remotable](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a).  
   
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] types are not remotable. To solve the problem, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to enable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] created by add-ins to be displayed from host applications. This support is provided by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] by two types: the <xref:System.AddIn.Contract.INativeHandleContract> interface and two static methods implemented by the <xref:System.AddIn.Pipeline.FrameworkElementAdapters> class: <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. At a high level, these types and methods are used in the following manner:  
   
@@ -280,6 +280,6 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
  <xref:System.LoaderOptimizationAttribute>  
  [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
  [Application Domains](../../../../docs/framework/app-domains/application-domains.md)  
- [.NET Framework Remoting Overview](http://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
- [Making Objects Remotable](http://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)  
+ [.NET Framework Remoting Overview](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
+ [Making Objects Remotable](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)  
  [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)

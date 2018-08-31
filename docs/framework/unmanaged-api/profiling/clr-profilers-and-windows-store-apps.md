@@ -72,7 +72,7 @@ Windows RT devices are quite locked down.  Third-party profilers simply cannot b
 
  In a number of scenarios discussed in the following sections, your Profiler UI desktop application needs to consume some new Windows Runtime APIs.  You’ll want to consult the documentation to understand which Windows Runtime APIs can be used from desktop applications, and whether their behavior is different when called from desktop applications and Windows Store apps.  
   
- If your Profiler UI is written in managed code, there will be a few steps you’ll need to do to make consuming those Windows Runtime APIs easy.  See the [Managed desktop apps and Windows Runtime](http://go.microsoft.com/fwlink/?LinkID=271858) article for more information.  
+ If your Profiler UI is written in managed code, there will be a few steps you’ll need to do to make consuming those Windows Runtime APIs easy.  See the [Managed desktop apps and Windows Runtime](https://go.microsoft.com/fwlink/?LinkID=271858) article for more information.  
   
 ## Loading the Profiler DLL
 

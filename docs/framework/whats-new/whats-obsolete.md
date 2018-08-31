@@ -67,13 +67,13 @@ The .NET Framework changes over time. Each new version adds new types and type m
  [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)  
   
 ## Obsolete Lists for Previous Versions  
- [Obsolete Types in the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=224224)  
+ [Obsolete Types in the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=224224)  
   
- [Obsolete Members in the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=224227)  
+ [Obsolete Members in the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=224227)  
   
- [.NET Framework 3.5 Obsolete List](http://go.microsoft.com/fwlink/?LinkId=163710)  
+ [.NET Framework 3.5 Obsolete List](https://go.microsoft.com/fwlink/?LinkId=163710)  
   
- [.NET Framework 2.0 Obsolete List](http://go.microsoft.com/fwlink/?LinkID=125264)  
+ [.NET Framework 2.0 Obsolete List](https://go.microsoft.com/fwlink/?LinkID=125264)  
   
 ## See Also  
  [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

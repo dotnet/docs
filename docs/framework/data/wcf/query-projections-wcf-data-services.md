@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
 ---
 # Query Projections (WCF Data Services)
-Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see [OData: Select System Query Option ($select)](http://go.microsoft.com/fwlink/?LinkId=186076).  
+Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see [OData: Select System Query Option ($select)](https://go.microsoft.com/fwlink/?LinkId=186076).  
   
  This topic describes how to define a query projection, what the requirements are for entity and non-entity types, making updates to projected results, creating projected types, and lists some projection considerations.  
   

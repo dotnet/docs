@@ -13,5 +13,5 @@ The maximum number of event receivers supported by the object has been exceeded.
 -   Reduce the number of event receivers.  
   
 ## See Also  
- [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/library/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)  
+ [How to: Raise Events Handled by a COM Sink](https://msdn.microsoft.com/library/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)  
  [Walkthrough: Handling Events](../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)

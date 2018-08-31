@@ -9,7 +9,7 @@ ms.assetid: a60c30fa-1e68-45fe-b984-f6abb9ede40e
 # Standard Query Operator Translation
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates Standard Query Operators to SQL commands. The query processor of the database determines the execution semantics of SQL translation.  
   
- Standard Query Operators are defined against *sequences*. A sequence is *ordered* and relies on reference identity for each element of the sequence. For more information, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+ Standard Query Operators are defined against *sequences*. A sequence is *ordered* and relies on reference identity for each element of the sequence. For more information, see [Standard Query Operators Overview](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
   
  SQL deals primarily with *unordered sets of values*. Ordering is typically an explicitly stated, post-processing operation that is applied to the final result of a query rather than to intermediate results. Identity is defined by values. For this reason, SQL queries are understood to deal with multisets (*bags*) instead of *sets*.  
   

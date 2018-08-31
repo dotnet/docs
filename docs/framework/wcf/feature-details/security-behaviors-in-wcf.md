@@ -114,7 +114,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  Set the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
- This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88443).  
+ This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
   
 #### \<issuedToken> Element  
  The [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
@@ -215,4 +215,4 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
 ## See Also  
  [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

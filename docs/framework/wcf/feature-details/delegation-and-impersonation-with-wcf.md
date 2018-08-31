@@ -164,7 +164,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 ```  
   
 ## Delegation  
- To delegate to a back-end service, a service must perform Kerberos multi-leg (SSPI without NTLM fallback) or Kerberos direct authentication to the back-end service using the client’s Windows identity. To delegate to a back-end service, create a <xref:System.ServiceModel.ChannelFactory%601> and a channel, and then communicate through the channel while impersonating the client. With this form of delegation, the distance at which the back-end service can be located from the front-end service depends on the impersonation level achieved by the front-end service. When the impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>, the front-end and back-end services must be running on the same machine. When the impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>, the front-end and back-end services can be on separate machines or on the same machine. Enabling delegation-level impersonation requires that Windows domain policy be configured to permit delegation. For more information about configuring Active Directory for delegation support, see [Enabling Delegated Authentication](http://go.microsoft.com/fwlink/?LinkId=99690).  
+ To delegate to a back-end service, a service must perform Kerberos multi-leg (SSPI without NTLM fallback) or Kerberos direct authentication to the back-end service using the client’s Windows identity. To delegate to a back-end service, create a <xref:System.ServiceModel.ChannelFactory%601> and a channel, and then communicate through the channel while impersonating the client. With this form of delegation, the distance at which the back-end service can be located from the front-end service depends on the impersonation level achieved by the front-end service. When the impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>, the front-end and back-end services must be running on the same machine. When the impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>, the front-end and back-end services can be on separate machines or on the same machine. Enabling delegation-level impersonation requires that Windows domain policy be configured to permit delegation. For more information about configuring Active Directory for delegation support, see [Enabling Delegated Authentication](https://go.microsoft.com/fwlink/?LinkId=99690).  
   
 > [!NOTE]
 >  When a client authenticates to the front-end service using a user name and password that correspond to a Windows account on the back-end service, the front-end service can authenticate to the back-end service by reusing the client’s user name and password. This is a particularly powerful form of identity flow, because passing user name and password to the back-end service enables the back-end service to perform impersonation, but it does not constitute delegation because Kerberos is not used. Active Directory controls on delegation do not apply to user name and password authentication.  
@@ -183,7 +183,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
  [!code-vb[c_delegation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_delegation/vb/source.vb#1)]  
   
 ### How to Configure an Application to Use Constrained Delegation  
- Before you can use constrained delegation, the sender, receiver, and the domain controller must be configured to do so. The following procedure lists the steps that enable constrained delegation. For details about the differences between delegation and constrained delegation, see the portion of [Windows Server 2003 Kerberos Extensions](http://go.microsoft.com/fwlink/?LinkId=100194) that discusses constrained discussion.  
+ Before you can use constrained delegation, the sender, receiver, and the domain controller must be configured to do so. The following procedure lists the steps that enable constrained delegation. For details about the differences between delegation and constrained delegation, see the portion of [Windows Server 2003 Kerberos Extensions](https://go.microsoft.com/fwlink/?LinkId=100194) that discusses constrained discussion.  
   
 1.  On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
   
@@ -195,9 +195,9 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
  For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
   
--   [Troubleshooting Kerberos Delegation](http://go.microsoft.com/fwlink/?LinkId=36724)  
+-   [Troubleshooting Kerberos Delegation](https://go.microsoft.com/fwlink/?LinkId=36724)  
   
--   [Kerberos Protocol Transition and Constrained Delegation](http://go.microsoft.com/fwlink/?LinkId=36725)  
+-   [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
   
 ## See Also  
  <xref:System.ServiceModel.OperationBehaviorAttribute>  

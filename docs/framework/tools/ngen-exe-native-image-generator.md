@@ -47,7 +47,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
  For additional information on using Ngen.exe and the native image service, see [Native Image Service][Native Image Service].  
   
 > [!NOTE]
->  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](http://msdn.microsoft.com/library/5a69fc7a-103f-4afc-8ab4-606adcb46324).  
+>  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](https://msdn.microsoft.com/library/5a69fc7a-103f-4afc-8ab4-606adcb46324).  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
@@ -508,7 +508,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
  For examples relating to the native image service, see [Native Image Service][Native Image Service].  
   
 ## Native Image Task  
- The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. (See [Creating Native Images](http://msdn.microsoft.com/library/2bc8b678-dd8d-4742-ad82-319e9bf52418).) It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.  
+ The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. (See [Creating Native Images](https://msdn.microsoft.com/library/2bc8b678-dd8d-4742-ad82-319e9bf52418).) It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.  
   
  The native image task is registered once for each CPU architecture supported on a computer, to allow compilation for applications that target each architecture:  
   

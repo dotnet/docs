@@ -33,6 +33,6 @@ If you created your app using an earlier version of the .NET Framework, you can 
  [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)  
  [What's New](../../../docs/framework/whats-new/index.md)  
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
- [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)  
- [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/?LinkId=196607)
+ [.NET Framework Version and Assembly Information](https://go.microsoft.com/fwlink/?LinkId=201701)  
+ [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)
  [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

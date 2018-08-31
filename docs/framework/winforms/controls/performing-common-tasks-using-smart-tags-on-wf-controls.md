@@ -64,4 +64,4 @@ As you construct forms and controls for your Windows Forms application, there ar
  <xref:System.Windows.Forms.TabControl>  
  <xref:System.Windows.Forms.SplitContainer>  
  <xref:System.ComponentModel.Design.DesignerActionList>  
- [Walkthrough: Adding Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)
+ [Walkthrough: Adding Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)

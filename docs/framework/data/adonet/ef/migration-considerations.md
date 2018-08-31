@@ -23,7 +23,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
 > [!NOTE]
->  All of these tasks are performed automatically when you use the Entity Data Model tools starting with [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)]. For more information, see [How to: Use the Entity Data Model Wizard](http://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
+>  All of these tasks are performed automatically when you use the Entity Data Model tools starting with [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)]. For more information, see [How to: Use the Entity Data Model Wizard](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
   
 1.  Upgrade the application.  
   
@@ -31,12 +31,12 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
 2.  Define the models and mapping.  
   
-     The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](http://msdn.microsoft.com/library/d4fd6864-f2a1-48f0-aa32-1e318775a99a).  
+     The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](https://msdn.microsoft.com/library/d4fd6864-f2a1-48f0-aa32-1e318775a99a).  
   
-     Types that are defined in the storage model must match the name of objects in the data source. If the existing application exposes data as objects, you must ensure that the entities and properties that are defined in the conceptual model match the names of these existing data classes and properties. For more information, see [How to: Customize Modeling and Mapping Files to Work with Custom Objects](http://msdn.microsoft.com/library/bb40c4db-0121-4e45-a167-8fb06707a708).  
+     Types that are defined in the storage model must match the name of objects in the data source. If the existing application exposes data as objects, you must ensure that the entities and properties that are defined in the conceptual model match the names of these existing data classes and properties. For more information, see [How to: Customize Modeling and Mapping Files to Work with Custom Objects](https://msdn.microsoft.com/library/bb40c4db-0121-4e45-a167-8fb06707a708).  
   
     > [!NOTE]
-    >  The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](http://msdn.microsoft.com/library/4ccd7ad6-b934-4f7c-82a0-cfd2d4a95faf).  
+    >  The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://msdn.microsoft.com/library/4ccd7ad6-b934-4f7c-82a0-cfd2d4a95faf).  
   
 3.  Define the connection string.  
   
@@ -44,10 +44,10 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
 4.  Configure the Visual Studio project.  
   
-     References to [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](http://msdn.microsoft.com/library/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e).  
+     References to [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](https://msdn.microsoft.com/library/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e).  
   
 ## Considerations for Applications with Existing Objects  
- Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 4, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports "plain old" CLR objects (POCO), also called persistence-ignorant objects. In most cases, your existing objects can work with the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] by making minor changes. For more information, see [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3). You can also migrate an application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and use the data classes that are generated by the Entity Framework tools. For more information, see [How to: Use the Entity Data Model Wizard](http://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
+ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 4, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports "plain old" CLR objects (POCO), also called persistence-ignorant objects. In most cases, your existing objects can work with the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] by making minor changes. For more information, see [Working with POCO Entities](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3). You can also migrate an application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and use the data classes that are generated by the Entity Framework tools. For more information, see [How to: Use the Entity Data Model Wizard](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d).  
   
 ## Considerations for Applications that Use ADO.NET Providers  
  [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] providers, such as SqlClient, enable you to query a data source to return tabular data. Data can also be loaded into an [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] DataSet. The following list describes considerations for upgrading an application that uses an existing [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] provider:  
@@ -68,26 +68,26 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
  If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery%601>.  
   
- For more information, see [Binding Objects to Controls](http://msdn.microsoft.com/library/2fd34855-929b-4303-a91e-4bb69d958f2b).  
+ For more information, see [Binding Objects to Controls](https://msdn.microsoft.com/library/2fd34855-929b-4303-a91e-4bb69d958f2b).  
   
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [Entity Framework Data Source Control](http://msdn.microsoft.com/library/1f09af00-9578-4744-a029-765710a3c83f).  
+ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [Entity Framework Data Source Control](https://msdn.microsoft.com/library/1f09af00-9578-4744-a029-765710a3c83f).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  
   
  Applications that expose data services.  
- Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](http://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
+ Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](https://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
   
  Applications that use XML data.  
  Object serialization enables you to create [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md).  
   
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](http://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
+ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](https://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
   
- If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13).  
+ If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13).  
   
  Applications that maintain state.  
- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+ [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
 ## See Also  
  [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  

@@ -9,7 +9,7 @@ ms.assetid: 5e53a2d2-f200-4357-8b20-430f8f4860a4
 ---
 # Visual Basic Power Packs controls
 
-Visual Basic Power Packs controls are additional Windows Forms controls. They are not included in Visual Studio.  You can [download them](http://go.microsoft.com/fwlink/?LinkId=321343), but they are provided as-is, without support.  
+Visual Basic Power Packs controls are additional Windows Forms controls. They are not included in Visual Studio.  You can [download them](https://go.microsoft.com/fwlink/?LinkId=321343), but they are provided as-is, without support.  
   
 ## In this section
   

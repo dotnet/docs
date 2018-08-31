@@ -92,5 +92,5 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 ## See Also  
  [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
  [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
- [Using the Configuration Classes](http://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [Using the Configuration Classes](https://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)  
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

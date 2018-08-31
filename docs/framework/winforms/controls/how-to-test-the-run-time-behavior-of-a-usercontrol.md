@@ -23,7 +23,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 ### To test the run-time behavior of a UserControl  
   
-1.  Create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](http://msdn.microsoft.com/library/722f4e2d-1310-4ed5-8f33-593337ab66b4).  
+1.  Create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](https://msdn.microsoft.com/library/722f4e2d-1310-4ed5-8f33-593337ab66b4).  
   
 2.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.  
   
@@ -35,7 +35,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 6.  Close the test container.  
   
-7.  Add another user control to the **TestContainerExample** project. For details, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
+7.  Add another user control to the **TestContainerExample** project. For details, see [NIB:How to: Add Existing Items to a Project](https://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
   
 8.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.  
   
@@ -48,7 +48,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 #### To test user controls from another project  
   
-1.  Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](http://msdn.microsoft.com/library/722f4e2d-1310-4ed5-8f33-593337ab66b4).  
+1.  Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](https://msdn.microsoft.com/library/722f4e2d-1310-4ed5-8f33-593337ab66b4).  
   
 2.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.  
   
@@ -65,4 +65,4 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
  [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md)  
  [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)  
  [Walkthrough: Authoring a Composite Control with Visual C#](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
- [User Control Designer](http://msdn.microsoft.com/library/2abb9eec-ba32-45cb-b73d-8b52a8bd6bf1)
+ [User Control Designer](https://msdn.microsoft.com/library/2abb9eec-ba32-45cb-b73d-8b52a8bd6bf1)

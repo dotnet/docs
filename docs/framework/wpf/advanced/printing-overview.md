@@ -23,7 +23,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 <a name="introduction_to_XPS"></a>   
 ## About XPS  
- [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] is an electronic document format, a spool file format and a page description language. It is an open document format that uses [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)], [!INCLUDE[TLA#tla_opc](../../../../includes/tlasharptla-opc-md.md)], and other industry standards to create cross-platform documents. [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] simplifies the process by which digital documents are created, shared, printed, viewed, and archived. For additional information on [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)], see the [XPS Web Site](http://www.microsoft.com/xps).  
+ [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] is an electronic document format, a spool file format and a page description language. It is an open document format that uses [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)], [!INCLUDE[TLA#tla_opc](../../../../includes/tlasharptla-opc-md.md)], and other industry standards to create cross-platform documents. [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] simplifies the process by which digital documents are created, shared, printed, viewed, and archived. For additional information on [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)], see the [XPS Web Site](https://www.microsoft.com/xps).  
   
  Several techniques for printing [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] based content using [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] are demonstrated in [Programmatically Print XPS Files](../../../../docs/framework/wpf/advanced/how-to-programmatically-print-xps-files.md). You may find it useful to reference these samples during review of content contained in this topic. (Unmanaged code developers should see documentation for the [MXDC_ESCAPE function](https://msdn.microsoft.com/library/windows/desktop/dd162739.aspx). Windows Forms developers must use the [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] in the <xref:System.Drawing.Printing> namespace which does not support the full [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path, but does support a hybrid GDI-to-XPS print path. See **Print Path Architecture** below.)  
   
@@ -138,6 +138,6 @@ For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../inclu
  <xref:System.Printing.PrintQueue>  
  [How-to Topics](../../../../docs/framework/wpf/advanced/printing-how-to-topics.md)  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [XPS](http://www.microsoft.com/xps)  
+ [XPS](https://www.microsoft.com/xps)  
  [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)  
  [Microsoft XPS Document Converter (MXDC)](https://msdn.microsoft.com/library/windows/desktop/ff686803.aspx)

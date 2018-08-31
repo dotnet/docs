@@ -18,7 +18,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|  
-|[Recommendations for Data Access Strategies](http://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|Provides recommendations for accessing data and performing database operations.|  
+|[Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|Provides recommendations for accessing data and performing database operations.|  
 |[Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)|Describes how to build connection strings from user input at run time.|  
 |[Overview of SQL Server Security](../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)|Describes the SQL Server security architecture.|  
   
@@ -40,7 +40,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Describes how to guard against scripting and SQL statement exploits.|  
+|[Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Describes how to guard against scripting and SQL statement exploits.|  
   
 ## Probing Attacks  
  Attackers often use information from an exception, such as the name of your server, database, or table, to mount an attack on your system. Because exceptions can contain specific information about your application or data source, you can help keep your application and data source better protected by only exposing essential information to the client.  
@@ -59,11 +59,11 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Security Considerations and Guidance for Access 2007](http://go.microsoft.com/fwlink/?LinkId=98354)|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
-|[Help Protect an Access database with User-Level Security (MDB)](http://go.microsoft.com/fwlink/?LinkId=47697)|Applies to Access 2003. Provides instructions for implementing user-level security to protect data in Access 2003.|  
-|[Understanding the Role of Workgroup Information Files in Access Security](http://support.microsoft.com/kb/305542)|Explains the role and relationship of the workgroup information file in Access 2003 security.|  
-|[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](http://go.microsoft.com/fwlink/?LinkId=47698)|Downloadable version of the Microsoft Access Security FAQ.|  
-|[Troubleshoot Security and Protection](http://go.microsoft.com/fwlink/?LinkId=47703)|Presents solutions to common problems with security in Excel 2003.|  
+|[Security Considerations and Guidance for Access 2007](https://go.microsoft.com/fwlink/?LinkId=98354)|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
+|[Help Protect an Access database with User-Level Security (MDB)](https://go.microsoft.com/fwlink/?LinkId=47697)|Applies to Access 2003. Provides instructions for implementing user-level security to protect data in Access 2003.|  
+|[Understanding the Role of Workgroup Information Files in Access Security](https://support.microsoft.com/kb/305542)|Explains the role and relationship of the workgroup information file in Access 2003 security.|  
+|[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Downloadable version of the Microsoft Access Security FAQ.|  
+|[Troubleshoot Security and Protection](https://go.microsoft.com/fwlink/?LinkId=47703)|Presents solutions to common problems with security in Excel 2003.|  
   
 ## Enterprise Services  
  COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
@@ -72,7 +72,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[COM+ Role-Based Security and the .NET Framework](http://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|Discusses how to integrate managed code with COM+ security services.|  
+|[COM+ Role-Based Security and the .NET Framework](https://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|Discusses how to integrate managed code with COM+ security services.|  
   
 ## Interoperating with Unmanaged Code  
  The .NET Framework provides for interaction with unmanaged code, including COM components, COM+ services, external type libraries, and many operating system services. Working with unmanaged code involves going outside the security perimeter for managed code. Both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> flag specified). Unmanaged code can introduce unintended security vulnerabilities into your application. Therefore, you should avoid interoperating with unmanaged code unless it is absolutely necessary.  
@@ -82,12 +82,12 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|  
-|[Advanced COM Interoperability](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
+|[Advanced COM Interoperability](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [Recommendations for Data Access Strategies](http://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
+ [Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
  [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

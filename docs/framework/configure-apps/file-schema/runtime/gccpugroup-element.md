@@ -69,5 +69,5 @@ Specifies whether garbage collection supports multiple CPU groups.
 ## See Also  
  [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
+ [How to: Disable Concurrent Garbage Collection](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
  [Workstation and server garbage collection](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

@@ -29,7 +29,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
 <a name="creating_a_new_xaml_browser_application_xbap"></a>   
 ## Creating a New XAML Browser Application (XBAP)  
- The simplest way to create a new XBAP project is with Microsoft Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](http://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f).  
+ The simplest way to create a new XBAP project is with Microsoft Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](https://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f).  
   
  When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from Visual Studio, the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
@@ -86,7 +86,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
 <a name="communicating_with_the_host_web_page"></a>   
 ## Communicating with the Host Web Page  
- When the application is hosted in an HTML frame, you can communicate with the Web page that contains the XBAP. You do this by retrieving the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>. This property returns a script object that represents the HTML window. You can then access the properties, methods, and events on the [window object](http://go.microsoft.com/fwlink/?LinkId=160274) by using regular dot syntax. You can also access script methods and global variables. The following example shows how to retrieve the script object and close the browser.  
+ When the application is hosted in an HTML frame, you can communicate with the Web page that contains the XBAP. You do this by retrieving the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>. This property returns a script object that represents the HTML window. You can then access the properties, methods, and events on the [window object](https://go.microsoft.com/fwlink/?LinkId=160274) by using regular dot syntax. You can also access script methods and global variables. The following example shows how to retrieve the script object and close the browser.  
   
  [!code-csharp[XbapBrowserInterop#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
  [!code-vb[XbapBrowserInterop#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
@@ -170,7 +170,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 > [!NOTE]
 >  The behavior described in the previous table is for full-trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
- It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=166327).  
+ It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=166327).  
   
 <a name="xbap_start_time_performance_considerations"></a>   
 ## XBAP Start Time Performance Considerations  

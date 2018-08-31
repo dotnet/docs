@@ -12,7 +12,7 @@ manager: "markl"
 ---
 # Server-Side UI Automation Provider Implementation
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This section describes how to implement a server-side UI Automation provider for a custom control.  
   
@@ -173,5 +173,5 @@ manager: "markl"
  [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)  
  [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)  
  [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [Simple Provider Sample](http://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)  
- [Fragment Provider Sample](http://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+ [Simple Provider Sample](https://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)  
+ [Fragment Provider Sample](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)

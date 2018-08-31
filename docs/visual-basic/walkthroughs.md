@@ -41,7 +41,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Implementing Inheritance with COM Objects](../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
  Demonstrates how to use Visual Basic 6.0 to create a COM object containing a class, and then use it as a base class in Visual Basic.  
   
- [Multithreading](http://msdn.microsoft.com/library/2cbf5116-8499-4af9-818c-6f7c1c2ad2c9)  
+ [Multithreading](https://msdn.microsoft.com/library/2cbf5116-8499-4af9-818c-6f7c1c2ad2c9)  
  Shows how to create a multithreaded application that searches a text file for occurrences of a word.  
   
  [Determining Where My.Application.Log Writes Information](../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)  
@@ -56,7 +56,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Creating Custom Log Listeners](../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)  
  Demonstrates how to create a custom log listener and configure it to listen to the output of the `My.Application.Log` object.  
   
- [Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
+ [Embedding Types from Managed Assemblies](https://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
  Describes how to create an assembly and a client program that embeds types from it.  
   
  [Validating That Passwords Are Complex (Visual Basic)](../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  
@@ -71,8 +71,8 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Manipulating Files Using .NET Framework Methods](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
  Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods to determine information about a file, search for a string in a file, and write to a file.  
   
- [Persisting an Object in Visual Basic](http://msdn.microsoft.com/library/cb0a0917-08d5-4578-ad2b-3764ccf6167f)  
+ [Persisting an Object in Visual Basic](https://msdn.microsoft.com/library/cb0a0917-08d5-4578-ad2b-3764ccf6167f)  
  Demonstrates how to create a simple object and persist its data to a file.  
   
- [Test-First Support with the Generate from Usage Feature](http://msdn.microsoft.com/library/764c17a4-cd95-4c23-bf63-d92d9c5adfb2)  
+ [Test-First Support with the Generate from Usage Feature](https://msdn.microsoft.com/library/764c17a4-cd95-4c23-bf63-d92d9c5adfb2)  
  Demonstrates how to do test-first development, in which you first write unit tests and then write the source code to make the tests succeed.

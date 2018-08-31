@@ -59,7 +59,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Performance](../../docs/framework/performance/index.md)  
  Provides information about caching, lazy initialization, reliability, and ETW events.  
   
- <!--zz [Advanced Reading for the .NET Framework](http://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
+ <!--zz [Advanced Reading for the .NET Framework](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
  Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --> 
   
 ## Reference  
@@ -76,5 +76,5 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Tools](../../docs/framework/tools/index.md)  
  Describes the tools that help you develop, configure, and deploy apps by using .NET Framework technologies.  
   
- [.NET Framework Samples](http://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
+ [.NET Framework Samples](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
  Provides links to the MSDN Code Samples Gallery for sample apps that demonstrate .NET Framework technologies.

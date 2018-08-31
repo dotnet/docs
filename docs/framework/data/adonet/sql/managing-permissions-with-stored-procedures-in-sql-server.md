@@ -48,7 +48,7 @@ One method of creating multiple lines of defense around your database is to impl
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](http://go.microsoft.com/fwlink/?LinkId=98234) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
+|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](https://go.microsoft.com/fwlink/?LinkId=98234) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
@@ -58,4 +58,4 @@ One method of creating multiple lines of defense around your database is to impl
  [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
  [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)  
  [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

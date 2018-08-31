@@ -192,4 +192,4 @@ See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more info
 
 ## See also
 
-[Runtime IDs](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
+* [Runtime IDs](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)

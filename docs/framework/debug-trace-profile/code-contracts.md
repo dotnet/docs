@@ -29,7 +29,7 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
   
  Most methods in the contract class are conditionally compiled; that is, the compiler emits calls to these methods only when  you define a special symbol, CONTRACTS_FULL, by using the `#define` directive. CONTRACTS_FULL lets you write contracts in your code without using `#ifdef` directives; you can produce different builds, some with contracts, and some without.  
   
- For tools and detailed instructions for using code contracts, see [Code Contracts](http://go.microsoft.com/fwlink/?LinkId=152461) on the MSDN DevLabs Web site.  
+ For tools and detailed instructions for using code contracts, see [Code Contracts](https://go.microsoft.com/fwlink/?LinkId=152461) on the MSDN DevLabs Web site.  
   
 ## Preconditions  
  You can express preconditions by using the <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType> method. Preconditions specify state when a method is invoked. They are generally used to specify valid parameter values. All members that are mentioned in preconditions must be at least as accessible as the method itself; otherwise, the precondition might not be understood by all callers of a method. The condition must have no side-effects. The run-time behavior of failed preconditions is determined by the runtime analyzer.  

@@ -97,4 +97,4 @@ The application or computer configuration file holds the settings that determine
  [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
  [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
  [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
- [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)
+ [Introduction to Instrumentation and Tracing](https://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)

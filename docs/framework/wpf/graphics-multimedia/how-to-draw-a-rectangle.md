@@ -21,10 +21,10 @@ This example shows how to draw a rectangle by using the <xref:System.Windows.Sha
   
  Although this example uses a <xref:System.Windows.Controls.Canvas> to contain the rectangles, you can use rectangle elements (and all the other shape elements) with any <xref:System.Windows.Controls.Panel> or <xref:System.Windows.Controls.Control> that supports non-text content. In fact, rectangles are particularly useful for providing backgrounds for portions of <xref:System.Windows.Controls.Grid> panels. For an example, see the [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md).  
   
- This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
+ This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
  <xref:System.Windows.Shapes.Rectangle>  
- [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)  
+ [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)  
  [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)

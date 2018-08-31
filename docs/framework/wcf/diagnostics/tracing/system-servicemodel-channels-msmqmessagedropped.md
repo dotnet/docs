@@ -11,10 +11,10 @@ MSMQ dropped the message.
   
  A poison message is dropped when the `ReceiveErrorHandling` property on the NetMsmqBinding or MsmqIntegrationBinding is set to `Drop`. A dropped message is removed from the queue and is no longer recoverable.  
   
- See [Poison-Message Handling](http://go.microsoft.com/fwlink/?LinkID=99546) for more details on when messages become poison and how to configure your service to handle them appropriately.  
+ See [Poison-Message Handling](https://go.microsoft.com/fwlink/?LinkID=99546) for more details on when messages become poison and how to configure your service to handle them appropriately.  
   
 ## See Also  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [Poison-Message Handling](http://go.microsoft.com/fwlink/?LinkID=99546)
+ [Poison-Message Handling](https://go.microsoft.com/fwlink/?LinkID=99546)

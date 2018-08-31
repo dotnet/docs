@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
 ---
 # Using Keyboard Events
-Most Windows Forms programs process keyboard input by handling the keyboard events. This topic provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event.  Also see [Event Handlers Overview (Windows Forms)](http://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](http://msdn.microsoft.com/library/1h12f09z\(v=vs.110\)).  
+Most Windows Forms programs process keyboard input by handling the keyboard events. This topic provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event.  Also see [Event Handlers Overview (Windows Forms)](https://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](https://msdn.microsoft.com/library/1h12f09z\(v=vs.110\)).  
   
 ## Keyboard Events  
  Windows Forms provides two events that occur when a user presses a keyboard key and one event when a user releases a keyboard key:  

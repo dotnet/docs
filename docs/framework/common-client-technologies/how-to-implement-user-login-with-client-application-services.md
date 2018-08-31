@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 5431a671-eb02-4e18-a651-24764fccec9a
 ---
 # How to: Implement User Login with Client Application Services
-You can use client application services to validate users through an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service. For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
+You can use client application services to validate users through an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service. For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Forms Authentication with Microsoft Ajax](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
   
  The following procedures describe how to validate users through the authentication service when your application is configured to use one of the client authentication service providers. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
@@ -53,4 +53,4 @@ You can use client application services to validate users through an existing [!
  [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
  [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
  [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
- [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)
+ [Using Forms Authentication with Microsoft Ajax](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)

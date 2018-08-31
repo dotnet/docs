@@ -1,7 +1,7 @@
 ---
 title: "lock statement (C# Reference)"
-description: "The lock keyword is used in threading "
-ms.date: 07/20/2015
+description: "Use the C# lock statement to synchronize thread access to shared resource"
+ms.date: 08/28/2018
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"
@@ -11,61 +11,52 @@ ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 ---
 # lock statement (C# Reference)
 
-The `lock` keyword marks a statement block as a critical section by obtaining the mutual-exclusion lock for a given object, executing a statement, and then releasing the lock. The following example includes a `lock` statement.
+The `lock` statement obtains the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again obtain and release the lock. Any other thread is blocked from obtaining the lock and waits until the lock is released.
+
+The `lock` statement is of the form
 
 ```csharp
-class Account
+lock (x)
 {
-    decimal balance;
-    private Object thisLock = new Object();
-
-    public void Withdraw(decimal amount)
-    {
-        lock (thisLock)
-        {
-            if (amount > balance)
-            {
-                throw new Exception("Insufficient funds");
-            }
-            balance -= amount;
-        }
-    }
+    // Your code...
 }
 ```
 
-For more information, see [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md).
+where `x` is an expression of a [reference type](reference-types.md). It's precisely equivalent to
 
-## Remarks
+```csharp
+object __lockObj = x;
+bool __lockWasTaken = false;
+try
+{
+    System.Threading.Monitor.Enter(__lockObj, ref __lockWasTaken);
+    // Your code...
+}
+finally
+{
+    if (__lockWasTaken) System.Threading.Monitor.Exit(__lockObj);
+}
+```
 
-The `lock` keyword ensures that one thread does not enter a critical section of code while another thread is in the critical section. If another thread tries to enter a locked code, it will wait, block, until the object is released.
-
-The section [Threading](../../programming-guide/concepts/threading/index.md) discusses threading.
-
-The `lock` keyword calls <xref:System.Threading.Monitor.Enter%2A> at the start of the block and <xref:System.Threading.Monitor.Exit%2A> at the end of the block. A <xref:System.Threading.ThreadInterruptedException> is thrown if <xref:System.Threading.Thread.Interrupt%2A> interrupts a thread that is waiting to enter a `lock` statement.
-
-In general, avoid locking on a `public` type, or instances beyond your code's control. The common constructs `lock (this)`, `lock (typeof (MyType))`, and `lock ("myLock")` violate this guideline:
-
-- `lock (this)` is a problem if the instance can be accessed publicly.
-
-- `lock (typeof (MyType))` is a problem if `MyType` is publicly accessible.
-
-- `lock("myLock")` is a problem because any other code in the process using the same string, will share the same lock.
-
-Best practice is to define a `private` object to lock on, or a `private static` object variable to protect data common to all instances.
+Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
 
 You can't use the [await](await.md) keyword in the body of a `lock` statement.
 
-## Example - Threads without locking
+## Remarks
 
-The following sample shows a simple use of threads without locking in C#:
+When you synchronize thread access to shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using
 
-[!code-csharp[csrefKeywordsFixedLock#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsFixedLock/CS/csrefKeywordsFixedLock.cs#5)]
+- `this` (might be used by the callers as a lock),
+- <xref:System.Type> instances (might be obtained by the [typeof](typeof.md) operator or reflection),
+- string instances, including string literals,
 
-## Example - Threads using locking
+as lock objects.
 
-The following sample uses threads and `lock`. As long as the `lock` statement is present, the statement block is a critical section and `balance` will never become a negative number:
+## Example
 
-[!code-csharp[csrefKeywordsFixedLock#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsFixedLock/CS/csrefKeywordsFixedLock.cs#6)]
+The following example defines an `Account` class that synchronizes access to its private `balance` field by locking on a dedicated `balanceLock` instance. Using the same instance for locking ensures that the `balance` field cannot be updated simultaneously by two threads attempting to call the `Debit` or `Credit` methods simultaneously.
+
+[!code-csharp[lock-statement-example](~/samples/snippets/csharp/keywords/LockStatementExample.cs)]
 
 ## C# language specification
 
@@ -73,14 +64,11 @@ The following sample uses threads and `lock`. As long as the `lock` statement is
 
 ## See also
 
-- <xref:System.Reflection.MethodImplAttributes>
-- <xref:System.Threading.Mutex>
-- <xref:System.Threading.Monitor>
-- [C# Reference](../../language-reference/index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [Threading](../../programming-guide/concepts/threading/index.md)
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- <xref:System.Threading.SpinLock?displayProperty=nameWithType>
+- <xref:System.Threading.Interlocked?displayProperty=nameWithType>
+- [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Statement Keywords](statement-keywords.md)
-- [Interlocked Operations](../../../standard/threading/interlocked-operations.md)
-- [AutoResetEvent](../../../standard/threading/autoresetevent.md)
-- [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)
+- [Interlocked operations](../../../standard/threading/interlocked-operations.md)
+- [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)

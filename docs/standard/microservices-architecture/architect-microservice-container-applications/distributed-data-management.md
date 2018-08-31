@@ -37,7 +37,7 @@ However, if your application design involves constantly aggregating information 
 
 As stated previously, the data owned by each microservice is private to that microservice and can only be accessed using its microservice API. Therefore, a challenge presented is how to implement end-to-end business processes while keeping consistency across multiple microservices.
 
-To analyze this problem, let’s look at an example from the [eShopOnContainers reference application](http://aka.ms/eshoponcontainers). The Catalog microservice maintains information about all the products, including their stock level. The Ordering microservice manages orders and must verify that a new order does not exceed the available catalog product stock. (Or the scenario might involve logic that handles backordered products.) In a hypothetical monolithic version of this application, the ordering subsystem could simply use an ACID transaction to check the available stock, create the order in the Orders table, and update the available stock in the Products table.
+To analyze this problem, let’s look at an example from the [eShopOnContainers reference application](https://aka.ms/eshoponcontainers). The Catalog microservice maintains information about all the products, including their stock level. The Ordering microservice manages orders and must verify that a new order does not exceed the available catalog product stock. (Or the scenario might involve logic that handles backordered products.) In a hypothetical monolithic version of this application, the ordering subsystem could simply use an ACID transaction to check the available stock, create the order in the Orders table, and update the available stock in the Products table.
 
 However, in a microservices-based application, the Order and Product tables are owned by their respective microservices. No microservice should ever include databases owned by another microservice in its own transactions or queries, as shown in Figure 4-9.
 
@@ -45,7 +45,7 @@ However, in a microservices-based application, the Order and Product tables are 
 
 **Figure 4-9**. A microservice cannot directly access a table in another microservice
 
-The Ordering microservice should not update the Products table directly, because the Products table is owned by the Catalog microservice. To make an update to the Catalog microservice, the Ordering microservice should only ever use asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](http://aka.ms/eshoponcontainers) reference application performs this type of update.
+The Ordering microservice should not update the Products table directly, because the Products table is owned by the Catalog microservice. To make an update to the Catalog microservice, the Ordering microservice should only ever use asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](https://aka.ms/eshoponcontainers) reference application performs this type of update.
 
 As stated by the [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem), you need to choose between availability and ACID strong consistency. Most microservice-based scenarios demand availability and high scalability as opposed to strong consistency. Mission-critical applications must remain up and running, and developers can work around strong consistency by using techniques for working with weak or eventual consistency. This is the approach taken by most microservice-based architectures.
 

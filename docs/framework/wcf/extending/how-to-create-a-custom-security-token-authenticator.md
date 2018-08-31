@@ -13,7 +13,7 @@ manager: "mbaldwin"
 # How to: Create a Custom Security Token Authenticator
 This topic shows how to create a custom security token authenticator and how to integrate it with a custom security token manager. A security token authenticator validates the content of a security token provided with an incoming message. If the validation succeeds, the authenticator returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances that, when evaluated, returns a set of claims.  
   
- To use a custom security token authenticator in Windows Communication Foundation (WCF), you must first create custom credentials and security token manager implementations. For more information about creating custom credentials and a security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md). For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
+ To use a custom security token authenticator in Windows Communication Foundation (WCF), you must first create custom credentials and security token manager implementations. For more information about creating custom credentials and a security token manager, see [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md). For more information about credentials, security token manager, and provider and authenticator classes, see [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
   
 ## Procedures  
   
@@ -61,4 +61,4 @@ This topic shows how to create a custom security token authenticator and how to 
  <xref:System.IdentityModel.Tokens.UserNameSecurityToken>  
  [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
  [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+ [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

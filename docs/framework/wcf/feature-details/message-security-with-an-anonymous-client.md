@@ -132,4 +132,4 @@ The following scenario shows a client and service secured by Windows Communicati
  [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
  [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  
  [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

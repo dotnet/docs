@@ -15,7 +15,7 @@ Tabular data is often presented to users in a ledger-like format where alternati
   
  With the <xref:System.Windows.Forms.DataGridView> control, you can specify complete style information for alternating rows. This enables you use style characteristics like foreground color and font, in addition to background color, to differentiate alternating rows.  
   
- There is support for this task in Visual Studio.  Also see [How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer](http://msdn.microsoft.com/library/3z9sk148\(v=vs.110\)).  
+ There is support for this task in Visual Studio.  Also see [How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer](https://msdn.microsoft.com/library/3z9sk148\(v=vs.110\)).  
   
 ### To set alternating row styles programmatically  
   

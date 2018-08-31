@@ -21,8 +21,8 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles) and [Permissions of Fixed Server Roles](http://msdn.microsoft.com/library/ms175892.aspx) in SQL Server Books Online|Describes fixed server roles and the permissions associated with them in SQL Server.|  
-|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles) and [Permissions of Fixed Database Roles](http://msdn.microsoft.com/library/ms189612.aspx) in SQL Server Books Online|Describes fixed database roles and the permissions associated with them|  
+|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles) and [Permissions of Fixed Server Roles](https://msdn.microsoft.com/library/ms175892.aspx) in SQL Server Books Online|Describes fixed server roles and the permissions associated with them in SQL Server.|  
+|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles) and [Permissions of Fixed Database Roles](https://msdn.microsoft.com/library/ms189612.aspx) in SQL Server Books Online|Describes fixed database roles and the permissions associated with them|  
   
 ## Database Roles and Users  
  Logins must be mapped to database user accounts in order to work with database objects. Database users can then be added to database roles, inheriting any permission sets associated with those roles. All permissions can be granted.  
@@ -52,7 +52,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Identity and Access Control](http://msdn.microsoft.com/library/bb510418.aspx) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
+|[Identity and Access Control](https://msdn.microsoft.com/library/bb510418.aspx) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
 |[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine) in SQL Server Books Online|Describes principals and contains links to topics that describe server and database roles.|  
   
 ## See Also  
@@ -61,4 +61,4 @@ All versions of SQL Server use role-based security, which allows you to assign p
  [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)  
  [Ownership and User-Schema Separation in SQL Server](../../../../../docs/framework/data/adonet/sql/ownership-and-user-schema-separation-in-sql-server.md)  
  [Authorization and Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

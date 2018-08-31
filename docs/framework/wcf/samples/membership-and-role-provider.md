@@ -114,7 +114,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
 1.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-2.  Ensure that you have configured the [ASP.NET Application Services Database](http://go.microsoft.com/fwlink/?LinkId=94997).  
+2.  Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
   
     > [!NOTE]
     >  If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Application Services Database as well as in the Web.config connection string.  
@@ -132,7 +132,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
 3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To run the sample across computers  
   
@@ -154,7 +154,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
 9. On the client, open a Visual Studio command prompt with administrative privileges and run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
   
-10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To clean up after the sample  
   

@@ -12,7 +12,7 @@ This is the fifth of six tasks required to create a basic Windows Communication 
   
 ### To configure a Windows Communication Foundation client  
   
-1.  Open the generated configuration file (App.config) from the GettingStartedClient project. The following example is a view of the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+1.  Open the generated configuration file (App.config) from the GettingStartedClient project. The following example is a view of the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  

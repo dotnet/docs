@@ -82,7 +82,7 @@ This topic describes how you can protect sensitive information from being expose
   
  For more information on PII logging, see [PII Security Lockdown](../../../../../docs/framework/wcf/samples/pii-security-lockdown.md) sample.  
   
- The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](http://go.microsoft.com/fwlink/?LinkID=94647).  
+ The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
   
  In addition, the IP address of the message sender is logged once per connection for connection-oriented transports, and once per message sent otherwise. This is done without the consent of the sender. However, this logging only occurs at the Information or Verbose tracing levels, which are not the default or recommended tracing levels in production, except for live debugging.  
   

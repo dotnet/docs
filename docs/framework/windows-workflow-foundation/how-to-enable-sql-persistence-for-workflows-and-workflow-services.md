@@ -10,7 +10,7 @@ ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
 
 This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for your workflows and workflow services both programmatically and by using a configuration file.  
   
-Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [App Fabric Persistence Configuration](http://go.microsoft.com/fwlink/?LinkId=201204)  
+Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [App Fabric Persistence Configuration](https://go.microsoft.com/fwlink/?LinkId=201204)  
   
 Before using the SQL Workflow Instance Store feature, create a database that the feature uses to persist workflow instances. The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] set-up program copies SQL script files associated with the SQL Workflow Instance Store feature to the %WINDIR%\Microsoft.NET\Framework\v4.xxx\SQL\EN folder. Run these script files against a SQL Server 2005 or SQL Server 2008 database that you want the SQL Workflow Instance Store to use to persist workflow instances. Run the SqlWorkflowInstanceStoreSchema.sql file first and then run the SqlWorkflowInstanceStoreLogic.sql file.
 
@@ -153,7 +153,7 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
 ```
   
 > [!IMPORTANT]
-> It is recommended that you do not store sensitive information such as user names and passwords in the Web.config file. If you do store sensitive information in the Web.config file, you should secure access to the Web.config file by using file system Access Control Lists (ACLs). In addition, you can also secure the configuration values within a configuration file as mentioned in [Encrypting Configuration Information Using Protected Configuration](http://go.microsoft.com/fwlink/?LinkId=178419).
+> It is recommended that you do not store sensitive information such as user names and passwords in the Web.config file. If you do store sensitive information in the Web.config file, you should secure access to the Web.config file by using file system Access Control Lists (ACLs). In addition, you can also secure the configuration values within a configuration file as mentioned in [Encrypting Configuration Information Using Protected Configuration](https://go.microsoft.com/fwlink/?LinkId=178419).
 
 ### Machine.config Elements Related to the SQL Workflow Instance Store Feature
 

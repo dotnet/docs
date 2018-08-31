@@ -49,4 +49,4 @@ protected static void OnListChanged(object sender,
  <xref:System.Data.DataView>  
  <xref:System.ComponentModel.ListChangedEventHandler>  
  [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

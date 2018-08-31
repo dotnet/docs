@@ -17,7 +17,7 @@ This example shows how to animate a string, which in this example is the <xref:S
   
  [!code-xaml[keyframes_snip#StringAnimationUsingKeyFramesWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/StringAnimationUsingKeyFramesExample.xaml#stringanimationusingkeyframeswholepage)]  
   
- For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
+ For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
  <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>  

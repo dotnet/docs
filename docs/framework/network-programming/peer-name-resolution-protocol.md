@@ -59,4 +59,4 @@ In peer-to-peer environments, peers use specific name resolution systems to reso
  <xref:System.ServiceModel.PeerResolvers>  
  <xref:System.Net.PeerToPeer>  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [PeerToPeer Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179571)
+ [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)

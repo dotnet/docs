@@ -103,7 +103,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 </configuration>  
 ```  
   
- To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
+ To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
   
  `<configuration>`  
   

@@ -36,5 +36,5 @@ This section provides links to reference information about various aspects of Vi
  [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in Visual Studio.  
   
- [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
+ [Automation and Extensibility Reference](https://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
  Provides links to topics covering automation and extensibility in Visual Studio, for both shared and language-specific components.

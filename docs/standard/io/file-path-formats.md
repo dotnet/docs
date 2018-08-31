@@ -111,7 +111,7 @@ Almost all paths passed to Windows APIs are normalized. During normalization, Wi
 - Evaluates relative directory components (`.` for the current directory and `..` for the parent directory).
 - Trims certain characters.
 
-This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx). You can also call the Windows [GetFullPathName() function](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) directly using P/Invoke. You can also call the 
+This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx). You can also call the Windows [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx) directly using P/Invoke. You can also call the 
 
 ### Identifying the path
 

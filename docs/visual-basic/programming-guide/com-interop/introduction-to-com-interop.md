@@ -11,7 +11,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
   
  [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] applications will eventually replace those developed with COM. Until then, you may have to use or create COM objects by using Visual Studio. Interoperability with COM, or *COM interop*, enables you to use existing COM objects while transitioning to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] at your own pace.  
   
- By using the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to create COM components, you can use registration-free COM interop. This lets you control which DLL version is enabled when more than one version is installed on a computer, and lets end users use XCOPY or FTP to copy your application to an appropriate directory on their computer where it can be run. For more information, see [Registration-Free COM Interop](http://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd).  
+ By using the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to create COM components, you can use registration-free COM interop. This lets you control which DLL version is enabled when more than one version is installed on a computer, and lets end users use XCOPY or FTP to copy your application to an appropriate directory on their computer where it can be run. For more information, see [Registration-Free COM Interop](https://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd).  
   
 ## Managed Code and Data  
  Code developed for the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is referred to as *managed code*, and contains metadata that is used by the CLR. Data used by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] applications is called *managed data* because the runtime manages data-related tasks such as allocating and reclaiming memory and performing type checking. By default, Visual Basic .NET uses managed code and data, but you can access the unmanaged code and data of COM objects using interop assemblies (described later on this page).  
@@ -37,7 +37,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 ### Importing and Exporting Type Libraries  
  Visual Studio contains a utility, Tlbimp, that lets you import information from a type library into a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] application. You can generate type libraries from assemblies by using the Tlbexp utility.  
   
- For information about Tlbimp and Tlbexp, see [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md) and [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d).  
+ For information about Tlbimp and Tlbexp, see [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md) and [Tlbexp.exe (Type Library Exporter)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d).  
   
 ## Interop Assemblies  
  Interop assemblies are [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies that bridge between managed and unmanaged code, mapping COM object members to equivalent [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] managed members. Interop assemblies created by Visual Basic .NET handle many of the details of working with COM objects, such as interoperability marshaling.  
@@ -52,6 +52,6 @@ The Component Object Model (COM) lets an object expose its functionality to othe
  [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
  [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
+ [Tlbexp.exe (Type Library Exporter)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
  [Interop Marshaling](../../../framework/interop/interop-marshaling.md)  
- [Registration-Free COM Interop](http://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd)
+ [Registration-Free COM Interop](https://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd)

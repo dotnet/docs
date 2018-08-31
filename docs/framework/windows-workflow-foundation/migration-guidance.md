@@ -15,38 +15,38 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  Thus, the decision to adopt the .NET Framework 4 is decoupled from your decision to move to WF4 (System.Activities.*) from WF3 (System.Workflow.\*). This topic provides links to WF migration guidance that provides information about working with WF3 and WF4.  
   
 ## WF Migration Whitepapers and Cookbooks  
- The [WF Migration Overview](http://go.microsoft.com/fwlink/?LinkId=153873) topic provides a broad overview of the relationship between WF3 and WF4 and migration strategies. Companion topics drill into specific topics.  
+ The [WF Migration Overview](https://go.microsoft.com/fwlink/?LinkId=153873) topic provides a broad overview of the relationship between WF3 and WF4 and migration strategies. Companion topics drill into specific topics.  
   
- [WF Migration Overview](http://go.microsoft.com/fwlink/?LinkId=153873)  
+ [WF Migration Overview](https://go.microsoft.com/fwlink/?LinkId=153873)  
  Describes the relationship between WF3 and WF4, and the choices you have as a user or a potential user of workflow technology in .NET 4.  
   
- [WF Migration: Best Practices for WF3 Development](http://go.microsoft.com/fwlink/?LinkId=153852)  
+ [WF Migration: Best Practices for WF3 Development](https://go.microsoft.com/fwlink/?LinkId=153852)  
  Discusses how to design WF3 artifacts so they can be more easily migrated to WF4.  
   
- [WF Guidance: Rules](http://go.microsoft.com/fwlink/?LinkId=153854)  
+ [WF Guidance: Rules](https://go.microsoft.com/fwlink/?LinkId=153854)  
  Discusses how to bring rules-related investments forward into [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] solutions.  
   
- [WF Guidance: State Machine](http://go.microsoft.com/fwlink/?LinkId=153855)  
+ [WF Guidance: State Machine](https://go.microsoft.com/fwlink/?LinkId=153855)  
  Discusses WF4 control flow modeling in the absence of a State-Machine activity.  
   
- Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](http://msdn.microsoft.com/library/de3297bd-c3e1-4126-95be-2ed7fe2a98fc) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
+ Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](https://msdn.microsoft.com/library/de3297bd-c3e1-4126-95be-2ed7fe2a98fc) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
   
- [WF Migration Cookbook: Custom Activities](http://go.microsoft.com/fwlink/?LinkId=153856)  
+ [WF Migration Cookbook: Custom Activities](https://go.microsoft.com/fwlink/?LinkId=153856)  
  Provides examples and instructions for redesigning WF3 custom activities on WF4.  
   
- [WF Migration Cookbook: Advanced Custom Activities](http://go.microsoft.com/fwlink/?LinkId=275560)  
+ [WF Migration Cookbook: Advanced Custom Activities](https://go.microsoft.com/fwlink/?LinkId=275560)  
  Provides guidance for redesigning advanced WF3 custom activities that use WF3 queues and schedule child activities as WF4 custom activities.  
   
- [WF Migration Cookbook: Workflows](http://go.microsoft.com/fwlink/?LinkId=153858)  
+ [WF Migration Cookbook: Workflows](https://go.microsoft.com/fwlink/?LinkId=153858)  
  Provides examples and instructions for redesigning WF3 workflows on WF4.  
   
- [WF Migration Cookbook: Workflow Hosting](http://go.microsoft.com/fwlink/?LinkId=275561)  
+ [WF Migration Cookbook: Workflow Hosting](https://go.microsoft.com/fwlink/?LinkId=275561)  
  Provides guidance for redesigning WF3 hosting code as WF4 hosting code. The goal is to cover the key differences in workflow hosting between WF3 and WF4.  
   
- [WF Migration Cookbook: Workflow Tracking](http://go.microsoft.com/fwlink/?LinkId=275562)  
+ [WF Migration Cookbook: Workflow Tracking](https://go.microsoft.com/fwlink/?LinkId=275562)  
  Provides guidance for redesigning WF3 tracking code and configuration using equivalent WF4 tracking code and configuration.  
   
- [WF Guidance: Workflow Services](http://go.microsoft.com/fwlink/?LinkId=275564)  
+ [WF Guidance: Workflow Services](https://go.microsoft.com/fwlink/?LinkId=275564)  
  Provides example-oriented step-by-step instructions for redesigning workflows that implement Windows Communication Foundation (WCF) web services (commonly referred to as workflow services) created in WF3 to use WF4, for common scenarios for out-of-box activities.  
   
 ## See Also  

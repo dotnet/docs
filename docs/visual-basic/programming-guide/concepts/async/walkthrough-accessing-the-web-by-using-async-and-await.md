@@ -39,7 +39,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
 -   [Example](#BKMK_CompleteCodeExamples)  
   
 ## Prerequisites  
- Visual Studio 2012 or later must be installed on your computer. For more information, see the [Microsoft website](http://go.microsoft.com/fwlink/?LinkId=235233).  
+ Visual Studio 2012 or later must be installed on your computer. For more information, see the [Microsoft website](https://go.microsoft.com/fwlink/?LinkId=235233).  
   
 ###  <a name="CreateWPFApp"></a> To create a WPF application  
   
@@ -673,6 +673,6 @@ End Class
  [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
  [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
  [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)  
- [Task-based Asynchronous Programming (TAP)](http://go.microsoft.com/fwlink/?LinkId=204847)  
+ [Task-based Asynchronous Programming (TAP)](https://go.microsoft.com/fwlink/?LinkId=204847)  
  [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)  
  [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

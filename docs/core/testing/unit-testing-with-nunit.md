@@ -2,7 +2,7 @@
 title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 12/01/2017
+ms.date: 08/31/2018
 ---
 # Unit testing C# with NUnit and .NET Core
 

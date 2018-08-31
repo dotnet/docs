@@ -18,7 +18,7 @@ If you are already familiar with Windows Communication Foundation (WCF), you kno
   
 -   Enabling WIF on a WCF client to insert an ActAs or OnBehalfOf element into the RST to the STS  
   
--   Using WIF alone to obtain a token from the STS and then enable a WCF client to authenticate with this token. For more information, see [ClaimsAwareWebService](http://go.microsoft.com/fwlink/?LinkID=248406) sample.  
+-   Using WIF alone to obtain a token from the STS and then enable a WCF client to authenticate with this token. For more information, see [ClaimsAwareWebService](https://go.microsoft.com/fwlink/?LinkID=248406) sample.  
   
  The first scenario is self-explanatory: Existing WCF clients will continue to work with WIF relying parties and STSs. This topic discusses the remaining two scenarios.  
   

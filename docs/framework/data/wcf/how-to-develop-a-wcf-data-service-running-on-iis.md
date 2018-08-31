@@ -15,7 +15,7 @@ ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
 This topic shows how to use WCF Data Services to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).
 
 > [!NOTE]
-> To create the Northwind data service, you must have installed the Northwind sample database on the local computer. To download this sample database, see the download page, [Sample Databases for SQL Server](http://go.microsoft.com/fwlink/?linkid=24758).
+> To create the Northwind data service, you must have installed the Northwind sample database on the local computer. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 
  This topic shows how to create a data service by using the Entity Framework provider. Other data services providers are available. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).
 
@@ -126,7 +126,7 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 5. Connect the data model to the database by doing one of the following steps, and then click **Next**:
 
-    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](http://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.
+    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.
 
          \- or -
 

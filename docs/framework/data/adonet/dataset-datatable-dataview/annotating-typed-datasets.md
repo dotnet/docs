@@ -68,7 +68,7 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
 |**Parent** Accessor|TableNameRow|typedParent|  
 |**DataSet** Events|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|  
   
- To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](http://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
   
 ```  
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  
@@ -221,4 +221,4 @@ protected static void OnCustomerChanged(object sender, CustomerDataSet.CustomerC
  <xref:System.Data.DataSet>  
  [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

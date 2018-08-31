@@ -41,7 +41,7 @@ A date and time format string defines the text representation of a <xref:System.
  The following table describes the custom date and time format specifiers and displays a result string produced by each format specifier. By default, result strings reflect the formatting conventions of the en-US culture. If a particular format specifier produces a localized result string, the example also notes the culture to which the result string applies. See the Notes section for additional information about using custom date and time format strings.
 
 | Format specifier | Description | Examples |
-|----------------------|-----------------|--------------|
+| ---------------------- | ----------------- | -------------- |
 |"d"|The day of the month, from 1 through 31.<br /><br /> More information: [The "d" Custom Format Specifier](#dSpecifier).|2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15|
 |"dd"|The day of the month, from 01 through 31.<br /><br /> More information: [The "dd" Custom Format Specifier](#ddSpecifier).|2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15|
 |"ddd"|The abbreviated name of the day of the week.<br /><br /> More information: [The "ddd" Custom Format Specifier](#dddSpecifier).|2009-06-15T13:45:30 -> Mon (en-US)<br /><br /> 2009-06-15T13:45:30 -> Пн (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lun. (fr-FR)|
@@ -94,6 +94,7 @@ A date and time format string defines the text representation of a <xref:System.
  The following sections provide additional information about each custom date and time format specifier. Unless otherwise noted, each specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> value or a <xref:System.DateTimeOffset> value.
 
 <a name="dSpecifier"></a> 
+
 ## The "d" custom format specifier
  The "d" custom format specifier represents the day of the month as a number from 1 through 31. A single-digit day is formatted without a leading zero.
 
@@ -107,6 +108,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ddSpecifier"></a> 
+
 ## The "dd" custom format specifier
  The "dd" custom format string represents the day of the month as a number from 01 through 31. A single-digit day is formatted with a leading zero.
 
@@ -118,6 +120,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="dddSpecifier"></a> 
+
 ## The "ddd" custom format specifier
  The "ddd" custom format specifier represents the abbreviated name of the day of the week. The localized abbreviated name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -129,6 +132,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ddddSpecifier"></a> 
+
 ## The "dddd" custom format specifier
  The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week. The localized name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -140,6 +144,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="fSpecifier"></a> 
+
 ## The "f" custom format specifier
  The "f" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.
 
@@ -155,6 +160,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ffSpecifier"></a> 
+
 ## The "ff" custom format specifier
  The "ff" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.
 
@@ -166,6 +172,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="fffSpecifier"></a> 
+
 ## The "fff" custom format specifier
  The "fff" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.
 
@@ -177,6 +184,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ffffSpecifier"></a> 
+
 ## The "ffff" custom format specifier
  The "ffff" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.
 
@@ -185,6 +193,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="fffffSpecifier"></a> 
+
 ## The "fffff" custom format specifier
  The "fffff" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.
 
@@ -193,6 +202,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ffffffSpecifier"></a> 
+
 ## The "ffffff" custom format specifier
  The "ffffff" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.
 
@@ -201,6 +211,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="fffffffSpecifier"></a> 
+
 ## The "fffffff" custom format specifier
  The "fffffff" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.
 
@@ -209,6 +220,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="F_Specifier"></a> 
+
 ## The "F" custom format specifier
  The "F" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value. Nothing is displayed if the digit is zero.
 
@@ -224,6 +236,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FF_Specifier"></a> 
+
 ## The "FF" custom format specifier
  The "FF" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value. However, trailing zeros or two zero digits are not displayed.
 
@@ -235,6 +248,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FFF_Specifier"></a> 
+
 ## The "FFF" custom format specifier
  The "FFF" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value. However, trailing zeros or three zero digits are not displayed.
 
@@ -246,6 +260,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FFFF_Specifier"></a> 
+
 ## The "FFFF" custom format specifier
  The "FFFF" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value. However, trailing zeros or four zero digits are not displayed.
 
@@ -254,6 +269,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FFFFF_Specifier"></a> 
+
 ## The "FFFFF" custom format specifier
  The "FFFFF" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value. However, trailing zeros or five zero digits are not displayed.
 
@@ -262,6 +278,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FFFFFF_Specifier"></a> 
+
 ## The "FFFFFF" custom format specifier
  The "FFFFFF" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value. However, trailing zeros or six zero digits are not displayed.
 
@@ -270,6 +287,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="FFFFFFF_Specifier"></a> 
+
 ## The "FFFFFFF" custom format specifier
  The "FFFFFFF" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value. However, trailing zeros or seven zero digits are not displayed.
 
@@ -278,6 +296,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="gSpecifier"></a> 
+
 ## The "g" or "gg" custom format specifier
  The "g" or "gg" custom format specifiers (plus any number of additional "g" specifiers) represents the period or era, such as A.D. The formatting operation ignores this specifier if the date to be formatted does not have an associated period or era string.
 
@@ -290,7 +309,8 @@ A date and time format string defines the text representation of a <xref:System.
 
  [Back to table](#table)
 
-<a name="hSpecifier"></a>
+<a name="hSpecifier"></a> 
+
 ## The "h" custom format specifier
  The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
 
@@ -304,6 +324,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="hhSpecifier"></a> 
+
 ## The "hh" custom format specifier
  The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted with a leading zero. For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".
 
@@ -315,6 +336,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="H_Specifier"></a> 
+
 ## The "H" custom format specifier
  The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
 
@@ -328,6 +350,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="HH_Specifier"></a> 
+
 ## The "HH" custom format specifier
  The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
 
@@ -339,6 +362,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="KSpecifier"></a> 
+
 ## The "K" custom format specifier
  The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property:
 
@@ -360,6 +384,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="mSpecifier"></a> 
+
 ## The "m" custom format specifier
  The "m" custom format specifier represents the minute as a number from 0 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted without a leading zero.
 
@@ -373,6 +398,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="mmSpecifier"></a> 
+
 ## The "mm" custom format specifier
  The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted with a leading zero.
 
@@ -384,6 +410,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="M_Specifier"></a> 
+
 ## The "M" custom format specifier
  The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted without a leading zero.
 
@@ -397,6 +424,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="MM_Specifier"></a> 
+
 ## The "MM" custom format specifier
  The "MM" custom format specifier represents the month as a number from 01 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted with a leading zero.
 
@@ -408,6 +436,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="MMM_Specifier"></a> 
+
 ## The "MMM" custom format specifier
  The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -419,6 +448,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="MMMM_Specifier"></a> 
+
 ## The "MMMM" custom format specifier
  The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -430,6 +460,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="sSpecifier"></a> 
+
 ## The "s" custom format specifier
  The "s" custom format specifier represents the seconds as a number from 0 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted without a leading zero.
 
@@ -443,6 +474,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ssSpecifier"></a> 
+
 ## The "ss" custom format specifier
  The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted with a leading zero.
 
@@ -454,6 +486,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="tSpecifier"></a> 
+
 ## The "t" custom format specifier
  The "t" custom format specifier represents the first character of the AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
@@ -467,6 +500,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ttSpecifier"></a> 
+
 ## The "tt" custom format specifier
  The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
@@ -480,6 +514,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="ySpecifier"></a> 
+
 ## The "y" custom format specifier
  The "y" custom format specifier represents the year as a one-digit or two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the first digit of a two-digit year begins with a zero (for example, 2008), the number is formatted without a leading zero.
 
@@ -493,6 +528,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="yySpecifier"></a> 
+
 ## The "yy" custom format specifier
  The "yy" custom format specifier represents the year as a two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the two-digit year has fewer than two significant digits, the number is padded with leading zeros to produce two digits.
 
@@ -509,6 +545,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="yyySpecifier"></a> 
+
 ## The "yyy" custom format specifier
  The "yyy" custom format specifier represents the year with a minimum of three digits. If the year has more than three significant digits, they are included in the result string. If the year has fewer than three digits, the number is padded with leading zeros to produce three digits.
 
@@ -523,6 +560,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="yyyySpecifier"></a> 
+
 ## The "yyyy" custom format specifier
  The "yyyy" custom format specifier represents the year with a minimum of four digits. If the year has more than four significant digits, they are included in the result string. If the year has fewer than four digits, the number is padded with leading zeros to produce four digits.
 
@@ -537,6 +575,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="yyyyySpecifier"></a> 
+
 ## The "yyyyy" custom format specifier
  The "yyyyy" custom format specifier (plus any number of additional "y" specifiers) represents the year with a minimum of five digits. If the year has more than five significant digits, they are included in the result string. If the year has fewer than five digits, the number is padded with leading zeros to produce five digits.
 
@@ -550,6 +589,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="zSpecifier"></a> 
+
 ## The "z" custom format specifier
  With <xref:System.DateTime> values, the "z" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours. It does not reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "z" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -567,6 +607,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="zzSpecifier"></a> 
+
 ## The "zz" custom format specifier
  With <xref:System.DateTime> values, the "zz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours. It does not reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zz" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -582,6 +623,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="zzzSpecifier"></a> 
+
 ## The "zzz" custom format specifier
  With <xref:System.DateTime> values, the "zzz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours and minutes. It does not reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zzz" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -597,6 +639,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="timeSeparator"></a> 
+
 ## The ":" custom format specifier
  The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -608,6 +651,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="dateSeparator"></a> 
+
 ## The "/" custom format specifier
  The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days. The appropriate localized date separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -619,6 +663,7 @@ A date and time format string defines the text representation of a <xref:System.
  [Back to table](#table)
 
 <a name="Literals"></a> 
+
 ## Character literals
  The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of ", ', /, and \\, as special characters.
 
@@ -638,22 +683,24 @@ A date and time format string defines the text representation of a <xref:System.
 
  There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:
 
--   By escaping each reserved character. For more information, see [Using the Escape Character](#escape).
+- By escaping each reserved character. For more information, see [Using the Escape Character](#escape).
+  
+  The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.
+  
+  [!code-csharp-interactive[Formatting.DateAndTime.Custom#21](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx2.cs#21)]
+  [!code-vb[Formatting.DateAndTime.Custom#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx2.vb#21)]
 
-     The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.
-
-     [!code-csharp-interactive[Formatting.DateAndTime.Custom#21](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx2.cs#21)]
-     [!code-vb[Formatting.DateAndTime.Custom#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx2.vb#21)]
-
--   By enclosing the entire literal string in quotation marks or apostrophes. The following example is like the previous one, except that "pst" is enclosed in quotation marks to indicate that the entire delimited string should be interpreted as character literals.
-
-     [!code-csharp-interactive[Formatting.DateAndTime.Custom#22](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx3.cs#22)]
-     [!code-vb[Formatting.DateAndTime.Custom#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx3.vb#22)]
+- By enclosing the entire literal string in quotation marks or apostrophes. The following example is like the previous one, except that "pst" is enclosed in quotation marks to indicate that the entire delimited string should be interpreted as character literals.
+  
+  [!code-csharp-interactive[Formatting.DateAndTime.Custom#22](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx3.cs#22)]
+  [!code-vb[Formatting.DateAndTime.Custom#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx3.vb#22)]
 
 <a name="Notes"></a> 
+
 ## Notes
 
 <a name="UsingSingleSpecifiers"></a> 
+
 ### Using single custom format specifiers
  A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they do not recognize the character as a valid format specifier, they throw a <xref:System.FormatException>. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an exception is thrown because there is no "h" standard date and timeformat specifier.
 
@@ -665,6 +712,7 @@ A date and time format string defines the text representation of a <xref:System.
  [!code-vb[Formatting.DateAndTime.Custom#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/literal1.vb#16)]
 
 <a name="escape"></a> 
+
 ### Using the Escape Character
  The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" characters in a format string are interpreted as custom format specifiers rather than as literal characters. To prevent a character from being interpreted as a format specifier, you can precede it with a backslash (\\), which is the escape character. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 

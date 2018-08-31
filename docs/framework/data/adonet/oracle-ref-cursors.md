@@ -38,4 +38,4 @@ The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** d
   
 ## See Also  
  [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

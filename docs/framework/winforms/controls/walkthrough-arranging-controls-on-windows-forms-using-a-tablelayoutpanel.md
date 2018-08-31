@@ -16,7 +16,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
  The <xref:System.Windows.Forms.TableLayoutPanel> arranges its contents in a grid, providing functionality similar to the HTML \<table> element. The <xref:System.Windows.Forms.TableLayoutPanel> control allows you to place controls in a grid layout without requiring you to precisely specify the position of each individual control. Its cells are arranged in rows and columns, and these can have different sizes. Cells can be merged across rows and columns. Cells can contain anything a form can contain and behave in most other respects as containers.  
   
- The <xref:System.Windows.Forms.TableLayoutPanel> control also provides a proportional resizing capability at run time, so your layout can change smoothly as your form is resized. This makes the <xref:System.Windows.Forms.TableLayoutPanel> control well suited for purposes such as data-entry forms and localized applications. For more information, see [Walkthrough: Creating a Resizable Windows Form for Data Entry](http://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab) and [Walkthrough: Creating a Localizable Windows Form](http://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c).  
+ The <xref:System.Windows.Forms.TableLayoutPanel> control also provides a proportional resizing capability at run time, so your layout can change smoothly as your form is resized. This makes the <xref:System.Windows.Forms.TableLayoutPanel> control well suited for purposes such as data-entry forms and localized applications. For more information, see [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab) and [Walkthrough: Creating a Localizable Windows Form](https://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c).  
   
  In general, you should not use a <xref:System.Windows.Forms.TableLayoutPanel> control as a container for the whole layout. Use <xref:System.Windows.Forms.TableLayoutPanel> controls to provide proportional resizing capabilities to parts of the layout.  
   
@@ -48,7 +48,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To create the project  
   
-1.  Create a Windows Application project called "TableLayoutPanelExample". For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) .  
+1.  Create a Windows Application project called "TableLayoutPanelExample". For more information, see [How to: Create a Windows Application Project](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) .  
   
 2.  Select the form in the **Windows** **Forms Designer**.  
   
@@ -177,9 +177,9 @@ Some applications require a form with a layout that arranges itself appropriatel
  <xref:System.Windows.Forms.TableLayoutPanel>  
  [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)  
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
- [Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](http://www.microsoft.com/mspress/southpacific/books/book11588.htm)  
- [Walkthrough: Creating a Resizable Windows Form for Data Entry](http://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab)  
- [Walkthrough: Creating a Localizable Windows Form](http://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c)  
+ [Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](https://www.microsoft.com/mspress/southpacific/books/book11588.htm)  
+ [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://msdn.microsoft.com/library/e193b4fc-912a-4917-b036-b76c7a6f58ab)  
+ [Walkthrough: Creating a Localizable Windows Form](https://msdn.microsoft.com/library/c5240b6e-aaca-4286-9bae-778a416edb9c)  
  [Best Practices for the TableLayoutPanel Control](../../../../docs/framework/winforms/controls/best-practices-for-the-tablelayoutpanel-control.md)  
  [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md)  
  [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md)  

@@ -27,7 +27,7 @@ This example shows how to draw an elliptical arc. To create an elliptical arc, u
   
  [!code-xaml[GeometrySample#36](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#36)]  
   
- This example is part of a larger sample. For the complete sample, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
+ This example is part of a larger sample. For the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
  [Create a Quadratic Bezier Curve](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-quadratic-bezier-curve.md)  

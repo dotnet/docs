@@ -19,7 +19,7 @@ The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class 
 ## See Also  
  [Threading](../../../docs/standard/threading/index.md)  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
- [Wait Handles](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+ [Wait Handles](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
  [AutoResetEvent](../../../docs/standard/threading/autoresetevent.md)  
  [SpinWait](../../../docs/standard/threading/spinwait.md)  
  [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)

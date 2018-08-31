@@ -29,4 +29,4 @@ These examples show various ways to write text to a file. The first two examples
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)  
- [Sample: Save a collection to Application Storage](http://code.msdn.microsoft.com/CSWinStoreAppSaveCollection-bed5d6e6)
+ [Sample: Save a collection to Application Storage](https://code.msdn.microsoft.com/CSWinStoreAppSaveCollection-bed5d6e6)

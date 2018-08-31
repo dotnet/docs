@@ -12,7 +12,7 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
   
  The topics in this section describe properties and features of the SQL Workflow Instance Store and provide you with details on configuring the store.  
   
- Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. For more information, see see [Windows Server App Fabric Instance Store](http://go.microsoft.com/fwlink/?LinkId=201201). For more information about the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](http://go.microsoft.com/fwlink/?LinkId=201202)  
+ Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. For more information, see see [Windows Server App Fabric Instance Store](https://go.microsoft.com/fwlink/?LinkId=201201). For more information about the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkId=201202)  
   
 ## In This Section  
   
@@ -31,4 +31,4 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
 -   [SQL Server Persistence Database](../../../docs/framework/windows-workflow-foundation/sql-server-persistence-database.md)  
   
 ## See Also  
- [Persistence Samples](http://go.microsoft.com/fwlink/?LinkID=177735)
+ [Persistence Samples](https://go.microsoft.com/fwlink/?LinkID=177735)

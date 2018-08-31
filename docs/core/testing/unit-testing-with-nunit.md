@@ -15,14 +15,13 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Creating the source project
 
-Open a shell window. Create a directory called *unit-testing-using-nunit* to hold the solution. Inside this new directory, run the following command to create
-a new solution file for the class library and the test project:
+Open a shell window. Create a directory called *unit-testing-using-nunit* to hold the solution. Inside this new directory, run the following command to create a new solution file for the class library and the test project:
 
 ```console
 dotnet new sln
 ```
  
-Next, create a *PrimeService* directory. The following outline shows the directory and file structure thus far:
+Next, create a *PrimeService* directory. The following outline shows the directory and file structure so far:
 
 ```
 /unit-testing-using-nunit
@@ -111,7 +110,7 @@ dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. In the the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. In the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
 
 ```csharp
 using NUnit.Framework;

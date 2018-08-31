@@ -3,13 +3,13 @@ title: What is Docker?
 description: .NET Microservices Architecture for Containerized .NET Applications | What is Docker?
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 08/31/2018
 ---
 # What is Docker?
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![](./media/image2.png)
+![Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure.](./media/image2.png)
 
 **Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud
 
@@ -35,10 +35,10 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
 <tbody>
 <tr>
 <td style="width:50%"><p><strong>Virtual Machines</strong></p>
-<p><img src="media/image3.png" style="width:100%;" /></p>
+<p><img src="media/image3.png" style="width:100%; vertical-align:top;" alt="For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries"/></p>
 <p>Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.</p></td>
 <td style="width:50%"><p><strong>Docker Containers</strong></p>
-<p><img src="media/image4.png" style="width:100%" /></p>
+<p><img src="media/image4.png" style="width:100%; vertical-align:top;" alt="For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services."/></p>
 <p>Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)</p></td>
 </tr>
 </tbody>

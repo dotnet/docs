@@ -3,7 +3,7 @@ title: Docker terminology
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker terminology
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 08/31/2018
 ---
 # Docker terminology
 

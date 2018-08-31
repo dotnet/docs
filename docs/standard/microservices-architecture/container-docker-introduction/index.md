@@ -3,7 +3,7 @@ title: Introduction to Containers and Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Introduction to Containers and Docker
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 08/31/2018
 ---
 # Introduction to Containers and Docker
 
@@ -15,7 +15,7 @@ Containers also isolate applications from each other on a shared OS. Containeriz
 
 Each container can run a whole web application or a service, as shown in Figure 2-1. In this example, Docker host is a container host, and App1, App2, Svc 1, and Svc 2 are containerized applications or services.
 
-![](./media/image1.png)
+![Two applications and two services running on the OS in a VM or a physical server](./media/image1.png)
 
 **Figure 2-1**. Multiple containers running on a container host
 

@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a single [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element in an MSBuild project.</summary>
+    <summary>Represents a single <see href="http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target</see> element in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       </Parameters>
       <Docs>
         <param name="taskName">The <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object that represents the <see langword="Task" /> element to add to the <see langword="Target" /> element.</param>
-        <summary>Adds the specified [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element to the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Adds the specified <see href="http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element to the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object represents a child <c>Task</c> element of the <c>Target</c> element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
       </Parameters>
       <Docs>
         <param name="taskElement">The <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object that represents the <see langword="Task" /> element to remove from the <see langword="Target" /> element.</param>
-        <summary>Removes the specified [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element from the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Removes the specified <see href="http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element from the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

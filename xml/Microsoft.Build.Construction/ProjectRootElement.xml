@@ -389,7 +389,7 @@
         <param name="name">The task name.</param>
         <param name="assemblyFile">The file path to the assembly.</param>
         <param name="assemblyName">The name of the assembly to load.</param>
-        <summary>Adds a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) to the project.</summary>
+        <summary>Adds a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
         <returns>Returns the added UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -417,7 +417,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectChooseElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all child [Choose Element (MSBuild)](http://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d) in this project.</summary>
+        <summary>Gets all child <see href="http://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d">Choose Element (MSBuild)</see> in this project.</summary>
         <value>Returns all child Choose elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -651,7 +651,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a [Choose Element (MSBuild)](http://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d).</summary>
+        <summary>Creates a <see href="http://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d">Choose Element (MSBuild)</see>.</summary>
         <returns>A <see cref="T:Microsoft.Build.Construction.ProjectChooseElement" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -683,7 +683,7 @@
       </Parameters>
       <Docs>
         <param name="project">The project to be imported.</param>
-        <summary>Creates an [Import Element (MSBuild)](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9).</summary>
+        <summary>Creates an <see href="http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import Element (MSBuild)</see>.</summary>
         <returns>Returns the created Import element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -984,7 +984,7 @@
       </Parameters>
       <Docs>
         <param name="executeTargets">The targets to execute if a task fails.</param>
-        <summary>Creates an [OnError Element (MSBuild)](http://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc).</summary>
+        <summary>Creates an <see href="http://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc">OnError Element (MSBuild)</see>.</summary>
         <returns>Returns the OnError element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1013,7 +1013,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an [Otherwise Element (MSBuild)](http://msdn.microsoft.com/library/de3997e9-1595-4263-a886-95530b56a319). Caller must add it to the location of choice in the project.</summary>
+        <summary>Creates an <see href="http://msdn.microsoft.com/library/de3997e9-1595-4263-a886-95530b56a319">Otherwise Element (MSBuild)</see>. Caller must add it to the location of choice in the project.</summary>
         <returns>Returns the Otherwise element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1049,7 +1049,7 @@
         <param name="taskParameter">The name of the task's output parameter.</param>
         <param name="itemType">The item that receives the task's output parameter value.</param>
         <param name="propertyName">The property that receives the task's output parameter value.</param>
-        <summary>Creates an [Output Element (MSBuild)](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9).</summary>
+        <summary>Creates an <see href="http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9">Output Element (MSBuild)</see>.</summary>
         <returns>Returns the Output element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1078,7 +1078,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a [ProjectExtensions Element (MSBuild)](http://msdn.microsoft.com/library/f95f312f-ff92-41eb-9469-ad99e236a307).</summary>
+        <summary>Creates a <see href="http://msdn.microsoft.com/library/f95f312f-ff92-41eb-9469-ad99e236a307">ProjectExtensions Element (MSBuild)</see>.</summary>
         <returns>Returns the ProjectExtensions element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1237,7 +1237,7 @@
       <Docs>
         <param name="evaluate">The string to evaluate.</param>
         <param name="body">The body to add.</param>
-        <summary>Creates a task to be referenced by a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43).</summary>
+        <summary>Creates a task to be referenced by a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see>.</summary>
         <returns>Returns the task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1255,7 +1255,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) to the project.</summary>
+        <summary>Adds a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateUsingTaskElement">
@@ -1282,7 +1282,7 @@
         <param name="taskName">The task name.</param>
         <param name="assemblyFile">The file path to the assembly.</param>
         <param name="assemblyName">The name of the assembly to load.</param>
-        <summary>Adds a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) to the project.</summary>
+        <summary>Adds a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
         <returns>Returns the UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1322,7 +1322,7 @@
         <param name="assemblyName">The name of the assembly to load.</param>
         <param name="runtime">Optional runtime specifier.</param>
         <param name="architecture">Optional architecture specifier.</param>
-        <summary>Adds a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) to the project.</summary>
+        <summary>Adds a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
         <returns>Returns the UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1360,7 +1360,7 @@
         <param name="output">Stores outputs from the task in the project file.</param>
         <param name="required">A user-defined task parameter that contains the parameter value as its value.</param>
         <param name="parameterType">The type of the parameter.</param>
-        <summary>Creates a parameter for use in a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) parameter group.</summary>
+        <summary>Creates a parameter for use in a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> parameter group.</summary>
         <returns>Returns the parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1389,7 +1389,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a parameter group for a [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43).</summary>
+        <summary>Creates a parameter group for a <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see>.</summary>
         <returns>Returns the parameter group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1421,7 +1421,7 @@
       </Parameters>
       <Docs>
         <param name="condition">The value of the Condition attribute.</param>
-        <summary>Creates a [When Element (MSBuild)](http://msdn.microsoft.com/library/eb27de6f-4e71-4e87-87e2-d93f7bf5899c) with a specified Condition attribute.</summary>
+        <summary>Creates a <see href="http://msdn.microsoft.com/library/eb27de6f-4e71-4e87-87e2-d93f7bf5899c">When Element (MSBuild)</see> with a specified Condition attribute.</summary>
         <returns>Returns the When element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2514,7 +2514,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectUsingTaskElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all child [UsingTask Element (MSBuild)](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) in this project.</summary>
+        <summary>Gets all child <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> in this project.</summary>
         <value>Returns all child UsingTask elements in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>

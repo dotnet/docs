@@ -99,7 +99,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether to compile code that uses the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword.</summary>
+        <summary>Gets or sets a Boolean value that indicates whether to compile code that uses the <see href="https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/unsafe">unsafe</see> keyword.</summary>
         <value>
           <see langword="true" /> if will compile code that uses the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword; otherwise, <see langword="false" />.</value>
         <remarks>

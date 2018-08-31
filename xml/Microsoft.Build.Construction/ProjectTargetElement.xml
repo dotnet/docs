@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a [Target Element (MSBuild)](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) in an MSBuild project.</summary>
+    <summary>Represents a <see href="http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target Element (MSBuild)</see> in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -467,7 +467,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOnErrorElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get all child [OnError Element (MSBuild)](http://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc).</summary>
+        <summary>Get all child <see href="http://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc">OnError Element (MSBuild)</see>.</summary>
         <value>Returns all child OnError elements.</value>
         <remarks>To be added.</remarks>
       </Docs>

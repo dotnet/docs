@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a [Task Element (MSBuild)](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) in an MSBuild project.</summary>
+    <summary>Represents a <see href="http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task Element (MSBuild)</see> in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -389,7 +389,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOutputElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all [Output Element (MSBuild)](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9) children.</summary>
+        <summary>Gets all <see href="http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9">Output Element (MSBuild)</see> children.</summary>
         <value>Returns all Output element children.</value>
         <remarks>To be added.</remarks>
       </Docs>

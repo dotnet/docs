@@ -4354,6 +4354,9 @@
 |*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
 |*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in s in addition to digits|  
@@ -4591,6 +4594,9 @@
 |*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
 |*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in s in addition to digits|  

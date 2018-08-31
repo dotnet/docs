@@ -1918,6 +1918,9 @@
  *exponential-digits*  
  A series of digits ranging from 0 to 9 that specify an exponent.  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in `s` in addition to digits|  
@@ -2167,6 +2170,9 @@
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in `s` in addition to digits|  
@@ -3722,6 +3728,9 @@
 |*e*|The e or E character, which indicates that `s` can represent a number using exponential notation. The `s` parameter can represent a number in exponential notation if style includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in s in addition to digits|  

@@ -6376,6 +6376,9 @@ value Mod 2 = 0
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
@@ -6621,6 +6624,9 @@ value Mod 2 = 0
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
@@ -7570,6 +7576,9 @@ value Mod 2 = 0
 |*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  

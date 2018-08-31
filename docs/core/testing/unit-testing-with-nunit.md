@@ -6,9 +6,12 @@ ms.date: 08/31/2018
 ---
 # Unit testing C# with NUnit and .NET Core
 
-**This topic applies to:** ✓ .NET SDK 2.1.400 and later versions
-
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+
+## Prerequisites
+
+- [.NET Core SDK 2.1 SDK (v. 2.1.400)](https://www.microsoft.com/net/download) or later versions.
+- A text editor or code editor of your choice.
 
 ## Creating the source project
 

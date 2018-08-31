@@ -49,9 +49,9 @@ ms.author: "ronpet"
   
  To assess the impact of possible breaking changes on your application, you must review the following lists of changes:  
   
--   [Breaking Changes in .NET Framework 2.0](http://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].  
+-   [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].  
   
--   [Changes in .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].  
+-   [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].  
   
 -   [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   

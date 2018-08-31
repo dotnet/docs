@@ -15,7 +15,7 @@ The strong naming API enables a client to administer strong name signing for ass
  Signing an assembly with a strong name adds a public key encryption to the file containing the assembly manifest. Strong name signing helps verify name uniqueness, prevents name spoofing, and provides callers with a unique identity when a reference is resolved. However, no level of trust is associated with a strong name.  
   
 ## In This Section  
- [Strong Naming Global Static Functions](http://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)  
+ [Strong Naming Global Static Functions](https://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)  
  Describes the unmanaged global static functions that the strong naming API uses.  
   
 > [!NOTE]
@@ -99,7 +99,7 @@ The strong naming API enables a client to administer strong name signing for ass
  [StrongNameTokenFromPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfrompublickey-function.md)  
  Gets a token representing a public key. Deprecated starting with the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].  
   
- [Strong Naming Structure](http://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)  
+ [Strong Naming Structure](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)  
  Describes the unmanaged structure that the strong naming API uses  to administer strong name signing for assemblies..  
   
  [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  

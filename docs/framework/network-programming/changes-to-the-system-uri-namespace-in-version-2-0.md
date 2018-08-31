@@ -36,7 +36,7 @@ Several changes were made to the <xref:System.Uri?displayProperty=nameWithType> 
   
 -   For URI schemes that are known to not have a query part (file, ftp, and others), the '?' character is always escaped and is not considered the beginning of a <xref:System.Uri.Query%2A> part.  
   
--   For implicit file URIs (of the form "c:\directory\file@name.txt"), the fragment character ('#') is always escaped unless full unescaping is requested or <xref:System.Uri.LocalPath%2A> is `true`.  
+-   For implicit file URIs (of the form `c:\directory\file@name.txt`), the fragment character ('#') is always escaped unless full unescaping is requested or <xref:System.Uri.LocalPath%2A> is `true`.  
   
 -   UNC hostname support was removed; the IDN specification for representing international hostnames was adopted.  
   
@@ -50,9 +50,9 @@ Several changes were made to the <xref:System.Uri?displayProperty=nameWithType> 
   
 -   <xref:System.Uri.IsLoopback%2A> now produces consistent results.  
   
--   The URI "`file:///path`" is no longer translated into "file://path".  
+-   The URI "`file:///path`" is no longer translated into `file://path`.  
   
--   "#" is now recognized as a host name terminator. That is, "http://consoto.com#fragment" is now converted to "http://contoso.com/#fragment".  
+-   "#" is now recognized as a host name terminator. That is, `http://consoto.com#fragment` is now converted to `http://contoso.com/#fragment`.  
   
 -   A bug when combining a base URI with a fragment has been fixed.  
   

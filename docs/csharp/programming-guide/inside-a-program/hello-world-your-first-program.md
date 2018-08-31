@@ -72,7 +72,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
  The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. Unlike in C++, the array does not include the name of the executable (exe) file.  
   
- For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4).  
+ For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](https://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4).  
   
  The call to <xref:System.Console.ReadKey%2A> at the end of the `Main` method prevents the console window from closing before you have a chance to read the output when you run your program in debug mode, by pressing F5.  
   
@@ -124,7 +124,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
  [Strings](../../../csharp/programming-guide/strings/index.md)  
- [\<paveover>C# Sample Applications](http://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+ [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
  [C# Reference](../../../csharp/language-reference/index.md)  
  [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
  [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

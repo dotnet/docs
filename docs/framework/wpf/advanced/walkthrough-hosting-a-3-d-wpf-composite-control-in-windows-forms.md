@@ -45,7 +45,7 @@ You need the following components to complete this walkthrough:
 <a name="To_Create_the_Windows_Forms_Host_Project"></a>
 ## Create the host project
 
-1.  Add a **WPF App (.NET Framework)** project named `WpfUserControlHost` to the solution. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).
+1.  Add a **WPF App (.NET Framework)** project named `WpfUserControlHost` to the solution. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).
 
 2.  In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
@@ -86,4 +86,4 @@ You need the following components to complete this walkthrough:
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
-- [Hosting a WPF Composite Control in Windows Forms Sample](http://go.microsoft.com/fwlink/?LinkID=160001)
+- [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=160001)

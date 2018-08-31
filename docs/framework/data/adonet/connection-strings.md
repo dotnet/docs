@@ -33,4 +33,4 @@ The .NET Framework 2.0 introduced new capabilities for working with connection s
   
 ## See Also  
  [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

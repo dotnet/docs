@@ -31,7 +31,7 @@ This example shows how to animate the <xref:System.Windows.Media.GradientStop.Co
   
  Although this example uses a <xref:System.Windows.Media.LinearGradientBrush>, the process is the same for animating <xref:System.Windows.Media.GradientStop> objects inside a <xref:System.Windows.Media.RadialGradientBrush>.  
   
- For additional examples, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973).  
+ For additional examples, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).  
   
 ## See Also  
  <xref:System.Windows.Media.GradientStop>  

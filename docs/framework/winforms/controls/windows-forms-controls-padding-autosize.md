@@ -54,7 +54,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To create the project  
   
-1.  Create a **Windows Application** project called `LayoutExample`. For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) .  
+1.  Create a **Windows Application** project called `LayoutExample`. For more information, see [How to: Create a Windows Application Project](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa) .  
   
 2.  Select the form in the **Windows Forms Designer**.  
   

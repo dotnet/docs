@@ -30,7 +30,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of t
   
  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] gives life to models by enabling developers to query entities and relationships in the domain model (called a *conceptual* model in the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]) while relying on the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] to translate those operations to data source–specific commands. This frees applications from hard-coded dependencies on a particular data source.  
   
- When working with Code First, the conceptual model is mapped to the storage model in code. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] can infer the conceptual model based on the object types and additional configurations that you define. The mapping metadata is generated during run time based on a combination of how you defined your domain types and additional configuration information that you provide in code. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] generates the database as needed based on the metadata. For more information, see [Creating and Mapping a Conceptual Model](http://go.microsoft.com/fwlink/?LinkID=235382).  
+ When working with Code First, the conceptual model is mapped to the storage model in code. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] can infer the conceptual model based on the object types and additional configurations that you define. The mapping metadata is generated during run time based on a combination of how you defined your domain types and additional configuration information that you provide in code. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] generates the database as needed based on the metadata. For more information, see [Creating and Mapping a Conceptual Model](https://go.microsoft.com/fwlink/?LinkID=235382).  
   
  When working with the Entity Data Model Tools, the conceptual model, the storage model, and the mappings between the two are expressed in XML-based schemas and defined in files that have corresponding name extensions:  
   
@@ -81,7 +81,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of t
  The following topics enable you to learn more about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
   
  [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- Provide information about how to get up and running quickly using the [Quickstart](http://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+ Provide information about how to get up and running quickly using the [Quickstart](https://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
   
  [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)  
  Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.  

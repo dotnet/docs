@@ -22,7 +22,7 @@ To complete this quickstart, you must install the following components:
 
 - An instance of SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio 2015, or as part of the **Data storage and processing** workload in Visual Studio 2017.
 
-- The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](http://go.microsoft.com/fwlink/?linkid=24758).
+- The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 
 ## WCF data services quickstart tasks
 
@@ -39,7 +39,7 @@ To complete this quickstart, you must install the following components:
  Create a WPF app to consume the OData feed, bind data to Windows controls, change data in the bound controls, and then send the changes back to the data service.
 
 > [!NOTE]
-> Project files from a completed version of the quickstart can be downloaded from the [WCF Data Services Documentation Samples](http://go.microsoft.com/fwlink/?LinkId=179994) page.
+> Project files from a completed version of the quickstart can be downloaded from the [WCF Data Services Documentation Samples](https://go.microsoft.com/fwlink/?LinkId=179994) page.
 
 ## Next steps
 

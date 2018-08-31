@@ -13,6 +13,6 @@ A comment token that contains white space has been supplied. The `TextFieldParse
 -   Supply a correct comment token.  
   
 ## See Also  
- [TextFieldParser.CommentTokens Property](http://msdn.microsoft.com/library/2e6b6435-4bee-4c14-a353-e8f2c82e2d61)  
+ [TextFieldParser.CommentTokens Property](https://msdn.microsoft.com/library/2e6b6435-4bee-4c14-a353-e8f2c82e2d61)  
  [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
  [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)

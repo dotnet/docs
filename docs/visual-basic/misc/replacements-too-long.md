@@ -13,4 +13,4 @@ You specified a replacement that exceeds the permitted length.
 1.  Consult the component documentation for the length restriction.  
   
 ## See Also  
- [How to: Search Interactively](http://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
+ [How to: Search Interactively](https://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)

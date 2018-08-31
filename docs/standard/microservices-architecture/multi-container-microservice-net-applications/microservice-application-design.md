@@ -57,7 +57,7 @@ Each microservice has its own database, allowing it to be fully decoupled from o
 
 ### eShopOnContainers: A reference application for .NET Core and microservices deployed using containers
 
-So that you can focus on the architecture and technologies instead of thinking about a hypothetic business domain that you might not know, we have selected a well-known business domain—namely, a simplified e-commerce (e-shop) application that presents a catalog of products, takes orders from customers, verifies inventory, and performs other business functions. This container-based application source code is available in the [eShopOnContainers](http://aka.ms/MicroservicesArchitecture) GitHub repo.
+So that you can focus on the architecture and technologies instead of thinking about a hypothetic business domain that you might not know, we have selected a well-known business domain—namely, a simplified e-commerce (e-shop) application that presents a catalog of products, takes orders from customers, verifies inventory, and performs other business functions. This container-based application source code is available in the [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) GitHub repo.
 
 The application consists of multiple subsystems, including several store UI front ends (a Web application and a native mobile app), along with the back-end microservices and containers for all the required server-side operations. Figure 8-1 shows the architecture of the reference application.
 
@@ -165,7 +165,7 @@ There are many architectural patterns used by software architects and developers
 
 -   [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
--   [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](http://aka.ms/WebAppArchitecture))
+-   [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
 
 -   [Command and Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) (CQRS).
 

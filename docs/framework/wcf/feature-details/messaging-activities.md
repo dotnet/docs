@@ -98,5 +98,5 @@ Request = rcv
  When a call is made to a workflow service you may want to flow a transaction to the service operation. To do this place the <xref:System.ServiceModel.Activities.Receive> activity within a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity contains a `Receive` activity and a body. The transaction flowed to the service remains ambient throughout the execution of the body of the <xref:System.ServiceModel.Activities.TransactedReceiveScope>. The transaction is completed when the body finishes executing. For more information about workflows and transactions see [Workflow Transactions](../../../../docs/framework/windows-workflow-foundation/workflow-transactions.md).
 
 ## See Also
-- [How to Send and Receive Faults in Workflow Services](http://go.microsoft.com/fwlink/?LinkId=189151)
+- [How to Send and Receive Faults in Workflow Services](https://go.microsoft.com/fwlink/?LinkId=189151)
 - [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)

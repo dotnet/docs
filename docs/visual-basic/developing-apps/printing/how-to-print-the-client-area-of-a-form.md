@@ -8,7 +8,7 @@ ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236
 # How to: Print the Client Area of a Form (Visual Basic)
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to quickly print an image of a form without using a <xref:System.Drawing.Printing.PrintDocument> component. The following procedure shows how to print just the client area of a form, without the title bar, borders, and scroll bars.  
   
- The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
+ The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=25169).  
   
 ### To print the client area of a form  
   

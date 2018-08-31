@@ -16,19 +16,19 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows XP and Windows Server 2003. It is included with [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) is the latest version. It is not supported on Windows XP and Windows Server 2003. It is included with [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10).
 
 ## .NET Framework 4.0.3
 
-The [.NET Framework 4.0.3](http://go.microsoft.com/fwlink/?LinkID=213834) is the latest supported .NET Framework version on Windows XP and Windows Server 2003. The .NET Framework 4.0.3 requires that the [.NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=213834) is installed first. Both of these .NET Framework versions are no longer supported by Microsoft.
+The [.NET Framework 4.0.3](https://go.microsoft.com/fwlink/?LinkID=213834) is the latest supported .NET Framework version on Windows XP and Windows Server 2003. The .NET Framework 4.0.3 requires that the [.NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=213834) is installed first. Both of these .NET Framework versions are no longer supported by Microsoft.
 
 ## .NET Framework 4
 
-You can install the [.NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP. It's no longer supported by Microsoft.
+You can install the [.NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP. It's no longer supported by Microsoft.
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP.
+You can install the [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP.
 
 The .NET Framework 3.5 can be used to run applications built for .NET Framework 1.0 through 3.5.
 

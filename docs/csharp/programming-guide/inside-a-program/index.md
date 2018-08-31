@@ -23,7 +23,7 @@ The section discusses the general structure of a C# program, and includes the st
   
 -   [C# Reference](../../../csharp/language-reference/index.md)  
   
--   [\<paveover>C# Sample Applications](http://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+-   [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

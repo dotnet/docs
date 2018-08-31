@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17
 ---
 # SQL Server Compact and LINQ to SQL
-SQL Server Compact is the default database installed with Visual Studio. For more information, see [PAVE OVER Using SQL Server Compact (Visual Studio)](http://msdn.microsoft.com/library/13320dd1-94e5-4077-bf76-8df253695ccc).  
+SQL Server Compact is the default database installed with Visual Studio. For more information, see [PAVE OVER Using SQL Server Compact (Visual Studio)](https://msdn.microsoft.com/library/13320dd1-94e5-4077-bf76-8df253695ccc).  
   
  This topic outlines the key differences in usage, configuration, feature sets, and scope of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.  
   

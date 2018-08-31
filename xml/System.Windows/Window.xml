@@ -2488,17 +2488,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.Manual> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by Windows.  
+ Setting the `WindowStartupLocation` property to <xref:System.Windows.WindowStartupLocation.Manual> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by Windows.  
   
- Setting <xref:System.Windows.WindowStartupLocation.CenterScreen> causes a window to be positioned in the center of the screen that contains the mouse cursor.  
+ Setting the `WindowStartupLocation` property to <xref:System.Windows.WindowStartupLocation.CenterScreen> causes a window to be positioned in the center of the screen that contains the mouse cursor.  
   
- Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.CenterOwner> causes a window to be positioned in the center of its owner window (see <xref:System.Windows.Window.Owner%2A>), if specified. The owner window can be either another WPF window or a non-WPF window.  
-  
-> [!NOTE]
->  For more information about WPF windows with non-WPF windows, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md) and <xref:System.Windows.Interop.WindowInteropHelper>.  
-  
- If an owner window is not specified, the position of the window is determined in the same way as if <xref:System.Windows.WindowStartupLocation> is set to <xref:System.Windows.WindowStartupLocation.Manual>.  
-  
+ Setting the `WindowStartupLocation` property to <xref:System.Windows.WindowStartupLocation.CenterOwner> causes a window to be positioned in the center of its owner window (see <xref:System.Windows.Window.Owner%2A?displayProperty=nameWithType>), if specified. The owner window can be either another WPF window or a non-WPF window.
+
+> [!NOTE]   
+>  For more information about WPF windows with non-WPF windows, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md) and <xref:System.Windows.Interop.WindowInteropHelper>. 
+
+ If an owner window is not specified, the position of the window is determined in the same way as if the `WindowStartupLocation` property is set to <xref:System.Windows.WindowStartupLocation.Manual>.
+
 > [!NOTE]
 >  You cannot set or get the value of this property when a window is hosted in a browser.  
   

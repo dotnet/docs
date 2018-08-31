@@ -6,14 +6,14 @@ ms.assetid: c04f7413-7fb8-40c6-819e-dc92b145b62e
 # Entity Activities
 This sample shows how to use the ADO.NET Entity Framework with Windows Workflow Foundation to simplify data access.  
   
- The ADO.NET Entity Framework enables developers to work with data in the form of domain-specific objects, properties and relationships such as Customers, Orders, Order Details and the relationships between these entities. The ADO.NET Entity Framework does this by providing a level of abstraction that enables programming against a conceptual application model instead of programming directly against a relational storage schema. For more information about the ADO.NET Entity Framework see [ADO.NET Entity Framework](http://go.microsoft.com/fwlink/?LinkId=165549).  
+ The ADO.NET Entity Framework enables developers to work with data in the form of domain-specific objects, properties and relationships such as Customers, Orders, Order Details and the relationships between these entities. The ADO.NET Entity Framework does this by providing a level of abstraction that enables programming against a conceptual application model instead of programming directly against a relational storage schema. For more information about the ADO.NET Entity Framework see [ADO.NET Entity Framework](https://go.microsoft.com/fwlink/?LinkId=165549).  
   
 ## Sample details  
  This sample uses the `Northwind` database and includes scripts for creating and removing the `Northwind` database (Setup.cmd and Cleanup.cmd). The projects in this sample include an Entity Data Model based on the `Northwind` database. You can find the model by opening the `Northwind.edmx` file that is included in the project. This is the model that defines the shape of the objects that can be accessed using the ADO.NET Entity Framework.  
   
  The following activities are included in this sample:  
   
--   `EntitySQLQuery`: The `EntitySQLQuery` activity allows you to retrieve objects from the database based on an Entity SQL query string. Entity SQL is a store independent language that is similar to SQL and it allows you to specify queries based on the conceptual model and the entities that are a part of the model or domain. For more information about Entity SQL Language, see [Entity SQL Language](http://go.microsoft.com/fwlink/?LinkId=165646).  
+-   `EntitySQLQuery`: The `EntitySQLQuery` activity allows you to retrieve objects from the database based on an Entity SQL query string. Entity SQL is a store independent language that is similar to SQL and it allows you to specify queries based on the conceptual model and the entities that are a part of the model or domain. For more information about Entity SQL Language, see [Entity SQL Language](https://go.microsoft.com/fwlink/?LinkId=165646).  
   
 -   `EntityLinqQuery`: This activity allows you to retrieve objects from the database based on a LINQ query or predicate.  
   
@@ -246,6 +246,6 @@ return new ObjectContextScope
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\EntityActivities`

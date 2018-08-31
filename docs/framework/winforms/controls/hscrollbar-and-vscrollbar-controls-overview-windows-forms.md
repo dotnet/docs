@@ -32,5 +32,5 @@ Windows Forms <xref:System.Windows.Forms.ScrollBar> controls are used to provide
 ## See Also  
  <xref:System.Windows.Forms.HScrollBar>  
  <xref:System.Windows.Forms.VScrollBar>  
- [Additions to Windows Forms for the .NET Framework 2.0](http://msdn.microsoft.com/library/c61a923d-3d6a-4c8c-820c-e94c83f3f9a8)  
+ [Additions to Windows Forms for the .NET Framework 2.0](https://msdn.microsoft.com/library/c61a923d-3d6a-4c8c-820c-e94c83f3f9a8)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

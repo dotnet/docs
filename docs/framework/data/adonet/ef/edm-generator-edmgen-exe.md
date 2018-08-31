@@ -12,7 +12,7 @@ EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../
   
 -   Generate a C# or Visual Basic code file that contains the object classes generated from a conceptual model (.csdl) file. For more information, see [How to: Use EdmGen.exe to Generate Object-Layer Code](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md).  
   
--   Generate a C# or Visual Basic code file that contains the pre-generated views for an existing model. For more information, [How to: Pre-Generate Views to Improve Query Performance](http://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579).  
+-   Generate a C# or Visual Basic code file that contains the pre-generated views for an existing model. For more information, [How to: Pre-Generate Views to Improve Query Performance](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579).  
   
  The EdmGen.exe tool is installed in the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] directory. In many cases, this is located in C:\windows\Microsoft.NET\Framework\v4.0. For 64-bit systems, this is located in C:\windows\Microsoft.NET\Framework64\v4.0. You can also access the EdmGen.exe tool from the Visual Studio command prompt (Click **Start**, point to **All Programs**, point to **Microsoft Visual Studio 2010**, point to **Visual Studio Tools**, and then click **Visual Studio 2010 Command Prompt**).  
   
@@ -66,6 +66,6 @@ EdmGen /mode:choice [options]
  [How to: Use EdmGen.exe to Validate Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)  
   
 ## See Also  
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
+ [ADO.NET Entity Data Model  Tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
  [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md)  
  [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

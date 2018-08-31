@@ -42,4 +42,4 @@ This topic covers how a client can access a service operation asynchronously whe
  [!code-vb[C_How_To_CF_Async#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/service.vb#4)]  
   
 ## See Also  
- [Service Contract: Asynchronous Sample](http://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)
+ [Service Contract: Asynchronous Sample](https://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)

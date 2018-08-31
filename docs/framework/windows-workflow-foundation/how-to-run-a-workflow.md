@@ -13,7 +13,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 >  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic you must first complete [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) and [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).  
   
 > [!NOTE]
->  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkID=248976).  
+>  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### To create the workflow host project  
   

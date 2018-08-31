@@ -89,7 +89,7 @@ Unit tests provide automated software testing during your development and publis
            public void IgnoreCasing()
            {
                var wordCount = WordCount.GetWordCount("Jack", "Jack jack");
-   
+
                Assert.NotEqual(2, wordCount);
            }
        }
@@ -111,7 +111,7 @@ Unit tests provide automated software testing during your development and publis
    ![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
 
 1. Click the **Run All** button.
-   
+
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good.
 
    ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
@@ -129,8 +129,8 @@ Unit tests provide automated software testing during your development and publis
    [InlineData(0, "Ting", "Does not appear in the string.")]
    [InlineData(1, "Ting", "Ting appears once.")]
    [InlineData(2, "Ting", "Ting appears twice with Ting.")]
-   public void CountInstancesCorrectly(int count, 
-                                       string searchWord, 
+   public void CountInstancesCorrectly(int count,
+                                       string searchWord,
                                        string inputString)
    {
        Assert.NotEqual(count, WordCount.GetWordCount(searchWord,
@@ -139,7 +139,7 @@ Unit tests provide automated software testing during your development and publis
    ```
 
    The `CountInstancesCorrectly` checks that the `GetWordCount` method counts correctly. The `InlineData` provides a count, a search word, and an input string to check. The test method runs once for each line of data. Note once again that you're asserting a failure first by using `Assert.NotEqual`, even when you know that the counts in the data are correct and that the values match the counts returned by the `GetWordCount` method. Performing the step of failing the test on purpose might seem like a waste of time at first, but checking the logic of the test by failing it first is an important check on the logic of your tests. When you come across a test method that passes when you expect it to fail, you've found a bug in the logic of the test. It's worth the effort to take this step every time you create a test method.
-   
+
 1. Save the file and run the tests again. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
 
    ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
@@ -186,4 +186,4 @@ Unit tests provide automated software testing during your development and publis
 
 ## See also
 
-[Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)
+* [Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)

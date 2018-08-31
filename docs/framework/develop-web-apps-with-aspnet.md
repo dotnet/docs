@@ -12,9 +12,9 @@ ASP.NET is a .NET Framework technology for creating web apps. The following link
 
 - [ASP.NET Core Documentation](/aspnet/core/)   
 - [ASP.NET documentation](/aspnet/overview)   
-- [ASP.NET MVC](http://go.microsoft.com/fwlink/p/?LinkID=227227)   
-- [ASP.NET Web Pages](http://go.microsoft.com/fwlink/p/?LinkId=251040)   
-- [ASP.NET Web API](http://go.microsoft.com/fwlink/p/?LinkId=251041)  
+- [ASP.NET MVC](https://go.microsoft.com/fwlink/p/?LinkID=227227)   
+- [ASP.NET Web Pages](https://go.microsoft.com/fwlink/p/?LinkId=251040)   
+- [ASP.NET Web API](https://go.microsoft.com/fwlink/p/?LinkId=251041)  
   
 ## See also
  [Development Guide](../../docs/framework/development-guide.md)

@@ -1,14 +1,14 @@
 ---
 title: "Creating XML Trees in C# (LINQ to XML)"
-ms.date: 07/20/2015
+ms.date: 08/31/2018
 ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
 ---
-# Creating XML Trees in C# (LINQ to XML)
+# Creating XML trees in C# (LINQ to XML)
 This section provides information about creating XML trees in C#.  
   
  For information about using the results of LINQ queries as the content for an <xref:System.Xml.Linq.XElement>, see [Functional Construction (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/functional-construction-linq-to-xml.md).  
   
-## Constructing Elements  
+## Constructing elements
  The signatures of the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XAttribute> constructors let you pass the contents of the element or attribute as arguments to the constructor. Because one of the constructors takes a variable number of arguments, you can pass any number of child elements. Of course, each of those child elements can contain their own child elements. For any element, you can add any number of attributes.  
   
  When adding <xref:System.Xml.Linq.XNode> (including <xref:System.Xml.Linq.XElement>) or <xref:System.Xml.Linq.XAttribute> objects, if the new content has no parent, the objects are simply attached to the XML tree. If the new content already is parented, and is part of another XML tree, the new content is cloned, and the newly cloned content is attached to the XML tree. The last example in this topic demonstrates this.  
@@ -33,7 +33,7 @@ XElement contacts =
   
  If indented properly, the code to construct <xref:System.Xml.Linq.XElement> objects closely resembles the structure of the underlying XML.  
   
-## XElement Constructors  
+## XElement constructors  
  The <xref:System.Xml.Linq.XElement> class uses the following constructors for functional construction. Note that there are some other constructors for <xref:System.Xml.Linq.XElement>, but because they are not used for functional construction they are not listed here.  
   
 |Constructor|Description|  
@@ -56,7 +56,7 @@ XElement contacts =
   
 -   For any other type, its `ToString` method is called and the result is added as text content.  
   
-### Creating an XElement with Content  
+### Creating an XElement with content  
  You can create an <xref:System.Xml.Linq.XElement> that contains simple content with a single method call. To do this, specify the content as the second parameter, as follows:  
   
 ```csharp  
@@ -85,7 +85,7 @@ Console.WriteLine(n);
   
  The floating point number is boxed and passed in to the constructor. The boxed number is converted to a string and used as the content of the element.  
   
-### Creating an XElement with a Child Element  
+### Creating an XElement with a child element  
  If you pass an instance of the <xref:System.Xml.Linq.XElement> class for the content argument, the constructor creates an element with a child element:  
   
 ```csharp  
@@ -103,7 +103,7 @@ Console.WriteLine(shippingUnit);
 </ShippingUnit>  
 ```  
   
-### Creating an XElement with Multiple Child Elements  
+### Creating an XElement with multiple child elements  
  You can pass in a number of <xref:System.Xml.Linq.XElement> objects for the content. Each of the <xref:System.Xml.Linq.XElement> objects is included as a child element.  
   
 ```csharp  
@@ -163,7 +163,7 @@ Console.WriteLine(contacts);
 </Contacts>  
 ```  
   
-### Creating an Empty Element  
+### Creating an empty element  
  To create an empty <xref:System.Xml.Linq.XElement>, you do not pass any content to the constructor. The following example creates an empty element:  
   
 ```csharp  
@@ -177,9 +177,11 @@ Console.WriteLine(n);
 <Customer />  
 ```  
   
-### Attaching vs. Cloning  
+### Attaching vs. cloning  
  As mentioned previously, when adding <xref:System.Xml.Linq.XNode> (including <xref:System.Xml.Linq.XElement>) or <xref:System.Xml.Linq.XAttribute> objects, if the new content has no parent, the objects are simply attached to the XML tree. If the new content already is parented and is part of another XML tree, the new content is cloned, and the newly cloned content is attached to the XML tree.  
-  
+
+The following example demonstrates the behavior when you add a parented element to a tree, and when you add an element with no parent to a tree.
+
 ```csharp  
 // Create a tree with a child element.  
 XElement xmlTree1 = new XElement("Root",  
@@ -204,14 +206,12 @@ Console.WriteLine("Child1 was {0}",
 Console.WriteLine("Child2 was {0}",  
     child2 == xmlTree2.Element("Child2") ?  
     "attached" : "cloned");  
-```  
-  
- This example produces the following output:  
-  
-```  
-Child1 was cloned  
-Child2 was attached  
-```  
-  
-## See Also  
- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+
+// The example displays the following output:  
+//    Child1 was cloned  
+//    Child2 was attached  
+```
+
+## See also
+
+- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

@@ -37,11 +37,11 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
   
 -   Running the host application.  
   
- This pipeline passes only serializable types (<xref:System.Double> and <xref:System.String>), between the host and the add-in. For an example that shows how to pass collections of complex data types, see [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5).  
+ This pipeline passes only serializable types (<xref:System.Double> and <xref:System.String>), between the host and the add-in. For an example that shows how to pass collections of complex data types, see [Walkthrough: Passing Collections Between Hosts and Add-Ins](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5).  
   
  The contract for this pipeline defines an object model of four arithmetic operations: add, subtract, multiply, and divide. The host provides the add-in with an equation to calculate, such as 2 + 2, and the add-in returns the result to the host.  
   
- Version 2 of the calculator add-in provides more calculating possibilities and demonstrates versioning. It is described in [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
+ Version 2 of the calculator add-in provides more calculating possibilities and demonstrates versioning. It is described in [Walkthrough: Enabling Backward Compatibility as Your Host Changes](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
   
 ## Prerequisites  
  You need the following to complete this walkthrough:  
@@ -58,7 +58,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
 2.  Name the solution `CalculatorV1`.  
   
 ## Creating the Pipeline Directory Structure  
- The add-in model requires the pipeline segment assemblies to be placed in a specified directory structure. For more information about the pipeline structure, see [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
+ The add-in model requires the pipeline segment assemblies to be placed in a specified directory structure. For more information about the pipeline structure, see [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
   
 #### To create the pipeline directory structure  
   
@@ -77,10 +77,10 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
       HostSideAdapters  
     ```  
   
-     It is not necessary to put the pipeline folder structure in your application folder; it is done here only for convenience. At the appropriate step, the walkthrough explains how to change the code if the pipeline folder structure is in a different location. See the discussion of pipeline directory requirements in [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
+     It is not necessary to put the pipeline folder structure in your application folder; it is done here only for convenience. At the appropriate step, the walkthrough explains how to change the code if the pipeline folder structure is in a different location. See the discussion of pipeline directory requirements in [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
   
     > [!NOTE]
-    >  The `CalcV2` folder is not used in this walkthrough; it is a placeholder for [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
+    >  The `CalcV2` folder is not used in this walkthrough; it is a placeholder for [Walkthrough: Enabling Backward Compatibility as Your Host Changes](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
   
 ## Creating the Contract and Views  
  The contract segment for this pipeline defines the `ICalc1Contract` interface, which defines four methods: `add`, `subtract`, `multiply`, and `divide`.  
@@ -189,7 +189,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
   
  In this pipeline, the add-in provides a service to the host and the types flow from the add-in to the host. Because no types flow from the host to the add-in, you do not have to include a view-to-contract adapter.  
   
- To implement lifetime management, use a <xref:System.AddIn.Pipeline.ContractHandle> object to attach a lifetime token to the contract. You must keep a reference to this handle in order for lifetime management to work. After the token is applied, no additional programming is required because the add-in system can dispose of objects when they are no longer being used and make them available for garbage collection. For more information, see [Lifetime Management](http://msdn.microsoft.com/library/57a9c87e-394c-4fef-89f2-aa4223a2aeb5).  
+ To implement lifetime management, use a <xref:System.AddIn.Pipeline.ContractHandle> object to attach a lifetime token to the contract. You must keep a reference to this handle in order for lifetime management to work. After the token is applied, no additional programming is required because the add-in system can dispose of objects when they are no longer being used and make them available for garbage collection. For more information, see [Lifetime Management](https://msdn.microsoft.com/library/57a9c87e-394c-4fef-89f2-aa4223a2aeb5).  
   
 #### To create the host-side adapter  
   
@@ -324,7 +324,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
     |Calc1HVA|MyApp|  
   
     > [!NOTE]
-    >  If you decided to put your pipeline folder structure in a location other than your application folder, you must modify the paths shown in the table accordingly. See the discussion of pipeline directory requirements in [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
+    >  If you decided to put your pipeline folder structure in a location other than your application folder, you must modify the paths shown in the table accordingly. See the discussion of pipeline directory requirements in [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
   
 2.  Build the Visual Studio solution.  
   
@@ -333,7 +333,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
     > [!NOTE]
     >  If you did not change **Copy Local** to **False** for the `Calc1AddInView` project reference in the `AddInCalcV1` project, loader context problems will prevent the add-in from being located.  
   
-     For information about deploying to the pipeline, see [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
+     For information about deploying to the pipeline, see [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5).  
   
 ## Running the Host Application  
  You are now ready to run the host and interact with the add-in.  
@@ -349,8 +349,8 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
 4.  Type **exit** and press the **Enter** key to close the application.  
   
 ## See Also  
- [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
- [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
- [Pipeline Development Requirements](http://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
- [Contracts, Views, and Adapters](http://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c)  
+ [Walkthrough: Enabling Backward Compatibility as Your Host Changes](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+ [Walkthrough: Passing Collections Between Hosts and Add-Ins](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
+ [Pipeline Development Requirements](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
+ [Contracts, Views, and Adapters](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c)  
  [Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)

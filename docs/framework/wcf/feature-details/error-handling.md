@@ -16,7 +16,7 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
   
  Application blocks aim to incorporate commonly used best practices and provide a common approach for exception handling throughout your application. On the other hand, custom error handlers and fault contracts developed on one’s own can also be very useful. For instance, custom error handlers provide an excellent opportunity to automatically promote all exceptions to FaultExceptions and also to add logging capabilities to your application.  
   
- For more information, please see [Microsoft Enterprise Library](http://msdn.microsoft.com/library/ff632023.aspx).  
+ For more information, please see [Microsoft Enterprise Library](https://msdn.microsoft.com/library/ff632023.aspx).  
   
 ### Dealing with Expected Exceptions  
  The proper course of action is to catch expected exceptions in every operation or relevant extensibility point, decide whether they can be recovered from, and return the proper custom fault in a FaultException\<T>  
@@ -24,7 +24,7 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
 ### Dealing with Unexpected Exceptions using an IErrorHandler  
  To deal with unexpected exceptions, the recommended course of action is to "hook" an IErrorHandler. Error handlers only catch exceptions at the WCF runtime level (the "service model" layer), not at the channel layer. The only way to hook an IErrorHandler at the channel level is to create a custom channel, which is not recommended in most scenarios.  
   
- An "unexpected exception" is generally neither an irrecoverable exception nor a processing exception; it is, instead, an unexpected user exception. An irrecoverable exception (such as an out-of-memory exception) – one generally handled by the [Service Model Exception Handler](http://msdn.microsoft.com/library/system.servicemodel.dispatcher.exceptionhandler.aspx) automatically – cannot generally be handled gracefully, and the only reason to handle such an exception at all may be do additional logging or to return a standard exception to the client. A processing exception occurs in the processing of the message – for example, at the serialization, encoder, or formatter level – generally cannot be handled at an IErrorHandler, because it is generally either too early or too late for the error handler to intervene by the time these exceptions occur. Similarly, transport exceptions cannot be handled at an IErrorHandler.  
+ An "unexpected exception" is generally neither an irrecoverable exception nor a processing exception; it is, instead, an unexpected user exception. An irrecoverable exception (such as an out-of-memory exception) – one generally handled by the [Service Model Exception Handler](https://msdn.microsoft.com/library/system.servicemodel.dispatcher.exceptionhandler.aspx) automatically – cannot generally be handled gracefully, and the only reason to handle such an exception at all may be do additional logging or to return a standard exception to the client. A processing exception occurs in the processing of the message – for example, at the serialization, encoder, or formatter level – generally cannot be handled at an IErrorHandler, because it is generally either too early or too late for the error handler to intervene by the time these exceptions occur. Similarly, transport exceptions cannot be handled at an IErrorHandler.  
   
  With an IErrorHandler, you can explicitly control the behavior of your application when an exception is thrown. You may:  
   

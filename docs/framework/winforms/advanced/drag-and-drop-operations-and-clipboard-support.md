@@ -36,4 +36,4 @@ You can enable user drag-and-drop operations within a Windows-based application 
  Describes the intricacies of the method that is central to beginning a drag operation.  
   
  <xref:System.Windows.Forms.Clipboard>  
- Also see [How to: Send Data to the Active MDI Child](http://msdn.microsoft.com/library/y0hkh2c8\(v=vs.110\)).
+ Also see [How to: Send Data to the Active MDI Child](https://msdn.microsoft.com/library/y0hkh2c8\(v=vs.110\)).

@@ -94,4 +94,4 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
  [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)  
  [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)  
  [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+ [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)

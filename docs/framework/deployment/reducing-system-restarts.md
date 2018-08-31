@@ -10,7 +10,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Reducing System Restarts During .NET Framework 4.5 Installations
-The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installer uses the [Restart Manager](http://go.microsoft.com/fwlink/?LinkId=231425) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md).  
+The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installer uses the [Restart Manager](https://go.microsoft.com/fwlink/?LinkId=231425) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md).  
   
 ## Reasons for a Restart  
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installation requires a system restart if a .NET Framework 4 app is in use during the installation. This is because the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] replaces .NET Framework 4 files and requires those files to be available during installation. In many cases, the restart can be prevented by preemptively detecting and closing.NET Framework 4 apps that are in use. However, some system apps should not be closed. In these cases, a restart cannot be avoided.  

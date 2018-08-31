@@ -346,6 +346,7 @@
 ### [F# Collection Types](fsharp/language-reference/fsharp-collection-types.md)
 ### [Lists](fsharp/language-reference/lists.md)
 ### [Options](fsharp/language-reference/options.md)
+### [Value Options](fsharp/language-reference/value-options.md)
 ### [Results](fsharp/language-reference/results.md)
 ### [Sequences](fsharp/language-reference/sequences.md)
 ### [Arrays](fsharp/language-reference/arrays.md)
@@ -416,7 +417,6 @@
 ### [Source Line, File, and Path Identifiers](fsharp/language-reference/source-line-file-path-identifiers.md)
 ### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
-### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
 
 ## [F# style guide](fsharp/style-guide/index.md)
 ### [F# code formatting guidelines](fsharp/style-guide/formatting.md)

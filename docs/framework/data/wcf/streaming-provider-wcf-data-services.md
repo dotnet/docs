@@ -32,7 +32,7 @@ A data service can expose large object binary data. This binary data might repre
   
 5.  Enable access to binary resources on the server or in a data source.  
   
- The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](http://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](http://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.  
+ The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](https://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.  
   
 ## Defining a Media Link Entry in the Data Model  
  The data source provider determines the way that an entity is defined as a media link entry in the data model.  
@@ -44,7 +44,7 @@ A data service can expose large object binary data. This binary data might repre
   
  You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.  
   
- For an example of a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](http://go.microsoft.com/fwlink/?LinkID=198989).  
+ For an example of a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989).  
   
  **Reflection Provider**  
  To indicate that an entity is a media link entry, add the <xref:System.Data.Services.Common.HasStreamAttribute> to the class that defines the entity type in the reflection provider.  
@@ -83,7 +83,7 @@ A data service can expose large object binary data. This binary data might repre
   
  For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
- By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) in the `<system.web />` configuration section, as shown in the following example:  
+ By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) in the `<system.web />` configuration section, as shown in the following example:  
   
   
   
@@ -113,7 +113,7 @@ A data service can expose large object binary data. This binary data might repre
   
 -   When you implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>, or <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> methods, you must use the eTag and Content-Type values that are supplied as method parameters. Do not set eTag or Content-Type headers in your <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider implementation.  
   
--   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](http://msdn.microsoft.com/library/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+-   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://msdn.microsoft.com/library/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
 <a name="versioning"></a>   
 ## Versioning Requirements  

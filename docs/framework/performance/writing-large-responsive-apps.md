@@ -32,7 +32,7 @@ This article provides tips for improving the performance of large .NET Framework
  You should set performance goals for key customer experiences or scenarios in your app and write tests to measure performance.  Investigate failing tests by applying the scientific method: use profiles to guide you, hypothesize what the issue might be, and test your hypothesis with an experiment or code change.  Establish baseline performance measurements over time with regular testing, so you can isolate changes that cause regressions in performance.  By approaching performance work in a rigorous way, you’ll avoid wasting time with code updates you don’t need.  
   
 ### Fact 3: Good tools make all the difference  
- Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks.  Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone Analysis Tool](http://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f), and [PerfView](http://www.microsoft.com/download/details.aspx?id=28567).  
+ Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks.  Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone Analysis Tool](https://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f), and [PerfView](https://www.microsoft.com/download/details.aspx?id=28567).  
   
  PerfView is a free and amazingly powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory.  You can capture performance-related [Event Tracing for Windows](../../../docs/framework/wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information.  PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool (such as the [PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial) on Channel 9).  
   
@@ -275,7 +275,7 @@ Language-Integrated Query (LINQ), in conjunction with lambda expressions, is an 
   
  **Example 5: Lambdas, List\<T>, and IEnumerable\<T>**  
   
- This example uses [LINQ and functional style code](http://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx) to find a symbol in the compiler’s model, given a name string:  
+ This example uses [LINQ and functional style code](https://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx) to find a symbol in the compiler’s model, given a name string:  
   
 ```csharp  
 class Symbol {  
@@ -299,7 +299,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
+ In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -356,7 +356,7 @@ public Symbol FindMatchingSymbol(string name)
  This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations.  There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List%601> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing.  The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework.  This new and more efficient version preserves those qualities without adding any complex code to maintain.  
   
 ### Async method caching  
- The next example shows a common problem when you try to use cached results in an [async](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) method.  
+ The next example shows a common problem when you try to use cached results in an [async](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) method.  
   
  **Example 6: caching in async methods**  
   
@@ -459,9 +459,9 @@ class Compilation { /*...*/
  [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
  [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
  [Performance](../../../docs/framework/performance/index.md)  
- [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)  
- [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)  
- [Find Application Bottlenecks with Visual Studio Profiler](http://msdn.microsoft.com/magazine/cc337887.aspx)  
+ [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)  
+ [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
+ [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
  [Channel 9 PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial)  
- [High-level Performance Tips](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
+ [High-level Performance Tips](https://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
  [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

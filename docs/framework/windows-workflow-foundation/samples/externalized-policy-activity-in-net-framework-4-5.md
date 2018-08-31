@@ -5,7 +5,7 @@ ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
 ---
 # Externalized Policy Activity in .NET Framework 4.5
 
-This sample demonstrates how the ExternalizedPolicy4 activity allows executing existing [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](http://go.microsoft.com/fwlink/?LinkId=166079). For more information about migrating rules to [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], please read the migration guidance at [Migration Guidance](../../../../docs/framework/windows-workflow-foundation/migration-guidance.md).
+This sample demonstrates how the ExternalizedPolicy4 activity allows executing existing [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](https://go.microsoft.com/fwlink/?LinkId=166079). For more information about migrating rules to [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], please read the migration guidance at [Migration Guidance](../../../../docs/framework/windows-workflow-foundation/migration-guidance.md).
 
 ## Projects in this Sample
 
@@ -81,7 +81,7 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.
 >
 > This sample is located in the following directory:
 >

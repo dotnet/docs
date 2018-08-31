@@ -43,7 +43,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
    ```console
    dotnet watch -- --verbose build
    ```
-  
+
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
   
    For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
@@ -82,7 +82,7 @@ In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` com
 
 ## Roll forward
 
-All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system. 
+All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system.
 
 Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at runtime, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
@@ -227,6 +227,6 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 ## See also
 
-[What's new in .NET Core](index.md)  
-[New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
-[What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)
+* [What's new in .NET Core](index.md)  
+* [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
+* [What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

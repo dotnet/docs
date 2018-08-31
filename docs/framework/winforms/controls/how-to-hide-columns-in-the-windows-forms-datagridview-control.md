@@ -15,7 +15,7 @@ Sometimes you will want to display only some of the columns that are available i
   
  In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of a column determines whether that column is displayed.  
   
- There is support for this task in Visual Studio.  Also see [How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer](http://msdn.microsoft.com/library/kaswfbes\(v=vs.110\)).  
+ There is support for this task in Visual Studio.  Also see [How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer](https://msdn.microsoft.com/library/kaswfbes\(v=vs.110\)).  
   
 ### To hide a column programmatically  
   

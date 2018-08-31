@@ -89,7 +89,7 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  ![Brush RelativeTransform and Transform settings](../../../../docs/framework/wpf/graphics-multimedia/media/wcpsdk-graphicsmm-transformandrelativetransform.png "wcpsdk_graphicsmm_transformandrelativetransform")  
   
- This example is part of a larger sample. For the complete sample, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see the  [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md).  
+ This example is part of a larger sample. For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see the  [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md).  
   
 ## See Also  
  <xref:System.Windows.Media.Brush.Transform%2A>  

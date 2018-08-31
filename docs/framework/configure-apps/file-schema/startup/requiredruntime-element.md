@@ -80,4 +80,4 @@ safemode="true|false"/>
 ## See Also  
  [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<PaveOver> Specifying Which Runtime Version to Use](http://msdn.microsoft.com/library/c376208d-980d-42b4-865b-fbe0d9cc97c2)
+ [\<PaveOver> Specifying Which Runtime Version to Use](https://msdn.microsoft.com/library/c376208d-980d-42b4-865b-fbe0d9cc97c2)

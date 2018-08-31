@@ -30,7 +30,7 @@ This topic provides information about the way in which LINQ queries are composed
 http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight gt 30  
 ```  
   
- For more general information about LINQ, see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+ For more general information about LINQ, see [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
  LINQ enables you to compose queries by using both the language-specific declarative query syntax, shown in the previous example, as well as a set of query methods known as standard query operators. An equivalent query to the previous example can be composed by using only the method-based syntax, as shown the following example:  
   
@@ -210,4 +210,4 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
  [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
  [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md)  
  [Object Materialization](../../../../docs/framework/data/wcf/object-materialization-wcf-data-services.md)  
- [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkID=185564)
+ [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkID=185564)

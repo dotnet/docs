@@ -13,7 +13,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
 > [!NOTE]
 >  In order to inherit from a form with the **Inheritance Picker** dialog box, the project containing that form must have been built into an executable file or DLL. To build the project, choose **Build Solution** from the **Build** menu.  
 >   
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To create a Windows Form inherited from an existing form by using the Inheritance Picker  
   

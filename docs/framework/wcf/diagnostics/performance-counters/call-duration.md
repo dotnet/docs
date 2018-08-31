@@ -13,4 +13,4 @@ Counter Name: Call Duration
 >  When used on an asynchronous WCF service the Call Duration counter will always return -1.  
   
 ## See Also  
- [PERF_AVERAGE_TIMER](http://go.microsoft.com/fwlink/?LinkId=95015)
+ [PERF_AVERAGE_TIMER](https://go.microsoft.com/fwlink/?LinkId=95015)

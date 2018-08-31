@@ -454,7 +454,7 @@ The following provides a brief overview of the different sections of the batch f
 
 1. Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
 
-  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
 
 ### To run the sample across computers
 
@@ -494,7 +494,7 @@ The following provides a brief overview of the different sections of the batch f
 
 14. On the client computer, launch Client.exe from a command prompt window.
 
-   If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+   If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
 
 ### Clean up after the sample
 

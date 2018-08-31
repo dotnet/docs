@@ -8,7 +8,7 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
 ---
-# Get started with C# #
+# Get started with C\#
 
 This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. You can build either a simple Hello World application or, if you have Visual Studio 2017, a simple class library that can be used by other applications.
 
@@ -57,4 +57,5 @@ The following topics are available:
     Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 
 ## See also
- [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+
+* [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

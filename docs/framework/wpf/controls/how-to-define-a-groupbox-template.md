@@ -16,4 +16,4 @@ This example shows how to create a template for a <xref:System.Windows.Controls.
   
 ## See Also  
  <xref:System.Windows.Controls.GroupBox>  
- [GroupBox How-to Topics](http://msdn.microsoft.com/library/7692e155-a4c6-428c-b7e0-64b3740daca7)
+ [GroupBox How-to Topics](https://msdn.microsoft.com/library/7692e155-a4c6-428c-b7e0-64b3740daca7)

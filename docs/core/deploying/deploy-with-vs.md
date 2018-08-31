@@ -31,7 +31,8 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    Open the *Program.cs* file in the editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](../../../samples/snippets/core/deploying/vb/deployment-example.vb)]
 
 1. Create a Debug build of your app.
 
@@ -81,13 +82,28 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
    Open the *Program.cs* file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](../../../samples/snippets/core/deploying/vb/deployment-example.vb)]
+
+1. Determine whether you want to use globalization invariant mode.
+
+   Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
+
+   To enable invariant mode, right-click on your project (not the solution) in **Solution Explorer**, and select **Edit SCD.csproj**. Then add the following:
+
+   ```xml
+   <ItemGroup>
+     <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+   </ItemGroup>
+   ```
 
 1. Create a Debug build of your application.
 
    Select **Build** > **Build Solution**. You can also compile and run the Debug build of your application by selecting **Debug** > **Start Debugging**. This debugging step lets you identify problems with your application when it's running on your host platform. You still will have to test it on each of your target platforms.
 
-You can now begin the steps needed to create your self-contained deployment:
+   If you've enabled globalization invariant mode, be particularly sure to test whether the absence of culture-sensitive data is suitable for your application.
+
+Once you've finished debugging, you can publish your self-contained deployment:
 
 # [Visual Studio 15.6 and earlier](#tab/vs156)
 
@@ -147,15 +163,28 @@ To publish your app from Visual Studio, do the following:
 
 1. Select the location where Visual Studio publishes your application.
 
-   1. Right-click on your project (not the solution) In **Solution Explorer**, and select **Edit SCD.csproj**.
+   1. Right-click on your project (not the solution) In **Solution Explorer**, and select **Publish**.
    
-   1. In the **Pick a Publish Target** dialog box, select **Publish** to accept the defaults. This will publish the individual platform versions of your application to separate directories of the 
+   1. In the **Pick a Publish Target** dialog box, select **Publish** to accept the defaults. This will publish the framework dependent deployment of your application to separate subdirectories of the *\<project-directory>*\bin\Release\netcoreapp2.1\publish\ directory.
 
-1. Define the platforms that your app will target.
+1. Indicate that you are publishing a self-contained deployment and define a platform that your app will target.
 
-   1. Right-click on your project (not the solution) In **Solution Explorer**, and select **Edit SCD.csproj**.
+   1. In the **Publish** dialog, select the **Configure** link to open the **Profile Settings** dialog.
 
-   1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
+   1. Select **Self-contained** in the **Deployment Mode** list box.
+
+   1. In the **Target Runtime** list box, select one of the platforms that your application targets.
+
+   1. Select **Save** to accept your changes and close the dialog.
+
+1. Define any additional target platforms that your application targets.
+
+   If your application targets multiple platforms, you can define a separate profile for each platform. You can also define multiple target platforms in a single profile by doing the following:
+
+   1. In **Solution Explorer**, select the **Show All Files** icon on the toolbar to display all files in the project.
+
+   2. Expand the **Properties** folder in **Solution Explorer** to display all  
+   1. sselecCreate a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
    For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 

@@ -1,4 +1,4 @@
-﻿<Type Name="PagerSettings" FullName="System.Web.UI.WebControls.PagerSettings">
+<Type Name="PagerSettings" FullName="System.Web.UI.WebControls.PagerSettings">
   <TypeSignature Language="C#" Value="public sealed class PagerSettings : System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PagerSettings extends System.Object implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerSettings" />
@@ -864,7 +864,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.PagerSettings.PropertyChanged> event is raised each time a property of a <xref:System.Web.UI.WebControls.PagerSettings> object changes values. The <xref:System.Web.UI.WebControls.PagerSettings.PropertyChanged> event commonly is used by data-bound controls that support pagination to rebind the data to the control when the pager settings change.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

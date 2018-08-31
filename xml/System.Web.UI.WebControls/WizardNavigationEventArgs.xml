@@ -1,4 +1,4 @@
-﻿<Type Name="WizardNavigationEventArgs" FullName="System.Web.UI.WebControls.WizardNavigationEventArgs">
+<Type Name="WizardNavigationEventArgs" FullName="System.Web.UI.WebControls.WizardNavigationEventArgs">
   <TypeSignature Language="C#" Value="public class WizardNavigationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WizardNavigationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardNavigationEventArgs" />
@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WizardNavigationEventArgs> class provides the data needed for the various navigation events in a <xref:System.Web.UI.WebControls.Wizard> control. For example, the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event of a <xref:System.Web.UI.WebControls.Wizard> control uses the <xref:System.Web.UI.WebControls.WizardNavigationEventArgs> object to indicate the <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex%2A> and <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex%2A> for the control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
     </remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectDataSource" FullName="System.Web.UI.WebControls.ObjectDataSource">
+<Type Name="ObjectDataSource" FullName="System.Web.UI.WebControls.ObjectDataSource">
   <TypeSignature Language="C#" Value="public class ObjectDataSource : System.Web.UI.DataSourceControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSource extends System.Web.UI.DataSourceControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSource" />
@@ -1053,7 +1053,7 @@
   
  You can use the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object to return the number of rows that were deleted from the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> method. To do this, set the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows%2A> property. If you return the number of deleted rows from the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property, the value is available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1253,7 +1253,7 @@
   
  You can cancel the delete operation by setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1507,7 +1507,7 @@
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1732,7 +1732,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserted> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1766,7 +1766,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting> event to perform additional initialization that is specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the insert operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2085,7 +2085,7 @@
   
  If the method that is identified to perform the data operation is `static` (`Shared` in Visual Basic), the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> and <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated> events are never raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2119,7 +2119,7 @@
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically calls the default constructor of a business object to create an instance of it using reflection. Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to explicitly call another constructor, and set the instance of the object that results to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2175,7 +2175,7 @@
   
  When you use a <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class, you must cancel the disposing of the data-context class in an handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2283,7 +2283,7 @@ public void ExampleObjectDisposing(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2492,7 +2492,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after a <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2548,7 +2548,7 @@ public void ExampleObjectDisposing(object sender,
   
  This event can be fired twice for a single call to the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method, if the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set. The <xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.ExecutingSelectCount%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs> object is used to determine if select was called to retrieve data or retrieve the count.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -3046,7 +3046,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Updated> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -3235,7 +3235,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> event to perform additional initialization that is specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the update operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

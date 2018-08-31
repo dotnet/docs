@@ -1,4 +1,4 @@
-﻿<Type Name="IButtonControl" FullName="System.Web.UI.WebControls.IButtonControl">
+<Type Name="IButtonControl" FullName="System.Web.UI.WebControls.IButtonControl">
   <TypeSignature Language="C#" Value="public interface IButtonControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IButtonControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IButtonControl" />
@@ -82,7 +82,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.IButtonControl.Click> event is raised when the button control is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -113,7 +113,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.IButtonControl.Command> event is raised when the button control is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

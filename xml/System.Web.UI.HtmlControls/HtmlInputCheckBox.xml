@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlInputCheckBox" FullName="System.Web.UI.HtmlControls.HtmlInputCheckBox">
+<Type Name="HtmlInputCheckBox" FullName="System.Web.UI.HtmlControls.HtmlInputCheckBox">
   <TypeSignature Language="C#" Value="public class HtmlInputCheckBox : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputCheckBox extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
@@ -366,7 +366,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

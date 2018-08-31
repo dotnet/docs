@@ -1,4 +1,4 @@
-﻿<Type Name="GridColumnStylesCollection" FullName="System.Windows.Forms.GridColumnStylesCollection">
+<Type Name="GridColumnStylesCollection" FullName="System.Windows.Forms.GridColumnStylesCollection">
   <TypeSignature Language="C#" Value="public class GridColumnStylesCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridColumnStylesCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridColumnStylesCollection" />
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

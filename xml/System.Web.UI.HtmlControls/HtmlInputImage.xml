@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlInputImage" FullName="System.Web.UI.HtmlControls.HtmlInputImage">
+<Type Name="HtmlInputImage" FullName="System.Web.UI.HtmlControls.HtmlInputImage">
   <TypeSignature Language="C#" Value="public class HtmlInputImage : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputImage extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputImage" />
@@ -613,7 +613,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event is raised when the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

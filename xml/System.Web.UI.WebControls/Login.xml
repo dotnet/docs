@@ -1,4 +1,4 @@
-﻿<Type Name="Login" FullName="System.Web.UI.WebControls.Login">
+<Type Name="Login" FullName="System.Web.UI.WebControls.Login">
   <TypeSignature Language="C#" Value="public class Login : System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Login extends System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Login" />
@@ -1931,7 +1931,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.LoginError> event is raised when the credentials entered by the user are invalid. You can use the <xref:System.Web.UI.WebControls.Login.LoginError> event to redirect the user to a custom error page, to offer additional help, or to log failed login attempts.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

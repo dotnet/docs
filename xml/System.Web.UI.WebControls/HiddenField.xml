@@ -1,4 +1,4 @@
-﻿<Type Name="HiddenField" FullName="System.Web.UI.WebControls.HiddenField">
+<Type Name="HiddenField" FullName="System.Web.UI.WebControls.HiddenField">
   <TypeSignature Language="C#" Value="public class HiddenField : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HiddenField extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HiddenField" />
@@ -633,7 +633,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

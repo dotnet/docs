@@ -1,4 +1,4 @@
-﻿<Type Name="FormView" FullName="System.Web.UI.WebControls.FormView">
+<Type Name="FormView" FullName="System.Web.UI.WebControls.FormView">
   <TypeSignature Language="C#" Value="public class FormView : System.Web.UI.WebControls.CompositeDataBoundControl, System.Web.UI.IDataItemContainer, System.Web.UI.IPostBackEventHandler, System.Web.UI.WebControls.IDataBoundItemControl, System.Web.UI.WebControls.IPostBackContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormView extends System.Web.UI.WebControls.CompositeDataBoundControl implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.WebControls.IDataBoundControl, class System.Web.UI.WebControls.IDataBoundItemControl, class System.Web.UI.WebControls.IPostBackContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormView" />
@@ -3086,7 +3086,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the control that raised the event by using the <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3135,7 +3135,7 @@
   
  You can access the header, footer, and pager rows in the <xref:System.Web.UI.WebControls.FormView> control by using the <xref:System.Web.UI.WebControls.FormView.HeaderRow%2A>, <xref:System.Web.UI.WebControls.FormView.FooterRow%2A>, <xref:System.Web.UI.WebControls.FormView.TopPagerRow%2A>, or <xref:System.Web.UI.WebControls.FormView.BottomPagerRow%2A> properties, respectively. To access the data row, use the <xref:System.Web.UI.WebControls.FormView.Row%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3183,7 +3183,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs> object is passed to the event-handling method, which allows you to determine the number of records affected and any exceptions that might have occurred. To determine the number of records affected by the delete operation, use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.AffectedRows%2A> property. Use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Exception%2A> property to determine whether any exceptions occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.ExceptionHandled%2A> property. If you want to access the name/value pairs of the key fields and non-key fields of the deleted record, use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3231,7 +3231,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> object is passed to the event-handling method, which allows you to determine the index of the record being deleted and to indicate that the delete operation should be canceled. To determine the index of a record, use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A> property. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also access the key fields and non-key fields by using the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3280,7 +3280,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an insert operation. To keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode, set the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3328,7 +3328,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the insert operation should be canceled. The command argument value corresponds to the `CommandArgument` property of the Insert button. When the `CommandArgument` property of the Insert button is set, use the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property to determine the value of the command argument. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.Values%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3462,7 +3462,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an update operation. To keep the <xref:System.Web.UI.WebControls.FormView> control in edit mode, set the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3512,7 +3512,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the update operation should be canceled. The command argument value corresponds to the `CommandArgument` property of the Update button. When the `CommandArgument` property of the Update button is set, use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument%2A> property to determine the value of the command argument. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the new values entered by the user by using the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> properties. The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property contains the key fields, while the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property contains the non-key fields. If you need to access the original non-key field values, use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3633,7 +3633,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.ModeChanged> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but after the mode actually changes. This allows you to provide an event-handling method that performs a custom routine, such as synchronizing the <xref:System.Web.UI.WebControls.FormView> control with another control, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3676,7 +3676,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewModeEventArgs> object is passed to the event-handling method, which allows you to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is switching, to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit operation, or to indicate that an insert operation should be canceled. To determine the new mode, use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property. You can also use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to switch to an alternate mode by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether the user canceled an edit operation. To cancel an insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4470,7 +4470,7 @@
   
  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.FormView> control. This event is often used to synchronize a <xref:System.Web.UI.WebControls.FormView> control with a <xref:System.Web.UI.WebControls.GridView> control or to set the behavior of the <xref:System.Web.UI.WebControls.FormView> control after a paging operation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4518,7 +4518,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

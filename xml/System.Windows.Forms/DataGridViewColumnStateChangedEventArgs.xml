@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewColumnStateChangedEventArgs" FullName="System.Windows.Forms.DataGridViewColumnStateChangedEventArgs">
+<Type Name="DataGridViewColumnStateChangedEventArgs" FullName="System.Windows.Forms.DataGridViewColumnStateChangedEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewColumnStateChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumnStateChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" />
@@ -34,7 +34,7 @@
   
 -   <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A>  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

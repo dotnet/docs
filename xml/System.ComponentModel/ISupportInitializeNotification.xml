@@ -1,4 +1,4 @@
-﻿<Type Name="ISupportInitializeNotification" FullName="System.ComponentModel.ISupportInitializeNotification">
+<Type Name="ISupportInitializeNotification" FullName="System.ComponentModel.ISupportInitializeNotification">
   <TypeSignature Language="C#" Value="public interface ISupportInitializeNotification : System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISupportInitializeNotification implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitializeNotification" />
@@ -73,7 +73,7 @@
 ## Remarks  
  This event typically occurs during the call to the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method for the component, but it may occur later if the component has dependent controls that implement the <xref:System.ComponentModel.ISupportInitializeNotification> interface and the dependent controls have not completed initialization.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

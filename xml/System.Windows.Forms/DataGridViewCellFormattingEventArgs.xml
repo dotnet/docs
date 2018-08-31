@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellFormattingEventArgs" FullName="System.Windows.Forms.DataGridViewCellFormattingEventArgs">
+<Type Name="DataGridViewCellFormattingEventArgs" FullName="System.Windows.Forms.DataGridViewCellFormattingEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewCellFormattingEventArgs : System.Windows.Forms.ConvertEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellFormattingEventArgs extends System.Windows.Forms.ConvertEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
@@ -36,7 +36,7 @@
   
  To customize the conversion of a formatted, user-specified value into an actual cell value, handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

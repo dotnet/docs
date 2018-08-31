@@ -1,4 +1,4 @@
-﻿<Type Name="LoginStatus" FullName="System.Web.UI.WebControls.LoginStatus">
+<Type Name="LoginStatus" FullName="System.Web.UI.WebControls.LoginStatus">
   <TypeSignature Language="C#" Value="public class LoginStatus : System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginStatus extends System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginStatus" />
@@ -590,7 +590,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.LoginStatus.LoggedOut> event to provide additional processing, such as closing database connections or cleaning up per-user cached data, after the user has logged out of a Web site.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67). Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md). Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.LoginStatus.OnLoggedOut%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="RepeaterCommandEventArgs" FullName="System.Web.UI.WebControls.RepeaterCommandEventArgs">
+<Type Name="RepeaterCommandEventArgs" FullName="System.Web.UI.WebControls.RepeaterCommandEventArgs">
   <TypeSignature Language="C#" Value="public class RepeaterCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RepeaterCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs>, see the <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs.%23ctor%2A> constructor. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs>, see the <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs.%23ctor%2A> constructor. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

@@ -1,4 +1,4 @@
-﻿<Type Name="ActivityDesigner" FullName="System.Workflow.ComponentModel.Design.ActivityDesigner">
+<Type Name="ActivityDesigner" FullName="System.Workflow.ComponentModel.Design.ActivityDesigner">
   <TypeSignature Language="C#" Value="public class ActivityDesigner : IDisposable, System.ComponentModel.Design.IDesignerFilter, System.Drawing.Design.IToolboxUser, System.Workflow.ComponentModel.Design.IPersistUIState, System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityDesigner extends System.Object implements class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IDesignerFilter, class System.ComponentModel.Design.IRootDesigner, class System.Drawing.Design.IToolboxUser, class System.IDisposable, class System.Workflow.ComponentModel.Design.IPersistUIState, class System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />
@@ -1477,7 +1477,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1531,7 +1531,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1588,7 +1588,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1694,7 +1694,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1932,7 +1932,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1989,7 +1989,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2041,7 +2041,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2096,7 +2096,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2151,7 +2151,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2206,7 +2206,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2258,7 +2258,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2313,7 +2313,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2368,7 +2368,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2484,7 +2484,7 @@
   
  If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

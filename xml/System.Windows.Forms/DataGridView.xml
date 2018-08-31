@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridView" FullName="System.Windows.Forms.DataGridView">
+<Type Name="DataGridView" FullName="System.Windows.Forms.DataGridView">
   <TypeSignature Language="C#" Value="public class DataGridView : System.Windows.Forms.Control, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridView extends System.Windows.Forms.Control implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView" />
@@ -500,7 +500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -581,7 +581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -665,7 +665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -751,7 +751,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -839,7 +839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -921,7 +921,7 @@
 ## Remarks  
  This event occurs when any property of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property is set to a new value or when the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1079,7 +1079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2261,7 +2261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2365,7 +2365,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2465,7 +2465,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2562,7 +2562,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.BackColorChanged> event is raised if the <xref:System.Windows.Forms.DataGridView.BackColor%2A> property is changed programmatically or by user interaction.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2633,7 +2633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2722,7 +2722,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2803,7 +2803,7 @@
 ## Remarks  
  Although this event occurs as described, the <xref:System.Windows.Forms.DataGridView.BackgroundImageLayout%2A> property is not relevant for this control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2944,7 +2944,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3023,7 +3023,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.DataGridView> is in virtual mode, changes are committed to the data cache at the cell level by default. The <xref:System.Windows.Forms.DataGridView.CancelRowEdit> event can be used when implementing row-level transactions.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3083,7 +3083,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3169,7 +3169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3215,7 +3215,7 @@
   
  For clicks in a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, this event occurs before the check box changes value, so if you do not want to calculate the expected value based on the current value, you will typically handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType> event instead. Because that event occurs only when the user-specified value is committed, which typically occurs when focus leaves the cell, you must also handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=nameWithType> event. In that handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=nameWithType> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3260,7 +3260,7 @@
   
  For clicks in a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, this event occurs before the check box changes value, so if you do not want to calculate the expected value based on the current value, you will typically handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType> event instead. Because that event occurs only when the user-specified value is committed, which typically occurs when focus leaves the cell, you must also handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=nameWithType> event. In that handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=nameWithType> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3297,7 +3297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3343,7 +3343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3401,7 +3401,7 @@
   
  You can also specify shortcut menus for individual rows rather than individual cells by setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property or handling the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event. The cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property setting overrides the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting, and the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event overrides both the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event and the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting. However, you can specify `null` for a cell shortcut menu to prevent a row shortcut menu from being overridden.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3446,7 +3446,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3484,7 +3484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3522,7 +3522,7 @@
 ## Remarks  
  This event may occur twice for a single click if the control does not have input focus and the clicked cell was not previously the current cell.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3558,7 +3558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3614,7 +3614,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3677,7 +3677,7 @@
   
  To customize the conversion of a formatted, user-specified value into an actual cell value, handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3732,7 +3732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3776,7 +3776,7 @@
   
  For clicks in a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, this event occurs before the check box changes value, so if you do not want to calculate the expected value based on the current value, you will typically handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event instead. Because that event occurs only when the user-specified value is committed, which typically occurs when focus leaves the cell, you must also handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event. In that handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3824,7 +3824,7 @@
 ## Remarks  
  This event occurs when the user double-clicks using any of the mouse buttons. Use the <xref:System.Windows.Forms.MouseEventArgs.Button%2A?displayProperty=nameWithType> property to determine which button was clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3864,7 +3864,7 @@
 ## Remarks  
  This event occurs when the user presses any of the mouse buttons. Use the <xref:System.Windows.Forms.MouseEventArgs.Button%2A?displayProperty=nameWithType> property to determine which button was clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3902,7 +3902,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3941,7 +3941,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3980,7 +3980,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4020,7 +4020,7 @@
 ## Remarks  
  This event occurs when the user releases any of the mouse buttons. Use the <xref:System.Windows.Forms.MouseEventArgs.Button%2A?displayProperty=nameWithType> property to determine which button was clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4062,7 +4062,7 @@
   
  When handling this event, you should access the cell through the parameters of the event handler, rather than access the cell directly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4118,7 +4118,7 @@
   
  To customize the conversion of a cell value into a formatted value for display, handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4172,7 +4172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4214,7 +4214,7 @@
 ## Remarks  
  This event occurs when any property of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by a <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property is set to a new value or when a <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4275,7 +4275,7 @@
   
  For row, column, and cell properties, the name of the *PropertyName*`Changed` event begins with "`Row`", "`Column`", or "`Cell`" (for example, <xref:System.Windows.Forms.DataGridView.RowDefaultCellStyleChanged>).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4317,7 +4317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4373,7 +4373,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4419,7 +4419,7 @@
 ## Remarks  
  Handling this event is useful for post-validation processing of the cell value.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4460,7 +4460,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.CellValidated> event to perform post-validation processing.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4508,7 +4508,7 @@
   
  Rows in the control are not automatically sorted when a cell value is changed. To sort the control when the user modifies a cell, call the <xref:System.Windows.Forms.DataGridView.Sort%2A> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4556,7 +4556,7 @@
   
  To add user-specified values to your custom data store, handle the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4610,7 +4610,7 @@
   
  For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4823,7 +4823,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4861,7 +4861,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4926,7 +4926,7 @@
   
  This property can be used with the <xref:System.Windows.Forms.DataGridView.RowCount%2A> property to create a simple <xref:System.Windows.Forms.DataGridView> for displaying and editing text.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5000,7 +5000,7 @@
 ## Remarks  
  This event occurs when any properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A> property for a column is set to a new value or when the <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A> property for a column is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5039,7 +5039,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5081,7 +5081,7 @@
   
  The column <xref:System.Windows.Forms.DataGridViewColumn.DividerWidth%2A> property does not extend the area in which a user can double-click. If the width of a divider has been increased through the use of this property, this event occurs when the user double-clicks the boundary between the divider and the adjacent column.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5119,7 +5119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5157,7 +5157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5195,7 +5195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5231,7 +5231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5326,7 +5326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5494,7 +5494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5595,7 +5595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5678,7 +5678,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5716,7 +5716,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5754,7 +5754,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5849,7 +5849,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5901,7 +5901,7 @@
   
 -   <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A>  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5943,7 +5943,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5981,7 +5981,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6297,7 +6297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6345,7 +6345,7 @@
   
  This event typically occurs when a cell has been edited but the change has not been committed to the data cache, or when an edit operation is canceled.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6420,7 +6420,7 @@
   
  Handling this event is useful, for example, to programmatically resize rows and columns based on content updates. For more information, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6465,7 +6465,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.DataError> event enables you to handle exceptions thrown in code that is called by the control during data processing operations.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridViewCellCancelEventArgs.ColumnIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellCancelEventArgs.RowIndex%2A> properties of the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs> object associated with this event normally indicate the cell in which the data error occurred. When the error occurs in an external data source, however, the data source may not provide the column in which the error occurred. In this case, the <xref:System.Windows.Forms.DataGridViewCellCancelEventArgs.ColumnIndex%2A> property typically indicates the column of the current cell at the time of the error.  
@@ -6558,7 +6558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6681,7 +6681,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6778,7 +6778,7 @@
 ## Remarks  
  This event occurs when any properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property are set to new values or when the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6853,7 +6853,7 @@
   
  In virtual mode, after this event occurs, the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event occurs for each cell in the new row so that you can store the default values in your custom data store. Then, the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event occurs for each cell in the new row, retrieving the values that you stored in the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event, which are then displayed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -7062,7 +7062,7 @@
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control hosts one editing control at a time, and reuses the editing control whenever the cell type does not change between edits. When attaching event-handlers to the editing control, you must therefore take precautions to avoid attaching the same handler multiple times. To avoid this problem, remove the handler from the event before you attach the handler to the event. This will prevent duplication if the handler is already attached to the event, but will have no effect otherwise. For more information, see the example code in the <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> class overview.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -7201,7 +7201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -7628,7 +7628,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -7732,7 +7732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -8039,7 +8039,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -8758,7 +8758,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -8841,7 +8841,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.DataGridView> is in virtual mode, this event allows a new entry to be created in the data store for the new row, and it also allows for the row to be populated with default values.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -14580,7 +14580,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.Padding%2A> property is not relevant for this control, although you can change its value and respond to such changes by handling this event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -15426,7 +15426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15533,7 +15533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15589,7 +15589,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15705,7 +15705,7 @@
 ## Remarks  
  This event occurs when any property of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A> property for a row is set to a new value or when the <xref:System.Windows.Forms.DataGridViewBand.DefaultCellStyle%2A> property for a row is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15754,7 +15754,7 @@
 ## Remarks  
  By default, this event sets the <xref:System.Windows.Forms.QuestionEventArgs.Response%2A?displayProperty=nameWithType> property to `true` if any cells in the current row have been modified. This causes the <xref:System.Windows.Forms.DataGridView.CancelRowEdit> event to occur when the user reverts edits to a row. Users can revert edits to a row by pressing ESC twice when a cell is in edit mode or once outside of edit mode. This event can be used for customizing commit scope in virtual mode by setting the <xref:System.Windows.Forms.QuestionEventArgs.Response%2A?displayProperty=nameWithType> property to the correct value depending on the chosen commit scope.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15795,7 +15795,7 @@
   
  The row <xref:System.Windows.Forms.DataGridViewColumn.DividerWidth%2A> property does not extend the area in which a user can double-click. If the height of a divider has been increased through the use of this property, this event occurs when the user double-clicks the boundary between the divider and the adjacent column.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15835,7 +15835,7 @@
 ## Remarks  
  The divider height is modified by setting the <xref:System.Windows.Forms.DataGridViewRow.DividerHeight%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15877,7 +15877,7 @@
   
  This event occurs before the <xref:System.Windows.Forms.DataGridView.CurrentRow%2A> property is updated. To retrieve the index of the newly-entered row, use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=nameWithType> property within the event handler.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15913,7 +15913,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -15969,7 +15969,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16015,7 +16015,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16053,7 +16053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16089,7 +16089,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16183,7 +16183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16415,7 +16415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16514,7 +16514,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16552,7 +16552,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16598,7 +16598,7 @@
 ## Remarks  
  This event is useful for preserving custom row heights after a sorting operation. This is necessary because sorting operations are normally handled by the data source, which does not keep track of the correspondence between rows of data and rows in the control. This event occurs only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property has been set or when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`. In the latter case, you provide your own data store and sorting operations. Handle the <xref:System.Windows.Forms.DataGridView.RowHeightInfoPushed> event to store updated height information when the user changes a row height. Use <xref:System.Windows.Forms.DataGridView.RowHeightInfoNeeded> to retrieve the stored height information when the control needs it.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16647,7 +16647,7 @@
 ## Remarks  
  This event is raised when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is set to `true` or the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set to a value other than `null`. This event is used to track and store row height information so that it can be restored after a sorting operation. To restore height information, handle the <xref:System.Windows.Forms.DataGridView.RowHeightInfoNeeded> event. Note that this event occurs only when the user changes the height of a row. If you change the height of a row programmatically, you must store the new height information at the same time.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16686,7 +16686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16722,7 +16722,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16774,7 +16774,7 @@
   
  You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16824,7 +16824,7 @@
   
  You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -16967,7 +16967,7 @@ if (rowToDelete > -1)
   
  In virtual mode, this event occurs before the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event and can be used to create new records in your data store that you can then populate in the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event handler.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17053,7 +17053,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event occurs when a property of the <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property is set to a new value or when the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property is set to a new <xref:System.Windows.Forms.DataGridViewCellStyle> with at least one property value different than the previous cell style object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17094,7 +17094,7 @@ if (rowToDelete > -1)
 ## Remarks  
  When rows are deleted from a <xref:System.Windows.Forms.DataGridView> control, the index numbers of subsequent rows are lowered to compensate.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17133,7 +17133,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17237,7 +17237,7 @@ if (rowToDelete > -1)
 ## Remarks  
  You can use this event during development and testing to help identify code that causes rows to change from a shared to an unshared state. This is useful when scaling the control to display large amounts of data.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17277,7 +17277,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event is analogous to the <xref:System.Windows.Forms.Control.Validated> event. Use this event to perform post-processing on a row of values.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17315,7 +17315,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event is analogous to the <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType> event. Use this event to perform validation on all the values of a row. If the row does not pass validation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true`. Canceling this event prevents the <xref:System.Windows.Forms.DataGridView.RowValidated>, <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Control.Validated?displayProperty=nameWithType> events from occurring, and also prevents the user from leaving the invalid row and prevents the row from being saved to an external data source in data bound mode.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17351,7 +17351,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -17609,7 +17609,7 @@ if (rowToDelete > -1)
   
  When you change the value of the <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property, the <xref:System.Windows.Forms.DataGridView.SelectionChanged> event occurs before the <xref:System.Windows.Forms.DataGridView.CurrentCellChanged> event. Any <xref:System.Windows.Forms.DataGridView.SelectionChanged> event handler accessing the <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property at this time will get its previous value.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -18211,7 +18211,7 @@ if (rowToDelete > -1)
   
  You can use this event to sort rows using the cell values in one column or in multiple columns. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> properties to compare cell values in the column specified in the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> property. Use the <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> and <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> properties to access values in other columns through the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -18254,7 +18254,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event does not occur when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is set to `true` and the control is sorted by an unbound column.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -18452,7 +18452,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event is not relevant to this control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -18895,7 +18895,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -18931,7 +18931,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -18971,7 +18971,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This event can be canceled to prevent a row deletion from being completed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlInputRadioButton" FullName="System.Web.UI.HtmlControls.HtmlInputRadioButton">
+<Type Name="HtmlInputRadioButton" FullName="System.Web.UI.HtmlControls.HtmlInputRadioButton">
   <TypeSignature Language="C#" Value="public class HtmlInputRadioButton : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputRadioButton extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
@@ -463,7 +463,7 @@ Caption Text<br>
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=nameWithType> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

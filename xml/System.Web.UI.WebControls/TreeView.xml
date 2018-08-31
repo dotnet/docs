@@ -1,4 +1,4 @@
-﻿<Type Name="TreeView" FullName="System.Web.UI.WebControls.TreeView">
+<Type Name="TreeView" FullName="System.Web.UI.WebControls.TreeView">
   <TypeSignature Language="C#" Value="public class TreeView : System.Web.UI.WebControls.HierarchicalDataBoundControl, System.Web.UI.ICallbackEventHandler, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeView extends System.Web.UI.WebControls.HierarchicalDataBoundControl implements class System.Web.UI.ICallbackEventHandler, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeView" />
@@ -2360,7 +2360,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method is overridden to register for postback. If client script is enabled, it also renders the necessary script and hidden fields.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2405,7 +2405,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2445,7 +2445,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is raised when a check box in the <xref:System.Web.UI.WebControls.TreeView> control changes state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2485,7 +2485,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2525,7 +2525,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2568,7 +2568,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2616,7 +2616,7 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node on the client dynamically when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3253,7 +3253,7 @@
   
  The <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event is fired only on post back when a user clicks a node. The event is not fired if the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property is changed programmatically.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4056,7 +4056,7 @@
   
  Even though the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is fired on post back, changing a check box does not cause a post back.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4095,7 +4095,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4134,7 +4134,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4195,7 +4195,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to `TreeNodeSelectAction.Expand` or `TreeNodeSelectAction.SelectExpand`, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4242,7 +4242,7 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node dynamically on the client when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

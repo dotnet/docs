@@ -1,4 +1,4 @@
-﻿<Type Name="Page" FullName="System.Web.UI.Page">
+<Type Name="Page" FullName="System.Web.UI.Page">
   <TypeSignature Language="C#" Value="public class Page : System.Web.UI.TemplateControl, System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Page extends System.Web.UI.TemplateControl implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Page" />
@@ -2309,7 +2309,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.InitComplete> event is called at the end of the page's initialization stage. At this stage of the page's life cycle, all declared controls on the page are initialized, but the page's state is not yet populated. You can access server controls, but they will not yet contain information returned from the user.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -3049,7 +3049,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.LoadComplete> event occurs after all postback data and view-state data is loaded into the page and after the <xref:System.Web.UI.Control.OnLoad%2A> method has been called for all controls on the page.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -3965,7 +3965,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.PreLoad> event is raised after all postback data processing and before the <xref:System.Web.UI.Control.Load> event. There is a second attempt to load postback data before the <xref:System.Web.UI.Page.OnLoadComplete%2A> event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ The <xref:System.Web.UI.Page.PreLoad> event is raised after all postback data processing and before the <xref:System.Web.UI.Control.Load> event. There is a second attempt to load postback data before the <xref:System.Web.UI.Page.OnLoadComplete%2A> event. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -4008,7 +4008,7 @@
   
  This is the last event raised before the page's view state is saved.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

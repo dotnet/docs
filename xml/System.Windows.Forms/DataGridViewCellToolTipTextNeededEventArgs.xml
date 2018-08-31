@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellToolTipTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs">
+<Type Name="DataGridViewCellToolTipTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewCellToolTipTextNeededEventArgs : System.Windows.Forms.DataGridViewCellEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellToolTipTextNeededEventArgs extends System.Windows.Forms.DataGridViewCellEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs" />
@@ -30,7 +30,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

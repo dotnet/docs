@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewEditingControlShowingEventArgs" FullName="System.Windows.Forms.DataGridViewEditingControlShowingEventArgs">
+<Type Name="DataGridViewEditingControlShowingEventArgs" FullName="System.Windows.Forms.DataGridViewEditingControlShowingEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewEditingControlShowingEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewEditingControlShowingEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" />
@@ -22,7 +22,7 @@
 ## Remarks  
  Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

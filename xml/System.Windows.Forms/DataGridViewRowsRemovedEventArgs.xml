@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewRowsRemovedEventArgs" FullName="System.Windows.Forms.DataGridViewRowsRemovedEventArgs">
+<Type Name="DataGridViewRowsRemovedEventArgs" FullName="System.Windows.Forms.DataGridViewRowsRemovedEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewRowsRemovedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowsRemovedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowsRemovedEventArgs" />
@@ -22,7 +22,7 @@
 ## Remarks  
  When rows are deleted from a <xref:System.Windows.Forms.DataGridView> control, the index numbers of subsequent rows are lowered to compensate.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

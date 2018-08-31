@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewRowStateChangedEventArgs" FullName="System.Windows.Forms.DataGridViewRowStateChangedEventArgs">
+<Type Name="DataGridViewRowStateChangedEventArgs" FullName="System.Windows.Forms.DataGridViewRowStateChangedEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewRowStateChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowStateChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowStateChangedEventArgs" />
@@ -22,7 +22,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.Row%2A> property to determine which row changed. Use the <xref:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.StateChanged%2A> property to determine which row state changed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

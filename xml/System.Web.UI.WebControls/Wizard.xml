@@ -1,4 +1,4 @@
-﻿<Type Name="Wizard" FullName="System.Web.UI.WebControls.Wizard">
+<Type Name="Wizard" FullName="System.Web.UI.WebControls.Wizard">
   <TypeSignature Language="C#" Value="public class Wizard : System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Wizard extends System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Wizard" />
@@ -414,7 +414,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step of the <xref:System.Web.UI.WebControls.Wizard> control changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -556,7 +556,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event to provide additional processing when the **Cancel** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1270,7 +1270,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event to provide additional processing when the **Finish** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2557,7 +2557,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event to provide additional processing when the **Next** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2943,7 +2943,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event to provide additional processing when the **Previous** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3081,7 +3081,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

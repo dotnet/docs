@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewAutoSizeModeEventArgs" FullName="System.Windows.Forms.DataGridViewAutoSizeModeEventArgs">
+<Type Name="DataGridViewAutoSizeModeEventArgs" FullName="System.Windows.Forms.DataGridViewAutoSizeModeEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewAutoSizeModeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewAutoSizeModeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs" />
@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes. The <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

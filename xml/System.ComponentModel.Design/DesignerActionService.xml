@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionService" FullName="System.ComponentModel.Design.DesignerActionService">
+<Type Name="DesignerActionService" FullName="System.ComponentModel.Design.DesignerActionService">
   <TypeSignature Language="C#" Value="public class DesignerActionService : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionService extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionService" />
@@ -303,7 +303,7 @@
 |<xref:System.ComponentModel.Design.DesignerActionListsChangedEventHandler>|Connects the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs> with its handler.|  
 |<xref:System.ComponentModel.Design.DesignerActionListsChangedType>|Denotes whether a list has been added or removed.|  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

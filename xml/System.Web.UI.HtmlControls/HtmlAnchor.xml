@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlAnchor" FullName="System.Web.UI.HtmlControls.HtmlAnchor">
+<Type Name="HtmlAnchor" FullName="System.Web.UI.HtmlControls.HtmlAnchor">
   <TypeSignature Language="C#" Value="public class HtmlAnchor : System.Web.UI.HtmlControls.HtmlContainerControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlAnchor extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlAnchor" />
@@ -438,7 +438,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked. This server event causes a round trip to occur from the client to the server and back.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlButton" FullName="System.Web.UI.HtmlControls.HtmlButton">
+<Type Name="HtmlButton" FullName="System.Web.UI.HtmlControls.HtmlButton">
   <TypeSignature Language="C#" Value="public class HtmlButton : System.Web.UI.HtmlControls.HtmlContainerControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlButton extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlButton" />
@@ -363,7 +363,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This server event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

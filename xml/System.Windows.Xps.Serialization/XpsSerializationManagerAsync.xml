@@ -1,4 +1,4 @@
-﻿<Type Name="XpsSerializationManagerAsync" FullName="System.Windows.Xps.Serialization.XpsSerializationManagerAsync">
+<Type Name="XpsSerializationManagerAsync" FullName="System.Windows.Xps.Serialization.XpsSerializationManagerAsync">
   <TypeSignature Language="C#" Value="public sealed class XpsSerializationManagerAsync : System.Windows.Xps.Serialization.XpsSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XpsSerializationManagerAsync extends System.Windows.Xps.Serialization.XpsSerializationManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />
@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to use event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

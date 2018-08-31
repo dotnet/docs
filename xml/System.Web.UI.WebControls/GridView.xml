@@ -1,4 +1,4 @@
-﻿<Type Name="GridView" FullName="System.Web.UI.WebControls.GridView">
+<Type Name="GridView" FullName="System.Web.UI.WebControls.GridView">
   <TypeSignature Language="C#" Value="public class GridView : System.Web.UI.WebControls.CompositeDataBoundControl, System.Web.UI.ICallbackEventHandler, System.Web.UI.IDataKeysControl, System.Web.UI.IPostBackEventHandler, System.Web.UI.WebControls.ICallbackContainer, System.Web.UI.WebControls.IDataBoundListControl, System.Web.UI.WebControls.IFieldControl, System.Web.UI.WebControls.IPersistedSelector, System.Web.UI.WebControls.IPostBackContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridView extends System.Web.UI.WebControls.CompositeDataBoundControl implements class System.Web.UI.ICallbackEventHandler, class System.Web.UI.IDataKeysControl, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.WebControls.ICallbackContainer, class System.Web.UI.WebControls.IDataBoundControl, class System.Web.UI.WebControls.IDataBoundListControl, class System.Web.UI.WebControls.IFieldControl, class System.Web.UI.WebControls.IPersistedSelector, class System.Web.UI.WebControls.IPostBackContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridView" />
@@ -4410,7 +4410,7 @@
   
  To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4457,7 +4457,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object is passed to the event-handling method, which enables you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -4959,7 +4959,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the cancel operation should be stopped. To stop the cancel operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5030,7 +5030,7 @@
 > [!NOTE]
 >  To determine the index of the row that raised the event, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property of the event argument that is passed to the event. The <xref:System.Web.UI.WebControls.ButtonField> class automatically populates the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property with the appropriate index value. For other command buttons, you must manually set the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property of the command button. For example, you can set the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> to `<%# Container.DataItemIndex %>` when the <xref:System.Web.UI.WebControls.GridView> control has no paging enabled.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5079,7 +5079,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which enables you to access the properties of the row being created. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object. You can determine which row type (header row, data row, and so on) is being created by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5123,7 +5123,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which enables you to access the properties of the row being bound. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object contained in the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property of the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object. You can determine which row type (header row, data row, and so on) is being bound by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5169,7 +5169,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs> object is passed to the event-handling method, which enables you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5218,7 +5218,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the delete operation should be canceled. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> collections, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5269,7 +5269,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the edit operation should be canceled. To cancel the edit operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5500,7 +5500,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> object is passed to the event-handling method, which enables you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5556,7 +5556,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> and <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> collections are automatically populated only when the <xref:System.Web.UI.WebControls.GridView> control is bound to data by using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5782,7 +5782,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanged> event is raised when a row's Select button is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the select operation. This enables you to provide an event-handling method that performs a custom routine, such as updating a status label with the currently selected row, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5829,7 +5829,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object is passed to the event-handling method, which enables you to determine the index of the row selected by the user and to indicate that the selection operation should be canceled. To cancel the selection operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6420,7 +6420,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.Sorted> event is raised when the hyperlink to sort a column is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This enables you to provide an event-handling method that performs a custom routine, such as custom sorting, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -6685,7 +6685,7 @@
   
  For information about how to programmatically initiate a sort operation, see the <xref:System.Web.UI.WebControls.GridView.Sort%2A> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

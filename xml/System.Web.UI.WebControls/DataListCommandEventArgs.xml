@@ -1,4 +1,4 @@
-﻿<Type Name="DataListCommandEventArgs" FullName="System.Web.UI.WebControls.DataListCommandEventArgs">
+<Type Name="DataListCommandEventArgs" FullName="System.Web.UI.WebControls.DataListCommandEventArgs">
   <TypeSignature Language="C#" Value="public class DataListCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataListCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
@@ -33,7 +33,7 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DataListCommandEventArgs>, see the <xref:System.Web.UI.WebControls.DataListCommandEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

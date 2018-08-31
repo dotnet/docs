@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollableControl" FullName="System.Windows.Forms.ScrollableControl">
+<Type Name="ScrollableControl" FullName="System.Windows.Forms.ScrollableControl">
   <TypeSignature Language="C#" Value="public class ScrollableControl : System.Windows.Forms.Control, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollableControl extends System.Windows.Forms.Control implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl" />
@@ -1030,7 +1030,7 @@
   
  You can use the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property in your event handler to determine the scroll bar orientation for the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

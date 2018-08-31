@@ -1,4 +1,4 @@
-﻿<Type Name="TextBox" FullName="System.Web.UI.WebControls.TextBox">
+<Type Name="TextBox" FullName="System.Web.UI.WebControls.TextBox">
   <TypeSignature Language="C#" Value="public class TextBox : System.Web.UI.WebControls.WebControl, System.Web.UI.IEditableTextControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBox extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IEditableTextControl, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBox" />
@@ -1491,7 +1491,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

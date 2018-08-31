@@ -1,4 +1,4 @@
-﻿<Type Name="DataControlFieldCollection" FullName="System.Web.UI.WebControls.DataControlFieldCollection">
+<Type Name="DataControlFieldCollection" FullName="System.Web.UI.WebControls.DataControlFieldCollection">
   <TypeSignature Language="C#" Value="public sealed class DataControlFieldCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataControlFieldCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldCollection" />
@@ -288,7 +288,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataControlFieldCollection.FieldsChanged> event is raised when the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, or <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A> method is called.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

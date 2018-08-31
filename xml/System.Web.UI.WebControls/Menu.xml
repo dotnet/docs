@@ -1,4 +1,4 @@
-﻿<Type Name="Menu" FullName="System.Web.UI.WebControls.Menu">
+<Type Name="Menu" FullName="System.Web.UI.WebControls.Menu">
   <TypeSignature Language="C#" Value="public class Menu : System.Web.UI.WebControls.HierarchicalDataBoundControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Menu extends System.Web.UI.WebControls.HierarchicalDataBoundControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Menu" />
@@ -2275,7 +2275,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2347,7 +2347,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

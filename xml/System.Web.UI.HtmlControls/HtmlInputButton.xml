@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlInputButton" FullName="System.Web.UI.HtmlControls.HtmlInputButton">
+<Type Name="HtmlInputButton" FullName="System.Web.UI.HtmlControls.HtmlInputButton">
   <TypeSignature Language="C#" Value="public class HtmlInputButton : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputButton extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputButton" />
@@ -413,7 +413,7 @@
 > [!NOTE]
 >  A Reset button does not raise the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

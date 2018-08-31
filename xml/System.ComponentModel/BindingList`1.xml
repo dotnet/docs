@@ -1,4 +1,4 @@
-﻿<Type Name="BindingList&lt;T&gt;" FullName="System.ComponentModel.BindingList&lt;T&gt;">
+<Type Name="BindingList&lt;T&gt;" FullName="System.ComponentModel.BindingList&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class BindingList&lt;T&gt; : System.Collections.ObjectModel.Collection&lt;T&gt;, System.ComponentModel.IBindingList, System.ComponentModel.ICancelAddNew, System.ComponentModel.IRaiseItemChangedEvents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BindingList`1&lt;T&gt; extends System.Collections.ObjectModel.Collection`1&lt;!T&gt; implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.ICancelAddNew, class System.ComponentModel.IRaiseItemChangedEvents" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindingList`1" />
@@ -218,7 +218,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event occurs before a new object is added to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. This event is raised after the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method is called, but before the new item is created and added to the internal list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.ComponentModel.BindingList%601> class.  
   
- For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -928,7 +928,7 @@
 ## Remarks  
  <xref:System.ComponentModel.BindingList%601.ListChanged> notifications for item value changes are only raised if the list item type implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

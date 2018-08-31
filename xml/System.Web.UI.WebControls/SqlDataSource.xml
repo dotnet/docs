@@ -1,4 +1,4 @@
-﻿<Type Name="SqlDataSource" FullName="System.Web.UI.WebControls.SqlDataSource">
+<Type Name="SqlDataSource" FullName="System.Web.UI.WebControls.SqlDataSource">
   <TypeSignature Language="C#" Value="public class SqlDataSource : System.Web.UI.DataSourceControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSource extends System.Web.UI.DataSourceControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSource" />
@@ -1284,7 +1284,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Deleted> event to examine the values of output parameters after a delete operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1388,7 +1388,7 @@
   
  The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1536,7 +1536,7 @@
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.Filtering?displayProperty=nameWithType> event delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Filtering?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1906,7 +1906,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event to examine the values of output parameters after an insert operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1957,7 +1957,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the insert operation. The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> property. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2452,7 +2452,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Selected> event to examine the values of output parameters after a data retrieval operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2486,7 +2486,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the select operation. The select arguments are available from the <xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -2860,7 +2860,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event to examine the values of output parameters after an update operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2970,7 +2970,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the update operation. The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot directly cancel the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> database operation by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 > [!IMPORTANT]
 >  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  

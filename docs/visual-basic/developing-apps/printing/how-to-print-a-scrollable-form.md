@@ -9,7 +9,7 @@ ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
 # How to: Print a Scrollable Form (Visual Basic)
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to quickly print an image of a form without using a <xref:System.Drawing.Printing.PrintDocument> component. By default, only the currently visible part of the form is printed; if a user has resized the form at run time, the image may not print as intended. The following procedure shows how to print the complete client area of a scrollable form, even if the form has been resized.  
   
- The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
+ The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=25169).  
   
 ### To print the complete client area of a scrollable form  
   

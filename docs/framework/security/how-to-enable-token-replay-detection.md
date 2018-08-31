@@ -13,7 +13,7 @@ manager: "mbaldwin"
 -   ASP.NET® Web Forms  
   
 ## Summary  
- This How-To provides detailed step-by-step procedures for enabling token replay detection in an ASP.NET application that uses WIF. It also provides instructions for how to test the application to verify that token replay detection is enabled. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](http://go.microsoft.com/fwlink/?LinkID=245849)  
+ This How-To provides detailed step-by-step procedures for enabling token replay detection in an ASP.NET application that uses WIF. It also provides instructions for how to test the application to verify that token replay detection is enabled. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](https://go.microsoft.com/fwlink/?LinkID=245849)  
   
 ## Contents  
   

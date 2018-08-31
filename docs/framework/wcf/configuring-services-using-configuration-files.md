@@ -85,7 +85,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 -   `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
   
--   [\<endpoint> element reference](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
+-   [\<endpoint> element reference](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
   
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
@@ -95,7 +95,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+ For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -258,6 +258,6 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 ## See Also  
  [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
- [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
+ [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
  [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
  [\<binding>](../../../docs/framework/misc/binding.md)

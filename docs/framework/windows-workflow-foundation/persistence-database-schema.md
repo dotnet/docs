@@ -72,4 +72,4 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
  The InstancePromotedProperties view is schema bound, which means that users can add indices on one or more columns in order to optimize queries against this view.  
   
 > [!NOTE]
->  An indexed view requires more storage and adds additional processing overhead. Please refer to [Improving Performance with SQL Server 2008 Indexed Views](http://go.microsoft.com/fwlink/?LinkId=179529) for more information.
+>  An indexed view requires more storage and adds additional processing overhead. Please refer to [Improving Performance with SQL Server 2008 Indexed Views](https://go.microsoft.com/fwlink/?LinkId=179529) for more information.

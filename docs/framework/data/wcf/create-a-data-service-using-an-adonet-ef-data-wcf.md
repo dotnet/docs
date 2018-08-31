@@ -39,7 +39,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 9. Click **Finish** to complete the wizard.
 
-     This creates a default data model based on the specific database. The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] enables to customize the data model. For more information, see [Tasks](http://msdn.microsoft.com/library/7166f1f1-4de8-4bd4-86b5-5e20a2ebaccb).
+     This creates a default data model based on the specific database. The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] enables to customize the data model. For more information, see [Tasks](https://msdn.microsoft.com/library/7166f1f1-4de8-4bd4-86b5-5e20a2ebaccb).
 
 ## To create the data service by using the new data model
 

@@ -9,7 +9,7 @@ Normally when rules are used within a workflow application, the rules are part o
  The External RuleSet Toolkit sample contains a Windows Forms-based tool that you can use to manage and edit RuleSet versions in a database. It also includes an activity and a host service for executing those rules.  
   
 > [!NOTE]
->  This sample requires [Microsoft SQL Server](http://go.microsoft.com/fwlink/?LinkId=96181).  
+>  This sample requires [Microsoft SQL Server](https://go.microsoft.com/fwlink/?LinkId=96181).  
   
  [!INCLUDE[vsprvsext](../../../../includes/vsprvsext-md.md)] provides a RuleSet editor as part of the Windows Workflow Foundation (WF). You can start this editor by double-clicking the `Policy` activity in a workflow; it serializes the defined RuleSet object to the .rules file associated with the workflow (a `Policy` activity runs a RuleSet instance against the workflow). The .rules file is compiled into the assembly as a resource when you build the workflow project.  
   
@@ -32,7 +32,7 @@ Normally when rules are used within a workflow application, the rules are part o
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ExternalRuleSetToolKit`  
   

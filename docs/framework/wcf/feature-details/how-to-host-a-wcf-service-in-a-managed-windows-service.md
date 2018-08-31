@@ -132,4 +132,4 @@ Like the "Self-Hosting" option, the Windows service hosting environment requires
 - [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
 - [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
 - [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)
-- [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

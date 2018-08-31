@@ -22,7 +22,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)  
  Provides a code example that shows how to run a Windows Form on its own thread.  
   
- Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](http://msdn.microsoft.com/library/ms233639\(v=vs.110\)).  
+ Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](https://msdn.microsoft.com/library/ms233639\(v=vs.110\)).  
   
 ## Reference  
  <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType>  

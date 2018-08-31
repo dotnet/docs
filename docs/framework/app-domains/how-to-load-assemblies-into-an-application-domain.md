@@ -31,7 +31,7 @@ There are several ways to load an assembly into an application domain. The recom
 > [!NOTE]
 >  Starting with the .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.  
   
- You can specify the way the just-in-time (JIT) compiled code from loaded assemblies is shared between application domains. For more information, see [Application Domains and Assemblies](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346).  
+ You can specify the way the just-in-time (JIT) compiled code from loaded assemblies is shared between application domains. For more information, see [Application Domains and Assemblies](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346).  
   
 ## Example  
  The following code loads an assembly named "example.exe" or "example.dll" into the current application domain, gets a type named `Example` from the assembly, gets a parameterless method named `MethodA` for that type, and executes the method. For a complete discussion on obtaining information from a loaded assembly, see [Dynamically Loading and Using Types](../../../docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
@@ -46,4 +46,4 @@ There are several ways to load an assembly into an application domain. The recom
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)  
  [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)  
- [Application Domains and Assemblies](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)
+ [Application Domains and Assemblies](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)

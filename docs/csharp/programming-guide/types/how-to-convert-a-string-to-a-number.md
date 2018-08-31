@@ -50,4 +50,4 @@ You can convert a [string](../../../csharp/language-reference/keywords/string.md
 ## See Also  
  [Types](../../../csharp/programming-guide/types/index.md)  
  [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)  
- [.NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+ [.NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

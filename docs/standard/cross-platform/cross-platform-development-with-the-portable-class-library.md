@@ -19,7 +19,7 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
   
  Even after you create a Portable Class Library project in Visual Studio and start developing it, you can change the target platforms. Visual Studio will compile your library with the new assemblies, which helps you identify the changes you need to make in your code.  
   
- This article discusses app development in Visual Studio, but Microsoft also provides Portable Class Library reference assemblies that you can use to develop apps and libraries with other tools such as Xamarin. You can use these apps and libraries on any .NET Framework-based runtime on non-Microsoft platforms. For more information about the reference assemblies, see the blog entry [Portable Class Library (PCL) now available on all platforms](http://blogs.msdn.com/b/dotnet/archive/2013/10/14/portable-class-library-pcl-now-available-on-all-platforms.aspx). To download the assemblies, see [Microsoft .NET Portable Library Reference Assemblies](http://www.microsoft.com/download/details.aspx?id=40727) in the Microsoft Download Center. For more information about how to use the assemblies with Xamarin, see the blog entry [PCL and .NET NuGet Libraries now enabled for Xamarin](http://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx).  
+ This article discusses app development in Visual Studio, but Microsoft also provides Portable Class Library reference assemblies that you can use to develop apps and libraries with other tools such as Xamarin. You can use these apps and libraries on any .NET Framework-based runtime on non-Microsoft platforms. For more information about the reference assemblies, see the blog entry [Portable Class Library (PCL) now available on all platforms](https://blogs.msdn.com/b/dotnet/archive/2013/10/14/portable-class-library-pcl-now-available-on-all-platforms.aspx). To download the assemblies, see [Microsoft .NET Portable Library Reference Assemblies](https://www.microsoft.com/download/details.aspx?id=40727) in the Microsoft Download Center. For more information about how to use the assemblies with Xamarin, see the blog entry [PCL and .NET NuGet Libraries now enabled for Xamarin](https://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx).  
   
  Visual Studio provides templates to help you develop with the Portable Class Library. Depending on which version of Visual Studio you're using, available templates and menus may vary from those described in this article.  
   
@@ -104,7 +104,7 @@ Portable Class Library property page for Visual Studio 2013 Update 2
   
  When you change the targets, the APIs that are available to you for developing your project will change to match your selection. Visual Studio reports the errors and warnings that may occur as a result of the targets changing.  
   
- If you want to evaluate the portability of your assemblies before you make changes in Visual Studio, you can use the [.NET Portability Analyzer](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b).  
+ If you want to evaluate the portability of your assemblies before you make changes in Visual Studio, you can use the [.NET Portability Analyzer](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b).  
   
  The menu options will vary depending on the version of Visual Studio you're using.  
   
@@ -218,6 +218,6 @@ Version Information example
 ## See Also  
  [Using Portable Class Library with MVVM](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)  
  [App Resources for Libraries That Target Multiple Platforms](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)  
- [.NET Portability Analyzer](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
+ [.NET Portability Analyzer](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
  [Deployment](../../../docs/framework/deployment/net-framework-applications.md)

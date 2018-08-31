@@ -19,7 +19,7 @@ Client application services provide simplified access to [!INCLUDE[ajax_current_
   
 -   Integration with the Visual Studio application settings designer. When you add settings to your project in Visual Studio, you can specify which settings are to be accessed through the client settings service provider.  
   
- The following sections describe these features in more detail. For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
+ The following sections describe these features in more detail. For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](https://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
   
 ## Authentication  
  You can use client application services to validate a user through an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] authentication service. You can validate a user by using Windows or forms authentication. Windows authentication means that the user identity is the one supplied by the operating system when a user logs on to a computer or domain. You will typically use Windows authentication with an application deployed on a corporate intranet. Forms authentication means that you must include login controls in your application and pass the acquired credentials to the authentication provider. You will typically use forms authentication with an application deployed on the Internet.  
@@ -34,17 +34,17 @@ Client application services provide simplified access to [!INCLUDE[ajax_current_
   
  When you configure your application to use a credentials provider with forms authentication, you must pass empty strings or `null` as the parameters of the <xref:System.Web.Security.Membership.ValidateUser%2A> method. The service provider will then call your <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A?displayProperty=nameWithType> method implementation. Typically, you will implement this method to display a dialog box and return a populated <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> object.  
   
- For more information about authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] authentication service, see [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
+ For more information about authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] authentication service, see [Using Forms Authentication with Microsoft Ajax](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
   
 ## Roles  
  You can use client application services to retrieve role information from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] roles service. To determine whether the current, authenticated user is in a particular role, you call the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> reference retrieved from the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. The <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method takes the role name as a parameter and returns a <xref:System.Boolean> value indicating whether the current user is in the specified role. This method will return `false` if the user is not authenticated or is not in the specified role.  
   
- For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] roles service, see [Using Roles Information with Microsoft Ajax](http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d).  
+ For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] roles service, see [Using Roles Information with Microsoft Ajax](https://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d).  
   
 ## Settings  
  You can use client application services to retrieve user application settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service. The client application services Web settings feature integrates with the application settings feature provided in [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]. To retrieve Web settings, first generate a `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in Visual Basic) for your project by using the **Settings** tab of the Visual Studio project designer. On the **Settings** tab, you can use the **Load Web Settings** button to retrieve Web settings and add them to the generated `Settings` class. You can use Web settings configured for use by all authenticated users or by all anonymous users.  
   
- For more information about application settings, see [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md). For information about how to implement your own settings class instead of generating one in Visual Studio, see [How to: Create Application Settings](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Profile Information with Microsoft Ajax](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61).  
+ For more information about application settings, see [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md). For information about how to implement your own settings class instead of generating one in Visual Studio, see [How to: Create Application Settings](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md). For information about how to set up the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] profile service, see [Using Profile Information with Microsoft Ajax](https://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61).  
   
 ## Client Application Services Classes  
  The following table describes the classes that implement the client application services feature.  
@@ -76,10 +76,10 @@ Client application services provide simplified access to [!INCLUDE[ajax_current_
  [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
  [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
  [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)  
- [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)  
- [Using Roles Information with Microsoft Ajax](http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)  
- [Using Profile Information with Microsoft Ajax](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)  
- [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)  
- [Managing Authorization Using Roles](http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)  
- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
+ [ASP.NET Application Services Overview](https://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)  
+ [Using Forms Authentication with Microsoft Ajax](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)  
+ [Using Roles Information with Microsoft Ajax](https://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)  
+ [Using Profile Information with Microsoft Ajax](https://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)  
+ [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)  
+ [Managing Authorization Using Roles](https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)  
+ [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

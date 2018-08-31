@@ -25,7 +25,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides date and ti
   
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
 |---------------------|---------------------|---------------------|  
-|[Date and Time Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115908)|[Date and Time Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115909)|[Date and Time Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=98360)|  
+|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115908)|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115909)|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98360)|  
   
 ## See Also  
  [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)

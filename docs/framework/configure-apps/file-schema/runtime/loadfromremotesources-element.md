@@ -12,7 +12,7 @@ ms.author: "ronpet"
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
->  If you were directed to this topic because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](http://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070).  
+>  If you were directed to this topic because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070).  
   
  \<configuration>  
 \<runtime>  
@@ -91,11 +91,11 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 - If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 
-- You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](http://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
+- You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](https://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
 
 ## Configuration file
 
-This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](http://go.microsoft.com/fwlink/p/?LinkId=266839) in the .NET Security blog.  
+This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839) in the .NET Security blog.  
 
 ## Example
 
@@ -111,7 +111,7 @@ The following example shows how to grant full trust to assemblies loaded from re
 
 ## See also
 
-[More Implicit Uses of CAS Policy: loadFromRemoteSources](http://go.microsoft.com/fwlink/p/?LinkId=266839)  
+[More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
 [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
 [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
 [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  

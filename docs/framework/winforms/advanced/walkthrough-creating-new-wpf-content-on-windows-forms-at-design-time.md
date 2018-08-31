@@ -55,7 +55,7 @@ Creating a new WPF control and adding it to your project is as easy as adding an
 
     - File UserControl1.xaml opens in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)].
 
-2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](http://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).
+2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).
 
 3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to **200**.
 
@@ -108,4 +108,4 @@ Windows Forms and WPF are different technologies, but they are designed to inter
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
-- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

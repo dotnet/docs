@@ -7,7 +7,7 @@ ms.date: 08/31/2018
 ---
 
 # .NET Microservices: Architecture for Containerized .NET Applications
-![](./media/cover-small.png)
+![Book cover](./media/cover-small.png)
 
 **EDITION v2.1.02** - Updated to ASP.NET Core 2.1
 

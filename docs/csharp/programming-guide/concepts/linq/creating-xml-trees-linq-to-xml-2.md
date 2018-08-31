@@ -1,6 +1,6 @@
 ---
 title: "Creating XML Trees in C# (LINQ to XML)"
-ms.date: 07/20/2015
+ms.date: 08/31/2018
 ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
 ---
 # Creating XML trees in C# (LINQ to XML)

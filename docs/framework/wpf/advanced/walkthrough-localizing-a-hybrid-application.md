@@ -22,7 +22,7 @@ Tasks illustrated in this walkthrough include:
 
 -   Using the LocBaml tool to produce a satellite assembly.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Localizing a Hybrid Application Sample](http://go.microsoft.com/fwlink/?LinkID=160015).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Localizing a Hybrid Application Sample](https://go.microsoft.com/fwlink/?LinkID=160015).
 
 When you are finished, you will have a localized hybrid application.
 
@@ -171,5 +171,5 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
-- [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
+- [Walkthrough: Localizing Windows Forms](https://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

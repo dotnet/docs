@@ -23,13 +23,13 @@ A nonvisual control (or component) provides functionality to your application. U
   
 ### To add a component to a Windows Form  
   
-1.  Open the form. For details, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For details, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
   
 2.  In the **Toolbox**, click a component and drag it to your form.  
   
      Your component appears in the component tray.  
   
- Furthermore, components can be added to a form at run time. This is a common scenario, especially because components do not have a visual expression, unlike controls that have a user interface. In the example below, a <xref:System.Windows.Forms.Timer> component is added at run time. (Note that Visual Studio contains a number of different timers; in this case, use a Windows Forms <xref:System.Windows.Forms.Timer> component. For more information about the different timers in Visual Studio, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).)  
+ Furthermore, components can be added to a form at run time. This is a common scenario, especially because components do not have a visual expression, unlike controls that have a user interface. In the example below, a <xref:System.Windows.Forms.Timer> component is added at run time. (Note that Visual Studio contains a number of different timers; in this case, use a Windows Forms <xref:System.Windows.Forms.Timer> component. For more information about the different timers in Visual Studio, see [Introduction to Server-Based Timers](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).)  
   
 > [!CAUTION]
 >  Components often have control-specific properties that must be set for the component to function effectively. In the case of the <xref:System.Windows.Forms.Timer> component below, you set the `Interval` property. Be sure, when adding components to your project, that you set the properties necessary for that component.  

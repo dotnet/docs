@@ -81,7 +81,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 <a name="InternetExplorerSecuritySettings"></a>   
 ## Web Browsing Software Security Settings  
- The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](http://go.microsoft.com/fwlink/?LinkId=179379) or [UrlMon](http://go.microsoft.com/fwlink/?LinkId=179383) APIs, including Internet Explorer and PresentationHost.exe.  
+ The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](https://go.microsoft.com/fwlink/?LinkId=179379) or [UrlMon](https://go.microsoft.com/fwlink/?LinkId=179383) APIs, including Internet Explorer and PresentationHost.exe.  
   
  [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] provides a mechanism by which you can configure the functionality that is allowed to be executed by or from [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)], including the following:  
   
@@ -142,14 +142,14 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 <a name="webbrowser_control_and_feature_controls"></a>   
 ## WebBrowser Control and Feature Controls  
- The WPF <xref:System.Windows.Controls.WebBrowser> control can be used to host Web content. The WPF <xref:System.Windows.Controls.WebBrowser> control wraps the underlying WebBrowser ActiveX control. WPF provides some support for securing your application when you use the WPF <xref:System.Windows.Controls.WebBrowser> control to host untrusted Web content. However, some security features must be applied directly by the applications using the <xref:System.Windows.Controls.WebBrowser> control. For more information about the WebBrowser ActiveX control, see [WebBrowser Control Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=179388).  
+ The WPF <xref:System.Windows.Controls.WebBrowser> control can be used to host Web content. The WPF <xref:System.Windows.Controls.WebBrowser> control wraps the underlying WebBrowser ActiveX control. WPF provides some support for securing your application when you use the WPF <xref:System.Windows.Controls.WebBrowser> control to host untrusted Web content. However, some security features must be applied directly by the applications using the <xref:System.Windows.Controls.WebBrowser> control. For more information about the WebBrowser ActiveX control, see [WebBrowser Control Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=179388).  
   
 > [!NOTE]
 >  This section also applies to the <xref:System.Windows.Controls.Frame> control since it uses the <xref:System.Windows.Controls.WebBrowser> to navigate to HTML content.  
   
  If the WPF <xref:System.Windows.Controls.WebBrowser> control is used to host untrusted Web content, your application should use a partial-trust <xref:System.AppDomain> to help insulate your application code from potentially malicious HTML script code. This is especially true if your application is interacting with the hosted script by using the <xref:System.Windows.Controls.WebBrowser.InvokeScript%2A> method and the <xref:System.Windows.Controls.WebBrowser.ObjectForScripting%2A> property. For more information, see [WPF Add-Ins Overview](../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
   
- If your application uses the WPF <xref:System.Windows.Controls.WebBrowser> control, another way to increase security and mitigate attacks is to enable Internet Explorer feature controls. Feature controls are additions to Internet Explorer that allow administrators and developers to configure features of Internet Explorer and applications that host the WebBrowser ActiveX control, which the WPF <xref:System.Windows.Controls.WebBrowser> control wraps. Feature controls can be configured by using the [CoInternetSetFeatureEnabled](http://go.microsoft.com/fwlink/?LinkId=179394) function or by changing values in the registry. For more information about feature controls, see [Introduction to Feature Controls](http://go.microsoft.com/fwlink/?LinkId=179390) and [Internet Feature Controls](http://go.microsoft.com/fwlink/?LinkId=179392).  
+ If your application uses the WPF <xref:System.Windows.Controls.WebBrowser> control, another way to increase security and mitigate attacks is to enable Internet Explorer feature controls. Feature controls are additions to Internet Explorer that allow administrators and developers to configure features of Internet Explorer and applications that host the WebBrowser ActiveX control, which the WPF <xref:System.Windows.Controls.WebBrowser> control wraps. Feature controls can be configured by using the [CoInternetSetFeatureEnabled](https://go.microsoft.com/fwlink/?LinkId=179394) function or by changing values in the registry. For more information about feature controls, see [Introduction to Feature Controls](https://go.microsoft.com/fwlink/?LinkId=179390) and [Internet Feature Controls](https://go.microsoft.com/fwlink/?LinkId=179392).  
   
  If you are developing a standalone WPF application that uses the WPF <xref:System.Windows.Controls.WebBrowser> control, WPF automatically enables the following feature controls for your application.  
   
@@ -178,7 +178,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  Feature controls are applied by the process instantiating the WebBrowser ActiveX object. Therefore, if you are creating a stand-alone application that can navigate to untrusted content, you should seriously consider enabling additional feature controls.  
   
 > [!NOTE]
->  This recommendation is based on general recommendations for MSHTML and SHDOCVW host security. For more information, see [The MSHTML Host Security FAQ: Part I of II](http://go.microsoft.com/fwlink/?LinkId=179396) and [The MSHTML Host Security FAQ: Part II of II](http://go.microsoft.com/fwlink/?LinkId=179415).  
+>  This recommendation is based on general recommendations for MSHTML and SHDOCVW host security. For more information, see [The MSHTML Host Security FAQ: Part I of II](https://go.microsoft.com/fwlink/?LinkId=179396) and [The MSHTML Host Security FAQ: Part II of II](https://go.microsoft.com/fwlink/?LinkId=179415).  
   
  For your executable, consider enabling the following feature controls by setting the registry value to 1.  
   
@@ -203,7 +203,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  If you run a partial-trust [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in [!INCLUDE[TLA#tla_iegeneric](../../../includes/tlasharptla-iegeneric-md.md)], WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
   
- XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)]. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=179393).  
+ XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)]. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/?LinkId=179393).  
   
 > [!NOTE]
 >  If you try to run an XBAP that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Firefox, while in the Internet zone, a <xref:System.Security.SecurityException> will be thrown. This is due to WPF security policy.  
@@ -260,7 +260,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 |Area|Resource|  
 |----------|--------------|  
-|Managed code|[Patterns and Practices Security Guidance for Applications](http://go.microsoft.com/fwlink/?LinkId=117426)|  
+|Managed code|[Patterns and Practices Security Guidance for Applications](https://go.microsoft.com/fwlink/?LinkId=117426)|  
 |[!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]|[Code Access Security](../../../docs/framework/misc/code-access-security.md)|  
 |[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)|  
@@ -269,7 +269,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  [WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)  
  [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)  
  [WPF Security Strategy - Security Engineering](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)  
- [Patterns and Practices Security Guidance for Applications](http://go.microsoft.com/fwlink/?LinkId=117426)  
+ [Patterns and Practices Security Guidance for Applications](https://go.microsoft.com/fwlink/?LinkId=117426)  
  [Code Access Security](../../../docs/framework/misc/code-access-security.md)  
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
  [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

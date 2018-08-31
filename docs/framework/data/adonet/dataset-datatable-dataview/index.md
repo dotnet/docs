@@ -14,7 +14,7 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
   
 -   Load and persist the <xref:System.Data.DataSet> contents using XML. For more information, see [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md).  
   
- A strongly typed <xref:System.Data.DataSet> can also be transported using an XML Web service. The design of the <xref:System.Data.DataSet> makes it ideal for transporting data using XML Web services. For an overview of XML Web services, see [XML Web Services Overview](http://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d). For an example of consuming a <xref:System.Data.DataSet> from an XML Web service, see [Consuming a DataSet from an XML Web Service](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md).  
+ A strongly typed <xref:System.Data.DataSet> can also be transported using an XML Web service. The design of the <xref:System.Data.DataSet> makes it ideal for transporting data using XML Web services. For an overview of XML Web services, see [XML Web Services Overview](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d). For an example of consuming a <xref:System.Data.DataSet> from an XML Web service, see [Consuming a DataSet from an XML Web Service](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md).  
   
 ## In This Section  
  [Creating a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset.md)  
@@ -74,4 +74,4 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
   
 ## See Also  
  [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

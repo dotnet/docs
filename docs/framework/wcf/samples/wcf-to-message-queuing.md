@@ -124,7 +124,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. For example, you could run the client, shut it down, and then start up the service and it would still receive its messages.  
   
 > [!NOTE]
->  This sample requires the installation of Message Queuing. See the installation instructions in [Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94968).  
+>  This sample requires the installation of Message Queuing. See the installation instructions in [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968).  
   
 ### To setup, build, and run the sample  
   
@@ -163,10 +163,10 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`  
   
 ## See Also  
  [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
- [Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94968)
+ [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)

@@ -93,7 +93,7 @@ Dim myPathFigure As New PathFigure()
 			myPath.Data = myPathGeometry  
 ```  
   
- This example is part of larger sample; for the complete sample, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
+ This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
  <xref:System.Windows.Media.PathFigure>  

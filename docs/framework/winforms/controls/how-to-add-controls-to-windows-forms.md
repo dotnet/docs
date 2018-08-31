@@ -18,7 +18,7 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To draw a control on a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
   
 2.  In the **Toolbox**, click the control you want to add to your form.  
   
@@ -31,7 +31,7 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To drag a control to a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
   
 2.  In the **Toolbox**, click the control you want and drag it to your form.  
   

@@ -78,7 +78,7 @@ manager: "mbaldwin"
   
 #### To analyze WIF trace logs using Trace Viewer tool (SvcTraceViewer.exe)  
   
-1.  Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](http://www.microsoft.com/download/en/details.aspx?id=8279).  
+1.  Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](https://www.microsoft.com/download/en/details.aspx?id=8279).  
   
 2.  Run the Trace Viewer tool (SvcTraceViewer.exe). It is typically available in the **Bin** folder of the installation path.  
   
@@ -99,7 +99,7 @@ manager: "mbaldwin"
   
 |**Error ID**|**Error Message**|**Action needed to fix the error**|  
 |-|-|-|  
-|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail.The procedure for correctly copying the thumbprint can be found here: [http://msdn.microsoft.com/library/ff359102.aspx](http://msdn.microsoft.com/library/ff359102.aspx)|  
+|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail.The procedure for correctly copying the thumbprint can be found here: [http://msdn.microsoft.com/library/ff359102.aspx](https://msdn.microsoft.com/library/ff359102.aspx)|  
   
 ## Related Items  
   

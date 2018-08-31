@@ -152,4 +152,4 @@ Screwdriver set as a generic tool
  [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
  [Covariance and Contravariance](../../concepts/covariance-contravariance/index.md)  
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
+ [Iterators](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)

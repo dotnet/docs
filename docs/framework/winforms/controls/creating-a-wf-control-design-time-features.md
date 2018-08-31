@@ -54,7 +54,7 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
  ![A possible MarqueeControl arrangement](../../../../docs/framework/winforms/controls/media/demomarqueecontrol.gif "DemoMarqueeControl")  
   
- For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c).  
+ For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -78,11 +78,11 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
 1.  Add a Windows Forms Control Library project to the solution. Name the project "MarqueeControlLibrary."  
   
-2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice. For more information, see [NIB:How to: Remove, Delete, and Exclude Items](http://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
+2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice. For more information, see [NIB:How to: Remove, Delete, and Exclude Items](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
   
 3.  Add a new <xref:System.Windows.Forms.UserControl> item to the `MarqueeControlLibrary` project. Give the new source file a base name of "MarqueeControl."  
   
-4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. For more information, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Name the new folder "Design."  
+4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. For more information, see [NIB:How to: Add New Project Items](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Name the new folder "Design."  
   
 5.  Right-click the **Design** folder and add a new class. Give the source file a base name of "MarqueeControlRootDesigner."  
   
@@ -470,7 +470,7 @@ using MarqueeControlLibrary;
      [!code-vb[System.Windows.Forms.Design.DocumentDesigner#590](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueecontrolrootdesigner.vb#590)]  
   
 ## Creating a Custom UITypeEditor  
- When you create a custom design-time experience for users, it is often desirable to create a custom interaction with the Properties window. You can accomplish this by creating a <xref:System.Drawing.Design.UITypeEditor>. For more information, see [How to: Create a UI Type Editor](http://msdn.microsoft.com/library/292c6e33-8d85-4012-9b51-05835a6f6dfd).  
+ When you create a custom design-time experience for users, it is often desirable to create a custom interaction with the Properties window. You can accomplish this by creating a <xref:System.Drawing.Design.UITypeEditor>. For more information, see [How to: Create a UI Type Editor](https://msdn.microsoft.com/library/292c6e33-8d85-4012-9b51-05835a6f6dfd).  
   
  The `MarqueeBorder` control exposes several properties in the Properties window. Two of these properties, `MarqueeSpinDirection` and `MarqueeLightShape` are represented by enumerations. To illustrate the use of a UI type editor, the `MarqueeLightShape` property will have an associated <xref:System.Drawing.Design.UITypeEditor> class.  
   
@@ -622,7 +622,7 @@ private void stopButton_Click(object sender, System.EventArgs e)
   
 -   Further customize the design-time experience. You could try shadowing more properties than <xref:System.Windows.Forms.Control.Enabled%2A> and <xref:System.Windows.Forms.Control.Visible%2A>, and you could add new properties. Add new designer verbs to simplify common tasks like docking child controls.  
   
--   License the `MarqueeControl`. For more information, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
+-   License the `MarqueeControl`. For more information, see [How to: License Components and Controls](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
   
 -   Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
   
@@ -634,7 +634,7 @@ private void stopButton_Click(object sender, System.EventArgs e)
  <xref:System.ComponentModel.Design.DesignerVerb>  
  <xref:System.Drawing.Design.UITypeEditor>  
  <xref:System.ComponentModel.BackgroundWorker>  
- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)  
- [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
- [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)  
+ [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)  
+ [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Custom Designers](https://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)  
  [.NET Shape Library: A Sample Designer](http://windowsforms.net/articles/shapedesigner.aspx)

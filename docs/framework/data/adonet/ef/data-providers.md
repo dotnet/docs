@@ -14,10 +14,10 @@ This section provides information on data providers that support the [!INCLUDE[a
  Describes the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider that supports the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for use with a SQL Server database.  
   
 ## Related Sections  
- [Entity Framework (SQL Server Compact)](http://go.microsoft.com/fwlink/?LinkId=135638)  
+ [Entity Framework (SQL Server Compact)](https://go.microsoft.com/fwlink/?LinkId=135638)  
  Describes provider limitations and how to use the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] with a SQL Server Compact database.  
   
- [Third-Party Providers for the Entity Framework](http://go.microsoft.com/fwlink/?LinkId=143699)  
+ [Third-Party Providers for the Entity Framework](https://go.microsoft.com/fwlink/?LinkId=143699)  
  List of the third-party data providers currently available for the Entity Framework.  
   
 ## See Also  

@@ -54,9 +54,9 @@ When you create a custom control, you will often find it necessary to debug its 
   
 1.  Add a **Windows Control Library** project to the solution.  
   
-2.  Add a new **UserControl** item to the DebugControlLibrary project. For details, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Give the new source file a base name of "DebugControl".  
+2.  Add a new **UserControl** item to the DebugControlLibrary project. For details, see [NIB:How to: Add New Project Items](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Give the new source file a base name of "DebugControl".  
   
-3.  Using the **Solution Explorer**, delete the project's default control by deleting the code file with a base name of "`UserControl1`". For details, see [NIB:How to: Remove, Delete, and Exclude Items](http://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
+3.  Using the **Solution Explorer**, delete the project's default control by deleting the code file with a base name of "`UserControl1`". For details, see [NIB:How to: Remove, Delete, and Exclude Items](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
   
 4.  Build the solution.  
   
@@ -168,5 +168,5 @@ When you create a custom control, you will often find it necessary to debug its 
   
 ## See Also  
  [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
- [How to: Access Design-Time Services](http://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f)  
- [How to: Access Design-Time Support in Windows Forms](http://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)
+ [How to: Access Design-Time Services](https://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f)  
+ [How to: Access Design-Time Support in Windows Forms](https://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)

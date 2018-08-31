@@ -11,18 +11,18 @@ Windows Communication Foundation (WCF) security is built upon concepts already i
  WCF supports some of those infrastructures, such as Secure Sockets Layer (SSL) over HTTP (HTTPS). However, WCF goes beyond supporting existing security infrastructures by implementing newer interoperable security standards (such as WS-Security) over SOAP-encoded messages. Whether you are using existing mechanisms or new interoperable standards, the security concepts behind both are the same. Understanding the concepts behind existing infrastructures and the newer standards is central to implementing the best security model for an application.  
   
 ## Introduction to Security for WCF Web Services  
- The Microsoft Patterns and Practices group wrote an in-depth whitepaper on WCF security guidance which is available for download here: [WCF Security Guide](http://go.microsoft.com/fwlink/?LinkId=210210). This whitepaper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
+ The Microsoft Patterns and Practices group wrote an in-depth whitepaper on WCF security guidance which is available for download here: [WCF Security Guide](https://go.microsoft.com/fwlink/?LinkId=210210). This whitepaper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
   
 ## Industry-Wide Security Specifications  
   
 ### Public Key Infrastructure  
- Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public key cryptography. For more information, see [Windows Server 2008 R2 Certificate Services](http://go.microsoft.com/fwlink/?LinkId=210211).  
+ Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public key cryptography. For more information, see [Windows Server 2008 R2 Certificate Services](https://go.microsoft.com/fwlink/?LinkId=210211).  
   
 ### Kerberos Protocol  
- The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](http://go.microsoft.com/fwlink/?LinkId=210212).  
+ The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](https://go.microsoft.com/fwlink/?LinkId=210212).  
   
 ### X.509 Certificates  
- X.509 certificates are a primary credential form used in security applications. For more information on X.509 certificates see [X.509 Public Key Certificates](http://go.microsoft.com/fwlink/?LinkId=210213). X.509 certificates are stored within a certificate store. A computer running Windows has several kinds of certificate stores, each with a different purpose. For more information about the different stores, see [Certificate Stores](http://go.microsoft.com/fwlink/?LinkID=87787).  
+ X.509 certificates are a primary credential form used in security applications. For more information on X.509 certificates see [X.509 Public Key Certificates](https://go.microsoft.com/fwlink/?LinkId=210213). X.509 certificates are stored within a certificate store. A computer running Windows has several kinds of certificate stores, each with a different purpose. For more information about the different stores, see [Certificate Stores](https://go.microsoft.com/fwlink/?LinkID=87787).  
   
 ## Web Services Security Specifications  
  The system-defined bindings support many commonly used web services security specifications. For a complete list of system-provided bindings and the web services specifications they support see: [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
@@ -44,4 +44,4 @@ Windows Communication Foundation (WCF) security is built upon concepts already i
   
 ## See Also  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

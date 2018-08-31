@@ -91,7 +91,7 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
  The WCF WEB HTTP Programming Model does not use SOAP-based messages and therefore does not support the WS-* protocols. You can however, expose the same contract by two different endpoint: one using SOAP and the other not using SOAP. See [How to: Expose a Contract to SOAP and Web Clients](../../../../docs/framework/wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for an example.  
   
 ## Security  
- Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the WCF WEB HTTP  Programming Model is to expose your service using SSL. For more information about setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](http://go.microsoft.com/fwlink/?LinkId=131613)  
+ Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the WCF WEB HTTP  Programming Model is to expose your service using SSL. For more information about setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
   
 ## See Also  
  <xref:System.ServiceModel.WebHttpBinding>  

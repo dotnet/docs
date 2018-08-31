@@ -32,7 +32,7 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
  Furthermore, if the JSON message in the example is received by WCF and logged, you would see the XML fragment in the preceding log.  
   
 ## Mapping Between JSON and the XML Infoset  
- Formally, the mapping is between JSON as described in [RFC 4627](http://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](http://go.microsoft.com/fwlink/?LinkId=98809) . See this topic for the definitions of *information items* and fields in [square brackets].  
+ Formally, the mapping is between JSON as described in [RFC 4627](https://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](https://go.microsoft.com/fwlink/?LinkId=98809) . See this topic for the definitions of *information items* and fields in [square brackets].  
   
  A blank JSON document maps to a blank XML document, and a blank XML document maps to a blank JSON document. On the XML to JSON mapping, preceding white space and trailing white space after the document are not allowed.  
   

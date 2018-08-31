@@ -19,7 +19,7 @@ The topics contained in this section are intended to give you quick exposure to 
 > [!NOTE]
 >  If you are running [!INCLUDE[wv](../../../includes/wv-md.md)] or later versions of the Windows operating system, you must start Visual Studio by going to the Start menu and right clicking Visual Studio 2011 and selecting **Run as Administrator**. To always launch Visual Studio 2011 as an administrator you can create a short cut, right click the short cut, select properties, select the **Compatibility** tab, and check the **Run this program as an administrator** checkbox. When you start Visual Studio 2011 with this shortcut, it will always run as administrator.  
   
- For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).  
+ For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
  For more in-depth information about creating services and clients, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).  
   
@@ -48,7 +48,7 @@ The topics contained in this section are intended to give you quick exposure to 
  <xref:System.ServiceModel.OperationContractAttribute>  
   
 ## Related Sections  
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
   
  [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
   

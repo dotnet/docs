@@ -97,4 +97,4 @@ You have successfully created a new data service that exposes an OData feed that
 
 ## See also
 
-- [ADO.NET Entity Data Model Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+- [ADO.NET Entity Data Model Tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)

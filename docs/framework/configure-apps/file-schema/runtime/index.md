@@ -127,5 +127,5 @@ Runtime settings are used by the common language runtime to configure applicatio
   
 ## See Also  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
+ [How to: Disable Concurrent Garbage Collection](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
  [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

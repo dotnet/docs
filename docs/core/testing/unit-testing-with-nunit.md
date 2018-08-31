@@ -54,7 +54,7 @@ namespace Prime.Services
 
 Change the directory back to the *unit-testing-using-nunit* directory. Run the following command to add the class library project to the solution:
 
-```
+```console
 dotnet sln add PrimeService/PrimeService.csproj
 ```
 
@@ -73,7 +73,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
 
 Make the *PrimeService.Tests* directory the current directory and create a new project using the following command:
 
-```
+```console
 dotnet new nunit
 ```
 
@@ -83,7 +83,7 @@ The [dotnet new](../tools/dotnet-new.md) command creates a test project that use
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the Microsoft test SDK, the NUnit test framework, and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
@@ -104,7 +104,7 @@ The following outline shows the final solution layout:
 
 Execute the following command in the *unit-testing-using-dotnet-test* directory:
 
-```
+```console
 dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
 ```
 
